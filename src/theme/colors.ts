@@ -1,0 +1,20 @@
+// Bible Party — Premium Night design system
+export const colors = {
+  bg: '#0B0B0D',
+  bg2: '#101014',
+  surface: '#15151A',
+  surface2: '#1B1B22',
+  surface3: '#22222B',
+  border: '#2D2D37',
+  borderStrong: '#484852',
+  stone: '#6B6870',
+  text: '#F7F4EE',
+  muted: '#A6A3A0',
+  accent: '#D8B36A',
+  accent2: '#F1D79A',
+  success: '#79C69A',
+  danger: '#E57972',
+  blue: '#7FA6D8',
+  purple: '#A68AD9',
+  white: '#FFFFFF',
+};

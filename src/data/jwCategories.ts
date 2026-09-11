@@ -1,0 +1,236 @@
+import { Challenge, ChronologyQuestion, Difficulty, IntruderQuestion, MysteryQuestion, QuizQuestion, QuoteQuestion, TimesUpQuestion, TrueFalseQuestion } from '@/types';
+
+type QuizSeed = [string, string[], number, string, string, string, Difficulty?];
+
+// Contenu original inspiré des grands thèmes de jw.org/fr/la-bible-et-vous/.
+// Aucun texte d'article n'est repris ; chaque question est formulée pour Bible Party
+// et renvoie à une référence biblique permettant de vérifier la réponse.
+const quizSeeds: QuizSeed[] = [
+  // QUESTIONS BIBLIQUES
+  ['Quel nom la Bible donne-t-elle au Créateur ?', ['Jéhovah','Gabriel','Micaël','Élie'],0,'La Bible utilise le nom Jéhovah pour désigner Dieu.','Psaume 83:18','Questions bibliques'],
+  ['Selon la Bible, qu’est-ce que le Royaume de Dieu ?', ['Un gouvernement céleste','Une ville terrestre','Un temple','Une montagne'],0,'La Bible présente le Royaume de Dieu comme un gouvernement céleste.','Daniel 2:44; Matthieu 6:9-10','Questions bibliques'],
+  ['Quelle espérance la Bible donne-t-elle aux morts fidèles ?', ['La résurrection','La réincarnation','L’immortalité de tous','L’oubli définitif'],0,'La résurrection est une espérance centrale de la Bible.','Jean 5:28-29; Actes 24:15','Questions bibliques'],
+  ['Quel principe biblique aide à prendre de bonnes décisions ?', ['Rechercher les principes bibliques','Suivre toujours la majorité','Éviter toute réflexion','Choisir ce qui rapporte le plus'],0,'Les principes bibliques aident à former une bonne conscience et à prendre des décisions sages.','Psaume 119:105; Philippiens 1:9-10','Questions bibliques'],
+  ['Quel est le plus grand commandement cité par Jésus ?', ['Aimer Dieu de tout son cœur','Être riche','Ne jamais parler','Voyager souvent'],0,'Jésus a mis en avant l’amour pour Dieu comme premier commandement.','Matthieu 22:37-38','Questions bibliques'],
+  ['Quel second commandement Jésus a-t-il associé au premier ?', ['Aimer son prochain comme soi-même','Obéir à tous les humains','Chercher la gloire','Éviter ses voisins'],0,'Jésus a associé l’amour du prochain à l’amour de Dieu.','Matthieu 22:39','Questions bibliques'],
+  ['Quel livre biblique contient le célèbre principe « il y a plus de bonheur à donner qu’à recevoir » ?', ['Actes','Genèse','Ruth','Révélation'],0,'Paul rapporte cette parole de Jésus en Actes.','Actes 20:35','Questions bibliques'],
+  ['Que recommande la Bible quand quelqu’un manque de sagesse ?', ['Demander à Dieu','Abandonner tout effort','Demander uniquement à la foule','Attendre un signe au hasard'],0,'Jacques encourage à demander à Dieu la sagesse.','Jacques 1:5','Questions bibliques'],
+  ['Quel conseil biblique concerne l’inquiétude ?', ['Jeter son inquiétude sur Dieu','La cacher à tout prix','La nourrir volontairement','Ne jamais demander d’aide'],0,'La Bible encourage à confier ses inquiétudes à Dieu.','1 Pierre 5:7; Philippiens 4:6-7','Questions bibliques'],
+  ['Quel rôle la prière joue-t-elle selon la Bible ?', ['Elle permet de parler à Dieu','Elle remplace toute action','Elle sert uniquement aux rois','Elle n’est mentionnée que dans les Psaumes'],0,'La prière est présentée comme un moyen de s’adresser à Dieu.','Philippiens 4:6; Psaume 65:2','Questions bibliques'],
+  ['Que promet la Bible concernant la Terre ?', ['Qu’elle demeurera pour toujours','Qu’elle disparaîtra demain','Qu’elle sera abandonnée','Qu’elle sera remplacée par une autre planète'],0,'La Bible parle de la Terre comme d’un lieu durable et habitable.','Psaume 37:29; Ecclésiaste 1:4','Questions bibliques'],
+  ['Selon Jésus, qu’est-ce qui identifie ses vrais disciples ?', ['L’amour qu’ils ont entre eux','Leur richesse','Leur origine','Leur profession'],0,'Jésus a dit que l’amour entre ses disciples les identifierait.','Jean 13:34-35','Questions bibliques'],
+  // VERSets
+  ['Dans Genèse 1:1, que signifie le « commencement » mentionné ?', ['Le début de la création des cieux et de la terre','La naissance de Moïse','Le début du règne de David','Le début de l’exil'],0,'Genèse 1:1 introduit le récit de la création.','Genèse 1:1','Que veulent dire ces versets ?','easy'],
+  ['Dans Genèse 1:26, à qui Dieu parle-t-il lorsqu’il dit « Faisons l’homme » ?', ['À ses collaborateurs célestes','À Noé','À Moïse','À Adam'],0,'Le contexte biblique permet de comprendre que Dieu s’adresse à son entourage céleste.','Genèse 1:26; Colossiens 1:15-16','Que veulent dire ces versets ?','medium'],
+  ['Dans Exode 20:12, pourquoi « honorer son père et sa mère » est-il associé à une promesse ?', ['Le commandement est lié à une vie longue dans le pays donné par Dieu','Pour obtenir la royauté','Pour devenir prêtre','Pour recevoir des richesses'],0,'Le commandement est accompagné d’une promesse concernant la durée de vie dans le pays.','Exode 20:12','Que veulent dire ces versets ?','easy'],
+  ['Que montre principalement Psaume 23:4 sur Dieu ?', ['Il peut rassurer même dans une situation très sombre','Il promet une vie sans aucune difficulté','Il interdit toute tristesse','Il demande de ne jamais quitter sa maison'],0,'Le psaume exprime la confiance en la protection divine même dans les moments difficiles.','Psaume 23:4','Que veulent dire ces versets ?'],
+  ['Dans Psaume 46:10, que signifie l’idée de reconnaître que Dieu est Dieu ?', ['Reconnaître sa souveraineté et lui faire confiance','Rester silencieux toute sa vie','Ne plus travailler','Quitter sa famille'],0,'Le verset appelle à reconnaître la position unique de Dieu et à lui faire confiance.','Psaume 46:10','Que veulent dire ces versets ?'],
+  ['Selon Proverbes 3:5-6, quelle attitude faut-il avoir envers sa propre compréhension ?', ['Ne pas s’y appuyer exclusivement','La considérer comme infaillible','La supprimer','La remplacer par celle d’un roi'],0,'Le conseil est de faire confiance à Dieu et de tenir compte de lui dans ses voies.','Proverbes 3:5-6','Que veulent dire ces versets ?'],
+  ['Que demande Jésus dans Matthieu 6:33 de chercher en premier ?', ['Le Royaume et la justice de Dieu','La richesse','La célébrité','La sécurité politique'],0,'Jésus encourage à donner la priorité au Royaume de Dieu et à sa justice.','Matthieu 6:33','Que veulent dire ces versets ?'],
+  ['Selon Philippiens 4:13, d’où Paul tire-t-il sa force ?', ['De celui qui lui donne de la puissance','De ses richesses','De son statut romain','De son intelligence personnelle'],0,'Paul attribue sa capacité d’endurer les situations à celui qui lui donne de la force.','Philippiens 4:13','Que veulent dire ces versets ?'],
+  ['Que veut dire l’image de la « lampe » en Psaume 119:105 ?', ['La parole de Dieu guide la conduite','La lumière annonce toujours un miracle','Il faut allumer une lampe avant de prier','La Bible ne sert qu’à l’école'],0,'Le verset compare la parole de Dieu à une lampe qui éclaire le chemin.','Psaume 119:105','Que veulent dire ces versets ?'],
+  ['Dans Matthieu 5:14, pourquoi les disciples sont-ils comparés à une lumière ?', ['Leur conduite et leur témoignage peuvent éclairer les autres','Ils doivent vivre sur une montagne','Ils doivent devenir célèbres','Ils doivent construire des lampes'],0,'Jésus emploie l’image de la lumière pour illustrer l’effet du bon témoignage.','Matthieu 5:14-16','Que veulent dire ces versets ?'],
+  ['Selon Jacques 1:19, quelle combinaison est recommandée ?', ['Être prompt à écouter, lent à parler et lent à se mettre en colère','Parler vite et écouter peu','Répondre immédiatement avec colère','Éviter toute conversation'],0,'Jacques donne ce conseil pratique sur la maîtrise de soi et l’écoute.','Jacques 1:19','Que veulent dire ces versets ?'],
+  ['Que montre 1 Corinthiens 13:4-7 sur l’amour chrétien ?', ['Il se manifeste par la patience, la bonté et l’endurance','Il dépend de la richesse','Il exige d’avoir toujours raison','Il évite toute correction'],0,'Paul décrit des qualités concrètes de l’amour.','1 Corinthiens 13:4-7','Que veulent dire ces versets ?'],
+  // HISTOIRE
+  ['Quel support était couramment utilisé pour écrire dans l’Antiquité biblique ?', ['Papyrus','Plastique','Aluminium','Papier carbone'],0,'Le papyrus faisait partie des matériaux utilisés pour écrire dans l’Antiquité.','2 Jean 12; 3 Jean 13','La Bible et l’Histoire'],
+  ['Pourquoi les manuscrits anciens sont-ils importants pour l’étude de la Bible ?', ['Ils permettent de comparer les copies anciennes','Ils donnent le nom de chaque copiste','Ils remplacent toutes les traductions','Ils datent tous de l’époque de Jésus'],0,'La comparaison des manuscrits aide à étudier la transmission du texte.','Luc 4:16-21','La Bible et l’Histoire'],
+  ['Qui a autorisé le retour des Juifs à Jérusalem après l’exil à Babylone ?', ['Cyrus','Pharaon','Hérode','Néron'],0,'Cyrus a publié une proclamation permettant le retour et la reconstruction du temple.','Esdras 1:1-4','La Bible et l’Histoire'],
+  ['Quelle ville antique est célèbre pour avoir été conquise après la marche des Israélites autour de ses murailles ?', ['Jéricho','Rome','Athènes','Tarse'],0,'Le récit de Josué raconte la chute des murailles de Jéricho.','Josué 6:1-20','La Bible et l’Histoire'],
+  ['Quel roi babylonien est associé à la destruction de Jérusalem et à l’exil ?', ['Nabuchodonosor','Cyrus','Darius','Auguste'],0,'Nabuchodonosor a dirigé Babylone lors de la conquête de Jérusalem.','2 Rois 25:1-12; Daniel 1:1-2','La Bible et l’Histoire'],
+  ['Quel roi perse est nommé dans la prophétie d’Isaïe bien avant son rôle dans le retour des exilés ?', ['Cyrus','Darius','Assuérus','Artaxerxès'],0,'Isaïe mentionne Cyrus par son nom dans une prophétie.','Isaïe 44:28–45:1','La Bible et l’Histoire'],
+  ['Quel empire est représenté par le quatrième animal de Daniel chapitre 7 dans l’interprétation donnée ?', ['Rome','Égypte','Babylone','Grèce'],0,'Dans l’interprétation classique présentée dans Daniel, le quatrième royaume succède aux trois premiers.','Daniel 7:7, 23','La Bible et l’Histoire'],
+  ['Pourquoi les chapitres et versets sont-ils utiles dans une Bible ?', ['Ils facilitent la recherche d’un passage','Ils font partie du texte original de chaque manuscrit','Ils indiquent la langue parlée par Jésus','Ils donnent la date exacte de chaque événement'],0,'La numérotation facilite la consultation et les renvois entre passages.','Luc 4:16-21','La Bible et l’Histoire'],
+  ['Quel personnage historique est explicitement nommé dans les récits bibliques et a donné un décret concernant Jérusalem ?', ['Cyrus','Alexandre le Grand','Hannibal','Jules César'],0,'Cyrus est nommé dans Esdras et dans les prophéties d’Isaïe.','Esdras 1:1-4; Isaïe 44:28','La Bible et l’Histoire'],
+  ['Quel site est associé au procès de Jésus devant Pilate dans les Évangiles ?', ['Jérusalem','Babylone','Ninive','Suse'],0,'Les derniers événements de la vie de Jésus se déroulent à Jérusalem.','Matthieu 27:1-2','La Bible et l’Histoire'],
+  ['Quel peuple a été emmené en exil à Babylone après la chute de Jérusalem ?', ['Les Judéens','Les Philistins uniquement','Les Romains','Les Grecs'],0,'Une partie importante du peuple de Juda fut exilée à Babylone.','2 Rois 24:14-16; 25:8-12','La Bible et l’Histoire'],
+  ['Quel livre biblique raconte la reconstruction des murailles de Jérusalem après l’exil ?', ['Néhémie','Ruth','Amos','Marc'],0,'Néhémie raconte l’organisation et l’achèvement de la reconstruction des murailles.','Néhémie 2:17-18; 6:15','La Bible et l’Histoire'],
+  // SCIENCE
+  ['Quel est le premier objet céleste mentionné dans le récit de Genèse 1:1 ?', ['Les cieux','Mars','La Lune','Saturne'],0,'Genèse 1:1 mentionne les cieux et la terre au commencement.','Genèse 1:1','La Bible et la science'],
+  ['Quel principe d’hygiène de la Loi concernait les excréments humains ?', ['Les couvrir hors du camp','Les conserver dans les maisons','Les jeter dans les sources','Les utiliser comme nourriture'],0,'La Loi prévoyait une manière de gérer les excréments hors du camp.','Deutéronome 23:12-14','La Bible et la science'],
+  ['Que prévoyait la Loi pour une personne atteinte d’une maladie cutanée suspecte ?', ['Une période d’isolement et un examen par le prêtre','Une cérémonie royale','Un voyage en Égypte','Une interdiction de se laver'],0,'Le texte décrit des périodes d’isolement et des examens.','Lévitique 13:1-5','La Bible et la science'],
+  ['Quel élément du récit biblique montre que les Israélites comprenaient l’importance de l’eau pour la purification ?', ['Des règles de lavage et de purification','Une interdiction de boire','Une obligation de ne jamais se baigner','Une interdiction de puiser de l’eau'],0,'La Loi comportait de nombreuses règles liées à la propreté et aux ablutions.','Lévitique 15:5-13','La Bible et la science'],
+  ['Selon Genèse 1:1, la matière de l’univers est-elle présentée comme éternelle ?', ['Non, le récit parle d’un commencement','Oui, explicitement','Seulement la Terre','Seulement les étoiles'],0,'Le récit commence par un commencement de la création des cieux et de la terre.','Genèse 1:1','La Bible et la science'],
+  ['La Bible présente-t-elle la Terre comme un disque posé sur un animal ?', ['Non','Oui','Seulement dans les Psaumes','Seulement dans Job'],0,'La Bible ne présente pas la Terre de cette manière.','Isaïe 40:22; Job 26:7','La Bible et la science'],
+  ['Quel phénomène naturel est décrit dans Job 36–37 avec l’eau qui se transforme et tombe ?', ['Le cycle de l’eau','Les éclipses','Les marées rouges','Les aurores'],0,'Le passage décrit l’eau qui monte, se condense et tombe sous forme de pluie.','Job 36:27-28','La Bible et la science'],
+  ['Quel exemple la Bible donne-t-elle d’un animal dont le comportement étonne l’observateur ?', ['La fourmi','Le dauphin','Le kangourou','Le panda'],0,'Proverbes invite à observer la fourmi et sa prévoyance.','Proverbes 6:6-8','La Bible et la science'],
+  ['Que dit la Bible au sujet de la diversité des formes de vie ?', ['Elle présente Dieu comme Créateur des différentes formes de vie','Elle donne une classification scientifique moderne','Elle affirme qu’il n’existe qu’une seule espèce','Elle ne parle jamais de la création'],0,'Le récit de Genèse attribue la diversité du vivant à la création divine.','Genèse 1:20-25','La Bible et la science'],
+  ['Quel phénomène atmosphérique est mentionné comme rappel de l’alliance après le Déluge ?', ['L’arc-en-ciel','La foudre','Le brouillard','La neige'],0,'L’arc-en-ciel est présenté comme signe de l’alliance avec Noé.','Genèse 9:12-16','La Bible et la science'],
+  ['Quel principe scientifique élémentaire est illustré par la gestion des déchets hors du camp ?', ['Limiter la contamination par une bonne hygiène','Créer de l’électricité','Mesurer la gravité','Produire du métal'],0,'Les règles de la Loi incluaient des mesures d’hygiène et d’assainissement.','Deutéronome 23:12-14','La Bible et la science'],
+  ['La Bible est-elle présentée comme un manuel scientifique ?', ['Non, mais elle affirme être exacte lorsqu’elle aborde certains sujets','Oui, elle remplace tous les manuels','Oui, elle donne toutes les formules modernes','Elle interdit toute étude de la nature'],0,'La Bible n’est pas un manuel de science, mais elle fait certaines affirmations sur la nature.','Job 38:1-41','La Bible et la science'],
+  // PERSONNAGES
+  ['Qui a caché les espions israélites à Jéricho ?', ['Rahab','Ruth','Esther','Déborah'],0,'Rahab a caché les deux espions et les a aidés à s’échapper.','Josué 2:1-21','Personnages'],
+  ['Quel homme a reçu le nom Israël après avoir lutté avec un ange ?', ['Jacob','Ésaü','Joseph','Isaac'],0,'Jacob a reçu le nom Israël.','Genèse 32:24-28','Personnages'],
+  ['Quelle femme a jugé Israël et a servi comme prophétesse ?', ['Déborah','Ruth','Anne','Miriam'],0,'Déborah est présentée comme prophétesse et juge.','Juges 4:4-5','Personnages'],
+  ['Qui a demandé à Dieu de lui donner un cœur obéissant plutôt que la richesse ?', ['Salomon','David','Saül','Ézéchias'],0,'Salomon a demandé la sagesse et un cœur obéissant pour juger le peuple.','1 Rois 3:5-12','Personnages'],
+  ['Quel homme a interprété le rêve de Nabuchodonosor concernant une grande statue ?', ['Daniel','Ézéchiel','Jérémie','Esdras'],0,'Daniel a expliqué le rêve de la statue.','Daniel 2:31-45','Personnages'],
+  ['Qui était la mère de Samuel ?', ['Anne','Élisabeth','Marie','Noémi'],0,'Anne a prié pour avoir un fils et l’a appelé Samuel.','1 Samuel 1:9-20','Personnages'],
+  ['Quel personnage a refusé de se prosterner devant la statue de Nabuchodonosor avec deux compagnons ?', ['Shadrak','Méphibosheth','Abner','Éli'],0,'Shadrak a refusé avec Méshak et Abed-Négo.','Daniel 3:12-18','Personnages'],
+  ['Qui a été appelé alors qu’il gardait les troupeaux de son père Jessé ?', ['David','Saül','Salomon','Samuel'],0,'David gardait les moutons de Jessé lorsqu’il a été choisi.','1 Samuel 16:11-13','Personnages'],
+  ['Quel homme a montré de la fidélité envers son ami David malgré l’opposition de son père ?', ['Jonathan','Joab','Abner','Nathan'],0,'Jonathan a soutenu David et a conclu une alliance d’amitié avec lui.','1 Samuel 18:1-4; 20:12-17','Personnages'],
+  ['Quelle femme a accueilli les espions et a demandé que sa famille soit épargnée ?', ['Rahab','Abigaïl','Houlda','Jézabel'],0,'Rahab a demandé la protection de sa famille.','Josué 2:12-14; 6:22-25','Personnages'],
+  ['Quel disciple était collecteur d’impôts avant de suivre Jésus ?', ['Matthieu','Pierre','Jean','André'],0,'Matthieu était assis au bureau des impôts lorsque Jésus l’a appelé.','Matthieu 9:9','Personnages'],
+  ['Quelle disciple de Joppé était aussi appelée Dorcas ?', ['Tabitha','Lydie','Priscille','Damaris'],0,'Tabitha est aussi appelée Dorcas dans Actes 9.','Actes 9:36','Personnages'],
+  // ÉVANGILES
+  ['Dans quelle ville Jésus est-il né ?', ['Bethléem','Nazareth','Jérusalem','Capernaüm'],0,'Matthieu et Luc situent la naissance de Jésus à Bethléem.','Matthieu 2:1; Luc 2:4-7','Évangiles'],
+  ['Quel miracle Jésus a-t-il accompli à Cana au début de son ministère selon Jean ?', ['Transformer de l’eau en vin','Marcher sur la mer','Multiplier des pains','Ressusciter Lazare'],0,'Jean rapporte le changement de l’eau en vin à Cana comme un signe de Jésus.','Jean 2:1-11','Évangiles'],
+  ['Qui a préparé le chemin devant Jésus en prêchant dans le désert ?', ['Jean le Baptiseur','Pierre','Nicodème','Zachée'],0,'Jean le Baptiseur a prêché dans le désert et préparé le chemin.','Matthieu 3:1-3','Évangiles'],
+  ['Quel apôtre a renié Jésus trois fois ?', ['Pierre','Jean','Thomas','André'],0,'Pierre a renié Jésus trois fois avant le chant du coq.','Matthieu 26:69-75','Évangiles'],
+  ['Quel homme a grimpé dans un arbre pour voir Jésus à Jéricho ?', ['Zachée','Bartimée','Jairus','Nicodème'],0,'Zachée est monté sur un sycomore pour voir Jésus.','Luc 19:1-10','Évangiles'],
+  ['Qui Jésus a-t-il ressuscité après quatre jours dans la tombe ?', ['Lazare','Étienne','Jairus','Tabitha'],0,'Lazare était dans la tombe depuis quatre jours lorsque Jésus l’a ressuscité.','Jean 11:38-44','Évangiles'],
+  ['Quel apôtre a douté de la résurrection de Jésus jusqu’à voir des preuves ?', ['Thomas','Pierre','Philippe','Matthieu'],0,'Thomas a demandé à voir les marques avant de croire.','Jean 20:24-29','Évangiles'],
+  ['Quel disciple a présenté à Jésus le garçon qui avait cinq pains et deux poissons ?', ['André','Philippe','Matthieu','Jacques'],0,'André a signalé le garçon à Jésus.','Jean 6:5-13','Évangiles'],
+  ['Quel homme a demandé à Jésus de guérir son serviteur et a montré une grande foi ?', ['Un centurion','Un pharisien','Un sadducéen','Un pêcheur'],0,'Un centurion a exprimé sa confiance dans l’autorité de Jésus.','Matthieu 8:5-13','Évangiles'],
+  ['Quelle femme a versé un parfum précieux sur Jésus avant sa mort ?', ['Marie de Béthanie','Marthe','Élisabeth','Salomé'],0,'Marie de Béthanie a utilisé un parfum précieux pour honorer Jésus.','Jean 12:1-8','Évangiles'],
+  ['Quelle prière Jésus a-t-il donnée comme modèle à ses disciples ?', ['Le Notre Père','La prière de Jabez','La prière de Salomon','La prière de Daniel'],0,'Jésus a donné un modèle de prière commençant par « Notre Père ».','Matthieu 6:9-13','Évangiles'],
+  ['Quel enseignement Jésus a-t-il donné sur le pardon ?', ['Pardonner généreusement','Ne jamais pardonner','Pardonner seulement aux riches','Pardonner uniquement une fois'],0,'Jésus a insisté sur la nécessité de pardonner à ceux qui se repentent.','Matthieu 18:21-35','Évangiles'],
+  // ROIS & PROPHÈTES
+  ['Quel roi a demandé la sagesse pour gouverner le peuple ?', ['Salomon','Saül','David','Josias'],0,'Salomon a demandé un cœur obéissant pour juger le peuple.','1 Rois 3:5-12','Rois & prophètes'],
+  ['Quel prophète a défié les prophètes de Baal au mont Carmel ?', ['Élie','Élisée','Jérémie','Amos'],0,'Élie a proposé l’épreuve du mont Carmel.','1 Rois 18:19-39','Rois & prophètes'],
+  ['Quel prophète a été avalé par un grand poisson après avoir fui sa mission ?', ['Jonas','Nahum','Habacuc','Amos'],0,'Jonas a fui puis a été envoyé à Ninive.','Jonas 1:1-17; 3:1-5','Rois & prophètes'],
+  ['Quel roi a fait lire le livre de la Loi retrouvé dans le temple ?', ['Josias','Manassé','Roboam','Omri'],0,'Josias a réagi lorsqu’on lui a lu le livre de la Loi.','2 Rois 22:8-13','Rois & prophètes'],
+  ['Quel prophète a succédé à Élie ?', ['Élisée','Isaïe','Jérémie','Samuel'],0,'Élisée a poursuivi le service prophétique après Élie.','2 Rois 2:9-15','Rois & prophètes'],
+  ['Quel prophète a annoncé à David qu’un de ses descendants régnerait durablement ?', ['Nathan','Élie','Amos','Malachie'],0,'Nathan a transmis à David une promesse concernant sa descendance royale.','2 Samuel 7:12-16','Rois & prophètes'],
+  ['Quel roi de Juda a demandé de l’aide à Dieu face à Sennachérib ?', ['Ézéchias','Josias','Achaz','Roboam'],0,'Ézéchias a prié lorsque Jérusalem était menacée.','2 Rois 19:14-20','Rois & prophètes'],
+  ['Quel prophète a vu une vallée remplie d’ossements dans une vision ?', ['Ézéchiel','Isaïe','Jérémie','Daniel'],0,'Ézéchiel a reçu la vision des ossements desséchés.','Ézéchiel 37:1-14','Rois & prophètes'],
+  ['Quel roi a régné sur les dix tribus après la division du royaume ?', ['Jéroboam','Roboam','David','Salomon'],0,'Jéroboam est devenu roi du royaume des dix tribus.','1 Rois 12:20','Rois & prophètes'],
+  ['Quel prophète a été envoyé à la veuve de Sarepta pendant une famine ?', ['Élie','Élisée','Jérémie','Michée'],0,'Élie a été envoyé à une veuve de Sarepta.','1 Rois 17:8-16','Rois & prophètes'],
+  ['Quel roi a été guéri après avoir prié et reçu un signe concernant son rétablissement ?', ['Ézéchias','David','Saül','Amazias'],0,'Ézéchias a prié et Dieu lui a accordé quinze années supplémentaires.','2 Rois 20:1-11','Rois & prophètes'],
+  ['Quel prophète a annoncé la naissance du Messie à Bethléem ?', ['Michée','Malachie','Amos','Nahum'],0,'Michée a annoncé que le futur dirigeant sortirait de Bethléem.','Michée 5:2','Rois & prophètes'],
+  // PROPHÉTIES
+  ['Quel prophète a annoncé qu’un dirigeant sortirait de Bethléem ?', ['Michée','Jonas','Amos','Élie'],0,'Michée a annoncé que le futur dirigeant sortirait de Bethléem.','Michée 5:2','Prophéties'],
+  ['Quel prophète a annoncé la destruction de Babylone ?', ['Isaïe','Jonas','Aggée','Malachie'],0,'Isaïe et Jérémie contiennent des prophéties concernant Babylone.','Isaïe 13:17-22; Jérémie 51:24-26','Prophéties'],
+  ['Quel roi perse est nommé à l’avance dans une prophétie d’Isaïe ?', ['Cyrus','Darius','Assuérus','Artaxerxès'],0,'Isaïe mentionne Cyrus avant son rôle historique dans le retour des exilés.','Isaïe 44:28–45:1','Prophéties'],
+  ['Quelle prophétie de Daniel décrit une succession de puissances mondiales ?', ['Daniel 2','Daniel 3','Daniel 6','Daniel 12'],0,'La statue du rêve de Nabuchodonosor représente une succession de royaumes.','Daniel 2:31-45','Prophéties'],
+  ['Quel livre contient une prophétie célèbre sur les « sept temps » ?', ['Daniel','Ruth','Marc','Actes'],0,'Daniel chapitre 4 rapporte le rêve de l’arbre et les sept temps.','Daniel 4:10-17','Prophéties'],
+  ['Quel prophète a annoncé une effusion de l’esprit sur toutes sortes de personnes ?', ['Joël','Nahum','Obadiah','Habaquq'],0,'Joël annonce une effusion de l’esprit et des manifestations prophétiques.','Joël 2:28-29','Prophéties'],
+  ['Quel prophète a parlé d’une nouvelle alliance ?', ['Jérémie','Amos','Jonas','Élie'],0,'Jérémie a annoncé une nouvelle alliance.','Jérémie 31:31-34','Prophéties'],
+  ['Quel prophète a annoncé que le descendant de David aurait un règne durable ?', ['Nathan','Élie','Élisée','Aggée'],0,'La promesse faite à David concerne un règne durable de sa descendance.','2 Samuel 7:12-16','Prophéties'],
+  ['Dans quelle partie de la Bible trouve-t-on de nombreuses visions prophétiques concernant des royaumes ?', ['Daniel','Ruth','Proverbes','Ecclésiaste'],0,'Daniel contient plusieurs visions de royaumes et de puissances.','Daniel 7–8','Prophéties'],
+  ['Quel livre décrit symboliquement une série d’événements futurs au moyen de visions ?', ['Révélation','Ruth','Lévitique','Néhémie'],0,'Révélation est présentée comme une révélation donnée au moyen de signes et de visions.','Révélation 1:1','Prophéties'],
+  ['Quel prophète a annoncé que « la lumière » se lèverait sur une région de Galilée ?', ['Isaïe','Malachie','Amos','Nahum'],0,'Isaïe annonce une grande lumière pour une région appelée Galilée des nations.','Isaïe 9:1-2; Matthieu 4:13-16','Prophéties'],
+  ['Quel psaume annonce qu’un descendant de David serait roi et prêtre selon un ordre particulier ?', ['Psaume 110','Psaume 1','Psaume 23','Psaume 150'],0,'Psaume 110 parle d’un roi assis à la droite de Dieu et d’un prêtre selon Melchisédek.','Psaume 110:1-4','Prophéties'],
+];
+
+export const categoryQuizExpansion: QuizQuestion[] = quizSeeds.map((s, i) => ({
+  id: `jwcat-quiz-${i + 1}`,
+  type: 'quiz',
+  question: s[0], answers: s[1], correctAnswer: s[2], explanation: s[3], reference: s[4], category: s[5], difficulty: s[6] || 'medium',
+}));
+
+const tfSeeds: Array<[string, boolean, string, string, string]> = [
+  ['La Bible présente Dieu comme une personne et non comme une force impersonnelle.',true,'Les récits bibliques décrivent Dieu comme une personne qui pense, parle, aime et agit.','Questions bibliques','Psaume 103:13; Jean 16:27'],
+  ['La Bible dit que la Terre doit rester pour toujours.',true,'Plusieurs passages présentent la Terre comme durablement habitée.','Questions bibliques','Psaume 37:29; Ecclésiaste 1:4'],
+  ['Selon Jésus, ses vrais disciples seraient reconnaissables à leur amour.',true,'Jésus a donné l’amour entre disciples comme signe distinctif.','Questions bibliques','Jean 13:34-35'],
+  ['La prière est présentée comme un moyen de parler à Dieu.',true,'La Bible encourage à s’adresser à Dieu dans la prière.','Questions bibliques','Philippiens 4:6'],
+  ['La Bible enseigne que tous les morts sont conscients.',false,'Elle compare la mort à un sommeil dans plusieurs passages et parle d’une résurrection future.','Questions bibliques','Ecclésiaste 9:5; Jean 11:11-14'],
+  ['Psaume 119:105 compare la parole de Dieu à une lampe.',true,'Le verset utilise cette image pour parler de direction.','Que veulent dire ces versets ?','Psaume 119:105'],
+  ['Matthieu 6:33 demande de chercher d’abord le Royaume de Dieu.',true,'Jésus encourage à donner la priorité au Royaume et à la justice de Dieu.','Que veulent dire ces versets ?','Matthieu 6:33'],
+  ['Proverbes 3:5-6 recommande de faire confiance à Dieu.',true,'Le passage invite à reconnaître Dieu dans toutes ses voies.','Que veulent dire ces versets ?','Proverbes 3:5-6'],
+  ['Jacques 1:19 recommande d’être lent à écouter.',false,'Le texte recommande d’être prompt à écouter et lent à parler.','Que veulent dire ces versets ?','Jacques 1:19'],
+  ['1 Corinthiens 13 décrit l’amour comme patient et bon.',true,'Paul donne plusieurs qualités concrètes de l’amour.','Que veulent dire ces versets ?','1 Corinthiens 13:4-7'],
+  ['Cyrus est nommé dans une prophétie d’Isaïe.',true,'Isaïe mentionne Cyrus dans le contexte du retour et de la reconstruction.','La Bible et l’Histoire','Isaïe 44:28–45:1'],
+  ['Néhémie a participé à la reconstruction des murailles de Jérusalem.',true,'Le livre de Néhémie raconte son rôle dans cette reconstruction.','La Bible et l’Histoire','Néhémie 2:17-18; 6:15'],
+  ['Les manuscrits anciens peuvent être comparés pour étudier la transmission du texte biblique.',true,'La comparaison des manuscrits est un outil important pour étudier la transmission.','La Bible et l’Histoire','Isaïe 40:8; Matthieu 5:18'],
+  ['Le livre de Ruth raconte le retour des exilés à Babylone.',false,'Ruth se situe bien avant l’exil à Babylone.','La Bible et l’Histoire','Ruth 1–4'],
+  ['La Bible contient des récits concernant Babylone, l’Assyrie, la Perse, la Grèce et Rome.',true,'Ces puissances apparaissent dans les récits ou prophéties bibliques.','La Bible et l’Histoire','Daniel 2:31-45; Luc 2:1'],
+  ['La Bible se présente comme un manuel scientifique complet.',false,'Elle n’est pas un manuel de science, même si elle fait des déclarations sur la nature.','La Bible et la science','Job 38–41'],
+  ['La Loi mosaïque comportait des mesures d’hygiène concernant les maladies contagieuses.',true,'Lévitique décrit notamment l’isolement et l’examen de certaines maladies.','La Bible et la science','Lévitique 13:1-5'],
+  ['Deutéronome 23:12-14 donne des instructions sur l’élimination des excréments humains.',true,'Le texte prévoit une zone hors du camp et des mesures pour recouvrir les excréments.','La Bible et la science','Deutéronome 23:12-14'],
+  ['Job 36:27-28 décrit l’eau qui se condense et tombe en pluie.',true,'Le passage évoque l’eau qui se transforme et tombe des nuages.','La Bible et la science','Job 36:27-28'],
+  ['Genèse 1:1 commence par l’idée d’un commencement des cieux et de la terre.',true,'Le récit s’ouvre sur la création des cieux et de la terre.','La Bible et la science','Genèse 1:1'],
+  ['Rahab a caché les espions israélites à Jéricho.',true,'Elle les a protégés et aidés à partir.','Personnages','Josué 2:1-21'],
+  ['Jonathan était le fils de Saül.',true,'Jonathan était le fils de Saül et l’ami de David.','Personnages','1 Samuel 18:1-4'],
+  ['Déborah était juge et prophétesse.',true,'Juges 4 la présente avec ces deux fonctions.','Personnages','Juges 4:4-5'],
+  ['Tabitha était aussi appelée Dorcas.',true,'Actes 9 donne les deux noms.','Personnages','Actes 9:36'],
+  ['Daniel a interprété le rêve de la grande statue.',true,'Daniel a expliqué le rêve de Nabuchodonosor.','Personnages','Daniel 2:31-45'],
+  ['Jésus est né à Jérusalem.',false,'Les récits de Matthieu et Luc situent sa naissance à Bethléem.','Évangiles','Matthieu 2:1; Luc 2:4-7'],
+  ['Jésus a transformé de l’eau en vin à Cana.',true,'Jean rapporte ce signe au début de son ministère.','Évangiles','Jean 2:1-11'],
+  ['Pierre a renié Jésus trois fois.',true,'Les quatre Évangiles rapportent ce reniement.','Évangiles','Matthieu 26:69-75'],
+  ['Thomas a demandé des preuves avant d’accepter le témoignage sur la résurrection.',true,'Jean raconte sa réaction après la résurrection.','Évangiles','Jean 20:24-29'],
+  ['Zachée est monté sur un sycomore pour voir Jésus.',true,'Il était petit et a grimpé dans un arbre pour voir passer Jésus.','Évangiles','Luc 19:1-4'],
+  ['Élie a affronté les prophètes de Baal au mont Carmel.',true,'Il a organisé cette confrontation pour montrer qui était le vrai Dieu.','Rois & prophètes','1 Rois 18:19-39'],
+  ['Élisée a succédé à Élie.',true,'Le récit dresse un lien direct entre les deux prophètes.','Rois & prophètes','2 Rois 2:9-15'],
+  ['Josias a fait lire le livre de la Loi retrouvé dans le temple.',true,'La lecture du livre a profondément marqué le roi.','Rois & prophètes','2 Rois 22:8-13'],
+  ['Jéroboam est devenu roi des dix tribus après la division du royaume.',true,'Il a régné sur le royaume du Nord.','Rois & prophètes','1 Rois 12:20'],
+  ['Michée a annoncé qu’un dirigeant sortirait de Bethléem.',true,'Michée 5:2 contient cette prophétie.','Prophéties','Michée 5:2'],
+  ['Cyrus est nommé à l’avance dans une prophétie d’Isaïe.',true,'Isaïe mentionne Cyrus dans un contexte prophétique.','Prophéties','Isaïe 44:28–45:1'],
+  ['Jérémie a annoncé une nouvelle alliance.',true,'Jérémie 31 contient cette promesse.','Prophéties','Jérémie 31:31-34'],
+  ['Joël a parlé d’une effusion de l’esprit.',true,'Joël 2:28-29 annonce cette effusion.','Prophéties','Joël 2:28-29'],
+  ['Révélation ne contient aucune vision symbolique.',false,'Le livre est présenté comme une révélation donnée au moyen de signes et de visions.','Prophéties','Révélation 1:1'],
+];
+
+export const categoryTrueFalseExpansion: TrueFalseQuestion[] = tfSeeds.map((s, i) => ({ id:`jwcat-tf-${i+1}`, type:'truefalse', statement:s[0], answer:s[1], explanation:s[2], category:s[3], reference:s[4], difficulty:'medium' }));
+
+const mysterySeeds: Array<[string,string[],string,string,string]> = [
+ ['La Bible',['Question très large sur Dieu','Prière','Royaume'], 'Questions bibliques','Matthieu 6:9-10','easy'],
+ ['Genèse 1:1',['Premier verset','Création','Cieux et terre'], 'Que veulent dire ces versets ?','Genèse 1:1','easy'],
+ ['Psaume 119:105',['Lampe','Chemin','Parole'], 'Que veulent dire ces versets ?','Psaume 119:105','easy'],
+ ['Cyrus',['Roi perse','Décret','Retour à Jérusalem'], 'La Bible et l’Histoire','Esdras 1:1-4','medium'],
+ ['Néhémie',['Murailles','Jérusalem','Reconstruction'], 'La Bible et l’Histoire','Néhémie 2–6','easy'],
+ ['L’arc-en-ciel',['Après le Déluge','Alliance','Signe'], 'La Bible et la science','Genèse 9:12-16','easy'],
+ ['Daniel',['Rêves','Royaumes','Fosse aux lions'], 'Personnages','Daniel 2; 6','easy'],
+ ['Zachée',['Jéricho','Sycomore','Jésus'], 'Évangiles','Luc 19:1-10','easy'],
+ ['Élie',['Carmel','Baal','Corbeaux'], 'Rois & prophètes','1 Rois 17–18','medium'],
+ ['Michée',['Prophète','Bethléem','Dirigeant'], 'Prophéties','Michée 5:2','medium'],
+ ['Jérémie',['Prophète','Nouvelle alliance','Juda'], 'Prophéties','Jérémie 31:31-34','medium'],
+ ['Tabitha',['Joppé','Dorcas','Pierre'], 'Personnages','Actes 9:36-42','medium'],
+];
+export const categoryMysteryExpansion: MysteryQuestion[] = mysterySeeds.map((s,i)=>({id:`jwcat-mystery-${i+1}`,type:'mystery',answer:s[0],clues:s[1],category:s[2],reference:s[3],difficulty:s[4] as Difficulty,explanation:`La réponse est ${s[0]}.`}));
+
+const timesUpSeeds: Array<[string,string[],string]> = [
+ ['Noé',['Arche','Déluge','Alliance'],'Questions bibliques'],
+ ['Genèse 1:1',['Commencement','Cieux','Terre'],'Que veulent dire ces versets ?'],
+ ['Cyrus',['Perse','Décret','Retour'],'La Bible et l’Histoire'],
+ ['Lévitique 13',['Maladie','Isolement','Prêtre'],'La Bible et la science'],
+ ['Rahab',['Jéricho','Espions','Cordon rouge'],'Personnages'],
+ ['Jésus',['Cana','Miracles','Disciples'],'Évangiles'],
+ ['Élie',['Carmel','Baal','Prophète'],'Rois & prophètes'],
+ ['Michée',['Bethléem','Prophétie','Dirigeant'],'Prophéties'],
+];
+export const categoryTimesUpExpansion: TimesUpQuestion[] = timesUpSeeds.map((s,i)=>({id:`jwcat-timesup-${i+1}`,type:'timesup',answer:s[0],clues:s[1],category:s[2],reference:s[2]==='Évangiles'?'Jean 2:1-11':s[2]==='Prophéties'?'Michée 5:2':s[2]==='Rois & prophètes'?'1 Rois 18:19-39':s[2]==='Personnages'?'Josué 2:1-21':s[2]==='La Bible et la science'?'Lévitique 13:1-5':s[2]==='La Bible et l’Histoire'?'Esdras 1:1-4':s[2]==='Que veulent dire ces versets ?'?'Genèse 1:1':'Genèse 6–9',difficulty:'medium'}));
+
+
+export const categoryQuoteExpansion: QuoteQuestion[] = [
+  {id:'jwcat-quote-1',type:'quote',category:'Questions bibliques',difficulty:'easy',quote:'Quel personnage a enseigné à ses disciples à demander que le Royaume de Dieu vienne ?',answers:['Jésus','Moïse','David','Paul'],correctAnswer:0,explanation:'Jésus a donné ce modèle de prière à ses disciples.',reference:'Matthieu 6:9-10'},
+  {id:'jwcat-quote-2',type:'quote',category:'Que veulent dire ces versets ?',difficulty:'easy',quote:'Quel personnage a comparé la parole de Dieu à une lampe qui guide ses pas ?',answers:['David','Salomon','Jésus','Pierre'],correctAnswer:0,explanation:'Cette expression se trouve dans un psaume attribué à David.',reference:'Psaume 119:105'},
+  {id:'jwcat-quote-3',type:'quote',category:'La Bible et l’Histoire',difficulty:'medium',quote:'Quel prophète a annoncé que Cyrus serait utilisé pour accomplir le projet de Jéhovah ?',answers:['Isaïe','Jérémie','Daniel','Esdras'],correctAnswer:0,explanation:'Isaïe a annoncé le rôle de Cyrus dans la reconstruction.',reference:'Isaïe 44:28'},
+  {id:'jwcat-quote-4',type:'quote',category:'La Bible et la science',difficulty:'medium',quote:'Quel homme a décrit la Terre comme étant suspendue sur rien ?',answers:['Job','Moïse','Salomon','Isaïe'],correctAnswer:0,explanation:'Job emploie cette image en parlant de la création.',reference:'Job 26:7'},
+  {id:'jwcat-quote-5',type:'quote',category:'Personnages',difficulty:'easy',quote:'Quelle femme a promis de rester avec Noémi et de partager son peuple ?',answers:['Ruth','Esther','Déborah','Anne'],correctAnswer:0,explanation:'Ruth exprime ainsi sa fidélité à Noémi.',reference:'Ruth 1:16-17'},
+  {id:'jwcat-quote-6',type:'quote',category:'Évangiles',difficulty:'easy',quote:'Quel homme a présenté Jésus comme l’Agneau de Dieu ?',answers:['Jean le Baptiseur','Pierre','André','Thomas'],correctAnswer:0,explanation:'Jean le Baptiseur désigne Jésus de cette façon.',reference:'Jean 1:29'},
+  {id:'jwcat-quote-7',type:'quote',category:'Rois & prophètes',difficulty:'medium',quote:'Quel prophète a demandé au peuple de cesser d’hésiter entre deux positions au mont Carmel ?',answers:['Élie','Élisée','Samuel','Nathan'],correctAnswer:0,explanation:'Élie interpelle ainsi le peuple sur le mont Carmel.',reference:'1 Rois 18:21'},
+  {id:'jwcat-quote-8',type:'quote',category:'Prophéties',difficulty:'medium',quote:'Quel prophète a annoncé la naissance d’un enfant destiné à exercer une autorité particulière ?',answers:['Isaïe','Michée','Daniel','Jérémie'],correctAnswer:0,explanation:'Isaïe annonce la naissance d’un futur dirigeant.',reference:'Isaïe 9:5-6'},
+];
+
+export const categoryChronologyExpansion: ChronologyQuestion[] = [
+  {id:'jwcat-chrono-1',type:'chronology',category:'Questions bibliques',difficulty:'easy',events:['Création d’Adam','Déluge','Don de la Loi'],correctOrder:[0,1,2],explanation:'Ces événements apparaissent dans cet ordre général dans le récit biblique.',reference:'Genèse 1–9; Exode 19–20'},
+  {id:'jwcat-chrono-2',type:'chronology',category:'Que veulent dire ces versets ?',difficulty:'easy',events:['Genèse 1:1','Exode 20:12','Psaume 119:105'],correctOrder:[0,1,2],explanation:'Les passages appartiennent à des périodes successives de l’histoire biblique.',reference:'Genèse 1:1; Exode 20:12; Psaume 119:105'},
+  {id:'jwcat-chrono-3',type:'chronology',category:'La Bible et l’Histoire',difficulty:'medium',events:['Exil à Babylone','Décret de Cyrus','Reconstruction du temple'],correctOrder:[0,1,2],explanation:'Le retour et la reconstruction suivent l’exil à Babylone.',reference:'2 Rois 25:8-12; Esdras 1:1-4; 6:14-15'},
+  {id:'jwcat-chrono-4',type:'chronology',category:'La Bible et la science',difficulty:'easy',events:['Création','Déluge','Lois d’hygiène d’Israël'],correctOrder:[0,1,2],explanation:'Ces récits et règles apparaissent successivement dans le récit biblique.',reference:'Genèse 1; 6–9; Lévitique 13; Deutéronome 23'},
+  {id:'jwcat-chrono-5',type:'chronology',category:'Personnages',difficulty:'easy',events:['Abraham quitte son pays','David devient roi','Daniel est emmené à Babylone'],correctOrder:[0,1,2],explanation:'Ces personnages appartiennent à des périodes successives.',reference:'Genèse 12:1-4; 2 Samuel 5:3-5; Daniel 1:1-6'},
+  {id:'jwcat-chrono-6',type:'chronology',category:'Évangiles',difficulty:'easy',events:['Naissance de Jésus','Baptême de Jésus','Mort et résurrection de Jésus'],correctOrder:[0,1,2],explanation:'Les récits évangéliques suivent cette progression générale.',reference:'Luc 2:1-20; Matthieu 3:13-17; Luc 23–24'},
+  {id:'jwcat-chrono-7',type:'chronology',category:'Rois & prophètes',difficulty:'medium',events:['David devient roi','Élie sert comme prophète','Josias réforme le culte'],correctOrder:[0,1,2],explanation:'David précède les prophètes Élie et Élisée, puis les réformes de Josias.',reference:'2 Samuel 5; 1 Rois 17–18; 2 Rois 22–23'},
+  {id:'jwcat-chrono-8',type:'chronology',category:'Prophéties',difficulty:'medium',events:['Promesse à David','Prophétie de Michée','Vision de Daniel'],correctOrder:[0,1,2],explanation:'Ces prophéties appartiennent à des périodes différentes et successives.',reference:'2 Samuel 7:12-16; Michée 5:2; Daniel 7'},
+];
+
+export const categoryIntruderExpansion: IntruderQuestion[] = [
+  {id:'jwcat-intruder-1',type:'intruder',category:'Questions bibliques',difficulty:'easy',items:['Prière','Foi','Espérance','Pharaon'],intruder:3,explanation:'Les trois premiers sont des thèmes bibliques ; Pharaon est une personne.',reference:'Hébreux 11:1; 1 Thessaloniciens 5:17-18'},
+  {id:'jwcat-intruder-2',type:'intruder',category:'Que veulent dire ces versets ?',difficulty:'easy',items:['Psaume 23:4','Psaume 119:105','Proverbes 3:5-6','Actes 27:1'],intruder:3,explanation:'Les trois premiers font partie des passages étudiés sur le sens des versets ; Actes 27 est un récit historique.',reference:'Psaume 23:4; Psaume 119:105; Proverbes 3:5-6'},
+  {id:'jwcat-intruder-3',type:'intruder',category:'La Bible et l’Histoire',difficulty:'medium',items:['Babylone','Assyrie','Empire médo-perse','Galilée'],intruder:3,explanation:'Les trois premiers sont des puissances impériales majeures ; la Galilée est une région.',reference:'Daniel 2:31-45; 2 Rois 17:5-6'},
+  {id:'jwcat-intruder-4',type:'intruder',category:'La Bible et la science',difficulty:'easy',items:['Cycle de l’eau','Hygiène','Observation de la nature','Généalogie'],intruder:3,explanation:'La généalogie n’est pas un exemple scientifique ou d’hygiène.',reference:'Job 36:27-28; Deutéronome 23:12-14; Proverbes 6:6-8'},
+  {id:'jwcat-intruder-5',type:'intruder',category:'Personnages',difficulty:'easy',items:['Rahab','Ruth','Esther','Bethléem'],intruder:3,explanation:'Les trois premiers sont des femmes ; Bethléem est une ville.',reference:'Josué 2; Ruth 1; Esther 4'},
+  {id:'jwcat-intruder-6',type:'intruder',category:'Évangiles',difficulty:'easy',items:['Pierre','Thomas','Matthieu','Cyrus'],intruder:3,explanation:'Les trois premiers sont des disciples de Jésus ; Cyrus est un roi perse.',reference:'Matthieu 4:18-22; Jean 20:24-29; Esdras 1:1'},
+  {id:'jwcat-intruder-7',type:'intruder',category:'Rois & prophètes',difficulty:'easy',items:['Élie','Élisée','Michée','Zachée'],intruder:3,explanation:'Les trois premiers sont des prophètes ; Zachée apparaît dans les Évangiles.',reference:'1 Rois 17; 2 Rois 2; Michée 1:1; Luc 19:1-10'},
+  {id:'jwcat-intruder-8',type:'intruder',category:'Prophéties',difficulty:'medium',items:['Michée 5:2','Isaïe 44:28','Jérémie 31:31','Ruth 4:13'],intruder:3,explanation:'Les trois premiers sont des passages prophétiques ; Ruth 4 est un récit historique.',reference:'Michée 5:2; Isaïe 44:28; Jérémie 31:31; Ruth 4:13'},
+];
+
+export const categoryChallengeExpansion: Challenge[] = [
+  {id:'jwcat-challenge-1',type:'challenge',category:'Questions bibliques',difficulty:'easy',prompt:'En 10 secondes, citez trois sujets sur lesquels la Bible donne des conseils pratiques.',seconds:10},
+  {id:'jwcat-challenge-2',type:'challenge',category:'Que veulent dire ces versets ?',difficulty:'easy',prompt:'En 10 secondes, citez deux versets connus et leur thème principal.',seconds:10},
+  {id:'jwcat-challenge-3',type:'challenge',category:'La Bible et l’Histoire',difficulty:'medium',prompt:'En 10 secondes, citez trois lieux ou empires liés à l’histoire biblique.',seconds:10},
+  {id:'jwcat-challenge-4',type:'challenge',category:'La Bible et la science',difficulty:'easy',prompt:'En 10 secondes, citez deux exemples où la Bible parle de la nature.',seconds:10},
+  {id:'jwcat-challenge-5',type:'challenge',category:'Personnages',difficulty:'easy',prompt:'En 10 secondes, citez cinq personnages bibliques.',seconds:10},
+  {id:'jwcat-challenge-6',type:'challenge',category:'Évangiles',difficulty:'easy',prompt:'En 10 secondes, citez quatre disciples de Jésus.',seconds:10},
+  {id:'jwcat-challenge-7',type:'challenge',category:'Rois & prophètes',difficulty:'medium',prompt:'En 10 secondes, citez trois rois ou prophètes d’Israël.',seconds:10},
+  {id:'jwcat-challenge-8',type:'challenge',category:'Prophéties',difficulty:'medium',prompt:'En 10 secondes, citez trois prophètes bibliques.',seconds:10},
+];
