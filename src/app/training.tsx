@@ -1,5 +1,5 @@
 import React, { useEffect, useMemo, useState } from 'react';
-import { ActivityIndicator, ScrollView, Text, View } from 'react-native';
+import { ActivityIndicator, Pressable, ScrollView, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { AppButton } from '@/components/AppButton';
 import { colors } from '@/theme/colors';
@@ -81,11 +81,12 @@ export default function TrainingScreen() {
 
   if (!started) return <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={{ color: colors.accent, fontSize: 12, fontWeight: '800', letterSpacing: 2 }}>ENTRAÎNEMENT</Text>
-    <Text style={styles.title}>Progresse à ton rythme</Text>
+    <Text style={styles.title}>Entraîne-toi</Text>
     <Text style={styles.subtitle}>10 questions, un score personnel et une progression enregistrée sur cet appareil.</Text>
+    <View style={[styles.autoCard,{marginTop:18}]}><View style={styles.autoBadge}><Text style={{color:colors.bg,fontWeight:'900'}}>✓</Text></View><View style={{flex:1}}><Text style={styles.rowTitle}>Session intelligente</Text><Text style={styles.rowSubtitle}>Les questions déjà ratées sont privilégiées pour vous aider à progresser.</Text></View></View>
 
-    <Text style={[styles.sectionTitle, { marginTop: 28 }]}>Catégorie</Text>
-    <View style={{ gap: 9 }}>{categories.map(x => <AppButton key={x} title={x} onPress={() => setCategory(x)} variant={category === x ? 'primary' : 'secondary'} />)}</View>
+    <Text style={[styles.sectionTitle, { marginTop: 24 }]}>Catégorie</Text>
+    <View style={styles.wrapRow}>{categories.map(x => <Pressable key={x} onPress={() => setCategory(x)} style={[styles.filterChip, category===x && styles.filterChipActive]}><Text style={[styles.filterChipText,category===x&&{color:colors.bg}]}>{x}</Text></Pressable>)}</View>
     <Text style={[styles.sectionTitle, { marginTop: 24 }]}>Difficulté</Text>
     <View style={{ flexDirection: 'row', gap: 8 }}>{difficulties.map(([id, label]) => <AppButton key={id} title={label} onPress={() => setDifficulty(id)} variant={difficulty === id ? 'primary' : 'secondary'} style={{ flex: 1 }} />)}</View>
     {error && <View style={[styles.card, { marginTop: 18, borderColor: colors.danger }]}><Text style={{ color: colors.danger, fontWeight: '800' }}>{error}</Text></View>}

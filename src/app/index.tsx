@@ -2,74 +2,82 @@ import React from 'react';
 import { Platform, Pressable, ScrollView, Text, View } from 'react-native';
 import { router } from 'expo-router';
 import { Logo } from '@/components/Logo';
-import { AppButton } from '@/components/AppButton';
 import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 
-const modes = [
-  ['⚡', 'Défi rapide', '10 secondes pour marquer des points.', '/game?modes=challenge&duration=1&teams=Équipe%20A|Équipe%20B'],
-  ['🧠', 'Entraînement', '10 questions pour progresser.', '/training'],
-  ['📈', 'Mes progrès', 'Séries, réussite et catégories.', '/progress'],
-  ['🏆', 'Classement', 'Les meilleurs scores sur cet appareil.', '/scores'],
-];
-
 export default function HomeScreen() {
   return (
-    <ScrollView style={styles.screen} contentContainerStyle={[styles.content, { justifyContent: 'center', minHeight: '100%' as any }]}>
-      <View style={{ alignItems: 'center', marginTop: 34 }}>
+    <ScrollView style={styles.screen} contentContainerStyle={[styles.content, { paddingTop: 24, paddingBottom: 40 }]}>
+      <View style={styles.homeHeader}>
         <Logo />
-        <View style={{ marginTop: 34, width: 74, height: 74, borderRadius: 24, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.accent, alignItems: 'center', justifyContent: 'center' }}>
-          <Text style={{ color: colors.accent, fontSize: 28 }}>✦</Text>
-        </View>
-        <Text style={[styles.eyebrow, { marginTop: 28, textAlign: 'center' }]}>MAÎTRE DE JEU</Text>
-        <Text style={[styles.title, { textAlign: 'center', marginTop: 8 }]}>Prêt à lancer la partie ?</Text>
-        <Text style={[styles.subtitle, { textAlign: 'center', maxWidth: 360, marginTop: 10 }]}>Une personne garde le téléphone, anime les manches, révèle les réponses et valide les points. Les équipes jouent autour.</Text>
+        <Pressable onPress={() => router.push('/settings')} style={styles.iconButton} accessibilityRole="button" accessibilityLabel="Paramètres">
+          <Text style={{ color: colors.accent2, fontSize: 20 }}>⚙</Text>
+        </Pressable>
       </View>
 
-      <View style={[styles.glowCard, { marginTop: 30 }]}>
-        <Text style={styles.eyebrow}>COMMENT ÇA MARCHE</Text>
-        <View style={{ gap: 13, marginTop: 14 }}>
-          {['Choisir le maître de jeu', 'Créer les équipes et les modes', 'Révéler puis valider chaque réponse', 'Faire monter les scores jusqu’à la finale'].map((item, i) => (
-            <View key={item} style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <View style={{ width: 30, height: 30, borderRadius: 15, backgroundColor: colors.bg, borderWidth: 1, borderColor: colors.border, alignItems: 'center', justifyContent: 'center', marginRight: 10 }}>
-                <Text style={{ color: colors.accent, fontWeight: '900' }}>{i + 1}</Text>
-              </View>
-              <Text style={{ color: colors.text, fontSize: 14, fontWeight: '700', flex: 1 }}>{item}</Text>
-            </View>
-          ))}
+      <View style={styles.hero}>
+        <Text style={styles.heroKicker}>LE JEU BIBLIQUE POUR VOS SOIRÉES</Text>
+        <Text style={styles.heroTitle}>Une partie ?</Text>
+        <Text style={styles.heroSubtitle}>Répondez, devinez, défiez-vous. Bible Party s’occupe du reste.</Text>
+
+        <View style={styles.heroArt}>
+          <View style={styles.heroBook}><Text style={{ color: colors.accent2, fontSize: 42 }}>✦</Text></View>
+          <View style={[styles.floatingCard, { transform: [{ rotate: '-10deg' }] }]}><Text style={styles.floatingIcon}>?</Text></View>
+          <View style={[styles.floatingCard, { transform: [{ rotate: '8deg' }], marginLeft: 70, marginTop: -46 }]}><Text style={styles.floatingIcon}>★</Text></View>
+          <View style={[styles.floatingCard, { transform: [{ rotate: '14deg' }], marginLeft: 132, marginTop: -34 }]}><Text style={styles.floatingIcon}>⚡</Text></View>
         </View>
-        <AppButton title="Choisir le maître de jeu  →" onPress={() => router.push('/setup')} style={{ marginTop: 22 }} />
       </View>
 
-      <View style={{ marginTop: 18, alignItems: 'center' }}>
-        <Text style={{ color: colors.muted, fontSize: 11 }}>13 modes · 2 à 4 équipes · hors ligne</Text>
-      </View>
-
-      {Platform.OS === 'web' && (
-        <View style={{ marginTop: 22, padding: 16, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.accent }}>
-          <Text style={[styles.eyebrow, { color: colors.accent }]}>IPHONE · INSTALLATION GRATUITE</Text>
-          <Text style={{ color: colors.text, fontSize: 14, fontWeight: '800', marginTop: 7 }}>Ajoutez Bible Party à votre écran d’accueil</Text>
-          <Text style={{ color: colors.muted, fontSize: 12.5, lineHeight: 19, marginTop: 6 }}>Dans Safari sur iPhone : touchez Partager, puis « Sur l’écran d’accueil ». Bible Party s’ouvrira ensuite comme une application.</Text>
+      <Pressable
+        onPress={() => router.push('/setup')}
+        style={({ pressed }) => [styles.playButton, pressed && { opacity: 0.9, transform: [{ scale: 0.985 }] }]}
+        accessibilityRole="button"
+      >
+        <View style={styles.playIcon}><Text style={{ color: colors.bg, fontSize: 22 }}>▶</Text></View>
+        <View style={{ flex: 1 }}>
+          <Text style={styles.playTitle}>JOUER</Text>
+          <Text style={styles.playSubtitle}>Lancer une nouvelle partie</Text>
         </View>
-      )}
+        <Text style={{ color: colors.bg, fontSize: 25, fontWeight: '900' }}>→</Text>
+      </Pressable>
 
-      {Platform.OS === 'web' && (
-        <View style={{ marginTop: 14, padding: 16, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
-          <Text style={[styles.eyebrow, { color: colors.accent }]}>ANDROID · INSTALLATION GRATUITE</Text>
-          <Text style={{ color: colors.text, fontSize: 14, fontWeight: '800', marginTop: 7 }}>Télécharger Bible Party sur Android</Text>
-          <Text style={{ color: colors.muted, fontSize: 12.5, lineHeight: 19, marginTop: 6 }}>Téléchargez l’application Android puis installez le fichier APK sur votre téléphone.</Text>
-          <Pressable
-            onPress={() => { window.location.href = '/bible-party/bible-party-1.7.6.apk'; }}
-            style={{ marginTop: 12, minHeight: 48, borderRadius: 14, backgroundColor: colors.accent, alignItems: 'center', justifyContent: 'center', paddingHorizontal: 16 }}
-          >
-            <Text style={{ color: colors.bg, fontSize: 14, fontWeight: '900' }}>Télécharger l’APK Android</Text>
+      <Pressable onPress={() => router.push('/game?modes=challenge&duration=1&teams=Équipe%20A|Équipe%20B')} style={({ pressed }) => [styles.quickCard, pressed && { opacity: 0.88 }]}>
+        <View style={styles.quickIcon}><Text style={{ color: colors.accent2, fontSize: 24 }}>⚡</Text></View>
+        <View style={{ flex: 1 }}><Text style={styles.quickTitle}>Défi rapide</Text><Text style={styles.quickSubtitle}>Une manche · 2 minutes</Text></View>
+        <Text style={{ color: colors.muted, fontSize: 22 }}>→</Text>
+      </Pressable>
+
+      <View style={styles.homeGrid}>
+        {[
+          ['🧠', 'Entraînement', 'Se préparer', '/training'],
+          ['🏆', 'Scores', 'Voir les résultats', '/scores'],
+          ['👥', 'Équipes', 'Jouer ensemble', '/setup'],
+        ].map(([icon, title, sub, path]) => (
+          <Pressable key={title} onPress={() => router.push(path as never)} style={({ pressed }) => [styles.homeTile, pressed && { opacity: 0.86, transform: [{ scale: 0.985 }] }]}>
+            <Text style={styles.tileIcon}>{icon}</Text>
+            <Text style={styles.tileTitle}>{title}</Text>
+            <Text style={styles.tileSubtitle}>{sub}</Text>
           </Pressable>
+        ))}
+      </View>
+
+      <View style={styles.homeTagline}><View style={styles.tagLine} /><Text style={styles.tagText}>PLUS QU’UN JEU · UNE AVENTURE</Text><View style={styles.tagLine} /></View>
+
+      {Platform.OS === 'web' && (
+        <View style={styles.downloadCard}>
+          <Text style={styles.eyebrow}>INSTALLATION GRATUITE</Text>
+          <Text style={styles.downloadTitle}>Bible Party dans votre poche</Text>
+          <Text style={styles.downloadText}>Sur iPhone, ajoutez le site à l’écran d’accueil depuis Safari. Sur Android, téléchargez l’APK.</Text>
+          <View style={{ gap: 9, marginTop: 13 }}>
+            <View style={styles.downloadMini}><Text style={styles.downloadMiniLabel}>IPHONE</Text><Text style={styles.downloadMiniText}>Safari → Partager → Sur l’écran d’accueil</Text></View>
+            <Pressable onPress={() => { window.location.href = '/bible-party/bible-party-1.7.6.apk'; }} style={styles.downloadButton} accessibilityRole="button">
+              <Text style={{ color: colors.bg, fontWeight: '900' }}>ANDROID · Télécharger l’APK</Text>
+            </Pressable>
+          </View>
         </View>
       )}
 
-      <View style={{ marginTop: 28, paddingTop: 18, borderTopWidth: 1, borderTopColor: colors.border }}>
-        <Text style={{ color: colors.muted, fontSize: 10.5, lineHeight: 17, textAlign: 'center' }}>Bible Party est une application indépendante. Elle n’est pas produite, approuvée, parrainée ou affiliée aux Témoins de Jéhovah.</Text>
-      </View>
+      <Text style={styles.disclaimer}>Bible Party est une application indépendante. Elle n’est pas produite, approuvée, parrainée ou affiliée aux Témoins de Jéhovah.</Text>
     </ScrollView>
   );
 }

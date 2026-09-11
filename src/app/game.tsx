@@ -346,15 +346,23 @@ export default function GameScreen() {
     <View style={styles.screen}>
       <ScrollView contentContainerStyle={[styles.content, { paddingTop: 10, paddingBottom: 28 }]}>
         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
+          <View style={{ flexDirection: 'row', alignItems: 'center', gap: 8 }}>
+            <View style={{ width: 30, height: 30, borderRadius: 10, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border, alignItems: 'center', justifyContent: 'center' }}>
+              <Text style={{ color: colors.accent, fontSize: 14, fontWeight: '900' }}>✦</Text>
+            </View>
+            <Text style={{ color: colors.muted, fontSize: 9, fontWeight: '900', letterSpacing: 1.5 }}>BIBLE PARTY</Text>
+          </View>
+          <View style={{ minWidth: 82, alignItems: 'center', backgroundColor: colors.surface2, borderWidth: 1, borderColor: gameSecondsLeft <= 60 ? colors.danger : colors.border, borderRadius: 15, paddingHorizontal: 10, paddingVertical: 7 }}>
+            <Text style={{ color: colors.muted, fontSize: 8, fontWeight: '900', letterSpacing: 1.1 }}>TEMPS</Text>
+            <Text style={{ color: gameSecondsLeft <= 60 ? colors.danger : colors.accent, fontSize: 21, fontWeight: '900' }}>{formatClock(gameSecondsLeft)}</Text>
+          </View>
+        </View>
+        <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginBottom: 10 }}>
           <View style={{ flex: 1, paddingRight: 10 }}>
             <Text style={styles.eyebrow}>{isFinale ? '⚡ FINALE' : `MANCHE ${roundIndex + 1} / ${roundTarget}`}</Text>
             <Animated.Text style={{ color: colors.text, fontSize: 25, lineHeight: 29, fontWeight: '900', transform: [{ scale: scorePulse }] }}>{teams[activeTeam]?.name}</Animated.Text>
             <Text style={{ color: colors.accent2, fontSize: 12, fontWeight: '900', marginTop: 2 }}>{labels[mode]} · {teams[activeTeam]?.score ?? 0} PTS</Text>
             <Text style={{ color: colors.muted, fontSize: 10, marginTop: 3 }}>Maître : {hostName}</Text>
-          </View>
-          <View style={{ minWidth: 82, alignItems: 'center', backgroundColor: colors.surface2, borderWidth: 1, borderColor: gameSecondsLeft <= 60 ? colors.danger : colors.border, borderRadius: 15, paddingHorizontal: 10, paddingVertical: 7 }}>
-            <Text style={{ color: colors.muted, fontSize: 8, fontWeight: '900', letterSpacing: 1.1 }}>TEMPS</Text>
-            <Text style={{ color: gameSecondsLeft <= 60 ? colors.danger : colors.accent, fontSize: 21, fontWeight: '900' }}>{formatClock(gameSecondsLeft)}</Text>
           </View>
         </View>
         <ScoreBar teams={teams} activeTeam={activeTeam} />

@@ -7,149 +7,67 @@ import { styles } from '@/theme/styles';
 import { getCategoryQuestionCount, setupCategoryFilters } from '@/data/catalog';
 
 const gameModeGroups = [
-  {
-    title: 'CONNAISSANCE',
-    subtitle: 'Répondre, reconnaître et réfléchir',
-    modes: [
-      ['quiz', 'Quiz', 'Questions à choix multiples', 'Q'],
-      ['truefalse', 'Vrai / Faux', 'Répondre en un geste', 'V/F'],
-      ['quote', 'Qui est-ce ?', 'Reconnaître le personnage', '“”'],
-      ['chronology', 'Chronologie', 'Remettre dans l’ordre', '↕'],
-    ],
-  },
-  {
-    title: 'FAIRE DEVINER',
-    subtitle: 'Indices, cartes et mots à faire trouver',
-    modes: [
-      ['mystery', 'Qui suis-je ?', 'Indices progressifs', 'M'],
-      ['timesup', 'Time’s Up', 'Faire deviner une carte', 'T'],
-      ['threeclues', '3 indices', 'Trouver le plus vite possible', '3'],
-      ['forbidden', 'Mot interdit', 'Faire deviner sans certains mots', '✕'],
-    ],
-  },
-  {
-    title: 'DÉFIS',
-    subtitle: 'Pression, duel et prise de risque',
-    modes: [
-      ['challenge', 'Défi 10 secondes', 'Le chrono met la pression', '10'],
-      ['intruder', 'Intrus', 'Trouver l’élément différent', '✦'],
-      ['faceoff', 'Face-à-face', 'Deux équipes, une réponse', 'VS'],
-      ['risk', 'Mise à risque', 'Miser avant de répondre', '⚡'],
-    ],
-  },
+  { title: 'CONNAISSANCE', subtitle: 'Répondre, reconnaître et réfléchir', modes: [['quiz','Quiz','Q'],['truefalse','Vrai / Faux','✓'],['quote','Qui est-ce ?','“”'],['chronology','Chronologie','↕']] },
+  { title: 'FAIRE DEVINER', subtitle: 'Indices, cartes et mots à faire trouver', modes: [['mystery','Qui suis-je ?','M'],['timesup','Time’s Up','T'],['threeclues','3 indices','3'],['forbidden','Mot interdit','✕']] },
+  { title: 'DÉFIS', subtitle: 'Pression, duel et prise de risque', modes: [['challenge','Défi 10 secondes','10'],['intruder','Intrus','✦'],['faceoff','Face-à-face','VS'],['risk','Mise à risque','⚡']] },
 ] as const;
 const gameModes = gameModeGroups.flatMap(group => group.modes.map(mode => mode[0]));
-const difficulties = [['all', 'Tous'], ['easy', 'Facile'], ['medium', 'Intermédiaire'], ['hard', 'Expert']] as const;
+const difficulties = [['all','Tous'],['easy','Facile'],['medium','Intermédiaire'],['hard','Expert']] as const;
 
 export default function SetupScreen() {
-  const [hostName, setHostName] = useState('Maître de jeu');
   const [teamsCount, setTeamsCount] = useState(2);
   const [teamNames, setTeamNames] = useState(['Équipe David', 'Équipe Paul', 'Équipe Ruth', 'Équipe Esther']);
   const [duration, setDuration] = useState(45);
-  const [selected, setSelected] = useState<string[]>(['quiz', 'mystery', 'truefalse']);
   const [categories, setCategories] = useState<string[]>([]);
-  const [difficulty, setDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard'>('all');
+  const [difficulty, setDifficulty] = useState<'all'|'easy'|'medium'|'hard'>('all');
+  const [selected, setSelected] = useState<string[]>(gameModes);
+  const [hostName, setHostName] = useState('Maître de jeu');
+  const [customize, setCustomize] = useState(false);
+  const [renameTeams, setRenameTeams] = useState(false);
   const names = useMemo(() => teamNames.slice(0, teamsCount), [teamNames, teamsCount]);
 
   const toggle = (id: string) => setSelected(v => v.includes(id) ? v.filter(x => x !== id) : [...v, id]);
   const toggleCategory = (id: string) => setCategories(v => v.includes(id) ? v.filter(x => x !== id) : [...v, id]);
   const start = () => {
-    if (!selected.length) return;
+    const modes = selected.length ? selected : gameModes;
     const clean = names.map((x, i) => (x.trim().replace(/[|]/g, ' ') || `Équipe ${String.fromCharCode(65 + i)}`).slice(0, 28));
-    router.push({ pathname: '/game', params: { modes: selected.join(','), teams: clean.join('|'), duration: String(duration), categories: categories.join(','), difficulty, host: hostName.trim() || 'Maître de jeu' } });
+    router.push({ pathname: '/game', params: { modes: modes.join(','), teams: clean.join('|'), duration: String(duration), categories: categories.join(','), difficulty, host: hostName.trim() || 'Maître de jeu' } });
   };
 
   return (
-    <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
-      <View style={[styles.topRow, { marginBottom: 24 }]}>
-        <View><Text style={styles.eyebrow}>NOUVELLE PARTIE</Text><Text style={{ color: colors.text, fontSize: 12, fontWeight: '700', marginTop: 4 }}>CONFIGURATION RAPIDE</Text></View>
-        <Text style={{ color: colors.accent, fontSize: 22, fontWeight: '900' }}>01</Text>
-      </View>
-      <Text style={styles.title}>Prépare la soirée.</Text>
-      <Text style={styles.subtitle}>Quelques choix, puis on lance. Tu peux tout changer avant de commencer.</Text>
+    <ScrollView style={styles.screen} contentContainerStyle={[styles.content, { paddingBottom: 50 }]}>
+      <View style={styles.setupHeader}><Pressable onPress={() => router.back()}><Text style={styles.backText}>‹</Text></Pressable><View style={{ flex: 1, marginLeft: 12 }}><Text style={styles.eyebrow}>NOUVELLE PARTIE</Text><Text style={styles.setupHeaderTitle}>C’est parti.</Text></View><Text style={styles.setupStep}>01</Text></View>
+      <Text style={styles.subtitle}>Quelques choix. Puis le jeu prend le relais.</Text>
 
-      <Text style={[styles.sectionTitle, { marginTop: 30 }]}>01 · Maître de jeu</Text>
-      <View style={styles.card}>
-        <Text style={{ color: colors.muted, fontSize: 12, lineHeight: 18, marginBottom: 10 }}>Cette personne garde le téléphone pendant toute la partie.</Text>
-        <TextInput value={hostName} onChangeText={setHostName} placeholder="Nom du maître de jeu" placeholderTextColor={colors.muted} style={{ backgroundColor: colors.bg, borderColor: colors.border, borderWidth: 1, borderRadius: 15, paddingHorizontal: 14, height: 52, color: colors.text, fontSize: 15, fontWeight: '700' }} />
+      <Text style={[styles.sectionTitle, { marginTop: 28 }]}>QUI JOUE ?</Text>
+      <View style={styles.choiceGrid}>
+        {[2,3,4].map(n => <Pressable key={n} onPress={() => setTeamsCount(n)} style={[styles.choiceCard, teamsCount === n && styles.choiceCardActive]}><Text style={[styles.choiceNumber, teamsCount === n && { color: colors.bg }]}>{n}</Text><Text style={[styles.choiceLabel, teamsCount === n && { color: colors.bg }]}>équipes</Text></Pressable>)}
       </View>
 
-      <Text style={[styles.sectionTitle, { marginTop: 26 }]}>02 · Équipes</Text>
-      <View style={styles.card}>
-        <View style={{ flexDirection: 'row', gap: 8 }}>
-          {[2, 3, 4].map(n => (
-            <Pressable key={n} onPress={() => setTeamsCount(n)} style={{ flex: 1, minHeight: 50, borderRadius: 15, borderWidth: 1, borderColor: teamsCount === n ? colors.accent : colors.border, backgroundColor: teamsCount === n ? colors.accent : colors.surface2, alignItems: 'center', justifyContent: 'center' }}>
-              <Text style={{ color: teamsCount === n ? colors.bg : colors.text, fontSize: 17, fontWeight: '900' }}>{n}</Text>
-            </Pressable>
-          ))}
-        </View>
-        <View style={{ gap: 9, marginTop: 12 }}>
-          {names.map((name, i) => <TextInput key={i} value={name} onChangeText={v => setTeamNames(old => old.map((x, j) => j === i ? v : x))} placeholder={`Équipe ${i + 1}`} placeholderTextColor={colors.muted} style={{ backgroundColor: colors.bg, borderColor: colors.border, borderWidth: 1, borderRadius: 15, paddingHorizontal: 14, height: 52, color: colors.text, fontSize: 15, fontWeight: '700' }} />)}
-        </View>
+      <View style={styles.cardRow}><View style={{ flex: 1 }}><Text style={styles.rowTitle}>Équipes</Text><Text style={styles.rowSubtitle}>{names.join(' · ')}</Text></View><Pressable onPress={() => setRenameTeams(v => !v)}><Text style={styles.linkText}>{renameTeams ? 'Fermer' : 'Renommer'}</Text></Pressable></View>
+      {renameTeams && <View style={styles.card}><View style={{ gap: 9 }}>{names.map((name,i) => <TextInput key={i} value={name} onChangeText={v => setTeamNames(old => old.map((x,j) => j===i ? v : x))} placeholder={`Équipe ${i+1}`} placeholderTextColor={colors.muted} style={styles.input} />)}</View></View>}
+
+      <Text style={[styles.sectionTitle, { marginTop: 25 }]}>COMBIEN DE TEMPS ?</Text>
+      <View style={styles.durationGrid}>
+        {[20,30,45,60].map(n => <Pressable key={n} onPress={() => setDuration(n)} style={[styles.durationCard, duration === n && styles.choiceCardActive]}><Text style={[styles.durationNumber, duration === n && { color: colors.bg }]}>{n}</Text><Text style={[styles.durationUnit, duration === n && { color: colors.bg }]}>MIN</Text><Text style={[styles.durationHint, duration === n && { color: colors.bg }]}>{n===20?'Rapide':n===30?'Classique':n===45?'Grande soirée':'Marathon'}</Text></Pressable>)}
       </View>
 
-      <Text style={[styles.sectionTitle, { marginTop: 26 }]}>03 · Durée</Text>
-      <View style={{ flexDirection: 'row', gap: 8 }}>
-        {[20, 30, 45, 60].map(n => <AppButton key={n} title={`${n} min`} onPress={() => setDuration(n)} variant={duration === n ? 'primary' : 'secondary'} style={{ flex: 1, paddingHorizontal: 5 }} />)}
-      </View>
+      <View style={styles.autoCard}><View style={styles.autoBadge}><Text style={{ color: colors.bg, fontWeight: '900' }}>✦</Text></View><View style={{ flex: 1 }}><Text style={styles.rowTitle}>Mélange automatique</Text><Text style={styles.rowSubtitle}>Bible Party choisit les manches pour garder la partie variée.</Text></View><Text style={{ color: colors.success, fontWeight: '900' }}>AUTO</Text></View>
 
-      <Text style={[styles.sectionTitle, { marginTop: 26 }]}>04 · Catégories</Text>
-      <Text style={{ color: colors.muted, fontSize: 12, marginBottom: 10 }}>Aucune sélection = tout le catalogue.</Text>
-      <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>
-        {setupCategoryFilters.map(category => {
-          const active = categories.includes(category);
-          return <Pressable key={category} onPress={() => toggleCategory(category)} style={{ minHeight: 46, paddingHorizontal: 14, borderRadius: 15, borderWidth: 1, borderColor: active ? colors.accent : colors.border, backgroundColor: active ? colors.accent : colors.surface2, justifyContent: 'center' }}>
-            <Text style={{ color: active ? colors.bg : colors.text, fontWeight: '800', fontSize: 13 }}>{active ? '✓  ' : ''}{category} · {getCategoryQuestionCount(category)}</Text>
-          </Pressable>;
-        })}
-      </View>
+      <Pressable onPress={() => setCustomize(v => !v)} style={styles.customizeBar}><View><Text style={styles.rowTitle}>Personnaliser</Text><Text style={styles.rowSubtitle}>{categories.length ? `${categories.length} catégories` : 'Toutes les catégories'} · {difficulty === 'all' ? 'toutes difficultés' : difficulty}</Text></View><Text style={{ color: colors.accent2, fontSize: 22 }}>{customize ? '⌃' : '⌄'}</Text></Pressable>
 
-      <Text style={[styles.sectionTitle, { marginTop: 26 }]}>05 · Difficulté</Text>
-      <View style={{ flexDirection: 'row', gap: 8 }}>
-        {difficulties.map(([id, label]) => <AppButton key={id} title={label} onPress={() => setDifficulty(id)} variant={difficulty === id ? 'primary' : 'secondary'} style={{ flex: 1, paddingHorizontal: 5 }} />)}
-      </View>
+      {customize && <View style={{ marginTop: 8 }}>
+        <View style={styles.card}><Text style={styles.eyebrow}>MAÎTRE DE JEU</Text><TextInput value={hostName} onChangeText={setHostName} placeholder="Nom du maître de jeu" placeholderTextColor={colors.muted} style={[styles.input, { marginTop: 10 }]} /></View>
+        <Text style={[styles.sectionTitle, { marginTop: 20 }]}>CATÉGORIES</Text><Text style={styles.helper}>Aucune sélection = tout le catalogue.</Text>
+        <View style={styles.wrapRow}>{setupCategoryFilters.map(category => { const active=categories.includes(category); return <Pressable key={category} onPress={() => toggleCategory(category)} style={[styles.filterChip, active && styles.filterChipActive]}><Text style={[styles.filterChipText, active && { color: colors.bg }]}>{active ? '✓ ' : ''}{category} · {getCategoryQuestionCount(category)}</Text></Pressable>; })}</View>
+        <Text style={[styles.sectionTitle, { marginTop: 20 }]}>DIFFICULTÉ</Text><View style={{ flexDirection:'row', gap:8 }}>{difficulties.map(([id,label]) => <Pressable key={id} onPress={() => setDifficulty(id)} style={[styles.smallChoice, difficulty===id && styles.smallChoiceActive]}><Text style={[styles.smallChoiceText, difficulty===id && {color:colors.bg}]}>{label}</Text></Pressable>)}</View>
+        <Text style={[styles.sectionTitle, { marginTop: 20 }]}>MODES</Text><Text style={styles.helper}>Par défaut, tous les modes sont mélangés automatiquement.</Text>
+        {gameModeGroups.map(group => <View key={group.title} style={{ marginTop: 13 }}><Text style={styles.modeGroupLabel}>{group.title}</Text><View style={styles.wrapRow}>{group.modes.map(([id,label,icon]) => { const active=selected.includes(id); return <Pressable key={id} onPress={() => toggle(id)} style={[styles.modeChip, active && styles.modeChipActive]}><Text style={[styles.modeChipIcon, active && {color:colors.bg}]}>{icon}</Text><Text style={[styles.modeChipText, active && {color:colors.bg}]}>{label}</Text></Pressable>; })}</View></View>)}
+      </View>}
 
-      <View style={{ flexDirection: 'row', alignItems: 'flex-end', justifyContent: 'space-between', marginTop: 30, marginBottom: 12 }}>
-        <View><Text style={styles.sectionTitle}>06 · Modes</Text><Text style={{ color: colors.muted, fontSize: 12 }}>{selected.length} sélectionné(s)</Text></View>
-        <AppButton title="Tout choisir" onPress={() => setSelected(gameModes)} variant="secondary" style={{ minHeight: 40, paddingHorizontal: 12 }} />
-      </View>
-
-      <View style={{ gap: 22 }}>
-        {gameModeGroups.map(group => (
-          <View key={group.title}>
-            <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.5 }}>{group.title}</Text>
-            <Text style={{ color: colors.muted, fontSize: 12, marginTop: 4, marginBottom: 10 }}>{group.subtitle}</Text>
-            <View style={{ gap: 9 }}>
-              {group.modes.map(([id, label, desc, icon]) => {
-                const active = selected.includes(id);
-                return (
-                  <Pressable key={id} onPress={() => toggle(id)} style={{ flexDirection: 'row', alignItems: 'center', padding: 14, minHeight: 72, borderRadius: 19, borderWidth: 1, borderColor: active ? colors.accent : colors.border, backgroundColor: active ? colors.surface3 : colors.surface }}>
-                    <View style={{ width: 42, height: 42, borderRadius: 13, backgroundColor: active ? colors.accent : colors.bg, alignItems: 'center', justifyContent: 'center', marginRight: 12 }}>
-                      <Text style={{ color: active ? colors.bg : colors.accent, fontWeight: '900', fontSize: icon.length > 2 ? 10 : 16 }}>{icon}</Text>
-                    </View>
-                    <View style={{ flex: 1 }}>
-                      <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900' }}>{label}</Text>
-                      <Text style={{ color: colors.muted, fontSize: 11, marginTop: 3 }}>{desc}</Text>
-                    </View>
-                    <View style={{ width: 24, height: 24, borderRadius: 12, borderWidth: 1, borderColor: active ? colors.accent : colors.border, backgroundColor: active ? colors.accent : 'transparent', alignItems: 'center', justifyContent: 'center' }}>
-                      {active && <Text style={{ color: colors.bg, fontSize: 13, fontWeight: '900' }}>✓</Text>}
-                    </View>
-                  </Pressable>
-                );
-              })}
-            </View>
-          </View>
-        ))}
-      </View>
-
-      <View style={[styles.glowCard, { marginTop: 20, padding: 17 }]}>
-        <Text style={styles.eyebrow}>RÉSUMÉ</Text>
-        <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 6 }}>{teamsCount} équipes · {duration} min</Text>
-        <Text style={{ color: colors.muted, marginTop: 3, fontSize: 12 }}>{selected.length} modes · {difficulty === 'all' ? 'toutes difficultés' : difficulty}</Text>
-      </View>
-
-      <View style={{ marginTop: 12 }}><AppButton title="Lancer la soirée  →" onPress={start} disabled={!selected.length} /></View>
-      <View style={{ marginTop: 9 }}><AppButton title="Retour" onPress={() => router.back()} variant="secondary" /></View>
+      <View style={styles.startSummary}><Text style={styles.eyebrow}>VOTRE SOIRÉE</Text><Text style={styles.summaryTitle}>{teamsCount} équipes · {duration} min</Text><Text style={styles.summaryText}>{selected.length === gameModes.length ? 'Mélange automatique · toutes les difficultés' : `${selected.length} modes · ${difficulty === 'all' ? 'toutes difficultés' : difficulty}`}</Text></View>
+      <AppButton title="Lancer la soirée  →" onPress={start} style={{ marginTop: 14, minHeight: 62 }} />
+      <Text style={styles.helperCenter}>Les réglages avancés restent disponibles dans « Personnaliser ».</Text>
     </ScrollView>
   );
 }
