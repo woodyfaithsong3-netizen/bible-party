@@ -37,6 +37,9 @@ jobs:
       - name: Export web app
         run: npm run web:export
 
+      - name: Add Android APK
+        run: cp bible-party-1.7.6.apk dist/bible-party-1.7.6.apk
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
