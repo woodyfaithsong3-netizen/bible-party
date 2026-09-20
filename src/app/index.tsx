@@ -1,6 +1,6 @@
 import React from 'react';
-import HomeVisual from '@/components/HomeVisual';
+import LandingScreen from '@/components/LandingScreen';
 
 export default function HomeScreen() {
-  return <HomeVisual />;
+  return <LandingScreen />;
 }
