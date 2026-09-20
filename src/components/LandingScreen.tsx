@@ -6,7 +6,7 @@ const scenic = require('../../assets/images/backgrounds/home-valley-exact-source
 const logo = require('../../assets/images/ui/logo.png');
 const gamepad = require('../../assets/images/ui/gamepad.png');
 const crown = require('../../assets/images/ui/crown.png');
-const APK_PAGE = 'https://expo.dev/accounts/woodysong/projects/bible-party/builds/325b5d42-a5af-4474-9bd3-235a069a8a1c';
+const APK_PAGE = 'https://expo.dev/artifacts/eas/GyK4wF851q6hGwHZZAS0n2UWUfr7exo4InZ6e9XhCb8.apk';
 
 export default function LandingScreen() {
   return <View style={styles.root}><ImageBackground source={scenic} resizeMode="cover" style={styles.background}><View style={styles.tone}/><View style={styles.content}>
