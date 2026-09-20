@@ -1,0 +1,53 @@
+{
+  "expo": {
+    "name": "Bible Party",
+    "slug": "bible-party",
+    "version": "1.9.9",
+    "orientation": "default",
+    "scheme": "bibleparty",
+    "userInterfaceStyle": "dark",
+    "icon": "./assets/icon.png",
+    "plugins": [
+      "expo-router",
+      "expo-audio",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#0B0E13"
+        }
+      ],
+      "./plugins/withAndroidSystemBars"
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "baseUrl": "/bible-party"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bibleparty.app",
+      "buildNumber": "20",
+      "infoPlist": {
+        "CFBundleDisplayName": "Bible Party"
+      }
+    },
+    "android": {
+      "package": "com.bibleparty.app",
+      "versionCode": 24,
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#0B0E13"
+      }
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "static",
+      "name": "Bible Party",
+      "shortName": "Bible Party",
+      "lang": "fr",
+      "scope": "/bible-party/"
+    },
+    "extra": {}
+  }
+}

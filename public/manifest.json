@@ -1,0 +1,14 @@
+{
+  "name": "Bible Party",
+  "short_name": "Bible Party",
+  "lang": "fr",
+  "start_url": "/bible-party/",
+  "scope": "/bible-party/",
+  "display": "standalone",
+  "background_color": "#041C24",
+  "theme_color": "#041C24",
+  "orientation": "any",
+  "icons": [
+    {"src":"/bible-party/bible-party-icon.png","sizes":"1024x1024","type":"image/png","purpose":"any maskable"}
+  ]
+}

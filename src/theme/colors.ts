@@ -1,0 +1,20 @@
+// Bible Party V71 — Scenic Valley / Gold design system
+export const colors = {
+  bg: 'rgba(7, 24, 30, 0.72)',
+  bg2: 'rgba(14, 43, 45, 0.72)',
+  surface: 'rgba(10, 35, 38, 0.76)',
+  surface2: 'rgba(19, 55, 55, 0.76)',
+  surface3: 'rgba(31, 72, 68, 0.82)',
+  border: 'rgba(255,255,255,0.20)',
+  borderStrong: 'rgba(244,196,76,0.62)',
+  stone: '#E2DFC9',
+  text: '#FFFDF4',
+  muted: '#D8E2D9',
+  accent: '#F2C94C',
+  accent2: '#FFE58A',
+  success: '#8FE0A6',
+  danger: '#FF8D7A',
+  blue: '#79D5E8',
+  purple: '#C2A7F0',
+  white: '#FFFFFF',
+};
