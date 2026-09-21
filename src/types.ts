@@ -1,4 +1,4 @@
-export type Difficulty = 'easy' | 'medium' | 'hard';
+export type Difficulty = 'easy' | 'medium' | 'hard' | 'expert';
 export type GameType = 'quiz' | 'mystery' | 'truefalse' | 'challenge' | 'quote' | 'chronology' | 'intruder' | 'timesup' | 'threeclues' | 'forbidden' | 'faceoff' | 'risk';
 
 export type QuizQuestion = {
