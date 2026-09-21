@@ -3978,8 +3978,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Jean 4:4-42",
     "location": "Sychar, en Samarie.",
-    "relationshipWithJehovah": "Elle écoute Jésus, accepte son témoignage et parle de lui à de nombreux habitants de sa ville.",
-    "didYouKnow": "Beaucoup de Samaritains croient grâce à son témoignage.",
+    "relationshipWithJehovah": "Elle accepte progressivement l’enseignement de Jésus sur la vraie adoration, reconnaît qu’il est le Messie et partage immédiatement ce qu’elle a appris avec d’autres.",
+    "didYouKnow": "Jésus lui révèle qu’il est le Messie, et elle devient l’une des premières personnes dont Jean rapporte le témoignage aux Samaritains de sa ville.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3994,23 +3994,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Habitante de Samarie — Une Samaritaine échange avec Jésus près d’un puits et parle ensuite de lui aux habitants de sa ville.",
-    "era": "Évangiles",
+    "identity": "La Samaritaine que Jésus rencontra près de Sychar était une femme qui puisait de l’eau au puits de Jacob. Après sa conversation avec Jésus, elle parla de lui aux habitants de sa ville.",
+    "era": "Vers 30 de n. è., pendant le ministère de Jésus",
     "familyAndEntourage": [
       "Jésus",
-      "Les Samaritains de Sychar"
+      "Les habitants de Sychar",
+      "Les Samaritains de la ville"
     ],
     "bibleAccount": [
-      "Discute avec Jésus au puits de Jacob.",
-      "Réfléchit à ses paroles concernant l’eau et le vrai culte.",
-      "Parle de Jésus aux habitants de la ville."
+      "Elle rencontre Jésus près du puits de Jacob.",
+      "Jésus lui parle de l’eau vive et révèle qu’il connaît sa situation personnelle.",
+      "Elle discute avec lui au sujet de l’adoration et du Messie.",
+      "Elle laisse sa cruche, retourne en ville et invite les habitants à venir voir Jésus.",
+      "Beaucoup de Samaritains croient grâce à son témoignage et à la parole de Jésus."
     ],
     "qualities": [
-      "Ouverture",
-      "Courage",
-      "Zèle pour partager"
+      "Franchise",
+      "Réceptivité",
+      "Courage pour témoigner",
+      "Foi"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Sa vie personnelle avait connu plusieurs mariages et elle vivait alors avec un homme qui n’était pas son mari; Jésus lui en parle sans la rabaisser."
+    ]
   },
   "roman_centurion": {
     "studyFocus": "Le centurion romain de Capharnaüm a montré une foi remarquable dans le pouvoir de guérison de Jésus et une grande humilité.",
@@ -4066,10 +4072,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Maîtrise de soi : Paul a directement abordé cette qualité devant lui.",
       "Intégrité : il faut éviter de laisser les intérêts personnels influencer les décisions justes."
     ],
-    "keyReading": "Actes 23:23-35 ; 24:1-27",
+    "keyReading": "Actes 23:23-35; 24:10-27",
     "location": "Césarée.",
-    "relationshipWithJehovah": "Paul lui parle de justice, de maîtrise de soi et du jugement à venir, mais Félix reporte sa décision.",
-    "didYouKnow": "Félix tremble en entendant le message de Paul.",
+    "relationshipWithJehovah": "Le récit montre qu’il a entendu un témoignage direct sur la foi chrétienne et le jugement à venir, mais il n’est pas rapporté qu’il ait accepté ce message.",
+    "didYouKnow": "Félix resta deux ans avec Paul en détention et le faisait venir assez souvent pour converser avec lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4084,22 +4090,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Gouverneur romain de Judée — Félix entend Paul parler de la justice, de la maîtrise de soi et du jugement à venir, mais reporte sa décision.",
-    "era": "Actes",
+    "identity": "Antonius Félix était gouverneur romain de Judée lorsque Paul fut détenu à Césarée. Il entendit plusieurs fois Paul mais le laissa en prison.",
+    "era": "Vers 52-59 de n. è.",
     "familyAndEntourage": [
+      "Drusille",
       "Paul",
-      "Drusille"
+      "Les chefs religieux juifs",
+      "Festus"
     ],
     "bibleAccount": [
-      "Fait comparaître Paul.",
-      "Écoute son enseignement sur des questions morales et spirituelles.",
-      "Garde Paul détenu pendant une période prolongée."
+      "Il entend Paul se défendre devant ses accusateurs.",
+      "Avec Drusille, il écoute Paul parler de foi en Christ, de justice, de maîtrise de soi et du jugement à venir.",
+      "Il est effrayé par ce message mais remet la discussion à plus tard.",
+      "Il espère recevoir de l’argent de Paul et le laisse finalement prisonnier pour gagner la faveur des Juifs."
     ],
     "qualities": [
-      "Autorité administrative"
+      "Il manifeste d’abord une certaine connaissance de la Voie et laisse Paul s’exprimer"
     ],
     "difficulties": [
-      "Le récit montre le danger de remettre à plus tard une décision concernant la foi."
+      "Il reporte sa décision malgré son trouble et privilégie finalement des considérations personnelles et politiques en laissant Paul en prison."
     ]
   },
   "festus": {
@@ -4109,10 +4118,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Respect des procédures : Paul a exercé son droit d’en appeler à César.",
       "Prudence : une autorité doit distinguer les faits des accusations portées contre quelqu’un."
     ],
-    "keyReading": "Actes 25:1-27 ; 26:1-32",
+    "keyReading": "Actes 25:1-27; 26:24-32",
     "location": "Césarée.",
-    "relationshipWithJehovah": "Festus cherche à comprendre l’affaire de Paul et l’envoie finalement à César après son appel.",
-    "didYouKnow": "Festus discute avec Agrippa de l’accusation portée contre Paul.",
+    "relationshipWithJehovah": "La Bible ne le présente pas comme adorateur de Jéhovah. Il entend néanmoins une défense détaillée de la foi chrétienne et reconnaît qu’il n’a pas affaire à une accusation criminelle ordinaire.",
+    "didYouKnow": "Festus reconnaît à Agrippa qu’il ne savait pas quoi écrire à l’empereur au sujet de Paul, ce qui explique pourquoi il organise l’audience devant Agrippa.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4127,23 +4136,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Gouverneur romain de Judée — Festus succède à Félix et entend l’affaire de Paul avant que celui-ci n’en appelle à César.",
-    "era": "Actes",
+    "identity": "Porcius Festus succéda à Félix comme gouverneur de Judée. Il présida l’audience de Paul à Césarée et accepta son appel à César.",
+    "era": "Vers 58-60 de n. è.",
     "familyAndEntourage": [
       "Paul",
-      "Agrippa",
-      "Félix"
+      "Agrippa II",
+      "Bérénice",
+      "Les chefs religieux juifs"
     ],
     "bibleAccount": [
-      "Reprend le dossier de Paul.",
-      "Entend les accusations portées contre lui.",
-      "Accepte l’appel de Paul à César.",
-      "Présente l’affaire à Agrippa."
+      "Il monte à Jérusalem peu après son entrée en fonction.",
+      "Il entend les accusations contre Paul et préside son procès à Césarée.",
+      "Il demande à Paul s’il accepte d’être jugé à Jérusalem.",
+      "Après l’appel de Paul à César, il accepte cet appel.",
+      "Il demande ensuite à Agrippa de l’aider à formuler un rapport pour l’empereur."
     ],
     "qualities": [
-      "Prudence juridique"
+      "Souci de procédure",
+      "Prudence administrative"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il cherche à comprendre une affaire religieuse complexe tout en gérant les demandes politiques des autorités juives."
+    ]
   },
   "agrippa_ii": {
     "studyFocus": "Agrippa II a entendu Paul expliquer sa conversion, son ministère et l’accomplissement des prophéties concernant le Messie.",
@@ -4152,10 +4166,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Réflexion personnelle : entendre un témoignage demande ensuite d’examiner sincèrement sa propre position.",
       "Courage du témoin : Paul a parlé librement devant un dirigeant."
     ],
-    "keyReading": "Actes 25:13-27 ; 26:1-32",
+    "keyReading": "Actes 25:13-27; 26:1-32",
     "location": "Césarée.",
-    "relationshipWithJehovah": "Agrippa écoute longuement Paul exposer sa foi et les prophéties concernant le Christ.",
-    "didYouKnow": "Paul lui demande s’il croit aux prophètes.",
+    "relationshipWithJehovah": "Agrippa connaissait les coutumes et controverses juives et a entendu un témoignage détaillé sur Jésus. La Bible rapporte sa réaction, mais ne dit pas qu’il ait accepté la foi chrétienne.",
+    "didYouKnow": "Agrippa II était le frère de Bérénice et de Drusille, et Félix était son beau-frère par son mariage avec Drusille.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4170,22 +4184,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Roi — Agrippa II entend le témoignage de Paul avec Bérénice et Festus et connaît les coutumes et controverses juives.",
-    "era": "Actes",
+    "identity": "Hérode Agrippa II était roi et membre de la dynastie hérodienne. Il entendit la défense de Paul à Césarée avec Bérénice et Festus.",
+    "era": "Vers 58 de n. è. et décennies suivantes",
     "familyAndEntourage": [
-      "Bérénice",
-      "Paul",
-      "Festus"
+      "Hérode Agrippa Ier, son père",
+      "Bérénice, sa sœur",
+      "Drusille, sa sœur",
+      "Festus",
+      "Paul"
     ],
     "bibleAccount": [
-      "Écoute Paul exposer son parcours et sa foi.",
-      "Examine l’affaire avec Festus.",
-      "Reconnaît que Paul ne semble pas avoir fait quelque chose qui mérite la mort ou les chaînes."
+      "Festus lui expose le dossier de Paul.",
+      "Il demande à entendre personnellement Paul.",
+      "Paul lui parle de sa conversion et de la résurrection.",
+      "Agrippa reconnaît que Paul pourrait presque le persuader de devenir chrétien.",
+      "Avec Festus, il conclut que Paul n’a rien fait qui mérite la mort ou les chaînes."
     ],
     "qualities": [
-      "Connaissance des affaires juives"
+      "Connaissance des coutumes juives",
+      "Capacité à écouter une défense"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il entend un témoignage chrétien très direct mais le récit biblique ne dit pas qu’il devint chrétien."
+    ]
   },
   "berenice": {
     "studyFocus": "Bérénice était présente lors de l’audience où Paul défendit sa foi devant Agrippa et Festus.",
@@ -4194,10 +4215,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Contexte historique : son récit illustre le cadre officiel dans lequel Paul a rendu témoignage.",
       "Responsabilité personnelle : entendre la vérité ne remplace pas une réponse personnelle."
     ],
-    "keyReading": "Actes 25:13-27 ; 26:30-32",
+    "keyReading": "Actes 25:13-27; 26:1-32",
     "location": "Césarée.",
-    "relationshipWithJehovah": "Bérénice assiste avec Agrippa à l’audience où Paul témoigne de sa foi.",
-    "didYouKnow": "Elle est mentionnée avec Agrippa lors de cette audience officielle.",
+    "relationshipWithJehovah": "La Bible ne rapporte pas sa foi personnelle. Elle était présente lors d’une occasion où Paul donna un témoignage détaillé sur Jésus et la résurrection.",
+    "didYouKnow": "Bérénice était sœur d’Agrippa II et de Drusille; elle était donc également membre de la famille d’Hérode Agrippa Ier.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4212,21 +4233,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Personnage royal — Bérénice accompagne Agrippa II lors de l’audience où Paul présente sa défense devant Festus.",
-    "era": "Actes",
+    "identity": "Bérénice était une sœur d’Agrippa II qui l’accompagna lors de sa visite à Césarée où Paul présenta sa défense devant Festus et Agrippa.",
+    "era": "Vers 58 de n. è.",
     "familyAndEntourage": [
-      "Agrippa II",
+      "Agrippa II, son frère",
+      "Drusille, sa sœur",
+      "Félix, son beau-frère",
       "Festus",
       "Paul"
     ],
     "bibleAccount": [
-      "Se rend à Césarée avec Agrippa.",
-      "Assiste à l’audience de Paul."
+      "Elle arrive à Césarée avec Agrippa II.",
+      "Elle entre dans la salle d’audience en grand apparat avec le roi, les commandants et les notables.",
+      "Elle entend la défense de Paul devant Agrippa et Festus."
     ],
-    "qualities": [
-      "Présence dans les affaires publiques"
-    ],
-    "difficulties": []
+    "qualities": [],
+    "difficulties": [
+      "Le récit biblique donne très peu d’informations sur ses convictions personnelles ou sa réaction au témoignage de Paul."
+    ]
   },
   "phoebe": {
     "studyFocus": "Phébé était une chrétienne de Cenchrées que Paul a recommandée chaleureusement aux chrétiens de Rome et qui avait aidé beaucoup de frères, y compris Paul.",
@@ -5359,10 +5383,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance : elle avait cherché de nombreuses solutions avant de venir à Jésus.",
       "Humilité : elle a expliqué publiquement ce qui lui était arrivé lorsque Jésus l’a interrogée."
     ],
-    "keyReading": "Matthieu 9:18-26 ; Marc 5:25-34 ; Luc 8:43-48",
+    "keyReading": "Marc 5:25-34; Matthieu 9:20-22; Luc 8:43-48",
     "location": "Galilée, probablement près de Capharnaüm.",
-    "relationshipWithJehovah": "Elle croit qu’un simple contact avec le vêtement de Jésus peut la guérir et agit malgré la foule.",
-    "didYouKnow": "Elle souffrait depuis douze ans avant d’être guérie.",
+    "relationshipWithJehovah": "Jésus attribue sa guérison à sa foi. Son geste montre sa confiance en la puissance que Jéhovah avait donnée à Jésus.",
+    "didYouKnow": "Marc précise que la maladie durait depuis douze ans et que la femme avait beaucoup souffert entre les mains de nombreux médecins avant de venir à Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5377,24 +5401,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Femme guérie par Jésus — Une femme malade depuis douze ans manifeste sa foi en touchant le vêtement de Jésus et est guérie.",
-    "era": "Évangiles",
+    "identity": "La femme qui avait des pertes de sang souffrait depuis 12 ans. Elle s’approcha discrètement de Jésus avec la conviction que même toucher son vêtement pourrait la guérir.",
+    "era": "Vers 31-32 de n. è., pendant le ministère de Jésus",
     "familyAndEntourage": [
       "Jésus",
-      "La foule"
+      "La foule",
+      "Les disciples"
     ],
     "bibleAccount": [
-      "Cherche de l’aide pendant de nombreuses années.",
-      "S’approche de Jésus avec foi.",
-      "Touche son vêtement.",
-      "Reconnaît devant Jésus ce qui s’est passé."
+      "Elle souffre depuis 12 ans et a dépensé ses ressources auprès de nombreux médecins.",
+      "Elle touche le vêtement de Jésus au milieu de la foule.",
+      "Elle est immédiatement guérie.",
+      "Jésus la fait venir au grand jour et lui parle avec bonté de sa foi."
     ],
     "qualities": [
       "Foi",
-      "Persévérance",
-      "Courage"
+      "Courage",
+      "Persévérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle endure une maladie longue et coûteuse et doit surmonter la peur de se présenter devant Jésus après avoir été guérie."
+    ]
   },
   "gerasene_man": {
     "studyFocus": "L’homme de la région des Géraséniens qui avait été libéré de l’influence démoniaque a voulu suivre Jésus, mais Jésus lui a confié une autre mission : raconter ce que Dieu avait fait pour lui.",
@@ -5403,10 +5430,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Obéissance : il a accepté la mission qui lui a été donnée plutôt que de choisir lui-même son service.",
       "Témoignage : il a raconté dans toute la région ce que Jésus avait fait pour lui."
     ],
-    "keyReading": "Marc 5:1-20 ; Luc 8:26-39",
+    "keyReading": "Marc 5:1-20; Luc 8:26-39",
     "location": "Région des Géraséniens.",
-    "relationshipWithJehovah": "Jésus libère cet homme de l’influence démoniaque et lui confie le témoignage de ce que Dieu a fait pour lui.",
-    "didYouKnow": "Après sa guérison, il proclame dans la Décapole ce que Jésus avait fait.",
+    "relationshipWithJehovah": "Après sa délivrance, il veut rester avec Jésus, mais reçoit une mission locale: raconter à ses proches les choses que Dieu avait faites pour lui.",
+    "didYouKnow": "Dans le récit de Marc, Jésus lui dit de retourner chez lui et de raconter à ses proches les grandes choses que Jéhovah avait faites pour lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5421,23 +5448,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Homme délivré par Jésus — Jésus délivre un homme gravement tourmenté dans la région des Géraséniens, qui souhaite ensuite rester avec lui.",
-    "era": "Évangiles",
+    "identity": "L’homme de la région des Géraséniens que Jésus délivra était sous l’influence de nombreux démons. Après sa délivrance, il voulut accompagner Jésus, mais Jésus lui confia une autre mission.",
+    "era": "Vers 32 de n. è., pendant le ministère de Jésus",
     "familyAndEntourage": [
       "Jésus",
-      "Les habitants de la Décapole"
+      "Les habitants de la région",
+      "Sa famille et ses proches"
     ],
     "bibleAccount": [
-      "Vit dans un état de grande détresse.",
-      "Est délivré par Jésus.",
-      "Retrouve une vie normale.",
-      "Annonce dans sa région ce que Jésus a fait pour lui."
+      "Il vivait dans les tombeaux et ne pouvait être maîtrisé.",
+      "Jésus chasse les démons qui l’affligeaient.",
+      "Les démons entrent dans un grand troupeau de porcs qui se précipite dans la mer.",
+      "L’homme est ensuite retrouvé assis, habillé et dans son bon sens.",
+      "Il demande à accompagner Jésus, mais Jésus lui demande de raconter chez lui ce que Dieu a fait pour lui."
     ],
     "qualities": [
       "Reconnaissance",
-      "Zèle"
+      "Volonté de témoigner"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il avait vécu dans une situation extrêmement pénible sous l’influence démoniaque et était isolé de la société."
+    ]
   },
   "jason_thessalonica": {
     "studyFocus": "Jason de Thessalonique — un hôte courageux",
