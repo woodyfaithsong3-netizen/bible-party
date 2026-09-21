@@ -2719,11 +2719,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "naaman": {
-    "studyFocus": "Naaman — un chef syrien qui a appris l’humilité",
+    "studyFocus": "Naaman, chef de l’armée syrienne, a dû mettre son orgueil de côté pour suivre les instructions de Jéhovah et a ensuite reconnu le vrai Dieu.",
     "lessonPoints": [
-      "Humilité",
-      "Obéissance",
-      "Reconnaissance"
+      "Humilité : il a accepté une instruction simple malgré sa première réaction.",
+      "Foi et obéissance : sa guérison est venue après avoir suivi la direction donnée par Élisée.",
+      "Reconnaissance : Naaman a exprimé sa détermination à ne plus adorer d’autres dieux."
     ],
     "keyReading": "2 Rois 5:1-19",
     "location": "Syrie et Samarie.",
@@ -2805,11 +2805,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jehoshaphat": {
-    "studyFocus": "Yehoshaphat — un roi qui a enseigné la Loi",
+    "studyFocus": "Josaphat a souvent recherché Jéhovah et a encouragé le peuple de Juda à lui faire confiance, même lorsqu’une grande armée menaçait le pays.",
     "lessonPoints": [
-      "Enseigner",
-      "Confiance en Jéhovah",
-      "Chercher des conseils"
+      "Rechercher Jéhovah : face au danger, Josaphat a demandé l’aide de Jéhovah.",
+      "Foi : le récit montre l’importance de compter sur Jéhovah plutôt que sur sa propre force.",
+      "Vigilance : son histoire rappelle aussi qu’une bonne décision peut être compromise par de mauvaises associations."
     ],
     "keyReading": "2 Chroniques 17:1-19 ; 20:1-30",
     "location": "Juda et Jérusalem.",
@@ -2831,11 +2831,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jonah": {
-    "studyFocus": "Jonas a appris à accepter la mission que Jéhovah lui confiait et à aligner son point de vue sur la miséricorde de Jéhovah.",
+    "studyFocus": "Jonas a appris à accepter la mission de Jéhovah et à comprendre davantage sa miséricorde envers les personnes qui se repentent.",
     "lessonPoints": [
-      "Obéissance : Jonas a finalement accompli la mission qui lui avait été confiée.",
-      "Humilité : il a dû corriger son point de vue sur la façon dont Jéhovah traite les personnes repentantes.",
-      "Miséricorde : son récit met en évidence la patience et la compassion de Jéhovah."
+      "Obéissance : après avoir essayé de fuir, Jonas a accompli la mission reçue.",
+      "Humilité : il a dû corriger son point de vue sur la miséricorde de Jéhovah.",
+      "Miséricorde : le récit montre que Jéhovah se soucie des personnes et leur laisse la possibilité de se repentir."
     ],
     "keyReading": "Jonas 1:1-17 ; 2:1-10 ; 3:1-10 ; 4:1-11",
     "location": "Joppé, Ninive et les environs.",
@@ -2861,11 +2861,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "saul_king": {
-    "studyFocus": "Saül — un roi qui a désobéi",
+    "studyFocus": "Saül a commencé son règne avec des qualités appréciables, mais sa désobéissance répétée aux instructions de Jéhovah a eu de graves conséquences.",
     "lessonPoints": [
-      "Obéir complètement",
-      "Rester humble",
-      "Accepter la correction"
+      "Obéissance : les instructions de Jéhovah ne doivent pas être remplacées par nos propres raisonnements.",
+      "Humilité : rechercher l’approbation des humains peut conduire à de mauvais choix.",
+      "Persévérance dans le bien : son récit montre l’importance de rester fidèle à Jéhovah jusqu’au bout."
     ],
     "keyReading": "1 Samuel 8:4-22 ; 9:15-10:27 ; 15:1-35",
     "location": "Guilgal, Rama et le territoire d’Israël.",
@@ -2887,11 +2887,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "manoah_father": {
-    "studyFocus": "Manoah — un père attentif aux instructions de Jéhovah",
+    "studyFocus": "Manoah et sa femme ont reçu des instructions concernant la naissance et l’éducation de Samson et ont recherché la direction de Jéhovah.",
     "lessonPoints": [
-      "Prier pour être guidé",
-      "Écouter",
-      "Responsabilité familiale"
+      "Prière : Manoah a demandé à Jéhovah de guider les parents dans l’éducation de leur fils.",
+      "Confiance : ils ont pris au sérieux les instructions reçues.",
+      "Famille : leur récit met en valeur l’importance de chercher la direction de Jéhovah pour les responsabilités familiales."
     ],
     "keyReading": "Juges 13:1-25",
     "location": "Tsora et les environs.",
@@ -2913,11 +2913,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "zephaniah": {
-    "studyFocus": "Sophonie — un prophète qui a annoncé le jour de Jéhovah",
+    "studyFocus": "Zéphania a proclamé les avertissements de Jéhovah contre le mal tout en encourageant les humbles à rechercher Jéhovah.",
     "lessonPoints": [
-      "Rechercher Jéhovah",
-      "Humilité",
-      "Urgence spirituelle"
+      "Courage : transmettre fidèlement le message de Jéhovah même lorsqu’il contient des avertissements.",
+      "Humilité : rechercher Jéhovah et la justice plutôt que suivre les pratiques corrompues autour de soi.",
+      "Espérance : le message prophétique montre que Jéhovah peut préserver un peuple humble."
     ],
     "keyReading": "Sophonie 1:1-18 ; 2:1-3 ; 3:9-20",
     "location": "Juda et Jérusalem.",
@@ -2939,11 +2939,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "habakkuk": {
-    "studyFocus": "Habacuc — un prophète qui a appris à attendre Jéhovah",
+    "studyFocus": "Habaqouq a exprimé ses questions à Jéhovah et a appris à attendre avec confiance l’accomplissement de la justice divine.",
     "lessonPoints": [
-      "Prier sincèrement",
-      "Attendre Jéhovah",
-      "Se réjouir malgré les difficultés"
+      "Prière sincère : il a parlé ouvertement à Jéhovah de ce qui le préoccupait.",
+      "Patience : il a appris à attendre le moment fixé par Jéhovah.",
+      "Foi : son exemple montre qu’on peut continuer à faire confiance à Jéhovah même lorsque l’on ne comprend pas immédiatement ses actions."
     ],
     "keyReading": "Habacuc 1:1-17 ; 2:1-20 ; 3:1-19",
     "location": "Juda.",
@@ -2965,11 +2965,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "amos": {
-    "studyFocus": "Amos — un berger devenu prophète courageux",
+    "studyFocus": "Amos, qui n’était pas issu d’un milieu prophétique professionnel, a courageusement transmis le message de Jéhovah contre l’injustice et le faux culte.",
     "lessonPoints": [
-      "Courage",
-      "Justice",
-      "Être disponible"
+      "Courage : Amos n’a pas laissé son statut social l’empêcher de parler au nom de Jéhovah.",
+      "Justice : le vrai culte ne peut pas être séparé d’une conduite juste envers les autres.",
+      "Fidélité : il a continué sa mission malgré l’opposition."
     ],
     "keyReading": "Amos 1:1 ; 7:10-17 ; 9:11-15",
     "location": "Juda et le royaume d’Israël.",
@@ -2991,11 +2991,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "micah": {
-    "studyFocus": "Michée — un prophète attaché à la justice",
+    "studyFocus": "Mika a dénoncé l’injustice et le faux culte tout en rappelant ce que Jéhovah attend de ses adorateurs.",
     "lessonPoints": [
-      "Justice",
-      "Fidélité",
-      "Modestie"
+      "Justice : Jéhovah demande à ses serviteurs d’agir avec justice.",
+      "Miséricorde : la fidélité à Jéhovah implique aussi de manifester une bonté loyale.",
+      "Humilité : marcher modestement avec Jéhovah est présenté comme essentiel."
     ],
     "keyReading": "Michée 1:1-9 ; 6:6-8 ; 7:18-20",
     "location": "Juda et Israël.",
@@ -3017,11 +3017,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "obadiah": {
-    "studyFocus": "Abdias — un prophète qui a annoncé le jugement d’Édom",
+    "studyFocus": "Obadia a annoncé le jugement de Jéhovah contre Édom pour son attitude envers Juda et a montré que Jéhovah tient les nations responsables de leurs actes.",
     "lessonPoints": [
-      "Humilité",
-      "Fidélité au message",
-      "Éviter l’orgueil"
+      "Responsabilité : les actions hostiles envers les serviteurs de Jéhovah ne passent pas inaperçues.",
+      "Humilité : la fierté fondée sur une position élevée ou sur la sécurité apparente peut être trompeuse.",
+      "Confiance : le jugement de Jéhovah donne une raison de rester fidèle même dans l’adversité."
     ],
     "keyReading": "Abdias 1-21",
     "location": "Juda et Édom.",
@@ -3043,11 +3043,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joel": {
-    "studyFocus": "Yoël — un prophète qui a parlé du jour de Jéhovah",
+    "studyFocus": "Joël a annoncé le jour de Jéhovah et a appelé le peuple à revenir sincèrement vers lui.",
     "lessonPoints": [
-      "Revenir à Jéhovah",
-      "Sincérité",
-      "Espérance"
+      "Repentir : revenir à Jéhovah doit venir du cœur.",
+      "Urgence spirituelle : le message de Joël encourage à prendre au sérieux le jour de Jéhovah.",
+      "Espérance : Jéhovah promet sa faveur à ceux qui reviennent sincèrement vers lui."
     ],
     "keyReading": "Yoël 1:1-20 ; 2:1-32 ; 3:1-21",
     "location": "Juda.",
@@ -3069,11 +3069,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "nahum": {
-    "studyFocus": "Nahoum — un prophète qui a annoncé la chute de Ninive",
+    "studyFocus": "Nahum a proclamé le jugement de Jéhovah contre Ninive et a montré que Jéhovah ne tolère pas indéfiniment la violence et la méchanceté.",
     "lessonPoints": [
-      "Justice de Jéhovah",
-      "Ne pas opprimer",
-      "Faire confiance au jugement divin"
+      "Justice : Jéhovah voit les actes de violence et d’oppression.",
+      "Confiance : son jugement peut rassurer ceux qui subissent l’injustice.",
+      "Révérence : la puissance de Jéhovah mérite un profond respect."
     ],
     "keyReading": "Nahoum 1:1-15 ; 2:1-13 ; 3:1-19",
     "location": "Juda et Ninive.",
