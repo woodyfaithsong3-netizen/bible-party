@@ -41,7 +41,7 @@ export default function ResultScreen() {
           <View style={[s.rank, isWinner && s.rankWinner]}><Text style={[s.rankText, isWinner && s.rankWinnerText]}>{i + 1}</Text></View>
           <View style={s.teamCopy}><Text style={s.teamName}>{t.name}</Text>{isWinner ? <Text style={s.teamHint}>{isTie ? 'À égalité en tête' : 'Équipe gagnante'}</Text> : null}</View>
           <Text style={[s.points, isWinner && s.pointsWinner]}>{t.score}</Text>
-        </View>)}</View>
+        </View>; })}</View>
       </View>
 
       <View style={s.actions}>
