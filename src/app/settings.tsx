@@ -17,6 +17,7 @@ const defaults: AppSettings = { sounds: true, haptics: true, animations: true, h
 const visibleSettings: Array<[keyof AppSettings, string, string]> = [
   ['sounds', 'Musique & sons', 'Musique d’ambiance et retours audio pendant la partie.'],
   ['haptics', 'Vibrations', 'Retour haptique des réponses.'],
+  ['animations', 'Animations', 'Effets visuels et transitions pendant la partie.'],
   ['highContrast', 'Contraste renforcé', 'Séparations et fonds plus lisibles.'],
 ];
 
