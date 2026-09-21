@@ -16,28 +16,28 @@ export type CharacterLearning = {
 
 export const characterLearning: Record<string, CharacterLearning> = {
   "adam": {
-    "studyFocus": "Adam fut le premier humain créé par Jéhovah. Il reçut la responsabilité de cultiver et de prendre soin de la terre, ainsi qu’une instruction claire concernant l’arbre de la connaissance du bon et du mauvais. Son récit montre à la fois la dignité de l’être humain créé à l’image de Dieu et les conséquences de la désobéissance.",
+    "studyFocus": "Adam fut le premier humain créé par Jéhovah. Son récit montre la dignité de l’homme créé à l’image de Dieu, mais aussi la responsabilité personnelle et les conséquences de la désobéissance.",
     "lessonPoints": [
-      "Observer les responsabilités que Jéhovah confia à Adam avant même la création d’Ève.",
-      "Comparer la décision d’Adam avec l’instruction précise qu’il avait reçue en Genèse 2:16, 17.",
-      "Examiner comment le récit montre la responsabilité personnelle et les conséquences du péché, sans minimiser le choix d’Adam."
+      "Observer les responsabilités confiées à Adam avant la création d’Ève.",
+      "Comparer son choix avec le commandement précis de Genèse 2:16, 17.",
+      "Examiner la responsabilité personnelle mise en évidence après le péché."
     ],
-    "keyReading": "Genèse 1:26–31 ; 2:7–25 ; 3:1–24 ; 5:1-5",
-    "location": "Jardin d’Éden, puis le cadre terrestre où Adam vécut après son expulsion.",
-    "relationshipWithJehovah": "Adam reçut directement de Jéhovah des instructions et des responsabilités. Sa désobéissance au commandement concernant l’arbre montre qu’il connaissait la volonté de Dieu mais a choisi de la transgresser.",
-    "didYouKnow": "Adam est présenté comme le premier humain et comme un « fils de Dieu » en Luc 3:38.",
+    "keyReading": "Genèse 1:26-31 ; 2:7-25 ; 3:1-24 ; 5:1-5",
+    "location": "Jardin d’Éden puis cadre terrestre après son expulsion.",
+    "relationshipWithJehovah": "Adam reçut directement de Jéhovah des instructions et des responsabilités; sa désobéissance montre qu’il connaissait la volonté divine.",
+    "didYouKnow": "Adam est appelé « fils de Dieu » en Luc 3:38.",
     "jwResources": [
       {
         "title": "Adam — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Adam/"
       },
       {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
@@ -179,32 +179,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "sarah": {
-    "studyFocus": "Sara a vécu pendant des années avec la promesse de Jéhovah alors qu’elle était stérile. Elle quitta Our avec Abraham, vécut en Canaan et devint finalement mère d’Isaac à 90 ans. La Bible la présente aussi comme un exemple de foi.",
+    "studyFocus": "Sara vécut pendant des années avec la promesse de Jéhovah alors qu’elle était stérile. Elle quitta Our avec Abraham et devint mère d’Isaac à 90 ans.",
     "lessonPoints": [
-      "Observer comment Sara a continué à vivre avec Abraham malgré une longue attente avant la naissance d’Isaac.",
-      "Étudier avec nuance son intervention au sujet d’Agar et d’Yishmaël, ainsi que l’approbation divine ultérieure concernant le renvoi.",
-      "Examiner pourquoi Hébreux 11:11 cite Sara comme exemple de foi."
+      "Observer sa longue attente avant la naissance d’Isaac.",
+      "Étudier avec nuance son rôle dans l’affaire Agar et Ismaël.",
+      "Examiner pourquoi Hébreux 11:11 la cite comme exemple de foi."
     ],
     "keyReading": "Genèse 11:29–23:20 ; Hébreux 11:11 ; 1 Pierre 3:5, 6",
-    "location": "Our ; Harân ; Sichem ; région montagneuse à l’est de Béthel ; Égypte ; Guérar ; Hébron/Mamré.",
-    "relationshipWithJehovah": "Sara a servi Jéhovah avec Abraham et a été citée comme exemple de foi. Son histoire montre aussi qu’une personne fidèle peut traverser des périodes de doute ou prendre des décisions qui entraînent des difficultés.",
-    "didYouKnow": "Sara avait 90 ans lorsqu’elle donna naissance à Isaac et mourut à 127 ans, selon Étude perspicace des Écritures.",
+    "location": "Our, Harân, Canaan, Égypte, Guérar et Hébron/Mamré.",
+    "relationshipWithJehovah": "Sara servit Jéhovah avec Abraham et fut citée comme exemple de foi malgré ses moments de faiblesse.",
+    "didYouKnow": "Sara avait 90 ans à la naissance d’Isaac et mourut à 127 ans.",
     "jwResources": [
       {
         "title": "Sara — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Sara/"
       },
       {
-        "title": "Marche courageusement avec Dieu — Sara",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/sara-na-pas-regarde-en-arriere/"
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Sara : Dieu l’a appelée « Princesse »",
-        "url": "https://www.jw.org/fr/bibliotheque/revues/tour-garde-no5-2017-septembre/sara-princesse/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Épouse d’Abraham et mère d’Isaac — Sarah a vécu les promesses faites à Abraham et est devenue mère d’Isaac malgré son âge avancé.",
@@ -925,32 +925,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "pierre": {
-    "studyFocus": "Pierre a progressé d’un pêcheur impulsif à un apôtre mûr qui s’est appuyé sur Jéhovah et Jésus malgré ses erreurs.",
+    "studyFocus": "Pierre fut l’un des douze apôtres et un proche compagnon de Jésus. Il commettait des erreurs, mais il se repentit et devint un témoin courageux.",
     "lessonPoints": [
-      "Foi : Pierre a appris à regarder vers Jésus plutôt que vers les circonstances.",
-      "Humilité : après avoir renié Jésus, il a accepté la discipline et a continué à servir.",
-      "Courage : rempli d’esprit saint, il a parlé avec franchise malgré l’opposition."
+      "Étudier son évolution entre impulsivité et foi mûre.",
+      "Examiner son reniement et le rétablissement que Jésus lui accorda.",
+      "Observer son rôle à la Pentecôte et auprès de Corneille."
     ],
-    "keyReading": "Matthieu 14:22-33 ; 16:13-23 ; 26:69-75 ; Jean 21 ; Actes 2–5",
-    "location": "Galilée ; Jérusalem ; Joppé ; Césarée.",
-    "relationshipWithJehovah": "Jésus corrige Pierre mais continue de le former. Après sa résurrection, il lui confie de prendre soin de ses disciples.",
-    "didYouKnow": "Pierre était pêcheur et travaillait avec son frère André.",
+    "keyReading": "Matthieu 4:18-22 ; 14:22-33 ; 16:13-23 ; 26:31-75 ; Jean 21:15-19 ; Actes 2:14-41 ; 10:1-48",
+    "location": "Galilée, Jérusalem, Judée et lieux de prédication.",
+    "relationshipWithJehovah": "Pierre apprit à compter sur Jéhovah par l’intermédiaire de Jésus et devint ensuite un prédicateur courageux.",
+    "didYouKnow": "Pierre et André étaient pêcheurs et avaient un lien étroit avec Capharnaüm.",
     "jwResources": [
       {
-        "title": "Pierre, I — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Pierre-I/"
+        "title": "Pierre — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Pierre/"
       },
       {
-        "title": "Marche courageusement avec Dieu — Pierre",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/pierre-je-suis-un-homme-pecheur/"
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Pierre — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Apôtre — Pierre est l’un des principaux apôtres et joue un rôle important dans les débuts de la congrégation chrétienne.",
@@ -977,32 +977,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "paul": {
-    "studyFocus": "Paul a consacré sa vie à annoncer la bonne nouvelle et à fortifier les congrégations, en s’appuyant sur Jéhovah dans de nombreuses épreuves.",
+    "studyFocus": "Paul, ancien persécuteur des disciples, devint apôtre des nations et consacra sa vie à annoncer la bonne nouvelle. Il voyagea beaucoup et supporta une forte opposition.",
     "lessonPoints": [
-      "Zèle : Paul a fait de la prédication sa priorité.",
-      "Endurance : il a continué malgré les persécutions, les voyages et les difficultés.",
-      "Amour : il a manifesté un profond intérêt pour les personnes qu’il aidait à devenir chrétiennes."
+      "Étudier sa conversion et le changement radical de sa vie.",
+      "Observer comment il combinait prédication, enseignement et travail.",
+      "Examiner son endurance face aux persécutions et aux difficultés des congrégations."
     ],
-    "keyReading": "Actes 9 ; 13–28 ; Philippiens 3 ; 2 Corinthiens 11",
-    "location": "Jérusalem ; Syrie ; Asie Mineure ; Grèce ; Rome.",
-    "relationshipWithJehovah": "Jéhovah et Jésus réorientent complètement la vie de Paul. Il considère ensuite son ministère comme un trésor et supporte de nombreuses épreuves pour l’accomplir.",
-    "didYouKnow": "Paul était aussi appelé Saul et était citoyen romain.",
+    "keyReading": "Actes 9:1-22 ; 13:1-4 ; 17:16-34 ; 20:17-38 ; 26:1-23 ; 2 Corinthiens 11:23-33",
+    "location": "Tarse, Syrie, Asie Mineure, Macédoine, Grèce, Jérusalem et Rome.",
+    "relationshipWithJehovah": "Paul considérait sa mission comme reçue du Seigneur et cherchait à faire connaître les desseins de Jéhovah.",
+    "didYouKnow": "Paul était citoyen romain de naissance et travaillait comme fabricant de tentes.",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu — Paul",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/paul-je-vous-recommande-de-ne-pas-vous-decourager/"
+        "title": "Paul — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Paul/"
+      },
+      {
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Paul — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Paul — Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Apôtre et missionnaire — Paul est passé de persécuteur des disciples à prédicateur zélé du christianisme.",
@@ -1030,28 +1030,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "jean": {
-    "studyFocus": "L’apôtre Jean est proche de Jésus et devient un témoin important de sa vie, de sa mort et de sa résurrection. Il insiste fortement sur l’amour, la vérité et la fidélité.",
+    "studyFocus": "Jean, fils de Zébédée, fut l’un des douze apôtres et un proche compagnon de Jésus. Ses écrits insistent fortement sur l’amour, la vérité et l’obéissance.",
     "lessonPoints": [
-      "Étudier la qualité « Amour » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Fidélité » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Vérité » dans les épisodes bibliques cités."
+      "Observer son évolution entre zèle impulsif et amour chrétien.",
+      "Étudier les moments où il fut particulièrement proche de Jésus.",
+      "Examiner comment ses écrits relient amour, vérité et fidélité."
     ],
-    "keyReading": "Jean 13:23-25; 19:25-27; 21:20-24; Révélation 1:9-20",
-    "location": "Galilée ; Jérusalem ; Éphèse, selon les sources historiques utilisées par JW.org.",
-    "relationshipWithJehovah": "Son attachement à Jésus s’est exprimé par un témoignage fidèle. Ses écrits mettent fortement en avant l’amour, l’obéissance et la fidélité à Dieu.",
-    "didYouKnow": "Jean et Pierre sont présentés comme des pêcheurs de métier, et Jean appartenait au cercle des trois apôtres qui ont accompagné Jésus dans certaines circonstances particulières.",
+    "keyReading": "Marc 3:13-19 ; Luc 9:49-56 ; Jean 13:21-30 ; 19:25-27 ; 20:1-10 ; 1 Jean 4:7-21 ; Révélation 1:9-20",
+    "location": "Galilée, Jérusalem et Patmos; la fin de son activité est traditionnellement associée à Éphèse.",
+    "relationshipWithJehovah": "Jean consacra sa longue vie à transmettre le témoignage sur Jésus et à enseigner l’amour pour Dieu et les frères.",
+    "didYouKnow": "Jean est identifié comme le fils de Zébédée et frère de Jacques; il est l’un des cinq hommes appelés Jean dans la Bible.",
     "jwResources": [
       {
         "title": "Jean — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jean/"
       },
       {
-        "title": "Jean — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne",
+        "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
@@ -1287,30 +1287,34 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "elisha": {
-    "studyFocus": "Élisée a servi fidèlement Jéhovah pendant des années et a montré une grande confiance dans sa puissance.",
+    "studyFocus": "Élisée fut prophète de Jéhovah et successeur d’Élie. Il accomplit de nombreux miracles et resta ferme face à l’opposition.",
     "lessonPoints": [
-      "Foi : Élisée a compté sur Jéhovah dans des situations humainement difficiles.",
-      "Persévérance : il a continué son ministère après avoir succédé à Élie.",
-      "Générosité : plusieurs récits montrent son souci sincère du bien des autres."
+      "Étudier sa réponse à l’appel d’Élie.",
+      "Observer les miracles accomplis en faveur de personnes ordinaires.",
+      "Examiner son courage face aux ennemis du peuple de Dieu."
     ],
-    "keyReading": "1 Rois 19:16, 19-21 ; 2 Rois 2–13 ; Luc 4:27",
+    "keyReading": "1 Rois 19:19-21 ; 2 Rois 2:1-15 ; 4 ; 5 ; 6:8-23 ; 13:14-21",
     "jwResources": [
       {
-        "title": "Élisha — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89lisha/"
+        "title": "Élisée — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89lis%C3%A9e/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "location": "Royaume d’Israël et régions voisines ; notamment Abel-Mehola, Jéricho, Samarie, Dothan et les territoires concernés par son activité prophétique.",
-    "relationshipWithJehovah": "Élisha fut un prophète de Jéhovah et montra un grand zèle pour le vrai culte. JW.org souligne sa patience, son amour, sa bonté et sa fermeté lorsque le nom de Jéhovah était en cause.",
-    "didYouKnow": "Élisha servit peut-être environ six ans comme assistant d’Éliya, puis exerça seul son activité prophétique pendant environ 60 ans. Étude perspicace lui attribue 16 miracles, contre 8 pour Éliya.",
+    "location": "Royaume d’Israël, notamment Samarie et les régions autour du Jourdain.",
+    "relationshipWithJehovah": "Élisée dépendait de Jéhovah et transmettait ses paroles sans se laisser intimider par les rois ou les ennemis.",
+    "didYouKnow": "Élisée demanda deux parts de l’esprit qui reposait sur Élie et vit Élie emporté dans un vent de tempête.",
     "identity": "Prophète et successeur d’Élie — Élisée poursuit le ministère prophétique d’Élie et intervient dans de nombreux récits concernant Israël.",
     "era": "Rois",
     "familyAndEntourage": [
@@ -1331,35 +1335,34 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "nehemie": {
-    "studyFocus": "Nehémia était échanson du roi perse Artaxerxès avant de devenir gouverneur des Juifs. Lorsqu’il apprit l’état désolé de Jérusalem, il jeûna et pria, demanda l’autorisation de reconstruire la muraille et dirigea ensuite les travaux malgré une opposition importante.",
+    "studyFocus": "Néhémie, échanson du roi de Perse puis gouverneur de Juda, fut profondément attristé par l’état de Jérusalem. Après avoir prié, il organisa la reconstruction de la muraille malgré l’opposition.",
     "lessonPoints": [
-      "Observer la réaction de Nehémia lorsqu’il apprend la situation de Jérusalem.",
-      "Étudier sa prière avant de demander quelque chose au roi Artaxerxès.",
-      "Examiner comment il organise les travaux tout en faisant face aux moqueries, aux menaces et aux complots.",
-      "Observer comment il continue à défendre le culte pur et à corriger certaines pratiques après la reconstruction."
+      "Observer comment il combine prière, préparation et action.",
+      "Étudier ses réponses aux menaces et aux problèmes internes.",
+      "Examiner ses prières courtes comme modèle de dépendance envers Jéhovah."
     ],
-    "keyReading": "Néhémie 1:1-11; 2:1-20; 4:1-23; 6:1-19; 8:1-12",
+    "keyReading": "Néhémie 1:1-11 ; 2:1-20 ; 4:1-23 ; 5:1-19 ; 6:1-19 ; 8:1-18",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu — Néhémie",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/rois-reconstruction-jerusalem/nehemie-a-reconstruit-les-murailles/"
+        "title": "Néhémie — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Neh%C3%A9mia/"
+      },
+      {
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Nehémia — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Neh%C3%A9mia/"
-      },
-      {
-        "title": "Livre de Néhémie — Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/bible-d-etude/livres/N%C3%A9h%C3%A9mie/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "location": "Suse, capitale royale perse ; Jérusalem et son district, où Nehémia exerce ensuite comme gouverneur.",
-    "relationshipWithJehovah": "Néhémie commence son action par la prière et attribue régulièrement la réussite à Jéhovah. Il combine confiance en Dieu et organisation pratique.",
-    "didYouKnow": "La reconstruction des murailles de Jérusalem fut achevée en seulement 52 jours malgré l’opposition.",
+    "location": "Suse en Perse puis Jérusalem et Juda.",
+    "relationshipWithJehovah": "Néhémie prie avant d’agir, reconnaît les péchés du peuple et attribue la réussite à la main de Jéhovah.",
+    "didYouKnow": "Néhémie était échanson d’Artaxerxès avant de devenir gouverneur des Juifs.",
     "identity": "Néhémie était un Juif servant comme échanson du roi de Perse. Il reçut l’autorisation de reconstruire les murailles de Jérusalem et dirigea le chantier malgré une forte opposition.",
     "era": "Ve siècle av. n. è., après l’exil",
     "familyAndEntourage": [
@@ -1493,32 +1496,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "barnabas": {
-    "studyFocus": "Barnabas était un encourageant généreux qui a soutenu Paul et Jean-Marc et a contribué à fortifier les congrégations.",
+    "studyFocus": "Barnabas était un chrétien généreux et encourageant de Chypre. Il soutint Saul après sa conversion et collabora avec Paul dans l’activité missionnaire.",
     "lessonPoints": [
-      "Encouragement : son nom et son rôle sont associés à la consolation et au soutien.",
-      "Générosité : il a vendu un champ et a apporté l’argent aux apôtres.",
-      "Confiance : il a donné une occasion à Jean-Marc de reprendre une activité utile."
+      "Étudier comment son encouragement a aidé Saul à être accepté.",
+      "Observer sa générosité et son souci des nouveaux disciples.",
+      "Examiner son désaccord avec Paul au sujet de Jean-Marc sans oublier son rôle durable dans le service."
     ],
-    "keyReading": "Actes 4:36-37 ; 9:26-27 ; 11:22-26 ; 15:36-39",
-    "location": "Jérusalem, Antioche de Syrie, Tarse et différentes régions parcourues pendant l’activité missionnaire.",
-    "relationshipWithJehovah": "Barnabé a montré sa foi par une générosité concrète, l’encouragement des autres et un service persévérant dans la bonne nouvelle.",
-    "didYouKnow": "Son nom araméen était Joseph ; les apôtres lui donnèrent le surnom Barnabé, qui signifie « Fils de consolation » ou « Fils d’encouragement ».",
+    "keyReading": "Actes 4:32-37 ; 9:26-28 ; 11:19-30 ; 13:1-13 ; 14:8-28 ; 15:36-41",
+    "location": "Chypre, Jérusalem, Antioche de Syrie et régions de Galatie.",
+    "relationshipWithJehovah": "Barnabas est présenté comme un homme bon, plein d’esprit saint et de foi, qui fortifiait les autres.",
+    "didYouKnow": "Son nom Barnabas est interprété comme « fils de consolation » ou « fils d’encouragement »; il était lévite originaire de Chypre.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — encyclopédie biblique",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Barnabas — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Barnabas/"
       },
       {
-        "title": "Marche courageusement avec Dieu — Barnabé",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/barnabe-fils-de-consolation/"
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Barnabé — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/barnabe/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Collaborateur des apôtres — Barnabé joue un rôle important dans l’accueil et l’encouragement des disciples et dans l’activité missionnaire.",
@@ -2386,37 +2389,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "isaiah": {
-    "studyFocus": "Isaïe exerce son ministère prophétique en Juda. Il reçoit une vision de Jéhovah et accepte la mission d’annoncer des messages comprenant des jugements et des promesses.",
+    "studyFocus": "Isaïe fut prophète de Jéhovah en Juda pendant une période de grands bouleversements. Il dénonça l’infidélité et annonça des jugements ainsi que de nombreuses prophéties messianiques.",
     "lessonPoints": [
-      "Il répond à l’appel prophétique par sa disponibilité.",
-      "Il transmet des messages parfois difficiles.",
-      "Il annonce de nombreuses prophéties messianiques.",
-      "Il met l’accent sur la sainteté de Jéhovah et la confiance en lui."
+      "Étudier sa réponse à l’appel: « Me voici! Envoie-moi. »",
+      "Observer comment il combina avertissements et messages d’espérance.",
+      "Examiner les prophéties d’Isaïe appliquées au Messie dans les Écritures grecques."
     ],
-    "keyReading": "Isaïe 6:1-13; 7:1-17; 9:1-7; 53:1-12",
-    "location": "Jérusalem et le royaume de Juda.",
-    "relationshipWithJehovah": "Lorsqu’il entend la question « Qui enverrai-je ? », Isaïe répond immédiatement qu’il est disponible. Il accepte une mission dont Jéhovah lui annonce qu’elle rencontrera de la résistance.",
-    "didYouKnow": "Isaïe 6 décrit une vision dans laquelle Isaïe voit Jéhovah dans son temple et entend les séraphins proclamer la sainteté de Dieu.",
+    "keyReading": "Isaïe 1:1-20 ; 6:1-13 ; 7:1-17 ; 9:1-7 ; 11:1-10 ; 53:1-12",
+    "location": "Juda, particulièrement Jérusalem.",
+    "relationshipWithJehovah": "Isaïe accepta une mission difficile et transmit fidèlement les paroles de Jéhovah malgré la faible réceptivité du peuple.",
+    "didYouKnow": "Isaïe prophétisa sous Ozias, Jotham, Ahaz et Hizqiya.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Isaïe — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Isa%C3%AFe/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Isaïe",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Isa%C3%AFe/"
       }
     ],
     "identity": "Isaïe était un prophète de Juda qui servit pendant les règnes de plusieurs rois et transmit de nombreuses prophéties sur Juda, les nations et le Messie.",
@@ -2444,38 +2442,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jeremiah": {
-    "studyFocus": "Jérémie sert comme prophète avant et pendant la destruction de Jérusalem. Malgré les menaces et l’emprisonnement, il continue à transmettre les messages de Jéhovah.",
+    "studyFocus": "Jérémie fut appelé prophète alors qu’il était jeune et servit pendant les dernières années de Juda. Il avertit de la destruction de Jérusalem et supporta une forte opposition.",
     "lessonPoints": [
-      "Jéhovah le charge de parler à des nations et à des rois.",
-      "Il rencontre une forte opposition.",
-      "Il achète un champ comme signe de confiance dans le retour futur des Juifs.",
-      "Il transmet la promesse d’une nouvelle alliance.",
-      "Son endurance montre l’importance de continuer à parler même lorsque le message est impopulaire."
+      "Étudier comment Jéhovah rassura Jérémie malgré sa jeunesse.",
+      "Observer les persécutions qu’il supporta sans abandonner sa mission.",
+      "Examiner ses prières personnelles et sa confiance malgré la détresse."
     ],
-    "keyReading": "Jérémie 1:4-19; 20:7-13; 26:1-24; 36:1-32; 38:1-13",
-    "location": "Jérusalem, Juda et les régions voisines.",
-    "relationshipWithJehovah": "Jérémie parle ouvertement à Jéhovah de son découragement tout en continuant sa mission. Ses prières montrent qu’il ne cache pas ses émotions mais reste attaché à Dieu.",
-    "didYouKnow": "Jérémie était encore jeune lorsqu’il reçut sa mission prophétique et dit à Jéhovah qu’il ne savait pas parler parce qu’il était un garçon.",
+    "keyReading": "Jérémie 1:4-19 ; 7:1-34 ; 20:7-13 ; 26:1-24 ; 36:1-32 ; 38:1-13",
+    "location": "Juda et Jérusalem, puis les régions où furent emmenés les survivants.",
+    "relationshipWithJehovah": "Jérémie parlait ouvertement à Jéhovah de sa souffrance mais continuait à proclamer fidèlement ses messages.",
+    "didYouKnow": "Jérémie dicta une partie de ses prophéties à Baruch, son secrétaire.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Jérémie — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/J%C3%A9r%C3%A9mie/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Jérémie",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/J%C3%A9r%C3%A9mie/"
       }
     ],
     "identity": "Jérémie était un prophète de Juda chargé d’avertir Jérusalem avant sa destruction par les Babyloniens et pendant cette période de crise.",
