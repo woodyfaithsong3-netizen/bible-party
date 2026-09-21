@@ -670,16 +670,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "elie": {
-    "studyFocus": "Élie a défendu courageusement le vrai culte face au culte de Baal. Son récit montre aussi que Jéhovah soutient ses serviteurs lorsqu’ils sont momentanément découragés.",
+    "studyFocus": "Éli était grand prêtre et juge en Israël à l’époque où Samuel était encore enfant. Il enseigna à Samuel comment répondre à l’appel de Jéhovah, mais ses propres fils, Hophni et Phinéhas, pratiquaient des actes graves. Éli fut réprimandé parce qu’il ne les avait pas corrigés avec suffisamment de fermeté.",
     "lessonPoints": [
-      "Courage : Élie a affronté les prophètes de Baal au mont Carmel.",
-      "Confiance en Jéhovah : il a prié avec foi et a laissé Jéhovah démontrer qui est le vrai Dieu.",
-      "Persévérance : après avoir eu peur, Élie a reçu de Jéhovah l’assurance qu’il avait encore du travail à accomplir."
+      "Éli permit à Samuel de servir près de lui et l’aida à reconnaître l’appel de Jéhovah.",
+      "Il avait une certaine sensibilité spirituelle mais manqua de fermeté envers ses fils.",
+      "Jéhovah le tint responsable de ne pas avoir corrigé leur conduite.",
+      "La fin de sa vie montre l’importance de prendre au sérieux les responsabilités familiales et spirituelles."
     ],
-    "keyReading": "1 Rois 17:1-24; 18:17-46; 19:1-18",
-    "location": "Israël du Nord ; mont Carmel ; désert ; région du Jourdain.",
-    "relationshipWithJehovah": "Élie défend publiquement le nom de Jéhovah au Carmel, mais connaît aussi un moment de découragement. Jéhovah le soutient alors avec patience et lui confie encore du travail.",
-    "didYouKnow": "Jéhovah ne corrige pas Élie avec dureté lorsqu’il fuit; il lui fournit nourriture, repos et une nouvelle mission.",
+    "keyReading": "1 Samuel 2:12-36 ; 3:1-21 ; 4:10-18",
+    "location": "Silo.",
+    "relationshipWithJehovah": "Éli servait dans le sanctuaire mais reçut une condamnation divine parce qu’il n’avait pas correctement maîtrisé la mauvaise conduite de ses fils.",
+    "didYouKnow": "Éli mourut à l’âge de 98 ans lorsqu’il apprit que l’arche de Dieu avait été capturée et que ses deux fils étaient morts.",
     "jwResources": [
       {
         "title": "Élie — Étude perspicace des Écritures",
@@ -1615,17 +1616,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "hagar": {
-    "studyFocus": "Agar était une servante égyptienne de Sara et la mère d’Ismaël. Sa vie fut marquée par les tensions familiales, la fuite dans le désert et un retour sur instruction de l’ange de Jéhovah. Elle connut aussi une seconde détresse lorsque son fils Ismaël fut renvoyé avec elle.",
+    "studyFocus": "Agar était la servante égyptienne de Sara et la mère d’Ismaël. Après avoir été traitée durement, elle s’enfuit dans le désert. L’ange de Jéhovah lui parla, lui donna une direction et lui annonça une descendance. Plus tard, elle fut renvoyée avec Ismaël mais Jéhovah continua de voir sa situation.",
     "lessonPoints": [
-      "Agar fut prise dans une situation familiale qu’elle ne contrôlait pas entièrement.",
-      "Dans le désert, l’ange de Jéhovah lui donna une direction et une promesse concernant son fils.",
-      "Elle donna à Jéhovah un nom exprimant qu’il avait vu sa détresse.",
-      "Son histoire montre que Jéhovah voit les personnes vulnérables."
+      "Agar connut des circonstances familiales très difficiles.",
+      "Jéhovah vit sa détresse et lui parla personnellement.",
+      "Elle donna à Dieu le nom de Celui qui voit, montrant l’impression profonde laissée par cette rencontre.",
+      "Son histoire montre que Jéhovah remarque les personnes qui souffrent."
     ],
-    "keyReading": "Genèse 16:1-16 ; 21:8-21 ; Galates 4:21-31",
-    "location": "La maison d’Abraham en Canaan et le désert de Shour.",
-    "relationshipWithJehovah": "Jéhovah remarqua sa situation, lui parla par l’intermédiaire de son ange et pourvut aux besoins d’elle et d’Ismaël dans le désert.",
-    "didYouKnow": "Agar appela Jéhovah « un Dieu qui voit », après avoir constaté qu’il avait prêté attention à sa détresse.",
+    "keyReading": "Genèse 16:1-16 ; 21:8-21",
+    "location": "Canaan et le désert situé vers Beer-Shéba.",
+    "relationshipWithJehovah": "Agar reconnut que Jéhovah avait vu sa détresse et reçut de lui des promesses concernant son fils Ismaël.",
+    "didYouKnow": "Agar est la première personne mentionnée dans la Bible à avoir donné un nom à Jéhovah, en l’appelant « un Dieu qui voit » dans le contexte de sa rencontre avec l’ange.",
     "jwResources": [
       {
         "title": "Agar — Étude perspicace des Écritures",
@@ -1663,17 +1664,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "leah": {
-    "studyFocus": "Léa était la fille de Labân et la première épouse de Jacob, donnée à Jacob dans une situation qu’il n’avait pas prévue. Elle connut une vie conjugale difficile, mais la Bible montre qu’elle eut de nombreux enfants et qu’elle donna plusieurs noms à ses fils en lien avec ses sentiments et sa relation avec Jéhovah.",
+    "studyFocus": "Léa était la première femme de Jacob, donnée à celui-ci par Laban. Elle eut plusieurs fils et fut la mère de Juda et de Lévi, ancêtres de lignées importantes en Israël. Même si Jacob aimait davantage Rachel, Jéhovah remarqua la situation de Léa.",
     "lessonPoints": [
-      "Léa vécut dans une situation affective douloureuse et chercha du réconfort auprès de Jéhovah.",
-      "Les noms de plusieurs de ses fils révèlent ses émotions et son désir d’être aimée.",
-      "Elle donna naissance à six fils et à une fille, Dina.",
-      "Juda, l’un de ses fils, devint un ancêtre de David et de Jésus selon les généalogies bibliques."
+      "Léa connut une situation conjugale douloureuse et complexe.",
+      "Jéhovah vit qu’elle n’était pas aimée et lui donna des enfants.",
+      "Elle donna à plusieurs de ses fils des noms exprimant ses sentiments ou son espoir envers Jéhovah.",
+      "Sa descendance comprit Juda et Lévi, deux tribus majeures d’Israël."
     ],
     "keyReading": "Genèse 29:16-35 ; 30:1-21 ; 49:29-33",
-    "location": "Paddân-Aram puis Canaan.",
-    "relationshipWithJehovah": "Le récit montre que Jéhovah vit que Léa n’était pas aimée et lui permit d’avoir des enfants; elle reconnut aussi Jéhovah dans les noms qu’elle choisit.",
-    "didYouKnow": "Léa est la mère de Juda, ancêtre de David et de Jésus selon les généalogies bibliques.",
+    "location": "Paddan-Aram puis Canaan.",
+    "relationshipWithJehovah": "Jéhovah vit la situation de Léa et lui accorda une descendance importante, notamment Juda et Lévi.",
+    "didYouKnow": "Léa fut enterrée dans la caverne de Makpéla, le lieu où Abraham, Sara, Isaac et Rébecca furent aussi enterrés.",
     "jwResources": [
       {
         "title": "Léa — Étude perspicace des Écritures",
@@ -1722,17 +1723,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "esau": {
-    "studyFocus": "Ésaü, frère jumeau de Jacob, était un chasseur habile et le fils préféré d’Isaac. Il vendit son droit d’aînesse pour un repas et perdit ensuite la bénédiction destinée à l’aîné. Malgré un conflit sérieux avec Jacob, il finit par se réconcilier avec lui.",
+    "studyFocus": "Ésaü était le fils aîné d’Isaac et de Rébecca et le frère jumeau de Jacob. Il était un chasseur habile et vendit son droit d’aînesse pour un plat de nourriture. Plus tard, il manifesta une certaine réconciliation avec Jacob, mais son choix initial révéla qu’il accordait peu de valeur aux choses spirituelles.",
     "lessonPoints": [
-      "Ésaü accorda une valeur immédiate à la nourriture et sous-estima son droit d’aînesse.",
-      "Ses mariages avec des femmes du pays causèrent du chagrin à Isaac et Rébecca.",
-      "Lorsqu’il retrouva Jacob, il courut à sa rencontre et l’embrassa.",
-      "Son histoire oppose les choix spirituels à la recherche d’une satisfaction immédiate."
+      "Ésaü privilégia un besoin immédiat au détriment de son droit d’aînesse.",
+      "Il épousa des femmes qui causèrent de l’amertume à Isaac et Rébecca.",
+      "Il manifesta plus tard de la générosité envers Jacob lors de leurs retrouvailles.",
+      "Son exemple montre les conséquences possibles de décisions prises sous l’effet d’un désir immédiat."
     ],
-    "keyReading": "Genèse 25:27-34 ; 26:34-35 ; 27:1-46 ; 32:3-23 ; 33:1-16 ; Hébreux 12:16,17",
-    "location": "Canaan, notamment la région de Séïr et d’Édom.",
-    "relationshipWithJehovah": "Hébreux 12:16-17 utilise son exemple pour mettre en garde contre le fait de mépriser les choses sacrées.",
-    "didYouKnow": "Ésaü reçut aussi le nom Édom, « Rouge », en rapport avec l’épisode du plat de lentilles.",
+    "keyReading": "Genèse 25:24-34 ; 26:34-35 ; 27:30-45 ; 32:3-23 ; 33:1-16 ; Hébreux 12:16-17",
+    "location": "Canaan, puis la région montagneuse de Séïr.",
+    "relationshipWithJehovah": "La Bible utilise Ésaü comme exemple d’un homme qui ne valorisa pas suffisamment les choses sacrées lorsqu’il vendit son droit d’aînesse.",
+    "didYouKnow": "Ésaü reçut le nom d’Édom, qui signifie « rouge », en lien avec l’épisode du plat de potage rouge qu’il demanda à Jacob.",
     "jwResources": [
       {
         "title": "Ésaü — Étude perspicace des Écritures",
@@ -1774,17 +1775,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "melchizedek": {
-    "studyFocus": "Melkisédec était roi de Salem et prêtre du Dieu Très-Haut à l’époque d’Abraham. Il bénit Abraham après sa victoire et lui apporta du pain et du vin. Psaume 110 et Hébreux 7 utilisent son personnage pour expliquer le rôle sacerdotal du Messie.",
+    "studyFocus": "Melkisédek était roi de Salem et prêtre du Dieu Très-Haut à l’époque d’Abraham. Il bénit Abraham après la victoire de celui-ci sur les rois ennemis, et Abraham lui donna un dixième du butin. Les Écritures chrétiennes utilisent ensuite Melkisédek comme figure prophétique du rôle sacerdotal de Jésus.",
     "lessonPoints": [
-      "Melkisédec réunissait les fonctions de roi et de prêtre du Dieu Très-Haut.",
-      "Il bénit Abraham et attribua la victoire à Jéhovah.",
-      "Abraham lui donna le dixième de tout le butin.",
-      "Hébreux 7 utilise Melkisédec comme figure du sacerdoce supérieur de Jésus."
+      "Melkisédek associait une fonction royale et une fonction sacerdotale.",
+      "Il bénit Abraham au nom du Dieu Très-Haut.",
+      "Abraham reconnut son rôle en lui donnant un dixième.",
+      "Hébreux montre que le sacerdoce de Jésus est comparable à celui de Melkisédek sous un angle prophétique."
     ],
     "keyReading": "Genèse 14:17-24 ; Psaume 110:1-4 ; Hébreux 5:5-10 ; 7:1-28",
     "location": "Salem, généralement identifiée à l’ancienne Jérusalem.",
-    "relationshipWithJehovah": "Il est explicitement appelé « prêtre du Dieu Très-Haut » et invoque Jéhovah comme Créateur du ciel et de la terre.",
-    "didYouKnow": "Melkisédec signifie « Roi de justice », et il était aussi roi de Salem, nom associé à la paix.",
+    "relationshipWithJehovah": "Melkisédek servait comme prêtre du Dieu Très-Haut et bénit Abraham au nom de Jéhovah.",
+    "didYouKnow": "Melkisédek est présenté dans Hébreux comme n’ayant ni généalogie rapportée ni succession sacerdotale mentionnée dans le récit de la Genèse, ce qui sert à illustrer le caractère particulier du sacerdoce de Jésus.",
     "jwResources": [
       {
         "title": "Melkisédec — Étude perspicace des Écritures",
@@ -1825,17 +1826,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jethro": {
-    "studyFocus": "Jéthro, prêtre de Madian et beau-père de Moïse, accueillit Moïse pendant son exil à Madian. Plus tard, il se réjouit de ce que Jéhovah avait fait pour Israël et conseilla à Moïse de déléguer certaines responsabilités judiciaires à des hommes capables.",
+    "studyFocus": "Jéthro, aussi appelé Réouel, était le prêtre de Madian et le beau-père de Moïse. Il accueillit Moïse lorsqu’il s’enfuit d’Égypte et lui donna Séphora comme épouse. Plus tard, il rejoignit Israël dans le désert et conseilla à Moïse de déléguer certaines responsabilités judiciaires.",
     "lessonPoints": [
-      "Jéthro accueillit Moïse et lui donna un cadre familial après sa fuite d’Égypte.",
-      "Il reconnut les actions de Jéhovah après avoir entendu le récit de la délivrance d’Israël.",
-      "Son conseil visait à éviter l’épuisement de Moïse et à organiser la justice.",
-      "Il savait reconnaître les qualités nécessaires chez ceux à qui l’on confie des responsabilités."
+      "Jéthro accueillit Moïse alors qu’il était fugitif.",
+      "Il se réjouit des actes de Jéhovah en faveur d’Israël.",
+      "Il donna à Moïse un conseil pratique pour éviter de porter seul toute la charge du peuple.",
+      "Il encouragea une organisation qui permettait à des hommes capables de partager les responsabilités."
     ],
-    "keyReading": "Exode 2:15-22 ; 3:1 ; 18:1-27 ; Nombres 10:29-32",
-    "location": "Madian, puis le camp d’Israël près du mont Sinaï.",
-    "relationshipWithJehovah": "Après avoir entendu le récit de la délivrance, Jéthro déclara que Jéhovah était plus grand que tous les autres dieux et offrit un sacrifice.",
-    "didYouKnow": "Jéthro était le beau-père de Moïse et le père de Séphora; son autre nom, Réouël, apparaît également dans le récit biblique.",
+    "keyReading": "Exode 2:16-22 ; 18:1-27",
+    "location": "Madian puis le désert près du Sinaï.",
+    "relationshipWithJehovah": "Jéthro reconnut la supériorité de Jéhovah après avoir entendu ce qu’il avait fait pour Israël et offrit un sacrifice à Dieu.",
+    "didYouKnow": "Jéthro observa que Moïse passait toute la journée à juger le peuple et lui proposa de choisir des hommes capables pour l’aider.",
     "jwResources": [
       {
         "title": "Jéthro — Étude perspicace des Écritures",
@@ -1877,17 +1878,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "zipporah": {
-    "studyFocus": "Séphora était l’épouse de Moïse et la fille de Jéthro. Elle accompagna Moïse dans sa vie à Madian puis dans son retour vers l’Égypte. Un épisode bref montre qu’elle prit rapidement une décision concernant la circoncision de leur fils lorsque Jéhovah exigea que la situation soit réglée.",
+    "studyFocus": "Séphora était la fille de Jéthro et l’épouse de Moïse. Elle donna naissance à leurs fils Guershom et Éliézer. À un moment critique du voyage, elle intervint rapidement en circoncisant leur fils, après quoi Jéhovah cessa de menacer Moïse de mort.",
     "lessonPoints": [
-      "Séphora partagea avec Moïse une vie marquée par des déplacements et des responsabilités difficiles.",
-      "Elle appartenait à une famille qui accueillit Moïse à Madian.",
-      "Lors d’une crise sur le chemin de l’Égypte, elle agit rapidement pour régler la question de la circoncision de son fils.",
-      "Le récit rappelle l’importance de prendre au sérieux les exigences de Jéhovah."
+      "Séphora accepta de quitter Madian pour suivre Moïse.",
+      "Elle prit une décision rapide lors d’une situation familiale urgente.",
+      "Elle comprit l’importance de respecter l’alliance de la circoncision.",
+      "Son histoire montre que l’obéissance aux exigences de Jéhovah pouvait avoir des conséquences très sérieuses."
     ],
-    "keyReading": "Exode 2:16-22 ; 4:18-26 ; 18:1-6",
-    "location": "Madian, puis sur la route entre Madian et l’Égypte.",
-    "relationshipWithJehovah": "La Bible ne rapporte pas beaucoup de détails sur sa spiritualité personnelle, mais son intervention dans Exode 4 montre qu’elle a compris l’urgence de respecter l’alliance de la circoncision.",
-    "didYouKnow": "Séphora était l’une des sept filles de Jéthro qui faisaient paître les troupeaux de leur père.",
+    "keyReading": "Exode 2:21-22 ; 4:18-26 ; 18:1-6",
+    "location": "Madian et sur la route vers l’Égypte.",
+    "relationshipWithJehovah": "Séphora agit rapidement pour respecter l’exigence de la circoncision, ce qui contribua à préserver la vie de Moïse dans l’épisode rapporté en Exode 4.",
+    "didYouKnow": "Séphora appela Moïse « époux de sang » après avoir circoncis leur fils, expression liée à la circoncision.",
     "jwResources": [
       {
         "title": "Séphora — Les personnages de la Bible",
@@ -1930,17 +1931,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "korah": {
-    "studyFocus": "Qorah était un Lévite et un proche parent de Moïse et d’Aaron. Il participa à une rébellion contre l’autorité établie par Jéhovah, avec Dathan, Abiram et d’autres hommes. Son histoire montre comment l’ambition et la contestation peuvent conduire à mépriser les dispositions divines.",
+    "studyFocus": "Qorah était un Lévite qui se rebella contre l’autorité de Moïse et d’Aaron avec Dathan, Abiram et d’autres hommes. Il contesta notamment la position d’Aaron dans le sacerdoce. Jéhovah intervint de façon spectaculaire contre les rebelles, tandis que les fils de Qorah ne moururent pas avec lui.",
     "lessonPoints": [
-      "Qorah occupait déjà une fonction honorable parmi les Lévites mais désirait davantage de pouvoir.",
-      "Il entraîna 250 hommes dans une contestation publique de Moïse et d’Aaron.",
-      "Moïse laissa à Jéhovah le soin de montrer qui avait été choisi pour le service sacerdotal.",
-      "Son histoire rappelle qu’une fonction spirituelle ne doit pas devenir un moyen de satisfaire l’ambition personnelle."
+      "Qorah possédait déjà une position honorable parmi les Lévites mais voulut davantage d’autorité.",
+      "Il transforma une question spirituelle en contestation de l’autorité établie par Jéhovah.",
+      "Moïse ne chercha pas à défendre son propre prestige mais laissa Jéhovah trancher l’affaire.",
+      "Les descendants de Qorah servirent plus tard dans le culte, montrant que les conséquences ne furent pas automatiquement transmises à toute la famille."
     ],
-    "keyReading": "Nombres 16:1-50 ; 26:9-11 ; Psaume 106:16-18 ; Jude 11",
-    "location": "Camp d’Israël dans le désert, après la sortie d’Égypte.",
-    "relationshipWithJehovah": "Qorah prétendait défendre la sainteté de toute l’assemblée, mais il contestait une disposition que Jéhovah avait établie concernant Moïse et Aaron.",
-    "didYouKnow": "Nombres 26:11 précise que les fils de Qorah ne moururent pas, et leurs descendants furent ensuite associés au service musical du sanctuaire.",
+    "keyReading": "Nombres 16:1-50 ; 26:9-11 ; Psaumes 42, 44-49, 84-85, 87-88",
+    "location": "Désert, dans le camp d’Israël.",
+    "relationshipWithJehovah": "Qorah se rebella contre des dispositions établies par Jéhovah et fut puni pour sa rébellion.",
+    "didYouKnow": "Nombres 26:11 précise que les fils de Qorah ne moururent pas, et plusieurs Psaumes furent ensuite associés aux descendants de Qorah.",
     "jwResources": [
       {
         "title": "Coré — Les personnages de la Bible",
@@ -1983,17 +1984,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "balaam": {
-    "studyFocus": "Balaam était un homme connu pour pratiquer la divination et que Balak voulait engager pour maudire Israël. Jéhovah empêcha finalement qu’il prononce une malédiction contre Israël. Pourtant, les Écritures montrent qu’il développa une mauvaise attitude envers le gain injuste et contribua ensuite à faire trébucher Israël.",
+    "studyFocus": "Balaam était un homme de Mésopotamie que Balak, roi de Moab, voulut engager pour maudire Israël. Jéhovah lui interdit de maudire son peuple et fit en sorte que Balaam prononce finalement des bénédictions. Malgré cela, Balaam contribua ensuite à faire trébucher Israël par le conseil qui mena aux relations immorales et à l’idolâtrie.",
     "lessonPoints": [
-      "Balaam reçut des avertissements clairs de Jéhovah mais ne développa pas une bonne disposition de cœur.",
-      "L’épisode de l’ânesse montre que Jéhovah pouvait empêcher un homme de poursuivre une voie dangereuse.",
-      "Balaam ne put prononcer que ce que Jéhovah permettait.",
-      "La fin du récit montre que connaître la volonté de Dieu ne suffit pas si l’on aime le gain injuste."
+      "Balaam savait que Jéhovah ne permettait pas de maudire Israël.",
+      "Il prononça des paroles conformes à la volonté divine lorsqu’il prophétisa.",
+      "Son désir de récompense matérielle révéla cependant une mauvaise motivation.",
+      "Les Écritures chrétiennes citent Balaam comme avertissement contre l’amour de l’argent et la recherche d’un gain injuste."
     ],
-    "keyReading": "Nombres 22:1-41 ; 23:1-30 ; 24:1-25 ; 31:8,16 ; 2 Pierre 2:15 ; Révélation 2:14",
-    "location": "Région de Pethor, puis territoire de Moab près du Jourdain.",
-    "relationshipWithJehovah": "Jéhovah intervint directement pour empêcher Balaam de maudire Israël, mais les Écritures chrétiennes condamnent son amour du gain injuste.",
-    "didYouKnow": "L’ânesse de Balaam vit l’ange de Jéhovah avant Balaam lui-même et parla miraculeusement pour lui faire prendre conscience du danger.",
+    "keyReading": "Nombres 22:1-41 ; 23:1–24:25 ; 25:1-9 ; 31:8,16 ; 2 Pierre 2:15-16 ; Révélation 2:14",
+    "location": "Mésopotamie puis territoire de Moab.",
+    "relationshipWithJehovah": "Balaam reçut des instructions de Jéhovah mais permit à la recherche du gain de l’influencer; son parcours devint un avertissement contre l’avidité.",
+    "didYouKnow": "L’ânesse de Balaam vit l’ange de Jéhovah sur le chemin alors que Balaam ne le voyait pas, et elle parla de façon miraculeuse.",
     "jwResources": [
       {
         "title": "Balaam — Étude perspicace des Écritures",
@@ -2035,17 +2036,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "balak": {
-    "studyFocus": "Balak était roi de Moab lorsqu’Israël approcha de son territoire. Craignant la puissance d’Israël, il chercha à engager Balaam pour le maudire. Ses tentatives échouèrent parce que Jéhovah ne permit pas que son peuple soit maudit de cette manière.",
+    "studyFocus": "Balak était roi de Moab à l’époque où Israël approchait de la Terre promise. Craignant les Israélites, il demanda à Balaam de les maudire. Jéhovah empêcha cette malédiction et les paroles prononcées par Balaam devinrent au contraire des bénédictions.",
     "lessonPoints": [
-      "La peur poussa Balak à chercher une solution religieuse et politique contre Israël.",
-      "Il envoya plusieurs délégations à Balaam et augmenta la récompense proposée.",
-      "Même lorsque Balaam voulut parler contre Israël, il dut annoncer les paroles que Jéhovah lui donnait.",
-      "Balak montre qu’une position royale ne permet pas de contrecarrer le dessein de Jéhovah."
+      "Balak laissa la peur guider ses décisions.",
+      "Il chercha à utiliser un homme religieux pour combattre Israël par des moyens surnaturels.",
+      "Il refusa de reconnaître que Jéhovah déterminait le résultat.",
+      "Son histoire montre qu’aucune stratégie humaine ne peut annuler la volonté de Jéhovah."
     ],
-    "keyReading": "Nombres 22:1-41 ; 23:1-30 ; 24:1-25 ; Josué 24:9,10 ; Michée 6:5",
-    "location": "Moab, au nord de l’Arnon, face au territoire d’Israël.",
-    "relationshipWithJehovah": "Balak cherchait à utiliser Balaam contre Israël; le récit montre au contraire que Jéhovah protégea son peuple.",
-    "didYouKnow": "Balak fit conduire Balaam sur plusieurs hauteurs afin qu’il puisse voir une partie du camp d’Israël et prononcer ses oracles.",
+    "keyReading": "Nombres 22:1-41 ; 23:1-30 ; 24:1-25",
+    "location": "Moab, à l’est du Jourdain.",
+    "relationshipWithJehovah": "Balak s’opposa au dessein de Jéhovah concernant Israël et chercha sans succès à faire prononcer une malédiction contre ce peuple.",
+    "didYouKnow": "Balak demanda à Balaam de maudire Israël à plusieurs reprises et l’emmena sur différents points élevés pour tenter d’obtenir ce résultat.",
     "jwResources": [
       {
         "title": "Balak — Étude perspicace des Écritures",
@@ -2141,17 +2142,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "hannah": {
-    "studyFocus": "Anne était la femme d’Elkana et la mère du prophète Samuel. Pendant des années, elle fut stérile et souffrit aussi des provocations de Peninna. Elle déversa sa peine dans la prière, fit un vœu à Jéhovah et, après la naissance de Samuel, le remit au service au sanctuaire.",
+    "studyFocus": "Anne était la femme d’Elqana et la mère de Samuel. Profondément attristée de ne pas avoir d’enfant et provoquée par Peninna, elle pria Jéhovah avec intensité et lui promit de consacrer son fils à son service. Après la naissance de Samuel, elle tint sa promesse.",
     "lessonPoints": [
-      "Anne transforma une douleur personnelle en prière sincère plutôt qu’en vengeance contre Peninna.",
-      "Elle fit un vœu réfléchi et le respecta après avoir reçu la réponse de Jéhovah.",
-      "Elle continua à montrer son affection pour Samuel en lui apportant chaque année un vêtement.",
-      "Son cantique révèle sa confiance dans la puissance et la justice de Jéhovah."
+      "Anne exprima sa douleur à Jéhovah au lieu de laisser l’amertume la dominer.",
+      "Elle fit un vœu concernant son futur enfant.",
+      "Elle tint sa promesse même si cela signifiait se séparer de Samuel pour son service au sanctuaire.",
+      "Son cantique montre qu’elle reconnaissait Jéhovah comme la source de son espérance."
     ],
-    "keyReading": "1 Samuel 1:1-28 ; 2:1-11,18-21",
-    "location": "Rama, Silo et les environs d’Éphraïm.",
-    "relationshipWithJehovah": "Anne pria Jéhovah avec intensité, lui expliqua sa détresse et tint sa promesse. Son cantique montre qu’elle attribuait à Jéhovah sa joie et sa délivrance.",
-    "didYouKnow": "Après la naissance de Samuel, Anne eut encore trois fils et deux filles, selon 1 Samuel 2:21.",
+    "keyReading": "1 Samuel 1:1-28 ; 2:1-11",
+    "location": "Rama et Silo.",
+    "relationshipWithJehovah": "Anne pria avec confiance, tint son vœu et continua à louer Jéhovah après avoir reçu la réponse à sa prière.",
+    "didYouKnow": "Anne apportait chaque année à Samuel un petit manteau sans manches qu’elle lui confectionnait lorsqu’elle montait au sanctuaire.",
     "jwResources": [
       {
         "title": "Anne — Les personnages de la Bible",
@@ -2195,16 +2196,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "michal": {
-    "studyFocus": "Mical, fille de Saül et femme de David, a vécu dans une famille marquée par les conflits et a pris des décisions qui ont eu des conséquences dans sa vie conjugale.",
+    "studyFocus": "Mikal était la fille de Saül et la première épouse de David. Elle aida David à échapper à son père lorsque Saül cherchait à le tuer. Plus tard, elle méprisa David lorsqu’elle le vit danser avec enthousiasme devant l’arche de Jéhovah.",
     "lessonPoints": [
-      "Ne pas laisser les conflits familiaux déterminer nos choix spirituels.",
-      "Cultiver le respect : son récit montre l’importance de respecter ceux qui manifestent du zèle pour Jéhovah.",
-      "Prudence : les paroles et attitudes peuvent avoir des conséquences durables dans les relations."
+      "Mikal utilisa son intelligence pour protéger David d’une attaque de Saül.",
+      "Elle connut des années de séparation et de bouleversements politiques.",
+      "Son attitude envers David changea avec le temps.",
+      "Son récit rappelle qu’un acte courageux dans le passé ne garantit pas une attitude spirituelle correcte dans toutes les circonstances."
     ],
-    "keyReading": "1 Samuel 18:20-29; 19:11-17; 2 Samuel 6:14-23",
-    "location": "Gibéa et Jérusalem.",
-    "relationshipWithJehovah": "Le récit ne décrit pas une relation personnelle avec Jéhovah comparable à celle de David. Son attitude finale envers la joie liée au culte sert néanmoins d’avertissement sur le jugement des motivations d’autrui.",
-    "didYouKnow": "Mikal utilisa un teraphim, une statue domestique, pour faire croire aux hommes de Saül que David était au lit.",
+    "keyReading": "1 Samuel 18:20-28 ; 19:11-17 ; 25:44 ; 2 Samuel 3:13-16 ; 6:14-23",
+    "location": "Jérusalem et le royaume d’Israël.",
+    "relationshipWithJehovah": "La Bible rapporte des actions de Mikal avec leurs conséquences, mais donne peu d’informations sur sa relation personnelle avec Jéhovah.",
+    "didYouKnow": "Pour aider David à fuir, Mikal plaça un teraphim dans le lit et le couvrit afin de faire croire qu’il était malade.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2248,17 +2250,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joab": {
-    "studyFocus": "Joab, fils de Tserouïa, fut le chef de l’armée de David pendant une grande partie de son règne. Il était énergique et capable, mais son histoire est aussi marquée par des actes de vengeance et des meurtres qui entrèrent en conflit avec la volonté de David.",
+    "studyFocus": "Joab était le chef de l’armée de David et un homme capable militairement. Il aida David à consolider son royaume, mais il commit aussi des actes de vengeance et de violence que David désapprouvait. À la fin, Salomon le fit exécuter conformément aux instructions de David.",
     "lessonPoints": [
-      "Joab défendit David et participa à plusieurs victoires militaires.",
-      "Il tua Abner et Amasa pour des raisons personnelles ou politiques, malgré les conséquences graves.",
-      "Il pouvait conseiller David avec franchise, notamment après la mort d’Absalom.",
-      "Sa fin sous Salomon montre que des années de service ne rendent pas acceptables des actes de violence injustifiés."
+      "Joab fut un commandant efficace et utile à David.",
+      "Il prit parfois des décisions personnelles au lieu de respecter les directives du roi.",
+      "Il tua Abner et Amasa pour des raisons qui mêlaient vengeance et intérêt politique.",
+      "Son histoire montre que l’efficacité dans une fonction ne compense pas une mauvaise conduite morale."
     ],
-    "keyReading": "2 Samuel 2:12-32 ; 3:22-39 ; 18:1-33 ; 19:1-8 ; 20:4-13 ; 1 Rois 2:28-35",
-    "location": "Jérusalem et les champs de bataille du royaume d’Israël.",
-    "relationshipWithJehovah": "La Bible ne présente pas Joab comme un modèle spirituel. Son histoire montre que l’efficacité militaire et la loyauté politique ne remplacent pas l’obéissance aux principes de Jéhovah.",
-    "didYouKnow": "Joab était le frère d’Abishaï et d’Asaël, et tous trois étaient fils de Tserouïa, sœur de David.",
+    "keyReading": "2 Samuel 3:22-39 ; 10:6-14 ; 18:1-15 ; 20:4-23 ; 1 Rois 2:5-6,28-34",
+    "location": "Jérusalem et différents champs de bataille du royaume d’Israël.",
+    "relationshipWithJehovah": "Joab servit le roi choisi par Jéhovah mais commit des meurtres et des actes indépendants de la volonté de David, ce qui contribua à son jugement final.",
+    "didYouKnow": "Joab se réfugia auprès de l’autel de Jéhovah, mais Salomon ordonna qu’il soit exécuté malgré cela en raison des meurtres qu’il avait commis.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2305,16 +2307,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "herod_antipas": {
-    "studyFocus": "Hérode Antipas a exercé le pouvoir en Galilée et en Pérée à l’époque de Jésus. Son histoire est notamment liée à Jean le Baptiseur.",
+    "studyFocus": "Hérode Antipas était le tétrarque de Galilée et de Pérée pendant le ministère de Jésus. Il fit décapiter Jean le Baptiseur après que Jean eut dénoncé son mariage avec Hérodiade. Jésus comparut aussi devant lui peu avant sa mort.",
     "lessonPoints": [
-      "Courage face à la pression : son récit montre les conséquences de céder aux pressions humaines.",
-      "Respect de la vérité : Jean le Baptiseur lui avait courageusement parlé de sa conduite.",
-      "Humilité : la recherche de l’approbation humaine peut conduire à de graves décisions."
+      "Hérode craignait l’opinion publique et les conséquences de ses décisions.",
+      "Il savait que Jean était un homme juste mais le fit néanmoins exécuter.",
+      "Il montra une curiosité superficielle envers Jésus sans manifester une foi véritable.",
+      "Son parcours illustre le danger de laisser la pression sociale guider des décisions graves."
     ],
-    "keyReading": "Matthieu 14:1-12; Luc 3:19-20; 9:7-9; 13:31-33; 23:6-12",
-    "location": "Galilée et Pérée, notamment Tibériade.",
-    "relationshipWithJehovah": "Jean lui transmet un avertissement clair sur sa conduite, mais le récit ne rapporte pas qu’Antipas ait changé. Son parcours montre le danger de connaître la vérité sans agir en conséquence.",
-    "didYouKnow": "Antipas était appelé « renard » par Jésus, terme qui soulignait sa ruse dans le contexte où les Pharisiens avertissaient Jésus de la menace d’Hérode.",
+    "keyReading": "Matthieu 14:1-12 ; Marc 6:14-29 ; Luc 3:19-20 ; 9:7-9 ; 13:31-33 ; 23:6-12",
+    "location": "Galilée et Pérée.",
+    "relationshipWithJehovah": "Hérode entendit le témoignage de Jean et de Jésus mais n’est pas présenté comme un adorateur de Jéhovah.",
+    "didYouKnow": "Hérode Antipas fut surnommé « renard » par Jésus dans Luc 13:32 dans le cadre d’une réponse à une menace transmise par des Pharisiens.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2358,16 +2361,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "pilate": {
-    "studyFocus": "Ponce Pilate était le gouverneur romain qui présida au procès de Jésus. Son récit montre le conflit entre ce qu’il reconnaissait comme juste et la pression de la foule.",
+    "studyFocus": "Ponce Pilate était le gouverneur romain de Judée qui présida le procès de Jésus. Il reconnut à plusieurs reprises qu’il ne trouvait pas de faute en Jésus, mais finit par le livrer à l’exécution sous la pression des chefs religieux et de la foule.",
     "lessonPoints": [
-      "Courage moral : reconnaître l’innocence de quelqu’un exige d’agir en conséquence.",
-      "Pression humaine : Pilate a cédé à la pression des chefs religieux et de la foule.",
-      "Responsabilité : une position d’autorité implique de prendre au sérieux les décisions rendues."
+      "Pilate disposait de l’autorité judiciaire dans l’affaire de Jésus.",
+      "Il reconnut l’absence de faute criminelle évidente chez Jésus.",
+      "Il tenta plusieurs moyens pour éviter de prendre la décision finale.",
+      "Il finit néanmoins par céder à la pression et ordonna l’exécution."
     ],
-    "keyReading": "Matthieu 27:11-26; Marc 15:1-15; Luc 23:1-25; Jean 18:28–19:22",
-    "location": "Jérusalem, au prétoire romain.",
-    "relationshipWithJehovah": "Le récit ne le présente pas comme adorateur de Jéhovah. Il entend un témoignage direct de Jésus mais ne prend pas une décision conforme à ce qu’il reconnaît lui-même comme juste.",
-    "didYouKnow": "Une inscription découverte à Césarée en 1961 mentionne Ponce Pilate et constitue une preuve archéologique de son titre de préfet de Judée.",
+    "keyReading": "Matthieu 27:11-26 ; Marc 15:1-15 ; Luc 23:1-25 ; Jean 18:28–19:16",
+    "location": "Jérusalem et la Judée romaine.",
+    "relationshipWithJehovah": "Pilate fut confronté directement au témoignage de Jésus mais ne prit pas la décision de devenir son disciple; le récit souligne surtout sa responsabilité de gouverneur dans le procès.",
+    "didYouKnow": "Jean 18:38 rapporte que Pilate posa à Jésus la question : « Qu’est-ce que la vérité ? » avant de sortir vers les accusateurs.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2408,16 +2412,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "isaiah": {
-    "studyFocus": "Isaïe fut prophète de Jéhovah en Juda pendant une période de grands bouleversements. Il dénonça l’infidélité et annonça des jugements ainsi que de nombreuses prophéties messianiques.",
+    "studyFocus": "Isaïe fut prophète en Juda pendant plusieurs règnes et transmit des messages de jugement, de correction et d’espérance. Il annonça notamment des détails concernant le Messie et le rétablissement du peuple de Dieu. Son livre contient de nombreux appels à faire confiance à Jéhovah plutôt qu’aux alliances humaines.",
     "lessonPoints": [
-      "Étudier sa réponse à l’appel: « Me voici! Envoie-moi. »",
-      "Observer comment il combina avertissements et messages d’espérance.",
-      "Examiner les prophéties d’Isaïe appliquées au Messie dans les Écritures grecques."
+      "Isaïe accepta une mission prophétique exigeante.",
+      "Il avertit les dirigeants de Juda contre les alliances politiques et la fausse confiance.",
+      "Il annonça des prophéties messianiques reprises dans les Écritures grecques chrétiennes.",
+      "Il combina des messages de jugement avec une forte espérance de restauration."
     ],
-    "keyReading": "Isaïe 1:1-20 ; 6:1-13 ; 7:1-17 ; 9:1-7 ; 11:1-10 ; 53:1-12",
-    "location": "Juda, particulièrement Jérusalem.",
-    "relationshipWithJehovah": "Isaïe accepta une mission difficile et transmit fidèlement les paroles de Jéhovah malgré la faible réceptivité du peuple.",
-    "didYouKnow": "Isaïe prophétisa sous Ozias, Jotham, Ahaz et Hizqiya.",
+    "keyReading": "Isaïe 6:1-13 ; 7:1-17 ; 9:1-7 ; 11:1-10 ; 40:1-31 ; 53:1-12",
+    "location": "Jérusalem et le royaume de Juda.",
+    "relationshipWithJehovah": "Isaïe se porta volontaire pour transmettre le message de Jéhovah et resta prophète pendant plusieurs règnes.",
+    "didYouKnow": "Le livre d’Isaïe contient la prophétie concernant le « serviteur » qui souffrirait pour les autres, appliquée dans les Écritures chrétiennes à Jésus.",
     "jwResources": [
       {
         "title": "Isaïe — Étude perspicace des Écritures",
@@ -2461,16 +2466,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jeremiah": {
-    "studyFocus": "Jérémie fut appelé prophète alors qu’il était jeune et servit pendant les dernières années de Juda. Il avertit de la destruction de Jérusalem et supporta une forte opposition.",
+    "studyFocus": "Jérémie fut prophète de Jéhovah pendant les dernières décennies du royaume de Juda avant la destruction de Jérusalem par Babylone. Il annonça le jugement, encouragea la soumission à la domination babylonienne annoncée et continua à parler malgré les mauvais traitements.",
     "lessonPoints": [
-      "Étudier comment Jéhovah rassura Jérémie malgré sa jeunesse.",
-      "Observer les persécutions qu’il supporta sans abandonner sa mission.",
-      "Examiner ses prières personnelles et sa confiance malgré la détresse."
+      "Jérémie reçut sa mission alors qu’il se sentait jeune et incapable.",
+      "Il annonça des messages difficiles à un peuple qui ne voulait pas les entendre.",
+      "Il subit les coups, l’emprisonnement et d’autres persécutions.",
+      "Il conserva néanmoins sa confiance dans la parole de Jéhovah."
     ],
-    "keyReading": "Jérémie 1:4-19 ; 7:1-34 ; 20:7-13 ; 26:1-24 ; 36:1-32 ; 38:1-13",
-    "location": "Juda et Jérusalem, puis les régions où furent emmenés les survivants.",
-    "relationshipWithJehovah": "Jérémie parlait ouvertement à Jéhovah de sa souffrance mais continuait à proclamer fidèlement ses messages.",
-    "didYouKnow": "Jérémie dicta une partie de ses prophéties à Baruch, son secrétaire.",
+    "keyReading": "Jérémie 1:4-19 ; 20:7-13 ; 26:1-24 ; 36:1-32 ; 38:1-13 ; 40:1-6",
+    "location": "Jérusalem et le royaume de Juda.",
+    "relationshipWithJehovah": "Jérémie considérait la parole de Jéhovah comme une force intérieure qu’il ne pouvait pas retenir, même lorsque son ministère lui attirait des souffrances.",
+    "didYouKnow": "Jérémie utilisa un rouleau écrit par son secrétaire Baruch pour faire lire ses paroles au peuple après avoir été empêché d’aller lui-même au temple.",
     "jwResources": [
       {
         "title": "Jérémie — Étude perspicace des Écritures",
@@ -2515,18 +2521,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "ezekiel": {
-    "studyFocus": "Ézéchiel est un prêtre devenu prophète parmi les exilés à Babylone. Ses visions montrent que Jéhovah reste souverain même loin de Jérusalem.",
+    "studyFocus": "Ézéchiel était un prêtre devenu prophète pendant l’exil à Babylone. Il reçut des visions puissantes et transmit des messages aux exilés, notamment l’assurance que Jéhovah n’avait pas abandonné son dessein. Ses prophéties annonçaient aussi la restauration du vrai culte.",
     "lessonPoints": [
-      "Il reçoit sa mission parmi les exilés près du fleuve Kebar.",
-      "Il annonce la responsabilité individuelle devant Dieu.",
-      "Il met en scène des messages prophétiques.",
-      "Il reçoit des visions concernant la restauration du vrai culte.",
-      "Son service montre la nécessité de rester fidèle dans des circonstances difficiles."
+      "Ézéchiel accomplit sa mission dans un contexte d’exil et de découragement.",
+      "Il utilisa des visions et des actions symboliques pour transmettre les messages de Jéhovah.",
+      "Il insista sur la responsabilité personnelle et la nécessité de changer de conduite.",
+      "Ses visions finales décrivent la restauration du culte pur et l’ordre du pays restauré."
     ],
-    "keyReading": "Ézékiel 1:1-28; 2:1-10; 3:16-27; 24:15-27; 37:1-14",
-    "location": "Babylone, notamment près du fleuve Kebar.",
-    "relationshipWithJehovah": "Ézékiel reçoit des instructions détaillées et les exécute avec fidélité, même lorsqu’elles sont personnellement douloureuses. Jéhovah l’appelle régulièrement « fils d’homme » pour lui rappeler son statut humain.",
-    "didYouKnow": "Ézékiel exerçait la fonction de guetteur spirituel: il devait avertir les personnes menacées, et leur réaction déterminait leur responsabilité.",
+    "keyReading": "Ézéchiel 1:1-28 ; 2:1–3:11 ; 18:1-32 ; 33:1-20 ; 37:1-28 ; 40:1-4",
+    "location": "Tel-Abib, près du fleuve Kebar, en Babylonie.",
+    "relationshipWithJehovah": "Ézéchiel reçut une mission prophétique directe et continua à transmettre les messages de Jéhovah aux exilés.",
+    "didYouKnow": "Ézéchiel était prêtre avant de devenir prophète et reçut sa première grande vision près du fleuve Kebar en Babylonie.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2573,17 +2578,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "ezra": {
-    "studyFocus": "Esdras était un prêtre et un habile copiste de la Loi de Moïse. Après l’exil à Babylone, il monta à Jérusalem avec l’autorisation du roi Artaxerxès pour renforcer le vrai culte et enseigner la Loi. Il montra une attitude remarquable d’étude, de mise en pratique et d’enseignement.",
+    "studyFocus": "Esdras était prêtre et copiste habile de la Loi de Moïse. Après l’exil, il monta à Jérusalem avec l’autorisation du roi Artaxerxès pour renforcer le vrai culte et enseigner la Loi. Il combina étude, mise en pratique et enseignement.",
     "lessonPoints": [
       "Esdras avait préparé son cœur à étudier la Loi de Jéhovah.",
-      "Il ne se contentait pas de connaître la Loi : il la mettait en pratique puis l’enseignait.",
-      "Il reconnut la main de Jéhovah dans l’autorisation royale et dans le voyage vers Jérusalem.",
-      "Son exemple montre qu’un enseignant doit d’abord appliquer lui-même ce qu’il enseigne."
+      "Il mettait lui-même en pratique ce qu’il enseignait.",
+      "Il reconnut la main de Jéhovah dans la mission qui lui fut confiée.",
+      "Il agit pour rétablir le respect de la Loi parmi le peuple revenu d’exil."
     ],
     "keyReading": "Esdras 7:1-28 ; 8:21-36 ; 9:1-15 ; 10:1-17",
     "location": "Babylone puis Jérusalem.",
-    "relationshipWithJehovah": "Esdras avait fixé dans son cœur d’étudier la Loi de Jéhovah, de la pratiquer et de l’enseigner. Il attribua à Jéhovah la réussite de sa mission.",
-    "didYouKnow": "Esdras était prêtre et copiste spécialisé dans la Loi de Moïse, et il reçut du roi de Perse une autorisation officielle pour se rendre à Jérusalem.",
+    "relationshipWithJehovah": "Esdras avait fixé son cœur à étudier la Loi, à la pratiquer et à l’enseigner; il attribua à Jéhovah la réussite de sa mission.",
+    "didYouKnow": "Esdras était à la fois prêtre et copiste expérimenté de la Loi de Moïse.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2631,17 +2636,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "zerubbabel": {
-    "studyFocus": "Zorobabel était gouverneur de Juda après l’exil à Babylone et un descendant de David. Avec le grand prêtre Josué, il dirigea la reconstruction du temple de Jéhovah malgré l’opposition. Les prophètes Aggée et Zacharie l’encouragèrent dans cette tâche.",
+    "studyFocus": "Zorobabel était gouverneur de Juda après l’exil à Babylone et un descendant de David. Avec le grand prêtre Josué, il dirigea la reconstruction du temple malgré l’opposition. Aggée et Zacharie l’encouragèrent dans cette tâche.",
     "lessonPoints": [
       "Zorobabel accepta une responsabilité importante dans le rétablissement du vrai culte.",
-      "Il continua la reconstruction malgré l’opposition et les difficultés.",
+      "Il poursuivit la reconstruction malgré l’opposition.",
       "Jéhovah l’encouragea par l’intermédiaire d’Aggée et de Zacharie.",
-      "Son exemple montre que les obstacles humains ne rendent pas impossible l’accomplissement d’un projet soutenu par Jéhovah."
+      "Son exemple rappelle que l’accomplissement du dessein de Dieu ne dépend pas seulement de la force humaine."
     ],
-    "keyReading": "Esdras 3:1-13 ; 4:1-24 ; 5:1-17 ; 6:1-22 ; Aggée 1:1-14 ; 2:1-23 ; Zacharie 4:1-14",
+    "keyReading": "Esdras 3:1-13 ; 4:1-24 ; 5:1-17 ; 6:1-22 ; Aggée 1:1-14 ; Zacharie 4:1-14",
     "location": "Jérusalem et Juda après le retour de Babylone.",
-    "relationshipWithJehovah": "Jéhovah encouragea Zorobabel à poursuivre la reconstruction du temple et annonça qu’il achèverait le travail, non par la force humaine, mais par l’esprit de Dieu.",
-    "didYouKnow": "Zorobabel est présenté dans les généalogies comme un descendant de David et apparaît dans la lignée menant au Messie.",
+    "relationshipWithJehovah": "Jéhovah encouragea Zorobabel à poursuivre la reconstruction du temple et annonça que le travail serait mené à bien par son esprit.",
+    "didYouKnow": "Zorobabel apparaît dans les généalogies bibliques comme un descendant de David et figure dans la lignée menant au Messie.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
