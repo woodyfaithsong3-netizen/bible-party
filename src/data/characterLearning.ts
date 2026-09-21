@@ -2200,11 +2200,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_brother_jesus": {
-    "studyFocus": "Jacques, frère de Jésus — un pilier de la congrégation",
+    "studyFocus": "Jacques, frère de Jésus, est devenu un chrétien mûr et a joué un rôle important dans la congrégation de Jérusalem.",
     "lessonPoints": [
-      "Maturité spirituelle",
-      "Impartialité",
-      "Responsabilité"
+      "Foi : après avoir vu Jésus ressuscité, Jacques est devenu un disciple convaincu.",
+      "Responsabilité : il a participé à la direction de la congrégation de Jérusalem.",
+      "Pratique chrétienne : sa lettre insiste sur une foi démontrée par les actions."
     ],
     "keyReading": "Actes 15:13-29 ; 21:18-25 ; Galates 1:19 ; 2:9",
     "location": "Jérusalem.",
@@ -2226,11 +2226,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jude_brother_jesus": {
-    "studyFocus": "Jude, frère de Jésus — un défenseur de la foi",
+    "studyFocus": "Jude, frère de Jésus, s’est présenté comme esclave de Jésus Christ et a exhorté les chrétiens à lutter pour la foi.",
     "lessonPoints": [
-      "Défendre la foi",
-      "Vigilance",
-      "Miséricorde"
+      "Humilité : il ne s’est pas présenté en mettant en avant son lien familial avec Jésus.",
+      "Défense de la foi : il a encouragé les chrétiens à protéger les enseignements reçus.",
+      "Vigilance : il a averti contre ceux qui introduisaient une conduite mauvaise dans la congrégation."
     ],
     "keyReading": "Jude 1-25",
     "location": "Palestine et congrégations chrétiennes du Ier siècle.",
@@ -2252,11 +2252,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "philip_apostle": {
-    "studyFocus": "Philippe l’apôtre — il a amené Nathanaël à Jésus",
+    "studyFocus": "Philippe, l’un des douze apôtres, a montré de l’intérêt pour les personnes et a cherché à les conduire vers Jésus.",
     "lessonPoints": [
-      "Inviter les autres",
-      "Foi progressive",
-      "Servir Jésus"
+      "Initiative : Philippe a parlé de Jésus à Nathanaël.",
+      "Honnêteté : il a répondu à une objection en invitant simplement à venir voir.",
+      "Foi : il a continué à apprendre de Jésus même lorsqu’il ne comprenait pas encore tout."
     ],
     "keyReading": "Jean 1:43-51 ; 6:1-7 ; 12:20-22 ; 14:8-11",
     "location": "Galilée et Jérusalem.",
@@ -2278,11 +2278,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "bartholomew": {
-    "studyFocus": "Barthélémy — l’apôtre probablement appelé Nathanaël",
+    "studyFocus": "Barthélemy, probablement Nathanaël, était un disciple qui a reconnu Jésus comme le Fils de Dieu et le Roi d’Israël.",
     "lessonPoints": [
-      "Sincérité",
-      "Reconnaître la vérité",
-      "Parler de Jésus"
+      "Sincérité : Jésus a reconnu en lui un homme sans tromperie.",
+      "Réceptivité : il a accepté l’invitation de Philippe à venir voir Jésus.",
+      "Foi : il a rapidement exprimé sa conviction concernant l’identité de Jésus."
     ],
     "keyReading": "Jean 1:45-51 ; 21:2",
     "location": "Galilée et régions du ministère de Jésus.",
@@ -2304,11 +2304,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_alphaaeus": {
-    "studyFocus": "Jacques fils d’Alphée — un apôtre discret",
+    "studyFocus": "Jacques fils d’Alphée faisait partie des douze apôtres, mais les Évangiles donnent peu de détails sur sa vie.",
     "lessonPoints": [
-      "Fidélité discrète",
-      "Humilité",
-      "Persévérance"
+      "Fidélité discrète : être peu mentionné ne signifie pas être peu utile à Jéhovah.",
+      "Disponibilité : Jésus lui a confié une place parmi les douze.",
+      "Persévérance : son service s’est inscrit dans la durée du ministère apostolique."
     ],
     "keyReading": "Matthieu 10:2-4 ; Marc 3:13-19 ; Actes 1:13",
     "location": "Jérusalem et le territoire d’Israël.",
@@ -2330,11 +2330,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "simon_zealot": {
-    "studyFocus": "Simon le Zélé — un apôtre engagé",
+    "studyFocus": "Simon le Zélé était l’un des douze apôtres et a servi aux côtés de disciples issus de milieux très différents.",
     "lessonPoints": [
-      "Changer de priorités",
-      "Unité chrétienne",
-      "Zèle"
+      "Unité : il a servi avec des personnes dont les parcours et opinions pouvaient être très différents des siens.",
+      "Changement : devenir disciple de Jésus exigeait de placer le Royaume au-dessus des anciennes affiliations.",
+      "Fidélité : il est resté parmi les douze apôtres choisis par Jésus."
     ],
     "keyReading": "Luc 6:12-16 ; Actes 1:13",
     "location": "Jérusalem et le territoire d’Israël.",
@@ -2620,11 +2620,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "epaphroditus": {
-    "studyFocus": "Épaphrodite a risqué sa vie pour servir et aider Paul au nom des chrétiens de Philippes.",
+    "studyFocus": "Épaphrodite était un chrétien digne de confiance de Philippes qui s’est exposé au danger pour servir Paul et ses frères.",
     "lessonPoints": [
-      "Abnégation : il a été prêt à se dépenser pour le service chrétien.",
-      "Persévérance : malgré une grave maladie, il a continué à se soucier des autres.",
-      "Humilité : Paul demandait aux Philippiens de l’accueillir avec joie et de tenir de tels hommes en haute estime."
+      "Abnégation : il a risqué sa vie pour l’œuvre du Seigneur.",
+      "Affection fraternelle : il désirait retrouver les Philippiens et se souciait de leur inquiétude.",
+      "Estime des serviteurs fidèles : Paul a demandé aux frères de continuer à chérir des hommes comme lui."
     ],
     "keyReading": "Philippiens 2:25-30 ; 4:18",
     "location": "Philippes et Rome.",
@@ -2646,11 +2646,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "tychicus": {
-    "studyFocus": "Tychique — un messager digne de confiance",
+    "studyFocus": "Tychique était un assistant fidèle de Paul, chargé de transmettre des lettres et de réconforter les congrégations.",
     "lessonPoints": [
-      "Fiabilité",
-      "Encourager",
-      "Servir avec constance"
+      "Fiabilité : Paul lui confiait des missions importantes.",
+      "Encouragement : il devait renseigner les frères sur Paul et les consoler.",
+      "Disponibilité : il a accepté plusieurs missions au service des congrégations."
     ],
     "keyReading": "Actes 20:4 ; Éphésiens 6:21-22 ; Colossiens 4:7-9",
     "location": "Asie, Rome et autres régions.",
@@ -2672,11 +2672,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "demas": {
-    "studyFocus": "Démas a d’abord collaboré avec Paul, mais son histoire sert ensuite d’avertissement concernant l’amour du présent système de choses.",
+    "studyFocus": "Démas a collaboré avec Paul pendant un temps, mais Paul a ensuite indiqué qu’il l’avait abandonné parce qu’il aimait le présent système de choses.",
     "lessonPoints": [
-      "Vigilance : un bon départ dans le service ne garantit pas la fidélité future.",
-      "Priorités : l’attachement aux avantages du monde peut affaiblir la spiritualité.",
-      "Persévérance : il faut régulièrement examiner ce qui occupe la première place dans notre vie."
+      "Vigilance spirituelle : un bon passé ne dispense pas de rester fidèle.",
+      "Priorités : l’amour des avantages du monde peut détourner du service chrétien.",
+      "Persévérance : il faut protéger régulièrement sa relation avec Jéhovah."
     ],
     "keyReading": "Colossiens 4:14 ; Philémon 23-24 ; 2 Timothée 4:10",
     "location": "Rome et le monde méditerranéen.",
