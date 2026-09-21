@@ -4304,16 +4304,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "felix": {
-    "studyFocus": "Félix a entendu Paul parler de justice, de maîtrise de soi et du jugement à venir, mais a repoussé sa réaction.",
+    "studyFocus": "Félix était le gouverneur romain de Judée lorsque Paul fut détenu à Césarée. Il entendit Paul parler de la justice, de la maîtrise de soi et du jugement à venir, mais il reporta sa décision. Il espérait aussi recevoir de l’argent de Paul.",
     "lessonPoints": [
-      "Écouter et agir : connaître la vérité ne suffit pas si l’on refuse d’agir.",
-      "Maîtrise de soi : Paul a directement abordé cette qualité devant lui.",
-      "Intégrité : il faut éviter de laisser les intérêts personnels influencer les décisions justes."
+      "Félix entendit un témoignage chrétien direct.",
+      "Le message sur la justice et la maîtrise de soi le mit mal à l’aise.",
+      "Il retarda sa décision au lieu d’agir selon ce qu’il avait entendu.",
+      "Son intérêt pour l’argent influença sa conduite envers Paul."
     ],
-    "keyReading": "Actes 23:23-35; 24:10-27",
-    "location": "Césarée.",
-    "relationshipWithJehovah": "Le récit montre qu’il a entendu un témoignage direct sur la foi chrétienne et le jugement à venir, mais il n’est pas rapporté qu’il ait accepté ce message.",
-    "didYouKnow": "Félix resta deux ans avec Paul en détention et le faisait venir assez souvent pour converser avec lui.",
+    "keyReading": "Actes 23:23-35 ; 24:1-27",
+    "location": "Césarée, en Judée.",
+    "relationshipWithJehovah": "Félix fut exposé au message chrétien mais le récit ne rapporte pas qu’il devint adorateur de Jéhovah.",
+    "didYouKnow": "Félix fit venir Paul à plusieurs reprises pour parler avec lui, tout en espérant que Paul lui donnerait de l’argent.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4350,16 +4351,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "festus": {
-    "studyFocus": "Festus a présidé l’affaire de Paul après Félix et a reconnu qu’il n’avait pas commis de crime méritant la mort, tout en cherchant à formuler l’accusation pour César.",
+    "studyFocus": "Porcius Festus succéda à Félix comme gouverneur de Judée. Il entendit les accusations portées contre Paul, examina son affaire et finit par permettre à Paul d’en appeler à César.",
     "lessonPoints": [
-      "Examen des faits : il a entendu les accusations et la défense de Paul.",
-      "Respect des procédures : Paul a exercé son droit d’en appeler à César.",
-      "Prudence : une autorité doit distinguer les faits des accusations portées contre quelqu’un."
+      "Festus dut examiner une affaire religieuse et juridique complexe.",
+      "Il reconnut que les accusations contre Paul concernaient des questions de religion juive et de Jésus.",
+      "Il chercha à clarifier les faits en présence d’Agrippa.",
+      "Il respecta finalement le droit de Paul à faire appel à César."
     ],
-    "keyReading": "Actes 25:1-27; 26:24-32",
-    "location": "Césarée.",
-    "relationshipWithJehovah": "La Bible ne le présente pas comme adorateur de Jéhovah. Il entend néanmoins une défense détaillée de la foi chrétienne et reconnaît qu’il n’a pas affaire à une accusation criminelle ordinaire.",
-    "didYouKnow": "Festus reconnaît à Agrippa qu’il ne savait pas quoi écrire à l’empereur au sujet de Paul, ce qui explique pourquoi il organise l’audience devant Agrippa.",
+    "keyReading": "Actes 25:1-27 ; 26:1-32",
+    "location": "Césarée et Jérusalem.",
+    "relationshipWithJehovah": "Festus entendit le témoignage de Paul mais la Bible ne le présente pas comme un adorateur de Jéhovah.",
+    "didYouKnow": "Festus admit devant Agrippa que l’affaire de Paul lui posait difficulté pour rédiger quelque chose de cohérent à l’intention de César.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4398,16 +4400,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "agrippa_ii": {
-    "studyFocus": "Agrippa II a entendu Paul expliquer sa conversion, son ministère et l’accomplissement des prophéties concernant le Messie.",
+    "studyFocus": "Hérode Agrippa II était roi et fut consulté par Festus au sujet de Paul. Il connaissait les coutumes et controverses juives et entendit Paul exposer son ministère et sa conversion.",
     "lessonPoints": [
-      "Écouter les Écritures : Paul a raisonné à partir des prophètes connus d’Agrippa.",
-      "Réflexion personnelle : entendre un témoignage demande ensuite d’examiner sincèrement sa propre position.",
-      "Courage du témoin : Paul a parlé librement devant un dirigeant."
+      "Agrippa connaissait le contexte religieux de l’affaire de Paul.",
+      "Il écouta personnellement le témoignage de l’apôtre.",
+      "Paul l’invita à croire aux prophètes.",
+      "Agrippa ne devint pas chrétien selon le récit biblique."
     ],
-    "keyReading": "Actes 25:13-27; 26:1-32",
-    "location": "Césarée.",
-    "relationshipWithJehovah": "Agrippa connaissait les coutumes et controverses juives et a entendu un témoignage détaillé sur Jésus. La Bible rapporte sa réaction, mais ne dit pas qu’il ait accepté la foi chrétienne.",
-    "didYouKnow": "Agrippa II était le frère de Bérénice et de Drusille, et Félix était son beau-frère par son mariage avec Drusille.",
+    "keyReading": "Actes 25:13-27 ; 26:1-32",
+    "location": "Césarée et territoires associés à son royaume.",
+    "relationshipWithJehovah": "Agrippa entendit un témoignage détaillé concernant Jésus et les prophètes mais le récit ne rapporte pas qu’il devint disciple.",
+    "didYouKnow": "Paul termina sa défense devant Agrippa en disant qu’il souhaitait que tous ses auditeurs deviennent comme lui, à l’exception des chaînes qu’il portait.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4447,17 +4450,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "berenice": {
-    "studyFocus": "Bérénice était une sœur du roi Agrippa II et se trouvait avec lui lorsque Paul comparut devant Festus. Elle participa ainsi à l’audience au cours de laquelle Paul expliqua sa foi et son activité. Le récit biblique ne donne pas suffisamment d’éléments pour déterminer sa réaction personnelle au témoignage de Paul.",
+    "studyFocus": "Bérénice était la sœur d’Agrippa II et se trouvait avec lui lorsque Festus organisa une audience pour entendre Paul. Elle apparaît dans le récit comme membre de l’entourage royal qui entendit la défense de Paul.",
     "lessonPoints": [
-      "Bérénice assista à une audience où la bonne nouvelle fut exposée devant des responsables importants.",
-      "La scène montre que le témoignage chrétien pouvait atteindre des personnes occupant des positions élevées.",
-      "Le récit distingue les faits rapportés de ce que Bérénice pensa personnellement.",
-      "Elle fournit un exemple de personne ayant entendu un témoignage chrétien sans que la Bible précise sa réponse."
+      "Bérénice assista à une audience officielle concernant Paul.",
+      "Elle entendit le témoignage chrétien présenté devant Agrippa et Festus.",
+      "Le récit biblique donne peu d’informations sur ses convictions personnelles.",
+      "Son apparition rappelle que le témoignage chrétien pouvait atteindre des personnes de haut rang."
     ],
     "keyReading": "Actes 25:13-27 ; 26:1-32",
-    "location": "Césarée, en Judée.",
-    "relationshipWithJehovah": "La Bible rapporte sa présence lors de l’audience de Paul mais ne précise pas qu’elle devint adoratrice de Jéhovah.",
-    "didYouKnow": "Bérénice était présente avec Agrippa II et le gouverneur Festus lorsque Paul défendit sa foi devant eux.",
+    "location": "Césarée.",
+    "relationshipWithJehovah": "La Bible rapporte qu’elle entendit le témoignage concernant Paul, sans fournir d’information suffisante sur sa relation personnelle avec Jéhovah.",
+    "didYouKnow": "Bérénice accompagnait Agrippa lorsqu’ils entrèrent avec une grande pompe dans la salle d’audience de Césarée.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4492,16 +4495,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "phoebe": {
-    "studyFocus": "Phébé était une chrétienne de Cenchrées que Paul a recommandée chaleureusement aux chrétiens de Rome et qui avait aidé beaucoup de frères, y compris Paul.",
+    "studyFocus": "Phœbé était une ministre de la congrégation de Cenchrées que Paul recommanda aux chrétiens de Rome. Il la décrivit comme une sœur qui avait été une aide pour beaucoup, y compris pour lui-même.",
     "lessonPoints": [
-      "Générosité : elle avait été une aide pour beaucoup.",
-      "Hospitalité et soutien : Paul demandait aux chrétiens de Rome de lui apporter leur aide.",
-      "Réputation : son service fidèle lui avait valu une recommandation personnelle de Paul."
+      "Phœbé assumait une responsabilité reconnue dans la congrégation de Cenchrées.",
+      "Paul demanda aux Romains de l’accueillir avec respect.",
+      "Elle avait apporté une aide concrète à de nombreux chrétiens.",
+      "Son exemple montre la valeur du service et de l’hospitalité dans la congrégation."
     ],
     "keyReading": "Romains 16:1-2",
-    "location": "Cenchrées, près de Corinthe.",
-    "relationshipWithJehovah": "Son soutien à de nombreux chrétiens et son service dans la congrégation montrent un engagement concret envers le culte chrétien.",
-    "didYouKnow": "Paul la recommande dans les dernières lignes de sa lettre aux Romains et demande à la congrégation de l’aider dans toute affaire où elle en aurait besoin.",
+    "location": "Cenchrées, près de Corinthe, puis probablement Rome.",
+    "relationshipWithJehovah": "Phœbé servait comme chrétienne fidèle et avait acquis une réputation d’aide auprès de nombreux croyants.",
+    "didYouKnow": "Paul emploie pour Phœbé le terme grec diakonos, traduit selon les Bibles par « ministre » ou « servante », et la présente comme une aide pour beaucoup.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4542,17 +4546,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "euodia": {
-    "studyFocus": "Évodie était une chrétienne de la congrégation de Philippes. Paul dit qu’elle avait travaillé dur avec lui pour la bonne nouvelle, mais il l’exhorta, ainsi que Syntyche, à être du même avis dans le Seigneur.",
+    "studyFocus": "Évodie était une chrétienne de la congrégation de Philippes que Paul mentionna directement dans sa lettre. Il l’exhorta, ainsi que Syntyche, à être d’accord dans le Seigneur.",
     "lessonPoints": [
-      "Évodie avait participé activement à la prédication.",
-      "Paul reconnaissait son travail au service de la bonne nouvelle.",
-      "Même des serviteurs fidèles peuvent avoir besoin d’aide pour régler un désaccord.",
-      "L’unité chrétienne doit être recherchée sans effacer la valeur personnelle de chacun."
+      "Évodie avait collaboré avec Paul dans la proclamation de la bonne nouvelle.",
+      "Paul la considérait comme une chrétienne engagée, malgré leur désaccord.",
+      "Il demanda à la congrégation de les aider à retrouver l’unité.",
+      "Son récit montre que même des croyants actifs doivent préserver la paix et l’unité."
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes, en Macédoine.",
-    "relationshipWithJehovah": "Évodie servait avec zèle la bonne nouvelle et était connue de Paul comme une collaboratrice dans l’activité chrétienne.",
-    "didYouKnow": "Paul rappelle qu’Évodie et Syntyche avaient combattu côte à côte pour la bonne nouvelle, même s’il les exhortait ensuite à être unies.",
+    "relationshipWithJehovah": "Évodie avait travaillé avec Paul dans la bonne nouvelle et était considérée comme une collaboratrice chrétienne.",
+    "didYouKnow": "Paul ne précise pas la cause du désaccord entre Évodie et Syntyche; il se concentre sur la nécessité de retrouver l’unité « dans le Seigneur ».",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4588,17 +4592,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "epaphroditus": {
-    "studyFocus": "Épaphrodite était un chrétien de Philippes envoyé à Paul pour lui apporter une aide matérielle. Il tomba gravement malade mais continua à se soucier des autres. Paul le renvoya ensuite avec une lettre destinée à la congrégation de Philippes.",
+    "studyFocus": "Épaphrodite était un chrétien de Philippes envoyé à Rome pour soutenir Paul. Il tomba gravement malade mais continua à se dépenser pour le service chrétien. Paul le renvoya ensuite avec sa lettre aux Philippiens.",
     "lessonPoints": [
-      "Épaphrodite accepta de voyager pour soutenir Paul.",
-      "Il risqua sa vie dans son service et tomba gravement malade.",
-      "Même malade, il se préoccupait de l’inquiétude des Philippiens à son sujet.",
-      "Paul demanda à la congrégation de l’accueillir avec joie et honneur."
+      "Épaphrodite accepta de voyager pour servir Paul et la congrégation.",
+      "Il tomba gravement malade à Rome.",
+      "Il se souciait davantage de l’inquiétude des Philippiens que de sa propre situation.",
+      "Paul le présenta comme un frère, un collaborateur et un compagnon de combat."
     ],
-    "keyReading": "Philippiens 2:25-30 ; 4:10-20",
-    "location": "Philippes et probablement Rome.",
-    "relationshipWithJehovah": "Épaphrodite servait avec dévouement la congrégation et Paul et fut prêt à prendre des risques pour le service chrétien.",
-    "didYouKnow": "Paul dit qu’Épaphrodite avait été malade au point de presque mourir, mais que Dieu avait eu pitié de lui.",
+    "keyReading": "Philippiens 2:25-30 ; 4:18",
+    "location": "Philippes et Rome.",
+    "relationshipWithJehovah": "Épaphrodite dépensa ses forces au service du Christ et de la congrégation, malgré une maladie grave.",
+    "didYouKnow": "Paul dit qu’Épaphrodite était « presque mort » à cause de sa maladie, mais que Dieu avait eu pitié de lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4637,16 +4641,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "tychicus": {
-    "studyFocus": "Tychique était un assistant fidèle de Paul, chargé de transmettre des lettres et de réconforter les congrégations.",
+    "studyFocus": "Tychique était un collaborateur chrétien fidèle qui accompagna Paul et fut chargé de transmettre des lettres et des nouvelles aux congrégations. Paul le qualifia de frère bien-aimé et de fidèle serviteur.",
     "lessonPoints": [
-      "Fiabilité : Paul lui confiait des missions importantes.",
-      "Encouragement : il devait renseigner les frères sur Paul et les consoler.",
-      "Disponibilité : il a accepté plusieurs missions au service des congrégations."
+      "Tychique accompagna Paul dans des déplacements missionnaires.",
+      "Il fut chargé de missions nécessitant confiance et discrétion.",
+      "Paul le considérait comme un frère bien-aimé et fidèle serviteur.",
+      "Il aida les congrégations à connaître la situation de Paul et à être encouragées."
     ],
-    "keyReading": "Actes 20:4; Éphésiens 6:21-22; Colossiens 4:7-9; 2 Timothée 4:12",
-    "location": "Asie, Rome et autres régions.",
-    "relationshipWithJehovah": "Paul le qualifie de fidèle ministre et compagnon de service dans le Seigneur, soulignant sa fiabilité dans les tâches reçues.",
-    "didYouKnow": "Tychique a été chargé d’accompagner Onésime, ce qui montre la confiance de Paul dans une situation relationnelle délicate.",
+    "keyReading": "Actes 20:4-6 ; Éphésiens 6:21-22 ; Colossiens 4:7-9 ; 2 Timothée 4:12 ; Tite 3:12",
+    "location": "Asie Mineure et différentes régions parcourues avec Paul.",
+    "relationshipWithJehovah": "Tychique servit fidèlement les congrégations et Paul lui confia des messages importants.",
+    "didYouKnow": "Paul envoya Tychique avec Onésime pour informer les chrétiens de Colosses de sa situation et réconforter leur cœur.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4686,16 +4691,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "demas": {
-    "studyFocus": "Démas a collaboré avec Paul pendant un temps, mais Paul a ensuite indiqué qu’il l’avait abandonné parce qu’il aimait le présent système de choses.",
+    "studyFocus": "Démas fut d’abord un collaborateur de Paul, mentionné avec Luc et d’autres compagnons. Plus tard, Paul déplora que Démas l’ait abandonné parce qu’il aimait le présent système de choses.",
     "lessonPoints": [
-      "Vigilance spirituelle : un bon passé ne dispense pas de rester fidèle.",
-      "Priorités : l’amour des avantages du monde peut détourner du service chrétien.",
-      "Persévérance : il faut protéger régulièrement sa relation avec Jéhovah."
+      "Démas participa pendant un temps au ministère avec Paul.",
+      "Il faisait partie d’un groupe de collaborateurs reconnus.",
+      "Son attitude changea au point d’abandonner Paul.",
+      "Son parcours rappelle qu’une bonne activité passée ne remplace pas la fidélité jusqu’au bout."
     ],
-    "keyReading": "Colossiens 4:14; Philémon 24; 2 Timothée 4:9-10",
-    "location": "Rome et le monde méditerranéen.",
-    "relationshipWithJehovah": "Son parcours constitue un avertissement: une association étroite avec des chrétiens engagés ne garantit pas la fidélité si les désirs pour le monde prennent le dessus.",
-    "didYouKnow": "Démas est mentionné favorablement comme collaborateur avant d’être décrit plus tard comme ayant abandonné Paul.",
+    "keyReading": "Colossiens 4:14 ; Philémon 23-24 ; 2 Timothée 4:9-10",
+    "location": "Différentes régions du monde méditerranéen.",
+    "relationshipWithJehovah": "Démas avait servi aux côtés de Paul, mais son amour du présent système de choses le conduisit à abandonner l’apôtre.",
+    "didYouKnow": "Démas est cité aux côtés de Luc dans Colossiens et Philémon, mais quelques années plus tard Paul rapporte son abandon.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6363,16 +6369,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "syntyche": {
-    "studyFocus": "Syntyche était une chrétienne fidèle qui avait collaboré avec Paul et Évodie dans la bonne nouvelle, mais qui devait résoudre un désaccord avec sa sœur.",
+    "studyFocus": "Syntyche était une chrétienne de Philippes qui avait collaboré avec Paul dans la bonne nouvelle. Comme Évodie, elle fut exhortée à retrouver l’unité chrétienne.",
     "lessonPoints": [
-      "Unité : les désaccords ne doivent pas effacer les années de service commun.",
-      "Collaboration : Paul la comptait parmi ses compagnes de travail.",
-      "Paix : rechercher le même état d’esprit que Jésus aide à préserver l’unité chrétienne."
+      "Syntyche participa activement à la prédication avec Paul.",
+      "Elle avait une place suffisamment connue dans la congrégation pour être citée personnellement.",
+      "Paul traita leur désaccord comme un problème à résoudre avec amour.",
+      "Son exemple rappelle qu’une divergence personnelle ne doit pas effacer les années de service commun."
     ],
     "keyReading": "Philippiens 4:2-3",
-    "location": "Philippes.",
-    "relationshipWithJehovah": "Son service passé est reconnu par Paul, mais elle reçoit aussi l’encouragement à cultiver l’unité chrétienne.",
-    "didYouKnow": "Syntyche fait partie des rares chrétiennes nommées dont Paul dit qu’elles avaient travaillé à ses côtés pour la bonne nouvelle.",
+    "location": "Philippes, en Macédoine.",
+    "relationshipWithJehovah": "Syntyche était une collaboratrice dans la bonne nouvelle et Paul l’encouragea à préserver l’unité dans le Seigneur.",
+    "didYouKnow": "Évodie et Syntyche sont parmi les rares femmes de la Bible que Paul désigne explicitement comme ayant travaillé avec lui dans la prédication de la bonne nouvelle.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
