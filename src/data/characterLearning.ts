@@ -2835,10 +2835,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Pardon chrétien",
       "Valeur d’une personne"
     ],
-    "keyReading": "Philémon 8-21 ; Colossiens 4:7-9",
+    "keyReading": "Philémon 8-21; Colossiens 4:7-9",
     "location": "Rome et Colosses.",
-    "relationshipWithJehovah": "Paul l’aide à devenir utile comme frère chrétien et demande à Philémon de l’accueillir avec amour.",
-    "didYouKnow": "Onésime a rencontré Paul pendant son emprisonnement et est retourné vers Philémon avec une lettre de Paul.",
+    "relationshipWithJehovah": "Après être devenu chrétien grâce à Paul, Onésime est décrit comme un frère bien-aimé. Son parcours montre comment la foi peut transformer une personne et l’amener à assumer ses responsabilités.",
+    "didYouKnow": "JW.org explique qu’Onésime a parcouru probablement environ 1 400 kilomètres entre Colosses et Rome, vraisemblablement pour fuir son maître.",
     "jwResources": [
       {
         "title": "Onésime — Étude perspicace",
@@ -2857,22 +2857,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/On%C3%A9sime/"
       }
     ],
-    "identity": "Esclave devenu chrétien — Onésime devient chrétien et Paul demande à Philémon de l’accueillir comme un frère.",
-    "era": "Lettres chrétiennes",
+    "identity": "Onésime était l’esclave de Philémon qui s’enfuit de sa maison de Colosses, rencontra Paul à Rome et devint chrétien. Paul le renvoya ensuite auprès de Philémon comme frère chrétien.",
+    "era": "Vers 60-61 de n. è., pendant la détention de Paul à Rome",
     "familyAndEntourage": [
-      "Paul",
-      "Philémon"
+      "Philémon",
+      "Apphia",
+      "Archippe",
+      "Paul"
     ],
     "bibleAccount": [
-      "Devient chrétien grâce à Paul.",
-      "Est renvoyé auprès de Philémon.",
-      "Est présenté comme un frère chrétien utile."
+      "Il appartenait à la maisonnée de Philémon à Colosses.",
+      "Il s’enfuit et se retrouva à Rome.",
+      "Paul l’aide à devenir chrétien.",
+      "Paul l’envoie de nouveau vers Philémon et lui demande de l’accueillir comme un frère."
     ],
     "qualities": [
-      "Changement",
-      "Fidélité"
+      "Transformation",
+      "Foi",
+      "Disposition à réparer une situation difficile"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il avait fui son maître et il est possible qu’il lui ait aussi causé un préjudice matériel; il devait ensuite retourner vers lui."
+    ]
   },
   "philemon": {
     "studyFocus": "Philémon a été un chrétien fidèle dont la relation avec Paul et la situation d’Onésime montrent la puissance de l’amour chrétien et du pardon.",
@@ -2883,8 +2889,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philémon 1-25",
     "location": "Colosses.",
-    "relationshipWithJehovah": "Philémon est un croyant chez qui une congrégation se réunit et Paul lui demande d’accueillir Onésime comme un frère.",
-    "didYouKnow": "La lettre à Philémon est très personnelle et montre le tact de Paul.",
+    "relationshipWithJehovah": "Paul remercie Jéhovah pour l’amour et la foi de Philémon. Son hospitalité et sa manière attendue de traiter Onésime étaient directement liées à son amour pour Christ et pour les chrétiens.",
+    "didYouKnow": "La lettre à Philémon est la seule lettre de Paul adressée principalement à un particulier au sujet d’une situation personnelle précise.",
     "jwResources": [
       {
         "title": "Philémon — Étude perspicace",
@@ -2903,24 +2909,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Phil%C3%A9mon/"
       }
     ],
-    "identity": "Chrétien de Colosses — Philémon est destinataire d’une lettre de Paul concernant Onésime et l’amour chrétien.",
-    "era": "Lettres chrétiennes",
+    "identity": "Philémon était un chrétien de Colosses, ami et collaborateur de Paul, chez qui une congrégation se réunissait. Paul lui écrivit au sujet d’Onésime.",
+    "era": "Vers 60-61 de n. è.",
     "familyAndEntourage": [
+      "Apphia",
+      "Archippe",
       "Onésime",
       "Paul",
-      "Apphia",
-      "Archippe"
+      "La congrégation réunie chez lui"
     ],
     "bibleAccount": [
-      "Accueille une congrégation dans sa maison.",
-      "Est encouragé à accueillir Onésime comme un frère."
+      "Il est félicité pour son amour et sa foi.",
+      "Il met sa maison à disposition pour les réunions chrétiennes.",
+      "Paul lui écrit pour lui demander d’accueillir Onésime avec amour.",
+      "Paul lui fait confiance pour faire davantage que ce qui est demandé."
     ],
     "qualities": [
       "Amour",
-      "Générosité",
-      "Hospitalité"
+      "Foi",
+      "Hospitalité",
+      "Générosité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il devait accueillir de nouveau un esclave qui s’était enfui et qui avait peut-être causé un préjudice matériel."
+    ]
   },
   "titus": {
     "studyFocus": "Tite était un collaborateur fiable de Paul, chargé de responsabilités importantes dans les congrégations et encouragé à rester attaché à un enseignement sain.",
@@ -2929,10 +2941,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Enseignement sain : Tite devait aider les congrégations à rester attachées à la saine doctrine.",
       "Bon exemple : il devait montrer dans sa propre conduite ce qu’il enseignait aux autres."
     ],
-    "keyReading": "Tite 1:4-5 ; 2:7-8 ; 3:12-15",
+    "keyReading": "2 Corinthiens 7:6-16; 8:16-24; Tite 1:4-9; 2:11-15; 3:12-15",
     "location": "Crète et autres régions du ministère de Paul.",
-    "relationshipWithJehovah": "Paul lui confie des responsabilités importantes et lui demande de mettre de l’ordre dans les congrégations de Crète.",
-    "didYouKnow": "Paul appelle Tite son véritable enfant selon la foi commune.",
+    "relationshipWithJehovah": "Paul lui confiait des responsabilités parce qu’il avait démontré sa fiabilité dans le service chrétien. Sa mission consistait à aider les congrégations à rester saines dans la foi et dans la conduite.",
+    "didYouKnow": "Paul appelle Tite son « véritable enfant selon une foi que nous partageons », une expression qui montre leur relation spirituelle étroite.",
     "jwResources": [
       {
         "title": "Tite — Étude perspicace",
@@ -2951,23 +2963,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tite/"
       }
     ],
-    "identity": "Collaborateur de Paul — Tite travaille avec Paul et reçoit des responsabilités dans les congrégations de Crète.",
-    "era": "Actes et lettres chrétiennes",
+    "identity": "Tite était un collaborateur et proche associé de Paul, chrétien d’origine grecque, à qui Paul confia des responsabilités importantes dans plusieurs congrégations.",
+    "era": "Premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
       "Paul",
-      "Les congrégations de Crète"
+      "Les congrégations de Crète",
+      "Les frères de Corinthe"
     ],
     "bibleAccount": [
-      "Accompagne Paul dans son activité.",
-      "Aide à régler des questions dans les congrégations.",
-      "Reçoit une lettre de Paul contenant des instructions pastorales."
+      "Il accompagne Paul dans certaines activités missionnaires.",
+      "Paul l’envoie à Corinthe pour aider à régler des difficultés et organiser la collecte.",
+      "Paul le laisse en Crète pour mettre de l’ordre dans les congrégations et nommer des anciens.",
+      "Paul lui donne des instructions détaillées sur l’enseignement et la conduite chrétienne."
     ],
     "qualities": [
       "Fiabilité",
-      "Organisation",
-      "Service"
+      "Courage",
+      "Sens des responsabilités",
+      "Zèle pour le service"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il devait faire face à des difficultés doctrinales et morales dans les congrégations de Crète."
+    ]
   },
   "eutychus": {
     "studyFocus": "Eutyche est surtout connu pour l’événement survenu lors d’une réunion à Troas, qui montre l’intérêt porté par Paul et les chrétiens à la vie de leurs compagnons.",
@@ -5624,10 +5641,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance : Jean-Marc a repris une activité missionnaire.",
       "Encouragement : Barnabas et plus tard Paul ont reconnu son utilité."
     ],
-    "keyReading": "Actes 12:12, 25 ; 13:5, 13 ; 15:36-40 ; Colossiens 4:10 ; 2 Timothée 4:11",
+    "keyReading": "Actes 12:12,25; 13:5,13; 15:36-40; Colossiens 4:10; 2 Timothée 4:11; 1 Pierre 5:13",
     "location": "Jérusalem, Chypre et diverses régions.",
-    "relationshipWithJehovah": "Après une difficulté qui l’éloigne temporairement de Paul, Marc devient un collaborateur apprécié et utile.",
-    "didYouKnow": "Il est le Jean appelé Marc, fils de Marie de Jérusalem et cousin de Barnabé.",
+    "relationshipWithJehovah": "Son parcours montre qu’un faux pas dans le service n’empêche pas nécessairement de progresser. Plus tard, Paul lui-même le considère comme utile au ministère.",
+    "didYouKnow": "Paul, qui avait refusé de l’emmener après son abandon initial, demanda plus tard expressément que Jean Marc vienne le rejoindre parce qu’il lui était utile pour le service.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Marc",
@@ -5646,25 +5663,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Compagnon de mission — Jean Marc accompagne Barnabé et Paul dans une partie de leur activité missionnaire et devient ensuite un collaborateur utile à Paul et Pierre.",
-    "era": "Actes",
+    "identity": "Jean Marc était un chrétien de Jérusalem, fils de Marie, cousin ou proche parent de Barnabé, et collaborateur de Paul et de Pierre. Après un abandon temporaire du service missionnaire, il redevint un compagnon utile à Paul.",
+    "era": "Premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
-      "Marie",
+      "Marie, sa mère",
       "Barnabé",
       "Paul",
-      "Pierre"
+      "Pierre",
+      "Les chrétiens de Jérusalem"
     ],
     "bibleAccount": [
-      "Accompagne Barnabé et Paul.",
-      "Quitte leur premier voyage missionnaire avant son terme.",
-      "Devient ensuite un collaborateur jugé utile au service."
+      "Sa maison à Jérusalem accueille des chrétiens.",
+      "Il accompagne Barnabé et Paul lors d’une première partie de leur voyage missionnaire.",
+      "Il les quitte ensuite et retourne à Jérusalem.",
+      "Barnabé veut lui redonner une occasion, ce qui provoque un désaccord avec Paul.",
+      "Plus tard, Paul le considère de nouveau comme utile au ministère."
     ],
     "qualities": [
       "Persévérance",
-      "Progrès",
-      "Fidélité"
+      "Disponibilité à servir",
+      "Capacité à progresser"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il quitte Paul et Barnabé pendant leur voyage, ce qui entraîne un désaccord entre les deux hommes sur l’opportunité de l’emmener de nouveau."
+    ]
   },
   "priscilla": {
     "studyFocus": "Priscille et Aquilas formaient un couple chrétien qui a collaboré étroitement avec Paul et a aidé Apollos à mieux comprendre les enseignements de Dieu.",
