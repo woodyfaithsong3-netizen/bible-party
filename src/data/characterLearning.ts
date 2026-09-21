@@ -3,6 +3,12 @@ export type CharacterLearning = {
   lessonPoints: string[];
   keyReading: string;
   jwResources: { title: string; url: string }[];
+  identity?: string;
+  era?: string;
+  familyAndEntourage?: string[];
+  bibleAccount?: string[];
+  qualities?: string[];
+  difficulties?: string[];
   location?: string;
   relationshipWithJehovah?: string;
   didYouKnow?: string;
@@ -37,6 +43,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Premier homme — Adam apparaît au début du récit biblique comme le premier homme créé et placé dans le jardin d’Éden.",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Ève",
+      "Caïn",
+      "Abel",
+      "Seth"
+    ],
+    "bibleAccount": [
+      "Reçoit une mission concernant la terre et les animaux.",
+      "Désobéit au commandement concernant l’arbre de la connaissance du bon et du mauvais."
+    ],
+    "qualities": [
+      "Responsabilité personnelle",
+      "Importance de l’obéissance"
+    ],
+    "difficulties": [
+      "Les choix personnels peuvent avoir de graves conséquences."
     ]
   },
   "noe": {
@@ -67,6 +92,33 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Noé : « Il marchait avec le vrai Dieu » — Imitez leur foi",
         "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/noe/"
       }
+    ],
+    "identity": "Chef de famille et constructeur de l’arche — Noé est présenté comme un homme juste qui marchait avec le vrai Dieu et qui a construit l’arche sur ordre divin.",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Lamek",
+      "Sa femme",
+      "Sem",
+      "Cham",
+      "Japhet",
+      "Leurs femmes"
+    ],
+    "bibleAccount": [
+      "Construit l’arche selon les instructions de Jéhovah.",
+      "Prêche à sa génération tout en préparant l’arche.",
+      "Entre dans l’arche avec sa femme, ses trois fils et leurs femmes, ainsi qu’avec les animaux selon les instructions reçues.",
+      "Après le Déluge, construit un autel et offre des sacrifices à Jéhovah.",
+      "La fiche JW.org souligne sa foi et son obéissance."
+    ],
+    "qualities": [
+      "Foi",
+      "Obéissance",
+      "Persévérance",
+      "Courage",
+      "Attachement à sa famille"
+    ],
+    "difficulties": [
+      "Noé était imparfait et a lui aussi connu une faiblesse après le Déluge. Son récit ne présente donc pas un homme parfait, mais un serviteur fidèle qui marchait avec Jéhovah."
     ]
   },
   "abraham": {
@@ -98,6 +150,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Abraham : « Le père de tous ceux qui ont foi »",
         "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/abraham-pere-de-ceux-qui-ont-foi/"
       }
+    ],
+    "identity": "Patriarche — Abraham a quitté Our conformément à l’appel de Jéhovah et a été appelé « ami de Dieu ».",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Sarah",
+      "Isaac",
+      "Lot",
+      "Ismaël"
+    ],
+    "bibleAccount": [
+      "Quitte Our et se rend au pays indiqué par Dieu.",
+      "Intercède au sujet de Sodome.",
+      "Est disposé à offrir Isaac lorsqu’il reçoit cette instruction.",
+      "JW.org met notamment en avant sa foi et sa confiance dans les promesses de Jéhovah."
+    ],
+    "qualities": [
+      "Foi",
+      "Confiance",
+      "Hospitalité"
+    ],
+    "difficulties": [
+      "La foi se manifeste aussi par des décisions concrètes."
     ]
   },
   "sarah": {
@@ -128,7 +202,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Sara : Dieu l’a appelée « Princesse »",
         "url": "https://www.jw.org/fr/bibliotheque/revues/tour-garde-no5-2017-septembre/sara-princesse/"
       }
-    ]
+    ],
+    "identity": "Épouse d’Abraham et mère d’Isaac — Sarah a vécu les promesses faites à Abraham et est devenue mère d’Isaac malgré son âge avancé.",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Abraham",
+      "Isaac",
+      "Agar",
+      "Ismaël"
+    ],
+    "bibleAccount": [
+      "Quitte Harân avec Abraham.",
+      "Donne naissance à Isaac dans sa vieillesse."
+    ],
+    "qualities": [
+      "Foi",
+      "Persévérance"
+    ],
+    "difficulties": []
   },
   "jacob": {
     "studyFocus": "Jacob, fils d’Isaac et de Rébecca, devint l’ancêtre des douze tribus d’Israël. Son parcours comprend des choix discutables, des années de travail, des conflits familiaux, des pertes et une évolution visible de sa foi et de sa personnalité.",
@@ -159,7 +250,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Événements de la vie de Jacob",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89v%C3%A9nements-de-la-vie-de-Jacob/"
       }
-    ]
+    ],
+    "identity": "Patriarche d’Israël — Jacob, fils d’Isaac et de Rébecca, a vécu de nombreux changements et épreuves avant de devenir l’ancêtre des douze tribus d’Israël.",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Isaac",
+      "Rébecca",
+      "Ésaü",
+      "Rachel",
+      "Léa",
+      "Joseph"
+    ],
+    "bibleAccount": [
+      "Travaille de nombreuses années pour fonder sa famille.",
+      "Reçoit le nom Israël.",
+      "Descend en Égypte avec sa famille.",
+      "JW.org propose notamment d’étudier les endroits où Jacob a vécu et les relations avec sa famille."
+    ],
+    "qualities": [
+      "Persévérance",
+      "Attachement aux promesses"
+    ],
+    "difficulties": []
   },
   "joseph": {
     "studyFocus": "Joseph, fils de Jacob et de Rachel, fut vendu comme esclave à 17 ans. Malgré l’injustice, l’éloignement et la prison, il resta fidèle à Jéhovah. Il fut ensuite établi à une haute fonction en Égypte et contribua à préserver sa famille pendant la famine.",
@@ -190,7 +302,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Joseph — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Joseph/"
       }
-    ]
+    ],
+    "identity": "Fils de Jacob et administrateur en Égypte — Joseph passe de l’esclavage à une position élevée en Égypte et permet à sa famille de survivre à la famine.",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Jacob",
+      "Benjamin",
+      "Juda",
+      "Pharaon"
+    ],
+    "bibleAccount": [
+      "Est vendu par ses frères.",
+      "Explique des rêves en prison puis devant Pharaon.",
+      "Organise les réserves de nourriture pendant la famine.",
+      "Pardonne à ses frères."
+    ],
+    "qualities": [
+      "Fidélité",
+      "Maîtrise de soi",
+      "Pardon",
+      "Sagesse"
+    ],
+    "difficulties": []
   },
   "moise": {
     "studyFocus": "Moïse conduit Israël hors d’Égypte, reçoit la Loi au Sinaï et reste un médiateur central entre Jéhovah et le peuple.",
@@ -220,6 +353,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       }
+    ],
+    "identity": "Prophète et médiateur d’Israël — Moïse conduit Israël hors d’Égypte et reçoit la Loi au mont Sinaï.",
+    "era": "Exode à Deutéronome",
+    "familyAndEntourage": [
+      "Aaron",
+      "Miriam",
+      "Josué",
+      "Pharaon"
+    ],
+    "bibleAccount": [
+      "Affronte Pharaon avec Aaron.",
+      "Conduit l’Exode.",
+      "Reçoit les Dix Commandements et d’autres instructions.",
+      "Dirige Israël dans le désert."
+    ],
+    "qualities": [
+      "Humilité",
+      "Courage",
+      "Persévérance"
+    ],
+    "difficulties": [
+      "Même un serviteur fidèle doit respecter les instructions reçues."
     ]
   },
   "josue": {
@@ -250,7 +405,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Josué et les Gabaonites",
         "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/"
       }
-    ]
+    ],
+    "identity": "Successeur de Moïse — Josué conduit Israël dans la conquête du pays et reste attaché aux instructions reçues.",
+    "era": "Josué",
+    "familyAndEntourage": [
+      "Moïse",
+      "Caleb",
+      "Rahab"
+    ],
+    "bibleAccount": [
+      "Accompagne les espions.",
+      "Conduit Israël à travers le Jourdain.",
+      "Dirige plusieurs campagnes en Canaan.",
+      "Encourage le peuple à servir Jéhovah."
+    ],
+    "qualities": [
+      "Courage",
+      "Confiance",
+      "Obéissance"
+    ],
+    "difficulties": []
   },
   "ruth": {
     "studyFocus": "Ruth, Moabite, choisit de rester avec Noémi et de devenir une adoratrice de Jéhovah. Elle travaille humblement et devient l’ancêtre du roi David.",
@@ -280,7 +454,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Ruth et Naomi",
         "url": "https://www.jw.org/fr/bibliotheque/livres/histoires-bibliques/"
       }
-    ]
+    ],
+    "identity": "Moabite devenue ancêtre de David — Ruth, une Moabite, s’est attachée à Noémi et au peuple de Jéhovah avec une fidélité remarquable.",
+    "era": "Juges",
+    "familyAndEntourage": [
+      "Naomi",
+      "Boaz",
+      "Obed"
+    ],
+    "bibleAccount": [
+      "Reste auprès de Naomi.",
+      "Travaille dans les champs de Boaz.",
+      "Épouse Boaz.",
+      "JW.org présente Ruth comme un exemple de fidélité et d’amitié."
+    ],
+    "qualities": [
+      "Fidélité",
+      "Loyauté",
+      "Humilité"
+    ],
+    "difficulties": []
   },
   "samuel": {
     "studyFocus": "Samuel sert Jéhovah dès son enfance et devient prophète et juge en Israël. Il accompagne la transition vers la royauté tout en restant fidèle aux directives divines.",
@@ -310,7 +503,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Jéhovah parle à Samuel",
         "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/"
       }
-    ]
+    ],
+    "identity": "Prophète et juge — Samuel sert dès son enfance et joue un rôle important lors de la transition vers la monarchie en Israël.",
+    "era": "Juges à Rois",
+    "familyAndEntourage": [
+      "Anne",
+      "Éli",
+      "Saül",
+      "David"
+    ],
+    "bibleAccount": [
+      "Reçoit son appel alors qu’il est jeune.",
+      "Juge Israël.",
+      "Oint Saül puis David sur instruction divine."
+    ],
+    "qualities": [
+      "Écoute",
+      "Fidélité",
+      "Courage"
+    ],
+    "difficulties": []
   },
   "david": {
     "studyFocus": "David devient roi après avoir été oint par Samuel. Sa vie montre une foi profonde, mais aussi les conséquences graves de ses fautes et l’importance du repentir.",
@@ -341,6 +553,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "David — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       }
+    ],
+    "identity": "Roi d’Israël — David a servi comme roi d’Israël et a connu à la fois de grandes victoires et de graves erreurs.",
+    "era": "Rois",
+    "familyAndEntourage": [
+      "Saül",
+      "Jonathan",
+      "Abigaïl",
+      "Bath-Shéba",
+      "Salomon"
+    ],
+    "bibleAccount": [
+      "Affronte Goliath.",
+      "Fuit Saül pendant plusieurs années.",
+      "Devient roi et établit Jérusalem comme centre de son royaume.",
+      "Son récit permet d’étudier la foi, le courage, le repentir et les conséquences des choix."
+    ],
+    "qualities": [
+      "Courage",
+      "Foi",
+      "Loyauté",
+      "Repentir"
+    ],
+    "difficulties": [
+      "Ses fautes montrent aussi les conséquences du péché et la nécessité de la repentance."
     ]
   },
   "salomon": {
@@ -375,6 +611,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Salomon",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Salomon/"
       }
+    ],
+    "identity": "Roi et bâtisseur du temple — Salomon demande de la sagesse et construit le temple de Jérusalem, mais sa fin de règne comporte aussi de graves problèmes.",
+    "era": "Rois",
+    "familyAndEntourage": [
+      "David",
+      "Bath-Shéba",
+      "Roboam"
+    ],
+    "bibleAccount": [
+      "Demande de la sagesse pour gouverner.",
+      "Construit le temple.",
+      "Développe les relations internationales et le commerce."
+    ],
+    "qualities": [
+      "Sagesse recherchée",
+      "Organisation"
+    ],
+    "difficulties": [
+      "La richesse et les influences peuvent détourner même quelqu’un qui a reçu beaucoup de sagesse."
     ]
   },
   "elie": {
@@ -405,7 +660,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Prophète — Élie défend le culte de Jéhovah face au culte de Baal et accomplit plusieurs miracles.",
+    "era": "Rois",
+    "familyAndEntourage": [
+      "Élisée",
+      "Achab",
+      "Jézabel"
+    ],
+    "bibleAccount": [
+      "Annonce une sécheresse.",
+      "Est nourri près du torrent de Kerith.",
+      "Affronte les prophètes de Baal au mont Carmel."
+    ],
+    "qualities": [
+      "Courage",
+      "Zèle",
+      "Confiance"
+    ],
+    "difficulties": []
   },
   "esther": {
     "studyFocus": "Esther devient reine et utilise sa position pour intervenir en faveur des Juifs menacés d’extermination. Son récit met en évidence courage, prudence et souci du peuple de Dieu.",
@@ -439,7 +712,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Esther",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Esther/"
       }
-    ]
+    ],
+    "identity": "Reine — Esther utilise sa position pour intervenir en faveur de son peuple lorsqu’un projet de destruction est préparé.",
+    "era": "Période perse",
+    "familyAndEntourage": [
+      "Mardochée",
+      "Assuérus",
+      "Haman"
+    ],
+    "bibleAccount": [
+      "Devient reine.",
+      "Révèle son identité et le projet d’Haman.",
+      "Intervient auprès du roi pour protéger les Juifs."
+    ],
+    "qualities": [
+      "Courage",
+      "Discrétion",
+      "Abnégation"
+    ],
+    "difficulties": []
   },
   "daniel": {
     "studyFocus": "Daniel reste fidèle à Jéhovah pendant l’exil à Babylone et sous plusieurs souverains. Il refuse de compromettre son culte et continue de prier malgré l’interdiction royale.",
@@ -473,7 +764,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Daniel",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Daniel/"
       }
-    ]
+    ],
+    "identity": "Prophète et haut fonctionnaire — Daniel reste fidèle pendant son service dans les cours babylonienne et perse et reçoit plusieurs visions.",
+    "era": "Exil à Babylone",
+    "familyAndEntourage": [
+      "Hanania",
+      "Mishaël",
+      "Azaria",
+      "Neboukadnetsar",
+      "Darius"
+    ],
+    "bibleAccount": [
+      "Refuse de se souiller avec la nourriture du roi.",
+      "Interprète des rêves.",
+      "Continue de prier malgré l’interdiction.",
+      "Survit à la fosse aux lions."
+    ],
+    "qualities": [
+      "Fidélité",
+      "Courage",
+      "Discipline",
+      "Prière"
+    ],
+    "difficulties": []
   },
   "jean-baptiste": {
     "studyFocus": "Jean le Baptiseur a préparé le chemin pour le Messie avec courage, humilité et fidélité. Son exemple montre comment défendre ce qui est juste tout en dirigeant l’attention vers Jésus et vers Jéhovah.",
@@ -507,7 +820,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Région du Jourdain ; il a notamment prêché dans le désert de Judée.",
     "relationshipWithJehovah": "Jean a été choisi pour préparer le chemin du Messie. Sa vie consacrée à cette mission et son courage face à l’opposition montrent sa fidélité à Jéhovah.",
-    "didYouKnow": "Jésus a dit qu’« aucun homme » parmi ceux qui étaient nés de femmes n’avait été suscité de plus grand que Jean le Baptiseur, tout en soulignant que le plus petit dans le Royaume des cieux serait plus grand que lui (Matthieu 11:11)."
+    "didYouKnow": "Jésus a dit qu’« aucun homme » parmi ceux qui étaient nés de femmes n’avait été suscité de plus grand que Jean le Baptiseur, tout en soulignant que le plus petit dans le Royaume des cieux serait plus grand que lui (Matthieu 11:11).",
+    "identity": "Précurseur de Jésus — Jean prépare les personnes au ministère de Jésus et appelle à la repentance.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Zacharie",
+      "Élisabeth",
+      "Hérode"
+    ],
+    "bibleAccount": [
+      "Prêche et baptise.",
+      "Identifie Jésus comme celui qui vient après lui.",
+      "Reprend publiquement Hérode pour sa conduite."
+    ],
+    "qualities": [
+      "Courage",
+      "Humilité",
+      "Conviction"
+    ],
+    "difficulties": []
   },
   "marie": {
     "studyFocus": "Marie, mère de Jésus, accepte humblement une mission exceptionnelle et accompagne son fils pendant différentes étapes de sa vie et de son ministère.",
@@ -537,7 +869,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Marie — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
       }
-    ]
+    ],
+    "identity": "Mère de Jésus — Marie accepte humblement le rôle qui lui est confié et élève Jésus dans le cadre de la famille juive de l’époque.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Joseph",
+      "Jésus",
+      "Élisabeth"
+    ],
+    "bibleAccount": [
+      "Reçoit l’annonce concernant la naissance de Jésus.",
+      "Donne naissance à Jésus.",
+      "Conserve et médite certains événements concernant son fils."
+    ],
+    "qualities": [
+      "Humilité",
+      "Foi",
+      "Réflexion"
+    ],
+    "difficulties": []
   },
   "pierre": {
     "studyFocus": "Pierre a progressé d’un pêcheur impulsif à un apôtre mûr qui s’est appuyé sur Jéhovah et Jésus malgré ses erreurs.",
@@ -567,6 +917,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Pierre — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       }
+    ],
+    "identity": "Apôtre — Pierre est l’un des principaux apôtres et joue un rôle important dans les débuts de la congrégation chrétienne.",
+    "era": "Évangiles et Actes",
+    "familyAndEntourage": [
+      "André",
+      "Jean",
+      "Jésus",
+      "Corneille"
+    ],
+    "bibleAccount": [
+      "Suit Jésus.",
+      "Le renie puis manifeste son repentir.",
+      "Prêche à la Pentecôte.",
+      "Annonce le message à Corneille et sa maisonnée."
+    ],
+    "qualities": [
+      "Zèle",
+      "Courage",
+      "Repentir"
+    ],
+    "difficulties": [
+      "Son exemple montre aussi qu’un disciple peut trébucher et se relever."
     ]
   },
   "paul": {
@@ -597,7 +969,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Paul — Imitez leur foi",
         "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
       }
-    ]
+    ],
+    "identity": "Apôtre et missionnaire — Paul est passé de persécuteur des disciples à prédicateur zélé du christianisme.",
+    "era": "Actes et lettres chrétiennes",
+    "familyAndEntourage": [
+      "Barnabas",
+      "Silas",
+      "Timothée",
+      "Tite",
+      "Luc"
+    ],
+    "bibleAccount": [
+      "Est arrêté sur le chemin de Damas par une vision du Christ.",
+      "Prêche dans de nombreuses villes.",
+      "Supporte oppositions, emprisonnements et difficultés.",
+      "Écrit plusieurs lettres chrétiennes.",
+      "Son parcours illustre un changement profond et un zèle soutenu pour le ministère."
+    ],
+    "qualities": [
+      "Zèle",
+      "Endurance",
+      "Courage",
+      "Humilité"
+    ],
+    "difficulties": []
   },
   "jean": {
     "studyFocus": "L’apôtre Jean est proche de Jésus et devient un témoin important de sa vie, de sa mort et de sa résurrection. Il insiste fortement sur l’amour, la vérité et la fidélité.",
@@ -627,7 +1022,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Apôtre et rédacteur biblique — Jean fait partie des douze apôtres et est associé à plusieurs écrits des Écritures grecques chrétiennes.",
+    "era": "Évangiles et Révélation",
+    "familyAndEntourage": [
+      "Jacques",
+      "Pierre",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Suit Jésus pendant son ministère.",
+      "Reste proche de Jésus lors des événements précédant sa mort.",
+      "Rédige la Révélation alors qu’il est à Patmos."
+    ],
+    "qualities": [
+      "Amour",
+      "Persévérance",
+      "Témoignage"
+    ],
+    "difficulties": []
   },
   "isaac": {
     "studyFocus": "Isaac est le fils promis à Abraham et à Sara et un maillon essentiel de la lignée menant au Christ. Sa vie comprend l’épreuve du mont Moria, son mariage avec Rébecca, la naissance d’Ésaü et de Jacob et son rôle dans la transmission de la promesse.",
@@ -658,7 +1071,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Fils d’Abraham et de Sarah — Isaac est le fils de la promesse et devient le père d’Ésaü et de Jacob.",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Abraham",
+      "Sarah",
+      "Rébecca",
+      "Ésaü",
+      "Jacob"
+    ],
+    "bibleAccount": [
+      "Grandit comme le fils promis à Abraham et Sarah.",
+      "Épouse Rébecca.",
+      "Bénit et transmet l’héritage familial à Jacob."
+    ],
+    "qualities": [
+      "Foi",
+      "Paix",
+      "Persévérance"
+    ],
+    "difficulties": []
   },
   "samson": {
     "studyFocus": "Samson fut un juge d’Israël choisi avant sa naissance pour entreprendre de délivrer Israël de la main des Philistins. Nazaréen dès sa naissance, il reçut une force exceptionnelle lorsqu’il agissait sous l’influence de l’esprit de Jéhovah. Son récit montre à la fois ses victoires contre les Philistins, ses faiblesses personnelles et son retour vers Jéhovah à la fin de sa vie.",
@@ -689,7 +1122,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Tsora et son territoire ; vallée de Sorek ; Timna ; Gaza ; Lehi ; région des Philistins.",
     "relationshipWithJehovah": "Jéhovah avait mis Samson à part dès sa naissance et son esprit lui donnait une force extraordinaire. Malgré des erreurs graves, Samson a continué à se tourner vers Jéhovah et l’a supplié de se souvenir de lui lors de sa dernière épreuve.",
-    "didYouKnow": "Samson est présenté comme un des juges remarquables d’Israël et son récit est particulièrement lié à sa mission contre les Philistins."
+    "didYouKnow": "Samson est présenté comme un des juges remarquables d’Israël et son récit est particulièrement lié à sa mission contre les Philistins.",
+    "identity": "Juge d’Israël — Samson reçoit une force exceptionnelle et combat les Philistins, mais son histoire comporte aussi de graves faiblesses personnelles.",
+    "era": "Juges",
+    "familyAndEntourage": [
+      "Manoah",
+      "Dalila",
+      "Les Philistins"
+    ],
+    "bibleAccount": [
+      "Combat les Philistins.",
+      "Accomplit plusieurs exploits.",
+      "Est capturé après avoir révélé le secret de sa force à Dalila.",
+      "Utilise une dernière fois sa force contre les Philistins."
+    ],
+    "qualities": [
+      "Courage",
+      "Force"
+    ],
+    "difficulties": [
+      "Son récit montre les dangers du manque de maîtrise de soi et de mauvaises fréquentations."
+    ]
   },
   "naomi": {
     "studyFocus": "Naomi a connu de grandes pertes mais a retrouvé la joie grâce à l’affection fidèle de Ruth et à la disposition de Jéhovah à prendre soin de ses serviteurs.",
@@ -715,7 +1168,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Bethléhem en Juda ; Moab ; retour à Bethléhem et environnement de la famille d’Élimélek.",
     "relationshipWithJehovah": "Naomi a traversé une période où elle pensait que Jéhovah avait rendu sa situation très amère. Pourtant, elle a continué à agir dans le cadre du culte de Jéhovah et a reconnu la main de Dieu lorsque Boaz est intervenu en faveur de sa famille.",
-    "didYouKnow": "Naomi fut la belle-mère de Ruth, laquelle devint une ancêtre de David et de Jésus Christ."
+    "didYouKnow": "Naomi fut la belle-mère de Ruth, laquelle devint une ancêtre de David et de Jésus Christ.",
+    "identity": "Veuve et belle-mère de Ruth — Noémi a connu de lourdes pertes mais a continué à agir avec amour envers Ruth.",
+    "era": "Ruth",
+    "familyAndEntourage": [
+      "Ruth",
+      "Orpa",
+      "Élimélek",
+      "Mahlôn",
+      "Obed"
+    ],
+    "bibleAccount": [
+      "Retourne à Bethléhem après son veuvage.",
+      "Encourage Ruth à agir avec sagesse.",
+      "Accueille la naissance d’Obed dans sa famille.",
+      "JW.org souligne son rôle auprès de Ruth et leur amitié fidèle."
+    ],
+    "qualities": [
+      "Attachement familial",
+      "Sagesse"
+    ],
+    "difficulties": []
   },
   "boaz": {
     "studyFocus": "Boaz a fait preuve de bonté loyale envers Ruth et Naomi et a respecté les dispositions de Jéhovah concernant le droit de rachat.",
@@ -741,7 +1214,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Bethléhem en Juda, notamment les champs de Boaz et l’espace public où les démarches légales sont effectuées.",
     "relationshipWithJehovah": "Boaz invoquait Jéhovah dans ses salutations et reconnaissait que Ruth avait cherché refuge sous les ailes de Jéhovah. Il respecta les dispositions légales et agit avec bonté dans le cadre du culte de Jéhovah.",
-    "didYouKnow": "Boaz était fils de Salma et de Rahab, et devint le père d’Obed. Il constitue un maillon de la lignée menant au Messie."
+    "didYouKnow": "Boaz était fils de Salma et de Rahab, et devint le père d’Obed. Il constitue un maillon de la lignée menant au Messie.",
+    "identity": "Propriétaire terrien et parent de Noémi — Boaz traite Ruth avec bonté et devient son rédempteur familial.",
+    "era": "Ruth",
+    "familyAndEntourage": [
+      "Ruth",
+      "Noémi",
+      "Obed",
+      "David"
+    ],
+    "bibleAccount": [
+      "Protège Ruth dans ses champs.",
+      "Veille à ce qu’elle puisse glaner en sécurité.",
+      "Assume le rôle de rédempteur et épouse Ruth."
+    ],
+    "qualities": [
+      "Générosité",
+      "Respect",
+      "Loyauté"
+    ],
+    "difficulties": []
   },
   "elisha": {
     "studyFocus": "Élisée a servi fidèlement Jéhovah pendant des années et a montré une grande confiance dans sa puissance.",
@@ -767,7 +1259,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Royaume d’Israël et régions voisines ; notamment Abel-Mehola, Jéricho, Samarie, Dothan et les territoires concernés par son activité prophétique.",
     "relationshipWithJehovah": "Élisha fut un prophète de Jéhovah et montra un grand zèle pour le vrai culte. JW.org souligne sa patience, son amour, sa bonté et sa fermeté lorsque le nom de Jéhovah était en cause.",
-    "didYouKnow": "Élisha servit peut-être environ six ans comme assistant d’Éliya, puis exerça seul son activité prophétique pendant environ 60 ans. Étude perspicace lui attribue 16 miracles, contre 8 pour Éliya."
+    "didYouKnow": "Élisha servit peut-être environ six ans comme assistant d’Éliya, puis exerça seul son activité prophétique pendant environ 60 ans. Étude perspicace lui attribue 16 miracles, contre 8 pour Éliya.",
+    "identity": "Prophète et successeur d’Élie — Élisée poursuit le ministère prophétique d’Élie et intervient dans de nombreux récits concernant Israël.",
+    "era": "Rois",
+    "familyAndEntourage": [
+      "Élie",
+      "Naaman",
+      "Guéhazi"
+    ],
+    "bibleAccount": [
+      "Accepte de suivre Élie.",
+      "Reçoit sa fonction prophétique après le départ d’Élie.",
+      "Aide des personnes confrontées à la pauvreté, à la maladie ou au danger."
+    ],
+    "qualities": [
+      "Foi",
+      "Persévérance",
+      "Compassion"
+    ],
+    "difficulties": []
   },
   "nehemie": {
     "studyFocus": "Nehémia était échanson du roi perse Artaxerxès avant de devenir gouverneur des Juifs. Lorsqu’il apprit l’état désolé de Jérusalem, il jeûna et pria, demanda l’autorisation de reconstruire la muraille et dirigea ensuite les travaux malgré une opposition importante.",
@@ -798,7 +1308,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Suse, capitale royale perse ; Jérusalem et son district, où Nehémia exerce ensuite comme gouverneur.",
     "relationshipWithJehovah": "Nehémia priait régulièrement Jéhovah et s’appuyait sur lui pour obtenir l’autorisation du roi, protéger les travailleurs et mener à bien la reconstruction. Le livre de Néhémia présente Jéhovah comme Celui qui exauce les prières sincères de ses serviteurs.",
-    "didYouKnow": "La muraille de Jérusalem fut achevée en 52 jours. Nehémia était échanson d’Artaxerxès avant de devenir gouverneur des Juifs."
+    "didYouKnow": "La muraille de Jérusalem fut achevée en 52 jours. Nehémia était échanson d’Artaxerxès avant de devenir gouverneur des Juifs.",
+    "identity": "Gouverneur et restaurateur de Jérusalem — Néhémie organise la reconstruction des murailles de Jérusalem malgré l’opposition.",
+    "era": "Période perse",
+    "familyAndEntourage": [
+      "Artaxerxès",
+      "Esdras",
+      "Sanballat",
+      "Tobiah"
+    ],
+    "bibleAccount": [
+      "Prie après avoir appris l’état de Jérusalem.",
+      "Obtient l’autorisation royale de reconstruire les murailles.",
+      "Organise le travail malgré les menaces.",
+      "Participe à des réformes parmi le peuple."
+    ],
+    "qualities": [
+      "Prière",
+      "Organisation",
+      "Courage",
+      "Persévérance"
+    ],
+    "difficulties": []
   },
   "mary_magdalen": {
     "studyFocus": "Marie Madeleine a été une disciple fidèle de Jésus qui l’a accompagné et soutenu et qui a eu le privilège d’être parmi les premières personnes à le voir après sa résurrection.",
@@ -828,7 +1359,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       }
-    ]
+    ],
+    "identity": "Disciple de Jésus — Marie Madeleine fait partie des femmes qui accompagnent Jésus et témoigne des événements entourant sa mort et sa résurrection.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Les autres disciples"
+    ],
+    "bibleAccount": [
+      "Suit Jésus avec d’autres femmes.",
+      "Assiste aux événements liés à sa mort.",
+      "Est parmi les premières à témoigner de sa résurrection."
+    ],
+    "qualities": [
+      "Fidélité",
+      "Persévérance",
+      "Reconnaissance"
+    ],
+    "difficulties": []
   },
   "zacchaeus": {
     "studyFocus": "Zachée, collecteur d’impôts en chef, a montré par ses actions qu’il voulait réellement changer lorsqu’il a accepté Jésus et corrigé les torts qu’il avait commis.",
@@ -858,7 +1406,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Chef des collecteurs d’impôts à Jéricho — Zachée cherche à voir Jésus et annonce ensuite des mesures montrant sa volonté de réparer les torts.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Les habitants de Jéricho"
+    ],
+    "bibleAccount": [
+      "Monte sur un sycomore pour voir Jésus.",
+      "Accueille Jésus chez lui.",
+      "Annonce des mesures généreuses envers les pauvres et les personnes qu’il aurait lésées."
+    ],
+    "qualities": [
+      "Réceptivité",
+      "Générosité",
+      "Volonté de changer"
+    ],
+    "difficulties": []
   },
   "barnabas": {
     "studyFocus": "Barnabas était un encourageant généreux qui a soutenu Paul et Jean-Marc et a contribué à fortifier les congrégations.",
@@ -888,7 +1453,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Barnabé — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/barnabe/"
       }
-    ]
+    ],
+    "identity": "Collaborateur des apôtres — Barnabé joue un rôle important dans l’accueil et l’encouragement des disciples et dans l’activité missionnaire.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Jean Marc",
+      "Les disciples d’Antioche"
+    ],
+    "bibleAccount": [
+      "Soutient la congrégation de Jérusalem.",
+      "Encourage les disciples à Antioche.",
+      "Travaille avec Paul dans l’activité missionnaire."
+    ],
+    "qualities": [
+      "Générosité",
+      "Encouragement",
+      "Esprit d’équipe"
+    ],
+    "difficulties": []
   },
   "cornelius": {
     "studyFocus": "Corneille était un officier romain qui craignait Dieu, priait régulièrement et faisait des dons de miséricorde. Son récit marque une étape importante dans l’ouverture du christianisme aux non-Juifs.",
@@ -918,7 +1501,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Officier romain — Corneille est présenté comme un homme pieux qui reçoit le témoignage chrétien avec sa maisonnée.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Pierre",
+      "Sa maisonnée"
+    ],
+    "bibleAccount": [
+      "Prie et fait régulièrement des dons de miséricorde.",
+      "Envoie chercher Pierre après avoir reçu une vision.",
+      "Écoute le témoignage de Pierre avec sa maisonnée."
+    ],
+    "qualities": [
+      "Piété",
+      "Générosité",
+      "Réceptivité"
+    ],
+    "difficulties": []
   },
   "hagar": {
     "studyFocus": "Agar était une servante égyptienne de Sara et la mère d’Yishmaël. Son histoire comprend deux moments où elle se retrouve dans le désert et reçoit une aide ou une direction de la part de Jéhovah.",
@@ -945,7 +1545,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Servante de Sara — Agar est la servante égyptienne de Sara et la mère d’Ismaël.",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Abraham",
+      "Sara",
+      "Ismaël"
+    ],
+    "bibleAccount": [
+      "Donne naissance à Ismaël.",
+      "Fuit dans le désert puis revient auprès de Sara.",
+      "Reçoit des indications concernant l’avenir de son fils."
+    ],
+    "qualities": [
+      "Persévérance"
+    ],
+    "difficulties": []
   },
   "leah": {
     "studyFocus": "Léa, fille aînée de Labân, devient la première femme de Jacob. Son récit permet d’étudier sa place dans la famille de Jacob et le rôle de ses enfants dans l’histoire d’Israël.",
@@ -977,7 +1593,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Femme de Jacob — Léa devient l’une des femmes de Jacob et la mère de plusieurs de ses fils.",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Jacob",
+      "Rachel",
+      "Ruben",
+      "Juda",
+      "Lévi"
+    ],
+    "bibleAccount": [
+      "Épouse Jacob.",
+      "Donne naissance à plusieurs fils et à Dina.",
+      "Participe à la formation de la famille de Jacob."
+    ],
+    "qualities": [
+      "Persévérance",
+      "Attachement familial"
+    ],
+    "difficulties": []
   },
   "esau": {
     "studyFocus": "Ésaü est le premier-né d’Isaac et le frère jumeau de Jacob. Son récit permet d’examiner la valeur accordée aux choses spirituelles, la maîtrise de soi et la réconciliation.",
@@ -1009,6 +1644,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Fils d’Isaac et de Rébecca — Ésaü est le frère jumeau de Jacob et l’ancêtre des Édomites.",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Isaac",
+      "Rébecca",
+      "Jacob"
+    ],
+    "bibleAccount": [
+      "Vend son droit d’aînesse à Jacob.",
+      "Perd la bénédiction destinée au premier-né.",
+      "Se réconcilie ensuite avec Jacob."
+    ],
+    "qualities": [
+      "Générosité dans la réconciliation"
+    ],
+    "difficulties": [
+      "Son choix concernant le droit d’aînesse illustre les conséquences d’un choix accordant peu de valeur aux choses sacrées."
     ]
   },
   "melchizedek": {
@@ -1039,7 +1692,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Roi de Salem et prêtre — Melchisédek rencontre Abraham après sa victoire et le bénit.",
+    "era": "Genèse",
+    "familyAndEntourage": [
+      "Abraham"
+    ],
+    "bibleAccount": [
+      "Apporte du pain et du vin à Abraham.",
+      "Bénit Abraham.",
+      "Reçoit de lui le dixième de tout."
+    ],
+    "qualities": [
+      "Bénédiction",
+      "Service sacré"
+    ],
+    "difficulties": []
   },
   "jethro": {
     "studyFocus": "Jéthro, prêtre de Madian et beau-père de Moïse, a donné à Moïse un conseil pratique qui l’a aidé à mieux assumer ses responsabilités.",
@@ -1069,7 +1737,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Prêtre de Madian et beau-père de Moïse — Jéthro accueille Moïse et lui donne des conseils pratiques pour organiser ses responsabilités.",
+    "era": "Exode",
+    "familyAndEntourage": [
+      "Moïse",
+      "Séphora"
+    ],
+    "bibleAccount": [
+      "Accueille Moïse à Madian.",
+      "Lui donne sa fille Séphora en mariage.",
+      "Conseille Moïse sur la délégation de responsabilités."
+    ],
+    "qualities": [
+      "Hospitalité",
+      "Sagesse pratique"
+    ],
+    "difficulties": []
   },
   "zipporah": {
     "studyFocus": "Tsippora, femme de Moïse, a joué un rôle dans sa famille et a agi rapidement dans une situation grave liée à la circoncision de leur fils.",
@@ -1099,7 +1783,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Femme de Moïse — Séphora est la fille de Jéthro et la femme de Moïse.",
+    "era": "Exode",
+    "familyAndEntourage": [
+      "Moïse",
+      "Jéthro",
+      "Gershom",
+      "Éliézer"
+    ],
+    "bibleAccount": [
+      "Épouse Moïse.",
+      "Accompagne une partie de son parcours familial.",
+      "Intervient lors d’une situation urgente liée à la circoncision de son fils."
+    ],
+    "qualities": [
+      "Décision",
+      "Attachement familial"
+    ],
+    "difficulties": []
   },
   "korah": {
     "studyFocus": "Coré, Lévite de la famille de Qehath, conteste l’autorité de Moïse et d’Aaron avec d’autres hommes. Son récit est un avertissement contre l’ambition et la contestation d’une disposition divine.",
@@ -1131,6 +1833,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Lévite opposé à Moïse — Coré conteste l’autorité établie de Moïse et Aaron et mène une rébellion.",
+    "era": "Exode et désert",
+    "familyAndEntourage": [
+      "Moïse",
+      "Aaron",
+      "Dathan",
+      "Abiram"
+    ],
+    "bibleAccount": [
+      "Conteste Moïse et Aaron avec d’autres hommes.",
+      "Rassemble des soutiens contre eux.",
+      "Subit le jugement divin avec les rebelles."
+    ],
+    "qualities": [],
+    "difficulties": [
+      "Son récit met en garde contre l’ambition et la contestation présomptueuse."
     ]
   },
   "balaam": {
@@ -1163,6 +1882,21 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Devineur appelé par Balak — Balaam est sollicité pour maudire Israël mais prononce finalement des bénédictions.",
+    "era": "Désert",
+    "familyAndEntourage": [
+      "Balak",
+      "Israël"
+    ],
+    "bibleAccount": [
+      "Est appelé par Balak.",
+      "Prononce des paroles concernant Israël.",
+      "Se rend coupable d’une conduite répréhensible liée à son influence."
+    ],
+    "qualities": [],
+    "difficulties": [
+      "Son parcours montre le danger de rechercher un avantage personnel au détriment de la volonté divine."
     ]
   },
   "balak": {
@@ -1194,6 +1928,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Roi de Moab — Balak cherche à faire maudire Israël par Balaam.",
+    "era": "Désert",
+    "familyAndEntourage": [
+      "Balaam",
+      "Moab",
+      "Israël"
+    ],
+    "bibleAccount": [
+      "Craint l’arrivée d’Israël.",
+      "Envoie chercher Balaam.",
+      "Demande à plusieurs reprises qu’Israël soit maudit."
+    ],
+    "qualities": [],
+    "difficulties": [
+      "La peur et l’opposition au peuple de Dieu dominent son récit."
     ]
   },
   "eli": {
@@ -1224,6 +1974,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Grand prêtre et juge d’Israël — Éli sert au tabernacle et joue un rôle dans l’éducation du jeune Samuel, mais ses fils sont source de graves problèmes.",
+    "era": "Juges et Samuel",
+    "familyAndEntourage": [
+      "Hanna",
+      "Samuel",
+      "Hophni",
+      "Phinéhas"
+    ],
+    "bibleAccount": [
+      "Sert comme prêtre et juge.",
+      "Discute avec Hanna au tabernacle.",
+      "Prend Samuel sous sa responsabilité.",
+      "Réprimande ses fils sans empêcher leurs mauvaises actions."
+    ],
+    "qualities": [
+      "Service",
+      "Attention spirituelle"
+    ],
+    "difficulties": [
+      "Son récit souligne la responsabilité de corriger sérieusement une mauvaise conduite."
     ]
   },
   "hannah": {
@@ -1254,7 +2025,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Mère de Samuel — Hanna prie avec ferveur au tabernacle et tient sa promesse de présenter Samuel au service de Jéhovah.",
+    "era": "Samuel",
+    "familyAndEntourage": [
+      "Samuel",
+      "Éli",
+      "Elkana"
+    ],
+    "bibleAccount": [
+      "Prie pour avoir un enfant.",
+      "Fait un vœu concernant son fils.",
+      "Présente Samuel au service au tabernacle.",
+      "Exprime sa reconnaissance dans une prière."
+    ],
+    "qualities": [
+      "Foi",
+      "Persévérance dans la prière",
+      "Reconnaissance"
+    ],
+    "difficulties": []
   },
   "michal": {
     "studyFocus": "Mical, fille de Saül et femme de David, a vécu dans une famille marquée par les conflits et a pris des décisions qui ont eu des conséquences dans sa vie conjugale.",
@@ -1284,6 +2074,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Fille de Saül et femme de David — Mical aime David et l’aide à échapper à Saül, mais leur relation connaît ensuite des tensions.",
+    "era": "Rois",
+    "familyAndEntourage": [
+      "Saül",
+      "David",
+      "Palti"
+    ],
+    "bibleAccount": [
+      "Aide David à fuir lorsque Saül veut le tuer.",
+      "Est donnée à un autre homme puis reprise par David.",
+      "Critique David lorsqu’il danse devant l’Arche."
+    ],
+    "qualities": [
+      "Courage dans une situation dangereuse"
+    ],
+    "difficulties": [
+      "Son conflit avec David illustre aussi les tensions pouvant naître d’un jugement critique."
     ]
   },
   "joab": {
@@ -1314,6 +2122,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Chef de l’armée de David — Joab est un puissant commandant de l’armée de David dont le parcours mêle loyauté politique, habileté militaire et actes violents.",
+    "era": "Rois",
+    "familyAndEntourage": [
+      "David",
+      "Abner",
+      "Amasa",
+      "Adoniya"
+    ],
+    "bibleAccount": [
+      "Commande l’armée de David.",
+      "Participe à de nombreuses campagnes militaires.",
+      "Tue Abner puis Amasa.",
+      "Soutient finalement Adoniya avant l’accession de Salomon."
+    ],
+    "qualities": [
+      "Habileté militaire",
+      "Loyauté envers David"
+    ],
+    "difficulties": [
+      "Son recours à la violence et ses décisions politiques montrent les dangers de l’ambition et de la vengeance."
     ]
   },
   "herod_antipas": {
@@ -1344,6 +2173,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Dirigeant de Galilée et de Pérée — Hérode Antipas exerce son autorité à l’époque de Jésus et fait exécuter Jean le Baptiseur.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jean le Baptiseur",
+      "Hérodiade",
+      "Jésus",
+      "Pilate"
+    ],
+    "bibleAccount": [
+      "Entend parler du ministère de Jésus.",
+      "Fait emprisonner Jean le Baptiseur.",
+      "Fait exécuter Jean après un serment irréfléchi.",
+      "Interroge Jésus avant sa condamnation."
+    ],
+    "qualities": [],
+    "difficulties": [
+      "Son récit illustre les dangers de la pression sociale, des promesses irréfléchies et de l’abus du pouvoir."
     ]
   },
   "pilate": {
@@ -1374,6 +2221,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Gouverneur romain de Judée — Pilate préside au procès de Jésus et autorise son exécution malgré les éléments rapportés dans les récits évangéliques.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Les chefs religieux",
+      "Hérode Antipas"
+    ],
+    "bibleAccount": [
+      "Interroge Jésus.",
+      "Reconnaît dans le récit une absence de faute méritant la mort.",
+      "Cède aux pressions et livre Jésus pour être exécuté."
+    ],
+    "qualities": [],
+    "difficulties": [
+      "Son récit illustre le conflit entre jugement personnel, pression politique et responsabilité."
     ]
   },
   "isaiah": {
@@ -1409,7 +2272,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Isaïe",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Isa%C3%AFe/"
       }
-    ]
+    ],
+    "identity": "Prophète de Juda — Isaïe transmet des messages de Jéhovah à Juda et annonce plusieurs événements concernant le peuple et le Messie.",
+    "era": "Rois et prophètes",
+    "familyAndEntourage": [
+      "Ézéchias",
+      "Achaz"
+    ],
+    "bibleAccount": [
+      "Accepte une mission prophétique.",
+      "Transmet des avertissements et des encouragements à Juda.",
+      "Annonce des prophéties concernant le Messie et l’avenir de Jérusalem."
+    ],
+    "qualities": [
+      "Disponibilité",
+      "Courage",
+      "Foi"
+    ],
+    "difficulties": []
   },
   "jeremiah": {
     "studyFocus": "Jérémie sert comme prophète avant et pendant la destruction de Jérusalem. Malgré les menaces et l’emprisonnement, il continue à transmettre les messages de Jéhovah.",
@@ -1445,7 +2325,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Jérémie",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/J%C3%A9r%C3%A9mie/"
       }
-    ]
+    ],
+    "identity": "Prophète de Juda — Jérémie annonce les conséquences de l’infidélité de Jérusalem tout en transmettant des messages d’espérance.",
+    "era": "Rois et exil",
+    "familyAndEntourage": [
+      "Baruch",
+      "Sédécias",
+      "Les habitants de Jérusalem"
+    ],
+    "bibleAccount": [
+      "Prêche malgré une forte opposition.",
+      "Annonce la chute de Jérusalem.",
+      "Subit emprisonnement et mauvais traitements.",
+      "Transmet une promesse concernant une nouvelle alliance."
+    ],
+    "qualities": [
+      "Endurance",
+      "Courage",
+      "Fidélité"
+    ],
+    "difficulties": []
   },
   "ezekiel": {
     "studyFocus": "Ézéchiel est un prêtre devenu prophète parmi les exilés à Babylone. Ses visions montrent que Jéhovah reste souverain même loin de Jérusalem.",
@@ -1481,7 +2380,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Ézéchiel",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89z%C3%A9kiel/"
       }
-    ]
+    ],
+    "identity": "Prophète parmi les exilés — Ézéchiel transmet des visions et des messages aux exilés de Juda à Babylone.",
+    "era": "Exil à Babylone",
+    "familyAndEntourage": [
+      "Les exilés de Juda"
+    ],
+    "bibleAccount": [
+      "Reçoit une vision inaugurale.",
+      "Annonce le jugement sur Jérusalem.",
+      "Encourage les exilés avec des promesses de restauration.",
+      "Transmet la vision du temple."
+    ],
+    "qualities": [
+      "Obéissance",
+      "Persévérance",
+      "Courage"
+    ],
+    "difficulties": []
   },
   "ezra": {
     "studyFocus": "Esdras est un prêtre et un copiste habile de la Loi qui retourne à Jérusalem après l’exil. Il s’applique à étudier, mettre en pratique et enseigner la Loi de Jéhovah.",
@@ -1517,7 +2433,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Ezra",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ezra/"
       }
-    ]
+    ],
+    "identity": "Prêtre et copiste — Esdras retourne à Jérusalem et aide le peuple à mieux connaître et appliquer la Loi.",
+    "era": "Retour d’exil",
+    "familyAndEntourage": [
+      "Néhémie",
+      "Les exilés revenus"
+    ],
+    "bibleAccount": [
+      "Retourne à Jérusalem avec d’autres exilés.",
+      "Étudie et enseigne la Loi.",
+      "Organise une lecture publique de la Loi.",
+      "Encourage le peuple à corriger certaines pratiques."
+    ],
+    "qualities": [
+      "Étude",
+      "Enseignement",
+      "Zèle"
+    ],
+    "difficulties": []
   },
   "zerubbabel": {
     "studyFocus": "Zorobabel dirige le premier groupe important de Juifs revenus de Babylone et participe à la reconstruction du temple. Son parcours montre l’importance de la persévérance malgré l’opposition.",
@@ -1553,7 +2487,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Zorobabel",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Zorobabel/"
       }
-    ]
+    ],
+    "identity": "Gouverneur de Juda — Zorobabel dirige les Juifs revenus d’exil et joue un rôle majeur dans la reconstruction du temple.",
+    "era": "Retour d’exil",
+    "familyAndEntourage": [
+      "Josué le grand prêtre",
+      "Aggée",
+      "Zekaria"
+    ],
+    "bibleAccount": [
+      "Retourne à Jérusalem avec les exilés.",
+      "Participe à la reconstruction de l’autel et du temple.",
+      "Poursuit le chantier malgré l’opposition."
+    ],
+    "qualities": [
+      "Persévérance",
+      "Courage",
+      "Coopération"
+    ],
+    "difficulties": []
   },
   "haggai": {
     "studyFocus": "Aggée prophétise après le retour d’exil et pousse les Juifs à reprendre la construction du temple. Il les aide à remettre les intérêts de Jéhovah au premier plan.",
@@ -1589,7 +2541,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Haggaï",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Hagga%C3%AF/"
       }
-    ]
+    ],
+    "identity": "Prophète — Aggée encourage les Juifs revenus d’exil à reprendre la construction du temple.",
+    "era": "Retour d’exil",
+    "familyAndEntourage": [
+      "Zorobabel",
+      "Josué le grand prêtre"
+    ],
+    "bibleAccount": [
+      "Transmet des messages aux dirigeants et au peuple.",
+      "Encourage la reprise des travaux du temple.",
+      "Rappelle les priorités spirituelles du peuple."
+    ],
+    "qualities": [
+      "Courage",
+      "Clarté",
+      "Zèle"
+    ],
+    "difficulties": []
   },
   "zechariah": {
     "studyFocus": "Zekaria sert comme prophète après l’exil et reçoit une série de visions destinées à encourager la reconstruction du temple et le rétablissement du peuple.",
@@ -1625,7 +2594,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Zekaria",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Zekaria/"
       }
-    ]
+    ],
+    "identity": "Prophète — Zekaria encourage les Juifs revenus d’exil au moyen de visions et de messages concernant la restauration.",
+    "era": "Retour d’exil",
+    "familyAndEntourage": [
+      "Zorobabel",
+      "Josué le grand prêtre"
+    ],
+    "bibleAccount": [
+      "Transmet plusieurs visions.",
+      "Encourage la reconstruction du temple.",
+      "Annonce des éléments prophétiques concernant le futur roi."
+    ],
+    "qualities": [
+      "Foi",
+      "Encouragement",
+      "Persévérance"
+    ],
+    "difficulties": []
   },
   "malachi": {
     "studyFocus": "Malachie reprend les prêtres et le peuple pour leur manque de respect envers le culte de Jéhovah. Son message dénonce le culte mécanique et annonce une œuvre préparatoire avant le jour de Jéhovah.",
@@ -1661,7 +2647,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Malachie",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Malachie/"
       }
-    ]
+    ],
+    "identity": "Prophète — Malachie reprend des pratiques religieuses négligées et annonce la venue d’un messager préparant le chemin.",
+    "era": "Après l’exil",
+    "familyAndEntourage": [
+      "Prêtres et peuple de Juda"
+    ],
+    "bibleAccount": [
+      "Dénonce des pratiques négligentes dans le culte.",
+      "Encourage une attitude fidèle envers Jéhovah.",
+      "Annonce la venue d’un messager."
+    ],
+    "qualities": [
+      "Courage",
+      "Fidélité"
+    ],
+    "difficulties": []
   },
   "gamaliel": {
     "studyFocus": "Gamaliel est un pharisien et enseignant de la Loi, membre du Sanhédrin. Il recommande la prudence lorsqu’on veut faire disparaître les apôtres.",
@@ -1697,7 +2698,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Gamaliel",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Gamaliel/"
       }
-    ]
+    ],
+    "identity": "Pharisien et enseignant de la Loi — Gamaliel intervient devant le Sanhédrin en faveur d’une approche prudente concernant les apôtres.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Les apôtres",
+      "Sanhédrin"
+    ],
+    "bibleAccount": [
+      "Intervient lors du procès des apôtres.",
+      "Conseille le Sanhédrin à ne pas agir précipitamment.",
+      "Est présenté comme un enseignant respecté de la Loi."
+    ],
+    "qualities": [
+      "Prudence",
+      "Raisonnement"
+    ],
+    "difficulties": []
   },
   "apollos": {
     "studyFocus": "Apollos est un Juif d’Alexandrie, éloquent et connaissant bien les Écritures. Après avoir reçu des explications plus précises d’Aquila et Priscille, il devient un prédicateur efficace.",
@@ -1733,7 +2751,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Apollos",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Apollos/"
       }
-    ]
+    ],
+    "identity": "Prédicateur et enseignant — Apollos est un homme éloquent et connaisseur des Écritures qui reçoit une instruction plus exacte grâce à Aquila et Priscille.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Aquila",
+      "Priscille",
+      "Paul"
+    ],
+    "bibleAccount": [
+      "Enseigne avec zèle ce qu’il connaît.",
+      "Reçoit une explication plus exacte de la voie de Dieu.",
+      "Aide publiquement les croyants par son enseignement."
+    ],
+    "qualities": [
+      "Éloquence",
+      "Zèle",
+      "Humilité pour apprendre"
+    ],
+    "difficulties": []
   },
   "silas": {
     "studyFocus": "Silas — compagnon fidèle de Paul",
@@ -1763,7 +2799,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Silas",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Silas/"
       }
-    ]
+    ],
+    "identity": "Collaborateur missionnaire — Silas accompagne Paul dans plusieurs voyages et endure avec lui opposition et emprisonnement.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Timothée"
+    ],
+    "bibleAccount": [
+      "Est choisi pour accompagner Paul.",
+      "Prêche dans plusieurs régions.",
+      "Chante des louanges avec Paul en prison à Philippes."
+    ],
+    "qualities": [
+      "Courage",
+      "Endurance",
+      "Coopération"
+    ],
+    "difficulties": []
   },
   "onesimus": {
     "studyFocus": "Onésime — d’esclave à frère chrétien",
@@ -1793,7 +2846,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Onésime",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/On%C3%A9sime/"
       }
-    ]
+    ],
+    "identity": "Esclave devenu chrétien — Onésime devient chrétien et Paul demande à Philémon de l’accueillir comme un frère.",
+    "era": "Lettres chrétiennes",
+    "familyAndEntourage": [
+      "Paul",
+      "Philémon"
+    ],
+    "bibleAccount": [
+      "Devient chrétien grâce à Paul.",
+      "Est renvoyé auprès de Philémon.",
+      "Est présenté comme un frère chrétien utile."
+    ],
+    "qualities": [
+      "Changement",
+      "Fidélité"
+    ],
+    "difficulties": []
   },
   "philemon": {
     "studyFocus": "Philémon a été un chrétien fidèle dont la relation avec Paul et la situation d’Onésime montrent la puissance de l’amour chrétien et du pardon.",
@@ -1823,7 +2892,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Philémon",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Phil%C3%A9mon/"
       }
-    ]
+    ],
+    "identity": "Chrétien de Colosses — Philémon est destinataire d’une lettre de Paul concernant Onésime et l’amour chrétien.",
+    "era": "Lettres chrétiennes",
+    "familyAndEntourage": [
+      "Onésime",
+      "Paul",
+      "Apphia",
+      "Archippe"
+    ],
+    "bibleAccount": [
+      "Accueille une congrégation dans sa maison.",
+      "Est encouragé à accueillir Onésime comme un frère."
+    ],
+    "qualities": [
+      "Amour",
+      "Générosité",
+      "Hospitalité"
+    ],
+    "difficulties": []
   },
   "titus": {
     "studyFocus": "Tite était un collaborateur fiable de Paul, chargé de responsabilités importantes dans les congrégations et encouragé à rester attaché à un enseignement sain.",
@@ -1853,7 +2940,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Tite",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tite/"
       }
-    ]
+    ],
+    "identity": "Collaborateur de Paul — Tite travaille avec Paul et reçoit des responsabilités dans les congrégations de Crète.",
+    "era": "Actes et lettres chrétiennes",
+    "familyAndEntourage": [
+      "Paul",
+      "Les congrégations de Crète"
+    ],
+    "bibleAccount": [
+      "Accompagne Paul dans son activité.",
+      "Aide à régler des questions dans les congrégations.",
+      "Reçoit une lettre de Paul contenant des instructions pastorales."
+    ],
+    "qualities": [
+      "Fiabilité",
+      "Organisation",
+      "Service"
+    ],
+    "difficulties": []
   },
   "eutychus": {
     "studyFocus": "Eutyche est surtout connu pour l’événement survenu lors d’une réunion à Troas, qui montre l’intérêt porté par Paul et les chrétiens à la vie de leurs compagnons.",
@@ -1883,7 +2987,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Eutyche",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Eutyche/"
       }
-    ]
+    ],
+    "identity": "Jeune homme de Troas — Eutyche est connu pour l’incident survenu pendant un long discours de Paul à Troas.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Les disciples de Troas"
+    ],
+    "bibleAccount": [
+      "Assiste à une réunion chrétienne à Troas.",
+      "Tombe d’une fenêtre pendant le discours de Paul.",
+      "Est ensuite rendu à la vie selon le récit des Actes."
+    ],
+    "qualities": [
+      "Persévérance dans l’écoute"
+    ],
+    "difficulties": []
   },
   "martha": {
     "studyFocus": "Marthe — une femme qui aimait Jésus",
@@ -1909,7 +3028,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Amie de Jésus — Marthe, sœur de Marie et de Lazare, est connue pour son hospitalité et sa foi en la résurrection.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Marie",
+      "Lazare",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Accueille Jésus chez elle.",
+      "Exprime ouvertement sa foi lorsque Lazare meurt.",
+      "Assiste à la résurrection de Lazare."
+    ],
+    "qualities": [
+      "Hospitalité",
+      "Foi",
+      "Franchise"
+    ],
+    "difficulties": []
   },
   "mary_bethany": {
     "studyFocus": "Marie de Béthanie aimait profondément Jésus et montrait son intérêt pour les choses spirituelles en écoutant attentivement son enseignement.",
@@ -1939,7 +3076,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
-    ]
+    ],
+    "identity": "Amie de Jésus — Marie, sœur de Marthe et de Lazare, accorde une grande valeur à l’enseignement de Jésus et lui manifeste son attachement.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Marthe",
+      "Lazare",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Écoute Jésus avec attention.",
+      "Exprime sa foi au sujet de Lazare.",
+      "Utilise une huile parfumée coûteuse pour honorer Jésus."
+    ],
+    "qualities": [
+      "Foi",
+      "Attachement",
+      "Générosité"
+    ],
+    "difficulties": []
   },
   "joseph_arimathea": {
     "studyFocus": "Joseph d’Arimathie était un homme riche et membre respecté du Sanhédrin qui a pris position avec courage pour honorer Jésus après sa mort.",
@@ -1965,7 +3120,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Homme riche et disciple de Jésus — Joseph d’Arimathée demande le corps de Jésus et participe à son ensevelissement.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Pilate",
+      "Nicodème"
+    ],
+    "bibleAccount": [
+      "Est présenté comme un homme juste attendant le Royaume de Dieu.",
+      "Demande à Pilate le corps de Jésus.",
+      "Place Jésus dans un tombeau neuf."
+    ],
+    "qualities": [
+      "Courage",
+      "Respect",
+      "Attachement"
+    ],
+    "difficulties": []
   },
   "jairus": {
     "studyFocus": "Jaïrus, responsable de synagogue, a humblement demandé l’aide de Jésus lorsque sa fille était mourante et a continué à croire malgré l’annonce de sa mort.",
@@ -1991,7 +3164,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Président de synagogue — Jaïrus demande à Jésus d’aider sa fille malade et assiste à sa guérison.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Sa fille"
+    ],
+    "bibleAccount": [
+      "Supplie Jésus de venir auprès de sa fille.",
+      "Continue à faire confiance malgré l’annonce de la mort de l’enfant.",
+      "Est témoin du retour à la vie de sa fille."
+    ],
+    "qualities": [
+      "Foi",
+      "Persévérance"
+    ],
+    "difficulties": []
   },
   "thomas": {
     "studyFocus": "Thomas était un apôtre sincère qui a exprimé ses doutes après la mort de Jésus, puis a été convaincu par les preuves de sa résurrection.",
@@ -2017,6 +3206,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Apôtre — Thomas est l’un des douze apôtres et apprend à surmonter ses doutes après la résurrection de Jésus.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Les autres apôtres"
+    ],
+    "bibleAccount": [
+      "Suit Jésus comme apôtre.",
+      "Exprime son doute après le premier témoignage des disciples.",
+      "Reconnaît ensuite Jésus ressuscité."
+    ],
+    "qualities": [
+      "Franchise",
+      "Foi retrouvée"
+    ],
+    "difficulties": [
+      "Son récit montre qu’un doute peut être surmonté en examinant les faits et en acceptant les preuves."
     ]
   },
   "lydia": {
@@ -2047,7 +3254,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Lydie",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Lydie/"
       }
-    ]
+    ],
+    "identity": "Vendeuse de pourpre à Philippes — Lydie accepte le message prêché par Paul, se fait baptiser avec sa maisonnée et manifeste une remarquable hospitalité.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Silas",
+      "Sa maisonnée"
+    ],
+    "bibleAccount": [
+      "Écoute Paul près d’une rivière à Philippes.",
+      "Se fait baptiser avec sa maisonnée.",
+      "Insiste pour accueillir Paul et ses compagnons chez elle."
+    ],
+    "qualities": [
+      "Hospitalité",
+      "Générosité",
+      "Réceptivité"
+    ],
+    "difficulties": []
   },
   "tabitha": {
     "studyFocus": "Tabitha, appelée Dorcas, était connue pour ses bonnes actions et sa générosité envers les personnes dans le besoin.",
@@ -2077,7 +3302,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Tabitha",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tabitha/"
       }
-    ]
+    ],
+    "identity": "Disciple de Joppé — Tabitha est connue pour ses nombreuses bonnes actions et son aide aux veuves de Joppé.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Pierre",
+      "Les veuves de Joppé"
+    ],
+    "bibleAccount": [
+      "Fait beaucoup de bonnes œuvres.",
+      "Fabrique des vêtements pour des personnes dans le besoin.",
+      "Est ramenée à la vie par Pierre selon le récit des Actes."
+    ],
+    "qualities": [
+      "Générosité",
+      "Compassion",
+      "Service"
+    ],
+    "difficulties": []
   },
   "stephen": {
     "studyFocus": "Étienne a défendu courageusement la vérité et a continué à témoigner malgré une opposition violente.",
@@ -2111,7 +3353,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Étienne",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89tienne/"
       }
-    ]
+    ],
+    "identity": "Disciple chrétien et témoin — Étienne témoigne courageusement devant le Sanhédrin et meurt après avoir été lapidé.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Sanhédrin",
+      "Paul avant sa conversion"
+    ],
+    "bibleAccount": [
+      "Est choisi pour une responsabilité de service.",
+      "Accomplit des signes puissants.",
+      "Défend sa foi devant le Sanhédrin.",
+      "Prie pour ses persécuteurs avant de mourir."
+    ],
+    "qualities": [
+      "Courage",
+      "Foi",
+      "Pardon"
+    ],
+    "difficulties": []
   },
   "ananias_damascus": {
     "studyFocus": "Ananias de Damas a accepté courageusement de rencontrer Saul malgré ce qu’il savait de son passé, parce qu’il faisait confiance aux instructions de Jéhovah.",
@@ -2137,7 +3397,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Disciple de Damas — Ananias obéit à la direction reçue et aide Saul immédiatement après sa conversion.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Saul/Paul",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Reçoit une vision concernant Saul.",
+      "Va le voir malgré ses craintes.",
+      "Lui impose les mains et l’aide à retrouver la vue.",
+      "Contribue à l’accueil de Saul parmi les disciples."
+    ],
+    "qualities": [
+      "Courage",
+      "Obéissance",
+      "Confiance"
+    ],
+    "difficulties": []
   },
   "philip_evangelizer": {
     "studyFocus": "Philippe l’évangélisateur était un proclamateur zélé qui a accepté diverses missions et a aidé des personnes à comprendre les Écritures.",
@@ -2167,7 +3445,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Philippe",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Philippe/"
       }
-    ]
+    ],
+    "identity": "Évangélisateur — Philippe participe à l’expansion du message chrétien en Samarie et sur la route de Gaza.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Les apôtres",
+      "L’Éthiopien"
+    ],
+    "bibleAccount": [
+      "Prêche en Samarie.",
+      "Explique les Écritures à un fonctionnaire éthiopien.",
+      "Baptise cet homme après son acceptation du message.",
+      "Continue son activité dans différentes villes."
+    ],
+    "qualities": [
+      "Zèle",
+      "Enseignement",
+      "Disponibilité"
+    ],
+    "difficulties": []
   },
   "james_zebedee": {
     "studyFocus": "Jacques, fils de Zébédée, faisait partie des apôtres proches de Jésus et a appris à transformer son zèle initial en fidélité jusqu’à la mort.",
@@ -2193,7 +3489,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Apôtre — Jacques, fils de Zébédée et frère de Jean, fait partie des Douze et du cercle des disciples présents lors de plusieurs événements marquants.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jean",
+      "Pierre",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Quitte son activité de pêcheur pour suivre Jésus.",
+      "Est envoyé prêcher avec les Douze.",
+      "Fait partie des disciples témoins de la transfiguration.",
+      "Meurt exécuté par Hérode Agrippa Ier."
+    ],
+    "qualities": [
+      "Zèle",
+      "Courage"
+    ],
+    "difficulties": []
   },
   "james_brother_jesus": {
     "studyFocus": "Jacques, frère de Jésus, est devenu un chrétien mûr et a joué un rôle important dans la congrégation de Jérusalem.",
@@ -2219,7 +3533,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Ancien à Jérusalem — Jacques, frère de Jésus, devient un membre éminent de la congrégation de Jérusalem et intervient lors de la question de la circoncision.",
+    "era": "Congrégation chrétienne du Ier siècle",
+    "familyAndEntourage": [
+      "Jésus",
+      "Pierre",
+      "Paul"
+    ],
+    "bibleAccount": [
+      "Est d’abord sceptique envers Jésus avec ses frères.",
+      "Devient ensuite croyant.",
+      "Participe à la décision prise à Jérusalem au sujet des non-Juifs.",
+      "Rédige la lettre biblique qui porte son nom."
+    ],
+    "qualities": [
+      "Foi",
+      "Sagesse pratique",
+      "Courage"
+    ],
+    "difficulties": []
   },
   "jude_brother_jesus": {
     "studyFocus": "Jude, frère de Jésus, s’est présenté comme esclave de Jésus Christ et a exhorté les chrétiens à lutter pour la foi.",
@@ -2245,7 +3578,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Disciple chrétien — Judas, frère de Jésus, est cité parmi les frères de Jésus et est traditionnellement associé à la lettre de Jude.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Jacques"
+    ],
+    "bibleAccount": [
+      "Figure parmi les frères de Jésus.",
+      "Devient croyant après le ministère terrestre de Jésus.",
+      "Encourage les chrétiens à défendre la vraie foi dans la lettre de Jude."
+    ],
+    "qualities": [
+      "Foi",
+      "Courage",
+      "Vigilance spirituelle"
+    ],
+    "difficulties": []
   },
   "philip_apostle": {
     "studyFocus": "Philippe, l’un des douze apôtres, a montré de l’intérêt pour les personnes et a cherché à les conduire vers Jésus.",
@@ -2271,7 +3621,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Apôtre — Philippe est l’un des Douze. Il amène Nathanaël à Jésus et intervient dans plusieurs épisodes de l’Évangile de Jean.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Nathanaël",
+      "André",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Répond à l’appel de Jésus.",
+      "Invite Nathanaël à rencontrer Jésus.",
+      "Parle à Jésus au sujet de la foule à nourrir.",
+      "Présente des Grecs qui souhaitent voir Jésus."
+    ],
+    "qualities": [
+      "Zèle",
+      "Esprit d’initiative"
+    ],
+    "difficulties": []
   },
   "bartholomew": {
     "studyFocus": "Barthélemy, probablement Nathanaël, était un disciple qui a reconnu Jésus comme le Fils de Dieu et le Roi d’Israël.",
@@ -2297,7 +3665,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Apôtre — Barthélemy figure dans les listes des Douze. Il est souvent identifié à Nathanaël, mais les textes ne donnent pas explicitement cette identification.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Les Douze",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Est choisi parmi les Douze.",
+      "Participe au ministère des apôtres.",
+      "Figure parmi les disciples réunis après la résurrection."
+    ],
+    "qualities": [
+      "Foi",
+      "Fidélité"
+    ],
+    "difficulties": []
   },
   "james_alphaaeus": {
     "studyFocus": "Jacques fils d’Alphée faisait partie des douze apôtres, mais les Évangiles donnent peu de détails sur sa vie.",
@@ -2323,7 +3707,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Apôtre — Jacques fils d’Alphée est l’un des Douze apôtres.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Les Douze",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Est choisi par Jésus parmi les Douze.",
+      "Participe au ministère apostolique."
+    ],
+    "qualities": [
+      "Fidélité",
+      "Persévérance"
+    ],
+    "difficulties": []
   },
   "simon_zealot": {
     "studyFocus": "Simon le Zélé était l’un des douze apôtres et a servi aux côtés de disciples issus de milieux très différents.",
@@ -2349,7 +3748,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Apôtre — Simon le Cananéen, également appelé le Zélé, fait partie des Douze apôtres.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Les Douze",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Est choisi parmi les Douze.",
+      "Participe à la mission confiée aux apôtres."
+    ],
+    "qualities": [
+      "Zèle",
+      "Fidélité"
+    ],
+    "difficulties": []
   },
   "jairus_daughter": {
     "studyFocus": "La fille de Jaïrus a été ramenée à la vie par Jésus, donnant à sa famille une preuve puissante de sa capacité à ressusciter les morts.",
@@ -2375,7 +3789,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Jeune fille de Galilée — La fille de Jaïrus est au centre d’un récit où Jésus la ramène à la vie.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jaïrus",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Tombe gravement malade.",
+      "Meurt avant l’arrivée de Jésus.",
+      "Est ramenée à la vie selon le récit évangélique."
+    ],
+    "qualities": [
+      "Témoignage de la puissance de Jésus"
+    ],
+    "difficulties": []
   },
   "blind_bartimaeus": {
     "studyFocus": "Bartimée, un aveugle mendiant, a persisté à appeler Jésus malgré les reproches de la foule et a manifesté une grande foi.",
@@ -2401,7 +3830,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Aveugle mendiant — Bartimée, aveugle de Jéricho, appelle Jésus avec insistance et retrouve la vue.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "La foule"
+    ],
+    "bibleAccount": [
+      "Crie vers Jésus malgré les reproches de la foule.",
+      "Exprime sa foi en demandant à retrouver la vue.",
+      "Recouvre la vue et suit Jésus."
+    ],
+    "qualities": [
+      "Foi",
+      "Persévérance",
+      "Courage"
+    ],
+    "difficulties": []
   },
   "samaritan_woman": {
     "studyFocus": "La Samaritaine a accepté de discuter avec Jésus malgré les barrières sociales de l’époque et a parlé à d’autres de ce qu’elle avait appris.",
@@ -2427,7 +3873,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Habitante de Samarie — Une Samaritaine échange avec Jésus près d’un puits et parle ensuite de lui aux habitants de sa ville.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Les Samaritains de Sychar"
+    ],
+    "bibleAccount": [
+      "Discute avec Jésus au puits de Jacob.",
+      "Réfléchit à ses paroles concernant l’eau et le vrai culte.",
+      "Parle de Jésus aux habitants de la ville."
+    ],
+    "qualities": [
+      "Ouverture",
+      "Courage",
+      "Zèle pour partager"
+    ],
+    "difficulties": []
   },
   "roman_centurion": {
     "studyFocus": "Le centurion romain de Capharnaüm a montré une foi remarquable dans le pouvoir de guérison de Jésus et une grande humilité.",
@@ -2453,7 +3916,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Centurion — Un officier romain demande à Jésus de guérir son serviteur et manifeste une grande confiance dans son autorité.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Son serviteur"
+    ],
+    "bibleAccount": [
+      "Demande de l’aide pour son serviteur malade.",
+      "Reconnaît qu’une parole de Jésus suffit pour guérir.",
+      "Manifeste une foi remarquée par Jésus."
+    ],
+    "qualities": [
+      "Humilité",
+      "Foi",
+      "Confiance"
+    ],
+    "difficulties": []
   },
   "felix": {
     "studyFocus": "Félix a entendu Paul parler de justice, de maîtrise de soi et du jugement à venir, mais a repoussé sa réaction.",
@@ -2479,6 +3959,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Gouverneur romain de Judée — Félix entend Paul parler de la justice, de la maîtrise de soi et du jugement à venir, mais reporte sa décision.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Drusille"
+    ],
+    "bibleAccount": [
+      "Fait comparaître Paul.",
+      "Écoute son enseignement sur des questions morales et spirituelles.",
+      "Garde Paul détenu pendant une période prolongée."
+    ],
+    "qualities": [
+      "Autorité administrative"
+    ],
+    "difficulties": [
+      "Le récit montre le danger de remettre à plus tard une décision concernant la foi."
     ]
   },
   "festus": {
@@ -2505,7 +4002,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Gouverneur romain de Judée — Festus succède à Félix et entend l’affaire de Paul avant que celui-ci n’en appelle à César.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Agrippa",
+      "Félix"
+    ],
+    "bibleAccount": [
+      "Reprend le dossier de Paul.",
+      "Entend les accusations portées contre lui.",
+      "Accepte l’appel de Paul à César.",
+      "Présente l’affaire à Agrippa."
+    ],
+    "qualities": [
+      "Prudence juridique"
+    ],
+    "difficulties": []
   },
   "agrippa_ii": {
     "studyFocus": "Agrippa II a entendu Paul expliquer sa conversion, son ministère et l’accomplissement des prophéties concernant le Messie.",
@@ -2531,7 +4045,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Roi — Agrippa II entend le témoignage de Paul avec Bérénice et Festus et connaît les coutumes et controverses juives.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Bérénice",
+      "Paul",
+      "Festus"
+    ],
+    "bibleAccount": [
+      "Écoute Paul exposer son parcours et sa foi.",
+      "Examine l’affaire avec Festus.",
+      "Reconnaît que Paul ne semble pas avoir fait quelque chose qui mérite la mort ou les chaînes."
+    ],
+    "qualities": [
+      "Connaissance des affaires juives"
+    ],
+    "difficulties": []
   },
   "berenice": {
     "studyFocus": "Bérénice était présente lors de l’audience où Paul défendit sa foi devant Agrippa et Festus.",
@@ -2557,7 +4087,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Personnage royal — Bérénice accompagne Agrippa II lors de l’audience où Paul présente sa défense devant Festus.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Agrippa II",
+      "Festus",
+      "Paul"
+    ],
+    "bibleAccount": [
+      "Se rend à Césarée avec Agrippa.",
+      "Assiste à l’audience de Paul."
+    ],
+    "qualities": [
+      "Présence dans les affaires publiques"
+    ],
+    "difficulties": []
   },
   "phoebe": {
     "studyFocus": "Phébé était une chrétienne de Cenchrées que Paul a recommandée chaleureusement aux chrétiens de Rome et qui avait aidé beaucoup de frères, y compris Paul.",
@@ -2587,7 +4132,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Phébé",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ph%C3%A9b%C3%A9/"
       }
-    ]
+    ],
+    "identity": "Ministre de la congrégation de Cenchrées — Phœbé est recommandée par Paul aux chrétiens de Rome et est présentée comme une aide pour beaucoup, y compris Paul.",
+    "era": "Congrégation chrétienne du Ier siècle",
+    "familyAndEntourage": [
+      "Paul",
+      "Les chrétiens de Rome"
+    ],
+    "bibleAccount": [
+      "Sert la congrégation de Cenchrées.",
+      "Est recommandée chaleureusement aux chrétiens de Rome.",
+      "Aide de nombreux chrétiens."
+    ],
+    "qualities": [
+      "Service",
+      "Générosité",
+      "Hospitalité"
+    ],
+    "difficulties": []
   },
   "euodia": {
     "studyFocus": "Évodie était une chrétienne qui avait travaillé dur avec Paul dans la prédication. Paul l’a encouragée, avec Syntyche, à retrouver l’unité.",
@@ -2613,7 +4175,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Chrétienne de Philippes — Évodie est une chrétienne que Paul exhorte à être unie avec Syntyche dans le service du Seigneur.",
+    "era": "Congrégation chrétienne du Ier siècle",
+    "familyAndEntourage": [
+      "Syntyche",
+      "Paul"
+    ],
+    "bibleAccount": [
+      "Travaille avec Paul pour la bonne nouvelle.",
+      "Est exhortée à retrouver l’unité avec Syntyche."
+    ],
+    "qualities": [
+      "Zèle pour la bonne nouvelle",
+      "Persévérance"
+    ],
+    "difficulties": []
   },
   "epaphroditus": {
     "studyFocus": "Épaphrodite s’est dépensé au service de Paul et des Philippiens et a risqué sa vie pour l’œuvre du Seigneur.",
@@ -2639,7 +4216,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Compagnon de service de Paul — Épaphrodite apporte l’aide de la congrégation de Philippes à Paul et tombe gravement malade pendant son service.",
+    "era": "Congrégation chrétienne du Ier siècle",
+    "familyAndEntourage": [
+      "Paul",
+      "Philippiens"
+    ],
+    "bibleAccount": [
+      "Apporte un soutien matériel à Paul.",
+      "Travaille dur pour le service chrétien.",
+      "Tombe gravement malade mais récupère."
+    ],
+    "qualities": [
+      "Abnégation",
+      "Courage",
+      "Fidélité"
+    ],
+    "difficulties": []
   },
   "tychicus": {
     "studyFocus": "Tychique était un assistant fidèle de Paul, chargé de transmettre des lettres et de réconforter les congrégations.",
@@ -2665,7 +4259,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Compagnon de Paul — Tychique est un fidèle compagnon de Paul chargé de transmettre des nouvelles et des lettres aux congrégations.",
+    "era": "Congrégation chrétienne du Ier siècle",
+    "familyAndEntourage": [
+      "Paul",
+      "Onésime",
+      "Éphèse"
+    ],
+    "bibleAccount": [
+      "Accompagne Paul.",
+      "Transmet des informations aux chrétiens.",
+      "Est envoyé auprès de plusieurs congrégations."
+    ],
+    "qualities": [
+      "Fidélité",
+      "Fiabilité",
+      "Service"
+    ],
+    "difficulties": []
   },
   "demas": {
     "studyFocus": "Démas a collaboré avec Paul pendant un temps, mais Paul a ensuite indiqué qu’il l’avait abandonné parce qu’il aimait le présent système de choses.",
@@ -2691,6 +4303,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Compagnon de Paul — Démas est un compagnon de Paul qui l’abandonne finalement parce qu’il aime le présent système de choses.",
+    "era": "Congrégation chrétienne du Ier siècle",
+    "familyAndEntourage": [
+      "Paul",
+      "Luc"
+    ],
+    "bibleAccount": [
+      "Travaille un temps aux côtés de Paul.",
+      "Quitte Paul alors que celui-ci est emprisonné."
+    ],
+    "qualities": [
+      "Engagement initial"
+    ],
+    "difficulties": [
+      "Son exemple met en garde contre l’attachement excessif aux choses du monde."
     ]
   },
   "naaman": {
@@ -2717,7 +4345,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Chef de l’armée syrienne — Naaman, atteint de lèpre, accepte finalement les instructions du prophète Élisée et est guéri.",
+    "era": "Rois d’Israël",
+    "familyAndEntourage": [
+      "Élisée",
+      "La jeune servante israélite"
+    ],
+    "bibleAccount": [
+      "Écoute le témoignage d’une jeune Israélite.",
+      "Se rend auprès d’Élisée.",
+      "Accepte de se laver sept fois dans le Jourdain.",
+      "Reconnaît la puissance de Jéhovah."
+    ],
+    "qualities": [
+      "Humilité",
+      "Obéissance",
+      "Foi progressive"
+    ],
+    "difficulties": []
   },
   "hezekiah": {
     "studyFocus": "Ézéchias s’est appuyé sur Jéhovah face aux menaces assyriennes et a travaillé à rétablir le vrai culte.",
@@ -2747,7 +4393,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Roi de Juda — Ézéchias entreprend une réforme du culte et fait confiance à Jéhovah lors de la menace assyrienne.",
+    "era": "Rois de Juda",
+    "familyAndEntourage": [
+      "Isaïe",
+      "Sennachérib",
+      "Le peuple de Juda"
+    ],
+    "bibleAccount": [
+      "Nettoie et réorganise le temple.",
+      "Encourage le peuple à revenir au vrai culte.",
+      "Cherche l’aide de Jéhovah face à l’Assyrie.",
+      "Organise une grande célébration de la Pâque."
+    ],
+    "qualities": [
+      "Foi",
+      "Courage",
+      "Zèle"
+    ],
+    "difficulties": []
   },
   "josiah": {
     "studyFocus": "Josias a cherché Jéhovah alors qu’il était encore jeune et a entrepris une vaste réforme du culte en Juda.",
@@ -2777,7 +4442,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Roi de Juda — Josias entreprend une réforme religieuse et réagit avec humilité à la découverte du livre de la Loi.",
+    "era": "Rois de Juda",
+    "familyAndEntourage": [
+      "Houlda",
+      "Les prêtres",
+      "Juda"
+    ],
+    "bibleAccount": [
+      "Fait réparer le temple.",
+      "Écoute la lecture du livre de la Loi.",
+      "Supprime des pratiques idolâtriques.",
+      "Organise une importante célébration de la Pâque."
+    ],
+    "qualities": [
+      "Humilité",
+      "Zèle",
+      "Réceptivité aux conseils"
+    ],
+    "difficulties": []
   },
   "jehoshaphat": {
     "studyFocus": "Josaphat a souvent recherché Jéhovah et a encouragé le peuple de Juda à lui faire confiance, même lorsqu’une grande armée menaçait le pays.",
@@ -2803,7 +4487,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Roi de Juda — Yehoshaphat cherche Jéhovah et organise l’enseignement de la Loi dans le royaume de Juda.",
+    "era": "Rois de Juda",
+    "familyAndEntourage": [
+      "Juda",
+      "Les Lévites",
+      "Jéhu fils de Hanani"
+    ],
+    "bibleAccount": [
+      "Renforce son royaume.",
+      "Envoie des responsables enseigner la Loi au peuple.",
+      "Prie et cherche la direction de Jéhovah face à une menace militaire."
+    ],
+    "qualities": [
+      "Foi",
+      "Organisation",
+      "Humilité"
+    ],
+    "difficulties": []
   },
   "jonah": {
     "studyFocus": "Jonas a appris à accepter la mission de Jéhovah et à comprendre davantage sa miséricorde envers les personnes qui se repentent.",
@@ -2833,6 +4535,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Prophète — Jonas reçoit la mission de prévenir Ninive, fuit d’abord sa mission puis finit par transmettre le message.",
+    "era": "Prophètes",
+    "familyAndEntourage": [
+      "Ninive",
+      "Les marins"
+    ],
+    "bibleAccount": [
+      "Reçoit une mission pour Ninive.",
+      "Fuit vers une autre direction.",
+      "Est sauvé après avoir été jeté à la mer.",
+      "Annonce le message à Ninive."
+    ],
+    "qualities": [
+      "Obéissance progressive",
+      "Humilité à apprendre"
+    ],
+    "difficulties": [
+      "Son histoire montre que les sentiments personnels peuvent entrer en conflit avec une mission confiée par Dieu."
     ]
   },
   "saul_king": {
@@ -2859,6 +4580,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Premier roi d’Israël — Saül a commencé humblement comme premier roi d’Israël, mais a ensuite désobéi à Jéhovah et est devenu arrogant.",
+    "era": "Rois d’Israël",
+    "familyAndEntourage": [
+      "Jonathan",
+      "David",
+      "Samuel"
+    ],
+    "bibleAccount": [
+      "Est oint comme premier roi d’Israël.",
+      "Combat les ennemis d’Israël.",
+      "Désobéit à plusieurs instructions divines.",
+      "Poursuit David malgré la loyauté de celui-ci.",
+      "La fiche JW.org oppose clairement son humilité initiale à son évolution."
+    ],
+    "qualities": [
+      "Courage initial",
+      "Capacité de chef"
+    ],
+    "difficulties": [
+      "Son parcours montre l’importance de l’obéissance et de l’humilité."
     ]
   },
   "manoah_father": {
@@ -2885,7 +4627,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Père de Samson — Manoa reçoit avec sa femme l’annonce de la naissance de Samson et demande comment élever l’enfant.",
+    "era": "Juges",
+    "familyAndEntourage": [
+      "Sa femme",
+      "Samson"
+    ],
+    "bibleAccount": [
+      "Demande des instructions concernant son futur fils.",
+      "Offre un sacrifice avec sa femme.",
+      "Cherche à comprendre les instructions reçues."
+    ],
+    "qualities": [
+      "Foi",
+      "Désir d’apprendre"
+    ],
+    "difficulties": []
   },
   "zephaniah": {
     "studyFocus": "Zéphania a proclamé les avertissements de Jéhovah contre le mal tout en encourageant les humbles à rechercher Jéhovah.",
@@ -2911,7 +4669,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Prophète de Juda — Sophonie annonce un jour de jugement et encourage ceux qui cherchent Jéhovah à pratiquer la justice et la douceur.",
+    "era": "Prophètes",
+    "familyAndEntourage": [
+      "Juda",
+      "Les humbles du pays"
+    ],
+    "bibleAccount": [
+      "Dénonce l’idolâtrie et les pratiques mauvaises.",
+      "Annonce le jour de Jéhovah.",
+      "Encourage les humbles à chercher Jéhovah."
+    ],
+    "qualities": [
+      "Courage",
+      "Franchise",
+      "Espérance"
+    ],
+    "difficulties": []
   },
   "habakkuk": {
     "studyFocus": "Habaqouq a exprimé ses questions à Jéhovah et a appris à attendre avec confiance l’accomplissement de la justice divine.",
@@ -2937,7 +4712,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Prophète de Juda — Habacuc exprime ses questions devant la violence et l’injustice puis affirme sa confiance en Jéhovah.",
+    "era": "Prophètes",
+    "familyAndEntourage": [
+      "Jéhovah",
+      "Juda"
+    ],
+    "bibleAccount": [
+      "Pose des questions franches sur l’injustice.",
+      "Reçoit une réponse prophétique.",
+      "Termine par une expression de confiance malgré des circonstances difficiles."
+    ],
+    "qualities": [
+      "Honnêteté dans la prière",
+      "Foi",
+      "Persévérance"
+    ],
+    "difficulties": []
   },
   "amos": {
     "studyFocus": "Amos, qui n’était pas issu d’un milieu prophétique professionnel, a courageusement transmis le message de Jéhovah contre l’injustice et le faux culte.",
@@ -2963,7 +4755,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Prophète — Amos, éleveur et cultivateur de sycomores, reçoit la mission de dénoncer les injustices et le faux culte en Israël.",
+    "era": "Prophètes",
+    "familyAndEntourage": [
+      "Israël",
+      "Amatsia"
+    ],
+    "bibleAccount": [
+      "Quitte son activité pour transmettre le message prophétique.",
+      "Dénonce l’oppression des pauvres.",
+      "Condamne un culte devenu hypocrite.",
+      "Annonce le jugement tout en évoquant un rétablissement futur."
+    ],
+    "qualities": [
+      "Courage",
+      "Justice",
+      "Franchise"
+    ],
+    "difficulties": []
   },
   "micah": {
     "studyFocus": "Mika a dénoncé l’injustice et le faux culte tout en rappelant ce que Jéhovah attend de ses adorateurs.",
@@ -2989,7 +4799,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Prophète — Michée dénonce les injustices et l’infidélité tout en annonçant des promesses concernant le peuple de Dieu.",
+    "era": "Prophètes",
+    "familyAndEntourage": [
+      "Juda",
+      "Israël"
+    ],
+    "bibleAccount": [
+      "Dénonce les dirigeants injustes.",
+      "Annonce des jugements contre Samarie et Jérusalem.",
+      "Rappelle ce que Jéhovah demande à ses serviteurs."
+    ],
+    "qualities": [
+      "Justice",
+      "Courage",
+      "Espérance"
+    ],
+    "difficulties": []
   },
   "obadiah": {
     "studyFocus": "Obadia a annoncé le jugement de Jéhovah contre Édom pour son attitude envers Juda et a montré que Jéhovah tient les nations responsables de leurs actes.",
@@ -3015,7 +4842,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Prophète — Obadia annonce le jugement contre Édom et évoque le rétablissement du peuple de Jéhovah.",
+    "era": "Prophètes",
+    "familyAndEntourage": [
+      "Édom",
+      "Jacob"
+    ],
+    "bibleAccount": [
+      "Annonce le jugement contre Édom.",
+      "Dénonce la violence commise contre Jacob.",
+      "Annonce la délivrance sur le mont Sion."
+    ],
+    "qualities": [
+      "Courage",
+      "Justice",
+      "Espérance"
+    ],
+    "difficulties": []
   },
   "joel": {
     "studyFocus": "Joël a annoncé le jour de Jéhovah et a appelé le peuple à revenir sincèrement vers lui.",
@@ -3041,7 +4885,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Prophète — Yoël utilise une invasion de sauterelles comme contexte pour appeler le peuple à revenir à Jéhovah.",
+    "era": "Prophètes",
+    "familyAndEntourage": [
+      "Juda",
+      "Le peuple"
+    ],
+    "bibleAccount": [
+      "Décrit une invasion dévastatrice.",
+      "Appelle le peuple à revenir sincèrement à Jéhovah.",
+      "Annonce une effusion de l’esprit et des jours de rétablissement."
+    ],
+    "qualities": [
+      "Urgence",
+      "Foi",
+      "Espérance"
+    ],
+    "difficulties": []
   },
   "nahum": {
     "studyFocus": "Nahum a proclamé le jugement de Jéhovah contre Ninive et a montré que Jéhovah ne tolère pas indéfiniment la violence et la méchanceté.",
@@ -3067,7 +4928,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Prophète — Nahum annonce la chute de Ninive et présente Jéhovah comme un Dieu juste qui ne laisse pas le mal impuni.",
+    "era": "Prophètes",
+    "familyAndEntourage": [
+      "Ninive",
+      "Juda"
+    ],
+    "bibleAccount": [
+      "Annonce la chute de Ninive.",
+      "Dénonce la violence et l’oppression assyriennes.",
+      "Encourage le peuple par l’annonce de la fin de l’oppression."
+    ],
+    "qualities": [
+      "Courage",
+      "Espérance",
+      "Sens de la justice"
+    ],
+    "difficulties": []
   },
   "zechariah_priest": {
     "studyFocus": "Zacharie le prêtre — père de Jean le Baptiseur",
@@ -3093,7 +4971,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Prêtre — Zekaria reçoit au temple l’annonce de la naissance de son fils Jean et retrouve la parole après la naissance de l’enfant.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Élisabeth",
+      "Jean le Baptiseur"
+    ],
+    "bibleAccount": [
+      "Accomplit son service sacerdotal au temple.",
+      "Reçoit l’annonce concernant Jean.",
+      "Est temporairement privé de parole après avoir exprimé son doute.",
+      "Prophétise à la naissance de son fils."
+    ],
+    "qualities": [
+      "Foi retrouvée",
+      "Reconnaissance",
+      "Service"
+    ],
+    "difficulties": []
   },
   "elizabeth": {
     "studyFocus": "Élisabeth était une femme fidèle qui a accueilli Marie avec joie et a reconnu sous inspiration le rôle particulier de l’enfant qu’elle portait.",
@@ -3119,7 +5015,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Mère de Jean le Baptiseur — Élisabeth, femme de Zekaria, est décrite comme juste et devient la mère de Jean le Baptiseur.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Zekaria",
+      "Jean le Baptiseur",
+      "Marie"
+    ],
+    "bibleAccount": [
+      "Reste fidèle malgré une longue période sans enfant.",
+      "Accueille Marie pendant sa grossesse.",
+      "Donne naissance à Jean.",
+      "Reconnaît avec foi l’importance de l’enfant que porte Marie."
+    ],
+    "qualities": [
+      "Foi",
+      "Humilité",
+      "Reconnaissance"
+    ],
+    "difficulties": []
   },
   "joseph_jesus_father": {
     "studyFocus": "Joseph, père adoptif de Jésus, était un homme juste qui a suivi les directives de Jéhovah et a protégé sa famille.",
@@ -3145,7 +5060,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Charpentier et époux de Marie — Joseph protège Jésus et Marie et agit conformément aux instructions reçues dans les rêves.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Marie",
+      "Jésus"
+    ],
+    "bibleAccount": [
+      "Accepte de prendre Marie pour épouse.",
+      "Protège Jésus en allant en Égypte.",
+      "Retourne s’installer à Nazareth.",
+      "Enseigne à Jésus son métier et l’emmène au temple avec la famille."
+    ],
+    "qualities": [
+      "Obéissance",
+      "Courage",
+      "Responsabilité"
+    ],
+    "difficulties": []
   },
   "joseph_caiaphas": {
     "studyFocus": "Caïphe — grand prêtre au temps de Jésus",
@@ -3171,6 +5104,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+    ],
+    "identity": "Grand prêtre — Caïphe participe aux démarches des chefs religieux contre Jésus et préside son interrogatoire religieux.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Sanhédrin",
+      "Anne"
+    ],
+    "bibleAccount": [
+      "Participe à la décision concernant Jésus.",
+      "Interroge Jésus devant le Sanhédrin.",
+      "Intervient ensuite dans les premiers épisodes de persécution des disciples."
+    ],
+    "qualities": [
+      "Autorité religieuse"
+    ],
+    "difficulties": [
+      "Son rôle dans le récit illustre les conséquences de décisions prises contre Jésus et ses disciples."
     ]
   },
   "joanna": {
@@ -3197,7 +5148,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Disciple de Jésus — Jeanne, femme de Chuza, fait partie des femmes qui accompagnent Jésus et soutiennent son ministère.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Chuza",
+      "Jésus",
+      "Marie Madeleine"
+    ],
+    "bibleAccount": [
+      "Suit Jésus avec d’autres femmes.",
+      "Contribue matériellement au soutien du groupe.",
+      "Fait partie des femmes qui témoignent de la résurrection."
+    ],
+    "qualities": [
+      "Générosité",
+      "Fidélité"
+    ],
+    "difficulties": []
   },
   "samaritan_leper": {
     "studyFocus": "Parmi les dix lépreux guéris par Jésus, un Samaritain est revenu pour remercier Dieu et Jésus.",
@@ -3223,7 +5191,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Homme guéri par Jésus — Parmi dix lépreux guéris, un Samaritain revient remercier Jésus.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Les neuf autres lépreux"
+    ],
+    "bibleAccount": [
+      "Crie vers Jésus avec neuf autres lépreux.",
+      "Est guéri avec eux.",
+      "Revient glorifier Dieu et remercier Jésus."
+    ],
+    "qualities": [
+      "Reconnaissance",
+      "Foi"
+    ],
+    "difficulties": []
   },
   "woman_issue_blood": {
     "studyFocus": "La femme qui souffrait de pertes de sang depuis douze ans a manifesté une foi remarquable en Jésus et a reçu une guérison.",
@@ -3249,7 +5233,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Femme guérie par Jésus — Une femme malade depuis douze ans manifeste sa foi en touchant le vêtement de Jésus et est guérie.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "La foule"
+    ],
+    "bibleAccount": [
+      "Cherche de l’aide pendant de nombreuses années.",
+      "S’approche de Jésus avec foi.",
+      "Touche son vêtement.",
+      "Reconnaît devant Jésus ce qui s’est passé."
+    ],
+    "qualities": [
+      "Foi",
+      "Persévérance",
+      "Courage"
+    ],
+    "difficulties": []
   },
   "gerasene_man": {
     "studyFocus": "L’homme de la région des Géraséniens qui avait été libéré de l’influence démoniaque a voulu suivre Jésus, mais Jésus lui a confié une autre mission : raconter ce que Dieu avait fait pour lui.",
@@ -3275,7 +5277,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Homme délivré par Jésus — Jésus délivre un homme gravement tourmenté dans la région des Géraséniens, qui souhaite ensuite rester avec lui.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Les habitants de la Décapole"
+    ],
+    "bibleAccount": [
+      "Vit dans un état de grande détresse.",
+      "Est délivré par Jésus.",
+      "Retrouve une vie normale.",
+      "Annonce dans sa région ce que Jésus a fait pour lui."
+    ],
+    "qualities": [
+      "Reconnaissance",
+      "Zèle"
+    ],
+    "difficulties": []
   },
   "jason_thessalonica": {
     "studyFocus": "Jason de Thessalonique — un hôte courageux",
@@ -3301,7 +5320,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Chrétien de Thessalonique — Jason accueille Paul et Silas à Thessalonique et est ensuite entraîné dans les troubles provoqués par leurs opposants.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Silas",
+      "Les chrétiens de Thessalonique"
+    ],
+    "bibleAccount": [
+      "Héberge Paul et Silas.",
+      "Est traîné devant les autorités avec d’autres frères.",
+      "Fournit une garantie aux autorités pour obtenir leur libération."
+    ],
+    "qualities": [
+      "Hospitalité",
+      "Courage"
+    ],
+    "difficulties": []
   },
   "onesiphorus": {
     "studyFocus": "Onésiphore a manifesté un courage et une fidélité remarquables en recherchant Paul et en le réconfortant lorsqu’il était prisonnier.",
@@ -3327,7 +5363,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Chrétien de l’entourage de Paul — Onésiphore aide Paul et n’a pas honte de ses chaînes.",
+    "era": "Congrégation chrétienne du Ier siècle",
+    "familyAndEntourage": [
+      "Paul",
+      "Sa maisonnée"
+    ],
+    "bibleAccount": [
+      "Réconforte Paul.",
+      "Recherche Paul avec empressement à Rome.",
+      "Soutient Paul alors qu’il est emprisonné."
+    ],
+    "qualities": [
+      "Courage",
+      "Loyauté",
+      "Générosité"
+    ],
+    "difficulties": []
   },
   "mary_mother_james": {
     "studyFocus": "Marie mère de Jacques — une disciple fidèle",
@@ -3353,7 +5406,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Disciple — Marie, mère de Jacques et de José, fait partie des femmes qui suivent Jésus et sont présentes lors de sa mort et de son ensevelissement.",
+    "era": "Évangiles",
+    "familyAndEntourage": [
+      "Jésus",
+      "Jacques",
+      "José"
+    ],
+    "bibleAccount": [
+      "Suit Jésus depuis la Galilée.",
+      "Est présente lors de l’exécution de Jésus.",
+      "Observe le lieu où Jésus est déposé."
+    ],
+    "qualities": [
+      "Fidélité",
+      "Courage"
+    ],
+    "difficulties": []
   },
   "mary_mark_mother": {
     "studyFocus": "Marie, mère de Jean-Marc — une chrétienne hospitalière",
@@ -3379,7 +5449,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Chrétienne de Jérusalem — Marie met sa maison à disposition des disciples de Jérusalem, qui s’y réunissent notamment pendant la période de persécution.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Jean Marc",
+      "Pierre",
+      "Barnabé"
+    ],
+    "bibleAccount": [
+      "Accueille des chrétiens chez elle.",
+      "Sa maison sert de lieu de réunion pour les disciples."
+    ],
+    "qualities": [
+      "Hospitalité",
+      "Générosité"
+    ],
+    "difficulties": []
   },
   "apphia": {
     "studyFocus": "Apphia est saluée avec Philémon et Archippe dans la lettre de Paul, ce qui montre qu’elle faisait partie de la communauté chrétienne liée à la maison de Philémon.",
@@ -3405,7 +5491,21 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Chrétienne — Apphia est saluée avec Philémon et Archippe dans la lettre adressée à la congrégation qui se réunit chez Philémon.",
+    "era": "Congrégation chrétienne du Ier siècle",
+    "familyAndEntourage": [
+      "Philémon",
+      "Archippe"
+    ],
+    "bibleAccount": [
+      "Participe à la vie de la congrégation réunie chez Philémon."
+    ],
+    "qualities": [
+      "Foi",
+      "Service"
+    ],
+    "difficulties": []
   },
   "archippus": {
     "studyFocus": "Archippe était un chrétien à qui Paul a demandé de veiller à bien accomplir le ministère qu’il avait reçu dans le Seigneur.",
@@ -3431,7 +5531,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Chrétien — Archippe est salué dans la lettre à Philémon et Paul lui demande de veiller au ministère qu’il a reçu dans le Seigneur.",
+    "era": "Congrégation chrétienne du Ier siècle",
+    "familyAndEntourage": [
+      "Philémon",
+      "Apphia",
+      "Paul"
+    ],
+    "bibleAccount": [
+      "Reçoit une responsabilité dans le ministère.",
+      "Est encouragé à accomplir pleinement son service."
+    ],
+    "qualities": [
+      "Persévérance",
+      "Sens du devoir"
+    ],
+    "difficulties": []
   },
   "john_mark": {
     "studyFocus": "Jean-Marc a connu un début de service marqué par une difficulté, mais il a ensuite retrouvé la confiance de Paul et est devenu un collaborateur utile.",
@@ -3461,7 +5577,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Compagnon de mission — Jean Marc accompagne Barnabé et Paul dans une partie de leur activité missionnaire et devient ensuite un collaborateur utile à Paul et Pierre.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Marie",
+      "Barnabé",
+      "Paul",
+      "Pierre"
+    ],
+    "bibleAccount": [
+      "Accompagne Barnabé et Paul.",
+      "Quitte leur premier voyage missionnaire avant son terme.",
+      "Devient ensuite un collaborateur jugé utile au service."
+    ],
+    "qualities": [
+      "Persévérance",
+      "Progrès",
+      "Fidélité"
+    ],
+    "difficulties": []
   },
   "priscilla": {
     "studyFocus": "Priscille et Aquilas formaient un couple chrétien qui a collaboré étroitement avec Paul et a aidé Apollos à mieux comprendre les enseignements de Dieu.",
@@ -3491,7 +5626,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Priscille",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Priscille/"
       }
-    ]
+    ],
+    "identity": "Chrétienne et enseignante — Priscille travaille avec Aquila et aide Apollos à mieux comprendre la voie de Dieu.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Aquila",
+      "Apollos",
+      "Paul"
+    ],
+    "bibleAccount": [
+      "Travaille avec Aquila.",
+      "Accueille Apollos.",
+      "Lui explique plus exactement la voie de Dieu."
+    ],
+    "qualities": [
+      "Enseignement",
+      "Hospitalité",
+      "Zèle"
+    ],
+    "difficulties": []
   },
   "claudius_lycias": {
     "studyFocus": "Claude Lysias était le commandant militaire qui a protégé Paul lorsqu’une foule voulait le tuer et a organisé son transfert vers Césarée.",
@@ -3517,7 +5670,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Commandant militaire romain — Claude Lysias intervient pour protéger Paul contre la foule et organise son transfert vers Césarée.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Félix",
+      "Les soldats romains"
+    ],
+    "bibleAccount": [
+      "Intervient lors de l’émeute à Jérusalem.",
+      "Fait arrêter Paul pour le protéger.",
+      "Envoie Paul à Félix avec une lettre expliquant les faits."
+    ],
+    "qualities": [
+      "Prudence",
+      "Respect de la procédure"
+    ],
+    "difficulties": []
   },
   "julius_centurion": {
     "studyFocus": "Julius, officier de la troupe impériale, a traité Paul avec humanité pendant son transfert vers Rome.",
@@ -3543,7 +5713,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Centurion romain — Julius est chargé de conduire Paul et d’autres prisonniers vers Rome et traite Paul avec considération.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Les prisonniers"
+    ],
+    "bibleAccount": [
+      "Conduit Paul vers Rome.",
+      "Laisse Paul rendre visite à ses amis.",
+      "Évite que les soldats tuent les prisonniers après le naufrage."
+    ],
+    "qualities": [
+      "Bienveillance",
+      "Discernement"
+    ],
+    "difficulties": []
   },
   "gaius_macedonian": {
     "studyFocus": "Gaïus de Macédoine a accompagné Paul dans son ministère et s’est retrouvé pris dans l’émeute d’Éphèse.",
@@ -3569,7 +5755,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Compagnon de Paul — Gaïus est un Macédonien entraîné dans le tumulte d’Éphèse avec Aristarque.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Aristarque"
+    ],
+    "bibleAccount": [
+      "Accompagne Paul dans son activité.",
+      "Est entraîné dans la foule lors de l’émeute d’Éphèse."
+    ],
+    "qualities": [
+      "Courage",
+      "Fidélité"
+    ],
+    "difficulties": []
   },
   "aristarchus": {
     "studyFocus": "Aristarque était un compagnon de voyage et collaborateur de Paul qui a partagé avec lui des périodes difficiles, y compris son emprisonnement.",
@@ -3595,7 +5796,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Compagnon de Paul — Aristarque accompagne Paul et partage avec lui certaines étapes difficiles de son ministère.",
+    "era": "Actes",
+    "familyAndEntourage": [
+      "Paul",
+      "Gaïus",
+      "Marc"
+    ],
+    "bibleAccount": [
+      "Accompagne Paul.",
+      "Est pris dans l’émeute d’Éphèse.",
+      "Voyage ensuite avec Paul vers Rome."
+    ],
+    "qualities": [
+      "Courage",
+      "Loyauté",
+      "Endurance"
+    ],
+    "difficulties": []
   },
   "syntyche": {
     "studyFocus": "Syntyche était une chrétienne fidèle qui avait collaboré avec Paul et Évodie dans la bonne nouvelle, mais qui devait résoudre un désaccord avec sa sœur.",
@@ -3621,6 +5840,21 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
-    ]
+    ],
+    "identity": "Chrétienne de Philippes — Syntyche travaille avec Paul pour la bonne nouvelle et reçoit avec Évodie un appel à l’unité.",
+    "era": "Congrégation chrétienne du Ier siècle",
+    "familyAndEntourage": [
+      "Évodie",
+      "Paul"
+    ],
+    "bibleAccount": [
+      "Travaille pour la bonne nouvelle.",
+      "Est exhortée à être en accord avec Évodie."
+    ],
+    "qualities": [
+      "Zèle",
+      "Persévérance"
+    ],
+    "difficulties": []
   }
 };
