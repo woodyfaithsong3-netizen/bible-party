@@ -2352,11 +2352,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jairus_daughter": {
-    "studyFocus": "La fille de Jaïrus — relevée par Jésus",
+    "studyFocus": "La fille de Jaïrus a été ramenée à la vie par Jésus, donnant à sa famille une preuve puissante de sa capacité à ressusciter les morts.",
     "lessonPoints": [
-      "Confiance en Jésus",
-      "Espérance de la résurrection",
-      "Foi familiale"
+      "Espérance : son récit montre que la mort n’est pas une situation irréversible pour Jéhovah.",
+      "Foi : Jésus a encouragé ses parents à ne pas avoir peur mais à exercer la foi.",
+      "Tendresse : Jésus a traité cette enfant avec attention et dignité."
     ],
     "keyReading": "Marc 5:21-43 ; Luc 8:40-56",
     "location": "Capharnaüm et ses environs.",
@@ -2378,11 +2378,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "blind_bartimaeus": {
-    "studyFocus": "Bartimée — un mendiant qui a retrouvé la vue",
+    "studyFocus": "Bartimée, un aveugle mendiant, a persisté à appeler Jésus malgré les reproches de la foule et a manifesté une grande foi.",
     "lessonPoints": [
-      "Persévérance dans la prière",
-      "Foi",
-      "Reconnaissance"
+      "Persévérance : il n’a pas cessé de crier vers Jésus lorsque la foule voulait le faire taire.",
+      "Foi : il a appelé Jésus « Fils de David », reconnaissant son rôle messianique.",
+      "Gratitude : après avoir retrouvé la vue, il a suivi Jésus."
     ],
     "keyReading": "Marc 10:46-52",
     "location": "Jéricho.",
@@ -2430,11 +2430,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "roman_centurion": {
-    "studyFocus": "Le centurion romain — une foi remarquable",
+    "studyFocus": "Le centurion romain de Capharnaüm a montré une foi remarquable dans le pouvoir de guérison de Jésus et une grande humilité.",
     "lessonPoints": [
-      "Humilité",
-      "Foi",
-      "Compassion"
+      "Foi : il croyait que Jésus pouvait guérir son serviteur sans même venir chez lui.",
+      "Humilité : il estimait ne pas être digne de recevoir Jésus chez lui.",
+      "Compassion : il se souciait profondément d’un serviteur malade."
     ],
     "keyReading": "Matthieu 8:5-13 ; Luc 7:1-10",
     "location": "Capharnaüm.",
@@ -2456,11 +2456,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "felix": {
-    "studyFocus": "Félix était gouverneur de Judée lorsque Paul comparut devant lui. Il entendit Paul parler de justice, de maîtrise de soi et du jugement à venir, mais reporta sa décision.",
+    "studyFocus": "Félix a entendu Paul parler de justice, de maîtrise de soi et du jugement à venir, mais a repoussé sa réaction.",
     "lessonPoints": [
-      "Écouter ne suffit pas : Félix a entendu un message important sans agir immédiatement.",
-      "Maîtrise de soi : le thème abordé par Paul rappelait la nécessité de dominer ses désirs.",
-      "Intégrité : son récit invite à ne pas sacrifier la justice à ses intérêts personnels."
+      "Écouter et agir : connaître la vérité ne suffit pas si l’on refuse d’agir.",
+      "Maîtrise de soi : Paul a directement abordé cette qualité devant lui.",
+      "Intégrité : il faut éviter de laisser les intérêts personnels influencer les décisions justes."
     ],
     "keyReading": "Actes 23:23-35 ; 24:1-27",
     "location": "Césarée.",
@@ -2482,11 +2482,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "festus": {
-    "studyFocus": "Porcius Festus a succédé à Félix comme gouverneur de Judée et a dû traiter l’affaire de Paul, qui en avait appelé à César.",
+    "studyFocus": "Festus a présidé l’affaire de Paul après Félix et a reconnu qu’il n’avait pas commis de crime méritant la mort, tout en cherchant à formuler l’accusation pour César.",
     "lessonPoints": [
-      "Justice : Festus a examiné les accusations portées contre Paul.",
-      "Prudence : il a cherché à comprendre les faits avant d’envoyer Paul à Rome.",
-      "Respect du droit : Paul a pu exercer son droit d’en appeler à César."
+      "Examen des faits : il a entendu les accusations et la défense de Paul.",
+      "Respect des procédures : Paul a exercé son droit d’en appeler à César.",
+      "Prudence : une autorité doit distinguer les faits des accusations portées contre quelqu’un."
     ],
     "keyReading": "Actes 25:1-27 ; 26:1-32",
     "location": "Césarée.",
@@ -2508,11 +2508,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "agrippa_ii": {
-    "studyFocus": "Hérode Agrippa II a entendu la défense de Paul à Césarée et connaissait les coutumes et controverses juives.",
+    "studyFocus": "Agrippa II a entendu Paul expliquer sa conversion, son ministère et l’accomplissement des prophéties concernant le Messie.",
     "lessonPoints": [
-      "Écouter attentivement : Agrippa a donné à Paul l’occasion d’expliquer sa foi.",
-      "Connaissance biblique : Paul a pu raisonner avec lui à partir des prophètes.",
-      "Décision personnelle : entendre un témoignage convaincant demande ensuite une réaction personnelle."
+      "Écouter les Écritures : Paul a raisonné à partir des prophètes connus d’Agrippa.",
+      "Réflexion personnelle : entendre un témoignage demande ensuite d’examiner sincèrement sa propre position.",
+      "Courage du témoin : Paul a parlé librement devant un dirigeant."
     ],
     "keyReading": "Actes 25:13-27 ; 26:1-32",
     "location": "Césarée.",
@@ -2534,11 +2534,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "berenice": {
-    "studyFocus": "Bérénice accompagnait Agrippa II lors de sa rencontre avec Festus et de l’audience où Paul défendit sa foi.",
+    "studyFocus": "Bérénice était présente lors de l’audience où Paul défendit sa foi devant Agrippa et Festus.",
     "lessonPoints": [
-      "Observer le témoignage : elle a entendu directement la défense de Paul.",
-      "Contexte : son récit rappelle que le message chrétien était présenté devant des personnes de haut rang.",
-      "Responsabilité personnelle : la position sociale ne remplace pas une décision personnelle concernant la foi."
+      "Attention au témoignage : elle a entendu directement la défense de Paul.",
+      "Contexte historique : son récit illustre le cadre officiel dans lequel Paul a rendu témoignage.",
+      "Responsabilité personnelle : entendre la vérité ne remplace pas une réponse personnelle."
     ],
     "keyReading": "Actes 25:13-27 ; 26:30-32",
     "location": "Césarée.",
@@ -2560,11 +2560,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "phoebe": {
-    "studyFocus": "Phœbé — une chrétienne qui a aidé beaucoup de frères",
+    "studyFocus": "Phébé était une chrétienne de Cenchrées que Paul a recommandée chaleureusement aux chrétiens de Rome et qui avait aidé beaucoup de frères, y compris Paul.",
     "lessonPoints": [
-      "Générosité",
-      "Soutenir les autres",
-      "Hospitalité"
+      "Générosité : elle avait été une aide pour beaucoup.",
+      "Hospitalité et soutien : Paul demandait aux chrétiens de Rome de lui apporter leur aide.",
+      "Réputation : son service fidèle lui avait valu une recommandation personnelle de Paul."
     ],
     "keyReading": "Romains 16:1-2",
     "location": "Cenchrées, près de Corinthe.",
@@ -2590,11 +2590,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "euodia": {
-    "studyFocus": "Évodie — une chrétienne qui avait travaillé avec Paul",
+    "studyFocus": "Évodie était une chrétienne qui avait travaillé dur avec Paul dans la prédication. Paul l’a encouragée, avec Syntyche, à retrouver l’unité.",
     "lessonPoints": [
-      "Unité",
-      "Coopération",
-      "Réconciliation"
+      "Unité : même des chrétiennes zélées peuvent avoir besoin d’aide pour résoudre un désaccord.",
+      "Collaboration : Paul reconnaissait son travail dans la prédication.",
+      "Humilité : préserver la paix demande parfois de mettre de côté ses préférences personnelles."
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes.",
@@ -2616,11 +2616,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "epaphroditus": {
-    "studyFocus": "Épaphrodite était un chrétien digne de confiance de Philippes qui s’est exposé au danger pour servir Paul et ses frères.",
+    "studyFocus": "Épaphrodite s’est dépensé au service de Paul et des Philippiens et a risqué sa vie pour l’œuvre du Seigneur.",
     "lessonPoints": [
-      "Abnégation : il a risqué sa vie pour l’œuvre du Seigneur.",
-      "Affection fraternelle : il désirait retrouver les Philippiens et se souciait de leur inquiétude.",
-      "Estime des serviteurs fidèles : Paul a demandé aux frères de continuer à chérir des hommes comme lui."
+      "Abnégation : il a accepté de prendre des risques pour servir.",
+      "Affection fraternelle : il était préoccupé par la peine que son état causait aux Philippiens.",
+      "Fidélité : Paul l’a présenté comme un homme digne d’estime."
     ],
     "keyReading": "Philippiens 2:25-30 ; 4:18",
     "location": "Philippes et Rome.",
@@ -3598,11 +3598,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "syntyche": {
-    "studyFocus": "Syntyche — une chrétienne qui avait travaillé avec Paul",
+    "studyFocus": "Syntyche était une chrétienne fidèle qui avait collaboré avec Paul et Évodie dans la bonne nouvelle, mais qui devait résoudre un désaccord avec sa sœur.",
     "lessonPoints": [
-      "Unité",
-      "Coopération",
-      "Paix"
+      "Unité : les désaccords ne doivent pas effacer les années de service commun.",
+      "Collaboration : Paul la comptait parmi ses compagnes de travail.",
+      "Paix : rechercher le même état d’esprit que Jésus aide à préserver l’unité chrétienne."
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes.",
