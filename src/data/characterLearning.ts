@@ -3134,32 +3134,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ]
   },
-  "syntiche": {
-    "studyFocus": "Syntyche travaille avec Paul pour la bonne nouvelle et reçoit avec Évodie un appel à l’unité. À observer dans son récit : Zèle, Persévérance.",
-    "lessonPoints": [
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités."
-    ],
-    "keyReading": "Travaille pour la bonne nouvelle.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ]
-  },
   "syntyche": {
     "studyFocus": "Syntyche — une chrétienne qui avait travaillé avec Paul",
     "lessonPoints": [
