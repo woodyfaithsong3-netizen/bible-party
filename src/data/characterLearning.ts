@@ -226,7 +226,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi",
       "Persévérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "A quitté Our puis Harân pour suivre Abraham vers Canaan, avec les incertitudes et les dangers d’une vie nomade.",
+      "Elle a connu une longue période de stérilité et a dû attendre l’accomplissement de la promesse concernant une descendance.",
+      "Son initiative avec Agar a provoqué des tensions familiales et des conséquences douloureuses.",
+      "Elle a dû faire face à des situations dangereuses en Égypte et chez Abimélek tout en continuant à faire confiance à Jéhovah."
+    ]
   },
   "jacob": {
     "studyFocus": "Jacob, fils d’Isaac et de Rébecca, devint l’ancêtre des douze tribus d’Israël. Sa vie fut marquée par des conflits familiaux, des années de travail chez Laban et une transformation progressive de sa personnalité. Jéhovah renouvela avec lui les promesses faites à Abraham et Isaac.",
@@ -879,7 +884,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Humilité",
       "Conviction"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a vécu dans le désert et a mené une vie très simple, consacrée à sa mission.",
+      "Il a été emprisonné après avoir dénoncé publiquement le mariage d’Hérode Antipas avec Hérodiade.",
+      "Depuis sa prison, il a traversé un moment d’incertitude et a demandé à Jésus s’il était bien celui qui devait venir.",
+      "Il a finalement été exécuté à la suite de la demande d’Hérodiade. — Mt 11:2-6 ; Mc 6:17-29."
+    ]
   },
   "marie": {
     "studyFocus": "Marie était la mère de Jésus. Elle accepta humblement la mission annoncée par l’ange Gabriel, donna naissance à Jésus à Bethléem et conserva dans son cœur plusieurs événements concernant son fils. Elle resta présente lors de sa mort et fut ensuite associée aux disciples après sa résurrection.",
@@ -1039,7 +1049,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Humilité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a subi de nombreuses persécutions : coups, emprisonnements, lapidation et dangers pendant son ministère.",
+      "Il a porté de lourdes responsabilités concernant les assemblées et a exprimé son inquiétude pour elles.",
+      "Il a aussi lutté contre son imperfection et a parlé d’une « épine dans la chair » qu’il souhaitait voir disparaître.",
+      "Malgré ces épreuves, il a continué à servir Jéhovah avec l’aide de sa faveur imméritée. — 2Co 11:23-28 ; 12:7-10."
+    ]
   },
   "jean": {
     "studyFocus": "Jean, fils de Zébédée, fut l’un des douze apôtres et un proche compagnon de Jésus. Ses écrits insistent fortement sur l’amour, la vérité et l’obéissance.",
@@ -1252,7 +1267,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Attachement familial",
       "Sagesse"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle a perdu son mari puis ses deux fils, ce qui l’a profondément attristée.",
+      "Elle a dû quitter Moab pour retourner à Bethléhem dans une situation de veuvage et de grande précarité.",
+      "Sa douleur l’a amenée à demander qu’on l’appelle Mara, « Amère ».",
+      "Elle a ensuite vu Jéhovah transformer progressivement sa situation grâce à Ruth et Boaz. — Ruth 1:3-5, 20, 21 ; 4:14-17."
+    ]
   },
   "boaz": {
     "studyFocus": "Boaz était un propriétaire terrien de Bethléem et un parent d’Élimélek. Il traita Ruth avec bonté, respecta les dispositions de la Loi sur le glanage et accepta finalement d’assumer le rôle de racheteur. Son mariage avec Ruth contribua à la lignée de David.",
@@ -1298,7 +1318,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Respect",
       "Loyauté"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il devait agir avec justice dans une situation familiale complexe liée au droit de rachat.",
+      "Il devait respecter la priorité du racheteur plus proche avant d’épouser Ruth.",
+      "Il a dû prendre des décisions qui engageaient l’avenir de Ruth, de Noémi et de la lignée familiale.",
+      "Il a choisi de respecter les dispositions de la Loi plutôt que de suivre simplement ses préférences personnelles. — Ruth 3:10-13 ; 4:1-10."
+    ]
   },
   "elisha": {
     "studyFocus": "Élisha fut le successeur d’Éliya comme prophète de Jéhovah. Son ministère comprit de nombreux miracles et s’étendit sur plusieurs règnes en Israël. Il intervint auprès de particuliers, de rois et de groupes de prophètes.",
@@ -1347,7 +1372,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance",
       "Compassion"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a quitté son activité agricole et sa famille pour accepter la mission prophétique confiée par Jéhovah.",
+      "Il a servi Éliya pendant des années avant d’assumer une responsabilité plus importante.",
+      "Son ministère l’a confronté à l’opposition, à des situations dangereuses et aux besoins de nombreuses personnes.",
+      "Il a dû compter sur l’esprit de Jéhovah pour accomplir sa mission et faire face aux changements de situation. — 1R 19:19-21 ; 2R 2:1-15."
+    ]
   },
   "nehemie": {
     "studyFocus": "Néhémie était échanson du roi Artaxerxès avant de recevoir l’autorisation de reconstruire les murailles de Jérusalem. Il organisa le travail malgré l’opposition, encouragea le peuple et participa ensuite à des réformes destinées à rétablir le respect de la Loi.",
@@ -1560,7 +1590,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Encouragement",
       "Esprit d’équipe"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a consacré ses ressources à soutenir la congrégation et a beaucoup voyagé pour le ministère.",
+      "Il a travaillé avec Paul malgré les difficultés et l’opposition rencontrées dans le service chrétien.",
+      "Il a connu un désaccord marqué avec Paul au sujet de Jean-Marc, qui a conduit les deux hommes à se séparer pour un temps.",
+      "Il a néanmoins continué à servir avec zèle et à encourager les autres. — Ac 4:36, 37 ; 13:2-5 ; 15:36-40."
+    ]
   },
   "cornelius": {
     "studyFocus": "Corneille était un officier romain et le premier non-Juif incirconcis à devenir chrétien avec l’approbation manifeste de Jéhovah. Il était connu pour sa crainte de Dieu, ses prières et ses dons aux nécessiteux. Sa conversion montra à Pierre que Dieu ne faisait pas de favoritisme entre Juifs et non-Juifs.",
@@ -3242,7 +3277,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "qualities": [
       "Persévérance dans l’écoute"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a été victime d’un grave accident alors qu’il assistait à une réunion chrétienne à Troas.",
+      "Sa fatigue l’a fait s’endormir pendant le long discours de Paul et il est tombé d’une fenêtre du troisième étage.",
+      "Il a été relevé mort après sa chute, ce qui a profondément bouleversé les frères présents.",
+      "Jéhovah a ensuite permis que Paul le ramène à la vie, apportant une grande consolation à la congrégation. — Ac 20:7-12."
+    ]
   },
   "martha": {
     "studyFocus": "Marthe accueillait Jésus chez elle à Béthanie. Elle était active et soucieuse de bien recevoir son invité, mais Jésus lui rappela que l’attention aux choses spirituelles était prioritaire.",
@@ -3963,7 +4003,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle",
       "Esprit d’initiative"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a vécu dans une période où Jésus était rejeté par beaucoup de responsables religieux et a dû exercer sa foi au milieu de cette opposition.",
+      "Il devait parfois comprendre progressivement les enseignements de Jésus, comme lorsqu’il lui a demandé de montrer le Père.",
+      "Comme les autres apôtres, il a dû rester fidèle après la mort et la résurrection de Jésus, puis continuer à soutenir la prédication chrétienne.",
+      "Son exemple montre l’importance de progresser dans la foi même lorsqu’on ne comprend pas immédiatement tout ce que Jésus enseigne. — Jean 14:8-11 ; Ac 1:13, 14."
+    ]
   },
   "bartholomew": {
     "studyFocus": "Barthélemy est traditionnellement identifié à Nathanaël, disciple que Philippe amena à Jésus. Jésus loua sa franchise et sa sincérité, et Nathanaël reconnut rapidement Jésus comme le Fils de Dieu et Roi d’Israël.",
@@ -4490,7 +4535,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Elle entre dans la salle d’audience en grand apparat avec le roi, les commandants et les notables.",
       "Elle entend la défense de Paul devant Agrippa et Festus."
     ],
-    "qualities": [],
+    "qualities": [
+      "Courageuse pour se présenter devant Paul avec Agrippa II malgré le contexte judiciaire.",
+      "Elle a participé à l’audience où Paul a exposé sa foi, ce qui l’a placée directement face au témoignage chrétien.",
+      "Son rôle de membre de la famille royale lui donnait une position publique et une influence dans les événements rapportés en Actes 25–26."
+    ],
     "difficulties": [
       "Le récit biblique donne très peu d’informations sur ses convictions personnelles ou sa réaction au témoignage de Paul."
     ]
@@ -4943,7 +4992,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Organisation",
       "Humilité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Une grande coalition d’Ammôn, de Moab et de Séïr est venue menacer Juda.",
+      "Il a eu peur et a dû reconnaître publiquement que lui et son peuple ne savaient pas quoi faire.",
+      "Il a aussi été repris pour ses liens avec le méchant roi Ahab et a subi les conséquences de certaines décisions imprudentes.",
+      "Malgré ces faiblesses, il a continué à rechercher Jéhovah et à encourager le peuple à lui faire confiance. — 2Ch 19:1-3 ; 20:1-12."
+    ]
   },
   "jonah": {
     "studyFocus": "Jonas était un prophète envoyé par Jéhovah à Ninive. Il tenta d’abord de fuir sa mission, fut sauvé après avoir été jeté à la mer et finit par annoncer le message à Ninive. Lorsque les habitants se repentirent, Jonas eut du mal à accepter la miséricorde de Jéhovah.",
@@ -5084,7 +5138,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi",
       "Désir d’apprendre"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Sa femme et lui étaient sans enfant, ce qui constituait une grande épreuve pour leur foyer.",
+      "Il a dû accueillir un message angélique annonçant la naissance extraordinaire d’un fils et comprendre comment l’élever.",
+      "Il a demandé à Jéhovah de leur donner des instructions supplémentaires, montrant qu’il ne se sentait pas capable de tout comprendre seul.",
+      "Plus tard, il a dû voir son fils Samson prendre des décisions qui lui causaient de l’inquiétude. — Jg 13:2-8 ; 14:1-3."
+    ]
   },
   "zephaniah": {
     "studyFocus": "Sophonie était un prophète qui annonça un message de jugement contre Juda et les nations, tout en donnant l’espoir d’un peuple humble qui chercherait Jéhovah. Son ministère se situe avant la destruction de Jérusalem.",
@@ -5128,7 +5187,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Franchise",
       "Espérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a prophétisé dans une période marquée par l’idolâtrie et l’infidélité à Jéhovah en Juda.",
+      "Son message annonçait un jugement sévère contre Jérusalem et les nations, ce qui demandait du courage pour parler franchement.",
+      "Il a dû transmettre un avertissement alors que beaucoup de ses contemporains ne servaient pas fidèlement Jéhovah.",
+      "Il a aussi annoncé un message d’espoir pour les humbles qui rechercheraient Jéhovah. — Tse 1:4-6 ; 2:3 ; 3:9-13."
+    ]
   },
   "habakkuk": {
     "studyFocus": "Habacuc est un prophète qui osa poser à Jéhovah des questions difficiles sur la violence et l’injustice. Jéhovah lui répondit en lui expliquant que les Chaldéens seraient utilisés pour exécuter un jugement, puis montra que cette nation serait elle-même jugée. Le livre se termine par une expression remarquable de confiance.",
@@ -5172,7 +5236,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi",
       "Persévérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a été profondément troublé par la violence, l’injustice et l’oppression qu’il observait en Juda.",
+      "Il a posé à Jéhovah des questions franches sur la raison pour laquelle le mal semblait durer.",
+      "Il a dû accepter que Jéhovah agisse selon son propre calendrier, même lorsqu’il ne comprenait pas encore comment.",
+      "Il a finalement exprimé sa détermination à continuer de se réjouir en Jéhovah malgré des circonstances difficiles. — Hab 1:2-4, 12-17 ; 2:2-4 ; 3:17-19."
+    ]
   },
   "amos": {
     "studyFocus": "Amos était un éleveur et cultivateur de sycomores de Tekoa que Jéhovah envoya prophétiser au royaume d’Israël. Il dénonça l’injustice, l’oppression des pauvres et une adoration devenue hypocrite. Il transmit son message malgré l’opposition du prêtre Amatsia.",
@@ -5217,7 +5286,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Justice",
       "Franchise"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a été envoyé comme prophète auprès du royaume d’Israël alors que le culte était profondément corrompu.",
+      "Son message dénonçait l’injustice, l’exploitation des pauvres et l’hypocrisie religieuse.",
+      "Il a rencontré l’opposition du prêtre Amatsia, qui lui a ordonné de ne plus prophétiser à Béthel.",
+      "Il a continué à transmettre fidèlement le message de Jéhovah malgré cette opposition. — Am 2:6-8 ; 7:10-17."
+    ]
   },
   "micah": {
     "studyFocus": "Michée était un prophète de Juda qui dénonça la corruption des chefs, des prêtres et des prophètes infidèles. Il annonça aussi des promesses importantes concernant la domination future et la paix. Son message associait jugement et espérance.",
@@ -5261,7 +5335,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Espérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a prophétisé dans une période où l’injustice, la corruption et l’oppression existaient en Juda et en Israël.",
+      "Il a dû dénoncer des chefs et des responsables religieux qui abusaient de leur position.",
+      "Ses annonces de jugement étaient difficiles à transmettre à un peuple qui s’éloignait de Jéhovah.",
+      "Il a aussi proclamé des promesses d’espoir concernant le futur règne de paix et la venue du Messie. — Mi 2:1-2 ; 3:1-12 ; 5:2-5."
+    ]
   },
   "obadiah": {
     "studyFocus": "Abdias fut un prophète dont le livre annonce le jugement contre Édom. Il dénonça notamment la joie malveillante des Édomites devant le malheur de leurs frères, les descendants de Jacob. Le livre se termine par une annonce de restauration pour le peuple de Jéhovah.",
@@ -5305,7 +5384,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Justice",
       "Espérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a prophétisé contre Édom après que celui-ci s’était réjoui des malheurs de Juda.",
+      "Son message annonçait que Jéhovah demanderait des comptes à Édom pour son hostilité envers son peuple.",
+      "Comme tout prophète chargé d’annoncer un jugement, il devait transmettre un message sérieux et peu agréable.",
+      "Il a cependant annoncé que la délivrance serait accordée au peuple de Jéhovah. — Abd 10-17."
+    ]
   },
   "joel": {
     "studyFocus": "Joël fut un prophète dont le message commence par une invasion de sauterelles et appelle le peuple à revenir sincèrement vers Jéhovah. Il annonce ensuite des bénédictions, l’effusion de l’esprit et le jour de Jéhovah.",
@@ -5349,7 +5433,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi",
       "Espérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a vécu une période marquée par une invasion dévastatrice de sauterelles et par les conséquences d’un désastre agricole.",
+      "Il a dû expliquer que cette catastrophe devait pousser le peuple à revenir sincèrement vers Jéhovah.",
+      "Son message appelait prêtres et peuple à se réunir, jeûner et revenir à Dieu de tout leur cœur.",
+      "Il a également annoncé un avenir d’espoir pour ceux qui invoqueraient le nom de Jéhovah. — Jl 1:2-14 ; 2:12-17, 28-32."
+    ]
   },
   "nahum": {
     "studyFocus": "Nahum annonça le jugement de Jéhovah contre Ninive, capitale de l’Assyrie. Son message montre que la puissance militaire et la cruauté d’un empire ne peuvent empêcher Jéhovah d’exécuter son jugement.",
@@ -5393,7 +5482,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Espérance",
       "Sens de la justice"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a annoncé le jugement de Jéhovah contre Ninive, capitale de l’Assyrie, une puissance redoutée et violente.",
+      "Son message concernait une nation qui avait opprimé de nombreux peuples, dont Juda.",
+      "Il devait proclamer avec conviction la chute future d’une puissance qui semblait alors très forte.",
+      "Son message rappelait néanmoins que Jéhovah est un refuge pour ceux qui cherchent refuge en lui. — Na 1:7-15 ; 2:1-13."
+    ]
   },
   "zechariah_priest": {
     "studyFocus": "Zacharie, père de Jean le Baptiseur, était prêtre de la division d’Abia. Alors qu’il servait au temple, l’ange Gabriel lui annonça que sa femme Élisabeth aurait un fils. Zacharie eut du mal à croire cette annonce et devint temporairement muet, puis il loua Jéhovah après la naissance de Jean.",
