@@ -715,110 +715,112 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "La muraille de Jérusalem fut achevée en 52 jours. Nehémia était échanson d’Artaxerxès avant de devenir gouverneur des Juifs."
   },
   "mary_magdalen": {
-    "studyFocus": "Marie Madeleine fait partie des femmes qui accompagnent Jésus et témoigne des événements entourant sa mort et sa résurrection. À observer dans son récit : Fidélité, Persévérance, Reconnaissance.",
+    "studyFocus": "Marie Madeleine accompagne Jésus et reste présente lors de sa mort ; elle reçoit aussi le privilège d’être parmi les premières à témoigner de sa résurrection. Étudier surtout sa fidélité et sa persévérance.",
     "lessonPoints": [
-      "Observer la qualité « Fidélité » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités.",
-      "Observer la qualité « Reconnaissance » dans les épisodes cités."
+      "Elle faisait partie des femmes qui accompagnaient Jésus et ses apôtres et les soutenaient de leurs biens.",
+      "Elle était présente lors de la mort de Jésus et observa le lieu où son corps fut déposé.",
+      "Elle se rendit au tombeau très tôt et fut parmi les premières à recevoir le témoignage concernant la résurrection.",
+      "Jésus lui confia un message à transmettre aux disciples après sa résurrection."
     ],
-    "keyReading": "Suit Jésus avec d’autres femmes.",
+    "keyReading": "Luc 8:1-3 ; Jean 19:25 ; 20:1-18",
+    "location": "Galilée et Jérusalem ; tombeau de Jésus.",
+    "relationshipWithJehovah": "Son parcours montre une fidélité durable au service de Jésus et une reconnaissance profonde pour ce qu’il avait fait pour elle.",
+    "didYouKnow": "Marie Madeleine est distincte de Marie de Béthanie et de la femme « pécheresse » mentionnée en Luc 7 ; les Évangiles l’identifient notamment comme une femme dont Jésus avait expulsé sept démons.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Marie Madeleine — Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/marie-madeleine/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible — Luc 8 ; Jean 19-20",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
       }
     ]
   },
   "zacchaeus": {
-    "studyFocus": "Zachée cherche à voir Jésus et annonce ensuite des mesures montrant sa volonté de réparer les torts. À observer dans son récit : Réceptivité, Générosité, Volonté de changer.",
+    "studyFocus": "Zachée accepte volontiers de recevoir Jésus et manifeste un changement concret par ses paroles sur la restitution et la générosité.",
     "lessonPoints": [
-      "Observer la qualité « Réceptivité » dans les épisodes cités.",
-      "Observer la qualité « Générosité » dans les épisodes cités.",
-      "Observer la qualité « Volonté de changer » dans les épisodes cités."
+      "Il cherchait sincèrement à voir Jésus malgré la foule et sa petite taille.",
+      "Jésus lui demanda de descendre rapidement du sycomore et accepta d’être son hôte.",
+      "Zachée déclara qu’il donnerait la moitié de ses biens aux pauvres.",
+      "Il annonça qu’il rendrait au quadruple ce qu’il avait extorqué, montrant une volonté de réparer les torts."
     ],
-    "keyReading": "Monte sur un sycomore pour voir Jésus.",
+    "keyReading": "Luc 19:1-10",
+    "location": "Jéricho, au moment où Jésus traversait la ville.",
+    "relationshipWithJehovah": "Le récit montre qu’une personne peut répondre favorablement à l’appel de Jésus et démontrer cette réaction par des changements concrets dans sa conduite.",
+    "didYouKnow": "Zachée était chef des collecteurs d’impôts à Jéricho, une fonction qui lui donnait une position importante parmi les collecteurs.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Zachée — Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/zachee/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible — Luc 19",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
       }
     ]
   },
   "barnabas": {
-    "studyFocus": "Barnabé joue un rôle important dans l’accueil et l’encouragement des disciples et dans l’activité missionnaire. À observer dans son récit : Générosité, Encouragement, Esprit d’équipe.",
+    "studyFocus": "Barnabé est un compagnon de service connu pour sa générosité et sa capacité à encourager les autres. Son récit permet d’étudier l’esprit d’équipe et l’attention portée aux personnes.",
     "lessonPoints": [
-      "Observer la qualité « Générosité » dans les épisodes cités.",
-      "Observer la qualité « Encouragement » dans les épisodes cités.",
-      "Observer la qualité « Esprit d’équipe » dans les épisodes cités."
+      "Il vendit un champ et remit l’argent aux apôtres, montrant sa générosité.",
+      "Il aida à faire accepter Saul par les disciples de Jérusalem après la conversion de celui-ci.",
+      "Il fut envoyé à Antioche et encouragea les nouveaux disciples à rester attachés au Seigneur.",
+      "Il alla chercher Saul à Tarse et travailla avec lui à Antioche avant leurs voyages missionnaires.",
+      "Il défendit aussi l’utilité de Jean-Marc, avec qui il poursuivit ensuite son activité."
     ],
-    "keyReading": "Soutient la congrégation de Jérusalem.",
+    "keyReading": "Actes 4:36-37 ; 9:26-27 ; 11:22-26 ; 15:36-39",
+    "location": "Jérusalem, Antioche de Syrie, Tarse et différentes régions parcourues pendant l’activité missionnaire.",
+    "relationshipWithJehovah": "Barnabé a montré sa foi par une générosité concrète, l’encouragement des autres et un service persévérant dans la bonne nouvelle.",
+    "didYouKnow": "Son nom araméen était Joseph ; les apôtres lui donnèrent le surnom Barnabé, qui signifie « Fils de consolation » ou « Fils d’encouragement ».",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Barnabé — Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/barnabe/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible — Actes 4 ; 9 ; 11 ; 15",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
       }
     ]
   },
   "cornelius": {
-    "studyFocus": "Corneille est présenté comme un homme pieux qui reçoit le témoignage chrétien avec sa maisonnée. À observer dans son récit : Piété, Générosité, Réceptivité.",
+    "studyFocus": "Corneille est le premier Gentil incirconcis dont la conversion au christianisme est rapportée en détail. Son récit met en valeur la prière, la générosité et la réceptivité à la direction divine.",
     "lessonPoints": [
-      "Observer la qualité « Piété » dans les épisodes cités.",
-      "Observer la qualité « Générosité » dans les épisodes cités.",
-      "Observer la qualité « Réceptivité » dans les épisodes cités."
+      "Il était officier romain et chef d’une centaine de soldats.",
+      "Il était pieux, craignait Dieu avec sa maisonnée et faisait régulièrement des dons de miséricorde.",
+      "Un ange lui demanda d’envoyer chercher Simon Pierre à Joppé.",
+      "Après avoir entendu le témoignage de Pierre, Corneille et ceux qui étaient réunis avec lui reçurent l’esprit saint et furent baptisés.",
+      "L’événement confirma que Dieu n’est pas partial et qu’il accepte des personnes de toutes les nations qui le craignent et pratiquent la justice."
     ],
-    "keyReading": "Prie et fait régulièrement des dons de miséricorde.",
+    "keyReading": "Actes 10:1-48",
+    "location": "Césarée, où Corneille résidait dans le cadre de son service militaire.",
+    "relationshipWithJehovah": "Avant même de devenir chrétien, Corneille priait Dieu et faisait des dons de miséricorde ; il s’est ensuite montré réceptif à la direction fournie par Jéhovah.",
+    "didYouKnow": "Corneille était centurion de la troupe appelée la cohorte italienne et sa conversion a ouvert une étape majeure dans l’accueil des non-Juifs dans la congrégation chrétienne.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Corneille — Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/corneille/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible — Actes 10",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
       }
     ]
   },
