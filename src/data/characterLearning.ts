@@ -4305,17 +4305,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "felix": {
-    "studyFocus": "Félix était le gouverneur romain de Judée lorsque Paul fut détenu à Césarée. Il entendit Paul parler de la justice, de la maîtrise de soi et du jugement à venir, mais il reporta sa décision. Il espérait aussi recevoir de l’argent de Paul.",
+    "studyFocus": "Félix était le gouverneur romain de Judée devant qui Paul comparut. Il écouta Paul parler de la justice, de la maîtrise de soi et du jugement à venir, mais repoussa la décision et espérait aussi recevoir de l’argent de Paul.",
     "lessonPoints": [
-      "Félix entendit un témoignage chrétien direct.",
-      "Le message sur la justice et la maîtrise de soi le mit mal à l’aise.",
-      "Il retarda sa décision au lieu d’agir selon ce qu’il avait entendu.",
-      "Son intérêt pour l’argent influença sa conduite envers Paul."
+      "Félix entendit directement l’enseignement chrétien.",
+      "Le message de Paul aborda des questions morales et le jugement.",
+      "Il remit à plus tard l’occasion d’agir conformément à ce qu’il entendait.",
+      "Il conserva Paul en prison, notamment dans l’espoir de recevoir de l’argent."
     ],
-    "keyReading": "Actes 23:23-35 ; 24:1-27",
+    "keyReading": "Actes 23:23-35 ; 24:10-27",
     "location": "Césarée, en Judée.",
-    "relationshipWithJehovah": "Félix fut exposé au message chrétien mais le récit ne rapporte pas qu’il devint adorateur de Jéhovah.",
-    "didYouKnow": "Félix fit venir Paul à plusieurs reprises pour parler avec lui, tout en espérant que Paul lui donnerait de l’argent.",
+    "relationshipWithJehovah": "Félix entendit un témoignage clair sur la justice et le jugement, mais le récit ne dit pas qu’il devint serviteur de Jéhovah.",
+    "didYouKnow": "Félix faisait souvent venir Paul et s’entretenait avec lui, tout en espérant que Paul lui donnerait de l’argent.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4352,17 +4352,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "festus": {
-    "studyFocus": "Porcius Festus succéda à Félix comme gouverneur de Judée. Il entendit les accusations portées contre Paul, examina son affaire et finit par permettre à Paul d’en appeler à César.",
+    "studyFocus": "Porcius Festus succéda à Félix comme gouverneur de Judée. Il entendit l’affaire de Paul, consulta Agrippa et finit par accepter que Paul en appelle à César.",
     "lessonPoints": [
-      "Festus dut examiner une affaire religieuse et juridique complexe.",
-      "Il reconnut que les accusations contre Paul concernaient des questions de religion juive et de Jésus.",
-      "Il chercha à clarifier les faits en présence d’Agrippa.",
-      "Il respecta finalement le droit de Paul à faire appel à César."
+      "Festus examina une accusation religieuse qu’il ne comprenait pas entièrement.",
+      "Il chercha à obtenir l’avis d’Agrippa sur l’affaire.",
+      "Paul utilisa son droit de citoyen romain à faire appel à César.",
+      "Festus reconnut finalement que Paul n’avait rien fait qui méritait la mort."
     ],
     "keyReading": "Actes 25:1-27 ; 26:1-32",
     "location": "Césarée et Jérusalem.",
-    "relationshipWithJehovah": "Festus entendit le témoignage de Paul mais la Bible ne le présente pas comme un adorateur de Jéhovah.",
-    "didYouKnow": "Festus admit devant Agrippa que l’affaire de Paul lui posait difficulté pour rédiger quelque chose de cohérent à l’intention de César.",
+    "relationshipWithJehovah": "Festus n’est pas présenté comme adorateur de Jéhovah, mais il entendit à plusieurs reprises le témoignage de Paul au sujet du Christ.",
+    "didYouKnow": "Festus admit devant Agrippa que Paul n’avait rien fait qui méritait la mort, mais l’appel de Paul à César devait être respecté.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4401,17 +4401,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "agrippa_ii": {
-    "studyFocus": "Hérode Agrippa II était roi et fut consulté par Festus au sujet de Paul. Il connaissait les coutumes et controverses juives et entendit Paul exposer son ministère et sa conversion.",
+    "studyFocus": "Hérode Agrippa II était le roi devant qui Paul présenta sa défense à Césarée. Il connaissait les coutumes et les controverses juives et entendit Paul expliquer son espérance fondée sur les promesses de Dieu.",
     "lessonPoints": [
-      "Agrippa connaissait le contexte religieux de l’affaire de Paul.",
-      "Il écouta personnellement le témoignage de l’apôtre.",
-      "Paul l’invita à croire aux prophètes.",
-      "Agrippa ne devint pas chrétien selon le récit biblique."
+      "Agrippa écouta attentivement la défense de Paul.",
+      "Il connaissait les questions religieuses qui opposaient Paul à ses accusateurs.",
+      "Paul l’invita à examiner les prophéties et à croire au message concernant le Christ.",
+      "Le récit ne dit pas qu’Agrippa devint chrétien."
     ],
     "keyReading": "Actes 25:13-27 ; 26:1-32",
-    "location": "Césarée et territoires associés à son royaume.",
-    "relationshipWithJehovah": "Agrippa entendit un témoignage détaillé concernant Jésus et les prophètes mais le récit ne rapporte pas qu’il devint disciple.",
-    "didYouKnow": "Paul termina sa défense devant Agrippa en disant qu’il souhaitait que tous ses auditeurs deviennent comme lui, à l’exception des chaînes qu’il portait.",
+    "location": "Césarée et territoire gouverné par Agrippa.",
+    "relationshipWithJehovah": "Agrippa entendit un témoignage détaillé sur Jésus et les prophéties, sans que le récit biblique indique qu’il devint serviteur de Jéhovah.",
+    "didYouKnow": "Agrippa dit à Paul : « En peu de temps tu me persuaderais de devenir chrétien », mais le récit ne précise pas qu’il devint disciple.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4451,17 +4451,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "berenice": {
-    "studyFocus": "Bérénice était la sœur d’Agrippa II et se trouvait avec lui lorsque Festus organisa une audience pour entendre Paul. Elle apparaît dans le récit comme membre de l’entourage royal qui entendit la défense de Paul.",
+    "studyFocus": "Bérénice était la sœur d’Agrippa II et se trouvait avec lui lorsque Paul présenta sa défense devant Festus. Elle assista donc à une audience où l’apôtre expliqua publiquement sa foi.",
     "lessonPoints": [
-      "Bérénice assista à une audience officielle concernant Paul.",
-      "Elle entendit le témoignage chrétien présenté devant Agrippa et Festus.",
-      "Le récit biblique donne peu d’informations sur ses convictions personnelles.",
-      "Son apparition rappelle que le témoignage chrétien pouvait atteindre des personnes de haut rang."
+      "Bérénice accompagna Agrippa à Césarée.",
+      "Elle entendit le témoignage de Paul concernant Jésus et les prophéties.",
+      "Elle fut présente lors de la discussion entre Festus et Agrippa au sujet de Paul.",
+      "La Bible ne fournit pas davantage d’informations sur sa réaction personnelle."
     ],
     "keyReading": "Actes 25:13-27 ; 26:1-32",
     "location": "Césarée.",
-    "relationshipWithJehovah": "La Bible rapporte qu’elle entendit le témoignage concernant Paul, sans fournir d’information suffisante sur sa relation personnelle avec Jéhovah.",
-    "didYouKnow": "Bérénice accompagnait Agrippa lorsqu’ils entrèrent avec une grande pompe dans la salle d’audience de Césarée.",
+    "relationshipWithJehovah": "Bérénice entendit le témoignage chrétien lors de l’audience de Paul, mais la Bible ne précise pas quelle réponse personnelle elle y donna.",
+    "didYouKnow": "Bérénice est explicitement mentionnée avec Agrippa lorsqu’ils entrèrent dans la salle d’audience avec les commandants militaires et les hommes importants de la ville.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5543,17 +5543,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joseph_caiaphas": {
-    "studyFocus": "Caïphe était grand prêtre pendant les dernières années du ministère de Jésus. Il joua un rôle central dans les démarches du Sanhédrin contre Jésus et participa à la décision de le faire mourir. Il prophétisa sans le vouloir qu’un seul homme meure pour le peuple.",
+    "studyFocus": "Caïphe était le grand prêtre durant une partie du ministère de Jésus. Il participa aux décisions des chefs religieux contre Jésus et présida l’interrogatoire au cours duquel Jésus fut accusé de blasphème.",
     "lessonPoints": [
-      "Une position religieuse élevée ne garantit pas une conduite fidèle à Dieu.",
-      "Caïphe craignait notamment les conséquences politiques d’une intervention romaine.",
-      "Son raisonnement privilégiait la préservation d’un ordre humain plutôt que la justice envers Jésus.",
-      "Jean 11:49-52 montre comment une vérité prophétique concernant Jésus fut annoncée malgré les intentions de Caïphe."
+      "Caïphe occupait une position religieuse très importante.",
+      "Il participa au complot visant à faire mourir Jésus.",
+      "Il interrogea Jésus devant le Sanhédrin.",
+      "Il contribua ensuite à remettre Jésus au pouvoir romain."
     ],
-    "keyReading": "Matthieu 26:3-5,57-68 ; Jean 11:47-53 ; 18:12-24 ; Actes 4:5-10",
-    "location": "Jérusalem, particulièrement le secteur du temple et du Sanhédrin.",
-    "relationshipWithJehovah": "Le récit biblique ne présente pas Caïphe comme un adorateur fidèle de Jéhovah. Sa fonction de grand prêtre n’empêcha pas son opposition à Jésus.",
-    "didYouKnow": "Caïphe était le gendre d’Anne, qui avait lui-même été grand prêtre; Jean 18:13 mentionne ce lien familial.",
+    "keyReading": "Matthieu 26:57-68 ; Jean 11:45-53 ; 18:12-24",
+    "location": "Jérusalem.",
+    "relationshipWithJehovah": "Bien qu’il occupe la fonction de grand prêtre, Caïphe rejeta Jésus et participa à sa condamnation; sa conduite contraste avec la fidélité demandée à un représentant du culte de Jéhovah.",
+    "didYouKnow": "Caïphe était le grand prêtre cette année-là, et Jean rapporte qu’il avait déclaré qu’il était avantageux qu’un seul homme meure pour le peuple.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5591,16 +5591,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joanna": {
-    "studyFocus": "Jeanne faisait partie des femmes qui accompagnaient Jésus et les apôtres et les soutenaient matériellement.",
+    "studyFocus": "Jeanne était une femme qui faisait partie des femmes qui accompagnaient Jésus et les Douze et qui les soutenaient avec leurs biens. Elle avait été guérie par Jésus et resta attachée à son ministère.",
     "lessonPoints": [
-      "Générosité : elle a utilisé ses ressources pour soutenir le ministère de Jésus.",
-      "Fidélité : elle a continué à être associée aux disciples.",
-      "Témoignage : elle faisait partie des femmes qui ont rapporté aux apôtres ce qu’elles avaient vu après la résurrection."
+      "Jeanne avait personnellement bénéficié de l’aide de Jésus.",
+      "Elle soutenait Jésus et les Douze avec ses ressources.",
+      "Elle faisait partie des femmes qui accompagnèrent Jésus.",
+      "Elle fut aussi associée au témoignage concernant la résurrection."
     ],
-    "keyReading": "Luc 8:1-3; 24:1-10",
+    "keyReading": "Luc 8:1-3 ; 23:55-56 ; 24:1-10",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Sa générosité envers Jésus et ses disciples et sa présence comme témoin de la résurrection montrent une foi qui s’exprimait par le soutien matériel et le témoignage.",
-    "didYouKnow": "Luc est le seul Évangile à nommer Jeanne parmi les femmes qui soutenaient Jésus et ses apôtres avec leurs biens.",
+    "relationshipWithJehovah": "Jeanne manifesta sa reconnaissance envers Dieu en soutenant fidèlement le ministère de Jésus.",
+    "didYouKnow": "Jeanne était la femme de Chuza, intendant d’Hérode, et faisait partie des femmes qui fournissaient leurs biens pour soutenir Jésus et les Douze.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5640,17 +5641,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "samaritan_leper": {
-    "studyFocus": "L’un des dix lépreux guéris par Jésus était un Samaritain. Alors que les dix furent guéris en chemin vers les prêtres, lui revint glorifier Dieu et remercier Jésus. Jésus souligna que cet homme avait manifesté une foi remarquable.",
+    "studyFocus": "L’un des dix lépreux guéris par Jésus était Samaritain. Alors que les neuf autres ne revinrent pas, lui retourna glorifier Dieu et remercier Jésus.",
     "lessonPoints": [
-      "Les dix hommes obéirent à Jésus en allant se montrer aux prêtres.",
-      "Le Samaritain remarqua immédiatement sa guérison et revint remercier Jésus.",
-      "Il glorifia Dieu publiquement au lieu de considérer la guérison comme acquise.",
-      "Son exemple montre l’importance de la reconnaissance envers Jéhovah pour ses bienfaits."
+      "Il cria vers Jésus avec foi pour demander miséricorde.",
+      "Il obéit à l’instruction de Jésus d’aller se montrer aux prêtres.",
+      "Il remarqua qu’il était guéri et revint immédiatement.",
+      "Il glorifia Dieu et remercia Jésus."
     ],
     "keyReading": "Luc 17:11-19",
     "location": "Entre la Samarie et la Galilée.",
-    "relationshipWithJehovah": "Le Samaritain glorifia Dieu après sa guérison et manifesta sa foi en revenant remercier Jésus.",
-    "didYouKnow": "Jésus précisa que les neuf autres hommes guéris ne revinrent pas pour rendre gloire à Dieu, alors que celui qui revint était Samaritain.",
+    "relationshipWithJehovah": "Sa gratitude pour la guérison l’amena à glorifier Dieu et à revenir remercier Jésus.",
+    "didYouKnow": "Jésus souligna que le seul lépreux revenu pour rendre gloire à Dieu était un Samaritain.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5689,17 +5690,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "woman_issue_blood": {
-    "studyFocus": "Une femme souffrant d’écoulements de sang depuis douze ans vint vers Jésus avec la conviction qu’elle serait guérie en touchant son vêtement. Jésus reconnut publiquement sa foi et lui annonça qu’elle était guérie.",
+    "studyFocus": "Cette femme souffrait de pertes de sang depuis douze ans. Elle avait dépensé tout ce qu’elle possédait en soins sans être guérie. Elle toucha avec foi le vêtement de Jésus et fut immédiatement guérie.",
     "lessonPoints": [
-      "Elle avait beaucoup souffert pendant de nombreuses années.",
-      "Elle fit confiance à Jésus malgré la foule qui l’entourait.",
-      "Elle toucha discrètement le vêtement de Jésus avec foi.",
-      "Jésus la traita avec dignité et souligna sa foi."
+      "Elle persévéra malgré douze années de souffrance.",
+      "Elle croyait que même toucher le vêtement de Jésus pourrait la guérir.",
+      "Elle surmonta sa peur et déclara publiquement ce qu’elle avait fait.",
+      "Jésus l’appela avec affection « ma fille » et confirma que sa foi l’avait guérie."
     ],
     "keyReading": "Matthieu 9:18-26 ; Marc 5:25-34 ; Luc 8:43-48",
-    "location": "Galilée, pendant les déplacements de Jésus.",
-    "relationshipWithJehovah": "Sa foi en Jésus fut reconnue comme le moyen par lequel elle reçut la guérison, dans le cadre de la puissance que Jéhovah avait donnée à Jésus.",
-    "didYouKnow": "Marc rapporte qu’elle avait dépensé tout son argent auprès de nombreux médecins sans obtenir de guérison avant de venir vers Jésus.",
+    "location": "Galilée, probablement dans la région de Capharnaüm.",
+    "relationshipWithJehovah": "Sa foi en Jésus reflétait sa confiance en la puissance de guérison que Dieu lui avait accordée.",
+    "didYouKnow": "Elle souffrait depuis douze ans et avait dépensé toutes ses ressources en médecins sans obtenir de guérison.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6181,17 +6182,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "claudius_lycias": {
-    "studyFocus": "Claude Lysias était le commandant militaire romain de Jérusalem qui protégea Paul lorsqu’une foule voulut le tuer. Il fit enquêter sur l’affaire et envoya Paul sous escorte à Césarée.",
+    "studyFocus": "Claude Lysias commandait la garnison romaine de Jérusalem. Il intervint pour protéger Paul contre la foule, découvrit que Paul était citoyen romain et l’envoya sous escorte à Césarée.",
     "lessonPoints": [
-      "Claude Lysias intervint pour empêcher Paul d’être battu par la foule.",
-      "Il chercha à connaître les faits avant de poursuivre la procédure.",
-      "Il protégea Paul en raison de sa citoyenneté romaine.",
-      "Il rédigea une lettre officielle expliquant au gouverneur ce qu’il avait établi."
+      "Il intervint rapidement lorsqu’une foule attaqua Paul.",
+      "Il vérifia le statut de Paul avant de le faire fouetter.",
+      "Il organisa une escorte importante pour transférer Paul en sécurité.",
+      "Sa lettre au gouverneur résuma les faits connus de l’affaire."
     ],
-    "keyReading": "Actes 21:27-40 ; 22:22-30 ; 23:10-35",
+    "keyReading": "Actes 21:31-40 ; 22:22-30 ; 23:10-35",
     "location": "Jérusalem et Césarée.",
-    "relationshipWithJehovah": "Claude Lysias n’est pas présenté comme adorateur de Jéhovah, mais ses décisions contribuèrent indirectement à préserver Paul afin qu’il poursuive son témoignage.",
-    "didYouKnow": "Claude Lysias avait acheté sa citoyenneté romaine à prix élevé, alors que Paul indiqua être citoyen romain de naissance.",
+    "relationshipWithJehovah": "Le récit ne le présente pas comme adorateur de Jéhovah, mais ses interventions protégèrent Paul et permirent à celui-ci de poursuivre son témoignage.",
+    "didYouKnow": "Claude Lysias mobilisa des soldats, des cavaliers et des lanciers pour escorter Paul hors de Jérusalem jusqu’à Antipatris.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6229,17 +6230,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "julius_centurion": {
-    "studyFocus": "Julius était un centurion de la cohorte impériale chargé d’accompagner Paul et d’autres prisonniers vers Rome. Il traita Paul avec bonté et lui permit de recevoir des soins et de visiter des amis pendant le voyage.",
+    "studyFocus": "Julius était un centurion chargé de conduire Paul et d’autres prisonniers à Rome. Il traita Paul avec bonté pendant le voyage et contribua à préserver la vie des prisonniers après le naufrage.",
     "lessonPoints": [
-      "Julius traita Paul avec considération malgré son statut de prisonnier.",
-      "Il lui permit de recevoir de l’aide à Sidon.",
-      "Il écouta Paul lors de la traversée malgré les décisions du capitaine et du propriétaire du navire.",
-      "Il empêcha finalement les soldats de tuer les prisonniers après le naufrage."
+      "Julius permit à Paul de recevoir l’aide de ses amis à Sidon.",
+      "Il écouta Paul au cours de la traversée.",
+      "Il refusa que les soldats tuent les prisonniers après le naufrage.",
+      "Son attitude montre qu’une autorité peut agir avec humanité envers des prisonniers."
     ],
     "keyReading": "Actes 27:1-44 ; 28:1-16",
-    "location": "Césarée, Méditerranée et finalement Rome.",
-    "relationshipWithJehovah": "Julius n’est pas présenté comme adorateur de Jéhovah, mais sa bienveillance contribua à préserver Paul pendant son voyage.",
-    "didYouKnow": "Julius appartenait à la « cohorte impériale », unité associée à l’armée romaine, et il fut chargé de conduire Paul à Rome.",
+    "location": "Césarée, Méditerranée, Malte et Rome.",
+    "relationshipWithJehovah": "Julius n’est pas présenté comme adorateur de Jéhovah, mais sa conduite contribua à la protection de Paul et des autres prisonniers.",
+    "didYouKnow": "Après le naufrage, Julius empêcha les soldats d’exécuter les prisonniers afin de sauver Paul.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
