@@ -3245,17 +3245,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "martha": {
-    "studyFocus": "Marthe était la sœur de Marie et de Lazare et vivait à Béthanie. Elle accueillit Jésus chez elle et fut ensuite témoin de la résurrection de Lazare. Elle était active et hospitalière, mais Jésus l’aida à comprendre que l’attention spirituelle ne devait pas être éclipsée par les nombreuses tâches.",
+    "studyFocus": "Marthe accueillait Jésus chez elle à Béthanie. Elle était active et soucieuse de bien recevoir son invité, mais Jésus lui rappela que l’attention aux choses spirituelles était prioritaire.",
     "lessonPoints": [
-      "Marthe accueillit Jésus et ses disciples avec hospitalité.",
-      "Elle pouvait être très préoccupée par les tâches nécessaires pour recevoir ses invités.",
-      "Jésus lui rappela avec douceur que Marie avait choisi une bonne part en l’écoutant.",
-      "Plus tard, Marthe manifesta une foi remarquable en Jésus avant la résurrection de Lazare."
+      "Marthe était hospitalière et généreuse.",
+      "Elle accepta les conseils de Jésus même lorsqu’elle était préoccupée par beaucoup de tâches.",
+      "Elle exprima sa foi en Jésus lors de la mort de Lazare.",
+      "Elle croyait que Jésus était le Christ, le Fils de Dieu, celui qui devait venir dans le monde."
     ],
-    "keyReading": "Luc 10:38-42 ; Jean 11:1-46 ; 12:1-8",
+    "keyReading": "Luc 10:38-42 ; Jean 11:17-27 ; 12:1-8",
     "location": "Béthanie, près de Jérusalem.",
-    "relationshipWithJehovah": "Marthe exprima sa foi en Jésus comme le Christ et le Fils de Dieu et croyait à la résurrection au dernier jour.",
-    "didYouKnow": "Marthe fut l’une des personnes qui affirmèrent leur foi en Jésus avant qu’il ne ressuscite Lazare, son frère.",
+    "relationshipWithJehovah": "Marthe manifesta sa foi en Jésus et en la résurrection, montrant son attachement au Dieu qui avait envoyé le Christ.",
+    "didYouKnow": "Marthe fit une déclaration de foi remarquable avant même que Jésus ne ressuscite Lazare : elle dit croire qu’il était le Christ, le Fils de Dieu.",
     "jwResources": [
       {
         "title": "Marthe — Étude perspicace",
@@ -3295,17 +3295,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "mary_bethany": {
-    "studyFocus": "Marie de Béthanie était la sœur de Marthe et de Lazare. Elle est surtout connue pour s’être assise aux pieds de Jésus pour écouter son enseignement et pour avoir répandu sur lui un parfum coûteux peu avant sa mort. Jésus défendit son geste et souligna sa valeur.",
+    "studyFocus": "Marie de Béthanie, sœur de Marthe et de Lazare, aimait écouter Jésus et manifestait une foi profonde. Elle versa sur Jésus un parfum précieux peu avant sa mort.",
     "lessonPoints": [
-      "Marie accordait une grande priorité à l’écoute de l’enseignement de Jésus.",
-      "Elle manifesta son amour et sa reconnaissance par un geste coûteux.",
-      "Jésus apprécia son discernement et défendit son geste contre les critiques.",
-      "Son exemple montre qu’un acte d’adoration peut avoir une grande valeur aux yeux de Jésus."
+      "Marie choisissait d’écouter attentivement Jésus.",
+      "Elle manifesta une foi et une affection profondes envers lui.",
+      "Son onction de Jésus annonçait symboliquement son enterrement.",
+      "Jésus défendit son geste lorsque Judas et d’autres le critiquèrent."
     ],
-    "keyReading": "Luc 10:38-42 ; Jean 11:1-45 ; 12:1-8 ; Matthieu 26:6-13",
+    "keyReading": "Luc 10:38-42 ; Jean 11:1-44 ; 12:1-8",
     "location": "Béthanie, près de Jérusalem.",
-    "relationshipWithJehovah": "Marie manifesta sa foi envers Jésus et son profond attachement à lui; son geste fut présenté comme ayant une valeur spirituelle durable.",
-    "didYouKnow": "Le parfum utilisé par Marie était du nard pur, très coûteux, et Jean indique que sa valeur correspondait à environ 300 deniers.",
+    "relationshipWithJehovah": "Marie manifestait son attachement à Jéhovah en accordant une grande valeur à l’enseignement de Jésus et en honorant son Fils.",
+    "didYouKnow": "Jésus déclara que l’action de Marie avec le parfum serait rappelée partout où la bonne nouvelle serait prêchée.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Marie de Béthanie",
@@ -3347,17 +3347,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joseph_arimathea": {
-    "studyFocus": "Joseph d’Arimathie était un membre respecté du Sanhédrin qui attendait le Royaume de Dieu. Il ne donna pas son accord à la décision contre Jésus et demanda ensuite son corps à Pilate. Il le plaça dans un tombeau neuf qu’il avait fait tailler dans le roc.",
+    "studyFocus": "Joseph d’Arimathie était un homme riche et membre respecté du Sanhédrin qui était devenu disciple de Jésus. Après la mort de Jésus, il eut le courage de demander son corps à Pilate et de le déposer dans un tombeau neuf.",
     "lessonPoints": [
-      "Joseph attendait le Royaume de Dieu malgré sa position au sein du conseil juif.",
-      "Il ne suivit pas simplement la décision de tous les membres du conseil.",
-      "Il prit un risque en demandant publiquement le corps de Jésus.",
-      "Il utilisa ses ressources pour honorer Jésus après son exécution."
+      "Joseph était un disciple de Jésus malgré son appartenance au Sanhédrin.",
+      "Il n’approuvait pas la conduite du conseil concernant Jésus.",
+      "Il manifesta publiquement son attachement après la mort de Jésus.",
+      "Il utilisa son propre tombeau pour offrir une sépulture honorable à Jésus."
     ],
     "keyReading": "Matthieu 27:57-61 ; Marc 15:42-47 ; Luc 23:50-56 ; Jean 19:38-42",
     "location": "Jérusalem et Arimathie.",
-    "relationshipWithJehovah": "Joseph est présenté comme un homme juste qui attendait le Royaume de Dieu et manifesta son attachement à Jésus au moment de sa mort.",
-    "didYouKnow": "Le tombeau utilisé pour Jésus était un tombeau neuf, taillé dans le roc, dans lequel personne n’avait encore été déposé.",
+    "relationshipWithJehovah": "Joseph craignait Dieu et choisit de soutenir Jésus alors que beaucoup de dirigeants l’avaient rejeté.",
+    "didYouKnow": "Joseph d’Arimathie était membre du Sanhédrin mais n’avait pas approuvé la décision et l’action des autres membres contre Jésus.",
     "jwResources": [
       {
         "title": "Joseph d’Arimathie — Étude perspicace",
@@ -3397,17 +3397,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jairus": {
-    "studyFocus": "Jaïrus était un président de synagogue dont la fille était gravement malade. Malgré la pression et les mauvaises nouvelles, il accepta l’aide de Jésus. Jésus ressuscita ensuite la jeune fille, montrant son pouvoir sur la mort.",
+    "studyFocus": "Jaïrus était un président de synagogue qui vint supplier Jésus de guérir sa fille gravement malade. Même après avoir appris sa mort, il continua à exercer sa foi et vit Jésus la ressusciter.",
     "lessonPoints": [
-      "Jaïrus surmonta sa position sociale pour demander humblement l’aide de Jésus.",
-      "Il continua à avancer avec Jésus malgré la nouvelle du décès de sa fille.",
-      "Jésus lui demanda de ne pas avoir peur mais de manifester de la foi.",
-      "La résurrection de sa fille apporta une grande joie à la famille."
+      "Jaïrus s’humilia en venant chercher Jésus.",
+      "Il dut continuer à croire alors que la situation semblait désespérée.",
+      "Il accepta l’encouragement de Jésus à ne pas avoir peur.",
+      "Il vit la puissance de Jésus sur la mort."
     ],
-    "keyReading": "Matthieu 9:18-26 ; Marc 5:21-43 ; Luc 8:40-56",
-    "location": "Galilée, notamment Capharnaüm et ses environs.",
-    "relationshipWithJehovah": "Jaïrus plaça sa confiance dans Jésus et fut témoin d’un miracle qui démontrait le pouvoir donné par Dieu à son Fils.",
-    "didYouKnow": "Jésus ne permit qu’à Pierre, Jacques et Jean ainsi qu’aux parents de la jeune fille d’assister à sa résurrection.",
+    "keyReading": "Marc 5:21-43 ; Luc 8:40-56",
+    "location": "Région de Galilée, près du lieu où Jésus enseignait.",
+    "relationshipWithJehovah": "Jaïrus fit confiance à Jésus, l’instrument par lequel Jéhovah allait accomplir des miracles et enseigner l’espérance de la résurrection.",
+    "didYouKnow": "Quand Jésus ressuscita la fille de Jaïrus, il demanda qu’on lui donne quelque chose à manger, détail qui montre qu’elle était réellement revenue à la vie.",
     "jwResources": [
       {
         "title": "Jaïrus — Étude perspicace",
@@ -3446,17 +3446,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "thomas": {
-    "studyFocus": "Thomas, appelé Didyme, faisait partie des douze apôtres. Il accompagna Jésus pendant son ministère et, après la mort de Jésus, eut besoin d’être convaincu de sa résurrection. Lorsqu’il vit Jésus ressuscité, il exprima une foi personnelle très forte.",
+    "studyFocus": "Thomas était l’un des douze apôtres. Après la mort de Jésus, il eut du mal à croire au témoignage des autres disciples concernant la résurrection, mais lorsqu’il vit Jésus ressuscité, il exprima une déclaration de foi.",
     "lessonPoints": [
-      "Thomas resta attaché à Jésus même dans les moments difficiles.",
-      "Il exprima honnêtement ses doutes au lieu de faire semblant d’être convaincu.",
-      "Jésus lui donna des raisons concrètes de fortifier sa foi.",
-      "Thomas passa du doute à une déclaration de foi envers Jésus ressuscité."
+      "Thomas était prêt à suivre Jésus avec courage.",
+      "Il exprima franchement ses doutes au lieu de les cacher.",
+      "Jésus répondit à ses inquiétudes avec patience.",
+      "Thomas finit par reconnaître Jésus comme son Seigneur et son Dieu."
     ],
-    "keyReading": "Jean 11:7-16 ; 14:1-7 ; 20:24-29",
+    "keyReading": "Jean 11:16 ; 14:1-6 ; 20:24-29",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Thomas développa sa foi en Jésus et reconnut finalement en lui son Seigneur et son Dieu.",
-    "didYouKnow": "Thomas est aussi appelé Didyme, nom grec qui signifie « jumeau ».",
+    "relationshipWithJehovah": "Thomas renforça sa foi en Jésus ressuscité et reconnut publiquement sa position exceptionnelle.",
+    "didYouKnow": "Thomas était aussi appelé Didyme, nom grec qui signifie « jumeau ».",
     "jwResources": [
       {
         "title": "Thomas — Étude perspicace",
@@ -3712,17 +3712,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "philip_evangelizer": {
-    "studyFocus": "Philippe l’évangélisateur était l’un des sept hommes choisis à Jérusalem et devint un prédicateur actif. Il annonça la bonne nouvelle en Samarie, à l’eunuque éthiopien et dans plusieurs villes côtières. Ses quatre filles étaient prophétesses.",
+    "studyFocus": "Philippe l’évangélisateur faisait partie des sept hommes choisis à Jérusalem pour s’occuper d’un besoin matériel de la congrégation. Après la dispersion des disciples, il prêcha en Samarie puis fut dirigé vers la route de Gaza, où il enseigna un fonctionnaire éthiopien.",
     "lessonPoints": [
-      "Philippe accepta une responsabilité de service dans la congrégation.",
-      "Il prêcha avec enthousiasme en Samarie.",
-      "Il suivit promptement la direction de l’esprit pour rencontrer l’Éthiopien.",
-      "Il continua à servir fidèlement tout en élevant une famille engagée dans le culte."
+      "Philippe accepta d’abord une responsabilité pratique dans la congrégation.",
+      "Il continua à prêcher lorsque la persécution dispersa les disciples.",
+      "Il expliqua les Écritures à l’Éthiopien avec tact et simplicité.",
+      "Il continua ensuite son activité de prédication jusqu’à Césarée."
     ],
     "keyReading": "Actes 6:1-6 ; 8:4-40 ; 21:8-9",
-    "location": "Jérusalem, Samarie, Gaza, Azot et Césarée.",
-    "relationshipWithJehovah": "Philippe suivit la direction de l’esprit saint dans son activité de prédication et resta un évangélisateur actif.",
-    "didYouKnow": "Philippe avait quatre filles célibataires qui prophétisaient; Actes les présente comme des prophétesses.",
+    "location": "Jérusalem, Samarie, route de Gaza et Césarée.",
+    "relationshipWithJehovah": "Philippe se laissa guider par l’esprit de Dieu et resta disponible pour accomplir différents services dans la congrégation.",
+    "didYouKnow": "Philippe avait quatre filles célibataires qui prophétisaient et qui vivaient avec lui à Césarée.",
     "jwResources": [
       {
         "title": "Philippe l’évangélisateur — Étude perspicace",
@@ -4206,16 +4206,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "samaritan_woman": {
-    "studyFocus": "La Samaritaine a accepté de discuter avec Jésus malgré les barrières sociales de l’époque et a parlé à d’autres de ce qu’elle avait appris.",
+    "studyFocus": "La Samaritaine rencontra Jésus près d’un puits à Sychar. Jésus lui parla de l’eau symbolique qui donne la vie et lui révéla qu’il était le Messie. Elle parla ensuite de Jésus aux habitants de sa ville.",
     "lessonPoints": [
-      "Ouverture : elle a posé des questions et a progressivement compris l’enseignement de Jésus.",
-      "Témoignage : elle a invité les habitants de sa ville à venir voir Jésus.",
-      "Recherche spirituelle : elle s’intéressait sincèrement aux questions liées au vrai culte."
+      "Elle accepta de discuter avec Jésus malgré les barrières entre Juifs et Samaritains.",
+      "Elle posa des questions sincères sur le culte et la venue du Messie.",
+      "Elle crut au témoignage de Jésus et parla de lui aux autres.",
+      "Son témoignage poussa de nombreux Samaritains à aller écouter Jésus."
     ],
-    "keyReading": "Jean 4:4-42",
-    "location": "Sychar, en Samarie.",
-    "relationshipWithJehovah": "Elle accepte progressivement l’enseignement de Jésus sur la vraie adoration, reconnaît qu’il est le Messie et partage immédiatement ce qu’elle a appris avec d’autres.",
-    "didYouKnow": "Jésus lui révèle qu’il est le Messie, et elle devient l’une des premières personnes dont Jean rapporte le témoignage aux Samaritains de sa ville.",
+    "keyReading": "Jean 4:1-42",
+    "location": "Sychar, en Samarie, près du puits de Jacob.",
+    "relationshipWithJehovah": "Elle progressa dans la connaissance du vrai culte et reconnut Jésus comme le Messie envoyé par Dieu.",
+    "didYouKnow": "Après sa conversation avec Jésus, elle laissa sa jarre, retourna en ville et invita les habitants à venir voir un homme qui lui avait dit tout ce qu’elle avait fait.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5736,16 +5737,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "gerasene_man": {
-    "studyFocus": "L’homme de la région des Géraséniens qui avait été libéré de l’influence démoniaque a voulu suivre Jésus, mais Jésus lui a confié une autre mission : raconter ce que Dieu avait fait pour lui.",
+    "studyFocus": "L’homme possédé par des démons dans la région des Géraséniens vivait dans des conditions terribles et était isolé. Jésus le délivra, puis l’homme voulut accompagner Jésus, mais Jésus lui demanda de rentrer chez lui et de raconter ce que Dieu avait fait pour lui.",
     "lessonPoints": [
-      "Gratitude : il voulait rester avec Jésus après avoir été libéré.",
-      "Obéissance : il a accepté la mission qui lui a été donnée plutôt que de choisir lui-même son service.",
-      "Témoignage : il a raconté dans toute la région ce que Jésus avait fait pour lui."
+      "Il souffrait profondément à cause de l’influence démoniaque.",
+      "Jésus le libéra complètement de cette oppression.",
+      "Il voulut rester avec Jésus après sa guérison.",
+      "Il obéit à Jésus et proclama dans toute la région ce que Jésus avait fait pour lui."
     ],
-    "keyReading": "Marc 5:1-20; Luc 8:26-39",
-    "location": "Région des Géraséniens.",
-    "relationshipWithJehovah": "Après sa délivrance, il veut rester avec Jésus, mais reçoit une mission locale: raconter à ses proches les choses que Dieu avait faites pour lui.",
-    "didYouKnow": "Dans le récit de Marc, Jésus lui dit de retourner chez lui et de raconter à ses proches les grandes choses que Jéhovah avait faites pour lui.",
+    "keyReading": "Marc 5:1-20 ; Luc 8:26-39",
+    "location": "Région des Géraséniens, à l’est de la mer de Galilée.",
+    "relationshipWithJehovah": "Après sa délivrance, il témoigna de ce que Dieu avait fait pour lui et devint un proclamateur local du pouvoir de Dieu.",
+    "didYouKnow": "Jésus lui demanda de retourner chez lui et de raconter tout ce que Jéhovah avait fait pour lui ; il proclama alors dans toute la ville ce que Jésus avait fait.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6276,16 +6278,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "gaius_macedonian": {
-    "studyFocus": "Gaïus de Macédoine a accompagné Paul dans son ministère et s’est retrouvé pris dans l’émeute d’Éphèse.",
+    "studyFocus": "Gaius de Macédoine était un compagnon de Paul qui fut entraîné dans l’émeute provoquée à Éphèse par l’opposition à la prédication. Il faisait partie des compagnons de voyage de Paul.",
     "lessonPoints": [
-      "Compagnie fidèle : il accompagnait Paul dans son activité missionnaire.",
-      "Courage : il a été exposé au danger pendant l’opposition à Éphèse.",
-      "Persévérance : son association avec Paul montre son engagement dans l’activité chrétienne."
+      "Gaius accompagna Paul dans son activité missionnaire.",
+      "Il accepta les risques liés à la prédication chrétienne.",
+      "Il fut saisi avec Aristarque lors de l’émeute d’Éphèse.",
+      "Son exemple montre que le service chrétien pouvait exposer les missionnaires à une forte opposition."
     ],
-    "keyReading": "Actes 19:29; 20:4",
-    "location": "Éphèse et Macédoine.",
-    "relationshipWithJehovah": "Il était associé aux déplacements de Paul dans le cadre de l’activité chrétienne. Le récit montre qu’il continuait à servir malgré l’opposition.",
-    "didYouKnow": "La Bible mentionne plusieurs Gaïus; celui-ci est précisément identifié comme Macédonien dans Actes 19:29.",
+    "keyReading": "Actes 19:28-31 ; 20:4",
+    "location": "Macédoine et Éphèse.",
+    "relationshipWithJehovah": "Gaius soutenait l’activité missionnaire de Paul malgré les risques liés à l’opposition.",
+    "didYouKnow": "Lors de l’émeute d’Éphèse, les compagnons de Paul empêchèrent celui-ci d’entrer dans le théâtre, où la foule s’était rassemblée.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6323,17 +6326,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "aristarchus": {
-    "studyFocus": "Aristarque était un Macédonien de Thessalonique qui devint un compagnon de voyage de Paul. Il fut entraîné dans l’émeute d’Éphèse et accompagna Paul dans plusieurs déplacements, y compris le voyage vers Rome. Paul le décrit comme un compagnon de captivité.",
+    "studyFocus": "Aristarque était un Macédonien de Thessalonique et un compagnon de voyage de Paul. Il fut saisi pendant l’émeute d’Éphèse et accompagna ensuite Paul dans des voyages difficiles, notamment vers Rome.",
     "lessonPoints": [
-      "Aristarque resta aux côtés de Paul malgré les dangers.",
-      "Il fut présent pendant l’émeute d’Éphèse et dans les voyages missionnaires.",
-      "Il accepta de partager les difficultés liées au service chrétien.",
-      "Sa fidélité montre qu’un compagnon fiable ne disparaît pas lorsque les circonstances deviennent difficiles."
+      "Aristarque resta proche de Paul malgré l’opposition.",
+      "Il fut exposé au danger pendant l’émeute d’Éphèse.",
+      "Il accompagna Paul dans son voyage vers Rome.",
+      "Paul le qualifia plus tard de compagnon de captivité."
     ],
-    "keyReading": "Actes 19:29 ; 20:4 ; 27:1-2 ; Colossiens 4:10 ; Philémon 24",
-    "location": "Thessalonique, Éphèse et routes maritimes vers Rome.",
-    "relationshipWithJehovah": "Aristarque soutenait fidèlement Paul dans l’activité chrétienne et accepta de partager les difficultés de son service.",
-    "didYouKnow": "Aristarque est appelé par Paul son « compagnon de captivité », ce qui souligne son attachement personnel à l’apôtre.",
+    "keyReading": "Actes 19:29-31 ; 20:4 ; 27:1-2 ; Colossiens 4:10 ; Philémon 24",
+    "location": "Thessalonique, Éphèse et Rome.",
+    "relationshipWithJehovah": "Aristarque resta fidèle au service chrétien et soutint Paul dans des circonstances éprouvantes.",
+    "didYouKnow": "Aristarque accompagna Paul jusqu’à Rome et fut ensuite appelé par Paul son « compagnon de captivité ».",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
