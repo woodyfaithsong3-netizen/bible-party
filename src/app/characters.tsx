@@ -17,8 +17,8 @@ function ProfileCard({ item, onPress }: { item: CharacterProfile; onPress: () =>
   </Pressable>;
 }
 
-function CharacterDetail({ item, onBack, onLearned }: { item: CharacterProfile; onBack: () => void; onLearned: () => void }) {
-  React.useEffect(() => { void markCharacterLearned(item.id).then(onLearned); }, [item.id, onLearned]);
+function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () => void }) {
+  React.useEffect(() => { void markCharacterLearned(item.id); }, [item.id]);
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Pressable onPress={onBack}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Tous les personnages</Text></Pressable>
     <Text style={[styles.eyebrow, { marginTop: 22 }]}>{item.era}</Text>
@@ -55,7 +55,7 @@ export default function CharactersScreen() {
       return matchesEra && matchesQuery;
     });
   }, [query, selectedEra]);
-  if (selected) return <ScenicScreen><CharacterDetail item={selected} onBack={() => setSelected(null)} onLearned={() => setLearned(prev => prev.includes(selected.id) ? prev : [selected.id, ...prev])} /></ScenicScreen>;
+  if (selected) return <ScenicScreen><CharacterDetail item={selected} onBack={() => { setSelected(null); void getLearnedCharacters().then(setLearned); }} /></ScenicScreen>;
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={styles.eyebrow}>APPRENDRE</Text>
     <Text style={[styles.title, { marginTop: 7 }]}>Personnages bibliques</Text>
