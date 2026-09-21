@@ -7,7 +7,7 @@ const counts = new Map();
 for (const id of ids) counts.set(id, (counts.get(id) ?? 0) + 1);
 
 const editorialIds = new Set(
-  [...source.matchAll(/editorialRemoveQuizIds\s*=\s*new Set\(\[([\s\S]*?)\]\)/m)]
+  [...source.matchAll(/editorialRemoveQuizIds\s*=\s*new Set\(\[([\s\S]*?)\]\)/g)]
     .flatMap(m => [...m[1].matchAll(/['"]([^'"]+)['"]/g)].map(x => x[1]))
 );
 
