@@ -1539,7 +1539,7 @@ const v101ExpertTimesUp: TimesUpQuestion[] = [
   {id:'v101-expert-tu-04',type:'timesup',category:'Évangiles',difficulty:'expert',answer:'Joseph d’Arimathie',clues:['Sanhédrin','Tombeau','Jésus'],reference:'Matthieu 27:57-60; Marc 15:43-46'},
   {id:'v101-expert-tu-05',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Hushaï',clues:['Ami de David','Absalom','Conseil'],reference:'2 Samuel 15:32-37; 17:5-16'},
   {id:'v101-expert-tu-06',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Micaïa',clues:['Prophète','Achab','Vision céleste'],reference:'1 Rois 22:8-28'},
-  {id:'v101-expert-tu-07',type:'timesup',category:'Rois & prophètes',difficulty:'expert',answer:'Jéhu',clues:['Onction','Royaume du Nord','Révolte'],reference:'2 Rois 9:1-13'},
+  {id:'v101-expert-tu-07',type:'timesup',category:'Rois & prophètes',difficulty:'expert',answer:'Élisha',clues:['Manteau','Successeur d’Élie','Naamân'],reference:'1 Rois 19:19-21; 2 Rois 2:9-15; 5:1-14'},
   {id:'v101-expert-tu-08',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Méphibosheth',clues:['Jonathan','David','Boiteux'],reference:'2 Samuel 4:4; 9:1-13'},
 ];
 
