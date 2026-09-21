@@ -38,15 +38,15 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
     ? learning.lessonPoints.join(' ')
     : 'Le récit permet surtout de réfléchir aux choix et aux conséquences présentés dans la Bible.';
 
-  const relationshipWithJehovah = item.qualities.some(q => /foi|fidélité|prière|obéissance|zèle|confiance|repentir|humilité|espérance/i.test(q))
-    ? `Son récit permet d’observer sa relation avec Jéhovah notamment sous l’angle de : ${item.qualities.filter(q => /foi|fidélité|prière|obéissance|zèle|confiance|repentir|humilité|espérance/i.test(q)).join(', ')}.`
-    : item.warnings?.length
-      ? 'Son récit montre aussi les conséquences de choix qui n’étaient pas en accord avec la volonté de Jéhovah.'
-      : 'Son récit permet d’examiner comment ses choix et ses actions s’inscrivent dans le cadre du culte de Jéhovah.';
+  const relationshipWithJehovah = learning?.relationshipWithJehovah
+    ?? (item.qualities.some(q => /foi|fidélité|prière|obéissance|zèle|confiance|repentir|humilité|espérance/i.test(q))
+      ? `Son récit permet d’observer sa relation avec Jéhovah notamment sous l’angle de : ${item.qualities.filter(q => /foi|fidélité|prière|obéissance|zèle|confiance|repentir|humilité|espérance/i.test(q)).join(', ')}.`
+      : item.warnings?.length
+        ? 'Son récit montre aussi les conséquences de choix qui n’étaient pas en accord avec la volonté de Jéhovah.'
+        : 'Le récit biblique permet d’examiner comment ses choix et ses actions s’inscrivent dans le cadre du culte de Jéhovah.');
 
-  const didYouKnow = item.keyActions[0]
-    ? item.keyActions[0]
-    : `Son récit biblique est notamment associé à ${item.references.split(';')[0]}.`;
+  const didYouKnow = learning?.didYouKnow
+    ?? 'Aucun fait supplémentaire n’est ajouté ici lorsque les ressources étudiées ne permettent pas d’en vérifier un précisément.';
 
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Pressable onPress={onBack}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Tous les personnages</Text></Pressable>
@@ -65,7 +65,7 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
 
       <Section icon="🌍" title="Où vivait-il / elle ?">
         <Text style={{ color: colors.muted, lineHeight: 21 }}>
-          La fiche actuelle situe son récit dans la période « {item.era} ». Les lieux précis sont à retrouver dans les références bibliques ci-dessous lorsque la fiche les mentionne.
+          {learning?.location ?? 'Les lieux précis ne sont pas encore détaillés dans cette fiche. Consulte les références bibliques et les ressources JW.org ci-dessous.'}
         </Text>
       </Section>
 
@@ -124,7 +124,7 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
         <Text style={{ color: colors.accent, fontSize: 15, fontWeight: '900' }}>💡 Le savais-tu ?</Text>
         <Text style={{ color: colors.text, lineHeight: 21, marginTop: 7 }}>{didYouKnow}</Text>
         <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 7 }}>
-          Ce petit détail peut servir de point de départ pour aller lire le passage biblique correspondant.
+          Ce fait est conservé comme point de départ d’une lecture : ouvre la ressource JW.org associée pour vérifier le contexte.
         </Text>
       </View>
 
