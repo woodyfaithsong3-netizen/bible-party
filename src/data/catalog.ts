@@ -146,26 +146,10 @@ export function selectTrainingQuestions(category: string, difficulty: string, mi
     (normalized === 'Toutes' || q.category === normalized) &&
     (difficulty === 'all' || q.difficulty === difficulty);
   const base = all.filter(matches);
-  // Training should always be playable even when a newly added filter has too few
-  // questions. Complete the deck from the same category first, then from the global
-  // quiz pool at the selected difficulty, and finally from the whole quiz pool.
-  const sameCategory = all.filter(q => normalized === 'Toutes' || q.category === normalized);
-  const sameDifficulty = all.filter(q => difficulty === 'all' || q.difficulty === difficulty);
+  // Training must respect the selected filters: never silently replace a category
+  // or difficulty with unrelated questions. Missed questions are still prioritized.
   const shuffle = <T,>(items: T[]) => [...items].sort(() => Math.random() - 0.5);
   const preferred = base.filter(q => missedIds.includes(q.id));
   const fresh = base.filter(q => !missedIds.includes(q.id));
-  const chosen: QuizQuestion[] = [];
-  const seen = new Set<string>();
-  const add = (items: QuizQuestion[]) => {
-    for (const q of shuffle(items)) {
-      if (chosen.length >= count) break;
-      if (!seen.has(q.id)) { seen.add(q.id); chosen.push(q); }
-    }
-  };
-  add(preferred);
-  add(fresh);
-  add(sameCategory);
-  add(sameDifficulty);
-  add(all);
-  return chosen.slice(0, count);
+  return [...shuffle(preferred), ...shuffle(fresh)].slice(0, count);
 }
