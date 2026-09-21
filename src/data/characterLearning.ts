@@ -1348,10 +1348,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Reconnaissance : elle avait été libérée de graves souffrances et a continué à le soutenir.",
       "Témoignage : Jésus lui a confié une mission d’annoncer sa résurrection aux disciples."
     ],
-    "keyReading": "Luc 8:1-3 ; Jean 19:25 ; 20:1-18",
+    "keyReading": "Luc 8:1-3; Matthieu 27:55-61; Jean 20:1-18",
     "location": "Galilée et Jérusalem ; tombeau de Jésus.",
-    "relationshipWithJehovah": "Son parcours montre une fidélité durable au service de Jésus et une reconnaissance profonde pour ce qu’il avait fait pour elle.",
-    "didYouKnow": "Marie Madeleine est distincte de Marie de Béthanie et de la femme « pécheresse » mentionnée en Luc 7 ; les Évangiles l’identifient notamment comme une femme dont Jésus avait expulsé sept démons.",
+    "relationshipWithJehovah": "Sa gratitude pour la délivrance reçue se traduit par un soutien fidèle à Jésus jusqu’à sa mort et par un témoignage enthousiaste après sa résurrection.",
+    "didYouKnow": "Marie Madeleine n’est pas la femme pécheresse qui parfume les pieds de Jésus dans Luc 7, et elle ne doit pas être confondue avec Marie de Béthanie.",
     "jwResources": [
       {
         "title": "Magdalène (Marie la) — Étude perspicace des Écritures",
@@ -1370,23 +1370,31 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       }
     ],
-    "identity": "Disciple de Jésus — Marie Madeleine fait partie des femmes qui accompagnent Jésus et témoigne des événements entourant sa mort et sa résurrection.",
-    "era": "Évangiles",
+    "identity": "Marie Madeleine était une disciple fidèle de Jésus, délivrée de sept démons. Elle l’accompagna jusqu’à sa mort et fut l’une des premières personnes à le voir après sa résurrection.",
+    "era": "Ministère terrestre de Jésus et premiers jours après sa résurrection",
     "familyAndEntourage": [
       "Jésus",
-      "Les autres disciples"
+      "Les apôtres",
+      "Marie mère de Jacques",
+      "Jeanne",
+      "Les autres femmes disciples"
     ],
     "bibleAccount": [
-      "Suit Jésus avec d’autres femmes.",
-      "Assiste aux événements liés à sa mort.",
-      "Est parmi les premières à témoigner de sa résurrection."
+      "Jésus la délivre de sept démons.",
+      "Elle soutient Jésus et ses disciples avec ses ressources.",
+      "Elle assiste à son exécution et à son ensevelissement.",
+      "Elle vient au tombeau et devient l’une des premières personnes à voir Jésus ressuscité.",
+      "Elle annonce ensuite la nouvelle aux disciples."
     ],
     "qualities": [
       "Fidélité",
-      "Persévérance",
-      "Reconnaissance"
+      "Courage",
+      "Reconnaissance",
+      "Zèle pour témoigner"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle reste attachée à Jésus malgré son exécution et doit faire face à la douleur de sa mort."
+    ]
   },
   "zacchaeus": {
     "studyFocus": "Zachée, collecteur d’impôts en chef, a montré par ses actions qu’il voulait réellement changer lorsqu’il a accepté Jésus et corrigé les torts qu’il avait commis.",
@@ -1397,8 +1405,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Luc 19:1-10",
     "location": "Jéricho, au moment où Jésus traversait la ville.",
-    "relationshipWithJehovah": "Le récit montre qu’une personne peut répondre favorablement à l’appel de Jésus et démontrer cette réaction par des changements concrets dans sa conduite.",
-    "didYouKnow": "Zachée était chef des collecteurs d’impôts à Jéricho, une fonction qui lui donnait une position importante parmi les collecteurs.",
+    "relationshipWithJehovah": "Son changement ne se limite pas à des paroles: il prend des mesures concrètes concernant son argent et les torts qu’il avait causés. Jésus déclare alors que le salut est venu à cette maison.",
+    "didYouKnow": "Zachée ne promet pas simplement de donner; il annonce une restitution au quadruple aux personnes qu’il a extorquées, mesure particulièrement généreuse.",
     "jwResources": [
       {
         "title": "Zachée — Les personnages de la Bible",
@@ -1417,23 +1425,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Chef des collecteurs d’impôts à Jéricho — Zachée cherche à voir Jésus et annonce ensuite des mesures montrant sa volonté de réparer les torts.",
-    "era": "Évangiles",
+    "identity": "Zachée était chef des collecteurs d’impôts à Jéricho et riche. Après avoir rencontré Jésus, il manifesta un changement concret dans sa conduite.",
+    "era": "Vers 33 de n. è., peu avant la mort de Jésus",
     "familyAndEntourage": [
       "Jésus",
-      "Les habitants de Jéricho"
+      "Les habitants de Jéricho",
+      "Sa maisonnée"
     ],
     "bibleAccount": [
-      "Monte sur un sycomore pour voir Jésus.",
-      "Accueille Jésus chez lui.",
-      "Annonce des mesures généreuses envers les pauvres et les personnes qu’il aurait lésées."
+      "Il cherche à voir Jésus mais sa petite taille l’en empêche.",
+      "Il monte sur un sycomore pour le voir passer.",
+      "Jésus lui demande de descendre et accepte de loger chez lui.",
+      "Zachée annonce qu’il donnera la moitié de ses biens aux pauvres et rendra au quadruple ce qu’il a extorqué."
     ],
     "qualities": [
-      "Réceptivité",
+      "Détermination",
       "Générosité",
-      "Volonté de changer"
+      "Repentance concrète"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Comme chef des collecteurs d’impôts, il pouvait être méprisé et associé à des pratiques injustes; il reconnaît lui-même avoir extorqué des personnes."
+    ]
   },
   "barnabas": {
     "studyFocus": "Barnabas était un encourageant généreux qui a soutenu Paul et Jean-Marc et a contribué à fortifier les congrégations.",
@@ -1490,10 +1502,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Générosité : ses dons de miséricorde étaient connus.",
       "Réceptivité : lui et les siens ont humblement accepté l’enseignement transmis par Pierre."
     ],
-    "keyReading": "Actes 10:1-48",
+    "keyReading": "Actes 10:1-48; 11:1-18",
     "location": "Césarée, où Corneille résidait dans le cadre de son service militaire.",
-    "relationshipWithJehovah": "Avant même de devenir chrétien, Corneille priait Dieu et faisait des dons de miséricorde ; il s’est ensuite montré réceptif à la direction fournie par Jéhovah.",
-    "didYouKnow": "Corneille était centurion de la troupe appelée la cohorte italienne et sa conversion a ouvert une étape majeure dans l’accueil des non-Juifs dans la congrégation chrétienne.",
+    "relationshipWithJehovah": "Jéhovah remarque ses prières et ses actes de miséricorde. Le cas de Corneille montre que Dieu avait préparé la voie pour que les non-Juifs soient accueillis dans la congrégation chrétienne.",
+    "didYouKnow": "Corneille est le premier non-Juif incirconcis dont la Bible rapporte clairement le baptême chrétien après que l’esprit saint est venu sur lui et sa maisonnée.",
     "jwResources": [
       {
         "title": "Corneille — Les personnages de la Bible",
@@ -1512,23 +1524,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Officier romain — Corneille est présenté comme un homme pieux qui reçoit le témoignage chrétien avec sa maisonnée.",
-    "era": "Actes",
+    "identity": "Corneille était un centurion romain de Césarée, homme pieux qui craignait Dieu. Il devint le premier non-Juif incirconcis à être baptisé comme chrétien avec l’approbation de Dieu.",
+    "era": "Vers 36 de n. è.",
     "familyAndEntourage": [
+      "Sa maisonnée",
       "Pierre",
-      "Sa maisonnée"
+      "Un ange de Dieu",
+      "Les six frères juifs qui accompagnent Pierre"
     ],
     "bibleAccount": [
-      "Prie et fait régulièrement des dons de miséricorde.",
-      "Envoie chercher Pierre après avoir reçu une vision.",
-      "Écoute le témoignage de Pierre avec sa maisonnée."
+      "Il prie régulièrement et fait beaucoup de dons de miséricorde.",
+      "Un ange lui demande d’envoyer chercher Pierre à Joppé.",
+      "Pierre lui annonce la bonne nouvelle et explique que Dieu n’est partial envers personne.",
+      "L’esprit saint tombe sur Corneille et les non-Juifs présents avant même leur baptême.",
+      "Ils sont baptisés au nom de Jésus Christ."
     ],
     "qualities": [
       "Piété",
       "Générosité",
+      "Humilité",
       "Réceptivité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il devait accepter des changements importants concernant ses relations religieuses avec les Juifs et comprendre que Dieu accueillait désormais aussi les non-Juifs incirconcis."
+    ]
   },
   "hagar": {
     "studyFocus": "Agar était une servante égyptienne de Sara et la mère d’Yishmaël. Son histoire comprend deux moments où elle se retrouve dans le désert et reçoit une aide ou une direction de la part de Jéhovah.",
@@ -2162,10 +2181,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Respect de la vérité : Jean le Baptiseur lui avait courageusement parlé de sa conduite.",
       "Humilité : la recherche de l’approbation humaine peut conduire à de graves décisions."
     ],
-    "keyReading": "Matthieu 14:1-12 ; Marc 6:14-29 ; Luc 3:19,20 ; 23:6-12",
+    "keyReading": "Matthieu 14:1-12; Luc 3:19-20; 9:7-9; 13:31-33; 23:6-12",
     "location": "Galilée et Pérée, notamment Tibériade.",
-    "relationshipWithJehovah": "Hérode n’est pas présenté comme serviteur de Jéhovah. Son récit montre plutôt les conséquences de l’opposition à Jean et d’un mauvais usage de l’autorité.",
-    "didYouKnow": "Hérode Antipas était fils d’Hérode le Grand et dirigeait la Galilée et la Pérée comme tétrarque.",
+    "relationshipWithJehovah": "Jean lui transmet un avertissement clair sur sa conduite, mais le récit ne rapporte pas qu’Antipas ait changé. Son parcours montre le danger de connaître la vérité sans agir en conséquence.",
+    "didYouKnow": "Antipas était appelé « renard » par Jésus, terme qui soulignait sa ruse dans le contexte où les Pharisiens avertissaient Jésus de la menace d’Hérode.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2184,23 +2203,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Dirigeant de Galilée et de Pérée — Hérode Antipas exerce son autorité à l’époque de Jésus et fait exécuter Jean le Baptiseur.",
-    "era": "Évangiles",
+    "identity": "Hérode Antipas était le dirigeant de Galilée et de Pérée, fils d’Hérode le Grand. Il fit décapiter Jean le Baptiseur et joua un rôle dans le procès de Jésus.",
+    "era": "4 av. n. è. à 39 de n. è.",
     "familyAndEntourage": [
-      "Jean le Baptiseur",
+      "Hérode le Grand, son père",
       "Hérodiade",
+      "Jean le Baptiseur",
       "Jésus",
-      "Pilate"
+      "Ponce Pilate"
     ],
     "bibleAccount": [
-      "Entend parler du ministère de Jésus.",
-      "Fait emprisonner Jean le Baptiseur.",
-      "Fait exécuter Jean après un serment irréfléchi.",
-      "Interroge Jésus avant sa condamnation."
+      "Jean le Baptiseur lui reproche son mariage avec Hérodiade.",
+      "Il fait emprisonner puis décapiter Jean après un serment imprudent.",
+      "Il entend parler des œuvres de Jésus et le considère avec crainte et curiosité.",
+      "Pilate lui envoie Jésus; il espère voir un miracle mais Jésus ne lui répond pas."
     ],
-    "qualities": [],
+    "qualities": [
+      "Curiosité envers les œuvres de Jésus",
+      "Il éprouve de la tristesse devant l’exécution de Jean, mais cela ne l’empêche pas d’agir contre lui"
+    ],
     "difficulties": [
-      "Son récit illustre les dangers de la pression sociale, des promesses irréfléchies et de l’abus du pouvoir."
+      "Il laisse la pression d’un serment et de son entourage conduire à l’exécution de Jean et ne manifeste pas de véritable repentance rapportée.",
+      "Il participe ensuite à l’humiliation de Jésus."
     ]
   },
   "pilate": {
@@ -2210,10 +2234,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Pression humaine : Pilate a cédé à la pression des chefs religieux et de la foule.",
       "Responsabilité : une position d’autorité implique de prendre au sérieux les décisions rendues."
     ],
-    "keyReading": "Matthieu 27:11-26 ; Marc 15:1-15 ; Luc 23:1-25 ; Jean 18:28–19:16",
+    "keyReading": "Matthieu 27:11-26; Marc 15:1-15; Luc 23:1-25; Jean 18:28–19:22",
     "location": "Jérusalem, au prétoire romain.",
-    "relationshipWithJehovah": "Pilate n’est pas présenté comme adorateur de Jéhovah. Les récits montrent néanmoins qu’il disposait d’informations suffisantes sur l’accusation portée contre Jésus.",
-    "didYouKnow": "Pilate était préfet romain de Judée et son autorité comprenait le pouvoir d’autoriser une exécution.",
+    "relationshipWithJehovah": "Le récit ne le présente pas comme adorateur de Jéhovah. Il entend un témoignage direct de Jésus mais ne prend pas une décision conforme à ce qu’il reconnaît lui-même comme juste.",
+    "didYouKnow": "Une inscription découverte à Césarée en 1961 mentionne Ponce Pilate et constitue une preuve archéologique de son titre de préfet de Judée.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2232,21 +2256,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Gouverneur romain de Judée — Pilate préside au procès de Jésus et autorise son exécution malgré les éléments rapportés dans les récits évangéliques.",
-    "era": "Évangiles",
+    "identity": "Ponce Pilate était le gouverneur romain de Judée qui présida le procès de Jésus et autorisa son exécution malgré l’absence de motif de condamnation à mort.",
+    "era": "26-36 de n. è.",
     "familyAndEntourage": [
+      "Les autorités religieuses juives",
       "Jésus",
-      "Les chefs religieux",
-      "Hérode Antipas"
+      "Hérode Antipas",
+      "La foule à Jérusalem"
     ],
     "bibleAccount": [
-      "Interroge Jésus.",
-      "Reconnaît dans le récit une absence de faute méritant la mort.",
-      "Cède aux pressions et livre Jésus pour être exécuté."
+      "Il interroge Jésus et constate qu’il n’a commis aucun crime méritant la mort.",
+      "Il cherche à le libérer mais cède finalement aux pressions de la foule et des chefs religieux.",
+      "Il fait placer une inscription sur le poteau de supplice de Jésus.",
+      "Plus tard, il fait massacrer des Galiléens venus offrir des sacrifices."
     ],
-    "qualities": [],
+    "qualities": [
+      "Il reconnaît à plusieurs reprises que Jésus n’est pas coupable d’un crime capital"
+    ],
     "difficulties": [
-      "Son récit illustre le conflit entre jugement personnel, pression politique et responsabilité."
+      "Il sacrifie finalement son jugement de justice à la pression politique et autorise la mise à mort de Jésus."
     ]
   },
   "isaiah": {
@@ -3050,10 +3078,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi",
       "Hospitalité"
     ],
-    "keyReading": "Luc 10:38-42; Jean 11:1-44; 12:1-8",
+    "keyReading": "Luc 10:38-42; Jean 11:1-46; 12:1-8",
     "location": "Béthanie, près de Jérusalem.",
-    "relationshipWithJehovah": "Sa foi s’est manifestée notamment lorsqu’elle a affirmé sa confiance en Jésus et dans la résurrection à venir, même avant de voir Lazare revenir à la vie.",
-    "didYouKnow": "Les Écritures ne disent pas précisément si Marthe était l’épouse, la veuve ou la fille de Simon le lépreux; JW.org souligne qu’il ne faut donc pas présenter cette identification comme un fait.",
+    "relationshipWithJehovah": "Elle montre une foi explicite en Jésus comme Christ et Fils de Dieu. Après la mort de Lazare, elle continue à lui faire confiance malgré son chagrin.",
+    "didYouKnow": "Jean rapporte que Jésus aimait Marthe, sa sœur Marie et Lazare, ce qui montre une affection particulière pour cette famille.",
     "jwResources": [
       {
         "title": "Marthe — Étude perspicace",
@@ -3068,26 +3096,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Marthe est la sœur de Lazare et de Marie de Béthanie. Jésus et ses proches l’aimaient et se rendait chez eux lorsqu’il était près de Jérusalem.",
-    "era": "Ministère terrestre de Jésus, vers le Ier siècle de n. è.",
+    "identity": "Marthe était la sœur de Lazare et de Marie de Béthanie. Elle accueillit Jésus dans sa maison et fut témoin de la résurrection de son frère.",
+    "era": "Ministère terrestre de Jésus, vers 29-33 de n. è.",
     "familyAndEntourage": [
       "Lazare",
       "Marie de Béthanie",
-      "Jésus, qui aimait les trois membres de cette famille"
+      "Jésus",
+      "Les disciples"
     ],
     "bibleAccount": [
-      "Elle accueille Jésus chez elle.",
-      "Elle se préoccupe de nombreuses tâches tandis que Marie écoute Jésus.",
-      "Elle exprime sa foi en Jésus avant la résurrection de Lazare.",
-      "Elle participe ensuite à un repas donné en l’honneur de Jésus."
+      "Elle reçoit Jésus chez elle et s’occupe du service.",
+      "Elle demande à Jésus d’intervenir auprès de Marie, puis reçoit de lui une leçon sur ce qui est réellement nécessaire.",
+      "Après la mort de Lazare, elle va à la rencontre de Jésus.",
+      "Elle exprime sa foi en lui comme le Christ, le Fils de Dieu."
     ],
     "qualities": [
       "Hospitalité",
       "Foi",
-      "Franchise"
+      "Franchise",
+      "Service"
     ],
     "difficulties": [
-      "Elle s’est laissé distraire par de nombreuses tâches et a demandé à Jésus d’intervenir dans la situation avec Marie."
+      "Son souci des nombreuses tâches la conduit à perdre momentanément de vue la priorité de l’enseignement spirituel."
     ]
   },
   "mary_bethany": {
@@ -3097,10 +3127,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi : elle a exprimé sa confiance en Jésus lors de la mort de son frère Lazare.",
       "Générosité : elle a manifesté son amour pour Jésus par un acte de grand prix."
     ],
-    "keyReading": "Luc 10:38-42 ; Jean 11:1-44 ; 12:1-8",
+    "keyReading": "Luc 10:38-42; Jean 11:28-45; 12:1-8",
     "location": "Béthanie.",
-    "relationshipWithJehovah": "Marie choisit d’écouter Jésus et lui témoigne ensuite un profond attachement en utilisant un parfum précieux.",
-    "didYouKnow": "Jésus a dit que Marie avait choisi la bonne part.",
+    "relationshipWithJehovah": "Son attachement à Jésus se manifeste par son écoute, sa foi en lui et son geste généreux peu avant sa mort. Jésus présente son geste comme ayant une valeur particulière.",
+    "didYouKnow": "Le parfum utilisé par Marie était du nard pur très coûteux; Judas Iscariote estima qu’il aurait pu être vendu pour 300 deniers.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Marie de Béthanie",
@@ -3119,24 +3149,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ],
-    "identity": "Amie de Jésus — Marie, sœur de Marthe et de Lazare, accorde une grande valeur à l’enseignement de Jésus et lui manifeste son attachement.",
-    "era": "Évangiles",
+    "identity": "Marie de Béthanie était la sœur de Marthe et de Lazare et une amie proche de Jésus. Elle manifesta une grande foi et une profonde reconnaissance envers lui.",
+    "era": "Ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Marthe",
       "Lazare",
       "Jésus"
     ],
     "bibleAccount": [
-      "Écoute Jésus avec attention.",
-      "Exprime sa foi au sujet de Lazare.",
-      "Utilise une huile parfumée coûteuse pour honorer Jésus."
+      "Elle écoute Jésus alors que Marthe s’occupe du service.",
+      "À la mort de Lazare, elle va à la rencontre de Jésus et exprime sa peine.",
+      "Peu avant la mort de Jésus, elle verse sur ses pieds un parfum précieux et les essuie avec ses cheveux."
     ],
     "qualities": [
       "Foi",
-      "Attachement",
-      "Générosité"
+      "Attention aux enseignements de Jésus",
+      "Générosité",
+      "Reconnaissance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle connaît le deuil de son frère et doit accepter que Jésus ne l’ait pas empêché de mourir immédiatement."
+    ]
   },
   "joseph_arimathea": {
     "studyFocus": "Joseph d’Arimathie était un homme riche et membre respecté du Sanhédrin qui a pris position avec courage pour honorer Jésus après sa mort.",
@@ -3145,10 +3178,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Respect : il a demandé le corps de Jésus et lui a fourni une tombe.",
       "Foi : il est présenté comme attendant lui aussi le Royaume de Dieu."
     ],
-    "keyReading": "Matthieu 27:57-60 ; Marc 15:42-46 ; Jean 19:38-42",
+    "keyReading": "Matthieu 27:57-60; Marc 15:42-47; Luc 23:50-56; Jean 19:38-42",
     "location": "Jérusalem et Arimathie.",
-    "relationshipWithJehovah": "Bien qu’il soit membre respecté du Sanhédrin, Joseph ne consent pas au traitement réservé à Jésus et demande son corps pour l’ensevelir.",
-    "didYouKnow": "Il est présenté comme un homme riche et comme disciple de Jésus.",
+    "relationshipWithJehovah": "Il attendait le Royaume et devient suffisamment courageux pour demander publiquement le corps de Jésus. Son acte manifeste son attachement à Jésus malgré le danger social.",
+    "didYouKnow": "Le tombeau dans lequel Jésus fut déposé était un tombeau neuf appartenant à Joseph et taillé dans le roc.",
     "jwResources": [
       {
         "title": "Joseph d’Arimathie — Étude perspicace",
@@ -3163,24 +3196,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Homme riche et disciple de Jésus — Joseph d’Arimathée demande le corps de Jésus et participe à son ensevelissement.",
-    "era": "Évangiles",
+    "identity": "Joseph d’Arimathie était un homme riche, membre respecté du Sanhédrin et disciple de Jésus qui demanda courageusement le corps de Jésus après sa mort.",
+    "era": "Vers 33 de n. è.",
     "familyAndEntourage": [
       "Jésus",
       "Pilate",
-      "Nicodème"
+      "Nicodème",
+      "Les membres du Sanhédrin"
     ],
     "bibleAccount": [
-      "Est présenté comme un homme juste attendant le Royaume de Dieu.",
-      "Demande à Pilate le corps de Jésus.",
-      "Place Jésus dans un tombeau neuf."
+      "Il attendait le Royaume de Dieu.",
+      "Il ne consent pas à la décision du Sanhédrin contre Jésus.",
+      "Après la mort de Jésus, il demande son corps à Pilate.",
+      "Il le dépose dans un tombeau neuf qui lui appartenait."
     ],
     "qualities": [
       "Courage",
-      "Respect",
-      "Attachement"
+      "Respect pour Jésus",
+      "Générosité",
+      "Discrétion"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Son statut au Sanhédrin pouvait rendre risqué le fait de se déclarer publiquement disciple au moment de la mort de Jésus."
+    ]
   },
   "jairus": {
     "studyFocus": "Jaïrus, responsable de synagogue, a humblement demandé l’aide de Jésus lorsque sa fille était mourante et a continué à croire malgré l’annonce de sa mort.",
@@ -3189,10 +3227,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance : il a continué à écouter Jésus lorsque la situation semblait désespérée.",
       "Amour familial : son récit montre la profondeur de son souci pour sa fille."
     ],
-    "keyReading": "Marc 5:21-43 ; Luc 8:40-56",
+    "keyReading": "Marc 5:21-43; Luc 8:40-56",
     "location": "Capharnaüm et ses environs.",
-    "relationshipWithJehovah": "Jaïrus supplie Jésus pour sa fille et continue à faire confiance malgré l’annonce de sa mort.",
-    "didYouKnow": "Jésus lui dit de ne pas avoir peur mais de montrer de la foi.",
+    "relationshipWithJehovah": "Il se tourne vers Jésus dans une situation désespérée. Jésus l’encourage à continuer à exercer la foi même lorsque la nouvelle de la mort de sa fille semble rendre toute intervention impossible.",
+    "didYouKnow": "Jaïrus est présenté comme un « responsable de synagogue », probablement chargé de responsabilités administratives dans le lieu de culte de Capernaüm.",
     "jwResources": [
       {
         "title": "Jaïrus — Étude perspicace",
@@ -3207,22 +3245,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Président de synagogue — Jaïrus demande à Jésus d’aider sa fille malade et assiste à sa guérison.",
-    "era": "Évangiles",
+    "identity": "Jaïrus était un responsable de synagogue dont la fille de 12 ans tomba gravement malade. Il supplia Jésus de venir la sauver.",
+    "era": "Vers 31-32 de n. è.",
     "familyAndEntourage": [
+      "Sa fille unique",
+      "Sa femme",
       "Jésus",
-      "Sa fille"
+      "Pierre, Jacques et Jean"
     ],
     "bibleAccount": [
-      "Supplie Jésus de venir auprès de sa fille.",
-      "Continue à faire confiance malgré l’annonce de la mort de l’enfant.",
-      "Est témoin du retour à la vie de sa fille."
+      "Il tombe aux pieds de Jésus pour demander de l’aide.",
+      "Pendant le trajet, on annonce la mort de sa fille.",
+      "Jésus l’encourage à ne pas avoir peur mais à exercer la foi.",
+      "Jésus entre dans la maison et ressuscite la jeune fille."
     ],
     "qualities": [
       "Foi",
+      "Humilité",
       "Persévérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il subit la peur et le chagrin de voir sa fille mourir avant même l’arrivée de Jésus."
+    ]
   },
   "thomas": {
     "studyFocus": "Thomas était un apôtre sincère qui a exprimé ses doutes après la mort de Jésus, puis a été convaincu par les preuves de sa résurrection.",
@@ -4025,10 +4069,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Humilité : il estimait ne pas être digne de recevoir Jésus chez lui.",
       "Compassion : il se souciait profondément d’un serviteur malade."
     ],
-    "keyReading": "Matthieu 8:5-13; Luc 7:1-10",
+    "keyReading": "Luc 7:1-10; Matthieu 8:5-13",
     "location": "Capharnaüm.",
-    "relationshipWithJehovah": "Jésus présente sa foi comme remarquable. Son attitude montre une confiance profonde dans l’autorité que Jéhovah avait accordée à Jésus.",
-    "didYouKnow": "Le récit souligne que ce centurion ne demanda même pas à Jésus d’entrer chez lui: il estimait qu’une parole de Jésus suffirait.",
+    "relationshipWithJehovah": "Sa foi dans l’autorité de Jésus est remarquable. Jésus la présente comme une foi exceptionnelle en Israël, et le récit montre que l’homme reconnaissait l’autorité divine derrière l’action de Jésus.",
+    "didYouKnow": "Les anciens juifs qui parlent de lui à Jésus soulignent qu’il aimait leur nation et avait construit leur synagogue.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4043,26 +4087,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Un centurion romain de Capharnaüm a demandé à Jésus de guérir son serviteur et a manifesté une foi remarquable dans son autorité.",
-    "era": "Ministère terrestre de Jésus",
+    "identity": "Le centurion romain de Capernaüm était un officier qui avait construit une synagogue pour les Juifs et qui demanda à Jésus de guérir son esclave.",
+    "era": "Vers 30 de n. è., au début du ministère de Jésus",
     "familyAndEntourage": [
-      "Son serviteur malade",
-      "Des anciens des Juifs venus parler en sa faveur",
+      "Son esclave",
+      "Les anciens juifs de Capernaüm",
       "Jésus"
     ],
     "bibleAccount": [
-      "Il se préoccupe de son serviteur malade.",
-      "Il fait demander à Jésus de le guérir.",
-      "Il estime ne pas être digne de recevoir Jésus chez lui.",
-      "Jésus guérit le serviteur."
+      "Son esclave tombe gravement malade.",
+      "Il envoie des anciens juifs demander à Jésus de venir.",
+      "Il estime qu’il n’est pas digne que Jésus entre sous son toit et croit que Jésus peut guérir à distance.",
+      "Jésus loue sa grande foi et l’esclave est guéri."
     ],
     "qualities": [
       "Foi",
       "Humilité",
+      "Générosité",
       "Compassion"
     ],
     "difficulties": [
-      "Il était soumis aux limites de son époque et de son statut militaire, mais le récit ne rapporte pas de faute personnelle précise."
+      "Il doit faire face à la maladie grave de son esclave et reconnaît humblement ses propres limites."
     ]
   },
   "felix": {
@@ -5165,10 +5210,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Joie : elle a accueilli Marie avec affection et reconnaissance.",
       "Humilité : elle a reconnu le privilège accordé à Marie sans jalousie."
     ],
-    "keyReading": "Luc 1:5-25, 39-45, 57-66",
+    "keyReading": "Luc 1:5-25,39-45,57-66",
     "location": "Région montagneuse de Judée.",
-    "relationshipWithJehovah": "Élisabeth accueille Marie et reconnaît avec joie le rôle de son enfant et celui de Jésus.",
-    "didYouKnow": "Elle est une descendante d’Aaron et la mère de Jean le Baptiseur.",
+    "relationshipWithJehovah": "Le récit la présente comme une femme fidèle qui marchait de manière irréprochable selon les commandements de Jéhovah. Elle reconnaît avec joie l’action de Dieu dans la vie de Marie.",
+    "didYouKnow": "Élisabeth était de la famille sacerdotale d’Aaron, tandis que Marie appartenait à la tribu de Juda; la Bible les présente comme parentes sans préciser le degré exact de parenté.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5183,25 +5228,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Mère de Jean le Baptiseur — Élisabeth, femme de Zekaria, est décrite comme juste et devient la mère de Jean le Baptiseur.",
-    "era": "Évangiles",
+    "identity": "Élisabeth était une descendante d’Aaron, épouse du prêtre Zekaria et mère de Jean le Baptiseur. Elle était parente de Marie.",
+    "era": "Juste avant la naissance de Jésus et de Jean",
     "familyAndEntourage": [
       "Zekaria",
       "Jean le Baptiseur",
-      "Marie"
+      "Marie",
+      "Jésus"
     ],
     "bibleAccount": [
-      "Reste fidèle malgré une longue période sans enfant.",
-      "Accueille Marie pendant sa grossesse.",
-      "Donne naissance à Jean.",
-      "Reconnaît avec foi l’importance de l’enfant que porte Marie."
+      "Elle et Zekaria sont décrits comme justes devant Dieu.",
+      "Elle reste enceinte pendant six mois avant la visite de Marie.",
+      "Elle reconnaît sous l’inspiration de l’esprit saint que Marie est la mère du Seigneur.",
+      "Elle donne naissance à Jean et participe au choix de son nom."
     ],
     "qualities": [
       "Foi",
       "Humilité",
       "Reconnaissance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle a longtemps été stérile et âgée lorsqu’elle a conçu Jean."
+    ]
   },
   "joseph_jesus_father": {
     "studyFocus": "Joseph, père adoptif de Jésus, était un homme juste qui a suivi les directives de Jéhovah et a protégé sa famille.",
@@ -5210,10 +5258,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Protection : il a accepté de déplacer sa famille pour protéger Jésus.",
       "Humilité : il a assumé une responsabilité familiale exceptionnelle sans rechercher la gloire."
     ],
-    "keyReading": "Matthieu 1:18-25 ; 2:13-23 ; Luc 2:1-52",
+    "keyReading": "Matthieu 1:18-25; 2:13-23; Luc 2:41-52",
     "location": "Bethléem, Égypte, Nazareth et Jérusalem.",
-    "relationshipWithJehovah": "Joseph obéit aux directives de Jéhovah concernant Marie et Jésus et protège sa famille malgré les difficultés.",
-    "didYouKnow": "Il était charpentier et descendant de David.",
+    "relationshipWithJehovah": "Joseph obéit rapidement aux instructions données par Jéhovah par l’intermédiaire de ses anges et assume fidèlement la responsabilité de protéger Jésus.",
+    "didYouKnow": "Joseph est présenté comme « juste » et comme un homme qui respecte les exigences de la Loi tout en cherchant à agir avec miséricorde envers Marie.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5228,24 +5276,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Charpentier et époux de Marie — Joseph protège Jésus et Marie et agit conformément aux instructions reçues dans les rêves.",
-    "era": "Évangiles",
+    "identity": "Joseph était le mari de Marie et le père adoptif de Jésus. Il était charpentier et descendait de David.",
+    "era": "De la naissance de Jésus jusqu’à son adolescence",
     "familyAndEntourage": [
       "Marie",
-      "Jésus"
+      "Jésus",
+      "Les frères et sœurs de Jésus"
     ],
     "bibleAccount": [
-      "Accepte de prendre Marie pour épouse.",
-      "Protège Jésus en allant en Égypte.",
-      "Retourne s’installer à Nazareth.",
-      "Enseigne à Jésus son métier et l’emmène au temple avec la famille."
+      "Il accepte de prendre Marie pour femme malgré sa grossesse miraculeuse.",
+      "Il protège Jésus en fuyant en Égypte sur instruction divine.",
+      "Il revient avec sa famille et s’installe à Nazareth.",
+      "Il emmène chaque année sa famille à Jérusalem pour la Pâque."
     ],
     "qualities": [
       "Obéissance",
+      "Justice",
       "Courage",
-      "Responsabilité"
+      "Responsabilité familiale"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit protéger sa famille contre Hérode et prendre des décisions rapides sur la base des instructions reçues en rêve."
+    ]
   },
   "joseph_caiaphas": {
     "studyFocus": "Caïphe — grand prêtre au temps de Jésus",
@@ -5298,10 +5350,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Fidélité : elle a continué à être associée aux disciples.",
       "Témoignage : elle faisait partie des femmes qui ont rapporté aux apôtres ce qu’elles avaient vu après la résurrection."
     ],
-    "keyReading": "Luc 8:1-3 ; 24:1-10",
+    "keyReading": "Luc 8:1-3; 24:1-10",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Jeanne fait partie des femmes qui accompagnent Jésus et ses apôtres et les servent avec leurs biens.",
-    "didYouKnow": "Elle était la femme de Chouza, intendant d’Hérode.",
+    "relationshipWithJehovah": "Sa générosité envers Jésus et ses disciples et sa présence comme témoin de la résurrection montrent une foi qui s’exprimait par le soutien matériel et le témoignage.",
+    "didYouKnow": "Luc est le seul Évangile à nommer Jeanne parmi les femmes qui soutenaient Jésus et ses apôtres avec leurs biens.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5316,23 +5368,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Disciple de Jésus — Jeanne, femme de Chuza, fait partie des femmes qui accompagnent Jésus et soutiennent son ministère.",
-    "era": "Évangiles",
+    "identity": "Jeanne était une femme qui avait été guérie par Jésus et qui le soutenait, avec d’autres femmes, au moyen de ses biens.",
+    "era": "Ministère terrestre de Jésus",
     "familyAndEntourage": [
-      "Chuza",
-      "Jésus",
-      "Marie Madeleine"
+      "Chuza, intendant d’Hérode",
+      "Marie Madeleine",
+      "Suzanne",
+      "Jésus"
     ],
     "bibleAccount": [
-      "Suit Jésus avec d’autres femmes.",
-      "Contribue matériellement au soutien du groupe.",
-      "Fait partie des femmes qui témoignent de la résurrection."
+      "Elle avait été guérie par Jésus.",
+      "Elle accompagne Jésus et les Douze.",
+      "Elle subvient à leurs besoins avec ses biens.",
+      "Elle fait partie des femmes qui se rendent au tombeau et annoncent la résurrection de Jésus."
     ],
     "qualities": [
       "Générosité",
+      "Reconnaissance",
+      "Courage",
       "Fidélité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle était liée à la maison d’Hérode par son mari Chuza, tout en soutenant publiquement l’activité de Jésus."
+    ]
   },
   "samaritan_leper": {
     "studyFocus": "Parmi les dix lépreux guéris par Jésus, un Samaritain est revenu pour remercier Dieu et Jésus.",
