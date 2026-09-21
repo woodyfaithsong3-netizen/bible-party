@@ -44,7 +44,7 @@ export default function SettingsScreen() {
       </Section>
 
       <Section title="À PROPOS">
-        <View style={styles.info}><Text style={styles.infoTitle}>Bible Party · V1.9.8</Text><Text style={styles.infoText}>Application indépendante de jeux bibliques. Bible Party n’est pas produite, approuvée, parrainée ou affiliée aux Témoins de Jéhovah.</Text></View>
+        <View style={styles.info}><Text style={styles.infoTitle}>Bible Party · V1.9.9</Text><Text style={styles.infoText}>Application indépendante de jeux bibliques. Bible Party n’est pas produite, approuvée, parrainée ou affiliée aux Témoins de Jéhovah.</Text></View>
         <LinkRow title="Politique de confidentialité" onPress={() => router.push('/privacy')} /><LinkRow title="À propos" onPress={() => router.push('/about')} />
       </Section>
     </ScrollView>
