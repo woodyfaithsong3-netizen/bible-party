@@ -455,17 +455,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "ruth": {
-    "studyFocus": "Ruth était une Moabite devenue veuve qui choisit de rester avec Noémi et d’adorer Jéhovah. Elle travailla humblement pour subvenir à leurs besoins et fut ensuite rachetée par Boaz. Leur fils Obed devint un ancêtre de David.",
+    "studyFocus": "Ruth était une Moabite qui choisit de quitter son pays pour rester avec Noémi et adorer Jéhovah. Elle travailla humblement dans les champs de Boaz, qui devint son racheteur et son mari. Leur fils Obed fut l’ancêtre du roi David et Ruth figure dans la généalogie de Jésus.",
     "lessonPoints": [
-      "Ruth manifesta une fidélité remarquable envers Noémi.",
-      "Elle accepta de quitter son pays et sa parenté pour accompagner Noémi.",
-      "Elle travailla avec humilité pour prendre soin d’elle-même et de sa belle-mère.",
-      "Elle plaça sa confiance en Jéhovah et devint une ancêtre du roi David."
+      "Ruth manifesta un attachement exceptionnel à Noémi et à Jéhovah.",
+      "Elle accepta humblement de travailler comme glaneuse pour subvenir aux besoins du foyer.",
+      "Elle respecta les dispositions de Jéhovah concernant le rachat et le mariage.",
+      "Sa fidélité contribua à une lignée essentielle dans le dessein messianique."
     ],
-    "keyReading": "Ruth 1:6-18 ; 2:1-23 ; 3:1-18 ; 4:1-17 ; Matthieu 1:3-6",
-    "location": "Moab puis Bethléem, en Juda.",
-    "relationshipWithJehovah": "Ruth choisit explicitement le peuple de Noémi et son Dieu comme les siens et démontra cette décision par sa conduite fidèle.",
-    "didYouKnow": "Ruth, une Moabite, figure dans la généalogie de Jésus rapportée par Matthieu.",
+    "keyReading": "Ruth 1:1-22 ; 2:1-23 ; 3:1-18 ; 4:1-22",
+    "location": "Moab puis Bethléhem en Juda.",
+    "relationshipWithJehovah": "Ruth abandonna son ancien cadre religieux pour adopter le peuple de Noémi et son Dieu, Jéhovah.",
+    "didYouKnow": "Le livre de Ruth couvre environ 11 ans et se déroule à l’époque des juges; Ruth est l’une des femmes citées dans la généalogie de Jésus.",
     "jwResources": [
       {
         "title": "Ruth — Étude perspicace des Écritures",
@@ -3091,17 +3091,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "philemon": {
-    "studyFocus": "Philémon était un chrétien de Colosses dont la maison servait de lieu de réunion pour la congrégation. Paul lui écrivit au sujet d’Onésime et lui demanda de l’accueillir avec affection. Philémon avait lui-même manifesté son amour pour les saints.",
+    "studyFocus": "Philémon était un chrétien de Colosses chez qui une congrégation se réunissait. Paul lui écrivit au sujet d’Onésime, son esclave devenu chrétien, et l’encouragea à accueillir Onésime comme un frère.",
     "lessonPoints": [
-      "Philémon était connu pour son amour et sa foi envers Jésus et les autres chrétiens.",
-      "Il mettait sa maison à disposition de la congrégation.",
-      "Paul lui demanda de privilégier l’amour chrétien dans une situation délicate.",
-      "Sa lettre montre comment un problème personnel pouvait être traité avec tact et confiance."
+      "Philémon accueillait les chrétiens chez lui pour le culte.",
+      "Paul comptait sur son amour et sa foi pour traiter Onésime d’une manière chrétienne.",
+      "La lettre montre que les relations entre chrétiens devaient dépasser les barrières sociales.",
+      "Philémon avait la réputation d’encourager et de rafraîchir les autres croyants."
     ],
-    "keyReading": "Philémon 1-25 ; Colossiens 4:9",
-    "location": "Colosses, en Phrygie.",
-    "relationshipWithJehovah": "Paul pouvait faire appel à la foi et à l’amour de Philémon parce que ceux-ci étaient déjà manifestes dans sa conduite chrétienne.",
-    "didYouKnow": "La congrégation se réunissait dans la maison de Philémon, ce qui montre qu’il mettait concrètement ses ressources au service des autres.",
+    "keyReading": "Philémon 1-25",
+    "location": "Colosses, en Asie Mineure.",
+    "relationshipWithJehovah": "Philémon était connu pour son amour envers les saints et sa foi en Jésus; sa maison servait de lieu de réunion pour la congrégation.",
+    "didYouKnow": "Paul dit que Philémon avait été pour lui une source de joie et de réconfort en raison de l’amour qu’il manifestait envers les autres chrétiens.",
     "jwResources": [
       {
         "title": "Philémon — Étude perspicace",
@@ -3146,17 +3146,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "titus": {
-    "studyFocus": "Tite était un collaborateur grec de Paul à qui l’apôtre confia des responsabilités importantes. Paul l’envoya notamment organiser les congrégations de Crète et établir des hommes qualifiés comme anciens. Tite devait aussi enseigner une conduite chrétienne saine.",
+    "studyFocus": "Tite était un collaborateur grec de Paul et un chrétien expérimenté chargé d’aider à organiser les congrégations. Paul lui confia notamment la mission de nommer des anciens dans les villes de Crète.",
     "lessonPoints": [
-      "Tite était un collaborateur fiable auquel Paul pouvait confier des missions difficiles.",
+      "Tite avait gagné la confiance de Paul pour des missions délicates.",
+      "Il accompagna Paul dans certaines étapes importantes du ministère chrétien.",
       "Il reçut la responsabilité d’organiser les congrégations de Crète.",
-      "Il devait enseigner les différentes catégories de croyants à vivre en accord avec la saine doctrine.",
-      "Paul l’encouragea à rester courageux et équilibré dans son service."
+      "Paul l’encouragea à enseigner ce qui était en accord avec la saine doctrine et à donner un bon exemple."
     ],
     "keyReading": "Galates 2:1-3 ; 2 Corinthiens 7:6-16 ; 8:16-24 ; Tite 1:1-16 ; 2:1-15 ; 3:1-15",
-    "location": "Crète et régions de l’est de la Méditerranée.",
-    "relationshipWithJehovah": "Tite servait Dieu aux côtés de Paul et reçut la responsabilité d’aider les congrégations à rester organisées et spirituellement saines.",
-    "didYouKnow": "Contrairement à Timothée, Tite n’avait pas été obligé de se faire circoncire pour accompagner Paul, ce qui illustre le rôle qu’il joua dans la question de la circoncision des non-Juifs.",
+    "location": "Crète et différentes régions du monde méditerranéen.",
+    "relationshipWithJehovah": "Tite servit Jéhovah en collaborant étroitement avec Paul et en prenant soin des congrégations chrétiennes.",
+    "didYouKnow": "Paul appela Tite « mon véritable enfant selon la foi que nous partageons », ce qui montre la relation spirituelle étroite entre eux.",
     "jwResources": [
       {
         "title": "Tite — Étude perspicace",
@@ -3199,17 +3199,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "eutychus": {
-    "studyFocus": "Eutyche était un jeune homme de Troas qui écoutait Paul parler lors d’une réunion prolongée. Assis à une fenêtre, il s’endormit profondément et tomba du troisième étage. Paul le prit dans ses bras et il fut retrouvé vivant, ce qui réconforta profondément les croyants.",
+    "studyFocus": "Eutyche était un jeune homme qui assistait à une réunion chrétienne à Troas lorsque Paul prolongea son discours jusque tard dans la nuit. Assis à une fenêtre, Eutyche s’endormit, tomba du troisième étage et fut relevé vivant après l’intervention de Paul.",
     "lessonPoints": [
-      "Eutyche était présent à une réunion chrétienne malgré l’heure tardive.",
-      "Son accident montre concrètement les conditions de réunion des premiers chrétiens.",
-      "Paul interrompit son discours pour s’occuper de lui et rassurer les frères.",
-      "Après l’événement, les croyants furent particulièrement consolés."
+      "Eutyche voulait écouter les enseignements chrétiens malgré l’heure tardive.",
+      "Son accident rappelle les limites humaines, même dans un contexte spirituel.",
+      "Paul interrompit son discours pour aller auprès de lui.",
+      "L’événement fortifia probablement la foi de la congrégation de Troas."
     ],
     "keyReading": "Actes 20:7-12",
-    "location": "Troas, dans une maison où les chrétiens étaient réunis.",
-    "relationshipWithJehovah": "Le récit rapporte un événement miraculeux qui renforça la foi et consola la congrégation réunie à Troas.",
-    "didYouKnow": "Eutyche était assis à une fenêtre au troisième étage lorsque, profondément endormi, il tomba pendant le long discours de Paul.",
+    "location": "Troas, en Asie Mineure.",
+    "relationshipWithJehovah": "Eutyche participait à une réunion chrétienne et bénéficia de l’intervention miraculeuse rapportée dans Actes.",
+    "didYouKnow": "Eutyche était assis sur une fenêtre du troisième étage lorsque, s’étant profondément endormi pendant le long discours de Paul, il tomba dans la cour.",
     "jwResources": [
       {
         "title": "Eutyche — Étude perspicace",
@@ -3495,16 +3495,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "lydia": {
-    "studyFocus": "Lydie a accepté avec empressement le message chrétien, puis a manifesté son hospitalité envers Paul et ses compagnons.",
+    "studyFocus": "Lydie était une vendeuse de pourpre de Thyatire installée à Philippes. Elle adorait déjà Dieu lorsqu’elle entendit Paul et ses compagnons. Jéhovah ouvrit son cœur pour qu’elle accepte le message, puis elle fut baptisée avec sa maisonnée et offrit l’hospitalité aux missionnaires.",
     "lessonPoints": [
-      "Réceptivité : Jéhovah lui a ouvert le cœur pour qu’elle prête attention au message.",
-      "Hospitalité : elle a insisté pour accueillir les serviteurs de Dieu chez elle.",
-      "Engagement : sa maison est devenue un lieu où les chrétiens pouvaient se réunir."
+      "Lydie était déjà une adoratrice de Dieu et recherchait davantage de connaissance.",
+      "Elle écouta attentivement le message chrétien.",
+      "Elle se fit baptiser avec sa maisonnée après avoir accepté la bonne nouvelle.",
+      "Elle insista pour accueillir Paul et ses compagnons chez elle."
     ],
-    "keyReading": "Actes 16:11-15,40",
-    "location": "Philippes, en Macédoine.",
-    "relationshipWithJehovah": "Le récit dit que Jéhovah ouvrit son cœur pour qu’elle accepte le message. Après son baptême, elle manifesta immédiatement sa foi par l’hospitalité et le soutien concret aux prédicateurs.",
-    "didYouKnow": "Lydie vendait de la pourpre et venait de Thyatire, une ville connue pour ses activités textiles. La Bible indique qu’elle avait une maisonnée, sans préciser si elle était mariée ou veuve.",
+    "keyReading": "Actes 16:11-15, 40",
+    "location": "Thyatire puis Philippes, en Macédoine.",
+    "relationshipWithJehovah": "Jéhovah ouvrit le cœur de Lydie pour qu’elle prête attention à l’enseignement de Paul; elle répondit par la foi, le baptême et l’hospitalité.",
+    "didYouKnow": "Lydie vendait de la pourpre, une activité commerciale associée à Thyatire, et sa maison devint un lieu où Paul et ses compagnons purent se réunir.",
     "jwResources": [
       {
         "title": "Lydie — Étude perspicace",
@@ -3549,16 +3550,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "tabitha": {
-    "studyFocus": "Tabitha, appelée Dorcas, était connue pour ses bonnes actions et sa générosité envers les personnes dans le besoin.",
+    "studyFocus": "Tabitha, appelée Dorcas en grec, était une disciple de Joppé connue pour ses nombreuses bonnes actions et ses dons aux pauvres. Après sa mort, Pierre pria Jéhovah et elle revint à la vie, ce qui fut connu dans toute la ville.",
     "lessonPoints": [
-      "Générosité : elle fabriquait des vêtements et faisait beaucoup de bonnes œuvres.",
-      "Amour concret : son aide bénéficiait particulièrement aux veuves.",
-      "Persévérance dans le bien : son exemple montre que les actes de bonté peuvent laisser une profonde impression."
+      "Tabitha était connue moins pour ses paroles que pour ses actes de bonté.",
+      "Elle fabriquait notamment des vêtements pour les personnes dans le besoin.",
+      "Sa mort fut profondément ressentie par les veuves qu’elle avait aidées.",
+      "Sa résurrection devint un témoignage puissant qui amena beaucoup de gens à croire au Seigneur."
     ],
     "keyReading": "Actes 9:36-43",
-    "location": "Joppé.",
-    "relationshipWithJehovah": "Son attachement au christianisme se voyait dans ses actions répétées en faveur des autres. Sa résurrection par l’intermédiaire de Pierre a aussi donné un puissant témoignage sur la puissance de Dieu.",
-    "didYouKnow": "Tabitha est le seul personnage du Nouveau Testament dont le nom araméen et la forme grecque, Dorcas, sont donnés ensemble dans le récit.",
+    "location": "Joppé, sur la côte méditerranéenne.",
+    "relationshipWithJehovah": "Tabitha servait les autres comme disciple de Jésus, et Jéhovah permit que sa résurrection par l’intermédiaire de Pierre devienne un témoignage public.",
+    "didYouKnow": "Tabitha est le seul personnage biblique dont le récit précise qu’elle était « pleine de bonnes actions » avant de raconter sa résurrection.",
     "jwResources": [
       {
         "title": "Tabitha — Étude perspicace",
@@ -3601,16 +3603,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "stephen": {
-    "studyFocus": "Étienne a défendu courageusement la vérité et a continué à témoigner malgré une opposition violente.",
+    "studyFocus": "Étienne était un chrétien choisi avec six autres hommes pour s’occuper d’une responsabilité particulière envers les veuves de la congrégation de Jérusalem. Il fut ensuite accusé par des opposants, prononça un long témoignage devant le Sanhédrin et mourut lapidé, devenant le premier martyr chrétien rapporté dans la Bible.",
     "lessonPoints": [
-      "Courage : il a parlé avec franchise devant le Sanhédrin.",
-      "Connaissance biblique : son discours montrait une bonne compréhension de l’histoire du peuple de Dieu.",
-      "Pardon : au moment de mourir, il a demandé à Jéhovah de ne pas tenir ce péché contre ses opposants."
+      "Étienne était réputé pour sa sagesse et son esprit saint.",
+      "Il connaissait bien l’histoire d’Israël et utilisa les Écritures pour défendre la vérité.",
+      "Il resta courageux malgré les accusations et la violence.",
+      "Il pria en faveur de ses persécuteurs au moment de mourir."
     ],
-    "keyReading": "Actes 6:1-15; 7:1-60; 8:1-3",
+    "keyReading": "Actes 6:1-15 ; 7:1-60",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Étienne est présenté comme plein de foi et d’esprit saint. Même au moment de mourir, il prie Jéhovah et demande qu’il ne tienne pas compte du péché de ses meurtriers.",
-    "didYouKnow": "Étienne est le premier disciple dont le martyre est raconté dans la Bible. Parmi ceux qui approuvaient son meurtre se trouvait Saul, qui deviendra ensuite l’apôtre Paul.",
+    "relationshipWithJehovah": "Étienne était rempli d’esprit saint, rendait témoignage avec assurance et resta fidèle à Jéhovah jusqu’à sa mort.",
+    "didYouKnow": "Étienne vit dans une vision Jésus debout à la droite de Dieu juste avant d’être lapidé.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Étienne",
@@ -3660,16 +3663,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "ananias_damascus": {
-    "studyFocus": "Ananias de Damas a accepté courageusement de rencontrer Saul malgré ce qu’il savait de son passé, parce qu’il faisait confiance aux instructions de Jéhovah.",
+    "studyFocus": "Ananias de Damas était un disciple à qui Jésus apparut dans une vision et demanda de rechercher Saul, alors persécuteur des chrétiens. Malgré ses craintes, Ananias alla le voir, lui imposa les mains et contribua à son rétablissement et à son baptême.",
     "lessonPoints": [
-      "Courage : il a obéi malgré ses craintes concernant Saul.",
-      "Obéissance : il a fait exactement ce que Jésus lui avait demandé.",
-      "Amour fraternel : il a appelé Saul « frère » et l’a aidé à commencer sa nouvelle vie chrétienne."
+      "Ananias connaissait la réputation dangereuse de Saul mais accepta la mission reçue.",
+      "Il fit confiance à la direction de Jésus malgré son appréhension.",
+      "Il appela Saul « frère », montrant qu’il acceptait sa nouvelle mission chrétienne.",
+      "Son intervention fut déterminante dans les premiers pas de l’apôtre Paul."
     ],
-    "keyReading": "Actes 9:10-19; 22:12-16",
-    "location": "Damas.",
-    "relationshipWithJehovah": "Ananias exprime honnêtement ses craintes mais obéit à Jésus. Sa confiance dans les instructions reçues lui permet de participer à un tournant majeur dans la vie de Saul.",
-    "didYouKnow": "Jésus choisit précisément Ananias, un disciple de Damas, plutôt qu’un apôtre de Jérusalem pour accueillir Saul après sa conversion.",
+    "keyReading": "Actes 9:10-19 ; 22:12-16",
+    "location": "Damas, en Syrie.",
+    "relationshipWithJehovah": "Ananias était un disciple fidèle qui obéit à la direction divine et participa à l’accueil de Saul dans la congrégation chrétienne.",
+    "didYouKnow": "Ananias était réputé favorablement par les Juifs de Damas et la Loi lui servait de cadre de vie avant sa rencontre avec Saul.",
     "jwResources": [
       {
         "title": "Ananias de Damas — Étude perspicace",
@@ -3708,16 +3712,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "philip_evangelizer": {
-    "studyFocus": "Philippe l’évangélisateur était un proclamateur zélé qui a accepté diverses missions et a aidé des personnes à comprendre les Écritures.",
+    "studyFocus": "Philippe l’évangélisateur était l’un des sept hommes choisis à Jérusalem et devint un prédicateur actif. Il annonça la bonne nouvelle en Samarie, à l’eunuque éthiopien et dans plusieurs villes côtières. Ses quatre filles étaient prophétesses.",
     "lessonPoints": [
-      "Zèle : il a prêché dans différentes régions et à des personnes de toutes sortes.",
-      "Souplesse : il a immédiatement suivi la direction reçue pour rencontrer l’Éthiopien.",
-      "Enseignement : il a utilisé les Écritures pour aider sincèrement son interlocuteur à comprendre le message."
+      "Philippe accepta une responsabilité de service dans la congrégation.",
+      "Il prêcha avec enthousiasme en Samarie.",
+      "Il suivit promptement la direction de l’esprit pour rencontrer l’Éthiopien.",
+      "Il continua à servir fidèlement tout en élevant une famille engagée dans le culte."
     ],
-    "keyReading": "Actes 6:1-7; 8:4-40; 21:8-9",
-    "location": "Jérusalem, Samarie, route de Gaza et Césarée.",
-    "relationshipWithJehovah": "Philippe se montre disponible pour suivre les indications de l’esprit et annonce la bonne nouvelle dans des régions nouvelles. Son exemple montre un service souple et missionnaire.",
-    "didYouKnow": "Philippe avait quatre filles qui prophétisaient. Elles vivaient avec lui à Césarée, où Paul et ses compagnons logèrent lors d’un passage.",
+    "keyReading": "Actes 6:1-6 ; 8:4-40 ; 21:8-9",
+    "location": "Jérusalem, Samarie, Gaza, Azot et Césarée.",
+    "relationshipWithJehovah": "Philippe suivit la direction de l’esprit saint dans son activité de prédication et resta un évangélisateur actif.",
+    "didYouKnow": "Philippe avait quatre filles célibataires qui prophétisaient; Actes les présente comme des prophétesses.",
     "jwResources": [
       {
         "title": "Philippe l’évangélisateur — Étude perspicace",
@@ -3763,17 +3768,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_zebedee": {
-    "studyFocus": "Jacques fils de Zébédée était l’un des douze apôtres et le frère de Jean. Jésus lui donna, avec Pierre et Jean, le privilège d’assister à certains événements particuliers. Jacques fut finalement exécuté sur ordre d’Hérode Agrippa Ier.",
+    "studyFocus": "Jacques, fils de Zébédée, était l’un des douze apôtres et l’un des trois disciples particulièrement proches de Jésus avec Pierre et Jean. Il fut témoin de la transfiguration et d’autres événements majeurs. Hérode Agrippa Ier le fit tuer par l’épée.",
     "lessonPoints": [
-      "Jacques quitta son activité de pêcheur pour suivre Jésus.",
-      "Il reçut avec Pierre et Jean plusieurs responsabilités et occasions particulières.",
-      "Jésus corrigea son ambition et celle de son frère concernant les positions importantes.",
-      "Jacques resta fidèle jusqu’à sa mort en martyr."
+      "Jacques répondit rapidement à l’appel de Jésus.",
+      "Il partagea avec Pierre et Jean plusieurs moments particulièrement importants du ministère de Jésus.",
+      "Il dut apprendre à corriger son ambition personnelle et son désir de position.",
+      "Il resta finalement fidèle jusqu’au martyre."
     ],
     "keyReading": "Matthieu 4:18-22 ; 17:1-9 ; Marc 10:35-45 ; Actes 12:1-2",
-    "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Jacques consacra sa vie au service de Jésus et resta fidèle malgré l’opposition jusqu’à sa mort.",
-    "didYouKnow": "Jacques fut le premier des douze apôtres à mourir en martyr selon le récit de Actes 12:2.",
+    "location": "Galilée puis Jérusalem.",
+    "relationshipWithJehovah": "Jacques servit Jésus comme apôtre et mourut fidèle pendant la persécution de la congrégation.",
+    "didYouKnow": "Jacques fut le premier des douze apôtres à mourir en martyr, selon le récit d’Actes 12:2.",
     "jwResources": [
       {
         "title": "Jacques fils de Zébédée — Étude perspicace",
