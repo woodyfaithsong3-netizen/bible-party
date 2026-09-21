@@ -103,7 +103,7 @@ function TrainingScreen() {
     <Text style={[styles.sectionTitle, { marginTop: 24 }]}>Catégorie</Text>
     <View style={styles.wrapRow}>{categories.map(x => <Pressable key={x} onPress={() => setCategory(x)} style={[styles.filterChip, category===x && styles.filterChipActive]}><Text style={[styles.filterChipText,category===x&&{color:colors.bg}]}>{x}</Text></Pressable>)}</View>
     <Text style={[styles.sectionTitle, { marginTop: 24 }]}>Difficulté</Text>
-    <View style={{ flexDirection: 'row', gap: 8 }}>{difficulties.map(([id, label]) => <AppButton key={id} title={label} onPress={() => setDifficulty(id)} variant={difficulty === id ? 'primary' : 'secondary'} style={{ flex: 1 }} />)}</View>
+    <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 8 }}>{difficulties.map(([id, label]) => <AppButton key={id} title={label} onPress={() => setDifficulty(id)} variant={difficulty === id ? 'primary' : 'secondary'} style={{ width: '48%', flexGrow: 1 }} />)}</View>
     {error && <View style={[styles.card, { marginTop: 18, borderColor: colors.danger }]}><Text style={{ color: colors.danger, fontWeight: '800' }}>{error}</Text></View>}
     <View style={{ marginTop: 28 }}>{loading ? <View style={{ alignItems: 'center', padding: 18 }}><ActivityIndicator color={colors.accent} /><Text style={{ color: colors.muted, marginTop: 8 }}>Préparation des questions…</Text></View> : <AppButton title="Commencer l'entraînement →" onPress={start} />}</View>
     <View style={{ marginTop: 10 }}><AppButton title="Retour" onPress={() => router.back()} variant="secondary" /></View>
