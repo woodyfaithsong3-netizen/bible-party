@@ -3595,10 +3595,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Responsabilité : il a participé à la direction de la congrégation de Jérusalem.",
       "Pratique chrétienne : sa lettre insiste sur une foi démontrée par les actions."
     ],
-    "keyReading": "Actes 15:13-29 ; 21:18-25 ; Galates 1:19 ; 2:9",
+    "keyReading": "Jean 7:3-5; 1 Corinthiens 15:7; Actes 12:17; 15:13-21; Galates 1:19; Jacques 1:1",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Jacques devient un chrétien mûr et joue un rôle important dans la congrégation de Jérusalem.",
-    "didYouKnow": "Jésus lui apparaît après sa résurrection, ce qui contribue à sa foi.",
+    "relationshipWithJehovah": "Jacques se présente humblement comme « esclave de Dieu et du Seigneur Jésus Christ ». Son enseignement insiste sur une foi démontrée par les œuvres et sur une conduite qui plaît à Dieu.",
+    "didYouKnow": "JW.org explique que Jacques évite de se présenter comme « frère du Seigneur » dans l’introduction de sa lettre; il se désigne simplement comme esclave de Dieu et de Jésus Christ.",
     "jwResources": [
       {
         "title": "Jacques, frère de Jésus — Étude perspicace",
@@ -3613,25 +3613,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Ancien à Jérusalem — Jacques, frère de Jésus, devient un membre éminent de la congrégation de Jérusalem et intervient lors de la question de la circoncision.",
-    "era": "Congrégation chrétienne du Ier siècle",
+    "identity": "Jacques, demi-frère de Jésus, devint une figure majeure de la congrégation de Jérusalem et rédigea la lettre biblique qui porte son nom.",
+    "era": "Ministère de Jésus puis premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
+      "Marie, sa mère",
       "Jésus",
-      "Pierre",
-      "Paul"
+      "Joseph et ses autres frères",
+      "Jude",
+      "Pierre et Paul"
     ],
     "bibleAccount": [
-      "Est d’abord sceptique envers Jésus avec ses frères.",
-      "Devient ensuite croyant.",
-      "Participe à la décision prise à Jérusalem au sujet des non-Juifs.",
-      "Rédige la lettre biblique qui porte son nom."
+      "Pendant le ministère de Jésus, ses frères ne mettent pas leur foi en lui.",
+      "Après la résurrection, Jésus apparaît personnellement à Jacques.",
+      "Jacques se réunit avec les apôtres à Jérusalem.",
+      "Il joue un rôle majeur dans la réunion concernant la circoncision des non-Juifs.",
+      "Il est reconnu comme l’une des colonnes de la congrégation de Jérusalem et rédige sa lettre."
     ],
     "qualities": [
+      "Humilité",
       "Foi",
-      "Sagesse pratique",
-      "Courage"
+      "Sagesse",
+      "Courage",
+      "Sens pastoral"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il n’a pas cru en Jésus au début de son ministère; plus tard, il doit aider la congrégation à résoudre des questions sensibles."
+    ]
   },
   "jude_brother_jesus": {
     "studyFocus": "Jude, frère de Jésus, s’est présenté comme esclave de Jésus Christ et a exhorté les chrétiens à lutter pour la foi.",
@@ -3640,10 +3647,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Défense de la foi : il a encouragé les chrétiens à protéger les enseignements reçus.",
       "Vigilance : il a averti contre ceux qui introduisaient une conduite mauvaise dans la congrégation."
     ],
-    "keyReading": "Jude 1-25",
+    "keyReading": "Jean 7:3-5; Actes 1:14; Jude 1-25",
     "location": "Palestine et congrégations chrétiennes du Ier siècle.",
-    "relationshipWithJehovah": "Jude encourage les chrétiens à combattre pour la foi et à se garder des influences corrompues.",
-    "didYouKnow": "Il se présente comme esclave de Jésus Christ et frère de Jacques.",
+    "relationshipWithJehovah": "Jude met l’accent sur l’amour de Dieu, la prière par le moyen de l’esprit saint et la nécessité de se garder dans l’amour de Dieu. Il s’identifie humblement comme esclave de Jésus.",
+    "didYouKnow": "Jude ne se présente pas comme apôtre ni comme « frère du Seigneur », mais comme « esclave de Jésus Christ, mais frère de Jacques ».",
     "jwResources": [
       {
         "title": "Jude, frère de Jésus — Étude perspicace",
@@ -3658,23 +3665,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Disciple chrétien — Judas, frère de Jésus, est cité parmi les frères de Jésus et est traditionnellement associé à la lettre de Jude.",
-    "era": "Évangiles",
+    "identity": "Jude, demi-frère de Jésus et frère de Jacques, devint chrétien après la résurrection de Jésus et rédigea la lettre biblique de Jude.",
+    "era": "Premières décennies de la congrégation chrétienne; lettre rédigée vers 65 de n. è.",
     "familyAndEntourage": [
+      "Marie, sa mère",
       "Jésus",
-      "Jacques"
+      "Jacques",
+      "Les autres frères de Jésus",
+      "Les congrégations chrétiennes auxquelles sa lettre s’adresse"
     ],
     "bibleAccount": [
-      "Figure parmi les frères de Jésus.",
-      "Devient croyant après le ministère terrestre de Jésus.",
-      "Encourage les chrétiens à défendre la vraie foi dans la lettre de Jude."
+      "Comme les autres frères de Jésus, il ne croit pas en lui au début.",
+      "Après la résurrection, il se réunit avec les disciples à Jérusalem.",
+      "Il se présente comme esclave de Jésus Christ.",
+      "Il exhorte les chrétiens à livrer un dur combat pour la foi et à rester dans l’amour de Dieu."
     ],
     "qualities": [
-      "Foi",
+      "Humilité",
       "Courage",
-      "Vigilance spirituelle"
+      "Vigilance spirituelle",
+      "Fidélité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il devait autrefois surmonter son incrédulité envers Jésus et, plus tard, avertir les congrégations contre des hommes corrompus qui s’étaient infiltrés."
+    ]
   },
   "philip_apostle": {
     "studyFocus": "Philippe, l’un des douze apôtres, a montré de l’intérêt pour les personnes et a cherché à les conduire vers Jésus.",
@@ -3868,10 +3882,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi : Jésus a encouragé ses parents à ne pas avoir peur mais à exercer la foi.",
       "Tendresse : Jésus a traité cette enfant avec attention et dignité."
     ],
-    "keyReading": "Marc 5:21-43; Luc 8:40-56",
+    "keyReading": "Luc 8:40-56; Marc 5:21-43; Matthieu 9:18-26",
     "location": "Capharnaüm et ses environs.",
-    "relationshipWithJehovah": "La Bible ne rapporte pas de parole ou de prière personnelle de cette enfant. Son récit met plutôt en évidence le pouvoir donné par Jéhovah à Jésus de ressusciter les morts et l’espérance de la résurrection.",
-    "didYouKnow": "Elle avait 12 ans et était l’enfant unique de Jaïrus.",
+    "relationshipWithJehovah": "Le récit ne rapporte pas ses paroles ou sa foi personnelle. Sa résurrection manifeste plutôt la puissance que Jéhovah a donnée à Jésus sur la mort.",
+    "didYouKnow": "Elle avait 12 ans et était l’enfant unique de Jaïrus et de sa femme.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3886,23 +3900,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "La fille de Jaïrus était une fillette de 12 ans, fille unique d’un président de synagogue, que Jésus a ramenée à la vie.",
-    "era": "Vers la fin de 31 ou au début de 32 de n. è., pendant le ministère terrestre de Jésus",
+    "identity": "La fille de Jaïrus était une jeune fille de 12 ans, fille unique d’un responsable de synagogue. Jésus la ramena à la vie.",
+    "era": "Vers 31-32 de n. è., pendant le ministère de Jésus",
     "familyAndEntourage": [
       "Jaïrus, son père",
       "Sa mère",
       "Jésus",
-      "Pierre, Jacques et Jean, témoins de la résurrection"
+      "Pierre, Jacques et Jean"
     ],
     "bibleAccount": [
       "Elle tombe gravement malade.",
-      "Jaïrus demande à Jésus de venir la guérir.",
-      "Elle meurt avant l’arrivée de Jésus à la maison.",
-      "Jésus la prend par la main et la ramène à la vie."
+      "Son père demande à Jésus de venir la guérir.",
+      "Elle meurt avant l’arrivée de Jésus.",
+      "Jésus la prend par la main et lui rend la vie devant ses parents et trois apôtres."
     ],
-    "qualities": [],
+    "qualities": [
+      "Aucun trait de personnalité précis n’est rapporté"
+    ],
     "difficulties": [
-      "Elle a subi une maladie mortelle puis la mort, mais son récit se termine par une résurrection."
+      "Elle subit une maladie mortelle à seulement 12 ans; son récit est surtout présenté à travers la foi et l’épreuve de ses parents."
     ]
   },
   "blind_bartimaeus": {
@@ -3912,10 +3928,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi : il a appelé Jésus « Fils de David », reconnaissant son rôle messianique.",
       "Gratitude : après avoir retrouvé la vue, il a suivi Jésus."
     ],
-    "keyReading": "Marc 10:46-52; Luc 18:35-43",
+    "keyReading": "Marc 10:46-52; Matthieu 20:29-34; Luc 18:35-43",
     "location": "Jéricho.",
-    "relationshipWithJehovah": "Son récit ne rapporte pas une prière adressée directement à Jéhovah, mais sa confiance dans Jésus et sa persévérance illustrent une foi qui agit.",
-    "didYouKnow": "Le nom Bartimée signifie « fils de Timée »; Marc conserve à la fois la forme araméenne et sa traduction.",
+    "relationshipWithJehovah": "Jésus souligne que sa foi a joué un rôle dans sa guérison. Après avoir retrouvé la vue, Bartimée ne repart pas simplement chez lui: il se met à suivre Jésus.",
+    "didYouKnow": "Bartimée signifie « fils de Timée ». Marc est le seul Évangile à donner son nom; Matthieu parle de deux aveugles et Luc d’un seul.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3930,26 +3946,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Bartimée était un aveugle mendiant près de Jéricho qui a crié vers Jésus et a retrouvé la vue.",
-    "era": "Fin du ministère terrestre de Jésus",
+    "identity": "Bartimée était un mendiant aveugle assis près de Jéricho. Il cria vers Jésus, lui demanda de retrouver la vue et le suivit après sa guérison.",
+    "era": "Fin du ministère terrestre de Jésus, peu avant sa mort",
     "familyAndEntourage": [
       "Timée, son père",
       "Jésus",
-      "La foule qui suivait Jésus"
+      "La foule qui accompagnait Jésus"
     ],
     "bibleAccount": [
-      "Il mendie au bord de la route.",
-      "Il apprend que Jésus de Nazareth passe et crie vers lui.",
-      "Malgré les reproches de la foule, il insiste.",
-      "Jésus lui rend la vue et il se met à le suivre."
+      "Il mendie au bord de la route près de Jéricho.",
+      "Il reconnaît Jésus comme le Fils de David et crie pour obtenir son aide.",
+      "Malgré les personnes qui lui ordonnent de se taire, il crie encore plus fort.",
+      "Jésus le guérit et il se met à le suivre."
     ],
     "qualities": [
-      "Persévérance",
       "Foi",
-      "Courage"
+      "Persévérance",
+      "Courage",
+      "Reconnaissance"
     ],
     "difficulties": [
-      "Il devait vivre avec la cécité et la condition sociale difficile d’un mendiant."
+      "Il devait vivre avec la cécité et la mendicité et affronter les tentatives de la foule pour le faire taire."
     ]
   },
   "samaritan_woman": {
