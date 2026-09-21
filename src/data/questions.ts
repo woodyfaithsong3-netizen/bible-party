@@ -1631,6 +1631,30 @@ intruderQuestions.push(...v101ExpertIntruders);
 timesUpQuestions.push(...v101ExpertTimesUp);
 challenges.push(...v101ExpertChallenges);
 
+// Audit éditorial final : supprimer les doublons textuels exacts à l'intérieur d'un même mode.
+// On conserve la première carte afin de préserver les IDs et les enrichissements déjà validés.
+function dedupeInPlace<T>(items: T[], keyOf: (item: T) => string): void {
+  const seen = new Set<string>();
+  for (let i = items.length - 1; i >= 0; i -= 1) {
+    const key = keyOf(items[i]);
+    if (seen.has(key)) items.splice(i, 1);
+    else seen.add(key);
+  }
+}
+
+const normalizeEditorialText = (value: string) => value
+  .normalize('NFD')
+  .replace(/[\\u0300-\\u036f]/g, '')
+  .replace(/[’']/g, "'")
+  .replace(/\\s+/g, ' ')
+  .trim()
+  .toLowerCase();
+
+dedupeInPlace(quizQuestions, item => normalizeEditorialText(item.question));
+dedupeInPlace(trueFalseQuestions, item => normalizeEditorialText(item.statement));
+dedupeInPlace(quoteQuestions, item => normalizeEditorialText(item.quote));
+dedupeInPlace(challenges, item => normalizeEditorialText(item.prompt));
+
 // Exports globaux placés en fin de fichier pour inclure tous les enrichissements.
 export const allQuestions = [
   ...quizQuestions, ...mysteryQuestions, ...trueFalseQuestions, ...challenges,
