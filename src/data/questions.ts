@@ -1650,6 +1650,19 @@ dedupeInPlace(chronologyQuestions);
 dedupeInPlace(intruderQuestions);
 dedupeInPlace(timesUpQuestions);
 
+// Audit inter-modes final : un même personnage/référence avec exactement les mêmes indices
+// ne doit pas être rejoué dans « Qui est-ce ? » et « Time's Up ». On conserve la carte
+// du mode « Qui est-ce ? » et retire uniquement la répétition exacte de « Time's Up ».
+const mysteryClueKeys = new Set(
+  mysteryQuestions.map((q) =>
+    String(q.answer).trim().toLowerCase() + '|' + JSON.stringify((q.clues || []).map((v) => normalizeEditorialText(v))),
+  ),
+);
+for (let i = timesUpQuestions.length - 1; i >= 0; i -= 1) {
+  const q = timesUpQuestions[i];
+  const key = String(q.answer).trim().toLowerCase() + '|' + JSON.stringify((q.clues || []).map((v) => normalizeEditorialText(v)));
+  if (mysteryClueKeys.has(key)) timesUpQuestions.splice(i, 1);
+}
 // Exports globaux placés en fin de fichier pour inclure tous les enrichissements.
 export const allQuestions = [
   ...quizQuestions, ...mysteryQuestions, ...trueFalseQuestions, ...challenges,
