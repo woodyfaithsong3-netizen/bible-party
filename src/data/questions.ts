@@ -1639,10 +1639,16 @@ const normalizeEditorialText = (value: string) => value
   .trim()
   .toLowerCase();
 
+// Nettoyage final après tous les ajouts éditoriaux/enrichissements : certains enrichissements
+// sont ajoutés après le premier passage de déduplication. On repasse donc sur chaque mode ici.
 dedupeInPlace(quizQuestions);
+dedupeInPlace(mysteryQuestions);
 dedupeInPlace(trueFalseQuestions);
-dedupeInPlace(quoteQuestions);
 dedupeInPlace(challenges);
+dedupeInPlace(quoteQuestions);
+dedupeInPlace(chronologyQuestions);
+dedupeInPlace(intruderQuestions);
+dedupeInPlace(timesUpQuestions);
 
 // Exports globaux placés en fin de fichier pour inclure tous les enrichissements.
 export const allQuestions = [
