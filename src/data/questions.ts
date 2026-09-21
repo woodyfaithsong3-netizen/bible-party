@@ -1644,9 +1644,9 @@ function dedupeInPlace<T>(items: T[], keyOf: (item: T) => string): void {
 
 const normalizeEditorialText = (value: string) => value
   .normalize('NFD')
-  .replace(/[\\u0300-\\u036f]/g, '')
+  .replace(/[\u0300-\u036f]/g, '')
   .replace(/[’']/g, "'")
-  .replace(/\\s+/g, ' ')
+   .replace(/\s+/g, ' ')
   .trim()
   .toLowerCase();
 
