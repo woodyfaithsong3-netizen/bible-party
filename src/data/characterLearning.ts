@@ -3817,16 +3817,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_brother_jesus": {
-    "studyFocus": "Jacques, frère de Jésus, est devenu un chrétien mûr et a joué un rôle important dans la congrégation de Jérusalem.",
+    "studyFocus": "Jacques, frère de Jésus, ne devint disciple qu’après la résurrection de Jésus. Il devint ensuite une figure importante de la congrégation de Jérusalem et participa à la décision concernant les croyants non juifs.",
     "lessonPoints": [
-      "Foi : après avoir vu Jésus ressuscité, Jacques est devenu un disciple convaincu.",
-      "Responsabilité : il a participé à la direction de la congrégation de Jérusalem.",
-      "Pratique chrétienne : sa lettre insiste sur une foi démontrée par les actions."
+      "Jacques passa du scepticisme à une foi solide après la résurrection de Jésus.",
+      "Il devint une colonne de la congrégation de Jérusalem.",
+      "Il s’appuya sur les Écritures pour formuler une décision équilibrée.",
+      "Sa lettre insiste sur une foi qui se manifeste par des œuvres."
     ],
-    "keyReading": "Jean 7:3-5; 1 Corinthiens 15:7; Actes 12:17; 15:13-21; Galates 1:19; Jacques 1:1",
+    "keyReading": "Jean 7:2-5 ; Actes 15:1-29 ; 21:17-26 ; Jacques 1:1-27 ; 2:14-26",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Jacques se présente humblement comme « esclave de Dieu et du Seigneur Jésus Christ ». Son enseignement insiste sur une foi démontrée par les œuvres et sur une conduite qui plaît à Dieu.",
-    "didYouKnow": "JW.org explique que Jacques évite de se présenter comme « frère du Seigneur » dans l’introduction de sa lettre; il se désigne simplement comme esclave de Dieu et de Jésus Christ.",
+    "relationshipWithJehovah": "Jacques devint un serviteur fidèle de Dieu et du Seigneur Jésus Christ et contribua à fortifier la congrégation.",
+    "didYouKnow": "Paul mentionne Jacques parmi ceux à qui Jésus ressuscité apparut personnellement.",
     "jwResources": [
       {
         "title": "Jacques, frère de Jésus — Étude perspicace",
@@ -3869,16 +3870,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jude_brother_jesus": {
-    "studyFocus": "Jude, frère de Jésus, s’est présenté comme esclave de Jésus Christ et a exhorté les chrétiens à lutter pour la foi.",
+    "studyFocus": "Jude, frère de Jésus, devint un chrétien fidèle et écrivit une courte lettre pour encourager les croyants à défendre la foi contre des hommes immoraux qui s’étaient infiltrés dans la congrégation.",
     "lessonPoints": [
-      "Humilité : il ne s’est pas présenté en mettant en avant son lien familial avec Jésus.",
-      "Défense de la foi : il a encouragé les chrétiens à protéger les enseignements reçus.",
-      "Vigilance : il a averti contre ceux qui introduisaient une conduite mauvaise dans la congrégation."
+      "Jude se présente humblement comme esclave de Jésus plutôt que de mettre en avant son lien familial.",
+      "Il avertit clairement contre l’immoralité et l’irrespect de l’autorité divine.",
+      "Il encourage les chrétiens à rester spirituellement forts et à aider ceux qui doutent.",
+      "Il termine par une louange à Dieu qui peut préserver ses serviteurs."
     ],
-    "keyReading": "Jean 7:3-5; Actes 1:14; Jude 1-25",
-    "location": "Palestine et congrégations chrétiennes du Ier siècle.",
-    "relationshipWithJehovah": "Jude met l’accent sur l’amour de Dieu, la prière par le moyen de l’esprit saint et la nécessité de se garder dans l’amour de Dieu. Il s’identifie humblement comme esclave de Jésus.",
-    "didYouKnow": "Jude ne se présente pas comme apôtre ni comme « frère du Seigneur », mais comme « esclave de Jésus Christ, mais frère de Jacques ».",
+    "keyReading": "Jude 1-25",
+    "location": "Probablement en Judée ou dans une région liée aux premières congrégations chrétiennes.",
+    "relationshipWithJehovah": "Jude se présente comme esclave de Jésus Christ et appelle les chrétiens à se conserver dans l’amour de Dieu.",
+    "didYouKnow": "Jude était le frère de Jacques; la lettre de Jude ne met pas en avant son lien familial avec Jésus mais son identité de serviteur.",
     "jwResources": [
       {
         "title": "Jude, frère de Jésus — Étude perspicace",
@@ -3919,17 +3921,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "philip_apostle": {
-    "studyFocus": "Philippe était l’un des douze apôtres de Jésus. Originaire de Bethsaïda, il fut parmi les premiers disciples appelés par Jésus et amena Nathanaël à lui. Il apparaît aussi dans plusieurs récits où Jésus enseigna les apôtres.",
+    "studyFocus": "Philippe était l’un des douze apôtres de Jésus et venait de Bethsaïde, la ville de Pierre et André. Il conduisit Nathanaël vers Jésus et fut présent lors de plusieurs événements du ministère de Jésus.",
     "lessonPoints": [
-      "Philippe partagea rapidement avec Nathanaël ce qu’il avait découvert concernant Jésus.",
-      "Il chercha à comprendre concrètement comment répondre aux besoins de la foule.",
-      "Il posa à Jésus des questions révélant parfois une compréhension encore incomplète.",
-      "Son exemple montre qu’une foi sincère peut continuer à progresser grâce à l’enseignement de Jésus."
+      "Philippe répondit rapidement à l’invitation de Jésus.",
+      "Il partagea avec Nathanaël ce qu’il avait découvert.",
+      "Il posa à Jésus des questions qui montrent son désir de comprendre.",
+      "Il resta apôtre fidèle jusqu’à la fin du ministère terrestre de Jésus."
     ],
-    "keyReading": "Jean 1:43-51 ; 6:1-7 ; 12:20-22 ; 14:1-11",
-    "location": "Bethsaïda, Galilée, puis les lieux où Jésus et les apôtres prêchaient.",
-    "relationshipWithJehovah": "Philippe était attaché à Jésus et servait comme l’un de ses douze apôtres, participant à l’œuvre confiée par Dieu à son Fils.",
-    "didYouKnow": "Jésus trouva Philippe le lendemain de l’appel d’André et de Pierre; Philippe alla ensuite chercher Nathanaël.",
+    "keyReading": "Jean 1:43-48 ; 6:1-7 ; 12:20-22 ; 14:6-11",
+    "location": "Bethsaïde en Galilée puis divers lieux du ministère de Jésus.",
+    "relationshipWithJehovah": "Philippe servit Jésus comme apôtre et participa au témoignage concernant le Christ.",
+    "didYouKnow": "Philippe était de Bethsaïde, la même ville que Pierre et André.",
     "jwResources": [
       {
         "title": "Philippe l’apôtre — Étude perspicace",
@@ -3964,16 +3966,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "bartholomew": {
-    "studyFocus": "Barthélemy, probablement Nathanaël, était un disciple qui a reconnu Jésus comme le Fils de Dieu et le Roi d’Israël.",
+    "studyFocus": "Barthélemy est traditionnellement identifié à Nathanaël, disciple présenté dans l’Évangile de Jean. Jésus le complimenta pour sa franchise et son absence de tromperie. Il devint ensuite l’un des Douze.",
     "lessonPoints": [
-      "Sincérité : Jésus a reconnu en lui un homme sans tromperie.",
-      "Réceptivité : il a accepté l’invitation de Philippe à venir voir Jésus.",
-      "Foi : il a rapidement exprimé sa conviction concernant l’identité de Jésus."
+      "Nathanaël manifesta d’abord une réserve honnête concernant Nazareth.",
+      "Il accepta l’invitation de Philippe à venir voir Jésus.",
+      "Jésus souligna sa franchise et son absence de tromperie.",
+      "Il fit partie du groupe des Douze après avoir reconnu Jésus comme le Fils de Dieu et Roi d’Israël."
     ],
-    "keyReading": "Matthieu 10:2-4; Jean 1:43-51; Actes 1:12-14",
-    "location": "Galilée et régions du ministère de Jésus.",
-    "relationshipWithJehovah": "Si Barthélemy est Nathanaël, son attitude initiale réservée envers Nazareth est rapidement dépassée lorsqu’il rencontre Jésus et reconnaît son identité.",
-    "didYouKnow": "« Barthélemy » signifie « fils de Tolmaï ». C’est probablement un nom de famille ou patronyme, ce qui explique qu’il soit désigné autrement dans Jean.",
+    "keyReading": "Jean 1:45-51 ; 21:1-14 ; Matthieu 10:2-4",
+    "location": "Galilée et régions parcourues par Jésus.",
+    "relationshipWithJehovah": "Nathanaël reconnut rapidement l’identité de Jésus et devint son disciple fidèle.",
+    "didYouKnow": "Le nom Barthélemy signifie probablement « fils de Tolmaï »; l’Évangile de Jean utilise le nom Nathanaël plutôt que Barthélemy.",
     "jwResources": [
       {
         "title": "Barthélémy — Étude perspicace",
@@ -4012,16 +4015,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_alphaaeus": {
-    "studyFocus": "Jacques fils d’Alphée faisait partie des douze apôtres, mais les Évangiles donnent peu de détails sur sa vie.",
+    "studyFocus": "Jacques fils d’Alphée était l’un des douze apôtres de Jésus. La Bible donne peu de détails personnels sur lui, mais son nom apparaît dans les listes des apôtres et il resta associé au groupe choisi par Jésus.",
     "lessonPoints": [
-      "Fidélité discrète : être peu mentionné ne signifie pas être peu utile à Jéhovah.",
-      "Disponibilité : Jésus lui a confié une place parmi les douze.",
-      "Persévérance : son service s’est inscrit dans la durée du ministère apostolique."
+      "Jacques accepta l’appel à devenir l’un des Douze.",
+      "Il resta fidèle dans un groupe où certains apôtres étaient beaucoup plus souvent mentionnés.",
+      "Son exemple montre que tous les serviteurs fidèles n’ont pas besoin d’une grande visibilité.",
+      "Les listes apostoliques confirment sa place parmi les proches collaborateurs de Jésus."
     ],
-    "keyReading": "Matthieu 10:2-4; Marc 3:13-19; Actes 1:12-14",
-    "location": "Jérusalem et le territoire d’Israël.",
-    "relationshipWithJehovah": "Même si son rôle est peu détaillé, il reste associé aux Douze et participe à la prière avec les autres disciples après l’ascension de Jésus.",
-    "didYouKnow": "JW.org souligne qu’il faut distinguer Jacques fils d’Alphée de Jacques fils de Zébédée et de Jacques, frère de Jésus.",
+    "keyReading": "Matthieu 10:2-4 ; Marc 3:13-19 ; Luc 6:12-16 ; Actes 1:12-14",
+    "location": "Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Jacques servit fidèlement parmi les Douze, même si les Évangiles rapportent peu de détails sur son activité personnelle.",
+    "didYouKnow": "Jacques fils d’Alphée est parfois appelé « Jacques le Petit » dans certaines traductions, mais la Bible elle-même donne surtout son identité par son père Alphée.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4058,16 +4062,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "simon_zealot": {
-    "studyFocus": "Simon le Zélé était l’un des douze apôtres et a servi aux côtés de disciples issus de milieux très différents.",
+    "studyFocus": "Simon le Zélote était l’un des douze apôtres. Son surnom le distinguait probablement comme ancien membre ou sympathisant d’un mouvement zélote. Jésus choisit pourtant Simon pour faire partie du même groupe que Matthieu, ancien collecteur d’impôts.",
     "lessonPoints": [
-      "Unité : il a servi avec des personnes dont les parcours et opinions pouvaient être très différents des siens.",
-      "Changement : devenir disciple de Jésus exigeait de placer le Royaume au-dessus des anciennes affiliations.",
-      "Fidélité : il est resté parmi les douze apôtres choisis par Jésus."
+      "Simon abandonna son ancienne identité politique pour suivre Jésus.",
+      "Il apprit à collaborer avec des personnes ayant des parcours très différents.",
+      "Il resta parmi les Douze malgré les tensions possibles de leurs anciennes affiliations.",
+      "Son exemple montre que l’unité chrétienne peut dépasser les divisions humaines."
     ],
-    "keyReading": "Luc 6:12-16; Actes 1:12-14",
-    "location": "Jérusalem et le territoire d’Israël.",
-    "relationshipWithJehovah": "Il fait partie du groupe choisi par Jésus et reste parmi les disciples qui persévèrent dans la prière après l’ascension.",
-    "didYouKnow": "Le qualificatif « le Zélé » ne prouve pas à lui seul que Simon appartenait au parti politique des Zélotes; JW.org présente les deux possibilités.",
+    "keyReading": "Luc 6:12-16 ; Matthieu 10:2-4 ; Actes 1:12-14",
+    "location": "Galilée puis Jérusalem.",
+    "relationshipWithJehovah": "Simon servit Jésus comme apôtre et participa au groupe qui reçut l’esprit saint à la Pentecôte.",
+    "didYouKnow": "Simon le Zélote et Matthieu, ancien collecteur d’impôts, faisaient tous deux partie des Douze, malgré leurs parcours très différents.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4105,17 +4110,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jairus_daughter": {
-    "studyFocus": "La fille de Jaïrus était une jeune fille de Galilée qui mourut alors que Jésus se rendait auprès d’elle. Jésus entra dans la maison avec ses parents et quelques apôtres, lui prit la main et la fit revenir à la vie.",
+    "studyFocus": "La fille de Jaïrus était une jeune fille de Galilée dont Jésus ramena la vie après sa mort. Son père, responsable de synagogue, avait demandé à Jésus de venir parce qu’elle était gravement malade.",
     "lessonPoints": [
-      "Sa maladie affecta profondément toute sa famille.",
-      "Jésus encouragea son père à ne pas avoir peur malgré la mauvaise nouvelle.",
-      "La jeune fille fut rendue à ses parents vivante.",
-      "Son récit constitue un témoignage direct du pouvoir de Jésus de ressusciter les morts."
+      "Le récit montre la confiance de Jaïrus malgré la nouvelle de la mort de sa fille.",
+      "Jésus demanda de ne pas avoir peur mais de faire preuve de foi.",
+      "La jeune fille fut rendue à ses parents.",
+      "Le miracle annonçait de façon concrète l’espérance de la résurrection."
     ],
     "keyReading": "Matthieu 9:18-26 ; Marc 5:21-43 ; Luc 8:40-56",
-    "location": "Galilée, dans les environs de Capharnaüm.",
-    "relationshipWithJehovah": "La résurrection de la jeune fille démontra le pouvoir que Jéhovah avait donné à Jésus et renforça la foi de ceux qui en furent témoins.",
-    "didYouKnow": "Jésus lui dit en araméen : « Talitha koumi », expression que Marc traduit par « Jeune fille, je te le dis, lève-toi ! ».",
+    "location": "Galilée, probablement dans la ville où Jaïrus exerçait ses fonctions.",
+    "relationshipWithJehovah": "Le récit montre la puissance donnée par Dieu à Jésus pour ressusciter une jeune fille et fortifier la foi de ceux qui l’entouraient.",
+    "didYouKnow": "Jésus prit la jeune fille par la main et lui dit en araméen une expression qui signifie « Jeune fille, je te le dis : Lève-toi ! ».",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4152,16 +4157,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "blind_bartimaeus": {
-    "studyFocus": "Bartimée, un aveugle mendiant, a persisté à appeler Jésus malgré les reproches de la foule et a manifesté une grande foi.",
+    "studyFocus": "Bartimée était un mendiant aveugle assis près de la route à Jéricho. Lorsqu’il apprit que Jésus passait, il cria pour obtenir sa miséricorde malgré les tentatives de la foule pour le faire taire. Jésus le guérit et il se mit à le suivre.",
     "lessonPoints": [
-      "Persévérance : il n’a pas cessé de crier vers Jésus lorsque la foule voulait le faire taire.",
-      "Foi : il a appelé Jésus « Fils de David », reconnaissant son rôle messianique.",
-      "Gratitude : après avoir retrouvé la vue, il a suivi Jésus."
+      "Bartimée exprima publiquement sa foi malgré les obstacles.",
+      "Il ne laissa pas la foule l’empêcher de chercher l’aide de Jésus.",
+      "Il demanda précisément à retrouver la vue.",
+      "Après sa guérison, il suivit Jésus sur la route."
     ],
-    "keyReading": "Marc 10:46-52; Matthieu 20:29-34; Luc 18:35-43",
+    "keyReading": "Marc 10:46-52 ; Luc 18:35-43",
     "location": "Jéricho.",
-    "relationshipWithJehovah": "Jésus souligne que sa foi a joué un rôle dans sa guérison. Après avoir retrouvé la vue, Bartimée ne repart pas simplement chez lui: il se met à suivre Jésus.",
-    "didYouKnow": "Bartimée signifie « fils de Timée ». Marc est le seul Évangile à donner son nom; Matthieu parle de deux aveugles et Luc d’un seul.",
+    "relationshipWithJehovah": "Bartimée manifesta une foi remarquable envers Jésus et répondit à sa guérison en le suivant.",
+    "didYouKnow": "Marc précise que Bartimée était le fils de Timée; son nom signifie littéralement « fils de Timée ».",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4249,16 +4255,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "roman_centurion": {
-    "studyFocus": "Le centurion romain de Capharnaüm a montré une foi remarquable dans le pouvoir de guérison de Jésus et une grande humilité.",
+    "studyFocus": "Le centurion romain de Capernaüm demanda à Jésus de guérir son serviteur. Il se jugeait indigne de recevoir Jésus chez lui et croyait que sa parole suffisait pour provoquer la guérison.",
     "lessonPoints": [
-      "Foi : il croyait que Jésus pouvait guérir son serviteur sans même venir chez lui.",
-      "Humilité : il estimait ne pas être digne de recevoir Jésus chez lui.",
-      "Compassion : il se souciait profondément d’un serviteur malade."
+      "Le centurion manifesta une grande foi malgré son statut militaire.",
+      "Il se soucia sincèrement d’un serviteur malade.",
+      "Il reconnaissait l’autorité de Jésus sur la maladie.",
+      "Jésus cita sa foi comme remarquable."
     ],
-    "keyReading": "Luc 7:1-10; Matthieu 8:5-13",
-    "location": "Capharnaüm.",
-    "relationshipWithJehovah": "Sa foi dans l’autorité de Jésus est remarquable. Jésus la présente comme une foi exceptionnelle en Israël, et le récit montre que l’homme reconnaissait l’autorité divine derrière l’action de Jésus.",
-    "didYouKnow": "Les anciens juifs qui parlent de lui à Jésus soulignent qu’il aimait leur nation et avait construit leur synagogue.",
+    "keyReading": "Matthieu 8:5-13 ; Luc 7:1-10",
+    "location": "Capernaüm.",
+    "relationshipWithJehovah": "Le centurion exerçait la foi en Jésus et son attitude fut présentée favorablement dans le récit évangélique.",
+    "didYouKnow": "Dans le récit de Matthieu, le centurion dit qu’il n’est pas digne que Jésus entre sous son toit, estimant qu’une parole de Jésus suffirait.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5675,16 +5682,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "woman_issue_blood": {
-    "studyFocus": "La femme qui souffrait de pertes de sang depuis douze ans a manifesté une foi remarquable en Jésus et a reçu une guérison.",
+    "studyFocus": "Une femme souffrant d’écoulements de sang depuis douze ans vint vers Jésus avec la conviction qu’elle serait guérie en touchant son vêtement. Jésus reconnut publiquement sa foi et lui annonça qu’elle était guérie.",
     "lessonPoints": [
-      "Foi : elle croyait qu’un contact avec le vêtement de Jésus suffirait à l’aider.",
-      "Persévérance : elle avait cherché de nombreuses solutions avant de venir à Jésus.",
-      "Humilité : elle a expliqué publiquement ce qui lui était arrivé lorsque Jésus l’a interrogée."
+      "Elle avait beaucoup souffert pendant de nombreuses années.",
+      "Elle fit confiance à Jésus malgré la foule qui l’entourait.",
+      "Elle toucha discrètement le vêtement de Jésus avec foi.",
+      "Jésus la traita avec dignité et souligna sa foi."
     ],
-    "keyReading": "Marc 5:25-34; Matthieu 9:20-22; Luc 8:43-48",
-    "location": "Galilée, probablement près de Capharnaüm.",
-    "relationshipWithJehovah": "Jésus attribue sa guérison à sa foi. Son geste montre sa confiance en la puissance que Jéhovah avait donnée à Jésus.",
-    "didYouKnow": "Marc précise que la maladie durait depuis douze ans et que la femme avait beaucoup souffert entre les mains de nombreux médecins avant de venir à Jésus.",
+    "keyReading": "Matthieu 9:18-26 ; Marc 5:25-34 ; Luc 8:43-48",
+    "location": "Galilée, pendant les déplacements de Jésus.",
+    "relationshipWithJehovah": "Sa foi en Jésus fut reconnue comme le moyen par lequel elle reçut la guérison, dans le cadre de la puissance que Jéhovah avait donnée à Jésus.",
+    "didYouKnow": "Marc rapporte qu’elle avait dépensé tout son argent auprès de nombreux médecins sans obtenir de guérison avant de venir vers Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
