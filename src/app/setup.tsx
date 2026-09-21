@@ -11,7 +11,7 @@ const defaultNames = ['Équipe David', 'Équipe Paul', 'Équipe Ruth', 'Équipe 
 export default function SetupScreen() {
   const [teamsCount, setTeamsCount] = useState(2);
   const [teamNames, setTeamNames] = useState(defaultNames);
-  const [rename, setRename] = useState(false);
+  const [rename, setRename] = useState(true);
 
   const continueToDuration = () => {
     const names = teamNames.slice(0, teamsCount).map((name, i) =>
@@ -62,6 +62,8 @@ export default function SetupScreen() {
         </Pressable>
 
         {rename && (
+          <>
+            <Text style={s.renameTitle}>NOMS DES ÉQUIPES</Text>
           <View style={s.renamePanel}>
             {teamNames.slice(0, teamsCount).map((name, i) => (
               <TextInput
@@ -74,6 +76,7 @@ export default function SetupScreen() {
               />
             ))}
           </View>
+          </>
         )}
 
         <Pressable onPress={continueToDuration} style={s.continue}>
@@ -109,7 +112,8 @@ const s = StyleSheet.create({
   addTeam: { marginTop: 16, height: 49, borderRadius: 25, borderWidth: 1.2, borderColor: 'rgba(116,222,239,.58)', backgroundColor: 'rgba(3,55,67,.68)', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' },
   addPlus: { color: '#FFF', fontSize: 28, lineHeight: 28, marginRight: 7 },
   addText: { color: '#FFF', fontSize: 14, fontWeight: '800' },
-  renamePanel: { marginTop: 10, gap: 8 },
+  renameTitle: { color: '#FFE58A', fontSize: 11, fontWeight: '900', letterSpacing: 1.2, marginTop: 18, marginBottom: 7 },
+  renamePanel: { gap: 8 },
   input: { height: 43, borderRadius: 14, borderWidth: 1, borderColor: 'rgba(255,255,255,.35)', backgroundColor: 'rgba(0,25,32,.58)', color: '#FFF', paddingHorizontal: 13 },
   continue: { marginTop: 20, height: 58, borderRadius: 30, backgroundColor: '#FFC62F', borderWidth: 1.5, borderColor: '#FFE47B', flexDirection: 'row', alignItems: 'center', justifyContent: 'center', shadowColor: '#FFD63D', shadowOpacity: .55, shadowRadius: 15 },
   continueText: { color: '#07333A', fontSize: 18, fontWeight: '900' },
