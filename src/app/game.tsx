@@ -104,7 +104,7 @@ export default function GameScreen() {
   const mode = round === target - 1 ? 'finale' : playable[round % playable.length];
   const question = useMemo<Question>(() => {
     const deck = decks[mode] || quizQuestions;
-    const raw = deck[(round % Math.max(1, deck.length))] || quizQuestions[0];
+    const raw = deck.length ? deck[round % deck.length] : quizQuestions[0];
     // Mélange les propositions à chaque manche et recalcule l'index de la bonne réponse.
     // Sans cela, la base historique avait une forte majorité de bonnes réponses en A.
     if (raw.type === 'quiz' || raw.type === 'quote') {
