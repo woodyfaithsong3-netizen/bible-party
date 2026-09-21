@@ -416,31 +416,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jean-baptiste": {
-    "studyFocus": "Jean prépare les personnes au ministère de Jésus et appelle à la repentance. À observer dans son récit : Courage, Humilité, Conviction.",
+    "studyFocus": "Jean le Baptiseur a préparé le chemin pour le Messie avec courage, humilité et fidélité. Son exemple montre comment défendre ce qui est juste tout en dirigeant l’attention vers Jésus et vers Jéhovah.",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Humilité » dans les épisodes cités.",
-      "Observer la qualité « Conviction » dans les épisodes cités."
+      "Courage : Jean a dénoncé publiquement les mauvaises actions, notamment celles d’Hérode, sans laisser la peur l’empêcher de faire ce qui était juste.",
+      "Humilité : il a reconnu que Jésus devait augmenter tandis que lui devait diminuer, et il s’est présenté comme celui qui préparait le chemin.",
+      "Fidélité : malgré une vie simple, l’opposition et l’emprisonnement, Jean a continué à accomplir la mission que Jéhovah lui avait confiée."
     ],
-    "keyReading": "Prêche et baptise.",
+    "keyReading": "Matthieu 3:1-12 ; Jean 1:19-34 ; Matthieu 11:2-11 ; Marc 6:17-29",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu — Jean le Baptiseur",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/jean-baptiseur-aucun-homme-plus-grand/"
+      },
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
-    ]
+    ],
+    "location": "Région du Jourdain ; il a notamment prêché dans le désert de Judée.",
+    "relationshipWithJehovah": "Jean a été choisi pour préparer le chemin du Messie. Sa vie consacrée à cette mission et son courage face à l’opposition montrent sa fidélité à Jéhovah.",
+    "didYouKnow": "Jésus a dit qu’« aucun homme » parmi ceux qui étaient nés de femmes n’avait été suscité de plus grand que Jean le Baptiseur, tout en soulignant que le plus petit dans le Royaume des cieux serait plus grand que lui (Matthieu 11:11)."
   },
   "marie": {
     "studyFocus": "Marie, mère de Jésus, accepte humblement une mission exceptionnelle et accompagne son fils pendant différentes étapes de sa vie et de son ministère.",
