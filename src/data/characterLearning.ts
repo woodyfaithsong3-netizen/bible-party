@@ -1807,11 +1807,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "philemon": {
-    "studyFocus": "Philémon — un chrétien généreux",
+    "studyFocus": "Philémon a été un chrétien fidèle dont la relation avec Paul et la situation d’Onésime montrent la puissance de l’amour chrétien et du pardon.",
     "lessonPoints": [
-      "Pardon",
-      "Amour fraternel",
-      "Générosité"
+      "Pardon : Paul l’a encouragé à accueillir Onésime comme un frère.",
+      "Amour chrétien : Philémon était connu pour son amour envers les saints.",
+      "Générosité : son foyer était associé à l’accueil et au soutien des chrétiens."
     ],
     "keyReading": "Philémon 1-25",
     "location": "Colosses.",
@@ -1837,11 +1837,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "titus": {
-    "studyFocus": "Tite — un compagnon de travail fiable",
+    "studyFocus": "Tite était un collaborateur fiable de Paul, chargé de responsabilités importantes dans les congrégations et encouragé à rester attaché à un enseignement sain.",
     "lessonPoints": [
-      "Fiabilité",
-      "Bon exemple",
-      "Organisation"
+      "Fiabilité : Paul lui confiait des missions délicates.",
+      "Enseignement sain : Tite devait aider les congrégations à rester attachées à la saine doctrine.",
+      "Bon exemple : il devait montrer dans sa propre conduite ce qu’il enseignait aux autres."
     ],
     "keyReading": "Tite 1:4-5 ; 2:7-8 ; 3:12-15",
     "location": "Crète et autres régions du ministère de Paul.",
@@ -1867,11 +1867,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "eutychus": {
-    "studyFocus": "Eutyche — relevé après un accident",
+    "studyFocus": "Eutyche est surtout connu pour l’événement survenu lors d’une réunion à Troas, qui montre l’intérêt porté par Paul et les chrétiens à la vie de leurs compagnons.",
     "lessonPoints": [
-      "Réunions chrétiennes",
-      "Encouragement",
-      "Confiance en Jéhovah"
+      "Réunions chrétiennes : Eutyche était présent avec les autres disciples pour écouter l’enseignement.",
+      "Courage : après l’accident, les frères ont été profondément rassurés de le retrouver vivant.",
+      "Encouragement : cet épisode montre la valeur du soutien apporté aux compagnons."
     ],
     "keyReading": "Actes 20:7-12",
     "location": "Troas.",
@@ -1923,11 +1923,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "mary_bethany": {
-    "studyFocus": "Marie de Béthanie — attentive aux paroles de Jésus",
+    "studyFocus": "Marie de Béthanie aimait profondément Jésus et montrait son intérêt pour les choses spirituelles en écoutant attentivement son enseignement.",
     "lessonPoints": [
-      "Écouter Jésus",
-      "Générosité",
-      "Attachement spirituel"
+      "Priorités spirituelles : elle a choisi de s’asseoir aux pieds de Jésus pour l’écouter.",
+      "Foi : elle a exprimé sa confiance en Jésus lors de la mort de son frère Lazare.",
+      "Générosité : elle a manifesté son amour pour Jésus par un acte de grand prix."
     ],
     "keyReading": "Luc 10:38-42 ; Jean 11:1-44 ; 12:1-8",
     "location": "Béthanie.",
@@ -1953,11 +1953,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joseph_arimathea": {
-    "studyFocus": "Joseph d’Arimathie — courageux disciple de Jésus",
+    "studyFocus": "Joseph d’Arimathie était un homme riche et membre respecté du Sanhédrin qui a pris position avec courage pour honorer Jésus après sa mort.",
     "lessonPoints": [
-      "Courage",
-      "Respect pour Jésus",
-      "Actions au bon moment"
+      "Courage : il n’a pas laissé sa position sociale l’empêcher d’agir en faveur de Jésus.",
+      "Respect : il a demandé le corps de Jésus et lui a fourni une tombe.",
+      "Foi : il est présenté comme attendant lui aussi le Royaume de Dieu."
     ],
     "keyReading": "Matthieu 27:57-60 ; Marc 15:42-46 ; Jean 19:38-42",
     "location": "Jérusalem et Arimathie.",
@@ -2005,11 +2005,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "thomas": {
-    "studyFocus": "Thomas — sa foi a grandi",
+    "studyFocus": "Thomas était un apôtre sincère qui a exprimé ses doutes après la mort de Jésus, puis a été convaincu par les preuves de sa résurrection.",
     "lessonPoints": [
-      "Questions sincères",
-      "Foi fondée sur des preuves",
-      "Persévérance"
+      "Sincérité : Thomas n’a pas caché ce qu’il avait du mal à croire.",
+      "Foi fondée sur des preuves : lorsqu’il a vu Jésus ressuscité, il a réagi avec conviction.",
+      "Persévérance : malgré ses moments de doute, il est resté attaché au groupe des disciples."
     ],
     "keyReading": "Jean 11:16 ; 14:1-7 ; 20:24-29",
     "location": "Jérusalem et la Judée.",
@@ -2031,11 +2031,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "lydia": {
-    "studyFocus": "Lydie — hospitalité et ouverture d’esprit",
+    "studyFocus": "Lydie a accepté avec empressement le message chrétien, puis a manifesté son hospitalité envers Paul et ses compagnons.",
     "lessonPoints": [
-      "Hospitalité",
-      "Réceptivité",
-      "Générosité"
+      "Réceptivité : Jéhovah lui a ouvert le cœur pour qu’elle prête attention au message.",
+      "Hospitalité : elle a insisté pour accueillir les serviteurs de Dieu chez elle.",
+      "Engagement : sa maison est devenue un lieu où les chrétiens pouvaient se réunir."
     ],
     "keyReading": "Actes 16:11-15, 40",
     "location": "Philippes, en Macédoine.",
@@ -2061,11 +2061,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "tabitha": {
-    "studyFocus": "Tabitha — connue pour ses bonnes œuvres",
+    "studyFocus": "Tabitha, appelée Dorcas, était connue pour ses bonnes actions et sa générosité envers les personnes dans le besoin.",
     "lessonPoints": [
-      "Générosité",
-      "Bonnes œuvres",
-      "Amour concret"
+      "Générosité : elle fabriquait des vêtements et faisait beaucoup de bonnes œuvres.",
+      "Amour concret : son aide bénéficiait particulièrement aux veuves.",
+      "Persévérance dans le bien : son exemple montre que les actes de bonté peuvent laisser une profonde impression."
     ],
     "keyReading": "Actes 9:36-43",
     "location": "Joppé.",
@@ -2091,11 +2091,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "stephen": {
-    "studyFocus": "Étienne — un témoin courageux",
+    "studyFocus": "Étienne a défendu courageusement la vérité et a continué à témoigner malgré une opposition violente.",
     "lessonPoints": [
-      "Courage",
-      "Connaissance des Écritures",
-      "Pardonner sous la persécution"
+      "Courage : il a parlé avec franchise devant le Sanhédrin.",
+      "Connaissance biblique : son discours montrait une bonne compréhension de l’histoire du peuple de Dieu.",
+      "Pardon : au moment de mourir, il a demandé à Jéhovah de ne pas tenir ce péché contre ses opposants."
     ],
     "keyReading": "Actes 6:1-15 ; 7:1-60 ; 8:1-4",
     "location": "Jérusalem.",
@@ -2125,11 +2125,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "ananias_damascus": {
-    "studyFocus": "Ananias de Damas — un disciple courageux",
+    "studyFocus": "Ananias de Damas a accepté courageusement de rencontrer Saul malgré ce qu’il savait de son passé, parce qu’il faisait confiance aux instructions de Jéhovah.",
     "lessonPoints": [
-      "Obéissance",
-      "Courage",
-      "Voir les autres comme Jéhovah les voit"
+      "Courage : il a obéi malgré ses craintes concernant Saul.",
+      "Obéissance : il a fait exactement ce que Jésus lui avait demandé.",
+      "Amour fraternel : il a appelé Saul « frère » et l’a aidé à commencer sa nouvelle vie chrétienne."
     ],
     "keyReading": "Actes 9:10-19 ; 22:12-16",
     "location": "Damas.",
@@ -2151,11 +2151,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "philip_evangelizer": {
-    "studyFocus": "Philippe l’évangélisateur — un prédicateur disponible",
+    "studyFocus": "Philippe l’évangélisateur était un proclamateur zélé qui a accepté diverses missions et a aidé des personnes à comprendre les Écritures.",
     "lessonPoints": [
-      "Disponibilité",
-      "Enseignement",
-      "Prêcher à tous"
+      "Zèle : il a prêché dans différentes régions et à des personnes de toutes sortes.",
+      "Souplesse : il a immédiatement suivi la direction reçue pour rencontrer l’Éthiopien.",
+      "Enseignement : il a utilisé les Écritures pour aider sincèrement son interlocuteur à comprendre le message."
     ],
     "keyReading": "Actes 6:1-7 ; 8:4-40 ; 21:8-9",
     "location": "Jérusalem, Samarie, route de Gaza et Césarée.",
@@ -2181,11 +2181,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_zebedee": {
-    "studyFocus": "Jacques fils de Zébédée — apôtre fidèle",
+    "studyFocus": "Jacques, fils de Zébédée, faisait partie des apôtres proches de Jésus et a appris à transformer son zèle initial en fidélité jusqu’à la mort.",
     "lessonPoints": [
-      "Zèle",
-      "Loyauté",
-      "Persévérance"
+      "Zèle : Jésus avait surnommé Jacques et Jean « Boanergès », montrant leur tempérament énergique.",
+      "Humilité : il a dû apprendre que la vraie grandeur chrétienne consiste à servir.",
+      "Fidélité : Jacques est devenu le premier apôtre à subir une mort violente pour sa foi."
     ],
     "keyReading": "Matthieu 4:21-22 ; 17:1-8 ; Actes 12:1-2",
     "location": "Galilée et Jérusalem.",
