@@ -121,17 +121,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "abraham": {
-    "studyFocus": "Abraham quitta Our sur l’ordre de Jéhovah, vécut comme résident étranger en Canaan et fut appelé « père de tous ceux qui ont foi ». Sa vie met en évidence une foi qui se traduit par des décisions, de l’obéissance, de l’hospitalité et une confiance durable dans les promesses de Jéhovah.",
+    "studyFocus": "Abraham fut appelé par Jéhovah à quitter Our et à se rendre dans un pays qu’il lui montrerait. Il devint l’ancêtre d’une grande descendance promise et montra sa foi par de nombreux actes d’obéissance. Sa vie fut marquée par des déplacements, des épreuves et des promesses concernant la descendance et la bénédiction des nations.",
     "lessonPoints": [
-      "Observer ce qu’Abraham abandonna lorsqu’il quitta Our et comment sa foi a guidé ses déplacements.",
-      "Étudier ses prières et son intervention au sujet de Sodome pour voir son intérêt pour la justice et la miséricorde.",
-      "Étudier l’épreuve d’Isaac et la façon dont Abraham a agi sur la base de sa confiance en Jéhovah.",
-      "Comparer sa foi à des actes concrets plutôt qu’à une simple conviction intérieure."
+      "Abraham quitta sa patrie sur la base d’une promesse divine.",
+      "Il bâtit des autels et invoqua régulièrement le nom de Jéhovah.",
+      "Il dut attendre longtemps l’accomplissement de certaines promesses.",
+      "Il fut prêt à offrir Isaac lorsque Jéhovah le lui demanda, démontrant une foi exceptionnelle."
     ],
-    "keyReading": "Genèse 12:1-9; 18:16-33; 22:1-18; Hébreux 11:8-19",
-    "location": "Our en Chaldée ; Harân ; Canaan, notamment Sichem, Béthel, Hébron et les environs de Beer-Shéba.",
-    "relationshipWithJehovah": "Abraham agit sur la foi, construit des autels, prie et accepte des instructions difficiles. Jéhovah le considère comme son ami en raison de sa foi et de ses actions.",
-    "didYouKnow": "Abraham avait environ 75 ans lorsqu’il quitta Harân pour le pays que Jéhovah lui montrerait.",
+    "keyReading": "Genèse 12:1-9 ; 15:1-21 ; 18:1-33 ; 22:1-19 ; Hébreux 11:8-19 ; Jacques 2:21-23",
+    "location": "Our, Harân, Canaan et plusieurs régions du Proche-Orient.",
+    "relationshipWithJehovah": "Abraham développa une relation de confiance avec Jéhovah et est appelé « ami de Jéhovah » en raison de sa foi et de son obéissance.",
+    "didYouKnow": "Abraham avait 75 ans lorsqu’il quitta Harân pour poursuivre son voyage vers le pays que Jéhovah lui avait indiqué.",
     "jwResources": [
       {
         "title": "Abraham — Étude perspicace des Écritures",
@@ -565,16 +565,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "david": {
-    "studyFocus": "David fut berger, musicien, guerrier, roi et psalmiste. Il manifesta une confiance remarquable en Jéhovah, mais commit aussi de graves péchés et accepta ensuite la correction.",
+    "studyFocus": "David fut berger, musicien, guerrier puis roi d’Israël. Il fut choisi par Jéhovah alors qu’il était encore jeune et devint célèbre après avoir vaincu Goliath. Sa vie connut aussi de graves fautes, mais il accepta les reproches et manifesta une profonde repentance.",
     "lessonPoints": [
-      "Étudier comment sa confiance s’est développée avant son règne.",
-      "Comparer son attitude envers Saül avec l’affaire Bath-Shéba.",
-      "Observer son repentir et ses prières après sa faute."
+      "David développa sa confiance en Jéhovah alors qu’il gardait les moutons.",
+      "Il attribua la victoire sur Goliath à Jéhovah plutôt qu’à sa propre force.",
+      "Il commit des péchés graves, notamment dans l’affaire de Bath-Shéba.",
+      "Il accepta la correction de Nathan et manifesta une repentance sincère."
     ],
-    "keyReading": "1 Samuel 16:1-13 ; 17:32-50 ; 24 ; 2 Samuel 11–12 ; Psaume 51",
-    "location": "Bethléhem, Juda et Jérusalem.",
-    "relationshipWithJehovah": "David recherchait la direction de Jéhovah et, après ses fautes graves, accepta la correction et manifesta un repentir sincère.",
-    "didYouKnow": "David est présenté comme berger, musicien, poète, soldat, homme d’État, prophète et roi.",
+    "keyReading": "1 Samuel 16:1-13 ; 17:1-58 ; 24:1-22 ; 2 Samuel 11:1-27 ; 12:1-25 ; Psaume 51",
+    "location": "Bethléem, Juda, Jérusalem et le royaume d’Israël.",
+    "relationshipWithJehovah": "David avait une foi profonde en Jéhovah, même s’il commit de graves péchés. Il accepta la correction et revint sincèrement vers Dieu.",
+    "didYouKnow": "David composa de nombreux psaumes et jouait de la harpe; il était aussi connu comme « un homme selon le cœur » de Jéhovah dans le contexte de son attachement à Dieu.",
     "jwResources": [
       {
         "title": "David — Étude perspicace des Écritures",
@@ -880,16 +881,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "marie": {
-    "studyFocus": "Marie, mère de Jésus, fut une jeune Juive choisie pour donner naissance au Fils de Dieu. Elle accepta humblement cette responsabilité et resta parmi les disciples après la mort de Jésus.",
+    "studyFocus": "Marie était la mère de Jésus. Elle accepta humblement la mission annoncée par l’ange Gabriel, donna naissance à Jésus à Bethléem et conserva dans son cœur plusieurs événements concernant son fils. Elle resta présente lors de sa mort et fut ensuite associée aux disciples après sa résurrection.",
     "lessonPoints": [
-      "Observer sa réaction à l’annonce de Gabriel.",
-      "Étudier sa connaissance des Écritures visible dans Luc 1.",
-      "Examiner sa présence parmi les disciples après la résurrection de Jésus."
+      "Marie accepta avec humilité une mission qui allait bouleverser sa vie.",
+      "Elle méditait profondément sur les événements concernant Jésus.",
+      "Elle manifesta du courage en restant proche de Jésus jusque lors de son exécution.",
+      "Elle continua à fréquenter les disciples après la mort et la résurrection de Jésus."
     ],
     "keyReading": "Luc 1:26-56 ; 2:1-52 ; Jean 2:1-12 ; 19:25-27 ; Actes 1:12-14",
-    "location": "Nazareth, Bethléhem et Jérusalem.",
-    "relationshipWithJehovah": "Marie était très favorisée par Dieu en raison de sa foi et devint ensuite disciple de Jésus.",
-    "didYouKnow": "Marie eut d’autres enfants avec Joseph; Marc 6:3 nomme quatre fils et mentionne aussi des filles.",
+    "location": "Nazareth, Bethléem, Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Marie se soumit humblement à la volonté de Jéhovah et manifesta une foi profonde dans les promesses concernant son fils.",
+    "didYouKnow": "Marie était présente avec les disciples après l’ascension de Jésus, selon Actes 1:14.",
     "jwResources": [
       {
         "title": "Marie est-elle la mère de Dieu ?",
@@ -1252,12 +1254,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "boaz": {
-    "studyFocus": "Boaz était un propriétaire terrien de Bethléem, parent d’Élimélek et homme connu pour sa bonté. Il permit à Ruth, une Moabite veuve, de glaner dans ses champs et veilla à sa sécurité. Il devint finalement son mari et participa ainsi à la lignée menant à David.",
+    "studyFocus": "Boaz était un propriétaire terrien de Bethléem et un parent d’Élimélek. Il traita Ruth avec bonté, respecta les dispositions de la Loi sur le glanage et accepta finalement d’assumer le rôle de racheteur. Son mariage avec Ruth contribua à la lignée de David.",
     "lessonPoints": [
-      "Boaz respectait les dispositions de la Loi concernant les pauvres et les étrangers.",
-      "Il protégea Ruth contre les mauvais traitements et lui témoigna une grande générosité.",
-      "Il agit honorablement dans une affaire qui concernait le droit de rachat.",
-      "Il considéra la réputation spirituelle de Ruth et son attachement à Jéhovah."
+      "Boaz respectait les dispositions de Jéhovah en faveur des pauvres.",
+      "Il protégea Ruth et lui parla avec dignité.",
+      "Il régla honnêtement la question du droit de rachat devant les anciens.",
+      "Il apprécia la fidélité de Ruth envers Noémi et son choix d’adorer Jéhovah."
     ],
     "keyReading": "Ruth 2:1-23 ; 3:1-18 ; 4:1-17 ; Matthieu 1:3-6",
     "jwResources": [
@@ -1274,9 +1276,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "location": "Bethléem, dans le territoire de Juda.",
-    "relationshipWithJehovah": "Boaz respectait Jéhovah et ses dispositions de la Loi; il reconnut la confiance de Ruth dans le Dieu d’Israël.",
-    "didYouKnow": "Boaz et Ruth furent les parents d’Obed, le père de Jessé et le grand-père de David.",
+    "location": "Bethléem, en Juda.",
+    "relationshipWithJehovah": "Boaz respectait la Loi de Jéhovah et reconnut la confiance de Ruth dans le Dieu d’Israël.",
+    "didYouKnow": "Boaz devint l’arrière-grand-père du roi David par l’intermédiaire d’Obed et de Jessé.",
     "identity": "Propriétaire terrien et parent de Noémi — Boaz traite Ruth avec bonté et devient son rédempteur familial.",
     "era": "Ruth",
     "familyAndEntourage": [
@@ -3338,17 +3340,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joseph_arimathea": {
-    "studyFocus": "Joseph d’Arimathie était un homme riche et membre respecté du Sanhédrin qui attendait le Royaume de Dieu. Il ne soutint pas la décision du conseil concernant Jésus et, après la mort de Jésus, demanda son corps à Pilate et le plaça dans un tombeau neuf.",
+    "studyFocus": "Joseph d’Arimathie était un membre respecté du Sanhédrin qui attendait le Royaume de Dieu. Il ne donna pas son accord à la décision contre Jésus et demanda ensuite son corps à Pilate. Il le plaça dans un tombeau neuf qu’il avait fait tailler dans le roc.",
     "lessonPoints": [
-      "Joseph attendait le Royaume de Dieu alors qu’il faisait partie d’un milieu religieux influent.",
-      "Il ne consentit pas à la décision prise contre Jésus.",
-      "Il eut le courage de demander le corps de Jésus à Pilate.",
-      "Il utilisa son propre tombeau pour honorer Jésus après son exécution."
+      "Joseph attendait le Royaume de Dieu malgré sa position au sein du conseil juif.",
+      "Il ne suivit pas simplement la décision de tous les membres du conseil.",
+      "Il prit un risque en demandant publiquement le corps de Jésus.",
+      "Il utilisa ses ressources pour honorer Jésus après son exécution."
     ],
     "keyReading": "Matthieu 27:57-61 ; Marc 15:42-47 ; Luc 23:50-56 ; Jean 19:38-42",
-    "location": "Jérusalem et Arimathie, ville d’origine de Joseph.",
-    "relationshipWithJehovah": "Joseph est présenté comme un homme juste qui attendait le Royaume de Dieu et qui manifesta son attachement à Jésus au moment où celui-ci mourut.",
-    "didYouKnow": "Le tombeau de Joseph était neuf et avait été taillé dans le roc; il n’avait encore servi à personne.",
+    "location": "Jérusalem et Arimathie.",
+    "relationshipWithJehovah": "Joseph est présenté comme un homme juste qui attendait le Royaume de Dieu et manifesta son attachement à Jésus au moment de sa mort.",
+    "didYouKnow": "Le tombeau utilisé pour Jésus était un tombeau neuf, taillé dans le roc, dans lequel personne n’avait encore été déposé.",
     "jwResources": [
       {
         "title": "Joseph d’Arimathie — Étude perspicace",
@@ -3437,17 +3439,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "thomas": {
-    "studyFocus": "Thomas était l’un des douze apôtres de Jésus. Il est souvent associé à son doute concernant la résurrection, mais le récit montre aussi son attachement courageux à Jésus et sa déclaration de foi lorsqu’il vit Jésus ressuscité.",
+    "studyFocus": "Thomas, appelé Didyme, faisait partie des douze apôtres. Il accompagna Jésus pendant son ministère et, après la mort de Jésus, eut besoin d’être convaincu de sa résurrection. Lorsqu’il vit Jésus ressuscité, il exprima une foi personnelle très forte.",
     "lessonPoints": [
-      "Thomas voulait des preuves concrètes avant d’accepter le témoignage des autres disciples.",
-      "Il avait auparavant manifesté sa disposition à mourir avec Jésus.",
-      "Jésus lui donna avec patience les éléments dont il avait besoin pour fortifier sa foi.",
-      "Thomas finit par reconnaître Jésus comme son Seigneur et son Dieu."
+      "Thomas resta attaché à Jésus même dans les moments difficiles.",
+      "Il exprima honnêtement ses doutes au lieu de faire semblant d’être convaincu.",
+      "Jésus lui donna des raisons concrètes de fortifier sa foi.",
+      "Thomas passa du doute à une déclaration de foi envers Jésus ressuscité."
     ],
-    "keyReading": "Jean 11:7-16 ; 14:1-7 ; 20:24-29 ; 21:1-2",
+    "keyReading": "Jean 11:7-16 ; 14:1-7 ; 20:24-29",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Thomas progressa d’une foi hésitante à une déclaration personnelle de foi envers Jésus ressuscité.",
-    "didYouKnow": "Jean 20:28 rapporte la déclaration de Thomas à Jésus : « Mon Seigneur et mon Dieu ! ».",
+    "relationshipWithJehovah": "Thomas développa sa foi en Jésus et reconnut finalement en lui son Seigneur et son Dieu.",
+    "didYouKnow": "Thomas est aussi appelé Didyme, nom grec qui signifie « jumeau ».",
     "jwResources": [
       {
         "title": "Thomas — Étude perspicace",
@@ -3754,16 +3756,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_zebedee": {
-    "studyFocus": "Jacques, fils de Zébédée, faisait partie des apôtres proches de Jésus et a appris à transformer son zèle initial en fidélité jusqu’à la mort.",
+    "studyFocus": "Jacques fils de Zébédée était l’un des douze apôtres et le frère de Jean. Jésus lui donna, avec Pierre et Jean, le privilège d’assister à certains événements particuliers. Jacques fut finalement exécuté sur ordre d’Hérode Agrippa Ier.",
     "lessonPoints": [
-      "Zèle : Jésus avait surnommé Jacques et Jean « Boanergès », montrant leur tempérament énergique.",
-      "Humilité : il a dû apprendre que la vraie grandeur chrétienne consiste à servir.",
-      "Fidélité : Jacques est devenu le premier apôtre à subir une mort violente pour sa foi."
+      "Jacques quitta son activité de pêcheur pour suivre Jésus.",
+      "Il reçut avec Pierre et Jean plusieurs responsabilités et occasions particulières.",
+      "Jésus corrigea son ambition et celle de son frère concernant les positions importantes.",
+      "Jacques resta fidèle jusqu’à sa mort en martyr."
     ],
-    "keyReading": "Matthieu 4:21-22; 17:1-9; Marc 10:35-45; Actes 12:1-2",
+    "keyReading": "Matthieu 4:18-22 ; 17:1-9 ; Marc 10:35-45 ; Actes 12:1-2",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Jésus lui accorde une grande confiance en l’incluant parmi les trois témoins de certains événements majeurs. Son parcours montre aussi qu’un disciple zélé devait apprendre l’humilité.",
-    "didYouKnow": "Jacques est le premier des Douze dont la Bible rapporte explicitement la mort en martyr.",
+    "relationshipWithJehovah": "Jacques consacra sa vie au service de Jésus et resta fidèle malgré l’opposition jusqu’à sa mort.",
+    "didYouKnow": "Jacques fut le premier des douze apôtres à mourir en martyr selon le récit de Actes 12:2.",
     "jwResources": [
       {
         "title": "Jacques fils de Zébédée — Étude perspicace",
@@ -4425,16 +4428,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "berenice": {
-    "studyFocus": "Bérénice était présente lors de l’audience où Paul défendit sa foi devant Agrippa et Festus.",
+    "studyFocus": "Bérénice était une sœur du roi Agrippa II et se trouvait avec lui lorsque Paul comparut devant Festus. Elle participa ainsi à l’audience au cours de laquelle Paul expliqua sa foi et son activité. Le récit biblique ne donne pas suffisamment d’éléments pour déterminer sa réaction personnelle au témoignage de Paul.",
     "lessonPoints": [
-      "Attention au témoignage : elle a entendu directement la défense de Paul.",
-      "Contexte historique : son récit illustre le cadre officiel dans lequel Paul a rendu témoignage.",
-      "Responsabilité personnelle : entendre la vérité ne remplace pas une réponse personnelle."
+      "Bérénice assista à une audience où la bonne nouvelle fut exposée devant des responsables importants.",
+      "La scène montre que le témoignage chrétien pouvait atteindre des personnes occupant des positions élevées.",
+      "Le récit distingue les faits rapportés de ce que Bérénice pensa personnellement.",
+      "Elle fournit un exemple de personne ayant entendu un témoignage chrétien sans que la Bible précise sa réponse."
     ],
-    "keyReading": "Actes 25:13-27; 26:1-32",
-    "location": "Césarée.",
-    "relationshipWithJehovah": "La Bible ne rapporte pas sa foi personnelle. Elle était présente lors d’une occasion où Paul donna un témoignage détaillé sur Jésus et la résurrection.",
-    "didYouKnow": "Bérénice était sœur d’Agrippa II et de Drusille; elle était donc également membre de la famille d’Hérode Agrippa Ier.",
+    "keyReading": "Actes 25:13-27 ; 26:1-32",
+    "location": "Césarée, en Judée.",
+    "relationshipWithJehovah": "La Bible rapporte sa présence lors de l’audience de Paul mais ne précise pas qu’elle devint adoratrice de Jéhovah.",
+    "didYouKnow": "Bérénice était présente avec Agrippa II et le gouverneur Festus lorsque Paul défendit sa foi devant eux.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4565,16 +4569,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "epaphroditus": {
-    "studyFocus": "Épaphrodite s’est dépensé au service de Paul et des Philippiens et a risqué sa vie pour l’œuvre du Seigneur.",
+    "studyFocus": "Épaphrodite était un chrétien de Philippes envoyé à Paul pour lui apporter une aide matérielle. Il tomba gravement malade mais continua à se soucier des autres. Paul le renvoya ensuite avec une lettre destinée à la congrégation de Philippes.",
     "lessonPoints": [
-      "Abnégation : il a accepté de prendre des risques pour servir.",
-      "Affection fraternelle : il était préoccupé par la peine que son état causait aux Philippiens.",
-      "Fidélité : Paul l’a présenté comme un homme digne d’estime."
+      "Épaphrodite accepta de voyager pour soutenir Paul.",
+      "Il risqua sa vie dans son service et tomba gravement malade.",
+      "Même malade, il se préoccupait de l’inquiétude des Philippiens à son sujet.",
+      "Paul demanda à la congrégation de l’accueillir avec joie et honneur."
     ],
-    "keyReading": "Philippiens 2:25-30; 4:18",
-    "location": "Philippes et Rome.",
-    "relationshipWithJehovah": "Paul le présente comme frère, collaborateur et compagnon de combat. Il place le service chrétien et les intérêts des autres au-dessus de son confort.",
-    "didYouKnow": "Paul dit qu’Épaphrodite a été très malade, près de mourir, et que Dieu a eu pitié de lui.",
+    "keyReading": "Philippiens 2:25-30 ; 4:10-20",
+    "location": "Philippes et probablement Rome.",
+    "relationshipWithJehovah": "Épaphrodite servait avec dévouement la congrégation et Paul et fut prêt à prendre des risques pour le service chrétien.",
+    "didYouKnow": "Paul dit qu’Épaphrodite avait été malade au point de presque mourir, mais que Dieu avait eu pitié de lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5013,17 +5018,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "manoah_father": {
-    "studyFocus": "Manoah était le père de Samson et le mari de la femme qui avait été stérile. Lorsque l’ange de Jéhovah annonça la naissance de Samson, Manoah demanda des instructions sur la manière d’élever l’enfant. Il pria aussi pour comprendre la mission particulière de son fils.",
+    "studyFocus": "Manoa était le père de Samson et le mari d’une femme stérile à qui un ange annonça la naissance future de leur fils. Il demanda à Jéhovah des indications sur l’éducation de l’enfant. Manoa participa ensuite à l’éducation de Samson selon les instructions reçues.",
     "lessonPoints": [
-      "Manoah demanda à Jéhovah de l’aider à élever correctement son fils.",
-      "Il chercha des instructions précises plutôt que de compter uniquement sur ses propres idées.",
-      "Avec sa femme, il offrit un sacrifice à Jéhovah après la rencontre avec l’ange.",
-      "Son exemple montre l’intérêt de demander à Jéhovah de la sagesse pour les responsabilités familiales."
+      "Manoa pria pour recevoir des directives concernant l’enfant promis.",
+      "Il voulait savoir comment élever correctement son fils.",
+      "Il accepta les instructions de l’ange de Jéhovah.",
+      "Son exemple montre l’importance de rechercher la direction divine pour élever un enfant."
     ],
     "keyReading": "Juges 13:1-25",
-    "location": "Manoa vivait à Tsora, dans le territoire de Dan.",
-    "relationshipWithJehovah": "Manoah pria Jéhovah et chercha sa direction concernant l’éducation de Samson et l’annonce faite par l’ange.",
-    "didYouKnow": "Le récit ne donne pas le nom de la femme de Manoah, alors que le père de Samson est nommé.",
+    "location": "La région de Tsora, dans le territoire de Dan.",
+    "relationshipWithJehovah": "Manoa pria Jéhovah et rechercha sa direction lorsqu’il apprit la naissance annoncée de Samson.",
+    "didYouKnow": "L’ange qui annonça la naissance de Samson donna à la mère des instructions alimentaires particulières avant même la naissance de l’enfant.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5144,17 +5149,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "amos": {
-    "studyFocus": "Amos était un éleveur et cultivateur de sycomores de Tekoa que Jéhovah envoya prophétiser contre le royaume d’Israël. Il dénonça l’injustice, l’oppression des pauvres et un culte devenu hypocrite.",
+    "studyFocus": "Amos était un éleveur et cultivateur de sycomores de Tekoa que Jéhovah envoya prophétiser au royaume d’Israël. Il dénonça l’injustice, l’oppression des pauvres et une adoration devenue hypocrite. Il transmit son message malgré l’opposition du prêtre Amatsia.",
     "lessonPoints": [
-      "Amos n’était pas issu d’une école de prophètes mais fut choisi pour transmettre un message précis.",
-      "Il dénonça l’exploitation des pauvres et les pratiques religieuses hypocrites.",
-      "Il ne se laissa pas intimider lorsqu’Amatsia, prêtre de Béthel, lui demanda de partir.",
-      "Son message montre que Jéhovah attend que l’adoration soit accompagnée de justice et d’intégrité."
+      "Amos n’était pas issu d’une école de prophètes mais reçut une mission de Jéhovah.",
+      "Il dénonça courageusement l’exploitation et l’injustice.",
+      "Il refusa de modifier son message sous la pression d’un responsable religieux.",
+      "Il rappela que le culte de Dieu doit être accompagné d’une conduite juste."
     ],
-    "keyReading": "Amos 1:1 ; 3:7,8 ; 5:10-24 ; 7:10-17 ; 8:4-7 ; 9:11-15",
-    "location": "Tekoa en Juda et Béthel dans le royaume d’Israël.",
-    "relationshipWithJehovah": "Amos accepta la mission que Jéhovah lui confia et parla avec courage malgré l’opposition.",
-    "didYouKnow": "Amos était éleveur et cultivait des sycomores avant d’être envoyé prophétiser, comme il l’explique lui-même en Amos 7:14,15.",
+    "keyReading": "Amos 1:1 ; 3:7-8 ; 5:10-24 ; 7:10-17 ; 8:4-7 ; 9:11-15",
+    "location": "Tekoa en Juda puis le royaume d’Israël, notamment Béthel.",
+    "relationshipWithJehovah": "Amos considérait sa mission prophétique comme un ordre de Jéhovah et transmit fidèlement son message malgré l’opposition.",
+    "didYouKnow": "Amos se décrit comme un éleveur et comme quelqu’un qui travaillait les figuiers-sycomores avant d’être envoyé prophétiser.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5189,17 +5194,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "micah": {
-    "studyFocus": "Michée était un prophète de Juda qui dénonça la corruption des dirigeants et annonça des jugements tout en donnant des promesses d’espoir. Son livre contient notamment la prophétie concernant Bethléem comme lieu associé au futur dirigeant d’Israël.",
+    "studyFocus": "Michée était un prophète de Juda qui dénonça la corruption des chefs, des prêtres et des prophètes infidèles. Il annonça aussi des promesses importantes concernant la domination future et la paix. Son message associait jugement et espérance.",
     "lessonPoints": [
-      "Michée dénonça les chefs qui exploitaient le peuple.",
-      "Il annonça le jugement mais aussi la restauration du vrai culte.",
-      "Il résuma les exigences de Jéhovah par la justice, la fidélité et la modestie.",
-      "Ses prophéties montrent que Jéhovah peut donner de l’espoir même au milieu d’un jugement."
+      "Michée dénonça l’injustice même lorsqu’elle concernait des personnes puissantes.",
+      "Il rappela les qualités que Jéhovah attend de ses adorateurs.",
+      "Il annonça la naissance du futur dirigeant à Bethléem.",
+      "Son message montre que Jéhovah condamne l’injustice mais offre aussi une espérance."
     ],
-    "keyReading": "Michée 1:1-16 ; 3:1-12 ; 4:1-13 ; 5:1-5 ; 6:6-8 ; 7:1-20",
-    "location": "Juda, notamment la région de Morésheth.",
-    "relationshipWithJehovah": "Michée transmit courageusement les messages de Jéhovah et rappela au peuple ce que Dieu attendait de lui.",
-    "didYouKnow": "Michée 5:2 est cité en Matthieu 2:5,6 en rapport avec Bethléem et la naissance du Messie.",
+    "keyReading": "Michée 1:1-16 ; 3:1-12 ; 4:1-5 ; 5:1-5 ; 6:6-8",
+    "location": "Juda, particulièrement les régions rurales et Jérusalem.",
+    "relationshipWithJehovah": "Michée transmit courageusement les jugements et les promesses de Jéhovah et rappela ce que Dieu attend de ceux qui veulent lui plaire.",
+    "didYouKnow": "Michée 5:2 identifie Bethléem Éphrata comme le lieu d’où sortirait un futur dirigeant en Israël, prophétie appliquée à Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5233,17 +5238,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "obadiah": {
-    "studyFocus": "Abdias est l’auteur du plus court livre des Écritures hébraïques. Son message condamne Édom pour son attitude envers Juda lors de la catastrophe qui frappa Jérusalem et annonce que Jéhovah rétablirait son peuple.",
+    "studyFocus": "Abdias fut un prophète dont le livre annonce le jugement contre Édom. Il dénonça notamment la joie malveillante des Édomites devant le malheur de leurs frères, les descendants de Jacob. Le livre se termine par une annonce de restauration pour le peuple de Jéhovah.",
     "lessonPoints": [
-      "Abdias montre que Jéhovah observe la manière dont les nations traitent son peuple.",
-      "Le jugement d’Édom est lié à son orgueil et à sa violence envers Jacob.",
-      "Le livre ne s’arrête pas au jugement : il annonce le rétablissement du peuple de Jéhovah.",
-      "Son message rappelle que l’orgueil et la réjouissance face au malheur d’autrui peuvent avoir de graves conséquences."
+      "Jéhovah condamne la joie malveillante devant le malheur d’autrui.",
+      "Abdias montre que la violence et l’orgueil nationaux ne restent pas impunis.",
+      "Le jugement annoncé contre Édom s’inscrit dans la fidélité de Jéhovah à ses normes de justice.",
+      "La prophétie se termine sur l’idée que la souveraineté appartiendrait à Jéhovah."
     ],
     "keyReading": "Abdias 1-21",
-    "location": "Le contexte concerne Édom et Juda, notamment Jérusalem.",
-    "relationshipWithJehovah": "Abdias transmit un jugement divin contre Édom et termina par une déclaration sur la royauté de Jéhovah.",
-    "didYouKnow": "Avec seulement 21 versets, Abdias est le livre le plus court des Écritures hébraïques.",
+    "location": "Juda; le contexte de la prophétie concerne particulièrement Édom et Jérusalem.",
+    "relationshipWithJehovah": "Abdias transmit un message de jugement de Jéhovah contre Édom et une annonce de rétablissement pour son peuple.",
+    "didYouKnow": "Le livre d’Abdias est le plus court des livres prophétiques des Écritures hébraïques, avec seulement 21 versets.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5277,17 +5282,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "joel": {
-    "studyFocus": "Joël est un prophète dont le livre décrit une invasion dévastatrice de sauterelles et appelle le peuple à revenir à Jéhovah. Il annonce aussi l’effusion de l’esprit et le jour de Jéhovah.",
+    "studyFocus": "Joël fut un prophète dont le message commence par une invasion de sauterelles et appelle le peuple à revenir sincèrement vers Jéhovah. Il annonce ensuite des bénédictions, l’effusion de l’esprit et le jour de Jéhovah.",
     "lessonPoints": [
-      "Joël utilisa une catastrophe nationale pour pousser le peuple à examiner sa relation avec Jéhovah.",
-      "Il insista sur une repentance sincère, pas seulement extérieure.",
-      "Il annonça que Jéhovah peut faire preuve de miséricorde envers ceux qui reviennent vers lui.",
-      "Pierre cita la prophétie de Joël concernant l’effusion de l’esprit saint à la Pentecôte."
+      "Joël invita le peuple à revenir vers Jéhovah avec tout son cœur.",
+      "Il montra que la repentance véritable ne consiste pas seulement en gestes extérieurs.",
+      "Il annonça que Jéhovah pouvait restaurer ce qui avait été dévasté.",
+      "Sa prophétie sur l’esprit saint fut appliquée à la Pentecôte."
     ],
     "keyReading": "Joël 1:1-20 ; 2:1-32 ; 3:1-21",
     "location": "Juda et Jérusalem.",
-    "relationshipWithJehovah": "Joël invita le peuple à revenir à Jéhovah « de tout son cœur » et à avoir confiance dans sa miséricorde.",
-    "didYouKnow": "Actes 2:16-21 applique à la Pentecôte la prophétie de Joël 2:28-32 sur l’effusion de l’esprit.",
+    "relationshipWithJehovah": "Joël exhorta le peuple à revenir vers Jéhovah et rappela que Dieu est miséricordieux envers ceux qui se repentent sincèrement.",
+    "didYouKnow": "Actes 2:16-21 applique aux événements de la Pentecôte la prophétie de Joël concernant l’effusion de l’esprit saint.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5463,17 +5468,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joseph_jesus_father": {
-    "studyFocus": "Joseph, mari de Marie et père adoptif de Jésus, était un charpentier de la famille de David. Il accepta de prendre Marie pour épouse malgré une situation qui pouvait susciter des questions et suivit les instructions de Jéhovah pour protéger Jésus, notamment en fuyant en Égypte.",
+    "studyFocus": "Joseph était le père adoptif de Jésus et un descendant de David. Il était charpentier et époux de Marie. Il suivit les instructions de Jéhovah transmises par des anges, protégeant Jésus enfant en partant notamment en Égypte puis en revenant s’installer à Nazareth.",
     "lessonPoints": [
-      "Joseph se montra juste et miséricordieux envers Marie.",
-      "Il accepta rapidement les instructions reçues en rêve.",
-      "Il protégea Jésus en obéissant à l’ordre de fuir en Égypte.",
-      "Il éleva Jésus dans une famille qui respectait la Loi et fréquentait Jérusalem pour les fêtes."
+      "Joseph accepta la situation inhabituelle concernant la grossesse de Marie après avoir reçu une explication divine.",
+      "Il protégea Jésus en obéissant rapidement aux avertissements reçus.",
+      "Il prit soin de sa famille en exerçant le métier de charpentier.",
+      "Il transmit à Jésus l’environnement familial et religieux d’un Juif fidèle."
     ],
-    "keyReading": "Matthieu 1:18-25 ; 2:13-23 ; Luc 2:1-52",
-    "location": "Bethléhem, Égypte, puis Nazareth en Galilée.",
-    "relationshipWithJehovah": "Joseph obéit à plusieurs reprises aux instructions transmises par les anges et adapta ses décisions pour protéger l’enfant Jésus.",
-    "didYouKnow": "Joseph était charpentier, et Jésus est aussi appelé « le fils du charpentier » en Matthieu 13:55.",
+    "keyReading": "Matthieu 1:18-25 ; 2:13-23 ; Luc 2:1-52 ; Jean 1:45 ; 6:42",
+    "location": "Bethléem, Égypte et Nazareth.",
+    "relationshipWithJehovah": "Joseph obéit aux instructions reçues de Jéhovah et assuma fidèlement ses responsabilités envers Marie et Jésus.",
+    "didYouKnow": "Joseph n’est plus mentionné dans les récits du ministère public de Jésus; cela peut indiquer qu’il était décédé auparavant, mais la Bible ne précise pas les circonstances de sa mort.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5609,16 +5614,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "samaritan_leper": {
-    "studyFocus": "Parmi les dix lépreux guéris par Jésus, un Samaritain est revenu pour remercier Dieu et Jésus.",
+    "studyFocus": "L’un des dix lépreux guéris par Jésus était un Samaritain. Alors que les dix furent guéris en chemin vers les prêtres, lui revint glorifier Dieu et remercier Jésus. Jésus souligna que cet homme avait manifesté une foi remarquable.",
     "lessonPoints": [
-      "Reconnaissance : il est revenu rendre gloire à Dieu.",
-      "Foi : Jésus a souligné sa foi lorsqu’il l’a félicité.",
-      "Humilité : il n’a pas considéré la guérison comme un droit acquis."
+      "Les dix hommes obéirent à Jésus en allant se montrer aux prêtres.",
+      "Le Samaritain remarqua immédiatement sa guérison et revint remercier Jésus.",
+      "Il glorifia Dieu publiquement au lieu de considérer la guérison comme acquise.",
+      "Son exemple montre l’importance de la reconnaissance envers Jéhovah pour ses bienfaits."
     ],
     "keyReading": "Luc 17:11-19",
-    "location": "Entre Samarie et Galilée.",
-    "relationshipWithJehovah": "Il glorifie Dieu après avoir constaté sa guérison et revient remercier Jésus. Sa réaction montre que la foi authentique s’accompagne de reconnaissance.",
-    "didYouKnow": "Jésus remarqua expressément que le seul homme revenu pour rendre gloire à Dieu était un Samaritain, alors que les neuf autres étaient eux aussi guéris.",
+    "location": "Entre la Samarie et la Galilée.",
+    "relationshipWithJehovah": "Le Samaritain glorifia Dieu après sa guérison et manifesta sa foi en revenant remercier Jésus.",
+    "didYouKnow": "Jésus précisa que les neuf autres hommes guéris ne revinrent pas pour rendre gloire à Dieu, alors que celui qui revint était Samaritain.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5849,17 +5855,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "mary_mother_james": {
-    "studyFocus": "Marie, mère de Jacques, fait partie des femmes qui accompagnèrent Jésus et ses disciples. Elle observa l’endroit où Jésus avait été déposé et vint ensuite au tombeau. Elle est un exemple de disciple fidèle et attentif aux événements entourant la mort et la résurrection de Jésus.",
+    "studyFocus": "Marie, mère de Jacques, faisait partie des femmes fidèles qui suivirent Jésus. Elle observa sa mise au tombeau et figura parmi celles qui se rendirent ensuite au tombeau. Les Évangiles la distinguent d’autres Marie par le nom de son fils Jacques.",
     "lessonPoints": [
-      "Elle resta attachée à Jésus jusque dans les événements difficiles de sa mort.",
-      "Elle faisait partie des femmes qui observèrent le tombeau.",
-      "Elle participa au service envers Jésus et ses disciples.",
-      "Son exemple montre la valeur d’une fidélité discrète et persévérante."
+      "Elle resta proche de Jésus dans les moments difficiles.",
+      "Elle prit au sérieux les événements liés à la mort de Jésus.",
+      "Elle fit partie des femmes qui se rendirent au tombeau.",
+      "Son service fidèle ne dépendait pas d’une position publique importante."
     ],
-    "keyReading": "Matthieu 27:55-61 ; 28:1-10 ; Marc 15:40-47 ; 16:1-8 ; Luc 24:1-10",
+    "keyReading": "Matthieu 27:55-61 ; 28:1-10 ; Marc 15:40-47 ; 16:1-8",
     "location": "Jérusalem et ses environs.",
-    "relationshipWithJehovah": "Marie manifesta son attachement au Christ et participa fidèlement au service des disciples.",
-    "didYouKnow": "Les Évangiles mentionnent Marie, mère de Jacques, parmi les femmes présentes près de Jésus lors de sa mort et qui se rendirent au tombeau.",
+    "relationshipWithJehovah": "Marie manifesta son attachement à Jésus et participa fidèlement au service des disciples.",
+    "didYouKnow": "Les Évangiles utilisent le nom de Jacques pour distinguer cette Marie d’autres femmes portant le même prénom.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5946,16 +5952,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "apphia": {
-    "studyFocus": "Apphia est saluée avec Philémon et Archippe dans la lettre de Paul, ce qui montre qu’elle faisait partie de la communauté chrétienne liée à la maison de Philémon.",
+    "studyFocus": "Apphia était une chrétienne mentionnée dans l’introduction de la lettre à Philémon, avec Philémon et Archippe. La lettre était adressée à la famille chrétienne et à la congrégation qui se réunissait dans la maison de Philémon. Elle faisait donc partie du cadre familial et congrégationnel auquel Paul écrivit.",
     "lessonPoints": [
-      "Foi : elle était associée aux chrétiens auxquels Paul adressait ses encouragements.",
-      "Hospitalité : son nom apparaît dans le contexte d’une maison utilisée pour les réunions chrétiennes.",
-      "Responsabilité : son association avec Philémon et Archippe rappelle la contribution de chacun dans la congrégation."
+      "Apphia est associée directement à une congrégation chrétienne de Colosses.",
+      "Elle était suffisamment connue pour être nommée dans une lettre adressée à la maisonnée et à la congrégation.",
+      "Sa mention rappelle la participation des femmes à la vie des premières congrégations.",
+      "La Bible ne donne pas davantage de détails biographiques sur son rôle précis."
     ],
     "keyReading": "Philémon 1-7",
-    "location": "Colosses.",
-    "relationshipWithJehovah": "Elle est associée à une famille chrétienne qui accueillait une assemblée et à laquelle Paul demande d’exercer l’amour chrétien envers Onésime.",
-    "didYouKnow": "Apphia est l’une des femmes auxquelles Paul adresse personnellement une de ses lettres.",
+    "location": "Colosses, en Phrygie.",
+    "relationshipWithJehovah": "Apphia est mentionnée parmi les chrétiens associés à Philémon et à la congrégation réunie dans sa maison.",
+    "didYouKnow": "Apphia est l’une des rares femmes nommées dans les salutations d’une lettre de Paul adressée à une congrégation ou à une maisonnée chrétienne.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
