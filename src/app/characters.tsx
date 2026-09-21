@@ -58,7 +58,7 @@ export default function CharactersScreen() {
     <Text style={styles.subtitle}>Qui ils sont, ce qu’ils ont fait, leurs qualités et ce que leurs récits permettent d’apprendre.</Text>
     <TextInput value={query} onChangeText={setQuery} placeholder="Rechercher un personnage…" placeholderTextColor={colors.muted} style={[styles.input, { marginTop: 18 }]} />
     <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8, paddingVertical: 12 }}>
-      {eras.map(era => <Pressable key={era} onPress={() => setSelectedEra(era)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: selectedEra === era ? colors.accent : colors.border, backgroundColor: selectedEra === era ? colors.accentSoft : colors.card }}><Text style={{ color: selectedEra === era ? colors.background : colors.text, fontSize: 11, fontWeight: '900' }}>{era}</Text></Pressable>)}
+      {eras.map(era => <Pressable key={era} onPress={() => setSelectedEra(era)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: selectedEra === era ? colors.accent : colors.border, backgroundColor: selectedEra === era ? colors.accent : colors.surface }}><Text style={{ color: selectedEra === era ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{era}</Text></Pressable>)}
     </ScrollView>
     <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginBottom: 12 }}>{filtered.length} fiches disponibles</Text>
     {filtered.map(item => <ProfileCard key={item.id} item={item} onPress={() => setSelected(item)} />)}
