@@ -32,6 +32,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -171,6 +175,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Joseph avait 17 ans lorsqu’il fut emmené en Égypte et 30 ans lorsqu’il fut établi dans une haute fonction auprès de Pharaon.",
     "jwResources": [
       {
+        "title": "« Comment pourrais-je commettre ce grand mal ? »",
+        "url": "https://www.jw.org/fr/bibliotheque/revues/wp20141101/"
+      },
+      {
         "title": "Marche courageusement avec Dieu — chapitre consacré à joseph",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/joseph-a-resiste-a-la-tentation/"
       },
@@ -181,10 +189,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Joseph — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Joseph/"
-      },
-      {
-        "title": "Joseph : « Écoutez, s’il vous plaît, ce rêve »",
-        "url": "https://www.jw.org/fr/bibliotheque/revues/wp20140801/joseph-et-ses-freres/"
       }
     ]
   },
@@ -362,6 +366,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -388,6 +396,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -434,6 +446,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Daniel avait environ 15 ans lorsqu’il fut emmené à Babylone, selon la chronologie présentée par les publications JW.",
     "jwResources": [
       {
+        "title": "Que dit la Bible à propos de Daniel ?",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/questions-bibliques/daniel-dans-la-bible/"
+      },
+      {
         "title": "Daniel — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
@@ -467,6 +483,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "location": "Région du Jourdain ; il a notamment prêché dans le désert de Judée.",
@@ -587,6 +607,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -614,6 +638,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -665,6 +693,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "location": "Bethléhem en Juda ; Moab ; retour à Bethléhem et environnement de la famille d’Élimélek.",
@@ -688,6 +720,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "location": "Bethléhem en Juda, notamment les champs de Boaz et l’espace public où les démarches légales sont effectuées.",
@@ -711,6 +747,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "location": "Royaume d’Israël et régions voisines ; notamment Abel-Mehola, Jéricho, Samarie, Dothan et les territoires concernés par son activité prophétique.",
@@ -803,6 +843,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -863,6 +907,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -886,6 +934,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -914,6 +966,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Ruth 4:11",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -942,6 +998,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Hébreux 12:16",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -970,6 +1030,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible — Hébreux 5-7",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -997,6 +1061,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1024,6 +1092,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1052,6 +1124,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1080,6 +1156,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1107,6 +1187,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1135,6 +1219,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1162,6 +1250,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Samuel — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samuel/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1190,6 +1282,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1218,6 +1314,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1246,6 +1346,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1274,6 +1378,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1301,6 +1409,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1329,6 +1441,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1357,6 +1473,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1385,6 +1505,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1413,6 +1537,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1441,6 +1569,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1469,6 +1601,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1497,6 +1633,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1525,6 +1665,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1553,6 +1697,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1575,6 +1723,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1597,6 +1749,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1619,6 +1775,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1641,6 +1801,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1663,6 +1827,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1685,6 +1853,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1737,6 +1909,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1759,6 +1935,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1781,6 +1961,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1803,6 +1987,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1825,6 +2013,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1877,6 +2069,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1899,6 +2095,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1921,6 +2121,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1943,6 +2147,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1965,6 +2173,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -1987,6 +2199,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2009,6 +2225,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2031,6 +2251,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2053,6 +2277,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2075,6 +2303,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2097,6 +2329,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2119,6 +2355,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2141,6 +2381,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2163,6 +2407,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2185,6 +2433,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2207,6 +2459,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2229,6 +2485,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2251,6 +2511,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2273,6 +2537,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2295,6 +2563,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2317,6 +2589,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2339,6 +2615,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2361,6 +2641,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2387,6 +2671,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2413,6 +2701,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2435,6 +2727,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2451,12 +2747,20 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Il prie depuis l’intérieur du grand poisson.",
     "jwResources": [
       {
+        "title": "L’histoire de Jonas : une leçon de courage et de miséricorde",
+        "url": "https://www.jw.org/fr/bibliotheque/videos/histoire-de-jonas-courage-et-misericorde/"
+      },
+      {
         "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2479,6 +2783,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2501,6 +2809,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2523,6 +2835,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2545,6 +2861,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2567,6 +2887,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2589,6 +2913,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2611,6 +2939,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2633,6 +2965,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2655,6 +2991,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2677,6 +3017,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2699,6 +3043,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2721,6 +3069,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2743,6 +3095,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2765,6 +3121,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2787,6 +3147,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2809,6 +3173,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2831,6 +3199,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2853,6 +3225,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2875,6 +3251,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2897,6 +3277,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2919,6 +3303,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2941,6 +3329,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2963,6 +3355,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -2989,6 +3385,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -3011,6 +3411,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -3033,6 +3437,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -3055,6 +3463,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -3077,6 +3489,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -3099,6 +3515,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   },
@@ -3121,6 +3541,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ]
   }
