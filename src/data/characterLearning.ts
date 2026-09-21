@@ -343,32 +343,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "moise": {
-    "studyFocus": "Moïse conduit Israël hors d’Égypte, reçoit la Loi au Sinaï et reste un médiateur central entre Jéhovah et le peuple.",
+    "studyFocus": "Moïse conduisit Israël hors d’Égypte, reçut la Loi au Sinaï et servit de médiateur entre Jéhovah et son peuple.",
     "lessonPoints": [
-      "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Persévérance » dans les épisodes bibliques cités."
+      "Étudier sa préparation en Madian et sa réponse à l’appel de Jéhovah.",
+      "Observer son humilité et son endurance face aux murmures d’Israël.",
+      "Examiner l’erreur de Meriba et ses conséquences."
     ],
-    "keyReading": "Exode 3–4 ; 12–14 ; 19–20 ; Nombres 12 ; 20:1-13",
-    "location": "Égypte ; mont Sinaï ; désert ; plaines de Moab.",
-    "relationshipWithJehovah": "Jéhovah choisit Moïse et le forme progressivement. Malgré ses hésitations, Moïse apprend à compter sur la puissance et la direction de Jéhovah.",
-    "didYouKnow": "Moïse passa 40 ans à Madian avant de recevoir sa mission auprès de Pharaon.",
+    "keyReading": "Exode 3–4 ; 12–14 ; 19–20 ; Nombres 12 ; 20:1-13 ; Deutéronome 34:1-8",
+    "location": "Égypte, Madian, désert du Sinaï et plaines de Moab.",
+    "relationshipWithJehovah": "Moïse parlait avec Jéhovah d’une manière particulièrement directe, intercédait pour Israël et cherchait à défendre Son nom.",
+    "didYouKnow": "Moïse avait 80 ans lorsqu’il fut envoyé auprès de Pharaon et 120 ans à sa mort.",
     "jwResources": [
       {
         "title": "Moïse — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Mo%C3%AFse/"
       },
       {
-        "title": "Marche courageusement avec Dieu — Moïse",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/moise-a-fait-le-bon-choix/"
-      },
-      {
-        "title": "Moïse — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Prophète et médiateur d’Israël — Moïse conduit Israël hors d’Égypte et reçoit la Loi au mont Sinaï.",
@@ -395,32 +395,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "josue": {
-    "studyFocus": "Josué sert comme assistant de Moïse puis conduit Israël en Canaan. Il doit fortifier son courage et rester attaché aux instructions de Jéhovah.",
+    "studyFocus": "Josué succéda à Moïse et conduisit Israël dans la Terre promise. Jéhovah lui demanda d’être courageux et de respecter sa Loi.",
     "lessonPoints": [
-      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Confiance » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Obéissance » dans les épisodes bibliques cités."
+      "Étudier sa formation auprès de Moïse.",
+      "Observer le lien entre courage, méditation de la Loi et fidélité.",
+      "Examiner l’affaire des Gabaonites et la nécessité de rechercher la direction de Jéhovah."
     ],
-    "keyReading": "Nombres 13:1-33; Josué 1:1-18; 6:1-27; 23:1-16; 24:14-31",
-    "location": "Désert ; Canaan ; Jéricho ; Sichem.",
-    "relationshipWithJehovah": "Jéhovah lui demande à plusieurs reprises d’être courageux et fort. Josué s’appuie sur la Loi, suit la direction reçue et exhorte le peuple à choisir de servir Jéhovah.",
-    "didYouKnow": "Le livre de Josué couvre probablement plus de 20 ans, de 1473 à environ 1450 av. n. è.",
+    "keyReading": "Nombres 13–14 ; Josué 1:1-9 ; 6 ; 9 ; 24:14-31",
+    "location": "Désert puis Canaan, notamment Jéricho, Aï et Sichem.",
+    "relationshipWithJehovah": "Josué s’appuyait sur les instructions de Jéhovah et encourageait Israël à lui rester fidèle.",
+    "didYouKnow": "Josué s’appelait d’abord Hoshéa; Moïse lui donna le nom de Josué.",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu — Josué",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/josue-a-suivi-des-instructions-etranges/"
+        "title": "Josué — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Josu%C3%A9/"
+      },
+      {
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Josué — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Josué et les Gabaonites",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Josué, fils de Noun, servit Moïse avant de lui succéder comme dirigeant d’Israël. Il conduisit le peuple dans la conquête et la répartition de la Terre promise.",
@@ -450,32 +450,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "ruth": {
-    "studyFocus": "Ruth, Moabite, choisit de rester avec Noémi et de devenir une adoratrice de Jéhovah. Elle travaille humblement et devient l’ancêtre du roi David.",
+    "studyFocus": "Ruth, une Moabite devenue veuve, choisit de rester avec Naomi et de servir Jéhovah. Sa fidélité la conduisit à devenir l’épouse de Boaz et une ancêtre de David.",
     "lessonPoints": [
-      "Étudier la qualité « Loyauté » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Foi » dans les épisodes bibliques cités."
+      "Étudier pourquoi Ruth resta avec Naomi malgré l’incertitude.",
+      "Observer son attitude au travail et sa bonne réputation.",
+      "Examiner comment sa fidélité s’inscrit dans la lignée de David."
     ],
-    "keyReading": "Ruth 1:6-18; 2:1-23; 3:1-18; 4:9-17",
-    "location": "Moab ; Bethléem ; champs de Boaz.",
-    "relationshipWithJehovah": "Elle abandonne son peuple pour rester avec Naomi et dit qu’elle veut que le peuple et le Dieu de Naomi soient les siens. Son choix montre une adhésion personnelle au culte de Jéhovah.",
-    "didYouKnow": "Ruth était Moabite, mais elle figure dans la lignée de David et donc dans la généalogie terrestre de Jésus.",
+    "keyReading": "Ruth 1:6-18 ; 2:1-23 ; 3:1-18 ; 4:1-22",
+    "location": "Moab puis Bethléhem en Juda.",
+    "relationshipWithJehovah": "Ruth décida de servir le Dieu de Naomi et de s’associer à son peuple; Boaz dit qu’elle était venue chercher refuge sous les ailes de Jéhovah.",
+    "didYouKnow": "Ruth était Moabite et devint l’arrière-grand-mère du roi David.",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu — Ruth",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/noemi-et-ruth-des-larmes-a-la-joie/"
+        "title": "Ruth — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ruth/"
+      },
+      {
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Ruth — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Ruth et Naomi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/histoires-bibliques/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Ruth était une Moabite devenue veuve qui choisit de rester avec sa belle-mère Naomi et d’adorer Jéhovah. Elle devint l’épouse de Boaz et une ancêtre de David.",
@@ -503,32 +503,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "samuel": {
-    "studyFocus": "Samuel sert Jéhovah dès son enfance et devient prophète et juge en Israël. Il accompagne la transition vers la royauté tout en restant fidèle aux directives divines.",
+    "studyFocus": "Samuel fut consacré à Jéhovah avant sa naissance, servit auprès d’Éli et devint prophète et juge en Israël. Il participa au passage de la période des juges à la monarchie.",
     "lessonPoints": [
-      "Étudier la qualité « Écoute » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Fidélité » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Courage » dans les épisodes bibliques cités."
+      "Observer comment Hanna et Samuel montrèrent leur attachement au service de Jéhovah.",
+      "Étudier son rôle lors du remplacement de Saül par David.",
+      "Examiner son courage lorsqu’il transmit des messages difficiles."
     ],
-    "keyReading": "1 Samuel 1:24-28; 3:1-21; 8:1-22; 15:10-35; 16:1-13",
-    "location": "Shilo ; Rama ; Israël.",
-    "relationshipWithJehovah": "Dès son enfance, Samuel sert devant Jéhovah et apprend à écouter sa voix. Il transmet fidèlement les messages reçus même lorsqu’ils sont difficiles à communiquer.",
-    "didYouKnow": "Samuel fut conduit au tabernacle à Shilo lorsqu’il fut sevré et y servit alors qu’il était encore garçon.",
+    "keyReading": "1 Samuel 1:9-28 ; 3:1-21 ; 7:3-17 ; 8:1-22 ; 15:10-35 ; 16:1-13",
+    "location": "Shilo, Rama et différents lieux d’Israël.",
+    "relationshipWithJehovah": "Samuel apprit très jeune à écouter Jéhovah et continua à transmettre ses paroles, même lorsqu’elles étaient difficiles.",
+    "didYouKnow": "Samuel servait déjà devant Jéhovah alors qu’il était encore un garçon.",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu — Samuel",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/samuel-garcon-qui-a-parle-au-nom-de-jehovah/"
+        "title": "Samuel — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samuel/"
+      },
+      {
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Samuel — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Jéhovah parle à Samuel",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Samuel était prophète, juge et serviteur de Jéhovah dès son enfance. Il joua un rôle majeur dans la transition d’Israël vers la royauté.",
@@ -558,33 +558,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "david": {
-    "studyFocus": "David devient roi après avoir été oint par Samuel. Sa vie montre une foi profonde, mais aussi les conséquences graves de ses fautes et l’importance du repentir.",
+    "studyFocus": "David fut berger, musicien, guerrier, roi et psalmiste. Il manifesta une confiance remarquable en Jéhovah, mais commit aussi de graves péchés et accepta ensuite la correction.",
     "lessonPoints": [
-      "Étudier la qualité « Foi » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Loyauté » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Repentir » dans les épisodes bibliques cités."
+      "Étudier comment sa confiance s’est développée avant son règne.",
+      "Comparer son attitude envers Saül avec l’affaire Bath-Shéba.",
+      "Observer son repentir et ses prières après sa faute."
     ],
-    "keyReading": "1 Samuel 16–17 ; 24 ; 2 Samuel 5–12 ; Psaume 51",
-    "location": "Bethléem ; Hébron ; Jérusalem.",
-    "relationshipWithJehovah": "David recherche régulièrement la direction de Jéhovah et, après ses fautes graves, accepte la discipline et exprime un repentir sincère.",
-    "didYouKnow": "David est appelé « un homme selon le cœur » de Jéhovah, sans que cela signifie qu’il était sans péché.",
+    "keyReading": "1 Samuel 16:1-13 ; 17:32-50 ; 24 ; 2 Samuel 11–12 ; Psaume 51",
+    "location": "Bethléhem, Juda et Jérusalem.",
+    "relationshipWithJehovah": "David recherchait la direction de Jéhovah et, après ses fautes graves, accepta la correction et manifesta un repentir sincère.",
+    "didYouKnow": "David est présenté comme berger, musicien, poète, soldat, homme d’État, prophète et roi.",
     "jwResources": [
       {
         "title": "David — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/David/"
       },
       {
-        "title": "Marche courageusement avec Dieu — David",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/rois-reconstruction-jerusalem/david-a-affronte-un-geant/"
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "David — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Roi d’Israël — David a servi comme roi d’Israël et a connu à la fois de grandes victoires et de graves erreurs.",
@@ -613,36 +612,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "salomon": {
-    "studyFocus": "Salomon reçoit de Jéhovah une sagesse remarquable, construit le temple et connaît une grande prospérité. Mais ses mariages et son attachement à des femmes étrangères contribuent ensuite à son infidélité.",
+    "studyFocus": "Salomon fut roi d’Israël et reçut de Jéhovah une sagesse remarquable. Il supervisa la construction du temple, mais se détourna ensuite du culte pur sous l’influence de ses nombreuses femmes étrangères.",
     "lessonPoints": [
-      "Étudier la qualité « Sagesse » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Discernement » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Vigilance » dans les épisodes bibliques cités."
+      "Étudier sa demande de sagesse et la réponse de Jéhovah.",
+      "Observer la place du temple dans son règne.",
+      "Examiner avec réalisme la fin de son règne et son infidélité."
     ],
-    "keyReading": "1 Rois 3 ; 5–8 ; 11",
-    "location": "Gabaon ; Jérusalem.",
-    "relationshipWithJehovah": "Jéhovah répond à la demande de sagesse de Salomon, mais la fidélité exige de continuer à protéger son cœur et à obéir.",
-    "didYouKnow": "Salomon construisit le temple de Jérusalem et régna 40 ans.",
+    "keyReading": "1 Rois 3:5-28 ; 5 ; 8 ; 11:1-13",
+    "location": "Jérusalem et le royaume d’Israël.",
+    "relationshipWithJehovah": "Au début, Salomon aimait Jéhovah et recherchait sa sagesse; plus tard, il se laissa entraîner vers le faux culte.",
+    "didYouKnow": "Jéhovah lui accorda aussi richesse et gloire, en plus de la sagesse demandée.",
     "jwResources": [
       {
         "title": "Salomon — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Salomon/"
       },
       {
-        "title": "La Bible en ligne",
+        "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Salomon",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Salomon/"
       }
     ],
     "identity": "Roi et bâtisseur du temple — Salomon demande de la sagesse et construit le temple de Jérusalem, mais sa fin de règne comporte aussi de graves problèmes.",
@@ -720,36 +715,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "esther": {
-    "studyFocus": "Esther devient reine et utilise sa position pour intervenir en faveur des Juifs menacés d’extermination. Son récit met en évidence courage, prudence et souci du peuple de Dieu.",
+    "studyFocus": "Esther, jeune Juive élevée par Mardochée, devint reine de Perse à Suse. Elle risqua sa vie pour intervenir lorsque son peuple fut menacé d’extermination.",
     "lessonPoints": [
-      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Prudence » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Sacrifice » dans les épisodes bibliques cités."
+      "Observer son courage et sa prudence devant le roi.",
+      "Étudier sa préparation et son choix du moment pour parler.",
+      "Examiner la délivrance des Juifs et l’institution de Pourim."
     ],
-    "keyReading": "Esther 2:5-20; 3:8-15; 4:10-17; 5:1-8; 7:1-10",
-    "location": "Suse, en Perse.",
-    "relationshipWithJehovah": "Le livre d’Esther ne mentionne pas directement le nom de Jéhovah, mais Esther agit avec courage dans une situation où le salut des Juifs est en jeu et accepte de risquer sa vie pour eux.",
-    "didYouKnow": "Le livre d’Esther ne contient pas le nom de Dieu, fait remarquable parmi les livres bibliques historiques.",
+    "keyReading": "Esther 2:5-20 ; 3 ; 4:1-17 ; 5–9",
+    "location": "Suse, capitale de l’empire perse.",
+    "relationshipWithJehovah": "Le livre ne mentionne pas directement le nom de Jéhovah, mais Esther agit pour préserver son peuple et suit l’appel à agir courageusement.",
+    "didYouKnow": "Le livre d’Esther ne précise pas qui l’a rédigé; Mardochée est souvent considéré comme bien placé pour en avoir consigné les événements.",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu — Esther",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/rois-reconstruction-jerusalem/esther-si-je-dois-mourir-alors-je-mourrai/"
+        "title": "Esther — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Esther/"
+      },
+      {
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Esther — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Esther — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Esther",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Esther/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Esther, aussi appelée Hadassa, était une Juive devenue reine de Perse. Elle risqua sa vie pour intervenir en faveur de son peuple menacé d’extermination.",
@@ -778,36 +769,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "daniel": {
-    "studyFocus": "Daniel reste fidèle à Jéhovah pendant l’exil à Babylone et sous plusieurs souverains. Il refuse de compromettre son culte et continue de prier malgré l’interdiction royale.",
+    "studyFocus": "Daniel fut emmené adolescent à Babylone et resta fidèle à Jéhovah sous plusieurs rois. Il servit comme haut fonctionnaire, interpréta des rêves et reçut des visions prophétiques.",
     "lessonPoints": [
-      "Étudier la qualité « Intégrité » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Fidélité » dans les épisodes bibliques cités."
+      "Étudier son refus de se souiller avec les aliments du roi.",
+      "Observer comment il attribuait à Dieu les interprétations.",
+      "Examiner sa fidélité à la prière malgré l’interdiction royale."
     ],
-    "keyReading": "Daniel 1:8-20; 2:17-23; 6:1-28; 9:1-23",
-    "location": "Babylone et l’Empire médo-perse.",
-    "relationshipWithJehovah": "Daniel prie régulièrement, attribue à Jéhovah la capacité de révéler les choses cachées et refuse de compromettre son culte même lorsqu’une loi impériale l’y pousse.",
-    "didYouKnow": "Daniel avait l’habitude de prier trois fois par jour, fenêtres ouvertes vers Jérusalem, même après l’interdiction de prier tout autre dieu.",
+    "keyReading": "Daniel 1:3-20 ; 2:17-23 ; 5:13-31 ; 6:4-23 ; 9:1-23",
+    "location": "Juda puis Babylone; Suse apparaît aussi dans le cadre d’une vision.",
+    "relationshipWithJehovah": "Daniel priait régulièrement, recherchait la compréhension auprès de Jéhovah et resta fidèle malgré les complots.",
+    "didYouKnow": "Daniel continua à prier trois fois par jour malgré l’interdiction royale et fut délivré de la fosse aux lions.",
     "jwResources": [
       {
-        "title": "Que dit la Bible à propos de Daniel ?",
+        "title": "Daniel — Que dit la Bible ?",
         "url": "https://www.jw.org/fr/la-bible-et-vous/questions-bibliques/daniel-dans-la-bible/"
       },
       {
-        "title": "Daniel — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Daniel — Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "La Bible en ligne",
+        "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "Étude perspicace des Écritures — Daniel",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Daniel/"
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Daniel était un jeune Juif emmené à Babylone. Il servit dans plusieurs administrations impériales tout en restant fidèle à Jéhovah.",
@@ -836,38 +823,34 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jean-baptiste": {
-    "studyFocus": "Jean le Baptiseur a préparé le chemin pour le Messie avec courage, humilité et fidélité. Son exemple montre comment défendre ce qui est juste tout en dirigeant l’attention vers Jésus et vers Jéhovah.",
+    "studyFocus": "Jean le Baptiseur fut le précurseur du Messie. Il prêcha la repentance, baptisa ceux qui se repentaient et resta courageux face aux autorités.",
     "lessonPoints": [
-      "Courage : Jean a dénoncé publiquement les mauvaises actions, notamment celles d’Hérode, sans laisser la peur l’empêcher de faire ce qui était juste.",
-      "Humilité : il a reconnu que Jésus devait augmenter tandis que lui devait diminuer, et il s’est présenté comme celui qui préparait le chemin.",
-      "Fidélité : malgré une vie simple, l’opposition et l’emprisonnement, Jean a continué à accomplir la mission que Jéhovah lui avait confiée."
+      "Étudier son rôle annoncé à l’avance pour préparer le chemin du Messie.",
+      "Observer sa simplicité de vie et son courage devant Hérode.",
+      "Examiner sa question envoyée à Jésus depuis la prison et la réponse reçue."
     ],
-    "keyReading": "Matthieu 3:1-12 ; Jean 1:19-34 ; Matthieu 11:2-11 ; Marc 6:17-29",
+    "keyReading": "Matthieu 3:1-17 ; 11:2-15 ; 14:1-12 ; Jean 1:19-37",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu — Jean le Baptiseur",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/jean-baptiseur-aucun-homme-plus-grand/"
+        "title": "Qui était Jean le Baptiseur ?",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/questions-bibliques/qui-etait-jean-le-baptiseur/"
       },
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Jean le Baptiseur",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jean-le-baptiseur/"
       }
     ],
-    "location": "Région du Jourdain ; il a notamment prêché dans le désert de Judée.",
-    "relationshipWithJehovah": "Jean a été choisi pour préparer le chemin du Messie. Sa vie consacrée à cette mission et son courage face à l’opposition montrent sa fidélité à Jéhovah.",
-    "didYouKnow": "Jésus a dit qu’« aucun homme » parmi ceux qui étaient nés de femmes n’avait été suscité de plus grand que Jean le Baptiseur, tout en soulignant que le plus petit dans le Royaume des cieux serait plus grand que lui (Matthieu 11:11).",
+    "location": "Désert de Judée et région du Jourdain.",
+    "relationshipWithJehovah": "Jean dirigeait l’attention vers Jésus et accomplissait la mission que Jéhovah lui avait confiée.",
+    "didYouKnow": "Jésus a dit qu’aucun prophète né de femme n’avait été plus grand que Jean, tout en parlant ensuite de la grandeur de ceux qui seraient dans le Royaume.",
     "identity": "Précurseur de Jésus — Jean prépare les personnes au ministère de Jésus et appelle à la repentance.",
     "era": "Évangiles",
     "familyAndEntourage": [
@@ -889,32 +872,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "marie": {
-    "studyFocus": "Marie, mère de Jésus, accepte humblement une mission exceptionnelle et accompagne son fils pendant différentes étapes de sa vie et de son ministère.",
+    "studyFocus": "Marie, mère de Jésus, fut une jeune Juive choisie pour donner naissance au Fils de Dieu. Elle accepta humblement cette responsabilité et resta parmi les disciples après la mort de Jésus.",
     "lessonPoints": [
-      "Étudier la qualité « Foi » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Endurance » dans les épisodes bibliques cités."
+      "Observer sa réaction à l’annonce de Gabriel.",
+      "Étudier sa connaissance des Écritures visible dans Luc 1.",
+      "Examiner sa présence parmi les disciples après la résurrection de Jésus."
     ],
-    "keyReading": "Luc 1:26-56; 2:19,33-35,51; Jean 19:25-27",
-    "location": "Nazareth ; Bethléem ; Jérusalem.",
-    "relationshipWithJehovah": "Elle accepte humblement la mission annoncée par l’ange et exprime sa confiance en Jéhovah. Elle conserve et médite les événements liés à Jésus.",
-    "didYouKnow": "JW.org explique que Marie était de la tribu de Juda et descendante de David; cela contribue à établir la descendance davidique de Jésus selon la chair.",
+    "keyReading": "Luc 1:26-56 ; 2:1-52 ; Jean 2:1-12 ; 19:25-27 ; Actes 1:12-14",
+    "location": "Nazareth, Bethléhem et Jérusalem.",
+    "relationshipWithJehovah": "Marie était très favorisée par Dieu en raison de sa foi et devint ensuite disciple de Jésus.",
+    "didYouKnow": "Marie eut d’autres enfants avec Joseph; Marc 6:3 nomme quatre fils et mentionne aussi des filles.",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu — Marie",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marie-courage-de-dire-oui/"
+        "title": "Marie est-elle la mère de Dieu ?",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/questions-bibliques/mere-marie-theotokos/"
+      },
+      {
+        "title": "Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Marie — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Marie — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Imitez leur foi — personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Marie est la mère de Jésus. Elle est une descendante de David et a accepté avec foi la mission extraordinaire qui lui a été confiée.",
