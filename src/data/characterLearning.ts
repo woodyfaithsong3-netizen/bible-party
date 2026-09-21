@@ -2736,10 +2736,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il utilise ensuite les Écritures pour démontrer que Jésus est le Christ.",
       "Paul présente Apollos et lui-même comme des serviteurs plutôt que des chefs rivaux."
     ],
-    "keyReading": "Actes 18:24-28 ; 19:1-7 ; 1 Corinthiens 1:10-13 ; 3:4-9, 21-23 ; 4:6",
+    "keyReading": "Actes 18:24-28; 19:1-7; 1 Corinthiens 1:10-13; 3:4-9,21-23; 4:6",
     "location": "Alexandrie ; Éphèse ; Achaïe, notamment Corinthe.",
-    "relationshipWithJehovah": "Apollos accepte humblement une instruction plus précise et met ensuite ses capacités d’enseignement au service de la prédication.",
-    "didYouKnow": "Apollos était originaire d’Alexandrie.",
+    "relationshipWithJehovah": "Apollos avait déjà du zèle pour les Écritures et pour enseigner, puis il accepte l’aide de Priscille et Aquilas. Une fois mieux instruit, il utilise ses connaissances pour fortifier les croyants.",
+    "didYouKnow": "Apollos venait d’Alexandrie, grande ville intellectuelle d’Égypte, et la Bible le présente comme un homme éloquent qui connaissait bien les Écritures.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2762,24 +2762,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Apollos/"
       }
     ],
-    "identity": "Prédicateur et enseignant — Apollos est un homme éloquent et connaisseur des Écritures qui reçoit une instruction plus exacte grâce à Aquila et Priscille.",
-    "era": "Actes",
+    "identity": "Apollos était un Juif originaire d’Alexandrie, homme éloquent et connaisseur des Écritures, qui annonçait Jésus avec zèle mais ne connaissait d’abord que le baptême de Jean.",
+    "era": "Premières décennies de la congrégation chrétienne, vers le milieu du Ier siècle",
     "familyAndEntourage": [
-      "Aquila",
       "Priscille",
-      "Paul"
+      "Aquilas",
+      "Paul",
+      "Les disciples d’Éphèse et d’Achaïe"
     ],
     "bibleAccount": [
-      "Enseigne avec zèle ce qu’il connaît.",
-      "Reçoit une explication plus exacte de la voie de Dieu.",
-      "Aide publiquement les croyants par son enseignement."
+      "Il arrive à Éphèse et parle avec assurance dans la synagogue.",
+      "Priscille et Aquilas lui expliquent plus exactement les enseignements de Dieu.",
+      "Il se rend en Achaïe et aide grandement les croyants.",
+      "Il réfute publiquement les arguments des opposants à l’aide des Écritures."
     ],
     "qualities": [
       "Éloquence",
       "Zèle",
-      "Humilité pour apprendre"
+      "Connaissance des Écritures",
+      "Humilité pour accepter une instruction supplémentaire"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Sa connaissance était incomplète au départ puisqu’il ne connaissait que le baptême de Jean."
+    ]
   },
   "silas": {
     "studyFocus": "Silas — compagnon fidèle de Paul",
@@ -2788,10 +2793,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage dans le ministère",
       "Encourager les autres"
     ],
-    "keyReading": "Actes 15:22-41 ; 16:19-40 ; 17:1-15",
+    "keyReading": "Actes 15:22-41; 16:19-40; 17:10-15; 18:5; 1 Pierre 5:12",
     "location": "Jérusalem, Antioche et les villes de Macédoine et d’Achaïe.",
-    "relationshipWithJehovah": "Il accepte des responsabilités difficiles, endure la prison avec Paul et continue à fortifier les congrégations.",
-    "didYouKnow": "Silas était aussi appelé Silvain et fut choisi comme représentant de la congrégation de Jérusalem.",
+    "relationshipWithJehovah": "Silas priait et chantait des louanges à Jéhovah même en prison. Son endurance et son service fidèle dans plusieurs régions montrent une foi active malgré les mauvais traitements.",
+    "didYouKnow": "JW.org indique que « Silvain » dans les lettres de Paul et de Pierre est manifestement la forme latine du nom « Silas » utilisée dans le livre des Actes.",
     "jwResources": [
       {
         "title": "Silas — Étude perspicace",
@@ -2810,23 +2815,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Silas/"
       }
     ],
-    "identity": "Collaborateur missionnaire — Silas accompagne Paul dans plusieurs voyages et endure avec lui opposition et emprisonnement.",
-    "era": "Actes",
+    "identity": "Silas, aussi appelé Silvain dans les lettres chrétiennes, était un membre éminent de la congrégation de Jérusalem, prophète et compagnon de voyage de Paul.",
+    "era": "Premières décennies de la congrégation chrétienne, surtout vers 49-50 de n. è. et après",
     "familyAndEntourage": [
       "Paul",
-      "Timothée"
+      "Timothée",
+      "Pierre",
+      "La congrégation de Jérusalem"
     ],
     "bibleAccount": [
-      "Est choisi pour accompagner Paul.",
-      "Prêche dans plusieurs régions.",
-      "Chante des louanges avec Paul en prison à Philippes."
+      "Il est choisi par la congrégation de Jérusalem pour accompagner Paul et Barnabé.",
+      "Il participe au deuxième voyage missionnaire de Paul.",
+      "À Philippes, il est battu et emprisonné avec Paul.",
+      "Il reste avec Timothée à Bérée lorsque Paul part pour Athènes.",
+      "Il collabore ensuite avec Paul à Corinthe et apparaît comme « Silvain » dans les lettres."
     ],
     "qualities": [
       "Courage",
+      "Fidélité",
       "Endurance",
-      "Coopération"
+      "Esprit de collaboration"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il subit des coups de verges et l’emprisonnement à Philippes à cause de sa prédication."
+    ]
   },
   "onesimus": {
     "studyFocus": "Onésime — d’esclave à frère chrétien",
@@ -5845,10 +5857,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage : il a été exposé au danger pendant l’opposition à Éphèse.",
       "Persévérance : son association avec Paul montre son engagement dans l’activité chrétienne."
     ],
-    "keyReading": "Actes 19:29; 20:4-6",
+    "keyReading": "Actes 19:29; 20:4",
     "location": "Éphèse et Macédoine.",
-    "relationshipWithJehovah": "Son association étroite avec Paul dans le service chrétien montre qu’il était disposé à soutenir la prédication même lorsque celle-ci provoquait une forte opposition.",
-    "didYouKnow": "La Bible mentionne plusieurs hommes appelés Gaïus; JW.org distingue au moins quatre personnes portant ce nom dans les Écritures.",
+    "relationshipWithJehovah": "Il était associé aux déplacements de Paul dans le cadre de l’activité chrétienne. Le récit montre qu’il continuait à servir malgré l’opposition.",
+    "didYouKnow": "La Bible mentionne plusieurs Gaïus; celui-ci est précisément identifié comme Macédonien dans Actes 19:29.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5863,24 +5875,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Gaïus le Macédonien était un compagnon de voyage de Paul qui fut entraîné avec Aristarque dans le théâtre d’Éphèse lors de l’émeute provoquée par Démétrius.",
-    "era": "Troisième voyage missionnaire de Paul, vers 52-56 de n. è.",
+    "identity": "Gaïus le Macédonien était un compagnon de Paul associé à Aristarque lors de l’émeute d’Éphèse.",
+    "era": "Troisième voyage missionnaire de Paul",
     "familyAndEntourage": [
       "Paul",
       "Aristarque",
-      "Démétrius et les artisans d’Éphèse"
+      "Les compagnons de Paul",
+      "Les habitants d’Éphèse"
     ],
     "bibleAccount": [
-      "Il accompagne Paul pendant son activité missionnaire.",
-      "Une foule l’entraîne avec Aristarque dans le théâtre d’Éphèse.",
-      "Il apparaît ensuite parmi les compagnons de Paul dans le récit du voyage missionnaire."
+      "Il accompagne Paul dans son activité missionnaire.",
+      "Il est saisi par la foule avec Aristarque lors de l’émeute d’Éphèse.",
+      "Il figure ensuite parmi les compagnons de Paul dans son voyage vers la Macédoine et la Grèce."
     ],
     "qualities": [
-      "Compagnonnage fidèle",
-      "Courage dans le ministère"
+      "Fidélité",
+      "Courage",
+      "Esprit de collaboration"
     ],
     "difficulties": [
-      "Il est pris pour cible par une foule hostile à la prédication chrétienne."
+      "Il est pris dans une violente émeute provoquée par l’opposition à la prédication chrétienne."
     ]
   },
   "aristarchus": {
