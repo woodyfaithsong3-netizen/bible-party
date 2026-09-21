@@ -1133,7 +1133,7 @@ const v50CategoryTrueFalseExpansion: TrueFalseQuestion[] = [
 ];
 
 const v50CategoryMysteryExpansion: MysteryQuestion[] = [
-  { id:'mystery-v50-bible-01', type:'mystery', category:'Bible', difficulty:'easy', answer:'Noé', clues:['Arche','Déluge','Corbeau et colombe'], explanation:'Le personnage recherché est Noé.', reference:'Genèse 6–9' },
+  { id:'mystery-v50-bible-01', type:'mystery', category:'Bible', difficulty:'easy', answer:'Noé', clues:['Grand navire','Déluge','Corbeau et colombe'], explanation:'Noé a construit l’arche et a envoyé notamment un corbeau puis une colombe après le Déluge.', reference:'Genèse 6–8' },
   { id:'mystery-v50-bible-02', type:'mystery', category:'Bible', difficulty:'medium', answer:'Néhémie', clues:['Murailles','Jérusalem','Gouverneur'], explanation:'Le personnage recherché est Néhémie.', reference:'Néhémie 2–6' },
   { id:'mystery-v50-bible-03', type:'mystery', category:'Bible', difficulty:'medium', answer:'Cyrus', clues:['Roi perse','Retour des Juifs','Décret'], explanation:'Le personnage recherché est Cyrus.', reference:'Esdras 1:1-4' },
   { id:'mystery-v50-evangiles-01', type:'mystery', category:'Évangiles', difficulty:'easy', answer:'Matthieu', clues:['Impôts','Apôtre','Évangile'], explanation:'Le personnage recherché est Matthieu.', reference:'Matthieu 9:9' },
@@ -1146,7 +1146,7 @@ const v50CategoryMysteryExpansion: MysteryQuestion[] = [
   { id:'mystery-v50-actes-02', type:'mystery', category:'Actes', difficulty:'medium', answer:'Corneille', clues:['Centurion','Césarée','Pierre'], explanation:'Le personnage recherché est Corneille.', reference:'Actes 10:1-48' },
   { id:'mystery-v50-actes-03', type:'mystery', category:'Actes', difficulty:'medium', answer:'Étienne', clues:['Sept hommes','Témoignage','Lapidation'], explanation:'Le personnage recherché est Étienne.', reference:'Actes 6–7' },
   { id:'mystery-v50-personnages-01', type:'mystery', category:'Personnages', difficulty:'easy', answer:'Rahab', clues:['Jéricho','Espions','Cordon rouge'], explanation:'Le personnage recherché est Rahab.', reference:'Josué 2:1-21; 6:22-25' },
-  { id:'mystery-v50-personnages-02', type:'mystery', category:'Personnages', difficulty:'medium', answer:'Joseph', clues:['Frères','Égypte','Rêves'], explanation:'Le personnage recherché est Joseph.', reference:'Genèse 37; 41' },
+  { id:'mystery-v50-personnages-02', type:'mystery', category:'Personnages', difficulty:'medium', answer:'Joseph', clues:['Rêves de jeunesse','Égypte','Interprétation des rêves'], explanation:'Joseph est connu pour ses rêves dans sa jeunesse et pour leur interprétation en Égypte.', reference:'Genèse 37:5-11; 40–41' },
   { id:'mystery-v50-personnages-03', type:'mystery', category:'Personnages', difficulty:'easy', answer:'Samuel', clues:['Enfant','Éli','Prophète'], explanation:'Le personnage recherché est Samuel.', reference:'1 Samuel 3:1-10' },
 ];
 
