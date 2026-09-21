@@ -30,17 +30,17 @@ export default function ResultScreen() {
         <View style={s.crownWrap}><Image source={crownIcon} style={s.crown} resizeMode="contain" /></View>
         <Image source={trophyIcon} style={s.trophy} resizeMode="contain" />
         <Text style={s.kicker}>PARTIE TERMINÉE</Text>
-        <Text style={s.title}>VICTOIRE !</Text>
-        <Text style={s.winner}>{winner?.name || 'Partie terminée'}</Text>
-        {winner ? <Text style={s.winnerScore}>{winner.score} points</Text> : null}
+        <Text style={s.title}>{isTie ? 'ÉGALITÉ !' : 'VICTOIRE !'}</Text>
+        <Text style={s.winner}>{winnerLabel || 'Partie terminée'}</Text>
+        {topScore !== undefined ? <Text style={s.winnerScore}>{topScore} points</Text> : null}
       </View>
 
       <View style={s.scoreCard}>
         <View style={s.scoreHeader}><Text style={s.scoreLabel}>CLASSEMENT FINAL</Text><Text style={s.scoreHint}>{parsed.length} équipes</Text></View>
         <View style={s.rows}>{parsed.map((t, i) => { const isWinner = t.score === topScore; return <View key={`${t.name}-${i}`} style={[s.row, isWinner && s.rowWinner]}>
           <View style={[s.rank, isWinner && s.rankWinner]}><Text style={[s.rankText, isWinner && s.rankWinnerText]}>{i + 1}</Text></View>
-          <View style={s.teamCopy}><Text style={s.teamName}>{t.name}</Text>{i === 0 ? <Text style={s.teamHint}>Équipe gagnante</Text> : null}</View>
-          <Text style={[s.points, i === 0 && s.pointsWinner]}>{t.score}</Text>
+          <View style={s.teamCopy}><Text style={s.teamName}>{t.name}</Text>{isWinner ? <Text style={s.teamHint}>{isTie ? 'À égalité en tête' : 'Équipe gagnante'}</Text> : null}</View>
+          <Text style={[s.points, isWinner && s.pointsWinner]}>{t.score}</Text>
         </View>)}</View>
       </View>
 
