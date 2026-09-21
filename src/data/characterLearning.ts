@@ -2562,18 +2562,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "ezra": {
-    "studyFocus": "Esdras est un prêtre et un copiste habile de la Loi qui retourne à Jérusalem après l’exil. Il s’applique à étudier, mettre en pratique et enseigner la Loi de Jéhovah.",
+    "studyFocus": "Esdras était un prêtre et un habile copiste de la Loi de Moïse. Après l’exil à Babylone, il monta à Jérusalem avec l’autorisation du roi Artaxerxès pour renforcer le vrai culte et enseigner la Loi. Il montra une attitude remarquable d’étude, de mise en pratique et d’enseignement.",
     "lessonPoints": [
-      "Il prépare son cœur à étudier la Loi de Jéhovah.",
-      "Il obtient une autorisation royale pour soutenir le culte à Jérusalem.",
-      "Il prie et jeûne avant le voyage.",
-      "Il enseigne au peuple et agit lorsqu’il découvre des problèmes spirituels.",
-      "Son exemple associe étude personnelle et mise en pratique."
+      "Esdras avait préparé son cœur à étudier la Loi de Jéhovah.",
+      "Il ne se contentait pas de connaître la Loi : il la mettait en pratique puis l’enseignait.",
+      "Il reconnut la main de Jéhovah dans l’autorisation royale et dans le voyage vers Jérusalem.",
+      "Son exemple montre qu’un enseignant doit d’abord appliquer lui-même ce qu’il enseigne."
     ],
-    "keyReading": "Esdras 7:6-10; 8:21-23; 9:1-15; 10:1-17",
-    "location": "Babylone et Jérusalem.",
-    "relationshipWithJehovah": "Esdras est remarquable par l’ordre qu’il donne à sa vie: étudier la Loi, la mettre en pratique puis l’enseigner. Il prie et reconnaît la main de Jéhovah dans son voyage.",
-    "didYouKnow": "Esdras est décrit comme un copiste habile dans la Loi de Moïse et comme quelqu’un qui avait préparé son cœur à appliquer et enseigner cette Loi.",
+    "keyReading": "Esdras 7:1-28 ; 8:21-36 ; 9:1-15 ; 10:1-17",
+    "location": "Babylone puis Jérusalem.",
+    "relationshipWithJehovah": "Esdras avait fixé dans son cœur d’étudier la Loi de Jéhovah, de la pratiquer et de l’enseigner. Il attribua à Jéhovah la réussite de sa mission.",
+    "didYouKnow": "Esdras était prêtre et copiste spécialisé dans la Loi de Moïse, et il reçut du roi de Perse une autorisation officielle pour se rendre à Jérusalem.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2621,18 +2620,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "zerubbabel": {
-    "studyFocus": "Zorobabel dirige le premier groupe important de Juifs revenus de Babylone et participe à la reconstruction du temple. Son parcours montre l’importance de la persévérance malgré l’opposition.",
+    "studyFocus": "Zorobabel était gouverneur de Juda après l’exil à Babylone et un descendant de David. Avec le grand prêtre Josué, il dirigea la reconstruction du temple de Jéhovah malgré l’opposition. Les prophètes Aggée et Zacharie l’encouragèrent dans cette tâche.",
     "lessonPoints": [
-      "Il revient à Jérusalem avec le reste juif.",
-      "Il participe au rétablissement de l’autel et du culte.",
-      "La construction du temple est interrompue par l’opposition.",
-      "Aggée et Zekaria l’encouragent.",
-      "Le temple est finalement achevé."
+      "Zorobabel accepta une responsabilité importante dans le rétablissement du vrai culte.",
+      "Il continua la reconstruction malgré l’opposition et les difficultés.",
+      "Jéhovah l’encouragea par l’intermédiaire d’Aggée et de Zacharie.",
+      "Son exemple montre que les obstacles humains ne rendent pas impossible l’accomplissement d’un projet soutenu par Jéhovah."
     ],
-    "keyReading": "Esdras 3:1-13; 4:1-24; Aggée 1:1-15; 2:1-23; Zacharie 4:6-10",
-    "location": "Jérusalem et Juda après le retour de l’exil.",
-    "relationshipWithJehovah": "Jéhovah utilise Zorobabel dans le rétablissement du culte à Jérusalem et l’encourage par l’intermédiaire des prophètes à ne pas compter uniquement sur la puissance humaine.",
-    "didYouKnow": "Aggée annonce que Zorobabel serait comme un « anneau à cachet », image montrant la valeur particulière que Jéhovah lui accordait dans son dessein.",
+    "keyReading": "Esdras 3:1-13 ; 4:1-24 ; 5:1-17 ; 6:1-22 ; Aggée 1:1-14 ; 2:1-23 ; Zacharie 4:1-14",
+    "location": "Jérusalem et Juda après le retour de Babylone.",
+    "relationshipWithJehovah": "Jéhovah encouragea Zorobabel à poursuivre la reconstruction du temple et annonça qu’il achèverait le travail, non par la force humaine, mais par l’esprit de Dieu.",
+    "didYouKnow": "Zorobabel est présenté dans les généalogies comme un descendant de David et apparaît dans la lignée menant au Messie.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2681,18 +2679,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "haggai": {
-    "studyFocus": "Aggée prophétise après le retour d’exil et pousse les Juifs à reprendre la construction du temple. Il les aide à remettre les intérêts de Jéhovah au premier plan.",
+    "studyFocus": "Aggée était un prophète qui encouragea les Juifs revenus d’exil à reprendre la reconstruction du temple. Son message montrait que les intérêts personnels ne devaient pas passer avant le vrai culte. Ses paroles poussèrent Zorobabel, Josué et le peuple à agir.",
     "lessonPoints": [
-      "Il dénonce le fait que le peuple s’occupe de ses maisons alors que le temple reste en ruines.",
-      "Il encourage Zorobabel, Josué et le peuple à agir.",
-      "Il rappelle que Jéhovah est avec eux.",
-      "Il annonce que la gloire future de la maison sera plus grande.",
-      "Son message transforme une période d’inertie en action."
+      "Aggée aida le peuple à examiner ses priorités.",
+      "Il expliqua que travailler pour son confort tout en négligeant le temple n’apportait pas la bénédiction de Jéhovah.",
+      "Son message fut suivi rapidement par Zorobabel et le peuple.",
+      "Il encouragea les bâtisseurs en leur rappelant que Jéhovah était avec eux."
     ],
-    "keyReading": "Aggée 1:1-15; 2:1-23",
-    "location": "Jérusalem et Juda après le retour de l’exil.",
-    "relationshipWithJehovah": "Aggée transmet fidèlement les messages de Jéhovah et aide le peuple à remettre le culte de Dieu au centre de ses priorités.",
-    "didYouKnow": "Les messages d’Aggée sont datés avec précision dans la Bible et ont été donnés sur une courte période en 520 av. n. è.",
+    "keyReading": "Aggée 1:1-15 ; 2:1-23",
+    "location": "Jérusalem, après le retour de l’exil à Babylone.",
+    "relationshipWithJehovah": "Aggée transmit fidèlement les messages de Jéhovah et encouragea le peuple à mettre le vrai culte au premier plan.",
+    "didYouKnow": "Les messages d’Aggée sont datés précisément dans son livre et couvrent une période de quelques mois pendant la deuxième année de Darius.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2739,18 +2736,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "zechariah": {
-    "studyFocus": "Zekaria sert comme prophète après l’exil et reçoit une série de visions destinées à encourager la reconstruction du temple et le rétablissement du peuple.",
+    "studyFocus": "Zacharie était un prophète contemporain d’Aggée qui encouragea les Juifs revenus d’exil à achever le temple. Ses visions contiennent des messages sur la restauration de Jérusalem, le rôle du grand prêtre Josué et l’action de l’esprit de Jéhovah.",
     "lessonPoints": [
-      "Ses premières visions encouragent le peuple à revenir vers Jéhovah.",
-      "Il reçoit des visions sur Jérusalem, le grand prêtre Josué et Zorobabel.",
-      "Il insiste sur le rôle de l’esprit de Jéhovah plutôt que sur la seule puissance humaine.",
-      "Son livre contient des prophéties messianiques.",
-      "Son ministère soutient l’encouragement et la restauration du vrai culte."
+      "Zacharie encouragea un peuple découragé à reprendre confiance dans le projet de reconstruction.",
+      "Ses visions montrèrent que Jéhovah surveillait et soutenait son peuple.",
+      "Il rappela que l’accomplissement du dessein de Dieu ne dépend pas uniquement de la puissance humaine.",
+      "Ses prophéties contribuèrent à fortifier la foi des Juifs revenus d’exil."
     ],
-    "keyReading": "Zacharie 1:1-17; 3:1-10; 4:1-14; 8:1-23",
-    "location": "Jérusalem et Juda après le retour de l’exil.",
-    "relationshipWithJehovah": "Zacharie rappelle que Jéhovah demande au peuple de revenir vers lui et transmet ses messages même lorsqu’ils contiennent des visions difficiles à comprendre.",
-    "didYouKnow": "Le livre de Zacharie contient une série de huit visions nocturnes données au début de son ministère prophétique.",
+    "keyReading": "Zacharie 1:1-21 ; 3:1-10 ; 4:1-14 ; 8:1-23 ; 9:9-17",
+    "location": "Jérusalem et Juda après l’exil.",
+    "relationshipWithJehovah": "Zacharie reçut des visions et des messages de Jéhovah qu’il transmit pour encourager la reconstruction et le rétablissement du vrai culte.",
+    "didYouKnow": "Le livre de Zacharie contient une série de visions symboliques, notamment celle du porte-lampes et des deux oliviers en Zacharie chapitre 4.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2799,18 +2795,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "malachi": {
-    "studyFocus": "Malachie reprend les prêtres et le peuple pour leur manque de respect envers le culte de Jéhovah. Son message dénonce le culte mécanique et annonce une œuvre préparatoire avant le jour de Jéhovah.",
+    "studyFocus": "Malachie fut un prophète qui reprit les prêtres et le peuple pour leur manque de respect envers le culte de Jéhovah. Il dénonça notamment les sacrifices de mauvaise qualité et l’infidélité conjugale, tout en annonçant la venue d’un messager préparant le chemin.",
     "lessonPoints": [
-      "Il dénonce les sacrifices défectueux.",
-      "Il rappelle aux prêtres leur responsabilité d’enseigner correctement.",
-      "Il condamne l’infidélité conjugale et d’autres pratiques fautives.",
-      "Il annonce la venue d’un messager qui préparera le chemin.",
-      "Il termine par une promesse concernant Élie avant le grand jour de Jéhovah."
+      "Malachie dénonça une adoration devenue mécanique et irrespectueuse.",
+      "Il rappela aux prêtres leur responsabilité d’enseigner correctement la Loi.",
+      "Il encouragea la fidélité conjugale et la loyauté envers Jéhovah.",
+      "Son livre se termine par l’annonce d’un messager et du « jour de Jéhovah »."
     ],
-    "keyReading": "Malachie 1:6-14; 2:1-17; 3:1-18; 4:1-6",
-    "location": "Jérusalem et la communauté juive restaurée après l’exil.",
-    "relationshipWithJehovah": "Malachie défend le point de vue de Jéhovah sur le culte et rappelle que Dieu mérite des offrandes et une adoration donnés de tout cœur.",
-    "didYouKnow": "Malachie est le dernier livre du canon des Écritures hébraïques dans l’ordre de la plupart des Bibles chrétiennes.",
+    "keyReading": "Malachie 1:1-14 ; 2:1-17 ; 3:1-18 ; 4:1-6",
+    "location": "Juda et Jérusalem après l’exil.",
+    "relationshipWithJehovah": "Malachie défendit le nom de Jéhovah et invita le peuple à revenir vers lui par une adoration sincère et fidèle.",
+    "didYouKnow": "Jésus et les Évangiles relient la prophétie de Malachie concernant le messager à Jean le Baptiseur.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2856,18 +2851,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "gamaliel": {
-    "studyFocus": "Gamaliel est un pharisien et enseignant de la Loi, membre du Sanhédrin. Il recommande la prudence lorsqu’on veut faire disparaître les apôtres.",
+    "studyFocus": "Gamaliel était un Pharisien respecté et un enseignant de la Loi. Il intervint devant le Sanhédrin lorsque les apôtres furent menacés et conseilla de ne pas agir précipitamment contre eux. Son conseil donna du temps aux apôtres, même si le récit ne présente pas Gamaliel comme un disciple chrétien.",
     "lessonPoints": [
-      "Il est présenté comme un enseignant de la Loi respecté.",
-      "Il intervient lors du procès des apôtres.",
-      "Il recommande de laisser du temps avant une décision irréversible.",
-      "Son raisonnement distingue une opposition humaine d’une œuvre qui pourrait être soutenue par Dieu.",
-      "Paul dit avoir été instruit à ses pieds."
+      "Gamaliel était reconnu comme enseignant de la Loi parmi les Juifs.",
+      "Il recommanda la prudence plutôt qu’une décision précipitée contre les apôtres.",
+      "Son raisonnement montrait qu’il savait tenir compte de l’incertitude avant de juger une affaire.",
+      "Paul indique ailleurs avoir été formé aux pieds de Gamaliel."
     ],
-    "keyReading": "Actes 5:17-42; 22:3",
-    "location": "Jérusalem, au sein du milieu religieux juif du Ier siècle.",
-    "relationshipWithJehovah": "Gamaliel ne reçoit pas dans le récit le rôle d’un disciple chrétien. Cependant, son conseil évite que le Sanhédrin combatte directement une œuvre qui pourrait venir de Dieu.",
-    "didYouKnow": "Paul dit avoir été instruit aux pieds de Gamaliel, ce qui montre le haut niveau de formation rabbinique qu’il avait reçu.",
+    "keyReading": "Actes 5:33-42 ; 22:3",
+    "location": "Jérusalem.",
+    "relationshipWithJehovah": "Le récit ne dit pas que Gamaliel devint chrétien. Il montre toutefois qu’il intervint pour éviter une décision précipitée contre les disciples de Jésus.",
+    "didYouKnow": "Actes 22:3 indique que Paul avait été instruit aux pieds de Gamaliel selon la rigueur de la Loi ancestrale.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2912,18 +2906,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "apollos": {
-    "studyFocus": "Apollos est un Juif d’Alexandrie, éloquent et connaissant bien les Écritures. Après avoir reçu des explications plus précises d’Aquila et Priscille, il devient un prédicateur efficace.",
+    "studyFocus": "Apollos était un Juif originaire d’Alexandrie, éloquent et très versé dans les Écritures. Il connaissait le baptême de Jean et enseignait avec zèle, mais Priscille et Aquila lui expliquèrent plus exactement la voie de Dieu. Il devint ensuite un prédicateur efficace qui aidait les croyants.",
     "lessonPoints": [
-      "Il connaît les Écritures et enseigne avec zèle.",
-      "Sa connaissance initiale du baptême est incomplète.",
-      "Aquila et Priscille lui expliquent plus exactement la voie de Dieu.",
-      "Il utilise ensuite les Écritures pour démontrer que Jésus est le Christ.",
-      "Paul présente Apollos et lui-même comme des serviteurs plutôt que des chefs rivaux."
+      "Apollos avait déjà une excellente connaissance des Écritures avant de recevoir des explications supplémentaires.",
+      "Il accepta humblement l’aide de Priscille et Aquila.",
+      "Il utilisa ses capacités oratoires pour démontrer publiquement, à partir des Écritures, que Jésus est le Christ.",
+      "Paul le cite comme un collaborateur dans l’activité chrétienne, tout en rappelant que Dieu fait croître."
     ],
-    "keyReading": "Actes 18:24-28; 19:1-7; 1 Corinthiens 3:4-9",
-    "location": "Alexandrie ; Éphèse ; Achaïe, notamment Corinthe.",
-    "relationshipWithJehovah": "Apollos montre qu’un serviteur sincère peut avoir besoin d’être mieux instruit. Il accepte l’aide de Priscille et Aquila puis utilise ses connaissances bibliques pour fortifier les disciples.",
-    "didYouKnow": "Apollos venait d’Alexandrie, grande ville intellectuelle d’Égypte, et était particulièrement versé dans les Écritures.",
+    "keyReading": "Actes 18:24-28 ; 19:1-7 ; 1 Corinthiens 1:10-13 ; 3:4-9,21-23 ; Tite 3:13",
+    "location": "Alexandrie, Éphèse, puis probablement Corinthe et d’autres régions du monde méditerranéen.",
+    "relationshipWithJehovah": "Apollos accepta d’approfondir sa compréhension de la voie de Dieu et mit ensuite ses capacités au service de la prédication.",
+    "didYouKnow": "Apollos était originaire d’Alexandrie, grand centre intellectuel de l’Égypte antique, et Actes le décrit comme un homme éloquent et puissant dans les Écritures.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2972,16 +2965,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "silas": {
-    "studyFocus": "Silas — compagnon fidèle de Paul",
+    "studyFocus": "Silas, appelé aussi Silvain dans les lettres chrétiennes, était un chrétien de premier plan à Jérusalem et un compagnon de Paul dans ses voyages missionnaires. Après avoir été emprisonné à Philippes avec Paul, il continua à participer à l’œuvre chrétienne.",
     "lessonPoints": [
-      "Fidélité dans les épreuves",
-      "Courage dans le ministère",
-      "Encourager les autres"
+      "Silas fut choisi pour accompagner Paul après avoir été recommandé par les responsables de Jérusalem.",
+      "Il accepta les difficultés liées aux voyages et à la prédication.",
+      "À Philippes, il pria et chanta des louanges à Dieu malgré les coups et la prison.",
+      "Il continua ensuite à servir comme collaborateur de Paul et comme enseignant."
     ],
-    "keyReading": "Actes 15:22-41; 16:19-40; 17:10-15; 18:5; 1 Pierre 5:12",
-    "location": "Jérusalem, Antioche et les villes de Macédoine et d’Achaïe.",
-    "relationshipWithJehovah": "Silas priait et chantait des louanges à Jéhovah même en prison. Son endurance et son service fidèle dans plusieurs régions montrent une foi active malgré les mauvais traitements.",
-    "didYouKnow": "JW.org indique que « Silvain » dans les lettres de Paul et de Pierre est manifestement la forme latine du nom « Silas » utilisée dans le livre des Actes.",
+    "keyReading": "Actes 15:22-40 ; 16:16-40 ; 17:1-15 ; 1 Thessaloniciens 1:1 ; 2 Thessaloniciens 1:1 ; 1 Pierre 5:12",
+    "location": "Jérusalem, Antioche de Syrie, Macédoine et Grèce.",
+    "relationshipWithJehovah": "Silas continua à louer Dieu dans des circonstances pénibles et participa fidèlement à la prédication avec Paul.",
+    "didYouKnow": "Silas est également appelé Silvain dans les lettres chrétiennes, notamment en 1 Pierre 5:12.",
     "jwResources": [
       {
         "title": "Silas — Étude perspicace",
@@ -3026,16 +3020,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "onesimus": {
-    "studyFocus": "Onésime — d’esclave à frère chrétien",
+    "studyFocus": "Onésime était un esclave associé à Philémon. Après avoir rencontré Paul, il devint chrétien et Paul demanda à Philémon de l’accueillir non plus simplement comme un esclave, mais comme un frère chrétien. La lettre à Philémon met en avant la transformation que la bonne nouvelle peut produire dans les relations.",
     "lessonPoints": [
-      "Transformation par la vérité",
-      "Pardon chrétien",
-      "Valeur d’une personne"
+      "Onésime changea de vie après être devenu chrétien.",
+      "Paul prit personnellement intérêt à sa situation et intercéda en sa faveur.",
+      "La nouvelle relation spirituelle entre Onésime et Philémon dépassait leur ancienne relation sociale.",
+      "Son histoire montre que la foi chrétienne peut transformer la manière de considérer les autres."
     ],
-    "keyReading": "Philémon 8-21; Colossiens 4:7-9",
-    "location": "Rome et Colosses.",
-    "relationshipWithJehovah": "Après être devenu chrétien grâce à Paul, Onésime est décrit comme un frère bien-aimé. Son parcours montre comment la foi peut transformer une personne et l’amener à assumer ses responsabilités.",
-    "didYouKnow": "JW.org explique qu’Onésime a parcouru probablement environ 1 400 kilomètres entre Colosses et Rome, vraisemblablement pour fuir son maître.",
+    "keyReading": "Philémon 1-25 ; Colossiens 4:7-9",
+    "location": "Probablement à Rome lorsque Paul écrivit à Philémon, puis retour vers Colosses.",
+    "relationshipWithJehovah": "Onésime devint chrétien grâce au ministère de Paul et fut considéré comme un frère dans la congrégation.",
+    "didYouKnow": "Paul qualifie Onésime de « mon enfant » dans la foi et de frère bien-aimé dans sa lettre à Philémon.",
     "jwResources": [
       {
         "title": "Onésime — Étude perspicace",
@@ -3078,16 +3073,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "philemon": {
-    "studyFocus": "Philémon a été un chrétien fidèle dont la relation avec Paul et la situation d’Onésime montrent la puissance de l’amour chrétien et du pardon.",
+    "studyFocus": "Philémon était un chrétien de Colosses dont la maison servait de lieu de réunion pour la congrégation. Paul lui écrivit au sujet d’Onésime et lui demanda de l’accueillir avec affection. Philémon avait lui-même manifesté son amour pour les saints.",
     "lessonPoints": [
-      "Pardon : Paul l’a encouragé à accueillir Onésime comme un frère.",
-      "Amour chrétien : Philémon était connu pour son amour envers les saints.",
-      "Générosité : son foyer était associé à l’accueil et au soutien des chrétiens."
+      "Philémon était connu pour son amour et sa foi envers Jésus et les autres chrétiens.",
+      "Il mettait sa maison à disposition de la congrégation.",
+      "Paul lui demanda de privilégier l’amour chrétien dans une situation délicate.",
+      "Sa lettre montre comment un problème personnel pouvait être traité avec tact et confiance."
     ],
-    "keyReading": "Philémon 1-25",
-    "location": "Colosses.",
-    "relationshipWithJehovah": "Paul remercie Jéhovah pour l’amour et la foi de Philémon. Son hospitalité et sa manière attendue de traiter Onésime étaient directement liées à son amour pour Christ et pour les chrétiens.",
-    "didYouKnow": "La lettre à Philémon est la seule lettre de Paul adressée principalement à un particulier au sujet d’une situation personnelle précise.",
+    "keyReading": "Philémon 1-25 ; Colossiens 4:9",
+    "location": "Colosses, en Phrygie.",
+    "relationshipWithJehovah": "Paul pouvait faire appel à la foi et à l’amour de Philémon parce que ceux-ci étaient déjà manifestes dans sa conduite chrétienne.",
+    "didYouKnow": "La congrégation se réunissait dans la maison de Philémon, ce qui montre qu’il mettait concrètement ses ressources au service des autres.",
     "jwResources": [
       {
         "title": "Philémon — Étude perspicace",
@@ -3132,16 +3128,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "titus": {
-    "studyFocus": "Tite était un collaborateur fiable de Paul, chargé de responsabilités importantes dans les congrégations et encouragé à rester attaché à un enseignement sain.",
+    "studyFocus": "Tite était un collaborateur grec de Paul à qui l’apôtre confia des responsabilités importantes. Paul l’envoya notamment organiser les congrégations de Crète et établir des hommes qualifiés comme anciens. Tite devait aussi enseigner une conduite chrétienne saine.",
     "lessonPoints": [
-      "Fiabilité : Paul lui confiait des missions délicates.",
-      "Enseignement sain : Tite devait aider les congrégations à rester attachées à la saine doctrine.",
-      "Bon exemple : il devait montrer dans sa propre conduite ce qu’il enseignait aux autres."
+      "Tite était un collaborateur fiable auquel Paul pouvait confier des missions difficiles.",
+      "Il reçut la responsabilité d’organiser les congrégations de Crète.",
+      "Il devait enseigner les différentes catégories de croyants à vivre en accord avec la saine doctrine.",
+      "Paul l’encouragea à rester courageux et équilibré dans son service."
     ],
-    "keyReading": "2 Corinthiens 7:6-16; 8:16-24; Tite 1:4-9; 2:11-15; 3:12-15",
-    "location": "Crète et autres régions du ministère de Paul.",
-    "relationshipWithJehovah": "Paul lui confiait des responsabilités parce qu’il avait démontré sa fiabilité dans le service chrétien. Sa mission consistait à aider les congrégations à rester saines dans la foi et dans la conduite.",
-    "didYouKnow": "Paul appelle Tite son « véritable enfant selon une foi que nous partageons », une expression qui montre leur relation spirituelle étroite.",
+    "keyReading": "Galates 2:1-3 ; 2 Corinthiens 7:6-16 ; 8:16-24 ; Tite 1:1-16 ; 2:1-15 ; 3:1-15",
+    "location": "Crète et régions de l’est de la Méditerranée.",
+    "relationshipWithJehovah": "Tite servait Dieu aux côtés de Paul et reçut la responsabilité d’aider les congrégations à rester organisées et spirituellement saines.",
+    "didYouKnow": "Contrairement à Timothée, Tite n’avait pas été obligé de se faire circoncire pour accompagner Paul, ce qui illustre le rôle qu’il joua dans la question de la circoncision des non-Juifs.",
     "jwResources": [
       {
         "title": "Tite — Étude perspicace",
@@ -3184,16 +3181,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "eutychus": {
-    "studyFocus": "Eutyche est surtout connu pour l’événement survenu lors d’une réunion à Troas, qui montre l’intérêt porté par Paul et les chrétiens à la vie de leurs compagnons.",
+    "studyFocus": "Eutyche était un jeune homme de Troas qui écoutait Paul parler lors d’une réunion prolongée. Assis à une fenêtre, il s’endormit profondément et tomba du troisième étage. Paul le prit dans ses bras et il fut retrouvé vivant, ce qui réconforta profondément les croyants.",
     "lessonPoints": [
-      "Réunions chrétiennes : Eutyche était présent avec les autres disciples pour écouter l’enseignement.",
-      "Courage : après l’accident, les frères ont été profondément rassurés de le retrouver vivant.",
-      "Encouragement : cet épisode montre la valeur du soutien apporté aux compagnons."
+      "Eutyche était présent à une réunion chrétienne malgré l’heure tardive.",
+      "Son accident montre concrètement les conditions de réunion des premiers chrétiens.",
+      "Paul interrompit son discours pour s’occuper de lui et rassurer les frères.",
+      "Après l’événement, les croyants furent particulièrement consolés."
     ],
     "keyReading": "Actes 20:7-12",
-    "location": "Troas.",
-    "relationshipWithJehovah": "Après être tombé d’une fenêtre pendant un long discours de Paul, Eutyche est relevé vivant; l’événement console profondément les disciples.",
-    "didYouKnow": "Eutyche s’était assis à une fenêtre au troisième étage.",
+    "location": "Troas, dans une maison où les chrétiens étaient réunis.",
+    "relationshipWithJehovah": "Le récit rapporte un événement miraculeux qui renforça la foi et consola la congrégation réunie à Troas.",
+    "didYouKnow": "Eutyche était assis à une fenêtre au troisième étage lorsque, profondément endormi, il tomba pendant le long discours de Paul.",
     "jwResources": [
       {
         "title": "Eutyche — Étude perspicace",
@@ -3229,16 +3227,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "martha": {
-    "studyFocus": "Marthe — une femme qui aimait Jésus",
+    "studyFocus": "Marthe était la sœur de Marie et de Lazare et vivait à Béthanie. Elle accueillit Jésus chez elle et fut ensuite témoin de la résurrection de Lazare. Elle était active et hospitalière, mais Jésus l’aida à comprendre que l’attention spirituelle ne devait pas être éclipsée par les nombreuses tâches.",
     "lessonPoints": [
-      "Équilibre entre service et écoute",
-      "Foi",
-      "Hospitalité"
+      "Marthe accueillit Jésus et ses disciples avec hospitalité.",
+      "Elle pouvait être très préoccupée par les tâches nécessaires pour recevoir ses invités.",
+      "Jésus lui rappela avec douceur que Marie avait choisi une bonne part en l’écoutant.",
+      "Plus tard, Marthe manifesta une foi remarquable en Jésus avant la résurrection de Lazare."
     ],
-    "keyReading": "Luc 10:38-42; Jean 11:1-46; 12:1-8",
+    "keyReading": "Luc 10:38-42 ; Jean 11:1-46 ; 12:1-8",
     "location": "Béthanie, près de Jérusalem.",
-    "relationshipWithJehovah": "Elle montre une foi explicite en Jésus comme Christ et Fils de Dieu. Après la mort de Lazare, elle continue à lui faire confiance malgré son chagrin.",
-    "didYouKnow": "Jean rapporte que Jésus aimait Marthe, sa sœur Marie et Lazare, ce qui montre une affection particulière pour cette famille.",
+    "relationshipWithJehovah": "Marthe exprima sa foi en Jésus comme le Christ et le Fils de Dieu et croyait à la résurrection au dernier jour.",
+    "didYouKnow": "Marthe fut l’une des personnes qui affirmèrent leur foi en Jésus avant qu’il ne ressuscite Lazare, son frère.",
     "jwResources": [
       {
         "title": "Marthe — Étude perspicace",
@@ -3278,16 +3277,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "mary_bethany": {
-    "studyFocus": "Marie de Béthanie aimait profondément Jésus et montrait son intérêt pour les choses spirituelles en écoutant attentivement son enseignement.",
+    "studyFocus": "Marie de Béthanie était la sœur de Marthe et de Lazare. Elle est surtout connue pour s’être assise aux pieds de Jésus pour écouter son enseignement et pour avoir répandu sur lui un parfum coûteux peu avant sa mort. Jésus défendit son geste et souligna sa valeur.",
     "lessonPoints": [
-      "Priorités spirituelles : elle a choisi de s’asseoir aux pieds de Jésus pour l’écouter.",
-      "Foi : elle a exprimé sa confiance en Jésus lors de la mort de son frère Lazare.",
-      "Générosité : elle a manifesté son amour pour Jésus par un acte de grand prix."
+      "Marie accordait une grande priorité à l’écoute de l’enseignement de Jésus.",
+      "Elle manifesta son amour et sa reconnaissance par un geste coûteux.",
+      "Jésus apprécia son discernement et défendit son geste contre les critiques.",
+      "Son exemple montre qu’un acte d’adoration peut avoir une grande valeur aux yeux de Jésus."
     ],
-    "keyReading": "Luc 10:38-42; Jean 11:28-45; 12:1-8",
-    "location": "Béthanie.",
-    "relationshipWithJehovah": "Son attachement à Jésus se manifeste par son écoute, sa foi en lui et son geste généreux peu avant sa mort. Jésus présente son geste comme ayant une valeur particulière.",
-    "didYouKnow": "Le parfum utilisé par Marie était du nard pur très coûteux; Judas Iscariote estima qu’il aurait pu être vendu pour 300 deniers.",
+    "keyReading": "Luc 10:38-42 ; Jean 11:1-45 ; 12:1-8 ; Matthieu 26:6-13",
+    "location": "Béthanie, près de Jérusalem.",
+    "relationshipWithJehovah": "Marie manifesta sa foi envers Jésus et son profond attachement à lui; son geste fut présenté comme ayant une valeur spirituelle durable.",
+    "didYouKnow": "Le parfum utilisé par Marie était du nard pur, très coûteux, et Jean indique que sa valeur correspondait à environ 300 deniers.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Marie de Béthanie",
@@ -3329,16 +3329,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joseph_arimathea": {
-    "studyFocus": "Joseph d’Arimathie était un homme riche et membre respecté du Sanhédrin qui a pris position avec courage pour honorer Jésus après sa mort.",
+    "studyFocus": "Joseph d’Arimathie était un homme riche et membre respecté du Sanhédrin qui attendait le Royaume de Dieu. Il ne soutint pas la décision du conseil concernant Jésus et, après la mort de Jésus, demanda son corps à Pilate et le plaça dans un tombeau neuf.",
     "lessonPoints": [
-      "Courage : il n’a pas laissé sa position sociale l’empêcher d’agir en faveur de Jésus.",
-      "Respect : il a demandé le corps de Jésus et lui a fourni une tombe.",
-      "Foi : il est présenté comme attendant lui aussi le Royaume de Dieu."
+      "Joseph attendait le Royaume de Dieu alors qu’il faisait partie d’un milieu religieux influent.",
+      "Il ne consentit pas à la décision prise contre Jésus.",
+      "Il eut le courage de demander le corps de Jésus à Pilate.",
+      "Il utilisa son propre tombeau pour honorer Jésus après son exécution."
     ],
-    "keyReading": "Matthieu 27:57-60; Marc 15:42-47; Luc 23:50-56; Jean 19:38-42",
-    "location": "Jérusalem et Arimathie.",
-    "relationshipWithJehovah": "Il attendait le Royaume et devient suffisamment courageux pour demander publiquement le corps de Jésus. Son acte manifeste son attachement à Jésus malgré le danger social.",
-    "didYouKnow": "Le tombeau dans lequel Jésus fut déposé était un tombeau neuf appartenant à Joseph et taillé dans le roc.",
+    "keyReading": "Matthieu 27:57-61 ; Marc 15:42-47 ; Luc 23:50-56 ; Jean 19:38-42",
+    "location": "Jérusalem et Arimathie, ville d’origine de Joseph.",
+    "relationshipWithJehovah": "Joseph est présenté comme un homme juste qui attendait le Royaume de Dieu et qui manifesta son attachement à Jésus au moment où celui-ci mourut.",
+    "didYouKnow": "Le tombeau de Joseph était neuf et avait été taillé dans le roc; il n’avait encore servi à personne.",
     "jwResources": [
       {
         "title": "Joseph d’Arimathie — Étude perspicace",
@@ -3378,16 +3379,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jairus": {
-    "studyFocus": "Jaïrus, responsable de synagogue, a humblement demandé l’aide de Jésus lorsque sa fille était mourante et a continué à croire malgré l’annonce de sa mort.",
+    "studyFocus": "Jaïrus était un président de synagogue dont la fille était gravement malade. Malgré la pression et les mauvaises nouvelles, il accepta l’aide de Jésus. Jésus ressuscita ensuite la jeune fille, montrant son pouvoir sur la mort.",
     "lessonPoints": [
-      "Foi : il a demandé l’aide de Jésus malgré sa position sociale.",
-      "Persévérance : il a continué à écouter Jésus lorsque la situation semblait désespérée.",
-      "Amour familial : son récit montre la profondeur de son souci pour sa fille."
+      "Jaïrus surmonta sa position sociale pour demander humblement l’aide de Jésus.",
+      "Il continua à avancer avec Jésus malgré la nouvelle du décès de sa fille.",
+      "Jésus lui demanda de ne pas avoir peur mais de manifester de la foi.",
+      "La résurrection de sa fille apporta une grande joie à la famille."
     ],
-    "keyReading": "Marc 5:21-43; Luc 8:40-56",
-    "location": "Capharnaüm et ses environs.",
-    "relationshipWithJehovah": "Il se tourne vers Jésus dans une situation désespérée. Jésus l’encourage à continuer à exercer la foi même lorsque la nouvelle de la mort de sa fille semble rendre toute intervention impossible.",
-    "didYouKnow": "Jaïrus est présenté comme un « responsable de synagogue », probablement chargé de responsabilités administratives dans le lieu de culte de Capernaüm.",
+    "keyReading": "Matthieu 9:18-26 ; Marc 5:21-43 ; Luc 8:40-56",
+    "location": "Galilée, notamment Capharnaüm et ses environs.",
+    "relationshipWithJehovah": "Jaïrus plaça sa confiance dans Jésus et fut témoin d’un miracle qui démontrait le pouvoir donné par Dieu à son Fils.",
+    "didYouKnow": "Jésus ne permit qu’à Pierre, Jacques et Jean ainsi qu’aux parents de la jeune fille d’assister à sa résurrection.",
     "jwResources": [
       {
         "title": "Jaïrus — Étude perspicace",
@@ -3426,16 +3428,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "thomas": {
-    "studyFocus": "Thomas était un apôtre sincère qui a exprimé ses doutes après la mort de Jésus, puis a été convaincu par les preuves de sa résurrection.",
+    "studyFocus": "Thomas était l’un des douze apôtres de Jésus. Il est souvent associé à son doute concernant la résurrection, mais le récit montre aussi son attachement courageux à Jésus et sa déclaration de foi lorsqu’il vit Jésus ressuscité.",
     "lessonPoints": [
-      "Sincérité : Thomas n’a pas caché ce qu’il avait du mal à croire.",
-      "Foi fondée sur des preuves : lorsqu’il a vu Jésus ressuscité, il a réagi avec conviction.",
-      "Persévérance : malgré ses moments de doute, il est resté attaché au groupe des disciples."
+      "Thomas voulait des preuves concrètes avant d’accepter le témoignage des autres disciples.",
+      "Il avait auparavant manifesté sa disposition à mourir avec Jésus.",
+      "Jésus lui donna avec patience les éléments dont il avait besoin pour fortifier sa foi.",
+      "Thomas finit par reconnaître Jésus comme son Seigneur et son Dieu."
     ],
-    "keyReading": "Jean 11:16; 14:1-7; 20:24-29; 21:1-2",
-    "location": "Jérusalem et la Judée.",
-    "relationshipWithJehovah": "Thomas ne cache pas ses doutes. Jésus l’aide à parvenir à la foi, et Thomas répond par une déclaration de foi remarquable.",
-    "didYouKnow": "Jean donne à Thomas le surnom ou équivalent « Didyme », qui signifie « Jumeau ».",
+    "keyReading": "Jean 11:7-16 ; 14:1-7 ; 20:24-29 ; 21:1-2",
+    "location": "Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Thomas progressa d’une foi hésitante à une déclaration personnelle de foi envers Jésus ressuscité.",
+    "didYouKnow": "Jean 20:28 rapporte la déclaration de Thomas à Jésus : « Mon Seigneur et mon Dieu ! ».",
     "jwResources": [
       {
         "title": "Thomas — Étude perspicace",
