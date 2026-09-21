@@ -374,11 +374,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "elie": {
-    "studyFocus": "Élie défend courageusement le culte de Jéhovah face aux prophètes de Baal et connaît aussi des moments de découragement. Jéhovah le fortifie et continue de lui confier une mission.",
+    "studyFocus": "Élie a défendu courageusement le vrai culte face au culte de Baal. Son récit montre aussi que Jéhovah soutient ses serviteurs lorsqu’ils sont momentanément découragés.",
     "lessonPoints": [
-      "Étudier la qualité « Zèle » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Confiance » dans les épisodes bibliques cités."
+      "Courage : Élie a affronté les prophètes de Baal au mont Carmel.",
+      "Confiance en Jéhovah : il a prié avec foi et a laissé Jéhovah démontrer qui est le vrai Dieu.",
+      "Persévérance : après avoir eu peur, Élie a reçu de Jéhovah l’assurance qu’il avait encore du travail à accomplir."
     ],
     "keyReading": "1 Rois 17–19 ; 21 ; 2 Rois 2",
     "location": "Israël du Nord ; mont Carmel ; désert ; région du Jourdain.",
@@ -2649,11 +2649,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "hezekiah": {
-    "studyFocus": "Ézéchias — un roi qui a fait confiance à Jéhovah",
+    "studyFocus": "Ézéchias s’est appuyé sur Jéhovah face aux menaces assyriennes et a travaillé à rétablir le vrai culte.",
     "lessonPoints": [
-      "Confiance en Jéhovah",
-      "Courage",
-      "Éviter l’idolâtrie"
+      "Confiance : devant la menace de Sennakérib, Ézéchias a recherché l’aide de Jéhovah.",
+      "Zèle pour le vrai culte : il a entrepris des mesures pour purifier le culte en Juda.",
+      "Humilité : son récit montre aussi qu’un serviteur fidèle doit rester vigilant face à l’orgueil."
     ],
     "keyReading": "2 Rois 18:1-7 ; 19:1-37 ; 20:1-21",
     "location": "Jérusalem et Juda.",
@@ -2679,11 +2679,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "josiah": {
-    "studyFocus": "Josias — un roi qui a recherché Jéhovah",
+    "studyFocus": "Josias a cherché Jéhovah alors qu’il était encore jeune et a entrepris une vaste réforme du culte en Juda.",
     "lessonPoints": [
-      "Zèle pour le vrai culte",
-      "Réagir à la Parole de Dieu",
-      "Courage"
+      "Chercher Jéhovah : Josias a commencé à agir alors qu’il était encore jeune.",
+      "Réagir à la Parole de Dieu : lorsqu’il a entendu le livre de la Loi, il a été profondément touché.",
+      "Courage : il a supprimé des pratiques liées au faux culte et a encouragé le peuple à servir Jéhovah."
     ],
     "keyReading": "2 Rois 22:1-23:30 ; 2 Chroniques 34:1-35:27",
     "location": "Juda et Jérusalem.",
@@ -2735,11 +2735,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jonah": {
-    "studyFocus": "Yona — un prophète qui a appris la miséricorde",
+    "studyFocus": "Jonas a appris à accepter la mission que Jéhovah lui confiait et à aligner son point de vue sur la miséricorde de Jéhovah.",
     "lessonPoints": [
-      "Obéir",
-      "Accepter la correction",
-      "Miséricorde"
+      "Obéissance : Jonas a finalement accompli la mission qui lui avait été confiée.",
+      "Humilité : il a dû corriger son point de vue sur la façon dont Jéhovah traite les personnes repentantes.",
+      "Miséricorde : son récit met en évidence la patience et la compassion de Jéhovah."
     ],
     "keyReading": "Jonas 1:1-17 ; 2:1-10 ; 3:1-10 ; 4:1-11",
     "location": "Joppé, Ninive et les environs.",
