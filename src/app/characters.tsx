@@ -102,7 +102,13 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
 
       <Section icon="🔎" title="À approfondir">
         <Text style={{ color: colors.muted, lineHeight: 21 }}>
-          Commence par lire les références ci-dessus, puis retrouve ce personnage dans les publications et outils d’étude de JW.org. L’objectif est de comprendre le récit, le contexte et les leçons bibliques plutôt que de retenir seulement quelques faits.
+          Commence par lire les références ci-dessus, puis approfondis ce personnage dans les ressources JW.org. L’objectif est de comprendre le récit, le contexte, les qualités, les erreurs éventuelles et les leçons bibliques plutôt que de retenir seulement quelques faits.
+        </Text>
+        <Pressable onPress={() => router.push({ pathname: '/training', params: { category: 'Personnages' } })} style={{ marginTop: 8 }}>
+          <Text style={{ color: colors.accent, fontWeight: '900' }}>🔎 Continuer avec les questions « Personnages » ›</Text>
+        </Pressable>
+        <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 8 }}>
+          Ressources utilisées pour enrichir cette fiche : La Bible — Traduction du monde nouveau, Étude perspicace des Écritures, articles « Imitez leur foi », fiches « Les personnages de la Bible » et autres ressources d’étude disponibles sur JW.org.
         </Text>
       </Section>
 
