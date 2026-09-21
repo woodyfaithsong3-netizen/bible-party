@@ -11,7 +11,7 @@ export type CharacterProfile = {
   references: string;
 };
 
-export const characterProfiles: CharacterProfile[] = [,
+export const characterProfiles: CharacterProfile[] = [
 {id:'adam',name:'Adam',era:'Genèse',role:'Premier homme',summary:'Adam apparaît au début du récit biblique comme le premier homme créé et placé dans le jardin d’Éden.',keyActions:['Reçoit une mission concernant la terre et les animaux.','Désobéit au commandement concernant l’arbre de la connaissance du bon et du mauvais.'],qualities:['Responsabilité personnelle','Importance de l’obéissance'],warnings:['Les choix personnels peuvent avoir de graves conséquences.'],relations:['Ève','Caïn','Abel','Seth'],references:'Genèse 1:26-31; 2:7-25; 3:1-24'},
 {id:'noe',name:'Noé',era:'Genèse',role:'Chef de famille et constructeur de l’arche',summary:'Noé est présenté comme un homme juste qui a suivi les instructions reçues et a construit l’arche avant le Déluge.',keyActions:['Construit l’arche.','Rassemble sa famille et les animaux dans l’arche.','Après le Déluge, reçoit des instructions concernant la vie humaine et le sang.'],qualities:['Foi','Obéissance','Persévérance'],relations:['Sem','Cham','Japhet'],references:'Genèse 6:9-22; 7:1-24; 8:15-22; 9:1-17'},
 {id:'abraham',name:'Abraham',era:'Genèse',role:'Patriarche',summary:'Abraham est une figure majeure de la Genèse, connu pour sa foi et pour les promesses qui lui ont été faites.',keyActions:['Quitte Our et se rend au pays indiqué par Dieu.','Intercède au sujet de Sodome.','Est disposé à offrir Isaac lorsqu’il reçoit cette instruction.'],qualities:['Foi','Confiance','Hospitalité'],warnings:['La foi se manifeste aussi par des décisions concrètes.'],relations:['Sarah','Isaac','Lot','Ismaël'],references:'Genèse 12:1-9; 18:16-33; 22:1-19'},
