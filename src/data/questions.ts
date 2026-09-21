@@ -1365,11 +1365,11 @@ intruderQuestions.splice(0, intruderQuestions.length, ...v90CleanIntruders, ...v
 // TIME'S UP : les cibles doivent être des personnages, lieux ou concepts faciles à faire deviner,
 // pas des références de versets. Les références restent dans la carte pour le maître de jeu.
 const v90TimesUpExtra: TimesUpQuestion[] = [
-  {id:'v90-tu-001',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Joseph',clues:['Rêves','Égypte','Frères'],reference:'Genèse 37; 41; 45'},
+  {id:'v90-tu-001',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Abigaïl',clues:['Carmel','David','Nabal'],reference:'1 Samuel 25:2-42'},
   {id:'v90-tu-002',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Abigaïl',clues:['Provisions','David','Sagesse'],reference:'1 Samuel 25:18-35'},
-  {id:'v90-tu-003',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Néhémie',clues:['Murailles','Jérusalem','Gouverneur'],reference:'Néhémie 2–6'},
+  {id:'v90-tu-003',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Esdras',clues:['Prêtre','Loi','Jérusalem'],reference:'Esdras 7:1-10'},
   {id:'v90-tu-004',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Zachée',clues:['Petit','Sycomore','Jéricho'],reference:'Luc 19:1-10'},
-  {id:'v90-tu-005',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Corneille',clues:['Centurion','Césarée','Pierre'],reference:'Actes 10:1-48'},
+  {id:'v90-tu-005',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Barnabé',clues:['Chypre','Paul','Encouragement'],reference:'Actes 4:36-37; 9:27; 11:22-26'},
   {id:'v90-tu-006',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Étienne',clues:['Premier martyr chrétien','Vision','Actes'],reference:'Actes 6–7'},
   {id:'v90-tu-007',type:'timesup',category:'Lieux',difficulty:'easy',answer:'Jéricho',clues:['Murailles','Josué','Zachée'],reference:'Josué 6:1-20; Luc 19:1-10'},
   {id:'v90-tu-008',type:'timesup',category:'Lieux',difficulty:'easy',answer:'Bethléem',clues:['David','Naissance','Juda'],reference:'1 Samuel 16:1-13; Luc 2:4-7'},
