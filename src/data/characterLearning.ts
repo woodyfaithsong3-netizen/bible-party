@@ -22,6 +22,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Adam est présenté comme le premier humain et comme un « fils de Dieu » en Luc 3:38.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Adam — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Adam/"
       },
@@ -44,6 +48,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Selon Étude perspicace des Écritures, Noé naquit en 2970 av. n. è., 126 ans après la mort d’Adam.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Noé — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/No%C3%A9/"
       },
@@ -54,10 +62,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Noé : « Préservé avec sept autres »",
         "url": "https://www.jw.org/fr/bibliotheque/revues/wp20130801/noe-et-sa-famille-sauves/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -75,6 +79,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Étude perspicace indique qu’Abraham naquit en 2018 av. n. è. et qu’il descendait de Noé à la dixième génération par Sem.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Abraham — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Abraham"
       },
@@ -85,10 +93,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Les voyages d’Abraham",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Les-voyages-dAbraham/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -104,6 +108,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Sara a servi Jéhovah avec Abraham et a été citée comme exemple de foi. Son histoire montre aussi qu’une personne fidèle peut traverser des périodes de doute ou prendre des décisions qui entraînent des difficultés.",
     "didYouKnow": "Sara avait 90 ans lorsqu’elle donna naissance à Isaac et mourut à 127 ans, selon Étude perspicace des Écritures.",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
       {
         "title": "Sara — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Sara/"
@@ -132,6 +140,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Jacob naquit en 1858 av. n. è. et reçut plus tard le nom d’Israël, nom qui désigna ensuite ses descendants comme nation.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Jacob — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacob/"
       },
@@ -159,6 +171,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Joseph avait 17 ans lorsqu’il fut emmené en Égypte et 30 ans lorsqu’il fut établi dans une haute fonction auprès de Pharaon.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Joseph — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Joseph/"
       },
@@ -169,14 +185,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Joseph et la femme de Potiphar",
         "url": "https://www.jw.org/fr/bibliotheque/revues/wp20141101/joseph-et-femme-de-potiphar/"
-      },
-      {
-        "title": "Joseph : « Suis-je à la place de Dieu ? »",
-        "url": "https://www.jw.org/fr/bibliotheque/revues/wp20150501/joseph-genese/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -219,6 +227,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Josué avait été l’un des douze espions envoyés en Canaan et, avec Caleb, il donna un rapport favorable.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Josué — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
@@ -244,6 +256,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Ruth abandonne ses anciennes attaches religieuses et manifeste une loyauté remarquable envers Noémi et envers le peuple de Jéhovah.",
     "didYouKnow": "Ruth figure dans la généalogie menant à David et à Jésus Christ.",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
       {
         "title": "Ruth — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
@@ -271,6 +287,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Samuel reçut son premier message prophétique alors qu’il était encore jeune garçon.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Samuel — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
@@ -297,6 +317,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "David recherche régulièrement la direction de Jéhovah et, après ses fautes graves, accepte la discipline et exprime un repentir sincère.",
     "didYouKnow": "David est appelé « un homme selon le cœur » de Jéhovah, sans que cela signifie qu’il était sans péché.",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
       {
         "title": "David — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
@@ -376,6 +400,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Le livre d’Esther ne mentionne pas directement le nom de Jéhovah.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Esther — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
@@ -454,6 +482,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Marie fait partie des femmes nommées comme persévérant dans la prière avec les disciples après l’ascension.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Marie — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
@@ -481,6 +513,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Pierre était pêcheur et travaillait avec son frère André.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Pierre — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
@@ -506,6 +542,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Jéhovah et Jésus réorientent complètement la vie de Paul. Il considère ensuite son ministère comme un trésor et supporte de nombreuses épreuves pour l’accomplir.",
     "didYouKnow": "Paul était aussi appelé Saul et était citoyen romain.",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
       {
         "title": "Paul — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
@@ -583,6 +623,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Juges 13–16 ; Hébreux 11:32",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
       {
         "title": "Samson — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samson/"
@@ -680,6 +724,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "Néhémie 1–6 ; 8–10 ; 13",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Nehémia — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Neh%C3%A9mia/"
       },
@@ -709,6 +757,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Son parcours montre une fidélité durable au service de Jésus et une reconnaissance profonde pour ce qu’il avait fait pour elle.",
     "didYouKnow": "Marie Madeleine est distincte de Marie de Béthanie et de la femme « pécheresse » mentionnée en Luc 7 ; les Évangiles l’identifient notamment comme une femme dont Jésus avait expulsé sept démons.",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
       {
         "title": "Marie Madeleine — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/marie-madeleine/"
@@ -764,6 +816,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Barnabé a montré sa foi par une générosité concrète, l’encouragement des autres et un service persévérant dans la bonne nouvelle.",
     "didYouKnow": "Son nom araméen était Joseph ; les apôtres lui donnèrent le surnom Barnabé, qui signifie « Fils de consolation » ou « Fils d’encouragement ».",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
       {
         "title": "Barnabé — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/barnabe/"
@@ -1641,6 +1697,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Jésus a dit que Marie avait choisi la bonne part.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Marie de Béthanie — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
@@ -1772,6 +1832,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Étienne est choisi pour une responsabilité dans la congrégation, rend un témoignage puissant et reste fidèle jusqu’à sa mort.",
     "didYouKnow": "Il est présenté comme plein de foi et d’esprit saint.",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
       {
         "title": "Étienne — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
@@ -2301,6 +2365,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Il a détruit le serpent de cuivre lorsqu’il est devenu un objet d’idolâtrie.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
+      {
         "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
@@ -2322,6 +2390,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Josias entreprend une vaste réforme religieuse après avoir entendu les paroles de la Loi.",
     "didYouKnow": "Il commence à rechercher le Dieu de David alors qu’il est encore jeune.",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+      },
       {
         "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
