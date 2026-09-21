@@ -693,12 +693,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Samson est présenté comme un des juges remarquables d’Israël et son récit est particulièrement lié à sa mission contre les Philistins."
   },
   "naomi": {
-    "studyFocus": "Naomi était la femme d’Élimélek et la belle-mère de Ruth. Après avoir perdu son mari et ses deux fils au pays de Moab, elle retourna à Bethléhem avec Ruth. Elle traversa une profonde période de chagrin, mais elle reconnut ensuite la main de Jéhovah dans la façon dont Boaz agit comme racheteur.",
+    "studyFocus": "Naomi a connu de grandes pertes mais a retrouvé la joie grâce à l’affection fidèle de Ruth et à la disposition de Jéhovah à prendre soin de ses serviteurs.",
     "lessonPoints": [
-      "Observer la manière dont Naomi réagit après la mort de son mari et de ses deux fils.",
-      "Étudier son attitude envers Ruth et Orpa lorsqu’elle leur conseille de retourner au pays de Moab.",
-      "Observer comment Naomi interprète l’arrivée de Ruth dans le champ de Boaz et les dispositions prises pour le rachat.",
-      "Comparer son amertume initiale avec la joie qui accompagne finalement la naissance d’Obed."
+      "Persévérance : Naomi a continué à avancer malgré un profond chagrin.",
+      "Amour fidèle : elle a apprécié la loyauté remarquable de Ruth.",
+      "Espérance : son histoire montre que Jéhovah peut transformer une période très douloureuse."
     ],
     "keyReading": "Ruth 1–4",
     "jwResources": [
@@ -720,12 +719,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Naomi fut la belle-mère de Ruth, laquelle devint une ancêtre de David et de Jésus Christ."
   },
   "boaz": {
-    "studyFocus": "Boaz était un propriétaire terrien de Bethléhem et un proche parent d’Élimélek. Il remarqua Ruth lorsqu’elle glanait dans son champ, la traita avec bonté et respect, puis accomplit les démarches légales nécessaires pour agir comme racheteur. Il devint ainsi le mari de Ruth et le père d’Obed, dans la lignée menant au Messie.",
+    "studyFocus": "Boaz a fait preuve de bonté loyale envers Ruth et Naomi et a respecté les dispositions de Jéhovah concernant le droit de rachat.",
     "lessonPoints": [
-      "Observer comment Boaz traite Ruth, une Moabite, avec bonté et dignité.",
-      "Étudier pourquoi Boaz vérifie la situation juridique avant de racheter le bien d’Élimélek.",
-      "Observer son respect des dispositions légales concernant le rachat et le mariage avec Ruth.",
-      "Suivre sa place dans la généalogie menant à David et à Jésus."
+      "Générosité : Boaz a protégé et aidé Ruth avec bonté.",
+      "Respect des dispositions divines : il a suivi la procédure prévue pour le rachat.",
+      "Réputation : sa conduite juste lui a valu le respect de la communauté."
     ],
     "keyReading": "Ruth 2–4 ; Matthieu 1:5, 6",
     "jwResources": [
@@ -747,12 +745,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Boaz était fils de Salma et de Rahab, et devint le père d’Obed. Il constitue un maillon de la lignée menant au Messie."
   },
   "elisha": {
-    "studyFocus": "Élisha fut prophète de Jéhovah et successeur d’Éliya. Il accompagna d’abord Éliya comme serviteur, puis exerça seul son ministère pendant de nombreuses années. Son activité comprend des miracles, des conseils aux rois et une défense constante du vrai culte.",
+    "studyFocus": "Élisée a servi fidèlement Jéhovah pendant des années et a montré une grande confiance dans sa puissance.",
     "lessonPoints": [
-      "Observer la décision d’Élisha de quitter son travail et de suivre Éliya lorsqu’il fut appelé.",
-      "Étudier son service fidèle comme compagnon et assistant d’Éliya avant de recevoir une responsabilité prophétique plus grande.",
-      "Examiner quelques-uns de ses miracles et ce qu’ils révèlent sur la puissance de Jéhovah.",
-      "Observer sa fermeté lorsqu’il s’agissait de défendre le nom et le vrai culte de Jéhovah."
+      "Foi : Élisée a compté sur Jéhovah dans des situations humainement difficiles.",
+      "Persévérance : il a continué son ministère après avoir succédé à Élie.",
+      "Générosité : plusieurs récits montrent son souci sincère du bien des autres."
     ],
     "keyReading": "1 Rois 19:16, 19-21 ; 2 Rois 2–13 ; Luc 4:27",
     "jwResources": [
@@ -1022,13 +1019,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "melchizedek": {
-    "studyFocus": "Melkisédec était roi de Salem et prêtre du Dieu Très-Haut. Son bref récit prend une importance particulière parce qu’il est utilisé comme modèle de la prêtrise du Christ.",
+    "studyFocus": "Melkisédec, roi de Salem et prêtre du Dieu Très-Haut, apparaît brièvement dans la Genèse mais joue un rôle important dans l’explication biblique de la fonction sacerdotale de Jésus.",
     "lessonPoints": [
-      "Il rencontre Abraham après la victoire de celui-ci sur les rois alliés.",
-      "Il apporte du pain et du vin et bénit Abraham au nom du Dieu Très-Haut.",
-      "Abraham lui donne le dixième du butin important qu’il avait acquis.",
-      "Son nom est associé à l’idée de « roi de justice », tandis que Salem est liée à la paix.",
-      "Psaume 110 et Hébreux 5-7 utilisent Melkisédec pour expliquer la fonction sacerdotale du Messie."
+      "Vénération pour Jéhovah : Melkisédec est présenté comme prêtre du Dieu Très-Haut.",
+      "Bénédiction : il a béni Abraham après sa victoire.",
+      "Valeur du modèle : son rôle aide à comprendre pourquoi Jésus est présenté comme prêtre « à la manière de Melkisédec »."
     ],
     "keyReading": "Genèse 14:17-20 ; Psaume 110:1-4 ; Hébreux 5:5-10 ; 7:1-17",
     "location": "Salem, probablement associée à l’ancienne Jérusalem, et la Basse Plaine de Shavé lors de sa rencontre avec Abraham.",
@@ -1054,12 +1049,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jethro": {
-    "studyFocus": "Jéthro, prêtre de Madian et beau-père de Moïse, accueille Moïse et lui donne un conseil pratique concernant l’organisation du peuple. Son exemple met en valeur le discernement et l’humilité.",
+    "studyFocus": "Jéthro, prêtre de Madian et beau-père de Moïse, a donné à Moïse un conseil pratique qui l’a aidé à mieux assumer ses responsabilités.",
     "lessonPoints": [
-      "Il accueille Moïse à Madian.",
-      "Il se réjouit de ce que Jéhovah a fait pour Israël.",
-      "Il conseille à Moïse de déléguer une partie de ses responsabilités.",
-      "Il reconnaît la supériorité de Jéhovah après avoir entendu le récit de la délivrance d’Israël."
+      "Sagesse pratique : Jéthro a proposé une organisation qui répartissait les responsabilités.",
+      "Humilité : Moïse a accepté un conseil utile venant de son beau-père.",
+      "Intérêt pour les autres : Jéthro s’est réjoui de ce que Jéhovah avait fait pour Israël."
     ],
     "keyReading": "Exode 2:16-22 ; 3:1 ; 18:1-27",
     "location": "Madian et le désert du Sinaï.",
@@ -1085,12 +1079,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "zipporah": {
-    "studyFocus": "Séphora, femme de Moïse et fille de Jéthro, intervient lors d’une situation urgente concernant la circoncision de son fils. Son récit souligne le sérieux des exigences de l’alliance.",
+    "studyFocus": "Tsippora, femme de Moïse, a joué un rôle dans sa famille et a agi rapidement dans une situation grave liée à la circoncision de leur fils.",
     "lessonPoints": [
-      "Elle devient la femme de Moïse à Madian.",
-      "Elle a des fils avec Moïse.",
-      "Elle agit rapidement lors d’un épisode lié à la circoncision.",
-      "Elle retrouve Moïse lorsque Jéthro vient dans le camp d’Israël."
+      "Réactivité : Tsippora a agi sans tarder lorsqu’une situation urgente l’exigeait.",
+      "Famille : son récit rappelle l’importance de prendre au sérieux les responsabilités familiales.",
+      "Respect des exigences de Jéhovah : l’épisode souligne la gravité de ses commandements."
     ],
     "keyReading": "Exode 2:16-22 ; 4:18-26 ; 18:1-6",
     "location": "Madian et le camp d’Israël dans le désert.",
@@ -1211,13 +1204,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "eli": {
-    "studyFocus": "Éli est grand prêtre et juge en Israël pendant la jeunesse de Samuel. Il sert au tabernacle de Shilo et doit faire face à la mauvaise conduite de ses fils.",
+    "studyFocus": "Éli a servi comme grand prêtre et juge en Israël. Son histoire montre à la fois l’importance d’écouter les avertissements de Jéhovah et les conséquences de ne pas corriger une mauvaise conduite.",
     "lessonPoints": [
-      "Il sert au tabernacle de Shilo.",
-      "Il aide Samuel à reconnaître l’appel de Jéhovah.",
-      "Ses fils Hophni et Phinéhas commettent de graves fautes.",
-      "Il reçoit un avertissement concernant sa maison.",
-      "Il meurt après la capture de l’Arche et la mort de ses fils."
+      "Discipline familiale : Éli a été réprimandé parce qu’il n’avait pas suffisamment corrigé ses fils.",
+      "Écouter les avertissements : il a finalement reconnu que Jéhovah avait raison.",
+      "Humilité : sa réaction au jugement de Jéhovah montre qu’il pouvait accepter la décision divine."
     ],
     "keyReading": "1 Samuel 1:24–4:22",
     "location": "Shilo et le tabernacle d’Israël.",
@@ -1243,12 +1234,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "hannah": {
-    "studyFocus": "Hanna supporte longtemps la douleur de sa stérilité et les provocations de Peninna. Elle prie avec confiance, fait un vœu et respecte sa promesse en présentant Samuel au service de Jéhovah.",
+    "studyFocus": "Anne a prié Jéhovah avec confiance dans une situation qui lui causait une grande souffrance, puis elle a tenu sa promesse en consacrant Samuel à son service.",
     "lessonPoints": [
-      "Elle déverse son cœur à Jéhovah au tabernacle.",
-      "Elle ne répond pas aux provocations par la vengeance.",
-      "Elle tient sa promesse après la naissance de Samuel.",
-      "Sa prière de reconnaissance attribue à Jéhovah le mérite de son aide."
+      "Prière sincère : Anne a parlé à Jéhovah avec franchise de ce qu’elle ressentait.",
+      "Confiance : elle a laissé sa situation entre les mains de Jéhovah et a retrouvé la paix.",
+      "Reconnaissance : son cantique montre sa profonde reconnaissance envers Jéhovah."
     ],
     "keyReading": "1 Samuel 1:1–2:11",
     "location": "Rama et le tabernacle de Shilo.",
@@ -1274,13 +1264,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "michal": {
-    "studyFocus": "Mical, fille de Saül et première épouse de David, intervient courageusement pour sauver David lorsque son père cherche à le tuer. Leur relation connaît ensuite des tensions.",
+    "studyFocus": "Mical, fille de Saül et femme de David, a vécu dans une famille marquée par les conflits et a pris des décisions qui ont eu des conséquences dans sa vie conjugale.",
     "lessonPoints": [
-      "Elle avertit David du danger et l’aide à s’échapper.",
-      "Elle utilise une mise en scène pour gagner du temps devant les hommes de Saül.",
-      "Elle est ensuite donnée à un autre homme avant d’être reprise par David.",
-      "Elle critique David lors de son expression de joie devant Jéhovah.",
-      "Son récit permet d’examiner le courage mais aussi une attitude critique."
+      "Ne pas laisser les conflits familiaux déterminer nos choix spirituels.",
+      "Cultiver le respect : son récit montre l’importance de respecter ceux qui manifestent du zèle pour Jéhovah.",
+      "Prudence : les paroles et attitudes peuvent avoir des conséquences durables dans les relations."
     ],
     "keyReading": "1 Samuel 18:20-29 ; 19:11-17 ; 25:44 ; 2 Samuel 3:12-16 ; 6:16-23",
     "location": "Gibéa et Jérusalem.",
@@ -1306,13 +1294,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joab": {
-    "studyFocus": "Joab, neveu de David et chef de son armée, joue un rôle militaire majeur pendant le règne de David. Il est capable et parfois loyal envers le roi, mais commet aussi des meurtres.",
+    "studyFocus": "Joab était un chef militaire capable, mais son histoire montre les dangers d’une ambition personnelle et d’actions contraires aux décisions du roi établi par Jéhovah.",
     "lessonPoints": [
-      "Il commande l’armée de David pendant de nombreuses années.",
-      "Il tue Abner et Amasa.",
-      "Il avertit David au sujet d’Absalom mais agit ensuite violemment contre lui.",
-      "Il soutient Adonias lors de la succession.",
-      "Son histoire montre qu’une capacité remarquable ne compense pas des actes contraires aux principes de Dieu."
+      "Loyauté : les capacités ne remplacent pas une véritable fidélité.",
+      "Maîtrise de soi : la vengeance et l’ambition peuvent pousser à des actes graves.",
+      "Respect de l’autorité : il faut agir selon les principes de Jéhovah plutôt que selon ses propres intérêts."
     ],
     "keyReading": "2 Samuel 2:12–3:39 ; 10:1-19 ; 18:1-33 ; 20:1-23 ; 1 Rois 1:5-53 ; 2:28-35",
     "location": "Jérusalem et les territoires où l’armée de David combat.",
