@@ -4137,8 +4137,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Romains 16:1-2",
     "location": "Cenchrées, près de Corinthe.",
-    "relationshipWithJehovah": "Paul recommande Phœbé aux chrétiens de Rome et souligne qu’elle a été une aide pour beaucoup.",
-    "didYouKnow": "Elle est appelée ministre de la congrégation de Cenchrées.",
+    "relationshipWithJehovah": "Son service pour la congrégation et son aide envers de nombreux chrétiens montrent une foi qui se traduisait par des actes concrets de soutien.",
+    "didYouKnow": "JW.org explique que le mot grec traduit par « ministre » à propos de Phœbé ne signifie pas qu’elle avait été nommée assistante ministérielle; Paul l’emploie pour parler de son activité au service de la bonne nouvelle.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4157,21 +4157,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ph%C3%A9b%C3%A9/"
       }
     ],
-    "identity": "Ministre de la congrégation de Cenchrées — Phœbé est recommandée par Paul aux chrétiens de Rome et est présentée comme une aide pour beaucoup, y compris Paul.",
-    "era": "Congrégation chrétienne du Ier siècle",
+    "identity": "Phœbé était une chrétienne de Cenchrées que Paul recommande chaleureusement aux chrétiens de Rome.",
+    "era": "Vers 56-58 de n. è., au cours du ministère de Paul",
     "familyAndEntourage": [
       "Paul",
+      "Les chrétiens de Cenchrées",
       "Les chrétiens de Rome"
     ],
     "bibleAccount": [
-      "Sert la congrégation de Cenchrées.",
-      "Est recommandée chaleureusement aux chrétiens de Rome.",
-      "Aide de nombreux chrétiens."
+      "Paul la recommande à la congrégation de Rome.",
+      "Elle est présentée comme une aide pour beaucoup, y compris Paul.",
+      "Paul demande aux chrétiens de Rome de l’accueillir et de l’assister dans toute affaire où elle aurait besoin d’eux."
     ],
     "qualities": [
       "Service",
       "Générosité",
-      "Hospitalité"
+      "Fiabilité"
     ],
     "difficulties": []
   },
@@ -4978,10 +4979,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Obéissance",
       "Reconnaissance"
     ],
-    "keyReading": "Luc 1:5-25, 57-80",
+    "keyReading": "Luc 1:5-25,57-79",
     "location": "Jérusalem et la région montagneuse de Judée.",
-    "relationshipWithJehovah": "Zacharie et Élisabeth sont décrits comme justes devant Jéhovah et il reçoit une promesse concernant leur fils Jean.",
-    "didYouKnow": "Il retrouve la parole après avoir confirmé le nom Jean pour son fils.",
+    "relationshipWithJehovah": "Il servait régulièrement comme prêtre. Après la naissance de Jean, il reconnaît publiquement l’action de Jéhovah et prophétise sur le rôle futur de son fils.",
+    "didYouKnow": "Zekaria appartenait à la division sacerdotale d’Abiya, l’une des divisions organisées pour assurer le service au temple.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4996,24 +4997,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Prêtre — Zekaria reçoit au temple l’annonce de la naissance de son fils Jean et retrouve la parole après la naissance de l’enfant.",
-    "era": "Évangiles",
+    "identity": "Zekaria était prêtre de la division d’Abiya, mari d’Élisabeth et père de Jean le Baptiseur.",
+    "era": "Juste avant et au début du ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Élisabeth",
-      "Jean le Baptiseur"
+      "Jean le Baptiseur",
+      "Gabriel",
+      "Marie"
     ],
     "bibleAccount": [
-      "Accomplit son service sacerdotal au temple.",
-      "Reçoit l’annonce concernant Jean.",
-      "Est temporairement privé de parole après avoir exprimé son doute.",
-      "Prophétise à la naissance de son fils."
+      "Il accomplit son service sacerdotal au temple.",
+      "L’ange Gabriel lui annonce la naissance d’un fils.",
+      "Après avoir exprimé des doutes, il reste muet jusqu’à la naissance de Jean.",
+      "Il prophétise ensuite sous l’inspiration de l’esprit saint."
     ],
     "qualities": [
+      "Service sacré",
       "Foi retrouvée",
-      "Reconnaissance",
-      "Service"
+      "Reconnaissance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a demandé un signe alors que Gabriel lui annonçait une réponse à sa prière, et il a été temporairement privé de parole."
+    ]
   },
   "elizabeth": {
     "studyFocus": "Élisabeth était une femme fidèle qui a accueilli Marie avec joie et a reconnu sous inspiration le rôle particulier de l’enfant qu’elle portait.",
@@ -5111,10 +5116,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Responsabilité",
       "Examiner les motivations"
     ],
-    "keyReading": "Matthieu 26:3-5, 57-68 ; Jean 11:47-53 ; 18:12-14, 24-28",
+    "keyReading": "Jean 11:47-53; 18:12-24; Matthieu 26:57-68; Actes 4:5-10",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Caïphe participe aux démarches contre Jésus; ses paroles concernant la mort d’un seul homme sont rapportées par Jean dans le contexte de la prophétie.",
-    "didYouKnow": "Il était grand prêtre l’année où Jésus fut arrêté et exécuté.",
+    "relationshipWithJehovah": "Le récit ne présente pas Caïphe comme un homme servant fidèlement Jéhovah. Sa position religieuse élevée ne l’a pas empêché de rejeter Jésus et de participer à l’opposition contre ses disciples.",
+    "didYouKnow": "Caïphe était gendre d’Anne et exerça la fonction de grand prêtre pendant une période particulièrement importante du ministère de Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5129,23 +5134,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Grand prêtre — Caïphe participe aux démarches des chefs religieux contre Jésus et préside son interrogatoire religieux.",
-    "era": "Évangiles",
+    "identity": "Joseph Caïphe était grand prêtre durant une partie du ministère de Jésus. Il participa aux décisions des chefs religieux qui cherchèrent à faire mourir Jésus.",
+    "era": "Ministère de Jésus et premières années de la congrégation chrétienne",
     "familyAndEntourage": [
+      "Anne, ancien grand prêtre et membre influent de la famille sacerdotale",
+      "Le Sanhédrin",
       "Jésus",
-      "Sanhédrin",
-      "Anne"
+      "Pierre et Jean"
     ],
     "bibleAccount": [
-      "Participe à la décision concernant Jésus.",
-      "Interroge Jésus devant le Sanhédrin.",
-      "Intervient ensuite dans les premiers épisodes de persécution des disciples."
+      "Il participe à la réunion du Sanhédrin concernant Jésus.",
+      "Il affirme qu’il vaut mieux qu’un seul homme meure pour le peuple.",
+      "Il préside l’interrogatoire de Jésus avec d’autres chefs religieux.",
+      "Après la résurrection, il participe aux démarches contre les apôtres."
     ],
-    "qualities": [
-      "Autorité religieuse"
-    ],
+    "qualities": [],
     "difficulties": [
-      "Son rôle dans le récit illustre les conséquences de décisions prises contre Jésus et ses disciples."
+      "Il a participé à une décision injuste contre Jésus et à l’opposition envers ses disciples."
     ]
   },
   "joanna": {
@@ -5327,10 +5332,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Soutenir les frères"
     ],
-    "keyReading": "Actes 17:1-9",
+    "keyReading": "Actes 17:1-9; Romains 16:21",
     "location": "Thessalonique.",
-    "relationshipWithJehovah": "Jason accueille Paul et Silas; après une émeute, il est amené devant les autorités et doit répondre des accusations portées contre les missionnaires.",
-    "didYouKnow": "Des opposants l’accusent d’accueillir ceux qui parlent du Royaume.",
+    "relationshipWithJehovah": "Son accueil des prédicateurs et son soutien à l’activité chrétienne montrent qu’il était disposé à prendre des risques personnels pour soutenir la bonne nouvelle.",
+    "didYouKnow": "Paul mentionne aussi un Jason parmi ses proches dans Romains 16:21; il n’est pas certain qu’il s’agisse du même homme que celui de Thessalonique.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5345,23 +5350,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Chrétien de Thessalonique — Jason accueille Paul et Silas à Thessalonique et est ensuite entraîné dans les troubles provoqués par leurs opposants.",
-    "era": "Actes",
+    "identity": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas et fut entraîné dans l’opposition déclenchée contre eux.",
+    "era": "Vers 50-51 de n. è., durant le deuxième voyage missionnaire de Paul",
     "familyAndEntourage": [
       "Paul",
       "Silas",
-      "Les chrétiens de Thessalonique"
+      "Les frères de Thessalonique",
+      "Les autorités de la ville"
     ],
     "bibleAccount": [
-      "Héberge Paul et Silas.",
-      "Est traîné devant les autorités avec d’autres frères.",
-      "Fournit une garantie aux autorités pour obtenir leur libération."
+      "Il accueille Paul et Silas chez lui.",
+      "Des opposants cherchent Paul et Silas dans sa maison.",
+      "Jason et d’autres frères sont traînés devant les autorités.",
+      "Il fournit une garantie avant leur libération."
     ],
     "qualities": [
       "Hospitalité",
-      "Courage"
+      "Courage",
+      "Soutien aux prédicateurs"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Son hospitalité l’expose à l’hostilité d’une foule et à des accusations devant les autorités."
+    ]
   },
   "onesiphorus": {
     "studyFocus": "Onésiphore a manifesté un courage et une fidélité remarquables en recherchant Paul et en le réconfortant lorsqu’il était prisonnier.",
@@ -5413,10 +5423,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Persévérance"
     ],
-    "keyReading": "Matthieu 27:55-61 ; 28:1-10 ; Marc 15:40-47 ; 16:1-8",
+    "keyReading": "Matthieu 27:55-61; 28:1-10; Marc 15:40-47; 16:1-8",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Marie fait partie des femmes qui suivent Jésus et restent présentes lors de sa mort et de son ensevelissement.",
-    "didYouKnow": "Elle est parmi les femmes qui se rendent au tombeau le premier jour de la semaine.",
+    "relationshipWithJehovah": "Sa fidélité se manifeste par son attachement à Jésus et par sa présence lors d’événements où beaucoup auraient pu avoir peur.",
+    "didYouKnow": "Les Évangiles mentionnent plusieurs femmes nommées Marie; identifier précisément chacune demande donc de tenir compte de son entourage et des événements associés.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5431,23 +5441,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Disciple — Marie, mère de Jacques et de José, fait partie des femmes qui suivent Jésus et sont présentes lors de sa mort et de son ensevelissement.",
-    "era": "Évangiles",
+    "identity": "Marie, mère de Jacques et de José, faisait partie des femmes qui accompagnaient Jésus depuis la Galilée et qui furent témoins de sa mort et de son ensevelissement.",
+    "era": "Ministère terrestre de Jésus",
     "familyAndEntourage": [
-      "Jésus",
       "Jacques",
-      "José"
+      "José",
+      "Jésus",
+      "D’autres femmes disciples"
     ],
     "bibleAccount": [
-      "Suit Jésus depuis la Galilée.",
-      "Est présente lors de l’exécution de Jésus.",
-      "Observe le lieu où Jésus est déposé."
+      "Elle accompagne Jésus depuis la Galilée.",
+      "Elle assiste à son exécution.",
+      "Elle observe où son corps est déposé.",
+      "Elle se rend au tombeau après le sabbat avec d’autres femmes."
     ],
     "qualities": [
       "Fidélité",
-      "Courage"
+      "Courage",
+      "Persévérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle a dû assister à l’exécution de Jésus puis attendre jusqu’après le sabbat avant de retourner au tombeau."
+    ]
   },
   "mary_mark_mother": {
     "studyFocus": "Marie, mère de Jean-Marc — une chrétienne hospitalière",
@@ -5456,10 +5471,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Soutenir la congrégation",
       "Prière"
     ],
-    "keyReading": "Actes 12:5-17",
+    "keyReading": "Actes 12:1-17",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Sa maison est un lieu où les disciples se réunissent pour prier.",
-    "didYouKnow": "La maison de Marie dispose d’une porte et d’une servante appelée Rhodé.",
+    "relationshipWithJehovah": "Elle soutenait concrètement les chrétiens en ouvrant sa maison pour leurs réunions, ce qui montre que son attachement au vrai culte se traduisait par l’hospitalité.",
+    "didYouKnow": "La maison de Marie avait une porte donnant sur la rue et une servante appelée Rhodé; cela montre qu’il s’agissait d’une maison suffisamment importante pour accueillir des réunions de disciples.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5474,22 +5489,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Chrétienne de Jérusalem — Marie met sa maison à disposition des disciples de Jérusalem, qui s’y réunissent notamment pendant la période de persécution.",
-    "era": "Actes",
+    "identity": "Marie, mère de Jean Marc, était une chrétienne de Jérusalem dont la maison servait de lieu de réunion aux disciples.",
+    "era": "Premières années de la congrégation chrétienne, vers 44 de n. è.",
     "familyAndEntourage": [
       "Jean Marc",
       "Pierre",
-      "Barnabé"
+      "Barnabé",
+      "Les chrétiens réunis chez elle"
     ],
     "bibleAccount": [
-      "Accueille des chrétiens chez elle.",
-      "Sa maison sert de lieu de réunion pour les disciples."
+      "Sa maison est un lieu où de nombreux disciples se réunissent.",
+      "Pierre se rend chez elle après sa libération miraculeuse de prison.",
+      "La servante Rhodé répond à Pierre à la porte."
     ],
     "qualities": [
       "Hospitalité",
-      "Générosité"
+      "Générosité",
+      "Soutien à la congrégation"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle mettait sa maison à disposition dans une période où les disciples subissaient une persécution intense."
+    ]
   },
   "apphia": {
     "studyFocus": "Apphia est saluée avec Philémon et Archippe dans la lettre de Paul, ce qui montre qu’elle faisait partie de la communauté chrétienne liée à la maison de Philémon.",
