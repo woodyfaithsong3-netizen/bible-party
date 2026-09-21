@@ -5532,10 +5532,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Hospitalité : son nom apparaît dans le contexte d’une maison utilisée pour les réunions chrétiennes.",
       "Responsabilité : son association avec Philémon et Archippe rappelle la contribution de chacun dans la congrégation."
     ],
-    "keyReading": "Philémon 1-2",
+    "keyReading": "Philémon 1-7",
     "location": "Colosses.",
-    "relationshipWithJehovah": "Elle est saluée avec Philémon et Archippe, ce qui montre son association avec la congrégation réunie dans leur maison.",
-    "didYouKnow": "Elle est mentionnée au début de la lettre de Paul à Philémon.",
+    "relationshipWithJehovah": "Paul l’appelle « notre sœur », ce qui montre qu’elle était une chrétienne reconnue au sein de la congrégation. Le texte souligne aussi l’importance de la foi et de l’amour dans son entourage chrétien.",
+    "didYouKnow": "JW.org indique qu’Apphia était peut-être la femme de Philémon, mais la Bible ne l’affirme pas explicitement.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5550,20 +5550,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Chrétienne — Apphia est saluée avec Philémon et Archippe dans la lettre adressée à la congrégation qui se réunit chez Philémon.",
-    "era": "Congrégation chrétienne du Ier siècle",
+    "identity": "Apphia était une chrétienne associée à Philémon et Archippe dans la lettre personnelle que Paul adressa à la maisonnée et à la congrégation qui se réunissait chez Philémon.",
+    "era": "Premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
       "Philémon",
-      "Archippe"
+      "Archippe",
+      "Onésime",
+      "La congrégation réunie dans la maison de Philémon"
     ],
     "bibleAccount": [
-      "Participe à la vie de la congrégation réunie chez Philémon."
+      "Paul lui adresse directement sa lettre avec Philémon et Archippe.",
+      "Elle faisait apparemment partie de la maisonnée de Philémon.",
+      "Elle était liée à une congrégation qui se réunissait dans cette maison."
     ],
     "qualities": [
-      "Foi",
-      "Service"
+      "Engagement chrétien",
+      "Hospitalité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle faisait partie d’une maisonnée confrontée au retour d’Onésime, ancien esclave de Philémon devenu chrétien."
+    ]
   },
   "archippus": {
     "studyFocus": "Archippe était un chrétien à qui Paul a demandé de veiller à bien accomplir le ministère qu’il avait reçu dans le Seigneur.",
@@ -5572,10 +5578,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Responsabilité : une mission reçue de Jéhovah mérite d’être accomplie avec sérieux.",
       "Encouragement : les rappels fraternels peuvent aider un chrétien à rester concentré sur son service."
     ],
-    "keyReading": "Philémon 1-2 ; Colossiens 4:17",
+    "keyReading": "Philémon 1-7; Colossiens 4:17",
     "location": "Colosses.",
-    "relationshipWithJehovah": "Paul lui rappelle de veiller à bien accomplir le ministère qu’il a reçu dans le Seigneur.",
-    "didYouKnow": "Il est associé à Philémon et à la congrégation de Colosses.",
+    "relationshipWithJehovah": "Son service chrétien était suffisamment important pour que Paul l’encourage personnellement à le mener à bien dans le Seigneur.",
+    "didYouKnow": "Archippe est cité dans deux lettres de Paul, et l’une d’elles lui adresse une exhortation directe concernant son ministère.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5590,22 +5596,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Chrétien — Archippe est salué dans la lettre à Philémon et Paul lui demande de veiller au ministère qu’il a reçu dans le Seigneur.",
-    "era": "Congrégation chrétienne du Ier siècle",
+    "identity": "Archippe était un chrétien associé à Philémon et Apphia à Colosses. Paul l’appelle « notre compagnon d’armes » et lui demande de veiller à accomplir le ministère reçu dans le Seigneur.",
+    "era": "Premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
       "Philémon",
       "Apphia",
-      "Paul"
+      "Onésime",
+      "La congrégation de Colosses"
     ],
     "bibleAccount": [
-      "Reçoit une responsabilité dans le ministère.",
-      "Est encouragé à accomplir pleinement son service."
+      "Il reçoit une salutation personnelle dans la lettre à Philémon.",
+      "Paul le qualifie de compagnon d’armes.",
+      "Dans sa lettre aux Colossiens, Paul l’exhorte à veiller à accomplir le ministère reçu dans le Seigneur."
     ],
     "qualities": [
-      "Persévérance",
-      "Sens du devoir"
+      "Engagement",
+      "Persévérance dans le service"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Paul lui rappelle la nécessité de continuer à accomplir pleinement le service qui lui avait été confié."
+    ]
   },
   "john_mark": {
     "studyFocus": "Jean-Marc a connu un début de service marqué par une difficulté, mais il a ensuite retrouvé la confiance de Paul et est devenu un collaborateur utile.",
@@ -5718,10 +5728,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Prudence : il a cherché à comprendre les accusations avant d’agir.",
       "Justice : son récit montre l’importance de procédures équitables même dans une situation tendue."
     ],
-    "keyReading": "Actes 21:27-40 ; 22:22-30 ; 23:10-30",
+    "keyReading": "Actes 21:27-40; 22:22-30; 23:12-35",
     "location": "Jérusalem et Césarée.",
-    "relationshipWithJehovah": "Lysias intervient pour empêcher Paul d’être tué par la foule et organise son transfert sous protection.",
-    "didYouKnow": "Il avait acheté sa citoyenneté romaine à prix élevé.",
+    "relationshipWithJehovah": "La Bible ne présente pas Claudius Lysias comme un adorateur de Jéhovah. Son rôle montre néanmoins comment les circonstances et les autorités humaines ont contribué à préserver Paul pour que son témoignage se poursuive.",
+    "didYouKnow": "Lysias avait acheté sa citoyenneté romaine pour une grosse somme d’argent, selon son propre témoignage à Paul.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5736,23 +5746,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Commandant militaire romain — Claude Lysias intervient pour protéger Paul contre la foule et organise son transfert vers Césarée.",
-    "era": "Actes",
+    "identity": "Claudius Lysias était le commandant militaire de la garnison romaine de Jérusalem. Il intervint lorsque Paul fut attaqué dans le temple et le protégea de la foule.",
+    "era": "Vers 56-58 de n. è., durant la détention de Paul à Jérusalem",
     "familyAndEntourage": [
       "Paul",
-      "Félix",
-      "Les soldats romains"
+      "Les soldats romains",
+      "Le Sanhédrin",
+      "Le tribun de la garnison"
     ],
     "bibleAccount": [
-      "Intervient lors de l’émeute à Jérusalem.",
-      "Fait arrêter Paul pour le protéger.",
-      "Envoie Paul à Félix avec une lettre expliquant les faits."
+      "Il intervient pour arrêter Paul lorsqu’une foule le bat.",
+      "Il ordonne qu’on l’attache et qu’on l’interroge.",
+      "Il apprend ensuite que Paul est citoyen romain et évite de le faire fouetter.",
+      "Il organise son transfert à Césarée sous escorte importante pour le protéger d’un complot."
     ],
     "qualities": [
-      "Prudence",
-      "Respect de la procédure"
+      "Prudence administrative",
+      "Respect des procédures romaines une fois la citoyenneté connue"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il se trompe d’abord sur l’identité de Paul et envisage de le faire interroger sous le fouet avant d’apprendre qu’il est citoyen romain."
+    ]
   },
   "julius_centurion": {
     "studyFocus": "Julius, officier de la troupe impériale, a traité Paul avec humanité pendant son transfert vers Rome.",
@@ -5761,10 +5775,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Jugement : il a écouté Paul à plusieurs reprises pendant le voyage.",
       "Responsabilité : il devait assurer la sécurité des prisonniers dans des circonstances difficiles."
     ],
-    "keyReading": "Actes 27:1-44 ; 28:1-16",
+    "keyReading": "Actes 27:1-3,11,31-44",
     "location": "Césarée, mer Méditerranée et Rome.",
-    "relationshipWithJehovah": "Julius permet à Paul de voir des amis et le traite avec considération pendant le voyage vers Rome.",
-    "didYouKnow": "Il appartient à la troupe impériale et escorte Paul.",
+    "relationshipWithJehovah": "La Bible ne dit pas que Julius adorait Jéhovah. Son comportement envers Paul montre toutefois qu’il pouvait agir avec bienveillance et que Dieu a permis que Paul et les autres prisonniers soient préservés.",
+    "didYouKnow": "Julius appartenait à la « cohorte impériale », et il autorisa Paul à recevoir les soins de ses amis à Sidon pendant le voyage.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5779,22 +5793,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Centurion romain — Julius est chargé de conduire Paul et d’autres prisonniers vers Rome et traite Paul avec considération.",
-    "era": "Actes",
+    "identity": "Julius était un officier romain de la cohorte impériale chargé de conduire Paul et d’autres prisonniers vers Rome.",
+    "era": "Vers 59-60 de n. è., pendant le voyage de Paul vers Rome",
     "familyAndEntourage": [
       "Paul",
-      "Les prisonniers"
+      "Les autres prisonniers",
+      "Les soldats sous ses ordres",
+      "Le capitaine du navire"
     ],
     "bibleAccount": [
-      "Conduit Paul vers Rome.",
-      "Laisse Paul rendre visite à ses amis.",
-      "Évite que les soldats tuent les prisonniers après le naufrage."
+      "Il embarque Paul à destination de Rome.",
+      "Il traite Paul avec bienveillance et lui permet d’aller voir ses amis à Sidon.",
+      "Lors de la tempête, il empêche les soldats de tuer les prisonniers.",
+      "Il permet finalement à tous les passagers de rejoindre la terre après le naufrage."
     ],
     "qualities": [
       "Bienveillance",
-      "Discernement"
+      "Prudence",
+      "Maîtrise de la situation"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit prendre des décisions difficiles pendant une violente tempête et après le naufrage."
+    ]
   },
   "gaius_macedonian": {
     "studyFocus": "Gaïus de Macédoine a accompagné Paul dans son ministère et s’est retrouvé pris dans l’émeute d’Éphèse.",
@@ -5803,10 +5823,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage : il a été exposé au danger pendant l’opposition à Éphèse.",
       "Persévérance : son association avec Paul montre son engagement dans l’activité chrétienne."
     ],
-    "keyReading": "Actes 19:29 ; 20:4",
+    "keyReading": "Actes 19:29; 20:4-6",
     "location": "Éphèse et Macédoine.",
-    "relationshipWithJehovah": "Gaïus accompagne les serviteurs de Dieu malgré l’opposition et les troubles liés à la prédication.",
-    "didYouKnow": "Il est entraîné dans l’émeute d’Éphèse avec Aristarque.",
+    "relationshipWithJehovah": "Son association étroite avec Paul dans le service chrétien montre qu’il était disposé à soutenir la prédication même lorsque celle-ci provoquait une forte opposition.",
+    "didYouKnow": "La Bible mentionne plusieurs hommes appelés Gaïus; JW.org distingue au moins quatre personnes portant ce nom dans les Écritures.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5821,21 +5841,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Compagnon de Paul — Gaïus est un Macédonien entraîné dans le tumulte d’Éphèse avec Aristarque.",
-    "era": "Actes",
+    "identity": "Gaïus le Macédonien était un compagnon de voyage de Paul qui fut entraîné avec Aristarque dans le théâtre d’Éphèse lors de l’émeute provoquée par Démétrius.",
+    "era": "Troisième voyage missionnaire de Paul, vers 52-56 de n. è.",
     "familyAndEntourage": [
       "Paul",
-      "Aristarque"
+      "Aristarque",
+      "Démétrius et les artisans d’Éphèse"
     ],
     "bibleAccount": [
-      "Accompagne Paul dans son activité.",
-      "Est entraîné dans la foule lors de l’émeute d’Éphèse."
+      "Il accompagne Paul pendant son activité missionnaire.",
+      "Une foule l’entraîne avec Aristarque dans le théâtre d’Éphèse.",
+      "Il apparaît ensuite parmi les compagnons de Paul dans le récit du voyage missionnaire."
     ],
     "qualities": [
-      "Courage",
-      "Fidélité"
+      "Compagnonnage fidèle",
+      "Courage dans le ministère"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il est pris pour cible par une foule hostile à la prédication chrétienne."
+    ]
   },
   "aristarchus": {
     "studyFocus": "Aristarque était un compagnon de voyage et collaborateur de Paul qui a partagé avec lui des périodes difficiles, y compris son emprisonnement.",
@@ -5844,10 +5868,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage : il a été impliqué dans l’activité malgré l’opposition.",
       "Endurance : son association durable avec Paul montre sa constance dans le service."
     ],
-    "keyReading": "Actes 19:29 ; 20:4 ; 27:2 ; Colossiens 4:10 ; Philémon 23-24",
+    "keyReading": "Actes 19:29; 20:4; 27:2; Colossiens 4:10; Philémon 23-24",
     "location": "Macédoine, Éphèse et Rome.",
-    "relationshipWithJehovah": "Aristarque reste aux côtés de Paul malgré les dangers.",
-    "didYouKnow": "Il vient de Thessalonique et accompagne Paul pendant le voyage vers Rome.",
+    "relationshipWithJehovah": "Aristarque a continué à soutenir Paul malgré les risques. Son service fidèle et sa persévérance montrent un attachement concret à l’activité chrétienne.",
+    "didYouKnow": "JW.org précise qu’on ne sait pas exactement à quel titre Aristarque accompagnait Paul vers Rome; il est même possible qu’il ait été son esclave, mais le texte ne permet pas de l’affirmer.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5862,24 +5886,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Compagnon de Paul — Aristarque accompagne Paul et partage avec lui certaines étapes difficiles de son ministère.",
-    "era": "Actes",
+    "identity": "Aristarque était un chrétien macédonien de Thessalonique, proche collaborateur de Paul, qui l’accompagna dans plusieurs voyages et partagea même ses emprisonnements.",
+    "era": "Troisième voyage missionnaire de Paul et années suivantes",
     "familyAndEntourage": [
       "Paul",
-      "Gaïus",
-      "Marc"
+      "Gaïus le Macédonien",
+      "Les chrétiens de Thessalonique",
+      "Onésime et d’autres collaborateurs de Paul"
     ],
     "bibleAccount": [
-      "Accompagne Paul.",
-      "Est pris dans l’émeute d’Éphèse.",
-      "Voyage ensuite avec Paul vers Rome."
+      "Il est entraîné avec Gaïus au théâtre pendant l’émeute d’Éphèse.",
+      "Il accompagne Paul lors de son voyage vers la Judée et en direction de Rome.",
+      "À Rome, il continue de soutenir Paul et est appelé son compagnon de captivité."
     ],
     "qualities": [
+      "Fidélité",
       "Courage",
-      "Loyauté",
-      "Endurance"
+      "Persévérance",
+      "Esprit de sacrifice"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a subi l’hostilité de la foule à Éphèse et a partagé les difficultés de Paul, y compris la captivité."
+    ]
   },
   "syntyche": {
     "studyFocus": "Syntyche était une chrétienne fidèle qui avait collaboré avec Paul et Évodie dans la bonne nouvelle, mais qui devait résoudre un désaccord avec sa sœur.",
