@@ -66,17 +66,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "noe": {
-    "studyFocus": "Noé est présenté comme un homme juste qui « marchait avec le vrai Dieu » dans une génération violente et corrompue. Sa foi se traduisit par une obéissance concrète : il construisit l’arche selon les instructions reçues, avertit sa génération et entra dans l’arche avec sa famille.",
+    "studyFocus": "Noé était un homme juste qui vivait dans un monde marqué par la violence. Jéhovah lui donna la mission de construire une arche et de préserver sa famille ainsi que des représentants des animaux pendant le Déluge. Après le Déluge, Noé continua à adorer Jéhovah et reçut une alliance.",
     "lessonPoints": [
-      "Une foi solide se voit dans l’obéissance, même lorsqu’une tâche paraît immense.",
-      "Noé associa son service à celui de sa famille, qui fut préservée avec lui.",
-      "Après le Déluge, il remercia Jéhovah par un sacrifice.",
-      "Son erreur après le Déluge rappelle qu’un serviteur fidèle reste imparfait."
+      "Noé marcha avec le vrai Dieu alors que la majorité de son époque s’éloignait de lui.",
+      "Il accomplit pendant des années une mission qui demandait foi et persévérance.",
+      "Il protégea sa famille en obéissant aux instructions de Jéhovah.",
+      "Après le Déluge, il construisit un autel et offrit un sacrifice à Jéhovah."
     ],
-    "keyReading": "Genèse 6:9-22 ; 7:1-24 ; 8:15-22 ; 9:1-17 ; Matthieu 24:37-39 ; Hébreux 11:7 ; 2 Pierre 2:5",
-    "location": "Le monde antédiluvien, puis l’arche et la région où elle s’arrêta après le Déluge.",
-    "relationshipWithJehovah": "Noé marchait avec Jéhovah, reçut des instructions précises et les exécuta avec foi. Hébreux 11:7 relie directement sa conduite à sa foi.",
-    "didYouKnow": "Noé avait 600 ans lorsque le Déluge commença, et huit personnes de sa famille furent préservées dans l’arche.",
+    "keyReading": "Genèse 6:9-22 ; 7:1-24 ; 8:1-22 ; 9:1-17 ; Hébreux 11:7 ; 2 Pierre 2:5",
+    "location": "Région située entre l’Éden et l’Ararat, puis les environs des montagnes d’Ararat après le Déluge.",
+    "relationshipWithJehovah": "Noé est décrit comme marchant avec Dieu. Sa foi se manifesta par une obéissance concrète aux instructions reçues.",
+    "didYouKnow": "Noé avait 600 ans lorsque le Déluge commença, et il sortit de l’arche après que les eaux eurent recouvert la terre.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Noé",
@@ -229,17 +229,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "jacob": {
-    "studyFocus": "Jacob, fils d’Isaac et de Rébecca, devint l’ancêtre des douze tribus d’Israël. Son parcours comprend des choix discutables, des années de travail, des conflits familiaux, des pertes et une évolution visible de sa foi et de sa personnalité.",
+    "studyFocus": "Jacob, fils d’Isaac et de Rébecca, devint l’ancêtre des douze tribus d’Israël. Sa vie fut marquée par des conflits familiaux, des années de travail chez Laban et une transformation progressive de sa personnalité. Jéhovah renouvela avec lui les promesses faites à Abraham et Isaac.",
     "lessonPoints": [
-      "Étudier comment les tensions avec Ésaü et Laban ont marqué la vie de Jacob.",
-      "Observer comment Jacob a appris à compter sur Jéhovah au fil des années et des épreuves.",
-      "Étudier l’épisode de Penouël, où son nom fut changé en Israël après sa lutte avec un ange.",
-      "Observer comment il a réagi lorsqu’il a cru Joseph mort puis lorsqu’il l’a retrouvé en Égypte."
+      "Jacob dut apprendre à faire confiance à Jéhovah au milieu de conflits familiaux.",
+      "Il travailla de longues années pour obtenir ses épouses et son troupeau.",
+      "Il lutta avec un ange et reçut le nom Israël.",
+      "À la fin de sa vie, il manifesta sa foi en bénissant ses fils et les fils de Joseph."
     ],
-    "keyReading": "Genèse 28:10-22; 32:24-32; 33:1-20; 37:1-36; 46:1-7",
-    "location": "Canaan ; Harân/Paddân-Aram ; Béthel ; Penouël ; Sichem ; Égypte.",
-    "relationshipWithJehovah": "Jacob apprend progressivement à compter sur Jéhovah. Ses prières avant de rencontrer Ésaü et sa réaction après les événements de sa vie montrent une confiance de plus en plus mûre.",
-    "didYouKnow": "Jacob reçut le nom Israël après avoir lutté avec un ange; ses douze fils devinrent les ancêtres des douze tribus d’Israël.",
+    "keyReading": "Genèse 27:1-45 ; 28:10-22 ; 29:1–31:55 ; 32:22-32 ; 35:9-15 ; 49:1-33 ; Hébreux 11:21",
+    "location": "Canaan, Paddan-Aram et de nouveau Canaan; il descendit ensuite en Égypte avec sa famille.",
+    "relationshipWithJehovah": "Jéhovah apparut à Jacob, renouvela avec lui l’alliance abrahamique et resta avec lui malgré ses épreuves et ses imperfections.",
+    "didYouKnow": "Jacob reçut le nom Israël après avoir lutté avec un ange, et ses douze fils devinrent les ancêtres des douze tribus d’Israël.",
     "jwResources": [
       {
         "title": "Jacob — Étude perspicace des Écritures",
@@ -288,17 +288,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joseph": {
-    "studyFocus": "Joseph, fils de Jacob et de Rachel, fut vendu comme esclave à 17 ans. Malgré l’injustice, l’éloignement et la prison, il resta fidèle à Jéhovah. Il fut ensuite établi à une haute fonction en Égypte et contribua à préserver sa famille pendant la famine.",
+    "studyFocus": "Joseph, fils de Jacob et de Rachel, fut vendu comme esclave par ses frères. En Égypte, il connut l’injustice et la prison avant de devenir administrateur sous Pharaon. Il utilisa ensuite sa position pour sauver de la famine sa famille et beaucoup d’autres personnes.",
     "lessonPoints": [
-      "Observer comment Joseph a gardé ses principes alors qu’il était loin de sa famille.",
-      "Étudier son refus des avances de la femme de Potiphar et sa raison centrée sur le péché contre Dieu.",
-      "Observer qu’il attribuait à Dieu les interprétations des rêves plutôt que de s’en attribuer le mérite.",
-      "Étudier sa manière de traiter ses frères lorsqu’il aurait pu se venger."
+      "Joseph resta fidèle malgré la trahison et l’injustice.",
+      "Il refusa l’immoralité sexuelle lorsqu’il fut tenté par la femme de Potiphar.",
+      "Il reconnut que l’interprétation des rêves venait de Dieu.",
+      "Il pardonna à ses frères et vit dans les événements l’accomplissement du dessein de Dieu."
     ],
-    "keyReading": "Genèse 37:1-36; 39:1-23; 41:14-57; 45:1-15; 50:15-21",
-    "location": "Canaan ; Paddân-Aram dans son enfance ; Égypte, notamment la maison de Potiphar, la prison et la cour de Pharaon.",
-    "relationshipWithJehovah": "Joseph attribue à Dieu l’interprétation des rêves et reconnaît que Jéhovah peut transformer une situation tragique en moyen de préserver des vies.",
-    "didYouKnow": "Joseph avait 30 ans lorsqu’il fut établi administrateur de l’Égypte et il passa ensuite sept années d’abondance à préparer les sept années de famine annoncées.",
+    "keyReading": "Genèse 37:1-36 ; 39:1-23 ; 40:1–41:57 ; 45:1-28 ; 50:15-26 ; Hébreux 11:22",
+    "location": "Canaan puis Égypte.",
+    "relationshipWithJehovah": "Joseph attribua à Jéhovah le mérite de ses capacités et resta fidèle dans des circonstances où personne de sa famille ne pouvait le surveiller.",
+    "didYouKnow": "Joseph avait 30 ans lorsqu’il se tint devant Pharaon et devint administrateur de l’Égypte pendant les années précédant la famine.",
     "jwResources": [
       {
         "title": "« Comment pourrais-je commettre ce grand mal ? »",
@@ -1095,17 +1095,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "isaac": {
-    "studyFocus": "Isaac fut le fils promis à Abraham et Sara. Sa vie montre la continuité de la promesse de Jéhovah : il épousa Rébecca, devint père d’Ésaü et de Jacob et resta attaché à l’adoration de Jéhovah malgré les tensions familiales.",
+    "studyFocus": "Isaac était le fils d’Abraham et de Sara et le père d’Ésaü et de Jacob. Il fut l’enfant de la promesse et vécut principalement en Canaan. Son mariage avec Rébecca et sa vie de famille contribuèrent à la continuité de la promesse faite à Abraham.",
     "lessonPoints": [
-      "Isaac fut disposé à se soumettre lorsque son père le présenta en sacrifice.",
-      "Il connut la stérilité de Rébecca et dut attendre l’intervention de Jéhovah.",
-      "Les préférences différentes d’Isaac et de Rébecca contribuèrent aux tensions familiales.",
-      "À la fin de sa vie, Isaac bénit Jacob conformément au dessein de Jéhovah."
+      "Isaac accepta avec confiance la direction prise par Abraham concernant son mariage.",
+      "Il connut des conflits autour des puits mais évita parfois l’escalade.",
+      "Il transmit à Jacob la bénédiction liée à la promesse.",
+      "Sa vie montre la continuité de l’alliance de Jéhovah avec la famille d’Abraham."
     ],
-    "keyReading": "Genèse 22:1-19 ; 24:1-67 ; 25:19-34 ; 26:1-33 ; 27:1-40 ; Hébreux 11:17-20",
-    "location": "Canaan, notamment la région de Beer-Lahaï-Roï, Guérar et Beer-Shéba.",
-    "relationshipWithJehovah": "Isaac bénéficia des promesses faites à Abraham et compta sur Jéhovah dans les périodes de famine et de conflits pour les puits.",
-    "didYouKnow": "Isaac avait 40 ans lorsqu’il épousa Rébecca et 60 ans lorsque leurs fils Ésaü et Jacob naquirent.",
+    "keyReading": "Genèse 21:1-7 ; 22:1-19 ; 24:1-67 ; 26:1-35 ; 27:1-40 ; Hébreux 11:20",
+    "location": "Canaan, notamment Beer-Shéba et la région de Guérar.",
+    "relationshipWithJehovah": "Isaac bénéficia directement de l’alliance faite avec Abraham et continua à invoquer Jéhovah.",
+    "didYouKnow": "Isaac avait 40 ans lorsqu’il épousa Rébecca et 60 ans lorsque ses fils Ésaü et Jacob naquirent.",
     "jwResources": [
       {
         "title": "Isaac — Étude perspicace des Écritures",
@@ -1153,14 +1153,14 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "samson": {
-    "studyFocus": "Samson fut juge en Israël pendant 20 ans et reçut la mission de commencer à délivrer Israël de la main des Philistins. Jéhovah lui donna une force extraordinaire par son esprit. Son histoire contient aussi des choix impulsifs, mais Hébreux 11:32-34 cite Samson parmi les hommes qui ont manifesté la foi.",
+    "studyFocus": "Samson fut un juge d’Israël doté d’une force exceptionnelle et consacré comme naziréen dès avant sa naissance. Jéhovah l’utilisa pour commencer à délivrer Israël des Philistins. Samson eut toutefois de graves faiblesses personnelles qui contribuèrent à sa chute avant qu’il ne retrouve sa foi et agisse une dernière fois contre les Philistins.",
     "lessonPoints": [
-      "Sa force était liée à l’action de l’esprit de Jéhovah, pas à une simple capacité humaine.",
-      "Samson a parfois laissé ses désirs personnels compliquer sa mission.",
-      "Après sa capture et son aveuglement, il pria Jéhovah et retrouva la force d’agir.",
-      "Son exemple montre qu’une personne imparfaite peut manifester une foi réelle."
+      "Samson reçut une mission spéciale dès avant sa naissance.",
+      "Sa force venait de l’esprit de Jéhovah, et non de sa propre puissance physique.",
+      "Ses choix amoureux et son manque de maîtrise de soi lui causèrent de graves problèmes.",
+      "À la fin de sa vie, il fit de nouveau appel à Jéhovah et agit contre les Philistins."
     ],
-    "keyReading": "Juges 13:1-25 ; 14:1-20 ; 15:9-20 ; 16:4-31 ; Hébreux 11:32-34",
+    "keyReading": "Juges 13:1-25 ; 14:1–16:31 ; Hébreux 11:32",
     "jwResources": [
       {
         "title": "Samson — Étude perspicace des Écritures",
@@ -1179,9 +1179,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ],
-    "location": "Le territoire de Dan et les régions contrôlées par les Philistins, notamment Gaza et Timna.",
-    "relationshipWithJehovah": "Samson était voué à Jéhovah dès sa naissance. Il reçut l’esprit de Jéhovah à plusieurs reprises et pria Jéhovah avec foi à la fin de sa vie.",
-    "didYouKnow": "Samson a exercé la fonction de juge en Israël pendant 20 ans, selon Juges 15:20.",
+    "location": "Territoire de Dan et régions contrôlées par les Philistins.",
+    "relationshipWithJehovah": "Jéhovah utilisa Samson pour combattre les Philistins; malgré ses faiblesses, Samson manifesta finalement sa foi en demandant de la force à Dieu.",
+    "didYouKnow": "Samson jugea Israël pendant 20 ans, et son histoire est l’un des récits bibliques les plus développés sur un juge d’Israël.",
     "identity": "Samson était un juge d’Israël doté d’une force exceptionnelle donnée par Jéhovah pour commencer à délivrer Israël des Philistins.",
     "era": "Époque des juges, avant la royauté",
     "familyAndEntourage": [
@@ -1208,14 +1208,14 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "naomi": {
-    "studyFocus": "Noémi connut une série de pertes : elle quitta Bethléhem avec son mari et ses deux fils, devint veuve puis perdit aussi ses deux fils. Malgré son amertume, elle resta attachée à Jéhovah et fut soutenue par la fidélité de Ruth.",
+    "studyFocus": "Noémi était la belle-mère de Ruth et la femme d’Élimélek. Après la mort de son mari et de ses deux fils, elle retourna de Moab à Bethléhem avec Ruth. Sa belle-fille resta attachée à elle et participa finalement à la lignée de David.",
     "lessonPoints": [
-      "Noémi ne cache pas sa douleur et exprime honnêtement son amertume.",
-      "Elle cherche le bien de Ruth et Orpa malgré sa propre souffrance.",
-      "Son retour à Bethléhem montre qu’elle reste attachée à son peuple.",
-      "L’histoire se termine par la restauration de sa joie avec la naissance d’Obed."
+      "Noémi connut des pertes familiales profondes.",
+      "Elle ne cacha pas son chagrin et exprima ouvertement sa douleur.",
+      "Elle accepta finalement la fidélité de Ruth et l’aida à comprendre les usages d’Israël.",
+      "Jéhovah transforma une période de grande détresse en une situation où Noémi retrouva une famille et une place dans la communauté."
     ],
-    "keyReading": "Ruth 1:1-22 ; 2:19-23 ; 3:1-18 ; 4:13-17",
+    "keyReading": "Ruth 1:1-22 ; 2:1-23 ; 3:1-18 ; 4:13-17",
     "jwResources": [
       {
         "title": "Naomi — Étude perspicace des Écritures",
@@ -1230,9 +1230,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "location": "Bethléhem en Juda et le pays de Moab.",
-    "relationshipWithJehovah": "Noémi reconnaît Jéhovah dans les événements de sa vie et voit finalement sa situation familiale restaurée.",
-    "didYouKnow": "Le livre de Ruth montre que Noémi retrouva une famille grâce au mariage de Ruth avec Boaz et à la naissance d’Obed.",
+    "location": "Bethléhem en Juda et Moab.",
+    "relationshipWithJehovah": "Noémi parlait du rôle de Jéhovah dans sa situation, même lorsqu’elle était accablée par le chagrin; le récit montre ensuite sa restauration familiale.",
+    "didYouKnow": "À la naissance du fils de Ruth et Boaz, les femmes de Bethléhem dirent que cet enfant était pour Noémi comme un restaurateur de vie.",
     "identity": "Veuve et belle-mère de Ruth — Noémi a connu de lourdes pertes mais a continué à agir avec amour envers Ruth.",
     "era": "Ruth",
     "familyAndEntourage": [
@@ -1301,13 +1301,14 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "elisha": {
-    "studyFocus": "Élisée fut prophète de Jéhovah et successeur d’Élie. Il accomplit de nombreux miracles et resta ferme face à l’opposition.",
+    "studyFocus": "Élisha fut le successeur d’Éliya comme prophète de Jéhovah. Son ministère comprit de nombreux miracles et s’étendit sur plusieurs règnes en Israël. Il intervint auprès de particuliers, de rois et de groupes de prophètes.",
     "lessonPoints": [
-      "Étudier sa réponse à l’appel d’Élie.",
-      "Observer les miracles accomplis en faveur de personnes ordinaires.",
-      "Examiner son courage face aux ennemis du peuple de Dieu."
+      "Élisha demanda une double portion de l’esprit qui animait Éliya.",
+      "Il accomplit des miracles qui montraient la puissance de Jéhovah.",
+      "Il aida aussi bien des personnes humbles qu’un chef militaire comme Naaman.",
+      "Il resta fidèle à sa mission malgré les difficultés politiques et spirituelles d’Israël."
     ],
-    "keyReading": "1 Rois 19:19-21 ; 2 Rois 2:1-15 ; 4 ; 5 ; 6:8-23 ; 13:14-21",
+    "keyReading": "1 Rois 19:15-21 ; 2 Rois 2:1-25 ; 4:1–8:15 ; 9:1-13 ; 13:14-21",
     "jwResources": [
       {
         "title": "Élisée — Étude perspicace des Écritures",
@@ -1326,9 +1327,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "location": "Royaume d’Israël, notamment Samarie et les régions autour du Jourdain.",
-    "relationshipWithJehovah": "Élisée dépendait de Jéhovah et transmettait ses paroles sans se laisser intimider par les rois ou les ennemis.",
-    "didYouKnow": "Élisée demanda deux parts de l’esprit qui reposait sur Élie et vit Élie emporté dans un vent de tempête.",
+    "location": "Royaume d’Israël, notamment autour de Samarie et du Jourdain.",
+    "relationshipWithJehovah": "Élisha servit comme prophète de Jéhovah et dirigea l’attention des autres vers la puissance et les instructions de Dieu.",
+    "didYouKnow": "Après la mort d’Élisha, un homme fut jeté dans sa tombe et revint à la vie lorsqu’il toucha les os du prophète.",
     "identity": "Prophète et successeur d’Élie — Élisée poursuit le ministère prophétique d’Élie et intervient dans de nombreux récits concernant Israël.",
     "era": "Rois",
     "familyAndEntourage": [
@@ -1405,17 +1406,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "mary_magdalen": {
-    "studyFocus": "Marie Madeleine fut une disciple de Jésus qui l’accompagna et le soutint matériellement. Elle resta proche de Jésus lors de son exécution et fut parmi les premières personnes à constater que son tombeau était vide. Jésus ressuscité lui apparut ensuite et lui confia un message à transmettre aux disciples.",
+    "studyFocus": "Marie Madeleine était une disciple de Jésus originaire de Magdala. Jésus avait chassé d’elle sept démons. Elle le suivit, le soutint avec d’autres femmes et fut parmi les premières personnes à le voir après sa résurrection.",
     "lessonPoints": [
-      "Marie Madeleine avait été délivrée de sept démons et devint une disciple dévouée.",
-      "Elle continua à suivre Jésus alors que beaucoup avaient peur.",
-      "Sa présence au lieu d’exécution et au tombeau montre sa fidélité.",
-      "Jésus lui confia le privilège d’annoncer aux disciples qu’il était vivant."
+      "Marie Madeleine manifesta une forte reconnaissance envers Jésus.",
+      "Elle accompagna Jésus et ses apôtres pendant leur ministère.",
+      "Elle resta présente lors de la mort de Jésus alors que beaucoup de disciples étaient dispersés.",
+      "Après la résurrection, elle fut chargée d’annoncer aux disciples qu’elle avait vu le Seigneur."
     ],
-    "keyReading": "Luc 8:1-3 ; Matthieu 27:55-61 ; 28:1-10 ; Jean 19:25 ; 20:1-18",
-    "location": "Galilée et Jérusalem, notamment autour du lieu d’exécution et du tombeau de Jésus.",
-    "relationshipWithJehovah": "Sa reconnaissance pour l’aide reçue de Jésus se traduisit par un service fidèle. Elle fut également témoin de la résurrection et transmit le message reçu.",
-    "didYouKnow": "Luc 8:2 précise que sept démons étaient sortis de Marie Madeleine.",
+    "keyReading": "Luc 8:1-3 ; Matthieu 27:55-61 ; Jean 19:25 ; 20:1-18",
+    "location": "Magdala en Galilée puis divers lieux parcourus par Jésus.",
+    "relationshipWithJehovah": "Marie Madeleine devint une disciple fidèle de Jésus et participa à la proclamation du témoignage concernant sa résurrection.",
+    "didYouKnow": "Les Évangiles ne disent pas que Marie Madeleine était une prostituée; cette identification traditionnelle ne vient pas du texte biblique.",
     "jwResources": [
       {
         "title": "Magdalène (Marie la) — Étude perspicace des Écritures",
@@ -1513,16 +1514,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "barnabas": {
-    "studyFocus": "Barnabas était un chrétien généreux et encourageant de Chypre. Il soutint Saul après sa conversion et collabora avec Paul dans l’activité missionnaire.",
+    "studyFocus": "Barnabas, appelé Joseph par les apôtres, était un Lévite originaire de Chypre. Les apôtres lui donnèrent le surnom Barnabas, associé à l’idée de consolation ou d’encouragement. Il soutint Saul de Tarse et participa à l’œuvre missionnaire auprès des non-Juifs.",
     "lessonPoints": [
-      "Étudier comment son encouragement a aidé Saul à être accepté.",
-      "Observer sa générosité et son souci des nouveaux disciples.",
-      "Examiner son désaccord avec Paul au sujet de Jean-Marc sans oublier son rôle durable dans le service."
+      "Barnabas était connu pour son esprit généreux et encourageant.",
+      "Il fit confiance à Saul lorsque les disciples de Jérusalem avaient encore des réserves à son sujet.",
+      "Il servit avec Paul à Antioche et lors d’un voyage missionnaire.",
+      "Il eut un désaccord avec Paul au sujet de Jean-Marc, mais continua ensuite à servir avec lui."
     ],
-    "keyReading": "Actes 4:32-37 ; 9:26-28 ; 11:19-30 ; 13:1-13 ; 14:8-28 ; 15:36-41",
-    "location": "Chypre, Jérusalem, Antioche de Syrie et régions de Galatie.",
-    "relationshipWithJehovah": "Barnabas est présenté comme un homme bon, plein d’esprit saint et de foi, qui fortifiait les autres.",
-    "didYouKnow": "Son nom Barnabas est interprété comme « fils de consolation » ou « fils d’encouragement »; il était lévite originaire de Chypre.",
+    "keyReading": "Actes 4:36-37 ; 9:26-28 ; 11:19-30 ; 13:1–14:28 ; 15:36-41",
+    "location": "Chypre, Jérusalem, Antioche et diverses régions du monde méditerranéen.",
+    "relationshipWithJehovah": "Barnabas consacra ses ressources et son énergie à soutenir l’œuvre chrétienne et à encourager les croyants.",
+    "didYouKnow": "Barnabas vendit un champ et en apporta le montant aux apôtres, un geste présenté très tôt dans le récit de la congrégation chrétienne.",
     "jwResources": [
       {
         "title": "Barnabas — Étude perspicace des Écritures",
@@ -1561,17 +1563,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "cornelius": {
-    "studyFocus": "Corneille était un centurion romain décrit comme pieux et craignant Dieu. Jéhovah dirigea les événements pour que Pierre lui annonce la bonne nouvelle. Corneille et les personnes réunies chez lui reçurent l’esprit saint, marquant l’ouverture de cette possibilité aux non-Juifs incirconcis.",
+    "studyFocus": "Corneille était un officier romain et le premier non-Juif incirconcis à devenir chrétien avec l’approbation manifeste de Jéhovah. Il était connu pour sa crainte de Dieu, ses prières et ses dons aux nécessiteux. Sa conversion montra à Pierre que Dieu ne faisait pas de favoritisme entre Juifs et non-Juifs.",
     "lessonPoints": [
-      "Corneille priait régulièrement et donnait beaucoup aux nécessiteux.",
-      "Il réagit immédiatement à la direction reçue par l’intermédiaire de l’ange.",
-      "Il réunit famille et proches pour entendre Pierre.",
-      "Son cas a aidé Pierre à comprendre que Dieu n’est pas partial."
+      "Corneille craignait Dieu avant même de devenir chrétien.",
+      "Il pria régulièrement et aidait les personnes dans le besoin.",
+      "Jéhovah envoya un ange pour l’orienter vers Pierre.",
+      "L’effusion de l’esprit saint sur Corneille et sa maisonnée confirma que les non-Juifs pouvaient devenir chrétiens."
     ],
     "keyReading": "Actes 10:1-48 ; 11:1-18",
-    "location": "Césarée, dans la maison de Corneille.",
-    "relationshipWithJehovah": "Jéhovah remarqua ses prières et ses actes de bonté, puis dirigea Corneille vers la bonne nouvelle par Pierre.",
-    "didYouKnow": "Corneille était centurion de la troupe italienne et sa conversion est le premier récit détaillé de l’accueil d’un non-Juif incirconcis dans la congrégation chrétienne.",
+    "location": "Césarée, en Judée.",
+    "relationshipWithJehovah": "Jéhovah remarqua les prières et les actes de bonté de Corneille et prit des dispositions pour qu’il entende la bonne nouvelle.",
+    "didYouKnow": "Corneille reçut une vision à la neuvième heure, l’heure habituelle de la prière, avant d’envoyer des hommes chercher Pierre.",
     "jwResources": [
       {
         "title": "Corneille — Les personnages de la Bible",
