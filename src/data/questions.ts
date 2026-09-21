@@ -1043,9 +1043,9 @@ const v39TimesUpExpansion: TimesUpQuestion[] = [
 
 const v39ChallengeExpansion: Challenge[] = [
   { id:'challenge-v39-01', type:'challenge', category:'Défis', difficulty:'easy', prompt:'En 10 secondes, citez 5 personnages bibliques.', seconds:10 },
-  { id:'challenge-v39-02', type:'challenge', category:'Défis', difficulty:'easy', prompt:'En 10 secondes, citez 4 livres de la Bible.', seconds:10 },
+  { id:'challenge-v39-02', type:'challenge', category:'Défis', difficulty:'easy', prompt:'En 10 secondes, citez 4 livres du Pentateuque.', seconds:10 },
   { id:'challenge-v39-03', type:'challenge', category:'Défis', difficulty:'medium', prompt:'En 10 secondes, citez 3 prophètes.', seconds:10 },
-  { id:'challenge-v39-04', type:'challenge', category:'Défis', difficulty:'medium', prompt:'En 10 secondes, citez 4 apôtres de Jésus.', seconds:10 },
+  { id:'challenge-v39-04', type:'challenge', category:'Défis', difficulty:'medium', prompt:'En 10 secondes, citez 4 miracles accomplis par Jésus.', seconds:10 },
   { id:'challenge-v39-05', type:'challenge', category:'Défis', difficulty:'medium', prompt:'En 10 secondes, citez 3 femmes de la Bible.', seconds:10 },
   { id:'challenge-v39-06', type:'challenge', category:'Défis', difficulty:'hard', prompt:'En 10 secondes, citez 5 lieux mentionnés dans les Évangiles.', seconds:10 },
 ];
