@@ -11,7 +11,7 @@ const modeOptions = [
   ['quote', 'Qui a dit ça ?'], ['chronology', 'Chronologie'], ['intruder', 'Intrus'], ['timesup', "Time's Up"],
   ['threeclues', '3 indices'], ['forbidden', 'Mot interdit'], ['faceoff', 'Face-à-face'], ['risk', 'Mise à risque'],
 ] as const;
-const difficultyOptions = [['all', 'Tous'], ['easy', 'Facile'], ['medium', 'Intermédiaire'], ['hard', 'Expert']] as const;
+const difficultyOptions = [['all', 'Tous'], ['easy', 'Facile'], ['medium', 'Intermédiaire'], ['hard', 'Difficile'], ['expert', 'Expert']] as const;
 const modeIcon = require('../../assets/images/ui/card.png');
 
 export default function CustomizeScreen() {
