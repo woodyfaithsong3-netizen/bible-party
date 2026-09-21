@@ -44,6 +44,7 @@ export default function CharactersScreen() {
   const [query, setQuery] = useState('');
   const [learned, setLearned] = useState<string[]>([]);
   const [selectedEra, setSelectedEra] = useState('Tous');
+  const [onlyUnlearned, setOnlyUnlearned] = useState(false);
   const [selected, setSelected] = useState<CharacterProfile | null>(null);
   React.useEffect(() => { void getLearnedCharacters().then(setLearned); }, []);
   const eras = useMemo(() => ['Tous', ...Array.from(new Set(characterProfiles.map(x => x.era)))], []);
@@ -52,9 +53,10 @@ export default function CharactersScreen() {
     return characterProfiles.filter(x => {
       const matchesEra = selectedEra === 'Tous' || x.era === selectedEra;
       const matchesQuery = !q || [x.name, x.era, x.role, x.summary, ...x.qualities].join(' ').toLowerCase().includes(q);
-      return matchesEra && matchesQuery;
+      const matchesStudy = !onlyUnlearned || !learned.includes(x.id);
+      return matchesEra && matchesQuery && matchesStudy;
     });
-  }, [query, selectedEra]);
+  }, [query, selectedEra, onlyUnlearned, learned]);
   if (selected) return <ScenicScreen><CharacterDetail item={selected} onBack={() => { setSelected(null); void getLearnedCharacters().then(setLearned); }} /></ScenicScreen>;
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={styles.eyebrow}>APPRENDRE</Text>
@@ -64,7 +66,11 @@ export default function CharactersScreen() {
     <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8, paddingVertical: 12 }}>
       {eras.map(era => <Pressable key={era} onPress={() => setSelectedEra(era)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: selectedEra === era ? colors.accent : colors.border, backgroundColor: selectedEra === era ? colors.accent : colors.surface }}><Text style={{ color: selectedEra === era ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{era}</Text></Pressable>)}
     </ScrollView>
-    <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginBottom: 12 }}>{filtered.length} fiches disponibles · {learned.length}/{characterProfiles.length} étudiées</Text>
+    <View style={{ marginBottom: 12 }}>
+      <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800' }}>{filtered.length} fiches affichées · {learned.length}/{characterProfiles.length} étudiées</Text>
+      <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 8 }}><View style={{ width: `${Math.round((learned.length / Math.max(1, characterProfiles.length)) * 100)}%`, height: '100%', backgroundColor: colors.accent }} /></View>
+    </View>
+    <Pressable onPress={() => setOnlyUnlearned(x => !x)} style={{ alignSelf: 'flex-start', paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: onlyUnlearned ? colors.accent : colors.border, backgroundColor: onlyUnlearned ? colors.accent : colors.surface, marginBottom: 12 }}><Text style={{ color: onlyUnlearned ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{onlyUnlearned ? '✓ À étudier seulement' : 'Voir les fiches à étudier'}</Text></Pressable>
     {filtered.map(item => <ProfileCard key={item.id} item={item} learned={learned.includes(item.id)} onPress={() => setSelected(item)} />)}
     <View style={{ marginTop: 8 }}><Pressable onPress={() => router.push('/training')} style={styles.card}><Text style={{ color: colors.text, fontWeight: '900' }}>Tester mes connaissances ›</Text><Text style={{ color: colors.muted, marginTop: 4 }}>Retrouver les personnages dans les questions d’entraînement.</Text></Pressable></View>
   </ScrollView></ScenicScreen>;
