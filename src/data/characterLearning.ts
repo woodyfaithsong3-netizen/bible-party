@@ -802,6 +802,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Marie Madeleine est distincte de Marie de Béthanie et de la femme « pécheresse » mentionnée en Luc 7 ; les Évangiles l’identifient notamment comme une femme dont Jésus avait expulsé sept démons.",
     "jwResources": [
       {
+        "title": "Étude perspicace des Écritures — encyclopédie biblique",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+      },
+      {
         "title": "Marche courageusement avec Dieu — chapitre consacré à mary_magdalen",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marie-de-magdala-jai-vu-le-seigneur/"
       },
@@ -812,10 +816,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Marie Madeleine — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/marie-madeleine/"
-      },
-      {
-        "title": "La Bible — Luc 8 ; Jean 19-20",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -865,6 +865,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Son nom araméen était Joseph ; les apôtres lui donnèrent le surnom Barnabé, qui signifie « Fils de consolation » ou « Fils d’encouragement ».",
     "jwResources": [
       {
+        "title": "Étude perspicace des Écritures — encyclopédie biblique",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+      },
+      {
         "title": "Marche courageusement avec Dieu — chapitre consacré à barnabas",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/barnabe-fils-de-consolation/"
       },
@@ -875,10 +879,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Barnabé — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/barnabe/"
-      },
-      {
-        "title": "La Bible — Actes 4 ; 9 ; 11 ; 15",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
