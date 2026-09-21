@@ -1449,6 +1449,30 @@ for (const q of trueFalseQuestions) {
   }
 }
 
+
+const v100ForbiddenCards = [
+  { answer:'David', clues:['J’étais berger avant de devenir roi.','J’ai affronté un géant philistin.','J’ai composé de nombreux chants.'], forbiddenWords:['berger','Goliath','roi','psaumes'], reference:'1 Samuel 16–17; Psaume 23' },
+  { answer:'Moïse', clues:['J’ai conduit un peuple hors d’Égypte.','J’ai reçu les Dix Commandements.','J’ai été associé au mont Sinaï.'], forbiddenWords:['Égypte','Loi','Sinaï','pharaon'], reference:'Exode 3–20' },
+  { answer:'Esther', clues:['Je suis devenue reine dans un empire étranger.','J’ai risqué ma vie pour mon peuple.','Mardochée m’a conseillée.'], forbiddenWords:['reine','Mardochée','Perse','peuple'], reference:'Esther 2–7' },
+  { answer:'Pierre', clues:['J’étais pêcheur avant de suivre Jésus.','J’ai marché sur l’eau pendant un moment.','J’ai renié Jésus trois fois.'], forbiddenWords:['pêcheur','eau','renié','coq'], reference:'Matthieu 4:18-20; 14:28-31; 26:69-75' },
+  { answer:'Paul', clues:['J’ai persécuté les disciples avant de devenir chrétien.','J’ai voyagé pour prêcher.','J’ai été emprisonné à plusieurs reprises.'], forbiddenWords:['Saul','Damas','apôtre','prison'], reference:'Actes 9; 13–28' },
+  { answer:'Ruth', clues:['Je venais de Moab.','Je suis restée fidèle à Noémi.','J’ai épousé Boaz.'], forbiddenWords:['Moab','Noémi','Boaz','David'], reference:'Ruth 1–4' },
+  { answer:'Salomon', clues:['Je suis devenu roi après David.','J’ai demandé du discernement à Dieu.','J’ai construit le temple de Jérusalem.'], forbiddenWords:['David','sagesse','temple','roi'], reference:'1 Rois 2–8' },
+  { answer:'Daniel', clues:['J’ai servi sous plusieurs rois.','J’ai interprété des rêves.','J’ai été jeté dans une fosse aux lions.'], forbiddenWords:['Babylone','rêves','lions','fosse'], reference:'Daniel 2; 6' },
+  { answer:'Déborah', clues:['J’étais prophétesse.','Je jugeais Israël.','J’ai encouragé Barak à combattre.'], forbiddenWords:['prophétesse','juge','Barak','palmier'], reference:'Juges 4–5' },
+  { answer:'Joseph', clues:['J’ai reçu des rêves dans ma jeunesse.','Mes frères m’ont vendu.','Je suis devenu administrateur en Égypte.'], forbiddenWords:['rêves','frères','Égypte','Pharaon'], reference:'Genèse 37; 39–41' },
+  { answer:'Jérémie', clues:['J’ai été prophète avant la chute de Jérusalem.','J’ai annoncé le jugement sur Juda.','J’ai été jeté dans une citerne.'], forbiddenWords:['prophète','Jérusalem','citerne','Babylone'], reference:'Jérémie 1; 38' },
+  { answer:'Zachée', clues:['J’étais chef de collecteurs d’impôts.','J’habitais à Jéricho.','J’ai accueilli Jésus chez moi.'], forbiddenWords:['impôts','Jéricho','sycomore','petit'], reference:'Luc 19:1-10' },
+].forEach((card, i) => {
+  const target = mysteryQuestions.find(q => q.answer === card.answer && !q.forbiddenWords);
+  if (target) {
+    target.forbiddenWords = card.forbiddenWords;
+    target.clues = card.clues;
+    target.reference = card.reference;
+    target.id = `mystery-v100-forbidden-${i+1}`;
+  }
+});
+
 // Exports globaux placés en fin de fichier pour inclure tous les enrichissements.
 export const allQuestions = [
   ...quizQuestions, ...mysteryQuestions, ...trueFalseQuestions, ...challenges,
