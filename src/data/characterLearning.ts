@@ -3275,10 +3275,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Hospitalité : elle a insisté pour accueillir les serviteurs de Dieu chez elle.",
       "Engagement : sa maison est devenue un lieu où les chrétiens pouvaient se réunir."
     ],
-    "keyReading": "Actes 16:11-15, 40",
+    "keyReading": "Actes 16:11-15,40",
     "location": "Philippes, en Macédoine.",
-    "relationshipWithJehovah": "Lydie écoute le message de Paul, devient croyante avec sa maison et offre l’hospitalité aux missionnaires.",
-    "didYouKnow": "Elle était marchande de pourpre et venait de Thyatire.",
+    "relationshipWithJehovah": "Le récit dit que Jéhovah ouvrit son cœur pour qu’elle accepte le message. Après son baptême, elle manifesta immédiatement sa foi par l’hospitalité et le soutien concret aux prédicateurs.",
+    "didYouKnow": "Lydie vendait de la pourpre et venait de Thyatire, une ville connue pour ses activités textiles. La Bible indique qu’elle avait une maisonnée, sans préciser si elle était mariée ou veuve.",
     "jwResources": [
       {
         "title": "Lydie — Étude perspicace",
@@ -3297,24 +3297,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Lydie/"
       }
     ],
-    "identity": "Vendeuse de pourpre à Philippes — Lydie accepte le message prêché par Paul, se fait baptiser avec sa maisonnée et manifeste une remarquable hospitalité.",
-    "era": "Actes",
+    "identity": "Lydie était une commerçante de Thyatire qui s’installa à Philippes. Elle fut la première personne de Macédoine à accepter la bonne nouvelle, puis elle accueillit Paul et ses compagnons chez elle.",
+    "era": "Vers 50 de n. è., lors du deuxième voyage missionnaire de Paul",
     "familyAndEntourage": [
       "Paul",
       "Silas",
-      "Sa maisonnée"
+      "Timothée",
+      "Luc",
+      "Les membres de sa maisonnée"
     ],
     "bibleAccount": [
-      "Écoute Paul près d’une rivière à Philippes.",
-      "Se fait baptiser avec sa maisonnée.",
-      "Insiste pour accueillir Paul et ses compagnons chez elle."
+      "Elle se trouvait à Philippes avec d’autres femmes pour prier près d’un fleuve.",
+      "Jéhovah ouvrit son cœur pour qu’elle prête attention aux enseignements de Paul.",
+      "Elle et sa maisonnée furent baptisées.",
+      "Elle insista pour accueillir Paul et ses compagnons chez elle."
     ],
     "qualities": [
       "Hospitalité",
+      "Réceptivité",
       "Générosité",
-      "Réceptivité"
+      "Détermination"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle devait faire des choix personnels et religieux dans un environnement où la prédication chrétienne était nouvelle."
+    ]
   },
   "tabitha": {
     "studyFocus": "Tabitha, appelée Dorcas, était connue pour ses bonnes actions et sa générosité envers les personnes dans le besoin.",
@@ -3325,8 +3331,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 9:36-43",
     "location": "Joppé.",
-    "relationshipWithJehovah": "Tabitha est connue pour ses bonnes actions et ses dons aux personnes dans le besoin; sa mort provoque beaucoup de tristesse parmi les disciples.",
-    "didYouKnow": "Son nom grec était Dorcas.",
+    "relationshipWithJehovah": "Son attachement au christianisme se voyait dans ses actions répétées en faveur des autres. Sa résurrection par l’intermédiaire de Pierre a aussi donné un puissant témoignage sur la puissance de Dieu.",
+    "didYouKnow": "Tabitha est le seul personnage du Nouveau Testament dont le nom araméen et la forme grecque, Dorcas, sont donnés ensemble dans le récit.",
     "jwResources": [
       {
         "title": "Tabitha — Étude perspicace",
@@ -3345,23 +3351,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tabitha/"
       }
     ],
-    "identity": "Disciple de Joppé — Tabitha est connue pour ses nombreuses bonnes actions et son aide aux veuves de Joppé.",
-    "era": "Actes",
+    "identity": "Tabitha, appelée Dorcas en grec, était une disciple de Joppé connue pour ses nombreuses bonnes actions et ses dons aux personnes dans le besoin.",
+    "era": "Premières années de la congrégation chrétienne, avant la visite de Pierre à Joppé",
     "familyAndEntourage": [
       "Pierre",
-      "Les veuves de Joppé"
+      "Les veuves de Joppé",
+      "Les disciples de Joppé"
     ],
     "bibleAccount": [
-      "Fait beaucoup de bonnes œuvres.",
-      "Fabrique des vêtements pour des personnes dans le besoin.",
-      "Est ramenée à la vie par Pierre selon le récit des Actes."
+      "Elle était très active dans les bonnes œuvres et les dons de miséricorde.",
+      "Elle tombe malade et meurt.",
+      "Pierre est appelé depuis Lydda.",
+      "Après avoir prié, Pierre la ramène à la vie.",
+      "La nouvelle se répand dans toute la ville et beaucoup deviennent croyants."
     ],
     "qualities": [
       "Générosité",
       "Compassion",
-      "Service"
+      "Zèle pour les bonnes œuvres"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Sa mort a causé un profond chagrin parmi les disciples qu’elle avait aidés."
+    ]
   },
   "stephen": {
     "studyFocus": "Étienne a défendu courageusement la vérité et a continué à témoigner malgré une opposition violente.",
@@ -3370,10 +3381,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Connaissance biblique : son discours montrait une bonne compréhension de l’histoire du peuple de Dieu.",
       "Pardon : au moment de mourir, il a demandé à Jéhovah de ne pas tenir ce péché contre ses opposants."
     ],
-    "keyReading": "Actes 6:1-15 ; 7:1-60 ; 8:1-4",
+    "keyReading": "Actes 6:1-15; 7:1-60; 8:1-3",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Étienne est choisi pour une responsabilité dans la congrégation, rend un témoignage puissant et reste fidèle jusqu’à sa mort.",
-    "didYouKnow": "Il est présenté comme plein de foi et d’esprit saint.",
+    "relationshipWithJehovah": "Étienne est présenté comme plein de foi et d’esprit saint. Même au moment de mourir, il prie Jéhovah et demande qu’il ne tienne pas compte du péché de ses meurtriers.",
+    "didYouKnow": "Étienne est le premier disciple dont le martyre est raconté dans la Bible. Parmi ceux qui approuvaient son meurtre se trouvait Saul, qui deviendra ensuite l’apôtre Paul.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Étienne",
@@ -3396,24 +3407,31 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89tienne/"
       }
     ],
-    "identity": "Disciple chrétien et témoin — Étienne témoigne courageusement devant le Sanhédrin et meurt après avoir été lapidé.",
-    "era": "Actes",
+    "identity": "Étienne était un homme plein de foi et d’esprit saint, choisi avec six autres hommes pour s’occuper de la distribution quotidienne de nourriture dans la congrégation de Jérusalem. Il devint ensuite un prédicateur énergique et le premier chrétien dont la Bible rapporte le martyre.",
+    "era": "Vers 33-36 de n. è., peu après la Pentecôte",
     "familyAndEntourage": [
-      "Sanhédrin",
-      "Paul avant sa conversion"
+      "Les apôtres",
+      "Philippe et les six autres hommes choisis pour le service",
+      "Saul de Tarse",
+      "Les membres du Sanhédrin"
     ],
     "bibleAccount": [
-      "Est choisi pour une responsabilité de service.",
-      "Accomplit des signes puissants.",
-      "Défend sa foi devant le Sanhédrin.",
-      "Prie pour ses persécuteurs avant de mourir."
+      "Il est choisi pour une responsabilité de service dans la congrégation.",
+      "Il accomplit de grands signes et parle avec sagesse.",
+      "Des opposants l’accusent devant le Sanhédrin.",
+      "Il prononce un long discours retraçant l’histoire d’Israël et dénonçant l’infidélité des opposants.",
+      "Il voit en vision Jésus debout à la droite de Dieu puis est lapidé."
     ],
     "qualities": [
       "Courage",
+      "Sagesse",
       "Foi",
-      "Pardon"
+      "Maîtrise de soi",
+      "Zèle"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il est faussement accusé puis mis à mort par lapidation à cause de son témoignage."
+    ]
   },
   "ananias_damascus": {
     "studyFocus": "Ananias de Damas a accepté courageusement de rencontrer Saul malgré ce qu’il savait de son passé, parce qu’il faisait confiance aux instructions de Jéhovah.",
@@ -3422,10 +3440,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Obéissance : il a fait exactement ce que Jésus lui avait demandé.",
       "Amour fraternel : il a appelé Saul « frère » et l’a aidé à commencer sa nouvelle vie chrétienne."
     ],
-    "keyReading": "Actes 9:10-19 ; 22:12-16",
+    "keyReading": "Actes 9:10-19; 22:12-16",
     "location": "Damas.",
-    "relationshipWithJehovah": "Jéhovah lui demande d’aller voir Saul malgré la réputation de persécuteur de celui-ci; Ananias obéit et l’aide à retrouver la vue.",
-    "didYouKnow": "Ananias était un disciple respecté à Damas.",
+    "relationshipWithJehovah": "Ananias exprime honnêtement ses craintes mais obéit à Jésus. Sa confiance dans les instructions reçues lui permet de participer à un tournant majeur dans la vie de Saul.",
+    "didYouKnow": "Jésus choisit précisément Ananias, un disciple de Damas, plutôt qu’un apôtre de Jérusalem pour accueillir Saul après sa conversion.",
     "jwResources": [
       {
         "title": "Ananias de Damas — Étude perspicace",
@@ -3440,24 +3458,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Disciple de Damas — Ananias obéit à la direction reçue et aide Saul immédiatement après sa conversion.",
-    "era": "Actes",
+    "identity": "Ananias de Damas était un disciple fidèle à qui Jésus ressuscité confia la mission de rencontrer Saul de Tarse, alors persécuteur des chrétiens.",
+    "era": "Vers 36 de n. è., peu après la conversion de Saul",
     "familyAndEntourage": [
-      "Saul/Paul",
+      "Saul de Tarse",
+      "Les disciples de Damas",
       "Jésus"
     ],
     "bibleAccount": [
-      "Reçoit une vision concernant Saul.",
-      "Va le voir malgré ses craintes.",
-      "Lui impose les mains et l’aide à retrouver la vue.",
-      "Contribue à l’accueil de Saul parmi les disciples."
+      "Jésus lui apparaît dans une vision et lui demande de chercher Saul.",
+      "Ananias sait que Saul persécute les chrétiens et exprime ses inquiétudes.",
+      "Il obéit néanmoins, pose les mains sur Saul et lui explique sa mission.",
+      "Saul retrouve la vue, se fait baptiser et commence à prêcher."
     ],
     "qualities": [
       "Courage",
       "Obéissance",
-      "Confiance"
+      "Confiance en Jéhovah",
+      "Esprit missionnaire"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il devait aller vers un persécuteur connu des disciples et prendre le risque de lui faire confiance sur l’ordre de Jésus."
+    ]
   },
   "philip_evangelizer": {
     "studyFocus": "Philippe l’évangélisateur était un proclamateur zélé qui a accepté diverses missions et a aidé des personnes à comprendre les Écritures.",
