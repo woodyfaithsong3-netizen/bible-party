@@ -1550,6 +1550,78 @@ const v101ExpertChallenges: Challenge[] = [
   {id:'v101-expert-c-04',type:'challenge',category:'Évangiles',difficulty:'hard',prompt:'En 10 secondes : quel disciple a proposé de retourner en Judée avec Jésus en disant qu’ils pourraient mourir avec lui ?',seconds:10,acceptedAnswers:['Thomas'] },
 ];
 
+
+const v102ExpertQuiz: QuizQuestion[] = [
+{id:'v102-q-01',type:'quiz',category:'La Bible et la science',difficulty:'hard',question:'Selon l’article JW sur l’exactitude scientifique de la Bible, quelle affirmation distingue les « jours » de Genèse 1 ?',answers:['Leur durée exacte n’est pas précisée','Ils durent exactement 24 heures','Ils durent toujours 1000 ans','Ils commencent après le déluge'],correctAnswer:0,explanation:'L’article explique que la durée des jours de création n’est pas précisée.',reference:'Genèse 1:1-31'},
+{id:'v102-q-02',type:'quiz',category:'La Bible et la science',difficulty:'hard',question:'Quelle mesure sanitaire de la Loi d’Israël est citée par JW.org comme exemple d’une règle d’hygiène ?',answers:['L’élimination des excréments humains hors du camp','L’utilisation obligatoire de parfums','Le port permanent de sandales','Le jeûne après chaque maladie'],correctAnswer:0,explanation:'Deutéronome 23:13 prescrit de couvrir les excréments hors du camp.',reference:'Deutéronome 23:13'},
+{id:'v102-q-03',type:'quiz',category:'La Bible et la science',difficulty:'hard',question:'Quel verset est cité par JW.org pour montrer que la Bible présente l’univers physique comme ayant eu un commencement ?',answers:['Genèse 1:1','Psaume 23:1','Exode 20:12','Malachie 3:10'],correctAnswer:0,explanation:'Genèse 1:1 commence par « Au commencement » et est présenté comme affirmant un commencement de l’univers physique.',reference:'Genèse 1:1'},
+{id:'v102-q-04',type:'quiz',category:'La Bible et la science',difficulty:'hard',question:'Quelle idée reçue sur Genèse 1 est explicitement corrigée par JW.org ?',answers:['Que les six jours doivent forcément être six périodes de 24 heures','Que Genèse parle de création','Que Dieu est Créateur','Que la Terre existe'],correctAnswer:0,explanation:'JW.org explique que la durée des jours de création n’est pas précisée.',reference:'Genèse 1:1-31'},
+{id:'v102-q-05',type:'quiz',category:'Prophéties',difficulty:'hard',question:'Dans Daniel 9:25, quel point de départ est donné pour la période menant au Messie ?',answers:['La sortie de la parole pour rétablir et rebâtir Jérusalem','La naissance de David','La destruction du Temple','Le déluge'],correctAnswer:0,explanation:'Daniel 9:25 donne comme point de départ la sortie de la parole concernant Jérusalem.',reference:'Daniel 9:25'},
+{id:'v102-q-06',type:'quiz',category:'Prophéties',difficulty:'hard',question:'Dans la prophétie de Daniel 9, quelles deux périodes sont mentionnées avant le Messie ?',answers:['Sept semaines et soixante-deux semaines','Trois jours et sept années','Quarante jours et quarante nuits','Douze tribus et soixante-dix rois'],correctAnswer:0,explanation:'Daniel 9:25 mentionne sept semaines puis soixante-deux semaines.',reference:'Daniel 9:25'},
+{id:'v102-q-07',type:'quiz',category:'Que veulent dire ces versets ?',difficulty:'hard',question:'Selon l’explication JW de Genèse 1:1, que désignent « le ciel et la terre » dans ce verset ?',answers:['L’univers physique','Uniquement le jardin d’Éden','Uniquement la planète Terre','Le temple de Jérusalem'],correctAnswer:0,explanation:'L’article explique que l’expression désigne l’univers physique.',reference:'Genèse 1:1'},
+{id:'v102-q-08',type:'quiz',category:'Que veulent dire ces versets ?',difficulty:'hard',question:'Selon l’explication de Romains 6:23, pourquoi les humains meurent-ils ?',answers:['Parce qu’ils sont pécheurs','Parce qu’ils manquent de connaissance scientifique','Parce qu’ils sont tous rois','Parce qu’ils ont quitté Jérusalem'],correctAnswer:0,explanation:'L’explication JW relie la mort humaine au péché.',reference:'Romains 6:23'},
+{id:'v102-q-09',type:'quiz',category:'Que veulent dire ces versets ?',difficulty:'hard',question:'Dans Actes 1:8, jusqu’où les disciples devaient-ils être témoins ?',answers:['Jusqu’à la région la plus lointaine de la terre','Seulement à Jérusalem','Seulement en Galilée','Seulement en Judée'],correctAnswer:0,explanation:'Actes 1:8 élargit progressivement le territoire du témoignage jusqu’à la région la plus lointaine de la terre.',reference:'Actes 1:8'},
+{id:'v102-q-10',type:'quiz',category:'Que veulent dire ces versets ?',difficulty:'hard',question:'Selon 1 Pierre 5:6-7, pourquoi les chrétiens peuvent-ils se décharger de leurs inquiétudes sur Dieu ?',answers:['Parce qu’il se soucie d’eux','Parce qu’ils n’auront jamais de difficultés','Parce qu’ils connaissent toutes les réponses','Parce qu’ils sont déjà parfaits'],correctAnswer:0,explanation:'Le passage donne comme raison que Dieu se soucie d’eux.',reference:'1 Pierre 5:6-7'},
+{id:'v102-q-11',type:'quiz',category:'Prophéties',difficulty:'hard',question:'Quelle ville est explicitement associée au futur dirigeant dans Michée 5:2 ?',answers:['Bethléem Éphrata','Jéricho','Samarie','Nazareth'],correctAnswer:0,explanation:'Michée 5:2 mentionne Bethléem Éphrata.',reference:'Michée 5:2'},
+{id:'v102-q-12',type:'quiz',category:'Prophéties',difficulty:'hard',question:'Quelle vision d’Amos annonçait que la fin était venue pour Israël ?',answers:['Une corbeille de fruits d’été','Une roue dans le ciel','Un chandelier d’or','Un rouleau volant'],correctAnswer:0,explanation:'Amos 8:1-2 rapporte la vision d’une corbeille de fruits d’été.',reference:'Amos 8:1-2'}
+];
+const v102ExpertTF: TrueFalseQuestion[] = [
+{id:'v102-tf-01',type:'truefalse',category:'La Bible et la science',difficulty:'hard',statement:'Selon JW.org, la Bible prétend être un manuel scientifique complet.',answer:false,explanation:'L’article précise que la Bible n’est pas un manuel de science, tout en affirmant qu’elle est exacte lorsqu’elle aborde des sujets scientifiques.',reference:'La Bible et la science'},
+{id:'v102-tf-02',type:'truefalse',category:'La Bible et la science',difficulty:'hard',statement:'Genèse 1:1 est présenté par JW.org comme indiquant que l’univers physique a eu un commencement.',answer:true,explanation:'C’est l’un des points développés dans l’article consacré à Genèse 1:1.',reference:'Genèse 1:1'},
+{id:'v102-tf-03',type:'truefalse',category:'Prophéties',difficulty:'hard',statement:'Daniel 9:25 mentionne sept semaines puis soixante-deux semaines avant le Messie.',answer:true,explanation:'C’est la formulation donnée en Daniel 9:25.',reference:'Daniel 9:25'},
+{id:'v102-tf-04',type:'truefalse',category:'Que veulent dire ces versets ?',difficulty:'hard',statement:'Actes 1:8 limite le témoignage des disciples à Jérusalem.',answer:false,explanation:'Le témoignage devait s’étendre à la Judée, à la Samarie et jusqu’à la région la plus lointaine de la terre.',reference:'Actes 1:8'},
+{id:'v102-tf-05',type:'truefalse',category:'Que veulent dire ces versets ?',difficulty:'hard',statement:'Selon 1 Pierre 5:7, les croyants peuvent se décharger de leurs inquiétudes sur Dieu parce qu’il se soucie d’eux.',answer:true,explanation:'C’est la raison explicitement donnée dans le verset.',reference:'1 Pierre 5:7'},
+{id:'v102-tf-06',type:'truefalse',category:'Prophéties',difficulty:'hard',statement:'La vision de la corbeille de fruits d’été se trouve dans Amos.',answer:true,explanation:'Amos 8:1-2 rapporte cette vision.',reference:'Amos 8:1-2'}
+];
+const v102ExpertMystery: MysteryQuestion[] = [
+{id:'v102-m-01',type:'mystery',category:'La Bible et la science',difficulty:'hard',answer:'Genèse 1:1',clues:['Commencement','Cieux','Terre'],explanation:'Ce premier verset parle du commencement des cieux et de la terre.',reference:'Genèse 1:1'},
+{id:'v102-m-02',type:'mystery',category:'Prophéties',difficulty:'hard',answer:'Daniel 9',clues:['Soixante-deux semaines','Messie','Jérusalem'],explanation:'La prophétie de Daniel 9 relie ces éléments.',reference:'Daniel 9:25'},
+{id:'v102-m-03',type:'mystery',category:'Que veulent dire ces versets ?',difficulty:'hard',answer:'Actes 1:8',clues:['Force','Témoins','Région la plus lointaine'],explanation:'Actes 1:8 décrit l’étendue du témoignage des disciples.',reference:'Actes 1:8'},
+{id:'v102-m-04',type:'mystery',category:'Que veulent dire ces versets ?',difficulty:'hard',answer:'Romains 6:23',clues:['Salaire','Péché','Vie éternelle'],explanation:'Le verset oppose le résultat du péché au don de Dieu.',reference:'Romains 6:23'},
+{id:'v102-m-05',type:'mystery',category:'Prophéties',difficulty:'hard',answer:'Michée 5:2',clues:['Bethléem','Petit parmi les milliers','Dirigeant'],explanation:'Michée 5:2 associe Bethléem à la venue d’un dirigeant.',reference:'Michée 5:2'},
+{id:'v102-m-06',type:'mystery',category:'La Bible et la science',difficulty:'hard',answer:'Deutéronome 23:13',clues:['Camp','Excréments','Hygiène'],explanation:'Le passage prescrit une mesure sanitaire concernant les excréments.',reference:'Deutéronome 23:13'}
+];
+const v102ExpertQuotes: QuoteQuestion[] = [
+{id:'v102-qt-01',type:'quote',category:'Que veulent dire ces versets ?',difficulty:'hard',quote:'Quel passage dit : « Déchargez-vous sur lui de tous vos soucis » ?',answers:['1 Pierre 5:7','Romains 6:23','Actes 1:8','Daniel 9:25'],correctAnswer:0,explanation:'1 Pierre 5:7 encourage à se décharger sur Dieu de toute inquiétude.',reference:'1 Pierre 5:6-7'},
+{id:'v102-qt-02',type:'quote',category:'Que veulent dire ces versets ?',difficulty:'hard',quote:'Quel passage contient l’expression « vous recevrez une force » en parlant de l’esprit saint ?',answers:['Actes 1:8','Marc 11:24','Genèse 1:1','Michée 5:2'],correctAnswer:0,explanation:'Actes 1:8 relie cette force à l’arrivée de l’esprit saint et au témoignage.',reference:'Actes 1:8'},
+{id:'v102-qt-03',type:'quote',category:'Prophéties',difficulty:'hard',quote:'Quel prophète a écrit : « Et toi, ô Bethléem Éphrata » ?',answers:['Michée','Amos','Daniel','Zacharie'],correctAnswer:0,explanation:'Michée 5:2 mentionne Bethléem Éphrata.',reference:'Michée 5:2'},
+{id:'v102-qt-04',type:'quote',category:'La Bible et la science',difficulty:'hard',quote:'Quel verset commence par « Au commencement » et est utilisé dans les articles JW sur l’origine de l’univers ?',answers:['Genèse 1:1','Job 38:33','Jérémie 33:25','Psaume 46:10'],correctAnswer:0,explanation:'Genèse 1:1 est le verset de référence sur le commencement de l’univers physique.',reference:'Genèse 1:1'},
+{id:'v102-qt-05',type:'quote',category:'Que veulent dire ces versets ?',difficulty:'hard',quote:'Quel passage dit : « Le salaire payé par le péché, c’est la mort » ?',answers:['Romains 6:23','1 Pierre 5:7','Actes 1:8','Marc 11:24'],correctAnswer:0,explanation:'Romains 6:23 oppose le salaire du péché au don de Dieu.',reference:'Romains 6:23'},
+{id:'v102-qt-06',type:'quote',category:'Prophéties',difficulty:'hard',quote:'Quel prophète rapporte la vision d’une corbeille de fruits d’été ?',answers:['Amos','Michée','Daniel','Aggée'],correctAnswer:0,explanation:'Amos 8:1-2 rapporte cette vision.',reference:'Amos 8:1-2'}
+];
+const v102ExpertChronology: ChronologyQuestion[] = [
+{id:'v102-ch-01',type:'chronology',category:'Prophéties',difficulty:'hard',events:['Annonce de la prophétie de Daniel 9','Période des sept semaines','Période des soixante-deux semaines','Arrivée du Messie'],correctOrder:[0,1,2,3],explanation:'La prophétie présente ces éléments dans cette progression.',reference:'Daniel 9:25'},
+{id:'v102-ch-02',type:'chronology',category:'Que veulent dire ces versets ?',difficulty:'hard',events:['Résurrection de Jésus','Promesse de l’esprit saint','Pentecôte','Témoignage à Jérusalem, en Judée et en Samarie'],correctOrder:[0,1,2,3],explanation:'Le récit des Actes développe cette progression après la résurrection.',reference:'Actes 1:3-8; 2:1-4'},
+{id:'v102-ch-03',type:'chronology',category:'La Bible et la science',difficulty:'hard',events:['Création des cieux et de la terre','Jours de création','Repos du septième jour','Fin du récit de création de Genèse 1–2'],correctOrder:[0,1,2,3],explanation:'Les événements sont présentés dans cet ordre dans le récit de la Genèse.',reference:'Genèse 1:1–2:3'}
+];
+const v102ExpertIntruders: IntruderQuestion[] = [
+{id:'v102-in-01',type:'intruder',category:'Prophéties',difficulty:'hard',items:['Daniel','Michée','Amos','Barzillaï'],intruder:3,explanation:'Les trois premiers sont des prophètes ; Barzillaï est associé au récit de David.',reference:'Daniel 9; Michée 5:2; Amos 8:1-2; 2 Samuel 17:27-29'},
+{id:'v102-in-02',type:'intruder',category:'Que veulent dire ces versets ?',difficulty:'hard',items:['Actes 1:8','Romains 6:23','1 Pierre 5:7','Genèse 12:5'],intruder:3,explanation:'Les trois premiers font partie de la série de versets expliqués utilisée pour ce thème ; Genèse 12:5 n’en fait pas partie.',reference:'Actes 1:8; Romains 6:23; 1 Pierre 5:7; Genèse 12:5'},
+{id:'v102-in-03',type:'intruder',category:'La Bible et la science',difficulty:'hard',items:['Genèse 1:1','Deutéronome 23:13','Lévitique 13:1-5','Juges 4:4'],intruder:3,explanation:'Les trois premiers sont utilisés pour discuter de thèmes liés à l’exactitude scientifique ou aux mesures sanitaires ; Juges 4:4 concerne Déborah.',reference:'Genèse 1:1; Deutéronome 23:13; Lévitique 13:1-5; Juges 4:4'}
+];
+const v102ExpertTimesUp: TimesUpQuestion[] = [
+{id:'v102-tu-01',type:'timesup',category:'Prophéties',difficulty:'hard',answer:'Michée',clues:['Bethléem','Éphrata','Dirigeant'],reference:'Michée 5:2'},
+{id:'v102-tu-02',type:'timesup',category:'Prophéties',difficulty:'hard',answer:'Amos',clues:['Bergers','Sycomores','Corbeille'],reference:'Amos 7:14-15; 8:1-2'},
+{id:'v102-tu-03',type:'timesup',category:'La Bible et la science',difficulty:'hard',answer:'Genèse 1:1',clues:['Commencement','Cieux','Terre'],reference:'Genèse 1:1'},
+{id:'v102-tu-04',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'hard',answer:'Actes 1:8',clues:['Force','Témoins','Samarie'],reference:'Actes 1:8'},
+{id:'v102-tu-05',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'hard',answer:'Romains 6:23',clues:['Salaire','Péché','Vie éternelle'],reference:'Romains 6:23'},
+{id:'v102-tu-06',type:'timesup',category:'La Bible et la science',difficulty:'hard',answer:'Deutéronome 23:13',clues:['Camp','Excréments','Hygiène'],reference:'Deutéronome 23:13'}
+];
+const v102ExpertChallenges: Challenge[] = [
+{id:'v102-c-01',type:'challenge',category:'Prophéties',difficulty:'hard',prompt:'En 10 secondes : nommez le prophète qui parle de Bethléem Éphrata.',seconds:10,acceptedAnswers:['Michée']},
+{id:'v102-c-02',type:'challenge',category:'Que veulent dire ces versets ?',difficulty:'hard',prompt:'En 10 secondes : donnez la référence du passage qui dit que Dieu se soucie de nous et que nous pouvons lui remettre nos inquiétudes.',seconds:10,acceptedAnswers:['1 Pierre 5:7','1 Pierre 5:6-7']},
+{id:'v102-c-03',type:'challenge',category:'La Bible et la science',difficulty:'hard',prompt:'En 10 secondes : donnez le premier verset de la Bible.',seconds:10,acceptedAnswers:['Genèse 1:1']}
+];
+
+quizQuestions.push(...v102ExpertQuiz);
+trueFalseQuestions.push(...v102ExpertTF);
+mysteryQuestions.push(...v102ExpertMystery);
+quoteQuestions.push(...v102ExpertQuotes);
+chronologyQuestions.push(...v102ExpertChronology);
+intruderQuestions.push(...v102ExpertIntruders);
+timesUpQuestions.push(...v102ExpertTimesUp);
+challenges.push(...v102ExpertChallenges);
+
 quizQuestions.push(...v101ExpertQuiz);
 trueFalseQuestions.push(...v101ExpertTrueFalse);
 mysteryQuestions.push(...v101ExpertMystery);
