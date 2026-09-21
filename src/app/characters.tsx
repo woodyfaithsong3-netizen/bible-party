@@ -17,25 +17,107 @@ function ProfileCard({ item, onPress, learned }: { item: CharacterProfile; onPre
   </Pressable>;
 }
 
+function Section({ icon, title, children }: { icon: string; title: string; children: React.ReactNode }) {
+  return <View style={{ marginTop: 18, paddingTop: 16, borderTopWidth: 1, borderTopColor: colors.border }}>
+    <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900' }}>{icon} {title}</Text>
+    <View style={{ marginTop: 8, gap: 5 }}>{children}</View>
+  </View>;
+}
+
 function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () => void }) {
   React.useEffect(() => { void markCharacterLearned(item.id); }, [item.id]);
+
+  const familyAndEntourage = item.relations.length
+    ? item.relations.join(' · ')
+    : 'Aucun proche ou personnage associé n’est indiqué dans la fiche actuelle.';
+
+  const lessons = item.qualities.length
+    ? `Le récit met notamment en évidence : ${item.qualities.join(', ')}.`
+    : item.warnings?.length
+      ? item.warnings.join(' ')
+      : 'Le récit permet surtout de réfléchir aux choix et aux conséquences présentés dans la Bible.';
+
+  const relationshipWithJehovah = item.qualities.some(q => /foi|fidélité|prière|obéissance|zèle|confiance|repentir|humilité|espérance/i.test(q))
+    ? `Son récit permet d’observer sa relation avec Jéhovah notamment sous l’angle de : ${item.qualities.filter(q => /foi|fidélité|prière|obéissance|zèle|confiance|repentir|humilité|espérance/i.test(q)).join(', ')}.`
+    : item.warnings?.length
+      ? 'Son récit montre aussi les conséquences de choix qui n’étaient pas en accord avec la volonté de Jéhovah.'
+      : 'Son récit permet d’examiner comment ses choix et ses actions s’inscrivent dans le cadre du culte de Jéhovah.';
+
+  const didYouKnow = item.keyActions[0]
+    ? item.keyActions[0]
+    : `Son récit biblique est notamment associé à ${item.references.split(';')[0]}.`;
+
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Pressable onPress={onBack}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Tous les personnages</Text></Pressable>
     <Text style={[styles.eyebrow, { marginTop: 22 }]}>{item.era}</Text>
     <Text style={[styles.title, { marginTop: 5 }]}>{item.name}</Text>
     <Text style={[styles.subtitle, { marginTop: 4 }]}>{item.role}</Text>
-    <View style={[styles.card, { marginTop: 20, gap: 12 }]}>
-      <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900' }}>Qui est-ce ?</Text>
-      <Text style={{ color: colors.muted, lineHeight: 22 }}>{item.summary}</Text>
-      <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 4 }}>Ce qu’il / elle a fait</Text>
-      {item.keyActions.map((x, i) => <Text key={i} style={{ color: colors.muted, lineHeight: 21 }}>• {x}</Text>)}
-      <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 4 }}>Qualités à retenir</Text>
-      <Text style={{ color: colors.muted, lineHeight: 21 }}>{item.qualities.join(' · ')}</Text>
-      {item.warnings?.length ? <><Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 4 }}>Points d’attention</Text><Text style={{ color: colors.muted, lineHeight: 21 }}>{item.warnings.join(' ')}</Text></> : null}
-      <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 4 }}>Relations</Text>
-      <Text style={{ color: colors.muted, lineHeight: 21 }}>{item.relations.join(' · ')}</Text>
-      <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 4 }}>Références</Text>
-      <Text style={{ color: colors.accent, lineHeight: 21 }}>{item.references}</Text>
+
+    <View style={[styles.card, { marginTop: 20 }]}>
+      <Section icon="📖" title="Qui était-il / elle ?">
+        <Text style={{ color: colors.muted, lineHeight: 22 }}>{item.summary}</Text>
+      </Section>
+
+      <Section icon="🕰️" title="À quelle époque ?">
+        <Text style={{ color: colors.muted, lineHeight: 21 }}>{item.era}</Text>
+      </Section>
+
+      <Section icon="🌍" title="Où vivait-il / elle ?">
+        <Text style={{ color: colors.muted, lineHeight: 21 }}>
+          La fiche actuelle situe son récit dans la période « {item.era} ». Les lieux précis sont à retrouver dans les références bibliques ci-dessous lorsque la fiche les mentionne.
+        </Text>
+      </Section>
+
+      <Section icon="👨‍👩‍👦" title="Sa famille et son entourage">
+        <Text style={{ color: colors.muted, lineHeight: 21 }}>{familyAndEntourage}</Text>
+      </Section>
+
+      <Section icon="📚" title="Ce que la Bible raconte">
+        {item.keyActions.map((x, i) => <Text key={i} style={{ color: colors.muted, lineHeight: 21 }}>• {x}</Text>)}
+      </Section>
+
+      <Section icon="💪" title="Ses qualités">
+        <Text style={{ color: colors.muted, lineHeight: 21 }}>
+          {item.qualities.length ? item.qualities.join(' · ') : 'La fiche actuelle ne présente pas de qualité particulière comme point central.'}
+        </Text>
+      </Section>
+
+      {item.warnings?.length ? <Section icon="⚠️" title="Ses difficultés / erreurs">
+        {item.warnings.map((x, i) => <Text key={i} style={{ color: colors.muted, lineHeight: 21 }}>• {x}</Text>)}
+      </Section> : <Section icon="⚠️" title="Ses difficultés / erreurs">
+        <Text style={{ color: colors.muted, lineHeight: 21 }}>La fiche actuelle ne signale pas d’erreur particulière. Les difficultés du récit sont à découvrir dans les textes indiqués.</Text>
+      </Section>}
+
+      <Section icon="🙏" title="Sa relation avec Jéhovah">
+        <Text style={{ color: colors.muted, lineHeight: 21 }}>{relationshipWithJehovah}</Text>
+      </Section>
+
+      <Section icon="💡" title="Ce que son exemple nous apprend">
+        <Text style={{ color: colors.muted, lineHeight: 21 }}>{lessons}</Text>
+      </Section>
+
+      <Section icon="📍" title="Textes bibliques à lire">
+        <Text style={{ color: colors.accent, lineHeight: 21 }}>{item.references}</Text>
+      </Section>
+
+      <Section icon="🔎" title="À approfondir">
+        <Text style={{ color: colors.muted, lineHeight: 21 }}>
+          Commence par lire les références ci-dessus, puis retrouve ce personnage dans les publications et outils d’étude de JW.org. L’objectif est de comprendre le récit, le contexte et les leçons bibliques plutôt que de retenir seulement quelques faits.
+        </Text>
+      </Section>
+
+      <View style={{ marginTop: 18, padding: 15, borderRadius: 16, backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.accent }}>
+        <Text style={{ color: colors.accent, fontSize: 15, fontWeight: '900' }}>💡 Le savais-tu ?</Text>
+        <Text style={{ color: colors.text, lineHeight: 21, marginTop: 7 }}>{didYouKnow}</Text>
+        <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 7 }}>
+          Ce petit détail peut servir de point de départ pour aller lire le passage biblique correspondant.
+        </Text>
+      </View>
+
+      <Pressable onPress={() => router.push({ pathname: '/training', params: { category: 'Personnages' } })} style={[styles.card, { marginTop: 18, backgroundColor: colors.accent }]}>
+        <Text style={{ color: colors.bg, fontWeight: '900' }}>🎯 Tester mes connaissances</Text>
+        <Text style={{ color: colors.bg, marginTop: 4, opacity: 0.82 }}>Retrouver les personnages dans les questions d’entraînement.</Text>
+      </Pressable>
     </View>
   </ScrollView>;
 }
@@ -61,7 +143,7 @@ export default function CharactersScreen() {
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={styles.eyebrow}>APPRENDRE</Text>
     <Text style={[styles.title, { marginTop: 7 }]}>Personnages bibliques</Text>
-    <Text style={styles.subtitle}>Qui ils sont, ce qu’ils ont fait, leurs qualités et ce que leurs récits permettent d’apprendre.</Text>
+    <Text style={styles.subtitle}>Qui ils sont, ce qu’ils ont fait, leurs qualités, leurs difficultés et ce que leurs récits permettent d’apprendre.</Text>
     <TextInput value={query} onChangeText={setQuery} placeholder="Rechercher un personnage…" placeholderTextColor={colors.muted} style={[styles.input, { marginTop: 18 }]} />
     <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8, paddingVertical: 12 }}>
       {eras.map(era => <Pressable key={era} onPress={() => setSelectedEra(era)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: selectedEra === era ? colors.accent : colors.border, backgroundColor: selectedEra === era ? colors.accent : colors.surface }}><Text style={{ color: selectedEra === era ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{era}</Text></Pressable>)}
