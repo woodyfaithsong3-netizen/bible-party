@@ -370,6 +370,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Salomon",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Salomon/"
       }
     ]
   },
@@ -430,6 +434,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Esther — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Esther",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Esther/"
       }
     ]
   },
@@ -460,6 +468,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Daniel",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Daniel/"
       }
     ]
   },
@@ -487,6 +499,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Jean le Baptiseur",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jean-le-baptiseur/"
       }
     ],
     "location": "Région du Jourdain ; il a notamment prêché dans le désert de Judée.",
