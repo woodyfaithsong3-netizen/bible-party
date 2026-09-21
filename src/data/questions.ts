@@ -162,7 +162,6 @@ const extraFacts3: Array<[string, string[], number, string, string, string]> = [
   ['Quel homme nommé Nicodème est venu voir Jésus de nuit ?', ['Un pharisien','Un collecteur d’impôts','Un soldat romain','Un pêcheur'], 0, 'Nicodème était un pharisien et un chef des Juifs.', 'Jean 3:1-2', 'Évangiles'],
   ['Dans quelle ville Jésus a-t-il transformé de l’eau en vin ?', ['Cana','Bethléem','Béthanie','Jéricho'], 0, 'Le mariage de Cana est associé au premier signe rapporté par Jean.', 'Jean 2:1-11', 'Évangiles'],
   ['Quel disciple a apporté à Jésus le garçon qui avait cinq pains et deux poissons ?', ['André','Pierre','Philippe','Thomas'], 0, 'André a signalé la présence du garçon avec les pains et les poissons.', 'Jean 6:5-13', 'Évangiles'],
-  ['Quel disciple a demandé à Jésus de lui montrer le Père ?', ['Philippe','Thomas','André','Jude'], 0, 'Philippe a posé cette question lors de la dernière soirée de Jésus avec ses apôtres.', 'Jean 14:8-10', 'Évangiles'],
   ['Quel homme a été ressuscité après avoir été dans la tombe depuis plusieurs jours ?', ['Lazare','Jairus','Étienne','Tabitha'], 0, 'Jésus a ressuscité Lazare à Béthanie.', 'Jean 11:38-44', 'Évangiles'],
   ['Quelle femme a été ressuscitée par Pierre à Joppé ?', ['Tabitha','Lydie','Dorcas','Marthe'], 0, 'Tabitha, aussi appelée Dorcas, a été relevée par Pierre.', 'Actes 9:36-42', 'Actes'],
   ['Quel homme a été baptisé après avoir entendu Philippe expliquer Isaïe sur la route de Gaza ?', ['Un Éthiopien eunuque','Un soldat romain','Un Samaritain','Un geôlier'], 0, 'Philippe a enseigné à un fonctionnaire éthiopien qui a ensuite demandé le baptême.', 'Actes 8:26-39', 'Actes'],
@@ -170,7 +169,6 @@ const extraFacts3: Array<[string, string[], number, string, string, string]> = [
   ['Quel compagnon de Paul était médecin ?', ['Luc','Silas','Barnabé','Tite'], 0, 'Paul mentionne Luc comme un médecin bien-aimé.', 'Colossiens 4:14', 'Actes'],
   ['Quel jeune compagnon de Paul avait une mère croyante juive et un père grec ?', ['Timothée','Tite','Silas','Marc'], 0, 'Timothée avait une mère juive croyante et un père grec.', 'Actes 16:1-3', 'Actes'],
   ['Quel chrétien de Chypre a vendu un champ et remis l’argent aux apôtres ?', ['Barnabé','Silas','Étienne','Matthias'], 0, 'Barnabé a fait cette contribution volontaire.', 'Actes 4:36-37', 'Actes'],
-  ['Quel homme a été lapidé après avoir témoigné devant le Sanhédrin ?', ['Étienne','Barnabé','Philippe','Matthias'], 0, 'Étienne a été lapidé après son témoignage.', 'Actes 6:8-15; 7:54-60', 'Actes'],
   ['Quel apôtre a été libéré de prison par un ange alors que des chrétiens priaient ?', ['Pierre','Paul','Jean','Jacques'], 0, 'Un ange a libéré Pierre de prison pendant que la congrégation priait.', 'Actes 12:5-11', 'Actes'],
   ['Quelle femme était marchande d’articles de pourpre à Philippes ?', ['Lydie','Priscille','Dorcas','Damaris'], 0, 'Lydie vendait des articles de pourpre et a accueilli Paul.', 'Actes 16:14-15', 'Actes'],
   ['Quel couple a expliqué plus exactement le chemin de Dieu à Apollos ?', ['Priscille et Aquilas','Lydie et son mari','Ananias et Saphira','Paul et Barnabé'], 0, 'Priscille et Aquilas ont aidé Apollos à mieux comprendre l’enseignement chrétien.', 'Actes 18:24-26', 'Actes'],
@@ -232,7 +230,6 @@ const extraFacts4: Array<[string, string[], number, string, string, string]> = [
   ['Quel chrétien a été choisi parmi les sept hommes chargés d’un service particulier et est ensuite mort lapidé ?', ['Étienne','Barnabé','Philippe','Matthias'], 0, 'Étienne a été choisi pour ce service et a ensuite été lapidé.', 'Actes 6:1-6; 7:54-60', 'Actes'],
   ['Quel disciple a expliqué les Écritures à un fonctionnaire éthiopien dans son char ?', ['Philippe','Pierre','Barnabé','Étienne'], 0, 'Philippe a expliqué le passage d’Isaïe au fonctionnaire.', 'Actes 8:26-39', 'Actes'],
   ['Quel officier romain a reçu Pierre après une vision ?', ['Corneille','Julius','Festus','Gallion'], 0, 'Corneille a envoyé chercher Pierre après avoir reçu une vision.', 'Actes 10:1-8, 17-23', 'Actes'],
-  ['Quelle femme de Philippes vendait des articles de pourpre ?', ['Lydie','Damaris','Priscille','Tabitha'], 0, 'Lydie était marchande d’articles de pourpre.', 'Actes 16:14-15', 'Actes'],
   ['Quel couple a aidé Apollos à mieux comprendre la voie de Dieu ?', ['Priscille et Aquilas','Lydie et son mari','Ananias et Saphira','Paul et Barnabé'], 0, 'Priscille et Aquilas ont expliqué plus exactement la voie de Dieu à Apollos.', 'Actes 18:24-26', 'Actes'],
   ['Quel homme a été mordu par un serpent à Malte sans subir de mal ?', ['Paul','Pierre','Barnabé','Silas'], 0, 'Paul a été mordu par une vipère mais n’en a pas subi de mal.', 'Actes 28:1-6', 'Actes'],
   ['Dans quelle ville Paul est-il resté sous garde tout en prêchant pendant deux ans ?', ['Rome','Jérusalem','Philippes','Éphèse'], 0, 'Paul est resté à Rome dans une maison qu’il louait, avec un soldat pour le garder.', 'Actes 28:16-31', 'Actes'],
@@ -269,7 +266,6 @@ const quizDifficulties: Difficulty[] = [
 // bibliques accessibles sur JW.org. Aucun texte d’article n’est reproduit.
 const jwQuizExpansion: Array<[string, string[], number, string, string, string]> = [
   ['Qui a reçu les instructions de construire l’arche de l’Alliance ?', ['Moïse','David','Josué','Salomon'], 0, 'Moïse a reçu les instructions concernant le tabernacle et l’arche.', 'Exode 25:8-22', 'Bible'],
-  ['Quel homme a été choisi pour remplacer Judas Iscariote parmi les apôtres ?', ['Matthias','Barnabé','Silas','Étienne'], 0, 'Matthias a été choisi pour rejoindre les onze apôtres.', 'Actes 1:21-26', 'Actes'],
   ['Quel livre raconte principalement la vie et le ministère de Jésus dans son propre récit ?', ['Jean','Romains','Actes','Hébreux'], 0, 'L’Évangile de Jean rapporte de nombreux épisodes du ministère de Jésus.', 'Jean 20:30-31', 'Évangiles'],
   ['Quel homme a été appelé « ami de Dieu » dans les Écritures ?', ['Abraham','David','Moïse','Élie'], 0, 'Abraham est présenté comme ami de Dieu.', 'Jacques 2:23', 'Personnages'],
   ['Quelle femme était la mère de Jean le Baptiseur ?', ['Élisabeth','Anne','Marie','Marthe'], 0, 'Élisabeth était la mère de Jean.', 'Luc 1:5-25, 57-66', 'Évangiles'],
@@ -1002,9 +998,6 @@ const v39MysteryExpansion: MysteryQuestion[] = [
 
 const v39QuoteExpansion: QuoteQuestion[] = [
   { id:'quote-v39-01', type:'quote', category:'Personnages', difficulty:'easy', quote:'Quel jeune homme a répondu qu’il était prêt à écouter la parole de Jéhovah ?', answers:['Samuel','David','Moïse','Josué'], correctAnswer:0, explanation:'Samuel a répondu ainsi lorsqu’il a compris que Jéhovah l’appelait.', reference:'1 Samuel 3:9-10' },
-  { id:'quote-v39-02', type:'quote', category:'Évangiles', difficulty:'easy', quote:'Quel homme a présenté Jésus comme l’Agneau de Dieu ?', answers:['Jean le Baptiseur','Pierre','André','Philippe'], correctAnswer:0, explanation:'Jean le Baptiseur a désigné Jésus de cette manière.', reference:'Jean 1:29, 36' },
-  { id:'quote-v39-03', type:'quote', category:'Rois & prophètes', difficulty:'medium', quote:'Quel prophète a demandé au peuple jusqu’à quand il hésiterait entre deux positions ?', answers:['Élie','Nathan','Élisée','Samuel'], correctAnswer:0, explanation:'Élie a lancé ce défi au peuple au mont Carmel.', reference:'1 Rois 18:21' },
-  { id:'quote-v39-04', type:'quote', category:'Personnages', difficulty:'medium', quote:'Quelle femme a promis de rester avec Noémi et de partager son peuple ?', answers:['Ruth','Esther','Anne','Déborah'], correctAnswer:0, explanation:'Ruth a exprimé sa fidélité à Noémi et à son Dieu.', reference:'Ruth 1:16' },
 ];
 
 const v39ChronologyExpansion: ChronologyQuestion[] = [
