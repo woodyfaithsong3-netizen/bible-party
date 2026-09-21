@@ -592,139 +592,127 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "samson": {
-    "studyFocus": "Samson reçoit une force exceptionnelle et combat les Philistins, mais son histoire comporte aussi de graves faiblesses personnelles. À observer dans son récit : Courage, Force.",
+    "studyFocus": "Samson fut un juge d’Israël choisi avant sa naissance pour entreprendre de délivrer Israël de la main des Philistins. Nazaréen dès sa naissance, il reçut une force exceptionnelle lorsqu’il agissait sous l’influence de l’esprit de Jéhovah. Son récit montre à la fois ses victoires contre les Philistins, ses faiblesses personnelles et son retour vers Jéhovah à la fin de sa vie.",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Force » dans les épisodes cités.",
-      "Point de vigilance : Son récit montre les dangers du manque de maîtrise de soi et de mauvaises fréquentations."
+      "Observer les instructions données par l’ange de Jéhovah aux parents de Samson avant sa naissance.",
+      "Étudier comment Samson a utilisé sa force dans sa lutte contre les Philistins et ce qui montre que cette force venait de Jéhovah.",
+      "Examiner ses choix personnels, notamment dans ses relations avec des femmes, sans confondre sa mission divine avec l’approbation de toutes ses décisions.",
+      "Observer sa prière finale et la manière dont il a de nouveau compté sur Jéhovah."
     ],
-    "keyReading": "Combat les Philistins.",
+    "keyReading": "Juges 13–16 ; Hébreux 11:32",
     "jwResources": [
+      {
+        "title": "Samson — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samson/"
+      },
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
-    ]
+    ],
+    "location": "Tsora et son territoire ; vallée de Sorek ; Timna ; Gaza ; Lehi ; région des Philistins.",
+    "relationshipWithJehovah": "Jéhovah avait mis Samson à part dès sa naissance et son esprit lui donnait une force extraordinaire. Malgré des erreurs graves, Samson a continué à se tourner vers Jéhovah et l’a supplié de se souvenir de lui lors de sa dernière épreuve.",
+    "didYouKnow": "Samson est présenté comme un des juges remarquables d’Israël et son récit est particulièrement lié à sa mission contre les Philistins."
   },
   "naomi": {
-    "studyFocus": "Noémi revient à Bethléhem avec Ruth après avoir perdu son mari et ses fils. À observer dans son récit : Attachement familial, Sagesse.",
+    "studyFocus": "Naomi était la femme d’Élimélek et la belle-mère de Ruth. Après avoir perdu son mari et ses deux fils au pays de Moab, elle retourna à Bethléhem avec Ruth. Elle traversa une profonde période de chagrin, mais elle reconnut ensuite la main de Jéhovah dans la façon dont Boaz agit comme racheteur.",
     "lessonPoints": [
-      "Observer la qualité « Attachement familial » dans les épisodes cités.",
-      "Observer la qualité « Sagesse » dans les épisodes cités."
+      "Observer la manière dont Naomi réagit après la mort de son mari et de ses deux fils.",
+      "Étudier son attitude envers Ruth et Orpa lorsqu’elle leur conseille de retourner au pays de Moab.",
+      "Observer comment Naomi interprète l’arrivée de Ruth dans le champ de Boaz et les dispositions prises pour le rachat.",
+      "Comparer son amertume initiale avec la joie qui accompagne finalement la naissance d’Obed."
     ],
-    "keyReading": "Retourne à Bethléhem après son veuvage.",
+    "keyReading": "Ruth 1–4",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Naomi — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Naomi/"
       },
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
-    ]
+    ],
+    "location": "Bethléhem en Juda ; Moab ; retour à Bethléhem et environnement de la famille d’Élimélek.",
+    "relationshipWithJehovah": "Naomi a traversé une période où elle pensait que Jéhovah avait rendu sa situation très amère. Pourtant, elle a continué à agir dans le cadre du culte de Jéhovah et a reconnu la main de Dieu lorsque Boaz est intervenu en faveur de sa famille.",
+    "didYouKnow": "Naomi fut la belle-mère de Ruth, laquelle devint une ancêtre de David et de Jésus Christ. citeturn2search0"
   },
   "boaz": {
-    "studyFocus": "Boaz traite Ruth avec bonté et devient son rédempteur familial. À observer dans son récit : Générosité, Respect, Loyauté.",
+    "studyFocus": "Boaz était un propriétaire terrien de Bethléhem et un proche parent d’Élimélek. Il remarqua Ruth lorsqu’elle glanait dans son champ, la traita avec bonté et respect, puis accomplit les démarches légales nécessaires pour agir comme racheteur. Il devint ainsi le mari de Ruth et le père d’Obed, dans la lignée menant au Messie.",
     "lessonPoints": [
-      "Observer la qualité « Générosité » dans les épisodes cités.",
-      "Observer la qualité « Respect » dans les épisodes cités.",
-      "Observer la qualité « Loyauté » dans les épisodes cités."
+      "Observer comment Boaz traite Ruth, une Moabite, avec bonté et dignité.",
+      "Étudier pourquoi Boaz vérifie la situation juridique avant de racheter le bien d’Élimélek.",
+      "Observer son respect des dispositions légales concernant le rachat et le mariage avec Ruth.",
+      "Suivre sa place dans la généalogie menant à David et à Jésus."
     ],
-    "keyReading": "Protège Ruth dans ses champs.",
+    "keyReading": "Ruth 2–4 ; Matthieu 1:5, 6",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Boaz, I — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Boaz-I/"
       },
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
-    ]
+    ],
+    "location": "Bethléhem en Juda, notamment les champs de Boaz et l’espace public où les démarches légales sont effectuées.",
+    "relationshipWithJehovah": "Boaz invoquait Jéhovah dans ses salutations et reconnaissait que Ruth avait cherché refuge sous les ailes de Jéhovah. Il respecta les dispositions légales et agit avec bonté dans le cadre du culte de Jéhovah.",
+    "didYouKnow": "Boaz était fils de Salma et de Rahab, et devint le père d’Obed. Il constitue un maillon de la lignée menant au Messie. citeturn2search4"
   },
   "elisha": {
-    "studyFocus": "Élisée poursuit le ministère prophétique d’Élie et intervient dans de nombreux récits concernant Israël. À observer dans son récit : Foi, Persévérance, Compassion.",
+    "studyFocus": "Élisha fut prophète de Jéhovah et successeur d’Éliya. Il accompagna d’abord Éliya comme serviteur, puis exerça seul son ministère pendant de nombreuses années. Son activité comprend des miracles, des conseils aux rois et une défense constante du vrai culte.",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités.",
-      "Observer la qualité « Compassion » dans les épisodes cités."
+      "Observer la décision d’Élisha de quitter son travail et de suivre Éliya lorsqu’il fut appelé.",
+      "Étudier son service fidèle comme compagnon et assistant d’Éliya avant de recevoir une responsabilité prophétique plus grande.",
+      "Examiner quelques-uns de ses miracles et ce qu’ils révèlent sur la puissance de Jéhovah.",
+      "Observer sa fermeté lorsqu’il s’agissait de défendre le nom et le vrai culte de Jéhovah."
     ],
-    "keyReading": "Accepte de suivre Élie.",
+    "keyReading": "1 Rois 19:16, 19-21 ; 2 Rois 2–13 ; Luc 4:27",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Élisha — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89lisha/"
       },
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
-    ]
+    ],
+    "location": "Royaume d’Israël et régions voisines ; notamment Abel-Mehola, Jéricho, Samarie, Dothan et les territoires concernés par son activité prophétique.",
+    "relationshipWithJehovah": "Élisha fut un prophète de Jéhovah et montra un grand zèle pour le vrai culte. JW.org souligne sa patience, son amour, sa bonté et sa fermeté lorsque le nom de Jéhovah était en cause. citeturn2search1",
+    "didYouKnow": "Élisha servit peut-être environ six ans comme assistant d’Éliya, puis exerça seul son activité prophétique pendant environ 60 ans. Étude perspicace lui attribue 16 miracles, contre 8 pour Éliya. citeturn2search1"
   },
   "nehemie": {
-    "studyFocus": "Néhémie organise la reconstruction des murailles de Jérusalem malgré l’opposition. À observer dans son récit : Prière, Organisation, Courage, Persévérance.",
+    "studyFocus": "Nehémia était échanson du roi perse Artaxerxès avant de devenir gouverneur des Juifs. Lorsqu’il apprit l’état désolé de Jérusalem, il jeûna et pria, demanda l’autorisation de reconstruire la muraille et dirigea ensuite les travaux malgré une opposition importante.",
     "lessonPoints": [
-      "Observer la qualité « Prière » dans les épisodes cités.",
-      "Observer la qualité « Organisation » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités."
+      "Observer la réaction de Nehémia lorsqu’il apprend la situation de Jérusalem.",
+      "Étudier sa prière avant de demander quelque chose au roi Artaxerxès.",
+      "Examiner comment il organise les travaux tout en faisant face aux moqueries, aux menaces et aux complots.",
+      "Observer comment il continue à défendre le culte pur et à corriger certaines pratiques après la reconstruction."
     ],
-    "keyReading": "Prie après avoir appris l’état de Jérusalem.",
+    "keyReading": "Néhémie 1–6 ; 8–10 ; 13",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Nehémia — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Neh%C3%A9mia/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Livre de Néhémie — Bible en ligne",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/bible-d-etude/livres/N%C3%A9h%C3%A9mie/"
       },
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
-    ]
+    ],
+    "location": "Suse, capitale royale perse ; Jérusalem et son district, où Nehémia exerce ensuite comme gouverneur.",
+    "relationshipWithJehovah": "Nehémia priait régulièrement Jéhovah et s’appuyait sur lui pour obtenir l’autorisation du roi, protéger les travailleurs et mener à bien la reconstruction. Le livre de Néhémia présente Jéhovah comme Celui qui exauce les prières sincères de ses serviteurs. citeturn3search0turn3search1",
+    "didYouKnow": "La muraille de Jérusalem fut achevée en 52 jours. Nehémia était échanson d’Artaxerxès avant de devenir gouverneur des Juifs. citeturn3search0turn3search1"
   },
   "mary_magdalen": {
     "studyFocus": "Marie Madeleine fait partie des femmes qui accompagnent Jésus et témoigne des événements entourant sa mort et sa résurrection. À observer dans son récit : Fidélité, Persévérance, Reconnaissance.",
