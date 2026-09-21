@@ -48,6 +48,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Selon Étude perspicace des Écritures, Noé naquit en 2970 av. n. è., 126 ans après la mort d’Adam.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à noe",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/noe-a-condamne-le-monde/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -58,10 +62,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Noé : « Il marchait avec le vrai Dieu » — Imitez leur foi",
         "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/noe/"
-      },
-      {
-        "title": "Noé : « Préservé avec sept autres »",
-        "url": "https://www.jw.org/fr/bibliotheque/revues/wp20130801/noe-et-sa-famille-sauves/"
       }
     ]
   },
@@ -79,6 +79,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Étude perspicace indique qu’Abraham naquit en 2018 av. n. è. et qu’il descendait de Noé à la dixième génération par Sem.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à abraham",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/abraham-a-ete-le-premier-a-mener-une-guerre-juste/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -89,10 +93,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Abraham : « Le père de tous ceux qui ont foi »",
         "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/abraham-pere-de-ceux-qui-ont-foi/"
-      },
-      {
-        "title": "Les voyages d’Abraham",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Les-voyages-dAbraham/"
       }
     ]
   },
@@ -109,6 +109,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Sara avait 90 ans lorsqu’elle donna naissance à Isaac et mourut à 127 ans, selon Étude perspicace des Écritures.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à sarah",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/sara-na-pas-regarde-en-arriere/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -119,10 +123,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Sara : Dieu l’a appelée « Princesse »",
         "url": "https://www.jw.org/fr/bibliotheque/revues/tour-garde-no5-2017-septembre/sara-princesse/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -140,6 +140,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Jacob naquit en 1858 av. n. è. et reçut plus tard le nom d’Israël, nom qui désigna ensuite ses descendants comme nation.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à jacob",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/jacob-a-protege-sa-famille/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -150,10 +154,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Événements de la vie de Jacob",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89v%C3%A9nements-de-la-vie-de-Jacob/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -171,6 +171,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Joseph avait 17 ans lorsqu’il fut emmené en Égypte et 30 ans lorsqu’il fut établi dans une haute fonction auprès de Pharaon.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à joseph",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/joseph-a-resiste-a-la-tentation/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -181,10 +185,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Joseph : « Écoutez, s’il vous plaît, ce rêve »",
         "url": "https://www.jw.org/fr/bibliotheque/revues/wp20140801/joseph-et-ses-freres/"
-      },
-      {
-        "title": "Joseph et la femme de Potiphar",
-        "url": "https://www.jw.org/fr/bibliotheque/revues/wp20141101/joseph-et-femme-de-potiphar/"
       }
     ]
   },
@@ -200,6 +200,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Jéhovah choisit Moïse et le forme progressivement. Malgré ses hésitations, Moïse apprend à compter sur la puissance et la direction de Jéhovah.",
     "didYouKnow": "Moïse passa 40 ans à Madian avant de recevoir sa mission auprès de Pharaon.",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à moise",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/moise-a-fait-le-bon-choix/"
+      },
       {
         "title": "Moïse — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
@@ -227,6 +231,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Josué avait été l’un des douze espions envoyés en Canaan et, avec Caleb, il donna un rapport favorable.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à josue",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/josue-a-suivi-des-instructions-etranges/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -237,10 +245,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Josué et les Gabaonites",
         "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -257,6 +261,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Ruth figure dans la généalogie menant à David et à Jésus Christ.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à ruth",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/noemi-et-ruth-des-larmes-a-la-joie/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -267,10 +275,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Ruth et Naomi",
         "url": "https://www.jw.org/fr/bibliotheque/livres/histoires-bibliques/"
-      },
-      {
-        "title": "Les femmes dans la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
       }
     ]
   },
@@ -287,6 +291,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Samuel reçut son premier message prophétique alors qu’il était encore jeune garçon.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à samuel",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/samuel-garcon-qui-a-parle-au-nom-de-jehovah/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -297,10 +305,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Jéhovah parle à Samuel",
         "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -318,6 +322,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "David est appelé « un homme selon le cœur » de Jéhovah, sans que cela signifie qu’il était sans péché.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à david",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/rois-reconstruction-jerusalem/david-a-affronte-un-geant/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -328,10 +336,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "David et Goliath",
         "url": "https://www.jw.org/fr/bibliotheque/livres/histoires-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -400,6 +404,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Le livre d’Esther ne mentionne pas directement le nom de Jéhovah.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à esther",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/rois-reconstruction-jerusalem/esther-si-je-dois-mourir-alors-je-mourrai/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -410,10 +418,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Esther — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -482,6 +486,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Marie fait partie des femmes nommées comme persévérant dans la prière avec les disciples après l’ascension.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à marie",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marie-courage-de-dire-oui/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -492,10 +500,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Marie — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -513,6 +517,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Pierre était pêcheur et travaillait avec son frère André.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à pierre",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/pierre-je-suis-un-homme-pecheur/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -523,10 +531,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Pierre — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -543,6 +547,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Paul était aussi appelé Saul et était citoyen romain.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à paul",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/paul-je-vous-recommande-de-ne-pas-vous-decourager/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -553,10 +561,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Paul — Imitez leur foi",
         "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -724,6 +728,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "Néhémie 1–6 ; 8–10 ; 13",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à nehemie",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/rois-reconstruction-jerusalem/nehemie-a-reconstruit-les-murailles/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -734,10 +742,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Livre de Néhémie — Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/bible-d-etude/livres/N%C3%A9h%C3%A9mie/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ],
     "location": "Suse, capitale royale perse ; Jérusalem et son district, où Nehémia exerce ensuite comme gouverneur.",
@@ -758,6 +762,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Marie Madeleine est distincte de Marie de Béthanie et de la femme « pécheresse » mentionnée en Luc 7 ; les Évangiles l’identifient notamment comme une femme dont Jésus avait expulsé sept démons.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à mary_magdalen",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marie-de-magdala-jai-vu-le-seigneur/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -768,10 +776,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible — Luc 8 ; Jean 19-20",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
       }
     ]
   },
@@ -817,6 +821,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Son nom araméen était Joseph ; les apôtres lui donnèrent le surnom Barnabé, qui signifie « Fils de consolation » ou « Fils d’encouragement ».",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à barnabas",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/barnabe-fils-de-consolation/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -827,10 +835,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible — Actes 4 ; 9 ; 11 ; 15",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
       }
     ]
   },
@@ -1697,6 +1701,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Jésus a dit que Marie avait choisi la bonne part.",
     "jwResources": [
       {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à mary_bethany",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marie-soeur-de-lazare-elle-a-fait-ce-quelle-a-pu/"
+      },
+      {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
@@ -1832,6 +1840,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Étienne est choisi pour une responsabilité dans la congrégation, rend un témoignage puissant et reste fidèle jusqu’à sa mort.",
     "didYouKnow": "Il est présenté comme plein de foi et d’esprit saint.",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à stephen",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/etienne-plein-de-foi-et-desprit-saint/"
+      },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
@@ -2966,6 +2978,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Après une difficulté qui l’éloigne temporairement de Paul, Marc devient un collaborateur apprécié et utile.",
     "didYouKnow": "Il est le Jean appelé Marc, fils de Marie de Jérusalem et cousin de Barnabé.",
     "jwResources": [
+      {
+        "title": "Marche courageusement avec Dieu — chapitre consacré à john_mark",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marc-il-me-sera-utile/"
+      },
       {
         "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
