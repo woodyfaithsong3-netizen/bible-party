@@ -848,10 +848,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
       "Étudier la qualité « Endurance » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Luc 1–2 ; Jean 2:1-12 ; 19:25-27 ; Actes 1:14",
+    "keyReading": "Luc 1:26-56; 2:19,33-35,51; Jean 19:25-27",
     "location": "Nazareth ; Bethléem ; Jérusalem.",
-    "relationshipWithJehovah": "Marie accepte la volonté de Jéhovah avec humilité et reste présente auprès des disciples après la mort de Jésus.",
-    "didYouKnow": "Marie fait partie des femmes nommées comme persévérant dans la prière avec les disciples après l’ascension.",
+    "relationshipWithJehovah": "Elle accepte humblement la mission annoncée par l’ange et exprime sa confiance en Jéhovah. Elle conserve et médite les événements liés à Jésus.",
+    "didYouKnow": "JW.org explique que Marie était de la tribu de Juda et descendante de David; cela contribue à établir la descendance davidique de Jésus selon la chair.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Marie",
@@ -870,24 +870,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
       }
     ],
-    "identity": "Mère de Jésus — Marie accepte humblement le rôle qui lui est confié et élève Jésus dans le cadre de la famille juive de l’époque.",
-    "era": "Évangiles",
+    "identity": "Marie est la mère de Jésus. Elle est une descendante de David et a accepté avec foi la mission extraordinaire qui lui a été confiée.",
+    "era": "Fin de la période des Écritures hébraïques et ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Joseph",
       "Jésus",
-      "Élisabeth"
+      "Élisabeth, qui lui était apparentée",
+      "Les autres enfants de Marie et Joseph"
     ],
     "bibleAccount": [
-      "Reçoit l’annonce concernant la naissance de Jésus.",
-      "Donne naissance à Jésus.",
-      "Conserve et médite certains événements concernant son fils."
+      "Elle reçoit l’annonce de la naissance de Jésus.",
+      "Elle donne naissance à Jésus et médite sur les événements qui l’entourent.",
+      "Elle accompagne Jésus et ses frères et sœurs dans plusieurs épisodes des Évangiles.",
+      "Elle est présente près de Jésus au moment de sa mort."
     ],
     "qualities": [
-      "Humilité",
       "Foi",
-      "Réflexion"
+      "Humilité",
+      "Réflexion",
+      "Courage"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle a dû supporter la douleur de voir son fils rejeté et exécuté."
+    ]
   },
   "pierre": {
     "studyFocus": "Pierre a progressé d’un pêcheur impulsif à un apôtre mûr qui s’est appuyé sur Jéhovah et Jésus malgré ses erreurs.",
@@ -1001,10 +1006,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Étudier la qualité « Fidélité » dans les épisodes bibliques cités.",
       "Étudier la qualité « Vérité » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Jean 13–21 ; 1 Jean 1–5",
+    "keyReading": "Jean 13:23-25; 19:25-27; 21:20-24; Révélation 1:9-20",
     "location": "Galilée ; Jérusalem ; Éphèse, selon les sources historiques utilisées par JW.org.",
-    "relationshipWithJehovah": "Jean reçoit de Jésus la responsabilité de prendre soin de Marie et reste un témoin fidèle de nombreux événements.",
-    "didYouKnow": "Jean est traditionnellement associé à la rédaction de l’Évangile qui porte son nom ainsi que de trois lettres et de la Révélation.",
+    "relationshipWithJehovah": "Son attachement à Jésus s’est exprimé par un témoignage fidèle. Ses écrits mettent fortement en avant l’amour, l’obéissance et la fidélité à Dieu.",
+    "didYouKnow": "Jean et Pierre sont présentés comme des pêcheurs de métier, et Jean appartenait au cercle des trois apôtres qui ont accompagné Jésus dans certaines circonstances particulières.",
     "jwResources": [
       {
         "title": "Jean — Étude perspicace des Écritures",
@@ -1023,24 +1028,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Apôtre et rédacteur biblique — Jean fait partie des douze apôtres et est associé à plusieurs écrits des Écritures grecques chrétiennes.",
-    "era": "Évangiles et Révélation",
+    "identity": "Apôtre de Jésus et rédacteur biblique, frère de Jacques fils de Zébédée. Il faisait partie des trois apôtres particulièrement proches de Jésus.",
+    "era": "Ministère de Jésus et débuts de la congrégation chrétienne au Ier siècle",
     "familyAndEntourage": [
-      "Jacques",
+      "Zébédée, son père",
+      "Salomé, probablement sa mère",
+      "Jacques, son frère",
       "Pierre",
       "Jésus"
     ],
     "bibleAccount": [
-      "Suit Jésus pendant son ministère.",
-      "Reste proche de Jésus lors des événements précédant sa mort.",
-      "Rédige la Révélation alors qu’il est à Patmos."
+      "Il abandonne son activité de pêcheur pour suivre Jésus.",
+      "Il assiste à des moments importants du ministère de Jésus, notamment la résurrection de la fille de Jaïrus et la transfiguration.",
+      "Il est présent près de Jésus lors des événements précédant et entourant sa mort.",
+      "Il reçoit la Révélation alors qu’il est à Patmos."
     ],
     "qualities": [
       "Amour",
       "Persévérance",
-      "Témoignage"
+      "Courage dans le témoignage"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Avec Jacques, il a parfois manifesté une ambition personnelle concernant une place importante dans le Royaume."
+    ]
   },
   "isaac": {
     "studyFocus": "Isaac est le fils promis à Abraham et à Sara et un maillon essentiel de la lignée menant au Christ. Sa vie comprend l’épreuve du mont Moria, son mariage avec Rébecca, la naissance d’Ésaü et de Jacob et son rôle dans la transmission de la promesse.",
@@ -3011,10 +3021,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi",
       "Hospitalité"
     ],
-    "keyReading": "Luc 10:38-42 ; Jean 11:1-44 ; 12:1-8",
+    "keyReading": "Luc 10:38-42; Jean 11:1-44; 12:1-8",
     "location": "Béthanie, près de Jérusalem.",
-    "relationshipWithJehovah": "Marthe accueille Jésus chez elle et manifeste sa foi en lui lors de la mort de son frère Lazare.",
-    "didYouKnow": "Marthe affirme sa foi que Jésus est le Christ et le Fils de Dieu.",
+    "relationshipWithJehovah": "Sa foi s’est manifestée notamment lorsqu’elle a affirmé sa confiance en Jésus et dans la résurrection à venir, même avant de voir Lazare revenir à la vie.",
+    "didYouKnow": "Les Écritures ne disent pas précisément si Marthe était l’épouse, la veuve ou la fille de Simon le lépreux; JW.org souligne qu’il ne faut donc pas présenter cette identification comme un fait.",
     "jwResources": [
       {
         "title": "Marthe — Étude perspicace",
@@ -3029,24 +3039,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Amie de Jésus — Marthe, sœur de Marie et de Lazare, est connue pour son hospitalité et sa foi en la résurrection.",
-    "era": "Évangiles",
+    "identity": "Marthe est la sœur de Lazare et de Marie de Béthanie. Jésus et ses proches l’aimaient et se rendait chez eux lorsqu’il était près de Jérusalem.",
+    "era": "Ministère terrestre de Jésus, vers le Ier siècle de n. è.",
     "familyAndEntourage": [
-      "Marie",
       "Lazare",
-      "Jésus"
+      "Marie de Béthanie",
+      "Jésus, qui aimait les trois membres de cette famille"
     ],
     "bibleAccount": [
-      "Accueille Jésus chez elle.",
-      "Exprime ouvertement sa foi lorsque Lazare meurt.",
-      "Assiste à la résurrection de Lazare."
+      "Elle accueille Jésus chez elle.",
+      "Elle se préoccupe de nombreuses tâches tandis que Marie écoute Jésus.",
+      "Elle exprime sa foi en Jésus avant la résurrection de Lazare.",
+      "Elle participe ensuite à un repas donné en l’honneur de Jésus."
     ],
     "qualities": [
       "Hospitalité",
       "Foi",
       "Franchise"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle s’est laissé distraire par de nombreuses tâches et a demandé à Jésus d’intervenir dans la situation avec Marie."
+    ]
   },
   "mary_bethany": {
     "studyFocus": "Marie de Béthanie aimait profondément Jésus et montrait son intérêt pour les choses spirituelles en écoutant attentivement son enseignement.",
@@ -3772,10 +3785,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi : Jésus a encouragé ses parents à ne pas avoir peur mais à exercer la foi.",
       "Tendresse : Jésus a traité cette enfant avec attention et dignité."
     ],
-    "keyReading": "Marc 5:21-43 ; Luc 8:40-56",
+    "keyReading": "Marc 5:21-43; Luc 8:40-56",
     "location": "Capharnaüm et ses environs.",
-    "relationshipWithJehovah": "Jésus ressuscite la jeune fille, donnant à sa famille une preuve remarquable de sa puissance.",
-    "didYouKnow": "Elle avait 12 ans au moment du miracle.",
+    "relationshipWithJehovah": "La Bible ne rapporte pas de parole ou de prière personnelle de cette enfant. Son récit met plutôt en évidence le pouvoir donné par Jéhovah à Jésus de ressusciter les morts et l’espérance de la résurrection.",
+    "didYouKnow": "Elle avait 12 ans et était l’enfant unique de Jaïrus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3790,21 +3803,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Jeune fille de Galilée — La fille de Jaïrus est au centre d’un récit où Jésus la ramène à la vie.",
-    "era": "Évangiles",
+    "identity": "La fille de Jaïrus était une fillette de 12 ans, fille unique d’un président de synagogue, que Jésus a ramenée à la vie.",
+    "era": "Vers la fin de 31 ou au début de 32 de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
-      "Jaïrus",
-      "Jésus"
+      "Jaïrus, son père",
+      "Sa mère",
+      "Jésus",
+      "Pierre, Jacques et Jean, témoins de la résurrection"
     ],
     "bibleAccount": [
-      "Tombe gravement malade.",
-      "Meurt avant l’arrivée de Jésus.",
-      "Est ramenée à la vie selon le récit évangélique."
+      "Elle tombe gravement malade.",
+      "Jaïrus demande à Jésus de venir la guérir.",
+      "Elle meurt avant l’arrivée de Jésus à la maison.",
+      "Jésus la prend par la main et la ramène à la vie."
     ],
-    "qualities": [
-      "Témoignage de la puissance de Jésus"
-    ],
-    "difficulties": []
+    "qualities": [],
+    "difficulties": [
+      "Elle a subi une maladie mortelle puis la mort, mais son récit se termine par une résurrection."
+    ]
   },
   "blind_bartimaeus": {
     "studyFocus": "Bartimée, un aveugle mendiant, a persisté à appeler Jésus malgré les reproches de la foule et a manifesté une grande foi.",
@@ -3813,10 +3829,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi : il a appelé Jésus « Fils de David », reconnaissant son rôle messianique.",
       "Gratitude : après avoir retrouvé la vue, il a suivi Jésus."
     ],
-    "keyReading": "Marc 10:46-52",
+    "keyReading": "Marc 10:46-52; Luc 18:35-43",
     "location": "Jéricho.",
-    "relationshipWithJehovah": "Bartimée crie vers Jésus avec foi et persévère malgré les tentatives pour le faire taire.",
-    "didYouKnow": "Marc donne son nom, Bartimée, « fils de Timée ». ",
+    "relationshipWithJehovah": "Son récit ne rapporte pas une prière adressée directement à Jéhovah, mais sa confiance dans Jésus et sa persévérance illustrent une foi qui agit.",
+    "didYouKnow": "Le nom Bartimée signifie « fils de Timée »; Marc conserve à la fois la forme araméenne et sa traduction.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3831,23 +3847,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Aveugle mendiant — Bartimée, aveugle de Jéricho, appelle Jésus avec insistance et retrouve la vue.",
-    "era": "Évangiles",
+    "identity": "Bartimée était un aveugle mendiant près de Jéricho qui a crié vers Jésus et a retrouvé la vue.",
+    "era": "Fin du ministère terrestre de Jésus",
     "familyAndEntourage": [
+      "Timée, son père",
       "Jésus",
-      "La foule"
+      "La foule qui suivait Jésus"
     ],
     "bibleAccount": [
-      "Crie vers Jésus malgré les reproches de la foule.",
-      "Exprime sa foi en demandant à retrouver la vue.",
-      "Recouvre la vue et suit Jésus."
+      "Il mendie au bord de la route.",
+      "Il apprend que Jésus de Nazareth passe et crie vers lui.",
+      "Malgré les reproches de la foule, il insiste.",
+      "Jésus lui rend la vue et il se met à le suivre."
     ],
     "qualities": [
-      "Foi",
       "Persévérance",
+      "Foi",
       "Courage"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il devait vivre avec la cécité et la condition sociale difficile d’un mendiant."
+    ]
   },
   "samaritan_woman": {
     "studyFocus": "La Samaritaine a accepté de discuter avec Jésus malgré les barrières sociales de l’époque et a parlé à d’autres de ce qu’elle avait appris.",
@@ -3899,10 +3919,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Humilité : il estimait ne pas être digne de recevoir Jésus chez lui.",
       "Compassion : il se souciait profondément d’un serviteur malade."
     ],
-    "keyReading": "Matthieu 8:5-13 ; Luc 7:1-10",
+    "keyReading": "Matthieu 8:5-13; Luc 7:1-10",
     "location": "Capharnaüm.",
-    "relationshipWithJehovah": "Le centurion reconnaît l’autorité de Jésus et montre une foi exceptionnelle en sa capacité à guérir son serviteur.",
-    "didYouKnow": "Jésus dit ne pas avoir trouvé une foi aussi grande en Israël.",
+    "relationshipWithJehovah": "Jésus présente sa foi comme remarquable. Son attitude montre une confiance profonde dans l’autorité que Jéhovah avait accordée à Jésus.",
+    "didYouKnow": "Le récit souligne que ce centurion ne demanda même pas à Jésus d’entrer chez lui: il estimait qu’une parole de Jésus suffirait.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3917,23 +3937,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Centurion — Un officier romain demande à Jésus de guérir son serviteur et manifeste une grande confiance dans son autorité.",
-    "era": "Évangiles",
+    "identity": "Un centurion romain de Capharnaüm a demandé à Jésus de guérir son serviteur et a manifesté une foi remarquable dans son autorité.",
+    "era": "Ministère terrestre de Jésus",
     "familyAndEntourage": [
-      "Jésus",
-      "Son serviteur"
+      "Son serviteur malade",
+      "Des anciens des Juifs venus parler en sa faveur",
+      "Jésus"
     ],
     "bibleAccount": [
-      "Demande de l’aide pour son serviteur malade.",
-      "Reconnaît qu’une parole de Jésus suffit pour guérir.",
-      "Manifeste une foi remarquée par Jésus."
+      "Il se préoccupe de son serviteur malade.",
+      "Il fait demander à Jésus de le guérir.",
+      "Il estime ne pas être digne de recevoir Jésus chez lui.",
+      "Jésus guérit le serviteur."
     ],
     "qualities": [
-      "Humilité",
       "Foi",
-      "Confiance"
+      "Humilité",
+      "Compassion"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il était soumis aux limites de son époque et de son statut militaire, mais le récit ne rapporte pas de faute personnelle précise."
+    ]
   },
   "felix": {
     "studyFocus": "Félix a entendu Paul parler de justice, de maîtrise de soi et du jugement à venir, mais a repoussé sa réaction.",
