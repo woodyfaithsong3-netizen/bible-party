@@ -960,528 +960,556 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "zipporah": {
-    "studyFocus": "Séphora est la fille de Jéthro et la femme de Moïse. À observer dans son récit : Décision, Attachement familial.",
+    "studyFocus": "Séphora, fille de Jéthro et femme de Moïse, accompagne une période importante de la vie de Moïse. Son récit permet d’examiner les responsabilités familiales et une réaction énergique dans une situation urgente.",
     "lessonPoints": [
-      "Observer la qualité « Décision » dans les épisodes cités.",
-      "Observer la qualité « Attachement familial » dans les épisodes cités."
+      "Elle épouse Moïse à Madian.",
+      "Elle donne naissance à Gershom et Éliézer.",
+      "Lors d’un épisode difficile sur la route, elle agit rapidement au sujet de la circoncision de leur fils.",
+      "Son histoire rappelle que les responsabilités liées à l’alliance avec Jéhovah ne doivent pas être traitées avec négligence."
     ],
-    "keyReading": "Épouse Moïse.",
+    "keyReading": "Exode 2:16-22 ; 4:18-26 ; 18:1-6",
+    "location": "Madian puis le cadre du camp d’Israël dans le désert.",
+    "relationshipWithJehovah": "Son intervention en Exode 4 montre qu’elle prend au sérieux une exigence liée à l’alliance avec Jéhovah.",
+    "didYouKnow": "Séphora était fille de Jéthro et a eu deux fils avec Moïse.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Séphora — Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/sephora/"
       },
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
       }
     ]
   },
   "korah": {
-    "studyFocus": "Coré conteste l’autorité établie de Moïse et Aaron et mène une rébellion.",
+    "studyFocus": "Coré, Lévite de la famille de Qehath, conteste avec Dathan, Abiram et d’autres hommes la position de Moïse et d’Aaron. Son récit est un avertissement sur l’ambition et la contestation.",
     "lessonPoints": [
-      "Point de vigilance : Son récit met en garde contre l’ambition et la contestation présomptueuse."
+      "Il appartient à la tribu de Lévi et dispose déjà de privilèges de service.",
+      "Il rassemble des hommes influents contre Moïse et Aaron.",
+      "Moïse laisse à Jéhovah le soin de montrer qui a été choisi.",
+      "La rébellion entraîne un jugement sévère."
     ],
-    "keyReading": "Conteste Moïse et Aaron avec d’autres hommes.",
+    "keyReading": "Nombres 16:1-35 ; 26:9-11 ; Psaume 106:16-18",
+    "location": "Le camp d’Israël dans le désert.",
+    "relationshipWithJehovah": "Coré connaissait les dispositions du culte mais contesta l’autorité que Jéhovah avait donnée à Moïse et Aaron.",
+    "didYouKnow": "Des descendants de Coré ont continué à servir fidèlement et sont associés à plusieurs psaumes.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Coré — Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/core/"
       },
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       }
     ]
   },
   "balaam": {
-    "studyFocus": "Balaam est sollicité pour maudire Israël mais prononce finalement des bénédictions.",
+    "studyFocus": "Balaam est appelé par Balak pour maudire Israël, mais Jéhovah l’empêche de prononcer une malédiction contre son peuple. Son récit met en évidence la puissance de la parole de Dieu et le danger de l’avidité.",
     "lessonPoints": [
-      "Point de vigilance : Son parcours montre le danger de rechercher un avantage personnel au détriment de la volonté divine."
+      "Balak lui propose une récompense pour maudire Israël.",
+      "Jéhovah lui fait comprendre qu’il ne peut dire que ce que Dieu lui permet.",
+      "L’ânesse et l’ange constituent un épisode marquant de son voyage.",
+      "D’autres textes bibliques signalent son mauvais mobile lié à la cupidité."
     ],
-    "keyReading": "Est appelé par Balak.",
+    "keyReading": "Nombres 22-24 ; 31:8, 16 ; 2 Pierre 2:15, 16 ; Révélation 2:14",
+    "location": "Péthor, puis les hauteurs de Moab.",
+    "relationshipWithJehovah": "Balaam reconnaît qu’il ne peut aller au-delà de la parole de Jéhovah, mais son désir de récompense révèle un mauvais mobile.",
+    "didYouKnow": "Balaam prononça quatre déclarations prophétiques successives sur Israël.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "balak": {
-    "studyFocus": "Balak cherche à faire maudire Israël par Balaam.",
+    "studyFocus": "Balak, roi de Moab, craint Israël et cherche à utiliser Balaam pour le faire maudire. Son récit montre comment la peur peut conduire à des décisions opposées au dessein de Jéhovah.",
     "lessonPoints": [
-      "Point de vigilance : La peur et l’opposition au peuple de Dieu dominent son récit."
+      "Il voit les victoires d’Israël et craint pour son territoire.",
+      "Il demande à Balaam de prononcer une malédiction.",
+      "Il change de lieu pour essayer d’obtenir le résultat souhaité.",
+      "Les déclarations prononcées sous l’autorité de Jéhovah bénissent Israël."
     ],
-    "keyReading": "Craint l’arrivée d’Israël.",
+    "keyReading": "Nombres 22:1-41 ; 23:1–24:25",
+    "location": "Les plaines de Moab, à l’est du Jourdain.",
+    "relationshipWithJehovah": "Balak agit en opposition au peuple que Jéhovah a béni et ne parvient pas à modifier la volonté divine.",
+    "didYouKnow": "Balak était roi de Moab avant l’entrée d’Israël en Terre promise.",
     "jwResources": [
+      {
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "eli": {
-    "studyFocus": "Éli sert au tabernacle et joue un rôle dans l’éducation du jeune Samuel, mais ses fils sont source de graves problèmes. À observer dans son récit : Service, Attention spirituelle.",
+    "studyFocus": "Éli est grand prêtre et juge en Israël pendant la jeunesse de Samuel. Il sert au tabernacle mais doit faire face à la mauvaise conduite de ses fils et à un jugement annoncé contre sa maison.",
     "lessonPoints": [
-      "Observer la qualité « Service » dans les épisodes cités.",
-      "Observer la qualité « Attention spirituelle » dans les épisodes cités.",
-      "Point de vigilance : Son récit souligne la responsabilité de corriger sérieusement une mauvaise conduite."
+      "Il sert Jéhovah au tabernacle de Shilo.",
+      "Il aide le jeune Samuel à reconnaître l’appel de Jéhovah.",
+      "Ses fils Hophni et Phinéhas commettent de graves fautes.",
+      "Éli reçoit un avertissement mais ne prend pas de mesures suffisantes contre eux.",
+      "Sa mort survient après la capture de l’Arche et la mort de ses fils."
     ],
-    "keyReading": "Sert comme prêtre et juge.",
+    "keyReading": "1 Samuel 1:24–4:22",
+    "location": "Shilo et le tabernacle d’Israël.",
+    "relationshipWithJehovah": "Éli a servi pendant des années, mais son récit souligne qu’aimer Jéhovah implique aussi de prendre au sérieux la discipline et la responsabilité familiale.",
+    "didYouKnow": "Éli jugea Israël pendant 40 ans et fut le responsable religieux auprès duquel Samuel grandit.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "hannah": {
-    "studyFocus": "Hanna prie avec ferveur au tabernacle et tient sa promesse de présenter Samuel au service de Jéhovah. À observer dans son récit : Foi, Persévérance dans la prière, Reconnaissance.",
+    "studyFocus": "Hanna supporte longtemps la douleur de sa stérilité et les provocations de Peninna. Elle prie avec confiance, fait un vœu et respecte sa promesse en présentant Samuel au service de Jéhovah.",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Persévérance dans la prière » dans les épisodes cités.",
-      "Observer la qualité « Reconnaissance » dans les épisodes cités."
+      "Elle déverse son cœur à Jéhovah au tabernacle.",
+      "Elle ne répond pas aux provocations par la vengeance.",
+      "Elle tient sa promesse après la naissance de Samuel.",
+      "Sa prière de reconnaissance attribue à Jéhovah le mérite de son aide."
     ],
-    "keyReading": "Prie pour avoir un enfant.",
+    "keyReading": "1 Samuel 1:1–2:11",
+    "location": "Rama et le tabernacle de Shilo.",
+    "relationshipWithJehovah": "Hanna compte sur Jéhovah dans la prière et lui fait confiance avant même de voir une solution.",
+    "didYouKnow": "Hanna rendait chaque année visite à Samuel à Shilo et lui apportait un petit vêtement sans manches.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+        "title": "Anne — Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/anne/"
       },
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Samuel — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samuel/"
       }
     ]
   },
   "michal": {
-    "studyFocus": "Mical aime David et l’aide à échapper à Saül, mais leur relation connaît ensuite des tensions. À observer dans son récit : Courage dans une situation dangereuse.",
+    "studyFocus": "Mical, fille de Saül et première épouse de David, intervient courageusement pour sauver David lorsque son père cherche à le tuer. Leur relation connaît ensuite des tensions.",
     "lessonPoints": [
-      "Observer la qualité « Courage dans une situation dangereuse » dans les épisodes cités.",
-      "Point de vigilance : Son conflit avec David illustre aussi les tensions pouvant naître d’un jugement critique."
+      "Elle avertit David du danger et l’aide à s’échapper.",
+      "Elle utilise une mise en scène pour gagner du temps devant les hommes de Saül.",
+      "Elle est ensuite donnée à un autre homme avant d’être reprise par David.",
+      "Elle critique David lors de son expression de joie devant Jéhovah.",
+      "Son récit permet d’examiner le courage mais aussi une attitude critique."
     ],
-    "keyReading": "Aide David à fuir lorsque Saül veut le tuer.",
+    "keyReading": "1 Samuel 18:20-29 ; 19:11-17 ; 25:44 ; 2 Samuel 3:12-16 ; 6:16-23",
+    "location": "Gibéa et Jérusalem.",
+    "relationshipWithJehovah": "La Bible ne la présente pas comme un modèle de foi ; son récit invite à examiner les motivations et l’attitude envers le culte de Jéhovah.",
+    "didYouKnow": "Mical est la seule femme explicitement décrite comme ayant aimé David avant leur mariage.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "joab": {
-    "studyFocus": "Joab est un puissant commandant de l’armée de David dont le parcours mêle loyauté politique, habileté militaire et actes violents. À observer dans son récit : Habileté militaire, Loyauté envers David.",
+    "studyFocus": "Joab, neveu de David et chef de son armée, joue un rôle militaire majeur pendant le règne de David. Il est capable et parfois loyal envers le roi, mais commet aussi des meurtres.",
     "lessonPoints": [
-      "Observer la qualité « Habileté militaire » dans les épisodes cités.",
-      "Observer la qualité « Loyauté envers David » dans les épisodes cités.",
-      "Point de vigilance : Son recours à la violence et ses décisions politiques montrent les dangers de l’ambition et de la vengeance."
+      "Il commande l’armée de David pendant de nombreuses années.",
+      "Il tue Abner et Amasa.",
+      "Il avertit David au sujet d’Absalom mais agit ensuite violemment contre lui.",
+      "Il soutient Adonias lors de la succession.",
+      "Son histoire montre qu’une capacité remarquable ne compense pas des actes contraires aux principes de Dieu."
     ],
-    "keyReading": "Commande l’armée de David.",
+    "keyReading": "2 Samuel 2:12–3:39 ; 10:1-19 ; 18:1-33 ; 20:1-23 ; 1 Rois 1:5-53 ; 2:28-35",
+    "location": "Jérusalem et les territoires où l’armée de David combat.",
+    "relationshipWithJehovah": "Le récit met surtout en évidence les conséquences de décisions violentes et ambitieuses plutôt qu’un modèle de fidélité à Jéhovah.",
+    "didYouKnow": "Joab était fils de Tsérouya, sœur de David, et ses frères comprenaient Abishaï et Asaël.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "herod_antipas": {
-    "studyFocus": "Hérode Antipas exerce son autorité à l’époque de Jésus et fait exécuter Jean le Baptiseur.",
+    "studyFocus": "Hérode Antipas, tétrarque de Galilée et de Pérée, entend parler de Jésus et fait exécuter Jean le Baptiseur. Il intervient aussi dans le procès de Jésus.",
     "lessonPoints": [
-      "Point de vigilance : Son récit illustre les dangers de la pression sociale, des promesses irréfléchies et de l’abus du pouvoir."
+      "Jean le Baptiseur lui reproche son mariage avec Hérodiade.",
+      "Hérode cède à la pression après un serment imprudent.",
+      "Il fait décapiter Jean.",
+      "Pilate lui envoie Jésus pendant le procès, mais Jésus ne lui répond pas.",
+      "Son récit illustre les conséquences de décisions prises sous pression."
     ],
-    "keyReading": "Entend parler du ministère de Jésus.",
+    "keyReading": "Matthieu 14:1-12 ; Marc 6:14-29 ; Luc 3:19,20 ; 23:6-12",
+    "location": "Galilée et Pérée, notamment Tibériade.",
+    "relationshipWithJehovah": "Hérode n’est pas présenté comme serviteur de Jéhovah. Son récit montre plutôt les conséquences de l’opposition à Jean et d’un mauvais usage de l’autorité.",
+    "didYouKnow": "Hérode Antipas était fils d’Hérode le Grand et dirigeait la Galilée et la Pérée comme tétrarque.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "pilate": {
-    "studyFocus": "Pilate préside au procès de Jésus et autorise son exécution malgré les éléments rapportés dans les récits évangéliques.",
+    "studyFocus": "Ponce Pilate préside au procès de Jésus. Les Évangiles rapportent qu’il reconnaît l’absence de faute méritant la mort, mais autorise finalement l’exécution sous la pression des autorités et de la foule.",
     "lessonPoints": [
-      "Point de vigilance : Son récit illustre le conflit entre jugement personnel, pression politique et responsabilité."
+      "Il interroge Jésus sur sa royauté.",
+      "Il constate que Jésus n’est pas coupable d’une faute passible de mort selon son examen.",
+      "Il tente de le relâcher.",
+      "Il finit par le livrer pour être exécuté.",
+      "Son récit permet d’étudier la responsabilité d’un dirigeant face à la pression."
     ],
-    "keyReading": "Interroge Jésus.",
+    "keyReading": "Matthieu 27:11-26 ; Marc 15:1-15 ; Luc 23:1-25 ; Jean 18:28–19:16",
+    "location": "Jérusalem, au prétoire romain.",
+    "relationshipWithJehovah": "Pilate n’est pas présenté comme adorateur de Jéhovah. Les récits montrent néanmoins qu’il disposait d’informations suffisantes sur l’accusation portée contre Jésus.",
+    "didYouKnow": "Pilate était préfet romain de Judée et son autorité comprenait le pouvoir d’autoriser une exécution.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "isaiah": {
-    "studyFocus": "Isaïe transmet des messages de Jéhovah à Juda et annonce plusieurs événements concernant le peuple et le Messie. À observer dans son récit : Disponibilité, Courage, Foi.",
+    "studyFocus": "Isaïe exerce son ministère prophétique en Juda. Il reçoit une vision de Jéhovah et accepte la mission d’annoncer des messages comprenant des jugements et des promesses.",
     "lessonPoints": [
-      "Observer la qualité « Disponibilité » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Foi » dans les épisodes cités."
+      "Il répond à l’appel prophétique par sa disponibilité.",
+      "Il transmet des messages parfois difficiles.",
+      "Il annonce de nombreuses prophéties messianiques.",
+      "Il met l’accent sur la sainteté de Jéhovah et la confiance en lui."
     ],
-    "keyReading": "Accepte une mission prophétique.",
+    "keyReading": "Isaïe 1–6 ; 7:10-17 ; 9:1-7 ; 11:1-10 ; 53",
+    "location": "Jérusalem et le royaume de Juda.",
+    "relationshipWithJehovah": "Isaïe est présenté comme prophète de Jéhovah et reçoit sa mission dans une vision de la sainteté divine.",
+    "didYouKnow": "Le livre d’Isaïe contient de nombreuses prophéties que les Écritures grecques chrétiennes appliquent à Jésus Christ.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "jeremiah": {
-    "studyFocus": "Jérémie annonce les conséquences de l’infidélité de Jérusalem tout en transmettant des messages d’espérance. À observer dans son récit : Endurance, Courage, Fidélité.",
+    "studyFocus": "Jérémie sert comme prophète avant et pendant la destruction de Jérusalem. Malgré les menaces et l’emprisonnement, il continue à transmettre les messages de Jéhovah.",
     "lessonPoints": [
-      "Observer la qualité « Endurance » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Fidélité » dans les épisodes cités."
+      "Jéhovah le charge de parler à des nations et à des rois.",
+      "Il rencontre une forte opposition.",
+      "Il achète un champ comme signe de confiance dans le retour futur des Juifs.",
+      "Il transmet la promesse d’une nouvelle alliance.",
+      "Son endurance montre l’importance de continuer à parler même lorsque le message est impopulaire."
     ],
-    "keyReading": "Prêche malgré une forte opposition.",
+    "keyReading": "Jérémie 1 ; 20 ; 26 ; 36-38 ; 31:31-34 ; 40-43",
+    "location": "Jérusalem, Juda et les régions voisines.",
+    "relationshipWithJehovah": "Jérémie entretient une relation étroite avec Jéhovah par la prière et l’obéissance, même lorsqu’il est découragé ou menacé.",
+    "didYouKnow": "Jérémie a servi pendant plusieurs décennies et a été témoin de la destruction de Jérusalem.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "ezekiel": {
-    "studyFocus": "Ézéchiel transmet des visions et des messages aux exilés de Juda à Babylone. À observer dans son récit : Obéissance, Persévérance, Courage.",
+    "studyFocus": "Ézéchiel est un prêtre devenu prophète parmi les exilés à Babylone. Ses visions montrent que Jéhovah reste souverain même loin de Jérusalem.",
     "lessonPoints": [
-      "Observer la qualité « Obéissance » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités."
+      "Il reçoit sa mission parmi les exilés près du fleuve Kebar.",
+      "Il annonce la responsabilité individuelle devant Dieu.",
+      "Il met en scène des messages prophétiques.",
+      "Il reçoit des visions concernant la restauration du vrai culte.",
+      "Son service montre la nécessité de rester fidèle dans des circonstances difficiles."
     ],
-    "keyReading": "Reçoit une vision inaugurale.",
+    "keyReading": "Ézéchiel 1–3 ; 18 ; 33 ; 36–37 ; 40–48",
+    "location": "Babylone, notamment près du fleuve Kebar.",
+    "relationshipWithJehovah": "Ézéchiel reçoit des visions et des messages de Jéhovah et doit les transmettre fidèlement aux exilés.",
+    "didYouKnow": "Ézéchiel était prêtre et a commencé à prophétiser parmi les exilés à Babylone.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "ezra": {
-    "studyFocus": "Esdras retourne à Jérusalem et aide le peuple à mieux connaître et appliquer la Loi. À observer dans son récit : Étude, Enseignement, Zèle.",
+    "studyFocus": "Esdras est un prêtre et un copiste habile de la Loi qui retourne à Jérusalem après l’exil. Il s’applique à étudier, mettre en pratique et enseigner la Loi de Jéhovah.",
     "lessonPoints": [
-      "Observer la qualité « Étude » dans les épisodes cités.",
-      "Observer la qualité « Enseignement » dans les épisodes cités.",
-      "Observer la qualité « Zèle » dans les épisodes cités."
+      "Il prépare son cœur à étudier la Loi de Jéhovah.",
+      "Il obtient une autorisation royale pour soutenir le culte à Jérusalem.",
+      "Il prie et jeûne avant le voyage.",
+      "Il enseigne au peuple et agit lorsqu’il découvre des problèmes spirituels.",
+      "Son exemple associe étude personnelle et mise en pratique."
     ],
-    "keyReading": "Retourne à Jérusalem avec d’autres exilés.",
+    "keyReading": "Esdras 7:1-10 ; 8:15-36 ; 9-10",
+    "location": "Babylone et Jérusalem.",
+    "relationshipWithJehovah": "Esdras prépare son cœur à consulter la Loi de Jéhovah, à la pratiquer et à l’enseigner.",
+    "didYouKnow": "Esdras était prêtre et copiste.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "zerubbabel": {
-    "studyFocus": "Zorobabel dirige les Juifs revenus d’exil et joue un rôle majeur dans la reconstruction du temple. À observer dans son récit : Persévérance, Courage, Coopération.",
+    "studyFocus": "Zorobabel dirige le premier groupe important de Juifs revenus de Babylone et participe à la reconstruction du temple. Son parcours montre l’importance de la persévérance malgré l’opposition.",
     "lessonPoints": [
-      "Observer la qualité « Persévérance » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Coopération » dans les épisodes cités."
+      "Il revient à Jérusalem avec le reste juif.",
+      "Il participe au rétablissement de l’autel et du culte.",
+      "La construction du temple est interrompue par l’opposition.",
+      "Aggée et Zekaria l’encouragent.",
+      "Le temple est finalement achevé."
     ],
-    "keyReading": "Retourne à Jérusalem avec les exilés.",
+    "keyReading": "Esdras 2–6 ; Aggée 1–2 ; Zekaria 4",
+    "location": "Jérusalem et Juda après le retour de l’exil.",
+    "relationshipWithJehovah": "Jéhovah utilise Aggée et Zekaria pour fortifier Zorobabel dans sa responsabilité.",
+    "didYouKnow": "Zorobabel appartient à la lignée royale de David et figure dans les généalogies liées à Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "haggai": {
-    "studyFocus": "Aggée encourage les Juifs revenus d’exil à reprendre la construction du temple. À observer dans son récit : Courage, Clarté, Zèle.",
+    "studyFocus": "Aggée prophétise après le retour d’exil et pousse les Juifs à reprendre la construction du temple. Il les aide à remettre les intérêts de Jéhovah au premier plan.",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Clarté » dans les épisodes cités.",
-      "Observer la qualité « Zèle » dans les épisodes cités."
+      "Il dénonce le fait que le peuple s’occupe de ses maisons alors que le temple reste en ruines.",
+      "Il encourage Zorobabel, Josué et le peuple à agir.",
+      "Il rappelle que Jéhovah est avec eux.",
+      "Il annonce que la gloire future de la maison sera plus grande.",
+      "Son message transforme une période d’inertie en action."
     ],
-    "keyReading": "Transmet des messages aux dirigeants et au peuple.",
+    "keyReading": "Aggée 1–2",
+    "location": "Jérusalem et Juda après le retour de l’exil.",
+    "relationshipWithJehovah": "Aggée transmet les paroles de Jéhovah avec clarté et aide le peuple à rétablir ses priorités spirituelles.",
+    "didYouKnow": "Aggée et Zekaria ont prophétisé à la même époque pour encourager la reconstruction du temple.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "zechariah": {
-    "studyFocus": "Zekaria encourage les Juifs revenus d’exil au moyen de visions et de messages concernant la restauration. À observer dans son récit : Foi, Encouragement, Persévérance.",
+    "studyFocus": "Zekaria sert comme prophète après l’exil et reçoit une série de visions destinées à encourager la reconstruction du temple et le rétablissement du peuple.",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Encouragement » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités."
+      "Ses premières visions encouragent le peuple à revenir vers Jéhovah.",
+      "Il reçoit des visions sur Jérusalem, le grand prêtre Josué et Zorobabel.",
+      "Il insiste sur le rôle de l’esprit de Jéhovah plutôt que sur la seule puissance humaine.",
+      "Son livre contient des prophéties messianiques.",
+      "Son ministère soutient l’encouragement et la restauration du vrai culte."
     ],
-    "keyReading": "Transmet plusieurs visions.",
+    "keyReading": "Zekaria 1–8 ; 9:9 ; 12:10 ; 13:7",
+    "location": "Jérusalem et Juda après le retour de l’exil.",
+    "relationshipWithJehovah": "Zekaria reçoit des visions de Jéhovah et transmet leurs messages pour fortifier le peuple.",
+    "didYouKnow": "Zekaria signifie « Jéhovah s’est souvenu » et son livre contient plusieurs visions symboliques.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "malachi": {
-    "studyFocus": "Malachie reprend des pratiques religieuses négligées et annonce la venue d’un messager préparant le chemin. À observer dans son récit : Courage, Fidélité.",
+    "studyFocus": "Malachie reprend les prêtres et le peuple pour leur manque de respect envers le culte de Jéhovah. Son message dénonce le culte mécanique et annonce une œuvre préparatoire avant le jour de Jéhovah.",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Fidélité » dans les épisodes cités."
+      "Il dénonce les sacrifices défectueux.",
+      "Il rappelle aux prêtres leur responsabilité d’enseigner correctement.",
+      "Il condamne l’infidélité conjugale et d’autres pratiques fautives.",
+      "Il annonce la venue d’un messager qui préparera le chemin.",
+      "Il termine par une promesse concernant Élie avant le grand jour de Jéhovah."
     ],
-    "keyReading": "Dénonce des pratiques négligentes dans le culte.",
+    "keyReading": "Malachie 1–4",
+    "location": "Jérusalem et la communauté juive restaurée après l’exil.",
+    "relationshipWithJehovah": "Malachie insiste sur le fait que Jéhovah mérite un culte sincère, respectueux et entier.",
+    "didYouKnow": "Malachie est le dernier livre des Écritures hébraïques dans l’ordre habituel des Bibles françaises.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "gamaliel": {
-    "studyFocus": "Gamaliel intervient devant le Sanhédrin en faveur d’une approche prudente concernant les apôtres. À observer dans son récit : Prudence, Raisonnement.",
+    "studyFocus": "Gamaliel est un pharisien et enseignant de la Loi, membre du Sanhédrin. Il recommande la prudence lorsqu’on veut faire disparaître les apôtres.",
     "lessonPoints": [
-      "Observer la qualité « Prudence » dans les épisodes cités.",
-      "Observer la qualité « Raisonnement » dans les épisodes cités."
+      "Il est présenté comme un enseignant de la Loi respecté.",
+      "Il intervient lors du procès des apôtres.",
+      "Il recommande de laisser du temps avant une décision irréversible.",
+      "Son raisonnement distingue une opposition humaine d’une œuvre qui pourrait être soutenue par Dieu.",
+      "Paul dit avoir été instruit à ses pieds."
     ],
-    "keyReading": "Intervient lors du procès des apôtres.",
+    "keyReading": "Actes 5:33-42 ; 22:3",
+    "location": "Jérusalem, au sein du milieu religieux juif du Ier siècle.",
+    "relationshipWithJehovah": "Le récit ne dit pas que Gamaliel est devenu chrétien ; il montre néanmoins qu’il reconnaît la possibilité que l’œuvre des apôtres soit soutenue par Dieu.",
+    "didYouKnow": "Paul dit avoir été instruit aux pieds de Gamaliel.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "apollos": {
-    "studyFocus": "Apollos est un homme éloquent et connaisseur des Écritures qui reçoit une instruction plus exacte grâce à Aquila et Priscille. À observer dans son récit : Éloquence, Zèle, Humilité pour apprendre.",
+    "studyFocus": "Apollos est un Juif d’Alexandrie, éloquent et connaissant bien les Écritures. Après avoir reçu des explications plus précises d’Aquila et Priscille, il devient un prédicateur efficace.",
     "lessonPoints": [
-      "Observer la qualité « Éloquence » dans les épisodes cités.",
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Humilité pour apprendre » dans les épisodes cités."
+      "Il connaît les Écritures et enseigne avec zèle.",
+      "Sa connaissance initiale du baptême est incomplète.",
+      "Aquila et Priscille lui expliquent plus exactement la voie de Dieu.",
+      "Il utilise ensuite les Écritures pour démontrer que Jésus est le Christ.",
+      "Paul présente Apollos et lui-même comme des serviteurs plutôt que des chefs rivaux."
     ],
-    "keyReading": "Enseigne avec zèle ce qu’il connaît.",
+    "keyReading": "Actes 18:24-28 ; 19:1-7 ; 1 Corinthiens 1:10-13 ; 3:4-9, 21-23 ; 4:6",
+    "location": "Alexandrie ; Éphèse ; Achaïe, notamment Corinthe.",
+    "relationshipWithJehovah": "Apollos accepte humblement une instruction plus précise et met ensuite ses capacités d’enseignement au service de la prédication.",
+    "didYouKnow": "Apollos était originaire d’Alexandrie.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
