@@ -1829,10 +1829,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Humilité : Moïse a accepté un conseil utile venant de son beau-père.",
       "Intérêt pour les autres : Jéthro s’est réjoui de ce que Jéhovah avait fait pour Israël."
     ],
-    "keyReading": "Exode 2:16-22 ; 3:1 ; 18:1-27",
+    "keyReading": "Exode 2:15-22; 3:1; 18:1-27",
     "location": "Madian et le désert du Sinaï.",
-    "relationshipWithJehovah": "Jéthro reconnaît la puissance de Jéhovah et se réjouit de la délivrance d’Israël; son conseil à Moïse favorise une organisation plus équilibrée.",
-    "didYouKnow": "Jéthro est aussi appelé Réouël dans le récit biblique et était le beau-père de Moïse.",
+    "relationshipWithJehovah": "Après avoir entendu ce que Jéhovah avait fait pour Israël, Jéthro le reconnaît comme supérieur aux autres dieux et offre un sacrifice avec les anciens d’Israël.",
+    "didYouKnow": "Jéthro observe que Moïse risque de s’épuiser en jugeant seul le peuple et lui recommande de choisir des hommes capables pour partager cette charge.",
     "jwResources": [
       {
         "title": "Jéthro — Étude perspicace des Écritures",
@@ -1851,22 +1851,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Prêtre de Madian et beau-père de Moïse — Jéthro accueille Moïse et lui donne des conseils pratiques pour organiser ses responsabilités.",
-    "era": "Exode",
+    "identity": "Jéthro était prêtre de Madiân et beau-père de Moïse. Il accueillit Moïse, lui donna Séphora pour femme et lui conseilla plus tard d’organiser la direction du peuple.",
+    "era": "XVIe-XVe siècle av. n. è.",
     "familyAndEntourage": [
+      "Séphora",
       "Moïse",
-      "Séphora"
+      "Les fils de Moïse"
     ],
     "bibleAccount": [
-      "Accueille Moïse à Madian.",
-      "Lui donne sa fille Séphora en mariage.",
-      "Conseille Moïse sur la délégation de responsabilités."
+      "Il accueille Moïse après sa fuite d’Égypte.",
+      "Il donne Séphora en mariage à Moïse.",
+      "Il entend le récit de la délivrance d’Israël et reconnaît la grandeur de Jéhovah.",
+      "Il conseille à Moïse de déléguer certaines responsabilités judiciaires."
     ],
     "qualities": [
       "Hospitalité",
-      "Sagesse pratique"
+      "Sagesse pratique",
+      "Humilité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit intégrer la situation de sa famille après le départ de Moïse et discerner comment aider sans prendre sa place."
+    ]
   },
   "zipporah": {
     "studyFocus": "Tsippora, femme de Moïse, a joué un rôle dans sa famille et a agi rapidement dans une situation grave liée à la circoncision de leur fils.",
@@ -1875,10 +1880,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Famille : son récit rappelle l’importance de prendre au sérieux les responsabilités familiales.",
       "Respect des exigences de Jéhovah : l’épisode souligne la gravité de ses commandements."
     ],
-    "keyReading": "Exode 2:16-22 ; 4:18-26 ; 18:1-6",
+    "keyReading": "Exode 2:16-22; 4:18-26; 18:1-12",
     "location": "Madian et le camp d’Israël dans le désert.",
-    "relationshipWithJehovah": "Son intervention en Exode 4 montre qu’elle prend au sérieux une exigence liée à l’alliance avec Jéhovah.",
-    "didYouKnow": "Séphora était fille de Jéthro et mère de deux fils de Moïse.",
+    "relationshipWithJehovah": "Son intervention lors de l’incident de la circoncision montre qu’elle comprend l’importance de respecter l’alliance de Jéhovah même dans une situation très tendue.",
+    "didYouKnow": "Séphora circoncit son fils elle-même avec un silex et le récit montre que son intervention est immédiatement suivie par la fin du danger qui menaçait Moïse.",
     "jwResources": [
       {
         "title": "Séphora — Les personnages de la Bible",
@@ -1897,24 +1902,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Femme de Moïse — Séphora est la fille de Jéthro et la femme de Moïse.",
-    "era": "Exode",
+    "identity": "Séphora était la fille de Jéthro, l’épouse de Moïse et la mère de ses fils Guershom et Éliézer.",
+    "era": "XVIe-XVe siècle av. n. è.",
     "familyAndEntourage": [
-      "Moïse",
       "Jéthro",
-      "Gershom",
+      "Moïse",
+      "Guershom",
       "Éliézer"
     ],
     "bibleAccount": [
-      "Épouse Moïse.",
-      "Accompagne une partie de son parcours familial.",
-      "Intervient lors d’une situation urgente liée à la circoncision de son fils."
+      "Elle rencontre Moïse près d’un puits de Madiân.",
+      "Elle devient son épouse et lui donne des fils.",
+      "Lors du voyage vers l’Égypte, elle circoncit son fils dans une situation urgente et empêche ainsi une sanction divine contre Moïse.",
+      "Elle est ensuite renvoyée chez Jéthro puis retrouve Moïse avec leurs fils."
     ],
     "qualities": [
-      "Décision",
-      "Attachement familial"
+      "Réactivité",
+      "Courage",
+      "Respect des exigences divines"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle doit agir rapidement dans une situation familiale grave où la vie de son mari est menacée à cause du non-respect d’une exigence divine concernant leur fils."
+    ]
   },
   "korah": {
     "studyFocus": "Coré, Lévite de la famille de Qehath, conteste l’autorité de Moïse et d’Aaron avec d’autres hommes. Son récit est un avertissement contre l’ambition et la contestation d’une disposition divine.",
