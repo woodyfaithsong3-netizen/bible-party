@@ -1533,14 +1533,14 @@ const v101ExpertIntruders: IntruderQuestion[] = [
 ];
 
 const v101ExpertTimesUp: TimesUpQuestion[] = [
-  {id:'v101-expert-tu-01',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Ébed-Mélek',clues:['Éthiopien','Citerne','Jérémie'],reference:'Jérémie 38:7-13'},
-  {id:'v101-expert-tu-02',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Houlda',clues:['Prophétesse','Loi retrouvée','Josias'],reference:'2 Rois 22:8-20'},
-  {id:'v101-expert-tu-03',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Barzillaï',clues:['Mahanaïm','Ravitaillement','David'],reference:'2 Samuel 17:27-29'},
-  {id:'v101-expert-tu-04',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Ahithophel',clues:['Conseiller','Absalom','Conseil'],reference:'2 Samuel 15:12; 17:1-23'},
-  {id:'v101-expert-tu-05',type:'timesup',category:'Actes',difficulty:'expert',answer:'Trophime',clues:['Éphèse','Milet','Malade'],reference:'Actes 21:29; 2 Timothée 4:20'},
-  {id:'v101-expert-tu-06',type:'timesup',category:'Rois & prophètes',difficulty:'expert',answer:'Amos',clues:['Bergers','Sycomores','Corbeille'],reference:'Amos 7:14-15; 8:1-2'},
-  {id:'v101-expert-tu-07',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Hushaï',clues:['Ami de David','Absalom','Conseil'],reference:'2 Samuel 15:32-37; 17:5-16'},
-  {id:'v101-expert-tu-08',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Micaïa',clues:['Prophète','Achab','Vision céleste'],reference:'1 Rois 22:8-28'},
+  {id:'v101-expert-tu-01',type:'timesup',category:'Rois & prophètes',difficulty:'expert',answer:'Jéhu',clues:['Roi d’Israël','Char','Jézabel'],reference:'2 Rois 9:1-37'},
+  {id:'v101-expert-tu-02',type:'timesup',category:'Évangiles',difficulty:'expert',answer:'Simon de Cyrène',clues:['Croix','Chemin','Golgotha'],reference:'Matthieu 27:32; Marc 15:21'},
+  {id:'v101-expert-tu-03',type:'timesup',category:'Évangiles',difficulty:'expert',answer:'Nicodème',clues:['Pharisien','Nuit','Enseignement de Jésus'],reference:'Jean 3:1-10; 19:39-40'},
+  {id:'v101-expert-tu-04',type:'timesup',category:'Évangiles',difficulty:'expert',answer:'Joseph d’Arimathie',clues:['Sanhédrin','Tombeau','Jésus'],reference:'Matthieu 27:57-60; Marc 15:43-46'},
+  {id:'v101-expert-tu-05',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Hushaï',clues:['Ami de David','Absalom','Conseil'],reference:'2 Samuel 15:32-37; 17:5-16'},
+  {id:'v101-expert-tu-06',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Micaïa',clues:['Prophète','Achab','Vision céleste'],reference:'1 Rois 22:8-28'},
+  {id:'v101-expert-tu-07',type:'timesup',category:'Rois & prophètes',difficulty:'expert',answer:'Jéhu',clues:['Onction','Royaume du Nord','Révolte'],reference:'2 Rois 9:1-13'},
+  {id:'v101-expert-tu-08',type:'timesup',category:'Personnages',difficulty:'expert',answer:'Méphibosheth',clues:['Jonathan','David','Boiteux'],reference:'2 Samuel 4:4; 9:1-13'},
 ];
 
 const v101ExpertChallenges: Challenge[] = [
@@ -1600,12 +1600,12 @@ const v102ExpertIntruders: IntruderQuestion[] = [
 {id:'v102-in-03',type:'intruder',category:'La Bible et la science',difficulty:'expert',items:['Genèse 1:1','Deutéronome 23:13','Lévitique 13:1-5','Juges 4:4'],intruder:3,explanation:'Les trois premiers sont utilisés pour discuter de thèmes liés à l’exactitude scientifique ou aux mesures sanitaires ; Juges 4:4 concerne Déborah.',reference:'Genèse 1:1; Deutéronome 23:13; Lévitique 13:1-5; Juges 4:4'}
 ];
 const v102ExpertTimesUp: TimesUpQuestion[] = [
-{id:'v102-tu-01',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Michée',clues:['Bethléem','Éphrata','Dirigeant'],reference:'Michée 5:2'},
-{id:'v102-tu-02',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Amos',clues:['Bergers','Sycomores','Corbeille'],reference:'Amos 7:14-15; 8:1-2'},
-{id:'v102-tu-03',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Genèse 1:1',clues:['Commencement','Cieux','Terre'],reference:'Genèse 1:1'},
-{id:'v102-tu-04',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Actes 1:8',clues:['Force','Témoins','Samarie'],reference:'Actes 1:8'},
-{id:'v102-tu-05',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Romains 6:23',clues:['Salaire','Péché','Vie éternelle'],reference:'Romains 6:23'},
-{id:'v102-tu-06',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Deutéronome 23:13',clues:['Camp','Excréments','Hygiène'],reference:'Deutéronome 23:13'}
+{id:'v102-tu-01',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Daniel 9:25',clues:['Soixante-dix semaines','Jérusalem','Messie'],reference:'Daniel 9:25'},
+{id:'v102-tu-02',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Lévitique 13:1-5',clues:['Peau','Prêtre','Examen'],reference:'Lévitique 13:1-5'},
+{id:'v102-tu-03',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Psaume 119:105',clues:['Lampe','Pied','Chemin'],reference:'Psaume 119:105'},
+{id:'v102-tu-04',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'1 Corinthiens 15:33',clues:['Compagnies','Mauvaises','Habitudes'],reference:'1 Corinthiens 15:33'},
+{id:'v102-tu-05',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Job 38:33',clues:['Lois','Cieux','Terre'],reference:'Job 38:33'},
+{id:'v102-tu-06',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Zacharie 9:9',clues:['Roi','Âne','Jérusalem'],reference:'Zacharie 9:9'}
 ];
 const v102ExpertChallenges: Challenge[] = [
 {id:'v102-c-01',type:'challenge',category:'Prophéties',difficulty:'expert',prompt:'En 10 secondes : nommez le prophète qui parle de Bethléem Éphrata.',seconds:10,acceptedAnswers:['Michée']},
