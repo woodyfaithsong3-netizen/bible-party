@@ -1429,6 +1429,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Isaïe",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Isa%C3%AFe/"
       }
     ]
   },
@@ -1461,6 +1465,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Jérémie",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/J%C3%A9r%C3%A9mie/"
       }
     ]
   },
@@ -1493,6 +1501,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Ézéchiel",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89z%C3%A9kiel/"
       }
     ]
   },
@@ -1525,6 +1537,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Ezra",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ezra/"
       }
     ]
   },
@@ -1557,6 +1573,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Zorobabel",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Zorobabel/"
       }
     ]
   },
@@ -1589,6 +1609,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Haggaï",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Hagga%C3%AF/"
       }
     ]
   },
@@ -1621,6 +1645,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Zekaria",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Zekaria/"
       }
     ]
   },
@@ -1653,6 +1681,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Malachie",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Malachie/"
       }
     ]
   },
@@ -1685,6 +1717,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Gamaliel",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Gamaliel/"
       }
     ]
   },
@@ -1717,6 +1753,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Apollos",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Apollos/"
       }
     ]
   },
@@ -1743,6 +1783,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Silas",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Silas/"
       }
     ]
   },
@@ -1769,6 +1813,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Onésime",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/On%C3%A9sime/"
       }
     ]
   },
@@ -1795,6 +1843,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Philémon",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Phil%C3%A9mon/"
       }
     ]
   },
@@ -1821,6 +1873,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Tite",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tite/"
       }
     ]
   },
@@ -1847,6 +1903,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Eutyche",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Eutyche/"
       }
     ]
   },
@@ -2007,6 +2067,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Lydie",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Lydie/"
       }
     ]
   },
@@ -2033,6 +2097,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Tabitha",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tabitha/"
       }
     ]
   },
@@ -2063,6 +2131,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Étienne",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89tienne/"
       }
     ]
   },
@@ -2115,6 +2187,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Philippe",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Philippe/"
       }
     ]
   },
@@ -2531,6 +2607,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Phébé",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ph%C3%A9b%C3%A9/"
       }
     ]
   },
@@ -3431,6 +3511,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures — Priscille",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Priscille/"
       }
     ]
   },
