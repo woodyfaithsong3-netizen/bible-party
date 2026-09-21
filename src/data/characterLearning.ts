@@ -2378,533 +2378,441 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "saul_king": {
-    "studyFocus": "Saül est choisi comme premier roi d’Israël. Son règne commence bien mais il finit par perdre l’approbation de Jéhovah en raison de désobéissances. À observer dans son récit : Courage initial, Capacité de chef.",
+    "studyFocus": "Saül — un roi qui a désobéi",
     "lessonPoints": [
-      "Observer la qualité « Courage initial » dans les épisodes cités.",
-      "Observer la qualité « Capacité de chef » dans les épisodes cités.",
-      "Point de vigilance : Son parcours montre l’importance de l’obéissance et de l’humilité."
+      "Obéir complètement",
+      "Rester humble",
+      "Accepter la correction"
     ],
-    "keyReading": "Est oint comme premier roi d’Israël.",
+    "keyReading": "1 Samuel 8:4-22 ; 9:15-10:27 ; 15:1-35",
+    "location": "Guilgal, Rama et le territoire d’Israël.",
+    "relationshipWithJehovah": "Saül commence avec l’approbation de Jéhovah, mais son désordre et sa désobéissance répétée lui font perdre sa faveur.",
+    "didYouKnow": "Saül est le premier roi humain établi sur Israël à la demande du peuple.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "manoah_father": {
-    "studyFocus": "Manoa reçoit avec sa femme l’annonce de la naissance de Samson et demande comment élever l’enfant. À observer dans son récit : Foi, Désir d’apprendre.",
+    "studyFocus": "Manoah — un père attentif aux instructions de Jéhovah",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Désir d’apprendre » dans les épisodes cités."
+      "Prier pour être guidé",
+      "Écouter",
+      "Responsabilité familiale"
     ],
-    "keyReading": "Demande des instructions concernant son futur fils.",
+    "keyReading": "Juges 13:1-25",
+    "location": "Tsora et les environs.",
+    "relationshipWithJehovah": "Manoah prie Jéhovah pour obtenir des directives concernant l’enfant promis et prend au sérieux les instructions reçues.",
+    "didYouKnow": "Il est le père de Samson.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "zephaniah": {
-    "studyFocus": "Sophonie annonce un jour de jugement et encourage ceux qui cherchent Jéhovah à pratiquer la justice et la douceur. À observer dans son récit : Courage, Franchise, Espérance.",
+    "studyFocus": "Sophonie — un prophète qui a annoncé le jour de Jéhovah",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Franchise » dans les épisodes cités.",
-      "Observer la qualité « Espérance » dans les épisodes cités."
+      "Rechercher Jéhovah",
+      "Humilité",
+      "Urgence spirituelle"
     ],
-    "keyReading": "Dénonce l’idolâtrie et les pratiques mauvaises.",
+    "keyReading": "Sophonie 1:1-18 ; 2:1-3 ; 3:9-20",
+    "location": "Juda et Jérusalem.",
+    "relationshipWithJehovah": "Sophonie avertit contre l’infidélité et encourage les humbles à rechercher Jéhovah.",
+    "didYouKnow": "Il prophétise aux jours de Josias, roi de Juda.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "habakkuk": {
-    "studyFocus": "Habacuc exprime ses questions devant la violence et l’injustice puis affirme sa confiance en Jéhovah. À observer dans son récit : Honnêteté dans la prière, Foi, Persévérance.",
+    "studyFocus": "Habacuc — un prophète qui a appris à attendre Jéhovah",
     "lessonPoints": [
-      "Observer la qualité « Honnêteté dans la prière » dans les épisodes cités.",
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités."
+      "Prier sincèrement",
+      "Attendre Jéhovah",
+      "Se réjouir malgré les difficultés"
     ],
-    "keyReading": "Pose des questions franches sur l’injustice.",
+    "keyReading": "Habacuc 1:1-17 ; 2:1-20 ; 3:1-19",
+    "location": "Juda.",
+    "relationshipWithJehovah": "Habacuc exprime ses inquiétudes à Jéhovah puis renforce sa confiance en lui, même avant de voir la délivrance.",
+    "didYouKnow": "Il termine sa prière par une expression de joie malgré des conditions difficiles.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "amos": {
-    "studyFocus": "Amos, éleveur et cultivateur de sycomores, reçoit la mission de dénoncer les injustices et le faux culte en Israël. À observer dans son récit : Courage, Justice, Franchise.",
+    "studyFocus": "Amos — un berger devenu prophète courageux",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Justice » dans les épisodes cités.",
-      "Observer la qualité « Franchise » dans les épisodes cités."
+      "Courage",
+      "Justice",
+      "Être disponible"
     ],
-    "keyReading": "Quitte son activité pour transmettre le message prophétique.",
+    "keyReading": "Amos 1:1 ; 7:10-17 ; 9:11-15",
+    "location": "Juda et le royaume d’Israël.",
+    "relationshipWithJehovah": "Amos accepte la mission de Jéhovah et dénonce courageusement l’injustice et le faux culte.",
+    "didYouKnow": "Il n’était pas fils de prophète mais éleveur de moutons et cultivateur de figues sycomores.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "micah": {
-    "studyFocus": "Michée dénonce les injustices et l’infidélité tout en annonçant des promesses concernant le peuple de Dieu. À observer dans son récit : Justice, Courage, Espérance.",
+    "studyFocus": "Michée — un prophète attaché à la justice",
     "lessonPoints": [
-      "Observer la qualité « Justice » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Espérance » dans les épisodes cités."
+      "Justice",
+      "Fidélité",
+      "Modestie"
     ],
-    "keyReading": "Dénonce les dirigeants injustes.",
+    "keyReading": "Michée 1:1-9 ; 6:6-8 ; 7:18-20",
+    "location": "Juda et Israël.",
+    "relationshipWithJehovah": "Michée rappelle ce que Jéhovah demande : pratiquer la justice, aimer la fidélité et marcher modestement avec lui.",
+    "didYouKnow": "Sa prophétie annonce que le Messie naîtrait à Bethléem.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "obadiah": {
-    "studyFocus": "Obadia annonce le jugement contre Édom et évoque le rétablissement du peuple de Jéhovah. À observer dans son récit : Courage, Justice, Espérance.",
+    "studyFocus": "Abdias — un prophète qui a annoncé le jugement d’Édom",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Justice » dans les épisodes cités.",
-      "Observer la qualité « Espérance » dans les épisodes cités."
+      "Humilité",
+      "Fidélité au message",
+      "Éviter l’orgueil"
     ],
-    "keyReading": "Annonce le jugement contre Édom.",
+    "keyReading": "Abdias 1-21",
+    "location": "Juda et Édom.",
+    "relationshipWithJehovah": "Abdias transmet fidèlement le message de Jéhovah concernant l’orgueil et la violence d’Édom.",
+    "didYouKnow": "Le livre d’Abdias est le plus court des livres prophétiques de la Bible.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "joel": {
-    "studyFocus": "Yoël utilise une invasion de sauterelles comme contexte pour appeler le peuple à revenir à Jéhovah. À observer dans son récit : Urgence, Foi, Espérance.",
+    "studyFocus": "Yoël — un prophète qui a parlé du jour de Jéhovah",
     "lessonPoints": [
-      "Observer la qualité « Urgence » dans les épisodes cités.",
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Espérance » dans les épisodes cités."
+      "Revenir à Jéhovah",
+      "Sincérité",
+      "Espérance"
     ],
-    "keyReading": "Décrit une invasion dévastatrice.",
+    "keyReading": "Yoël 1:1-20 ; 2:1-32 ; 3:1-21",
+    "location": "Juda.",
+    "relationshipWithJehovah": "Yoël appelle le peuple à revenir à Jéhovah de tout son cœur et annonce des bénédictions liées à l’effusion de l’esprit.",
+    "didYouKnow": "Pierre cite Yoël 2 à la Pentecôte pour expliquer l’effusion de l’esprit saint.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "nahum": {
-    "studyFocus": "Nahum annonce la chute de Ninive et présente Jéhovah comme un Dieu juste qui ne laisse pas le mal impuni. À observer dans son récit : Courage, Espérance, Sens de la justice.",
+    "studyFocus": "Nahoum — un prophète qui a annoncé la chute de Ninive",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Espérance » dans les épisodes cités.",
-      "Observer la qualité « Sens de la justice » dans les épisodes cités."
+      "Justice de Jéhovah",
+      "Ne pas opprimer",
+      "Faire confiance au jugement divin"
     ],
-    "keyReading": "Annonce la chute de Ninive.",
+    "keyReading": "Nahoum 1:1-15 ; 2:1-13 ; 3:1-19",
+    "location": "Juda et Ninive.",
+    "relationshipWithJehovah": "Nahoum proclame le jugement de Jéhovah contre Ninive et rappelle que Jéhovah est juste et puissant.",
+    "didYouKnow": "Son message est particulièrement lié à la chute de Ninive, capitale assyrienne.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "zechariah_priest": {
-    "studyFocus": "Zekaria reçoit au temple l’annonce de la naissance de son fils Jean et retrouve la parole après la naissance de l’enfant. À observer dans son récit : Foi retrouvée, Reconnaissance, Service.",
+    "studyFocus": "Zacharie le prêtre — père de Jean le Baptiseur",
     "lessonPoints": [
-      "Observer la qualité « Foi retrouvée » dans les épisodes cités.",
-      "Observer la qualité « Reconnaissance » dans les épisodes cités.",
-      "Observer la qualité « Service » dans les épisodes cités."
+      "Foi dans les promesses",
+      "Obéissance",
+      "Reconnaissance"
     ],
-    "keyReading": "Accomplit son service sacerdotal au temple.",
+    "keyReading": "Luc 1:5-25, 57-80",
+    "location": "Jérusalem et la région montagneuse de Judée.",
+    "relationshipWithJehovah": "Zacharie et Élisabeth sont décrits comme justes devant Jéhovah et il reçoit une promesse concernant leur fils Jean.",
+    "didYouKnow": "Il retrouve la parole après avoir confirmé le nom Jean pour son fils.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "elizabeth": {
-    "studyFocus": "Élisabeth, femme de Zekaria, est décrite comme juste et devient la mère de Jean le Baptiseur. À observer dans son récit : Foi, Humilité, Reconnaissance.",
+    "studyFocus": "Élisabeth — une femme fidèle et joyeuse",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Humilité » dans les épisodes cités.",
-      "Observer la qualité « Reconnaissance » dans les épisodes cités."
+      "Foi",
+      "Hospitalité",
+      "Joie spirituelle"
     ],
-    "keyReading": "Reste fidèle malgré une longue période sans enfant.",
+    "keyReading": "Luc 1:5-25, 39-45, 57-66",
+    "location": "Région montagneuse de Judée.",
+    "relationshipWithJehovah": "Élisabeth accueille Marie et reconnaît avec joie le rôle de son enfant et celui de Jésus.",
+    "didYouKnow": "Elle est une descendante d’Aaron et la mère de Jean le Baptiseur.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "joseph_jesus_father": {
-    "studyFocus": "Joseph protège Jésus et Marie et agit conformément aux instructions reçues dans les rêves. À observer dans son récit : Obéissance, Courage, Responsabilité.",
+    "studyFocus": "Joseph — un père adoptif obéissant",
     "lessonPoints": [
-      "Observer la qualité « Obéissance » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Responsabilité » dans les épisodes cités."
+      "Obéissance",
+      "Protection familiale",
+      "Foi"
     ],
-    "keyReading": "Accepte de prendre Marie pour épouse.",
+    "keyReading": "Matthieu 1:18-25 ; 2:13-23 ; Luc 2:1-52",
+    "location": "Bethléem, Égypte, Nazareth et Jérusalem.",
+    "relationshipWithJehovah": "Joseph obéit aux directives de Jéhovah concernant Marie et Jésus et protège sa famille malgré les difficultés.",
+    "didYouKnow": "Il était charpentier et descendant de David.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "joseph_caiaphas": {
-    "studyFocus": "Caïphe participe aux démarches des chefs religieux contre Jésus et préside son interrogatoire religieux. À observer dans son récit : Autorité religieuse.",
+    "studyFocus": "Caïphe — grand prêtre au temps de Jésus",
     "lessonPoints": [
-      "Observer la qualité « Autorité religieuse » dans les épisodes cités.",
-      "Point de vigilance : Son rôle dans le récit illustre les conséquences de décisions prises contre Jésus et ses disciples."
+      "Danger de la pression religieuse",
+      "Responsabilité",
+      "Examiner les motivations"
     ],
-    "keyReading": "Participe à la décision concernant Jésus.",
+    "keyReading": "Matthieu 26:3-5, 57-68 ; Jean 11:47-53 ; 18:12-14, 24-28",
+    "location": "Jérusalem.",
+    "relationshipWithJehovah": "Caïphe participe aux démarches contre Jésus; ses paroles concernant la mort d’un seul homme sont rapportées par Jean dans le contexte de la prophétie.",
+    "didYouKnow": "Il était grand prêtre l’année où Jésus fut arrêté et exécuté.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "joanna": {
-    "studyFocus": "Jeanne, femme de Chuza, fait partie des femmes qui accompagnent Jésus et soutiennent son ministère. À observer dans son récit : Générosité, Fidélité.",
+    "studyFocus": "Jeanne — une femme qui soutenait le ministère de Jésus",
     "lessonPoints": [
-      "Observer la qualité « Générosité » dans les épisodes cités.",
-      "Observer la qualité « Fidélité » dans les épisodes cités."
+      "Générosité",
+      "Soutenir le ministère",
+      "Foi"
     ],
-    "keyReading": "Suit Jésus avec d’autres femmes.",
+    "keyReading": "Luc 8:1-3 ; 24:1-10",
+    "location": "Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Jeanne fait partie des femmes qui accompagnent Jésus et ses apôtres et les servent avec leurs biens.",
+    "didYouKnow": "Elle était la femme de Chouza, intendant d’Hérode.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "samaritan_leper": {
-    "studyFocus": "Parmi dix lépreux guéris, un Samaritain revient remercier Jésus. À observer dans son récit : Reconnaissance, Foi.",
+    "studyFocus": "Le Samaritain lépreux — reconnaissant envers Jésus",
     "lessonPoints": [
-      "Observer la qualité « Reconnaissance » dans les épisodes cités.",
-      "Observer la qualité « Foi » dans les épisodes cités."
+      "Reconnaissance",
+      "Foi",
+      "Ne pas prendre les bénédictions pour acquises"
     ],
-    "keyReading": "Crie vers Jésus avec neuf autres lépreux.",
+    "keyReading": "Luc 17:11-19",
+    "location": "Entre Samarie et Galilée.",
+    "relationshipWithJehovah": "Parmi dix lépreux guéris, il revient glorifier Dieu et remercier Jésus, montrant une reconnaissance remarquable.",
+    "didYouKnow": "Il est le seul des dix guéris à revenir remercier Jésus.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "woman_issue_blood": {
-    "studyFocus": "Une femme malade depuis douze ans manifeste sa foi en touchant le vêtement de Jésus et est guérie. À observer dans son récit : Foi, Persévérance, Courage.",
+    "studyFocus": "La femme atteinte de pertes de sang — une foi courageuse",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités."
+      "Foi",
+      "Courage",
+      "Persévérance"
     ],
-    "keyReading": "Cherche de l’aide pendant de nombreuses années.",
+    "keyReading": "Matthieu 9:18-26 ; Marc 5:25-34 ; Luc 8:43-48",
+    "location": "Galilée, probablement près de Capharnaüm.",
+    "relationshipWithJehovah": "Elle croit qu’un simple contact avec le vêtement de Jésus peut la guérir et agit malgré la foule.",
+    "didYouKnow": "Elle souffrait depuis douze ans avant d’être guérie.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "gerasene_man": {
-    "studyFocus": "Jésus délivre un homme gravement tourmenté dans la région des Géraséniens, qui souhaite ensuite rester avec lui. À observer dans son récit : Reconnaissance, Zèle.",
+    "studyFocus": "L’homme possédé de Gérasa — libéré par Jésus",
     "lessonPoints": [
-      "Observer la qualité « Reconnaissance » dans les épisodes cités.",
-      "Observer la qualité « Zèle » dans les épisodes cités."
+      "Gratitude",
+      "Témoignage",
+      "Espérance"
     ],
-    "keyReading": "Vit dans un état de grande détresse.",
+    "keyReading": "Marc 5:1-20 ; Luc 8:26-39",
+    "location": "Région des Géraséniens.",
+    "relationshipWithJehovah": "Jésus libère cet homme de l’influence démoniaque et lui confie le témoignage de ce que Dieu a fait pour lui.",
+    "didYouKnow": "Après sa guérison, il proclame dans la Décapole ce que Jésus avait fait.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "jason_thessalonica": {
-    "studyFocus": "Jason accueille Paul et Silas à Thessalonique et est ensuite entraîné dans les troubles provoqués par leurs opposants. À observer dans son récit : Hospitalité, Courage.",
+    "studyFocus": "Jason de Thessalonique — un hôte courageux",
     "lessonPoints": [
-      "Observer la qualité « Hospitalité » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités."
+      "Hospitalité",
+      "Courage",
+      "Soutenir les frères"
     ],
-    "keyReading": "Héberge Paul et Silas.",
+    "keyReading": "Actes 17:1-9",
+    "location": "Thessalonique.",
+    "relationshipWithJehovah": "Jason accueille Paul et Silas; après une émeute, il est amené devant les autorités et doit répondre des accusations portées contre les missionnaires.",
+    "didYouKnow": "Des opposants l’accusent d’accueillir ceux qui parlent du Royaume.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "onesiphorus": {
-    "studyFocus": "Onésiphore aide Paul et n’a pas honte de ses chaînes. À observer dans son récit : Courage, Loyauté, Générosité.",
+    "studyFocus": "Onésiphore — un frère qui a rafraîchi Paul",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Loyauté » dans les épisodes cités.",
-      "Observer la qualité « Générosité » dans les épisodes cités."
+      "Loyalité",
+      "Courage",
+      "Réconforter les autres"
     ],
-    "keyReading": "Réconforte Paul.",
+    "keyReading": "2 Timothée 1:15-18 ; 4:19",
+    "location": "Éphèse et Rome.",
+    "relationshipWithJehovah": "Onésiphore recherche Paul et le réconforte sans avoir honte de ses chaînes.",
+    "didYouKnow": "Paul prie pour que Jéhovah fasse miséricorde à sa maisonnée.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "mary_mother_james": {
-    "studyFocus": "Marie, mère de Jacques et de José, fait partie des femmes qui suivent Jésus et sont présentes lors de sa mort et de son ensevelissement.",
+    "studyFocus": "Marie mère de Jacques — une disciple fidèle",
     "lessonPoints": [
-      "Lire le récit dans son contexte et observer les choix, les réactions et les conséquences présentés."
+      "Fidélité",
+      "Courage",
+      "Persévérance"
     ],
-    "keyReading": "Lire les références bibliques de la fiche.",
+    "keyReading": "Matthieu 27:55-61 ; 28:1-10 ; Marc 15:40-47 ; 16:1-8",
+    "location": "Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Marie fait partie des femmes qui suivent Jésus et restent présentes lors de sa mort et de son ensevelissement.",
+    "didYouKnow": "Elle est parmi les femmes qui se rendent au tombeau le premier jour de la semaine.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
