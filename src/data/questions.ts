@@ -1059,6 +1059,16 @@ intruderQuestions.push(...v39IntruderExpansion);
 timesUpQuestions.push(...v39TimesUpExpansion);
 challenges.push(...v39ChallengeExpansion);
 
+// Audit V103 : retrait des cartes Quiz V39 qui répètent à l'identique un fait déjà présent
+// dans la banque de base. On conserve les autres modes afin de préserver leur variété.
+const v103RemoveRedundantV39QuizIds = new Set([
+  'quiz-v39-02','quiz-v39-03','quiz-v39-05','quiz-v39-06','quiz-v39-07',
+  'quiz-v39-08','quiz-v39-12','quiz-v39-13','quiz-v39-14','quiz-v39-17','quiz-v39-18',
+]);
+for (let i = quizQuestions.length - 1; i >= 0; i -= 1) {
+  if (v103RemoveRedundantV39QuizIds.has(quizQuestions[i].id)) quizQuestions.splice(i, 1);
+}
+
 
 // V50 — enrichissement éditorial équilibré par catégorie.
 // Les questions sont formulées originalement à partir de références bibliques,
