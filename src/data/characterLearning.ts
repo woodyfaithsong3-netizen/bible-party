@@ -3038,17 +3038,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "onesimus": {
-    "studyFocus": "Onésime était un esclave associé à Philémon. Après avoir rencontré Paul, il devint chrétien et Paul demanda à Philémon de l’accueillir non plus simplement comme un esclave, mais comme un frère chrétien. La lettre à Philémon met en avant la transformation que la bonne nouvelle peut produire dans les relations.",
+    "studyFocus": "Onésime était un esclave appartenant à Philémon qui devint chrétien après avoir rencontré Paul. Paul demanda à Philémon de l’accueillir désormais comme un frère bien-aimé.",
     "lessonPoints": [
       "Onésime changea de vie après être devenu chrétien.",
       "Paul prit personnellement intérêt à sa situation et intercéda en sa faveur.",
       "La nouvelle relation spirituelle entre Onésime et Philémon dépassait leur ancienne relation sociale.",
       "Son histoire montre que la foi chrétienne peut transformer la manière de considérer les autres."
     ],
-    "keyReading": "Philémon 1-25 ; Colossiens 4:7-9",
-    "location": "Probablement à Rome lorsque Paul écrivit à Philémon, puis retour vers Colosses.",
-    "relationshipWithJehovah": "Onésime devint chrétien grâce au ministère de Paul et fut considéré comme un frère dans la congrégation.",
-    "didYouKnow": "Paul qualifie Onésime de « mon enfant » dans la foi et de frère bien-aimé dans sa lettre à Philémon.",
+    "keyReading": "Philémon 8-21 ; Colossiens 4:7-9",
+    "location": "Colosses et Rome.",
+    "relationshipWithJehovah": "Onésime devint chrétien et fut encouragé à servir avec fidélité, tandis que Philémon était invité à appliquer les principes de l’amour chrétien.",
+    "didYouKnow": "Paul dit qu’Onésime, autrefois peu utile à Philémon, était devenu utile à la fois à Philémon et à Paul.",
     "jwResources": [
       {
         "title": "Onésime — Étude perspicace",
@@ -4496,7 +4496,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "phoebe": {
-    "studyFocus": "Phœbé était une ministre de la congrégation de Cenchrées que Paul recommanda aux chrétiens de Rome. Il la décrivit comme une sœur qui avait été une aide pour beaucoup, y compris pour lui-même.",
+    "studyFocus": "Phœbé était une chrétienne de Cenchrées que Paul recommanda chaleureusement aux chrétiens de Rome. Il la présente comme une ministre de la congrégation et comme une aide pour beaucoup, y compris pour lui-même.",
     "lessonPoints": [
       "Phœbé assumait une responsabilité reconnue dans la congrégation de Cenchrées.",
       "Paul demanda aux Romains de l’accueillir avec respect.",
@@ -4504,9 +4504,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Son exemple montre la valeur du service et de l’hospitalité dans la congrégation."
     ],
     "keyReading": "Romains 16:1-2",
-    "location": "Cenchrées, près de Corinthe, puis probablement Rome.",
-    "relationshipWithJehovah": "Phœbé servait comme chrétienne fidèle et avait acquis une réputation d’aide auprès de nombreux croyants.",
-    "didYouKnow": "Paul emploie pour Phœbé le terme grec diakonos, traduit selon les Bibles par « ministre » ou « servante », et la présente comme une aide pour beaucoup.",
+    "location": "Cenchrées, près de Corinthe.",
+    "relationshipWithJehovah": "Phœbé servait fidèlement la congrégation et utilisait ses ressources et ses possibilités pour aider les chrétiens.",
+    "didYouKnow": "Paul demande aux Romains de lui apporter toute l’aide dont elle pourrait avoir besoin, car elle avait été une aide pour beaucoup.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4547,7 +4547,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "euodia": {
-    "studyFocus": "Évodie était une chrétienne de la congrégation de Philippes que Paul mentionna directement dans sa lettre. Il l’exhorta, ainsi que Syntyche, à être d’accord dans le Seigneur.",
+    "studyFocus": "Évodie était une chrétienne de Philippes qui avait travaillé dur avec Paul pour la bonne nouvelle. Paul l’exhorta, ainsi que Syntyche, à être unies dans le Seigneur.",
     "lessonPoints": [
       "Évodie avait collaboré avec Paul dans la proclamation de la bonne nouvelle.",
       "Paul la considérait comme une chrétienne engagée, malgré leur désaccord.",
@@ -4556,8 +4556,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes, en Macédoine.",
-    "relationshipWithJehovah": "Évodie avait travaillé avec Paul dans la bonne nouvelle et était considérée comme une collaboratrice chrétienne.",
-    "didYouKnow": "Paul ne précise pas la cause du désaccord entre Évodie et Syntyche; il se concentre sur la nécessité de retrouver l’unité « dans le Seigneur ».",
+    "relationshipWithJehovah": "Évodie servait Jéhovah dans la congrégation et devait préserver l’unité avec sa sœur chrétienne.",
+    "didYouKnow": "Paul reconnaît qu’elle avait « lutté côte à côte » avec lui pour la bonne nouvelle.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4593,7 +4593,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "epaphroditus": {
-    "studyFocus": "Épaphrodite était un chrétien de Philippes envoyé à Rome pour soutenir Paul. Il tomba gravement malade mais continua à se dépenser pour le service chrétien. Paul le renvoya ensuite avec sa lettre aux Philippiens.",
+    "studyFocus": "Épaphrodite était un chrétien de Philippes envoyé auprès de Paul pour lui apporter une aide matérielle. Il tomba gravement malade, mais continua à se dépenser pour le service chrétien.",
     "lessonPoints": [
       "Épaphrodite accepta de voyager pour servir Paul et la congrégation.",
       "Il tomba gravement malade à Rome.",
@@ -4602,8 +4602,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 2:25-30 ; 4:18",
     "location": "Philippes et Rome.",
-    "relationshipWithJehovah": "Épaphrodite dépensa ses forces au service du Christ et de la congrégation, malgré une maladie grave.",
-    "didYouKnow": "Paul dit qu’Épaphrodite était « presque mort » à cause de sa maladie, mais que Dieu avait eu pitié de lui.",
+    "relationshipWithJehovah": "Épaphrodite servait avec dévouement et mettait les intérêts du Christ avant son propre confort.",
+    "didYouKnow": "Paul dit qu’Épaphrodite avait été malade presque au point de mourir, mais que Dieu avait eu pitié de lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4642,17 +4642,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "tychicus": {
-    "studyFocus": "Tychique était un collaborateur chrétien fidèle qui accompagna Paul et fut chargé de transmettre des lettres et des nouvelles aux congrégations. Paul le qualifia de frère bien-aimé et de fidèle serviteur.",
+    "studyFocus": "Tychique était un collaborateur de Paul originaire d’Asie. Paul lui confia des missions importantes, notamment de transmettre des lettres et de donner des nouvelles sur sa situation.",
     "lessonPoints": [
       "Tychique accompagna Paul dans des déplacements missionnaires.",
       "Il fut chargé de missions nécessitant confiance et discrétion.",
       "Paul le considérait comme un frère bien-aimé et fidèle serviteur.",
       "Il aida les congrégations à connaître la situation de Paul et à être encouragées."
     ],
-    "keyReading": "Actes 20:4-6 ; Éphésiens 6:21-22 ; Colossiens 4:7-9 ; 2 Timothée 4:12 ; Tite 3:12",
-    "location": "Asie Mineure et différentes régions parcourues avec Paul.",
-    "relationshipWithJehovah": "Tychique servit fidèlement les congrégations et Paul lui confia des messages importants.",
-    "didYouKnow": "Paul envoya Tychique avec Onésime pour informer les chrétiens de Colosses de sa situation et réconforter leur cœur.",
+    "keyReading": "Actes 20:4 ; Éphésiens 6:21-22 ; Colossiens 4:7-8 ; 2 Timothée 4:12 ; Tite 3:12",
+    "location": "Asie Mineure, Macédoine, Jérusalem et Rome.",
+    "relationshipWithJehovah": "Tychique servit fidèlement aux côtés de Paul et contribua à fortifier les congrégations.",
+    "didYouKnow": "Paul l’envoya aux Éphésiens et aux Colossiens afin qu’il leur fasse connaître sa situation et réconforte leur cœur.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4692,17 +4692,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "demas": {
-    "studyFocus": "Démas fut d’abord un collaborateur de Paul, mentionné avec Luc et d’autres compagnons. Plus tard, Paul déplora que Démas l’ait abandonné parce qu’il aimait le présent système de choses.",
+    "studyFocus": "Démas fut pendant un temps un collaborateur de Paul, mais il abandonna plus tard l’apôtre parce qu’il aimait le présent monde. Son parcours montre qu’un bon départ ne suffit pas : il faut rester fidèle.",
     "lessonPoints": [
       "Démas participa pendant un temps au ministère avec Paul.",
       "Il faisait partie d’un groupe de collaborateurs reconnus.",
       "Son attitude changea au point d’abandonner Paul.",
       "Son parcours rappelle qu’une bonne activité passée ne remplace pas la fidélité jusqu’au bout."
     ],
-    "keyReading": "Colossiens 4:14 ; Philémon 23-24 ; 2 Timothée 4:9-10",
-    "location": "Différentes régions du monde méditerranéen.",
-    "relationshipWithJehovah": "Démas avait servi aux côtés de Paul, mais son amour du présent système de choses le conduisit à abandonner l’apôtre.",
-    "didYouKnow": "Démas est cité aux côtés de Luc dans Colossiens et Philémon, mais quelques années plus tard Paul rapporte son abandon.",
+    "keyReading": "Colossiens 4:14 ; Philémon 24 ; 2 Timothée 4:9-10",
+    "location": "Rome et les régions où Paul exerçait son ministère.",
+    "relationshipWithJehovah": "Démas avait commencé à servir avec les chrétiens, mais il finit par quitter Paul parce qu’il aimait le présent monde.",
+    "didYouKnow": "Démas est cité avec Luc dans les salutations de Paul avant que Paul ne signale plus tard son abandon.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5786,7 +5786,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jason_thessalonica": {
-    "studyFocus": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas dans sa maison. Des opposants l’accusèrent ensuite devant les autorités parce qu’ils soutenaient la prédication chrétienne.",
+    "studyFocus": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas. Des opposants l’accusèrent ensuite devant les autorités en raison de son soutien aux prédicateurs chrétiens.",
     "lessonPoints": [
       "Jason ouvrit sa maison à Paul et Silas.",
       "Il fut entraîné dans un conflit public à cause de son soutien aux missionnaires.",
@@ -5796,7 +5796,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "Actes 17:1-9 ; Romains 16:21",
     "location": "Thessalonique, en Macédoine.",
     "relationshipWithJehovah": "Jason soutint les prédicateurs chrétiens et accepta les conséquences de son hospitalité.",
-    "didYouKnow": "Les adversaires de Paul accusèrent Jason et les autres frères de soutenir un prétendu roi rival de César, Jésus.",
+    "didYouKnow": "Les adversaires accusèrent Jason et les autres frères de soutenir un prétendu roi rival de César, Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5835,7 +5835,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "onesiphorus": {
-    "studyFocus": "Onésiphore était un chrétien qui avait beaucoup aidé Paul, notamment lorsqu’il était prisonnier. Il rechercha Paul à Rome et n’eut pas honte de ses chaînes. Paul se souvenait avec reconnaissance de l’aide qu’il avait apportée à Éphèse.",
+    "studyFocus": "Onésiphore était un chrétien qui avait rendu de nombreux services à Paul. Il rechercha l’apôtre à Rome sans avoir honte de ses chaînes et avait auparavant servi fidèlement à Éphèse.",
     "lessonPoints": [
       "Onésiphore n’eut pas honte de Paul malgré son emprisonnement.",
       "Il fit des efforts pour retrouver Paul à Rome.",
@@ -5844,7 +5844,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "2 Timothée 1:15-18 ; 4:19",
     "location": "Éphèse et Rome.",
-    "relationshipWithJehovah": "Onésiphore servit fidèlement les chrétiens et Paul demanda que Jéhovah accorde miséricorde à sa maison.",
+    "relationshipWithJehovah": "Onésiphore servit courageusement les chrétiens et Paul demanda que Jéhovah accorde miséricorde à sa maison.",
     "didYouKnow": "Paul se souvenait particulièrement des nombreux services qu’Onésiphore lui avait rendus à Éphèse.",
     "jwResources": [
       {
@@ -6128,17 +6128,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "priscilla": {
-    "studyFocus": "Priscille était une chrétienne juive mariée à Aquilas. Avec son mari, elle collabora étroitement avec Paul et enseigna à Apollos plus exactement la voie de Dieu. Leur maison servit aussi de lieu de réunion chrétienne.",
+    "studyFocus": "Priscille était une chrétienne mariée à Aquilas. Avec lui, elle collabora avec Paul, participa à l’enseignement d’Apollos et mit sa maison à disposition des congrégations.",
     "lessonPoints": [
       "Priscille travaillait avec Aquilas pour subvenir à leurs besoins.",
       "Elle participa activement à l’enseignement chrétien avec son mari.",
       "Elle contribua à corriger la compréhension d’Apollos avec tact.",
       "Elle et Aquilas mirent leur maison à disposition de la congrégation."
     ],
-    "keyReading": "Actes 18:1-3,18-28 ; Romains 16:3-5 ; 1 Corinthiens 16:19 ; 2 Timothée 4:19",
-    "location": "Rome, Corinthe, Éphèse et autres villes du monde méditerranéen.",
-    "relationshipWithJehovah": "Priscille servit avec Aquilas dans la prédication, l’enseignement et l’hospitalité chrétienne.",
-    "didYouKnow": "Priscille est souvent nommée avant Aquilas dans les salutations bibliques, ce qui montre qu’elle était une collaboratrice bien connue dans les congrégations.",
+    "keyReading": "Actes 18:18-28 ; Romains 16:3-5 ; 1 Corinthiens 16:19 ; 2 Timothée 4:19",
+    "location": "Corinthe, Éphèse et Rome.",
+    "relationshipWithJehovah": "Priscille servait Jéhovah avec Aquilas en combinant travail, prédication, enseignement et hospitalité.",
+    "didYouKnow": "Paul appelle Priscille et Aquilas ses « collaborateurs en Christ Jésus » et précise qu’ils ont risqué leur vie pour lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6378,7 +6378,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "syntyche": {
-    "studyFocus": "Syntyche était une chrétienne de Philippes qui avait collaboré avec Paul dans la bonne nouvelle. Comme Évodie, elle fut exhortée à retrouver l’unité chrétienne.",
+    "studyFocus": "Syntyche était une chrétienne de Philippes qui, comme Évodie, avait travaillé avec Paul pour la bonne nouvelle. Paul lui demanda de retrouver avec Évodie la même pensée dans le Seigneur.",
     "lessonPoints": [
       "Syntyche participa activement à la prédication avec Paul.",
       "Elle avait une place suffisamment connue dans la congrégation pour être citée personnellement.",
@@ -6387,8 +6387,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes, en Macédoine.",
-    "relationshipWithJehovah": "Syntyche était une collaboratrice dans la bonne nouvelle et Paul l’encouragea à préserver l’unité dans le Seigneur.",
-    "didYouKnow": "Évodie et Syntyche sont parmi les rares femmes de la Bible que Paul désigne explicitement comme ayant travaillé avec lui dans la prédication de la bonne nouvelle.",
+    "relationshipWithJehovah": "Syntyche était une servante chrétienne active et était encouragée à préserver l’unité de la congrégation.",
+    "didYouKnow": "Paul cite Évodie et Syntyche parmi celles qui avaient « lutté côte à côte » avec lui pour la bonne nouvelle.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
