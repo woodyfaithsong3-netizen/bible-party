@@ -639,7 +639,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Bethléhem en Juda ; Moab ; retour à Bethléhem et environnement de la famille d’Élimélek.",
     "relationshipWithJehovah": "Naomi a traversé une période où elle pensait que Jéhovah avait rendu sa situation très amère. Pourtant, elle a continué à agir dans le cadre du culte de Jéhovah et a reconnu la main de Dieu lorsque Boaz est intervenu en faveur de sa famille.",
-    "didYouKnow": "Naomi fut la belle-mère de Ruth, laquelle devint une ancêtre de David et de Jésus Christ. citeturn2search0"
+    "didYouKnow": "Naomi fut la belle-mère de Ruth, laquelle devint une ancêtre de David et de Jésus Christ."
   },
   "boaz": {
     "studyFocus": "Boaz était un propriétaire terrien de Bethléhem et un proche parent d’Élimélek. Il remarqua Ruth lorsqu’elle glanait dans son champ, la traita avec bonté et respect, puis accomplit les démarches légales nécessaires pour agir comme racheteur. Il devint ainsi le mari de Ruth et le père d’Obed, dans la lignée menant au Messie.",
@@ -662,7 +662,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Bethléhem en Juda, notamment les champs de Boaz et l’espace public où les démarches légales sont effectuées.",
     "relationshipWithJehovah": "Boaz invoquait Jéhovah dans ses salutations et reconnaissait que Ruth avait cherché refuge sous les ailes de Jéhovah. Il respecta les dispositions légales et agit avec bonté dans le cadre du culte de Jéhovah.",
-    "didYouKnow": "Boaz était fils de Salma et de Rahab, et devint le père d’Obed. Il constitue un maillon de la lignée menant au Messie. citeturn2search4"
+    "didYouKnow": "Boaz était fils de Salma et de Rahab, et devint le père d’Obed. Il constitue un maillon de la lignée menant au Messie."
   },
   "elisha": {
     "studyFocus": "Élisha fut prophète de Jéhovah et successeur d’Éliya. Il accompagna d’abord Éliya comme serviteur, puis exerça seul son ministère pendant de nombreuses années. Son activité comprend des miracles, des conseils aux rois et une défense constante du vrai culte.",
@@ -684,8 +684,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "location": "Royaume d’Israël et régions voisines ; notamment Abel-Mehola, Jéricho, Samarie, Dothan et les territoires concernés par son activité prophétique.",
-    "relationshipWithJehovah": "Élisha fut un prophète de Jéhovah et montra un grand zèle pour le vrai culte. JW.org souligne sa patience, son amour, sa bonté et sa fermeté lorsque le nom de Jéhovah était en cause. citeturn2search1",
-    "didYouKnow": "Élisha servit peut-être environ six ans comme assistant d’Éliya, puis exerça seul son activité prophétique pendant environ 60 ans. Étude perspicace lui attribue 16 miracles, contre 8 pour Éliya. citeturn2search1"
+    "relationshipWithJehovah": "Élisha fut un prophète de Jéhovah et montra un grand zèle pour le vrai culte. JW.org souligne sa patience, son amour, sa bonté et sa fermeté lorsque le nom de Jéhovah était en cause.",
+    "didYouKnow": "Élisha servit peut-être environ six ans comme assistant d’Éliya, puis exerça seul son activité prophétique pendant environ 60 ans. Étude perspicace lui attribue 16 miracles, contre 8 pour Éliya."
   },
   "nehemie": {
     "studyFocus": "Nehémia était échanson du roi perse Artaxerxès avant de devenir gouverneur des Juifs. Lorsqu’il apprit l’état désolé de Jérusalem, il jeûna et pria, demanda l’autorisation de reconstruire la muraille et dirigea ensuite les travaux malgré une opposition importante.",
@@ -711,8 +711,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "location": "Suse, capitale royale perse ; Jérusalem et son district, où Nehémia exerce ensuite comme gouverneur.",
-    "relationshipWithJehovah": "Nehémia priait régulièrement Jéhovah et s’appuyait sur lui pour obtenir l’autorisation du roi, protéger les travailleurs et mener à bien la reconstruction. Le livre de Néhémia présente Jéhovah comme Celui qui exauce les prières sincères de ses serviteurs. citeturn3search0turn3search1",
-    "didYouKnow": "La muraille de Jérusalem fut achevée en 52 jours. Nehémia était échanson d’Artaxerxès avant de devenir gouverneur des Juifs. citeturn3search0turn3search1"
+    "relationshipWithJehovah": "Nehémia priait régulièrement Jéhovah et s’appuyait sur lui pour obtenir l’autorisation du roi, protéger les travailleurs et mener à bien la reconstruction. Le livre de Néhémia présente Jéhovah comme Celui qui exauce les prières sincères de ses serviteurs.",
+    "didYouKnow": "La muraille de Jérusalem fut achevée en 52 jours. Nehémia était échanson d’Artaxerxès avant de devenir gouverneur des Juifs."
   },
   "mary_magdalen": {
     "studyFocus": "Marie Madeleine fait partie des femmes qui accompagnent Jésus et témoigne des événements entourant sa mort et sa résurrection. À observer dans son récit : Fidélité, Persévérance, Reconnaissance.",
