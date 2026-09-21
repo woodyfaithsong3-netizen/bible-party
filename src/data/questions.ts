@@ -1374,7 +1374,7 @@ const v90TimesUpExtra: TimesUpQuestion[] = [
   {id:'v90-tu-007',type:'timesup',category:'Lieux',difficulty:'easy',answer:'Jéricho',clues:['Murailles','Josué','Zachée'],reference:'Josué 6:1-20; Luc 19:1-10'},
   {id:'v90-tu-008',type:'timesup',category:'Lieux',difficulty:'easy',answer:'Bethléem',clues:['David','Naissance','Juda'],reference:'1 Samuel 16:1-13; Luc 2:4-7'},
   {id:'v90-tu-009',type:'timesup',category:'Lieux',difficulty:'medium',answer:'Césarée',clues:['Pierre','Corneille','Mer'],reference:'Actes 10:1-8'},
-  {id:'v90-tu-010',type:'timesup',category:'Objets',difficulty:'medium',answer:'Arche de l’Alliance',clues:['Alliance','Prêtres','Jourdain'],reference:'Josué 3:13-17'},
+  {id:'v90-tu-010',type:'timesup',category:'Objets',difficulty:'medium',answer:'Arche de l’Alliance',clues:['Coffre sacré','Prêtres','Jourdain'],reference:'Josué 3:13-17'},
   {id:'v90-tu-011',type:'timesup',category:'Concepts',difficulty:'medium',answer:'Manne',clues:['Désert','Matin','Sixième jour'],reference:'Exode 16:4-5, 22-26'},
   {id:'v90-tu-012',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Gédéon',clues:['Madian','300','Torches'],reference:'Juges 6–7'},
 ];
