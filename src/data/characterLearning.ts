@@ -915,52 +915,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jethro": {
-    "studyFocus": "Jéthro, prêtre de Madian et beau-père de Moïse, accueille Moïse puis lui donne un conseil pratique sur la délégation des responsabilités.",
+    "studyFocus": "Jéthro, prêtre de Madian et beau-père de Moïse, accueille Moïse et lui donne un conseil pratique concernant l’organisation du peuple. Son exemple met en valeur le discernement et l’humilité.",
     "lessonPoints": [
-      "Il accueille Moïse à Madian et lui donne sa fille Séphora comme épouse.",
-      "Il entend ce que Jéhovah a fait pour Israël et se réjouit avec Moïse.",
-      "Il offre un sacrifice au vrai Dieu et participe à un repas avec Aaron et les anciens d’Israël.",
-      "Il observe que Moïse porte seul trop de responsabilités judiciaires.",
-      "Il conseille de choisir des hommes capables et craignant Dieu pour partager la charge."
+      "Il accueille Moïse à Madian.",
+      "Il se réjouit de ce que Jéhovah a fait pour Israël.",
+      "Il conseille à Moïse de déléguer une partie de ses responsabilités.",
+      "Il reconnaît la supériorité de Jéhovah après avoir entendu le récit de la délivrance d’Israël."
     ],
-    "keyReading": "Exode 2:16-22 ; 18:1-27",
-    "location": "Madian, puis le camp d’Israël dans le désert.",
-    "relationshipWithJehovah": "Jéthro reconnaît les actes de Jéhovah en faveur d’Israël et déclare que Jéhovah est plus grand que tous les autres dieux.",
-    "didYouKnow": "Jéthro est aussi appelé Réouël dans le récit biblique ; il est le père de Séphora et le beau-père de Moïse.",
+    "keyReading": "Exode 2:16-22 ; 3:1 ; 18:1-27",
+    "location": "Madian et le désert du Sinaï.",
+    "relationshipWithJehovah": "Jéthro reconnaît la puissance de Jéhovah et se réjouit de la délivrance d’Israël; son conseil à Moïse favorise une organisation plus équilibrée.",
+    "didYouKnow": "Jéthro est aussi appelé Réouël dans le récit biblique et était le beau-père de Moïse.",
     "jwResources": [
       {
-        "title": "Jéthro — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/jethro/"
+        "title": "Jéthro — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "La Bible — Exode 2 et 18",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
-      }
-    ]
-  },
-  "zipporah": {
-    "studyFocus": "Séphora, fille de Jéthro et femme de Moïse, accompagne une période importante de la vie de Moïse. Son récit permet d’examiner les responsabilités familiales et une réaction énergique dans une situation urgente.",
-    "lessonPoints": [
-      "Elle épouse Moïse à Madian.",
-      "Elle donne naissance à Gershom et Éliézer.",
-      "Lors d’un épisode difficile sur la route, elle agit rapidement au sujet de la circoncision de leur fils.",
-      "Son histoire rappelle que les responsabilités liées à l’alliance avec Jéhovah ne doivent pas être traitées avec négligence."
-    ],
-    "keyReading": "Exode 2:16-22 ; 4:18-26 ; 18:1-6",
-    "location": "Madian puis le cadre du camp d’Israël dans le désert.",
-    "relationshipWithJehovah": "Son intervention en Exode 4 montre qu’elle prend au sérieux une exigence liée à l’alliance avec Jéhovah.",
-    "didYouKnow": "Séphora était fille de Jéthro et a eu deux fils avec Moïse.",
-    "jwResources": [
-      {
-        "title": "Séphora — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/sephora/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
@@ -969,25 +941,53 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ]
   },
-  "korah": {
-    "studyFocus": "Coré, Lévite de la famille de Qehath, conteste avec Dathan, Abiram et d’autres hommes la position de Moïse et d’Aaron. Son récit est un avertissement sur l’ambition et la contestation.",
+  "zipporah": {
+    "studyFocus": "Séphora, femme de Moïse et fille de Jéthro, intervient lors d’une situation urgente concernant la circoncision de son fils. Son récit souligne le sérieux des exigences de l’alliance.",
     "lessonPoints": [
-      "Il appartient à la tribu de Lévi et dispose déjà de privilèges de service.",
+      "Elle devient la femme de Moïse à Madian.",
+      "Elle a des fils avec Moïse.",
+      "Elle agit rapidement lors d’un épisode lié à la circoncision.",
+      "Elle retrouve Moïse lorsque Jéthro vient dans le camp d’Israël."
+    ],
+    "keyReading": "Exode 2:16-22 ; 4:18-26 ; 18:1-6",
+    "location": "Madian et le camp d’Israël dans le désert.",
+    "relationshipWithJehovah": "Son intervention en Exode 4 montre qu’elle prend au sérieux une exigence liée à l’alliance avec Jéhovah.",
+    "didYouKnow": "Séphora était fille de Jéthro et mère de deux fils de Moïse.",
+    "jwResources": [
+      {
+        "title": "Séphora — Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/sephora/"
+      },
+      {
+        "title": "La Bible en ligne",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+      }
+    ]
+  },
+  "korah": {
+    "studyFocus": "Coré, Lévite de la famille de Qehath, conteste l’autorité de Moïse et d’Aaron avec d’autres hommes. Son récit est un avertissement contre l’ambition et la contestation d’une disposition divine.",
+    "lessonPoints": [
+      "Il possède déjà des privilèges de service comme Lévite.",
       "Il rassemble des hommes influents contre Moïse et Aaron.",
-      "Moïse laisse à Jéhovah le soin de montrer qui a été choisi.",
-      "La rébellion entraîne un jugement sévère."
+      "Moïse laisse Jéhovah montrer qui a été choisi.",
+      "La rébellion entraîne un jugement sévère.",
+      "Des descendants de Coré continueront pourtant à servir fidèlement."
     ],
     "keyReading": "Nombres 16:1-35 ; 26:9-11 ; Psaume 106:16-18",
     "location": "Le camp d’Israël dans le désert.",
-    "relationshipWithJehovah": "Coré connaissait les dispositions du culte mais contesta l’autorité que Jéhovah avait donnée à Moïse et Aaron.",
-    "didYouKnow": "Des descendants de Coré ont continué à servir fidèlement et sont associés à plusieurs psaumes.",
+    "relationshipWithJehovah": "Coré connaissait les dispositions du culte mais contesta l’autorité que Jéhovah avait confiée à Moïse et Aaron.",
+    "didYouKnow": "Les fils de Coré ne moururent pas avec lui et leurs descendants furent associés au service et à plusieurs psaumes.",
     "jwResources": [
       {
         "title": "Coré — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/core/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
@@ -997,24 +997,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "balaam": {
-    "studyFocus": "Balaam est appelé par Balak pour maudire Israël, mais Jéhovah l’empêche de prononcer une malédiction contre son peuple. Son récit met en évidence la puissance de la parole de Dieu et le danger de l’avidité.",
+    "studyFocus": "Balaam est sollicité par Balak pour maudire Israël. Jéhovah empêche cette malédiction et Balaam prononce au contraire des déclarations prophétiques sur Israël.",
     "lessonPoints": [
-      "Balak lui propose une récompense pour maudire Israël.",
-      "Jéhovah lui fait comprendre qu’il ne peut dire que ce que Dieu lui permet.",
-      "L’ânesse et l’ange constituent un épisode marquant de son voyage.",
-      "D’autres textes bibliques signalent son mauvais mobile lié à la cupidité."
+      "Balak lui propose une récompense.",
+      "Jéhovah limite ce que Balaam peut dire.",
+      "L’ânesse voit l’ange de Jéhovah sur le chemin.",
+      "Balaam prononce plusieurs déclarations favorables à Israël.",
+      "Les Écritures dénoncent ensuite son amour de la récompense injuste."
     ],
-    "keyReading": "Nombres 22-24 ; 31:8, 16 ; 2 Pierre 2:15, 16 ; Révélation 2:14",
-    "location": "Péthor, puis les hauteurs de Moab.",
-    "relationshipWithJehovah": "Balaam reconnaît qu’il ne peut aller au-delà de la parole de Jéhovah, mais son désir de récompense révèle un mauvais mobile.",
-    "didYouKnow": "Balaam prononça quatre déclarations prophétiques successives sur Israël.",
+    "keyReading": "Nombres 22–24 ; 31:8, 16 ; 2 Pierre 2:15, 16 ; Révélation 2:14",
+    "location": "Péthor puis les hauteurs de Moab.",
+    "relationshipWithJehovah": "Balaam reconnaît qu’il ne peut dire que ce que Jéhovah permet, mais son désir de récompense révèle un mauvais mobile.",
+    "didYouKnow": "Balaam prononça quatre déclarations prophétiques successives concernant Israël.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Balaam — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
@@ -1024,25 +1025,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "balak": {
-    "studyFocus": "Balak, roi de Moab, craint Israël et cherche à utiliser Balaam pour le faire maudire. Son récit montre comment la peur peut conduire à des décisions opposées au dessein de Jéhovah.",
+    "studyFocus": "Balak, roi de Moab, cherche à faire maudire Israël par Balaam. Son récit montre qu’aucune manœuvre humaine ne peut annuler la bénédiction que Jéhovah accorde à son peuple.",
     "lessonPoints": [
-      "Il voit les victoires d’Israël et craint pour son territoire.",
-      "Il demande à Balaam de prononcer une malédiction.",
-      "Il change de lieu pour essayer d’obtenir le résultat souhaité.",
-      "Les déclarations prononcées sous l’autorité de Jéhovah bénissent Israël."
+      "Il craint Israël après ses victoires.",
+      "Il envoie chercher Balaam.",
+      "Il change plusieurs fois d’endroit pour tenter d’obtenir une malédiction.",
+      "Balaam annonce finalement des paroles favorables à Israël."
     ],
     "keyReading": "Nombres 22:1-41 ; 23:1–24:25",
     "location": "Les plaines de Moab, à l’est du Jourdain.",
-    "relationshipWithJehovah": "Balak agit en opposition au peuple que Jéhovah a béni et ne parvient pas à modifier la volonté divine.",
-    "didYouKnow": "Balak était roi de Moab avant l’entrée d’Israël en Terre promise.",
+    "relationshipWithJehovah": "Balak agit contre le peuple que Jéhovah a béni et découvre qu’il ne peut pas modifier la volonté divine.",
+    "didYouKnow": "Balak était roi de Moab à l’époque où Israël approchait de la Terre promise.",
     "jwResources": [
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
+        "title": "Balak — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "La Bible en ligne",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
@@ -1051,25 +1052,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "eli": {
-    "studyFocus": "Éli est grand prêtre et juge en Israël pendant la jeunesse de Samuel. Il sert au tabernacle mais doit faire face à la mauvaise conduite de ses fils et à un jugement annoncé contre sa maison.",
+    "studyFocus": "Éli est grand prêtre et juge en Israël pendant la jeunesse de Samuel. Il sert au tabernacle de Shilo et doit faire face à la mauvaise conduite de ses fils.",
     "lessonPoints": [
-      "Il sert Jéhovah au tabernacle de Shilo.",
-      "Il aide le jeune Samuel à reconnaître l’appel de Jéhovah.",
+      "Il sert au tabernacle de Shilo.",
+      "Il aide Samuel à reconnaître l’appel de Jéhovah.",
       "Ses fils Hophni et Phinéhas commettent de graves fautes.",
-      "Éli reçoit un avertissement mais ne prend pas de mesures suffisantes contre eux.",
-      "Sa mort survient après la capture de l’Arche et la mort de ses fils."
+      "Il reçoit un avertissement concernant sa maison.",
+      "Il meurt après la capture de l’Arche et la mort de ses fils."
     ],
     "keyReading": "1 Samuel 1:24–4:22",
     "location": "Shilo et le tabernacle d’Israël.",
-    "relationshipWithJehovah": "Éli a servi pendant des années, mais son récit souligne qu’aimer Jéhovah implique aussi de prendre au sérieux la discipline et la responsabilité familiale.",
-    "didYouKnow": "Éli jugea Israël pendant 40 ans et fut le responsable religieux auprès duquel Samuel grandit.",
+    "relationshipWithJehovah": "Éli a servi Jéhovah pendant des années, mais son récit montre qu’il faut prendre au sérieux la discipline et la responsabilité familiale.",
+    "didYouKnow": "Éli jugea Israël pendant 40 ans.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Éli — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
