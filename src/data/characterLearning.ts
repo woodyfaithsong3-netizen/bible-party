@@ -3231,10 +3231,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi fondée sur des preuves : lorsqu’il a vu Jésus ressuscité, il a réagi avec conviction.",
       "Persévérance : malgré ses moments de doute, il est resté attaché au groupe des disciples."
     ],
-    "keyReading": "Jean 11:16 ; 14:1-7 ; 20:24-29",
+    "keyReading": "Jean 11:16; 14:1-7; 20:24-29; 21:1-2",
     "location": "Jérusalem et la Judée.",
-    "relationshipWithJehovah": "Thomas exprime ses doutes après la résurrection, puis accepte les preuves données par Jésus et fait une déclaration de foi remarquable.",
-    "didYouKnow": "Thomas était aussi appelé Didyme, qui signifie Jumeau.",
+    "relationshipWithJehovah": "Thomas ne cache pas ses doutes. Jésus l’aide à parvenir à la foi, et Thomas répond par une déclaration de foi remarquable.",
+    "didYouKnow": "Jean donne à Thomas le surnom ou équivalent « Didyme », qui signifie « Jumeau ».",
     "jwResources": [
       {
         "title": "Thomas — Étude perspicace",
@@ -3249,23 +3249,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Apôtre — Thomas est l’un des douze apôtres et apprend à surmonter ses doutes après la résurrection de Jésus.",
-    "era": "Évangiles",
+    "identity": "Thomas, appelé Didyme, était l’un des douze apôtres. Il est surtout connu pour avoir voulu des preuves de la résurrection de Jésus avant d’y croire pleinement.",
+    "era": "Ministère de Jésus et premières années de la congrégation",
     "familyAndEntourage": [
+      "Les onze autres apôtres",
       "Jésus",
-      "Les autres apôtres"
+      "Lazare et les disciples présents à Béthanie"
     ],
     "bibleAccount": [
-      "Suit Jésus comme apôtre.",
-      "Exprime son doute après le premier témoignage des disciples.",
-      "Reconnaît ensuite Jésus ressuscité."
+      "Il exprime sa volonté d’accompagner Jésus en Judée malgré le danger.",
+      "Après la mort de Lazare, il parle comme quelqu’un prêt à mourir avec Jésus.",
+      "Après la résurrection, il refuse d’abord de croire le témoignage des autres disciples sans voir les marques des blessures.",
+      "Jésus lui apparaît ensuite et Thomas exprime sa foi."
     ],
     "qualities": [
+      "Loyauté",
       "Franchise",
+      "Courage",
       "Foi retrouvée"
     ],
     "difficulties": [
-      "Son récit montre qu’un doute peut être surmonté en examinant les faits et en acceptant les preuves."
+      "Il a eu du mal à croire au témoignage des autres disciples concernant la résurrection et a demandé des preuves."
     ]
   },
   "lydia": {
@@ -3488,10 +3492,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Souplesse : il a immédiatement suivi la direction reçue pour rencontrer l’Éthiopien.",
       "Enseignement : il a utilisé les Écritures pour aider sincèrement son interlocuteur à comprendre le message."
     ],
-    "keyReading": "Actes 6:1-7 ; 8:4-40 ; 21:8-9",
+    "keyReading": "Actes 6:1-7; 8:4-40; 21:8-9",
     "location": "Jérusalem, Samarie, route de Gaza et Césarée.",
-    "relationshipWithJehovah": "Philippe prêche en Samarie, aide un Éthiopien à comprendre les Écritures et poursuit son ministère avec sa famille.",
-    "didYouKnow": "Il est appelé l’évangélisateur et avait quatre filles qui prophétisaient.",
+    "relationshipWithJehovah": "Philippe se montre disponible pour suivre les indications de l’esprit et annonce la bonne nouvelle dans des régions nouvelles. Son exemple montre un service souple et missionnaire.",
+    "didYouKnow": "Philippe avait quatre filles qui prophétisaient. Elles vivaient avec lui à Césarée, où Paul et ses compagnons logèrent lors d’un passage.",
     "jwResources": [
       {
         "title": "Philippe l’évangélisateur — Étude perspicace",
@@ -3510,24 +3514,31 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Philippe/"
       }
     ],
-    "identity": "Évangélisateur — Philippe participe à l’expansion du message chrétien en Samarie et sur la route de Gaza.",
-    "era": "Actes",
+    "identity": "Philippe l’évangélisateur était l’un des sept hommes choisis à Jérusalem pour un service de distribution. Il devint ensuite un prédicateur itinérant particulièrement actif.",
+    "era": "Premières années de la congrégation chrétienne",
     "familyAndEntourage": [
-      "Les apôtres",
-      "L’Éthiopien"
+      "Étienne",
+      "Les six autres hommes choisis à Jérusalem",
+      "Pierre",
+      "Paul",
+      "Ses quatre filles prophétesses"
     ],
     "bibleAccount": [
-      "Prêche en Samarie.",
-      "Explique les Écritures à un fonctionnaire éthiopien.",
-      "Baptise cet homme après son acceptation du message.",
-      "Continue son activité dans différentes villes."
+      "Il est choisi avec Étienne et cinq autres hommes pour un service dans la congrégation.",
+      "Après la dispersion des disciples, il prêche en Samarie.",
+      "Il prêche à l’eunuque éthiopien sur la route de Gaza et le baptise.",
+      "Il prêche dans plusieurs villes jusqu’à Césarée.",
+      "Paul et ses compagnons séjournent chez lui à Césarée."
     ],
     "qualities": [
       "Zèle",
-      "Enseignement",
-      "Disponibilité"
+      "Disponibilité",
+      "Courage",
+      "Hospitalité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il exerce son ministère dans une période de persécution et de dispersion des disciples."
+    ]
   },
   "james_zebedee": {
     "studyFocus": "Jacques, fils de Zébédée, faisait partie des apôtres proches de Jésus et a appris à transformer son zèle initial en fidélité jusqu’à la mort.",
@@ -3536,10 +3547,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Humilité : il a dû apprendre que la vraie grandeur chrétienne consiste à servir.",
       "Fidélité : Jacques est devenu le premier apôtre à subir une mort violente pour sa foi."
     ],
-    "keyReading": "Matthieu 4:21-22 ; 17:1-8 ; Actes 12:1-2",
+    "keyReading": "Matthieu 4:21-22; 17:1-9; Marc 10:35-45; Actes 12:1-2",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Jacques fait partie des trois apôtres particulièrement proches de Jésus et reste fidèle jusqu’à sa mort comme martyr.",
-    "didYouKnow": "Jésus surnomme Jacques et Jean Boanergès, « fils du tonnerre ».",
+    "relationshipWithJehovah": "Jésus lui accorde une grande confiance en l’incluant parmi les trois témoins de certains événements majeurs. Son parcours montre aussi qu’un disciple zélé devait apprendre l’humilité.",
+    "didYouKnow": "Jacques est le premier des Douze dont la Bible rapporte explicitement la mort en martyr.",
     "jwResources": [
       {
         "title": "Jacques fils de Zébédée — Étude perspicace",
@@ -3554,24 +3565,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Apôtre — Jacques, fils de Zébédée et frère de Jean, fait partie des Douze et du cercle des disciples présents lors de plusieurs événements marquants.",
-    "era": "Évangiles",
+    "identity": "Jacques, fils de Zébédée, était l’un des douze apôtres de Jésus et faisait partie du cercle des trois disciples particulièrement proches de lui avec Pierre et Jean.",
+    "era": "Ministère terrestre de Jésus et premières années de la congrégation",
     "familyAndEntourage": [
-      "Jean",
-      "Pierre",
-      "Jésus"
+      "Zébédée, son père",
+      "Jean, son frère",
+      "Salomé, probablement sa mère",
+      "Pierre et Jean"
     ],
     "bibleAccount": [
-      "Quitte son activité de pêcheur pour suivre Jésus.",
-      "Est envoyé prêcher avec les Douze.",
-      "Fait partie des disciples témoins de la transfiguration.",
-      "Meurt exécuté par Hérode Agrippa Ier."
+      "Jésus l’appelle avec Jean alors qu’ils travaillent avec leur père.",
+      "Il fait partie des trois témoins de la résurrection de la fille de Jaïrus et de la transfiguration.",
+      "Il demande avec Jean une position importante dans le Royaume, ce qui révèle encore des ambitions humaines.",
+      "Hérode Agrippa Ier le fait exécuter par l’épée."
     ],
     "qualities": [
       "Zèle",
-      "Courage"
+      "Courage",
+      "Fidélité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il devait corriger une certaine ambition personnelle et accepte finalement de partager les souffrances des disciples; il meurt en martyr."
+    ]
   },
   "james_brother_jesus": {
     "studyFocus": "Jacques, frère de Jésus, est devenu un chrétien mûr et a joué un rôle important dans la congrégation de Jérusalem.",
@@ -3712,10 +3727,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Réceptivité : il a accepté l’invitation de Philippe à venir voir Jésus.",
       "Foi : il a rapidement exprimé sa conviction concernant l’identité de Jésus."
     ],
-    "keyReading": "Jean 1:45-51 ; 21:2",
+    "keyReading": "Matthieu 10:2-4; Jean 1:43-51; Actes 1:12-14",
     "location": "Galilée et régions du ministère de Jésus.",
-    "relationshipWithJehovah": "Nathanaël est présenté à Jésus par Philippe et reconnaît rapidement Jésus comme Fils de Dieu et Roi d’Israël.",
-    "didYouKnow": "Les listes des apôtres associent généralement Barthélémy au Nathanaël de l’Évangile de Jean.",
+    "relationshipWithJehovah": "Si Barthélemy est Nathanaël, son attitude initiale réservée envers Nazareth est rapidement dépassée lorsqu’il rencontre Jésus et reconnaît son identité.",
+    "didYouKnow": "« Barthélemy » signifie « fils de Tolmaï ». C’est probablement un nom de famille ou patronyme, ce qui explique qu’il soit désigné autrement dans Jean.",
     "jwResources": [
       {
         "title": "Barthélémy — Étude perspicace",
@@ -3730,22 +3745,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Apôtre — Barthélemy figure dans les listes des Douze. Il est souvent identifié à Nathanaël, mais les textes ne donnent pas explicitement cette identification.",
-    "era": "Évangiles",
+    "identity": "Barthélemy était l’un des douze apôtres. JW.org considère qu’il s’agit probablement de Nathanaël, le disciple présenté dans l’Évangile de Jean.",
+    "era": "Ministère terrestre de Jésus et premières années de la congrégation",
     "familyAndEntourage": [
-      "Les Douze",
+      "Philippe",
+      "Nathanaël",
+      "Les douze apôtres",
       "Jésus"
     ],
     "bibleAccount": [
-      "Est choisi parmi les Douze.",
-      "Participe au ministère des apôtres.",
-      "Figure parmi les disciples réunis après la résurrection."
+      "Il figure dans les listes des Douze.",
+      "Il est associé à Philippe dans les listes apostoliques.",
+      "Si Barthélemy est bien Nathanaël, il a été présenté à Jésus par Philippe et a rapidement reconnu en lui le Fils de Dieu et le Roi d’Israël.",
+      "Il persévère avec les autres apôtres après l’ascension."
     ],
     "qualities": [
-      "Foi",
-      "Fidélité"
+      "Franchise",
+      "Réceptivité",
+      "Foi"
     ],
-    "difficulties": []
+    "difficulties": [
+      "L’identification de Barthélemy avec Nathanaël est une conclusion fondée sur la comparaison des Évangiles, et non une affirmation explicite de Jean."
+    ]
   },
   "james_alphaaeus": {
     "studyFocus": "Jacques fils d’Alphée faisait partie des douze apôtres, mais les Évangiles donnent peu de détails sur sa vie.",
@@ -3754,10 +3775,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Disponibilité : Jésus lui a confié une place parmi les douze.",
       "Persévérance : son service s’est inscrit dans la durée du ministère apostolique."
     ],
-    "keyReading": "Matthieu 10:2-4 ; Marc 3:13-19 ; Actes 1:13",
+    "keyReading": "Matthieu 10:2-4; Marc 3:13-19; Actes 1:12-14",
     "location": "Jérusalem et le territoire d’Israël.",
-    "relationshipWithJehovah": "Jacques reste fidèle parmi les Douze, même si les Évangiles rapportent peu de détails sur lui.",
-    "didYouKnow": "Il est appelé « le Petit » dans Marc 15:40.",
+    "relationshipWithJehovah": "Même si son rôle est peu détaillé, il reste associé aux Douze et participe à la prière avec les autres disciples après l’ascension de Jésus.",
+    "didYouKnow": "JW.org souligne qu’il faut distinguer Jacques fils d’Alphée de Jacques fils de Zébédée et de Jacques, frère de Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3772,21 +3793,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Apôtre — Jacques fils d’Alphée est l’un des Douze apôtres.",
-    "era": "Évangiles",
+    "identity": "Jacques fils d’Alphée était l’un des douze apôtres choisis par Jésus. La Bible donne peu de renseignements personnels sur lui.",
+    "era": "Ministère de Jésus et premières années de la congrégation",
     "familyAndEntourage": [
-      "Les Douze",
-      "Jésus"
+      "Les douze apôtres",
+      "Jésus",
+      "Alphée, son père"
     ],
     "bibleAccount": [
-      "Est choisi par Jésus parmi les Douze.",
-      "Participe au ministère apostolique."
+      "Il est choisi parmi les Douze.",
+      "Il accompagne Jésus pendant son ministère.",
+      "Après la résurrection, il persévère dans la prière avec les autres apôtres à Jérusalem.",
+      "Il est mentionné dans les listes des apôtres après l’ascension."
     ],
     "qualities": [
       "Fidélité",
       "Persévérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Les Écritures ne rapportent pas de faute personnelle précise à son sujet; elles donnent aussi très peu de détails sur sa vie."
+    ]
   },
   "simon_zealot": {
     "studyFocus": "Simon le Zélé était l’un des douze apôtres et a servi aux côtés de disciples issus de milieux très différents.",
@@ -3795,10 +3821,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Changement : devenir disciple de Jésus exigeait de placer le Royaume au-dessus des anciennes affiliations.",
       "Fidélité : il est resté parmi les douze apôtres choisis par Jésus."
     ],
-    "keyReading": "Luc 6:12-16 ; Actes 1:13",
+    "keyReading": "Luc 6:12-16; Actes 1:12-14",
     "location": "Jérusalem et le territoire d’Israël.",
-    "relationshipWithJehovah": "Simon abandonne ses anciennes affiliations pour suivre Jésus comme apôtre.",
-    "didYouKnow": "Il est distingué de Simon Pierre par l’appellation « le Zélé ». ",
+    "relationshipWithJehovah": "Il fait partie du groupe choisi par Jésus et reste parmi les disciples qui persévèrent dans la prière après l’ascension.",
+    "didYouKnow": "Le qualificatif « le Zélé » ne prouve pas à lui seul que Simon appartenait au parti politique des Zélotes; JW.org présente les deux possibilités.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3813,21 +3839,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Apôtre — Simon le Cananéen, également appelé le Zélé, fait partie des Douze apôtres.",
-    "era": "Évangiles",
+    "identity": "Simon le Zélé était l’un des douze apôtres de Jésus. Son surnom le distinguait de Simon Pierre et pouvait évoquer soit son zèle, soit une ancienne association avec les Zélotes.",
+    "era": "Ministère de Jésus et premières années de la congrégation",
     "familyAndEntourage": [
-      "Les Douze",
-      "Jésus"
+      "Les douze apôtres",
+      "Jésus",
+      "Simon Pierre"
     ],
     "bibleAccount": [
-      "Est choisi parmi les Douze.",
-      "Participe à la mission confiée aux apôtres."
+      "Il est choisi parmi les Douze.",
+      "Il accompagne Jésus pendant son ministère.",
+      "Après l’ascension, il persévère dans la prière avec les autres apôtres.",
+      "La Bible ne rapporte pas d’autres épisodes personnels détaillés de son ministère."
     ],
     "qualities": [
       "Zèle",
-      "Fidélité"
+      "Fidélité",
+      "Persévérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Son ancienne association éventuelle avec les Zélotes n’est pas certaine; la Bible ne donne pas assez de détails pour établir son passé politique."
+    ]
   },
   "jairus_daughter": {
     "studyFocus": "La fille de Jaïrus a été ramenée à la vie par Jésus, donnant à sa famille une preuve puissante de sa capacité à ressusciter les morts.",
