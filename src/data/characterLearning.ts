@@ -915,7 +915,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "Genèse 14:17-20 ; Psaume 110:1-4 ; Hébreux 5:5-10 ; 7:1-17",
     "location": "Salem, probablement associée à l’ancienne Jérusalem, et la Basse Plaine de Shavé lors de sa rencontre avec Abraham.",
     "relationshipWithJehovah": "Melkisédec est présenté comme « prêtre du Dieu Très-Haut », Jéhovah, et comme celui qui bénit Abraham au nom de Dieu.",
-    "didYouKnow": "Melkisédec est le premier prêtre mentionné dans les Écritures ; Hébreux présente Jésus comme grand prêtre « à la manière de Melkisédec ». citeturn0search0",
+    "didYouKnow": "Melkisédec est le premier prêtre mentionné dans les Écritures ; Hébreux présente Jésus comme grand prêtre « à la manière de Melkisédec ».",
     "jwResources": [
       {
         "title": "Melkisédec — Étude perspicace des Écritures",
