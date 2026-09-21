@@ -278,7 +278,7 @@ const quizDifficulties: Difficulty[] = [
 const jwQuizExpansion: Array<[string, string[], number, string, string, string]> = [
   ['Qui a reçu les instructions de construire l’arche de l’Alliance ?', ['Moïse','David','Josué','Salomon'], 0, 'Moïse a reçu les instructions concernant le tabernacle et l’arche.', 'Exode 25:8-22', 'Bible'],
   ['Quel homme a été choisi pour remplacer Judas Iscariote parmi les apôtres ?', ['Matthias','Barnabé','Silas','Étienne'], 0, 'Matthias a été choisi pour rejoindre les onze apôtres.', 'Actes 1:21-26', 'Actes'],
-  ['Quel livre raconte principalement la vie et le ministère de Jésus selon Jean ?', ['Jean','Romains','Actes','Hébreux'], 0, 'L’Évangile de Jean rapporte de nombreux épisodes du ministère de Jésus.', 'Jean 20:30-31', 'Évangiles'],
+  ['Quel livre raconte principalement la vie et le ministère de Jésus dans son propre récit ?', ['Jean','Romains','Actes','Hébreux'], 0, 'L’Évangile de Jean rapporte de nombreux épisodes du ministère de Jésus.', 'Jean 20:30-31', 'Évangiles'],
   ['Quel homme a été appelé « ami de Dieu » dans les Écritures ?', ['Abraham','David','Moïse','Élie'], 0, 'Abraham est présenté comme ami de Dieu.', 'Jacques 2:23', 'Personnages'],
   ['Quelle femme était la mère de Jean le Baptiseur ?', ['Élisabeth','Anne','Marie','Marthe'], 0, 'Élisabeth était la mère de Jean.', 'Luc 1:5-25, 57-66', 'Évangiles'],
   ['Quel prêtre était le mari d’Élisabeth ?', ['Zacharie','Siméon','Caïphe','Corneille'], 0, 'Zacharie était prêtre et mari d’Élisabeth.', 'Luc 1:5-13', 'Évangiles'],
