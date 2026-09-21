@@ -848,105 +848,114 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "leah": {
-    "studyFocus": "Léa était la fille aînée de Labân et devint la première femme de Jacob après que Labân eut trompé Jacob en lui donnant Léa au lieu de Rachel. Malgré une situation familiale difficile, elle devint la mère de six fils et d’une fille.",
+    "studyFocus": "Léa, fille aînée de Labân, devient la première femme de Jacob. Son récit permet d’étudier sa place dans la famille de Jacob et le rôle de ses enfants dans l’histoire d’Israël.",
     "lessonPoints": [
-      "Observer les difficultés de Léa dans un mariage où Jacob aimait davantage Rachel.",
-      "Lire ses paroles à la naissance de ses fils pour voir comment elle exprimait ses sentiments envers Jéhovah.",
-      "Observer sa place dans la formation de la famille de Jacob et dans la lignée des tribus d’Israël.",
-      "Garder à l’esprit que la Bible ne précise pas tous les détails de ses sentiments ou de sa mort."
+      "Labân donne Léa à Jacob à la place de Rachel après les sept années de service de Jacob.",
+      "Jacob aime Rachel davantage, mais Léa devient la mère de plusieurs fils et de Dina.",
+      "Ses fils comprennent Ruben, Siméon, Lévi, Juda, Issakar et Zéboulôn.",
+      "Lévi devient l’ancêtre de la tribu sacerdotale et Juda celui de la tribu royale.",
+      "Léa est mentionnée avec Rachel comme ayant contribué à bâtir la maison d’Israël."
     ],
-    "keyReading": "Genèse 29:15–35 ; 30:1-21 ; 31:4-18 ; 33:1-7 ; 49:29-33",
-    "location": "Paddân-Aram ; Canaan ; le récit mentionne aussi son association avec la tombe familiale de Makpéla.",
-    "relationshipWithJehovah": "Le récit montre que Jéhovah voyait la situation de Léa et lui accorda des enfants. Ses paroles à la naissance de Ruben, Siméon, Lévi et Juda montrent à plusieurs reprises qu’elle reconnaissait l’action de Jéhovah.",
-    "didYouKnow": "Léa eut six fils et une fille, Dina, et ses fils comprenaient Lévi et Juda, ancêtres respectivement de la tribu sacerdotale et de la tribu royale d’Israël.",
+    "keyReading": "Genèse 29:16-35 ; 30:1-21 ; 31:11-18 ; Ruth 4:11",
+    "location": "Paddân-Aram puis Canaan ; elle est enterrée dans la grotte de Makpéla.",
+    "relationshipWithJehovah": "Le récit montre que Jéhovah a vu la situation de Léa et lui a donné des enfants alors qu’elle vivait dans une relation conjugale où elle était moins aimée que Rachel.",
+    "didYouKnow": "Léa est la mère de Juda et de Lévi, deux lignées qui auront une place majeure dans l’histoire biblique.",
     "jwResources": [
       {
         "title": "Léa — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/L%C3%A9a/"
       },
       {
-        "title": "Les femmes dans la Bible : Léa",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/questions-bibliques/les-femmes-dans-la-bible/"
+        "title": "La Bible — Genèse 29-31",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Ruth 4:11",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "esau": {
-    "studyFocus": "Ésaü, fils aîné d’Isaac et de Rébecca et frère jumeau de Jacob, devint l’ancêtre des Édomites. Son récit met notamment en contraste ses choix matériels avec la valeur accordée aux choses spirituelles et montre ensuite une réconciliation avec Jacob.",
+    "studyFocus": "Ésaü est le premier-né d’Isaac et le frère jumeau de Jacob. Son récit permet d’examiner la valeur accordée aux choses spirituelles, la maîtrise de soi et la réconciliation.",
     "lessonPoints": [
-      "Étudier la vente de son droit d’aînesse contre un plat de lentilles.",
-      "Observer les conséquences de ses choix concernant la bénédiction paternelle.",
-      "Examiner sa rencontre ultérieure avec Jacob et la réconciliation entre les deux frères.",
-      "Éviter de lui attribuer des motivations que le récit ne précise pas."
+      "Il vend son droit d’aînesse contre un repas alors qu’il est affamé.",
+      "Il perd ensuite la bénédiction que son père destinait au premier-né.",
+      "Il devient l’ancêtre des Édomites.",
+      "Plus tard, il rencontre Jacob et l’accueille sans chercher à se venger.",
+      "Hébreux 12:16 utilise son exemple pour mettre en garde contre le fait de ne pas apprécier les choses sacrées."
     ],
-    "keyReading": "Genèse 25:19-34 ; 27:1-45 ; 32:3–33:16 ; 36:1-43 ; Hébreux 12:16, 17",
-    "location": "Canaan ; région de Séïr, associée à Édom.",
-    "relationshipWithJehovah": "Le récit d’Ésaü est surtout présenté comme un avertissement sur la valeur des choses spirituelles et les conséquences de décisions prises sous le coup d’un désir immédiat.",
-    "didYouKnow": "Le nom Édom, qui signifie « Rouge », est lié au plat rouge de lentilles contre lequel Ésaü vendit son droit d’aînesse.",
+    "keyReading": "Genèse 25:19-34 ; 27:1-45 ; 33:1-16 ; Hébreux 12:16",
+    "location": "Canaan, notamment la région de Séïr et les territoires d’Édom associés à ses descendants.",
+    "relationshipWithJehovah": "Son histoire met en évidence l’importance d’accorder de la valeur aux promesses et aux choses sacrées plutôt qu’à une satisfaction immédiate.",
+    "didYouKnow": "Ésaü reçut le nom d’Édom, « Rouge », en rapport avec le plat rouge de lentilles contre lequel il vendit son droit d’aînesse.",
     "jwResources": [
       {
         "title": "Ésaü — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89sa%C3%BC/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible — Genèse 25-33",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Hébreux 12:16",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "melchizedek": {
-    "studyFocus": "Melkisédec était roi de Salem et prêtre du Dieu Très-Haut. Il rencontra Abraham après sa victoire sur des rois alliés, le bénit et reçut de lui le dixième du butin. Son rôle devient particulièrement important dans l’explication biblique de la prêtrise du Christ.",
+    "studyFocus": "Melkisédec était roi de Salem et prêtre du Dieu Très-Haut. Son bref récit prend une importance particulière parce qu’il est utilisé comme modèle de la prêtrise du Christ.",
     "lessonPoints": [
-      "Lire Genèse 14 pour replacer la rencontre entre Abraham et Melkisédec dans son contexte.",
-      "Observer que Melkisédec exerçait à la fois les fonctions de roi et de prêtre.",
-      "Étudier Hébreux 7 pour comprendre pourquoi Jésus est présenté comme grand prêtre « à la manière de Melkisédec ».",
-      "Ne pas inventer une généalogie : les Écritures ne donnent pas le nom de ses parents ni les détails de sa naissance et de sa mort."
+      "Il rencontre Abraham après la victoire de celui-ci sur les rois alliés.",
+      "Il apporte du pain et du vin et bénit Abraham au nom du Dieu Très-Haut.",
+      "Abraham lui donne le dixième du butin important qu’il avait acquis.",
+      "Son nom est associé à l’idée de « roi de justice », tandis que Salem est liée à la paix.",
+      "Psaume 110 et Hébreux 5-7 utilisent Melkisédec pour expliquer la fonction sacerdotale du Messie."
     ],
-    "keyReading": "Genèse 14:17-20 ; Psaume 110:1-4 ; Hébreux 5:5-10 ; 6:20–7:28",
-    "location": "Salem, que JW.org associe à l’ancienne région de Jérusalem ; rencontre avec Abraham dans la Basse Plaine de Shavé.",
-    "relationshipWithJehovah": "Melkisédec est présenté comme « prêtre du Dieu Très-Haut », Jéhovah. Il bénit Abraham en attribuant la victoire au Dieu Très-Haut.",
-    "didYouKnow": "Melkisédec est le premier prêtre mentionné dans les Écritures ; la Bible ne donne ni son ascendance ni les détails de sa naissance ou de sa mort.",
+    "keyReading": "Genèse 14:17-20 ; Psaume 110:1-4 ; Hébreux 5:5-10 ; 7:1-17",
+    "location": "Salem, probablement associée à l’ancienne Jérusalem, et la Basse Plaine de Shavé lors de sa rencontre avec Abraham.",
+    "relationshipWithJehovah": "Melkisédec est présenté comme « prêtre du Dieu Très-Haut », Jéhovah, et comme celui qui bénit Abraham au nom de Dieu.",
+    "didYouKnow": "Melkisédec est le premier prêtre mentionné dans les Écritures ; Hébreux présente Jésus comme grand prêtre « à la manière de Melkisédec ». citeturn0search0",
     "jwResources": [
       {
         "title": "Melkisédec — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Melkis%C3%A9dec/"
       },
       {
-        "title": "Grand prêtre — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Grand-pr%C3%AAtre/"
+        "title": "La Bible — Genèse 14",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible — Hébreux 5-7",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "jethro": {
-    "studyFocus": "Jéthro accueille Moïse et lui donne des conseils pratiques pour organiser ses responsabilités. À observer dans son récit : Hospitalité, Sagesse pratique.",
+    "studyFocus": "Jéthro, prêtre de Madian et beau-père de Moïse, accueille Moïse puis lui donne un conseil pratique sur la délégation des responsabilités.",
     "lessonPoints": [
-      "Observer la qualité « Hospitalité » dans les épisodes cités.",
-      "Observer la qualité « Sagesse pratique » dans les épisodes cités."
+      "Il accueille Moïse à Madian et lui donne sa fille Séphora comme épouse.",
+      "Il entend ce que Jéhovah a fait pour Israël et se réjouit avec Moïse.",
+      "Il offre un sacrifice au vrai Dieu et participe à un repas avec Aaron et les anciens d’Israël.",
+      "Il observe que Moïse porte seul trop de responsabilités judiciaires.",
+      "Il conseille de choisir des hommes capables et craignant Dieu pour partager la charge."
     ],
-    "keyReading": "Accueille Moïse à Madian.",
+    "keyReading": "Exode 2:16-22 ; 18:1-27",
+    "location": "Madian, puis le camp d’Israël dans le désert.",
+    "relationshipWithJehovah": "Jéthro reconnaît les actes de Jéhovah en faveur d’Israël et déclare que Jéhovah est plus grand que tous les autres dieux.",
+    "didYouKnow": "Jéthro est aussi appelé Réouël dans le récit biblique ; il est le père de Séphora et le beau-père de Moïse.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Jéthro — Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/jethro/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible — Exode 2 et 18",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      },
+      {
+        "title": "Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
       }
     ]
   },
