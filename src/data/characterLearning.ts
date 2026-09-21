@@ -540,12 +540,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "pierre": {
-    "studyFocus": "Pierre est un apôtre majeur qui apprend à passer de réactions impulsives à une foi plus mûre. Après avoir renié Jésus, il pleure amèrement et est ensuite rétabli dans son service.",
+    "studyFocus": "Pierre a progressé d’un pêcheur impulsif à un apôtre mûr qui s’est appuyé sur Jéhovah et Jésus malgré ses erreurs.",
     "lessonPoints": [
-      "Étudier la qualité « Foi » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Repentir » dans les épisodes bibliques cités."
+      "Foi : Pierre a appris à regarder vers Jésus plutôt que vers les circonstances.",
+      "Humilité : après avoir renié Jésus, il a accepté la discipline et a continué à servir.",
+      "Courage : rempli d’esprit saint, il a parlé avec franchise malgré l’opposition."
     ],
     "keyReading": "Matthieu 14:22-33 ; 16:13-23 ; 26:69-75 ; Jean 21 ; Actes 2–5",
     "location": "Galilée ; Jérusalem ; Joppé ; Césarée.",
@@ -571,11 +570,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "paul": {
-    "studyFocus": "Paul passe de persécuteur des disciples à apôtre zélé. Il endure persécutions, voyages et difficultés pour annoncer la bonne nouvelle et fortifier les congrégations.",
+    "studyFocus": "Paul a consacré sa vie à annoncer la bonne nouvelle et à fortifier les congrégations, en s’appuyant sur Jéhovah dans de nombreuses épreuves.",
     "lessonPoints": [
-      "Étudier la qualité « Zèle » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Endurance » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Humilité » dans les épisodes bibliques cités."
+      "Zèle : Paul a fait de la prédication sa priorité.",
+      "Endurance : il a continué malgré les persécutions, les voyages et les difficultés.",
+      "Amour : il a manifesté un profond intérêt pour les personnes qu’il aidait à devenir chrétiennes."
     ],
     "keyReading": "Actes 9 ; 13–28 ; Philippiens 3 ; 2 Corinthiens 11",
     "location": "Jérusalem ; Syrie ; Asie Mineure ; Grèce ; Rome.",
@@ -802,12 +801,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "La muraille de Jérusalem fut achevée en 52 jours. Nehémia était échanson d’Artaxerxès avant de devenir gouverneur des Juifs."
   },
   "mary_magdalen": {
-    "studyFocus": "Marie Madeleine accompagne Jésus et reste présente lors de sa mort ; elle reçoit aussi le privilège d’être parmi les premières à témoigner de sa résurrection. Étudier surtout sa fidélité et sa persévérance.",
+    "studyFocus": "Marie Madeleine a été une disciple fidèle de Jésus qui l’a accompagné et soutenu et qui a eu le privilège d’être parmi les premières personnes à le voir après sa résurrection.",
     "lessonPoints": [
-      "Elle faisait partie des femmes qui accompagnaient Jésus et ses apôtres et les soutenaient de leurs biens.",
-      "Elle était présente lors de la mort de Jésus et observa le lieu où son corps fut déposé.",
-      "Elle se rendit au tombeau très tôt et fut parmi les premières à recevoir le témoignage concernant la résurrection.",
-      "Jésus lui confia un message à transmettre aux disciples après sa résurrection."
+      "Fidélité : elle est restée proche de Jésus même lors de sa mort.",
+      "Reconnaissance : elle avait été libérée de graves souffrances et a continué à le soutenir.",
+      "Témoignage : Jésus lui a confié une mission d’annoncer sa résurrection aux disciples."
     ],
     "keyReading": "Luc 8:1-3 ; Jean 19:25 ; 20:1-18",
     "location": "Galilée et Jérusalem ; tombeau de Jésus.",
@@ -833,12 +831,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "zacchaeus": {
-    "studyFocus": "Zachée accepte volontiers de recevoir Jésus et manifeste un changement concret par ses paroles sur la restitution et la générosité.",
+    "studyFocus": "Zachée, collecteur d’impôts en chef, a montré par ses actions qu’il voulait réellement changer lorsqu’il a accepté Jésus et corrigé les torts qu’il avait commis.",
     "lessonPoints": [
-      "Il cherchait sincèrement à voir Jésus malgré la foule et sa petite taille.",
-      "Jésus lui demanda de descendre rapidement du sycomore et accepta d’être son hôte.",
-      "Zachée déclara qu’il donnerait la moitié de ses biens aux pauvres.",
-      "Il annonça qu’il rendrait au quadruple ce qu’il avait extorqué, montrant une volonté de réparer les torts."
+      "Repentance : il a pris des mesures concrètes pour changer.",
+      "Générosité : il a décidé de donner aux pauvres.",
+      "Honnêteté : il a promis de rendre au quadruple ce qu’il avait extorqué."
     ],
     "keyReading": "Luc 19:1-10",
     "location": "Jéricho, au moment où Jésus traversait la ville.",
@@ -864,13 +861,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "barnabas": {
-    "studyFocus": "Barnabé est un compagnon de service connu pour sa générosité et sa capacité à encourager les autres. Son récit permet d’étudier l’esprit d’équipe et l’attention portée aux personnes.",
+    "studyFocus": "Barnabas était un encourageant généreux qui a soutenu Paul et Jean-Marc et a contribué à fortifier les congrégations.",
     "lessonPoints": [
-      "Il vendit un champ et remit l’argent aux apôtres, montrant sa générosité.",
-      "Il aida à faire accepter Saul par les disciples de Jérusalem après la conversion de celui-ci.",
-      "Il fut envoyé à Antioche et encouragea les nouveaux disciples à rester attachés au Seigneur.",
-      "Il alla chercher Saul à Tarse et travailla avec lui à Antioche avant leurs voyages missionnaires.",
-      "Il défendit aussi l’utilité de Jean-Marc, avec qui il poursuivit ensuite son activité."
+      "Encouragement : son nom et son rôle sont associés à la consolation et au soutien.",
+      "Générosité : il a vendu un champ et a apporté l’argent aux apôtres.",
+      "Confiance : il a donné une occasion à Jean-Marc de reprendre une activité utile."
     ],
     "keyReading": "Actes 4:36-37 ; 9:26-27 ; 11:22-26 ; 15:36-39",
     "location": "Jérusalem, Antioche de Syrie, Tarse et différentes régions parcourues pendant l’activité missionnaire.",
@@ -896,13 +891,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "cornelius": {
-    "studyFocus": "Corneille est le premier Gentil incirconcis dont la conversion au christianisme est rapportée en détail. Son récit met en valeur la prière, la générosité et la réceptivité à la direction divine.",
+    "studyFocus": "Corneille était un officier romain qui craignait Dieu, priait régulièrement et faisait des dons de miséricorde. Son récit marque une étape importante dans l’ouverture du christianisme aux non-Juifs.",
     "lessonPoints": [
-      "Il était officier romain et chef d’une centaine de soldats.",
-      "Il était pieux, craignait Dieu avec sa maisonnée et faisait régulièrement des dons de miséricorde.",
-      "Un ange lui demanda d’envoyer chercher Simon Pierre à Joppé.",
-      "Après avoir entendu le témoignage de Pierre, Corneille et ceux qui étaient réunis avec lui reçurent l’esprit saint et furent baptisés.",
-      "L’événement confirma que Dieu n’est pas partial et qu’il accepte des personnes de toutes les nations qui le craignent et pratiquent la justice."
+      "Prière : Corneille priait régulièrement et Jéhovah a remarqué sa sincérité.",
+      "Générosité : ses dons de miséricorde étaient connus.",
+      "Réceptivité : lui et les siens ont humblement accepté l’enseignement transmis par Pierre."
     ],
     "keyReading": "Actes 10:1-48",
     "location": "Césarée, où Corneille résidait dans le cadre de son service militaire.",
@@ -1979,11 +1972,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jairus": {
-    "studyFocus": "Jaïrus — un chef de synagogue qui a cru",
+    "studyFocus": "Jaïrus, responsable de synagogue, a humblement demandé l’aide de Jésus lorsque sa fille était mourante et a continué à croire malgré l’annonce de sa mort.",
     "lessonPoints": [
-      "Foi sous pression",
-      "Prière",
-      "Confiance en Jésus"
+      "Foi : il a demandé l’aide de Jésus malgré sa position sociale.",
+      "Persévérance : il a continué à écouter Jésus lorsque la situation semblait désespérée.",
+      "Amour familial : son récit montre la profondeur de son souci pour sa fille."
     ],
     "keyReading": "Marc 5:21-43 ; Luc 8:40-56",
     "location": "Capharnaüm et ses environs.",
@@ -3107,11 +3100,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "elizabeth": {
-    "studyFocus": "Élisabeth — une femme fidèle et joyeuse",
+    "studyFocus": "Élisabeth était une femme fidèle qui a accueilli Marie avec joie et a reconnu sous inspiration le rôle particulier de l’enfant qu’elle portait.",
     "lessonPoints": [
-      "Foi",
-      "Hospitalité",
-      "Joie spirituelle"
+      "Foi : elle et son mari étaient décrits comme justes devant Jéhovah.",
+      "Joie : elle a accueilli Marie avec affection et reconnaissance.",
+      "Humilité : elle a reconnu le privilège accordé à Marie sans jalousie."
     ],
     "keyReading": "Luc 1:5-25, 39-45, 57-66",
     "location": "Région montagneuse de Judée.",
@@ -3133,11 +3126,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joseph_jesus_father": {
-    "studyFocus": "Joseph — un père adoptif obéissant",
+    "studyFocus": "Joseph, père adoptif de Jésus, était un homme juste qui a suivi les directives de Jéhovah et a protégé sa famille.",
     "lessonPoints": [
-      "Obéissance",
-      "Protection familiale",
-      "Foi"
+      "Obéissance : Joseph a agi rapidement selon les instructions reçues de Jéhovah.",
+      "Protection : il a accepté de déplacer sa famille pour protéger Jésus.",
+      "Humilité : il a assumé une responsabilité familiale exceptionnelle sans rechercher la gloire."
     ],
     "keyReading": "Matthieu 1:18-25 ; 2:13-23 ; Luc 2:1-52",
     "location": "Bethléem, Égypte, Nazareth et Jérusalem.",
@@ -3185,11 +3178,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joanna": {
-    "studyFocus": "Jeanne — une femme qui soutenait le ministère de Jésus",
+    "studyFocus": "Jeanne faisait partie des femmes qui accompagnaient Jésus et les apôtres et les soutenaient matériellement.",
     "lessonPoints": [
-      "Générosité",
-      "Soutenir le ministère",
-      "Foi"
+      "Générosité : elle a utilisé ses ressources pour soutenir le ministère de Jésus.",
+      "Fidélité : elle a continué à être associée aux disciples.",
+      "Témoignage : elle faisait partie des femmes qui ont rapporté aux apôtres ce qu’elles avaient vu après la résurrection."
     ],
     "keyReading": "Luc 8:1-3 ; 24:1-10",
     "location": "Galilée et Jérusalem.",
