@@ -65,59 +65,60 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "noe": {
-    "studyFocus": "Noé vivait dans un monde devenu extrêmement violent et corrompu, mais la Bible le présente comme un homme juste qui marchait avec le vrai Dieu. Sur ordre de Jéhovah, il construisit l’arche avec sa famille et fut aussi « prédicateur de justice ».",
-    "lessonPoints": [
-      "Observer comment la foi de Noé s’est traduite par une longue obéissance concrète à des instructions précises.",
-      "Étudier le rôle de sa famille dans la construction de l’arche et dans la préservation de la vie.",
-      "Examiner aussi l’incident survenu après le Déluge afin de garder une vision honnête d’un homme fidèle mais imparfait."
-    ],
-    "keyReading": "Genèse 6:9-22; 7:1-24; 8:15-22; 9:1-17; Hébreux 11:7",
-    "location": "Le monde antédiluvien ; l’arche ; puis la terre après le Déluge.",
-    "relationshipWithJehovah": "La Bible dit que Noé marchait avec Dieu. Il fait exactement ce que Jéhovah lui ordonne et sa foi est citée en Hébreux 11 comme exemple.",
-    "didYouKnow": "Noé avait 600 ans lorsque le Déluge commença et il était accompagné dans l’arche par sa femme, ses trois fils et ses trois belles-filles.",
-    "jwResources": [
-      {
-        "title": "Marche courageusement avec Dieu — Noé",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/noe-a-condamne-le-monde/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Noé — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/No%C3%A9/"
-      },
-      {
-        "title": "Noé : « Il marchait avec le vrai Dieu » — Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/noe/"
-      }
-    ],
-    "identity": "Noé était un homme juste qui vivait dans une génération profondément corrompue. Jéhovah lui ordonna de construire une arche et le préserva, lui et sa famille, du Déluge.",
-    "era": "Avant le Déluge, vers 2970 av. n. è. pour sa naissance",
-    "familyAndEntourage": [
-      "Lamek",
-      "Ses trois fils: Sem, Cham et Japhet",
-      "Sa femme",
-      "Ses belles-filles"
-    ],
-    "bibleAccount": [
-      "Il marche avec le vrai Dieu.",
-      "Jéhovah lui donne les instructions pour construire l’arche.",
-      "Il avertit sa génération et construit l’arche avec sa famille.",
-      "Il entre dans l’arche avant le Déluge.",
-      "Après le Déluge, il offre un sacrifice et reçoit une alliance."
-    ],
-    "qualities": [
-      "Foi",
-      "Obéissance",
-      "Persévérance",
-      "Courage"
-    ],
-    "difficulties": [
-      "Il doit accomplir pendant des années une tâche extraordinaire dans un monde qui ne partage pas sa foi et avertir des personnes peu réceptives."
-    ]
-  },
+  "studyFocus": "Noé est présenté comme un homme juste qui « marchait avec le vrai Dieu » dans une génération violente et corrompue. Sa foi se traduisit par une obéissance concrète : il construisit l’arche selon les instructions reçues, avertit sa génération et entra dans l’arche avec sa famille.",
+  "lessonPoints": [
+    "Une foi solide se voit dans l’obéissance, même lorsqu’une tâche paraît immense.",
+    "Noé associa son service à celui de sa famille, qui fut préservée avec lui.",
+    "Après le Déluge, il remercia Jéhovah par un sacrifice.",
+    "Son erreur après le Déluge rappelle qu’un serviteur fidèle reste imparfait."
+  ],
+  "keyReading": "Genèse 6:9-22 ; 7:1-24 ; 8:15-22 ; 9:1-17 ; Matthieu 24:37-39 ; Hébreux 11:7 ; 2 Pierre 2:5",
+  "location": "Le monde antédiluvien, puis l’arche et la région où elle s’arrêta après le Déluge.",
+  "relationshipWithJehovah": "Noé marchait avec Jéhovah, reçut des instructions précises et les exécuta avec foi. Hébreux 11:7 relie directement sa conduite à sa foi.",
+  "didYouKnow": "Noé avait 600 ans lorsque le Déluge commença, et huit personnes de sa famille furent préservées dans l’arche.",
+  "jwResources": [
+    {
+      "title": "Marche courageusement avec Dieu — Noé",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/noe-a-condamne-le-monde/"
+    },
+    {
+      "title": "Marche courageusement avec Dieu",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+    },
+    {
+      "title": "Noé — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/No%C3%A9/"
+    },
+    {
+      "title": "Noé : « Il marchait avec le vrai Dieu » — Imitez leur foi",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/noe/"
+    }
+  ],
+  "identity": "Noé était un homme juste qui vivait dans une génération profondément corrompue. Jéhovah lui ordonna de construire une arche et le préserva, lui et sa famille, du Déluge.",
+  "era": "Avant le Déluge, vers 2970 av. n. è. pour sa naissance",
+  "familyAndEntourage": [
+    "Lamek",
+    "Ses trois fils: Sem, Cham et Japhet",
+    "Sa femme",
+    "Ses belles-filles"
+  ],
+  "bibleAccount": [
+    "Il marche avec le vrai Dieu.",
+    "Jéhovah lui donne les instructions pour construire l’arche.",
+    "Il avertit sa génération et construit l’arche avec sa famille.",
+    "Il entre dans l’arche avant le Déluge.",
+    "Après le Déluge, il offre un sacrifice et reçoit une alliance."
+  ],
+  "qualities": [
+    "Foi",
+    "Obéissance",
+    "Persévérance",
+    "Courage"
+  ],
+  "difficulties": [
+    "Il doit accomplir pendant des années une tâche extraordinaire dans un monde qui ne partage pas sa foi et avertir des personnes peu réceptives."
+  ]
+},
   "abraham": {
     "studyFocus": "Abraham quitta Our sur l’ordre de Jéhovah, vécut comme résident étranger en Canaan et fut appelé « père de tous ceux qui ont foi ». Sa vie met en évidence une foi qui se traduit par des décisions, de l’obéissance, de l’hospitalité et une confiance durable dans les promesses de Jéhovah.",
     "lessonPoints": [
@@ -1083,209 +1084,211 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "isaac": {
-    "studyFocus": "Isaac est le fils promis à Abraham et à Sara et un maillon essentiel de la lignée menant au Christ. Sa vie comprend l’épreuve du mont Moria, son mariage avec Rébecca, la naissance d’Ésaü et de Jacob et son rôle dans la transmission de la promesse.",
-    "lessonPoints": [
-      "Observer la place d’Isaac dans la réalisation de la promesse faite à Abraham.",
-      "Étudier son attitude lors de l’épisode où Abraham devait l’offrir en sacrifice.",
-      "Examiner comment Isaac a recherché la paix dans certains conflits liés aux puits et aux territoires.",
-      "Suivre la transmission de la promesse à Jacob malgré les tensions familiales."
-    ],
-    "keyReading": "Genèse 22:1-19; 24:1-67; 26:12-33; 27:1-40",
-    "location": "Canaan, notamment Beer-Shéba, le pays du Néguev et la région de Guérar.",
-    "relationshipWithJehovah": "Isaac accepte de se soumettre au projet de Dieu concernant le sacrifice et continue à faire confiance aux promesses faites à Abraham.",
-    "didYouKnow": "Isaac est l’un des rares personnages bibliques dont la naissance avait été annoncée avec un nom précis avant sa naissance.",
-    "jwResources": [
-      {
-        "title": "Isaac — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Isaac/"
-      },
-      {
-        "title": "Abraham et Isaac : Sa foi est testée",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/3/abraham-isaac-epreuve-foi/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Isaac était le fils promis d’Abraham et de Sara, mari de Rébecca et père d’Ésaü et de Jacob.",
-    "era": "1858-1711 av. n. è. environ",
-    "familyAndEntourage": [
-      "Abraham",
-      "Sara",
-      "Rébecca",
-      "Ésaü",
-      "Jacob",
-      "Abimélek"
-    ],
-    "bibleAccount": [
-      "Il naît à Abraham et Sara dans leur vieillesse.",
-      "Il échappe au sacrifice lorsque Jéhovah fournit un bélier.",
-      "Il épouse Rébecca.",
-      "Il devient père de jumeaux et bénit finalement Jacob selon le dessein de Dieu.",
-      "Il connaît des conflits avec les Philistins au sujet des puits."
-    ],
-    "qualities": [
-      "Paix",
-      "Patience",
-      "Foi",
-      "Obéissance"
-    ],
-    "difficulties": [
-      "Il connaît des conflits autour des puits et doit vivre avec la rivalité entre ses deux fils.",
-      "Il est trompé par Jacob au moment de la bénédiction, mais le résultat correspond au dessein annoncé par Jéhovah."
-    ]
-  },
+  "studyFocus": "Isaac fut le fils promis à Abraham et Sara. Sa vie montre la continuité de la promesse de Jéhovah : il épousa Rébecca, devint père d’Ésaü et de Jacob et resta attaché à l’adoration de Jéhovah malgré les tensions familiales.",
+  "lessonPoints": [
+    "Isaac fut disposé à se soumettre lorsque son père le présenta en sacrifice.",
+    "Il connut la stérilité de Rébecca et dut attendre l’intervention de Jéhovah.",
+    "Les préférences différentes d’Isaac et de Rébecca contribuèrent aux tensions familiales.",
+    "À la fin de sa vie, Isaac bénit Jacob conformément au dessein de Jéhovah."
+  ],
+  "keyReading": "Genèse 22:1-19 ; 24:1-67 ; 25:19-34 ; 26:1-33 ; 27:1-40 ; Hébreux 11:17-20",
+  "location": "Canaan, notamment la région de Beer-Lahaï-Roï, Guérar et Beer-Shéba.",
+  "relationshipWithJehovah": "Isaac bénéficia des promesses faites à Abraham et compta sur Jéhovah dans les périodes de famine et de conflits pour les puits.",
+  "didYouKnow": "Isaac avait 40 ans lorsqu’il épousa Rébecca et 60 ans lorsque leurs fils Ésaü et Jacob naquirent.",
+  "jwResources": [
+    {
+      "title": "Isaac — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Isaac/"
+    },
+    {
+      "title": "Abraham et Isaac : Sa foi est testée",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/3/abraham-isaac-epreuve-foi/"
+    },
+    {
+      "title": "La Bible en ligne — Traduction du monde nouveau",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Isaac était le fils promis d’Abraham et de Sara, mari de Rébecca et père d’Ésaü et de Jacob.",
+  "era": "1858-1711 av. n. è. environ",
+  "familyAndEntourage": [
+    "Abraham",
+    "Sara",
+    "Rébecca",
+    "Ésaü",
+    "Jacob",
+    "Abimélek"
+  ],
+  "bibleAccount": [
+    "Il naît à Abraham et Sara dans leur vieillesse.",
+    "Il échappe au sacrifice lorsque Jéhovah fournit un bélier.",
+    "Il épouse Rébecca.",
+    "Il devient père de jumeaux et bénit finalement Jacob selon le dessein de Dieu.",
+    "Il connaît des conflits avec les Philistins au sujet des puits."
+  ],
+  "qualities": [
+    "Paix",
+    "Patience",
+    "Foi",
+    "Obéissance"
+  ],
+  "difficulties": [
+    "Il connaît des conflits autour des puits et doit vivre avec la rivalité entre ses deux fils.",
+    "Il est trompé par Jacob au moment de la bénédiction, mais le résultat correspond au dessein annoncé par Jéhovah."
+  ]
+},
   "samson": {
-    "studyFocus": "Samson fut un juge d’Israël choisi avant sa naissance pour entreprendre de délivrer Israël de la main des Philistins. Nazaréen dès sa naissance, il reçut une force exceptionnelle lorsqu’il agissait sous l’influence de l’esprit de Jéhovah. Son récit montre à la fois ses victoires contre les Philistins, ses faiblesses personnelles et son retour vers Jéhovah à la fin de sa vie.",
-    "lessonPoints": [
-      "Observer les instructions données par l’ange de Jéhovah aux parents de Samson avant sa naissance.",
-      "Étudier comment Samson a utilisé sa force dans sa lutte contre les Philistins et ce qui montre que cette force venait de Jéhovah.",
-      "Examiner ses choix personnels, notamment dans ses relations avec des femmes, sans confondre sa mission divine avec l’approbation de toutes ses décisions.",
-      "Observer sa prière finale et la manière dont il a de nouveau compté sur Jéhovah."
-    ],
-    "keyReading": "Juges 13:1-25; 14:1-20; 16:4-31; Hébreux 11:32-34",
-    "jwResources": [
-      {
-        "title": "Samson — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samson/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
-    "location": "Tsora et son territoire ; vallée de Sorek ; Timna ; Gaza ; Lehi ; région des Philistins.",
-    "relationshipWithJehovah": "Samson dépendait de l’esprit de Jéhovah pour sa force. Malgré ses erreurs graves, il prie encore Jéhovah à la fin de sa vie et sa foi est mentionnée parmi les exemples en Hébreux 11.",
-    "didYouKnow": "Samson est mentionné dans Hébreux 11:32 parmi les hommes dont la foi est citée comme exemple, malgré les graves faiblesses racontées dans le livre des Juges.",
-    "identity": "Samson était un juge d’Israël doté d’une force exceptionnelle donnée par Jéhovah pour commencer à délivrer Israël des Philistins.",
-    "era": "Époque des juges, avant la royauté",
-    "familyAndEntourage": [
-      "Manoah",
-      "La femme de Manoah",
-      "Dalila",
-      "Les Philistins"
-    ],
-    "bibleAccount": [
-      "Un ange annonce sa naissance à sa mère.",
-      "Il accomplit plusieurs actes contre les Philistins grâce à une force particulière.",
-      "Il épouse une Philistine puis connaît des conflits avec les Philistins.",
-      "Dalila découvre le secret lié à ses cheveux et il est capturé.",
-      "Il prie Jéhovah et reçoit une dernière manifestation de force qui entraîne la chute du temple philistin."
-    ],
-    "qualities": [
-      "Courage",
-      "Force physique",
-      "Zèle contre les ennemis d’Israël",
-      "Foi manifestée dans sa dernière prière"
-    ],
-    "difficulties": [
-      "Il est attiré par des femmes étrangères et prend des décisions impulsives. Sa relation avec Dalila conduit à sa capture et à sa cécité."
-    ]
-  },
+  "studyFocus": "Samson fut juge en Israël pendant 20 ans et reçut la mission de commencer à délivrer Israël de la main des Philistins. Jéhovah lui donna une force extraordinaire par son esprit. Son histoire contient aussi des choix impulsifs, mais Hébreux 11:32-34 cite Samson parmi les hommes qui ont manifesté la foi.",
+  "lessonPoints": [
+    "Sa force était liée à l’action de l’esprit de Jéhovah, pas à une simple capacité humaine.",
+    "Samson a parfois laissé ses désirs personnels compliquer sa mission.",
+    "Après sa capture et son aveuglement, il pria Jéhovah et retrouva la force d’agir.",
+    "Son exemple montre qu’une personne imparfaite peut manifester une foi réelle."
+  ],
+  "keyReading": "Juges 13:1-25 ; 14:1-20 ; 15:9-20 ; 16:4-31 ; Hébreux 11:32-34",
+  "jwResources": [
+    {
+      "title": "Samson — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samson/"
+    },
+    {
+      "title": "Marche courageusement avec Dieu",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+    },
+    {
+      "title": "Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+    },
+    {
+      "title": "La Bible en ligne — Traduction du monde nouveau",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    }
+  ],
+  "location": "Le territoire de Dan et les régions contrôlées par les Philistins, notamment Gaza et Timna.",
+  "relationshipWithJehovah": "Samson était voué à Jéhovah dès sa naissance. Il reçut l’esprit de Jéhovah à plusieurs reprises et pria Jéhovah avec foi à la fin de sa vie.",
+  "didYouKnow": "Samson a exercé la fonction de juge en Israël pendant 20 ans, selon Juges 15:20.",
+  "identity": "Samson était un juge d’Israël doté d’une force exceptionnelle donnée par Jéhovah pour commencer à délivrer Israël des Philistins.",
+  "era": "Époque des juges, avant la royauté",
+  "familyAndEntourage": [
+    "Manoah",
+    "La femme de Manoah",
+    "Dalila",
+    "Les Philistins"
+  ],
+  "bibleAccount": [
+    "Un ange annonce sa naissance à sa mère.",
+    "Il accomplit plusieurs actes contre les Philistins grâce à une force particulière.",
+    "Il épouse une Philistine puis connaît des conflits avec les Philistins.",
+    "Dalila découvre le secret lié à ses cheveux et il est capturé.",
+    "Il prie Jéhovah et reçoit une dernière manifestation de force qui entraîne la chute du temple philistin."
+  ],
+  "qualities": [
+    "Courage",
+    "Force physique",
+    "Zèle contre les ennemis d’Israël",
+    "Foi manifestée dans sa dernière prière"
+  ],
+  "difficulties": [
+    "Il est attiré par des femmes étrangères et prend des décisions impulsives. Sa relation avec Dalila conduit à sa capture et à sa cécité."
+  ]
+},
   "naomi": {
-    "studyFocus": "Naomi a connu de grandes pertes mais a retrouvé la joie grâce à l’affection fidèle de Ruth et à la disposition de Jéhovah à prendre soin de ses serviteurs.",
-    "lessonPoints": [
-      "Persévérance : Naomi a continué à avancer malgré un profond chagrin.",
-      "Amour fidèle : elle a apprécié la loyauté remarquable de Ruth.",
-      "Espérance : son histoire montre que Jéhovah peut transformer une période très douloureuse."
-    ],
-    "keyReading": "Ruth 1–4",
-    "jwResources": [
-      {
-        "title": "Naomi — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Naomi/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "location": "Bethléhem en Juda ; Moab ; retour à Bethléhem et environnement de la famille d’Élimélek.",
-    "relationshipWithJehovah": "Naomi a traversé une période où elle pensait que Jéhovah avait rendu sa situation très amère. Pourtant, elle a continué à agir dans le cadre du culte de Jéhovah et a reconnu la main de Dieu lorsque Boaz est intervenu en faveur de sa famille.",
-    "didYouKnow": "Naomi fut la belle-mère de Ruth, laquelle devint une ancêtre de David et de Jésus Christ.",
-    "identity": "Veuve et belle-mère de Ruth — Noémi a connu de lourdes pertes mais a continué à agir avec amour envers Ruth.",
-    "era": "Ruth",
-    "familyAndEntourage": [
-      "Ruth",
-      "Orpa",
-      "Élimélek",
-      "Mahlôn",
-      "Obed"
-    ],
-    "bibleAccount": [
-      "Retourne à Bethléhem après son veuvage.",
-      "Encourage Ruth à agir avec sagesse.",
-      "Accueille la naissance d’Obed dans sa famille.",
-      "JW.org souligne son rôle auprès de Ruth et leur amitié fidèle."
-    ],
-    "qualities": [
-      "Attachement familial",
-      "Sagesse"
-    ],
-    "difficulties": []
-  },
+  "studyFocus": "Noémi connut une série de pertes : elle quitta Bethléhem avec son mari et ses deux fils, devint veuve puis perdit aussi ses deux fils. Malgré son amertume, elle resta attachée à Jéhovah et fut soutenue par la fidélité de Ruth.",
+  "lessonPoints": [
+    "Noémi ne cache pas sa douleur et exprime honnêtement son amertume.",
+    "Elle cherche le bien de Ruth et Orpa malgré sa propre souffrance.",
+    "Son retour à Bethléhem montre qu’elle reste attachée à son peuple.",
+    "L’histoire se termine par la restauration de sa joie avec la naissance d’Obed."
+  ],
+  "keyReading": "Ruth 1:1-22 ; 2:19-23 ; 3:1-18 ; 4:13-17",
+  "jwResources": [
+    {
+      "title": "Naomi — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Naomi/"
+    },
+    {
+      "title": "La Bible en ligne — Traduction du monde nouveau",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "location": "Bethléhem en Juda et le pays de Moab.",
+  "relationshipWithJehovah": "Noémi reconnaît Jéhovah dans les événements de sa vie et voit finalement sa situation familiale restaurée.",
+  "didYouKnow": "Le livre de Ruth montre que Noémi retrouva une famille grâce au mariage de Ruth avec Boaz et à la naissance d’Obed.",
+  "identity": "Veuve et belle-mère de Ruth — Noémi a connu de lourdes pertes mais a continué à agir avec amour envers Ruth.",
+  "era": "Ruth",
+  "familyAndEntourage": [
+    "Ruth",
+    "Orpa",
+    "Élimélek",
+    "Mahlôn",
+    "Obed"
+  ],
+  "bibleAccount": [
+    "Retourne à Bethléhem après son veuvage.",
+    "Encourage Ruth à agir avec sagesse.",
+    "Accueille la naissance d’Obed dans sa famille.",
+    "JW.org souligne son rôle auprès de Ruth et leur amitié fidèle."
+  ],
+  "qualities": [
+    "Attachement familial",
+    "Sagesse"
+  ],
+  "difficulties": []
+},
   "boaz": {
-    "studyFocus": "Boaz a fait preuve de bonté loyale envers Ruth et Naomi et a respecté les dispositions de Jéhovah concernant le droit de rachat.",
-    "lessonPoints": [
-      "Générosité : Boaz a protégé et aidé Ruth avec bonté.",
-      "Respect des dispositions divines : il a suivi la procédure prévue pour le rachat.",
-      "Réputation : sa conduite juste lui a valu le respect de la communauté."
-    ],
-    "keyReading": "Ruth 2–4 ; Matthieu 1:5, 6",
-    "jwResources": [
-      {
-        "title": "Boaz, I — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Boaz-I/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "location": "Bethléhem en Juda, notamment les champs de Boaz et l’espace public où les démarches légales sont effectuées.",
-    "relationshipWithJehovah": "Boaz invoquait Jéhovah dans ses salutations et reconnaissait que Ruth avait cherché refuge sous les ailes de Jéhovah. Il respecta les dispositions légales et agit avec bonté dans le cadre du culte de Jéhovah.",
-    "didYouKnow": "Boaz était fils de Salma et de Rahab, et devint le père d’Obed. Il constitue un maillon de la lignée menant au Messie.",
-    "identity": "Propriétaire terrien et parent de Noémi — Boaz traite Ruth avec bonté et devient son rédempteur familial.",
-    "era": "Ruth",
-    "familyAndEntourage": [
-      "Ruth",
-      "Noémi",
-      "Obed",
-      "David"
-    ],
-    "bibleAccount": [
-      "Protège Ruth dans ses champs.",
-      "Veille à ce qu’elle puisse glaner en sécurité.",
-      "Assume le rôle de rédempteur et épouse Ruth."
-    ],
-    "qualities": [
-      "Générosité",
-      "Respect",
-      "Loyauté"
-    ],
-    "difficulties": []
-  },
+  "studyFocus": "Boaz était un propriétaire terrien de Bethléhem, parent d’Élimélek. Il respecta Ruth, protégea sa réputation, suivit les dispositions de la Loi concernant les pauvres et accepta d’exercer le rôle de rédempteur familial en épousant Ruth.",
+  "lessonPoints": [
+    "Boaz respecta Ruth alors qu’elle était étrangère et remarqua son travail.",
+    "Il la protégea contre le harcèlement et lui assura une véritable sécurité.",
+    "Il respecta la procédure légale concernant le rédempteur plus proche.",
+    "Son mariage avec Ruth s’inscrit dans la lignée qui conduisit à David."
+  ],
+  "keyReading": "Ruth 2:1-23 ; 3:1-18 ; 4:1-17 ; Matthieu 1:5-6",
+  "jwResources": [
+    {
+      "title": "Boaz, I — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Boaz-I/"
+    },
+    {
+      "title": "La Bible en ligne — Traduction du monde nouveau",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "location": "Bethléhem et les champs de Juda.",
+  "relationshipWithJehovah": "Boaz agit en accord avec les dispositions de la Loi et reconnut que Ruth était venue chercher refuge sous les ailes de Jéhovah.",
+  "didYouKnow": "Boaz et Ruth furent les parents d’Obed, grand-père de David.",
+  "identity": "Propriétaire terrien et parent de Noémi — Boaz traite Ruth avec bonté et devient son rédempteur familial.",
+  "era": "Ruth",
+  "familyAndEntourage": [
+    "Ruth",
+    "Noémi",
+    "Obed",
+    "David"
+  ],
+  "bibleAccount": [
+    "Protège Ruth dans ses champs.",
+    "Veille à ce qu’elle puisse glaner en sécurité.",
+    "Assume le rôle de rédempteur et épouse Ruth."
+  ],
+  "qualities": [
+    "Générosité",
+    "Respect",
+    "Loyauté"
+  ],
+  "difficulties": []
+},
   "elisha": {
     "studyFocus": "Élisée fut prophète de Jéhovah et successeur d’Élie. Il accomplit de nombreux miracles et resta ferme face à l’opposition.",
     "lessonPoints": [
@@ -1390,111 +1393,113 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "mary_magdalen": {
-    "studyFocus": "Marie Madeleine a été une disciple fidèle de Jésus qui l’a accompagné et soutenu et qui a eu le privilège d’être parmi les premières personnes à le voir après sa résurrection.",
-    "lessonPoints": [
-      "Fidélité : elle est restée proche de Jésus même lors de sa mort.",
-      "Reconnaissance : elle avait été libérée de graves souffrances et a continué à le soutenir.",
-      "Témoignage : Jésus lui a confié une mission d’annoncer sa résurrection aux disciples."
-    ],
-    "keyReading": "Luc 8:1-3; Matthieu 27:55-61; Jean 20:1-18",
-    "location": "Galilée et Jérusalem ; tombeau de Jésus.",
-    "relationshipWithJehovah": "Sa gratitude pour la délivrance reçue se traduit par un soutien fidèle à Jésus jusqu’à sa mort et par un témoignage enthousiaste après sa résurrection.",
-    "didYouKnow": "Marie Madeleine n’est pas la femme pécheresse qui parfume les pieds de Jésus dans Luc 7, et elle ne doit pas être confondue avec Marie de Béthanie.",
-    "jwResources": [
-      {
-        "title": "Magdalène (Marie la) — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Magdal%C3%A8ne-Marie-la/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — encyclopédie biblique",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu — Marie de Magdala",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marie-de-magdala-jai-vu-le-seigneur/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      }
-    ],
-    "identity": "Marie Madeleine était une disciple fidèle de Jésus, délivrée de sept démons. Elle l’accompagna jusqu’à sa mort et fut l’une des premières personnes à le voir après sa résurrection.",
-    "era": "Ministère terrestre de Jésus et premiers jours après sa résurrection",
-    "familyAndEntourage": [
-      "Jésus",
-      "Les apôtres",
-      "Marie mère de Jacques",
-      "Jeanne",
-      "Les autres femmes disciples"
-    ],
-    "bibleAccount": [
-      "Jésus la délivre de sept démons.",
-      "Elle soutient Jésus et ses disciples avec ses ressources.",
-      "Elle assiste à son exécution et à son ensevelissement.",
-      "Elle vient au tombeau et devient l’une des premières personnes à voir Jésus ressuscité.",
-      "Elle annonce ensuite la nouvelle aux disciples."
-    ],
-    "qualities": [
-      "Fidélité",
-      "Courage",
-      "Reconnaissance",
-      "Zèle pour témoigner"
-    ],
-    "difficulties": [
-      "Elle reste attachée à Jésus malgré son exécution et doit faire face à la douleur de sa mort."
-    ]
-  },
+  "studyFocus": "Marie Madeleine fut une disciple de Jésus qui l’accompagna et le soutint matériellement. Elle resta proche de Jésus lors de son exécution et fut parmi les premières personnes à constater que son tombeau était vide. Jésus ressuscité lui apparut ensuite et lui confia un message à transmettre aux disciples.",
+  "lessonPoints": [
+    "Marie Madeleine avait été délivrée de sept démons et devint une disciple dévouée.",
+    "Elle continua à suivre Jésus alors que beaucoup avaient peur.",
+    "Sa présence au lieu d’exécution et au tombeau montre sa fidélité.",
+    "Jésus lui confia le privilège d’annoncer aux disciples qu’il était vivant."
+  ],
+  "keyReading": "Luc 8:1-3 ; Matthieu 27:55-61 ; 28:1-10 ; Jean 19:25 ; 20:1-18",
+  "location": "Galilée et Jérusalem, notamment autour du lieu d’exécution et du tombeau de Jésus.",
+  "relationshipWithJehovah": "Sa reconnaissance pour l’aide reçue de Jésus se traduisit par un service fidèle. Elle fut également témoin de la résurrection et transmit le message reçu.",
+  "didYouKnow": "Luc 8:2 précise que sept démons étaient sortis de Marie Madeleine.",
+  "jwResources": [
+    {
+      "title": "Magdalène (Marie la) — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Magdal%C3%A8ne-Marie-la/"
+    },
+    {
+      "title": "Étude perspicace des Écritures — encyclopédie biblique",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+    },
+    {
+      "title": "Marche courageusement avec Dieu — Marie de Magdala",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marie-de-magdala-jai-vu-le-seigneur/"
+    },
+    {
+      "title": "Marche courageusement avec Dieu",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+    }
+  ],
+  "identity": "Marie Madeleine était une disciple fidèle de Jésus, délivrée de sept démons. Elle l’accompagna jusqu’à sa mort et fut l’une des premières personnes à le voir après sa résurrection.",
+  "era": "Ministère terrestre de Jésus et premiers jours après sa résurrection",
+  "familyAndEntourage": [
+    "Jésus",
+    "Les apôtres",
+    "Marie mère de Jacques",
+    "Jeanne",
+    "Les autres femmes disciples"
+  ],
+  "bibleAccount": [
+    "Jésus la délivre de sept démons.",
+    "Elle soutient Jésus et ses disciples avec ses ressources.",
+    "Elle assiste à son exécution et à son ensevelissement.",
+    "Elle vient au tombeau et devient l’une des premières personnes à voir Jésus ressuscité.",
+    "Elle annonce ensuite la nouvelle aux disciples."
+  ],
+  "qualities": [
+    "Fidélité",
+    "Courage",
+    "Reconnaissance",
+    "Zèle pour témoigner"
+  ],
+  "difficulties": [
+    "Elle reste attachée à Jésus malgré son exécution et doit faire face à la douleur de sa mort."
+  ]
+},
   "zacchaeus": {
-    "studyFocus": "Zachée, collecteur d’impôts en chef, a montré par ses actions qu’il voulait réellement changer lorsqu’il a accepté Jésus et corrigé les torts qu’il avait commis.",
-    "lessonPoints": [
-      "Repentance : il a pris des mesures concrètes pour changer.",
-      "Générosité : il a décidé de donner aux pauvres.",
-      "Honnêteté : il a promis de rendre au quadruple ce qu’il avait extorqué."
-    ],
-    "keyReading": "Luc 19:1-10",
-    "location": "Jéricho, au moment où Jésus traversait la ville.",
-    "relationshipWithJehovah": "Son changement ne se limite pas à des paroles: il prend des mesures concrètes concernant son argent et les torts qu’il avait causés. Jésus déclare alors que le salut est venu à cette maison.",
-    "didYouKnow": "Zachée ne promet pas simplement de donner; il annonce une restitution au quadruple aux personnes qu’il a extorquées, mesure particulièrement généreuse.",
-    "jwResources": [
-      {
-        "title": "Zachée — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/zachee/"
-      },
-      {
-        "title": "La Bible — Luc 19",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Zachée était chef des collecteurs d’impôts à Jéricho et riche. Après avoir rencontré Jésus, il manifesta un changement concret dans sa conduite.",
-    "era": "Vers 33 de n. è., peu avant la mort de Jésus",
-    "familyAndEntourage": [
-      "Jésus",
-      "Les habitants de Jéricho",
-      "Sa maisonnée"
-    ],
-    "bibleAccount": [
-      "Il cherche à voir Jésus mais sa petite taille l’en empêche.",
-      "Il monte sur un sycomore pour le voir passer.",
-      "Jésus lui demande de descendre et accepte de loger chez lui.",
-      "Zachée annonce qu’il donnera la moitié de ses biens aux pauvres et rendra au quadruple ce qu’il a extorqué."
-    ],
-    "qualities": [
-      "Détermination",
-      "Générosité",
-      "Repentance concrète"
-    ],
-    "difficulties": [
-      "Comme chef des collecteurs d’impôts, il pouvait être méprisé et associé à des pratiques injustes; il reconnaît lui-même avoir extorqué des personnes."
-    ]
-  },
+  "studyFocus": "Zachée était un chef des collecteurs d’impôts à Jéricho et était riche. Il désirait voir Jésus au point de monter sur un sycomore. Après avoir reçu Jésus avec joie, il annonça des changements concrets dans sa manière d’utiliser son argent et de réparer les torts commis.",
+  "lessonPoints": [
+    "Zachée chercha activement Jésus malgré les obstacles.",
+    "Sa réaction à la visite de Jésus fut joyeuse et personnelle.",
+    "Il annonça volontairement une restitution généreuse aux personnes qu’il avait lésées.",
+    "Jésus montra que le salut pouvait toucher une personne considérée comme pécheresse."
+  ],
+  "keyReading": "Luc 19:1-10",
+  "location": "Jéricho.",
+  "relationshipWithJehovah": "La rencontre avec Jésus provoqua chez Zachée un changement concret de conduite.",
+  "didYouKnow": "Zachée était de petite taille, raison donnée par Luc pour expliquer pourquoi il monta sur un sycomore.",
+  "jwResources": [
+    {
+      "title": "Zachée — Les personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/zachee/"
+    },
+    {
+      "title": "La Bible — Luc 19",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Zachée était chef des collecteurs d’impôts à Jéricho et riche. Après avoir rencontré Jésus, il manifesta un changement concret dans sa conduite.",
+  "era": "Vers 33 de n. è., peu avant la mort de Jésus",
+  "familyAndEntourage": [
+    "Jésus",
+    "Les habitants de Jéricho",
+    "Sa maisonnée"
+  ],
+  "bibleAccount": [
+    "Il cherche à voir Jésus mais sa petite taille l’en empêche.",
+    "Il monte sur un sycomore pour le voir passer.",
+    "Jésus lui demande de descendre et accepte de loger chez lui.",
+    "Zachée annonce qu’il donnera la moitié de ses biens aux pauvres et rendra au quadruple ce qu’il a extorqué."
+  ],
+  "qualities": [
+    "Détermination",
+    "Générosité",
+    "Repentance concrète"
+  ],
+  "difficulties": [
+    "Comme chef des collecteurs d’impôts, il pouvait être méprisé et associé à des pratiques injustes; il reconnaît lui-même avoir extorqué des personnes."
+  ]
+},
   "barnabas": {
     "studyFocus": "Barnabas était un chrétien généreux et encourageant de Chypre. Il soutint Saul après sa conversion et collabora avec Paul dans l’activité missionnaire.",
     "lessonPoints": [
@@ -1544,638 +1549,640 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "cornelius": {
-    "studyFocus": "Corneille était un officier romain qui craignait Dieu, priait régulièrement et faisait des dons de miséricorde. Son récit marque une étape importante dans l’ouverture du christianisme aux non-Juifs.",
-    "lessonPoints": [
-      "Prière : Corneille priait régulièrement et Jéhovah a remarqué sa sincérité.",
-      "Générosité : ses dons de miséricorde étaient connus.",
-      "Réceptivité : lui et les siens ont humblement accepté l’enseignement transmis par Pierre."
-    ],
-    "keyReading": "Actes 10:1-48; 11:1-18",
-    "location": "Césarée, où Corneille résidait dans le cadre de son service militaire.",
-    "relationshipWithJehovah": "Jéhovah remarque ses prières et ses actes de miséricorde. Le cas de Corneille montre que Dieu avait préparé la voie pour que les non-Juifs soient accueillis dans la congrégation chrétienne.",
-    "didYouKnow": "Corneille est le premier non-Juif incirconcis dont la Bible rapporte clairement le baptême chrétien après que l’esprit saint est venu sur lui et sa maisonnée.",
-    "jwResources": [
-      {
-        "title": "Corneille — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/corneille/"
-      },
-      {
-        "title": "La Bible — Actes 10",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Corneille était un centurion romain de Césarée, homme pieux qui craignait Dieu. Il devint le premier non-Juif incirconcis à être baptisé comme chrétien avec l’approbation de Dieu.",
-    "era": "Vers 36 de n. è.",
-    "familyAndEntourage": [
-      "Sa maisonnée",
-      "Pierre",
-      "Un ange de Dieu",
-      "Les six frères juifs qui accompagnent Pierre"
-    ],
-    "bibleAccount": [
-      "Il prie régulièrement et fait beaucoup de dons de miséricorde.",
-      "Un ange lui demande d’envoyer chercher Pierre à Joppé.",
-      "Pierre lui annonce la bonne nouvelle et explique que Dieu n’est partial envers personne.",
-      "L’esprit saint tombe sur Corneille et les non-Juifs présents avant même leur baptême.",
-      "Ils sont baptisés au nom de Jésus Christ."
-    ],
-    "qualities": [
-      "Piété",
-      "Générosité",
-      "Humilité",
-      "Réceptivité"
-    ],
-    "difficulties": [
-      "Il devait accepter des changements importants concernant ses relations religieuses avec les Juifs et comprendre que Dieu accueillait désormais aussi les non-Juifs incirconcis."
-    ]
-  },
+  "studyFocus": "Corneille était un centurion romain décrit comme pieux et craignant Dieu. Jéhovah dirigea les événements pour que Pierre lui annonce la bonne nouvelle. Corneille et les personnes réunies chez lui reçurent l’esprit saint, marquant l’ouverture de cette possibilité aux non-Juifs incirconcis.",
+  "lessonPoints": [
+    "Corneille priait régulièrement et donnait beaucoup aux nécessiteux.",
+    "Il réagit immédiatement à la direction reçue par l’intermédiaire de l’ange.",
+    "Il réunit famille et proches pour entendre Pierre.",
+    "Son cas a aidé Pierre à comprendre que Dieu n’est pas partial."
+  ],
+  "keyReading": "Actes 10:1-48 ; 11:1-18",
+  "location": "Césarée, dans la maison de Corneille.",
+  "relationshipWithJehovah": "Jéhovah remarqua ses prières et ses actes de bonté, puis dirigea Corneille vers la bonne nouvelle par Pierre.",
+  "didYouKnow": "Corneille était centurion de la troupe italienne et sa conversion est le premier récit détaillé de l’accueil d’un non-Juif incirconcis dans la congrégation chrétienne.",
+  "jwResources": [
+    {
+      "title": "Corneille — Les personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/corneille/"
+    },
+    {
+      "title": "La Bible — Actes 10",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Corneille était un centurion romain de Césarée, homme pieux qui craignait Dieu. Il devint le premier non-Juif incirconcis à être baptisé comme chrétien avec l’approbation de Dieu.",
+  "era": "Vers 36 de n. è.",
+  "familyAndEntourage": [
+    "Sa maisonnée",
+    "Pierre",
+    "Un ange de Dieu",
+    "Les six frères juifs qui accompagnent Pierre"
+  ],
+  "bibleAccount": [
+    "Il prie régulièrement et fait beaucoup de dons de miséricorde.",
+    "Un ange lui demande d’envoyer chercher Pierre à Joppé.",
+    "Pierre lui annonce la bonne nouvelle et explique que Dieu n’est partial envers personne.",
+    "L’esprit saint tombe sur Corneille et les non-Juifs présents avant même leur baptême.",
+    "Ils sont baptisés au nom de Jésus Christ."
+  ],
+  "qualities": [
+    "Piété",
+    "Générosité",
+    "Humilité",
+    "Réceptivité"
+  ],
+  "difficulties": [
+    "Il devait accepter des changements importants concernant ses relations religieuses avec les Juifs et comprendre que Dieu accueillait désormais aussi les non-Juifs incirconcis."
+  ]
+},
   "hagar": {
-    "studyFocus": "Agar était une servante égyptienne de Sara et la mère d’Yishmaël. Son histoire comprend deux moments où elle se retrouve dans le désert et reçoit une aide ou une direction de la part de Jéhovah.",
-    "lessonPoints": [
-      "Observer ce qui s’est passé entre Agar et Sara après la grossesse d’Agar.",
-      "Étudier l’instruction de l’ange de Jéhovah près de la source sur le chemin de Shour.",
-      "Examiner le récit du renvoi d’Agar et d’Yishmaël et la manière dont Dieu a répondu à leur détresse.",
-      "Ne pas attribuer à Agar des intentions que le texte biblique ne précise pas."
-    ],
-    "keyReading": "Genèse 16:1-16; 21:8-21",
-    "location": "Égypte à l’origine ; source près du chemin de Shour ; désert de Béer-Shéba ; désert de Paran.",
-    "relationshipWithJehovah": "Jéhovah remarque sa détresse, lui parle personnellement et entend plus tard les appels d’Ismaël. Le récit montre l’attention de Dieu envers une personne vulnérable.",
-    "didYouKnow": "Agar est la première femme à laquelle la Bible rapporte que l’ange de Jéhovah a parlé directement.",
-    "jwResources": [
-      {
-        "title": "Agar — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Agar/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Agar était une servante égyptienne de Sara, devenue la mère d’Ismaël après avoir eu un fils d’Abraham.",
-    "era": "XIXe-XVIIIe siècle av. n. è. environ",
-    "familyAndEntourage": [
-      "Sara",
-      "Abraham",
-      "Ismaël"
-    ],
-    "bibleAccount": [
-      "Sara lui donne à Abraham comme femme pour avoir un enfant.",
-      "Enceinte, Agar méprise Sara et s’enfuit après avoir été maltraitée.",
-      "L’ange de Jéhovah la rencontre près d’une source et lui demande de retourner auprès de Sara.",
-      "Elle donne naissance à Ismaël.",
-      "Plus tard, elle et Ismaël sont renvoyés, mais Dieu entend les appels du garçon."
-    ],
-    "qualities": [
-      "Endurance",
-      "Capacité à reconnaître l’intervention de Dieu"
-    ],
-    "difficulties": [
-      "Elle subit une situation familiale douloureuse, commet elle-même une erreur en méprisant Sara, puis doit vivre le renvoi avec son fils."
-    ]
-  },
+  "studyFocus": "Agar était une servante égyptienne de Sara et la mère d’Ismaël. Sa vie fut marquée par les tensions familiales, la fuite dans le désert et un retour sur instruction de l’ange de Jéhovah. Elle connut aussi une seconde détresse lorsque son fils Ismaël fut renvoyé avec elle.",
+  "lessonPoints": [
+    "Agar fut prise dans une situation familiale qu’elle ne contrôlait pas entièrement.",
+    "Dans le désert, l’ange de Jéhovah lui donna une direction et une promesse concernant son fils.",
+    "Elle donna à Jéhovah un nom exprimant qu’il avait vu sa détresse.",
+    "Son histoire montre que Jéhovah voit les personnes vulnérables."
+  ],
+  "keyReading": "Genèse 16:1-16 ; 21:8-21 ; Galates 4:21-31",
+  "location": "La maison d’Abraham en Canaan et le désert de Shour.",
+  "relationshipWithJehovah": "Jéhovah remarqua sa situation, lui parla par l’intermédiaire de son ange et pourvut aux besoins d’elle et d’Ismaël dans le désert.",
+  "didYouKnow": "Agar appela Jéhovah « un Dieu qui voit », après avoir constaté qu’il avait prêté attention à sa détresse.",
+  "jwResources": [
+    {
+      "title": "Agar — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Agar/"
+    },
+    {
+      "title": "La Bible en ligne — Traduction du monde nouveau",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Agar était une servante égyptienne de Sara, devenue la mère d’Ismaël après avoir eu un fils d’Abraham.",
+  "era": "XIXe-XVIIIe siècle av. n. è. environ",
+  "familyAndEntourage": [
+    "Sara",
+    "Abraham",
+    "Ismaël"
+  ],
+  "bibleAccount": [
+    "Sara lui donne à Abraham comme femme pour avoir un enfant.",
+    "Enceinte, Agar méprise Sara et s’enfuit après avoir été maltraitée.",
+    "L’ange de Jéhovah la rencontre près d’une source et lui demande de retourner auprès de Sara.",
+    "Elle donne naissance à Ismaël.",
+    "Plus tard, elle et Ismaël sont renvoyés, mais Dieu entend les appels du garçon."
+  ],
+  "qualities": [
+    "Endurance",
+    "Capacité à reconnaître l’intervention de Dieu"
+  ],
+  "difficulties": [
+    "Elle subit une situation familiale douloureuse, commet elle-même une erreur en méprisant Sara, puis doit vivre le renvoi avec son fils."
+  ]
+},
   "leah": {
-    "studyFocus": "Léa, fille aînée de Labân, devient la première femme de Jacob. Son récit permet d’étudier sa place dans la famille de Jacob et le rôle de ses enfants dans l’histoire d’Israël.",
-    "lessonPoints": [
-      "Labân donne Léa à Jacob à la place de Rachel après les sept années de service de Jacob.",
-      "Jacob aime Rachel davantage, mais Léa devient la mère de plusieurs fils et de Dina.",
-      "Ses fils comprennent Ruben, Siméon, Lévi, Juda, Issakar et Zéboulôn.",
-      "Lévi devient l’ancêtre de la tribu sacerdotale et Juda celui de la tribu royale.",
-      "Léa est mentionnée avec Rachel comme ayant contribué à bâtir la maison d’Israël."
-    ],
-    "keyReading": "Genèse 29:16-35; 30:14-21; 31:4-18; 49:29-33",
-    "location": "Paddân-Aram puis Canaan ; elle est enterrée dans la grotte de Makpéla.",
-    "relationshipWithJehovah": "Plusieurs noms qu’elle donne à ses fils montrent qu’elle associe ses expériences familiales à Jéhovah et qu’elle le remercie notamment après la naissance de Juda.",
-    "didYouKnow": "Léa est la mère de Lévi et de Juda, ancêtres respectivement de la tribu sacerdotale et de la tribu royale d’Israël.",
-    "jwResources": [
-      {
-        "title": "Léa — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/L%C3%A9a/"
-      },
-      {
-        "title": "La Bible — Genèse 29-31",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Ruth 4:11",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Léa était la fille aînée de Labân, première femme de Jacob et mère de six des douze fils de Jacob ainsi que de Dina.",
-    "era": "XIXe-XVIIIe siècle av. n. è. environ",
-    "familyAndEntourage": [
-      "Labân",
-      "Jacob",
-      "Rachel",
-      "Ruben",
-      "Siméon",
-      "Lévi",
-      "Juda",
-      "Issakar",
-      "Zéboulôn",
-      "Dina"
-    ],
-    "bibleAccount": [
-      "Labân donne Léa à Jacob à la place de Rachel.",
-      "Elle a plusieurs fils et une fille avec Jacob.",
-      "Elle exprime à plusieurs reprises ses sentiments liés à l’amour de Jacob pour Rachel.",
-      "Elle quitte Paddân-Aram avec Jacob et sa famille."
-    ],
-    "qualities": [
-      "Endurance",
-      "Attachement à sa famille",
-      "Reconnaissance envers Jéhovah"
-    ],
-    "difficulties": [
-      "Elle vit dans un mariage où elle sait que Jacob aime davantage Rachel et connaît une rivalité familiale douloureuse."
-    ]
-  },
+  "studyFocus": "Léa était la fille de Labân et la première épouse de Jacob, donnée à Jacob dans une situation qu’il n’avait pas prévue. Elle connut une vie conjugale difficile, mais la Bible montre qu’elle eut de nombreux enfants et qu’elle donna plusieurs noms à ses fils en lien avec ses sentiments et sa relation avec Jéhovah.",
+  "lessonPoints": [
+    "Léa vécut dans une situation affective douloureuse et chercha du réconfort auprès de Jéhovah.",
+    "Les noms de plusieurs de ses fils révèlent ses émotions et son désir d’être aimée.",
+    "Elle donna naissance à six fils et à une fille, Dina.",
+    "Juda, l’un de ses fils, devint un ancêtre de David et de Jésus selon les généalogies bibliques."
+  ],
+  "keyReading": "Genèse 29:16-35 ; 30:1-21 ; 49:29-33",
+  "location": "Paddân-Aram puis Canaan.",
+  "relationshipWithJehovah": "Le récit montre que Jéhovah vit que Léa n’était pas aimée et lui permit d’avoir des enfants; elle reconnut aussi Jéhovah dans les noms qu’elle choisit.",
+  "didYouKnow": "Léa est la mère de Juda, ancêtre de David et de Jésus selon les généalogies bibliques.",
+  "jwResources": [
+    {
+      "title": "Léa — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/L%C3%A9a/"
+    },
+    {
+      "title": "La Bible — Genèse 29-31",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Ruth 4:11",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Léa était la fille aînée de Labân, première femme de Jacob et mère de six des douze fils de Jacob ainsi que de Dina.",
+  "era": "XIXe-XVIIIe siècle av. n. è. environ",
+  "familyAndEntourage": [
+    "Labân",
+    "Jacob",
+    "Rachel",
+    "Ruben",
+    "Siméon",
+    "Lévi",
+    "Juda",
+    "Issakar",
+    "Zéboulôn",
+    "Dina"
+  ],
+  "bibleAccount": [
+    "Labân donne Léa à Jacob à la place de Rachel.",
+    "Elle a plusieurs fils et une fille avec Jacob.",
+    "Elle exprime à plusieurs reprises ses sentiments liés à l’amour de Jacob pour Rachel.",
+    "Elle quitte Paddân-Aram avec Jacob et sa famille."
+  ],
+  "qualities": [
+    "Endurance",
+    "Attachement à sa famille",
+    "Reconnaissance envers Jéhovah"
+  ],
+  "difficulties": [
+    "Elle vit dans un mariage où elle sait que Jacob aime davantage Rachel et connaît une rivalité familiale douloureuse."
+  ]
+},
   "esau": {
-    "studyFocus": "Ésaü est le premier-né d’Isaac et le frère jumeau de Jacob. Son récit permet d’examiner la valeur accordée aux choses spirituelles, la maîtrise de soi et la réconciliation.",
-    "lessonPoints": [
-      "Il vend son droit d’aînesse contre un repas alors qu’il est affamé.",
-      "Il perd ensuite la bénédiction que son père destinait au premier-né.",
-      "Il devient l’ancêtre des Édomites.",
-      "Plus tard, il rencontre Jacob et l’accueille sans chercher à se venger.",
-      "Hébreux 12:16 utilise son exemple pour mettre en garde contre le fait de ne pas apprécier les choses sacrées."
-    ],
-    "keyReading": "Genèse 25:24-34; 26:34-35; 27:30-45; 33:1-16; Hébreux 12:16-17",
-    "location": "Canaan, notamment la région de Séïr et les territoires d’Édom associés à ses descendants.",
-    "relationshipWithJehovah": "Le récit montre surtout qu’Ésaü a sous-estimé les choses spirituelles. Son comportement envers son droit d’aînesse contraste avec la valeur que Jéhovah accordait à la promesse faite à la famille d’Abraham.",
-    "didYouKnow": "Ésaü avait déjà des enfants lorsque Jacob revint de Paddân-Aram, et il s’était établi dans la région montagneuse de Séïr, devenue le pays d’Édom.",
-    "jwResources": [
-      {
-        "title": "Ésaü — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89sa%C3%BC/"
-      },
-      {
-        "title": "La Bible — Genèse 25-33",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Hébreux 12:16",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Ésaü était le fils aîné d’Isaac et de Rébecca, frère jumeau de Jacob et ancêtre des Édomites.",
-    "era": "1858 av. n. è. pour sa naissance; époque des patriarches",
-    "familyAndEntourage": [
-      "Isaac",
-      "Rébecca",
-      "Jacob",
-      "Ses femmes et ses fils"
-    ],
-    "bibleAccount": [
-      "Il vend son droit d’aînesse pour un plat de lentilles.",
-      "Il épouse des femmes hittites qui attristent Isaac et Rébecca.",
-      "Il nourrit de la rancœur contre Jacob après la bénédiction paternelle.",
-      "Plus tard, il rencontre Jacob avec 400 hommes mais accepte finalement la réconciliation."
-    ],
-    "qualities": [
-      "Énergie",
-      "Capacité à pardonner dans sa rencontre avec Jacob"
-    ],
-    "difficulties": [
-      "Il méprise son droit d’aînesse et prend des décisions matrimoniales qui causent du chagrin à ses parents. Sa colère contre Jacob le conduit à vouloir le tuer."
-    ]
-  },
+  "studyFocus": "Ésaü, frère jumeau de Jacob, était un chasseur habile et le fils préféré d’Isaac. Il vendit son droit d’aînesse pour un repas et perdit ensuite la bénédiction destinée à l’aîné. Malgré un conflit sérieux avec Jacob, il finit par se réconcilier avec lui.",
+  "lessonPoints": [
+    "Ésaü accorda une valeur immédiate à la nourriture et sous-estima son droit d’aînesse.",
+    "Ses mariages avec des femmes du pays causèrent du chagrin à Isaac et Rébecca.",
+    "Lorsqu’il retrouva Jacob, il courut à sa rencontre et l’embrassa.",
+    "Son histoire oppose les choix spirituels à la recherche d’une satisfaction immédiate."
+  ],
+  "keyReading": "Genèse 25:27-34 ; 26:34-35 ; 27:1-46 ; 32:3-23 ; 33:1-16 ; Hébreux 12:16,17",
+  "location": "Canaan, notamment la région de Séïr et d’Édom.",
+  "relationshipWithJehovah": "Hébreux 12:16-17 utilise son exemple pour mettre en garde contre le fait de mépriser les choses sacrées.",
+  "didYouKnow": "Ésaü reçut aussi le nom Édom, « Rouge », en rapport avec l’épisode du plat de lentilles.",
+  "jwResources": [
+    {
+      "title": "Ésaü — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89sa%C3%BC/"
+    },
+    {
+      "title": "La Bible — Genèse 25-33",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Hébreux 12:16",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Ésaü était le fils aîné d’Isaac et de Rébecca, frère jumeau de Jacob et ancêtre des Édomites.",
+  "era": "1858 av. n. è. pour sa naissance; époque des patriarches",
+  "familyAndEntourage": [
+    "Isaac",
+    "Rébecca",
+    "Jacob",
+    "Ses femmes et ses fils"
+  ],
+  "bibleAccount": [
+    "Il vend son droit d’aînesse pour un plat de lentilles.",
+    "Il épouse des femmes hittites qui attristent Isaac et Rébecca.",
+    "Il nourrit de la rancœur contre Jacob après la bénédiction paternelle.",
+    "Plus tard, il rencontre Jacob avec 400 hommes mais accepte finalement la réconciliation."
+  ],
+  "qualities": [
+    "Énergie",
+    "Capacité à pardonner dans sa rencontre avec Jacob"
+  ],
+  "difficulties": [
+    "Il méprise son droit d’aînesse et prend des décisions matrimoniales qui causent du chagrin à ses parents. Sa colère contre Jacob le conduit à vouloir le tuer."
+  ]
+},
   "melchizedek": {
-    "studyFocus": "Melkisédec, roi de Salem et prêtre du Dieu Très-Haut, apparaît brièvement dans la Genèse mais joue un rôle important dans l’explication biblique de la fonction sacerdotale de Jésus.",
-    "lessonPoints": [
-      "Vénération pour Jéhovah : Melkisédec est présenté comme prêtre du Dieu Très-Haut.",
-      "Bénédiction : il a béni Abraham après sa victoire.",
-      "Valeur du modèle : son rôle aide à comprendre pourquoi Jésus est présenté comme prêtre « à la manière de Melkisédec »."
-    ],
-    "keyReading": "Genèse 14:17-24; Psaume 110:1-4; Hébreux 7:1-17",
-    "location": "Salem, probablement associée à l’ancienne Jérusalem, et la Basse Plaine de Shavé lors de sa rencontre avec Abraham.",
-    "relationshipWithJehovah": "Il est explicitement appelé prêtre du Dieu Très-Haut et prononce une bénédiction qui reconnaît Jéhovah comme le Créateur et Celui qui a donné la victoire.",
-    "didYouKnow": "Melkisédec est le premier prêtre mentionné dans les Écritures; son absence de généalogie est précisément ce qui permet à Hébreux de l’utiliser comme modèle prophétique du sacerdoce du Christ.",
-    "jwResources": [
-      {
-        "title": "Melkisédec — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Melkis%C3%A9dec/"
-      },
-      {
-        "title": "La Bible — Genèse 14",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "La Bible — Hébreux 5-7",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Melkisédec était roi de Salem et prêtre du Dieu Très-Haut, Jéhovah. Il bénit Abraham après sa victoire sur des rois ennemis.",
-    "era": "Avant 1933 av. n. è.",
-    "familyAndEntourage": [
-      "Abraham",
-      "Jéhovah"
-    ],
-    "bibleAccount": [
-      "Il rencontre Abraham après la bataille contre Kedorlaomer et ses alliés.",
-      "Il apporte du pain et du vin.",
-      "Il bénit Abraham au nom du Dieu Très-Haut.",
-      "Abraham lui donne le dixième du butin."
-    ],
-    "qualities": [
-      "Foi",
-      "Service sacerdotal",
-      "Bénédiction"
-    ],
-    "difficulties": [
-      "Les Écritures ne donnent presque aucun détail biographique sur lui, notamment aucune généalogie."
-    ]
-  },
+  "studyFocus": "Melkisédec était roi de Salem et prêtre du Dieu Très-Haut à l’époque d’Abraham. Il bénit Abraham après sa victoire et lui apporta du pain et du vin. Psaume 110 et Hébreux 7 utilisent son personnage pour expliquer le rôle sacerdotal du Messie.",
+  "lessonPoints": [
+    "Melkisédec réunissait les fonctions de roi et de prêtre du Dieu Très-Haut.",
+    "Il bénit Abraham et attribua la victoire à Jéhovah.",
+    "Abraham lui donna le dixième de tout le butin.",
+    "Hébreux 7 utilise Melkisédec comme figure du sacerdoce supérieur de Jésus."
+  ],
+  "keyReading": "Genèse 14:17-24 ; Psaume 110:1-4 ; Hébreux 5:5-10 ; 7:1-28",
+  "location": "Salem, généralement identifiée à l’ancienne Jérusalem.",
+  "relationshipWithJehovah": "Il est explicitement appelé « prêtre du Dieu Très-Haut » et invoque Jéhovah comme Créateur du ciel et de la terre.",
+  "didYouKnow": "Melkisédec signifie « Roi de justice », et il était aussi roi de Salem, nom associé à la paix.",
+  "jwResources": [
+    {
+      "title": "Melkisédec — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Melkis%C3%A9dec/"
+    },
+    {
+      "title": "La Bible — Genèse 14",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "La Bible — Hébreux 5-7",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Melkisédec était roi de Salem et prêtre du Dieu Très-Haut, Jéhovah. Il bénit Abraham après sa victoire sur des rois ennemis.",
+  "era": "Avant 1933 av. n. è.",
+  "familyAndEntourage": [
+    "Abraham",
+    "Jéhovah"
+  ],
+  "bibleAccount": [
+    "Il rencontre Abraham après la bataille contre Kedorlaomer et ses alliés.",
+    "Il apporte du pain et du vin.",
+    "Il bénit Abraham au nom du Dieu Très-Haut.",
+    "Abraham lui donne le dixième du butin."
+  ],
+  "qualities": [
+    "Foi",
+    "Service sacerdotal",
+    "Bénédiction"
+  ],
+  "difficulties": [
+    "Les Écritures ne donnent presque aucun détail biographique sur lui, notamment aucune généalogie."
+  ]
+},
   "jethro": {
-    "studyFocus": "Jéthro, prêtre de Madian et beau-père de Moïse, a donné à Moïse un conseil pratique qui l’a aidé à mieux assumer ses responsabilités.",
-    "lessonPoints": [
-      "Sagesse pratique : Jéthro a proposé une organisation qui répartissait les responsabilités.",
-      "Humilité : Moïse a accepté un conseil utile venant de son beau-père.",
-      "Intérêt pour les autres : Jéthro s’est réjoui de ce que Jéhovah avait fait pour Israël."
-    ],
-    "keyReading": "Exode 2:15-22; 3:1; 18:1-27",
-    "location": "Madian et le désert du Sinaï.",
-    "relationshipWithJehovah": "Après avoir entendu ce que Jéhovah avait fait pour Israël, Jéthro le reconnaît comme supérieur aux autres dieux et offre un sacrifice avec les anciens d’Israël.",
-    "didYouKnow": "Jéthro observe que Moïse risque de s’épuiser en jugeant seul le peuple et lui recommande de choisir des hommes capables pour partager cette charge.",
-    "jwResources": [
-      {
-        "title": "Jéthro — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Jéthro était prêtre de Madiân et beau-père de Moïse. Il accueillit Moïse, lui donna Séphora pour femme et lui conseilla plus tard d’organiser la direction du peuple.",
-    "era": "XVIe-XVe siècle av. n. è.",
-    "familyAndEntourage": [
-      "Séphora",
-      "Moïse",
-      "Les fils de Moïse"
-    ],
-    "bibleAccount": [
-      "Il accueille Moïse après sa fuite d’Égypte.",
-      "Il donne Séphora en mariage à Moïse.",
-      "Il entend le récit de la délivrance d’Israël et reconnaît la grandeur de Jéhovah.",
-      "Il conseille à Moïse de déléguer certaines responsabilités judiciaires."
-    ],
-    "qualities": [
-      "Hospitalité",
-      "Sagesse pratique",
-      "Humilité"
-    ],
-    "difficulties": [
-      "Il doit intégrer la situation de sa famille après le départ de Moïse et discerner comment aider sans prendre sa place."
-    ]
-  },
+  "studyFocus": "Jéthro, prêtre de Madian et beau-père de Moïse, accueillit Moïse pendant son exil à Madian. Plus tard, il se réjouit de ce que Jéhovah avait fait pour Israël et conseilla à Moïse de déléguer certaines responsabilités judiciaires à des hommes capables.",
+  "lessonPoints": [
+    "Jéthro accueillit Moïse et lui donna un cadre familial après sa fuite d’Égypte.",
+    "Il reconnut les actions de Jéhovah après avoir entendu le récit de la délivrance d’Israël.",
+    "Son conseil visait à éviter l’épuisement de Moïse et à organiser la justice.",
+    "Il savait reconnaître les qualités nécessaires chez ceux à qui l’on confie des responsabilités."
+  ],
+  "keyReading": "Exode 2:15-22 ; 3:1 ; 18:1-27 ; Nombres 10:29-32",
+  "location": "Madian, puis le camp d’Israël près du mont Sinaï.",
+  "relationshipWithJehovah": "Après avoir entendu le récit de la délivrance, Jéthro déclara que Jéhovah était plus grand que tous les autres dieux et offrit un sacrifice.",
+  "didYouKnow": "Jéthro était le beau-père de Moïse et le père de Séphora; son autre nom, Réouël, apparaît également dans le récit biblique.",
+  "jwResources": [
+    {
+      "title": "Jéthro — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+    },
+    {
+      "title": "La Bible en ligne",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Les personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Jéthro était prêtre de Madiân et beau-père de Moïse. Il accueillit Moïse, lui donna Séphora pour femme et lui conseilla plus tard d’organiser la direction du peuple.",
+  "era": "XVIe-XVe siècle av. n. è.",
+  "familyAndEntourage": [
+    "Séphora",
+    "Moïse",
+    "Les fils de Moïse"
+  ],
+  "bibleAccount": [
+    "Il accueille Moïse après sa fuite d’Égypte.",
+    "Il donne Séphora en mariage à Moïse.",
+    "Il entend le récit de la délivrance d’Israël et reconnaît la grandeur de Jéhovah.",
+    "Il conseille à Moïse de déléguer certaines responsabilités judiciaires."
+  ],
+  "qualities": [
+    "Hospitalité",
+    "Sagesse pratique",
+    "Humilité"
+  ],
+  "difficulties": [
+    "Il doit intégrer la situation de sa famille après le départ de Moïse et discerner comment aider sans prendre sa place."
+  ]
+},
   "zipporah": {
-    "studyFocus": "Tsippora, femme de Moïse, a joué un rôle dans sa famille et a agi rapidement dans une situation grave liée à la circoncision de leur fils.",
-    "lessonPoints": [
-      "Réactivité : Tsippora a agi sans tarder lorsqu’une situation urgente l’exigeait.",
-      "Famille : son récit rappelle l’importance de prendre au sérieux les responsabilités familiales.",
-      "Respect des exigences de Jéhovah : l’épisode souligne la gravité de ses commandements."
-    ],
-    "keyReading": "Exode 2:16-22; 4:18-26; 18:1-12",
-    "location": "Madian et le camp d’Israël dans le désert.",
-    "relationshipWithJehovah": "Son intervention lors de l’incident de la circoncision montre qu’elle comprend l’importance de respecter l’alliance de Jéhovah même dans une situation très tendue.",
-    "didYouKnow": "Séphora circoncit son fils elle-même avec un silex et le récit montre que son intervention est immédiatement suivie par la fin du danger qui menaçait Moïse.",
-    "jwResources": [
-      {
-        "title": "Séphora — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/sephora/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Séphora était la fille de Jéthro, l’épouse de Moïse et la mère de ses fils Guershom et Éliézer.",
-    "era": "XVIe-XVe siècle av. n. è.",
-    "familyAndEntourage": [
-      "Jéthro",
-      "Moïse",
-      "Guershom",
-      "Éliézer"
-    ],
-    "bibleAccount": [
-      "Elle rencontre Moïse près d’un puits de Madiân.",
-      "Elle devient son épouse et lui donne des fils.",
-      "Lors du voyage vers l’Égypte, elle circoncit son fils dans une situation urgente et empêche ainsi une sanction divine contre Moïse.",
-      "Elle est ensuite renvoyée chez Jéthro puis retrouve Moïse avec leurs fils."
-    ],
-    "qualities": [
-      "Réactivité",
-      "Courage",
-      "Respect des exigences divines"
-    ],
-    "difficulties": [
-      "Elle doit agir rapidement dans une situation familiale grave où la vie de son mari est menacée à cause du non-respect d’une exigence divine concernant leur fils."
-    ]
-  },
+  "studyFocus": "Séphora était l’épouse de Moïse et la fille de Jéthro. Elle accompagna Moïse dans sa vie à Madian puis dans son retour vers l’Égypte. Un épisode bref montre qu’elle prit rapidement une décision concernant la circoncision de leur fils lorsque Jéhovah exigea que la situation soit réglée.",
+  "lessonPoints": [
+    "Séphora partagea avec Moïse une vie marquée par des déplacements et des responsabilités difficiles.",
+    "Elle appartenait à une famille qui accueillit Moïse à Madian.",
+    "Lors d’une crise sur le chemin de l’Égypte, elle agit rapidement pour régler la question de la circoncision de son fils.",
+    "Le récit rappelle l’importance de prendre au sérieux les exigences de Jéhovah."
+  ],
+  "keyReading": "Exode 2:16-22 ; 4:18-26 ; 18:1-6",
+  "location": "Madian, puis sur la route entre Madian et l’Égypte.",
+  "relationshipWithJehovah": "La Bible ne rapporte pas beaucoup de détails sur sa spiritualité personnelle, mais son intervention dans Exode 4 montre qu’elle a compris l’urgence de respecter l’alliance de la circoncision.",
+  "didYouKnow": "Séphora était l’une des sept filles de Jéthro qui faisaient paître les troupeaux de leur père.",
+  "jwResources": [
+    {
+      "title": "Séphora — Les personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/sephora/"
+    },
+    {
+      "title": "La Bible en ligne",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Séphora était la fille de Jéthro, l’épouse de Moïse et la mère de ses fils Guershom et Éliézer.",
+  "era": "XVIe-XVe siècle av. n. è.",
+  "familyAndEntourage": [
+    "Jéthro",
+    "Moïse",
+    "Guershom",
+    "Éliézer"
+  ],
+  "bibleAccount": [
+    "Elle rencontre Moïse près d’un puits de Madiân.",
+    "Elle devient son épouse et lui donne des fils.",
+    "Lors du voyage vers l’Égypte, elle circoncit son fils dans une situation urgente et empêche ainsi une sanction divine contre Moïse.",
+    "Elle est ensuite renvoyée chez Jéthro puis retrouve Moïse avec leurs fils."
+  ],
+  "qualities": [
+    "Réactivité",
+    "Courage",
+    "Respect des exigences divines"
+  ],
+  "difficulties": [
+    "Elle doit agir rapidement dans une situation familiale grave où la vie de son mari est menacée à cause du non-respect d’une exigence divine concernant leur fils."
+  ]
+},
   "korah": {
-    "studyFocus": "Coré, Lévite de la famille de Qehath, conteste l’autorité de Moïse et d’Aaron avec d’autres hommes. Son récit est un avertissement contre l’ambition et la contestation d’une disposition divine.",
-    "lessonPoints": [
-      "Il possède déjà des privilèges de service comme Lévite.",
-      "Il rassemble des hommes influents contre Moïse et Aaron.",
-      "Moïse laisse Jéhovah montrer qui a été choisi.",
-      "La rébellion entraîne un jugement sévère.",
-      "Des descendants de Coré continueront pourtant à servir fidèlement."
-    ],
-    "keyReading": "Nombres 16:1-35; 26:9-11; Psaume 42:1-11",
-    "location": "Le camp d’Israël dans le désert.",
-    "relationshipWithJehovah": "Qorah avait une position de service parmi les Lévites, mais il n’a pas respecté la manière dont Jéhovah avait organisé les responsabilités. Son récit met en garde contre la recherche d’une position.",
-    "didYouKnow": "Les fils de Qorah ne moururent pas avec lui et leurs descendants devinrent plus tard connus pour leurs fonctions de chantres et de gardiens au sanctuaire.",
-    "jwResources": [
-      {
-        "title": "Coré — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/core/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Qorah était un Lévite, cousin de Moïse et d’Aaron, qui contesta leur autorité avec Dathan, Abiram et 250 autres hommes.",
-    "era": "XVIe-XVe siècle av. n. è.",
-    "familyAndEntourage": [
-      "Amram",
-      "Moïse",
-      "Aaron",
-      "Dathan",
-      "Abiram",
-      "Les 250 hommes"
-    ],
-    "bibleAccount": [
-      "Il accuse Moïse et Aaron de s’élever au-dessus de la congrégation.",
-      "Moïse propose une épreuve devant Jéhovah.",
-      "Jéhovah fait connaître son jugement et Qorah ainsi que les principaux rebelles meurent.",
-      "Ses fils ne meurent pas avec lui et continuent d’exister comme famille lévitique."
-    ],
-    "qualities": [
-      "Zèle religieux mal orienté"
-    ],
-    "difficulties": [
-      "Il laisse l’ambition et le mécontentement l’amener à contester une disposition que Jéhovah avait établie."
-    ]
-  },
+  "studyFocus": "Qorah était un Lévite et un proche parent de Moïse et d’Aaron. Il participa à une rébellion contre l’autorité établie par Jéhovah, avec Dathan, Abiram et d’autres hommes. Son histoire montre comment l’ambition et la contestation peuvent conduire à mépriser les dispositions divines.",
+  "lessonPoints": [
+    "Qorah occupait déjà une fonction honorable parmi les Lévites mais désirait davantage de pouvoir.",
+    "Il entraîna 250 hommes dans une contestation publique de Moïse et d’Aaron.",
+    "Moïse laissa à Jéhovah le soin de montrer qui avait été choisi pour le service sacerdotal.",
+    "Son histoire rappelle qu’une fonction spirituelle ne doit pas devenir un moyen de satisfaire l’ambition personnelle."
+  ],
+  "keyReading": "Nombres 16:1-50 ; 26:9-11 ; Psaume 106:16-18 ; Jude 11",
+  "location": "Camp d’Israël dans le désert, après la sortie d’Égypte.",
+  "relationshipWithJehovah": "Qorah prétendait défendre la sainteté de toute l’assemblée, mais il contestait une disposition que Jéhovah avait établie concernant Moïse et Aaron.",
+  "didYouKnow": "Nombres 26:11 précise que les fils de Qorah ne moururent pas, et leurs descendants furent ensuite associés au service musical du sanctuaire.",
+  "jwResources": [
+    {
+      "title": "Coré — Les personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/core/"
+    },
+    {
+      "title": "La Bible en ligne",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Qorah était un Lévite, cousin de Moïse et d’Aaron, qui contesta leur autorité avec Dathan, Abiram et 250 autres hommes.",
+  "era": "XVIe-XVe siècle av. n. è.",
+  "familyAndEntourage": [
+    "Amram",
+    "Moïse",
+    "Aaron",
+    "Dathan",
+    "Abiram",
+    "Les 250 hommes"
+  ],
+  "bibleAccount": [
+    "Il accuse Moïse et Aaron de s’élever au-dessus de la congrégation.",
+    "Moïse propose une épreuve devant Jéhovah.",
+    "Jéhovah fait connaître son jugement et Qorah ainsi que les principaux rebelles meurent.",
+    "Ses fils ne meurent pas avec lui et continuent d’exister comme famille lévitique."
+  ],
+  "qualities": [
+    "Zèle religieux mal orienté"
+  ],
+  "difficulties": [
+    "Il laisse l’ambition et le mécontentement l’amener à contester une disposition que Jéhovah avait établie."
+  ]
+},
   "balaam": {
-    "studyFocus": "Balaam est sollicité par Balak pour maudire Israël. Jéhovah empêche cette malédiction et Balaam prononce au contraire des déclarations prophétiques sur Israël.",
-    "lessonPoints": [
-      "Balak lui propose une récompense.",
-      "Jéhovah limite ce que Balaam peut dire.",
-      "L’ânesse voit l’ange de Jéhovah sur le chemin.",
-      "Balaam prononce plusieurs déclarations favorables à Israël.",
-      "Les Écritures dénoncent ensuite son amour de la récompense injuste."
-    ],
-    "keyReading": "Nombres 22:1-41; 23:1-30; 24:1-25; 31:8,16; 2 Pierre 2:15",
-    "location": "Péthor puis les hauteurs de Moab.",
-    "relationshipWithJehovah": "Balaam sait qu’il ne peut dire que ce que Jéhovah permet, mais son amour de la récompense finit par le détourner. Les Écritures le citent comme exemple d’un homme qui a aimé le salaire de la malfaisance.",
-    "didYouKnow": "Jéhovah fit parler l’ânesse de Balaam, un épisode unique dans la Bible où un animal domestique intervient de manière surnaturelle pour empêcher une faute.",
-    "jwResources": [
-      {
-        "title": "Balaam — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Balaam était un homme de Mésopotamie que Balak engagea pour maudire Israël. Jéhovah l’empêcha finalement de prononcer une malédiction contre son peuple.",
-    "era": "Époque de l’entrée d’Israël en Terre promise, vers 1473 av. n. è.",
-    "familyAndEntourage": [
-      "Balak",
-      "Les princes de Moab",
-      "Israël"
-    ],
-    "bibleAccount": [
-      "Balak lui demande de maudire Israël.",
-      "Balaam demande à Jéhovah ce qu’il doit faire.",
-      "Alors qu’il voyage, son ânesse voit l’ange de Jéhovah et refuse d’avancer.",
-      "Balaam prononce finalement des bénédictions et des déclarations prophétiques au lieu de malédictions.",
-      "Il est ensuite associé au conseil qui conduisit Israël au péché avec le culte de Baal de Péor."
-    ],
-    "qualities": [
-      "Connaissance du pouvoir de la parole prophétique",
-      "Capacité à prononcer fidèlement les paroles imposées par Jéhovah dans la scène des bénédictions"
-    ],
-    "difficulties": [
-      "Il aime la récompense promise et permet à ses mauvais désirs de l’entraîner vers une conduite condamnable."
-    ]
-  },
+  "studyFocus": "Balaam était un homme connu pour pratiquer la divination et que Balak voulait engager pour maudire Israël. Jéhovah empêcha finalement qu’il prononce une malédiction contre Israël. Pourtant, les Écritures montrent qu’il développa une mauvaise attitude envers le gain injuste et contribua ensuite à faire trébucher Israël.",
+  "lessonPoints": [
+    "Balaam reçut des avertissements clairs de Jéhovah mais ne développa pas une bonne disposition de cœur.",
+    "L’épisode de l’ânesse montre que Jéhovah pouvait empêcher un homme de poursuivre une voie dangereuse.",
+    "Balaam ne put prononcer que ce que Jéhovah permettait.",
+    "La fin du récit montre que connaître la volonté de Dieu ne suffit pas si l’on aime le gain injuste."
+  ],
+  "keyReading": "Nombres 22:1-41 ; 23:1-30 ; 24:1-25 ; 31:8,16 ; 2 Pierre 2:15 ; Révélation 2:14",
+  "location": "Région de Pethor, puis territoire de Moab près du Jourdain.",
+  "relationshipWithJehovah": "Jéhovah intervint directement pour empêcher Balaam de maudire Israël, mais les Écritures chrétiennes condamnent son amour du gain injuste.",
+  "didYouKnow": "L’ânesse de Balaam vit l’ange de Jéhovah avant Balaam lui-même et parla miraculeusement pour lui faire prendre conscience du danger.",
+  "jwResources": [
+    {
+      "title": "Balaam — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+    },
+    {
+      "title": "La Bible en ligne",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Les personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Balaam était un homme de Mésopotamie que Balak engagea pour maudire Israël. Jéhovah l’empêcha finalement de prononcer une malédiction contre son peuple.",
+  "era": "Époque de l’entrée d’Israël en Terre promise, vers 1473 av. n. è.",
+  "familyAndEntourage": [
+    "Balak",
+    "Les princes de Moab",
+    "Israël"
+  ],
+  "bibleAccount": [
+    "Balak lui demande de maudire Israël.",
+    "Balaam demande à Jéhovah ce qu’il doit faire.",
+    "Alors qu’il voyage, son ânesse voit l’ange de Jéhovah et refuse d’avancer.",
+    "Balaam prononce finalement des bénédictions et des déclarations prophétiques au lieu de malédictions.",
+    "Il est ensuite associé au conseil qui conduisit Israël au péché avec le culte de Baal de Péor."
+  ],
+  "qualities": [
+    "Connaissance du pouvoir de la parole prophétique",
+    "Capacité à prononcer fidèlement les paroles imposées par Jéhovah dans la scène des bénédictions"
+  ],
+  "difficulties": [
+    "Il aime la récompense promise et permet à ses mauvais désirs de l’entraîner vers une conduite condamnable."
+  ]
+},
   "balak": {
-    "studyFocus": "Balak, roi de Moab, cherche à faire maudire Israël par Balaam. Son récit montre qu’aucune manœuvre humaine ne peut annuler la bénédiction que Jéhovah accorde à son peuple.",
-    "lessonPoints": [
-      "Il craint Israël après ses victoires.",
-      "Il envoie chercher Balaam.",
-      "Il change plusieurs fois d’endroit pour tenter d’obtenir une malédiction.",
-      "Balaam annonce finalement des paroles favorables à Israël."
-    ],
-    "keyReading": "Nombres 22:2-41; 23:1-30; 24:1-25; Michée 6:5",
-    "location": "Les plaines de Moab, à l’est du Jourdain.",
-    "relationshipWithJehovah": "Balak tente de s’opposer au peuple que Jéhovah bénit. Son échec montre qu’aucune manœuvre humaine ne peut faire annuler une bénédiction divine.",
-    "didYouKnow": "Balak fit emmener Balaam successivement à plusieurs endroits pour regarder une partie d’Israël, espérant obtenir une malédiction.",
-    "jwResources": [
-      {
-        "title": "Balak — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Balak était roi de Moab lorsque les Israélites approchaient de la Terre promise. Il chercha à faire maudire Israël par Balaam.",
-    "era": "Vers 1473 av. n. è.",
-    "familyAndEntourage": [
-      "Balaam",
-      "Les princes de Moab",
-      "Les Israélites"
-    ],
-    "bibleAccount": [
-      "Il voit la puissance d’Israël et craint pour Moab.",
-      "Il envoie des princes demander à Balaam de venir maudire Israël.",
-      "Il fait monter Balaam sur plusieurs hauteurs pour tenter d’obtenir une malédiction.",
-      "Balaam prononce au contraire des bénédictions sur Israël."
-    ],
-    "qualities": [
-      "Organisation",
-      "Persévérance dans son objectif"
-    ],
-    "difficulties": [
-      "Il agit par peur et cherche une solution religieuse pour combattre Israël plutôt que de reconnaître la volonté de Jéhovah."
-    ]
-  },
+  "studyFocus": "Balak était roi de Moab lorsqu’Israël approcha de son territoire. Craignant la puissance d’Israël, il chercha à engager Balaam pour le maudire. Ses tentatives échouèrent parce que Jéhovah ne permit pas que son peuple soit maudit de cette manière.",
+  "lessonPoints": [
+    "La peur poussa Balak à chercher une solution religieuse et politique contre Israël.",
+    "Il envoya plusieurs délégations à Balaam et augmenta la récompense proposée.",
+    "Même lorsque Balaam voulut parler contre Israël, il dut annoncer les paroles que Jéhovah lui donnait.",
+    "Balak montre qu’une position royale ne permet pas de contrecarrer le dessein de Jéhovah."
+  ],
+  "keyReading": "Nombres 22:1-41 ; 23:1-30 ; 24:1-25 ; Josué 24:9,10 ; Michée 6:5",
+  "location": "Moab, au nord de l’Arnon, face au territoire d’Israël.",
+  "relationshipWithJehovah": "Balak cherchait à utiliser Balaam contre Israël; le récit montre au contraire que Jéhovah protégea son peuple.",
+  "didYouKnow": "Balak fit conduire Balaam sur plusieurs hauteurs afin qu’il puisse voir une partie du camp d’Israël et prononcer ses oracles.",
+  "jwResources": [
+    {
+      "title": "Balak — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+    },
+    {
+      "title": "La Bible en ligne",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Les personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Balak était roi de Moab lorsque les Israélites approchaient de la Terre promise. Il chercha à faire maudire Israël par Balaam.",
+  "era": "Vers 1473 av. n. è.",
+  "familyAndEntourage": [
+    "Balaam",
+    "Les princes de Moab",
+    "Les Israélites"
+  ],
+  "bibleAccount": [
+    "Il voit la puissance d’Israël et craint pour Moab.",
+    "Il envoie des princes demander à Balaam de venir maudire Israël.",
+    "Il fait monter Balaam sur plusieurs hauteurs pour tenter d’obtenir une malédiction.",
+    "Balaam prononce au contraire des bénédictions sur Israël."
+  ],
+  "qualities": [
+    "Organisation",
+    "Persévérance dans son objectif"
+  ],
+  "difficulties": [
+    "Il agit par peur et cherche une solution religieuse pour combattre Israël plutôt que de reconnaître la volonté de Jéhovah."
+  ]
+},
   "eli": {
-    "studyFocus": "Éli a servi comme grand prêtre et juge en Israël. Son histoire montre à la fois l’importance d’écouter les avertissements de Jéhovah et les conséquences de ne pas corriger une mauvaise conduite.",
-    "lessonPoints": [
-      "Discipline familiale : Éli a été réprimandé parce qu’il n’avait pas suffisamment corrigé ses fils.",
-      "Écouter les avertissements : il a finalement reconnu que Jéhovah avait raison.",
-      "Humilité : sa réaction au jugement de Jéhovah montre qu’il pouvait accepter la décision divine."
-    ],
-    "keyReading": "1 Samuel 1:9-18; 2:12-36; 3:1-21; 4:10-18",
-    "location": "Shilo et le tabernacle d’Israël.",
-    "relationshipWithJehovah": "Éli respecte Jéhovah et accepte sa parole, mais son manque de fermeté envers ses fils montre qu’une bonne position spirituelle ne dispense pas d’agir avec courage dans la discipline familiale.",
-    "didYouKnow": "Éli avait 98 ans lorsqu’il mourut, après avoir appris que l’Arche avait été prise par les Philistins.",
-    "jwResources": [
-      {
-        "title": "Éli — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Éli était grand prêtre et juge en Israël. Il servit au sanctuaire de Shilo et fut le responsable de Samuel pendant son enfance.",
-    "era": "XIIe-XIe siècle av. n. è.",
-    "familyAndEntourage": [
-      "Hophni",
-      "Phinéas",
-      "Samuel",
-      "Hanna"
-    ],
-    "bibleAccount": [
-      "Il sert comme prêtre à Shilo.",
-      "Il pense d’abord à tort qu’Hanna est ivre, puis corrige son jugement.",
-      "Il forme Samuel dans le service du sanctuaire.",
-      "Ses fils commettent de graves fautes et il ne les corrige pas avec suffisamment de fermeté.",
-      "Jéhovah annonce le jugement contre sa maison; Éli meurt en apprenant la prise de l’Arche."
-    ],
-    "qualities": [
-      "Attention au service",
-      "Capacité à corriger un malentendu",
-      "Affection pour Samuel"
-    ],
-    "difficulties": [
-      "Il échoue à exercer une discipline ferme envers ses fils, malgré leurs graves fautes.",
-      "Il doit accepter un jugement de Jéhovah concernant sa maison."
-    ]
-  },
+  "studyFocus": "Éli était grand prêtre et juge en Israël. Il servit Jéhovah pendant de nombreuses années, mais ses deux fils, Hophni et Phinéhas, pratiquaient des actions gravement mauvaises. Éli les reprit, mais ne les empêcha pas suffisamment d’abuser de leur fonction, ce qui entraîna un jugement contre sa maison.",
+  "lessonPoints": [
+    "Éli servait au sanctuaire et forma le jeune Samuel dans le service de Jéhovah.",
+    "Il reconnut la nécessité de laisser Jéhovah faire ce qui est juste lorsqu’il apprit le jugement contre sa maison.",
+    "Sa faiblesse dans la discipline de ses fils montre qu’une responsabilité familiale ne doit pas être négligée.",
+    "Sa réaction à la nouvelle de la capture de l’Arche montre l’importance qu’il accordait à la gloire de Jéhovah."
+  ],
+  "keyReading": "1 Samuel 1:9-28 ; 2:12-36 ; 3:1-21 ; 4:10-18",
+  "location": "Silo, au sanctuaire d’Israël.",
+  "relationshipWithJehovah": "Éli servait comme prêtre et reconnut la voix prophétique de Jéhovah lorsqu’il encouragea Samuel à répondre : « Parle, car ton serviteur écoute. »",
+  "didYouKnow": "Éli avait 98 ans lorsqu’il mourut, après avoir appris que l’Arche avait été capturée et que ses deux fils étaient morts.",
+  "jwResources": [
+    {
+      "title": "Éli — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+    },
+    {
+      "title": "La Bible en ligne",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Les personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Éli était grand prêtre et juge en Israël. Il servit au sanctuaire de Shilo et fut le responsable de Samuel pendant son enfance.",
+  "era": "XIIe-XIe siècle av. n. è.",
+  "familyAndEntourage": [
+    "Hophni",
+    "Phinéas",
+    "Samuel",
+    "Hanna"
+  ],
+  "bibleAccount": [
+    "Il sert comme prêtre à Shilo.",
+    "Il pense d’abord à tort qu’Hanna est ivre, puis corrige son jugement.",
+    "Il forme Samuel dans le service du sanctuaire.",
+    "Ses fils commettent de graves fautes et il ne les corrige pas avec suffisamment de fermeté.",
+    "Jéhovah annonce le jugement contre sa maison; Éli meurt en apprenant la prise de l’Arche."
+  ],
+  "qualities": [
+    "Attention au service",
+    "Capacité à corriger un malentendu",
+    "Affection pour Samuel"
+  ],
+  "difficulties": [
+    "Il échoue à exercer une discipline ferme envers ses fils, malgré leurs graves fautes.",
+    "Il doit accepter un jugement de Jéhovah concernant sa maison."
+  ]
+},
   "hannah": {
-    "studyFocus": "Anne a prié Jéhovah avec confiance dans une situation qui lui causait une grande souffrance, puis elle a tenu sa promesse en consacrant Samuel à son service.",
-    "lessonPoints": [
-      "Prière sincère : Anne a parlé à Jéhovah avec franchise de ce qu’elle ressentait.",
-      "Confiance : elle a laissé sa situation entre les mains de Jéhovah et a retrouvé la paix.",
-      "Reconnaissance : son cantique montre sa profonde reconnaissance envers Jéhovah."
-    ],
-    "keyReading": "1 Samuel 1:1-28; 2:1-11, 18-21",
-    "location": "Rama et le tabernacle de Shilo.",
-    "relationshipWithJehovah": "Hanna parle à Jéhovah avec précision de sa détresse, puis tient son vœu après avoir reçu une réponse. Sa prière de reconnaissance montre qu’elle attribue le mérite à Dieu.",
-    "didYouKnow": "Après avoir consacré Samuel au service à Shilo, Hanna continuait à lui apporter chaque année un petit vêtement sans l’abandonner affectivement.",
-    "jwResources": [
-      {
-        "title": "Anne — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/anne/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Samuel — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samuel/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Hanna était la femme d’Elqana et la mère de Samuel. Longtemps stérile, elle pria Jéhovah avec ferveur et consacra son fils à son service.",
-    "era": "XIIe siècle av. n. è. environ",
-    "familyAndEntourage": [
-      "Elqana",
-      "Samuel",
-      "Peninna",
-      "Éli"
-    ],
-    "bibleAccount": [
-      "Elle souffre de sa stérilité et des provocations de Peninna.",
-      "Elle prie Jéhovah au tabernacle et fait un vœu concernant un fils.",
-      "Samuel naît et elle l’amène à Shilo après son sevrage.",
-      "Elle prononce une prière de reconnaissance qui met en valeur Jéhovah."
-    ],
-    "qualities": [
-      "Foi",
-      "Persévérance dans la prière",
-      "Générosité",
-      "Reconnaissance"
-    ],
-    "difficulties": [
-      "Elle endure pendant longtemps la stérilité et les provocations de sa rivale sans abandonner sa confiance en Jéhovah."
-    ]
-  },
+  "studyFocus": "Anne était la femme d’Elkana et la mère du prophète Samuel. Pendant des années, elle fut stérile et souffrit aussi des provocations de Peninna. Elle déversa sa peine dans la prière, fit un vœu à Jéhovah et, après la naissance de Samuel, le remit au service au sanctuaire.",
+  "lessonPoints": [
+    "Anne transforma une douleur personnelle en prière sincère plutôt qu’en vengeance contre Peninna.",
+    "Elle fit un vœu réfléchi et le respecta après avoir reçu la réponse de Jéhovah.",
+    "Elle continua à montrer son affection pour Samuel en lui apportant chaque année un vêtement.",
+    "Son cantique révèle sa confiance dans la puissance et la justice de Jéhovah."
+  ],
+  "keyReading": "1 Samuel 1:1-28 ; 2:1-11,18-21",
+  "location": "Rama, Silo et les environs d’Éphraïm.",
+  "relationshipWithJehovah": "Anne pria Jéhovah avec intensité, lui expliqua sa détresse et tint sa promesse. Son cantique montre qu’elle attribuait à Jéhovah sa joie et sa délivrance.",
+  "didYouKnow": "Après la naissance de Samuel, Anne eut encore trois fils et deux filles, selon 1 Samuel 2:21.",
+  "jwResources": [
+    {
+      "title": "Anne — Les personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/anne/"
+    },
+    {
+      "title": "La Bible en ligne — Traduction du monde nouveau",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Samuel — Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samuel/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Hanna était la femme d’Elqana et la mère de Samuel. Longtemps stérile, elle pria Jéhovah avec ferveur et consacra son fils à son service.",
+  "era": "XIIe siècle av. n. è. environ",
+  "familyAndEntourage": [
+    "Elqana",
+    "Samuel",
+    "Peninna",
+    "Éli"
+  ],
+  "bibleAccount": [
+    "Elle souffre de sa stérilité et des provocations de Peninna.",
+    "Elle prie Jéhovah au tabernacle et fait un vœu concernant un fils.",
+    "Samuel naît et elle l’amène à Shilo après son sevrage.",
+    "Elle prononce une prière de reconnaissance qui met en valeur Jéhovah."
+  ],
+  "qualities": [
+    "Foi",
+    "Persévérance dans la prière",
+    "Générosité",
+    "Reconnaissance"
+  ],
+  "difficulties": [
+    "Elle endure pendant longtemps la stérilité et les provocations de sa rivale sans abandonner sa confiance en Jéhovah."
+  ]
+},
   "michal": {
     "studyFocus": "Mical, fille de Saül et femme de David, a vécu dans une famille marquée par les conflits et a pris des décisions qui ont eu des conséquences dans sa vie conjugale.",
     "lessonPoints": [
@@ -2230,61 +2237,62 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joab": {
-    "studyFocus": "Joab était un chef militaire capable, mais son histoire montre les dangers d’une ambition personnelle et d’actions contraires aux décisions du roi établi par Jéhovah.",
-    "lessonPoints": [
-      "Loyauté : les capacités ne remplacent pas une véritable fidélité.",
-      "Maîtrise de soi : la vengeance et l’ambition peuvent pousser à des actes graves.",
-      "Respect de l’autorité : il faut agir selon les principes de Jéhovah plutôt que selon ses propres intérêts."
-    ],
-    "keyReading": "2 Samuel 3:22-39; 18:9-17; 20:4-23; 1 Rois 2:28-35",
-    "location": "Jérusalem et les territoires où l’armée de David combat.",
-    "relationshipWithJehovah": "Joab reconnaît parfois l’action de Jéhovah, mais son parcours montre qu’une longue carrière au service d’un roi ne compense pas des actes de vengeance et de déloyauté.",
-    "didYouKnow": "Joab se réfugia dans le tabernacle en s’accrochant aux cornes de l’autel, mais Salomon fit exécuter le jugement contre lui malgré cela.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      }
-    ],
-    "identity": "Joab était le chef de l’armée de David et un homme très influent pendant son règne. Il participa à de nombreuses guerres mais commit aussi des meurtres motivés par ses propres intérêts.",
-    "era": "XIe-Xe siècle av. n. è.",
-    "familyAndEntourage": [
-      "David",
-      "Abishaï",
-      "Asaël",
-      "Abner",
-      "Amasa",
-      "Absalom"
-    ],
-    "bibleAccount": [
-      "Il commande l’armée de David.",
-      "Il tue Abner après la mort d’Asaël, malgré les objections de David.",
-      "Il intervient dans la rébellion d’Absalom et le tue.",
-      "Il soutient Adoniya dans sa tentative de devenir roi.",
-      "David ordonne finalement à Salomon de faire rendre compte à Joab de ses crimes."
-    ],
-    "qualities": [
-      "Compétence militaire",
-      "Loyauté envers David dans certaines crises",
-      "Détermination"
-    ],
-    "difficulties": [
-      "Il se venge personnellement et prend des décisions contraires aux instructions du roi.",
-      "Son ambition et ses intérêts politiques finissent par le conduire à soutenir Adoniya."
-    ]
-  },
+  "studyFocus": "Joab, fils de Tserouïa, fut le chef de l’armée de David pendant une grande partie de son règne. Il était énergique et capable, mais son histoire est aussi marquée par des actes de vengeance et des meurtres qui entrèrent en conflit avec la volonté de David.",
+  "lessonPoints": [
+    "Joab défendit David et participa à plusieurs victoires militaires.",
+    "Il tua Abner et Amasa pour des raisons personnelles ou politiques, malgré les conséquences graves.",
+    "Il pouvait conseiller David avec franchise, notamment après la mort d’Absalom.",
+    "Sa fin sous Salomon montre que des années de service ne rendent pas acceptables des actes de violence injustifiés."
+  ],
+  "keyReading": "2 Samuel 2:12-32 ; 3:22-39 ; 18:1-33 ; 19:1-8 ; 20:4-13 ; 1 Rois 2:28-35",
+  "location": "Jérusalem et les champs de bataille du royaume d’Israël.",
+  "relationshipWithJehovah": "La Bible ne présente pas Joab comme un modèle spirituel. Son histoire montre que l’efficacité militaire et la loyauté politique ne remplacent pas l’obéissance aux principes de Jéhovah.",
+  "didYouKnow": "Joab était le frère d’Abishaï et d’Asaël, et tous trois étaient fils de Tserouïa, sœur de David.",
+  "jwResources": [
+    {
+      "title": "Étude perspicace des Écritures",
+      "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+    },
+    {
+      "title": "La Bible en ligne — Traduction du monde nouveau",
+      "url": "https://www.jw.org/fr/bibliotheque/bible/"
+    },
+    {
+      "title": "Les personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+    },
+    {
+      "title": "Imitez leur foi — personnages de la Bible",
+      "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
+    }
+  ],
+  "identity": "Joab était le chef de l’armée de David et un homme très influent pendant son règne. Il participa à de nombreuses guerres mais commit aussi des meurtres motivés par ses propres intérêts.",
+  "era": "XIe-Xe siècle av. n. è.",
+  "familyAndEntourage": [
+    "David",
+    "Abishaï",
+    "Asaël",
+    "Abner",
+    "Amasa",
+    "Absalom"
+  ],
+  "bibleAccount": [
+    "Il commande l’armée de David.",
+    "Il tue Abner après la mort d’Asaël, malgré les objections de David.",
+    "Il intervient dans la rébellion d’Absalom et le tue.",
+    "Il soutient Adoniya dans sa tentative de devenir roi.",
+    "David ordonne finalement à Salomon de faire rendre compte à Joab de ses crimes."
+  ],
+  "qualities": [
+    "Compétence militaire",
+    "Loyauté envers David dans certaines crises",
+    "Détermination"
+  ],
+  "difficulties": [
+    "Il se venge personnellement et prend des décisions contraires aux instructions du roi.",
+    "Son ambition et ses intérêts politiques finissent par le conduire à soutenir Adoniya."
+  ]
+},
   "herod_antipas": {
     "studyFocus": "Hérode Antipas a exercé le pouvoir en Galilée et en Pérée à l’époque de Jésus. Son histoire est notamment liée à Jean le Baptiseur.",
     "lessonPoints": [
