@@ -1382,6 +1382,58 @@ const v90VerseTargets = /\d/;
 const v90CleanTimesUp = timesUpQuestions.filter((q) => !v90VerseTargets.test(q.answer));
 timesUpQuestions.splice(0, timesUpQuestions.length, ...v90CleanTimesUp, ...v90TimesUpExtra);
 
+
+// ===== Audit éditorial V98 : rééquilibrage naturel du Vrai/Faux =====
+// Une partie de la banque était trop souvent vraie. On ne bascule pas mécaniquement
+// les réponses : ces cartes sont reformulées avec un fait faux explicite et une
+// explication qui donne la correction. L’objectif est d’éviter que « Vrai » soit
+// une stratégie de devinette et de conserver une vraie valeur pédagogique.
+const v98TrueFalseRewrites: Record<string, { statement: string; explanation: string }> = {
+  'tf-jw-2': { statement: 'Isaac était le père de Joseph et de Benjamin.', explanation: 'Joseph et Benjamin étaient les fils de Jacob, lui-même fils d’Isaac.' },
+  'tf-jw-5': { statement: 'Rahab a caché trois espions israélites à Jéricho.', explanation: 'Rahab a caché deux espions israélites envoyés à Jéricho.' },
+  'tf-jw-6': { statement: 'Aï a été la première ville prise par les Israélites après la traversée du Jourdain.', explanation: 'Jéricho est la première ville dont la prise est racontée après la traversée du Jourdain.' },
+  'tf-jw-8': { statement: 'David a tué Saül lorsqu’il en a eu l’occasion dans une grotte.', explanation: 'David a refusé de tuer Saül alors qu’il en avait l’occasion.' },
+  'tf-jw-10': { statement: 'Élie a entendu la voix de Jéhovah avant le vent, le tremblement de terre et le feu.', explanation: 'Le récit situe la voix après le vent, le tremblement de terre et le feu.' },
+  'tf-jw-11': { statement: 'Élisée a demandé une double portion de l’esprit de Samuel.', explanation: 'Élisée a demandé une double portion de l’esprit d’Élie.' },
+  'tf-jw-12': { statement: 'Jonas a été envoyé à Jérusalem après avoir essayé de fuir.', explanation: 'Jonas a été envoyé à Ninive après avoir essayé de fuir sa mission.' },
+  'tf-jw-14': { statement: 'Jésus a choisi onze apôtres.', explanation: 'Les Évangiles rapportent que Jésus a choisi douze apôtres.' },
+  'tf-jw-15': { statement: 'Jésus a transformé l’eau en vin à Béthanie.', explanation: 'Le changement de l’eau en vin a eu lieu à Cana.' },
+  'tf-jw-16': { statement: 'Jésus a ressuscité la fille de Lazare.', explanation: 'Jésus a ressuscité la fille de Jaïrus ; Lazare était un homme que Jésus a également ramené à la vie.' },
+  'tf-jw-18': { statement: 'Paul a été baptisé avant sa conversion sur le chemin de Damas.', explanation: 'Paul a été baptisé après sa conversion, à la suite de l’intervention d’Ananias.' },
+  'tf-jw-20': { statement: 'Paul et Silas chantaient des louanges lorsqu’ils étaient emprisonnés à Jérusalem.', explanation: 'Paul et Silas priaient et chantaient des louanges lorsqu’ils étaient emprisonnés à Philippes.' },
+  'tf-jw-21': { statement: 'Les Béréens n’examinaient jamais les Écritures pour vérifier l’enseignement reçu.', explanation: 'Les Béréens examinaient chaque jour les Écritures pour vérifier l’enseignement de Paul et Silas.' },
+  'tf-jw-22': { statement: 'Paul a passé deux ans à Rome dans une maison louée avant son voyage à Rome.', explanation: 'À Rome, Paul a passé deux ans dans une maison qu’il louait ; cette période se situe après son voyage à Rome.' },
+  'tf-jw-23': { statement: 'Dorcas était aussi appelée Lydie.', explanation: 'Dorcas était aussi appelée Tabitha.' },
+  'tf-jw-24': { statement: 'Corneille était un prêtre lévite à Jérusalem.', explanation: 'Corneille était un centurion stationné à Césarée.' },
+  'tf-jw-26': { statement: 'Timothée avait une mère grecque et un père juif.', explanation: 'Timothée avait une mère juive et un père grec.' },
+  'tf-jw-27': { statement: 'Onésime était un gouverneur romain devenu chrétien.', explanation: 'Onésime était un esclave devenu chrétien.' },
+  'tf-jw-28': { statement: 'La Révélation a été donnée à Jean alors qu’il était à Jérusalem.', explanation: 'La Révélation a été donnée à Jean alors qu’il se trouvait à Patmos.' },
+  'tf-v39-02': { statement: 'Moïse a été élevé dans la maison de David après avoir été sauvé des eaux.', explanation: 'Moïse a été élevé dans la maison de Pharaon après avoir été sauvé des eaux.' },
+  'tf-v39-04': { statement: 'Élisée a affronté les prophètes de Baal au mont Carmel.', explanation: 'C’est Élie qui a affronté les prophètes de Baal au mont Carmel.' },
+  'tf-v39-05': { statement: 'Matthieu était pêcheur avant de suivre Jésus.', explanation: 'Matthieu était collecteur d’impôts avant de suivre Jésus.' },
+  'tf-v39-07': { statement: 'Lydie vendait du blé à Philippes.', explanation: 'Lydie vendait des articles de pourpre à Philippes.' },
+  'tf-v39-08': { statement: 'Jonas a été envoyé à Jérusalem.', explanation: 'Jonas a été envoyé à Ninive.' },
+  'tf-v39-09': { statement: 'Daniel a interprété l’écriture sur le mur pour Pharaon.', explanation: 'Daniel a interprété l’écriture sur le mur pour Belshatsar.' },
+  'tf-v50-bible-02': { statement: 'L’arche de l’Alliance se trouvait dans le lieu saint du tabernacle, devant le rideau.', explanation: 'L’arche de l’Alliance se trouvait dans le Très-Saint, derrière le rideau.' },
+  'tf-v50-bible-04': { statement: 'Noé a reçu des instructions pour construire un palais avant le Déluge.', explanation: 'Noé a reçu des instructions pour construire une arche avant le Déluge.' },
+  'tf-v50-bible-05': { statement: 'L’arc-en-ciel est présenté comme un signe de l’alliance avec Abraham.', explanation: 'L’arc-en-ciel est présenté comme un signe de l’alliance avec Noé.' },
+  'tf-v50-personnages-01': { statement: 'Samuel a commencé à servir au sanctuaire seulement après être devenu adulte.', explanation: 'Samuel a commencé à servir au sanctuaire alors qu’il était encore jeune.' },
+  'tf-v50-personnages-03': { statement: 'Joseph a interprété les rêves de Pharaon concernant trois années d’abondance et trois années de famine.', explanation: 'Joseph a interprété les rêves concernant sept années d’abondance et sept années de famine.' },
+  'tf-v50-personnages-04': { statement: 'Zacharie était le père de l’apôtre Jean.', explanation: 'Zacharie était le père de Jean le Baptiseur.' },
+  'tf-v50-evangiles-01': { statement: 'Matthieu était pêcheur lorsqu’il a été appelé par Jésus.', explanation: 'Matthieu était collecteur d’impôts lorsqu’il a été appelé par Jésus.' },
+  'tf-v50-evangiles-03': { statement: 'Nicodème est venu voir Jésus à midi.', explanation: 'Nicodème est venu voir Jésus pendant la nuit.' },
+  'tf-v50-evangiles-05': { statement: 'Thomas a demandé à Jésus de lui montrer le Père.', explanation: 'Philippe a demandé à Jésus de lui montrer le Père.' },
+};
+
+for (const q of trueFalseQuestions) {
+  const rewrite = v98TrueFalseRewrites[q.id];
+  if (rewrite) {
+    q.statement = rewrite.statement;
+    q.explanation = rewrite.explanation;
+    q.answer = false;
+  }
+}
+
 // Exports globaux placés en fin de fichier pour inclure tous les enrichissements.
 export const allQuestions = [
   ...quizQuestions, ...mysteryQuestions, ...trueFalseQuestions, ...challenges,
