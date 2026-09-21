@@ -1473,6 +1473,92 @@ const v100ForbiddenCards = [
   }
 });
 
+
+const v101ExpertQuiz: QuizQuestion[] = [
+  {id:'v101-expert-q-01',type:'quiz',category:'Personnages',difficulty:'hard',question:'Quel homme a été chargé de sortir Jérémie de la citerne où il avait été jeté ?',answers:['Ébed-Mélek','Barzillaï','Micaïa','Guéhazi'],correctAnswer:0,explanation:'Ébed-Mélek, un Éthiopien au service du roi, a parlé au roi et a fait sortir Jérémie de la citerne.',reference:'Jérémie 38:7-13'},
+  {id:'v101-expert-q-02',type:'quiz',category:'Personnages',difficulty:'hard',question:'Quelle prophétesse a été consultée lorsque le livre de la Loi a été retrouvé sous le règne de Josias ?',answers:['Houlda','Déborah','Miriam','Anne'],correctAnswer:0,explanation:'Houlda a été consultée par les hommes envoyés par Josias et a transmis la réponse de Jéhovah.',reference:'2 Rois 22:8-20'},
+  {id:'v101-expert-q-03',type:'quiz',category:'Personnages',difficulty:'hard',question:'Quel homme âgé a fourni du ravitaillement à David lorsqu’il fuyait Absalom ?',answers:['Barzillaï','Nabal','Méphibosheth','Ahimaats'],correctAnswer:0,explanation:'Barzillaï a fourni des provisions à David et à ses hommes au moment de leur fuite.',reference:'2 Samuel 17:27-29'},
+  {id:'v101-expert-q-04',type:'quiz',category:'Personnages',difficulty:'hard',question:'Quel conseiller d’Absalom a donné un conseil qui n’a finalement pas été suivi ?',answers:['Ahithophel','Hushaï','Joab','Abner'],correctAnswer:0,explanation:'Ahithophel proposa d’attaquer David immédiatement, mais Absalom suivit ensuite le conseil de Hushaï.',reference:'2 Samuel 17:1-14'},
+  {id:'v101-expert-q-05',type:'quiz',category:'Personnages',difficulty:'hard',question:'Quel prophète a été envoyé à Jéhu pour l’oindre roi sur Israël ?',answers:['Élisée','Élie','Jérémie','Gad'],correctAnswer:0,explanation:'Élisée a envoyé un des fils des prophètes pour oindre Jéhu.',reference:'2 Rois 9:1-6'},
+  {id:'v101-expert-q-06',type:'quiz',category:'Rois & prophètes',difficulty:'hard',question:'Quel roi de Juda a montré aux envoyés de Babylone ses trésors avant qu’Isaïe annonce leur future déportation ?',answers:['Ézéchias','Josias','Manassé','Josaphat'],correctAnswer:0,explanation:'Ézéchias leur montra tout ce qui se trouvait dans ses trésors ; Isaïe annonça ensuite que tout serait emporté à Babylone.',reference:'2 Rois 20:12-18'},
+  {id:'v101-expert-q-07',type:'quiz',category:'Rois & prophètes',difficulty:'hard',question:'Quel roi a demandé à ses serviteurs de rechercher dans les annales pour savoir si Mardochée avait été honoré ?',answers:['Assuérus','Darius','Cyrus','Nabuchodonosor'],correctAnswer:0,explanation:'Assuérus fit lire les annales du royaume et découvrit que Mardochée avait autrefois dénoncé un complot.',reference:'Esther 6:1-3'},
+  {id:'v101-expert-q-08',type:'quiz',category:'Évangiles',difficulty:'hard',question:'Quel homme a porté la poutre de supplice de Jésus après avoir été réquisitionné ?',answers:['Simon de Cyrène','Joseph d’Arimathie','Nicodème','Clopas'],correctAnswer:0,explanation:'Les soldats ont réquisitionné Simon de Cyrène pour porter la poutre de supplice.',reference:'Matthieu 27:32'},
+  {id:'v101-expert-q-09',type:'quiz',category:'Évangiles',difficulty:'hard',question:'Quel membre du Sanhédrin est venu voir Jésus de nuit et a plus tard participé à son ensevelissement ?',answers:['Nicodème','Joseph d’Arimathie','Gamaliel','Jaïrus'],correctAnswer:0,explanation:'Nicodème est venu voir Jésus de nuit et a apporté des aromates lors de l’ensevelissement.',reference:'Jean 3:1-2; 19:39-40'},
+  {id:'v101-expert-q-10',type:'quiz',category:'Actes',difficulty:'hard',question:'Quel couple a retenu secrètement une partie de l’argent provenant de la vente d’un terrain ?',answers:['Ananias et Saphira','Priscille et Aquilas','Hérode et Bérénice','Félix et Drusille'],correctAnswer:0,explanation:'Ananias et Saphira ont menti au sujet de la somme remise à la congrégation.',reference:'Actes 5:1-10'},
+  {id:'v101-expert-q-11',type:'quiz',category:'Actes',difficulty:'hard',question:'Quel collaborateur de Paul a été laissé malade à Milet ?',answers:['Trophime','Tite','Épaphras','Tychique'],correctAnswer:0,explanation:'Paul mentionne avoir laissé Trophime malade à Milet.',reference:'2 Timothée 4:20'},
+  {id:'v101-expert-q-12',type:'quiz',category:'Prophéties',difficulty:'hard',question:'Quel prophète a vu une corbeille de fruits d’été dans une vision annonçant la fin pour Israël ?',answers:['Amos','Zacharie','Aggée','Joël'],correctAnswer:0,explanation:'La vision de la corbeille de fruits d’été est rapportée par Amos et annonce que la fin est venue pour le peuple d’Israël.',reference:'Amos 8:1-2'},
+];
+
+const v101ExpertTrueFalse: TrueFalseQuestion[] = [
+  {id:'v101-expert-tf-01',type:'truefalse',category:'Personnages',difficulty:'hard',statement:'Ébed-Mélek était un Éthiopien qui intervint pour sauver Jérémie de la citerne.',answer:true,explanation:'Il parla au roi et fit sortir Jérémie de la citerne avec des hommes et des cordes.',reference:'Jérémie 38:7-13'},
+  {id:'v101-expert-tf-02',type:'truefalse',category:'Personnages',difficulty:'hard',statement:'Houlda était la prophétesse consultée après la découverte du livre de la Loi sous Josias.',answer:true,explanation:'Les envoyés du roi Josias consultèrent Houlda au sujet du livre retrouvé.',reference:'2 Rois 22:8-20'},
+  {id:'v101-expert-tf-03',type:'truefalse',category:'Personnages',difficulty:'hard',statement:'Ahithophel conseilla à Absalom de poursuivre immédiatement David avec douze mille hommes.',answer:true,explanation:'Ahithophel proposa une attaque rapide avec douze mille hommes.',reference:'2 Samuel 17:1-2'},
+  {id:'v101-expert-tf-04',type:'truefalse',category:'Évangiles',difficulty:'hard',statement:'Simon de Cyrène était originaire de Galilée.',answer:false,explanation:'Le récit le présente comme Simon de Cyrène.',reference:'Matthieu 27:32; Marc 15:21'},
+  {id:'v101-expert-tf-05',type:'truefalse',category:'Actes',difficulty:'hard',statement:'Trophime était avec Paul lorsqu’il écrivit qu’il l’avait laissé malade à Milet.',answer:true,explanation:'Paul précise qu’il avait laissé Trophime malade à Milet.',reference:'2 Timothée 4:20'},
+  {id:'v101-expert-tf-06',type:'truefalse',category:'Rois & prophètes',difficulty:'hard',statement:'Jéhu a été oint roi d’Israël par un prêtre du temple de Jérusalem.',answer:false,explanation:'Élisée envoya un des fils des prophètes pour oindre Jéhu.',reference:'2 Rois 9:1-6'},
+  {id:'v101-expert-tf-07',type:'truefalse',category:'Prophéties',difficulty:'hard',statement:'Amos a rapporté une vision d’une corbeille de fruits d’été.',answer:true,explanation:'Cette vision annonçait que la fin était venue pour Israël.',reference:'Amos 8:1-2'},
+  {id:'v101-expert-tf-08',type:'truefalse',category:'Évangiles',difficulty:'hard',statement:'Nicodème était présent lorsque Jésus fut enseveli.',answer:true,explanation:'Nicodème apporta un mélange de myrrhe et d’aloès et participa à l’ensevelissement.',reference:'Jean 19:38-40'},
+];
+
+const v101ExpertMystery: MysteryQuestion[] = [
+  {id:'v101-expert-m-01',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Ébed-Mélek',clues:['Éthiopien','Citerne','Jérémie'],reference:'Jérémie 38:7-13'},
+  {id:'v101-expert-m-02',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Houlda',clues:['Prophétesse','Livre de la Loi','Josias'],reference:'2 Rois 22:8-20'},
+  {id:'v101-expert-m-03',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Barzillaï',clues:['Vieil homme','Mahanaïm','David'],reference:'2 Samuel 17:27-29; 19:31-39'},
+  {id:'v101-expert-m-04',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Ahithophel',clues:['Conseiller','Absalom','Conseil rejeté'],reference:'2 Samuel 15:12; 17:1-23'},
+  {id:'v101-expert-m-05',type:'mystery',category:'Actes',difficulty:'hard',answer:'Trophime',clues:['Éphèse','Milet','Malade'],reference:'Actes 21:29; 2 Timothée 4:20'},
+  {id:'v101-expert-m-06',type:'mystery',category:'Prophéties',difficulty:'hard',answer:'Amos',clues:['Bergers','Sycomores','Corbeille de fruits'],reference:'Amos 7:14-15; 8:1-2'},
+];
+
+const v101ExpertQuotes: QuoteQuestion[] = [
+  {id:'v101-expert-qte-01',type:'quote',category:'Personnages',difficulty:'hard',quote:'Quel homme a déclaré qu’il ne savait pas parler parce qu’il était « un garçon » ?',answers:['Jérémie','Samuel','Timothée','Ézéchiel'],correctAnswer:0,explanation:'Jérémie a exprimé son sentiment d’être trop jeune et de ne pas savoir parler.',reference:'Jérémie 1:6-7'},
+  {id:'v101-expert-qte-02',type:'quote',category:'Personnages',difficulty:'hard',quote:'Quel roi a déclaré : « Je suis encore un petit enfant » lorsqu’il demanda un cœur obéissant ?',answers:['Salomon','Josias','Joas','Roboam'],correctAnswer:0,explanation:'Salomon se décrivit ainsi lorsqu’il demanda à Jéhovah du discernement pour juger le peuple.',reference:'1 Rois 3:7-9'},
+  {id:'v101-expert-qte-03',type:'quote',category:'Rois & prophètes',difficulty:'hard',quote:'Quel prophète a déclaré qu’il n’était ni prophète ni fils de prophète, mais éleveur et cultivateur de sycomores ?',answers:['Amos','Michée','Nahum','Aggée'],correctAnswer:0,explanation:'Amos expliqua ainsi son activité lorsqu’il reçut sa mission prophétique.',reference:'Amos 7:14-15'},
+  {id:'v101-expert-qte-04',type:'quote',category:'Personnages',difficulty:'hard',quote:'Quel homme a demandé : « Où est mon père ? » après avoir constaté qu’il avait disparu ?',answers:['Jonathan','Élisha','Samuel','Méphibosheth'],correctAnswer:0,explanation:'Jonathan posa cette question dans le contexte de l’absence de David au repas de Saül.',reference:'1 Samuel 20:27-29'},
+  {id:'v101-expert-qte-05',type:'quote',category:'Évangiles',difficulty:'hard',quote:'Quel disciple a dit : « Allons-y, nous aussi, pour mourir avec lui » ?',answers:['Thomas','Pierre','Jean','André'],correctAnswer:0,explanation:'Thomas prononça ces paroles lorsque Jésus décida de retourner en Judée.',reference:'Jean 11:16'},
+  {id:'v101-expert-qte-06',type:'quote',category:'Évangiles',difficulty:'hard',quote:'Quel homme a dit : « Seigneur, je ne suis pas digne que tu entres sous mon toit » ?',answers:['Un officier de l’armée','Jaïrus','Nicodème','Zachée'],correctAnswer:0,explanation:'Un officier de l’armée exprima son humilité lorsqu’il demanda la guérison de son serviteur.',reference:'Matthieu 8:5-10'},
+];
+
+const v101ExpertChronology: ChronologyQuestion[] = [
+  {id:'v101-expert-ch-01',type:'chronology',category:'Rois & prophètes',difficulty:'hard',events:['Onction de David par Samuel','Combat de David contre Goliath','David devient roi de Juda','David devient roi sur tout Israël'],correctOrder:[0,1,2,3],explanation:'Ces étapes se succèdent dans le récit de la vie de David.',reference:'1 Samuel 16–17; 2 Samuel 2:1-4; 5:1-5'},
+  {id:'v101-expert-ch-02',type:'chronology',category:'Évangiles',difficulty:'hard',events:['Baptême de Jésus','Tentations dans le désert','Appel de premiers disciples','Premier miracle à Cana'],correctOrder:[0,1,2,3],explanation:'Le récit des Évangiles présente ces événements dans cet ordre général.',reference:'Matthieu 3–4; Jean 1:35–2:11'},
+  {id:'v101-expert-ch-03',type:'chronology',category:'Actes',difficulty:'hard',events:['Pentecôte','Lapidation d’Étienne','Conversion de Saul','Première prédication aux non-Juifs avec Corneille'],correctOrder:[0,1,2,3],explanation:'Le récit des Actes présente cette progression dans l’expansion de la congrégation.',reference:'Actes 2; 7–10'},
+  {id:'v101-expert-ch-04',type:'chronology',category:'Rois & prophètes',difficulty:'hard',events:['Élie annonce la sécheresse','Élie est nourri par des corbeaux','Élie séjourne chez la veuve de Sarepta','Confrontation au mont Carmel'],correctOrder:[0,1,2,3],explanation:'Ces épisodes appartiennent à la même période du ministère d’Élie et se suivent dans ce récit.',reference:'1 Rois 17–18'},
+];
+
+const v101ExpertIntruders: IntruderQuestion[] = [
+  {id:'v101-expert-in-01',type:'intruder',category:'Personnages',difficulty:'hard',items:['Houlda','Déborah','Miriam','Ébed-Mélek'],intruder:3,explanation:'Houlda, Déborah et Miriam sont des femmes ; Ébed-Mélek est un homme.',reference:'2 Rois 22:14; Juges 4:4; Exode 15:20; Jérémie 38:7'},
+  {id:'v101-expert-in-02',type:'intruder',category:'Rois & prophètes',difficulty:'hard',items:['Ahithophel','Hushaï','Joab','Houlda'],intruder:3,explanation:'Ahithophel, Hushaï et Joab sont des hommes liés aux affaires du royaume de David ; Houlda est une prophétesse consultée sous Josias.',reference:'2 Samuel 15–17; 2 Rois 22:14'},
+  {id:'v101-expert-in-03',type:'intruder',category:'Évangiles',difficulty:'hard',items:['Nicodème','Joseph d’Arimathie','Simon de Cyrène','Ébed-Mélek'],intruder:3,explanation:'Les trois premiers sont associés au récit de Jésus dans les Évangiles ; Ébed-Mélek appartient au récit de Jérémie.',reference:'Matthieu 27:32, 57-60; Jean 19:39-40; Jérémie 38:7-13'},
+  {id:'v101-expert-in-04',type:'intruder',category:'Personnages',difficulty:'hard',items:['Barzillaï','Nabal','Méphibosheth','Trophime'],intruder:3,explanation:'Les trois premiers sont liés aux récits de David dans Samuel ; Trophime appartient au ministère de Paul.',reference:'2 Samuel 17–19; 1 Samuel 25; Actes 21:29; 2 Timothée 4:20'},
+];
+
+const v101ExpertTimesUp: TimesUpQuestion[] = [
+  {id:'v101-expert-tu-01',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Ébed-Mélek',clues:['Éthiopien','Citerne','Jérémie'],reference:'Jérémie 38:7-13'},
+  {id:'v101-expert-tu-02',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Houlda',clues:['Prophétesse','Loi retrouvée','Josias'],reference:'2 Rois 22:8-20'},
+  {id:'v101-expert-tu-03',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Barzillaï',clues:['Mahanaïm','Ravitaillement','David'],reference:'2 Samuel 17:27-29'},
+  {id:'v101-expert-tu-04',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Ahithophel',clues:['Conseiller','Absalom','Conseil'],reference:'2 Samuel 15:12; 17:1-23'},
+  {id:'v101-expert-tu-05',type:'timesup',category:'Actes',difficulty:'hard',answer:'Trophime',clues:['Éphèse','Milet','Malade'],reference:'Actes 21:29; 2 Timothée 4:20'},
+  {id:'v101-expert-tu-06',type:'timesup',category:'Rois & prophètes',difficulty:'hard',answer:'Amos',clues:['Bergers','Sycomores','Corbeille'],reference:'Amos 7:14-15; 8:1-2'},
+  {id:'v101-expert-tu-07',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Hushaï',clues:['Ami de David','Absalom','Conseil'],reference:'2 Samuel 15:32-37; 17:5-16'},
+  {id:'v101-expert-tu-08',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Micaïa',clues:['Prophète','Achab','Vision céleste'],reference:'1 Rois 22:8-28'},
+];
+
+const v101ExpertChallenges: Challenge[] = [
+  {id:'v101-expert-c-01',type:'challenge',category:'Personnages',difficulty:'hard',prompt:'En 10 secondes : nommez le prophète qui a rapporté la vision de la corbeille de fruits d’été.',seconds:10,explanation:'Il s’agit d’Amos.',reference:'Amos 8:1-2'},
+  {id:'v101-expert-c-02',type:'challenge',category:'Personnages',difficulty:'hard',prompt:'En 10 secondes : quel Éthiopien a sauvé Jérémie de la citerne ?',seconds:10,explanation:'Il s’agit d’Ébed-Mélek.',reference:'Jérémie 38:7-13'},
+  {id:'v101-expert-c-03',type:'challenge',category:'Rois & prophètes',difficulty:'hard',prompt:'En 10 secondes : quel roi a été consulté après la découverte du livre de la Loi, en faisant demander une réponse à Houlda ?',seconds:10,explanation:'Il s’agit du roi Josias.',reference:'2 Rois 22:8-20'},
+  {id:'v101-expert-c-04',type:'challenge',category:'Évangiles',difficulty:'hard',prompt:'En 10 secondes : quel disciple a proposé de retourner en Judée avec Jésus en disant qu’ils pourraient mourir avec lui ?',seconds:10,explanation:'Il s’agit de Thomas.',reference:'Jean 11:16'},
+];
+
+quizQuestions.push(...v101ExpertQuiz);
+trueFalseQuestions.push(...v101ExpertTrueFalse);
+mysteryQuestions.push(...v101ExpertMystery);
+quoteQuestions.push(...v101ExpertQuotes);
+chronologyQuestions.push(...v101ExpertChronology);
+intruderQuestions.push(...v101ExpertIntruders);
+timesUpQuestions.push(...v101ExpertTimesUp);
+challenges.push(...v101ExpertChallenges);
+
 // Exports globaux placés en fin de fichier pour inclure tous les enrichissements.
 export const allQuestions = [
   ...quizQuestions, ...mysteryQuestions, ...trueFalseQuestions, ...challenges,
