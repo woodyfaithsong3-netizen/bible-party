@@ -3091,17 +3091,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "philemon": {
-    "studyFocus": "Philémon était un chrétien de Colosses chez qui une congrégation se réunissait. Paul lui écrivit au sujet d’Onésime, son esclave devenu chrétien, et l’encouragea à accueillir Onésime comme un frère.",
+    "studyFocus": "Philémon était un chrétien de Colosses chez qui une congrégation se réunissait. Paul lui écrivit au sujet d’Onésime, son esclave devenu chrétien, et l’encouragea à l’accueillir comme un frère.",
     "lessonPoints": [
-      "Philémon accueillait les chrétiens chez lui pour le culte.",
-      "Paul comptait sur son amour et sa foi pour traiter Onésime d’une manière chrétienne.",
-      "La lettre montre que les relations entre chrétiens devaient dépasser les barrières sociales.",
-      "Philémon avait la réputation d’encourager et de rafraîchir les autres croyants."
+      "Philémon était un chrétien connu pour son amour et sa foi.",
+      "Il ouvrait sa maison aux réunions de la congrégation.",
+      "Paul lui demanda d’accueillir Onésime avec amour chrétien.",
+      "Sa situation illustre comment les principes chrétiens pouvaient transformer les relations personnelles."
     ],
     "keyReading": "Philémon 1-25",
     "location": "Colosses, en Asie Mineure.",
-    "relationshipWithJehovah": "Philémon était connu pour son amour envers les saints et sa foi en Jésus; sa maison servait de lieu de réunion pour la congrégation.",
-    "didYouKnow": "Paul dit que Philémon avait été pour lui une source de joie et de réconfort en raison de l’amour qu’il manifestait envers les autres chrétiens.",
+    "relationshipWithJehovah": "Philémon était connu pour son amour envers Jésus et tous les saints, et Paul comptait sur cet amour pour résoudre une situation délicate.",
+    "didYouKnow": "Paul proposa de payer lui-même toute dette qu’Onésime pourrait avoir envers Philémon.",
     "jwResources": [
       {
         "title": "Philémon — Étude perspicace",
@@ -3146,17 +3146,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "titus": {
-    "studyFocus": "Tite était un collaborateur grec de Paul et un chrétien expérimenté chargé d’aider à organiser les congrégations. Paul lui confia notamment la mission de nommer des anciens dans les villes de Crète.",
+    "studyFocus": "Tite était un proche collaborateur de Paul et un chrétien d’origine non juive. Paul lui confia des responsabilités importantes, notamment en Crète, où il devait aider à organiser les congrégations et à nommer des anciens.",
     "lessonPoints": [
-      "Tite avait gagné la confiance de Paul pour des missions délicates.",
-      "Il accompagna Paul dans certaines étapes importantes du ministère chrétien.",
-      "Il reçut la responsabilité d’organiser les congrégations de Crète.",
-      "Paul l’encouragea à enseigner ce qui était en accord avec la saine doctrine et à donner un bon exemple."
+      "Tite accompagna Paul dans son activité missionnaire.",
+      "Il reçut des responsabilités pastorales importantes.",
+      "Paul lui demanda de nommer des anciens dans les villes où il y avait des congrégations.",
+      "Il devait enseigner une conduite chrétienne saine à différents groupes de croyants."
     ],
-    "keyReading": "Galates 2:1-3 ; 2 Corinthiens 7:6-16 ; 8:16-24 ; Tite 1:1-16 ; 2:1-15 ; 3:1-15",
-    "location": "Crète et différentes régions du monde méditerranéen.",
-    "relationshipWithJehovah": "Tite servit Jéhovah en collaborant étroitement avec Paul et en prenant soin des congrégations chrétiennes.",
-    "didYouKnow": "Paul appela Tite « mon véritable enfant selon la foi que nous partageons », ce qui montre la relation spirituelle étroite entre eux.",
+    "keyReading": "Galates 2:1-3 ; 2 Corinthiens 7:6-16 ; Tite 1:4-9 ; 2:1-15 ; 3:12-15",
+    "location": "Diverses régions missionnaires, notamment la Crète.",
+    "relationshipWithJehovah": "Tite servait fidèlement avec Paul et devait aider les congrégations à rester attachées à un enseignement sain.",
+    "didYouKnow": "Paul appelle Tite « mon véritable enfant selon la foi que nous partageons ».",
     "jwResources": [
       {
         "title": "Tite — Étude perspicace",
@@ -3199,17 +3199,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "eutychus": {
-    "studyFocus": "Eutyche était un jeune homme qui assistait à une réunion chrétienne à Troas lorsque Paul prolongea son discours jusque tard dans la nuit. Assis à une fenêtre, Eutyche s’endormit, tomba du troisième étage et fut relevé vivant après l’intervention de Paul.",
+    "studyFocus": "Eutyche était un jeune homme qui écoutait Paul parler à Troas. Assis à une fenêtre au troisième étage, il s’endormit, tomba et mourut, puis Paul l’enlaça et rassura les disciples en disant que sa vie était en lui.",
     "lessonPoints": [
-      "Eutyche voulait écouter les enseignements chrétiens malgré l’heure tardive.",
-      "Son accident rappelle les limites humaines, même dans un contexte spirituel.",
-      "Paul interrompit son discours pour aller auprès de lui.",
-      "L’événement fortifia probablement la foi de la congrégation de Troas."
+      "Eutyche était présent à une longue réunion chrétienne.",
+      "Il s’endormit alors qu’il écoutait Paul parler.",
+      "Après sa chute, les disciples furent profondément bouleversés.",
+      "Paul rassura la congrégation après l’événement miraculeux."
     ],
     "keyReading": "Actes 20:7-12",
     "location": "Troas, en Asie Mineure.",
-    "relationshipWithJehovah": "Eutyche participait à une réunion chrétienne et bénéficia de l’intervention miraculeuse rapportée dans Actes.",
-    "didYouKnow": "Eutyche était assis sur une fenêtre du troisième étage lorsque, s’étant profondément endormi pendant le long discours de Paul, il tomba dans la cour.",
+    "relationshipWithJehovah": "L’événement autour d’Eutyche fut un puissant témoignage de la puissance de Dieu et encouragea les disciples présents.",
+    "didYouKnow": "Eutyche était assis sur une fenêtre au troisième étage lorsque, vaincu par le sommeil, il tomba pendant que Paul parlait.",
     "jwResources": [
       {
         "title": "Eutyche — Étude perspicace",
@@ -3495,17 +3495,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "lydia": {
-    "studyFocus": "Lydie était une vendeuse de pourpre de Thyatire installée à Philippes. Elle adorait déjà Dieu lorsqu’elle entendit Paul et ses compagnons. Jéhovah ouvrit son cœur pour qu’elle accepte le message, puis elle fut baptisée avec sa maisonnée et offrit l’hospitalité aux missionnaires.",
+    "studyFocus": "Lydie était une marchande de pourpre de Thyatire installée à Philippes. Elle écouta Paul, accepta le message chrétien, fut baptisée avec sa maison et insista pour accueillir Paul et ses compagnons chez elle.",
     "lessonPoints": [
-      "Lydie était déjà une adoratrice de Dieu et recherchait davantage de connaissance.",
-      "Elle écouta attentivement le message chrétien.",
-      "Elle se fit baptiser avec sa maisonnée après avoir accepté la bonne nouvelle.",
-      "Elle insista pour accueillir Paul et ses compagnons chez elle."
+      "Lydie écouta attentivement le message concernant Jésus.",
+      "Elle fut baptisée avec les membres de sa maison.",
+      "Elle manifesta rapidement l’hospitalité chrétienne.",
+      "Sa maison devint un lieu où Paul et ses compagnons pouvaient être accueillis."
     ],
     "keyReading": "Actes 16:11-15, 40",
-    "location": "Thyatire puis Philippes, en Macédoine.",
-    "relationshipWithJehovah": "Jéhovah ouvrit le cœur de Lydie pour qu’elle prête attention à l’enseignement de Paul; elle répondit par la foi, le baptême et l’hospitalité.",
-    "didYouKnow": "Lydie vendait de la pourpre, une activité commerciale associée à Thyatire, et sa maison devint un lieu où Paul et ses compagnons purent se réunir.",
+    "location": "Philippes, en Macédoine.",
+    "relationshipWithJehovah": "Jéhovah ouvrit le cœur de Lydie pour qu’elle prête attention à ce que Paul disait, puis elle répondit favorablement au message chrétien.",
+    "didYouKnow": "Lydie vendait de la pourpre, un produit associé à la ville de Thyatire, et elle semble avoir été la première personne à devenir chrétienne à Philippes.",
     "jwResources": [
       {
         "title": "Lydie — Étude perspicace",
@@ -3550,17 +3550,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "tabitha": {
-    "studyFocus": "Tabitha, appelée Dorcas en grec, était une disciple de Joppé connue pour ses nombreuses bonnes actions et ses dons aux pauvres. Après sa mort, Pierre pria Jéhovah et elle revint à la vie, ce qui fut connu dans toute la ville.",
+    "studyFocus": "Tabitha, appelée Dorcas en grec, était une disciple de Joppé connue pour ses nombreuses bonnes actions et son aide aux pauvres. Après sa mort, Pierre fut appelé et Jéhovah permit que Tabitha soit ramenée à la vie par l’intermédiaire de l’apôtre.",
     "lessonPoints": [
-      "Tabitha était connue moins pour ses paroles que pour ses actes de bonté.",
-      "Elle fabriquait notamment des vêtements pour les personnes dans le besoin.",
-      "Sa mort fut profondément ressentie par les veuves qu’elle avait aidées.",
-      "Sa résurrection devint un témoignage puissant qui amena beaucoup de gens à croire au Seigneur."
+      "Tabitha était connue pour ses nombreuses bonnes actions.",
+      "Elle aidait particulièrement les veuves et les personnes dans le besoin.",
+      "Les disciples de Joppé avaient une grande affection pour elle.",
+      "Sa résurrection fortifia la foi de nombreux habitants de Joppé."
     ],
     "keyReading": "Actes 9:36-43",
     "location": "Joppé, sur la côte méditerranéenne.",
-    "relationshipWithJehovah": "Tabitha servait les autres comme disciple de Jésus, et Jéhovah permit que sa résurrection par l’intermédiaire de Pierre devienne un témoignage public.",
-    "didYouKnow": "Tabitha est le seul personnage biblique dont le récit précise qu’elle était « pleine de bonnes actions » avant de raconter sa résurrection.",
+    "relationshipWithJehovah": "Tabitha montrait son amour pour Dieu et pour les autres par ses bonnes œuvres et son aide généreuse.",
+    "didYouKnow": "Lorsque Tabitha mourut, les veuves montrèrent à Pierre les vêtements qu’elle avait faits pendant qu’elle était avec elles.",
     "jwResources": [
       {
         "title": "Tabitha — Étude perspicace",
@@ -3603,17 +3603,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "stephen": {
-    "studyFocus": "Étienne était un chrétien choisi avec six autres hommes pour s’occuper d’une responsabilité particulière envers les veuves de la congrégation de Jérusalem. Il fut ensuite accusé par des opposants, prononça un long témoignage devant le Sanhédrin et mourut lapidé, devenant le premier martyr chrétien rapporté dans la Bible.",
+    "studyFocus": "Étienne était l’un des sept hommes choisis pour s’occuper d’un besoin pratique dans la congrégation de Jérusalem. Rempli de foi et d’esprit saint, il rendit un témoignage courageux devant le Sanhédrin et fut tué par lapidation.",
     "lessonPoints": [
-      "Étienne était réputé pour sa sagesse et son esprit saint.",
-      "Il connaissait bien l’histoire d’Israël et utilisa les Écritures pour défendre la vérité.",
-      "Il resta courageux malgré les accusations et la violence.",
-      "Il pria en faveur de ses persécuteurs au moment de mourir."
+      "Étienne accepta une responsabilité pratique dans la congrégation.",
+      "Il enseignait avec sagesse et courage.",
+      "Il ne renonça pas à sa foi malgré les accusations.",
+      "Au moment de mourir, il pria Jésus et demanda que son péché ne soit pas retenu contre ses adversaires."
     ],
     "keyReading": "Actes 6:1-15 ; 7:1-60",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Étienne était rempli d’esprit saint, rendait témoignage avec assurance et resta fidèle à Jéhovah jusqu’à sa mort.",
-    "didYouKnow": "Étienne vit dans une vision Jésus debout à la droite de Dieu juste avant d’être lapidé.",
+    "relationshipWithJehovah": "Étienne était rempli de foi et d’esprit saint et resta fidèle à Jéhovah jusqu’à sa mort.",
+    "didYouKnow": "Étienne est présenté comme le premier disciple de Jésus dont la Bible rapporte la mort en martyr.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Étienne",
@@ -3663,17 +3663,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "ananias_damascus": {
-    "studyFocus": "Ananias de Damas était un disciple à qui Jésus apparut dans une vision et demanda de rechercher Saul, alors persécuteur des chrétiens. Malgré ses craintes, Ananias alla le voir, lui imposa les mains et contribua à son rétablissement et à son baptême.",
+    "studyFocus": "Ananias de Damas était un disciple que Jésus dirigea vers Saul après la vision de celui-ci. Malgré les inquiétudes qu’il avait au sujet de Saul, Ananias obéit, lui imposa les mains, l’aida à retrouver la vue et le baptisa.",
     "lessonPoints": [
-      "Ananias connaissait la réputation dangereuse de Saul mais accepta la mission reçue.",
-      "Il fit confiance à la direction de Jésus malgré son appréhension.",
-      "Il appela Saul « frère », montrant qu’il acceptait sa nouvelle mission chrétienne.",
-      "Son intervention fut déterminante dans les premiers pas de l’apôtre Paul."
+      "Ananias connaissait la réputation de Saul et avait des raisons d’être inquiet.",
+      "Il fit confiance aux instructions reçues et alla trouver Saul.",
+      "Il parla à Saul comme à un frère malgré son passé de persécuteur.",
+      "Il participa à la guérison de Saul et à son baptême."
     ],
     "keyReading": "Actes 9:10-19 ; 22:12-16",
-    "location": "Damas, en Syrie.",
-    "relationshipWithJehovah": "Ananias était un disciple fidèle qui obéit à la direction divine et participa à l’accueil de Saul dans la congrégation chrétienne.",
-    "didYouKnow": "Ananias était réputé favorablement par les Juifs de Damas et la Loi lui servait de cadre de vie avant sa rencontre avec Saul.",
+    "location": "Damas.",
+    "relationshipWithJehovah": "Ananias obéit rapidement à la direction de Jésus et participa à l’accueil de Saul dans la communauté chrétienne.",
+    "didYouKnow": "Ananias est décrit comme un homme attaché à la Loi et respecté par les Juifs de Damas.",
     "jwResources": [
       {
         "title": "Ananias de Damas — Étude perspicace",
@@ -3768,17 +3768,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_zebedee": {
-    "studyFocus": "Jacques, fils de Zébédée, était l’un des douze apôtres et l’un des trois disciples particulièrement proches de Jésus avec Pierre et Jean. Il fut témoin de la transfiguration et d’autres événements majeurs. Hérode Agrippa Ier le fit tuer par l’épée.",
+    "studyFocus": "Jacques fils de Zébédée était l’un des douze apôtres et le frère de Jean. Avec Pierre et Jean, il faisait partie du cercle des disciples que Jésus emmena à certains moments importants. Hérode Agrippa Ier le fit tuer par l’épée.",
     "lessonPoints": [
-      "Jacques répondit rapidement à l’appel de Jésus.",
-      "Il partagea avec Pierre et Jean plusieurs moments particulièrement importants du ministère de Jésus.",
-      "Il dut apprendre à corriger son ambition personnelle et son désir de position.",
-      "Il resta finalement fidèle jusqu’au martyre."
+      "Jacques abandonna son activité de pêcheur pour suivre Jésus.",
+      "Il faisait partie des trois apôtres souvent présents lors d’événements particuliers.",
+      "Jésus et Jacques avaient une relation étroite de confiance.",
+      "Jacques resta fidèle jusqu’à sa mort en martyr."
     ],
     "keyReading": "Matthieu 4:18-22 ; 17:1-9 ; Marc 10:35-45 ; Actes 12:1-2",
-    "location": "Galilée puis Jérusalem.",
-    "relationshipWithJehovah": "Jacques servit Jésus comme apôtre et mourut fidèle pendant la persécution de la congrégation.",
-    "didYouKnow": "Jacques fut le premier des douze apôtres à mourir en martyr, selon le récit d’Actes 12:2.",
+    "location": "Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Jacques servit Jésus fidèlement et mourut comme témoin de la foi chrétienne.",
+    "didYouKnow": "Jacques fut le premier des Douze dont la Bible rapporte la mort en martyr; Hérode Agrippa Ier le fit tuer par l’épée.",
     "jwResources": [
       {
         "title": "Jacques fils de Zébédée — Étude perspicace",
@@ -3817,17 +3817,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_brother_jesus": {
-    "studyFocus": "Jacques, frère de Jésus, ne devint disciple qu’après la résurrection de Jésus. Il devint ensuite une figure importante de la congrégation de Jérusalem et participa à la décision concernant les croyants non juifs.",
+    "studyFocus": "Jacques, frère de Jésus, ne croyait pas en Jésus au début de son ministère. Après la résurrection, Jésus lui apparut, et Jacques devint ensuite une figure importante de la congrégation de Jérusalem.",
     "lessonPoints": [
-      "Jacques passa du scepticisme à une foi solide après la résurrection de Jésus.",
-      "Il devint une colonne de la congrégation de Jérusalem.",
-      "Il s’appuya sur les Écritures pour formuler une décision équilibrée.",
-      "Sa lettre insiste sur une foi qui se manifeste par des œuvres."
+      "Jacques ne fut pas immédiatement convaincu par le ministère de Jésus.",
+      "La résurrection de Jésus changea profondément sa position.",
+      "Il joua un rôle important dans la congrégation de Jérusalem.",
+      "Il est associé à la lettre de Jacques, qui insiste sur une foi démontrée par les œuvres."
     ],
-    "keyReading": "Jean 7:2-5 ; Actes 15:1-29 ; 21:17-26 ; Jacques 1:1-27 ; 2:14-26",
+    "keyReading": "Jean 7:1-10 ; Actes 15:1-29 ; 1 Corinthiens 15:3-8 ; Jacques 1:1-27",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Jacques devint un serviteur fidèle de Dieu et du Seigneur Jésus Christ et contribua à fortifier la congrégation.",
-    "didYouKnow": "Paul mentionne Jacques parmi ceux à qui Jésus ressuscité apparut personnellement.",
+    "relationshipWithJehovah": "Après avoir acquis la foi en Jésus, Jacques servit activement la congrégation et encouragea les chrétiens à mettre leur foi en pratique.",
+    "didYouKnow": "Paul rapporte que le Christ ressuscité apparut spécialement à Jacques avant de se manifester à tous les apôtres.",
     "jwResources": [
       {
         "title": "Jacques, frère de Jésus — Étude perspicace",
@@ -3870,17 +3870,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jude_brother_jesus": {
-    "studyFocus": "Jude, frère de Jésus, devint un chrétien fidèle et écrivit une courte lettre pour encourager les croyants à défendre la foi contre des hommes immoraux qui s’étaient infiltrés dans la congrégation.",
+    "studyFocus": "Jude, frère de Jésus, devint un disciple et écrivit une courte lettre aux chrétiens. Il les encouragea à défendre leur foi contre des hommes immoraux qui s’étaient infiltrés dans la congrégation.",
     "lessonPoints": [
-      "Jude se présente humblement comme esclave de Jésus plutôt que de mettre en avant son lien familial.",
-      "Il avertit clairement contre l’immoralité et l’irrespect de l’autorité divine.",
-      "Il encourage les chrétiens à rester spirituellement forts et à aider ceux qui doutent.",
-      "Il termine par une louange à Dieu qui peut préserver ses serviteurs."
+      "Jude se présente humblement comme esclave de Jésus plutôt que de mettre en avant son lien familial avec lui.",
+      "Il exhorta les chrétiens à lutter pour la foi transmise aux saints.",
+      "Il dénonça clairement les conduites immorales et irrespectueuses.",
+      "Il termina sa lettre par une magnifique louange à Dieu."
     ],
     "keyReading": "Jude 1-25",
-    "location": "Probablement en Judée ou dans une région liée aux premières congrégations chrétiennes.",
-    "relationshipWithJehovah": "Jude se présente comme esclave de Jésus Christ et appelle les chrétiens à se conserver dans l’amour de Dieu.",
-    "didYouKnow": "Jude était le frère de Jacques; la lettre de Jude ne met pas en avant son lien familial avec Jésus mais son identité de serviteur.",
+    "location": "Le monde chrétien du Ier siècle.",
+    "relationshipWithJehovah": "Jude encouragea les chrétiens à rester dans l’amour de Dieu et à compter sur sa miséricorde par Jésus Christ.",
+    "didYouKnow": "Jude était frère de Jacques et donc frère de Jésus, mais dans sa lettre il se présente comme « esclave de Jésus Christ ».",
     "jwResources": [
       {
         "title": "Jude, frère de Jésus — Étude perspicace",
