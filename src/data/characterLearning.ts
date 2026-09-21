@@ -4389,8 +4389,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Romains 16:1-2",
     "location": "Cenchrées, près de Corinthe.",
-    "relationshipWithJehovah": "Son service pour la congrégation et son aide envers de nombreux chrétiens montrent une foi qui se traduisait par des actes concrets de soutien.",
-    "didYouKnow": "JW.org explique que le mot grec traduit par « ministre » à propos de Phœbé ne signifie pas qu’elle avait été nommée assistante ministérielle; Paul l’emploie pour parler de son activité au service de la bonne nouvelle.",
+    "relationshipWithJehovah": "Son soutien à de nombreux chrétiens et son service dans la congrégation montrent un engagement concret envers le culte chrétien.",
+    "didYouKnow": "Paul la recommande dans les dernières lignes de sa lettre aux Romains et demande à la congrégation de l’aider dans toute affaire où elle en aurait besoin.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4409,8 +4409,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ph%C3%A9b%C3%A9/"
       }
     ],
-    "identity": "Phœbé était une chrétienne de Cenchrées que Paul recommande chaleureusement aux chrétiens de Rome.",
-    "era": "Vers 56-58 de n. è., au cours du ministère de Paul",
+    "identity": "Phœbé était une chrétienne de Cenchrées que Paul recommande chaleureusement aux chrétiens de Rome comme sœur et servante de la congrégation.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Paul",
       "Les chrétiens de Cenchrées",
@@ -4418,15 +4418,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "bibleAccount": [
       "Paul la recommande à la congrégation de Rome.",
-      "Elle est présentée comme une aide pour beaucoup, y compris Paul.",
-      "Paul demande aux chrétiens de Rome de l’accueillir et de l’assister dans toute affaire où elle aurait besoin d’eux."
+      "Il demande qu’elle soit accueillie comme une personne digne des saints.",
+      "Il précise qu’elle a aidé beaucoup de personnes, y compris lui-même."
     ],
     "qualities": [
-      "Service",
+      "Hospitalité",
       "Générosité",
-      "Fiabilité"
+      "Service"
     ],
-    "difficulties": []
+    "difficulties": [
+      "La Bible donne peu de détails sur sa vie personnelle; il faut donc éviter d’attribuer des responsabilités ou circonstances non rapportées."
+    ]
   },
   "euodia": {
     "studyFocus": "Évodie était une chrétienne qui avait travaillé dur avec Paul dans la prédication. Paul l’a encouragée, avec Syntyche, à retrouver l’unité.",
@@ -4437,8 +4439,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes.",
-    "relationshipWithJehovah": "Paul ne remet pas en cause leur engagement chrétien; il les encourage plutôt à retrouver l’unité dans le Seigneur, montrant que même des chrétiennes actives devaient préserver la paix.",
-    "didYouKnow": "Paul dit qu’Évodie et Syntyche avaient « lutté côte à côte » avec lui dans la bonne nouvelle, ce qui montre qu’elles avaient déjà beaucoup travaillé pour la prédication.",
+    "relationshipWithJehovah": "Paul ne remet pas en cause leur dévouement; il les encourage à retrouver l’unité dans le Seigneur, montrant que la paix fraternelle fait partie de leur service chrétien.",
+    "didYouKnow": "Paul dit qu’Évodie et Syntyche avaient lutté à ses côtés pour la bonne nouvelle.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4453,24 +4455,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Évodie était une chrétienne de la congrégation de Philippes que Paul exhorte, avec Syntyche, à être unies dans le Seigneur.",
-    "era": "Premières décennies de la congrégation chrétienne",
+    "identity": "Évodie était une chrétienne de la congrégation de Philippes. Paul reconnaît qu’elle avait travaillé pour la bonne nouvelle et l’encourage à retrouver l’unité avec Syntyche.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Syntyche",
       "Paul",
       "La congrégation de Philippes"
     ],
     "bibleAccount": [
-      "Elle avait travaillé aux côtés de Paul dans la bonne nouvelle.",
-      "Paul lui adresse une exhortation personnelle à être du même avis dans le Seigneur.",
-      "Il demande à un fidèle collaborateur de les aider à régler leur désaccord."
+      "Elle avait travaillé aux côtés de Paul pour la bonne nouvelle.",
+      "Un désaccord semble s’être produit entre elle et Syntyche.",
+      "Paul demande à un compagnon fidèle de les aider à rétablir la paix."
     ],
     "qualities": [
-      "Zèle dans la bonne nouvelle",
-      "Engagement dans la congrégation"
+      "Zèle dans le service",
+      "Engagement dans la prédication"
     ],
     "difficulties": [
-      "Elle avait un désaccord avec Syntyche suffisamment important pour nécessiter l’aide d’un autre chrétien."
+      "Elle connaît un désaccord avec une autre chrétienne, ce qui montre que même des serviteurs actifs peuvent devoir rétablir la paix."
     ]
   },
   "epaphroditus": {
@@ -4482,8 +4484,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 2:25-30; 4:18",
     "location": "Philippes et Rome.",
-    "relationshipWithJehovah": "Paul le présente comme un frère, collaborateur et compagnon de combat qui s’est dépensé pour servir Christ et aider les autres chrétiens.",
-    "didYouKnow": "Paul précise qu’Épaphrodite était très inquiet parce que les Philippiens avaient appris qu’il était malade; il se souciait donc aussi de l’inquiétude que son état causait à ses frères.",
+    "relationshipWithJehovah": "Paul le présente comme frère, collaborateur et compagnon de combat. Il place le service chrétien et les intérêts des autres au-dessus de son confort.",
+    "didYouKnow": "Paul dit qu’Épaphrodite a été très malade, près de mourir, et que Dieu a eu pitié de lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4498,27 +4500,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Épaphrodite était un chrétien de Philippes envoyé auprès de Paul pour lui apporter une aide matérielle et personnelle. Il tomba gravement malade pendant cette période.",
-    "era": "Vers 60-61 de n. è., pendant la première détention de Paul à Rome",
+    "identity": "Épaphrodite était un chrétien de Philippes envoyé auprès de Paul pour lui apporter l’aide de la congrégation. Il tomba gravement malade mais continua à se soucier des autres.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
-      "Paul",
       "La congrégation de Philippes",
+      "Paul",
       "Les chrétiens de Rome"
     ],
     "bibleAccount": [
-      "Les Philippiens l’envoient servir Paul.",
-      "Il tombe gravement malade et manque de mourir.",
-      "Il se rétablit par la faveur de Jéhovah.",
-      "Paul le renvoie à Philippes avec une recommandation chaleureuse."
+      "La congrégation l’envoie auprès de Paul.",
+      "Il apporte un don matériel à Paul.",
+      "Il tombe gravement malade et Paul explique qu’il a risqué sa vie pour l’œuvre du Christ.",
+      "Il souhaite retourner auprès des Philippiens, qui s’inquiétaient de son état."
     ],
     "qualities": [
-      "Dévouement",
-      "Courage",
-      "Esprit de sacrifice",
-      "Amour fraternel"
+      "Abnégation",
+      "Fidélité",
+      "Empathie",
+      "Courage"
     ],
     "difficulties": [
-      "Il a risqué sa vie en accomplissant son service et a souffert d’une grave maladie."
+      "Il tombe gravement malade alors qu’il sert Paul et porte aussi le poids de l’inquiétude de la congrégation."
     ]
   },
   "tychicus": {
@@ -4528,10 +4530,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Encouragement : il devait renseigner les frères sur Paul et les consoler.",
       "Disponibilité : il a accepté plusieurs missions au service des congrégations."
     ],
-    "keyReading": "Actes 20:4-6; Éphésiens 6:21-22; Colossiens 4:7-9; 2 Timothée 4:12; Tite 3:12",
+    "keyReading": "Actes 20:4; Éphésiens 6:21-22; Colossiens 4:7-9; 2 Timothée 4:12",
     "location": "Asie, Rome et autres régions.",
-    "relationshipWithJehovah": "Paul lui confiait des missions importantes parce qu’il le considérait comme fidèle dans le service du Seigneur.",
-    "didYouKnow": "Tychique a probablement été le porteur de plusieurs lettres de Paul, notamment celles adressées aux Éphésiens et aux Colossiens.",
+    "relationshipWithJehovah": "Paul le qualifie de fidèle ministre et compagnon de service dans le Seigneur, soulignant sa fiabilité dans les tâches reçues.",
+    "didYouKnow": "Tychique a été chargé d’accompagner Onésime, ce qui montre la confiance de Paul dans une situation relationnelle délicate.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4546,27 +4548,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Tychique était un chrétien originaire de la province d’Asie qui accompagna Paul et servit de messager pour plusieurs de ses lettres.",
-    "era": "Premières décennies de la congrégation chrétienne",
+    "identity": "Tychique était un collaborateur fidèle de Paul, originaire de la région d’Asie. Paul lui confia plusieurs missions auprès des congrégations.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Paul",
-      "Les assemblées d’Asie",
       "Onésime",
-      "Les chrétiens de Colosses et d’Éphèse"
+      "Les congrégations d’Asie",
+      "Tite"
     ],
     "bibleAccount": [
-      "Il accompagne Paul dans son activité missionnaire.",
-      "Paul le décrit comme un frère bien-aimé, ministre fidèle et compagnon de service.",
-      "Il est chargé de renseigner les frères sur la situation de Paul.",
-      "Paul envisage de l’envoyer remplacer Timothée ou Titus selon les circonstances."
+      "Il accompagne Paul dans son ministère.",
+      "Paul le charge de transmettre des nouvelles aux Éphésiens et aux Colossiens.",
+      "Il accompagne Onésime dans son retour auprès de Philémon.",
+      "Plus tard, Paul l’envoie encore en mission."
     ],
     "qualities": [
       "Fidélité",
+      "Discrétion",
       "Fiabilité",
       "Esprit de service"
     ],
     "difficulties": [
-      "Son service impliquait des déplacements et des responsabilités dans une période où les chrétiens subissaient opposition et difficultés."
+      "Il accepte des missions de confiance qui nécessitent de voyager et de représenter Paul auprès de plusieurs congrégations."
     ]
   },
   "demas": {
@@ -4576,10 +4579,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Priorités : l’amour des avantages du monde peut détourner du service chrétien.",
       "Persévérance : il faut protéger régulièrement sa relation avec Jéhovah."
     ],
-    "keyReading": "Colossiens 4:14; Philémon 23-24; 2 Timothée 4:10",
+    "keyReading": "Colossiens 4:14; Philémon 24; 2 Timothée 4:9-10",
     "location": "Rome et le monde méditerranéen.",
-    "relationshipWithJehovah": "Le parcours de Démas montre qu’une participation initiale au service chrétien ne garantit pas la fidélité jusqu’au bout; l’attachement aux choses du monde peut détourner quelqu’un.",
-    "didYouKnow": "Démas est d’abord présenté simplement comme un collaborateur de Paul avant que sa décision de quitter Paul ne soit rapportée dans 2 Timothée.",
+    "relationshipWithJehovah": "Son parcours constitue un avertissement: une association étroite avec des chrétiens engagés ne garantit pas la fidélité si les désirs pour le monde prennent le dessus.",
+    "didYouKnow": "Démas est mentionné favorablement comme collaborateur avant d’être décrit plus tard comme ayant abandonné Paul.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4594,22 +4597,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Démas était un collaborateur de Paul pendant une période, mais Paul rapporte plus tard qu’il l’avait abandonné parce qu’il avait aimé le présent monde.",
-    "era": "Premières années de la congrégation chrétienne",
+    "identity": "Démas était un collaborateur de Paul mentionné parmi ses compagnons, mais il abandonna ensuite l’apôtre parce qu’il aimait le système de choses présent.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Paul",
       "Luc",
-      "Les collaborateurs de Paul"
+      "Tychique",
+      "Les autres collaborateurs de Paul"
     ],
     "bibleAccount": [
-      "Paul le mentionne parmi ses collaborateurs dans ses lettres.",
-      "Plus tard, Paul écrit que Démas l’a abandonné et est parti pour Thessalonique parce qu’il aimait le présent monde."
+      "Il est mentionné comme compagnon de Paul pendant sa première période de détention.",
+      "Paul le cite parmi ses collaborateurs dans sa lettre à Philémon.",
+      "Plus tard, Paul explique que Démas l’a abandonné parce qu’il aimait le système de choses présent."
     ],
     "qualities": [
-      "Collaboration initiale au ministère"
+      "Il fut pendant un temps un collaborateur de Paul."
     ],
     "difficulties": [
-      "Il a finalement abandonné Paul et son service à cause de son attachement au présent monde."
+      "Son attachement au présent système de choses finit par prendre le dessus sur son engagement auprès de Paul."
     ]
   },
   "naaman": {
@@ -5263,10 +5268,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Obéissance",
       "Reconnaissance"
     ],
-    "keyReading": "Luc 1:5-25,57-79",
+    "keyReading": "Luc 1:5-25; 1:57-80",
     "location": "Jérusalem et la région montagneuse de Judée.",
-    "relationshipWithJehovah": "Il servait régulièrement comme prêtre. Après la naissance de Jean, il reconnaît publiquement l’action de Jéhovah et prophétise sur le rôle futur de son fils.",
-    "didYouKnow": "Zekaria appartenait à la division sacerdotale d’Abiya, l’une des divisions organisées pour assurer le service au temple.",
+    "relationshipWithJehovah": "Zacharie sert au temple, mais sa réaction au message angélique révèle un manque momentané de foi. Après avoir vu l’accomplissement, il loue Jéhovah et prophétise sous inspiration.",
+    "didYouKnow": "Zacharie ne retrouve la parole qu’après avoir écrit que l’enfant devait s’appeler Jean, conformément aux instructions de Gabriel.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5281,27 +5286,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Zekaria était prêtre de la division d’Abiya, mari d’Élisabeth et père de Jean le Baptiseur.",
-    "era": "Juste avant et au début du ministère terrestre de Jésus",
+    "identity": "Zacharie était un prêtre de la classe d’Abiya, mari d’Élisabeth et père de Jean le Baptiste. L’ange Gabriel lui annonça la naissance de son fils.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Élisabeth",
-      "Jean le Baptiseur",
+      "Jean le Baptiste",
       "Gabriel",
-      "Marie"
+      "Jésus"
     ],
     "bibleAccount": [
-      "Il accomplit son service sacerdotal au temple.",
-      "L’ange Gabriel lui annonce la naissance d’un fils.",
-      "Après avoir exprimé des doutes, il reste muet jusqu’à la naissance de Jean.",
-      "Il prophétise ensuite sous l’inspiration de l’esprit saint."
+      "Il sert comme prêtre au temple de Jérusalem.",
+      "Gabriel lui annonce que sa femme aura un fils malgré son âge avancé.",
+      "Parce qu’il doute momentanément, il devient muet jusqu’à la naissance de Jean.",
+      "Après la naissance de son fils, il retrouve la parole et prophétise."
     ],
     "qualities": [
-      "Service sacré",
-      "Foi retrouvée",
-      "Reconnaissance"
+      "Piété",
+      "Service sacerdotal",
+      "Foi qui se fortifie après correction"
     ],
     "difficulties": [
-      "Il a demandé un signe alors que Gabriel lui annonçait une réponse à sa prière, et il a été temporairement privé de parole."
+      "Il demande un signe malgré le message de Gabriel et reste muet pendant la grossesse d’Élisabeth."
     ]
   },
   "elizabeth": {
@@ -5407,10 +5412,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Responsabilité",
       "Examiner les motivations"
     ],
-    "keyReading": "Jean 11:47-53; 18:12-24; Matthieu 26:57-68; Actes 4:5-10",
+    "keyReading": "Jean 11:47-53; 18:12-24; Matthieu 26:57-68; Actes 4:5-21",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Le récit ne présente pas Caïphe comme un homme servant fidèlement Jéhovah. Sa position religieuse élevée ne l’a pas empêché de rejeter Jésus et de participer à l’opposition contre ses disciples.",
-    "didYouKnow": "Caïphe était gendre d’Anne et exerça la fonction de grand prêtre pendant une période particulièrement importante du ministère de Jésus.",
+    "relationshipWithJehovah": "Le récit biblique le présente comme opposé à Jésus et à ses disciples. Il illustre le danger de laisser la position religieuse ou les intérêts institutionnels prendre le dessus sur l’obéissance à Dieu.",
+    "didYouKnow": "Caïphe prophétisa sans le savoir lorsqu’il déclara qu’il était avantageux qu’un seul homme meure pour le peuple; Jean explique que cette parole annonçait le rôle de Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5425,23 +5430,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Joseph Caïphe était grand prêtre durant une partie du ministère de Jésus. Il participa aux décisions des chefs religieux qui cherchèrent à faire mourir Jésus.",
-    "era": "Ministère de Jésus et premières années de la congrégation chrétienne",
+    "identity": "Joseph Caïphe était le grand prêtre juif qui participa aux démarches contre Jésus et qui présida des interrogatoires liés à ses disciples.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
-      "Anne, ancien grand prêtre et membre influent de la famille sacerdotale",
-      "Le Sanhédrin",
+      "Anne, son beau-père",
       "Jésus",
+      "Le Sanhédrin",
       "Pierre et Jean"
     ],
     "bibleAccount": [
-      "Il participe à la réunion du Sanhédrin concernant Jésus.",
-      "Il affirme qu’il vaut mieux qu’un seul homme meure pour le peuple.",
-      "Il préside l’interrogatoire de Jésus avec d’autres chefs religieux.",
-      "Après la résurrection, il participe aux démarches contre les apôtres."
+      "Il participe au complot visant Jésus.",
+      "Il interroge Jésus et joue un rôle dans sa condamnation par les autorités religieuses.",
+      "Il participe ensuite à l’opposition contre les apôtres.",
+      "Il fait partie de ceux qui cherchent à faire taire la prédication chrétienne."
     ],
-    "qualities": [],
+    "qualities": [
+      "Autorité institutionnelle",
+      "Influence politique et religieuse"
+    ],
     "difficulties": [
-      "Il a participé à une décision injuste contre Jésus et à l’opposition envers ses disciples."
+      "Il s’oppose au ministère de Jésus et à la prédication des apôtres, malgré les témoignages qu’il entend."
     ]
   },
   "joanna": {
@@ -5638,8 +5646,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 17:1-9; Romains 16:21",
     "location": "Thessalonique.",
-    "relationshipWithJehovah": "Son accueil des prédicateurs et son soutien à l’activité chrétienne montrent qu’il était disposé à prendre des risques personnels pour soutenir la bonne nouvelle.",
-    "didYouKnow": "Paul mentionne aussi un Jason parmi ses proches dans Romains 16:21; il n’est pas certain qu’il s’agisse du même homme que celui de Thessalonique.",
+    "relationshipWithJehovah": "Son accueil des prédicateurs chrétiens et sa disposition à supporter les conséquences montrent son soutien à la bonne nouvelle.",
+    "didYouKnow": "Les opposants prétendaient que Paul et ses compagnons parlaient d’un autre roi, Jésus, ce qui explique les accusations contre Jason.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5654,19 +5662,19 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas et fut entraîné dans l’opposition déclenchée contre eux.",
-    "era": "Vers 50-51 de n. è., durant le deuxième voyage missionnaire de Paul",
+    "identity": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas chez lui. Une foule hostile l’entraîna ensuite devant les autorités.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Paul",
       "Silas",
       "Les frères de Thessalonique",
-      "Les autorités de la ville"
+      "Les chefs de la ville"
     ],
     "bibleAccount": [
       "Il accueille Paul et Silas chez lui.",
-      "Des opposants cherchent Paul et Silas dans sa maison.",
-      "Jason et d’autres frères sont traînés devant les autorités.",
-      "Il fournit une garantie avant leur libération."
+      "Des opposants attaquent sa maison en cherchant les missionnaires.",
+      "Jason et d’autres croyants sont traînés devant les chefs de la ville.",
+      "Ils sont libérés après avoir fourni une caution."
     ],
     "qualities": [
       "Hospitalité",
@@ -5674,7 +5682,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Soutien aux prédicateurs"
     ],
     "difficulties": [
-      "Son hospitalité l’expose à l’hostilité d’une foule et à des accusations devant les autorités."
+      "Son hospitalité envers Paul et Silas l’expose à une accusation politique et à des ennuis avec les autorités."
     ]
   },
   "onesiphorus": {
@@ -5684,10 +5692,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance : il l’a recherché avec soin jusqu’à le trouver.",
       "Réconfort : il a souvent encouragé Paul et lui a fait du bien."
     ],
-    "keyReading": "2 Timothée 1:15-18 ; 4:19",
+    "keyReading": "2 Timothée 1:15-18; 4:19",
     "location": "Éphèse et Rome.",
-    "relationshipWithJehovah": "Onésiphore recherche Paul et le réconforte sans avoir honte de ses chaînes.",
-    "didYouKnow": "Paul prie pour que Jéhovah fasse miséricorde à sa maisonnée.",
+    "relationshipWithJehovah": "Paul se souvient avec gratitude de son aide et demande que sa maisonnée reçoive la miséricorde de Jéhovah.",
+    "didYouKnow": "Paul souligne qu’Onésiphore n’a pas eu honte de ses chaînes.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5702,23 +5710,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Chrétien de l’entourage de Paul — Onésiphore aide Paul et n’a pas honte de ses chaînes.",
-    "era": "Congrégation chrétienne du Ier siècle",
+    "identity": "Onésiphore était un chrétien qui apporta un soutien précieux à Paul, notamment pendant ses difficultés à Rome.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Paul",
-      "Sa maisonnée"
+      "Sa maisonnée",
+      "Timothée"
     ],
     "bibleAccount": [
-      "Réconforte Paul.",
-      "Recherche Paul avec empressement à Rome.",
-      "Soutient Paul alors qu’il est emprisonné."
+      "Il encourage souvent Paul.",
+      "À Rome, il recherche Paul avec empressement et le retrouve.",
+      "Il n’a pas honte des chaînes de Paul.",
+      "Paul demande que sa maisonnée reçoive la faveur de Jéhovah."
     ],
     "qualities": [
       "Courage",
       "Loyauté",
-      "Générosité"
+      "Hospitalité",
+      "Empathie"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il soutient Paul alors que l’apôtre est emprisonné, situation dans laquelle s’associer à lui pouvait attirer des difficultés."
+    ]
   },
   "mary_mother_james": {
     "studyFocus": "Marie mère de Jacques — une disciple fidèle",
@@ -5727,10 +5740,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Persévérance"
     ],
-    "keyReading": "Matthieu 27:55-61; 28:1-10; Marc 15:40-47; 16:1-8",
+    "keyReading": "Actes 12:1-17",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Sa fidélité se manifeste par son attachement à Jésus et par sa présence lors d’événements où beaucoup auraient pu avoir peur.",
-    "didYouKnow": "Les Évangiles mentionnent plusieurs femmes nommées Marie; identifier précisément chacune demande donc de tenir compte de son entourage et des événements associés.",
+    "relationshipWithJehovah": "Sa maison est utilisée comme lieu de réunion et de prière des chrétiens, ce qui montre son soutien concret à la congrégation.",
+    "didYouKnow": "Le récit mentionne une servante appelée Rhodé et une maison avec une porte donnant sur la rue, donnant un aperçu concret d’un foyer chrétien de Jérusalem.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5745,27 +5758,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Marie, mère de Jacques et de José, faisait partie des femmes qui accompagnaient Jésus depuis la Galilée et qui furent témoins de sa mort et de son ensevelissement.",
-    "era": "Ministère terrestre de Jésus",
+    "identity": "Marie, mère de Jacques, était une chrétienne de Jérusalem dont la maison servit de lieu de rassemblement pour les disciples.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Jacques",
-      "José",
-      "Jésus",
-      "D’autres femmes disciples"
+      "Pierre",
+      "Jean-Marc",
+      "Les chrétiens de Jérusalem"
     ],
     "bibleAccount": [
-      "Elle accompagne Jésus depuis la Galilée.",
-      "Elle assiste à son exécution.",
-      "Elle observe où son corps est déposé.",
-      "Elle se rend au tombeau après le sabbat avec d’autres femmes."
+      "Des chrétiens se réunissent chez Marie après l’arrestation de Pierre.",
+      "Pierre, libéré, se rend à cette maison.",
+      "La servante Rhodé reconnaît sa voix et les disciples présents ont du mal à croire qu’il est devant la porte."
     ],
     "qualities": [
-      "Fidélité",
-      "Courage",
-      "Persévérance"
+      "Hospitalité",
+      "Soutien aux chrétiens",
+      "Générosité"
     ],
     "difficulties": [
-      "Elle a dû assister à l’exécution de Jésus puis attendre jusqu’après le sabbat avant de retourner au tombeau."
+      "Elle met sa maison à disposition à une période de persécution et de danger pour les disciples."
     ]
   },
   "mary_mark_mother": {
@@ -5775,10 +5787,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Soutenir la congrégation",
       "Prière"
     ],
-    "keyReading": "Actes 12:1-17",
+    "keyReading": "Actes 12:5-17; 13:5, 13; 15:36-40",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Elle soutenait concrètement les chrétiens en ouvrant sa maison pour leurs réunions, ce qui montre que son attachement au vrai culte se traduisait par l’hospitalité.",
-    "didYouKnow": "La maison de Marie avait une porte donnant sur la rue et une servante appelée Rhodé; cela montre qu’il s’agissait d’une maison suffisamment importante pour accueillir des réunions de disciples.",
+    "relationshipWithJehovah": "Elle soutient les chrétiens en mettant son foyer à leur disposition pour la prière et la réunion.",
+    "didYouKnow": "Actes 12 montre que des chrétiens se réunissaient chez elle alors que Pierre était emprisonné.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5793,26 +5805,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Marie, mère de Jean Marc, était une chrétienne de Jérusalem dont la maison servait de lieu de réunion aux disciples.",
-    "era": "Premières années de la congrégation chrétienne, vers 44 de n. è.",
+    "identity": "Marie, mère de Jean-Marc, était une chrétienne de Jérusalem dont la maison accueillait des disciples. Son fils Jean-Marc devint compagnon de mission.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
-      "Jean Marc",
+      "Jean-Marc",
+      "Barnabas",
       "Pierre",
-      "Barnabé",
-      "Les chrétiens réunis chez elle"
+      "Paul",
+      "Rhodé"
     ],
     "bibleAccount": [
-      "Sa maison est un lieu où de nombreux disciples se réunissent.",
-      "Pierre se rend chez elle après sa libération miraculeuse de prison.",
-      "La servante Rhodé répond à Pierre à la porte."
+      "Les chrétiens se réunissent chez elle pour prier pendant l’emprisonnement de Pierre.",
+      "Pierre se rend chez elle après sa libération.",
+      "Son fils Jean-Marc accompagne plus tard Barnabas et Paul dans le ministère."
     ],
     "qualities": [
       "Hospitalité",
-      "Générosité",
-      "Soutien à la congrégation"
+      "Soutien spirituel",
+      "Générosité"
     ],
     "difficulties": [
-      "Elle mettait sa maison à disposition dans une période où les disciples subissaient une persécution intense."
+      "Sa maison est un lieu de rassemblement à une époque où les disciples subissent l’opposition d’Hérode."
     ]
   },
   "apphia": {
@@ -5824,8 +5837,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philémon 1-7",
     "location": "Colosses.",
-    "relationshipWithJehovah": "Paul l’appelle « notre sœur », ce qui montre qu’elle était une chrétienne reconnue au sein de la congrégation. Le texte souligne aussi l’importance de la foi et de l’amour dans son entourage chrétien.",
-    "didYouKnow": "JW.org indique qu’Apphia était peut-être la femme de Philémon, mais la Bible ne l’affirme pas explicitement.",
+    "relationshipWithJehovah": "Elle est associée à une famille chrétienne qui accueillait une assemblée et à laquelle Paul demande d’exercer l’amour chrétien envers Onésime.",
+    "didYouKnow": "Apphia est l’une des femmes auxquelles Paul adresse personnellement une de ses lettres.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5840,25 +5853,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Apphia était une chrétienne associée à Philémon et Archippe dans la lettre personnelle que Paul adressa à la maisonnée et à la congrégation qui se réunissait chez Philémon.",
-    "era": "Premières décennies de la congrégation chrétienne",
+    "identity": "Apphia était une chrétienne associée à Philémon et à l’assemblée qui se réunissait chez lui. Paul lui adresse personnellement ses salutations.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Philémon",
       "Archippe",
       "Onésime",
-      "La congrégation réunie dans la maison de Philémon"
+      "Paul"
     ],
     "bibleAccount": [
-      "Paul lui adresse directement sa lettre avec Philémon et Archippe.",
-      "Elle faisait apparemment partie de la maisonnée de Philémon.",
-      "Elle était liée à une congrégation qui se réunissait dans cette maison."
+      "Paul l’inclut parmi les destinataires de sa lettre à Philémon.",
+      "Elle appartient au cercle chrétien auquel Paul demande d’accueillir Onésime avec amour."
     ],
     "qualities": [
       "Engagement chrétien",
-      "Hospitalité"
+      "Soutien au foyer chrétien"
     ],
     "difficulties": [
-      "Elle faisait partie d’une maisonnée confrontée au retour d’Onésime, ancien esclave de Philémon devenu chrétien."
+      "La Bible donne très peu de détails personnels; il faut éviter de présenter comme certain un lien familial que le texte ne précise pas."
     ]
   },
   "archippus": {
@@ -5870,8 +5882,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philémon 1-7; Colossiens 4:17",
     "location": "Colosses.",
-    "relationshipWithJehovah": "Son service chrétien était suffisamment important pour que Paul l’encourage personnellement à le mener à bien dans le Seigneur.",
-    "didYouKnow": "Archippe est cité dans deux lettres de Paul, et l’une d’elles lui adresse une exhortation directe concernant son ministère.",
+    "relationshipWithJehovah": "Son ministère est présenté comme reçu dans le Seigneur; Paul l’encourage donc à l’accomplir pleinement et fidèlement.",
+    "didYouKnow": "Paul l’appelle « notre compagnon de combat », expression soulignant sa participation active au service chrétien.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5886,25 +5898,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Archippe était un chrétien associé à Philémon et Apphia à Colosses. Paul l’appelle « notre compagnon d’armes » et lui demande de veiller à accomplir le ministère reçu dans le Seigneur.",
-    "era": "Premières décennies de la congrégation chrétienne",
+    "identity": "Archippe était un chrétien associé à Philémon et Apphia et à l’assemblée qui se réunissait chez eux. Paul l’encourage à accomplir pleinement son ministère.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Philémon",
       "Apphia",
       "Onésime",
-      "La congrégation de Colosses"
+      "Paul"
     ],
     "bibleAccount": [
-      "Il reçoit une salutation personnelle dans la lettre à Philémon.",
-      "Paul le qualifie de compagnon d’armes.",
-      "Dans sa lettre aux Colossiens, Paul l’exhorte à veiller à accomplir le ministère reçu dans le Seigneur."
+      "Paul le salue dans la lettre à Philémon.",
+      "Il est appelé compagnon de combat.",
+      "Dans Colossiens, Paul demande qu’on lui dise de bien accomplir le ministère reçu dans le Seigneur."
     ],
     "qualities": [
       "Engagement",
-      "Persévérance dans le service"
+      "Persévérance dans le ministère"
     ],
     "difficulties": [
-      "Paul lui rappelle la nécessité de continuer à accomplir pleinement le service qui lui avait été confié."
+      "Paul l’encourage à prendre pleinement au sérieux le ministère qui lui a été confié."
     ]
   },
   "john_mark": {
@@ -5914,10 +5926,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance : Jean-Marc a repris une activité missionnaire.",
       "Encouragement : Barnabas et plus tard Paul ont reconnu son utilité."
     ],
-    "keyReading": "Actes 12:12,25; 13:5,13; 15:36-40; Colossiens 4:10; 2 Timothée 4:11; 1 Pierre 5:13",
+    "keyReading": "Actes 12:12; 13:5, 13; 15:36-40; Colossiens 4:10; 2 Timothée 4:11",
     "location": "Jérusalem, Chypre et diverses régions.",
-    "relationshipWithJehovah": "Son parcours montre qu’un faux pas dans le service n’empêche pas nécessairement de progresser. Plus tard, Paul lui-même le considère comme utile au ministère.",
-    "didYouKnow": "Paul, qui avait refusé de l’emmener après son abandon initial, demanda plus tard expressément que Jean Marc vienne le rejoindre parce qu’il lui était utile pour le service.",
+    "relationshipWithJehovah": "Son parcours montre qu’un échec dans le service n’empêche pas nécessairement de retrouver une place utile. Paul finit par le considérer comme précieux pour le ministère.",
+    "didYouKnow": "Paul demande finalement à Timothée de faire venir Marc, car il lui est utile pour le ministère.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Marc",
@@ -5936,29 +5948,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Jean Marc était un chrétien de Jérusalem, fils de Marie, cousin ou proche parent de Barnabé, et collaborateur de Paul et de Pierre. Après un abandon temporaire du service missionnaire, il redevint un compagnon utile à Paul.",
-    "era": "Premières décennies de la congrégation chrétienne",
+    "identity": "Jean-Marc était un chrétien de Jérusalem qui accompagna Paul et Barnabas dans une partie de leur première tournée missionnaire. Après une séparation, il retrouva la confiance de Paul.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Marie, sa mère",
-      "Barnabé",
+      "Barnabas, son cousin",
       "Paul",
-      "Pierre",
-      "Les chrétiens de Jérusalem"
+      "Pierre"
     ],
     "bibleAccount": [
-      "Sa maison à Jérusalem accueille des chrétiens.",
-      "Il accompagne Barnabé et Paul lors d’une première partie de leur voyage missionnaire.",
-      "Il les quitte ensuite et retourne à Jérusalem.",
-      "Barnabé veut lui redonner une occasion, ce qui provoque un désaccord avec Paul.",
-      "Plus tard, Paul le considère de nouveau comme utile au ministère."
+      "Il accompagne Paul et Barnabas depuis Jérusalem.",
+      "Il les quitte en Pamphylie et retourne à Jérusalem.",
+      "Barnabas veut l’emmener à nouveau, mais Paul refuse d’abord.",
+      "Plus tard, Paul considère Jean-Marc comme utile au ministère."
     ],
     "qualities": [
+      "Esprit de service",
       "Persévérance",
-      "Disponibilité à servir",
       "Capacité à progresser"
     ],
     "difficulties": [
-      "Il quitte Paul et Barnabé pendant leur voyage, ce qui entraîne un désaccord entre les deux hommes sur l’opportunité de l’emmener de nouveau."
+      "Son départ de la première tournée provoque un désaccord entre Paul et Barnabas.",
+      "Il doit ensuite démontrer par ses actions qu’il peut être à nouveau digne de confiance."
     ]
   },
   "priscilla": {
@@ -5968,10 +5979,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Hospitalité : leur foyer servait au soutien de l’activité chrétienne.",
       "Collaboration : ils ont travaillé avec Paul et ont risqué leur vie pour lui."
     ],
-    "keyReading": "Actes 18:1-3,18-28; Romains 16:3-5; 1 Corinthiens 16:19",
+    "keyReading": "Actes 18:1-28; Romains 16:3-5; 1 Corinthiens 16:19",
     "location": "Corinthe, Éphèse et Rome.",
-    "relationshipWithJehovah": "Priscille mettait ses ressources, son foyer et ses compétences au service de la congrégation. Avec Aquilas, elle a aidé Apollos à mieux comprendre les enseignements de Dieu.",
-    "didYouKnow": "La Bible mentionne toujours Priscille et Aquilas ensemble dans les passages qui les citent, et Paul les appelle ses « collaborateurs ».",
+    "relationshipWithJehovah": "Priscille met son foyer, ses compétences et sa sécurité au service de la bonne nouvelle. Elle contribue à aider Apollos à progresser.",
+    "didYouKnow": "Paul dit que Priscille et Aquila ont risqué leur propre vie pour lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5990,30 +6001,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Priscille/"
       }
     ],
-    "identity": "Priscille, aussi appelée Prisca, était une chrétienne mariée à Aquilas. Avec lui, elle fut collaboratrice de Paul et participa activement à l’enseignement chrétien.",
-    "era": "Premières décennies de la congrégation chrétienne",
+    "identity": "Priscille, avec son mari Aquila, était une chrétienne qui collabora étroitement avec Paul. Elle contribua à expliquer plus exactement la voie de Dieu à Apollos.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
-      "Aquilas, son mari",
+      "Aquila",
       "Paul",
       "Apollos",
-      "Les assemblées de Corinthe, Éphèse et Rome"
+      "Les congrégations d’Éphèse et de Rome"
     ],
     "bibleAccount": [
-      "Elle et Aquilas quittent Rome après le décret de Claude.",
-      "Ils travaillent avec Paul à Corinthe.",
-      "À Éphèse, ils expliquent plus exactement la voie de Dieu à Apollos.",
-      "Leur maison sert de lieu de réunion pour l’assemblée.",
-      "Paul les appelle ses collaborateurs."
+      "Elle et Aquila travaillent avec Paul à Corinthe.",
+      "Ils accueillent Apollos et lui expliquent plus exactement la voie de Dieu.",
+      "Paul transmet des salutations à leur maison.",
+      "Ils sont connus pour avoir risqué leur propre vie pour Paul."
     ],
     "qualities": [
       "Hospitalité",
       "Courage",
-      "Enseignement",
-      "Esprit de collaboration"
+      "Capacité à enseigner",
+      "Esprit de coopération"
     ],
     "difficulties": [
-      "Le décret de Claude les oblige à quitter Rome.",
-      "Paul indique qu’ils ont risqué leur vie pour lui, sans préciser l’événement exact."
+      "Le couple exerce son ministère dans différentes villes et connaît les risques liés à l’activité chrétienne au Ier siècle."
     ]
   },
   "claudius_lycias": {
@@ -6025,8 +6034,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 21:27-40; 22:22-30; 23:12-35",
     "location": "Jérusalem et Césarée.",
-    "relationshipWithJehovah": "La Bible ne présente pas Claudius Lysias comme un adorateur de Jéhovah. Son rôle montre néanmoins comment les circonstances et les autorités humaines ont contribué à préserver Paul pour que son témoignage se poursuive.",
-    "didYouKnow": "Lysias avait acheté sa citoyenneté romaine pour une grosse somme d’argent, selon son propre témoignage à Paul.",
+    "relationshipWithJehovah": "La Bible ne le présente pas comme adorateur de Jéhovah. Son intervention permet néanmoins à Paul de poursuivre son témoignage.",
+    "didYouKnow": "Claude Lysias avait acheté sa citoyenneté romaine à prix élevé; Paul affirme, lui, être né citoyen romain.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6041,26 +6050,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Claudius Lysias était le commandant militaire de la garnison romaine de Jérusalem. Il intervint lorsque Paul fut attaqué dans le temple et le protégea de la foule.",
-    "era": "Vers 56-58 de n. è., durant la détention de Paul à Jérusalem",
+    "identity": "Claude Lysias était le commandant militaire romain de Jérusalem qui fit protéger Paul lorsqu’une foule voulut le tuer.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Paul",
       "Les soldats romains",
-      "Le Sanhédrin",
-      "Le tribun de la garnison"
+      "Félix"
     ],
     "bibleAccount": [
-      "Il intervient pour arrêter Paul lorsqu’une foule le bat.",
-      "Il ordonne qu’on l’attache et qu’on l’interroge.",
-      "Il apprend ensuite que Paul est citoyen romain et évite de le faire fouetter.",
-      "Il organise son transfert à Césarée sous escorte importante pour le protéger d’un complot."
+      "Il intervient pour empêcher que Paul soit tué par la foule.",
+      "Il fait arrêter Paul puis ordonne qu’on l’interroge.",
+      "Il apprend l’existence d’un complot visant à tuer Paul.",
+      "Il envoie Paul de nuit à Césarée sous forte escorte."
     ],
     "qualities": [
-      "Prudence administrative",
-      "Respect des procédures romaines une fois la citoyenneté connue"
+      "Réaction rapide",
+      "Organisation",
+      "Prudence"
     ],
     "difficulties": [
-      "Il se trompe d’abord sur l’identité de Paul et envisage de le faire interroger sous le fouet avant d’apprendre qu’il est citoyen romain."
+      "Il doit gérer une foule violente et un complot tout en déterminant la nature des accusations contre Paul."
     ]
   },
   "julius_centurion": {
@@ -6070,10 +6079,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Jugement : il a écouté Paul à plusieurs reprises pendant le voyage.",
       "Responsabilité : il devait assurer la sécurité des prisonniers dans des circonstances difficiles."
     ],
-    "keyReading": "Actes 27:1-3,11,31-44",
+    "keyReading": "Actes 27:1-44",
     "location": "Césarée, mer Méditerranée et Rome.",
-    "relationshipWithJehovah": "La Bible ne dit pas que Julius adorait Jéhovah. Son comportement envers Paul montre toutefois qu’il pouvait agir avec bienveillance et que Dieu a permis que Paul et les autres prisonniers soient préservés.",
-    "didYouKnow": "Julius appartenait à la « cohorte impériale », et il autorisa Paul à recevoir les soins de ses amis à Sidon pendant le voyage.",
+    "relationshipWithJehovah": "Julius n’est pas présenté comme adorateur de Jéhovah, mais son traitement bienveillant de Paul lui permet de continuer son témoignage.",
+    "didYouKnow": "Julius permet à Paul de recevoir les soins de ses amis à Sidon, montrant qu’un centurion pouvait accorder une marge de liberté aux prisonniers.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6088,27 +6097,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Julius était un officier romain de la cohorte impériale chargé de conduire Paul et d’autres prisonniers vers Rome.",
-    "era": "Vers 59-60 de n. è., pendant le voyage de Paul vers Rome",
+    "identity": "Julius était un centurion de la cohorte d’Auguste chargé de conduire Paul et d’autres prisonniers vers Rome.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Paul",
-      "Les autres prisonniers",
-      "Les soldats sous ses ordres",
-      "Le capitaine du navire"
+      "Luc",
+      "Aristarque",
+      "Les autres prisonniers"
     ],
     "bibleAccount": [
-      "Il embarque Paul à destination de Rome.",
-      "Il traite Paul avec bienveillance et lui permet d’aller voir ses amis à Sidon.",
-      "Lors de la tempête, il empêche les soldats de tuer les prisonniers.",
-      "Il permet finalement à tous les passagers de rejoindre la terre après le naufrage."
+      "Il reçoit la responsabilité de conduire Paul vers Rome.",
+      "Il traite Paul avec bonté et lui permet de rendre visite à ses amis à Sidon.",
+      "Pendant la tempête, il écoute finalement Paul et empêche les soldats de tuer les prisonniers.",
+      "Tous arrivent sains et saufs à Malte."
     ],
     "qualities": [
-      "Bienveillance",
+      "Humanité",
       "Prudence",
-      "Maîtrise de la situation"
+      "Capacité à écouter"
     ],
     "difficulties": [
-      "Il doit prendre des décisions difficiles pendant une violente tempête et après le naufrage."
+      "Il doit gérer une traversée extrêmement dangereuse et prendre des décisions concernant les prisonniers lorsque le navire est en péril."
     ]
   },
   "gaius_macedonian": {
@@ -6165,10 +6174,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage : il a été impliqué dans l’activité malgré l’opposition.",
       "Endurance : son association durable avec Paul montre sa constance dans le service."
     ],
-    "keyReading": "Actes 19:29; 20:4; 27:2; Colossiens 4:10; Philémon 23-24",
+    "keyReading": "Actes 19:29; 20:4; 27:1-2; Colossiens 4:10; Philémon 24",
     "location": "Macédoine, Éphèse et Rome.",
-    "relationshipWithJehovah": "Aristarque a continué à soutenir Paul malgré les risques. Son service fidèle et sa persévérance montrent un attachement concret à l’activité chrétienne.",
-    "didYouKnow": "JW.org précise qu’on ne sait pas exactement à quel titre Aristarque accompagnait Paul vers Rome; il est même possible qu’il ait été son esclave, mais le texte ne permet pas de l’affirmer.",
+    "relationshipWithJehovah": "Aristarque reste aux côtés de Paul dans des circonstances dangereuses et pénibles, sans abandonner le service chrétien.",
+    "didYouKnow": "Paul l’appelle « mon compagnon de captivité » dans Colossiens 4:10.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6183,27 +6192,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Aristarque était un chrétien macédonien de Thessalonique, proche collaborateur de Paul, qui l’accompagna dans plusieurs voyages et partagea même ses emprisonnements.",
-    "era": "Troisième voyage missionnaire de Paul et années suivantes",
+    "identity": "Aristarque était un Macédonien de Thessalonique et un compagnon de voyage de Paul. Il partagea même une période de captivité avec lui.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Paul",
-      "Gaïus le Macédonien",
-      "Les chrétiens de Thessalonique",
-      "Onésime et d’autres collaborateurs de Paul"
+      "Gaius de Macédoine",
+      "Tychique",
+      "Les congrégations de Macédoine"
     ],
     "bibleAccount": [
-      "Il est entraîné avec Gaïus au théâtre pendant l’émeute d’Éphèse.",
-      "Il accompagne Paul lors de son voyage vers la Judée et en direction de Rome.",
-      "À Rome, il continue de soutenir Paul et est appelé son compagnon de captivité."
+      "Il accompagne Paul depuis la Macédoine.",
+      "Il est entraîné dans l’émeute d’Éphèse.",
+      "Il voyage avec Paul vers Jérusalem puis Rome.",
+      "Paul le décrit comme son compagnon de travail et de captivité."
     ],
     "qualities": [
       "Fidélité",
       "Courage",
-      "Persévérance",
-      "Esprit de sacrifice"
+      "Endurance",
+      "Esprit de coopération"
     ],
     "difficulties": [
-      "Il a subi l’hostilité de la foule à Éphèse et a partagé les difficultés de Paul, y compris la captivité."
+      "Il subit les conséquences de son association avec Paul, notamment pendant l’émeute d’Éphèse et les voyages difficiles.",
+      "Il partage la captivité de Paul."
     ]
   },
   "syntyche": {
@@ -6215,8 +6226,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes.",
-    "relationshipWithJehovah": "Son exemple montre qu’un service fidèle ne dispense pas de devoir régler rapidement les désaccords et de rechercher l’unité chrétienne.",
-    "didYouKnow": "Syntyche n’est connue que par quelques lignes de Philippiens, mais Paul la présente comme une femme qui avait personnellement travaillé avec lui pour la bonne nouvelle.",
+    "relationshipWithJehovah": "Son service passé est reconnu par Paul, mais elle reçoit aussi l’encouragement à cultiver l’unité chrétienne.",
+    "didYouKnow": "Syntyche fait partie des rares chrétiennes nommées dont Paul dit qu’elles avaient travaillé à ses côtés pour la bonne nouvelle.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6231,24 +6242,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Syntyche était une chrétienne de Philippes qui avait travaillé avec Paul dans la bonne nouvelle. Elle est citée avec Évodie dans un appel à retrouver l’unité.",
-    "era": "Premières décennies de la congrégation chrétienne",
+    "identity": "Syntyche était une chrétienne de Philippes qui avait travaillé avec Paul pour la bonne nouvelle. Paul lui adresse le même appel à l’unité qu’à Évodie.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Évodie",
       "Paul",
       "La congrégation de Philippes"
     ],
     "bibleAccount": [
-      "Elle a collaboré avec Paul dans la bonne nouvelle.",
-      "Paul demande qu’elle soit du même avis qu’Évodie dans le Seigneur.",
-      "Il sollicite l’aide d’un collaborateur fidèle pour les aider."
+      "Elle a collaboré avec Paul dans la proclamation de la bonne nouvelle.",
+      "Elle est impliquée dans un désaccord avec Évodie.",
+      "Paul demande qu’on aide les deux femmes à retrouver une bonne entente."
     ],
     "qualities": [
-      "Zèle dans la bonne nouvelle",
-      "Engagement chrétien"
+      "Zèle",
+      "Engagement dans le service chrétien"
     ],
     "difficulties": [
-      "Un désaccord avec Évodie troublait leur unité et nécessitait une aide extérieure."
+      "Son désaccord avec Évodie exige une aide fraternelle pour préserver l’unité de la congrégation."
     ]
   }
 };
