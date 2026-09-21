@@ -97,11 +97,11 @@ export default function GameScreen() {
       if (mode === 'forbidden') p = p.filter(q => q.type === 'mystery' && (q.forbiddenWords?.length || 0) >= 3);
       if (selectedCategories.length) p = p.filter(q => selectedCategories.includes(normalizeCategory(q.category)) || (selectedCategories.includes('Défis') && (q.type === 'challenge' || q.type === 'timesup')) || (selectedCategories.includes('Chronologie') && q.type === 'chronology'));
       const d = difficulty === 'all' ? p : p.filter(q => q.difficulty === difficulty);
-      out[mode] = shuffle(d.length ? d : p);
+      out[mode] = shuffle(d);
     }); return out;
   }, [selectedCategories.join(','), difficulty]);
-  const playable = useMemo(() => { const p = modes.filter(m => (decks[m] || []).length); return p.length ? p : ['quiz']; }, [modes.join(','), decks]);
-  const mode = round === target - 1 ? 'finale' : playable[round % playable.length];
+  const playable = useMemo(() => modes.filter(m => (decks[m] || []).length), [modes.join(','), decks]);
+  const mode = playable.length ? (round === target - 1 ? 'finale' : playable[round % playable.length]) : 'quiz';
   const question = useMemo<Question>(() => {
     const deck = decks[mode] || quizQuestions;
     // Indexer chaque mode selon son propre nombre d'apparitions évite de
@@ -185,6 +185,20 @@ export default function GameScreen() {
   </View>;
 
   const revealPanel = (answer: string, points: number, penalty = 0) => revealed && !validated ? <Glass strong style={{ marginTop: 14 }}><Text style={{ color: '#FFE58A', fontSize: 10, fontWeight: '900', letterSpacing: 1.4 }}>RÉPONSE RÉVÉLÉE</Text><Text style={{ color: '#FFFDF5', fontSize: 24, lineHeight: 30, fontWeight: '900', marginTop: 6 }}>{answer}</Text><Text style={{ color: '#D6E9E5', fontSize: 12, lineHeight: 18, marginTop: 7 }}>Le groupe valide la réponse avant l’attribution des points.</Text><View style={{ flexDirection: 'row', gap: 10, marginTop: 13 }}><Gold title="✓ OUI" onPress={() => validate(true, points)} style={{ flex: 1 }}/><Gold title="✕ NON" secondary onPress={() => validate(false, penalty)} style={{ flex: 1 }}/></View></Glass> : validated ? <Glass style={{ marginTop: 14, borderColor: correct ? 'rgba(93,226,169,.75)' : 'rgba(255,110,110,.7)' }}><Text style={{ color: correct ? '#6DE0A7' : '#FF8A8A', fontWeight: '900' }}>{correct ? 'RÉPONSE VALIDÉE' : 'RÉPONSE NON VALIDÉE'}</Text><Text style={{ color: '#FFFDF5', fontSize: 19, fontWeight: '900', marginTop: 4 }}>{delta > 0 ? `+${delta} points` : delta < 0 ? `${delta} points` : 'Pas de point'}</Text></Glass> : null;
+
+  const noCompatibleQuestions = playable.length === 0;
+
+  if (noCompatibleQuestions) return <ImageBackground source={scenic} resizeMode="cover" style={gameStyles.root} imageStyle={gameStyles.image}>
+    <View pointerEvents="none" style={gameStyles.overlay} />
+    <View style={{ flex: 1, justifyContent: 'center', padding: 24 }}>
+      <Glass strong>
+        <Text style={{ color: '#FFE58A', fontSize: 11, fontWeight: '900', letterSpacing: 1.2 }}>FILTRES TROP RESTRICTIFS</Text>
+        <Text style={{ color: '#FFFDF5', fontSize: 24, lineHeight: 30, fontWeight: '900', marginTop: 8 }}>Aucune question ne correspond à cette sélection.</Text>
+        <Text style={{ color: '#D6E9E5', fontSize: 13, lineHeight: 20, marginTop: 10 }}>Aucune question d'une difficulté et d'une catégorie compatibles avec les modes choisis n'est disponible.</Text>
+        <Gold title="← Modifier la partie" onPress={() => router.back()} style={{ marginTop: 18 }} />
+      </Glass>
+    </View>
+  </ImageBackground>;
 
   return <ImageBackground source={scenic} resizeMode="cover" style={gameStyles.root} imageStyle={gameStyles.image}>
   <View pointerEvents="none" style={gameStyles.overlay} />
