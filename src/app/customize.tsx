@@ -22,7 +22,8 @@ export default function CustomizeScreen() {
   const toggleMode = (id: string) => setModes(current => current.includes(id) ? current.filter(x => x !== id) : [...current, id]);
   const toggleCategory = (id: string) => setCategories(current => current.includes(id) ? current.filter(x => x !== id) : [...current, id]);
   const canSave = modes.length > 0;
-  const summary = useMemo(() => `${modes.length} modes · ${categories.length ? `${categories.length} catégories` : 'toutes les catégories'} · ${difficulty === 'all' ? 'toutes difficultés' : difficulty}`, [modes, categories, difficulty]);
+  const difficultyLabel = difficultyOptions.find(([id]) => id === difficulty)?.[1] ?? 'Tous';
+  const summary = useMemo(() => `${modes.length} modes · ${categories.length ? `${categories.length} catégories` : 'toutes les catégories'} · ${difficulty === 'all' ? 'toutes difficultés' : difficultyLabel.toLowerCase()}`, [modes, categories, difficulty, difficultyLabel]);
   const save = () => { if (!canSave) return; router.replace({ pathname: '/ready', params: { teams: String(params.teams || ''), teamsCount: String(params.teamsCount || ''), duration: String(params.duration || 20), modes: modes.join(','), categories: categories.join(','), difficulty } }); };
   return <ScenicScreen>
     <ScrollView showsVerticalScrollIndicator={false} contentContainerStyle={[styles.flowContent, { paddingBottom: 150 }]}> 
