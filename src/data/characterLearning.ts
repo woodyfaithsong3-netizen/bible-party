@@ -2341,32 +2341,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ]
   },
-  "syntyche": {
-    "studyFocus": "Syntyche travaille avec Paul pour la bonne nouvelle et reçoit avec Évodie un appel à l’unité. À observer dans son récit : Zèle, Persévérance.",
-    "lessonPoints": [
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités."
-    ],
-    "keyReading": "Travaille pour la bonne nouvelle.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ]
-  },
   "epaphroditus": {
     "studyFocus": "Épaphrodite apporte l’aide de la congrégation de Philippes à Paul et tombe gravement malade pendant son service. À observer dans son récit : Abnégation, Courage, Fidélité.",
     "lessonPoints": [
@@ -3339,28 +3313,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ]
   },
-  "jean_baptiste": {
-    "studyFocus": "Jean le Baptiseur prépare le chemin devant Jésus et appelle les gens à la repentance. Il dénonce courageusement les fautes, y compris celles du dirigeant Hérode.",
+  "syntiche": {
+    "studyFocus": "Syntyche travaille avec Paul pour la bonne nouvelle et reçoit avec Évodie un appel à l’unité. À observer dans son récit : Zèle, Persévérance.",
     "lessonPoints": [
-      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
-      "Étudier la qualité « Zèle » dans les épisodes bibliques cités."
+      "Observer la qualité « Zèle » dans les épisodes cités.",
+      "Observer la qualité « Persévérance » dans les épisodes cités."
     ],
-    "keyReading": "Matthieu 3 ; 11:1-14 ; 14:1-12 ; Jean 1:19-36",
-    "location": "Jourdain ; Judée ; Galilée.",
-    "relationshipWithJehovah": "Jean sait que son rôle est préparatoire et dirige l’attention vers Jésus plutôt que vers lui-même.",
-    "didYouKnow": "Jésus dit de Jean qu’il est plus qu’un prophète et qu’aucun homme né d’une femme n’a été suscité de plus grand.",
+    "keyReading": "Travaille pour la bonne nouvelle.",
     "jwResources": [
       {
-        "title": "Jean le Baptiseur — Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Jean le Baptiseur — Les personnages de la Bible",
+        "title": "Imitez leur foi",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+      },
+      {
+        "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
       },
       {
-        "title": "La Bible en ligne",
+        "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
