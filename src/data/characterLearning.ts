@@ -384,10 +384,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Étudier la qualité « Confiance » dans les épisodes bibliques cités.",
       "Étudier la qualité « Obéissance » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Josué 1–6 ; 23–24",
+    "keyReading": "Nombres 13:1-33; Josué 1:1-18; 6:1-27; 23:1-16; 24:14-31",
     "location": "Désert ; Canaan ; Jéricho ; Sichem.",
-    "relationshipWithJehovah": "Jéhovah encourage Josué à être fort et courageux et lui demande de méditer la Loi avec constance.",
-    "didYouKnow": "Josué avait été l’un des douze espions envoyés en Canaan et, avec Caleb, il donna un rapport favorable.",
+    "relationshipWithJehovah": "Jéhovah lui demande à plusieurs reprises d’être courageux et fort. Josué s’appuie sur la Loi, suit la direction reçue et exhorte le peuple à choisir de servir Jéhovah.",
+    "didYouKnow": "Le livre de Josué couvre probablement plus de 20 ans, de 1473 à environ 1450 av. n. è.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Josué",
@@ -406,25 +406,31 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/"
       }
     ],
-    "identity": "Successeur de Moïse — Josué conduit Israël dans la conquête du pays et reste attaché aux instructions reçues.",
-    "era": "Josué",
+    "identity": "Josué, fils de Noun, servit Moïse avant de lui succéder comme dirigeant d’Israël. Il conduisit le peuple dans la conquête et la répartition de la Terre promise.",
+    "era": "1513-1450 av. n. è. environ",
     "familyAndEntourage": [
+      "Noun, son père",
       "Moïse",
       "Caleb",
-      "Rahab"
+      "Rahab",
+      "Les Israélites"
     ],
     "bibleAccount": [
-      "Accompagne les espions.",
-      "Conduit Israël à travers le Jourdain.",
-      "Dirige plusieurs campagnes en Canaan.",
-      "Encourage le peuple à servir Jéhovah."
+      "Il combat les Amaléqites sous la direction de Moïse.",
+      "Il fait partie des 12 espions envoyés en Canaan et, avec Caleb, garde confiance dans la promesse de Jéhovah.",
+      "Il succède à Moïse et conduit Israël à travers le Jourdain.",
+      "Il dirige la conquête de Canaan et la répartition du pays.",
+      "À la fin de sa vie, il exhorte Israël à servir Jéhovah fidèlement."
     ],
     "qualities": [
       "Courage",
-      "Confiance",
-      "Obéissance"
+      "Foi",
+      "Obéissance",
+      "Fidélité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit diriger une nation après Moïse et affronter des ennemis nombreux tout en restant attaché aux instructions de Jéhovah."
+    ]
   },
   "ruth": {
     "studyFocus": "Ruth, Moabite, choisit de rester avec Noémi et de devenir une adoratrice de Jéhovah. Elle travaille humblement et devient l’ancêtre du roi David.",
@@ -433,10 +439,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
       "Étudier la qualité « Foi » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Ruth 1–4",
+    "keyReading": "Ruth 1:6-18; 2:1-23; 3:1-18; 4:9-17",
     "location": "Moab ; Bethléem ; champs de Boaz.",
-    "relationshipWithJehovah": "Ruth abandonne ses anciennes attaches religieuses et manifeste une loyauté remarquable envers Noémi et envers le peuple de Jéhovah.",
-    "didYouKnow": "Ruth figure dans la généalogie menant à David et à Jésus Christ.",
+    "relationshipWithJehovah": "Elle abandonne son peuple pour rester avec Naomi et dit qu’elle veut que le peuple et le Dieu de Naomi soient les siens. Son choix montre une adhésion personnelle au culte de Jéhovah.",
+    "didYouKnow": "Ruth était Moabite, mais elle figure dans la lignée de David et donc dans la généalogie terrestre de Jésus.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Ruth",
@@ -455,25 +461,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/histoires-bibliques/"
       }
     ],
-    "identity": "Moabite devenue ancêtre de David — Ruth, une Moabite, s’est attachée à Noémi et au peuple de Jéhovah avec une fidélité remarquable.",
-    "era": "Juges",
+    "identity": "Ruth était une Moabite devenue veuve qui choisit de rester avec sa belle-mère Naomi et d’adorer Jéhovah. Elle devint l’épouse de Boaz et une ancêtre de David.",
+    "era": "Époque des juges, avant le règne de David",
     "familyAndEntourage": [
       "Naomi",
       "Boaz",
+      "Élimélek",
       "Obed"
     ],
     "bibleAccount": [
-      "Reste auprès de Naomi.",
-      "Travaille dans les champs de Boaz.",
-      "Épouse Boaz.",
-      "JW.org présente Ruth comme un exemple de fidélité et d’amitié."
+      "Après la mort de son mari, elle refuse d’abandonner Naomi.",
+      "Elle travaille à glaner dans les champs de Boaz.",
+      "Elle accepte les dispositions prévues par la Loi concernant le rachat.",
+      "Boaz devient son mari et ils ont un fils, Obed."
     ],
     "qualities": [
-      "Fidélité",
       "Loyauté",
-      "Humilité"
+      "Humilité",
+      "Travail",
+      "Amour désintéressé"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle est veuve et étrangère en Juda, sans sécurité matérielle assurée, mais elle persévère aux côtés de Naomi."
+    ]
   },
   "samuel": {
     "studyFocus": "Samuel sert Jéhovah dès son enfance et devient prophète et juge en Israël. Il accompagne la transition vers la royauté tout en restant fidèle aux directives divines.",
@@ -482,10 +492,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Étudier la qualité « Fidélité » dans les épisodes bibliques cités.",
       "Étudier la qualité « Courage » dans les épisodes bibliques cités."
     ],
-    "keyReading": "1 Samuel 1–3 ; 7–12 ; 15",
+    "keyReading": "1 Samuel 1:24-28; 3:1-21; 8:1-22; 15:10-35; 16:1-13",
     "location": "Shilo ; Rama ; Israël.",
-    "relationshipWithJehovah": "Jéhovah se sert de Samuel comme prophète et juge. Samuel apprend à écouter sa voix et à transmettre ses messages même lorsqu’ils sont difficiles.",
-    "didYouKnow": "Samuel reçut son premier message prophétique alors qu’il était encore jeune garçon.",
+    "relationshipWithJehovah": "Dès son enfance, Samuel sert devant Jéhovah et apprend à écouter sa voix. Il transmet fidèlement les messages reçus même lorsqu’ils sont difficiles à communiquer.",
+    "didYouKnow": "Samuel fut conduit au tabernacle à Shilo lorsqu’il fut sevré et y servit alors qu’il était encore garçon.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Samuel",
@@ -504,25 +514,31 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/"
       }
     ],
-    "identity": "Prophète et juge — Samuel sert dès son enfance et joue un rôle important lors de la transition vers la monarchie en Israël.",
-    "era": "Juges à Rois",
+    "identity": "Samuel était prophète, juge et serviteur de Jéhovah dès son enfance. Il joua un rôle majeur dans la transition d’Israël vers la royauté.",
+    "era": "Vers 12e-11e siècles av. n. è.",
     "familyAndEntourage": [
-      "Anne",
+      "Elqana, son père",
+      "Hanna, sa mère",
       "Éli",
       "Saül",
       "David"
     ],
     "bibleAccount": [
-      "Reçoit son appel alors qu’il est jeune.",
-      "Juge Israël.",
-      "Oint Saül puis David sur instruction divine."
+      "Hanna le consacre au service de Jéhovah avant sa naissance.",
+      "Il sert au tabernacle à Shilo sous la responsabilité d’Éli.",
+      "Jéhovah l’appelle pendant la nuit et fait de lui un prophète.",
+      "Il oint Saül puis David sur instruction de Jéhovah.",
+      "Il continue à parler au peuple et aux rois au nom de Jéhovah."
     ],
     "qualities": [
       "Écoute",
       "Fidélité",
-      "Courage"
+      "Courage",
+      "Impartialité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit annoncer des jugements difficiles, notamment à Éli et à Saül, et accepter les changements que Jéhovah apporte à la direction de la nation."
+    ]
   },
   "david": {
     "studyFocus": "David devient roi après avoir été oint par Samuel. Sa vie montre une foi profonde, mais aussi les conséquences graves de ses fautes et l’importance du repentir.",
@@ -639,10 +655,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Confiance en Jéhovah : il a prié avec foi et a laissé Jéhovah démontrer qui est le vrai Dieu.",
       "Persévérance : après avoir eu peur, Élie a reçu de Jéhovah l’assurance qu’il avait encore du travail à accomplir."
     ],
-    "keyReading": "1 Rois 17–19 ; 21 ; 2 Rois 2",
+    "keyReading": "1 Rois 17:1-24; 18:17-46; 19:1-18",
     "location": "Israël du Nord ; mont Carmel ; désert ; région du Jourdain.",
-    "relationshipWithJehovah": "Élie sert comme prophète de Jéhovah et apprend que la puissance divine ne dépend pas d’un spectacle impressionnant : Jéhovah le rassure et le guide.",
-    "didYouKnow": "Élie fut nourri pendant un temps par des corbeaux près du torrent de Kerith.",
+    "relationshipWithJehovah": "Élie défend publiquement le nom de Jéhovah au Carmel, mais connaît aussi un moment de découragement. Jéhovah le soutient alors avec patience et lui confie encore du travail.",
+    "didYouKnow": "Jéhovah ne corrige pas Élie avec dureté lorsqu’il fuit; il lui fournit nourriture, repos et une nouvelle mission.",
     "jwResources": [
       {
         "title": "Élie — Étude perspicace des Écritures",
@@ -661,24 +677,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Prophète — Élie défend le culte de Jéhovah face au culte de Baal et accomplit plusieurs miracles.",
-    "era": "Rois",
+    "identity": "Élie était un prophète de Jéhovah qui combattit avec courage le culte de Baal dans le royaume d’Israël.",
+    "era": "IXe siècle av. n. è.",
     "familyAndEntourage": [
-      "Élisée",
+      "Jéhovah",
       "Achab",
-      "Jézabel"
+      "Jézabel",
+      "Élisée"
     ],
     "bibleAccount": [
-      "Annonce une sécheresse.",
-      "Est nourri près du torrent de Kerith.",
-      "Affronte les prophètes de Baal au mont Carmel."
+      "Il annonce une sécheresse au temps d’Achab.",
+      "Il est nourri près du torrent de Kerith puis par une veuve à Zarephath.",
+      "Il défie les prophètes de Baal au mont Carmel.",
+      "Il prie Jéhovah et le feu consume le sacrifice.",
+      "Il forme ensuite Élisée pour lui succéder comme prophète."
     ],
     "qualities": [
       "Courage",
       "Zèle",
-      "Confiance"
+      "Confiance en Jéhovah",
+      "Persévérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Après le Carmel, il est terrifié par Jézabel et fuit. Jéhovah le fortifie et lui donne une nouvelle mission."
+    ]
   },
   "esther": {
     "studyFocus": "Esther devient reine et utilise sa position pour intervenir en faveur des Juifs menacés d’extermination. Son récit met en évidence courage, prudence et souci du peuple de Dieu.",
@@ -687,10 +709,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Étudier la qualité « Prudence » dans les épisodes bibliques cités.",
       "Étudier la qualité « Sacrifice » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Esther 2–9",
+    "keyReading": "Esther 2:5-20; 3:8-15; 4:10-17; 5:1-8; 7:1-10",
     "location": "Suse, en Perse.",
-    "relationshipWithJehovah": "Même dans une situation dangereuse, Esther agit avec prudence et courage pour défendre le peuple de Jéhovah.",
-    "didYouKnow": "Le livre d’Esther ne mentionne pas directement le nom de Jéhovah.",
+    "relationshipWithJehovah": "Le livre d’Esther ne mentionne pas directement le nom de Jéhovah, mais Esther agit avec courage dans une situation où le salut des Juifs est en jeu et accepte de risquer sa vie pour eux.",
+    "didYouKnow": "Le livre d’Esther ne contient pas le nom de Dieu, fait remarquable parmi les livres bibliques historiques.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Esther",
@@ -713,24 +735,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Esther/"
       }
     ],
-    "identity": "Reine — Esther utilise sa position pour intervenir en faveur de son peuple lorsqu’un projet de destruction est préparé.",
-    "era": "Période perse",
+    "identity": "Esther, aussi appelée Hadassa, était une Juive devenue reine de Perse. Elle risqua sa vie pour intervenir en faveur de son peuple menacé d’extermination.",
+    "era": "Ve siècle av. n. è.",
     "familyAndEntourage": [
-      "Mardochée",
+      "Mardochée, son cousin et tuteur",
       "Assuérus",
-      "Haman"
+      "Haman",
+      "Le peuple juif"
     ],
     "bibleAccount": [
-      "Devient reine.",
-      "Révèle son identité et le projet d’Haman.",
-      "Intervient auprès du roi pour protéger les Juifs."
+      "Elle devient reine sans révéler d’abord son origine juive.",
+      "Haman obtient un décret menaçant les Juifs.",
+      "Mardochée l’encourage à utiliser sa position pour aider son peuple.",
+      "Elle se présente au roi sans y être convoquée, au risque de sa vie.",
+      "Elle révèle le complot de Haman et contribue à sauver les Juifs."
     ],
     "qualities": [
       "Courage",
-      "Discrétion",
-      "Abnégation"
+      "Maîtrise de soi",
+      "Sagesse",
+      "Loyauté"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle doit choisir entre sa sécurité personnelle et la défense de son peuple face à un décret impérial."
+    ]
   },
   "daniel": {
     "studyFocus": "Daniel reste fidèle à Jéhovah pendant l’exil à Babylone et sous plusieurs souverains. Il refuse de compromettre son culte et continue de prier malgré l’interdiction royale.",
@@ -739,10 +767,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
       "Étudier la qualité « Fidélité » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Daniel 1 ; 6 ; 9",
+    "keyReading": "Daniel 1:8-20; 2:17-23; 6:1-28; 9:1-23",
     "location": "Babylone et l’Empire médo-perse.",
-    "relationshipWithJehovah": "Daniel garde des habitudes de prière et met sa confiance dans Jéhovah même lorsque sa fidélité entraîne un danger réel.",
-    "didYouKnow": "Daniel avait environ 15 ans lorsqu’il fut emmené à Babylone, selon la chronologie présentée par les publications JW.",
+    "relationshipWithJehovah": "Daniel prie régulièrement, attribue à Jéhovah la capacité de révéler les choses cachées et refuse de compromettre son culte même lorsqu’une loi impériale l’y pousse.",
+    "didYouKnow": "Daniel avait l’habitude de prier trois fois par jour, fenêtres ouvertes vers Jérusalem, même après l’interdiction de prier tout autre dieu.",
     "jwResources": [
       {
         "title": "Que dit la Bible à propos de Daniel ?",
@@ -765,28 +793,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Daniel/"
       }
     ],
-    "identity": "Prophète et haut fonctionnaire — Daniel reste fidèle pendant son service dans les cours babylonienne et perse et reçoit plusieurs visions.",
-    "era": "Exil à Babylone",
+    "identity": "Daniel était un jeune Juif emmené à Babylone. Il servit dans plusieurs administrations impériales tout en restant fidèle à Jéhovah.",
+    "era": "VIe siècle av. n. è.",
     "familyAndEntourage": [
-      "Hanania",
-      "Mishaël",
-      "Azaria",
-      "Neboukadnetsar",
-      "Darius"
+      "Ses trois compagnons: Hanania, Mishaël et Azaria",
+      "Nabuchodonosor",
+      "Darius",
+      "Cyrus"
     ],
     "bibleAccount": [
-      "Refuse de se souiller avec la nourriture du roi.",
-      "Interprète des rêves.",
-      "Continue de prier malgré l’interdiction.",
-      "Survit à la fosse aux lions."
+      "Il refuse de se souiller avec les aliments du roi.",
+      "Il interprète des rêves grâce à l’aide de Jéhovah.",
+      "Il continue à prier malgré l’interdiction royale.",
+      "Il est jeté dans la fosse aux lions et Jéhovah le délivre.",
+      "Il reçoit plusieurs visions prophétiques."
     ],
     "qualities": [
-      "Fidélité",
+      "Intégrité",
       "Courage",
-      "Discipline",
-      "Prière"
+      "Discipline spirituelle",
+      "Humilité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il vit en exil et subit des pressions religieuses et politiques constantes, dont une menace directe contre sa vie."
+    ]
   },
   "jean-baptiste": {
     "studyFocus": "Jean le Baptiseur a préparé le chemin pour le Messie avec courage, humilité et fidélité. Son exemple montre comment défendre ce qui est juste tout en dirigeant l’attention vers Jésus et vers Jéhovah.",
@@ -1297,7 +1327,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Examiner comment il organise les travaux tout en faisant face aux moqueries, aux menaces et aux complots.",
       "Observer comment il continue à défendre le culte pur et à corriger certaines pratiques après la reconstruction."
     ],
-    "keyReading": "Néhémie 1–6 ; 8–10 ; 13",
+    "keyReading": "Néhémie 1:1-11; 2:1-20; 4:1-23; 6:1-19; 8:1-12",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Néhémie",
@@ -1317,21 +1347,23 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "location": "Suse, capitale royale perse ; Jérusalem et son district, où Nehémia exerce ensuite comme gouverneur.",
-    "relationshipWithJehovah": "Nehémia priait régulièrement Jéhovah et s’appuyait sur lui pour obtenir l’autorisation du roi, protéger les travailleurs et mener à bien la reconstruction. Le livre de Néhémia présente Jéhovah comme Celui qui exauce les prières sincères de ses serviteurs.",
-    "didYouKnow": "La muraille de Jérusalem fut achevée en 52 jours. Nehémia était échanson d’Artaxerxès avant de devenir gouverneur des Juifs.",
-    "identity": "Gouverneur et restaurateur de Jérusalem — Néhémie organise la reconstruction des murailles de Jérusalem malgré l’opposition.",
-    "era": "Période perse",
+    "relationshipWithJehovah": "Néhémie commence son action par la prière et attribue régulièrement la réussite à Jéhovah. Il combine confiance en Dieu et organisation pratique.",
+    "didYouKnow": "La reconstruction des murailles de Jérusalem fut achevée en seulement 52 jours malgré l’opposition.",
+    "identity": "Néhémie était un Juif servant comme échanson du roi de Perse. Il reçut l’autorisation de reconstruire les murailles de Jérusalem et dirigea le chantier malgré une forte opposition.",
+    "era": "Ve siècle av. n. è., après l’exil",
     "familyAndEntourage": [
       "Artaxerxès",
-      "Esdras",
+      "Les Juifs de Jérusalem",
       "Sanballat",
-      "Tobiah"
+      "Tobiya",
+      "Esdras"
     ],
     "bibleAccount": [
-      "Prie après avoir appris l’état de Jérusalem.",
-      "Obtient l’autorisation royale de reconstruire les murailles.",
-      "Organise le travail malgré les menaces.",
-      "Participe à des réformes parmi le peuple."
+      "Il apprend la situation désastreuse de Jérusalem et prie Jéhovah.",
+      "Il demande au roi l’autorisation de reconstruire les murailles.",
+      "Il organise les familles et les travailleurs malgré les menaces.",
+      "La muraille est achevée en 52 jours.",
+      "Il contribue ensuite à rétablir l’ordre spirituel et social du peuple."
     ],
     "qualities": [
       "Prière",
@@ -1339,7 +1371,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Persévérance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il subit moqueries, menaces et tentatives d’intimidation, tout en devant corriger certains problèmes internes parmi les Juifs."
+    ]
   },
   "mary_magdalen": {
     "studyFocus": "Marie Madeleine a été une disciple fidèle de Jésus qui l’a accompagné et soutenu et qui a eu le privilège d’être parmi les premières personnes à le voir après sa résurrection.",
@@ -2285,10 +2319,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il annonce de nombreuses prophéties messianiques.",
       "Il met l’accent sur la sainteté de Jéhovah et la confiance en lui."
     ],
-    "keyReading": "Isaïe 1–6 ; 7:10-17 ; 9:1-7 ; 11:1-10 ; 53",
+    "keyReading": "Isaïe 6:1-13; 7:1-17; 9:1-7; 53:1-12",
     "location": "Jérusalem et le royaume de Juda.",
-    "relationshipWithJehovah": "Isaïe est présenté comme prophète de Jéhovah et reçoit sa mission dans une vision de la sainteté divine.",
-    "didYouKnow": "Le livre d’Isaïe contient de nombreuses prophéties que les Écritures grecques chrétiennes appliquent à Jésus Christ.",
+    "relationshipWithJehovah": "Lorsqu’il entend la question « Qui enverrai-je ? », Isaïe répond immédiatement qu’il est disponible. Il accepte une mission dont Jéhovah lui annonce qu’elle rencontrera de la résistance.",
+    "didYouKnow": "Isaïe 6 décrit une vision dans laquelle Isaïe voit Jéhovah dans son temple et entend les séraphins proclamer la sainteté de Dieu.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2311,23 +2345,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Isa%C3%AFe/"
       }
     ],
-    "identity": "Prophète de Juda — Isaïe transmet des messages de Jéhovah à Juda et annonce plusieurs événements concernant le peuple et le Messie.",
-    "era": "Rois et prophètes",
+    "identity": "Isaïe était un prophète de Juda qui servit pendant les règnes de plusieurs rois et transmit de nombreuses prophéties sur Juda, les nations et le Messie.",
+    "era": "VIIIe siècle av. n. è.",
     "familyAndEntourage": [
-      "Ézéchias",
-      "Achaz"
+      "Amots, son père",
+      "Sa femme, appelée la prophétesse",
+      "Ses fils, dont Shear-Jashub et Maher-Shalal-Hash-Baz",
+      "Les rois Ozias, Jotham, Ahaz et Ézéchias"
     ],
     "bibleAccount": [
-      "Accepte une mission prophétique.",
-      "Transmet des avertissements et des encouragements à Juda.",
-      "Annonce des prophéties concernant le Messie et l’avenir de Jérusalem."
+      "Il reçoit une vision spectaculaire de Jéhovah au temple.",
+      "Il accepte la mission prophétique malgré la difficulté de son territoire.",
+      "Il transmet des avertissements aux rois de Juda.",
+      "Il annonce des prophéties messianiques et concernant la restauration du peuple."
     ],
     "qualities": [
       "Disponibilité",
       "Courage",
-      "Foi"
+      "Foi",
+      "Clarté"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit annoncer des jugements à un peuple souvent peu réceptif et conseiller des rois confrontés à de graves menaces."
+    ]
   },
   "jeremiah": {
     "studyFocus": "Jérémie sert comme prophète avant et pendant la destruction de Jérusalem. Malgré les menaces et l’emprisonnement, il continue à transmettre les messages de Jéhovah.",
@@ -2338,10 +2378,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il transmet la promesse d’une nouvelle alliance.",
       "Son endurance montre l’importance de continuer à parler même lorsque le message est impopulaire."
     ],
-    "keyReading": "Jérémie 1 ; 20 ; 26 ; 36-38 ; 31:31-34 ; 40-43",
+    "keyReading": "Jérémie 1:4-19; 20:7-13; 26:1-24; 36:1-32; 38:1-13",
     "location": "Jérusalem, Juda et les régions voisines.",
-    "relationshipWithJehovah": "Jérémie entretient une relation étroite avec Jéhovah par la prière et l’obéissance, même lorsqu’il est découragé ou menacé.",
-    "didYouKnow": "Jérémie a servi pendant plusieurs décennies et a été témoin de la destruction de Jérusalem.",
+    "relationshipWithJehovah": "Jérémie parle ouvertement à Jéhovah de son découragement tout en continuant sa mission. Ses prières montrent qu’il ne cache pas ses émotions mais reste attaché à Dieu.",
+    "didYouKnow": "Jérémie était encore jeune lorsqu’il reçut sa mission prophétique et dit à Jéhovah qu’il ne savait pas parler parce qu’il était un garçon.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2364,25 +2404,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/J%C3%A9r%C3%A9mie/"
       }
     ],
-    "identity": "Prophète de Juda — Jérémie annonce les conséquences de l’infidélité de Jérusalem tout en transmettant des messages d’espérance.",
-    "era": "Rois et exil",
+    "identity": "Jérémie était un prophète de Juda chargé d’avertir Jérusalem avant sa destruction par les Babyloniens et pendant cette période de crise.",
+    "era": "VIIe-VIe siècles av. n. è.",
     "familyAndEntourage": [
-      "Baruch",
-      "Sédécias",
+      "Hilqiya, son père",
+      "Barouk",
+      "Les rois de Juda",
       "Les habitants de Jérusalem"
     ],
     "bibleAccount": [
-      "Prêche malgré une forte opposition.",
-      "Annonce la chute de Jérusalem.",
-      "Subit emprisonnement et mauvais traitements.",
-      "Transmet une promesse concernant une nouvelle alliance."
+      "Jéhovah le choisit avant sa naissance pour être prophète.",
+      "Il annonce la destruction de Jérusalem si le peuple ne change pas.",
+      "Il subit opposition, moqueries, emprisonnement et mauvais traitements.",
+      "Il continue néanmoins à transmettre les messages de Jéhovah.",
+      "Après la chute de Jérusalem, il reste avec les survivants."
     ],
     "qualities": [
-      "Endurance",
       "Courage",
+      "Persévérance",
+      "Honnêteté dans la prière",
       "Fidélité"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il souffre profondément à cause de la réaction du peuple et connaît de longues périodes de solitude et d’opposition."
+    ]
   },
   "ezekiel": {
     "studyFocus": "Ézéchiel est un prêtre devenu prophète parmi les exilés à Babylone. Ses visions montrent que Jéhovah reste souverain même loin de Jérusalem.",
@@ -2393,10 +2438,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il reçoit des visions concernant la restauration du vrai culte.",
       "Son service montre la nécessité de rester fidèle dans des circonstances difficiles."
     ],
-    "keyReading": "Ézéchiel 1–3 ; 18 ; 33 ; 36–37 ; 40–48",
+    "keyReading": "Ézékiel 1:1-28; 2:1-10; 3:16-27; 24:15-27; 37:1-14",
     "location": "Babylone, notamment près du fleuve Kebar.",
-    "relationshipWithJehovah": "Ézéchiel reçoit des visions et des messages de Jéhovah et doit les transmettre fidèlement aux exilés.",
-    "didYouKnow": "Ézéchiel était prêtre et a commencé à prophétiser parmi les exilés à Babylone.",
+    "relationshipWithJehovah": "Ézékiel reçoit des instructions détaillées et les exécute avec fidélité, même lorsqu’elles sont personnellement douloureuses. Jéhovah l’appelle régulièrement « fils d’homme » pour lui rappeler son statut humain.",
+    "didYouKnow": "Ézékiel exerçait la fonction de guetteur spirituel: il devait avertir les personnes menacées, et leur réaction déterminait leur responsabilité.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2419,23 +2464,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89z%C3%A9kiel/"
       }
     ],
-    "identity": "Prophète parmi les exilés — Ézéchiel transmet des visions et des messages aux exilés de Juda à Babylone.",
-    "era": "Exil à Babylone",
+    "identity": "Ézékiel était un prêtre devenu prophète parmi les Juifs exilés à Babylone. Ses visions et messages ont soutenu les exilés et expliqué pourquoi Jérusalem serait jugée.",
+    "era": "VIe siècle av. n. è.",
     "familyAndEntourage": [
-      "Les exilés de Juda"
+      "Buzi, son père",
+      "Sa femme",
+      "Les exilés juifs à Tel-Abib",
+      "Jéhovah"
     ],
     "bibleAccount": [
-      "Reçoit une vision inaugurale.",
-      "Annonce le jugement sur Jérusalem.",
-      "Encourage les exilés avec des promesses de restauration.",
-      "Transmet la vision du temple."
+      "Il reçoit sa première vision au bord du Kebar.",
+      "Jéhovah le nomme guetteur pour la maison d’Israël.",
+      "Il accomplit plusieurs actions symboliques pour illustrer ses messages.",
+      "Il annonce la chute de Jérusalem puis transmet des messages d’espérance concernant la restauration."
     ],
     "qualities": [
       "Obéissance",
-      "Persévérance",
-      "Courage"
+      "Endurance",
+      "Attention aux instructions divines"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il accomplit des actes symboliques difficiles et subit la mort de sa femme comme signe pour les exilés, tout en poursuivant sa mission."
+    ]
   },
   "ezra": {
     "studyFocus": "Esdras est un prêtre et un copiste habile de la Loi qui retourne à Jérusalem après l’exil. Il s’applique à étudier, mettre en pratique et enseigner la Loi de Jéhovah.",
@@ -2446,10 +2496,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il enseigne au peuple et agit lorsqu’il découvre des problèmes spirituels.",
       "Son exemple associe étude personnelle et mise en pratique."
     ],
-    "keyReading": "Esdras 7:1-10 ; 8:15-36 ; 9-10",
+    "keyReading": "Esdras 7:6-10; 8:21-23; 9:1-15; 10:1-17",
     "location": "Babylone et Jérusalem.",
-    "relationshipWithJehovah": "Esdras prépare son cœur à consulter la Loi de Jéhovah, à la pratiquer et à l’enseigner.",
-    "didYouKnow": "Esdras était prêtre et copiste.",
+    "relationshipWithJehovah": "Esdras est remarquable par l’ordre qu’il donne à sa vie: étudier la Loi, la mettre en pratique puis l’enseigner. Il prie et reconnaît la main de Jéhovah dans son voyage.",
+    "didYouKnow": "Esdras est décrit comme un copiste habile dans la Loi de Moïse et comme quelqu’un qui avait préparé son cœur à appliquer et enseigner cette Loi.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2472,24 +2522,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ezra/"
       }
     ],
-    "identity": "Prêtre et copiste — Esdras retourne à Jérusalem et aide le peuple à mieux connaître et appliquer la Loi.",
-    "era": "Retour d’exil",
+    "identity": "Esdras était un prêtre et copiste habile de la Loi de Moïse. Il retourna à Jérusalem et contribua à rétablir le culte pur.",
+    "era": "Ve siècle av. n. è.",
     "familyAndEntourage": [
-      "Néhémie",
-      "Les exilés revenus"
+      "Aaron, son ancêtre",
+      "Le roi Artaxerxès",
+      "Les prêtres et Lévites",
+      "Les Israélites revenus d’exil"
     ],
     "bibleAccount": [
-      "Retourne à Jérusalem avec d’autres exilés.",
-      "Étudie et enseigne la Loi.",
-      "Organise une lecture publique de la Loi.",
-      "Encourage le peuple à corriger certaines pratiques."
+      "Il monte de Babylone à Jérusalem avec l’autorisation royale.",
+      "Il s’est préparé à étudier, appliquer et enseigner la Loi de Jéhovah.",
+      "Il constate les mariages avec des étrangères et exprime une profonde tristesse.",
+      "Il contribue à la purification de la communauté."
     ],
     "qualities": [
       "Étude",
-      "Enseignement",
-      "Zèle"
+      "Humilité",
+      "Zèle",
+      "Capacité d’enseigner"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit affronter des problèmes graves dans le peuple, notamment des mariages contraires aux exigences de la Loi."
+    ]
   },
   "zerubbabel": {
     "studyFocus": "Zorobabel dirige le premier groupe important de Juifs revenus de Babylone et participe à la reconstruction du temple. Son parcours montre l’importance de la persévérance malgré l’opposition.",
@@ -2500,10 +2555,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Aggée et Zekaria l’encouragent.",
       "Le temple est finalement achevé."
     ],
-    "keyReading": "Esdras 2–6 ; Aggée 1–2 ; Zekaria 4",
+    "keyReading": "Esdras 3:1-13; 4:1-24; Aggée 1:1-15; 2:1-23; Zacharie 4:6-10",
     "location": "Jérusalem et Juda après le retour de l’exil.",
-    "relationshipWithJehovah": "Jéhovah utilise Aggée et Zekaria pour fortifier Zorobabel dans sa responsabilité.",
-    "didYouKnow": "Zorobabel appartient à la lignée royale de David et figure dans les généalogies liées à Jésus.",
+    "relationshipWithJehovah": "Jéhovah utilise Zorobabel dans le rétablissement du culte à Jérusalem et l’encourage par l’intermédiaire des prophètes à ne pas compter uniquement sur la puissance humaine.",
+    "didYouKnow": "Aggée annonce que Zorobabel serait comme un « anneau à cachet », image montrant la valeur particulière que Jéhovah lui accordait dans son dessein.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2526,24 +2581,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Zorobabel/"
       }
     ],
-    "identity": "Gouverneur de Juda — Zorobabel dirige les Juifs revenus d’exil et joue un rôle majeur dans la reconstruction du temple.",
-    "era": "Retour d’exil",
+    "identity": "Zorobabel était un descendant de David qui dirigea le premier groupe important de Juifs revenus d’exil à Babylone et participa à la reconstruction du temple.",
+    "era": "VIe siècle av. n. è., après 537 av. n. è.",
     "familyAndEntourage": [
+      "Shéaltiel",
       "Josué le grand prêtre",
       "Aggée",
-      "Zekaria"
+      "Zacharie",
+      "Les Juifs revenus d’exil"
     ],
     "bibleAccount": [
-      "Retourne à Jérusalem avec les exilés.",
-      "Participe à la reconstruction de l’autel et du temple.",
-      "Poursuit le chantier malgré l’opposition."
+      "Il revient à Jérusalem avec les exilés.",
+      "Il participe au rétablissement de l’autel et du culte.",
+      "Les travaux du temple rencontrent de l’opposition.",
+      "Les prophètes Aggée et Zacharie encouragent le peuple.",
+      "Le temple est finalement achevé."
     ],
     "qualities": [
-      "Persévérance",
       "Courage",
+      "Persévérance",
       "Coopération"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit poursuivre les travaux malgré l’opposition et le découragement qui ralentissent la reconstruction."
+    ]
   },
   "haggai": {
     "studyFocus": "Aggée prophétise après le retour d’exil et pousse les Juifs à reprendre la construction du temple. Il les aide à remettre les intérêts de Jéhovah au premier plan.",
@@ -2554,10 +2615,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il annonce que la gloire future de la maison sera plus grande.",
       "Son message transforme une période d’inertie en action."
     ],
-    "keyReading": "Aggée 1–2",
+    "keyReading": "Aggée 1:1-15; 2:1-23",
     "location": "Jérusalem et Juda après le retour de l’exil.",
-    "relationshipWithJehovah": "Aggée transmet les paroles de Jéhovah avec clarté et aide le peuple à rétablir ses priorités spirituelles.",
-    "didYouKnow": "Aggée et Zekaria ont prophétisé à la même époque pour encourager la reconstruction du temple.",
+    "relationshipWithJehovah": "Aggée transmet fidèlement les messages de Jéhovah et aide le peuple à remettre le culte de Dieu au centre de ses priorités.",
+    "didYouKnow": "Les messages d’Aggée sont datés avec précision dans la Bible et ont été donnés sur une courte période en 520 av. n. è.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2580,23 +2641,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Hagga%C3%AF/"
       }
     ],
-    "identity": "Prophète — Aggée encourage les Juifs revenus d’exil à reprendre la construction du temple.",
-    "era": "Retour d’exil",
+    "identity": "Aggée était un prophète qui encouragea les Juifs revenus d’exil à reprendre la reconstruction du temple de Jéhovah.",
+    "era": "VIe siècle av. n. è., vers 520 av. n. è.",
     "familyAndEntourage": [
       "Zorobabel",
-      "Josué le grand prêtre"
+      "Josué le grand prêtre",
+      "Zacharie",
+      "Les Juifs revenus d’exil"
     ],
     "bibleAccount": [
-      "Transmet des messages aux dirigeants et au peuple.",
-      "Encourage la reprise des travaux du temple.",
-      "Rappelle les priorités spirituelles du peuple."
+      "Il reçoit des messages de Jéhovah concernant la reconstruction du temple.",
+      "Il reproche au peuple de s’occuper de ses propres maisons alors que le temple reste en ruines.",
+      "Le peuple réagit favorablement et reprend les travaux.",
+      "Il transmet des encouragements concernant l’avenir du temple."
     ],
     "qualities": [
       "Courage",
       "Clarté",
-      "Zèle"
+      "Zèle pour le culte de Jéhovah"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit réveiller un peuple découragé et lui faire voir que ses priorités matérielles avaient pris le dessus sur le culte."
+    ]
   },
   "zechariah": {
     "studyFocus": "Zekaria sert comme prophète après l’exil et reçoit une série de visions destinées à encourager la reconstruction du temple et le rétablissement du peuple.",
@@ -2607,10 +2673,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Son livre contient des prophéties messianiques.",
       "Son ministère soutient l’encouragement et la restauration du vrai culte."
     ],
-    "keyReading": "Zekaria 1–8 ; 9:9 ; 12:10 ; 13:7",
+    "keyReading": "Zacharie 1:1-17; 3:1-10; 4:1-14; 8:1-23",
     "location": "Jérusalem et Juda après le retour de l’exil.",
-    "relationshipWithJehovah": "Zekaria reçoit des visions de Jéhovah et transmet leurs messages pour fortifier le peuple.",
-    "didYouKnow": "Zekaria signifie « Jéhovah s’est souvenu » et son livre contient plusieurs visions symboliques.",
+    "relationshipWithJehovah": "Zacharie rappelle que Jéhovah demande au peuple de revenir vers lui et transmet ses messages même lorsqu’ils contiennent des visions difficiles à comprendre.",
+    "didYouKnow": "Le livre de Zacharie contient une série de huit visions nocturnes données au début de son ministère prophétique.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2633,23 +2699,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Zekaria/"
       }
     ],
-    "identity": "Prophète — Zekaria encourage les Juifs revenus d’exil au moyen de visions et de messages concernant la restauration.",
-    "era": "Retour d’exil",
+    "identity": "Zacharie était un prophète contemporain d’Aggée qui encouragea les Juifs revenus d’exil à achever le temple et leur donna plusieurs visions prophétiques.",
+    "era": "VIe siècle av. n. è., après l’exil",
     "familyAndEntourage": [
+      "Béréchia, son père",
+      "Iddo, son grand-père",
       "Zorobabel",
-      "Josué le grand prêtre"
+      "Josué le grand prêtre",
+      "Aggée"
     ],
     "bibleAccount": [
-      "Transmet plusieurs visions.",
-      "Encourage la reconstruction du temple.",
-      "Annonce des éléments prophétiques concernant le futur roi."
+      "Il appelle le peuple à revenir vers Jéhovah.",
+      "Il reçoit une série de visions concernant Jérusalem et le peuple.",
+      "Il encourage Zorobabel et Josué dans la reconstruction du temple.",
+      "Il transmet des prophéties messianiques et concernant l’avenir."
     ],
     "qualities": [
+      "Courage",
       "Foi",
-      "Encouragement",
-      "Persévérance"
+      "Persévérance",
+      "Obéissance prophétique"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il intervient dans une période de reconstruction où le peuple est encore vulnérable et découragé."
+    ]
   },
   "malachi": {
     "studyFocus": "Malachie reprend les prêtres et le peuple pour leur manque de respect envers le culte de Jéhovah. Son message dénonce le culte mécanique et annonce une œuvre préparatoire avant le jour de Jéhovah.",
@@ -2660,10 +2733,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il annonce la venue d’un messager qui préparera le chemin.",
       "Il termine par une promesse concernant Élie avant le grand jour de Jéhovah."
     ],
-    "keyReading": "Malachie 1–4",
+    "keyReading": "Malachie 1:6-14; 2:1-17; 3:1-18; 4:1-6",
     "location": "Jérusalem et la communauté juive restaurée après l’exil.",
-    "relationshipWithJehovah": "Malachie insiste sur le fait que Jéhovah mérite un culte sincère, respectueux et entier.",
-    "didYouKnow": "Malachie est le dernier livre des Écritures hébraïques dans l’ordre habituel des Bibles françaises.",
+    "relationshipWithJehovah": "Malachie défend le point de vue de Jéhovah sur le culte et rappelle que Dieu mérite des offrandes et une adoration donnés de tout cœur.",
+    "didYouKnow": "Malachie est le dernier livre du canon des Écritures hébraïques dans l’ordre de la plupart des Bibles chrétiennes.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2686,21 +2759,27 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Malachie/"
       }
     ],
-    "identity": "Prophète — Malachie reprend des pratiques religieuses négligées et annonce la venue d’un messager préparant le chemin.",
-    "era": "Après l’exil",
+    "identity": "Malachie était un prophète qui reprit les prêtres et le peuple de Juda pour leur manque de respect envers le culte de Jéhovah.",
+    "era": "Ve siècle av. n. è., après la reconstruction du temple",
     "familyAndEntourage": [
-      "Prêtres et peuple de Juda"
+      "Les prêtres de Juda",
+      "Le peuple de Juda",
+      "Jéhovah"
     ],
     "bibleAccount": [
-      "Dénonce des pratiques négligentes dans le culte.",
-      "Encourage une attitude fidèle envers Jéhovah.",
-      "Annonce la venue d’un messager."
+      "Il transmet plusieurs dialogues entre Jéhovah et son peuple.",
+      "Il dénonce les sacrifices défectueux et le manque de respect des prêtres.",
+      "Il reproche au peuple de retenir les contributions destinées au culte.",
+      "Il annonce l’arrivée d’un messager préparant le chemin."
     ],
     "qualities": [
       "Courage",
-      "Fidélité"
+      "Fidélité au culte pur",
+      "Franchise"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit corriger une communauté dont le culte s’est installé dans la routine et le manque de respect."
+    ]
   },
   "gamaliel": {
     "studyFocus": "Gamaliel est un pharisien et enseignant de la Loi, membre du Sanhédrin. Il recommande la prudence lorsqu’on veut faire disparaître les apôtres.",
@@ -2711,10 +2790,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Son raisonnement distingue une opposition humaine d’une œuvre qui pourrait être soutenue par Dieu.",
       "Paul dit avoir été instruit à ses pieds."
     ],
-    "keyReading": "Actes 5:33-42 ; 22:3",
+    "keyReading": "Actes 5:17-42; 22:3",
     "location": "Jérusalem, au sein du milieu religieux juif du Ier siècle.",
-    "relationshipWithJehovah": "Le récit ne dit pas que Gamaliel est devenu chrétien ; il montre néanmoins qu’il reconnaît la possibilité que l’œuvre des apôtres soit soutenue par Dieu.",
-    "didYouKnow": "Paul dit avoir été instruit aux pieds de Gamaliel.",
+    "relationshipWithJehovah": "Gamaliel ne reçoit pas dans le récit le rôle d’un disciple chrétien. Cependant, son conseil évite que le Sanhédrin combatte directement une œuvre qui pourrait venir de Dieu.",
+    "didYouKnow": "Paul dit avoir été instruit aux pieds de Gamaliel, ce qui montre le haut niveau de formation rabbinique qu’il avait reçu.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2737,23 +2816,26 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Gamaliel/"
       }
     ],
-    "identity": "Pharisien et enseignant de la Loi — Gamaliel intervient devant le Sanhédrin en faveur d’une approche prudente concernant les apôtres.",
-    "era": "Actes",
+    "identity": "Gamaliel était un pharisien et enseignant de la Loi très respecté qui intervint lorsque les apôtres furent amenés devant le Sanhédrin.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
-      "Paul",
-      "Les apôtres",
-      "Sanhédrin"
+      "Paul, qui fut formé à ses pieds",
+      "Les membres du Sanhédrin",
+      "Les apôtres"
     ],
     "bibleAccount": [
-      "Intervient lors du procès des apôtres.",
-      "Conseille le Sanhédrin à ne pas agir précipitamment.",
-      "Est présenté comme un enseignant respecté de la Loi."
+      "Il demande que les apôtres soient sortis de la salle.",
+      "Il rappelle des exemples de mouvements humains disparus après la mort de leurs chefs.",
+      "Il conseille de laisser les apôtres tranquilles, en expliquant que si leur œuvre vient de Dieu, elle ne pourra pas être renversée."
     ],
     "qualities": [
       "Prudence",
-      "Raisonnement"
+      "Calme",
+      "Capacité à raisonner avant d’agir"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il reste membre du courant pharisien et le récit ne dit pas qu’il soit devenu chrétien."
+    ]
   },
   "apollos": {
     "studyFocus": "Apollos est un Juif d’Alexandrie, éloquent et connaissant bien les Écritures. Après avoir reçu des explications plus précises d’Aquila et Priscille, il devient un prédicateur efficace.",
@@ -2764,10 +2846,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il utilise ensuite les Écritures pour démontrer que Jésus est le Christ.",
       "Paul présente Apollos et lui-même comme des serviteurs plutôt que des chefs rivaux."
     ],
-    "keyReading": "Actes 18:24-28; 19:1-7; 1 Corinthiens 1:10-13; 3:4-9,21-23; 4:6",
+    "keyReading": "Actes 18:24-28; 19:1-7; 1 Corinthiens 3:4-9",
     "location": "Alexandrie ; Éphèse ; Achaïe, notamment Corinthe.",
-    "relationshipWithJehovah": "Apollos avait déjà du zèle pour les Écritures et pour enseigner, puis il accepte l’aide de Priscille et Aquilas. Une fois mieux instruit, il utilise ses connaissances pour fortifier les croyants.",
-    "didYouKnow": "Apollos venait d’Alexandrie, grande ville intellectuelle d’Égypte, et la Bible le présente comme un homme éloquent qui connaissait bien les Écritures.",
+    "relationshipWithJehovah": "Apollos montre qu’un serviteur sincère peut avoir besoin d’être mieux instruit. Il accepte l’aide de Priscille et Aquila puis utilise ses connaissances bibliques pour fortifier les disciples.",
+    "didYouKnow": "Apollos venait d’Alexandrie, grande ville intellectuelle d’Égypte, et était particulièrement versé dans les Écritures.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2790,28 +2872,29 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Apollos/"
       }
     ],
-    "identity": "Apollos était un Juif originaire d’Alexandrie, homme éloquent et connaisseur des Écritures, qui annonçait Jésus avec zèle mais ne connaissait d’abord que le baptême de Jean.",
-    "era": "Premières décennies de la congrégation chrétienne, vers le milieu du Ier siècle",
+    "identity": "Apollos était un Juif instruit d’Alexandrie, éloquent et fervent, qui enseignait Jésus avec exactitude mais ne connaissait initialement que le baptême de Jean.",
+    "era": "Ier siècle de n. è.",
     "familyAndEntourage": [
       "Priscille",
-      "Aquilas",
+      "Aquila",
       "Paul",
-      "Les disciples d’Éphèse et d’Achaïe"
+      "Les disciples d’Éphèse",
+      "Les Corinthiens"
     ],
     "bibleAccount": [
-      "Il arrive à Éphèse et parle avec assurance dans la synagogue.",
-      "Priscille et Aquilas lui expliquent plus exactement les enseignements de Dieu.",
-      "Il se rend en Achaïe et aide grandement les croyants.",
-      "Il réfute publiquement les arguments des opposants à l’aide des Écritures."
+      "Il parle avec assurance dans la synagogue d’Éphèse.",
+      "Priscille et Aquila lui expliquent plus exactement la voie de Dieu.",
+      "Il va en Achaïe et aide beaucoup les croyants par ses arguments bibliques.",
+      "Il réfute publiquement les opposants en démontrant que Jésus est le Christ."
     ],
     "qualities": [
       "Éloquence",
-      "Zèle",
-      "Connaissance des Écritures",
-      "Humilité pour accepter une instruction supplémentaire"
+      "Ferveur",
+      "Humilité",
+      "Capacité à apprendre"
     ],
     "difficulties": [
-      "Sa connaissance était incomplète au départ puisqu’il ne connaissait que le baptême de Jean."
+      "Sa compréhension initiale était incomplète; il accepte néanmoins d’être mieux instruit et continue ensuite son ministère."
     ]
   },
   "silas": {
@@ -4538,8 +4621,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "2 Rois 5:1-19",
     "location": "Syrie et Samarie.",
-    "relationshipWithJehovah": "Naaman accepte l’instruction d’Élisée, se lave dans le Jourdain et reconnaît le pouvoir de Jéhovah.",
-    "didYouKnow": "Il souffrait de lèpre et était chef de l’armée syrienne.",
+    "relationshipWithJehovah": "Naaman passe d’une confiance dans son statut à une reconnaissance du Dieu d’Israël. Après sa guérison, il affirme qu’il n’y a pas de Dieu sur toute la terre sauf en Israël.",
+    "didYouKnow": "Naaman s’attendait à ce qu’Élisée sorte personnellement vers lui, mais le prophète lui envoya simplement un messager avec une instruction très simple.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4554,24 +4637,31 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Chef de l’armée syrienne — Naaman, atteint de lèpre, accepte finalement les instructions du prophète Élisée et est guéri.",
-    "era": "Rois d’Israël",
+    "identity": "Naaman était chef de l’armée syrienne, atteint de lèpre. Il fut guéri après avoir humblement suivi les instructions données par le prophète Élisée.",
+    "era": "Xe siècle av. n. è.",
     "familyAndEntourage": [
+      "Le roi de Syrie",
+      "Sa femme",
+      "Une jeune servante israélite",
       "Élisée",
-      "La jeune servante israélite"
+      "Gehazi"
     ],
     "bibleAccount": [
-      "Écoute le témoignage d’une jeune Israélite.",
-      "Se rend auprès d’Élisée.",
-      "Accepte de se laver sept fois dans le Jourdain.",
-      "Reconnaît la puissance de Jéhovah."
+      "Une jeune servante indique que le prophète de Samarie pourrait le guérir.",
+      "Naaman vient avec une lettre du roi et de grandes richesses.",
+      "Élisée lui demande de se laver sept fois dans le Jourdain.",
+      "Après avoir surmonté son indignation initiale, Naaman obéit et est guéri.",
+      "Il reconnaît que le Dieu d’Israël est le vrai Dieu."
     ],
     "qualities": [
-      "Humilité",
+      "Humilité après correction",
       "Obéissance",
-      "Foi progressive"
+      "Reconnaissance"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Son orgueil initial l’empêche d’accepter facilement une instruction simple et il doit apprendre à écouter un message qui ne vient pas directement d’un grand personnage.",
+      "Il doit aussi résister aux attentes liées à son rang."
+    ]
   },
   "hezekiah": {
     "studyFocus": "Ézéchias s’est appuyé sur Jéhovah face aux menaces assyriennes et a travaillé à rétablir le vrai culte.",
@@ -4580,10 +4670,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle pour le vrai culte : il a entrepris des mesures pour purifier le culte en Juda.",
       "Humilité : son récit montre aussi qu’un serviteur fidèle doit rester vigilant face à l’orgueil."
     ],
-    "keyReading": "2 Rois 18:1-7 ; 19:1-37 ; 20:1-21",
+    "keyReading": "2 Rois 18:1-22; 19:1-37; 2 Chroniques 29:1-11; Isaïe 36:1-22; 37:1-38",
     "location": "Jérusalem et Juda.",
-    "relationshipWithJehovah": "Ézéchias s’attache à Jéhovah et recherche son aide face aux menaces assyriennes.",
-    "didYouKnow": "Il a détruit le serpent de cuivre lorsqu’il est devenu un objet d’idolâtrie.",
+    "relationshipWithJehovah": "Ézéchias ne répond pas à la menace assyrienne uniquement par des moyens humains: il prie Jéhovah et recherche son aide. Son règne montre aussi l’importance de débarrasser le pays de l’idolâtrie.",
+    "didYouKnow": "Ézéchias étendit ses réformes jusqu’à détruire le serpent de cuivre que les Israélites avaient commencé à idolâtrer.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu",
@@ -4602,25 +4692,31 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Roi de Juda — Ézéchias entreprend une réforme du culte et fait confiance à Jéhovah lors de la menace assyrienne.",
-    "era": "Rois de Juda",
+    "identity": "Ézéchias était roi de Juda et un réformateur fidèle qui combattit l’idolâtrie et fit confiance à Jéhovah lors de la menace assyrienne.",
+    "era": "VIIIe siècle av. n. è.",
     "familyAndEntourage": [
+      "Ahaz, son père",
+      "Manassé, son fils",
       "Isaïe",
       "Sennachérib",
-      "Le peuple de Juda"
+      "Les habitants de Jérusalem"
     ],
     "bibleAccount": [
-      "Nettoie et réorganise le temple.",
-      "Encourage le peuple à revenir au vrai culte.",
-      "Cherche l’aide de Jéhovah face à l’Assyrie.",
-      "Organise une grande célébration de la Pâque."
+      "Il détruit les objets liés au faux culte.",
+      "Il encourage le peuple à se tourner vers Jéhovah.",
+      "Sennachérib menace Jérusalem et Rabshaqé cherche à décourager les habitants.",
+      "Ézéchias prie et présente la situation à Jéhovah.",
+      "Jéhovah délivre Jérusalem de l’armée assyrienne."
     ],
     "qualities": [
       "Foi",
       "Courage",
-      "Zèle"
+      "Zèle pour le culte pur",
+      "Prière"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il doit faire face à une menace militaire écrasante et à des paroles destinées à affaiblir la confiance du peuple."
+    ]
   },
   "josiah": {
     "studyFocus": "Josias a cherché Jéhovah alors qu’il était encore jeune et a entrepris une vaste réforme du culte en Juda.",
@@ -4629,10 +4725,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Réagir à la Parole de Dieu : lorsqu’il a entendu le livre de la Loi, il a été profondément touché.",
       "Courage : il a supprimé des pratiques liées au faux culte et a encouragé le peuple à servir Jéhovah."
     ],
-    "keyReading": "2 Rois 22:1-23:30 ; 2 Chroniques 34:1-35:27",
+    "keyReading": "2 Rois 22:1-20; 23:1-25; 2 Chroniques 34:1-33; 35:1-19",
     "location": "Juda et Jérusalem.",
-    "relationshipWithJehovah": "Josias entreprend une vaste réforme religieuse après avoir entendu les paroles de la Loi.",
-    "didYouKnow": "Il commence à rechercher le Dieu de David alors qu’il est encore jeune.",
+    "relationshipWithJehovah": "Josias réagit immédiatement lorsqu’il entend la Loi et cherche à corriger le peuple. Jéhovah remarque son humilité et sa réaction lorsqu’il comprend la gravité de la situation.",
+    "didYouKnow": "La Pâque célébrée au temps de Josias est décrite comme particulièrement remarquable et comme n’ayant pas eu d’équivalent depuis l’époque des juges.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu",
@@ -4651,25 +4747,30 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Roi de Juda — Josias entreprend une réforme religieuse et réagit avec humilité à la découverte du livre de la Loi.",
-    "era": "Rois de Juda",
+    "identity": "Josias était roi de Juda et entreprit une vaste réforme religieuse après avoir entendu le livre de la Loi retrouvé dans le temple.",
+    "era": "VIIe siècle av. n. è.",
     "familyAndEntourage": [
-      "Houlda",
-      "Les prêtres",
-      "Juda"
+      "Amon, son père",
+      "Hilqiya le grand prêtre",
+      "Houlda la prophétesse",
+      "Le peuple de Juda"
     ],
     "bibleAccount": [
-      "Fait réparer le temple.",
-      "Écoute la lecture du livre de la Loi.",
-      "Supprime des pratiques idolâtriques.",
-      "Organise une importante célébration de la Pâque."
+      "Il devient roi très jeune.",
+      "Il entreprend de réparer le temple et de supprimer les objets idolâtriques.",
+      "Le livre de la Loi est retrouvé et lu devant lui.",
+      "Il est profondément touché par les avertissements de la Loi.",
+      "Il fait renouveler l’alliance avec Jéhovah et célèbre une Pâque exceptionnelle."
     ],
     "qualities": [
       "Humilité",
-      "Zèle",
-      "Réceptivité aux conseils"
+      "Réceptivité à la Parole de Dieu",
+      "Courage",
+      "Zèle"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il hérite d’un pays profondément marqué par l’idolâtrie et doit entreprendre des réformes considérables malgré des années de mauvaises influences."
+    ]
   },
   "jehoshaphat": {
     "studyFocus": "Josaphat a souvent recherché Jéhovah et a encouragé le peuple de Juda à lui faire confiance, même lorsqu’une grande armée menaçait le pays.",
