@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { ActivityIndicator, Pressable, ScrollView, Text, View } from 'react-native';
-import { router } from 'expo-router';
+import { router, useLocalSearchParams } from 'expo-router';
 import { AppButton } from '@/components/AppButton';
 import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
@@ -27,6 +27,7 @@ function shuffleAnswers(question: QuizQuestion): QuizQuestion {
 }
 
 function TrainingScreen() {
+  const params = useLocalSearchParams<{ category?: string }>();
   const [category, setCategory] = useState('Toutes');
   const [difficulty, setDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard' | 'expert'>('all');
   const [started, setStarted] = useState(false);
@@ -40,6 +41,11 @@ function TrainingScreen() {
   const [answered, setAnswered] = useState<number | null>(null);
   const [deck, setDeck] = useState<QuizQuestion[]>([]);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const requested = typeof params.category === 'string' ? params.category : undefined;
+    if (requested && categories.includes(requested)) setCategory(requested);
+  }, [params.category]);
 
   const current = deck[index];
   const answeredCount = index + (answered !== null ? 1 : 0);
@@ -97,7 +103,7 @@ function TrainingScreen() {
   if (!started) return <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={{ color: colors.accent, fontSize: 12, fontWeight: '800', letterSpacing: 2 }}>ENTRAÎNEMENT</Text>
     <Text style={styles.title}>Entraîne-toi</Text>
-    <Text style={styles.subtitle}>10 questions, un score personnel et une progression enregistrée sur cet appareil.</Text>
+    <Text style={styles.subtitle}>Jusqu’à 10 questions, un score personnel et une progression enregistrée sur cet appareil.</Text>
     <View style={[styles.autoCard,{marginTop:18}]}><View style={styles.autoBadge}><Text style={{color:colors.bg,fontWeight:'900'}}>✓</Text></View><View style={{flex:1}}><Text style={styles.rowTitle}>Session intelligente</Text><Text style={styles.rowSubtitle}>Les questions déjà ratées sont privilégiées pour vous aider à progresser.</Text></View></View>
 
     <Text style={[styles.sectionTitle, { marginTop: 24 }]}>Catégorie</Text>
