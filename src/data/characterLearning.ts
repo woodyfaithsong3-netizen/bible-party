@@ -3921,17 +3921,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "philip_apostle": {
-    "studyFocus": "Philippe était l’un des douze apôtres de Jésus et venait de Bethsaïde, la ville de Pierre et André. Il conduisit Nathanaël vers Jésus et fut présent lors de plusieurs événements du ministère de Jésus.",
+    "studyFocus": "Philippe l’apôtre était originaire de Bethsaïda, comme Pierre et André. Jésus l’appela directement à le suivre. Philippe parla ensuite de Jésus à Nathanaël et fut présent lors de plusieurs moments importants du ministère de Jésus.",
     "lessonPoints": [
-      "Philippe répondit rapidement à l’invitation de Jésus.",
-      "Il partagea avec Nathanaël ce qu’il avait découvert.",
-      "Il posa à Jésus des questions qui montrent son désir de comprendre.",
-      "Il resta apôtre fidèle jusqu’à la fin du ministère terrestre de Jésus."
+      "Philippe répondit à l’appel de Jésus et devint son disciple.",
+      "Il parla spontanément de Jésus à Nathanaël.",
+      "Il chercha à comprendre comment nourrir la foule lorsque Jésus le mit à l’épreuve.",
+      "Après la résurrection, il resta parmi les apôtres et participa au témoignage chrétien."
     ],
-    "keyReading": "Jean 1:43-48 ; 6:1-7 ; 12:20-22 ; 14:6-11",
-    "location": "Bethsaïde en Galilée puis divers lieux du ministère de Jésus.",
-    "relationshipWithJehovah": "Philippe servit Jésus comme apôtre et participa au témoignage concernant le Christ.",
-    "didYouKnow": "Philippe était de Bethsaïde, la même ville que Pierre et André.",
+    "keyReading": "Jean 1:43-51 ; 6:1-7 ; 12:20-22 ; 14:6-14 ; Actes 1:12-14",
+    "location": "Bethsaïda et Jérusalem.",
+    "relationshipWithJehovah": "Philippe apprit à connaître Jéhovah par l’intermédiaire de Jésus et continua à servir comme apôtre après la résurrection.",
+    "didYouKnow": "Philippe était de Bethsaïda, la ville d’André et de Pierre, et c’est lui qui alla dire à Nathanaël : « Nous avons trouvé celui dont Moïse a écrit dans la Loi. »",
     "jwResources": [
       {
         "title": "Philippe l’apôtre — Étude perspicace",
@@ -3966,17 +3966,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "bartholomew": {
-    "studyFocus": "Barthélemy est traditionnellement identifié à Nathanaël, disciple présenté dans l’Évangile de Jean. Jésus le complimenta pour sa franchise et son absence de tromperie. Il devint ensuite l’un des Douze.",
+    "studyFocus": "Barthélemy est traditionnellement identifié à Nathanaël, disciple que Philippe amena à Jésus. Jésus loua sa franchise et sa sincérité, et Nathanaël reconnut rapidement Jésus comme le Fils de Dieu et Roi d’Israël.",
     "lessonPoints": [
-      "Nathanaël manifesta d’abord une réserve honnête concernant Nazareth.",
-      "Il accepta l’invitation de Philippe à venir voir Jésus.",
-      "Jésus souligna sa franchise et son absence de tromperie.",
-      "Il fit partie du groupe des Douze après avoir reconnu Jésus comme le Fils de Dieu et Roi d’Israël."
+      "Nathanaël examina honnêtement le témoignage de Philippe.",
+      "Il accepta l’invitation à venir voir Jésus.",
+      "Jésus souligna sa sincérité en le décrivant comme un Israélite sans tromperie.",
+      "Il devint l’un des Douze apôtres."
     ],
     "keyReading": "Jean 1:45-51 ; 21:1-14 ; Matthieu 10:2-4",
-    "location": "Galilée et régions parcourues par Jésus.",
-    "relationshipWithJehovah": "Nathanaël reconnut rapidement l’identité de Jésus et devint son disciple fidèle.",
-    "didYouKnow": "Le nom Barthélemy signifie probablement « fils de Tolmaï »; l’Évangile de Jean utilise le nom Nathanaël plutôt que Barthélemy.",
+    "location": "Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Nathanaël reconnut Jésus comme le Fils de Dieu et le Roi d’Israël et resta ensuite parmi ses apôtres.",
+    "didYouKnow": "Le nom Nathanaël apparaît dans l’Évangile de Jean, tandis que les listes des Douze donnent le nom Barthélemy ; c’est pourquoi Barthélemy est généralement identifié à Nathanaël.",
     "jwResources": [
       {
         "title": "Barthélémy — Étude perspicace",
@@ -4015,17 +4015,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_alphaaeus": {
-    "studyFocus": "Jacques fils d’Alphée était l’un des douze apôtres de Jésus. La Bible donne peu de détails personnels sur lui, mais son nom apparaît dans les listes des apôtres et il resta associé au groupe choisi par Jésus.",
+    "studyFocus": "Jacques fils d’Alphée était l’un des douze apôtres choisis par Jésus. La Bible donne peu de détails personnels sur lui, mais son nom figure régulièrement dans les listes des apôtres.",
     "lessonPoints": [
-      "Jacques accepta l’appel à devenir l’un des Douze.",
-      "Il resta fidèle dans un groupe où certains apôtres étaient beaucoup plus souvent mentionnés.",
-      "Son exemple montre que tous les serviteurs fidèles n’ont pas besoin d’une grande visibilité.",
-      "Les listes apostoliques confirment sa place parmi les proches collaborateurs de Jésus."
+      "Jacques répondit à l’appel de Jésus et fut choisi comme l’un des Douze.",
+      "Il resta associé au groupe des apôtres pendant le ministère de Jésus.",
+      "Son histoire rappelle que tous les serviteurs fidèles ne sont pas décrits en détail dans la Bible.",
+      "Il est important de ne pas confondre Jacques fils d’Alphée avec Jacques fils de Zébédée ou Jacques frère de Jésus."
     ],
     "keyReading": "Matthieu 10:2-4 ; Marc 3:13-19 ; Luc 6:12-16 ; Actes 1:12-14",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Jacques servit fidèlement parmi les Douze, même si les Évangiles rapportent peu de détails sur son activité personnelle.",
-    "didYouKnow": "Jacques fils d’Alphée est parfois appelé « Jacques le Petit » dans certaines traductions, mais la Bible elle-même donne surtout son identité par son père Alphée.",
+    "relationshipWithJehovah": "Jacques fils d’Alphée resta attaché au groupe des apôtres et participa au témoignage chrétien après la résurrection.",
+    "didYouKnow": "Dans les listes des Douze, Jacques fils d’Alphée est parfois distingué par l’expression « le Mineur » ou « le petit », selon les traductions, afin de le distinguer de Jacques fils de Zébédée.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4062,17 +4062,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "simon_zealot": {
-    "studyFocus": "Simon le Zélote était l’un des douze apôtres. Son surnom le distinguait probablement comme ancien membre ou sympathisant d’un mouvement zélote. Jésus choisit pourtant Simon pour faire partie du même groupe que Matthieu, ancien collecteur d’impôts.",
+    "studyFocus": "Simon le Zélote était l’un des douze apôtres. Son surnom le distinguait probablement par son association passée avec les Zélotes. Jésus réunit autour de lui des hommes d’origines très différentes, et Simon servit aux côtés de Matthieu, ancien collecteur d’impôts.",
     "lessonPoints": [
-      "Simon abandonna son ancienne identité politique pour suivre Jésus.",
-      "Il apprit à collaborer avec des personnes ayant des parcours très différents.",
-      "Il resta parmi les Douze malgré les tensions possibles de leurs anciennes affiliations.",
-      "Son exemple montre que l’unité chrétienne peut dépasser les divisions humaines."
+      "Simon fut choisi personnellement par Jésus parmi les Douze.",
+      "Son surnom montre qu’il avait un passé ou une association qui le distinguait.",
+      "Il servit avec des disciples aux parcours très différents.",
+      "Son exemple illustre l’unité que le message du Christ pouvait produire."
     ],
     "keyReading": "Luc 6:12-16 ; Matthieu 10:2-4 ; Actes 1:12-14",
-    "location": "Galilée puis Jérusalem.",
-    "relationshipWithJehovah": "Simon servit Jésus comme apôtre et participa au groupe qui reçut l’esprit saint à la Pentecôte.",
-    "didYouKnow": "Simon le Zélote et Matthieu, ancien collecteur d’impôts, faisaient tous deux partie des Douze, malgré leurs parcours très différents.",
+    "location": "Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Simon abandonna les divisions et engagements de son ancienne vie pour servir avec les autres apôtres dans l’œuvre chrétienne.",
+    "didYouKnow": "Simon est appelé « le Zélote » pour le distinguer de Simon Pierre, autre apôtre.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4110,17 +4110,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jairus_daughter": {
-    "studyFocus": "La fille de Jaïrus était une jeune fille de Galilée dont Jésus ramena la vie après sa mort. Son père, responsable de synagogue, avait demandé à Jésus de venir parce qu’elle était gravement malade.",
+    "studyFocus": "La fille de Jaïrus était une jeune fille de Galilée que Jésus ramena à la vie après sa mort. Son père avait supplié Jésus de venir la guérir, mais elle mourut avant l’arrivée de Jésus.",
     "lessonPoints": [
-      "Le récit montre la confiance de Jaïrus malgré la nouvelle de la mort de sa fille.",
-      "Jésus demanda de ne pas avoir peur mais de faire preuve de foi.",
-      "La jeune fille fut rendue à ses parents.",
-      "Le miracle annonçait de façon concrète l’espérance de la résurrection."
+      "Son histoire montre la tendresse de Jésus envers les enfants.",
+      "Jésus demanda aux personnes présentes de ne pas avoir peur.",
+      "Il prit la jeune fille par la main et lui parla avec douceur.",
+      "Sa résurrection fournit une démonstration remarquable du pouvoir de Jésus sur la mort."
     ],
-    "keyReading": "Matthieu 9:18-26 ; Marc 5:21-43 ; Luc 8:40-56",
-    "location": "Galilée, probablement dans la ville où Jaïrus exerçait ses fonctions.",
-    "relationshipWithJehovah": "Le récit montre la puissance donnée par Dieu à Jésus pour ressusciter une jeune fille et fortifier la foi de ceux qui l’entouraient.",
-    "didYouKnow": "Jésus prit la jeune fille par la main et lui dit en araméen une expression qui signifie « Jeune fille, je te le dis : Lève-toi ! ».",
+    "keyReading": "Marc 5:21-43 ; Luc 8:40-56 ; Matthieu 9:18-26",
+    "location": "Galilée.",
+    "relationshipWithJehovah": "Sa résurrection démontra la puissance que Jéhovah avait donnée à Jésus sur la mort et renforça l’espérance de la résurrection.",
+    "didYouKnow": "Jésus demanda aux parents de la jeune fille de lui donner quelque chose à manger après l’avoir ressuscitée.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4157,17 +4157,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "blind_bartimaeus": {
-    "studyFocus": "Bartimée était un mendiant aveugle assis près de la route à Jéricho. Lorsqu’il apprit que Jésus passait, il cria pour obtenir sa miséricorde malgré les tentatives de la foule pour le faire taire. Jésus le guérit et il se mit à le suivre.",
+    "studyFocus": "Bartimée était un mendiant aveugle qui se trouvait près de Jéricho lorsque Jésus passa. Il cria vers Jésus pour demander pitié, persista malgré les personnes qui voulaient le faire taire et retrouva la vue.",
     "lessonPoints": [
-      "Bartimée exprima publiquement sa foi malgré les obstacles.",
-      "Il ne laissa pas la foule l’empêcher de chercher l’aide de Jésus.",
-      "Il demanda précisément à retrouver la vue.",
-      "Après sa guérison, il suivit Jésus sur la route."
+      "Bartimée reconnut Jésus comme le Fils de David.",
+      "Il persista dans ses appels malgré les reproches de la foule.",
+      "Il exprima clairement ce qu’il désirait recevoir.",
+      "Après sa guérison, il suivit Jésus sur le chemin."
     ],
     "keyReading": "Marc 10:46-52 ; Luc 18:35-43",
-    "location": "Jéricho.",
-    "relationshipWithJehovah": "Bartimée manifesta une foi remarquable envers Jésus et répondit à sa guérison en le suivant.",
-    "didYouKnow": "Marc précise que Bartimée était le fils de Timée; son nom signifie littéralement « fils de Timée ».",
+    "location": "Près de Jéricho.",
+    "relationshipWithJehovah": "Bartimée manifesta une foi remarquable en Jésus et glorifia Dieu après avoir retrouvé la vue.",
+    "didYouKnow": "Quand Jésus l’appela, Bartimée jeta immédiatement son vêtement de dessus, se leva d’un bond et vint vers Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4206,17 +4206,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "samaritan_woman": {
-    "studyFocus": "La Samaritaine rencontra Jésus près d’un puits à Sychar. Jésus lui parla de l’eau symbolique qui donne la vie et lui révéla qu’il était le Messie. Elle parla ensuite de Jésus aux habitants de sa ville.",
+    "studyFocus": "La Samaritaine rencontra Jésus près du puits de Jacob à Sychar. Leur conversation porta sur l’eau de la vie, le vrai culte et l’identité du Messie. Elle parla ensuite de Jésus aux habitants de sa ville.",
     "lessonPoints": [
-      "Elle accepta de discuter avec Jésus malgré les barrières entre Juifs et Samaritains.",
-      "Elle posa des questions sincères sur le culte et la venue du Messie.",
-      "Elle crut au témoignage de Jésus et parla de lui aux autres.",
-      "Son témoignage poussa de nombreux Samaritains à aller écouter Jésus."
+      "Elle dépassa les barrières sociales et religieuses pour dialoguer avec Jésus.",
+      "Elle posa des questions sur le lieu et la manière d’adorer Dieu.",
+      "Elle reconnut progressivement que Jésus était le Messie.",
+      "Elle devint à son tour une personne qui témoignait de ce qu’elle avait appris."
     ],
     "keyReading": "Jean 4:1-42",
-    "location": "Sychar, en Samarie, près du puits de Jacob.",
-    "relationshipWithJehovah": "Elle progressa dans la connaissance du vrai culte et reconnut Jésus comme le Messie envoyé par Dieu.",
-    "didYouKnow": "Après sa conversation avec Jésus, elle laissa sa jarre, retourna en ville et invita les habitants à venir voir un homme qui lui avait dit tout ce qu’elle avait fait.",
+    "location": "Sychar, en Samarie.",
+    "relationshipWithJehovah": "Elle fut aidée à comprendre que le vrai culte devait être rendu avec esprit et vérité et reconnut Jésus comme le Messie.",
+    "didYouKnow": "Les habitants de la ville dirent finalement à la femme qu’ils ne croyaient plus seulement à cause de ce qu’elle avait raconté, mais parce qu’ils avaient eux-mêmes entendu Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4256,17 +4256,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "roman_centurion": {
-    "studyFocus": "Le centurion romain de Capernaüm demanda à Jésus de guérir son serviteur. Il se jugeait indigne de recevoir Jésus chez lui et croyait que sa parole suffisait pour provoquer la guérison.",
+    "studyFocus": "Le centurion romain de Capharnaüm était un officier qui avait un serviteur gravement malade. Il estima que Jésus pouvait le guérir à distance et se considéra indigne de recevoir Jésus chez lui.",
     "lessonPoints": [
-      "Le centurion manifesta une grande foi malgré son statut militaire.",
-      "Il se soucia sincèrement d’un serviteur malade.",
-      "Il reconnaissait l’autorité de Jésus sur la maladie.",
-      "Jésus cita sa foi comme remarquable."
+      "Le centurion se souciait sincèrement de son serviteur.",
+      "Il avait une grande confiance dans l’autorité de Jésus.",
+      "Il se montra humble malgré sa position militaire.",
+      "Jésus donna son exemple de foi en modèle pour ceux qui l’écoutaient."
     ],
     "keyReading": "Matthieu 8:5-13 ; Luc 7:1-10",
-    "location": "Capernaüm.",
-    "relationshipWithJehovah": "Le centurion exerçait la foi en Jésus et son attitude fut présentée favorablement dans le récit évangélique.",
-    "didYouKnow": "Dans le récit de Matthieu, le centurion dit qu’il n’est pas digne que Jésus entre sous son toit, estimant qu’une parole de Jésus suffirait.",
+    "location": "Capharnaüm.",
+    "relationshipWithJehovah": "Le centurion manifesta une foi exceptionnelle en Jésus, foi que Jésus loua publiquement.",
+    "didYouKnow": "Jésus déclara qu’il n’avait trouvé chez personne en Israël une foi aussi grande que celle de ce centurion.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5690,17 +5690,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "woman_issue_blood": {
-    "studyFocus": "Cette femme souffrait de pertes de sang depuis douze ans. Elle avait dépensé tout ce qu’elle possédait en soins sans être guérie. Elle toucha avec foi le vêtement de Jésus et fut immédiatement guérie.",
+    "studyFocus": "Une femme souffrant de pertes de sang depuis douze ans s’approcha de Jésus avec une grande foi. Elle toucha discrètement son vêtement et fut immédiatement guérie, puis reconnut publiquement son geste.",
     "lessonPoints": [
-      "Elle persévéra malgré douze années de souffrance.",
-      "Elle croyait que même toucher le vêtement de Jésus pourrait la guérir.",
-      "Elle surmonta sa peur et déclara publiquement ce qu’elle avait fait.",
-      "Jésus l’appela avec affection « ma fille » et confirma que sa foi l’avait guérie."
+      "Elle endura une maladie longue et épuisante.",
+      "Elle fit confiance au pouvoir de Jésus malgré sa situation.",
+      "Elle ne se cacha pas lorsque Jésus demanda qui l’avait touché.",
+      "Elle reçut de Jésus une parole rassurante sur sa foi."
     ],
-    "keyReading": "Matthieu 9:18-26 ; Marc 5:25-34 ; Luc 8:43-48",
-    "location": "Galilée, probablement dans la région de Capharnaüm.",
-    "relationshipWithJehovah": "Sa foi en Jésus reflétait sa confiance en la puissance de guérison que Dieu lui avait accordée.",
-    "didYouKnow": "Elle souffrait depuis douze ans et avait dépensé toutes ses ressources en médecins sans obtenir de guérison.",
+    "keyReading": "Marc 5:25-34 ; Luc 8:43-48 ; Matthieu 9:20-22",
+    "location": "Galilée, dans la région de Capharnaüm.",
+    "relationshipWithJehovah": "Sa confiance en Jésus témoignait de sa foi dans le pouvoir de guérison que Jéhovah lui avait accordé.",
+    "didYouKnow": "Jésus sentit qu’une force était sortie de lui lorsqu’elle toucha son vêtement et demanda qui l’avait touché.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
