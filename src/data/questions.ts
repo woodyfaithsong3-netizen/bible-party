@@ -1017,7 +1017,7 @@ const v39QuoteExpansion: QuoteQuestion[] = [
 ];
 
 const v39ChronologyExpansion: ChronologyQuestion[] = [
-  { id:'chronology-v39-01', type:'chronology', category:'Bible', difficulty:'easy', events:['Création d’Adam','Déluge','Appel d’Abraham','Naissance de Moïse'], correctOrder:[0,1,2,3], explanation:'Ces événements sont présentés dans cet ordre général dans le récit biblique.', reference:'Genèse 1–12; Exode 2' },
+  { id:'chronology-v39-01', type:'chronology', category:'Bible', difficulty:'easy', events:['Création d’Adam','Déluge','Appel d’Abraham','Naissance de Joseph'], correctOrder:[0,1,2,3], explanation:'Ces événements se succèdent dans cet ordre dans le récit de la Genèse.', reference:'Genèse 1–12; 30:22-24' },
   { id:'chronology-v39-02', type:'chronology', category:'Personnages', difficulty:'medium', events:['David devient roi','Salomon devient roi','Division du royaume','Exil à Babylone'], correctOrder:[0,1,2,3], explanation:'La division du royaume intervient après Salomon, puis vient l’exil bien plus tard.', reference:'2 Samuel 5:3-5; 1 Rois 2:10-12; 12:16-20; 2 Rois 25:8-12' },
   { id:'chronology-v39-03', type:'chronology', category:'Évangiles', difficulty:'easy', events:['Naissance de Jésus','Baptême de Jésus','Choix des apôtres','Mort de Jésus'], correctOrder:[0,1,2,3], explanation:'Ces étapes suivent le déroulement général des Évangiles.', reference:'Luc 2; Matthieu 3; Luc 6; Luc 23' },
   { id:'chronology-v39-04', type:'chronology', category:'Actes', difficulty:'medium', events:['Pentecôte','Conversion de Paul','Voyage missionnaire de Paul','Emprisonnement à Rome'], correctOrder:[0,1,2,3], explanation:'Les Actes racontent ces étapes successives du développement de l’activité chrétienne.', reference:'Actes 2; 9; 13–14; 28' },
