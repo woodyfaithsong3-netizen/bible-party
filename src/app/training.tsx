@@ -10,7 +10,7 @@ import { QuizQuestion } from '@/types';
 import { ScenicScreen } from '@/components/ScenicScreen';
 
 const categories = ['Toutes', ...categoryLabels];
-const difficulties = [['all', 'Tous'], ['easy', 'Facile'], ['medium', 'Intermédiaire'], ['hard', 'Expert']] as const;
+const difficulties = [['all', 'Tous'], ['easy', 'Facile'], ['medium', 'Intermédiaire'], ['hard', 'Difficile'], ['expert', 'Expert']] as const;
 const DECK_SIZE = 10;
 
 function shuffleAnswers(question: QuizQuestion): QuizQuestion {
@@ -28,7 +28,7 @@ function shuffleAnswers(question: QuizQuestion): QuizQuestion {
 
 function TrainingScreen() {
   const [category, setCategory] = useState('Toutes');
-  const [difficulty, setDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard'>('all');
+  const [difficulty, setDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard' | 'expert'>('all');
   const [started, setStarted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [index, setIndex] = useState(0);
