@@ -7,13 +7,13 @@ import { styles } from '@/theme/styles';
 import { ScenicScreen } from '@/components/ScenicScreen';
 import { getLearnedCharacters, markCharacterLearned } from '@/lib/storage';
 
-function ProfileCard({ item, onPress }: { item: CharacterProfile; onPress: () => void }) {
+function ProfileCard({ item, onPress, learned }: { item: CharacterProfile; onPress: () => void; learned: boolean }) {
   return <Pressable onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10 }, pressed && { opacity: 0.82 }]}>
     <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1 }}>{item.era.toUpperCase()}</Text>
     <Text style={{ color: colors.text, fontSize: 19, fontWeight: '900', marginTop: 4 }}>{item.name}</Text>
     <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginTop: 3 }}>{item.role}</Text>
     <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 8 }} numberOfLines={3}>{item.summary}</Text>
-    <Text style={{ color: colors.accent, fontWeight: '900', marginTop: 8 }}>{learned.includes(item.id) ? '✓ Fiche étudiée' : 'Voir la fiche ›'}</Text>
+    <Text style={{ color: colors.accent, fontWeight: '900', marginTop: 8 }}>{learned ? '✓ Fiche étudiée' : 'Voir la fiche ›'}</Text>
   </Pressable>;
 }
 
@@ -65,7 +65,7 @@ export default function CharactersScreen() {
       {eras.map(era => <Pressable key={era} onPress={() => setSelectedEra(era)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: selectedEra === era ? colors.accent : colors.border, backgroundColor: selectedEra === era ? colors.accent : colors.surface }}><Text style={{ color: selectedEra === era ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{era}</Text></Pressable>)}
     </ScrollView>
     <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginBottom: 12 }}>{filtered.length} fiches disponibles · {learned.length}/{characterProfiles.length} étudiées</Text>
-    {filtered.map(item => <ProfileCard key={item.id} item={item} onPress={() => setSelected(item)} />)}
+    {filtered.map(item => <ProfileCard key={item.id} item={item} learned={learned.includes(item.id)} onPress={() => setSelected(item)} />)}
     <View style={{ marginTop: 8 }}><Pressable onPress={() => router.push('/training')} style={styles.card}><Text style={{ color: colors.text, fontWeight: '900' }}>Tester mes connaissances ›</Text><Text style={{ color: colors.muted, marginTop: 4 }}>Retrouver les personnages dans les questions d’entraînement.</Text></Pressable></View>
   </ScrollView></ScenicScreen>;
 }
