@@ -1,7 +1,8 @@
 import React, { useMemo, useState } from 'react';
-import { Pressable, ScrollView, Text, TextInput, View } from 'react-native';
+import { Linking, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
 import { router } from 'expo-router';
 import { characterProfiles, CharacterProfile } from '@/data/characterProfiles';
+import { characterLearning } from '@/data/characterLearning';
 import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { ScenicScreen } from '@/components/ScenicScreen';
@@ -27,15 +28,15 @@ function Section({ icon, title, children }: { icon: string; title: string; child
 function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () => void }) {
   React.useEffect(() => { void markCharacterLearned(item.id); }, [item.id]);
 
+  const learning = characterLearning[item.id];
+
   const familyAndEntourage = item.relations.length
     ? item.relations.join(' · ')
     : 'Aucun proche ou personnage associé n’est indiqué dans la fiche actuelle.';
 
-  const lessons = item.qualities.length
-    ? `Le récit met notamment en évidence : ${item.qualities.join(', ')}.`
-    : item.warnings?.length
-      ? item.warnings.join(' ')
-      : 'Le récit permet surtout de réfléchir aux choix et aux conséquences présentés dans la Bible.';
+  const lessons = learning?.lessonPoints?.length
+    ? learning.lessonPoints.join(' ')
+    : 'Le récit permet surtout de réfléchir aux choix et aux conséquences présentés dans la Bible.';
 
   const relationshipWithJehovah = item.qualities.some(q => /foi|fidélité|prière|obéissance|zèle|confiance|repentir|humilité|espérance/i.test(q))
     ? `Son récit permet d’observer sa relation avec Jéhovah notamment sous l’angle de : ${item.qualities.filter(q => /foi|fidélité|prière|obéissance|zèle|confiance|repentir|humilité|espérance/i.test(q)).join(', ')}.`
@@ -88,6 +89,10 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
         <Text style={{ color: colors.muted, lineHeight: 21 }}>La fiche actuelle ne signale pas d’erreur particulière. Les difficultés du récit sont à découvrir dans les textes indiqués.</Text>
       </Section>}
 
+      {learning ? <Section icon="🧭" title="Repères d’étude JW.org">
+        <Text style={{ color: colors.muted, lineHeight: 21 }}>{learning.studyFocus}</Text>
+      </Section> : null}
+
       <Section icon="🙏" title="Sa relation avec Jéhovah">
         <Text style={{ color: colors.muted, lineHeight: 21 }}>{relationshipWithJehovah}</Text>
       </Section>
@@ -108,8 +113,11 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
           <Text style={{ color: colors.accent, fontWeight: '900' }}>🔎 Continuer avec les questions « Personnages » ›</Text>
         </Pressable>
         <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 8 }}>
-          Ressources utilisées pour enrichir cette fiche : La Bible — Traduction du monde nouveau, Étude perspicace des Écritures, articles « Imitez leur foi », fiches « Les personnages de la Bible » et autres ressources d’étude disponibles sur JW.org.
+          Sources d’étude : uniquement JW.org. Les ressources ci-dessous servent à vérifier le contexte, les récits bibliques et les enseignements associés à ce personnage.
         </Text>
+        {learning?.jwResources.map(source => <Pressable key={source.url} onPress={() => void Linking.openURL(source.url)} style={{ marginTop: 7 }}>
+          <Text style={{ color: colors.accent, fontWeight: '900' }}>↗ {source.title}</Text>
+        </Pressable>)}
       </Section>
 
       <View style={{ marginTop: 18, padding: 15, borderRadius: 16, backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.accent }}>
