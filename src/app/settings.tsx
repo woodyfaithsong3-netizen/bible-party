@@ -15,9 +15,7 @@ const crown = require('../../assets/images/ui/crown.png');
 
 const defaults: AppSettings = { sounds: true, haptics: true, animations: true, highContrast: false };
 const visibleSettings: Array<[keyof AppSettings, string, string]> = [
-  ['sounds', 'Musique & sons', 'Musique d’ambiance et retours audio pendant la partie.'],
   ['haptics', 'Vibrations', 'Retour haptique des réponses.'],
-  ['highContrast', 'Contraste renforcé', 'Séparations et fonds plus lisibles.'],
 ];
 
 export default function SettingsScreen() {
