@@ -1498,534 +1498,441 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "silas": {
-    "studyFocus": "Silas accompagne Paul dans plusieurs voyages et endure avec lui opposition et emprisonnement. À observer dans son récit : Courage, Endurance, Coopération.",
+    "studyFocus": "Silas — compagnon fidèle de Paul",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Endurance » dans les épisodes cités.",
-      "Observer la qualité « Coopération » dans les épisodes cités."
+      "Fidélité dans les épreuves",
+      "Courage dans le ministère",
+      "Encourager les autres"
     ],
-    "keyReading": "Est choisi pour accompagner Paul.",
+    "keyReading": "Actes 15:22-41 ; 16:19-40 ; 17:1-15",
+    "location": "Jérusalem, Antioche et les villes de Macédoine et d’Achaïe.",
+    "relationshipWithJehovah": "Il accepte des responsabilités difficiles, endure la prison avec Paul et continue à fortifier les congrégations.",
+    "didYouKnow": "Silas était aussi appelé Silvain et fut choisi comme représentant de la congrégation de Jérusalem.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Silas — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "onesimus": {
-    "studyFocus": "Onésime devient chrétien et Paul demande à Philémon de l’accueillir comme un frère. À observer dans son récit : Changement, Fidélité.",
+    "studyFocus": "Onésime — d’esclave à frère chrétien",
     "lessonPoints": [
-      "Observer la qualité « Changement » dans les épisodes cités.",
-      "Observer la qualité « Fidélité » dans les épisodes cités."
+      "Transformation par la vérité",
+      "Pardon chrétien",
+      "Valeur d’une personne"
     ],
-    "keyReading": "Devient chrétien grâce à Paul.",
+    "keyReading": "Philémon 8-21 ; Colossiens 4:7-9",
+    "location": "Rome et Colosses.",
+    "relationshipWithJehovah": "Paul l’aide à devenir utile comme frère chrétien et demande à Philémon de l’accueillir avec amour.",
+    "didYouKnow": "Onésime a rencontré Paul pendant son emprisonnement et est retourné vers Philémon avec une lettre de Paul.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Onésime — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "philemon": {
-    "studyFocus": "Philémon est destinataire d’une lettre de Paul concernant Onésime et l’amour chrétien. À observer dans son récit : Amour, Générosité, Hospitalité.",
+    "studyFocus": "Philémon — un chrétien généreux",
     "lessonPoints": [
-      "Observer la qualité « Amour » dans les épisodes cités.",
-      "Observer la qualité « Générosité » dans les épisodes cités.",
-      "Observer la qualité « Hospitalité » dans les épisodes cités."
+      "Pardon",
+      "Amour fraternel",
+      "Générosité"
     ],
-    "keyReading": "Accueille une congrégation dans sa maison.",
+    "keyReading": "Philémon 1-25",
+    "location": "Colosses.",
+    "relationshipWithJehovah": "Philémon est un croyant chez qui une congrégation se réunit et Paul lui demande d’accueillir Onésime comme un frère.",
+    "didYouKnow": "La lettre à Philémon est très personnelle et montre le tact de Paul.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Philémon — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "titus": {
-    "studyFocus": "Tite travaille avec Paul et reçoit des responsabilités dans les congrégations de Crète. À observer dans son récit : Fiabilité, Organisation, Service.",
+    "studyFocus": "Tite — un compagnon de travail fiable",
     "lessonPoints": [
-      "Observer la qualité « Fiabilité » dans les épisodes cités.",
-      "Observer la qualité « Organisation » dans les épisodes cités.",
-      "Observer la qualité « Service » dans les épisodes cités."
+      "Fiabilité",
+      "Bon exemple",
+      "Organisation"
     ],
-    "keyReading": "Accompagne Paul dans son activité.",
+    "keyReading": "Tite 1:4-5 ; 2:7-8 ; 3:12-15",
+    "location": "Crète et autres régions du ministère de Paul.",
+    "relationshipWithJehovah": "Paul lui confie des responsabilités importantes et lui demande de mettre de l’ordre dans les congrégations de Crète.",
+    "didYouKnow": "Paul appelle Tite son véritable enfant selon la foi commune.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Tite — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "eutychus": {
-    "studyFocus": "Eutyche est connu pour l’incident survenu pendant un long discours de Paul à Troas. À observer dans son récit : Persévérance dans l’écoute.",
+    "studyFocus": "Eutyche — relevé après un accident",
     "lessonPoints": [
-      "Observer la qualité « Persévérance dans l’écoute » dans les épisodes cités."
+      "Réunions chrétiennes",
+      "Encouragement",
+      "Confiance en Jéhovah"
     ],
-    "keyReading": "Assiste à une réunion chrétienne à Troas.",
+    "keyReading": "Actes 20:7-12",
+    "location": "Troas.",
+    "relationshipWithJehovah": "Après être tombé d’une fenêtre pendant un long discours de Paul, Eutyche est relevé vivant; l’événement console profondément les disciples.",
+    "didYouKnow": "Eutyche s’était assis à une fenêtre au troisième étage.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Eutyche — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "martha": {
-    "studyFocus": "Marthe, sœur de Marie et de Lazare, est connue pour son hospitalité et sa foi en la résurrection. À observer dans son récit : Hospitalité, Foi, Franchise.",
+    "studyFocus": "Marthe — une femme qui aimait Jésus",
     "lessonPoints": [
-      "Observer la qualité « Hospitalité » dans les épisodes cités.",
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Franchise » dans les épisodes cités."
+      "Équilibre entre service et écoute",
+      "Foi",
+      "Hospitalité"
     ],
-    "keyReading": "Accueille Jésus chez elle.",
+    "keyReading": "Luc 10:38-42 ; Jean 11:1-44 ; 12:1-8",
+    "location": "Béthanie, près de Jérusalem.",
+    "relationshipWithJehovah": "Marthe accueille Jésus chez elle et manifeste sa foi en lui lors de la mort de son frère Lazare.",
+    "didYouKnow": "Marthe affirme sa foi que Jésus est le Christ et le Fils de Dieu.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Marthe — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "mary_bethany": {
-    "studyFocus": "Marie, sœur de Marthe et de Lazare, accorde une grande valeur à l’enseignement de Jésus et lui manifeste son attachement. À observer dans son récit : Foi, Attachement, Générosité.",
+    "studyFocus": "Marie de Béthanie — attentive aux paroles de Jésus",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Attachement » dans les épisodes cités.",
-      "Observer la qualité « Générosité » dans les épisodes cités."
+      "Écouter Jésus",
+      "Générosité",
+      "Attachement spirituel"
     ],
-    "keyReading": "Écoute Jésus avec attention.",
+    "keyReading": "Luc 10:38-42 ; Jean 11:1-44 ; 12:1-8",
+    "location": "Béthanie.",
+    "relationshipWithJehovah": "Marie choisit d’écouter Jésus et lui témoigne ensuite un profond attachement en utilisant un parfum précieux.",
+    "didYouKnow": "Jésus a dit que Marie avait choisi la bonne part.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Marie de Béthanie — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "joseph_arimathea": {
-    "studyFocus": "Joseph d’Arimathée demande le corps de Jésus et participe à son ensevelissement. À observer dans son récit : Courage, Respect, Attachement.",
+    "studyFocus": "Joseph d’Arimathie — courageux disciple de Jésus",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Respect » dans les épisodes cités.",
-      "Observer la qualité « Attachement » dans les épisodes cités."
+      "Courage",
+      "Respect pour Jésus",
+      "Actions au bon moment"
     ],
-    "keyReading": "Est présenté comme un homme juste attendant le Royaume de Dieu.",
+    "keyReading": "Matthieu 27:57-60 ; Marc 15:42-46 ; Jean 19:38-42",
+    "location": "Jérusalem et Arimathie.",
+    "relationshipWithJehovah": "Bien qu’il soit membre respecté du Sanhédrin, Joseph ne consent pas au traitement réservé à Jésus et demande son corps pour l’ensevelir.",
+    "didYouKnow": "Il est présenté comme un homme riche et comme disciple de Jésus.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Joseph d’Arimathie — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "jairus": {
-    "studyFocus": "Jaïrus demande à Jésus d’aider sa fille malade et assiste à sa guérison. À observer dans son récit : Foi, Persévérance.",
+    "studyFocus": "Jaïrus — un chef de synagogue qui a cru",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités."
+      "Foi sous pression",
+      "Prière",
+      "Confiance en Jésus"
     ],
-    "keyReading": "Supplie Jésus de venir auprès de sa fille.",
+    "keyReading": "Marc 5:21-43 ; Luc 8:40-56",
+    "location": "Capharnaüm et ses environs.",
+    "relationshipWithJehovah": "Jaïrus supplie Jésus pour sa fille et continue à faire confiance malgré l’annonce de sa mort.",
+    "didYouKnow": "Jésus lui dit de ne pas avoir peur mais de montrer de la foi.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Jaïrus — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "thomas": {
-    "studyFocus": "Thomas est l’un des douze apôtres et apprend à surmonter ses doutes après la résurrection de Jésus. À observer dans son récit : Franchise, Foi retrouvée.",
+    "studyFocus": "Thomas — sa foi a grandi",
     "lessonPoints": [
-      "Observer la qualité « Franchise » dans les épisodes cités.",
-      "Observer la qualité « Foi retrouvée » dans les épisodes cités.",
-      "Point de vigilance : Son récit montre qu’un doute peut être surmonté en examinant les faits et en acceptant les preuves."
+      "Questions sincères",
+      "Foi fondée sur des preuves",
+      "Persévérance"
     ],
-    "keyReading": "Suit Jésus comme apôtre.",
+    "keyReading": "Jean 11:16 ; 14:1-7 ; 20:24-29",
+    "location": "Jérusalem et la Judée.",
+    "relationshipWithJehovah": "Thomas exprime ses doutes après la résurrection, puis accepte les preuves données par Jésus et fait une déclaration de foi remarquable.",
+    "didYouKnow": "Thomas était aussi appelé Didyme, qui signifie Jumeau.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Thomas — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "lydia": {
-    "studyFocus": "Lydie accepte le message prêché par Paul, se fait baptiser avec sa maisonnée et manifeste une remarquable hospitalité. À observer dans son récit : Hospitalité, Générosité, Réceptivité.",
+    "studyFocus": "Lydie — hospitalité et ouverture d’esprit",
     "lessonPoints": [
-      "Observer la qualité « Hospitalité » dans les épisodes cités.",
-      "Observer la qualité « Générosité » dans les épisodes cités.",
-      "Observer la qualité « Réceptivité » dans les épisodes cités."
+      "Hospitalité",
+      "Réceptivité",
+      "Générosité"
     ],
-    "keyReading": "Écoute Paul près d’une rivière à Philippes.",
+    "keyReading": "Actes 16:11-15, 40",
+    "location": "Philippes, en Macédoine.",
+    "relationshipWithJehovah": "Lydie écoute le message de Paul, devient croyante avec sa maison et offre l’hospitalité aux missionnaires.",
+    "didYouKnow": "Elle était marchande de pourpre et venait de Thyatire.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Lydie — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "tabitha": {
-    "studyFocus": "Tabitha est connue pour ses nombreuses bonnes actions et son aide aux veuves de Joppé. À observer dans son récit : Générosité, Compassion, Service.",
+    "studyFocus": "Tabitha — connue pour ses bonnes œuvres",
     "lessonPoints": [
-      "Observer la qualité « Générosité » dans les épisodes cités.",
-      "Observer la qualité « Compassion » dans les épisodes cités.",
-      "Observer la qualité « Service » dans les épisodes cités."
+      "Générosité",
+      "Bonnes œuvres",
+      "Amour concret"
     ],
-    "keyReading": "Fait beaucoup de bonnes œuvres.",
+    "keyReading": "Actes 9:36-43",
+    "location": "Joppé.",
+    "relationshipWithJehovah": "Tabitha est connue pour ses bonnes actions et ses dons aux personnes dans le besoin; sa mort provoque beaucoup de tristesse parmi les disciples.",
+    "didYouKnow": "Son nom grec était Dorcas.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Tabitha — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "stephen": {
-    "studyFocus": "Étienne témoigne courageusement devant le Sanhédrin et meurt après avoir été lapidé. À observer dans son récit : Courage, Foi, Pardon.",
+    "studyFocus": "Étienne — un témoin courageux",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Pardon » dans les épisodes cités."
+      "Courage",
+      "Connaissance des Écritures",
+      "Pardonner sous la persécution"
     ],
-    "keyReading": "Est choisi pour une responsabilité de service.",
+    "keyReading": "Actes 6:1-15 ; 7:1-60 ; 8:1-4",
+    "location": "Jérusalem.",
+    "relationshipWithJehovah": "Étienne est choisi pour une responsabilité dans la congrégation, rend un témoignage puissant et reste fidèle jusqu’à sa mort.",
+    "didYouKnow": "Il est présenté comme plein de foi et d’esprit saint.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étienne — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "ananias_damascus": {
-    "studyFocus": "Ananias obéit à la direction reçue et aide Saul immédiatement après sa conversion. À observer dans son récit : Courage, Obéissance, Confiance.",
+    "studyFocus": "Ananias de Damas — un disciple courageux",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Obéissance » dans les épisodes cités.",
-      "Observer la qualité « Confiance » dans les épisodes cités."
+      "Obéissance",
+      "Courage",
+      "Voir les autres comme Jéhovah les voit"
     ],
-    "keyReading": "Reçoit une vision concernant Saul.",
+    "keyReading": "Actes 9:10-19 ; 22:12-16",
+    "location": "Damas.",
+    "relationshipWithJehovah": "Jéhovah lui demande d’aller voir Saul malgré la réputation de persécuteur de celui-ci; Ananias obéit et l’aide à retrouver la vue.",
+    "didYouKnow": "Ananias était un disciple respecté à Damas.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Ananias de Damas — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "philip_evangelizer": {
-    "studyFocus": "Philippe participe à l’expansion du message chrétien en Samarie et sur la route de Gaza. À observer dans son récit : Zèle, Enseignement, Disponibilité.",
+    "studyFocus": "Philippe l’évangélisateur — un prédicateur disponible",
     "lessonPoints": [
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Enseignement » dans les épisodes cités.",
-      "Observer la qualité « Disponibilité » dans les épisodes cités."
+      "Disponibilité",
+      "Enseignement",
+      "Prêcher à tous"
     ],
-    "keyReading": "Prêche en Samarie.",
+    "keyReading": "Actes 6:1-7 ; 8:4-40 ; 21:8-9",
+    "location": "Jérusalem, Samarie, route de Gaza et Césarée.",
+    "relationshipWithJehovah": "Philippe prêche en Samarie, aide un Éthiopien à comprendre les Écritures et poursuit son ministère avec sa famille.",
+    "didYouKnow": "Il est appelé l’évangélisateur et avait quatre filles qui prophétisaient.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Philippe l’évangélisateur — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "james_zebedee": {
-    "studyFocus": "Jacques, fils de Zébédée et frère de Jean, fait partie des Douze et du cercle des disciples présents lors de plusieurs événements marquants. À observer dans son récit : Zèle, Courage.",
+    "studyFocus": "Jacques fils de Zébédée — apôtre fidèle",
     "lessonPoints": [
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités."
+      "Zèle",
+      "Loyauté",
+      "Persévérance"
     ],
-    "keyReading": "Quitte son activité de pêcheur pour suivre Jésus.",
+    "keyReading": "Matthieu 4:21-22 ; 17:1-8 ; Actes 12:1-2",
+    "location": "Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Jacques fait partie des trois apôtres particulièrement proches de Jésus et reste fidèle jusqu’à sa mort comme martyr.",
+    "didYouKnow": "Jésus surnomme Jacques et Jean Boanergès, « fils du tonnerre ».",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Jacques fils de Zébédée — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "james_brother_jesus": {
-    "studyFocus": "Jacques, frère de Jésus, devient un membre éminent de la congrégation de Jérusalem et intervient lors de la question de la circoncision. À observer dans son récit : Foi, Sagesse pratique, Courage.",
+    "studyFocus": "Jacques, frère de Jésus — un pilier de la congrégation",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Sagesse pratique » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités."
+      "Maturité spirituelle",
+      "Impartialité",
+      "Responsabilité"
     ],
-    "keyReading": "Est d’abord sceptique envers Jésus avec ses frères.",
+    "keyReading": "Actes 15:13-29 ; 21:18-25 ; Galates 1:19 ; 2:9",
+    "location": "Jérusalem.",
+    "relationshipWithJehovah": "Jacques devient un chrétien mûr et joue un rôle important dans la congrégation de Jérusalem.",
+    "didYouKnow": "Jésus lui apparaît après sa résurrection, ce qui contribue à sa foi.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Jacques, frère de Jésus — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "jude_brother_jesus": {
-    "studyFocus": "Judas, frère de Jésus, est cité parmi les frères de Jésus et est traditionnellement associé à la lettre de Jude. À observer dans son récit : Foi, Courage, Vigilance spirituelle.",
+    "studyFocus": "Jude, frère de Jésus — un défenseur de la foi",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Vigilance spirituelle » dans les épisodes cités."
+      "Défendre la foi",
+      "Vigilance",
+      "Miséricorde"
     ],
-    "keyReading": "Figure parmi les frères de Jésus.",
+    "keyReading": "Jude 1-25",
+    "location": "Palestine et congrégations chrétiennes du Ier siècle.",
+    "relationshipWithJehovah": "Jude encourage les chrétiens à combattre pour la foi et à se garder des influences corrompues.",
+    "didYouKnow": "Il se présente comme esclave de Jésus Christ et frère de Jacques.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Jude, frère de Jésus — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "philip_apostle": {
-    "studyFocus": "Philippe est l’un des Douze. Il amène Nathanaël à Jésus et intervient dans plusieurs épisodes de l’Évangile de Jean. À observer dans son récit : Zèle, Esprit d’initiative.",
+    "studyFocus": "Philippe l’apôtre — il a amené Nathanaël à Jésus",
     "lessonPoints": [
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Esprit d’initiative » dans les épisodes cités."
+      "Inviter les autres",
+      "Foi progressive",
+      "Servir Jésus"
     ],
-    "keyReading": "Répond à l’appel de Jésus.",
+    "keyReading": "Jean 1:43-51 ; 6:1-7 ; 12:20-22 ; 14:8-11",
+    "location": "Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Philippe répond à l’appel de Jésus et invite Nathanaël à venir voir; il sert ensuite comme apôtre.",
+    "didYouKnow": "Philippe était originaire de Bethsaïde, comme Pierre et André.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Philippe l’apôtre — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "bartholomew": {
-    "studyFocus": "Barthélemy figure dans les listes des Douze. Il est souvent identifié à Nathanaël, mais les textes ne donnent pas explicitement cette identification. À observer dans son récit : Foi, Fidélité.",
+    "studyFocus": "Barthélémy — l’apôtre probablement appelé Nathanaël",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Fidélité » dans les épisodes cités."
+      "Sincérité",
+      "Reconnaître la vérité",
+      "Parler de Jésus"
     ],
-    "keyReading": "Est choisi parmi les Douze.",
+    "keyReading": "Jean 1:45-51 ; 21:2",
+    "location": "Galilée et régions du ministère de Jésus.",
+    "relationshipWithJehovah": "Nathanaël est présenté à Jésus par Philippe et reconnaît rapidement Jésus comme Fils de Dieu et Roi d’Israël.",
+    "didYouKnow": "Les listes des apôtres associent généralement Barthélémy au Nathanaël de l’Évangile de Jean.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Barthélémy — Étude perspicace",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
