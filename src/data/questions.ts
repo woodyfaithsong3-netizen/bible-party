@@ -1032,10 +1032,10 @@ const v39IntruderExpansion: IntruderQuestion[] = [
 
 const v39TimesUpExpansion: TimesUpQuestion[] = [
   { id:'timesup-v39-01', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Noé', clues:['Arche','Famille','Déluge'], reference:'Genèse 6–9' },
-  { id:'timesup-v39-02', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Gédéon', clues:['Toison','Madian','300'], reference:'Juges 6–7' },
+  { id:'timesup-v39-02', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Ébed-Mélek', clues:['Jérémie','Citerne','Éthiopien'], reference:'Jérémie 38:7-13' },
   { id:'timesup-v39-03', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Matthieu', clues:['Lévi','Impôts','Apôtre'], reference:'Matthieu 9:9' },
   { id:'timesup-v39-04', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Lydie', clues:['Pourpre','Philippes','Hospitalité'], reference:'Actes 16:14-15' },
-  { id:'timesup-v39-05', type:'timesup', category:'Personnages', difficulty:'hard', answer:'Belshatsar', clues:['Festin','Mur','Daniel'], reference:'Daniel 5' },
+  { id:'timesup-v39-05', type:'timesup', category:'Personnages', difficulty:'hard', answer:'Amos', clues:['Prophète','Bergers','Sycomores'], reference:'Amos 1:1; 7:14-15' },
   { id:'timesup-v39-06', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Anne', clues:['Prière','Samuel','Sanctuaire'], reference:'1 Samuel 1' },
   { id:'timesup-v39-07', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Nathan', clues:['Prophète','David','Brebis'], reference:'2 Samuel 12' },
   { id:'timesup-v39-08', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Jonas', clues:['Ninive','Fuite','Poisson'], reference:'Jonas 1–3' },
@@ -1366,7 +1366,7 @@ intruderQuestions.splice(0, intruderQuestions.length, ...v90CleanIntruders, ...v
 // pas des références de versets. Les références restent dans la carte pour le maître de jeu.
 const v90TimesUpExtra: TimesUpQuestion[] = [
   {id:'v90-tu-001',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Abigaïl',clues:['Carmel','David','Nabal'],reference:'1 Samuel 25:2-42'},
-  {id:'v90-tu-002',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Abigaïl',clues:['Provisions','David','Sagesse'],reference:'1 Samuel 25:18-35'},
+  {id:'v90-tu-002',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Houlda',clues:['Prophétesse','Loi retrouvée','Josias'],reference:'2 Rois 22:8-20; 2 Chroniques 34:22-28'},
   {id:'v90-tu-003',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Esdras',clues:['Prêtre','Loi','Jérusalem'],reference:'Esdras 7:1-10'},
   {id:'v90-tu-004',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Zachée',clues:['Petit','Sycomore','Jéricho'],reference:'Luc 19:1-10'},
   {id:'v90-tu-005',type:'timesup',category:'Personnages',difficulty:'medium',answer:'Barnabé',clues:['Chypre','Paul','Encouragement'],reference:'Actes 4:36-37; 9:27; 11:22-26'},
