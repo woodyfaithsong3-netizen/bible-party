@@ -52,6 +52,7 @@ const CATEGORY_MAP: Record<string, string> = {
   livres: 'Questions bibliques',
   'livres-hebreux': 'Questions bibliques',
   villes: 'Questions bibliques',
+  objets: 'Questions bibliques',
   actes: 'Questions bibliques',
   prédication: 'Questions bibliques',
   persévérance: 'Questions bibliques',
@@ -60,6 +61,8 @@ const CATEGORY_MAP: Record<string, string> = {
   'versets bibliques': 'Que veulent dire ces versets ?',
   'que veulent dire ces versets ?': 'Que veulent dire ces versets ?',
   'expressions bibliques': 'Que veulent dire ces versets ?',
+  concepts: 'Que veulent dire ces versets ?',
+  repentance: 'Que veulent dire ces versets ?',
   // Histoire
   histoire: 'La Bible et l’Histoire',
   'la bible et l’histoire': 'La Bible et l’Histoire',
