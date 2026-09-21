@@ -104,7 +104,10 @@ export default function GameScreen() {
   const mode = round === target - 1 ? 'finale' : playable[round % playable.length];
   const question = useMemo<Question>(() => {
     const deck = decks[mode] || quizQuestions;
-    const raw = deck.length ? deck[round % deck.length] : quizQuestions[0];
+    // Indexer chaque mode selon son propre nombre d'apparitions évite de
+    // répéter prématurément une carte quand plusieurs modes sont alternés.
+    const modeRound = playable.slice(0, round).filter((m) => m === mode).length;
+    const raw = deck.length ? deck[modeRound % deck.length] : quizQuestions[0];
     // Mélange les propositions à chaque manche et recalcule l'index de la bonne réponse.
     // Sans cela, la base historique avait une forte majorité de bonnes réponses en A.
     if (raw.type === 'quiz' || raw.type === 'quote') {
@@ -117,7 +120,7 @@ export default function GameScreen() {
       } as Question;
     }
     return raw;
-  }, [decks, mode, round]);
+  }, [decks, mode, round, playable]);
   const finaleQuestion = mode === 'finale' ? question : question;
 
   const reset = useCallback(() => {
