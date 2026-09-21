@@ -4692,16 +4692,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "naaman": {
-    "studyFocus": "Naaman, chef de l’armée syrienne, a dû mettre son orgueil de côté pour suivre les instructions de Jéhovah et a ensuite reconnu le vrai Dieu.",
+    "studyFocus": "Naaman était le chef de l’armée du roi de Syrie. Malgré sa position, il souffrait de la lèpre. Il accepta finalement les instructions du prophète Élisée, se lava sept fois dans le Jourdain et fut guéri. Cette guérison l’amena à reconnaître Jéhovah comme le vrai Dieu.",
     "lessonPoints": [
-      "Humilité : il a accepté une instruction simple malgré sa première réaction.",
-      "Foi et obéissance : sa guérison est venue après avoir suivi la direction donnée par Élisée.",
-      "Reconnaissance : Naaman a exprimé sa détermination à ne plus adorer d’autres dieux."
+      "Naaman dut mettre de côté son orgueil pour suivre une instruction simple.",
+      "Il écouta aussi le conseil de ses serviteurs, ce qui l’aida à agir avec sagesse.",
+      "Après sa guérison, il reconnut publiquement Jéhovah.",
+      "Son histoire montre que la foi peut grandir quand on accepte humblement la direction divine."
     ],
     "keyReading": "2 Rois 5:1-19",
-    "location": "Syrie et Samarie.",
-    "relationshipWithJehovah": "Naaman passe d’une confiance dans son statut à une reconnaissance du Dieu d’Israël. Après sa guérison, il affirme qu’il n’y a pas de Dieu sur toute la terre sauf en Israël.",
-    "didYouKnow": "Naaman s’attendait à ce qu’Élisée sorte personnellement vers lui, mais le prophète lui envoya simplement un messager avec une instruction très simple.",
+    "location": "Syrie et Samarie, notamment le Jourdain.",
+    "relationshipWithJehovah": "Jéhovah permit sa guérison par l’intermédiaire d’Élisée. Naaman reconnut ensuite qu’il n’y avait pas de Dieu sur toute la terre sinon en Israël.",
+    "didYouKnow": "Naaman était chef de l’armée du roi de Syrie et pourtant il écouta finalement le conseil d’une jeune servante israélite.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4743,16 +4744,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "hezekiah": {
-    "studyFocus": "Ézéchias s’est appuyé sur Jéhovah face aux menaces assyriennes et a travaillé à rétablir le vrai culte.",
+    "studyFocus": "Ézéchias fut roi de Juda à une période très difficile. Il entreprit de rétablir le vrai culte, fit retirer les pratiques idolâtriques et fit confiance à Jéhovah lorsque l’armée assyrienne menaça Jérusalem. Il commit aussi une erreur en montrant ses trésors aux envoyés de Babylone, mais il est principalement présenté comme un roi fidèle.",
     "lessonPoints": [
-      "Confiance : devant la menace de Sennakérib, Ézéchias a recherché l’aide de Jéhovah.",
-      "Zèle pour le vrai culte : il a entrepris des mesures pour purifier le culte en Juda.",
-      "Humilité : son récit montre aussi qu’un serviteur fidèle doit rester vigilant face à l’orgueil."
+      "Ézéchias prit des mesures concrètes pour restaurer le vrai culte.",
+      "Il encouragea le peuple à ne pas avoir peur des Assyriens et à compter sur Jéhovah.",
+      "Sa prière lors de la menace de Sennakérib montre qu’il cherchait l’aide divine.",
+      "Son erreur avec les envoyés de Babylone rappelle qu’une bonne réputation ne dispense pas de vigilance."
     ],
-    "keyReading": "2 Rois 18:1-22; 19:1-37; 2 Chroniques 29:1-11; Isaïe 36:1-22; 37:1-38",
-    "location": "Jérusalem et Juda.",
-    "relationshipWithJehovah": "Ézéchias ne répond pas à la menace assyrienne uniquement par des moyens humains: il prie Jéhovah et recherche son aide. Son règne montre aussi l’importance de débarrasser le pays de l’idolâtrie.",
-    "didYouKnow": "Ézéchias étendit ses réformes jusqu’à détruire le serpent de cuivre que les Israélites avaient commencé à idolâtrer.",
+    "keyReading": "2 Rois 18:1-37 ; 19:1-37 ; 20:1-21 ; 2 Chroniques 29:1-36 ; 32:1-33",
+    "location": "Jérusalem et le royaume de Juda.",
+    "relationshipWithJehovah": "Ézéchias s’attacha à Jéhovah et lui resta fidèle. Dans la crise assyrienne, il pria Jéhovah et rechercha sa direction.",
+    "didYouKnow": "Ézéchias fit fabriquer le tunnel qui conduisait l’eau de la source de Guihôn jusqu’à l’intérieur de Jérusalem, un projet mentionné en 2 Rois 20:20.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu",
@@ -4798,16 +4800,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "josiah": {
-    "studyFocus": "Josias a cherché Jéhovah alors qu’il était encore jeune et a entrepris une vaste réforme du culte en Juda.",
+    "studyFocus": "Josias devint roi de Juda alors qu’il était encore jeune. Il entreprit une vaste réforme religieuse, fit réparer le temple et réagit avec humilité lorsqu’on lui lut le livre de la Loi retrouvé. Il mourut après s’être engagé dans une bataille contre le roi d’Égypte.",
     "lessonPoints": [
-      "Chercher Jéhovah : Josias a commencé à agir alors qu’il était encore jeune.",
-      "Réagir à la Parole de Dieu : lorsqu’il a entendu le livre de la Loi, il a été profondément touché.",
-      "Courage : il a supprimé des pratiques liées au faux culte et a encouragé le peuple à servir Jéhovah."
+      "Josias chercha Jéhovah dès sa jeunesse.",
+      "Il élimina de nombreuses pratiques idolâtriques et encouragea le peuple à suivre la Loi.",
+      "Sa réaction au contenu du livre de la Loi montre qu’il acceptait humblement la correction.",
+      "Son exemple montre l’importance d’agir selon la Parole de Dieu plutôt que selon les tendances du moment."
     ],
-    "keyReading": "2 Rois 22:1-20; 23:1-25; 2 Chroniques 34:1-33; 35:1-19",
-    "location": "Juda et Jérusalem.",
-    "relationshipWithJehovah": "Josias réagit immédiatement lorsqu’il entend la Loi et cherche à corriger le peuple. Jéhovah remarque son humilité et sa réaction lorsqu’il comprend la gravité de la situation.",
-    "didYouKnow": "La Pâque célébrée au temps de Josias est décrite comme particulièrement remarquable et comme n’ayant pas eu d’équivalent depuis l’époque des juges.",
+    "keyReading": "2 Rois 22:1-20 ; 23:1-30 ; 2 Chroniques 34:1-33 ; 35:20-27",
+    "location": "Jérusalem et le royaume de Juda.",
+    "relationshipWithJehovah": "Josias s’humilia devant Jéhovah et chercha à rétablir son culte. Jéhovah remarqua son attitude humble lors de la lecture de la Loi.",
+    "didYouKnow": "Josias avait huit ans lorsqu’il devint roi et 16 ans lorsqu’il commença à rechercher le Dieu de David, selon 2 Chroniques 34:1-3.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu",
@@ -4852,16 +4855,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jehoshaphat": {
-    "studyFocus": "Josaphat a souvent recherché Jéhovah et a encouragé le peuple de Juda à lui faire confiance, même lorsqu’une grande armée menaçait le pays.",
+    "studyFocus": "Yehoshaphat, roi de Juda, chercha Jéhovah et entreprit d’enseigner la Loi au peuple. Il connut aussi des alliances discutables avec le royaume d’Israël. Lorsque Juda fut menacé par une coalition ennemie, il pria Jéhovah et vit une délivrance.",
     "lessonPoints": [
-      "Rechercher Jéhovah : face au danger, Josaphat a demandé l’aide de Jéhovah.",
-      "Foi : le récit montre l’importance de compter sur Jéhovah plutôt que sur sa propre force.",
-      "Vigilance : son histoire rappelle aussi qu’une bonne décision peut être compromise par de mauvaises associations."
+      "Yehoshaphat envoya des responsables et des Lévites enseigner la Loi dans les villes de Juda.",
+      "Face à une armée supérieure, il reconnut publiquement sa dépendance envers Jéhovah.",
+      "Il commit toutefois des erreurs en coopérant avec le roi Achab et d’autres rois d’Israël.",
+      "Son exemple montre à la fois les bienfaits de la confiance en Jéhovah et la nécessité de choisir soigneusement ses alliances."
     ],
-    "keyReading": "2 Chroniques 17:1-19 ; 20:1-30",
-    "location": "Juda et Jérusalem.",
-    "relationshipWithJehovah": "Yehoshaphat recherche Jéhovah et organise l’enseignement de la Loi dans Juda.",
-    "didYouKnow": "Il envoie des princes, des Lévites et des prêtres pour enseigner au peuple.",
+    "keyReading": "2 Chroniques 17:1-19 ; 18:1-34 ; 19:1-11 ; 20:1-30",
+    "location": "Jérusalem et le royaume de Juda.",
+    "relationshipWithJehovah": "Yehoshaphat chercha Jéhovah, pria dans les moments de crise et encouragea le peuple à avoir foi en lui.",
+    "didYouKnow": "Avant une bataille décisive, Yehoshaphat plaça des chanteurs devant l’armée pour louer Jéhovah, selon 2 Chroniques 20:21.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4896,16 +4900,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "jonah": {
-    "studyFocus": "Jonas a appris à accepter la mission de Jéhovah et à comprendre davantage sa miséricorde envers les personnes qui se repentent.",
+    "studyFocus": "Jonas était un prophète envoyé par Jéhovah à Ninive. Il tenta d’abord de fuir sa mission, fut sauvé après avoir été jeté à la mer et finit par annoncer le message à Ninive. Lorsque les habitants se repentirent, Jonas eut du mal à accepter la miséricorde de Jéhovah.",
     "lessonPoints": [
-      "Obéissance : après avoir essayé de fuir, Jonas a accompli la mission reçue.",
-      "Humilité : il a dû corriger son point de vue sur la miséricorde de Jéhovah.",
-      "Miséricorde : le récit montre que Jéhovah se soucie des personnes et leur laisse la possibilité de se repentir."
+      "Jonas apprit que l’on ne peut pas fuir une mission confiée par Jéhovah.",
+      "Sa prière depuis l’intérieur du poisson montre qu’il pouvait retrouver sa confiance après une faute.",
+      "Il accomplit finalement sa mission et les habitants de Ninive réagirent favorablement.",
+      "Son irritation devant la miséricorde de Jéhovah révèle qu’il devait encore ajuster son point de vue."
     ],
     "keyReading": "Jonas 1:1-17 ; 2:1-10 ; 3:1-10 ; 4:1-11",
-    "location": "Joppé, Ninive et les environs.",
-    "relationshipWithJehovah": "Yona fuit d’abord sa mission, mais Jéhovah lui donne une nouvelle occasion et lui enseigne la miséricorde.",
-    "didYouKnow": "Il prie depuis l’intérieur du grand poisson.",
+    "location": "Israël, la mer Méditerranée et Ninive en Assyrie.",
+    "relationshipWithJehovah": "Jéhovah corrigea Jonas avec patience et lui enseigna que Sa miséricorde peut s’étendre à des personnes qui se repentent.",
+    "didYouKnow": "Jésus a utilisé « le signe de Jonas » pour annoncer sa propre mort et sa résurrection, selon Matthieu 12:39-41.",
     "jwResources": [
       {
         "title": "L’histoire de Jonas : une leçon de courage et de miséricorde",
@@ -4945,16 +4950,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "saul_king": {
-    "studyFocus": "Saül a commencé son règne avec des qualités appréciables, mais sa désobéissance répétée aux instructions de Jéhovah a eu de graves conséquences.",
+    "studyFocus": "Saül fut le premier roi humain d’Israël. Il commença humblement mais désobéit ensuite à plusieurs reprises aux instructions de Jéhovah. Sa jalousie envers David finit par dominer une grande partie de sa conduite et il mourut lors d’une bataille contre les Philistins.",
     "lessonPoints": [
-      "Obéissance : les instructions de Jéhovah ne doivent pas être remplacées par nos propres raisonnements.",
-      "Humilité : rechercher l’approbation des humains peut conduire à de mauvais choix.",
-      "Persévérance dans le bien : son récit montre l’importance de rester fidèle à Jéhovah jusqu’au bout."
+      "Saül fut initialement présenté comme quelqu’un de modeste et hésitant devant la responsabilité royale.",
+      "Il désobéit à Jéhovah en offrant un sacrifice sans attendre Samuel puis en épargnant Agag et le meilleur du bétail.",
+      "Sa jalousie envers David l’amena à le poursuivre au lieu de se concentrer sur sa propre fidélité.",
+      "Son histoire montre qu’un bon départ ne suffit pas : il faut continuer à obéir à Jéhovah."
     ],
-    "keyReading": "1 Samuel 8:4-22 ; 9:15-10:27 ; 15:1-35",
-    "location": "Guilgal, Rama et le territoire d’Israël.",
-    "relationshipWithJehovah": "Saül commence avec l’approbation de Jéhovah, mais son désordre et sa désobéissance répétée lui font perdre sa faveur.",
-    "didYouKnow": "Saül est le premier roi humain établi sur Israël à la demande du peuple.",
+    "keyReading": "1 Samuel 9:1-27 ; 10:1-27 ; 13:1-15 ; 15:1-35 ; 18:6-30 ; 31:1-13",
+    "location": "Israël, notamment Guibéa et les régions où il combattit les Philistins.",
+    "relationshipWithJehovah": "Saül fut choisi par Jéhovah comme roi, mais sa désobéissance répétée entraîna son rejet comme roi et la perte de son approbation.",
+    "didYouKnow": "Saül était plus grand que tout le peuple, dépassant les autres Israélites d’une tête, selon 1 Samuel 9:2 et 10:23.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4992,16 +4998,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "manoah_father": {
-    "studyFocus": "Manoah et sa femme ont reçu des instructions concernant la naissance et l’éducation de Samson et ont recherché la direction de Jéhovah.",
+    "studyFocus": "Manoah était le père de Samson et le mari de la femme qui avait été stérile. Lorsque l’ange de Jéhovah annonça la naissance de Samson, Manoah demanda des instructions sur la manière d’élever l’enfant. Il pria aussi pour comprendre la mission particulière de son fils.",
     "lessonPoints": [
-      "Prière : Manoah a demandé à Jéhovah de guider les parents dans l’éducation de leur fils.",
-      "Confiance : ils ont pris au sérieux les instructions reçues.",
-      "Famille : leur récit met en valeur l’importance de chercher la direction de Jéhovah pour les responsabilités familiales."
+      "Manoah demanda à Jéhovah de l’aider à élever correctement son fils.",
+      "Il chercha des instructions précises plutôt que de compter uniquement sur ses propres idées.",
+      "Avec sa femme, il offrit un sacrifice à Jéhovah après la rencontre avec l’ange.",
+      "Son exemple montre l’intérêt de demander à Jéhovah de la sagesse pour les responsabilités familiales."
     ],
     "keyReading": "Juges 13:1-25",
-    "location": "Tsora et les environs.",
-    "relationshipWithJehovah": "Manoah prie Jéhovah pour obtenir des directives concernant l’enfant promis et prend au sérieux les instructions reçues.",
-    "didYouKnow": "Il est le père de Samson.",
+    "location": "Manoa vivait à Tsora, dans le territoire de Dan.",
+    "relationshipWithJehovah": "Manoah pria Jéhovah et chercha sa direction concernant l’éducation de Samson et l’annonce faite par l’ange.",
+    "didYouKnow": "Le récit ne donne pas le nom de la femme de Manoah, alors que le père de Samson est nommé.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5034,16 +5041,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "zephaniah": {
-    "studyFocus": "Zéphania a proclamé les avertissements de Jéhovah contre le mal tout en encourageant les humbles à rechercher Jéhovah.",
+    "studyFocus": "Sophonie était un prophète qui annonça un message de jugement contre Juda et les nations, tout en donnant l’espoir d’un peuple humble qui chercherait Jéhovah. Son ministère se situe avant la destruction de Jérusalem.",
     "lessonPoints": [
-      "Courage : transmettre fidèlement le message de Jéhovah même lorsqu’il contient des avertissements.",
-      "Humilité : rechercher Jéhovah et la justice plutôt que suivre les pratiques corrompues autour de soi.",
-      "Espérance : le message prophétique montre que Jéhovah peut préserver un peuple humble."
+      "Sophonie avertit clairement contre l’idolâtrie et l’indifférence spirituelle.",
+      "Il encouragea les humbles à rechercher Jéhovah et la justice.",
+      "Son message associe jugement et espoir de restauration.",
+      "Son exemple rappelle l’importance de parler avec courage lorsque les principes de Jéhovah sont en jeu."
     ],
-    "keyReading": "Sophonie 1:1-18 ; 2:1-3 ; 3:9-20",
+    "keyReading": "Sophonie 1:1-18 ; 2:1-15 ; 3:1-20",
     "location": "Juda et Jérusalem.",
-    "relationshipWithJehovah": "Sophonie avertit contre l’infidélité et encourage les humbles à rechercher Jéhovah.",
-    "didYouKnow": "Il prophétise aux jours de Josias, roi de Juda.",
+    "relationshipWithJehovah": "Sophonie transmit fidèlement les paroles de Jéhovah et invita les personnes humbles à chercher refuge auprès de lui.",
+    "didYouKnow": "Sophonie était contemporain du règne de Josias, et son livre commence par préciser la période royale durant laquelle il prophétisa.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5077,16 +5085,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "habakkuk": {
-    "studyFocus": "Habaqouq a exprimé ses questions à Jéhovah et a appris à attendre avec confiance l’accomplissement de la justice divine.",
+    "studyFocus": "Habacuc est un prophète qui osa poser à Jéhovah des questions difficiles sur la violence et l’injustice. Jéhovah lui répondit en lui expliquant que les Chaldéens seraient utilisés pour exécuter un jugement, puis montra que cette nation serait elle-même jugée. Le livre se termine par une expression remarquable de confiance.",
     "lessonPoints": [
-      "Prière sincère : il a parlé ouvertement à Jéhovah de ce qui le préoccupait.",
-      "Patience : il a appris à attendre le moment fixé par Jéhovah.",
-      "Foi : son exemple montre qu’on peut continuer à faire confiance à Jéhovah même lorsque l’on ne comprend pas immédiatement ses actions."
+      "Habacuc exprima ses inquiétudes à Jéhovah avec franchise.",
+      "Il accepta de rester attentif à la réponse divine plutôt que de tirer ses propres conclusions.",
+      "Il apprit que le juste vivrait par sa fidélité.",
+      "Même en l’absence de récoltes ou de nourriture, il décida de continuer à se réjouir en Jéhovah."
     ],
     "keyReading": "Habacuc 1:1-17 ; 2:1-20 ; 3:1-19",
-    "location": "Juda.",
-    "relationshipWithJehovah": "Habacuc exprime ses inquiétudes à Jéhovah puis renforce sa confiance en lui, même avant de voir la délivrance.",
-    "didYouKnow": "Il termine sa prière par une expression de joie malgré des conditions difficiles.",
+    "location": "Juda, avant la destruction de Jérusalem.",
+    "relationshipWithJehovah": "Habacuc transforma ses questions en confiance et termina son livre en affirmant que Jéhovah était sa force.",
+    "didYouKnow": "Habacuc 2:4 contient la déclaration « le juste vivra par sa fidélité », reprise ensuite dans les Écritures grecques chrétiennes.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5120,16 +5129,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "amos": {
-    "studyFocus": "Amos, qui n’était pas issu d’un milieu prophétique professionnel, a courageusement transmis le message de Jéhovah contre l’injustice et le faux culte.",
+    "studyFocus": "Amos était un éleveur et cultivateur de sycomores de Tekoa que Jéhovah envoya prophétiser contre le royaume d’Israël. Il dénonça l’injustice, l’oppression des pauvres et un culte devenu hypocrite.",
     "lessonPoints": [
-      "Courage : Amos n’a pas laissé son statut social l’empêcher de parler au nom de Jéhovah.",
-      "Justice : le vrai culte ne peut pas être séparé d’une conduite juste envers les autres.",
-      "Fidélité : il a continué sa mission malgré l’opposition."
+      "Amos n’était pas issu d’une école de prophètes mais fut choisi pour transmettre un message précis.",
+      "Il dénonça l’exploitation des pauvres et les pratiques religieuses hypocrites.",
+      "Il ne se laissa pas intimider lorsqu’Amatsia, prêtre de Béthel, lui demanda de partir.",
+      "Son message montre que Jéhovah attend que l’adoration soit accompagnée de justice et d’intégrité."
     ],
-    "keyReading": "Amos 1:1 ; 7:10-17 ; 9:11-15",
-    "location": "Juda et le royaume d’Israël.",
-    "relationshipWithJehovah": "Amos accepte la mission de Jéhovah et dénonce courageusement l’injustice et le faux culte.",
-    "didYouKnow": "Il n’était pas fils de prophète mais éleveur de moutons et cultivateur de figues sycomores.",
+    "keyReading": "Amos 1:1 ; 3:7,8 ; 5:10-24 ; 7:10-17 ; 8:4-7 ; 9:11-15",
+    "location": "Tekoa en Juda et Béthel dans le royaume d’Israël.",
+    "relationshipWithJehovah": "Amos accepta la mission que Jéhovah lui confia et parla avec courage malgré l’opposition.",
+    "didYouKnow": "Amos était éleveur et cultivait des sycomores avant d’être envoyé prophétiser, comme il l’explique lui-même en Amos 7:14,15.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5164,16 +5174,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "micah": {
-    "studyFocus": "Mika a dénoncé l’injustice et le faux culte tout en rappelant ce que Jéhovah attend de ses adorateurs.",
+    "studyFocus": "Michée était un prophète de Juda qui dénonça la corruption des dirigeants et annonça des jugements tout en donnant des promesses d’espoir. Son livre contient notamment la prophétie concernant Bethléem comme lieu associé au futur dirigeant d’Israël.",
     "lessonPoints": [
-      "Justice : Jéhovah demande à ses serviteurs d’agir avec justice.",
-      "Miséricorde : la fidélité à Jéhovah implique aussi de manifester une bonté loyale.",
-      "Humilité : marcher modestement avec Jéhovah est présenté comme essentiel."
+      "Michée dénonça les chefs qui exploitaient le peuple.",
+      "Il annonça le jugement mais aussi la restauration du vrai culte.",
+      "Il résuma les exigences de Jéhovah par la justice, la fidélité et la modestie.",
+      "Ses prophéties montrent que Jéhovah peut donner de l’espoir même au milieu d’un jugement."
     ],
-    "keyReading": "Michée 1:1-9 ; 6:6-8 ; 7:18-20",
-    "location": "Juda et Israël.",
-    "relationshipWithJehovah": "Michée rappelle ce que Jéhovah demande : pratiquer la justice, aimer la fidélité et marcher modestement avec lui.",
-    "didYouKnow": "Sa prophétie annonce que le Messie naîtrait à Bethléem.",
+    "keyReading": "Michée 1:1-16 ; 3:1-12 ; 4:1-13 ; 5:1-5 ; 6:6-8 ; 7:1-20",
+    "location": "Juda, notamment la région de Morésheth.",
+    "relationshipWithJehovah": "Michée transmit courageusement les messages de Jéhovah et rappela au peuple ce que Dieu attendait de lui.",
+    "didYouKnow": "Michée 5:2 est cité en Matthieu 2:5,6 en rapport avec Bethléem et la naissance du Messie.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5207,16 +5218,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "obadiah": {
-    "studyFocus": "Obadia a annoncé le jugement de Jéhovah contre Édom pour son attitude envers Juda et a montré que Jéhovah tient les nations responsables de leurs actes.",
+    "studyFocus": "Abdias est l’auteur du plus court livre des Écritures hébraïques. Son message condamne Édom pour son attitude envers Juda lors de la catastrophe qui frappa Jérusalem et annonce que Jéhovah rétablirait son peuple.",
     "lessonPoints": [
-      "Responsabilité : les actions hostiles envers les serviteurs de Jéhovah ne passent pas inaperçues.",
-      "Humilité : la fierté fondée sur une position élevée ou sur la sécurité apparente peut être trompeuse.",
-      "Confiance : le jugement de Jéhovah donne une raison de rester fidèle même dans l’adversité."
+      "Abdias montre que Jéhovah observe la manière dont les nations traitent son peuple.",
+      "Le jugement d’Édom est lié à son orgueil et à sa violence envers Jacob.",
+      "Le livre ne s’arrête pas au jugement : il annonce le rétablissement du peuple de Jéhovah.",
+      "Son message rappelle que l’orgueil et la réjouissance face au malheur d’autrui peuvent avoir de graves conséquences."
     ],
     "keyReading": "Abdias 1-21",
-    "location": "Juda et Édom.",
-    "relationshipWithJehovah": "Abdias transmet fidèlement le message de Jéhovah concernant l’orgueil et la violence d’Édom.",
-    "didYouKnow": "Le livre d’Abdias est le plus court des livres prophétiques de la Bible.",
+    "location": "Le contexte concerne Édom et Juda, notamment Jérusalem.",
+    "relationshipWithJehovah": "Abdias transmit un jugement divin contre Édom et termina par une déclaration sur la royauté de Jéhovah.",
+    "didYouKnow": "Avec seulement 21 versets, Abdias est le livre le plus court des Écritures hébraïques.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5250,16 +5262,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "joel": {
-    "studyFocus": "Joël a annoncé le jour de Jéhovah et a appelé le peuple à revenir sincèrement vers lui.",
+    "studyFocus": "Joël est un prophète dont le livre décrit une invasion dévastatrice de sauterelles et appelle le peuple à revenir à Jéhovah. Il annonce aussi l’effusion de l’esprit et le jour de Jéhovah.",
     "lessonPoints": [
-      "Repentir : revenir à Jéhovah doit venir du cœur.",
-      "Urgence spirituelle : le message de Joël encourage à prendre au sérieux le jour de Jéhovah.",
-      "Espérance : Jéhovah promet sa faveur à ceux qui reviennent sincèrement vers lui."
+      "Joël utilisa une catastrophe nationale pour pousser le peuple à examiner sa relation avec Jéhovah.",
+      "Il insista sur une repentance sincère, pas seulement extérieure.",
+      "Il annonça que Jéhovah peut faire preuve de miséricorde envers ceux qui reviennent vers lui.",
+      "Pierre cita la prophétie de Joël concernant l’effusion de l’esprit saint à la Pentecôte."
     ],
-    "keyReading": "Yoël 1:1-20 ; 2:1-32 ; 3:1-21",
-    "location": "Juda.",
-    "relationshipWithJehovah": "Yoël appelle le peuple à revenir à Jéhovah de tout son cœur et annonce des bénédictions liées à l’effusion de l’esprit.",
-    "didYouKnow": "Pierre cite Yoël 2 à la Pentecôte pour expliquer l’effusion de l’esprit saint.",
+    "keyReading": "Joël 1:1-20 ; 2:1-32 ; 3:1-21",
+    "location": "Juda et Jérusalem.",
+    "relationshipWithJehovah": "Joël invita le peuple à revenir à Jéhovah « de tout son cœur » et à avoir confiance dans sa miséricorde.",
+    "didYouKnow": "Actes 2:16-21 applique à la Pentecôte la prophétie de Joël 2:28-32 sur l’effusion de l’esprit.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5293,16 +5306,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "nahum": {
-    "studyFocus": "Nahum a proclamé le jugement de Jéhovah contre Ninive et a montré que Jéhovah ne tolère pas indéfiniment la violence et la méchanceté.",
+    "studyFocus": "Nahum annonça le jugement de Jéhovah contre Ninive, capitale de l’Assyrie. Son message montre que la puissance militaire et la cruauté d’un empire ne peuvent empêcher Jéhovah d’exécuter son jugement.",
     "lessonPoints": [
-      "Justice : Jéhovah voit les actes de violence et d’oppression.",
-      "Confiance : son jugement peut rassurer ceux qui subissent l’injustice.",
-      "Révérence : la puissance de Jéhovah mérite un profond respect."
+      "Nahum rappelle que Jéhovah ne laisse pas indéfiniment l’oppression impunie.",
+      "Son message devait consoler ceux qui avaient souffert sous la domination assyrienne.",
+      "Il décrit la chute de Ninive avec précision et force.",
+      "Le livre associe la justice de Jéhovah à son souci de protéger ceux qui cherchent refuge auprès de lui."
     ],
-    "keyReading": "Nahoum 1:1-15 ; 2:1-13 ; 3:1-19",
-    "location": "Juda et Ninive.",
-    "relationshipWithJehovah": "Nahoum proclame le jugement de Jéhovah contre Ninive et rappelle que Jéhovah est juste et puissant.",
-    "didYouKnow": "Son message est particulièrement lié à la chute de Ninive, capitale assyrienne.",
+    "keyReading": "Nahum 1:1-15 ; 2:1-13 ; 3:1-19",
+    "location": "Juda et Ninive, en Assyrie.",
+    "relationshipWithJehovah": "Nahum transmit le jugement de Jéhovah contre Ninive et rappela que Jéhovah est un refuge pour ceux qui se réfugient en lui.",
+    "didYouKnow": "La prophétie de Nahum annonce la chute de Ninive, qui fut finalement détruite par les forces des Mèdes et des Babyloniens.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5336,16 +5350,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "difficulties": []
   },
   "zechariah_priest": {
-    "studyFocus": "Zacharie le prêtre — père de Jean le Baptiseur",
+    "studyFocus": "Zacharie, père de Jean le Baptiseur, était prêtre de la division d’Abia. Alors qu’il servait au temple, l’ange Gabriel lui annonça que sa femme Élisabeth aurait un fils. Zacharie eut du mal à croire cette annonce et devint temporairement muet, puis il loua Jéhovah après la naissance de Jean.",
     "lessonPoints": [
-      "Foi dans les promesses",
-      "Obéissance",
-      "Reconnaissance"
+      "Zacharie servait fidèlement au temple lorsqu’il reçut son annonce.",
+      "Il eut momentanément du mal à croire une promesse qui semblait humainement impossible.",
+      "Après la naissance de Jean, il manifesta sa foi dans une prophétie inspirée.",
+      "Son histoire montre que Jéhovah peut être patient avec une personne qui apprend à faire confiance à sa parole."
     ],
-    "keyReading": "Luc 1:5-25; 1:57-80",
-    "location": "Jérusalem et la région montagneuse de Judée.",
-    "relationshipWithJehovah": "Zacharie sert au temple, mais sa réaction au message angélique révèle un manque momentané de foi. Après avoir vu l’accomplissement, il loue Jéhovah et prophétise sous inspiration.",
-    "didYouKnow": "Zacharie ne retrouve la parole qu’après avoir écrit que l’enfant devait s’appeler Jean, conformément aux instructions de Gabriel.",
+    "keyReading": "Luc 1:5-25 ; 57-80",
+    "location": "Juda, notamment le temple de Jérusalem et la région montagneuse où vivait sa famille.",
+    "relationshipWithJehovah": "Zacharie était décrit comme juste devant Dieu avec Élisabeth. Après l’accomplissement de la promesse, il loua Jéhovah et prophétisa sous l’action de l’esprit saint.",
+    "didYouKnow": "Zacharie appartenait à la division sacerdotale d’Abia, et son service au temple fut le contexte de l’annonce concernant Jean.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5384,16 +5399,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "elizabeth": {
-    "studyFocus": "Élisabeth était une femme fidèle qui a accueilli Marie avec joie et a reconnu sous inspiration le rôle particulier de l’enfant qu’elle portait.",
+    "studyFocus": "Élisabeth était l’épouse de Zacharie et une descendante d’Aaron. Elle fut longtemps stérile, puis conçut Jean le Baptiseur. Elle accueillit Marie avec foi et reconnut sous inspiration que l’enfant que Marie portait était le futur Seigneur.",
     "lessonPoints": [
-      "Foi : elle et son mari étaient décrits comme justes devant Jéhovah.",
-      "Joie : elle a accueilli Marie avec affection et reconnaissance.",
-      "Humilité : elle a reconnu le privilège accordé à Marie sans jalousie."
+      "Élisabeth et Zacharie étaient décrits comme justes devant Dieu malgré leur stérilité.",
+      "Elle accueillit Marie avec chaleur et discernement spirituel.",
+      "Elle reconnut que Jéhovah avait supprimé sa honte liée à la stérilité.",
+      "Elle participa à l’éducation d’un enfant qui allait préparer le chemin du Messie."
     ],
-    "keyReading": "Luc 1:5-25,39-45,57-66",
-    "location": "Région montagneuse de Judée.",
-    "relationshipWithJehovah": "Le récit la présente comme une femme fidèle qui marchait de manière irréprochable selon les commandements de Jéhovah. Elle reconnaît avec joie l’action de Dieu dans la vie de Marie.",
-    "didYouKnow": "Élisabeth était de la famille sacerdotale d’Aaron, tandis que Marie appartenait à la tribu de Juda; la Bible les présente comme parentes sans préciser le degré exact de parenté.",
+    "keyReading": "Luc 1:5-25 ; 39-45 ; 57-66",
+    "location": "La région montagneuse de Juda.",
+    "relationshipWithJehovah": "Élisabeth fut bénie par Jéhovah avec une grossesse tardive et parla sous l’action de l’esprit saint lorsqu’elle accueillit Marie.",
+    "didYouKnow": "Élisabeth était parente de Marie et était déjà enceinte de six mois lorsque Gabriel annonça à Marie sa propre grossesse.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5432,16 +5448,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "joseph_jesus_father": {
-    "studyFocus": "Joseph, père adoptif de Jésus, était un homme juste qui a suivi les directives de Jéhovah et a protégé sa famille.",
+    "studyFocus": "Joseph, mari de Marie et père adoptif de Jésus, était un charpentier de la famille de David. Il accepta de prendre Marie pour épouse malgré une situation qui pouvait susciter des questions et suivit les instructions de Jéhovah pour protéger Jésus, notamment en fuyant en Égypte.",
     "lessonPoints": [
-      "Obéissance : Joseph a agi rapidement selon les instructions reçues de Jéhovah.",
-      "Protection : il a accepté de déplacer sa famille pour protéger Jésus.",
-      "Humilité : il a assumé une responsabilité familiale exceptionnelle sans rechercher la gloire."
+      "Joseph se montra juste et miséricordieux envers Marie.",
+      "Il accepta rapidement les instructions reçues en rêve.",
+      "Il protégea Jésus en obéissant à l’ordre de fuir en Égypte.",
+      "Il éleva Jésus dans une famille qui respectait la Loi et fréquentait Jérusalem pour les fêtes."
     ],
-    "keyReading": "Matthieu 1:18-25; 2:13-23; Luc 2:41-52",
-    "location": "Bethléem, Égypte, Nazareth et Jérusalem.",
-    "relationshipWithJehovah": "Joseph obéit rapidement aux instructions données par Jéhovah par l’intermédiaire de ses anges et assume fidèlement la responsabilité de protéger Jésus.",
-    "didYouKnow": "Joseph est présenté comme « juste » et comme un homme qui respecte les exigences de la Loi tout en cherchant à agir avec miséricorde envers Marie.",
+    "keyReading": "Matthieu 1:18-25 ; 2:13-23 ; Luc 2:1-52",
+    "location": "Bethléhem, Égypte, puis Nazareth en Galilée.",
+    "relationshipWithJehovah": "Joseph obéit à plusieurs reprises aux instructions transmises par les anges et adapta ses décisions pour protéger l’enfant Jésus.",
+    "didYouKnow": "Joseph était charpentier, et Jésus est aussi appelé « le fils du charpentier » en Matthieu 13:55.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
