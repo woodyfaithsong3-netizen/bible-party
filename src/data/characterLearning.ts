@@ -83,16 +83,16 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Étude perspicace indique qu’Abraham naquit en 2018 av. n. è. et qu’il descendait de Noé à la dixième génération par Sem.",
     "jwResources": [
       {
+        "title": "Abraham — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Abraham"
+      },
+      {
         "title": "Marche courageusement avec Dieu — chapitre consacré à abraham",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/abraham-a-ete-le-premier-a-mener-une-guerre-juste/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Abraham — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Abraham"
       },
       {
         "title": "Abraham : « Le père de tous ceux qui ont foi »",
@@ -113,16 +113,16 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Sara avait 90 ans lorsqu’elle donna naissance à Isaac et mourut à 127 ans, selon Étude perspicace des Écritures.",
     "jwResources": [
       {
+        "title": "Sara — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Sara/"
+      },
+      {
         "title": "Marche courageusement avec Dieu — chapitre consacré à sarah",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/sara-na-pas-regarde-en-arriere/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Sara — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Sara/"
       },
       {
         "title": "Sara : Dieu l’a appelée « Princesse »",
@@ -144,16 +144,16 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Jacob naquit en 1858 av. n. è. et reçut plus tard le nom d’Israël, nom qui désigna ensuite ses descendants comme nation.",
     "jwResources": [
       {
+        "title": "Jacob — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacob/"
+      },
+      {
         "title": "Marche courageusement avec Dieu — chapitre consacré à jacob",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/jacob-a-protege-sa-famille/"
       },
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Jacob — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacob/"
       },
       {
         "title": "Événements de la vie de Jacob",
@@ -205,6 +205,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Moïse passa 40 ans à Madian avant de recevoir sa mission auprès de Pharaon.",
     "jwResources": [
       {
+        "title": "Moïse — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Mo%C3%AFse/"
+      },
+      {
         "title": "Marche courageusement avec Dieu — chapitre consacré à moise",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/moise-a-fait-le-bon-choix/"
       },
@@ -215,10 +219,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
@@ -656,12 +656,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "Juges 13–16 ; Hébreux 11:32",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
         "title": "Samson — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samson/"
+      },
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Étude perspicace des Écritures",
