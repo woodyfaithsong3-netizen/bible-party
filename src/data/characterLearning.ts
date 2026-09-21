@@ -1317,13 +1317,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "herod_antipas": {
-    "studyFocus": "Hérode Antipas, tétrarque de Galilée et de Pérée, entend parler de Jésus et fait exécuter Jean le Baptiseur. Il intervient aussi dans le procès de Jésus.",
+    "studyFocus": "Hérode Antipas a exercé le pouvoir en Galilée et en Pérée à l’époque de Jésus. Son histoire est notamment liée à Jean le Baptiseur.",
     "lessonPoints": [
-      "Jean le Baptiseur lui reproche son mariage avec Hérodiade.",
-      "Hérode cède à la pression après un serment imprudent.",
-      "Il fait décapiter Jean.",
-      "Pilate lui envoie Jésus pendant le procès, mais Jésus ne lui répond pas.",
-      "Son récit illustre les conséquences de décisions prises sous pression."
+      "Courage face à la pression : son récit montre les conséquences de céder aux pressions humaines.",
+      "Respect de la vérité : Jean le Baptiseur lui avait courageusement parlé de sa conduite.",
+      "Humilité : la recherche de l’approbation humaine peut conduire à de graves décisions."
     ],
     "keyReading": "Matthieu 14:1-12 ; Marc 6:14-29 ; Luc 3:19,20 ; 23:6-12",
     "location": "Galilée et Pérée, notamment Tibériade.",
@@ -1349,13 +1347,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "pilate": {
-    "studyFocus": "Ponce Pilate préside au procès de Jésus. Les Évangiles rapportent qu’il reconnaît l’absence de faute méritant la mort, mais autorise finalement l’exécution sous la pression des autorités et de la foule.",
+    "studyFocus": "Ponce Pilate était le gouverneur romain qui présida au procès de Jésus. Son récit montre le conflit entre ce qu’il reconnaissait comme juste et la pression de la foule.",
     "lessonPoints": [
-      "Il interroge Jésus sur sa royauté.",
-      "Il constate que Jésus n’est pas coupable d’une faute passible de mort selon son examen.",
-      "Il tente de le relâcher.",
-      "Il finit par le livrer pour être exécuté.",
-      "Son récit permet d’étudier la responsabilité d’un dirigeant face à la pression."
+      "Courage moral : reconnaître l’innocence de quelqu’un exige d’agir en conséquence.",
+      "Pression humaine : Pilate a cédé à la pression des chefs religieux et de la foule.",
+      "Responsabilité : une position d’autorité implique de prendre au sérieux les décisions rendues."
     ],
     "keyReading": "Matthieu 27:11-26 ; Marc 15:1-15 ; Luc 23:1-25 ; Jean 18:28–19:16",
     "location": "Jérusalem, au prétoire romain.",
@@ -2408,11 +2404,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "samaritan_woman": {
-    "studyFocus": "La Samaritaine — une femme qui a parlé de Jésus",
+    "studyFocus": "La Samaritaine a accepté de discuter avec Jésus malgré les barrières sociales de l’époque et a parlé à d’autres de ce qu’elle avait appris.",
     "lessonPoints": [
-      "Témoigner avec simplicité",
-      "Soif spirituelle",
-      "Courage"
+      "Ouverture : elle a posé des questions et a progressivement compris l’enseignement de Jésus.",
+      "Témoignage : elle a invité les habitants de sa ville à venir voir Jésus.",
+      "Recherche spirituelle : elle s’intéressait sincèrement aux questions liées au vrai culte."
     ],
     "keyReading": "Jean 4:4-42",
     "location": "Sychar, en Samarie.",
@@ -2460,11 +2456,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "felix": {
-    "studyFocus": "Félix — un gouverneur qui a entendu le témoignage",
+    "studyFocus": "Félix était gouverneur de Judée lorsque Paul comparut devant lui. Il entendit Paul parler de justice, de maîtrise de soi et du jugement à venir, mais reporta sa décision.",
     "lessonPoints": [
-      "Réagir sans remettre à plus tard",
-      "Maîtrise de soi",
-      "Écouter la vérité"
+      "Écouter ne suffit pas : Félix a entendu un message important sans agir immédiatement.",
+      "Maîtrise de soi : le thème abordé par Paul rappelait la nécessité de dominer ses désirs.",
+      "Intégrité : son récit invite à ne pas sacrifier la justice à ses intérêts personnels."
     ],
     "keyReading": "Actes 23:23-35 ; 24:1-27",
     "location": "Césarée.",
@@ -2486,11 +2482,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "festus": {
-    "studyFocus": "Festus — gouverneur confronté à une affaire complexe",
+    "studyFocus": "Porcius Festus a succédé à Félix comme gouverneur de Judée et a dû traiter l’affaire de Paul, qui en avait appelé à César.",
     "lessonPoints": [
-      "Impartialité",
-      "Rechercher les faits",
-      "Prendre une décision"
+      "Justice : Festus a examiné les accusations portées contre Paul.",
+      "Prudence : il a cherché à comprendre les faits avant d’envoyer Paul à Rome.",
+      "Respect du droit : Paul a pu exercer son droit d’en appeler à César."
     ],
     "keyReading": "Actes 25:1-27 ; 26:1-32",
     "location": "Césarée.",
@@ -2512,11 +2508,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "agrippa_ii": {
-    "studyFocus": "Hérode Agrippa II — auditeur du témoignage de Paul",
+    "studyFocus": "Hérode Agrippa II a entendu la défense de Paul à Césarée et connaissait les coutumes et controverses juives.",
     "lessonPoints": [
-      "Écouter attentivement",
-      "Examiner les Écritures",
-      "Réfléchir personnellement"
+      "Écouter attentivement : Agrippa a donné à Paul l’occasion d’expliquer sa foi.",
+      "Connaissance biblique : Paul a pu raisonner avec lui à partir des prophètes.",
+      "Décision personnelle : entendre un témoignage convaincant demande ensuite une réaction personnelle."
     ],
     "keyReading": "Actes 25:13-27 ; 26:1-32",
     "location": "Césarée.",
@@ -2538,11 +2534,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "berenice": {
-    "studyFocus": "Bérénice — présente lors de l’audience de Paul",
+    "studyFocus": "Bérénice accompagnait Agrippa II lors de sa rencontre avec Festus et de l’audience où Paul défendit sa foi.",
     "lessonPoints": [
-      "Observer avec attention",
-      "Importance du témoignage",
-      "Responsabilité personnelle"
+      "Observer le témoignage : elle a entendu directement la défense de Paul.",
+      "Contexte : son récit rappelle que le message chrétien était présenté devant des personnes de haut rang.",
+      "Responsabilité personnelle : la position sociale ne remplace pas une décision personnelle concernant la foi."
     ],
     "keyReading": "Actes 25:13-27 ; 26:30-32",
     "location": "Césarée.",
@@ -3204,11 +3200,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "samaritan_leper": {
-    "studyFocus": "Le Samaritain lépreux — reconnaissant envers Jésus",
+    "studyFocus": "Parmi les dix lépreux guéris par Jésus, un Samaritain est revenu pour remercier Dieu et Jésus.",
     "lessonPoints": [
-      "Reconnaissance",
-      "Foi",
-      "Ne pas prendre les bénédictions pour acquises"
+      "Reconnaissance : il est revenu rendre gloire à Dieu.",
+      "Foi : Jésus a souligné sa foi lorsqu’il l’a félicité.",
+      "Humilité : il n’a pas considéré la guérison comme un droit acquis."
     ],
     "keyReading": "Luc 17:11-19",
     "location": "Entre Samarie et Galilée.",
@@ -3230,11 +3226,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "woman_issue_blood": {
-    "studyFocus": "La femme atteinte de pertes de sang — une foi courageuse",
+    "studyFocus": "La femme qui souffrait de pertes de sang depuis douze ans a manifesté une foi remarquable en Jésus et a reçu une guérison.",
     "lessonPoints": [
-      "Foi",
-      "Courage",
-      "Persévérance"
+      "Foi : elle croyait qu’un contact avec le vêtement de Jésus suffirait à l’aider.",
+      "Persévérance : elle avait cherché de nombreuses solutions avant de venir à Jésus.",
+      "Humilité : elle a expliqué publiquement ce qui lui était arrivé lorsque Jésus l’a interrogée."
     ],
     "keyReading": "Matthieu 9:18-26 ; Marc 5:25-34 ; Luc 8:43-48",
     "location": "Galilée, probablement près de Capharnaüm.",
@@ -3256,11 +3252,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "gerasene_man": {
-    "studyFocus": "L’homme possédé de Gérasa — libéré par Jésus",
+    "studyFocus": "L’homme de la région des Géraséniens qui avait été libéré de l’influence démoniaque a voulu suivre Jésus, mais Jésus lui a confié une autre mission : raconter ce que Dieu avait fait pour lui.",
     "lessonPoints": [
-      "Gratitude",
-      "Témoignage",
-      "Espérance"
+      "Gratitude : il voulait rester avec Jésus après avoir été libéré.",
+      "Obéissance : il a accepté la mission qui lui a été donnée plutôt que de choisir lui-même son service.",
+      "Témoignage : il a raconté dans toute la région ce que Jésus avait fait pour lui."
     ],
     "keyReading": "Marc 5:1-20 ; Luc 8:26-39",
     "location": "Région des Géraséniens.",
