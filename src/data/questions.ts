@@ -1501,12 +1501,12 @@ const v101ExpertTrueFalse: TrueFalseQuestion[] = [
 ];
 
 const v101ExpertMystery: MysteryQuestion[] = [
-  {id:'v101-expert-m-01',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Ébed-Mélek',clues:['Éthiopien','Citerne','Jérémie'],reference:'Jérémie 38:7-13'},
-  {id:'v101-expert-m-02',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Houlda',clues:['Prophétesse','Livre de la Loi','Josias'],reference:'2 Rois 22:8-20'},
-  {id:'v101-expert-m-03',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Barzillaï',clues:['Vieil homme','Mahanaïm','David'],reference:'2 Samuel 17:27-29; 19:31-39'},
-  {id:'v101-expert-m-04',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Ahithophel',clues:['Conseiller','Absalom','Conseil rejeté'],reference:'2 Samuel 15:12; 17:1-23'},
-  {id:'v101-expert-m-05',type:'mystery',category:'Actes',difficulty:'hard',answer:'Trophime',clues:['Éphèse','Milet','Malade'],reference:'Actes 21:29; 2 Timothée 4:20'},
-  {id:'v101-expert-m-06',type:'mystery',category:'Prophéties',difficulty:'hard',answer:'Amos',clues:['Bergers','Sycomores','Corbeille de fruits'],reference:'Amos 7:14-15; 8:1-2'},
+  {id:'v101-expert-m-01',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Ébed-Mélek',clues:['Éthiopien','Citerne','Jérémie'],explanation:'Ébed-Mélek a fait sortir Jérémie de la citerne.',reference:'Jérémie 38:7-13'},
+  {id:'v101-expert-m-02',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Houlda',clues:['Prophétesse','Livre de la Loi','Josias'],explanation:'Houlda a transmis la réponse de Jéhovah après la découverte du livre de la Loi.',reference:'2 Rois 22:8-20'},
+  {id:'v101-expert-m-03',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Barzillaï',clues:['Vieil homme','Mahanaïm','David'],explanation:'Barzillaï a soutenu David pendant sa fuite.',reference:'2 Samuel 17:27-29; 19:31-39'},
+  {id:'v101-expert-m-04',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Ahithophel',clues:['Conseiller','Absalom','Conseil rejeté'],explanation:'Ahithophel a conseillé Absalom, mais son conseil n’a pas été suivi.',reference:'2 Samuel 15:12; 17:1-23'},
+  {id:'v101-expert-m-05',type:'mystery',category:'Actes',difficulty:'hard',answer:'Trophime',clues:['Éphèse','Milet','Malade'],explanation:'Trophime était un collaborateur de Paul mentionné comme malade à Milet.',reference:'Actes 21:29; 2 Timothée 4:20'},
+  {id:'v101-expert-m-06',type:'mystery',category:'Prophéties',difficulty:'hard',answer:'Amos',clues:['Bergers','Sycomores','Corbeille de fruits'],explanation:'Amos a exercé ce métier avant de prophétiser et a rapporté la vision de la corbeille.',reference:'Amos 7:14-15; 8:1-2'},
 ];
 
 const v101ExpertQuotes: QuoteQuestion[] = [
@@ -1533,21 +1533,21 @@ const v101ExpertIntruders: IntruderQuestion[] = [
 ];
 
 const v101ExpertTimesUp: TimesUpQuestion[] = [
-  {id:'v101-expert-tu-01',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Ébed-Mélek',clues:['Éthiopien','Citerne','Jérémie'],reference:'Jérémie 38:7-13'},
+  {id:'v101-expert-tu-01',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Ébed-Mélek',clues:['Éthiopien','Citerne','Jérémie'],explanation:'Ébed-Mélek a fait sortir Jérémie de la citerne.',reference:'Jérémie 38:7-13'},
   {id:'v101-expert-tu-02',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Houlda',clues:['Prophétesse','Loi retrouvée','Josias'],reference:'2 Rois 22:8-20'},
   {id:'v101-expert-tu-03',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Barzillaï',clues:['Mahanaïm','Ravitaillement','David'],reference:'2 Samuel 17:27-29'},
   {id:'v101-expert-tu-04',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Ahithophel',clues:['Conseiller','Absalom','Conseil'],reference:'2 Samuel 15:12; 17:1-23'},
-  {id:'v101-expert-tu-05',type:'timesup',category:'Actes',difficulty:'hard',answer:'Trophime',clues:['Éphèse','Milet','Malade'],reference:'Actes 21:29; 2 Timothée 4:20'},
+  {id:'v101-expert-tu-05',type:'timesup',category:'Actes',difficulty:'hard',answer:'Trophime',clues:['Éphèse','Milet','Malade'],explanation:'Trophime était un collaborateur de Paul mentionné comme malade à Milet.',reference:'Actes 21:29; 2 Timothée 4:20'},
   {id:'v101-expert-tu-06',type:'timesup',category:'Rois & prophètes',difficulty:'hard',answer:'Amos',clues:['Bergers','Sycomores','Corbeille'],reference:'Amos 7:14-15; 8:1-2'},
-  {id:'v101-expert-tu-07',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Hushaï',clues:['Ami de David','Absalom','Conseil'],reference:'2 Samuel 15:32-37; 17:5-16'},
-  {id:'v101-expert-tu-08',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Micaïa',clues:['Prophète','Achab','Vision céleste'],reference:'1 Rois 22:8-28'},
+  {id:'v101-expert-tu-07',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Hushaï',clues:['Ami de David','Absalom','Conseil'],explanation:'Hushaï a servi les intérêts de David en contrecarrant le conseil d’Ahithophel.',reference:'2 Samuel 15:32-37; 17:5-16'},
+  {id:'v101-expert-tu-08',type:'timesup',category:'Personnages',difficulty:'hard',answer:'Micaïa',clues:['Prophète','Achab','Vision céleste'],explanation:'Micaïa a rapporté à Achab une vision annonçant l’issue de la bataille.',reference:'1 Rois 22:8-28'},
 ];
 
 const v101ExpertChallenges: Challenge[] = [
-  {id:'v101-expert-c-01',type:'challenge',category:'Personnages',difficulty:'hard',prompt:'En 10 secondes : nommez le prophète qui a rapporté la vision de la corbeille de fruits d’été.',seconds:10,explanation:'Il s’agit d’Amos.',reference:'Amos 8:1-2'},
-  {id:'v101-expert-c-02',type:'challenge',category:'Personnages',difficulty:'hard',prompt:'En 10 secondes : quel Éthiopien a sauvé Jérémie de la citerne ?',seconds:10,explanation:'Il s’agit d’Ébed-Mélek.',reference:'Jérémie 38:7-13'},
-  {id:'v101-expert-c-03',type:'challenge',category:'Rois & prophètes',difficulty:'hard',prompt:'En 10 secondes : quel roi a été consulté après la découverte du livre de la Loi, en faisant demander une réponse à Houlda ?',seconds:10,explanation:'Il s’agit du roi Josias.',reference:'2 Rois 22:8-20'},
-  {id:'v101-expert-c-04',type:'challenge',category:'Évangiles',difficulty:'hard',prompt:'En 10 secondes : quel disciple a proposé de retourner en Judée avec Jésus en disant qu’ils pourraient mourir avec lui ?',seconds:10,explanation:'Il s’agit de Thomas.',reference:'Jean 11:16'},
+  {id:'v101-expert-c-01',type:'challenge',category:'Personnages',difficulty:'hard',prompt:'En 10 secondes : nommez le prophète qui a rapporté la vision de la corbeille de fruits d’été.',seconds:10,acceptedAnswers:['Amos'] ,reference:'Amos 8:1-2'},
+  {id:'v101-expert-c-02',type:'challenge',category:'Personnages',difficulty:'hard',prompt:'En 10 secondes : quel Éthiopien a sauvé Jérémie de la citerne ?',seconds:10,acceptedAnswers:['Ébed-Mélek'] ,reference:'Jérémie 38:7-13'},
+  {id:'v101-expert-c-03',type:'challenge',category:'Rois & prophètes',difficulty:'hard',prompt:'En 10 secondes : quel roi a été consulté après la découverte du livre de la Loi, en faisant demander une réponse à Houlda ?',seconds:10,acceptedAnswers:['Josias'] ,reference:'2 Rois 22:8-20'},
+  {id:'v101-expert-c-04',type:'challenge',category:'Évangiles',difficulty:'hard',prompt:'En 10 secondes : quel disciple a proposé de retourner en Judée avec Jésus en disant qu’ils pourraient mourir avec lui ?',seconds:10,acceptedAnswers:['Thomas'] ,reference:'Jean 11:16'},
 ];
 
 quizQuestions.push(...v101ExpertQuiz);
