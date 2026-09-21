@@ -22,12 +22,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Adam est présenté comme le premier humain et comme un « fils de Dieu » en Luc 3:38.",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
         "title": "Adam — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Adam/"
+      },
+      {
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
@@ -326,6 +326,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "David est appelé « un homme selon le cœur » de Jéhovah, sans que cela signifie qu’il était sans péché.",
     "jwResources": [
       {
+        "title": "David — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/David/"
+      },
+      {
         "title": "Marche courageusement avec Dieu — chapitre consacré à david",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/rois-reconstruction-jerusalem/david-a-affronte-un-geant/"
       },
@@ -336,10 +340,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "David — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "David et Goliath",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/histoires-bibliques/"
       }
     ]
   },
@@ -537,6 +537,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Pierre était pêcheur et travaillait avec son frère André.",
     "jwResources": [
       {
+        "title": "Pierre, I — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Pierre-I/"
+      },
+      {
         "title": "Marche courageusement avec Dieu — chapitre consacré à pierre",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/pierre-je-suis-un-homme-pecheur/"
       },
@@ -547,10 +551,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Pierre — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Pierre — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
       }
     ]
   },
@@ -802,6 +802,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Marie Madeleine est distincte de Marie de Béthanie et de la femme « pécheresse » mentionnée en Luc 7 ; les Évangiles l’identifient notamment comme une femme dont Jésus avait expulsé sept démons.",
     "jwResources": [
       {
+        "title": "Magdalène (Marie la) — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Magdal%C3%A8ne-Marie-la/"
+      },
+      {
         "title": "Étude perspicace des Écritures — encyclopédie biblique",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
@@ -812,10 +816,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Marche courageusement avec Dieu",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Marie Madeleine — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/marie-madeleine/"
       }
     ]
   },
