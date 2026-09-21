@@ -2818,226 +2818,199 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "mary_mark_mother": {
-    "studyFocus": "Marie met sa maison à disposition des disciples de Jérusalem, qui s’y réunissent notamment pendant la période de persécution.",
+    "studyFocus": "Marie, mère de Jean-Marc — une chrétienne hospitalière",
     "lessonPoints": [
-      "Lire le récit dans son contexte et observer les choix, les réactions et les conséquences présentés."
+      "Hospitalité",
+      "Soutenir la congrégation",
+      "Prière"
     ],
-    "keyReading": "Lire les références bibliques de la fiche.",
+    "keyReading": "Actes 12:5-17",
+    "location": "Jérusalem.",
+    "relationshipWithJehovah": "Sa maison est un lieu où les disciples se réunissent pour prier.",
+    "didYouKnow": "La maison de Marie dispose d’une porte et d’une servante appelée Rhodé.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "apphia": {
-    "studyFocus": "Apphia est saluée avec Philémon et Archippe dans la lettre adressée à la congrégation qui se réunit chez Philémon.",
+    "studyFocus": "Apphia — une chrétienne associée à Philémon",
     "lessonPoints": [
-      "Lire le récit dans son contexte et observer les choix, les réactions et les conséquences présentés."
+      "Hospitalité",
+      "Vie chrétienne en famille",
+      "Unité"
     ],
-    "keyReading": "Lire les références bibliques de la fiche.",
+    "keyReading": "Philémon 1-2",
+    "location": "Colosses.",
+    "relationshipWithJehovah": "Elle est saluée avec Philémon et Archippe, ce qui montre son association avec la congrégation réunie dans leur maison.",
+    "didYouKnow": "Elle est mentionnée au début de la lettre de Paul à Philémon.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "archippus": {
-    "studyFocus": "Archippe est salué dans la lettre à Philémon et Paul lui demande de veiller au ministère qu’il a reçu dans le Seigneur.",
+    "studyFocus": "Archippe — un serviteur encouragé à accomplir son ministère",
     "lessonPoints": [
-      "Lire le récit dans son contexte et observer les choix, les réactions et les conséquences présentés."
+      "Persévérance",
+      "Responsabilité",
+      "Ministère"
     ],
-    "keyReading": "Lire les références bibliques de la fiche.",
+    "keyReading": "Philémon 1-2 ; Colossiens 4:17",
+    "location": "Colosses.",
+    "relationshipWithJehovah": "Paul lui rappelle de veiller à bien accomplir le ministère qu’il a reçu dans le Seigneur.",
+    "didYouKnow": "Il est associé à Philémon et à la congrégation de Colosses.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "john_mark": {
-    "studyFocus": "Jean Marc accompagne Barnabé et Paul dans une partie de leur activité missionnaire et devient ensuite un collaborateur utile à Paul et Pierre.",
+    "studyFocus": "Jean-Marc — un jeune compagnon de mission devenu utile",
     "lessonPoints": [
-      "Lire le récit dans son contexte et observer les choix, les réactions et les conséquences présentés."
+      "Persévérer après un échec",
+      "Progresser",
+      "Être utile"
     ],
-    "keyReading": "Lire les références bibliques de la fiche.",
+    "keyReading": "Actes 12:12, 25 ; 13:5, 13 ; 15:36-40 ; Colossiens 4:10 ; 2 Timothée 4:11",
+    "location": "Jérusalem, Chypre et diverses régions.",
+    "relationshipWithJehovah": "Après une difficulté qui l’éloigne temporairement de Paul, Marc devient un collaborateur apprécié et utile.",
+    "didYouKnow": "Il est le Jean appelé Marc, fils de Marie de Jérusalem et cousin de Barnabé.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "priscilla": {
-    "studyFocus": "Priscille travaille avec Aquila et aide Apollos à mieux comprendre la voie de Dieu.",
+    "studyFocus": "Priscille — une enseignante chrétienne efficace",
     "lessonPoints": [
-      "Lire le récit dans son contexte et observer les choix, les réactions et les conséquences présentés."
+      "Enseigner avec tact",
+      "Travail d’équipe",
+      "Hospitalité"
     ],
-    "keyReading": "Lire les références bibliques de la fiche.",
+    "keyReading": "Actes 18:18-28 ; Romains 16:3-5",
+    "location": "Corinthe, Éphèse et Rome.",
+    "relationshipWithJehovah": "Avec Aquilas, elle aide Apollos à comprendre plus exactement la voie de Dieu et soutient le ministère chrétien.",
+    "didYouKnow": "Elle est souvent mentionnée avec son mari Aquilas.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "claudius_lycias": {
-    "studyFocus": "Claude Lysias intervient pour protéger Paul contre la foule et organise son transfert vers Césarée.",
+    "studyFocus": "Claudius Lysias — un commandant qui a protégé Paul",
     "lessonPoints": [
-      "Lire le récit dans son contexte et observer les choix, les réactions et les conséquences présentés."
+      "Respect des droits",
+      "Garder son sang-froid",
+      "Protéger la vie"
     ],
-    "keyReading": "Lire les références bibliques de la fiche.",
+    "keyReading": "Actes 21:27-40 ; 22:22-30 ; 23:10-30",
+    "location": "Jérusalem et Césarée.",
+    "relationshipWithJehovah": "Lysias intervient pour empêcher Paul d’être tué par la foule et organise son transfert sous protection.",
+    "didYouKnow": "Il avait acheté sa citoyenneté romaine à prix élevé.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "julius_centurion": {
-    "studyFocus": "Julius est chargé de conduire Paul et d’autres prisonniers vers Rome et traite Paul avec considération.",
+    "studyFocus": "Julius — un centurion qui a traité Paul avec bonté",
     "lessonPoints": [
-      "Lire le récit dans son contexte et observer les choix, les réactions et les conséquences présentés."
+      "Humanité",
+      "Écouter les conseils",
+      "Sang-froid"
     ],
-    "keyReading": "Lire les références bibliques de la fiche.",
+    "keyReading": "Actes 27:1-44 ; 28:1-16",
+    "location": "Césarée, mer Méditerranée et Rome.",
+    "relationshipWithJehovah": "Julius permet à Paul de voir des amis et le traite avec considération pendant le voyage vers Rome.",
+    "didYouKnow": "Il appartient à la troupe impériale et escorte Paul.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "gaius_macedonian": {
-    "studyFocus": "Gaïus est un Macédonien entraîné dans le tumulte d’Éphèse avec Aristarque.",
+    "studyFocus": "Gaïus de Macédoine — un compagnon de Paul",
     "lessonPoints": [
-      "Lire le récit dans son contexte et observer les choix, les réactions et les conséquences présentés."
+      "Courage",
+      "Compagnonnage",
+      "Persévérance"
     ],
-    "keyReading": "Lire les références bibliques de la fiche.",
+    "keyReading": "Actes 19:29 ; 20:4",
+    "location": "Éphèse et Macédoine.",
+    "relationshipWithJehovah": "Gaïus accompagne les serviteurs de Dieu malgré l’opposition et les troubles liés à la prédication.",
+    "didYouKnow": "Il est entraîné dans l’émeute d’Éphèse avec Aristarque.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "aristarchus": {
-    "studyFocus": "Aristarque accompagne Paul et partage avec lui certaines étapes difficiles de son ministère.",
+    "studyFocus": "Aristarque — un compagnon fidèle de Paul",
     "lessonPoints": [
-      "Lire le récit dans son contexte et observer les choix, les réactions et les conséquences présentés."
+      "Loyauté",
+      "Courage",
+      "Endurance"
     ],
-    "keyReading": "Lire les références bibliques de la fiche.",
+    "keyReading": "Actes 19:29 ; 20:4 ; 27:2 ; Colossiens 4:10 ; Philémon 23-24",
+    "location": "Macédoine, Éphèse et Rome.",
+    "relationshipWithJehovah": "Aristarque reste aux côtés de Paul malgré les dangers.",
+    "didYouKnow": "Il vient de Thessalonique et accompagne Paul pendant le voyage vers Rome.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
