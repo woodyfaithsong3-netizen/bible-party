@@ -46,7 +46,7 @@ const extraFacts: Array<[string, string[], number, string, string, string]> = [
   ['Quel homme a reçu le nom d’Israël après une nuit de lutte ?', ['Jacob','Isaac','Ésaü','Joseph'], 0, 'Jacob a reçu le nom Israël après cet épisode.', 'Genèse 32:24-28', 'Personnages'],
   ['Qui a vendu son droit de fils aîné pour un repas ?', ['Jacob','Ésaü','Joseph','Ruben'], 1, 'Ésaü a vendu son droit de fils aîné à Jacob.', 'Genèse 25:29-34', 'Personnages'],
   ['Qui était la femme qu’Abraham a envoyée chercher pour Isaac ?', ['Rébecca','Rachel','Léa','Abigaïl'], 0, 'Rébecca a été choisie comme femme pour Isaac.', 'Genèse 24:10-20, 58-67', 'Personnages'],
-  ['Quel fils de Jacob a reçu une bénédiction particulière de Jacob sur son lit de mort ?', ['Éphraïm','Ruben','Dan','Siméon'], 0, 'Jacob a donné à Éphraïm une bénédiction plus importante qu’à Manassé.', 'Genèse 48:13-20', 'Personnages'],
+  ['Quel fils de Joseph a reçu la bénédiction la plus importante de Jacob sur son lit de mort ?', ['Éphraïm','Manassé','Ruben','Juda'], 0, 'Jacob a béni Éphraïm et Manassé, mais a placé Éphraïm avant son frère et lui a accordé la plus grande bénédiction.', 'Genèse 48:13-20', 'Personnages'],
   ['Quel homme a interprété des rêves alors qu’il était prisonnier en Égypte ?', ['Joseph','Moïse','Daniel','Néhémie'], 0, 'Joseph a interprété les rêves de deux serviteurs de Pharaon.', 'Genèse 40:1-23', 'Personnages'],
   ['Quel patriarche a été enterré dans la grotte de Makpéla ?', ['Abraham','Moïse','Samuel','David'], 0, 'Abraham a été enterré avec Sara dans la grotte de Makpéla.', 'Genèse 25:7-10', 'Personnages'],
   ['Quel signe a attiré l’attention de Moïse au début de sa mission ?', ['Un buisson en feu qui ne se consumait pas','Une colonne de feu','Un arc-en-ciel','Une pluie de cailles'], 0, 'Moïse a vu un buisson en feu qui ne brûlait pas.', 'Exode 3:1-6', 'Bible'],
@@ -318,7 +318,7 @@ const jwQuizExpansion: Array<[string, string[], number, string, string, string]>
   ['Quel jeune homme est tombé d’une fenêtre pendant que Paul parlait longtemps ?', ['Eutique','Timothée','Tite','Onésime'], 0, 'Eutique est tombé du troisième étage et a été relevé vivant.', 'Actes 20:7-12', 'Actes'],
   ['Quel couple a hébergé Paul et l’a accompagné dans son activité chrétienne ?', ['Priscille et Aquilas','Ananias et Saphira','Zacharie et Élisabeth','Corneille et sa femme'], 0, 'Priscille et Aquilas ont travaillé avec Paul.', 'Actes 18:1-3, 18-26', 'Actes'],
   ['Quel homme a demandé à Jésus : « Que dois-je faire pour hériter de la vie éternelle ? » ?', ['Un homme riche','Zachée','Nicodème','Jairus'], 0, 'Un homme riche a posé cette question à Jésus.', 'Matthieu 19:16-22', 'Évangiles'],
-  ['Quel apôtre a été présent lorsque Jésus a nourri environ 5 000 hommes ?', ['André','Matthieu','Thomas','Jude'], 0, 'André a signalé à Jésus le garçon qui avait cinq pains et deux poissons.', 'Jean 6:5-13', 'Évangiles'],
+  ['Quel apôtre a signalé à Jésus le garçon qui avait cinq pains et deux poissons ?', ['André','Philippe','Thomas','Matthieu'], 0, 'André a signalé à Jésus le garçon qui avait cinq pains et deux poissons.', 'Jean 6:5-13', 'Évangiles'],
 ];
 
 export const quizQuestions: QuizQuestion[] = [...facts, ...extraFacts, ...extraFacts2, ...extraFacts3, ...extraFacts4].map((f, i) => ({
