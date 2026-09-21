@@ -5783,17 +5783,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "jason_thessalonica": {
-    "studyFocus": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas chez lui. Des opposants accusèrent les missionnaires de troubler l’ordre public et traînèrent Jason et d’autres frères devant les autorités.",
+    "studyFocus": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas dans sa maison. Des opposants l’accusèrent ensuite devant les autorités parce qu’ils soutenaient la prédication chrétienne.",
     "lessonPoints": [
-      "Jason utilisa son foyer pour soutenir l’activité chrétienne.",
-      "Il subit personnellement les conséquences de l’opposition à la prédication.",
-      "Les accusations contre Paul et Silas transformèrent une question religieuse en affaire politique.",
-      "Son exemple montre qu’accueillir les serviteurs de Dieu peut demander du courage."
+      "Jason ouvrit sa maison à Paul et Silas.",
+      "Il fut entraîné dans un conflit public à cause de son soutien aux missionnaires.",
+      "Il fournit une garantie financière aux autorités pour calmer la situation.",
+      "Son exemple montre que l’hospitalité chrétienne peut demander du courage."
     ],
     "keyReading": "Actes 17:1-9 ; Romains 16:21",
     "location": "Thessalonique, en Macédoine.",
-    "relationshipWithJehovah": "Jason soutenait les prédicateurs chrétiens et leur ouvrit sa maison, ce qui l’exposa à l’hostilité des opposants.",
-    "didYouKnow": "Les opposants affirmèrent que Jason avait accueilli les missionnaires alors qu’ils les accusaient de proclamer Jésus comme roi.",
+    "relationshipWithJehovah": "Jason soutint les prédicateurs chrétiens et accepta les conséquences de son hospitalité.",
+    "didYouKnow": "Les adversaires de Paul accusèrent Jason et les autres frères de soutenir un prétendu roi rival de César, Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5832,17 +5832,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "onesiphorus": {
-    "studyFocus": "Onésiphore était un chrétien qui soutenait Paul avec courage. Il n’eut pas honte des chaînes de l’apôtre et, lorsqu’il arriva à Rome, il le rechercha avec soin jusqu’à le trouver. Paul se souvenait aussi de l’aide qu’il avait apportée à Éphèse.",
+    "studyFocus": "Onésiphore était un chrétien qui avait beaucoup aidé Paul, notamment lorsqu’il était prisonnier. Il rechercha Paul à Rome et n’eut pas honte de ses chaînes. Paul se souvenait avec reconnaissance de l’aide qu’il avait apportée à Éphèse.",
     "lessonPoints": [
-      "Onésiphore ne se laissa pas intimider par l’emprisonnement de Paul.",
-      "Il fit des efforts personnels pour retrouver l’apôtre à Rome.",
-      "Il avait déjà rendu de nombreux services à Paul à Éphèse.",
-      "Son exemple montre qu’une aide fidèle est précieuse quand quelqu’un traverse une période difficile."
+      "Onésiphore n’eut pas honte de Paul malgré son emprisonnement.",
+      "Il fit des efforts pour retrouver Paul à Rome.",
+      "Son service apporta un réel réconfort à l’apôtre.",
+      "Son exemple montre qu’un chrétien fidèle peut soutenir courageusement un frère dans une période difficile."
     ],
     "keyReading": "2 Timothée 1:15-18 ; 4:19",
     "location": "Éphèse et Rome.",
-    "relationshipWithJehovah": "Onésiphore manifesta un amour courageux envers Paul et les serviteurs de Dieu, sans avoir honte de leurs souffrances.",
-    "didYouKnow": "Paul prie pour que la famille d’Onésiphore reçoive la miséricorde de Jéhovah et rappelle qu’Onésiphore l’avait souvent réconforté.",
+    "relationshipWithJehovah": "Onésiphore servit fidèlement les chrétiens et Paul demanda que Jéhovah accorde miséricorde à sa maison.",
+    "didYouKnow": "Paul se souvenait particulièrement des nombreux services qu’Onésiphore lui avait rendus à Éphèse.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5881,17 +5881,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "mary_mother_james": {
-    "studyFocus": "Marie, mère de Jacques, faisait partie des femmes fidèles qui suivirent Jésus. Elle observa sa mise au tombeau et figura parmi celles qui se rendirent ensuite au tombeau. Les Évangiles la distinguent d’autres Marie par le nom de son fils Jacques.",
+    "studyFocus": "Marie, mère de Jacques, faisait partie des femmes qui suivirent Jésus et le servirent. Elle se trouvait parmi les personnes qui observèrent les événements entourant sa mort et se rendit au tombeau après le sabbat.",
     "lessonPoints": [
-      "Elle resta proche de Jésus dans les moments difficiles.",
-      "Elle prit au sérieux les événements liés à la mort de Jésus.",
-      "Elle fit partie des femmes qui se rendirent au tombeau.",
-      "Son service fidèle ne dépendait pas d’une position publique importante."
+      "Marie faisait partie des femmes qui soutenaient le ministère de Jésus.",
+      "Elle resta attachée aux disciples pendant la période de sa mort.",
+      "Elle se rendit au tombeau pour prendre soin du corps de Jésus.",
+      "Son témoignage fait partie des récits annonçant la résurrection."
     ],
     "keyReading": "Matthieu 27:55-61 ; 28:1-10 ; Marc 15:40-47 ; 16:1-8",
-    "location": "Jérusalem et ses environs.",
-    "relationshipWithJehovah": "Marie manifesta son attachement à Jésus et participa fidèlement au service des disciples.",
-    "didYouKnow": "Les Évangiles utilisent le nom de Jacques pour distinguer cette Marie d’autres femmes portant le même prénom.",
+    "location": "Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Marie servit parmi les disciples de Jésus et participa au témoignage concernant sa mort et sa résurrection.",
+    "didYouKnow": "Marie mère de Jacques faisait partie des femmes qui préparèrent des aromates pour aller au tombeau après le sabbat.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5929,17 +5929,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "mary_mark_mother": {
-    "studyFocus": "Marie, mère de Jean surnommé Marc, était une chrétienne de Jérusalem dont la maison servait de lieu de réunion à la congrégation. Lorsque Pierre fut libéré de prison, il se rendit directement chez elle, où de nombreux disciples étaient réunis pour prier.",
+    "studyFocus": "Marie, mère de Jean-Marc, était une chrétienne de Jérusalem dont la maison servait de lieu de réunion à la congrégation. Lorsque Pierre fut libéré de prison, il se rendit chez elle, où de nombreux disciples priaient.",
     "lessonPoints": [
-      "Marie mettait sa maison à la disposition de la congrégation.",
-      "Sa maison était assez grande pour accueillir plusieurs croyants réunis pour prier.",
-      "Elle était entourée de chrétiens engagés dans la prédication et la prière.",
-      "Son exemple rappelle que l’hospitalité peut soutenir concrètement la congrégation."
+      "Marie mettait sa maison à disposition pour les réunions chrétiennes.",
+      "Elle soutenait une congrégation qui priait activement.",
+      "Sa maison semble avoir été un lieu connu des disciples de Jérusalem.",
+      "Son exemple illustre l’hospitalité et le soutien matériel à la congrégation."
     ],
-    "keyReading": "Actes 12:5-17 ; Colossiens 4:10 ; 1 Pierre 5:13",
+    "keyReading": "Actes 12:5-17",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Marie soutenait la congrégation chrétienne et offrait un lieu où les disciples pouvaient se réunir et prier.",
-    "didYouKnow": "Quand Pierre fut libéré de prison, il alla à la maison de Marie, où plusieurs disciples étaient réunis pour prier.",
+    "relationshipWithJehovah": "Marie soutenait la congrégation en ouvrant sa maison aux disciples qui se réunissaient et priaient.",
+    "didYouKnow": "Lorsque Pierre fut libéré par l’ange, il se rendit directement à la maison de Marie, où plusieurs disciples étaient réunis pour prier.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5978,17 +5978,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "apphia": {
-    "studyFocus": "Apphia était une chrétienne mentionnée dans l’introduction de la lettre à Philémon, avec Philémon et Archippe. La lettre était adressée à la famille chrétienne et à la congrégation qui se réunissait dans la maison de Philémon. Elle faisait donc partie du cadre familial et congrégationnel auquel Paul écrivit.",
+    "studyFocus": "Apphia était une chrétienne de Colosses à qui Paul adressa personnellement sa lettre avec Philémon et Archippe. Elle faisait partie du cercle de personnes liées à la congrégation qui se réunissait chez Philémon.",
     "lessonPoints": [
-      "Apphia est associée directement à une congrégation chrétienne de Colosses.",
-      "Elle était suffisamment connue pour être nommée dans une lettre adressée à la maisonnée et à la congrégation.",
-      "Sa mention rappelle la participation des femmes à la vie des premières congrégations.",
-      "La Bible ne donne pas davantage de détails biographiques sur son rôle précis."
+      "Apphia était connue de Paul et associée à la congrégation de Colosses.",
+      "Elle reçut une lettre qui traitait d’une question chrétienne délicate concernant Onésime.",
+      "Elle appartenait à un foyer impliqué dans la vie de la congrégation.",
+      "Son exemple rappelle que les femmes chrétiennes participaient activement à la vie des premières congrégations."
     ],
-    "keyReading": "Philémon 1-7",
-    "location": "Colosses, en Phrygie.",
-    "relationshipWithJehovah": "Apphia est mentionnée parmi les chrétiens associés à Philémon et à la congrégation réunie dans sa maison.",
-    "didYouKnow": "Apphia est l’une des rares femmes nommées dans les salutations d’une lettre de Paul adressée à une congrégation ou à une maisonnée chrétienne.",
+    "keyReading": "Philémon 1-2",
+    "location": "Colosses, en Asie Mineure.",
+    "relationshipWithJehovah": "Apphia était une chrétienne associée à la congrégation qui se réunissait chez Philémon.",
+    "didYouKnow": "Paul adresse sa lettre non seulement à Philémon et Apphia, mais aussi à Archippe et à la congrégation qui se réunissait dans leur maison.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6024,16 +6024,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "archippus": {
-    "studyFocus": "Archippe était un chrétien à qui Paul a demandé de veiller à bien accomplir le ministère qu’il avait reçu dans le Seigneur.",
+    "studyFocus": "Archippe était un chrétien de Colosses associé à Philémon et Apphia. Paul lui demanda de veiller à bien accomplir le ministère qu’il avait reçu dans le Seigneur.",
     "lessonPoints": [
-      "Persévérance : Paul l’a encouragé à mener pleinement son ministère.",
-      "Responsabilité : une mission reçue de Jéhovah mérite d’être accomplie avec sérieux.",
-      "Encouragement : les rappels fraternels peuvent aider un chrétien à rester concentré sur son service."
+      "Archippe avait reçu un ministère dans le Seigneur.",
+      "Paul le connaissait suffisamment pour lui adresser une exhortation personnelle.",
+      "Il faisait partie d’un foyer ou d’un groupe très impliqué dans la congrégation de Colosses.",
+      "Son exemple souligne l’importance d’aller jusqu’au bout d’une responsabilité chrétienne."
     ],
-    "keyReading": "Philémon 1-7; Colossiens 4:17",
-    "location": "Colosses.",
-    "relationshipWithJehovah": "Son ministère est présenté comme reçu dans le Seigneur; Paul l’encourage donc à l’accomplir pleinement et fidèlement.",
-    "didYouKnow": "Paul l’appelle « notre compagnon de combat », expression soulignant sa participation active au service chrétien.",
+    "keyReading": "Philémon 1-2 ; Colossiens 4:17",
+    "location": "Colosses, en Asie Mineure.",
+    "relationshipWithJehovah": "Archippe avait reçu un ministère dans le Seigneur et Paul l’encouragea à le mener pleinement à bien.",
+    "didYouKnow": "Paul demanda aux Colossiens de dire à Archippe : « Continue à veiller à bien accomplir le ministère que tu as reçu dans le Seigneur. »",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6070,16 +6071,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "john_mark": {
-    "studyFocus": "Jean-Marc a connu un début de service marqué par une difficulté, mais il a ensuite retrouvé la confiance de Paul et est devenu un collaborateur utile.",
+    "studyFocus": "Jean-Marc était un compagnon de Paul et Barnabas, et le cousin de Barnabas. Il accompagna les deux hommes au début d’un voyage missionnaire mais les quitta ensuite. Plus tard, il redevint un collaborateur apprécié de Paul.",
     "lessonPoints": [
-      "Progrès : une erreur ou une période difficile ne détermine pas toute une vie de service.",
-      "Persévérance : Jean-Marc a repris une activité missionnaire.",
-      "Encouragement : Barnabas et plus tard Paul ont reconnu son utilité."
+      "Jean-Marc commença son service missionnaire avec Paul et Barnabas.",
+      "Il abandonna le voyage à un moment donné, ce qui provoqua plus tard un désaccord entre Paul et Barnabas.",
+      "Barnabas continua à lui faire confiance.",
+      "Paul reconnut ensuite que Marc lui était utile pour le ministère."
     ],
-    "keyReading": "Actes 12:12; 13:5, 13; 15:36-40; Colossiens 4:10; 2 Timothée 4:11",
-    "location": "Jérusalem, Chypre et diverses régions.",
-    "relationshipWithJehovah": "Son parcours montre qu’un échec dans le service n’empêche pas nécessairement de retrouver une place utile. Paul finit par le considérer comme précieux pour le ministère.",
-    "didYouKnow": "Paul demande finalement à Timothée de faire venir Marc, car il lui est utile pour le ministère.",
+    "keyReading": "Actes 12:12,25 ; 13:5,13 ; 15:36-40 ; Colossiens 4:10 ; 2 Timothée 4:11 ; Philémon 24",
+    "location": "Jérusalem, Antioche et diverses régions missionnaires.",
+    "relationshipWithJehovah": "Jean-Marc progressa dans le service chrétien et finit par être reconnu comme un collaborateur utile.",
+    "didYouKnow": "Marc est mentionné par Paul comme étant utile au ministère vers la fin de la vie de l’apôtre, malgré leur difficulté antérieure.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Marc",
@@ -6123,16 +6125,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "priscilla": {
-    "studyFocus": "Priscille et Aquilas formaient un couple chrétien qui a collaboré étroitement avec Paul et a aidé Apollos à mieux comprendre les enseignements de Dieu.",
+    "studyFocus": "Priscille était une chrétienne juive mariée à Aquilas. Avec son mari, elle collabora étroitement avec Paul et enseigna à Apollos plus exactement la voie de Dieu. Leur maison servit aussi de lieu de réunion chrétienne.",
     "lessonPoints": [
-      "Enseignement : Priscille et Aquilas ont expliqué plus précisément les enseignements à Apollos.",
-      "Hospitalité : leur foyer servait au soutien de l’activité chrétienne.",
-      "Collaboration : ils ont travaillé avec Paul et ont risqué leur vie pour lui."
+      "Priscille travaillait avec Aquilas pour subvenir à leurs besoins.",
+      "Elle participa activement à l’enseignement chrétien avec son mari.",
+      "Elle contribua à corriger la compréhension d’Apollos avec tact.",
+      "Elle et Aquilas mirent leur maison à disposition de la congrégation."
     ],
-    "keyReading": "Actes 18:1-28; Romains 16:3-5; 1 Corinthiens 16:19",
-    "location": "Corinthe, Éphèse et Rome.",
-    "relationshipWithJehovah": "Priscille met son foyer, ses compétences et sa sécurité au service de la bonne nouvelle. Elle contribue à aider Apollos à progresser.",
-    "didYouKnow": "Paul dit que Priscille et Aquila ont risqué leur propre vie pour lui.",
+    "keyReading": "Actes 18:1-3,18-28 ; Romains 16:3-5 ; 1 Corinthiens 16:19 ; 2 Timothée 4:19",
+    "location": "Rome, Corinthe, Éphèse et autres villes du monde méditerranéen.",
+    "relationshipWithJehovah": "Priscille servit avec Aquilas dans la prédication, l’enseignement et l’hospitalité chrétienne.",
+    "didYouKnow": "Priscille est souvent nommée avant Aquilas dans les salutations bibliques, ce qui montre qu’elle était une collaboratrice bien connue dans les congrégations.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6176,16 +6179,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "claudius_lycias": {
-    "studyFocus": "Claude Lysias était le commandant militaire qui a protégé Paul lorsqu’une foule voulait le tuer et a organisé son transfert vers Césarée.",
+    "studyFocus": "Claude Lysias était le commandant militaire romain de Jérusalem qui protégea Paul lorsqu’une foule voulut le tuer. Il fit enquêter sur l’affaire et envoya Paul sous escorte à Césarée.",
     "lessonPoints": [
-      "Protection : il a pris des mesures concrètes pour empêcher que Paul soit tué.",
-      "Prudence : il a cherché à comprendre les accusations avant d’agir.",
-      "Justice : son récit montre l’importance de procédures équitables même dans une situation tendue."
+      "Claude Lysias intervint pour empêcher Paul d’être battu par la foule.",
+      "Il chercha à connaître les faits avant de poursuivre la procédure.",
+      "Il protégea Paul en raison de sa citoyenneté romaine.",
+      "Il rédigea une lettre officielle expliquant au gouverneur ce qu’il avait établi."
     ],
-    "keyReading": "Actes 21:27-40; 22:22-30; 23:12-35",
+    "keyReading": "Actes 21:27-40 ; 22:22-30 ; 23:10-35",
     "location": "Jérusalem et Césarée.",
-    "relationshipWithJehovah": "La Bible ne le présente pas comme adorateur de Jéhovah. Son intervention permet néanmoins à Paul de poursuivre son témoignage.",
-    "didYouKnow": "Claude Lysias avait acheté sa citoyenneté romaine à prix élevé; Paul affirme, lui, être né citoyen romain.",
+    "relationshipWithJehovah": "Claude Lysias n’est pas présenté comme adorateur de Jéhovah, mais ses décisions contribuèrent indirectement à préserver Paul afin qu’il poursuive son témoignage.",
+    "didYouKnow": "Claude Lysias avait acheté sa citoyenneté romaine à prix élevé, alors que Paul indiqua être citoyen romain de naissance.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -6223,16 +6227,17 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "julius_centurion": {
-    "studyFocus": "Julius, officier de la troupe impériale, a traité Paul avec humanité pendant son transfert vers Rome.",
+    "studyFocus": "Julius était un centurion de la cohorte impériale chargé d’accompagner Paul et d’autres prisonniers vers Rome. Il traita Paul avec bonté et lui permit de recevoir des soins et de visiter des amis pendant le voyage.",
     "lessonPoints": [
-      "Humanité : il a permis à Paul de recevoir des soins et de l’aide de ses amis.",
-      "Jugement : il a écouté Paul à plusieurs reprises pendant le voyage.",
-      "Responsabilité : il devait assurer la sécurité des prisonniers dans des circonstances difficiles."
+      "Julius traita Paul avec considération malgré son statut de prisonnier.",
+      "Il lui permit de recevoir de l’aide à Sidon.",
+      "Il écouta Paul lors de la traversée malgré les décisions du capitaine et du propriétaire du navire.",
+      "Il empêcha finalement les soldats de tuer les prisonniers après le naufrage."
     ],
-    "keyReading": "Actes 27:1-44",
-    "location": "Césarée, mer Méditerranée et Rome.",
-    "relationshipWithJehovah": "Julius n’est pas présenté comme adorateur de Jéhovah, mais son traitement bienveillant de Paul lui permet de continuer son témoignage.",
-    "didYouKnow": "Julius permet à Paul de recevoir les soins de ses amis à Sidon, montrant qu’un centurion pouvait accorder une marge de liberté aux prisonniers.",
+    "keyReading": "Actes 27:1-44 ; 28:1-16",
+    "location": "Césarée, Méditerranée et finalement Rome.",
+    "relationshipWithJehovah": "Julius n’est pas présenté comme adorateur de Jéhovah, mais sa bienveillance contribua à préserver Paul pendant son voyage.",
+    "didYouKnow": "Julius appartenait à la « cohorte impériale », unité associée à l’armée romaine, et il fut chargé de conduire Paul à Rome.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
