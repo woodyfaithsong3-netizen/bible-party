@@ -8,6 +8,7 @@ import { jwV61Quote, jwV61Forbidden } from './jw_enrichment_v61';
 import { jwV104Quiz, jwV104TrueFalse, jwV104Mystery } from './jw_enrichment_v104';
 import { jwV105Quiz, jwV105TrueFalse, jwV105Mystery } from './jw_enrichment_v105';
 import { jwV106CharacterQuiz, jwV106Mystery } from './jw_enrichment_v106_characters';
+import { jwV107CharacterQuiz, jwV107Mystery } from './jw_enrichment_v107_characters';
 import { Challenge, ChronologyQuestion, Difficulty, IntruderQuestion, MysteryQuestion, QuizQuestion, QuoteQuestion, TimesUpQuestion, TrueFalseQuestion } from '@/types';
 import { categoryQuizExpansion, categoryTrueFalseExpansion, categoryMysteryExpansion, categoryTimesUpExpansion, categoryQuoteExpansion, categoryChronologyExpansion, categoryIntruderExpansion, categoryChallengeExpansion } from './jwCategories';
 
@@ -1623,6 +1624,8 @@ quizQuestions.push(...jwV104Quiz);
 quizQuestions.push(...jwV105Quiz);
 quizQuestions.push(...jwV106CharacterQuiz);
 mysteryQuestions.push(...jwV106Mystery);
+quizQuestions.push(...jwV107CharacterQuiz);
+mysteryQuestions.push(...jwV107Mystery);
 trueFalseQuestions.push(...jwV105TrueFalse);
 mysteryQuestions.push(...jwV105Mystery);
 trueFalseQuestions.push(...jwV104TrueFalse);
