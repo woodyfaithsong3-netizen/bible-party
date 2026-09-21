@@ -4185,8 +4185,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes.",
-    "relationshipWithJehovah": "Paul encourage Évodie et Syntyche à avoir la même pensée dans le Seigneur.",
-    "didYouKnow": "Paul reconnaît qu’elle a lutté avec lui pour la bonne nouvelle.",
+    "relationshipWithJehovah": "Paul ne remet pas en cause leur engagement chrétien; il les encourage plutôt à retrouver l’unité dans le Seigneur, montrant que même des chrétiennes actives devaient préserver la paix.",
+    "didYouKnow": "Paul dit qu’Évodie et Syntyche avaient « lutté côte à côte » avec lui dans la bonne nouvelle, ce qui montre qu’elles avaient déjà beaucoup travaillé pour la prédication.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4201,21 +4201,25 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Chrétienne de Philippes — Évodie est une chrétienne que Paul exhorte à être unie avec Syntyche dans le service du Seigneur.",
-    "era": "Congrégation chrétienne du Ier siècle",
+    "identity": "Évodie était une chrétienne de la congrégation de Philippes que Paul exhorte, avec Syntyche, à être unies dans le Seigneur.",
+    "era": "Premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
       "Syntyche",
-      "Paul"
+      "Paul",
+      "La congrégation de Philippes"
     ],
     "bibleAccount": [
-      "Travaille avec Paul pour la bonne nouvelle.",
-      "Est exhortée à retrouver l’unité avec Syntyche."
+      "Elle avait travaillé aux côtés de Paul dans la bonne nouvelle.",
+      "Paul lui adresse une exhortation personnelle à être du même avis dans le Seigneur.",
+      "Il demande à un fidèle collaborateur de les aider à régler leur désaccord."
     ],
     "qualities": [
-      "Zèle pour la bonne nouvelle",
-      "Persévérance"
+      "Zèle dans la bonne nouvelle",
+      "Engagement dans la congrégation"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Elle avait un désaccord avec Syntyche suffisamment important pour nécessiter l’aide d’un autre chrétien."
+    ]
   },
   "epaphroditus": {
     "studyFocus": "Épaphrodite s’est dépensé au service de Paul et des Philippiens et a risqué sa vie pour l’œuvre du Seigneur.",
@@ -4224,10 +4228,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Affection fraternelle : il était préoccupé par la peine que son état causait aux Philippiens.",
       "Fidélité : Paul l’a présenté comme un homme digne d’estime."
     ],
-    "keyReading": "Philippiens 2:25-30 ; 4:18",
+    "keyReading": "Philippiens 2:25-30; 4:18",
     "location": "Philippes et Rome.",
-    "relationshipWithJehovah": "Il sert Paul au péril de sa vie et se dépense pour soutenir le ministère chrétien.",
-    "didYouKnow": "Il a été gravement malade mais Jéhovah lui a fait miséricorde.",
+    "relationshipWithJehovah": "Paul le présente comme un frère, collaborateur et compagnon de combat qui s’est dépensé pour servir Christ et aider les autres chrétiens.",
+    "didYouKnow": "Paul précise qu’Épaphrodite était très inquiet parce que les Philippiens avaient appris qu’il était malade; il se souciait donc aussi de l’inquiétude que son état causait à ses frères.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4242,23 +4246,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Compagnon de service de Paul — Épaphrodite apporte l’aide de la congrégation de Philippes à Paul et tombe gravement malade pendant son service.",
-    "era": "Congrégation chrétienne du Ier siècle",
+    "identity": "Épaphrodite était un chrétien de Philippes envoyé auprès de Paul pour lui apporter une aide matérielle et personnelle. Il tomba gravement malade pendant cette période.",
+    "era": "Vers 60-61 de n. è., pendant la première détention de Paul à Rome",
     "familyAndEntourage": [
       "Paul",
-      "Philippiens"
+      "La congrégation de Philippes",
+      "Les chrétiens de Rome"
     ],
     "bibleAccount": [
-      "Apporte un soutien matériel à Paul.",
-      "Travaille dur pour le service chrétien.",
-      "Tombe gravement malade mais récupère."
+      "Les Philippiens l’envoient servir Paul.",
+      "Il tombe gravement malade et manque de mourir.",
+      "Il se rétablit par la faveur de Jéhovah.",
+      "Paul le renvoie à Philippes avec une recommandation chaleureuse."
     ],
     "qualities": [
-      "Abnégation",
+      "Dévouement",
       "Courage",
-      "Fidélité"
+      "Esprit de sacrifice",
+      "Amour fraternel"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Il a risqué sa vie en accomplissant son service et a souffert d’une grave maladie."
+    ]
   },
   "tychicus": {
     "studyFocus": "Tychique était un assistant fidèle de Paul, chargé de transmettre des lettres et de réconforter les congrégations.",
@@ -4267,10 +4276,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Encouragement : il devait renseigner les frères sur Paul et les consoler.",
       "Disponibilité : il a accepté plusieurs missions au service des congrégations."
     ],
-    "keyReading": "Actes 20:4 ; Éphésiens 6:21-22 ; Colossiens 4:7-9",
+    "keyReading": "Actes 20:4-6; Éphésiens 6:21-22; Colossiens 4:7-9; 2 Timothée 4:12; Tite 3:12",
     "location": "Asie, Rome et autres régions.",
-    "relationshipWithJehovah": "Paul lui confie des nouvelles et des missions importantes.",
-    "didYouKnow": "Paul le décrit comme un frère bien-aimé et un fidèle serviteur.",
+    "relationshipWithJehovah": "Paul lui confiait des missions importantes parce qu’il le considérait comme fidèle dans le service du Seigneur.",
+    "didYouKnow": "Tychique a probablement été le porteur de plusieurs lettres de Paul, notamment celles adressées aux Éphésiens et aux Colossiens.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4285,24 +4294,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Compagnon de Paul — Tychique est un fidèle compagnon de Paul chargé de transmettre des nouvelles et des lettres aux congrégations.",
-    "era": "Congrégation chrétienne du Ier siècle",
+    "identity": "Tychique était un chrétien originaire de la province d’Asie qui accompagna Paul et servit de messager pour plusieurs de ses lettres.",
+    "era": "Premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
       "Paul",
+      "Les assemblées d’Asie",
       "Onésime",
-      "Éphèse"
+      "Les chrétiens de Colosses et d’Éphèse"
     ],
     "bibleAccount": [
-      "Accompagne Paul.",
-      "Transmet des informations aux chrétiens.",
-      "Est envoyé auprès de plusieurs congrégations."
+      "Il accompagne Paul dans son activité missionnaire.",
+      "Paul le décrit comme un frère bien-aimé, ministre fidèle et compagnon de service.",
+      "Il est chargé de renseigner les frères sur la situation de Paul.",
+      "Paul envisage de l’envoyer remplacer Timothée ou Titus selon les circonstances."
     ],
     "qualities": [
       "Fidélité",
       "Fiabilité",
-      "Service"
+      "Esprit de service"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Son service impliquait des déplacements et des responsabilités dans une période où les chrétiens subissaient opposition et difficultés."
+    ]
   },
   "demas": {
     "studyFocus": "Démas a collaboré avec Paul pendant un temps, mais Paul a ensuite indiqué qu’il l’avait abandonné parce qu’il aimait le présent système de choses.",
@@ -4311,10 +4324,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Priorités : l’amour des avantages du monde peut détourner du service chrétien.",
       "Persévérance : il faut protéger régulièrement sa relation avec Jéhovah."
     ],
-    "keyReading": "Colossiens 4:14 ; Philémon 23-24 ; 2 Timothée 4:10",
+    "keyReading": "Colossiens 4:14; Philémon 23-24; 2 Timothée 4:10",
     "location": "Rome et le monde méditerranéen.",
-    "relationshipWithJehovah": "Démas accompagne Paul pendant un temps mais l’abandonne ensuite parce qu’il aime le présent système de choses.",
-    "didYouKnow": "Il est mentionné parmi les collaborateurs de Paul avant son départ.",
+    "relationshipWithJehovah": "Le parcours de Démas montre qu’une participation initiale au service chrétien ne garantit pas la fidélité jusqu’au bout; l’attachement aux choses du monde peut détourner quelqu’un.",
+    "didYouKnow": "Démas est d’abord présenté simplement comme un collaborateur de Paul avant que sa décision de quitter Paul ne soit rapportée dans 2 Timothée.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4329,21 +4342,22 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Compagnon de Paul — Démas est un compagnon de Paul qui l’abandonne finalement parce qu’il aime le présent système de choses.",
-    "era": "Congrégation chrétienne du Ier siècle",
+    "identity": "Démas était un collaborateur de Paul pendant une période, mais Paul rapporte plus tard qu’il l’avait abandonné parce qu’il avait aimé le présent monde.",
+    "era": "Premières années de la congrégation chrétienne",
     "familyAndEntourage": [
       "Paul",
-      "Luc"
+      "Luc",
+      "Les collaborateurs de Paul"
     ],
     "bibleAccount": [
-      "Travaille un temps aux côtés de Paul.",
-      "Quitte Paul alors que celui-ci est emprisonné."
+      "Paul le mentionne parmi ses collaborateurs dans ses lettres.",
+      "Plus tard, Paul écrit que Démas l’a abandonné et est parti pour Thessalonique parce qu’il aimait le présent monde."
     ],
     "qualities": [
-      "Engagement initial"
+      "Collaboration initiale au ministère"
     ],
     "difficulties": [
-      "Son exemple met en garde contre l’attachement excessif aux choses du monde."
+      "Il a finalement abandonné Paul et son service à cause de son attachement au présent monde."
     ]
   },
   "naaman": {
@@ -5649,10 +5663,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Hospitalité : leur foyer servait au soutien de l’activité chrétienne.",
       "Collaboration : ils ont travaillé avec Paul et ont risqué leur vie pour lui."
     ],
-    "keyReading": "Actes 18:18-28 ; Romains 16:3-5",
+    "keyReading": "Actes 18:1-3,18-28; Romains 16:3-5; 1 Corinthiens 16:19",
     "location": "Corinthe, Éphèse et Rome.",
-    "relationshipWithJehovah": "Avec Aquilas, elle aide Apollos à comprendre plus exactement la voie de Dieu et soutient le ministère chrétien.",
-    "didYouKnow": "Elle est souvent mentionnée avec son mari Aquilas.",
+    "relationshipWithJehovah": "Priscille mettait ses ressources, son foyer et ses compétences au service de la congrégation. Avec Aquilas, elle a aidé Apollos à mieux comprendre les enseignements de Dieu.",
+    "didYouKnow": "La Bible mentionne toujours Priscille et Aquilas ensemble dans les passages qui les citent, et Paul les appelle ses « collaborateurs ».",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5671,24 +5685,31 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Priscille/"
       }
     ],
-    "identity": "Chrétienne et enseignante — Priscille travaille avec Aquila et aide Apollos à mieux comprendre la voie de Dieu.",
-    "era": "Actes",
+    "identity": "Priscille, aussi appelée Prisca, était une chrétienne mariée à Aquilas. Avec lui, elle fut collaboratrice de Paul et participa activement à l’enseignement chrétien.",
+    "era": "Premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
-      "Aquila",
+      "Aquilas, son mari",
+      "Paul",
       "Apollos",
-      "Paul"
+      "Les assemblées de Corinthe, Éphèse et Rome"
     ],
     "bibleAccount": [
-      "Travaille avec Aquila.",
-      "Accueille Apollos.",
-      "Lui explique plus exactement la voie de Dieu."
+      "Elle et Aquilas quittent Rome après le décret de Claude.",
+      "Ils travaillent avec Paul à Corinthe.",
+      "À Éphèse, ils expliquent plus exactement la voie de Dieu à Apollos.",
+      "Leur maison sert de lieu de réunion pour l’assemblée.",
+      "Paul les appelle ses collaborateurs."
     ],
     "qualities": [
-      "Enseignement",
       "Hospitalité",
-      "Zèle"
+      "Courage",
+      "Enseignement",
+      "Esprit de collaboration"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Le décret de Claude les oblige à quitter Rome.",
+      "Paul indique qu’ils ont risqué leur vie pour lui, sans préciser l’événement exact."
+    ]
   },
   "claudius_lycias": {
     "studyFocus": "Claude Lysias était le commandant militaire qui a protégé Paul lorsqu’une foule voulait le tuer et a organisé son transfert vers Césarée.",
@@ -5869,8 +5890,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes.",
-    "relationshipWithJehovah": "Paul l’encourage à retrouver l’unité avec Évodie après leur service commun.",
-    "didYouKnow": "Paul demande à un fidèle compagnon de les aider.",
+    "relationshipWithJehovah": "Son exemple montre qu’un service fidèle ne dispense pas de devoir régler rapidement les désaccords et de rechercher l’unité chrétienne.",
+    "didYouKnow": "Syntyche n’est connue que par quelques lignes de Philippiens, mais Paul la présente comme une femme qui avait personnellement travaillé avec lui pour la bonne nouvelle.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5885,20 +5906,24 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
-    "identity": "Chrétienne de Philippes — Syntyche travaille avec Paul pour la bonne nouvelle et reçoit avec Évodie un appel à l’unité.",
-    "era": "Congrégation chrétienne du Ier siècle",
+    "identity": "Syntyche était une chrétienne de Philippes qui avait travaillé avec Paul dans la bonne nouvelle. Elle est citée avec Évodie dans un appel à retrouver l’unité.",
+    "era": "Premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
       "Évodie",
-      "Paul"
+      "Paul",
+      "La congrégation de Philippes"
     ],
     "bibleAccount": [
-      "Travaille pour la bonne nouvelle.",
-      "Est exhortée à être en accord avec Évodie."
+      "Elle a collaboré avec Paul dans la bonne nouvelle.",
+      "Paul demande qu’elle soit du même avis qu’Évodie dans le Seigneur.",
+      "Il sollicite l’aide d’un collaborateur fidèle pour les aider."
     ],
     "qualities": [
-      "Zèle",
-      "Persévérance"
+      "Zèle dans la bonne nouvelle",
+      "Engagement chrétien"
     ],
-    "difficulties": []
+    "difficulties": [
+      "Un désaccord avec Évodie troublait leur unité et nécessitait une aide extérieure."
+    ]
   }
 };
