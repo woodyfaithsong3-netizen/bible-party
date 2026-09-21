@@ -72,6 +72,6 @@ export default function CharactersScreen() {
     </View>
     <Pressable onPress={() => setOnlyUnlearned(x => !x)} style={{ alignSelf: 'flex-start', paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: onlyUnlearned ? colors.accent : colors.border, backgroundColor: onlyUnlearned ? colors.accent : colors.surface, marginBottom: 12 }}><Text style={{ color: onlyUnlearned ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{onlyUnlearned ? '✓ À étudier seulement' : 'Voir les fiches à étudier'}</Text></Pressable>
     {filtered.map(item => <ProfileCard key={item.id} item={item} learned={learned.includes(item.id)} onPress={() => setSelected(item)} />)}
-    <View style={{ marginTop: 8 }}><Pressable onPress={() => router.push('/training')} style={styles.card}><Text style={{ color: colors.text, fontWeight: '900' }}>Tester mes connaissances ›</Text><Text style={{ color: colors.muted, marginTop: 4 }}>Retrouver les personnages dans les questions d’entraînement.</Text></Pressable></View>
+    <View style={{ marginTop: 8 }}><Pressable onPress={() => router.push({ pathname: '/training', params: { category: 'Personnages' } })} style={styles.card}><Text style={{ color: colors.text, fontWeight: '900' }}>Tester mes connaissances ›</Text><Text style={{ color: colors.muted, marginTop: 4 }}>Retrouver les personnages dans les questions d’entraînement.</Text></Pressable></View>
   </ScrollView></ScenicScreen>;
 }
