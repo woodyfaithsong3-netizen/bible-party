@@ -181,248 +181,236 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "moise": {
-    "studyFocus": "Moïse conduit Israël hors d’Égypte et reçoit la Loi au mont Sinaï. À observer dans son récit : Humilité, Courage, Persévérance.",
+    "studyFocus": "Moïse conduit Israël hors d’Égypte, reçoit la Loi au Sinaï et reste un médiateur central entre Jéhovah et le peuple.",
     "lessonPoints": [
-      "Observer la qualité « Humilité » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités.",
-      "Point de vigilance : Même un serviteur fidèle doit respecter les instructions reçues."
+      "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Persévérance » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Affronte Pharaon avec Aaron.",
+    "keyReading": "Exode 3–4 ; 12–14 ; 19–20 ; Nombres 12 ; 20:1-13",
+    "location": "Égypte ; mont Sinaï ; désert ; plaines de Moab.",
+    "relationshipWithJehovah": "Jéhovah choisit Moïse et le forme progressivement. Malgré ses hésitations, Moïse apprend à compter sur la puissance et la direction de Jéhovah.",
+    "didYouKnow": "Moïse passa 40 ans à Madian avant de recevoir sa mission auprès de Pharaon.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Moïse — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "josue": {
-    "studyFocus": "Josué conduit Israël dans la conquête du pays et reste attaché aux instructions reçues. À observer dans son récit : Courage, Confiance, Obéissance.",
+    "studyFocus": "Josué sert comme assistant de Moïse puis conduit Israël en Canaan. Il doit fortifier son courage et rester attaché aux instructions de Jéhovah.",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Confiance » dans les épisodes cités.",
-      "Observer la qualité « Obéissance » dans les épisodes cités."
+      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Confiance » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Obéissance » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Accompagne les espions.",
+    "keyReading": "Josué 1–6 ; 23–24",
+    "location": "Désert ; Canaan ; Jéricho ; Sichem.",
+    "relationshipWithJehovah": "Jéhovah encourage Josué à être fort et courageux et lui demande de méditer la Loi avec constance.",
+    "didYouKnow": "Josué avait été l’un des douze espions envoyés en Canaan et, avec Caleb, il donna un rapport favorable.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Josué — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "Josué et les Gabaonites",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/"
       },
       {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "ruth": {
-    "studyFocus": "Ruth choisit de rester avec Naomi et s’intègre au peuple de Jéhovah. À observer dans son récit : Fidélité, Loyauté, Humilité.",
+    "studyFocus": "Ruth, Moabite, choisit de rester avec Noémi et de devenir une adoratrice de Jéhovah. Elle travaille humblement et devient l’ancêtre du roi David.",
     "lessonPoints": [
-      "Observer la qualité « Fidélité » dans les épisodes cités.",
-      "Observer la qualité « Loyauté » dans les épisodes cités.",
-      "Observer la qualité « Humilité » dans les épisodes cités."
+      "Étudier la qualité « Loyauté » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Foi » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Reste auprès de Naomi.",
+    "keyReading": "Ruth 1–4",
+    "location": "Moab ; Bethléem ; champs de Boaz.",
+    "relationshipWithJehovah": "Ruth abandonne ses anciennes attaches religieuses et manifeste une loyauté remarquable envers Noémi et envers le peuple de Jéhovah.",
+    "didYouKnow": "Ruth figure dans la généalogie menant à David et à Jésus Christ.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Ruth — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "Ruth et Naomi",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/histoires-bibliques/"
       },
       {
-        "title": "Les personnages de la Bible",
+        "title": "Les femmes dans la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "samuel": {
-    "studyFocus": "Samuel sert dès son enfance et joue un rôle important lors de la transition vers la monarchie en Israël. À observer dans son récit : Écoute, Fidélité, Courage.",
+    "studyFocus": "Samuel sert Jéhovah dès son enfance et devient prophète et juge en Israël. Il accompagne la transition vers la royauté tout en restant fidèle aux directives divines.",
     "lessonPoints": [
-      "Observer la qualité « Écoute » dans les épisodes cités.",
-      "Observer la qualité « Fidélité » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités."
+      "Étudier la qualité « Écoute » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Fidélité » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Courage » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Reçoit son appel alors qu’il est jeune.",
+    "keyReading": "1 Samuel 1–3 ; 7–12 ; 15",
+    "location": "Shilo ; Rama ; Israël.",
+    "relationshipWithJehovah": "Jéhovah se sert de Samuel comme prophète et juge. Samuel apprend à écouter sa voix et à transmettre ses messages même lorsqu’ils sont difficiles.",
+    "didYouKnow": "Samuel reçut son premier message prophétique alors qu’il était encore jeune garçon.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Samuel — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "Jéhovah parle à Samuel",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/"
       },
       {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "david": {
-    "studyFocus": "David devient roi après avoir été oint par Samuel et joue un rôle majeur dans l’histoire d’Israël. À observer dans son récit : Courage, Foi, Loyauté, Repentir.",
+    "studyFocus": "David devient roi après avoir été oint par Samuel. Sa vie montre une foi profonde, mais aussi les conséquences graves de ses fautes et l’importance du repentir.",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Loyauté » dans les épisodes cités.",
-      "Observer la qualité « Repentir » dans les épisodes cités.",
-      "Point de vigilance : Ses fautes montrent aussi les conséquences du péché et la nécessité de la repentance."
+      "Étudier la qualité « Foi » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Loyauté » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Repentir » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Affronte Goliath.",
+    "keyReading": "1 Samuel 16–17 ; 24 ; 2 Samuel 5–12 ; Psaume 51",
+    "location": "Bethléem ; Hébron ; Jérusalem.",
+    "relationshipWithJehovah": "David recherche régulièrement la direction de Jéhovah et, après ses fautes graves, accepte la discipline et exprime un repentir sincère.",
+    "didYouKnow": "David est appelé « un homme selon le cœur » de Jéhovah, sans que cela signifie qu’il était sans péché.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "David — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "David et Goliath",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/histoires-bibliques/"
       },
       {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "salomon": {
-    "studyFocus": "Salomon demande de la sagesse et construit le temple de Jérusalem, mais sa fin de règne comporte aussi de graves problèmes. À observer dans son récit : Sagesse recherchée, Organisation.",
+    "studyFocus": "Salomon reçoit de Jéhovah une sagesse remarquable, construit le temple et connaît une grande prospérité. Mais ses mariages et son attachement à des femmes étrangères contribuent ensuite à son infidélité.",
     "lessonPoints": [
-      "Observer la qualité « Sagesse recherchée » dans les épisodes cités.",
-      "Observer la qualité « Organisation » dans les épisodes cités.",
-      "Point de vigilance : La richesse et les influences peuvent détourner même quelqu’un qui a reçu beaucoup de sagesse."
+      "Étudier la qualité « Sagesse » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Discernement » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Vigilance » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Demande de la sagesse pour gouverner.",
+    "keyReading": "1 Rois 3 ; 5–8 ; 11",
+    "location": "Gabaon ; Jérusalem.",
+    "relationshipWithJehovah": "Jéhovah répond à la demande de sagesse de Salomon, mais la fidélité exige de continuer à protéger son cœur et à obéir.",
+    "didYouKnow": "Salomon construisit le temple de Jérusalem et régna 40 ans.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Salomon — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "La Bible en ligne",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "elie": {
-    "studyFocus": "Élie défend le culte de Jéhovah face au culte de Baal et accomplit plusieurs miracles. À observer dans son récit : Courage, Zèle, Confiance.",
+    "studyFocus": "Élie défend courageusement le culte de Jéhovah face aux prophètes de Baal et connaît aussi des moments de découragement. Jéhovah le fortifie et continue de lui confier une mission.",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Confiance » dans les épisodes cités."
+      "Étudier la qualité « Zèle » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Confiance » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Annonce une sécheresse.",
+    "keyReading": "1 Rois 17–19 ; 21 ; 2 Rois 2",
+    "location": "Israël du Nord ; mont Carmel ; désert ; région du Jourdain.",
+    "relationshipWithJehovah": "Élie sert comme prophète de Jéhovah et apprend que la puissance divine ne dépend pas d’un spectacle impressionnant : Jéhovah le rassure et le guide.",
+    "didYouKnow": "Élie fut nourri pendant un temps par des corbeaux près du torrent de Kerith.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Élie — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "Élie — Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "esther": {
-    "studyFocus": "Esther utilise sa position pour intervenir en faveur de son peuple lorsqu’un projet de destruction est préparé. À observer dans son récit : Courage, Discrétion, Abnégation.",
+    "studyFocus": "Esther devient reine et utilise sa position pour intervenir en faveur des Juifs menacés d’extermination. Son récit met en évidence courage, prudence et souci du peuple de Dieu.",
     "lessonPoints": [
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Discrétion » dans les épisodes cités.",
-      "Observer la qualité « Abnégation » dans les épisodes cités."
+      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Prudence » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Sacrifice » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Devient reine.",
+    "keyReading": "Esther 2–9",
+    "location": "Suse, en Perse.",
+    "relationshipWithJehovah": "Même dans une situation dangereuse, Esther agit avec prudence et courage pour défendre le peuple de Jéhovah.",
+    "didYouKnow": "Le livre d’Esther ne mentionne pas directement le nom de Jéhovah.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Esther — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
+        "title": "Esther — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "daniel": {
-    "studyFocus": "Daniel reste fidèle pendant son service dans les cours babylonienne et perse et reçoit plusieurs visions. À observer dans son récit : Fidélité, Courage, Discipline, Prière.",
+    "studyFocus": "Daniel reste fidèle à Jéhovah pendant l’exil à Babylone et sous plusieurs souverains. Il refuse de compromettre son culte et continue de prier malgré l’interdiction royale.",
     "lessonPoints": [
-      "Observer la qualité « Fidélité » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Discipline » dans les épisodes cités.",
-      "Observer la qualité « Prière » dans les épisodes cités."
+      "Étudier la qualité « Intégrité » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Fidélité » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Refuse de se souiller avec la nourriture du roi.",
+    "keyReading": "Daniel 1 ; 6 ; 9",
+    "location": "Babylone et l’Empire médo-perse.",
+    "relationshipWithJehovah": "Daniel garde des habitudes de prière et met sa confiance dans Jéhovah même lorsque sa fidélité entraîne un danger réel.",
+    "didYouKnow": "Daniel avait environ 15 ans lorsqu’il fut emmené à Babylone, selon la chronologie présentée par les publications JW.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Daniel — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
+        "title": "Daniel — Marche courageusement avec Dieu",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
@@ -455,111 +443,106 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "marie": {
-    "studyFocus": "Marie accepte humblement le rôle qui lui est confié et élève Jésus dans le cadre de la famille juive de l’époque. À observer dans son récit : Humilité, Foi, Réflexion.",
+    "studyFocus": "Marie, mère de Jésus, accepte humblement une mission exceptionnelle et accompagne son fils pendant différentes étapes de sa vie et de son ministère.",
     "lessonPoints": [
-      "Observer la qualité « Humilité » dans les épisodes cités.",
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Réflexion » dans les épisodes cités."
+      "Étudier la qualité « Foi » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Endurance » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Reçoit l’annonce concernant la naissance de Jésus.",
+    "keyReading": "Luc 1–2 ; Jean 2:1-12 ; 19:25-27 ; Actes 1:14",
+    "location": "Nazareth ; Bethléem ; Jérusalem.",
+    "relationshipWithJehovah": "Marie accepte la volonté de Jéhovah avec humilité et reste présente auprès des disciples après la mort de Jésus.",
+    "didYouKnow": "Marie fait partie des femmes nommées comme persévérant dans la prière avec les disciples après l’ascension.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Marie — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
+        "title": "Marie — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "pierre": {
-    "studyFocus": "Pierre est l’un des principaux apôtres et joue un rôle important dans les débuts de la congrégation chrétienne. À observer dans son récit : Zèle, Courage, Repentir.",
+    "studyFocus": "Pierre est un apôtre majeur qui apprend à passer de réactions impulsives à une foi plus mûre. Après avoir renié Jésus, il pleure amèrement et est ensuite rétabli dans son service.",
     "lessonPoints": [
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Repentir » dans les épisodes cités.",
-      "Point de vigilance : Son exemple montre aussi qu’un disciple peut trébucher et se relever."
+      "Étudier la qualité « Foi » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Repentir » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Suit Jésus.",
+    "keyReading": "Matthieu 14:22-33 ; 16:13-23 ; 26:69-75 ; Jean 21 ; Actes 2–5",
+    "location": "Galilée ; Jérusalem ; Joppé ; Césarée.",
+    "relationshipWithJehovah": "Jésus corrige Pierre mais continue de le former. Après sa résurrection, il lui confie de prendre soin de ses disciples.",
+    "didYouKnow": "Pierre était pêcheur et travaillait avec son frère André.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Pierre — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
+        "title": "Pierre — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "paul": {
-    "studyFocus": "Paul passe de persécuteur des disciples à prédicateur chrétien et voyage largement pour annoncer le message. À observer dans son récit : Zèle, Endurance, Courage, Humilité.",
+    "studyFocus": "Paul passe de persécuteur des disciples à apôtre zélé. Il endure persécutions, voyages et difficultés pour annoncer la bonne nouvelle et fortifier les congrégations.",
     "lessonPoints": [
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Endurance » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Humilité » dans les épisodes cités."
+      "Étudier la qualité « Zèle » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Endurance » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Humilité » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Est arrêté sur le chemin de Damas par une vision du Christ.",
+    "keyReading": "Actes 9 ; 13–28 ; Philippiens 3 ; 2 Corinthiens 11",
+    "location": "Jérusalem ; Syrie ; Asie Mineure ; Grèce ; Rome.",
+    "relationshipWithJehovah": "Jéhovah et Jésus réorientent complètement la vie de Paul. Il considère ensuite son ministère comme un trésor et supporte de nombreuses épreuves pour l’accomplir.",
+    "didYouKnow": "Paul était aussi appelé Saul et était citoyen romain.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Paul — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
+        "title": "Paul — Imitez leur foi",
         "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
       },
       {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "jean": {
-    "studyFocus": "Jean fait partie des douze apôtres et est associé à plusieurs écrits des Écritures grecques chrétiennes. À observer dans son récit : Amour, Persévérance, Témoignage.",
+    "studyFocus": "L’apôtre Jean est proche de Jésus et devient un témoin important de sa vie, de sa mort et de sa résurrection. Il insiste fortement sur l’amour, la vérité et la fidélité.",
     "lessonPoints": [
-      "Observer la qualité « Amour » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités.",
-      "Observer la qualité « Témoignage » dans les épisodes cités."
+      "Étudier la qualité « Amour » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Fidélité » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Vérité » dans les épisodes bibliques cités."
     ],
-    "keyReading": "Suit Jésus pendant son ministère.",
+    "keyReading": "Jean 13–21 ; 1 Jean 1–5",
+    "location": "Galilée ; Jérusalem ; Éphèse, selon les sources historiques utilisées par JW.org.",
+    "relationshipWithJehovah": "Jean reçoit de Jésus la responsabilité de prendre soin de Marie et reste un témoin fidèle de nombreux événements.",
+    "didYouKnow": "Jean est traditionnellement associé à la rédaction de l’Évangile qui porte son nom ainsi que de trois lettres et de la Révélation.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Jean — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
+        "title": "Jean — Les personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
       },
       {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
@@ -3352,6 +3335,32 @@ export const characterLearning: Record<string, CharacterLearning> = {
       },
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      }
+    ]
+  },
+  "jean_baptiste": {
+    "studyFocus": "Jean le Baptiseur prépare le chemin devant Jésus et appelle les gens à la repentance. Il dénonce courageusement les fautes, y compris celles du dirigeant Hérode.",
+    "lessonPoints": [
+      "Étudier la qualité « Courage » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Humilité » dans les épisodes bibliques cités.",
+      "Étudier la qualité « Zèle » dans les épisodes bibliques cités."
+    ],
+    "keyReading": "Matthieu 3 ; 11:1-14 ; 14:1-12 ; Jean 1:19-36",
+    "location": "Jourdain ; Judée ; Galilée.",
+    "relationshipWithJehovah": "Jean sait que son rôle est préparatoire et dirige l’attention vers Jésus plutôt que vers lui-même.",
+    "didYouKnow": "Jésus dit de Jean qu’il est plus qu’un prophète et qu’aucun homme né d’une femme n’a été suscité de plus grand.",
+    "jwResources": [
+      {
+        "title": "Jean le Baptiseur — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+      },
+      {
+        "title": "Jean le Baptiseur — Les personnages de la Bible",
+        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
+      },
+      {
+        "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
