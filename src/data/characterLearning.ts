@@ -2620,11 +2620,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "epaphroditus": {
-    "studyFocus": "Épaphrodite — un frère qui s’est dépensé pour les autres",
+    "studyFocus": "Épaphrodite a risqué sa vie pour servir et aider Paul au nom des chrétiens de Philippes.",
     "lessonPoints": [
-      "Sacrifice de soi",
-      "Courage",
-      "Servir les autres"
+      "Abnégation : il a été prêt à se dépenser pour le service chrétien.",
+      "Persévérance : malgré une grave maladie, il a continué à se soucier des autres.",
+      "Humilité : Paul demandait aux Philippiens de l’accueillir avec joie et de tenir de tels hommes en haute estime."
     ],
     "keyReading": "Philippiens 2:25-30 ; 4:18",
     "location": "Philippes et Rome.",
@@ -2672,11 +2672,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "demas": {
-    "studyFocus": "Démas — un compagnon dont les priorités ont changé",
+    "studyFocus": "Démas a d’abord collaboré avec Paul, mais son histoire sert ensuite d’avertissement concernant l’amour du présent système de choses.",
     "lessonPoints": [
-      "Garder de bonnes priorités",
-      "Résister aux attraits du monde",
-      "Persévérer"
+      "Vigilance : un bon départ dans le service ne garantit pas la fidélité future.",
+      "Priorités : l’attachement aux avantages du monde peut affaiblir la spiritualité.",
+      "Persévérance : il faut régulièrement examiner ce qui occupe la première place dans notre vie."
     ],
     "keyReading": "Colossiens 4:14 ; Philémon 23-24 ; 2 Timothée 4:10",
     "location": "Rome et le monde méditerranéen.",
@@ -3308,11 +3308,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "onesiphorus": {
-    "studyFocus": "Onésiphore — un frère qui a rafraîchi Paul",
+    "studyFocus": "Onésiphore a manifesté un courage et une fidélité remarquables en recherchant Paul et en le réconfortant lorsqu’il était prisonnier.",
     "lessonPoints": [
-      "Loyalité",
-      "Courage",
-      "Réconforter les autres"
+      "Courage : il n’a pas eu honte des chaînes de Paul.",
+      "Persévérance : il l’a recherché avec soin jusqu’à le trouver.",
+      "Réconfort : il a souvent encouragé Paul et lui a fait du bien."
     ],
     "keyReading": "2 Timothée 1:15-18 ; 4:19",
     "location": "Éphèse et Rome.",
@@ -3386,11 +3386,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "apphia": {
-    "studyFocus": "Apphia — une chrétienne associée à Philémon",
+    "studyFocus": "Apphia est saluée avec Philémon et Archippe dans la lettre de Paul, ce qui montre qu’elle faisait partie de la communauté chrétienne liée à la maison de Philémon.",
     "lessonPoints": [
-      "Hospitalité",
-      "Vie chrétienne en famille",
-      "Unité"
+      "Foi : elle était associée aux chrétiens auxquels Paul adressait ses encouragements.",
+      "Hospitalité : son nom apparaît dans le contexte d’une maison utilisée pour les réunions chrétiennes.",
+      "Responsabilité : son association avec Philémon et Archippe rappelle la contribution de chacun dans la congrégation."
     ],
     "keyReading": "Philémon 1-2",
     "location": "Colosses.",
@@ -3412,11 +3412,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "archippus": {
-    "studyFocus": "Archippe — un serviteur encouragé à accomplir son ministère",
+    "studyFocus": "Archippe était un chrétien à qui Paul a demandé de veiller à bien accomplir le ministère qu’il avait reçu dans le Seigneur.",
     "lessonPoints": [
-      "Persévérance",
-      "Responsabilité",
-      "Ministère"
+      "Persévérance : Paul l’a encouragé à mener pleinement son ministère.",
+      "Responsabilité : une mission reçue de Jéhovah mérite d’être accomplie avec sérieux.",
+      "Encouragement : les rappels fraternels peuvent aider un chrétien à rester concentré sur son service."
     ],
     "keyReading": "Philémon 1-2 ; Colossiens 4:17",
     "location": "Colosses.",
@@ -3438,11 +3438,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "john_mark": {
-    "studyFocus": "Jean-Marc — un jeune compagnon de mission devenu utile",
+    "studyFocus": "Jean-Marc a connu un début de service marqué par une difficulté, mais il a ensuite retrouvé la confiance de Paul et est devenu un collaborateur utile.",
     "lessonPoints": [
-      "Persévérer après un échec",
-      "Progresser",
-      "Être utile"
+      "Progrès : une erreur ou une période difficile ne détermine pas toute une vie de service.",
+      "Persévérance : Jean-Marc a repris une activité missionnaire.",
+      "Encouragement : Barnabas et plus tard Paul ont reconnu son utilité."
     ],
     "keyReading": "Actes 12:12, 25 ; 13:5, 13 ; 15:36-40 ; Colossiens 4:10 ; 2 Timothée 4:11",
     "location": "Jérusalem, Chypre et diverses régions.",
@@ -3468,11 +3468,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "priscilla": {
-    "studyFocus": "Priscille — une enseignante chrétienne efficace",
+    "studyFocus": "Priscille et Aquilas formaient un couple chrétien qui a collaboré étroitement avec Paul et a aidé Apollos à mieux comprendre les enseignements de Dieu.",
     "lessonPoints": [
-      "Enseigner avec tact",
-      "Travail d’équipe",
-      "Hospitalité"
+      "Enseignement : Priscille et Aquilas ont expliqué plus précisément les enseignements à Apollos.",
+      "Hospitalité : leur foyer servait au soutien de l’activité chrétienne.",
+      "Collaboration : ils ont travaillé avec Paul et ont risqué leur vie pour lui."
     ],
     "keyReading": "Actes 18:18-28 ; Romains 16:3-5",
     "location": "Corinthe, Éphèse et Rome.",
@@ -3498,11 +3498,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "claudius_lycias": {
-    "studyFocus": "Claudius Lysias — un commandant qui a protégé Paul",
+    "studyFocus": "Claude Lysias était le commandant militaire qui a protégé Paul lorsqu’une foule voulait le tuer et a organisé son transfert vers Césarée.",
     "lessonPoints": [
-      "Respect des droits",
-      "Garder son sang-froid",
-      "Protéger la vie"
+      "Protection : il a pris des mesures concrètes pour empêcher que Paul soit tué.",
+      "Prudence : il a cherché à comprendre les accusations avant d’agir.",
+      "Justice : son récit montre l’importance de procédures équitables même dans une situation tendue."
     ],
     "keyReading": "Actes 21:27-40 ; 22:22-30 ; 23:10-30",
     "location": "Jérusalem et Césarée.",
@@ -3524,11 +3524,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "julius_centurion": {
-    "studyFocus": "Julius — un centurion qui a traité Paul avec bonté",
+    "studyFocus": "Julius, officier de la troupe impériale, a traité Paul avec humanité pendant son transfert vers Rome.",
     "lessonPoints": [
-      "Humanité",
-      "Écouter les conseils",
-      "Sang-froid"
+      "Humanité : il a permis à Paul de recevoir des soins et de l’aide de ses amis.",
+      "Jugement : il a écouté Paul à plusieurs reprises pendant le voyage.",
+      "Responsabilité : il devait assurer la sécurité des prisonniers dans des circonstances difficiles."
     ],
     "keyReading": "Actes 27:1-44 ; 28:1-16",
     "location": "Césarée, mer Méditerranée et Rome.",
@@ -3550,11 +3550,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "gaius_macedonian": {
-    "studyFocus": "Gaïus de Macédoine — un compagnon de Paul",
+    "studyFocus": "Gaïus de Macédoine a accompagné Paul dans son ministère et s’est retrouvé pris dans l’émeute d’Éphèse.",
     "lessonPoints": [
-      "Courage",
-      "Compagnonnage",
-      "Persévérance"
+      "Compagnie fidèle : il accompagnait Paul dans son activité missionnaire.",
+      "Courage : il a été exposé au danger pendant l’opposition à Éphèse.",
+      "Persévérance : son association avec Paul montre son engagement dans l’activité chrétienne."
     ],
     "keyReading": "Actes 19:29 ; 20:4",
     "location": "Éphèse et Macédoine.",
@@ -3576,11 +3576,11 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "aristarchus": {
-    "studyFocus": "Aristarque — un compagnon fidèle de Paul",
+    "studyFocus": "Aristarque était un compagnon de voyage et collaborateur de Paul qui a partagé avec lui des périodes difficiles, y compris son emprisonnement.",
     "lessonPoints": [
-      "Loyauté",
-      "Courage",
-      "Endurance"
+      "Loyauté : il est resté aux côtés de Paul dans les moments difficiles.",
+      "Courage : il a été impliqué dans l’activité malgré l’opposition.",
+      "Endurance : son association durable avec Paul montre sa constance dans le service."
     ],
     "keyReading": "Actes 19:29 ; 20:4 ; 27:2 ; Colossiens 4:10 ; Philémon 23-24",
     "location": "Macédoine, Éphèse et Rome.",
