@@ -13,6 +13,19 @@ const categories = ['Toutes', ...categoryLabels];
 const difficulties = [['all', 'Tous'], ['easy', 'Facile'], ['medium', 'Intermédiaire'], ['hard', 'Expert']] as const;
 const DECK_SIZE = 10;
 
+function shuffleAnswers(question: QuizQuestion): QuizQuestion {
+  const indexed = question.answers.map((answer, index) => ({ answer, index }));
+  for (let i = indexed.length - 1; i > 0; i -= 1) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [indexed[i], indexed[j]] = [indexed[j], indexed[i]];
+  }
+  return {
+    ...question,
+    answers: indexed.map(item => item.answer),
+    correctAnswer: indexed.findIndex(item => item.index === question.correctAnswer),
+  };
+}
+
 function TrainingScreen() {
   const [category, setCategory] = useState('Toutes');
   const [difficulty, setDifficulty] = useState<'all' | 'easy' | 'medium' | 'hard'>('all');
@@ -44,7 +57,8 @@ function TrainingScreen() {
     setError(null);
     try {
       const stats = await getTrainingStats();
-      const nextDeck = selectTrainingQuestions(category, difficulty, stats.missedIds, DECK_SIZE);
+      const selectedDeck = selectTrainingQuestions(category, difficulty, stats.missedIds, DECK_SIZE);
+      const nextDeck = selectedDeck.map(shuffleAnswers);
       if (nextDeck.length === 0) {
         setError('Aucune question disponible pour cet entraînement.');
         return;
