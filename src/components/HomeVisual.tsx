@@ -92,7 +92,7 @@ export default function HomeVisual() {
                 <Pressable onPress={() => router.push('/setup')} style={({ pressed }) => [styles.desktopAction, pressed && styles.pressed]}>
                   <View style={styles.desktopActionIcon}><Image source={iconTeam} style={styles.desktopActionAsset} resizeMode="contain" /></View>
                   <View style={styles.desktopActionCopy}><Text style={styles.desktopActionTitle}>Équipes</Text><Text style={styles.desktopActionSubtitle}>Gérer les noms</Text></View><Text style={styles.desktopActionArrow}>›</Text>
-                </Pressable>
+                </Pressable>\n                <Pressable onPress={() => router.push('/characters')} style={({ pressed }) => [styles.desktopAction, pressed && styles.pressed]}>\n                  <View style={styles.desktopActionIcon}><Image source={iconBible} style={styles.desktopActionAsset} resizeMode="contain" /></View>\n                  <View style={styles.desktopActionCopy}><Text style={styles.desktopActionTitle}>Personnages</Text><Text style={styles.desktopActionSubtitle}>Apprendre et réviser</Text></View><Text style={styles.desktopActionArrow}>›</Text>\n                </Pressable>
               </View>
             </View>
           </View> : <>
@@ -103,7 +103,7 @@ export default function HomeVisual() {
             </View>
             <Pressable onPress={() => router.push('/setup')} style={({ pressed }) => [styles.play, compact && styles.playCompact, shortPhone && styles.playShort, pressed && styles.pressed]}><View style={[styles.playIcon, compact && styles.playIconCompact]}><Image source={iconGamepad} style={[styles.playAsset, compact && styles.playAssetCompact]} resizeMode="contain" /></View><View style={styles.playCopy}><Text style={[styles.playTitle, compact && styles.playTitleCompact]}>JOUER</Text><Text style={[styles.playSubtitle, compact && styles.playSubtitleCompact]}>Lancer une nouvelle partie</Text></View><Text style={styles.arrow}>›</Text></Pressable>
             <Pressable onPress={() => router.push('/game?modes=challenge&duration=2&teams=Équipe%20A|Équipe%20B')} style={({ pressed }) => [styles.quick, compact && styles.quickCompact, shortPhone && styles.quickShort, pressed && styles.pressed]}><View style={[styles.quickIcon, compact && styles.quickIconCompact]}><Image source={iconBolt} style={[styles.quickAsset, compact && styles.quickAssetCompact]} /></View><View style={styles.quickCopy}><Text style={styles.quickTitle}>Défi rapide</Text><Text style={styles.quickSubtitle}>Une manche · 2 minutes</Text></View><Text style={styles.quickArrow}>›</Text></Pressable>
-            <View style={[styles.tiles, compact && styles.tilesCompact, shortPhone && styles.tilesShort]}><GlassTile icon={iconTraining} title="Entraînement" onPress={() => router.push('/training')} /><GlassTile icon={iconTrophy} title="Scores" onPress={() => router.push('/scores')} /><GlassTile icon={iconTeam} title="Équipes" onPress={() => router.push('/setup')} /></View>
+            <View style={[styles.tiles, compact && styles.tilesCompact, shortPhone && styles.tilesShort]}><GlassTile icon={iconTraining} title="Entraînement" onPress={() => router.push('/training')} /><GlassTile icon={iconTrophy} title="Scores" onPress={() => router.push('/scores')} /><GlassTile icon={iconBible} title="Personnages" onPress={() => router.push('/characters')} /></View>
           </>}
 
           <View style={[styles.nav, compact && styles.navCompact, shortPhone && styles.navShort, wide && styles.navWide]}>
