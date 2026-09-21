@@ -1938,528 +1938,441 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "james_alphaaeus": {
-    "studyFocus": "Jacques fils d’Alphée est l’un des Douze apôtres. À observer dans son récit : Fidélité, Persévérance.",
+    "studyFocus": "Jacques fils d’Alphée — un apôtre discret",
     "lessonPoints": [
-      "Observer la qualité « Fidélité » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités."
+      "Fidélité discrète",
+      "Humilité",
+      "Persévérance"
     ],
-    "keyReading": "Est choisi par Jésus parmi les Douze.",
+    "keyReading": "Matthieu 10:2-4 ; Marc 3:13-19 ; Actes 1:13",
+    "location": "Jérusalem et le territoire d’Israël.",
+    "relationshipWithJehovah": "Jacques reste fidèle parmi les Douze, même si les Évangiles rapportent peu de détails sur lui.",
+    "didYouKnow": "Il est appelé « le Petit » dans Marc 15:40.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "simon_zealot": {
-    "studyFocus": "Simon le Cananéen, également appelé le Zélé, fait partie des Douze apôtres. À observer dans son récit : Zèle, Fidélité.",
+    "studyFocus": "Simon le Zélé — un apôtre engagé",
     "lessonPoints": [
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Fidélité » dans les épisodes cités."
+      "Changer de priorités",
+      "Unité chrétienne",
+      "Zèle"
     ],
-    "keyReading": "Est choisi parmi les Douze.",
+    "keyReading": "Luc 6:12-16 ; Actes 1:13",
+    "location": "Jérusalem et le territoire d’Israël.",
+    "relationshipWithJehovah": "Simon abandonne ses anciennes affiliations pour suivre Jésus comme apôtre.",
+    "didYouKnow": "Il est distingué de Simon Pierre par l’appellation « le Zélé ». ",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "jairus_daughter": {
-    "studyFocus": "La fille de Jaïrus est au centre d’un récit où Jésus la ramène à la vie. À observer dans son récit : Témoignage de la puissance de Jésus.",
+    "studyFocus": "La fille de Jaïrus — relevée par Jésus",
     "lessonPoints": [
-      "Observer la qualité « Témoignage de la puissance de Jésus » dans les épisodes cités."
+      "Confiance en Jésus",
+      "Espérance de la résurrection",
+      "Foi familiale"
     ],
-    "keyReading": "Tombe gravement malade.",
+    "keyReading": "Marc 5:21-43 ; Luc 8:40-56",
+    "location": "Capharnaüm et ses environs.",
+    "relationshipWithJehovah": "Jésus ressuscite la jeune fille, donnant à sa famille une preuve remarquable de sa puissance.",
+    "didYouKnow": "Elle avait 12 ans au moment du miracle.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "blind_bartimaeus": {
-    "studyFocus": "Bartimée, aveugle de Jéricho, appelle Jésus avec insistance et retrouve la vue. À observer dans son récit : Foi, Persévérance, Courage.",
+    "studyFocus": "Bartimée — un mendiant qui a retrouvé la vue",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités."
+      "Persévérance dans la prière",
+      "Foi",
+      "Reconnaissance"
     ],
-    "keyReading": "Crie vers Jésus malgré les reproches de la foule.",
+    "keyReading": "Marc 10:46-52",
+    "location": "Jéricho.",
+    "relationshipWithJehovah": "Bartimée crie vers Jésus avec foi et persévère malgré les tentatives pour le faire taire.",
+    "didYouKnow": "Marc donne son nom, Bartimée, « fils de Timée ». ",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "samaritan_woman": {
-    "studyFocus": "Une Samaritaine échange avec Jésus près d’un puits et parle ensuite de lui aux habitants de sa ville. À observer dans son récit : Ouverture, Courage, Zèle pour partager.",
+    "studyFocus": "La Samaritaine — une femme qui a parlé de Jésus",
     "lessonPoints": [
-      "Observer la qualité « Ouverture » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Zèle pour partager » dans les épisodes cités."
+      "Témoigner avec simplicité",
+      "Soif spirituelle",
+      "Courage"
     ],
-    "keyReading": "Discute avec Jésus au puits de Jacob.",
+    "keyReading": "Jean 4:4-42",
+    "location": "Sychar, en Samarie.",
+    "relationshipWithJehovah": "Elle écoute Jésus, accepte son témoignage et parle de lui à de nombreux habitants de sa ville.",
+    "didYouKnow": "Beaucoup de Samaritains croient grâce à son témoignage.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "roman_centurion": {
-    "studyFocus": "Un officier romain demande à Jésus de guérir son serviteur et manifeste une grande confiance dans son autorité. À observer dans son récit : Humilité, Foi, Confiance.",
+    "studyFocus": "Le centurion romain — une foi remarquable",
     "lessonPoints": [
-      "Observer la qualité « Humilité » dans les épisodes cités.",
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Confiance » dans les épisodes cités."
+      "Humilité",
+      "Foi",
+      "Compassion"
     ],
-    "keyReading": "Demande de l’aide pour son serviteur malade.",
+    "keyReading": "Matthieu 8:5-13 ; Luc 7:1-10",
+    "location": "Capharnaüm.",
+    "relationshipWithJehovah": "Le centurion reconnaît l’autorité de Jésus et montre une foi exceptionnelle en sa capacité à guérir son serviteur.",
+    "didYouKnow": "Jésus dit ne pas avoir trouvé une foi aussi grande en Israël.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "felix": {
-    "studyFocus": "Félix entend Paul parler de la justice, de la maîtrise de soi et du jugement à venir, mais reporte sa décision. À observer dans son récit : Autorité administrative.",
+    "studyFocus": "Félix — un gouverneur qui a entendu le témoignage",
     "lessonPoints": [
-      "Observer la qualité « Autorité administrative » dans les épisodes cités.",
-      "Point de vigilance : Le récit montre le danger de remettre à plus tard une décision concernant la foi."
+      "Réagir sans remettre à plus tard",
+      "Maîtrise de soi",
+      "Écouter la vérité"
     ],
-    "keyReading": "Fait comparaître Paul.",
+    "keyReading": "Actes 23:23-35 ; 24:1-27",
+    "location": "Césarée.",
+    "relationshipWithJehovah": "Paul lui parle de justice, de maîtrise de soi et du jugement à venir, mais Félix reporte sa décision.",
+    "didYouKnow": "Félix tremble en entendant le message de Paul.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "festus": {
-    "studyFocus": "Festus succède à Félix et entend l’affaire de Paul avant que celui-ci n’en appelle à César. À observer dans son récit : Prudence juridique.",
+    "studyFocus": "Festus — gouverneur confronté à une affaire complexe",
     "lessonPoints": [
-      "Observer la qualité « Prudence juridique » dans les épisodes cités."
+      "Impartialité",
+      "Rechercher les faits",
+      "Prendre une décision"
     ],
-    "keyReading": "Reprend le dossier de Paul.",
+    "keyReading": "Actes 25:1-27 ; 26:1-32",
+    "location": "Césarée.",
+    "relationshipWithJehovah": "Festus cherche à comprendre l’affaire de Paul et l’envoie finalement à César après son appel.",
+    "didYouKnow": "Festus discute avec Agrippa de l’accusation portée contre Paul.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "agrippa_ii": {
-    "studyFocus": "Agrippa II entend le témoignage de Paul avec Bérénice et Festus et connaît les coutumes et controverses juives. À observer dans son récit : Connaissance des affaires juives.",
+    "studyFocus": "Hérode Agrippa II — auditeur du témoignage de Paul",
     "lessonPoints": [
-      "Observer la qualité « Connaissance des affaires juives » dans les épisodes cités."
+      "Écouter attentivement",
+      "Examiner les Écritures",
+      "Réfléchir personnellement"
     ],
-    "keyReading": "Écoute Paul exposer son parcours et sa foi.",
+    "keyReading": "Actes 25:13-27 ; 26:1-32",
+    "location": "Césarée.",
+    "relationshipWithJehovah": "Agrippa écoute longuement Paul exposer sa foi et les prophéties concernant le Christ.",
+    "didYouKnow": "Paul lui demande s’il croit aux prophètes.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "berenice": {
-    "studyFocus": "Bérénice accompagne Agrippa II lors de l’audience où Paul présente sa défense devant Festus. À observer dans son récit : Présence dans les affaires publiques.",
+    "studyFocus": "Bérénice — présente lors de l’audience de Paul",
     "lessonPoints": [
-      "Observer la qualité « Présence dans les affaires publiques » dans les épisodes cités."
+      "Observer avec attention",
+      "Importance du témoignage",
+      "Responsabilité personnelle"
     ],
-    "keyReading": "Se rend à Césarée avec Agrippa.",
+    "keyReading": "Actes 25:13-27 ; 26:30-32",
+    "location": "Césarée.",
+    "relationshipWithJehovah": "Bérénice assiste avec Agrippa à l’audience où Paul témoigne de sa foi.",
+    "didYouKnow": "Elle est mentionnée avec Agrippa lors de cette audience officielle.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "phoebe": {
-    "studyFocus": "Phœbé est recommandée par Paul aux chrétiens de Rome et est présentée comme une aide pour beaucoup, y compris Paul. À observer dans son récit : Service, Générosité, Hospitalité.",
+    "studyFocus": "Phœbé — une chrétienne qui a aidé beaucoup de frères",
     "lessonPoints": [
-      "Observer la qualité « Service » dans les épisodes cités.",
-      "Observer la qualité « Générosité » dans les épisodes cités.",
-      "Observer la qualité « Hospitalité » dans les épisodes cités."
+      "Générosité",
+      "Soutenir les autres",
+      "Hospitalité"
     ],
-    "keyReading": "Sert la congrégation de Cenchrées.",
+    "keyReading": "Romains 16:1-2",
+    "location": "Cenchrées, près de Corinthe.",
+    "relationshipWithJehovah": "Paul recommande Phœbé aux chrétiens de Rome et souligne qu’elle a été une aide pour beaucoup.",
+    "didYouKnow": "Elle est appelée ministre de la congrégation de Cenchrées.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "euodia": {
-    "studyFocus": "Évodie est une chrétienne que Paul exhorte à être unie avec Syntyche dans le service du Seigneur. À observer dans son récit : Zèle pour la bonne nouvelle, Persévérance.",
+    "studyFocus": "Évodie — une chrétienne qui avait travaillé avec Paul",
     "lessonPoints": [
-      "Observer la qualité « Zèle pour la bonne nouvelle » dans les épisodes cités.",
-      "Observer la qualité « Persévérance » dans les épisodes cités."
+      "Unité",
+      "Coopération",
+      "Réconciliation"
     ],
-    "keyReading": "Travaille avec Paul pour la bonne nouvelle.",
+    "keyReading": "Philippiens 4:2-3",
+    "location": "Philippes.",
+    "relationshipWithJehovah": "Paul encourage Évodie et Syntyche à avoir la même pensée dans le Seigneur.",
+    "didYouKnow": "Paul reconnaît qu’elle a lutté avec lui pour la bonne nouvelle.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "epaphroditus": {
-    "studyFocus": "Épaphrodite apporte l’aide de la congrégation de Philippes à Paul et tombe gravement malade pendant son service. À observer dans son récit : Abnégation, Courage, Fidélité.",
+    "studyFocus": "Épaphrodite — un frère qui s’est dépensé pour les autres",
     "lessonPoints": [
-      "Observer la qualité « Abnégation » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Fidélité » dans les épisodes cités."
+      "Sacrifice de soi",
+      "Courage",
+      "Servir les autres"
     ],
-    "keyReading": "Apporte un soutien matériel à Paul.",
+    "keyReading": "Philippiens 2:25-30 ; 4:18",
+    "location": "Philippes et Rome.",
+    "relationshipWithJehovah": "Il sert Paul au péril de sa vie et se dépense pour soutenir le ministère chrétien.",
+    "didYouKnow": "Il a été gravement malade mais Jéhovah lui a fait miséricorde.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "tychicus": {
-    "studyFocus": "Tychique est un fidèle compagnon de Paul chargé de transmettre des nouvelles et des lettres aux congrégations. À observer dans son récit : Fidélité, Fiabilité, Service.",
+    "studyFocus": "Tychique — un messager digne de confiance",
     "lessonPoints": [
-      "Observer la qualité « Fidélité » dans les épisodes cités.",
-      "Observer la qualité « Fiabilité » dans les épisodes cités.",
-      "Observer la qualité « Service » dans les épisodes cités."
+      "Fiabilité",
+      "Encourager",
+      "Servir avec constance"
     ],
-    "keyReading": "Accompagne Paul.",
+    "keyReading": "Actes 20:4 ; Éphésiens 6:21-22 ; Colossiens 4:7-9",
+    "location": "Asie, Rome et autres régions.",
+    "relationshipWithJehovah": "Paul lui confie des nouvelles et des missions importantes.",
+    "didYouKnow": "Paul le décrit comme un frère bien-aimé et un fidèle serviteur.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "demas": {
-    "studyFocus": "Démas est un compagnon de Paul qui l’abandonne finalement parce qu’il aime le présent système de choses. À observer dans son récit : Engagement initial.",
+    "studyFocus": "Démas — un compagnon dont les priorités ont changé",
     "lessonPoints": [
-      "Observer la qualité « Engagement initial » dans les épisodes cités.",
-      "Point de vigilance : Son exemple met en garde contre l’attachement excessif aux choses du monde."
+      "Garder de bonnes priorités",
+      "Résister aux attraits du monde",
+      "Persévérer"
     ],
-    "keyReading": "Travaille un temps aux côtés de Paul.",
+    "keyReading": "Colossiens 4:14 ; Philémon 23-24 ; 2 Timothée 4:10",
+    "location": "Rome et le monde méditerranéen.",
+    "relationshipWithJehovah": "Démas accompagne Paul pendant un temps mais l’abandonne ensuite parce qu’il aime le présent système de choses.",
+    "didYouKnow": "Il est mentionné parmi les collaborateurs de Paul avant son départ.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "naaman": {
-    "studyFocus": "Naaman, atteint de lèpre, accepte finalement les instructions du prophète Élisée et est guéri. À observer dans son récit : Humilité, Obéissance, Foi progressive.",
+    "studyFocus": "Naaman — un chef syrien qui a appris l’humilité",
     "lessonPoints": [
-      "Observer la qualité « Humilité » dans les épisodes cités.",
-      "Observer la qualité « Obéissance » dans les épisodes cités.",
-      "Observer la qualité « Foi progressive » dans les épisodes cités."
+      "Humilité",
+      "Obéissance",
+      "Reconnaissance"
     ],
-    "keyReading": "Écoute le témoignage d’une jeune Israélite.",
+    "keyReading": "2 Rois 5:1-19",
+    "location": "Syrie et Samarie.",
+    "relationshipWithJehovah": "Naaman accepte l’instruction d’Élisée, se lave dans le Jourdain et reconnaît le pouvoir de Jéhovah.",
+    "didYouKnow": "Il souffrait de lèpre et était chef de l’armée syrienne.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "hezekiah": {
-    "studyFocus": "Ézéchias entreprend une réforme du culte et fait confiance à Jéhovah lors de la menace assyrienne. À observer dans son récit : Foi, Courage, Zèle.",
+    "studyFocus": "Ézéchias — un roi qui a fait confiance à Jéhovah",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Courage » dans les épisodes cités.",
-      "Observer la qualité « Zèle » dans les épisodes cités."
+      "Confiance en Jéhovah",
+      "Courage",
+      "Éviter l’idolâtrie"
     ],
-    "keyReading": "Nettoie et réorganise le temple.",
+    "keyReading": "2 Rois 18:1-7 ; 19:1-37 ; 20:1-21",
+    "location": "Jérusalem et Juda.",
+    "relationshipWithJehovah": "Ézéchias s’attache à Jéhovah et recherche son aide face aux menaces assyriennes.",
+    "didYouKnow": "Il a détruit le serpent de cuivre lorsqu’il est devenu un objet d’idolâtrie.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "josiah": {
-    "studyFocus": "Josias entreprend une réforme religieuse et réagit avec humilité à la découverte du livre de la Loi. À observer dans son récit : Humilité, Zèle, Réceptivité aux conseils.",
+    "studyFocus": "Josias — un roi qui a recherché Jéhovah",
     "lessonPoints": [
-      "Observer la qualité « Humilité » dans les épisodes cités.",
-      "Observer la qualité « Zèle » dans les épisodes cités.",
-      "Observer la qualité « Réceptivité aux conseils » dans les épisodes cités."
+      "Zèle pour le vrai culte",
+      "Réagir à la Parole de Dieu",
+      "Courage"
     ],
-    "keyReading": "Fait réparer le temple.",
+    "keyReading": "2 Rois 22:1-23:30 ; 2 Chroniques 34:1-35:27",
+    "location": "Juda et Jérusalem.",
+    "relationshipWithJehovah": "Josias entreprend une vaste réforme religieuse après avoir entendu les paroles de la Loi.",
+    "didYouKnow": "Il commence à rechercher le Dieu de David alors qu’il est encore jeune.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "jehoshaphat": {
-    "studyFocus": "Yehoshaphat cherche Jéhovah et organise l’enseignement de la Loi dans le royaume de Juda. À observer dans son récit : Foi, Organisation, Humilité.",
+    "studyFocus": "Yehoshaphat — un roi qui a enseigné la Loi",
     "lessonPoints": [
-      "Observer la qualité « Foi » dans les épisodes cités.",
-      "Observer la qualité « Organisation » dans les épisodes cités.",
-      "Observer la qualité « Humilité » dans les épisodes cités."
+      "Enseigner",
+      "Confiance en Jéhovah",
+      "Chercher des conseils"
     ],
-    "keyReading": "Renforce son royaume.",
+    "keyReading": "2 Chroniques 17:1-19 ; 20:1-30",
+    "location": "Juda et Jérusalem.",
+    "relationshipWithJehovah": "Yehoshaphat recherche Jéhovah et organise l’enseignement de la Loi dans Juda.",
+    "didYouKnow": "Il envoie des princes, des Lévites et des prêtres pour enseigner au peuple.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
   },
   "jonah": {
-    "studyFocus": "Jonas reçoit la mission de prévenir Ninive, fuit d’abord sa mission puis finit par transmettre le message. À observer dans son récit : Obéissance progressive, Humilité à apprendre.",
+    "studyFocus": "Yona — un prophète qui a appris la miséricorde",
     "lessonPoints": [
-      "Observer la qualité « Obéissance progressive » dans les épisodes cités.",
-      "Observer la qualité « Humilité à apprendre » dans les épisodes cités.",
-      "Point de vigilance : Son histoire montre que les sentiments personnels peuvent entrer en conflit avec une mission confiée par Dieu."
+      "Obéir",
+      "Accepter la correction",
+      "Miséricorde"
     ],
-    "keyReading": "Reçoit une mission pour Ninive.",
+    "keyReading": "Jonas 1:1-17 ; 2:1-10 ; 3:1-10 ; 4:1-11",
+    "location": "Joppé, Ninive et les environs.",
+    "relationshipWithJehovah": "Yona fuit d’abord sa mission, mais Jéhovah lui donne une nouvelle occasion et lui enseigne la miséricorde.",
+    "didYouKnow": "Il prie depuis l’intérieur du grand poisson.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures",
+        "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
-        "title": "Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
@@ -3243,6 +3156,28 @@ export const characterLearning: Record<string, CharacterLearning> = {
       },
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
+      }
+    ]
+  },
+  "syntyche": {
+    "studyFocus": "Syntyche — une chrétienne qui avait travaillé avec Paul",
+    "lessonPoints": [
+      "Unité",
+      "Coopération",
+      "Paix"
+    ],
+    "keyReading": "Philippiens 4:2-3",
+    "location": "Philippes.",
+    "relationshipWithJehovah": "Paul l’encourage à retrouver l’unité avec Évodie après leur service commun.",
+    "didYouKnow": "Paul demande à un fidèle compagnon de les aider.",
+    "jwResources": [
+      {
+        "title": "Étude perspicace des Écritures — JW.org",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+      },
+      {
+        "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
     ]
