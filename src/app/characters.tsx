@@ -40,19 +40,27 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
 
 export default function CharactersScreen() {
   const [query, setQuery] = useState('');
+  const [selectedEra, setSelectedEra] = useState('Tous');
   const [selected, setSelected] = useState<CharacterProfile | null>(null);
+  const eras = useMemo(() => ['Tous', ...Array.from(new Set(characterProfiles.map(x => x.era)))], []);
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    if (!q) return characterProfiles;
-    return characterProfiles.filter(x => [x.name, x.era, x.role, x.summary, ...x.qualities].join(' ').toLowerCase().includes(q));
-  }, [query]);
+    return characterProfiles.filter(x => {
+      const matchesEra = selectedEra === 'Tous' || x.era === selectedEra;
+      const matchesQuery = !q || [x.name, x.era, x.role, x.summary, ...x.qualities].join(' ').toLowerCase().includes(q);
+      return matchesEra && matchesQuery;
+    });
+  }, [query, selectedEra]);
   if (selected) return <ScenicScreen><CharacterDetail item={selected} onBack={() => setSelected(null)} /></ScenicScreen>;
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={styles.eyebrow}>APPRENDRE</Text>
     <Text style={[styles.title, { marginTop: 7 }]}>Personnages bibliques</Text>
     <Text style={styles.subtitle}>Qui ils sont, ce qu’ils ont fait, leurs qualités et ce que leurs récits permettent d’apprendre.</Text>
     <TextInput value={query} onChangeText={setQuery} placeholder="Rechercher un personnage…" placeholderTextColor={colors.muted} style={[styles.input, { marginTop: 18 }]} />
-    <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginVertical: 12 }}>{filtered.length} fiches disponibles</Text>
+    <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 8, paddingVertical: 12 }}>
+      {eras.map(era => <Pressable key={era} onPress={() => setSelectedEra(era)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: selectedEra === era ? colors.accent : colors.border, backgroundColor: selectedEra === era ? colors.accentSoft : colors.card }}><Text style={{ color: selectedEra === era ? colors.background : colors.text, fontSize: 11, fontWeight: '900' }}>{era}</Text></Pressable>)}
+    </ScrollView>
+    <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginBottom: 12 }}>{filtered.length} fiches disponibles</Text>
     {filtered.map(item => <ProfileCard key={item.id} item={item} onPress={() => setSelected(item)} />)}
     <View style={{ marginTop: 8 }}><Pressable onPress={() => router.push('/training')} style={styles.card}><Text style={{ color: colors.text, fontWeight: '900' }}>Tester mes connaissances ›</Text><Text style={{ color: colors.muted, marginTop: 4 }}>Retrouver les personnages dans les questions d’entraînement.</Text></Pressable></View>
   </ScrollView></ScenicScreen>;
