@@ -1237,7 +1237,7 @@ dedupeInPlace(timesUpQuestions);
 const editorialRemoveQuizIds = new Set([
   'quiz-22','quiz-33','quiz-35','quiz-37','quiz-57','quiz-67','quiz-78','quiz-80','quiz-84',
   'quiz-141','quiz-173','quiz-197','quiz-201','quiz-103','quiz-129',
-  'quiz-186','quiz-202','quiz-203','v54-q046','v54-q058','quiz-v50-personnages-02','jwcat-quiz-22','jwcat-quiz-68',
+  'quiz-186','quiz-202','quiz-203','quiz-184','quiz-237','v54-q046','v54-q058','quiz-v50-personnages-02','jwcat-quiz-22','jwcat-quiz-68',
 ]);
 for (let i = quizQuestions.length - 1; i >= 0; i -= 1) {
   if (editorialRemoveQuizIds.has(quizQuestions[i].id)) quizQuestions.splice(i, 1);
