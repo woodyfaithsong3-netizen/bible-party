@@ -3784,8 +3784,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "studyFocus": "Simon le Zélote était l’un des douze apôtres. Son surnom le distinguait probablement par son association passée avec les Zélotes. Jésus réunit autour de lui des hommes d’origines très différentes, et Simon servit aux côtés de Matthieu, ancien collecteur d’impôts.",
     "lessonPoints": [
       "Simon fut choisi personnellement par Jésus parmi les Douze.",
-      "Son surnom montre qu’il avait un passé ou une association qui le distinguait.",
-      "Il servit avec des disciples aux parcours très différents.",
+      "Son surnom de « Zélote » le distinguait des autres apôtres, mais la Bible ne précise pas davantage son parcours avant de suivre Jésus.",
+      "Il servit avec des disciples aux parcours et aux sensibilités différents.",
       "Son exemple illustre l’unité que le message du Christ pouvait produire."
     ],
     "keyReading": "Luc 6:12-16 ; Matthieu 10:2-4 ; Actes 1:12-14",
@@ -4672,7 +4672,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Combat les ennemis d’Israël.",
       "Désobéit à plusieurs instructions divines.",
       "Poursuit David malgré la loyauté de celui-ci.",
-      "La fiche JW.org oppose clairement son humilité initiale à son évolution."
+      "Son récit montre un contraste entre son humilité initiale et son évolution sous la pression du pouvoir et de la jalousie."
     ],
     "qualities": ["Courage dans ses premières campagnes","Capacité à diriger","Obéissance insuffisante dans certaines décisions"],
     "difficulties":     [
