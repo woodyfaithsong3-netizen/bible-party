@@ -1651,7 +1651,7 @@ challenges.push(...v101ExpertChallenges);
 
 
 /**
- * Révision des 125 fiches personnages.
+ * Personnages personnages.
  *
  * Ces cartes sont générées directement à partir de characterLearning afin que
  * chaque personnage puisse être appris puis révisé dans les modes déjà présents
@@ -1730,7 +1730,7 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
   characterReviewQuiz.push({
     id: 'character-review-quiz-' + id + '-account',
     type: 'quiz',
-    category: 'Révision des 125 fiches',
+    category: 'Personnages',
     difficulty: 'medium',
     question: 'Quel personnage correspond à ces éléments de sa fiche : ' + accountClues,
     answers: [name, next, next2, next3],
@@ -1742,7 +1742,7 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
   characterReviewQuiz.push({
     id: 'character-review-quiz-' + id + '-lesson',
     type: 'quiz',
-    category: 'Révision des 125 fiches',
+    category: 'Personnages',
     difficulty: 'hard',
     question: 'Quelle fiche met en avant cette idée : « ' + lesson + ' » ?',
     answers: [name, next2, next3, next],
@@ -1754,7 +1754,7 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
   characterReviewTrueFalse.push({
     id: 'character-review-tf-' + id,
     type: 'truefalse',
-    category: 'Révision des 125 fiches',
+    category: 'Personnages',
     difficulty: 'medium',
     statement: 'Vrai ou faux : la fiche de ' + name + ' souligne que ' + relation,
     answer: true,
@@ -1765,7 +1765,7 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
   characterReviewMystery.push({
     id: 'character-review-mystery-' + id,
     type: 'mystery',
-    category: 'Révision des 125 fiches',
+    category: 'Personnages',
     difficulty: 'hard',
     answer: name,
     clues: [quality, location, era],
@@ -1776,7 +1776,7 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
   characterReviewChallenges.push({
     id: 'character-review-challenge-' + id,
     type: 'challenge',
-    category: 'Révision des 125 fiches',
+    category: 'Personnages',
     difficulty: 'medium',
     prompt: 'En 10 secondes : nommez le personnage dont la fiche met en avant « ' + quality + ' » et le contexte suivant : ' + location + '.',
     seconds: 10,
