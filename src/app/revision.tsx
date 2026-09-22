@@ -15,7 +15,7 @@ const MODE_LABELS: Record<ReviewMode, string> = {
 };
 
 export default function CharacterReviewScreen() {
-  const params = useLocalSearchParams<{ characterId?: string }>();
+  const params = useLocalSearchParams<{ characterId?: string; errors?: string }>();
   const focusedCharacterId = typeof params.characterId === 'string' ? params.characterId : undefined;
   const errorMode = params.errors === '1';
   const [mode, setMode] = useState<ReviewMode>('mix');
@@ -80,11 +80,11 @@ export default function CharacterReviewScreen() {
             </View>
 
             <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
-              <Pressable onPress={() => { setReviewSource('due'); setMode('mix'); load('mix'); }} style={[styles.mode, reviewSource === 'due' && styles.modeActive]}>
+              <Pressable onPress={() => { setReviewSource('due'); setMode('mix'); }} style={[styles.mode, reviewSource === 'due' && styles.modeActive]}>
                 <Text style={[styles.modeText, reviewSource === 'due' && styles.modeTextActive]}>À REVOIR</Text>
               </Pressable>
               {!focusedCharacterId && (
-                <Pressable onPress={() => { setReviewSource('errors'); setMode('mix'); load('mix'); }} style={[styles.mode, reviewSource === 'errors' && styles.modeActive]}>
+                <Pressable onPress={() => { setReviewSource('errors'); setMode('mix'); }} style={[styles.mode, reviewSource === 'errors' && styles.modeActive]}>
                   <Text style={[styles.modeText, reviewSource === 'errors' && styles.modeTextActive]}>MES ERREURS</Text>
                 </Pressable>
               )}
