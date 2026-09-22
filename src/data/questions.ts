@@ -1784,6 +1784,11 @@ trueFalseQuestions.push(...characterReviewTrueFalse);
 mysteryQuestions.push(...characterReviewMystery);
 challenges.push(...characterReviewChallenges);
 
+// Lot 1 : 20 personnages, intégré au catalogue existant avant le passage de déduplication.
+quizQuestions.push(...characterQuizQuestions);
+trueFalseQuestions.push(...characterTrueFalseQuestions);
+mysteryQuestions.push(...characterMysteryQuestions);
+
 const normalizeEditorialText = (value: string) => value
   .normalize('NFD')
   .replace(/[\u0300-\u036f]/g, '')
@@ -1823,9 +1828,3 @@ export const allQuestions = [
 ];
 
 export const v2Questions = [...quoteQuestions, ...chronologyQuestions, ...intruderQuestions, ...timesUpQuestions];
-
-
-// Character-specific editorial bank — integrated into the existing global catalogue.
-export const quizQuestions = [...baseQuizQuestions, ...characterQuizQuestions];
-export const trueFalseQuestions = [...baseTrueFalseQuestions, ...characterTrueFalseQuestions];
-export const mysteryQuestions = [...baseMysteryQuestions, ...characterMysteryQuestions];
