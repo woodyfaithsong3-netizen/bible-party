@@ -46,6 +46,21 @@ const characterCoverage = characterCounts.size;
 const characterCountFailures = [...characterCounts.entries()].filter(([, n]) => n !== 16);
 const difficultyCounts = Object.fromEntries(['easy','medium','hard','expert'].map(d => [d, [...source.matchAll(new RegExp(`difficulty:\\s*['"]${d}['"]`, 'g'))].length]));
 
+
+const quizCount = [...source.matchAll(/type:\s*['"]quiz['"]/g)].length;
+const trueFalseCount = [...source.matchAll(/type:\s*['"]truefalse['"]/g)].length;
+const mysteryCount = [...source.matchAll(/type:\s*['"]mystery['"]/g)].length;
+const falseTrueFalseCount = [...source.matchAll(/type:\s*['"]truefalse['"][\s\S]{0,500}?answer:\s*false/g)].length;
+const malformedNumericArtifacts = [...source.matchAll(/[A-Za-zÀ-ÿ]\d{3,}/g)].map(m => m[0]);
+const answerPositionCounts = [0,1,2,3].map(i => ({
+  index: i,
+  count: [...source.matchAll(new RegExp(`type:\\s*['"]quiz['"][\\s\\S]{0,900}?correctAnswer:\\s*${i}(?:\\D|$)`, 'g'))].length,
+}));
+const duplicateOptionBlocks = quizBlocks.filter(m => {
+  const options = [...m[1].matchAll(/['"]([^'"]*)['"]/g)].map(x => x[1].trim().toLowerCase());
+  return options.length >= 2 && new Set(options).size !== options.length;
+});
+
 const failures = [];
 if (duplicateIds.length) failures.push('duplicate ids: ' + duplicateIds.map(([id, n]) => id + ' x' + n).join(', '));
 if (emptyReferences) failures.push('empty references detected');
@@ -53,6 +68,14 @@ if (invalidQuizIndexes.length) failures.push('invalid quiz correctAnswer indexes
 if (expertCards < 90) failures.push('expert card count unexpectedly low: ' + expertCards);
 if (characterCoverage < 125) failures.push('character coverage unexpectedly low: ' + characterCoverage);
 if (characterCountFailures.length) failures.push('character question count != 16: ' + characterCountFailures.map(([id,n]) => id + ' x' + n).join(', '));
+
+if (quizCount !== 1250) failures.push('dedicated quiz count unexpectedly changed: ' + quizCount);
+if (trueFalseCount !== 500) failures.push('dedicated true/false count unexpectedly changed: ' + trueFalseCount);
+if (mysteryCount !== 250) failures.push('dedicated mystery count unexpectedly changed: ' + mysteryCount);
+if (falseTrueFalseCount < 125) failures.push('too few false true/false cards: ' + falseTrueFalseCount);
+if (malformedNumericArtifacts.length) failures.push('numeric artifacts detected: ' + [...new Set(malformedNumericArtifacts)].slice(0, 10).join(', '));
+if (duplicateOptionBlocks.length) failures.push('quiz cards with duplicate options: ' + duplicateOptionBlocks.length);
+
 
 console.log('Bible Party content audit');
 console.log('- ID occurrences:', ids.length);
