@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Linking, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
-import { router } from 'expo-router';
+import { router, useFocusEffect } from 'expo-router';
 import { characterProfiles, CharacterProfile } from '@/data/characterProfiles';
 import { characterLearning } from '@/data/characterLearning';
 import { colors } from '@/theme/colors';
@@ -149,7 +149,10 @@ export default function CharactersScreen() {
   const [masteryFilter, setMasteryFilter] = useState<'Tous' | 'À revoir' | 'En cours' | 'Maîtrisés'>('Tous');
   const [mastery, setMastery] = useState<Record<string, CharacterMastery>>({});
   const [selected, setSelected] = useState<CharacterProfile | null>(null);
-  React.useEffect(() => { void getLearnedCharacters().then(setLearned); void loadCharacterMastery().then(setMastery); }, []);
+  useFocusEffect(React.useCallback(() => {
+    void getLearnedCharacters().then(setLearned);
+    void loadCharacterMastery().then(setMastery);
+  }, []));
   const eras = useMemo(() => ['Tous', ...Array.from(new Set(characterProfiles.map(x => x.era)))], []);
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
