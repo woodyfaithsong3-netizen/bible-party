@@ -3798,10 +3798,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Jacques fils d’Alphée était l’un des douze apôtres choisis par Jésus. La Bible donne peu de renseignements personnels sur lui.",
@@ -3821,9 +3817,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Fidélité",
       "Persévérance"
     ],
-    "difficulties": [
-      "Les Écritures ne rapportent pas de faute personnelle précise à son sujet; elles donnent aussi très peu de détails sur sa vie.",
-      "Il devait rester fidèle dans un groupe d’apôtres où plusieurs Jacques pouvaient être confondus, ce qui explique les précisions utilisées pour l’identifier."
+    "difficulties":     [
+      "Les Évangiles donnent peu de renseignements personnels sur lui, ce qui limite ce qu’on peut affirmer avec certitude.",
+      "Comme apôtre, il devait rester fidèle et participer au témoignage chrétien malgré l’opposition et les difficultés du Ier siècle."
     ]
   },
   "simon_zealot": {
@@ -3846,10 +3842,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Simon le Zélé était l’un des douze apôtres de Jésus. Son surnom le distinguait de Simon Pierre et pouvait évoquer soit son zèle, soit une ancienne association avec les Zélotes.",
@@ -3870,9 +3862,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Fidélité",
       "Persévérance"
     ],
-    "difficulties": [
-      "Son ancienne association éventuelle avec les Zélotes n’est pas certaine; la Bible ne donne pas assez de détails pour établir son passé politique.",
-      "Il servait aux côtés de disciples d’origines très différentes, ce qui demandait de préserver l’unité autour du Christ."
+    "difficulties":     [
+      "Il avait auparavant été associé au zèle politique des Zélotes et devait désormais soutenir le Royaume de Dieu plutôt qu’un mouvement politique.",
+      "Il devait rester uni à des disciples ayant des origines et des opinions très différentes des siennes."
     ]
   },
   "jairus_daughter": {
@@ -3895,10 +3887,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "La fille de Jaïrus était une jeune fille de 12 ans, fille unique d’un responsable de synagogue. Jésus la ramena à la vie.",
@@ -3918,9 +3906,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "qualities": [
       "Aucun trait de personnalité précis n’est rapporté"
     ],
-    "difficulties": [
-      "Elle subit une maladie mortelle à seulement 12 ans; son récit est surtout présenté à travers la foi et l’épreuve de ses parents.",
-      "Le récit ne donne aucun détail sur sa personnalité; l’enseignement porte surtout sur la foi de ses parents et sur l’espérance de la résurrection."
+    "difficulties":     [
+      "Elle était gravement malade et sa situation fut annoncée comme désespérée avant l’intervention de Jésus.",
+      "Après avoir été relevée, elle devait reprendre une vie normale après un événement extraordinaire dont sa famille avait été témoin."
     ]
   },
   "blind_bartimaeus": {
@@ -3943,10 +3931,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Bartimée était un mendiant aveugle assis près de Jéricho. Il cria vers Jésus, lui demanda de retrouver la vue et le suivit après sa guérison.",
@@ -3968,9 +3952,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Reconnaissance"
     ],
-    "difficulties": [
-      "Il devait vivre avec la cécité et la mendicité et affronter les tentatives de la foule pour le faire taire.",
-      "Il a dû persister malgré les personnes qui lui ordonnaient de se taire avant que Jésus l’appelle."
+    "difficulties":     [
+      "Sa cécité le rendait dépendant des autres et limitait fortement sa vie quotidienne.",
+      "Il dut crier avec insistance vers Jésus malgré les personnes qui lui ordonnaient de se taire."
     ]
   },
   "samaritan_woman": {
@@ -3993,10 +3977,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "La Samaritaine que Jésus rencontra près de Sychar était une femme qui puisait de l’eau au puits de Jacob. Après sa conversation avec Jésus, elle parla de lui aux habitants de sa ville.",
@@ -4019,9 +3999,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage pour témoigner",
       "Foi"
     ],
-    "difficulties": [
-      "Sa vie personnelle avait connu plusieurs mariages et elle vivait alors avec un homme qui n’était pas son mari; Jésus lui en parle sans la rabaisser.",
-      "Elle devait accepter franchement les aspects personnels de sa vie que Jésus lui révéla et agir ensuite en partageant ce qu’elle avait appris."
+    "difficulties":     [
+      "Elle avait une situation personnelle complexe et appartenait à un peuple avec lequel les Juifs entretenaient de fortes tensions.",
+      "Elle dut accepter de parler ouvertement de sa vie et de reconnaître progressivement l’identité de Jésus."
     ]
   },
   "roman_centurion": {
@@ -4044,10 +4024,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Le centurion romain de Capernaüm était un officier qui avait construit une synagogue pour les Juifs et qui demanda à Jésus de guérir son esclave.",
@@ -4069,9 +4045,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Générosité",
       "Compassion"
     ],
-    "difficulties": [
-      "Il doit faire face à la maladie grave de son esclave et reconnaît humblement ses propres limites.",
-      "Malgré son autorité militaire, il devait reconnaître humblement l’autorité supérieure de Jésus."
+    "difficulties":     [
+      "Il était officier romain dans un contexte où les relations entre Romains et Juifs étaient délicates.",
+      "Il devait exercer son autorité tout en manifestant une foi remarquable et une considération pour les Juifs."
     ]
   },
   "felix": {
@@ -4094,10 +4070,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Antonius Félix était gouverneur romain de Judée lorsque Paul fut détenu à Césarée. Il entendit plusieurs fois Paul mais le laissa en prison.",
@@ -4115,9 +4087,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il espère recevoir de l’argent de Paul et le laisse finalement prisonnier pour gagner la faveur des Juifs."
     ],
     "qualities": ["Autorité administrative","Capacité à écouter un témoignage direct"],
-    "difficulties": [
-      "Il reporte sa décision malgré son trouble et privilégie finalement des considérations personnelles et politiques en laissant Paul en prison.",
-      "Il conserva Paul en détention tout en espérant recevoir de l’argent, ce qui montre le conflit entre ce qu’il entendait et ses intérêts personnels."
+    "difficulties":     [
+      "Il entendit Paul parler de justice, de maîtrise de soi et du jugement à venir mais repoussa la discussion.",
+      "Son désir de recevoir de l’argent de Paul influençait sa conduite et il conserva Paul en détention pour gagner la faveur des Juifs."
     ]
   },
   "festus": {
@@ -4140,10 +4112,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Porcius Festus succéda à Félix comme gouverneur de Judée. Il présida l’audience de Paul à Césarée et accepta son appel à César.",
@@ -4165,9 +4133,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Souci de procédure",
       "Prudence administrative"
     ],
-    "difficulties": [
-      "Il cherche à comprendre une affaire religieuse complexe tout en gérant les demandes politiques des autorités juives.",
-      "Il devait formuler une explication à l’empereur concernant Paul alors qu’il ne trouvait pas de faute justifiant la mort ou les chaînes."
+    "difficulties":     [
+      "Il devait administrer une province où les autorités romaines et les chefs religieux avaient des intérêts opposés.",
+      "Il chercha à comprendre l’accusation portée contre Paul tout en devant gérer les pressions politiques entourant son procès."
     ]
   },
   "agrippa_ii": {
@@ -4190,10 +4158,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Hérode Agrippa II était roi et membre de la dynastie hérodienne. Il entendit la défense de Paul à Césarée avec Bérénice et Festus.",
@@ -4216,9 +4180,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Connaissance des coutumes juives",
       "Capacité à écouter une défense"
     ],
-    "difficulties": [
-      "Il entend un témoignage chrétien très direct mais le récit biblique ne dit pas qu’il devint chrétien.",
-      "Il devait écouter une affaire religieuse complexe dans un contexte officiel aux côtés de Festus et de Bérénice."
+    "difficulties":     [
+      "Il entendit Paul exposer sa défense et dut examiner des accusations religieuses qu’il ne maîtrisait pas nécessairement.",
+      "Comme membre de la dynastie hérodienne, il évoluait dans un environnement politique et religieux complexe."
     ]
   },
   "berenice": {
@@ -4241,10 +4205,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Bérénice était une sœur d’Agrippa II qui l’accompagna lors de sa visite à Césarée où Paul présenta sa défense devant Festus et Agrippa.",
@@ -4266,9 +4226,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Elle a participé à l’audience où Paul a exposé sa foi, ce qui l’a placée directement face au témoignage chrétien.",
       "Son rôle de membre de la famille royale lui donnait une position publique et une influence dans les événements rapportés en Actes 25–26."
     ],
-    "difficulties": [
-      "Le récit biblique donne très peu d’informations sur ses convictions personnelles ou sa réaction au témoignage de Paul.",
-      "Elle assista à une audience officielle où Paul défendit publiquement sa foi devant des autorités civiles."
+    "difficulties":     [
+      "Elle appartenait à la famille hérodienne et apparaissait aux côtés d’Agrippa lors de l’audience de Paul.",
+      "Elle était présente dans une situation où Paul rendait témoignage devant des autorités politiques importantes."
     ]
   },
   "phoebe": {
@@ -4293,10 +4253,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
-      },
-      {
         "title": "Étude perspicace des Écritures — Phébé",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ph%C3%A9b%C3%A9/"
       }
@@ -4318,9 +4274,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Générosité",
       "Service"
     ],
-    "difficulties": [
-      "La Bible donne peu de détails sur sa vie personnelle; il faut donc éviter d’attribuer des responsabilités ou circonstances non rapportées.",
-      "Elle assumait suffisamment de responsabilités pour être recommandée à une congrégation éloignée de Cenchrées."
+    "difficulties":     [
+      "Elle exerçait un service précieux dans la congrégation de Cenchrées et devait pouvoir voyager jusqu’à Rome.",
+      "Paul demandait aux chrétiens de Rome de lui apporter leur soutien, ce qui impliquait confiance et responsabilité."
     ]
   },
   "euodia": {
@@ -4343,10 +4299,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Évodie était une chrétienne de la congrégation de Philippes. Paul reconnaît qu’elle avait travaillé pour la bonne nouvelle et l’encourage à retrouver l’unité avec Syntyche.",
@@ -4365,9 +4317,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle dans le service",
       "Engagement dans la prédication"
     ],
-    "difficulties": [
-      "Elle connaît un désaccord avec une autre chrétienne, ce qui montre que même des serviteurs actifs peuvent devoir rétablir la paix.",
-      "Elle devait accepter l’aide fraternelle nécessaire pour retrouver une même pensée dans le Seigneur."
+    "difficulties":     [
+      "Elle avait travaillé avec Paul pour la bonne nouvelle mais devait surmonter un désaccord personnel avec Syntyche.",
+      "Elle devait accepter l’aide de la congrégation pour retrouver l’unité chrétienne."
     ]
   },
   "epaphroditus": {
@@ -4390,10 +4342,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Épaphrodite était un chrétien de Philippes envoyé auprès de Paul pour lui apporter l’aide de la congrégation. Il tomba gravement malade mais continua à se soucier des autres.",
@@ -4415,9 +4363,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Empathie",
       "Courage"
     ],
-    "difficulties": [
-      "Il tombe gravement malade alors qu’il sert Paul et porte aussi le poids de l’inquiétude de la congrégation.",
-      "Il se dépensa au point de mettre sa vie en danger pour accomplir son service, ce qui inquiéta profondément les Philippiens."
+    "difficulties":     [
+      "Il tomba gravement malade alors qu’il servait auprès de Paul et des Philippiens.",
+      "Il devait retourner à Philippes après sa maladie et pouvait craindre que son état ait inquiété ses frères."
     ]
   },
   "tychicus": {
@@ -4440,10 +4388,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Tychique était un collaborateur fidèle de Paul, originaire de la région d’Asie. Paul lui confia plusieurs missions auprès des congrégations.",
@@ -4466,9 +4410,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Fiabilité",
       "Esprit de service"
     ],
-    "difficulties": [
-      "Il accepte des missions de confiance qui nécessitent de voyager et de représenter Paul auprès de plusieurs congrégations.",
-      "Il devait rester digne de confiance lorsqu’il représentait Paul auprès de chrétiens qui avaient besoin d’encouragement."
+    "difficulties":     [
+      "Il accomplissait des missions de confiance pour Paul et devait voyager pour transmettre des nouvelles et des lettres.",
+      "Il devait rester fidèle et utile malgré les longues distances et les responsabilités confiées par Paul."
     ]
   },
   "demas": {
@@ -4491,10 +4435,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Démas était un collaborateur de Paul mentionné parmi ses compagnons, mais il abandonna ensuite l’apôtre parce qu’il aimait le système de choses présent.",
@@ -4511,9 +4451,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Plus tard, Paul explique que Démas l’a abandonné parce qu’il aimait le système de choses présent."
     ],
     "qualities": ["Esprit de collaboration à une période de sa vie","Il est difficile d’établir d’autres qualités personnelles à partir du récit"],
-    "difficulties": [
-      "Son attachement au présent système de choses finit par prendre le dessus sur son engagement auprès de Paul.",
-      "La Bible ne précise pas exactement ce qui motivait son départ; elle indique seulement son attachement au présent système de choses."
+    "difficulties":     [
+      "Il accompagna Paul pendant un temps avant d’abandonner son service par amour pour le système de choses présent.",
+      "Son exemple montre le danger de laisser les attraits du monde prendre progressivement le dessus sur le service chrétien."
     ]
   },
   "naaman": {
@@ -4536,10 +4476,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Naaman était chef de l’armée syrienne, atteint de lèpre. Il fut guéri après avoir humblement suivi les instructions données par le prophète Élisée.",
@@ -4563,9 +4499,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Obéissance",
       "Reconnaissance"
     ],
-    "difficulties": [
-      "Son orgueil initial l’empêche d’accepter facilement une instruction simple et il doit apprendre à écouter un message qui ne vient pas directement d’un grand personnage.",
-      "Il doit aussi résister aux attentes liées à son rang."
+    "difficulties":     [
+      "Sa lèpre le plaçait dans une situation difficile malgré son rang élevé dans l’armée syrienne.",
+      "Il dut surmonter son orgueil lorsqu’Élisée lui demanda de se baigner sept fois dans le Jourdain."
     ]
   },
   "hezekiah": {
@@ -4582,20 +4518,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Ézéchias fit fabriquer le tunnel qui conduisait l’eau de la source de Guihôn jusqu’à l’intérieur de Jérusalem, un projet mentionné en 2 Rois 20:20.",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
         "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Ézéchias était roi de Juda et un réformateur fidèle qui combattit l’idolâtrie et fit confiance à Jéhovah lors de la menace assyrienne.",
@@ -4620,9 +4548,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle pour le culte pur",
       "Prière"
     ],
-    "difficulties": [
-      "Il doit faire face à une menace militaire écrasante et à des paroles destinées à affaiblir la confiance du peuple.",
-      "Après une grande délivrance, il commit une imprudence en montrant ses trésors aux envoyés de Babylone et dut entendre les conséquences annoncées."
+    "difficulties":     [
+      "Il devint roi alors que le royaume de Juda était marqué par de graves pratiques religieuses mauvaises.",
+      "Il dut faire face à la menace assyrienne et à la maladie tout en apprenant à compter sur Jéhovah."
     ]
   },
   "josiah": {
@@ -4639,20 +4567,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Josias avait huit ans lorsqu’il devint roi et 16 ans lorsqu’il commença à rechercher le Dieu de David, selon 2 Chroniques 34:1-3.",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
         "title": "Étude perspicace des Écritures — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Josias était roi de Juda et entreprit une vaste réforme religieuse après avoir entendu le livre de la Loi retrouvé dans le temple.",
@@ -4676,9 +4596,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Zèle"
     ],
-    "difficulties": [
-      "Il hérite d’un pays profondément marqué par l’idolâtrie et doit entreprendre des réformes considérables malgré des années de mauvaises influences.",
-      "Il mourut prématurément à Meguiddo après s’être engagé dans une confrontation avec Pharaon Néko."
+    "difficulties":     [
+      "Il devint roi très jeune dans une période où Juda avait été profondément influencé par le faux culte.",
+      "Il dut faire appliquer une réforme religieuse importante après la découverte du livre de la Loi."
     ]
   },
   "jehoshaphat": {
@@ -4701,10 +4621,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Roi de Juda — Yehoshaphat cherche Jéhovah et organise l’enseignement de la Loi dans le royaume de Juda.",
@@ -4724,12 +4640,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Organisation",
       "Humilité"
     ],
-    "difficulties": [
-      "Une grande coalition d’Ammôn, de Moab et de Séïr est venue menacer Juda.",
-      "Il a eu peur et a dû reconnaître publiquement que lui et son peuple ne savaient pas quoi faire.",
-      "Il a aussi été repris pour ses liens avec le méchant roi Ahab et a subi les conséquences de certaines décisions imprudentes.",
-      "Malgré ces faiblesses, il a continué à rechercher Jéhovah et à encourager le peuple à lui faire confiance. — 2Ch 19:1-3 ; 20:1-12.",
-      "Ses alliances avec Ahab et Ahazia l’exposèrent à des situations dangereuses et lui valurent une réprimande de la part de Jéhovah."
+    "difficulties":     [
+      "Il régna alors que Juda devait composer avec des menaces militaires et des alliances politiques complexes.",
+      "Certaines de ses alliances avec le royaume d’Israël l’exposèrent à des difficultés malgré son désir général de rechercher Jéhovah."
     ]
   },
   "jonah": {
@@ -4756,10 +4669,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Prophète — Jonas reçoit la mission de prévenir Ninive, fuit d’abord sa mission puis finit par transmettre le message.",
@@ -4778,9 +4687,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Obéissance progressive",
       "Humilité à apprendre"
     ],
-    "difficulties": [
-      "Son histoire montre que les sentiments personnels peuvent entrer en conflit avec une mission confiée par Dieu.",
-      "Après la repentance des Ninivites, il a dû corriger sa manière de voir la compassion de Jéhovah envers des personnes d’une autre nation."
+    "difficulties":     [
+      "Il eut du mal à accepter que Jéhovah fasse preuve de miséricorde envers Ninive.",
+      "Il dut corriger son point de vue après avoir fui sa mission et constaté la compassion de Jéhovah."
     ]
   },
   "saul_king": {
@@ -4803,10 +4712,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Premier roi d’Israël — Saül a commencé humblement comme premier roi d’Israël, mais a ensuite désobéi à Jéhovah et est devenu arrogant.",
@@ -4824,9 +4729,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "La fiche JW.org oppose clairement son humilité initiale à son évolution."
     ],
     "qualities": ["Courage dans ses premières campagnes","Capacité de diriger","Il devint progressivement dominé par la désobéissance et la jalousie"],
-    "difficulties": [
-      "Son parcours montre l’importance de l’obéissance et de l’humilité.",
-      "Sa jalousie envers David transforma progressivement son règne en une longue lutte personnelle et contribua à sa chute."
+    "difficulties":     [
+      "Il fut choisi comme premier roi d’Israël mais dut gérer les attentes du peuple et les menaces militaires.",
+      "Il désobéit à des instructions de Jéhovah et permit progressivement à la jalousie et à la peur des hommes d’influencer ses décisions."
     ]
   },
   "manoah_father": {
@@ -4849,10 +4754,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Père de Samson — Manoa reçoit avec sa femme l’annonce de la naissance de Samson et demande comment élever l’enfant.",
@@ -4870,11 +4771,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi",
       "Désir d’apprendre"
     ],
-    "difficulties": [
-      "Sa femme et lui étaient sans enfant, ce qui constituait une grande épreuve pour leur foyer.",
-      "Il a dû accueillir un message angélique annonçant la naissance extraordinaire d’un fils et comprendre comment l’élever.",
-      "Il a demandé à Jéhovah de leur donner des instructions supplémentaires, montrant qu’il ne se sentait pas capable de tout comprendre seul.",
-      "Plus tard, il a dû voir son fils Samson prendre des décisions qui lui causaient de l’inquiétude. — Jg 13:2-8 ; 14:1-3."
+    "difficulties":     [
+      "Il devait faire confiance au message angélique annonçant la naissance exceptionnelle de son fils.",
+      "L’éducation de Samson demandait de suivre les instructions reçues malgré les difficultés liées à la période des juges."
     ]
   },
   "zephaniah": {
@@ -4897,10 +4796,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Prophète de Juda — Sophonie annonce un jour de jugement et encourage ceux qui cherchent Jéhovah à pratiquer la justice et la douceur.",
@@ -4919,12 +4814,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Franchise",
       "Espérance"
     ],
-    "difficulties": [
-      "Il a prophétisé dans une période marquée par l’idolâtrie et l’infidélité à Jéhovah en Juda.",
-      "Son message annonçait un jugement sévère contre Jérusalem et les nations, ce qui demandait du courage pour parler franchement.",
-      "Il a dû transmettre un avertissement alors que beaucoup de ses contemporains ne servaient pas fidèlement Jéhovah.",
-      "Il a aussi annoncé un message d’espoir pour les humbles qui rechercheraient Jéhovah. — Tse 1:4-6 ; 2:3 ; 3:9-13.",
-      "Il devait annoncer un jugement contre Juda et les nations tout en invitant les humbles à chercher Jéhovah."
+    "difficulties":     [
+      "Il annonçait un message de jugement à Juda dans une période marquée par le faux culte et l’infidélité.",
+      "Il devait transmettre un avertissement sévère tout en annonçant l’espoir pour ceux qui chercheraient Jéhovah avec humilité."
     ]
   },
   "habakkuk": {
@@ -4947,10 +4839,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Prophète de Juda — Habacuc exprime ses questions devant la violence et l’injustice puis affirme sa confiance en Jéhovah.",
@@ -4969,12 +4857,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi",
       "Persévérance"
     ],
-    "difficulties": [
-      "Il a été profondément troublé par la violence, l’injustice et l’oppression qu’il observait en Juda.",
-      "Il a posé à Jéhovah des questions franches sur la raison pour laquelle le mal semblait durer.",
-      "Il a dû accepter que Jéhovah agisse selon son propre calendrier, même lorsqu’il ne comprenait pas encore comment.",
-      "Il a finalement exprimé sa détermination à continuer de se réjouir en Jéhovah malgré des circonstances difficiles. — Hab 1:2-4, 12-17 ; 2:2-4 ; 3:17-19.",
-      "Il devait accepter que Jéhovah agisse selon son propre calendrier et continuer à lui faire confiance malgré ce qu’il ne comprenait pas."
+    "difficulties":     [
+      "Il était troublé par la violence et l’injustice qu’il observait parmi le peuple de Juda.",
+      "Il dut apprendre à attendre avec confiance l’intervention de Jéhovah même lorsqu’il ne comprenait pas immédiatement sa façon d’agir."
     ]
   },
   "amos": {
@@ -4997,10 +4882,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Prophète — Amos, éleveur et cultivateur de sycomores, reçoit la mission de dénoncer les injustices et le faux culte en Israël.",
@@ -5020,12 +4901,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Justice",
       "Franchise"
     ],
-    "difficulties": [
-      "Il a été envoyé comme prophète auprès du royaume d’Israël alors que le culte était profondément corrompu.",
-      "Son message dénonçait l’injustice, l’exploitation des pauvres et l’hypocrisie religieuse.",
-      "Il a rencontré l’opposition du prêtre Amatsia, qui lui a ordonné de ne plus prophétiser à Béthel.",
-      "Il a continué à transmettre fidèlement le message de Jéhovah malgré cette opposition. — Am 2:6-8 ; 7:10-17.",
-      "Le prêtre Amatsia s’opposa directement à son activité prophétique à Béthel, mais Amos continua de transmettre le message reçu de Jéhovah."
+    "difficulties":     [
+      "Il annonçait un jugement contre des injustices sociales et un faux culte très répandu dans le royaume d’Israël.",
+      "Il devait parler avec franchise à des personnes qui pouvaient rejeter son message, bien qu’il ne soit pas issu d’une école de prophètes."
     ]
   },
   "micah": {
