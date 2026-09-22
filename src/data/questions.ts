@@ -492,7 +492,7 @@ const tfFacts: Array<[string, boolean, string, string]> = [
   ['Miriam était la sœur de Moïse.', true, 'Miriam est présentée comme sœur d’Aaron et de Moïse.', 'Exode 15:20; Nombres 26:59'],
   ['Salomon a succédé à David comme roi.', true, 'Salomon a commencé à régner après David.', '1 Rois 2:10-12'],
 
-  ['Jacob a travaillé de nombreuses années pour Laban afin d’épouser Rachel.', true, 'Le récit rapporte cet épisode dans le parcours de Gédéon.', 'Juges 6:36-40'],
+  ['Jacob a travaillé de nombreuses années pour Laban afin d’épouser Rachel.', true, 'Jacob a servi Laban pendant des années et a finalement épousé Rachel.', 'Genèse 29:15-30'],
   ['Ésaü a vendu son droit de fils aîné pour un repas.', true, 'Ésaü a vendu son droit de fils aîné à Jacob.', 'Genèse 25:29-34'],
   ['Rébecca était la femme d’Isaac.', true, 'Rébecca est devenue la femme d’Isaac.', 'Genèse 24:59-67'],
   ['La manne tombait du ciel pour nourrir les Israélites dans le désert.', true, 'Jéhovah a fourni la manne aux Israélites.', 'Exode 16:4, 13-15'],
@@ -517,13 +517,13 @@ const tfFacts: Array<[string, boolean, string, string]> = [
 
 
 const tfFacts3: Array<[string, boolean, string, string]> = [
-  ['Josué a envoyé deux espions à Jéricho avant la prise de la ville.', true, 'Le récit rapporte cet épisode dans le parcours de Gédéon.', 'Juges 6:36-40'],
+  ['Josué a envoyé deux espions à Jéricho avant la prise de la ville.', true, 'Josué a envoyé deux hommes espionner le pays, notamment Jéricho.', 'Josué 2:1-4'],
   ['Gédéon a vaincu Madian avec une armée de 30 000 hommes.', false, 'L’armée a été réduite à 300 hommes.', 'Juges 7:2-7'],
   ['Jonathan était le fils de Saül.', true, 'Jonathan était le fils de Saül et l’ami de David.', '1 Samuel 18:1-4'],
   ['Abigaïl a empêché David de tuer Nabal dans sa colère.', true, 'Elle a parlé avec sagesse et a retenu David.', '1 Samuel 25:23-35'],
   ['La reine de Saba a rencontré David.', false, 'Elle est venue voir Salomon.', '1 Rois 10:1-10'],
   ['Élie a été nourri par des corbeaux.', true, 'Jéhovah a utilisé des corbeaux pour lui apporter de la nourriture.', '1 Rois 17:2-6'],
-  ['Élisée a guéri Naamân après lui avoir donné des instructions précises.', true, 'Le récit rapporte cet épisode dans le parcours de Gédéon.', 'Juges 6:36-40'],
+  ['Élisée a guéri Naamân après lui avoir donné des instructions précises.', true, 'Naamân a suivi les instructions d’Élisée et a été guéri.', '2 Rois 5:9-14'],
   ['Naamân était roi de Syrie.', false, 'Il était chef de l’armée de Syrie.', '2 Rois 5:1'],
   ['Ézéchias a prié lorsque Sennachérib menaçait Jérusalem.', true, 'Il a présenté la menace à Jéhovah dans la prière.', '2 Rois 19:14-20'],
   ['Daniel a continué à prier malgré l’interdiction du roi.', true, 'Le récit rapporte cet épisode dans le parcours de Gédéon.', 'Juges 6:36-40'],
