@@ -1732,10 +1732,10 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
     type: 'quiz',
     category: 'Personnages',
     difficulty: 'medium',
-    question: 'Quel personnage correspond à ces éléments de sa fiche : ' + accountClues,
+    question: 'Qui a vécu cet épisode : ' + accountClues,
     answers: [name, next, next2, next3],
     correctAnswer: 0,
-    explanation: 'Cette réponse reprend les éléments du récit biblique indiqués dans la fiche de ' + name + '.',
+    explanation: 'Le personnage est ' + name + '.',
     reference,
   });
 
@@ -1744,10 +1744,10 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
     type: 'quiz',
     category: 'Personnages',
     difficulty: 'hard',
-    question: 'Quelle fiche met en avant cette idée : « ' + lesson + ' » ?',
+    question: 'Quel personnage a retenu cette leçon : ' + lesson,
     answers: [name, next2, next3, next],
     correctAnswer: 0,
-    explanation: 'Ce point fait partie des leçons à retenir dans la fiche de ' + name + '.',
+    explanation: 'Cette leçon est associée à ' + name + '.',
     reference,
   });
 
@@ -1756,9 +1756,9 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
     type: 'truefalse',
     category: 'Personnages',
     difficulty: 'medium',
-    statement: 'Vrai ou faux : la fiche de ' + name + ' souligne que ' + relation,
+    statement: 'Vrai ou faux : ' + relation,
     answer: true,
-    explanation: 'C’est bien ce que précise la fiche de ' + name + ' dans sa rubrique « Relation avec Jéhovah ».',
+    explanation: 'Cette affirmation correspond au récit et aux informations retenues pour ' + name + '.',
     reference,
   });
 
@@ -1769,7 +1769,7 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
     difficulty: 'hard',
     answer: name,
     clues: [quality, location, era],
-    explanation: 'Ces indices correspondent à la fiche de ' + name + '.',
+    explanation: 'Les trois indices permettent d’identifier ' + name + '.',
     reference,
   });
 
@@ -1778,7 +1778,7 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
     type: 'challenge',
     category: 'Personnages',
     difficulty: 'medium',
-    prompt: 'En 10 secondes : nommez le personnage dont la fiche met en avant « ' + quality + ' » et le contexte suivant : ' + location + '.',
+    prompt: 'En 10 secondes : qui associez-vous à ' + quality + ' et à ' + location + ' ?',
     seconds: 10,
     acceptedAnswers: [name],
   });
