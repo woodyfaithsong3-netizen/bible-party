@@ -36,7 +36,9 @@ export async function recordTrainingAnswer(input: { id: string; category: string
     bestStreak: Math.max(current.bestStreak, input.streak),
     totalPoints: current.totalPoints + input.points,
     categoryStats: { ...current.categoryStats, [input.category]: { answered: category.answered + 1, correct: category.correct + (input.correct ? 1 : 0), points: category.points + input.points } },
-    missedIds: input.correct ? current.missedIds : Array.from(new Set([input.id, ...current.missedIds])).slice(0, 100),
+    missedIds: input.correct
+      ? current.missedIds.filter(id => id !== input.id)
+      : Array.from(new Set([input.id, ...current.missedIds])).slice(0, 100),
   };
   await AsyncStorage.setItem(TRAINING_KEY, JSON.stringify(next));
   return next;
