@@ -227,12 +227,83 @@ export async function getErrorCharacterIds(): Promise<string[]> {
 
 export function buildCharacterReviewDeck(characterId: string, mode: ReviewMode = 'mix', count = 10): ReviewCard[] {
   const data = characterLearning[characterId];
-  if (!data) return [];
+  if (!data || count <= 0) return [];
   const modes: ReviewMode[] = mode === 'mix'
     ? ['account', 'lesson', 'relationship', 'qualities', 'mystery']
     : [mode];
+  const name = characterName(characterId, data.identity);
+  const nextNames = shuffle(entries.filter(([id]) => id !== characterId))
+    .slice(0, 3)
+    .map(([id, other]) => characterName(id, other.identity));
+
   return Array.from({ length: count }, (_, index) => {
-    const card = buildReviewDeck(modes[index % modes.length], 1, [characterId])[0];
-    return card;
-  }).filter(Boolean);
+    const actualMode = modes[index % modes.length];
+    const wrongChoices = nextNames.length ? shuffle(nextNames) : [];
+    if (actualMode === 'account') {
+      const clue = data.bibleAccount.slice(0, 2).join(' ');
+      return {
+        id: 'review-account-' + characterId + '-' + index,
+        characterId,
+        characterName: name,
+        mode: actualMode,
+        prompt: 'Quel personnage correspond à ce récit ? ' + clue,
+        answer: name,
+        choices: shuffle([name, ...wrongChoices]),
+        explanation: data.lessonPoints[0] ?? data.studyFocus,
+        reference: data.keyReading,
+      };
+    }
+    if (actualMode === 'lesson') {
+      const lesson = data.lessonPoints[index % data.lessonPoints.length];
+      return {
+        id: 'review-lesson-' + characterId + '-' + index,
+        characterId,
+        characterName: name,
+        mode: actualMode,
+        prompt: 'Quel personnage illustre cette leçon ? ' + lesson,
+        answer: name,
+        choices: shuffle([name, ...wrongChoices]),
+        explanation: data.relationshipWithJehovah,
+        reference: data.keyReading,
+      };
+    }
+    if (actualMode === 'relationship') {
+      return {
+        id: 'review-relationship-' + characterId + '-' + index,
+        characterId,
+        characterName: name,
+        mode: actualMode,
+        prompt: 'Quel personnage correspond à cette description de sa relation avec Jéhovah ? ' + data.relationshipWithJehovah,
+        answer: name,
+        choices: shuffle([name, ...wrongChoices]),
+        explanation: data.lessonPoints[0] ?? data.studyFocus,
+        reference: data.keyReading,
+      };
+    }
+    if (actualMode === 'qualities') {
+      return {
+        id: 'review-quality-' + characterId + '-' + index,
+        characterId,
+        characterName: name,
+        mode: actualMode,
+        prompt: 'Quel personnage est associé à cette qualité ou à cet aspect de personnalité ? ' + data.qualities[0],
+        answer: name,
+        choices: shuffle([name, ...wrongChoices]),
+        explanation: data.difficulties[0] ?? data.studyFocus,
+        reference: data.keyReading,
+      };
+    }
+    const clues = shuffle([data.qualities[0], data.location, data.era]);
+    return {
+      id: 'review-mystery-' + characterId + '-' + index,
+      characterId,
+      characterName: name,
+      mode: actualMode,
+      prompt: 'Qui suis-je ? Indices : ' + clues.join(' • '),
+      answer: name,
+      choices: shuffle([name, ...wrongChoices]),
+      explanation: data.didYouKnow,
+      reference: data.keyReading,
+    };
+  });
 }
