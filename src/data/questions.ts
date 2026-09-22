@@ -765,9 +765,9 @@ export const chronologyQuestions: ChronologyQuestion[] = [...baseChronologyQuest
 
 
 const baseIntruderQuestions: IntruderQuestion[] = [
-  { id:'intruder-1', type:'intruder', category:'Personnages', difficulty:'medium', items:['Noé','Abraham','Moïse','Jonas'], intruder:3, explanation:'Jonas est un prophète associé à Ninive ; les trois autres sont associés aux récits des patriarches ou de l’Exode.', reference:'Genèse 6:9; 12:1; Exode 2:10; Jonas 1:1-3' },
+  { id:'intruder-1', type:'intruder', category:'Personnages', difficulty:'medium', items:['Abraham','Isaac','Jacob','Jonas'], intruder:3, explanation:'Jonas est l’intrus : les trois autres sont les patriarches Abraham, Isaac et Jacob, liés à la lignée de la promesse.', reference:'Genèse 12:1-9; 21:1-7; 25:19-26; Jonas 1:1-3' },
   { id:'intruder-2', type:'intruder', category:'Rois', difficulty:'medium', items:['Saül','David','Salomon','Samuel'], intruder:3, explanation:'Samuel était prophète et juge, tandis que les trois autres ont été rois d’Israël.', reference:'1 Samuel 7:15; 10:1; 16:13; 1 Rois 2:10-12' },
-  { id:'intruder-3', type:'intruder', category:'Lieux', difficulty:'medium', items:['Bethléhem','Béthanie','Jéricho','Jérusalem'], intruder:1, explanation:'Bethléhem, Jéricho et Jérusalem sont des villes très présentes dans les récits bibliques ; Béthanie est ici retenue comme l’intrus de cette manche.', reference:'Matthieu 2:1; Jean 11:1; Josué 6:1; Luc 1:26' },
+  { id:'intruder-3', type:'intruder', category:'Lieux', difficulty:'easy', items:['Bethléhem','Béthanie','Jéricho','Galilée'], intruder:3, explanation:'La Galilée est une région ; les trois autres sont des villes ou localités précises mentionnées dans les récits bibliques.', reference:'Matthieu 2:1; Jean 11:1; Josué 6:1; Matthieu 4:12-16' },
   { id:'intruder-4', type:'intruder', category:'Évangiles', difficulty:'medium', items:['Matthieu','Marc','Luc','Lydie'], intruder:3, explanation:'Lydie est une chrétienne du premier siècle, pas un écrivain d’Évangile.', reference:'Matthieu 9:9; Marc 1:1; Luc 1:1-4; Actes 16:14-15' },
 
   { id:'intruder-5', type:'intruder', category:'Personnages', difficulty:'easy', items:['Jacob','Isaac','Rébecca','Jéricho'], intruder:3, explanation:'Jéricho est une ville ; les trois autres sont des personnages.', reference:'Genèse 24–25; Josué 6:1' },
