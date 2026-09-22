@@ -27,6 +27,7 @@ export default function CharacterReviewScreen() {
   const [dueCount, setDueCount] = useState(125);
   const [masteredCount, setMasteredCount] = useState(0);
   const [learningCount, setLearningCount] = useState(125);
+  const [emptyMessage, setEmptyMessage] = useState<string | null>(null);
   const [reviewSource, setReviewSource] = useState<'due' | 'errors'>(errorMode ? 'errors' : 'due');
 
   const load = useCallback(async (nextMode = mode) => {
@@ -36,7 +37,13 @@ export default function CharacterReviewScreen() {
     setMasteredCount(stats.mastered);
     setLearningCount(stats.learning);
     const ids = reviewSource === 'errors' ? (await getErrorCharacterIds()).slice(0, 10) : due.slice(0, 10);
-    setDeck(focusedCharacterId ? buildCharacterReviewDeck(focusedCharacterId, nextMode, 10) : buildReviewDeck(nextMode, 10, ids));
+    const nextDeck = focusedCharacterId
+      ? buildCharacterReviewDeck(focusedCharacterId, nextMode, 10)
+      : buildReviewDeck(nextMode, 10, ids);
+    setEmptyMessage(!focusedCharacterId && reviewSource === 'errors' && ids.length === 0
+      ? 'Aucune erreur enregistrée pour le moment. Joue une session pour commencer à alimenter ta révision ciblée.'
+      : null);
+    setDeck(nextDeck);
     setIndex(0);
     setSelected(null);
     setFinished(false);
@@ -64,7 +71,7 @@ export default function CharacterReviewScreen() {
     }
   };
 
-  const restart = () => load(mode);
+  const restart = () => { setEmptyMessage(null); load(mode); };
 
   return (
     <View style={styles.root}>
@@ -91,7 +98,7 @@ export default function CharacterReviewScreen() {
             </View>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.modes}>
               {(Object.keys(MODE_LABELS) as ReviewMode[]).map((item) => (
-                <Pressable key={item} onPress={() => { setMode(item); load(item); }} style={[styles.mode, mode === item && styles.modeActive]}>
+                <Pressable key={item} onPress={() => setMode(item)} style={[styles.mode, mode === item && styles.modeActive]}>
                   <Text style={[styles.modeText, mode === item && styles.modeTextActive]}>{MODE_LABELS[item]}</Text>
                 </Pressable>
               ))}
@@ -99,10 +106,18 @@ export default function CharacterReviewScreen() {
 
             <View style={styles.progress}>
               <Text style={styles.progressText}>À revoir : {dueCount}</Text><Text style={styles.progressText}>Maîtrisés : {masteredCount} · En cours : {learningCount}</Text>
-              <Text style={styles.progressText}>{Math.min(index + 1, 10)} / {deck.length || 10}</Text>
+              <Text style={styles.progressText}>{deck.length ? Math.min(index + 1, deck.length) : 0} / {deck.length}</Text>
             </View>
 
-            {finished ? (
+            {emptyMessage ? (
+              <View style={styles.card}>
+                <Text style={styles.resultEmoji}>!</Text>
+                <Text style={styles.resultTitle}>Rien à revoir ici</Text>
+                <Text style={styles.resultText}>{emptyMessage}</Text>
+                <Pressable onPress={() => { setReviewSource('due'); setMode('mix'); }} style={styles.primary}><Text style={styles.primaryText}>VOIR LES RÉVISIONS À VENIR</Text></Pressable>
+                <Pressable onPress={() => router.push('/characters')} style={styles.secondary}><Text style={styles.secondaryText}>VOIR LES PERSONNAGES</Text></Pressable>
+              </View>
+            ) : finished ? (
               <View style={styles.card}>
                 <Text style={styles.resultEmoji}>✓</Text>
                 <Text style={styles.resultTitle}>Session terminée</Text>
