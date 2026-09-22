@@ -56,7 +56,16 @@ const answerPositionCounts = [0,1,2,3].map(i => ({
   index: i,
   count: [...source.matchAll(new RegExp(`type:\\s*['"]quiz['"][\\s\\S]{0,900}?correctAnswer:\\s*${i}(?:\\D|$)`, 'g'))].length,
 }));
-const malformedQuestionStrings = source.split('\\n').filter(line => line.includes('question:') && line.includes(', answers:')).filter(line => {\n  const q = line.indexOf('question:');\n  const a = line.indexOf(', answers:');\n  const value = line.slice(q + 9, a).trim();\n  let quotes = 0;\n  for (let i = 0; i < value.length; i++) if (value[i] === "'" && value[i - 1] !== "\\\\") quotes++;\n  return !value.startsWith("'") || !value.endsWith("'") || quotes !== 2;\n});\n\nconst duplicateOptionBlocks = quizBlocks.filter(m => {
+const malformedQuestionStrings = source.split('\\n').filter(line => line.includes('question:') && line.includes(', answers:')).filter(line => { 
+  const q = line.indexOf('question:');
+  const a = line.indexOf(', answers:');
+  const value = line.slice(q + 9, a).trim();
+  let quotes = 0;
+  for (let i = 0; i < value.length; i++) if (value[i] === "'" && value[i - 1] !== "\\") quotes++;
+  return !value.startsWith("'") || !value.endsWith("'") || quotes !== 2;
+});
+
+const duplicateOptionBlocks = quizBlocks.filter(m => {
   const options = [...m[1].matchAll(/['"]([^'"]*)['"]/g)].map(x => x[1].trim().toLowerCase());
   return options.length >= 2 && new Set(options).size !== options.length;
 });
