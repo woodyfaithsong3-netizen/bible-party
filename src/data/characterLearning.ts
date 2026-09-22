@@ -3689,10 +3689,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
   "bartholomew": {
     "studyFocus": "Barthélemy est traditionnellement identifié à Nathanaël, disciple que Philippe amena à Jésus. Jésus loua sa franchise et sa sincérité, et Nathanaël reconnut rapidement Jésus comme le Fils de Dieu et Roi d’Israël.",
     "lessonPoints": [
-      "Nathanaël examina honnêtement le témoignage de Philippe.",
-      "Il accepta l’invitation à venir voir Jésus.",
-      "Jésus souligna sa sincérité en le décrivant comme un Israélite sans tromperie.",
-      "Il devint l’un des Douze apôtres."
+      "Si Barthélemy est bien Nathanaël, il examina honnêtement le témoignage de Philippe.",
+      "Si cette identification est correcte, il accepta l’invitation à venir voir Jésus.",
+      "Jésus décrivit Nathanaël comme un Israélite sans tromperie.",
+      "Barthélemy figure dans les listes des Douze ; l’identification avec Nathanaël est généralement retenue mais doit rester formulée avec prudence."
     ],
     "keyReading": "Jean 1:45-51 ; 21:1-14 ; Matthieu 10:2-4",
     "location": "Probablement Nathanaël, disciple rencontré à proximité de la Galilée",
