@@ -3,15 +3,15 @@ export type CharacterLearning = {
   lessonPoints: string[];
   keyReading: string;
   jwResources: { title: string; url: string }[];
-  identity?: string;
-  era?: string;
-  familyAndEntourage?: string[];
-  bibleAccount?: string[];
-  qualities?: string[];
-  difficulties?: string[];
-  location?: string;
-  relationshipWithJehovah?: string;
-  didYouKnow?: string;
+  identity: string;
+  era: string;
+  familyAndEntourage: string[];
+  bibleAccount: string[];
+  qualities: string[];
+  difficulties: string[];
+  location: string;
+  relationshipWithJehovah: string;
+  didYouKnow: string;
 };
 
 export const characterLearning: Record<string, CharacterLearning> = {
