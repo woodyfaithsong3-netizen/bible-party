@@ -49,7 +49,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Reçoit une mission concernant la terre et les animaux.",
       "Désobéit au commandement concernant l’arbre de la connaissance du bon et du mauvais."
     ],
-    "qualities":     [
+    "qualities": [
       "Responsabilité",
       "Capacité à exercer sa liberté de choix"
     ],
@@ -105,7 +105,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance",
       "Courage"
     ],
-    "difficulties":     [
+    "difficulties": [
       "Il doit accomplir pendant des années une tâche extraordinaire dans un monde qui ne partage pas sa foi et avertir des personnes peu réceptives.",
       "Il doit rester fidèle et protéger sa famille alors que la violence et la corruption dominent la société qui l’entoure."
     ],
@@ -409,7 +409,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Obéissance",
       "Fidélité"
     ],
-    "difficulties":     [
+    "difficulties": [
       "Il doit prendre la direction d’Israël après Moïse et affronter des peuples puissants dans la conquête de Canaan.",
       "Il doit rester courageux et suivre précisément les instructions de Jéhovah, même lorsque la stratégie demandée paraît inhabituelle."
     ],
@@ -456,7 +456,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Travail",
       "Amour désintéressé"
     ],
-    "difficulties":     [
+    "difficulties": [
       "Elle devient veuve dans un pays étranger et doit recommencer sa vie avec Naomi en Juda.",
       "Elle doit trouver de quoi vivre en glanant et attendre de savoir si Boaz pourra agir comme racheteur."
     ],
@@ -505,7 +505,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Impartialité"
     ],
-    "difficulties":     [
+    "difficulties": [
       "Il grandit dans un contexte où les fils d’Éli donnent un mauvais exemple et où le culte à Silo connaît de graves problèmes.",
       "Il doit transmettre des messages de Jéhovah, y compris des messages difficiles, puis guider la nation pendant la transition vers la royauté."
     ],
@@ -831,7 +831,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Réflexion",
       "Courage"
     ],
-    "difficulties":     [
+    "difficulties": [
       "Elle doit accepter une mission extraordinaire alors qu’elle est une jeune femme et supporter les conséquences sociales possibles de sa grossesse.",
       "Elle doit ensuite voir son fils rejeté et exécuté tout en restant fidèle et proche de lui."
     ],
@@ -876,7 +876,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Repentir"
     ],
-    "difficulties":     [
+    "difficulties": [
       "Il a parfois parlé ou agi de façon impulsive, notamment lorsqu’il a tenté d’empêcher Jésus de parler de sa mort et lorsqu’il l’a renié.",
       "Après son reniement, il doit surmonter sa douleur et retrouver progressivement confiance pour assumer de grandes responsabilités dans la congrégation."
     ],
@@ -973,7 +973,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance",
       "Courage dans le témoignage"
     ],
-    "difficulties":     [
+    "difficulties": [
       "Avec Jacques, il a parfois manifesté une ambition personnelle concernant une place importante dans le Royaume.",
       "Il doit rester fidèle pendant les dernières décennies de la congrégation primitive, alors que l’opposition et l’apostasie se développent."
     ],
@@ -1079,7 +1079,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle contre les ennemis d’Israël",
       "Foi manifestée dans sa dernière prière"
     ],
-    "difficulties":     [
+    "difficulties": [
       "Ses choix amoureux et son manque de maîtrise de soi l’exposent à la manipulation et contribuent à sa capture par les Philistins.",
       "Après avoir perdu sa force et sa liberté, il doit supporter l’humiliation, l’aveuglement et le travail forcé avant de retrouver sa confiance en Jéhovah."
     ],
