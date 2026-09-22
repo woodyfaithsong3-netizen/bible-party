@@ -7,14 +7,18 @@ import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { ScenicScreen } from '@/components/ScenicScreen';
 import { getLearnedCharacters, markCharacterLearned } from '@/lib/storage';
+import { CharacterMastery, loadCharacterMastery } from '@/data/characterReview';
 
-function ProfileCard({ item, onPress, learned }: { item: CharacterProfile; onPress: () => void; learned: boolean }) {
+function ProfileCard({ item, onPress, learned, mastery }: { item: CharacterProfile; onPress: () => void; learned: boolean; mastery?: CharacterMastery }) {
+  const level = mastery?.level ?? 0;
+  const status = !mastery ? 'À revoir' : level >= 4 ? 'Maîtrisé' : 'En cours';
+  const statusColor = !mastery ? colors.muted : level >= 4 ? '#75E2C1' : colors.accent;
   return <Pressable onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10 }, pressed && { opacity: 0.82 }]}>
     <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1 }}>{item.era.toUpperCase()}</Text>
     <Text style={{ color: colors.text, fontSize: 19, fontWeight: '900', marginTop: 4 }}>{item.name}</Text>
     <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginTop: 3 }}>{item.role}</Text>
     <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 8 }} numberOfLines={3}>{item.summary}</Text>
-    <Text style={{ color: colors.accent, fontWeight: '900', marginTop: 8 }}>{learned ? '✓ Fiche étudiée' : 'Voir la fiche ›'}</Text>
+    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', marginTop: 9 }}><Text style={{ color: learned ? colors.accent : colors.muted, fontWeight: '900' }}>{learned ? '✓ Fiche étudiée' : 'Fiche à étudier'}</Text><Text style={{ color: statusColor, fontSize: 11, fontWeight: '900' }}>{status} · {level}/5</Text></View><View style={{ height: 5, backgroundColor: colors.border, borderRadius: 6, overflow: 'hidden', marginTop: 7 }}><View style={{ width: `${level * 20}%`, height: '100%', backgroundColor: statusColor }} /></View>
   </Pressable>;
 }
 
@@ -128,7 +132,7 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
         </Text>
       </View>
 
-      <Pressable onPress={() => router.push({ pathname: '/training', params: { category: 'Personnages' } })} style={[styles.card, { marginTop: 18, backgroundColor: colors.accent }]}>
+      <Pressable onPress={() => router.push({ pathname: '/revision', params: { characterId: item.id } })} style={[styles.card, { marginTop: 18, backgroundColor: colors.accent }]}>
         <Text style={{ color: colors.bg, fontWeight: '900' }}>🎯 Tester mes connaissances</Text>
         <Text style={{ color: colors.bg, marginTop: 4, opacity: 0.82 }}>Retrouver les personnages dans les questions d’entraînement.</Text>
       </Pressable>
@@ -141,8 +145,10 @@ export default function CharactersScreen() {
   const [learned, setLearned] = useState<string[]>([]);
   const [selectedEra, setSelectedEra] = useState('Tous');
   const [onlyUnlearned, setOnlyUnlearned] = useState(false);
-  const [selected, setSelected] = useState<CharacterProfile | null>(null);
-  React.useEffect(() => { void getLearnedCharacters().then(setLearned); }, []);
+  const [masteryFilter, setMasteryFilter] = useState<'Tous' | 'À revoir' | 'En cours' | 'Maîtrisés'>('Tous');
+  const [mastery, setMastery] = useState<Record<string, CharacterMastery>>({});
+  const [selected, setSelected> = useState<CharacterProfile | null>(null);
+  React.useEffect(() => { void getLearnedCharacters().then(setLearned); void loadCharacterMastery().then(setMastery); }, []);
   const eras = useMemo(() => ['Tous', ...Array.from(new Set(characterProfiles.map(x => x.era)))], []);
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
@@ -150,9 +156,12 @@ export default function CharactersScreen() {
       const matchesEra = selectedEra === 'Tous' || x.era === selectedEra;
       const matchesQuery = !q || [x.name, x.era, x.role, x.summary, ...x.qualities].join(' ').toLowerCase().includes(q);
       const matchesStudy = !onlyUnlearned || !learned.includes(x.id);
-      return matchesEra && matchesQuery && matchesStudy;
+      const level = mastery[x.id]?.level ?? 0;
+      const status = !mastery[x.id] ? 'À revoir' : level >= 4 ? 'Maîtrisés' : 'En cours';
+      const matchesMastery = masteryFilter === 'Tous' || status === masteryFilter;
+      return matchesEra && matchesQuery && matchesStudy && matchesMastery;
     });
-  }, [query, selectedEra, onlyUnlearned, learned]);
+  }, [query, selectedEra, onlyUnlearned, learned, mastery, masteryFilter]);
   if (selected) return <ScenicScreen><CharacterDetail item={selected} onBack={() => { setSelected(null); void getLearnedCharacters().then(setLearned); }} /></ScenicScreen>;
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={styles.eyebrow}>APPRENDRE</Text>
@@ -163,11 +172,11 @@ export default function CharactersScreen() {
       {eras.map(era => <Pressable key={era} onPress={() => setSelectedEra(era)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: selectedEra === era ? colors.accent : colors.border, backgroundColor: selectedEra === era ? colors.accent : colors.surface }}><Text style={{ color: selectedEra === era ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{era}</Text></Pressable>)}
     </ScrollView>
     <View style={{ marginBottom: 12 }}>
-      <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800' }}>{filtered.length} fiches affichées · {learned.length}/{characterProfiles.length} étudiées</Text>
+      <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800' }}>{filtered.length} fiches affichées · {learned.length}/{characterProfiles.length} étudiées · {Object.values(mastery).filter(x => x.level >= 4).length} maîtrisées</Text>
       <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 8 }}><View style={{ width: `${Math.round((learned.length / Math.max(1, characterProfiles.length)) * 100)}%`, height: '100%', backgroundColor: colors.accent }} /></View>
     </View>
-    <Pressable onPress={() => setOnlyUnlearned(x => !x)} style={{ alignSelf: 'flex-start', paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: onlyUnlearned ? colors.accent : colors.border, backgroundColor: onlyUnlearned ? colors.accent : colors.surface, marginBottom: 12 }}><Text style={{ color: onlyUnlearned ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{onlyUnlearned ? '✓ À étudier seulement' : 'Voir les fiches à étudier'}</Text></Pressable>
-    {filtered.map(item => <ProfileCard key={item.id} item={item} learned={learned.includes(item.id)} onPress={() => setSelected(item)} />)}
+    <View style={{ flexDirection: 'row', gap: 8, flexWrap: 'wrap', marginBottom: 12 }}><Pressable onPress={() => setOnlyUnlearned(x => !x)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: onlyUnlearned ? colors.accent : colors.border, backgroundColor: onlyUnlearned ? colors.accent : colors.surface }}><Text style={{ color: onlyUnlearned ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{onlyUnlearned ? '✓ À étudier' : 'À étudier'}</Text></Pressable>{(['Tous', 'À revoir', 'En cours', 'Maîtrisés'] as const).map(status => <Pressable key={status} onPress={() => setMasteryFilter(status)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: masteryFilter === status ? colors.accent : colors.border, backgroundColor: masteryFilter === status ? colors.accent : colors.surface }}><Text style={{ color: masteryFilter === status ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{status}</Text></Pressable>)}</View>
+    {filtered.map(item => <ProfileCard key={item.id} item={item} learned={learned.includes(item.id)} mastery={mastery[item.id]} onPress={() => setSelected(item)} />)}
     <View style={{ marginTop: 8 }}><Pressable onPress={() => router.push({ pathname: '/training', params: { category: 'Personnages' } })} style={styles.card}><Text style={{ color: colors.text, fontWeight: '900' }}>Tester mes connaissances ›</Text><Text style={{ color: colors.muted, marginTop: 4 }}>Retrouver les personnages dans les questions d’entraînement.</Text></Pressable></View>
   </ScrollView></ScenicScreen>;
 }
