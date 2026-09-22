@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { ImageBackground, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
-import { router } from 'expo-router';
-import { buildReviewDeck, getDueCharacterIds, getReviewStats, recordReviewResult, ReviewCard, ReviewMode } from '@/data/characterReview';
+import { router, useLocalSearchParams } from 'expo-router';
+import { buildCharacterReviewDeck, buildReviewDeck, getDueCharacterIds, getReviewStats, recordReviewResult, ReviewCard, ReviewMode } from '@/data/characterReview';
 
 const scenic = require('../../assets/images/backgrounds/home-valley-exact-source.png');
 
@@ -15,6 +15,8 @@ const MODE_LABELS: Record<ReviewMode, string> = {
 };
 
 export default function CharacterReviewScreen() {
+  const params = useLocalSearchParams<{ characterId?: string }>();
+  const focusedCharacterId = typeof params.characterId === 'string' ? params.characterId : undefined;
   const [mode, setMode] = useState<ReviewMode>('mix');
   const [deck, setDeck] = useState<ReviewCard[]>([]);
   const [index, setIndex] = useState(0);
@@ -32,12 +34,12 @@ export default function CharacterReviewScreen() {
     setMasteredCount(stats.mastered);
     setLearningCount(stats.learning);
     const ids = due.slice(0, 10);
-    setDeck(buildReviewDeck(nextMode, 10, ids));
+    setDeck(focusedCharacterId ? buildCharacterReviewDeck(focusedCharacterId, nextMode, 10) : buildReviewDeck(nextMode, 10, ids));
     setIndex(0);
     setSelected(null);
     setFinished(false);
     setScore(0);
-  }, [mode]);
+  }, [mode, focusedCharacterId]);
 
   useEffect(() => { load(); }, [load]);
 
@@ -71,8 +73,8 @@ export default function CharacterReviewScreen() {
             <View style={styles.header}>
               <Pressable onPress={() => router.back()}><Text style={styles.back}>‹ Retour</Text></Pressable>
               <Text style={styles.kicker}>BIBLE PARTY • RÉVISION</Text>
-              <Text style={styles.title}>Les 125 personnages</Text>
-              <Text style={styles.subtitle}>Apprends, joue, puis revois ce que tu as oublié.</Text>
+              <Text style={styles.title}>{focusedCharacterId ? 'Révision ciblée' : 'Les 125 personnages'}</Text>
+              <Text style={styles.subtitle}>{focusedCharacterId ? 'Travaille ce personnage jusqu’à mieux le maîtriser.' : 'Apprends, joue, puis revois ce que tu as oublié.'}</Text>
             </View>
 
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.modes}>
