@@ -177,6 +177,14 @@ export default function CharactersScreen() {
       <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800' }}>{filtered.length} fiches affichées · {learned.length}/{characterProfiles.length} étudiées · {Object.values(mastery).filter(x => x.level >= 4).length} maîtrisées</Text>
       <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 8 }}><View style={{ width: `${Math.round((learned.length / Math.max(1, characterProfiles.length)) * 100)}%`, height: '100%', backgroundColor: colors.accent }} /></View>
     </View>
+    <View style={{ flexDirection: 'row', gap: 8, marginBottom: 10 }}>
+      <Pressable onPress={() => router.push({ pathname: '/revision', params: { errors: '1' } })} style={{ flex: 1, minHeight: 46, borderRadius: 16, backgroundColor: colors.accent, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ color: colors.bg, fontSize: 12, fontWeight: '900' }}>🧠 RÉVISER MES ERREURS</Text>
+      </Pressable>
+      <Pressable onPress={() => router.push('/revision')} style={{ flex: 1, minHeight: 46, borderRadius: 16, borderWidth: 1, borderColor: colors.accent, alignItems: 'center', justifyContent: 'center' }}>
+        <Text style={{ color: colors.text, fontSize: 12, fontWeight: '900' }}>🎯 SESSION À REVOIR</Text>
+      </Pressable>
+    </View>
     <View style={{ flexDirection: 'row', gap: 8, flexWrap: 'wrap', marginBottom: 12 }}><Pressable onPress={() => setOnlyUnlearned(x => !x)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: onlyUnlearned ? colors.accent : colors.border, backgroundColor: onlyUnlearned ? colors.accent : colors.surface }}><Text style={{ color: onlyUnlearned ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{onlyUnlearned ? '✓ À étudier' : 'À étudier'}</Text></Pressable>{(['Tous', 'À revoir', 'En cours', 'Maîtrisés'] as const).map(status => <Pressable key={status} onPress={() => setMasteryFilter(status)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: masteryFilter === status ? colors.accent : colors.border, backgroundColor: masteryFilter === status ? colors.accent : colors.surface }}><Text style={{ color: masteryFilter === status ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{status}</Text></Pressable>)}</View>
     {filtered.map(item => <ProfileCard key={item.id} item={item} learned={learned.includes(item.id)} mastery={mastery[item.id]} onPress={() => setSelected(item)} />)}
     <View style={{ marginTop: 8 }}><Pressable onPress={() => router.push({ pathname: '/training', params: { category: 'Personnages' } })} style={styles.card}><Text style={{ color: colors.text, fontWeight: '900' }}>Tester mes connaissances ›</Text><Text style={{ color: colors.muted, marginTop: 4 }}>Retrouver les personnages dans les questions d’entraînement.</Text></Pressable></View>
