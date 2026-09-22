@@ -1716,12 +1716,13 @@ const characterReviewNames = characterReviewEntries.map(([id, data]) =>
 for (let i = 0; i < characterReviewEntries.length; i += 1) {
   const [id, data] = characterReviewEntries[i];
   const name = characterReviewNames[i];
-  const next = characterReviewNames[(i + 1) % characterReviewNames.length];
-  const next2 = characterReviewNames[(i + 2) % characterReviewNames.length];
-  const next3 = characterReviewNames[(i + 3) % characterReviewNames.length];
+  // Distracteurs volontairement espacés dans le catalogue : éviter que deux personnages
+  // proches dans les données (famille, époque ou récit) se retrouvent systématiquement ensemble.
+  const next = characterReviewNames[(i + 17) % characterReviewNames.length];
+  const next2 = characterReviewNames[(i + 37) % characterReviewNames.length];
+  const next3 = characterReviewNames[(i + 61) % characterReviewNames.length];
   const accountClues = (data.bibleAccount ?? []).slice(0, 2).join(' ');
   const lesson = data.lessonPoints?.[0] ?? data.studyFocus;
-  const relation = data.relationshipWithJehovah ?? data.studyFocus;
   const quality = data.qualities?.[0] ?? 'fidélité';
   const location = data.location ?? 'le récit biblique';
   const era = data.era ?? 'une époque biblique';
@@ -1761,17 +1762,9 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
     reference,
   });
 
-  characterReviewTrueFalse.push({
-    id: 'character-review-tf-' + id,
-    type: 'truefalse',
-    category: 'Personnages',
-    difficulty: 'medium',
-    statement: 'Vrai ou faux : ' + relation,
-    answer: true,
-    explanation: 'Cette affirmation correspond au récit et aux informations retenues pour ' + name + '.',
-    reference,
-  });
-
+  // Pas de vrai/faux généré ici : une carte dont la réponse est systématiquement « vrai »
+  // transforme le mode en réflexe de clic. Les vraies cartes vrai/faux personnages sont
+  // construites dans les banques L1-L6 et sont donc auditables individuellement.
   characterReviewMystery.push({
     id: 'character-review-mystery-' + id,
     type: 'mystery',
@@ -1795,7 +1788,6 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
 }
 
 quizQuestions.push(...characterReviewQuiz);
-trueFalseQuestions.push(...characterReviewTrueFalse);
 mysteryQuestions.push(...characterReviewMystery);
 quizQuestions.push(...characterQuizQuestionsL2);
 trueFalseQuestions.push(...characterTrueFalseQuestionsL2);
