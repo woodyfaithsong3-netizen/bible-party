@@ -105,7 +105,7 @@ export default function CharacterReviewScreen() {
             </ScrollView>
 
             <View style={styles.progress}>
-              <Text style={styles.progressText}>À revoir : {dueCount}</Text><Text style={styles.progressText}>Maîtrisés : {masteredCount} · En cours : {learningCount}</Text>
+              <Text style={styles.progressText}>{reviewSource === 'errors' && !focusedCharacterId ? 'Erreurs : ' + deck.length : 'À revoir : ' + dueCount}</Text><Text style={styles.progressText}>Maîtrisés : {masteredCount} · En cours : {learningCount}</Text>
               <Text style={styles.progressText}>{deck.length ? Math.min(index + 1, deck.length) : 0} / {deck.length}</Text>
             </View>
 
