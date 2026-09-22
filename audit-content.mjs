@@ -12,6 +12,9 @@ const sourceFiles = [
 const source = sourceFiles
   .map(file => fs.readFileSync(new URL(file, import.meta.url), 'utf8'))
   .join('\n');
+const dedicatedSource = sourceFiles.slice(1)
+  .map(file => fs.readFileSync(new URL(file, import.meta.url), 'utf8'))
+  .join('\n');
 
 const ids = [...source.matchAll(/id:\s*['"]([^'"+]+)['"]/g)]
   .map(m => m[1].trim())
@@ -47,16 +50,16 @@ const characterCountFailures = [...characterCounts.entries()].filter(([, n]) => 
 const difficultyCounts = Object.fromEntries(['easy','medium','hard','expert'].map(d => [d, [...source.matchAll(new RegExp(`difficulty:\\s*['"]${d}['"]`, 'g'))].length]));
 
 
-const quizCount = [...source.matchAll(/type:\s*['"]quiz['"]/g)].length;
-const trueFalseCount = [...source.matchAll(/type:\s*['"]truefalse['"]/g)].length;
-const mysteryCount = [...source.matchAll(/type:\s*['"]mystery['"]/g)].length;
+const quizCount = [...dedicatedSource.matchAll(/type:\s*['"]quiz['"]/g)].length;
+const trueFalseCount = [...dedicatedSource.matchAll(/type:\s*['"]truefalse['"]/g)].length;
+const mysteryCount = [...dedicatedSource.matchAll(/type:\s*['"]mystery['"]/g)].length;
 const falseTrueFalseCount = [...source.matchAll(/type:\s*['"]truefalse['"][\s\S]{0,500}?answer:\s*false/g)].length;
-const malformedNumericArtifacts = [...source.matchAll(/[A-Za-zÀ-ÿ]\d{3,}/g)].map(m => m[0]);
+const malformedNumericArtifacts = [...dedicatedSource.matchAll(/[A-Za-zÀ-ÿ]\d{3,}/g)].map(m => m[0]);
 const answerPositionCounts = [0,1,2,3].map(i => ({
   index: i,
   count: [...source.matchAll(new RegExp(`type:\\s*['"]quiz['"][\\s\\S]{0,900}?correctAnswer:\\s*${i}(?:\\D|$)`, 'g'))].length,
 }));
-const malformedQuestionStrings = source.split('\\n').filter(line => line.includes('question:') && line.includes(', answers:')).filter(line => { 
+const malformedQuestionStrings = dedicatedSource.split('\\n').filter(line => line.includes('question:') && line.includes(', answers:')).filter(line => { 
   const q = line.indexOf('question:');
   const a = line.indexOf(', answers:');
   const value = line.slice(q + 9, a).trim();
