@@ -2,7 +2,6 @@ export type CharacterLearning = {
   studyFocus: string;
   lessonPoints: string[];
   keyReading: string;
-  jwResources: { title: string; url: string }[];
   identity: string;
   era: string;
   familyAndEntourage: string[];
@@ -27,16 +26,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Le jardin d’Éden, puis la région située à l’extérieur du jardin après son expulsion.",
     "relationshipWithJehovah": "Adam connaissait directement Jéhovah et reçut de lui des instructions précises, mais il finit par désobéir et perdre sa position approuvée.",
     "didYouKnow": "Adam reçut de Jéhovah la responsabilité de donner un nom aux animaux avant que Dieu ne crée Ève comme sa complémentaire.",
-    "jwResources": [
-      {
-        "title": "Adam — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Adam/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Premier homme — Adam apparaît au début du récit biblique comme le premier homme créé et placé dans le jardin d’Éden.",
     "era": "4026-3096 av. n. è. environ",
     "familyAndEntourage": [
@@ -70,20 +59,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Région située entre l’Éden et l’Ararat, puis les environs des montagnes d’Ararat après le Déluge.",
     "relationshipWithJehovah": "Noé est décrit comme marchant avec Dieu. Sa foi se manifesta par une obéissance concrète aux instructions reçues.",
     "didYouKnow": "Noé avait 600 ans lorsque le Déluge commença, et il sortit de l’arche après que les eaux eurent recouvert la terre.",
-    "jwResources": [
-      {
-        "title": "Marche courageusement avec Dieu — Noé",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/noe-a-condamne-le-monde/"
-      },
-      {
-        "title": "Noé — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/No%C3%A9/"
-      },
-      {
-        "title": "Noé : « Il marchait avec le vrai Dieu » — Imitez leur foi",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/noe/"
-      }
-    ],
     "identity": "Noé était un homme juste qui vivait dans une génération profondément corrompue. Jéhovah lui ordonna de construire une arche et le préserva, lui et sa famille, du Déluge.",
     "era": "Avant le Déluge, vers 2970 av. n. è. pour sa naissance",
     "familyAndEntourage": [
@@ -122,20 +97,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Our, Harân, Canaan et plusieurs régions du Proche-Orient.",
     "relationshipWithJehovah": "Abraham développa une relation de confiance avec Jéhovah et est appelé « ami de Jéhovah » en raison de sa foi et de son obéissance.",
     "didYouKnow": "Abraham avait 75 ans lorsqu’il quitta Harân pour poursuivre son voyage vers le pays que Jéhovah lui avait indiqué.",
-    "jwResources": [
-      {
-        "title": "Abraham — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Abraham"
-      },
-      {
-        "title": "Marche courageusement avec Dieu — Abraham",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/abraham-a-ete-le-premier-a-mener-une-guerre-juste/"
-      },
-      {
-        "title": "Abraham : « Le père de tous ceux qui ont foi »",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/vraie-foi/abraham-pere-de-ceux-qui-ont-foi/"
-      }
-    ],
     "identity": "Abraham était le patriarche à qui Jéhovah promit une descendance et une bénédiction pour toutes les nations. Il quitta Our et vécut ensuite comme résident étranger en Canaan.",
     "era": "Environ 2018-1843 av. n. è.",
     "familyAndEntourage": [
@@ -178,16 +139,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Our, Harân, Canaan et plusieurs régions parcourues avec Abraham.",
     "relationshipWithJehovah": "Sara plaça sa confiance dans la promesse divine et est citée parmi les femmes de foi dans les Écritures chrétiennes.",
     "didYouKnow": "Jéhovah changea son nom de Saraï en Sara dans le cadre de la promesse concernant Abraham et sa descendance.",
-    "jwResources": [
-      {
-        "title": "Sara — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Sara/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Épouse d’Abraham et mère d’Isaac — Sarah a vécu les promesses faites à Abraham et est devenue mère d’Isaac malgré son âge avancé.",
     "era": "2008-1881 av. n. è. environ",
     "familyAndEntourage": [
@@ -222,20 +173,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Canaan, Paddan-Aram et de nouveau Canaan; il descendit ensuite en Égypte avec sa famille.",
     "relationshipWithJehovah": "Jéhovah apparut à Jacob, renouvela avec lui l’alliance abrahamique et resta avec lui malgré ses épreuves et ses imperfections.",
     "didYouKnow": "Jacob reçut le nom Israël après avoir lutté avec un ange, et ses douze fils devinrent les ancêtres des douze tribus d’Israël.",
-    "jwResources": [
-      {
-        "title": "Jacob — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacob/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu — Jacob",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/jacob-a-protege-sa-famille/"
-      },
-      {
-        "title": "Événements de la vie de Jacob",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89v%C3%A9nements-de-la-vie-de-Jacob/"
-      }
-    ],
     "identity": "Jacob était le fils d’Isaac et de Rébecca, frère jumeau d’Ésaü et père des douze fils à l’origine des tribus d’Israël.",
     "era": "1858-1688 av. n. è. environ",
     "familyAndEntourage": [
@@ -277,22 +214,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Canaan puis Égypte.",
     "relationshipWithJehovah": "Joseph attribua à Jéhovah le mérite de ses capacités et resta fidèle dans des circonstances où personne de sa famille ne pouvait le surveiller.",
     "didYouKnow": "Joseph avait 30 ans lorsqu’il se tint devant Pharaon et devint administrateur de l’Égypte pendant les années précédant la famine.",
-    "jwResources": [
-      {
-        "title": "« Comment pourrais-je commettre ce grand mal ? »",
-        "url": "https://www.jw.org/fr/bibliotheque/revues/wp20141101/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu — Joseph",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/joseph-a-resiste-a-la-tentation/"
-      },
-      {
-        "title": "Joseph — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Joseph/"
-      }
-    ],
     "identity": "Joseph était le fils de Jacob et de Rachel qui fut vendu comme esclave par ses frères avant de devenir administrateur en Égypte et de sauver de nombreuses vies pendant une famine.",
-    "era": "XVIIIe siècle av. n. è. environ",
+    "era": "1767-1657 av. n. è. environ",
     "familyAndEntourage": [
       "Jacob",
       "Rachel",
@@ -331,16 +254,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Égypte, désert du Sinaï et régions à l’est du Jourdain.",
     "relationshipWithJehovah": "Moïse entretenait une relation exceptionnellement proche avec Jéhovah; la Bible dit qu’il lui parlait « face à face » au sens d’une relation directe et privilégiée.",
     "didYouKnow": "La Bible dit que Moïse avait 120 ans lorsqu’il mourut et que ses yeux n’étaient pas affaiblis et que sa vigueur n’avait pas diminué.",
-    "jwResources": [
-      {
-        "title": "Moïse — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Mo%C3%AFse/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Prophète et médiateur d’Israël — Moïse conduit Israël hors d’Égypte et reçoit la Loi au mont Sinaï.",
     "era": "1593-1473 av. n. è. environ",
     "familyAndEntourage": [
@@ -377,16 +290,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Désert du Sinaï, Canaan et territoire d’Israël.",
     "relationshipWithJehovah": "Josué comptait sur Jéhovah pour diriger Israël et exhorta le peuple à le servir fidèlement jusqu’à la fin de sa vie.",
     "didYouKnow": "Josué et Caleb furent les deux espions parmi les douze envoyés à Canaan qui recommandèrent avec confiance de prendre possession du pays.",
-    "jwResources": [
-      {
-        "title": "Josué — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Josu%C3%A9/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Josué, fils de Noun, servit Moïse avant de lui succéder comme dirigeant d’Israël. Il conduisit le peuple dans la conquête et la répartition de la Terre promise.",
     "era": "1513-1450 av. n. è. environ",
     "familyAndEntourage": [
@@ -426,18 +329,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Moab puis Bethléhem en Juda.",
     "relationshipWithJehovah": "Ruth choisit Jéhovah comme son Dieu et s’attacha au peuple de Naomi. Sa fidélité et sa confiance en Jéhovah furent ensuite bénies.",
     "didYouKnow": "Ruth choisit de rester avec Naomi et déclara que le peuple de Naomi serait son peuple et que le Dieu de Naomi serait son Dieu.",
-    "jwResources": [
-      {
-        "title": "Ruth — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ruth/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Ruth était une Moabite devenue veuve qui choisit de rester avec sa belle-mère Naomi et d’adorer Jéhovah. Elle devint l’épouse de Boaz et une ancêtre de David.",
-    "era": "Époque des juges, avant le règne de David; Ruth vécut avant l’établissement de la royauté en Israël.",
+    "era": "1450-1120 av. n. è. environ (époque des juges)",
     "familyAndEntourage": [
       "Naomi",
       "Boaz",
@@ -473,18 +366,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Silo, Rama et différents lieux d’Israël.",
     "relationshipWithJehovah": "Samuel grandit auprès de Jéhovah et fut reconnu comme prophète; il resta attaché à la volonté divine pendant toute sa vie.",
     "didYouKnow": "Samuel entendit Jéhovah l’appeler alors qu’il était encore un garçon et apprit d’Éli comment répondre à cet appel.",
-    "jwResources": [
-      {
-        "title": "Samuel — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samuel/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Samuel était prophète, juge et serviteur de Jéhovah dès son enfance. Il joua un rôle majeur dans la transition d’Israël vers la royauté.",
-    "era": "Fin de l’époque des juges et transition vers la royauté, XIe siècle av. n. è. environ",
+    "era": "1180-1080 av. n. è. environ",
     "familyAndEntourage": [
       "Elqana, son père",
       "Hanna, sa mère",
@@ -522,16 +405,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Bethléem, Juda, Jérusalem et le royaume d’Israël.",
     "relationshipWithJehovah": "David avait une foi profonde en Jéhovah, même s’il commit de graves péchés. Il accepta la correction et revint sincèrement vers Dieu.",
     "didYouKnow": "David composa de nombreux psaumes et jouait de la harpe; il était aussi connu comme « un homme selon le cœur » de Jéhovah dans le contexte de son attachement à Dieu.",
-    "jwResources": [
-      {
-        "title": "David — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/David/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Roi d’Israël — David a servi comme roi d’Israël et a connu à la fois de grandes victoires et de graves erreurs.",
     "era": "1107-1037 av. n. è. environ",
     "familyAndEntourage": [
@@ -570,16 +443,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et le royaume d’Israël.",
     "relationshipWithJehovah": "Salomon demanda à Jéhovah un cœur obéissant pour juger son peuple. Jéhovah lui accorda une sagesse remarquable, mais Salomon finit par laisser ses femmes détourner son cœur vers le faux culte.",
     "didYouKnow": "Salomon fit construire le temple de Jérusalem, dont les travaux durèrent sept ans selon 1 Rois 6:37-38.",
-    "jwResources": [
-      {
-        "title": "Salomon — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Salomon/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Roi et bâtisseur du temple — Salomon demande de la sagesse et construit le temple de Jérusalem, mais sa fin de règne comporte aussi de graves problèmes.",
     "era": "1037-997 av. n. è.",
     "familyAndEntourage": [
@@ -610,18 +473,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Shilo et le territoire d’Israël; il servait au tabernacle à Shilo.",
     "relationshipWithJehovah": "Éli servait comme grand prêtre devant Jéhovah et transmit à Samuel comment répondre à l’appel divin. Mais Jéhovah le condamna parce qu’il honorait ses fils plus que lui en ne les disciplinant pas suffisamment.",
     "didYouKnow": "Élisha reçut une double portion de l’esprit qui avait agi sur Élie, conformément à sa demande avant que son maître soit enlevé dans la tempête.",
-    "jwResources": [
-      {
-        "title": "Éli — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89li-I/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Élie était un prophète de Jéhovah qui combattit avec courage le culte de Baal dans le royaume d’Israël.",
-    "era": "XIIe-XIe siècle av. n. è. environ",
+    "era": "940-905 av. n. è. environ",
     "familyAndEntourage": ["Achab","Jézabel","Élisée","Les prophètes de Baal"],
     "bibleAccount": [
       "Il annonce une sécheresse au temps d’Achab.",
@@ -652,18 +505,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Suse, capitale de l’empire perse.",
     "relationshipWithJehovah": "Bien que le nom de Jéhovah ne figure pas directement dans le livre, Esther est présentée comme une fidèle servante du vrai Dieu. Elle agit avec foi, maîtrise de soi et courage pour défendre le peuple de Dieu.",
     "didYouKnow": "Le livre d’Esther ne mentionne pas directement le nom de Dieu, mais JW.org relève des acrostiches du texte hébreu qui semblent faire apparaître le Tétragramme.",
-    "jwResources": [
-      {
-        "title": "Esther — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Esther/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Esther, aussi appelée Hadassa, était une Juive devenue reine de Perse. Elle risqua sa vie pour intervenir en faveur de son peuple menacé d’extermination.",
-    "era": "Ve siècle av. n. è., sous le règne d’Assuérus (Xerxès Ier)",
+    "era": "493-475 av. n. è. environ",
     "familyAndEntourage": [
       "Mardochée, son cousin et tuteur",
       "Assuérus",
@@ -699,16 +542,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Juda puis Babylone; Suse apparaît aussi dans le cadre d’une vision.",
     "relationshipWithJehovah": "Daniel priait régulièrement, recherchait la compréhension auprès de Jéhovah et resta fidèle malgré les complots.",
     "didYouKnow": "Daniel continua à prier trois fois par jour malgré l’interdiction royale et fut délivré de la fosse aux lions.",
-    "jwResources": [
-      {
-        "title": "Daniel — Que dit la Bible ?",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/questions-bibliques/daniel-dans-la-bible/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Daniel était un jeune Juif emmené à Babylone. Il servit dans plusieurs administrations impériales tout en restant fidèle à Jéhovah.",
     "era": "VIIe-VIe siècles av. n. è.; son activité est attestée de 618 à 536 av. n. è. environ",
     "familyAndEntourage": [
@@ -743,68 +576,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Examiner sa question envoyée à Jésus depuis la prison et la réponse reçue."
     ],
     "keyReading": "Matthieu 3:1-17 ; 11:2-15 ; 14:1-12 ; Jean 1:19-37",
-    "jwResources": [
-      {
-        "title": "Qui était Jean le Baptiseur ?",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/questions-bibliques/qui-etait-jean-le-baptiseur/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
-    "location": "Désert de Judée et région du Jourdain.",
-    "relationshipWithJehovah": "Jean dirigeait l’attention vers Jésus et accomplissait la mission que Jéhovah lui avait confiée.",
-    "didYouKnow": "Jésus a dit qu’aucun prophète né de femme n’avait été plus grand que Jean, tout en parlant ensuite de la grandeur de ceux qui seraient dans le Royaume.",
-    "identity": "Précurseur de Jésus — Jean prépare les personnes au ministère de Jésus et appelle à la repentance.",
-    "era": "Vers 2 av. n. è. à 31 de n. è. environ; il prépara le chemin du Messie",
-    "familyAndEntourage": [
-      "Jésus",
-      "Zacharie",
-      "Élisabeth",
-      "Hérode"
-    ],
-    "bibleAccount": [
-      "Prêche et baptise.",
-      "Identifie Jésus comme celui qui vient après lui.",
-      "Reprend publiquement Hérode pour sa conduite."
-    ],
-    "qualities": [
-      "Courage",
-      "Humilité",
-      "Conviction"
-    ],
-    "difficulties": [
-      "Il a vécu dans le désert et a mené une vie très simple, consacrée à sa mission.",
-      "Il a été emprisonné après avoir dénoncé publiquement le mariage d’Hérode Antipas avec Hérodiade.",
-      "Depuis sa prison, il a traversé un moment d’incertitude et a demandé à Jésus s’il était bien celui qui devait venir.",
-      "Il a finalement été exécuté à la suite de la demande d’Hérodiade. — Mt 11:2-6 ; Mc 6:17-29."
-    ]
-  },
-  "marie": {
-    "studyFocus": "Marie était la mère de Jésus. Elle accepta humblement la mission annoncée par l’ange Gabriel, donna naissance à Jésus à Bethléem et conserva dans son cœur plusieurs événements concernant son fils. Elle resta présente lors de sa mort et fut ensuite associée aux disciples après sa résurrection.",
-    "lessonPoints": [
-      "Marie accepta avec humilité une mission qui allait bouleverser sa vie.",
-      "Elle méditait profondément sur les événements concernant Jésus.",
-      "Elle manifesta du courage en restant proche de Jésus jusque lors de son exécution.",
-      "Elle continua à fréquenter les disciples après la mort et la résurrection de Jésus."
-    ],
-    "keyReading": "Luc 1:26-56 ; 2:1-52 ; Jean 2:1-12 ; 19:25-27 ; Actes 1:12-14",
-    "location": "Nazareth, Bethléem, Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Marie se soumit humblement à la volonté de Jéhovah et manifesta une foi profonde dans les promesses concernant son fils.",
-    "didYouKnow": "Marie était présente avec les disciples après l’ascension de Jésus, selon Actes 1:14.",
-    "jwResources": [
-      {
-        "title": "Marie est-elle la mère de Dieu ?",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/questions-bibliques/mere-marie-theotokos/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Marie est la mère de Jésus. Elle est une descendante de David et a accepté avec foi la mission extraordinaire qui lui a été confiée.",
-    "era": "Fin de la période des Écritures hébraïques et ministère terrestre de Jésus",
+    "era": "20 av. n. è. environ - après 33 de n. è. environ",
     "familyAndEntourage": [
       "Joseph",
       "Jésus",
@@ -839,16 +612,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée, Jérusalem, Judée et lieux de prédication.",
     "relationshipWithJehovah": "Pierre apprit à compter sur Jéhovah par l’intermédiaire de Jésus et devint ensuite un prédicateur courageux.",
     "didYouKnow": "Pierre fut le premier apôtre à témoigner devant un non-Juif incirconcis, Corneille, que Dieu avait accepté comme croyant.",
-    "jwResources": [
-      {
-        "title": "Pierre — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Pierre/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Apôtre — Pierre est l’un des principaux apôtres et joue un rôle important dans les débuts de la congrégation chrétienne.",
     "era": "Vers 29-66 de n. è. environ",
     "familyAndEntourage": ["André","Jésus","Jean","Paul","Corneille"],
@@ -880,16 +643,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Tarse, Jérusalem, Syrie, Asie Mineure, Macédoine, Grèce, Rome et autres régions.",
     "relationshipWithJehovah": "Paul considérait son ministère comme une responsabilité reçue de Jésus et consacra sa vie à annoncer la bonne nouvelle et à fortifier les congrégations.",
     "didYouKnow": "Paul était citoyen romain de naissance, un statut qui lui donna certains droits juridiques pendant ses procès.",
-    "jwResources": [
-      {
-        "title": "Paul — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Paul/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Apôtre et missionnaire — Paul est passé de persécuteur des disciples à prédicateur zélé du christianisme.",
     "era": "Ier siècle de n. è., de sa conversion vers 34-36 jusqu’à sa captivité à Rome",
     "familyAndEntourage": [
@@ -930,18 +683,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée, Jérusalem et Patmos; la fin de son activité est traditionnellement associée à Éphèse.",
     "relationshipWithJehovah": "Jean consacra sa longue vie à transmettre le témoignage sur Jésus et à enseigner l’amour pour Dieu et les frères.",
     "didYouKnow": "Jean était fils de Zébédée et frère de Jacques. Jésus donna aux deux frères le surnom Boanergès, « fils du tonnerre », en raison de leur tempérament.",
-    "jwResources": [
-      {
-        "title": "Jean — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jean/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Apôtre de Jésus et rédacteur biblique, frère de Jacques fils de Zébédée. Il faisait partie des trois apôtres particulièrement proches de Jésus.",
-    "era": "Ier siècle de n. è., du ministère de Jésus jusqu’aux dernières décennies de la congrégation primitive",
+    "era": "5 av. n. è. environ - 100 de n. è. environ",
     "familyAndEntourage": [
       "Zébédée, son père",
       "Salomé, probablement sa mère",
@@ -977,20 +720,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Canaan, notamment Beer-Shéba et la région de Guérar.",
     "relationshipWithJehovah": "Isaac bénéficia de l’alliance conclue par Jéhovah avec Abraham et continua à invoquer Jéhovah. Malgré les tensions liées aux puits et aux habitants du pays, il rechercha la paix.",
     "didYouKnow": "Isaac avait 60 ans lorsque Rébecca donna naissance à Ésaü et Jacob.",
-    "jwResources": [
-      {
-        "title": "Isaac — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Isaac/"
-      },
-      {
-        "title": "Abraham et Isaac : Sa foi est testée",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/j-apprends-en-lisant-la-bible/3/abraham-isaac-epreuve-foi/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Isaac était le fils promis d’Abraham et de Sara, mari de Rébecca et père d’Ésaü et de Jacob.",
     "era": "1858-1711 av. n. è. environ",
     "familyAndEntourage": [
@@ -1028,256 +757,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "À la fin de sa vie, il fit de nouveau appel à Jéhovah et agit contre les Philistins."
     ],
     "keyReading": "Juges 13:1-25 ; 14:1–16:31 ; Hébreux 11:32",
-    "jwResources": [
-      {
-        "title": "Samson — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samson/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
-    "location": "Territoire de Dan et régions contrôlées par les Philistins.",
-    "relationshipWithJehovah": "Jéhovah donna à Samson une force particulière pour commencer à délivrer Israël des Philistins. Malgré ses faiblesses, Samson manifesta finalement sa foi en demandant à Jéhovah de lui donner la force d’agir.",
-    "didYouKnow": "Samson jugea Israël pendant 20 ans et sa naissance avait été annoncée à ses parents par un ange de Jéhovah.",
-    "identity": "Samson était un juge d’Israël doté d’une force exceptionnelle donnée par Jéhovah pour commencer à délivrer Israël des Philistins.",
-    "era": "Époque des juges, avant la royauté",
-    "familyAndEntourage": [
-      "Manoah",
-      "La femme de Manoah",
-      "Dalila",
-      "Les Philistins"
-    ],
-    "bibleAccount": [
-      "Un ange annonce sa naissance à sa mère.",
-      "Il accomplit plusieurs actes contre les Philistins grâce à une force particulière.",
-      "Il épouse une Philistine puis connaît des conflits avec les Philistins.",
-      "Dalila découvre le secret lié à ses cheveux et il est capturé.",
-      "Il prie Jéhovah et reçoit une dernière manifestation de force qui entraîne la chute du temple philistin."
-    ],
-    "qualities": [
-      "Courage",
-      "Force physique",
-      "Zèle contre les ennemis d’Israël",
-      "Foi manifestée dans sa dernière prière"
-    ],
-    "difficulties": [
-      "Ses choix amoureux et son manque de maîtrise de soi l’exposent à la manipulation et contribuent à sa capture par les Philistins.",
-      "Après avoir perdu sa force et sa liberté, il doit supporter l’humiliation, l’aveuglement et le travail forcé avant de retrouver sa confiance en Jéhovah."
-    ],
-  },
-  "naomi": {
-    "studyFocus": "Noémi était la belle-mère de Ruth et la femme d’Élimélek. Après la mort de son mari et de ses deux fils, elle retourna de Moab à Bethléhem avec Ruth. Sa belle-fille resta attachée à elle et participa finalement à la lignée de David.",
-    "lessonPoints": [
-      "Noémi connut des pertes familiales profondes.",
-      "Elle ne cacha pas son chagrin et exprima ouvertement sa douleur.",
-      "Elle accepta finalement la fidélité de Ruth et l’aida à comprendre les usages d’Israël.",
-      "Jéhovah transforma une période de grande détresse en une situation où Noémi retrouva une famille et une place dans la communauté."
-    ],
-    "keyReading": "Ruth 1:1-22 ; 2:1-23 ; 3:1-18 ; 4:13-17",
-    "jwResources": [
-      {
-        "title": "Naomi — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Naomi/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
-    "location": "Bethléhem en Juda et Moab.",
-    "relationshipWithJehovah": "Noémi parlait du rôle de Jéhovah dans sa situation, même lorsqu’elle était accablée par le chagrin; le récit montre ensuite sa restauration familiale.",
-    "didYouKnow": "Noémi retourna à Bethléhem avec Ruth au début de la moisson des orges, puis Boaz devint le rédempteur de la famille.",
-    "identity": "Veuve et belle-mère de Ruth — Noémi a connu de lourdes pertes mais a continué à agir avec amour envers Ruth.",
-    "era": "Époque des juges, avant le règne de David",
-    "familyAndEntourage": ["Élimélek","Mahlôn","Kilyôn","Ruth","Orpa","Boaz"],
-    "bibleAccount": [
-      "Retourne à Bethléhem après son veuvage.",
-      "Encourage Ruth à agir avec sagesse.",
-      "Accueille la naissance d’Obed dans sa famille."
-    ],
-    "qualities": [
-      "Attachement familial",
-      "Sagesse"
-    ],
-    "difficulties": [
-      "Elle a perdu son mari puis ses deux fils, ce qui l’a profondément attristée.",
-      "Elle a dû quitter Moab pour retourner à Bethléhem dans une situation de veuvage et de grande précarité.",
-      "Sa douleur l’a amenée à demander qu’on l’appelle Mara, « Amère ».",
-      "Elle a ensuite vu Jéhovah transformer progressivement sa situation grâce à Ruth et Boaz. — Ruth 1:3-5, 20, 21 ; 4:14-17."
-    ]
-  },
-  "boaz": {
-    "studyFocus": "Boaz était un propriétaire terrien de Bethléem et un parent d’Élimélek. Il traita Ruth avec bonté, respecta les dispositions de la Loi sur le glanage et accepta finalement d’assumer le rôle de racheteur. Son mariage avec Ruth contribua à la lignée de David.",
-    "lessonPoints": [
-      "Boaz respectait les dispositions de Jéhovah en faveur des pauvres.",
-      "Il protégea Ruth et lui parla avec dignité.",
-      "Il régla honnêtement la question du droit de rachat devant les anciens.",
-      "Il apprécia la fidélité de Ruth envers Noémi et son choix d’adorer Jéhovah."
-    ],
-    "keyReading": "Ruth 2:1-23 ; 3:1-18 ; 4:1-17 ; Matthieu 1:3-6",
-    "jwResources": [
-      {
-        "title": "Boaz, I — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Boaz-I/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
-    "location": "Bethléem, en Juda.",
-    "relationshipWithJehovah": "Boaz respectait les dispositions de la Loi de Jéhovah concernant les pauvres, les étrangers et le mariage léviratique, et il traita Ruth avec bonté et respect.",
-    "didYouKnow": "Boaz était un proche parent d’Élimélek et devint le mari de Ruth ; leur fils Obed fut l’ancêtre du roi David.",
-    "identity": "Propriétaire terrien et parent de Noémi — Boaz traite Ruth avec bonté et devient son rédempteur familial.",
-    "era": "Époque des juges, avant le règne de David",
-    "familyAndEntourage": [
-      "Ruth",
-      "Noémi",
-      "Obed",
-      "David"
-    ],
-    "bibleAccount": [
-      "Protège Ruth dans ses champs.",
-      "Veille à ce qu’elle puisse glaner en sécurité.",
-      "Assume le rôle de rédempteur et épouse Ruth."
-    ],
-    "qualities": [
-      "Générosité",
-      "Respect",
-      "Loyauté"
-    ],
-    "difficulties": [
-      "Il devait agir avec justice dans une situation familiale complexe liée au droit de rachat.",
-      "Il devait respecter la priorité du racheteur plus proche avant d’épouser Ruth.",
-      "Il a dû prendre des décisions qui engageaient l’avenir de Ruth, de Noémi et de la lignée familiale.",
-      "Il a choisi de respecter les dispositions de la Loi plutôt que de suivre simplement ses préférences personnelles. — Ruth 3:10-13 ; 4:1-10."
-    ]
-  },
-  "elisha": {
-    "studyFocus": "Élisha fut le successeur d’Éliya comme prophète de Jéhovah. Son ministère comprit de nombreux miracles et s’étendit sur plusieurs règnes en Israël. Il intervint auprès de particuliers, de rois et de groupes de prophètes.",
-    "lessonPoints": [
-      "Élisha demanda une double portion de l’esprit qui animait Éliya.",
-      "Il accomplit des miracles qui montraient la puissance de Jéhovah.",
-      "Il aida aussi bien des personnes humbles qu’un chef militaire comme Naaman.",
-      "Il resta fidèle à sa mission malgré les difficultés politiques et spirituelles d’Israël."
-    ],
-    "keyReading": "1 Rois 19:15-21 ; 2 Rois 2:1-25 ; 4:1–8:15 ; 9:1-13 ; 13:14-21",
-    "jwResources": [
-      {
-        "title": "Élisée — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89lis%C3%A9e/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
-    "location": "Royaume d’Israël, notamment autour de Samarie et du Jourdain.",
-    "relationshipWithJehovah": "Élisha servit comme prophète de Jéhovah et dirigea l’attention des autres vers la puissance et les instructions de Dieu.",
-    "didYouKnow": "Élisha fut le secrétaire ou serviteur d’Élie avant de poursuivre son ministère prophétique après l’enlèvement de son maître.",
-    "identity": "Prophète et successeur d’Élie — Élisée poursuit le ministère prophétique d’Élie et intervient dans de nombreux récits concernant Israël.",
-    "era": "Xe siècle av. n. è. environ, pendant les règnes de Joram, Jéhu, Jehoahaz et Joas d’Israël",
-    "familyAndEntourage": ["Élie","Guéhazi","La femme de Shounem","Naaman","Les fils des prophètes"],
-    "bibleAccount": [
-      "Accepte de suivre Élie.",
-      "Reçoit sa fonction prophétique après le départ d’Élie.",
-      "Aide des personnes confrontées à la pauvreté, à la maladie ou au danger."
-    ],
-    "qualities": [
-      "Foi",
-      "Persévérance",
-      "Compassion"
-    ],
-    "difficulties": [
-      "Il a quitté son activité agricole et sa famille pour accepter la mission prophétique confiée par Jéhovah.",
-      "Il a servi Éliya pendant des années avant d’assumer une responsabilité plus importante.",
-      "Son ministère l’a confronté à l’opposition, à des situations dangereuses et aux besoins de nombreuses personnes.",
-      "Il a dû compter sur l’esprit de Jéhovah pour accomplir sa mission et faire face aux changements de situation. — 1R 19:19-21 ; 2R 2:1-15."
-    ]
-  },
-  "nehemie": {
-    "studyFocus": "Néhémie était échanson du roi Artaxerxès avant de recevoir l’autorisation de reconstruire les murailles de Jérusalem. Il organisa le travail malgré l’opposition, encouragea le peuple et participa ensuite à des réformes destinées à rétablir le respect de la Loi.",
-    "lessonPoints": [
-      "Néhémie pria avant d’agir et prépara soigneusement sa demande au roi.",
-      "Il combina organisation pratique, courage et confiance en Jéhovah.",
-      "Il ne permit pas aux menaces de Sanballat et de ses alliés d’arrêter le chantier.",
-      "Il corrigea aussi des injustices et des pratiques contraires à la Loi après la reconstruction."
-    ],
-    "keyReading": "Néhémie 1:1-11 ; 2:1-20 ; 4:1-23 ; 6:1-19 ; 8:1-18 ; 13:1-31",
-    "jwResources": [
-      {
-        "title": "Néhémie — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Neh%C3%A9mia/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
-    "location": "Suse puis Jérusalem.",
-    "relationshipWithJehovah": "Néhémie pria régulièrement, attribua la réussite à Jéhovah et chercha à restaurer à Jérusalem une vie conforme à la Loi.",
-    "didYouKnow": "Néhémie reconstruisit les murailles de Jérusalem en 52 jours alors que les travaux faisaient face à l’opposition de Sanballat, Tobiya et Guéshem.",
-    "identity": "Néhémie était un Juif servant comme échanson du roi de Perse. Il reçut l’autorisation de reconstruire les murailles de Jérusalem et dirigea le chantier malgré une forte opposition.",
-    "era": "455-443 av. n. è. environ pour son gouvernorat, sous Artaxerxès Ier",
-    "familyAndEntourage": [
-      "Artaxerxès",
-      "Les Juifs de Jérusalem",
-      "Sanballat",
-      "Tobiya",
-      "Esdras"
-    ],
-    "bibleAccount": [
-      "Il apprend la situation désastreuse de Jérusalem et prie Jéhovah.",
-      "Il demande au roi l’autorisation de reconstruire les murailles.",
-      "Il organise les familles et les travailleurs malgré les menaces.",
-      "La muraille est achevée en 52 jours.",
-      "Il contribue ensuite à rétablir l’ordre spirituel et social du peuple."
-    ],
-    "qualities": [
-      "Prière",
-      "Organisation",
-      "Courage",
-      "Persévérance"
-    ],
-    "difficulties":     [
-      "Il doit reconstruire les murailles malgré l’opposition de Sanballat, Tobiya et Guéshem.",
-      "Il doit aussi corriger des abus économiques et des manquements à la Loi parmi les Juifs revenus d’exil."
-    ]
-  },
-  "mary_magdalen": {
-    "studyFocus": "Marie Madeleine était une disciple de Jésus originaire de Magdala. Jésus avait chassé d’elle sept démons. Elle le suivit, le soutint avec d’autres femmes et fut parmi les premières personnes à le voir après sa résurrection.",
-    "lessonPoints": [
-      "Marie Madeleine manifesta une forte reconnaissance envers Jésus.",
-      "Elle accompagna Jésus et ses apôtres pendant leur ministère.",
-      "Elle resta présente lors de la mort de Jésus alors que beaucoup de disciples étaient dispersés.",
-      "Après la résurrection, elle fut chargée d’annoncer aux disciples qu’elle avait vu le Seigneur."
-    ],
-    "keyReading": "Luc 8:1-3 ; Matthieu 27:55-61 ; Jean 19:25 ; 20:1-18",
-    "location": "Magdala en Galilée puis divers lieux parcourus par Jésus.",
-    "relationshipWithJehovah": "Marie Madeleine devint une disciple fidèle de Jésus et fut parmi les femmes qui le suivaient et le soutenaient. Après sa résurrection, Jésus lui confia le privilège d’annoncer cette nouvelle aux disciples.",
-    "didYouKnow": "Les Évangiles ne disent pas que Marie Madeleine était une prostituée ; cette identification ne repose pas sur le texte biblique.",
-    "jwResources": [
-      {
-        "title": "Magdalène (Marie la) — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Magdal%C3%A8ne-Marie-la/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — encyclopédie biblique",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu — Marie de Magdala",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marie-de-magdala-jai-vu-le-seigneur/"
-      }
-    ],
     "identity": "Marie Madeleine était une disciple fidèle de Jésus, délivrée de sept démons. Elle l’accompagna jusqu’à sa mort et fut l’une des premières personnes à le voir après sa résurrection.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus et après sa résurrection",
+    "era": "5 av. n. è. environ - après 33 de n. è.",
     "familyAndEntourage": [
       "Jésus",
       "Les apôtres",
@@ -1315,20 +796,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jéricho.",
     "relationshipWithJehovah": "Zachée répondit favorablement à Jésus et manifesta une repentance concrète en décidant de réparer les torts qu’il avait commis. Jésus déclara que le salut était venu dans sa maison.",
     "didYouKnow": "Zachée était chef des collecteurs d’impôts à Jéricho et était de petite taille ; il monta sur un sycomore pour voir Jésus.",
-    "jwResources": [
-      {
-        "title": "Zachée — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/zachee/"
-      },
-      {
-        "title": "La Bible — Luc 19",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
-      }
-    ],
     "identity": "Zachée était chef des collecteurs d’impôts à Jéricho et riche. Après avoir rencontré Jésus, il manifesta un changement concret dans sa conduite.",
     "era": "Vers 33 de n. è., peu avant la mort de Jésus",
     "familyAndEntourage": [
@@ -1364,16 +831,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Chypre, Jérusalem, Antioche et diverses régions du monde méditerranéen.",
     "relationshipWithJehovah": "Barnabas consacra ses ressources et son énergie à soutenir l’œuvre chrétienne. Son encouragement des nouveaux disciples et son soutien à Paul montrent son attachement à la congrégation.",
     "didYouKnow": "Son nom Barnabas signifie « Fils de consolation » ou « Fils d’encouragement », et les apôtres lui donnèrent ce surnom.",
-    "jwResources": [
-      {
-        "title": "Barnabas — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Barnabas/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Collaborateur des apôtres — Barnabé joue un rôle important dans l’accueil et l’encouragement des disciples et dans l’activité missionnaire.",
     "era": "Ier siècle de n. è., depuis les débuts de la congrégation chrétienne jusqu’aux environs de 49 de n. è.",
     "familyAndEntourage": [
@@ -1408,20 +865,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Césarée, en Judée.",
     "relationshipWithJehovah": "Corneille était un homme pieux qui craignait Dieu, priait régulièrement et faisait beaucoup de dons aux Juifs. Jéhovah prit des dispositions pour qu’il entende la bonne nouvelle par l’intermédiaire de Pierre.",
     "didYouKnow": "Corneille fut le premier Gentil incirconcis à devenir chrétien avec l’approbation de Dieu, et l’esprit saint tomba sur lui et sa maisonnée avant même leur baptême.",
-    "jwResources": [
-      {
-        "title": "Corneille — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/corneille/"
-      },
-      {
-        "title": "La Bible — Actes 10",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/"
-      }
-    ],
     "identity": "Corneille était un centurion romain de Césarée, homme pieux qui craignait Dieu. Il devint le premier non-Juif incirconcis à être baptisé comme chrétien avec l’approbation de Dieu.",
     "era": "Vers 36 de n. è.",
     "familyAndEntourage": [
@@ -1460,18 +903,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Canaan et le désert situé vers Beer-Shéba.",
     "relationshipWithJehovah": "Agar reconnut que Jéhovah avait vu sa détresse et reçut de lui des promesses concernant son fils Ismaël.",
     "didYouKnow": "Agar est la première personne à qui la Bible attribue un nom donné à Jéhovah : elle l’appela « le Dieu qui voit » après sa rencontre avec l’ange.",
-    "jwResources": [
-      {
-        "title": "Agar — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Agar/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Agar était une servante égyptienne de Sara, devenue la mère d’Ismaël après avoir eu un fils d’Abraham.",
-    "era": "XIXe-XVIIIe siècle av. n. è. environ",
+    "era": "vers 1930-1918 av. n. è. environ",
     "familyAndEntourage": [
       "Sara",
       "Abraham",
@@ -1505,22 +938,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Paddan-Aram puis Canaan.",
     "relationshipWithJehovah": "Jéhovah vit que Léa était moins aimée et lui donna des fils. Plusieurs de ses fils devinrent les ancêtres de tribus d’Israël, notamment Juda et Lévi.",
     "didYouKnow": "Léa donna naissance à six des fils de Jacob ainsi qu’à Dina ; ses fils Juda et Lévi eurent ensuite une place importante dans l’histoire d’Israël.",
-    "jwResources": [
-      {
-        "title": "Léa — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/L%C3%A9a/"
-      },
-      {
-        "title": "La Bible — Genèse 29-31",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Jacob — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacob/"
-      }
-    ],
     "identity": "Léa était la fille aînée de Labân, première femme de Jacob et mère de six des douze fils de Jacob ainsi que de Dina.",
-    "era": "XIXe-XVIIIe siècle av. n. è. environ",
+    "era": "vers 1850-1711 av. n. è. environ",
     "familyAndEntourage": [
       "Labân",
       "Jacob",
@@ -1561,20 +980,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Canaan, puis la région montagneuse de Séïr.",
     "relationshipWithJehovah": "Le récit d’Ésaü met surtout en évidence ses choix personnels : il méprisa son droit d’aînesse et épousa des femmes qui furent une source d’amertume pour Isaac et Rébecca. Hébreux le présente ensuite comme un avertissement concernant les choses sacrées.",
     "didYouKnow": "Ésaü fut aussi appelé Édom, nom lié à la couleur rouge du plat pour lequel il vendit son droit d’aînesse.",
-    "jwResources": [
-      {
-        "title": "Ésaü — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89sa%C3%BC/"
-      },
-      {
-        "title": "La Bible — Genèse 25-33",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Jacob — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacob/"
-      }
-    ],
     "identity": "Ésaü était le fils aîné d’Isaac et de Rébecca, frère jumeau de Jacob et ancêtre des Édomites.",
     "era": "1858 av. n. è. pour sa naissance; époque des patriarches",
     "familyAndEntourage": [
@@ -1610,20 +1015,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Salem, généralement identifiée à l’ancienne Jérusalem.",
     "relationshipWithJehovah": "Melkisédek servait comme prêtre du Dieu Très-Haut et bénit Abraham au nom de Jéhovah.",
     "didYouKnow": "Melkisédek était roi de Salem et prêtre du Dieu Très-Haut. Il bénit Abraham après sa victoire sur les rois ennemis.",
-    "jwResources": [
-      {
-        "title": "Melkisédec — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Melkis%C3%A9dec/"
-      },
-      {
-        "title": "La Bible — Genèse 14",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Grand prêtre — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Grand-pr%C3%AAtre/"
-      }
-    ],
     "identity": "Melkisédec était roi de Salem et prêtre du Dieu Très-Haut, Jéhovah. Il bénit Abraham après sa victoire sur des rois ennemis.",
     "era": "Avant 1933 av. n. è.",
     "familyAndEntourage": ["Abraham"],
@@ -1655,22 +1046,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Madian puis le désert près du Sinaï.",
     "relationshipWithJehovah": "Jéthro reconnut la supériorité de Jéhovah après avoir entendu ce qu’il avait fait pour Israël. Il se réjouit avec Moïse et offrit un sacrifice au vrai Dieu.",
     "didYouKnow": "Jéthro conseilla à Moïse de déléguer une partie du travail judiciaire à des hommes capables afin de ne pas porter seul toute la charge.",
-    "jwResources": [
-      {
-        "title": "Jéthro — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      }
-    ],
     "identity": "Jéthro était prêtre de Madiân et beau-père de Moïse. Il accueillit Moïse, lui donna Séphora pour femme et lui conseilla plus tard d’organiser la direction du peuple.",
-    "era": "XVIe-XVe siècle av. n. è.",
+    "era": "1593-1473 av. n. è. environ",
     "familyAndEntourage": [
       "Séphora",
       "Moïse",
@@ -1704,22 +1081,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Madian et sur la route vers l’Égypte.",
     "relationshipWithJehovah": "Lors d’une situation grave sur le chemin de l’Égypte, Séphora circoncit rapidement son fils conformément à l’exigence divine. Le récit montre l’importance qu’elle accordait à cette obligation.",
     "didYouKnow": "Séphora était la fille de Jéthro et la femme de Moïse ; elle lui donna deux fils, Guershom et Éliézer.",
-    "jwResources": [
-      {
-        "title": "Séphora — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/sephora/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      }
-    ],
     "identity": "Séphora était la fille de Jéthro, l’épouse de Moïse et la mère de ses fils Guershom et Éliézer.",
-    "era": "XVIe-XVe siècle av. n. è.",
+    "era": "1593-1473 av. n. è. environ",
     "familyAndEntourage": [
       "Jéthro",
       "Moïse",
@@ -1754,22 +1117,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Désert, dans le camp d’Israël.",
     "relationshipWithJehovah": "Qorah contesta l’autorité que Jéhovah avait confiée à Moïse et Aaron. Sa rébellion eut de graves conséquences pour lui et ses partisans.",
     "didYouKnow": "Les fils de Qorah survécurent à la rébellion ; leurs descendants furent ensuite associés au service musical du temple.",
-    "jwResources": [
-      {
-        "title": "Coré — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/core/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      }
-    ],
     "identity": "Qorah était un Lévite, cousin de Moïse et d’Aaron, qui contesta leur autorité avec Dathan, Abiram et 250 autres hommes.",
-    "era": "XVIe-XVe siècle av. n. è.",
+    "era": "1593-1473 av. n. è. environ",
     "familyAndEntourage": [
       "Amram",
       "Moïse",
@@ -1802,20 +1151,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Mésopotamie puis territoire de Moab.",
     "relationshipWithJehovah": "Balaam reçut des instructions de Jéhovah et fut contraint de bénir Israël au lieu de le maudire. Cependant, la Bible le présente aussi comme un homme qui a laissé l’avidité influencer sa conduite.",
     "didYouKnow": "L’ânesse de Balaam vit l’ange de Jéhovah sur le chemin et parla de façon miraculeuse avant que Balaam ne comprenne ce qui se passait.",
-    "jwResources": [
-      {
-        "title": "Balaam — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      }
-    ],
     "identity": "Balaam était un homme de Mésopotamie que Balak engagea pour maudire Israël. Jéhovah l’empêcha finalement de prononcer une malédiction contre son peuple.",
     "era": "Époque de l’entrée d’Israël en Terre promise, vers 1473 av. n. è.",
     "familyAndEntourage": [
@@ -1848,20 +1183,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Moab, à l’est du Jourdain.",
     "relationshipWithJehovah": "Balak craignait Israël et chercha à faire prononcer une malédiction contre lui. Ses efforts échouèrent parce que Jéhovah ne permit pas à Balaam de maudire son peuple.",
     "didYouKnow": "Balak emmena Balaam successivement sur plusieurs hauteurs afin qu’il puisse voir une partie du camp d’Israël et tenter de faire prononcer une malédiction.",
-    "jwResources": [
-      {
-        "title": "Balak — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      }
-    ],
     "identity": "Balak était roi de Moab lorsque les Israélites approchaient de la Terre promise. Il chercha à faire maudire Israël par Balaam.",
     "era": "Vers 1473 av. n. è.",
     "familyAndEntourage": [
@@ -1896,22 +1217,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Silo, au sanctuaire d’Israël.",
     "relationshipWithJehovah": "Éli servait comme prêtre à Silo et enseigna à Samuel comment répondre lorsqu’il entendait l’appel de Jéhovah. Malgré cela, il fut repris parce qu’il n’avait pas suffisamment discipliné ses fils.",
     "didYouKnow": "Éli reconnut finalement que c’était Jéhovah qui appelait Samuel et lui apprit à répondre : « Parle, car ton serviteur écoute. »",
-    "jwResources": [
-      {
-        "title": "Éli — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      }
-    ],
     "identity": "Éli était grand prêtre et juge en Israël. Il servit au sanctuaire de Shilo et fut le responsable de Samuel pendant son enfance.",
-    "era": "XIIe-XIe siècle av. n. è.",
+    "era": "1180-1080 av. n. è. environ",
     "familyAndEntourage": [
       "Hophni",
       "Phinéas",
@@ -1947,22 +1254,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Rama et Silo.",
     "relationshipWithJehovah": "Anne pria Jéhovah avec insistance au sujet de son désir d’avoir un enfant. Après avoir reçu Samuel, elle respecta son vœu et continua à remercier Jéhovah.",
     "didYouKnow": "Anne consacra Samuel au service de Jéhovah et lui apportait chaque année un petit manteau sans manches lorsqu’elle venait au sanctuaire.",
-    "jwResources": [
-      {
-        "title": "Anne — Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/anne/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Samuel — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samuel/"
-      }
-    ],
     "identity": "Hanna était la femme d’Elqana et la mère de Samuel. Longtemps stérile, elle pria Jéhovah avec ferveur et consacra son fils à son service.",
-    "era": "XIIe siècle av. n. è. environ",
+    "era": "peu avant 1200 - vers 1120 av. n. è. environ",
     "familyAndEntourage": [
       "Elqana",
       "Samuel",
@@ -1998,22 +1291,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et le royaume d’Israël.",
     "relationshipWithJehovah": "La Bible donne peu d’informations sur la foi personnelle de Mikal. Son récit permet surtout d’observer ses relations avec Saül et David et les conséquences de certains de ses choix.",
     "didYouKnow": "Mikal aida David à échapper aux hommes de Saül en utilisant un teraphim dans son lit pour faire croire qu’il était malade.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      }
-    ],
     "identity": "Mikal était la fille de Saül et la première épouse de David. Elle a aidé David à échapper à la tentative de son père de le tuer.",
-    "era": "XIe siècle av. n. è.",
+    "era": "vers 1100-1000 av. n. è. environ",
     "familyAndEntourage": [
       "Saül",
       "David",
@@ -2048,22 +1327,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et différents champs de bataille du royaume d’Israël.",
     "relationshipWithJehovah": "Joab servit le roi David pendant de nombreuses années, mais il commit aussi des meurtres et agit parfois indépendamment des décisions du roi. Sa conduite finit par entraîner sa condamnation.",
     "didYouKnow": "Joab se réfugia auprès de l’autel de Jéhovah après la mort de David, mais Salomon ordonna son exécution en raison des meurtres qu’il avait commis.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      }
-    ],
     "identity": "Joab était le chef de l’armée de David et un homme très influent pendant son règne. Il participa à de nombreuses guerres mais commit aussi des meurtres motivés par ses propres intérêts.",
-    "era": "XIe-Xe siècle av. n. è.",
+    "era": "1077-970 av. n. è. environ",
     "familyAndEntourage": [
       "David",
       "Abishaï",
@@ -2101,20 +1366,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée et Pérée.",
     "relationshipWithJehovah": "Hérode Antipas entendit le témoignage de Jean le Baptiseur et manifesta de l’intérêt pour Jésus, mais il n’est pas présenté comme un adorateur fidèle de Jéhovah.",
     "didYouKnow": "Jésus appela Hérode Antipas « ce renard » lorsqu’il répondit à l’avertissement concernant le désir d’Hérode de le tuer.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      }
-    ],
     "identity": "Hérode Antipas était le dirigeant de Galilée et de Pérée, fils d’Hérode le Grand. Il fit décapiter Jean le Baptiseur et joua un rôle dans le procès de Jésus.",
     "era": "4 av. n. è. à 39 de n. è.",
     "familyAndEntourage": [
@@ -2148,20 +1399,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et la Judée romaine.",
     "relationshipWithJehovah": "Pilate entendit personnellement le témoignage de Jésus et reconnut à plusieurs reprises qu’il ne trouvait pas de faute méritant la mort. Le récit ne dit cependant pas qu’il devint adorateur de Jéhovah.",
     "didYouKnow": "Pilate demanda à Jésus : « Qu’est-ce que la vérité ? » puis sortit vers ceux qui l’accusaient.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      }
-    ],
     "identity": "Ponce Pilate était le gouverneur romain de Judée qui présida le procès de Jésus et autorisa son exécution malgré l’absence de motif de condamnation à mort.",
     "era": "26-36 de n. è.",
     "familyAndEntourage": [
@@ -2194,18 +1431,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et le royaume de Juda.",
     "relationshipWithJehovah": "Isaïe accepta volontairement la mission que Jéhovah lui confia et transmit fidèlement ses messages, même lorsqu’ils annonçaient des jugements difficiles.",
     "didYouKnow": "Lors de sa vision, Isaïe entendit Jéhovah demander : « Qui enverrai-je ? » et répondit : « Me voici ! Envoie-moi ! »",
-    "jwResources": [
-      {
-        "title": "Isaïe — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Isa%C3%AFe/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Isaïe était un prophète de Juda qui servit pendant les règnes de plusieurs rois et transmit de nombreuses prophéties sur Juda, les nations et le Messie.",
-    "era": "VIIIe siècle av. n. è.",
+    "era": "vers 778-732 av. n. è.",
     "familyAndEntourage": [
       "Amots, son père",
       "Sa femme, appelée la prophétesse",
@@ -2241,18 +1468,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et le royaume de Juda.",
     "relationshipWithJehovah": "Jérémie exprima ouvertement ses sentiments à Jéhovah tout en continuant à transmettre ses messages. Malgré l’opposition et les périodes de découragement, il resta fidèle à sa mission.",
     "didYouKnow": "Jérémie fut jeté dans une citerne boueuse et fut sauvé grâce à l’intervention d’Ébed-Mélek, un Éthiopien au service du roi.",
-    "jwResources": [
-      {
-        "title": "Jérémie — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/J%C3%A9r%C3%A9mie/"
-      },
-      {
-        "title": "Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Jérémie était un prophète de Juda chargé d’avertir Jérusalem avant sa destruction par les Babyloniens et pendant cette période de crise.",
-    "era": "VIIe-VIe siècles av. n. è.",
+    "era": "647-580 av. n. è.",
     "familyAndEntourage": [
       "Hilqiya, son père",
       "Barouk",
@@ -2289,26 +1506,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Tel-Abib, près du fleuve Kebar, en Babylonie.",
     "relationshipWithJehovah": "Ézékiel reçut des visions et des instructions précises de Jéhovah et les transmit fidèlement aux exilés. Son ministère exigea une grande endurance.",
     "didYouKnow": "Jéhovah demanda à Ézékiel de jouer plusieurs scènes symboliques pour transmettre des messages aux habitants de Jérusalem et aux exilés.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Ézéchiel",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89z%C3%A9kiel/"
-      }
-    ],
     "identity": "Ézékiel était un prêtre devenu prophète parmi les Juifs exilés à Babylone. Ses visions et messages ont soutenu les exilés et expliqué pourquoi Jérusalem serait jugée.",
-    "era": "VIe siècle av. n. è.",
+    "era": "613-591 av. n. è. environ",
     "familyAndEntourage": [
       "Buzi, son père",
       "Sa femme",
@@ -2343,26 +1542,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Babylone puis Jérusalem.",
     "relationshipWithJehovah": "Esdras avait préparé son cœur à étudier la Loi de Jéhovah, à la pratiquer et à l’enseigner. Son service associait donc étude personnelle, application et enseignement.",
     "didYouKnow": "Esdras était prêtre et copiste versé dans la Loi de Moïse, et Artaxerxès lui donna l’autorisation de retourner à Jérusalem.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Ezra",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ezra/"
-      }
-    ],
     "identity": "Esdras était un prêtre et copiste habile de la Loi de Moïse. Il retourna à Jérusalem et contribua à rétablir le culte pur.",
-    "era": "Ve siècle av. n. è.",
+    "era": "468-443 av. n. è. environ",
     "familyAndEntourage": [
       "Aaron, son ancêtre",
       "Le roi Artaxerxès",
@@ -2398,24 +1579,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et Juda après le retour de Babylone.",
     "relationshipWithJehovah": "Zorobabel participa à la reconstruction du temple et reçut des encouragements prophétiques de Jéhovah par l’intermédiaire d’Haggaï et de Zekaria.",
     "didYouKnow": "Zorobabel est présenté comme gouverneur de Juda au moment de la reprise des travaux du temple après l’exil.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Zorobabel",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Zorobabel/"
-      }
-    ],
     "identity": "Zorobabel était un descendant de David qui dirigea le premier groupe important de Juifs revenus d’exil à Babylone et participa à la reconstruction du temple.",
     "era": "VIe siècle av. n. è., après 537 av. n. è.",
     "familyAndEntourage": [
@@ -2454,24 +1617,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem, après le retour de l’exil à Babylone.",
     "relationshipWithJehovah": "Haggaï transmit les encouragements de Jéhovah aux Juifs qui avaient laissé la reconstruction du temple ralentir. Son message les poussa à remettre le culte au premier plan.",
     "didYouKnow": "Les prophéties d’Haggaï sont datées avec précision dans le livre et couvrent une période de quelques mois en 520 av. n. è.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Haggaï",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Hagga%C3%AF/"
-      }
-    ],
     "identity": "Aggée était un prophète qui encouragea les Juifs revenus d’exil à reprendre la reconstruction du temple de Jéhovah.",
     "era": "520 av. n. è. environ, sous le gouvernorat de Zorobabel et le règne de Darius Hystaspe",
     "familyAndEntourage": [
@@ -2508,24 +1653,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et Juda après l’exil.",
     "relationshipWithJehovah": "Zekaria reçut des visions et transmit les encouragements de Jéhovah aux Juifs revenus d’exil. Son message les poussa à reprendre courage et à achever le temple.",
     "didYouKnow": "Zekaria reçut plusieurs visions nocturnes qui utilisaient des images symboliques pour communiquer les desseins de Jéhovah.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Zekaria",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Zekaria/"
-      }
-    ],
     "identity": "Zacharie était un prophète contemporain d’Aggée qui encouragea les Juifs revenus d’exil à achever le temple et leur donna plusieurs visions prophétiques.",
     "era": "520-518 av. n. è. environ, après le retour des Juifs de l’exil",
     "familyAndEntourage": [
@@ -2564,30 +1691,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Juda et Jérusalem après l’exil.",
     "relationshipWithJehovah": "Malachie défendit le culte pur et rappela aux prêtres et au peuple qu’ils devaient honorer Jéhovah avec sincérité plutôt que lui offrir un service négligent.",
     "didYouKnow": "Malachie est le dernier livre des Écritures hébraïques dans l’ordre de la Bible française courante.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Malachie",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Malachie/"
-      },
-      {
-        "title": "Malaki — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Malaki/"
-      }
-    ],
     "identity": "Malachie était un prophète qui reprit les prêtres et le peuple de Juda pour leur manque de respect envers le culte de Jéhovah.",
-    "era": "Ve siècle av. n. è. environ, après la reconstruction du temple",
+    "era": "après 443 av. n. è., probablement au Ve siècle av. n. è.",
     "familyAndEntourage": [
       "Les prêtres de Juda",
       "Le peuple de Juda",
@@ -2621,26 +1726,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem.",
     "relationshipWithJehovah": "Gamaliel était un pharisien et un enseignant de la Loi. Dans Actes 5, il conseilla au Sanhédrin de ne pas agir précipitamment contre les apôtres.",
     "didYouKnow": "Gamaliel est présenté comme un enseignant de la Loi respecté et Paul indique avoir été formé à ses pieds.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Gamaliel",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Gamaliel/"
-      }
-    ],
     "identity": "Gamaliel était un pharisien et enseignant de la Loi très respecté qui intervint lorsque les apôtres furent amenés devant le Sanhédrin.",
-    "era": "Ier siècle de n. è., à l’époque des débuts de la congrégation chrétienne",
+    "era": "vers 20-50 de n. è. environ",
     "familyAndEntourage": [
       "Paul, qui fut formé à ses pieds",
       "Les membres du Sanhédrin",
@@ -2673,24 +1760,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Éphèse, Corinthe et d’autres régions du bassin méditerranéen",
     "relationshipWithJehovah": "Apollos connaissait déjà les Écritures et parlait avec ferveur au sujet de Jésus. Aquilas et Priscille lui expliquèrent plus exactement la voie de Dieu, et il accepta cette aide.",
     "didYouKnow": "Apollos était originaire d’Alexandrie et devint ensuite un prédicateur efficace qui réfutait publiquement les opposants en utilisant les Écritures.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne — Traduction du monde nouveau",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Les personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/enfants/personnages-bibliques/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Apollos",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Apollos/"
-      }
-    ],
     "identity": "Apollos était un Juif instruit d’Alexandrie, éloquent et fervent, qui enseignait Jésus avec exactitude mais ne connaissait initialement que le baptême de Jean.",
     "era": "Vers 52-55 de n. è. et après",
     "familyAndEntourage": [
@@ -2729,22 +1798,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem, Antioche de Syrie, Macédoine et Grèce.",
     "relationshipWithJehovah": "Silas servit comme prophète et collaborateur de Paul. Même après avoir été battu et emprisonné à Philippes, il continua à louer Dieu et à servir.",
     "didYouKnow": "Silas fut emprisonné avec Paul à Philippes ; vers minuit, ils priaient et chantaient des louanges à Dieu.",
-    "jwResources": [
-      {
-        "title": "Silas — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Silas",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Silas/"
-      }
-    ],
     "identity": "Silas, aussi appelé Silvain dans les lettres chrétiennes, était un membre éminent de la congrégation de Jérusalem, prophète et compagnon de voyage de Paul.",
-    "era": "Ier siècle de n. è., pendant les voyages missionnaires de Paul",
+    "era": "vers 49-60 de n. è. environ",
     "familyAndEntourage": [
       "Paul",
       "Timothée",
@@ -2781,22 +1836,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Colosses et Rome.",
     "relationshipWithJehovah": "Onésime devint chrétien après avoir rencontré Paul et fut ensuite présenté à Philémon comme un frère chrétien. Sa transformation montre l’effet de la bonne nouvelle sur sa vie.",
     "didYouKnow": "Paul renvoya Onésime à Philémon avec une lettre demandant qu’il soit accueilli comme un frère plutôt que simplement comme un esclave.",
-    "jwResources": [
-      {
-        "title": "Onésime — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Onésime",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/On%C3%A9sime/"
-      }
-    ],
     "identity": "Onésime était l’esclave de Philémon qui s’enfuit de sa maison de Colosses, rencontra Paul à Rome et devint chrétien. Paul le renvoya ensuite auprès de Philémon comme frère chrétien.",
-    "era": "Ier siècle de n. è., pendant l’activité de Paul",
+    "era": "vers 55-61 de n. è. environ",
     "familyAndEntourage": [
       "Philémon",
       "Apphia",
@@ -2831,22 +1872,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Colosses, en Asie Mineure.",
     "relationshipWithJehovah": "Philémon était un chrétien dont la foi et l’amour étaient connus de Paul. La lettre qui porte son nom l’encourage à manifester ces qualités envers Onésime.",
     "didYouKnow": "La congrégation se réunissait dans la maison de Philémon, ce qui montre le rôle important qu’il jouait dans la communauté chrétienne de Colosses.",
-    "jwResources": [
-      {
-        "title": "Philémon — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Philémon",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Phil%C3%A9mon/"
-      }
-    ],
     "identity": "Philémon était un chrétien de Colosses, ami et collaborateur de Paul, chez qui une congrégation se réunissait. Paul lui écrivit au sujet d’Onésime.",
-    "era": "Ier siècle de n. è., pendant l’activité de Paul",
+    "era": "vers 55-61 de n. è. environ",
     "familyAndEntourage": [
       "Apphia",
       "Archippe",
@@ -2883,22 +1910,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Diverses régions missionnaires, notamment la Crète.",
     "relationshipWithJehovah": "Tite fut un collaborateur fiable de Paul et reçut des responsabilités importantes dans les congrégations. Paul le chargea notamment d’aider à mettre les choses en ordre en Crète.",
     "didYouKnow": "Tite était un chrétien d’origine grecque qui accompagna Paul et servit de représentant dans plusieurs missions.",
-    "jwResources": [
-      {
-        "title": "Tite — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Tite",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tite/"
-      }
-    ],
     "identity": "Tite était un collaborateur et proche associé de Paul, chrétien d’origine grecque, à qui Paul confia des responsabilités importantes dans plusieurs congrégations.",
-    "era": "Ier siècle de n. è., pendant les voyages missionnaires et après",
+    "era": "vers 49-65 de n. è. environ",
     "familyAndEntourage": [
       "Paul",
       "Les congrégations de Crète",
@@ -2933,20 +1946,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Troas, en Asie Mineure.",
     "relationshipWithJehovah": "L’événement autour d’Eutyche fut un puissant témoignage de la puissance de Dieu et encouragea les disciples présents.",
     "didYouKnow": "Eutyche était assis sur une fenêtre au troisième étage lorsque, vaincu par le sommeil, il tomba pendant que Paul parlait.",
-    "jwResources": [
-      {
-        "title": "Eutyche — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Eutyche",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Eutyche/"
-      }
-    ],
     "identity": "Jeune homme de Troas — Eutyche est connu pour l’incident survenu pendant un long discours de Paul à Troas.",
     "era": "Vers 56 de n. è., pendant le troisième voyage missionnaire de Paul",
     "familyAndEntourage": [
@@ -2976,22 +1975,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Béthanie, près de Jérusalem.",
     "relationshipWithJehovah": "Marthe manifesta sa foi en Jésus et en la résurrection, montrant son attachement au Dieu qui avait envoyé le Christ.",
     "didYouKnow": "Marthe fit une déclaration de foi remarquable avant même que Jésus ne ressuscite Lazare : elle dit croire qu’il était le Christ, le Fils de Dieu.",
-    "jwResources": [
-      {
-        "title": "Marthe — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marthe — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Marthe/"
-      }
-    ],
     "identity": "Marthe était la sœur de Lazare et de Marie de Béthanie. Elle accueillit Jésus dans sa maison et fut témoin de la résurrection de son frère.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
+    "era": "29-33 de n. è. environ",
     "familyAndEntourage": [
       "Lazare",
       "Marie de Béthanie",
@@ -3027,26 +2012,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Béthanie, près de Jérusalem.",
     "relationshipWithJehovah": "Marie manifestait son attachement à Jéhovah en accordant une grande valeur à l’enseignement de Jésus et en honorant son Fils.",
     "didYouKnow": "Jésus déclara que l’action de Marie avec le parfum serait rappelée partout où la bonne nouvelle serait prêchée.",
-    "jwResources": [
-      {
-        "title": "Marche courageusement avec Dieu — Marie de Béthanie",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marie-soeur-de-lazare-elle-a-fait-ce-quelle-a-pu/"
-      },
-      {
-        "title": "Marie de Béthanie — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marie — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Marie-III/"
-      }
-    ],
     "identity": "Marie de Béthanie était la sœur de Marthe et de Lazare et une amie proche de Jésus. Elle manifesta une grande foi et une profonde reconnaissance envers lui.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
+    "era": "15 av. n. è. environ - après 33 de n. è. environ",
     "familyAndEntourage": [
       "Marthe",
       "Lazare",
@@ -3080,22 +2047,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et Arimathie.",
     "relationshipWithJehovah": "Joseph craignait Dieu et choisit de soutenir Jésus alors que beaucoup de dirigeants l’avaient rejeté.",
     "didYouKnow": "Joseph d’Arimathie était membre du Sanhédrin mais n’avait pas approuvé la décision et l’action des autres membres contre Jésus.",
-    "jwResources": [
-      {
-        "title": "Joseph d’Arimathie — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Joseph d’Arimathée — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Joseph-II/"
-      }
-    ],
     "identity": "Joseph d’Arimathie était un homme riche, membre respecté du Sanhédrin et disciple de Jésus qui demanda courageusement le corps de Jésus après sa mort.",
-    "era": "Ier siècle de n. è., au moment de la mort et de l’ensevelissement de Jésus",
+    "era": "vers 33 de n. è.",
     "familyAndEntourage": [
       "Jésus",
       "Pilate",
@@ -3131,22 +2084,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Région de Galilée, près du lieu où Jésus enseignait.",
     "relationshipWithJehovah": "Jaïrus fit confiance à Jésus, l’instrument par lequel Jéhovah allait accomplir des miracles et enseigner l’espérance de la résurrection.",
     "didYouKnow": "Quand Jésus ressuscita la fille de Jaïrus, il demanda qu’on lui donne quelque chose à manger, détail qui montre qu’elle était réellement revenue à la vie.",
-    "jwResources": [
-      {
-        "title": "Jaïrus — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Jaïrus — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ja%C3%AFrus/"
-      }
-    ],
     "identity": "Jaïrus était un responsable de synagogue dont la fille de 12 ans tomba gravement malade. Il supplia Jésus de venir la sauver.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
+    "era": "vers 31-32 de n. è.",
     "familyAndEntourage": [
       "Sa fille unique",
       "Sa femme",
@@ -3181,22 +2120,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée et Jérusalem.",
     "relationshipWithJehovah": "Thomas renforça sa foi en Jésus ressuscité et reconnut publiquement sa position exceptionnelle.",
     "didYouKnow": "Thomas était aussi appelé Didyme, nom grec qui signifie « jumeau ».",
-    "jwResources": [
-      {
-        "title": "Thomas — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Thomas — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Thomas/"
-      }
-    ],
     "identity": "Thomas, appelé Didyme, était l’un des douze apôtres. Il est surtout connu pour avoir voulu des preuves de la résurrection de Jésus avant d’y croire pleinement.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus et après sa résurrection",
+    "era": "vers 31-65 de n. è. environ",
     "familyAndEntourage": [
       "Les onze autres apôtres",
       "Jésus",
@@ -3231,20 +2156,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Philippes, en Macédoine.",
     "relationshipWithJehovah": "Jéhovah ouvrit le cœur de Lydie pour qu’elle prête attention à ce que Paul disait, puis elle répondit favorablement au message chrétien.",
     "didYouKnow": "Lydie vendait de la pourpre, un produit associé à la ville de Thyatire, et elle semble avoir été la première personne à devenir chrétienne à Philippes.",
-    "jwResources": [
-      {
-        "title": "Lydie — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Lydie",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Lydie/"
-      }
-    ],
     "identity": "Lydie était une commerçante de Thyatire qui s’installa à Philippes. Elle fut la première personne de Macédoine à accepter la bonne nouvelle, puis elle accueillit Paul et ses compagnons chez elle.",
     "era": "Vers 50 de n. è. et après",
     "familyAndEntourage": [
@@ -3283,20 +2194,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Joppé, sur la côte méditerranéenne.",
     "relationshipWithJehovah": "Tabitha montrait son amour pour Dieu et pour les autres par ses bonnes œuvres et son aide généreuse.",
     "didYouKnow": "Lorsque Tabitha mourut, les veuves montrèrent à Pierre les vêtements qu’elle avait faits pendant qu’elle était avec elles.",
-    "jwResources": [
-      {
-        "title": "Tabitha — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Tabitha",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tabitha/"
-      }
-    ],
     "identity": "Tabitha, appelée Dorcas en grec, était une disciple de Joppé connue pour ses nombreuses bonnes actions et ses dons aux personnes dans le besoin.",
     "era": "Ier siècle de n. è., après la Pentecôte 33",
     "familyAndEntourage": [
@@ -3333,24 +2230,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem.",
     "relationshipWithJehovah": "Étienne était rempli de foi et d’esprit saint et resta fidèle à Jéhovah jusqu’à sa mort.",
     "didYouKnow": "Étienne est présenté comme le premier disciple de Jésus dont la Bible rapporte la mort en martyr.",
-    "jwResources": [
-      {
-        "title": "Marche courageusement avec Dieu — Étienne",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/etienne-plein-de-foi-et-desprit-saint/"
-      },
-      {
-        "title": "Étienne — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Étienne",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89tienne/"
-      }
-    ],
     "identity": "Étienne était un homme plein de foi et d’esprit saint, choisi avec six autres hommes pour s’occuper de la distribution quotidienne de nourriture dans la congrégation de Jérusalem. Il devint ensuite un prédicateur énergique et le premier chrétien dont la Bible rapporte le martyre.",
     "era": "Vers 33-34 de n. è., peu après la Pentecôte",
     "familyAndEntourage": [
@@ -3390,20 +2269,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Damas.",
     "relationshipWithJehovah": "Ananias obéit rapidement à la direction de Jésus et participa à l’accueil de Saul dans la communauté chrétienne.",
     "didYouKnow": "Ananias est décrit comme un homme attaché à la Loi et respecté par les Juifs de Damas.",
-    "jwResources": [
-      {
-        "title": "Ananias de Damas — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Ananias — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ananias/"
-      }
-    ],
     "identity": "Ananias de Damas était un disciple fidèle à qui Jésus ressuscité confia la mission de rencontrer Saul de Tarse, alors persécuteur des chrétiens.",
     "era": "Vers 34-36 de n. è., après la conversion de Saul",
     "familyAndEntourage": [
@@ -3440,26 +2305,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem, Samarie, route de Gaza et Césarée.",
     "relationshipWithJehovah": "Philippe se laissa guider par l’esprit de Dieu et resta disponible pour accomplir différents services dans la congrégation.",
     "didYouKnow": "Philippe avait quatre filles célibataires qui prophétisaient et qui vivaient avec lui à Césarée.",
-    "jwResources": [
-      {
-        "title": "Philippe l’évangélisateur — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Philippe",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Philippe/"
-      },
-      {
-        "title": "Philippe — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Philippe-I/"
-      }
-    ],
     "identity": "Philippe l’évangélisateur était l’un des sept hommes choisis à Jérusalem pour un service de distribution. Il devint ensuite un prédicateur itinérant particulièrement actif.",
-    "era": "Ier siècle de n. è., après la persécution suivant la mort d’Étienne",
+    "era": "vers 33-60 de n. è. environ",
     "familyAndEntourage": [
       "Étienne",
       "Les six autres hommes choisis à Jérusalem",
@@ -3497,20 +2344,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée et Jérusalem.",
     "relationshipWithJehovah": "Jacques servit Jésus fidèlement et mourut comme témoin de la foi chrétienne.",
     "didYouKnow": "Jacques fut le premier des Douze dont la Bible rapporte la mort en martyr; Hérode Agrippa Ier le fit tuer par l’épée.",
-    "jwResources": [
-      {
-        "title": "Jacques fils de Zébédée — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Jacques — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacques/"
-      }
-    ],
     "identity": "Jacques, fils de Zébédée, était l’un des douze apôtres de Jésus et faisait partie du cercle des trois disciples particulièrement proches de lui avec Pierre et Jean.",
     "era": "Ier siècle de n. è.; mort en martyr vers 44 de n. è.",
     "familyAndEntourage": [
@@ -3547,22 +2380,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem.",
     "relationshipWithJehovah": "Après avoir acquis la foi en Jésus, Jacques servit activement la congrégation et encouragea les chrétiens à mettre leur foi en pratique.",
     "didYouKnow": "Paul rapporte que le Christ ressuscité apparut spécialement à Jacques avant de se manifester à tous les apôtres.",
-    "jwResources": [
-      {
-        "title": "Jacques, frère de Jésus — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Jacques — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacques/"
-      }
-    ],
     "identity": "Jacques, demi-frère de Jésus, devint une figure majeure de la congrégation de Jérusalem et rédigea la lettre biblique qui porte son nom.",
-    "era": "Ier siècle de n. è., particulièrement après la résurrection de Jésus",
+    "era": "vers 33-62 de n. è. environ",
     "familyAndEntourage": [
       "Marie, sa mère",
       "Jésus",
@@ -3601,22 +2420,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Le monde chrétien du Ier siècle.",
     "relationshipWithJehovah": "Jude encouragea les chrétiens à rester dans l’amour de Dieu et à compter sur sa miséricorde par Jésus Christ.",
     "didYouKnow": "Jude était frère de Jacques et donc frère de Jésus, mais dans sa lettre il se présente comme « esclave de Jésus Christ ».",
-    "jwResources": [
-      {
-        "title": "Jude, frère de Jésus — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Jude — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jude/"
-      }
-    ],
     "identity": "Jude, demi-frère de Jésus et frère de Jacques, devint chrétien après la résurrection de Jésus et rédigea la lettre biblique de Jude.",
-    "era": "Ier siècle de n. è., après la résurrection de Jésus",
+    "era": "vers 33-65 de n. è. environ",
     "familyAndEntourage": [
       "Marie, sa mère",
       "Jésus",
@@ -3653,22 +2458,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Bethsaïda et Jérusalem.",
     "relationshipWithJehovah": "Philippe apprit à connaître Jéhovah par l’intermédiaire de Jésus et continua à servir comme apôtre après la résurrection.",
     "didYouKnow": "Philippe était de Bethsaïda, la ville d’André et de Pierre, et c’est lui qui alla dire à Nathanaël : « Nous avons trouvé celui dont Moïse a écrit dans la Loi. »",
-    "jwResources": [
-      {
-        "title": "Philippe l’apôtre — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Philippe — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Philippe-II/"
-      }
-    ],
     "identity": "Apôtre — Philippe est l’un des Douze. Il amène Nathanaël à Jésus et intervient dans plusieurs épisodes de l’Évangile de Jean.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
+    "era": "vers 29-33 de n. è., puis après la Pentecôte 33",
     "familyAndEntourage": [
       "Nathanaël",
       "André",
@@ -3698,22 +2489,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Probablement Nathanaël, disciple rencontré à proximité de la Galilée",
     "relationshipWithJehovah": "Nathanaël reconnut Jésus comme le Fils de Dieu et le Roi d’Israël et resta ensuite parmi ses apôtres.",
     "didYouKnow": "Le nom Nathanaël apparaît dans l’Évangile de Jean, tandis que les listes des Douze donnent le nom Barthélemy ; c’est pourquoi Barthélemy est généralement identifié à Nathanaël.",
-    "jwResources": [
-      {
-        "title": "Barthélémy — Étude perspicace",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "La Bible en ligne",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Barthélemy — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Barth%C3%A9lemy/"
-      }
-    ],
     "identity": "Barthélemy est l’un des Douze et est généralement identifié à Nathanaël dans les sources de référence. Le texte de Jean appelle ce disciple Nathanaël, tandis que les listes des Douze utilisent le nom Barthélemy.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
+    "era": "vers 29-33 de n. è., puis après la Pentecôte 33",
     "familyAndEntourage": [
       "Philippe",
       "Nathanaël",
@@ -3748,18 +2525,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée et Jérusalem.",
     "relationshipWithJehovah": "Jacques fils d’Alphée fut choisi comme apôtre par Jésus et resta associé au groupe des Douze. Les Écritures donnent peu de détails sur sa vie personnelle, mais son inclusion parmi les apôtres témoigne de sa place dans le service chrétien.",
     "didYouKnow": "Jacques fils d’Alphée est distingué dans les Évangiles de Jacques fils de Zébédée, un autre des Douze.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Jacques fils d’Alphée était l’un des douze apôtres choisis par Jésus. La Bible donne peu de renseignements personnels sur lui.",
-    "era": "Ier siècle de n. è., pendant le ministère de Jésus et les premières années de la congrégation",
+    "era": "vers 29-60 de n. è. environ",
     "familyAndEntourage": [
       "Les douze apôtres",
       "Jésus",
@@ -3792,18 +2559,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée et Jérusalem.",
     "relationshipWithJehovah": "Simon le Zélote fut choisi par Jésus comme apôtre. Son appartenance antérieure aux Zélotes montre que Jésus réunit parmi ses disciples des personnes venant d’horizons différents.",
     "didYouKnow": "Simon est appelé « le Zélote » dans les listes d’apôtres, ce qui le distingue de Simon Pierre.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Simon le Zélé était l’un des douze apôtres de Jésus. Son surnom le distinguait de Simon Pierre et pouvait évoquer soit son zèle, soit une ancienne association avec les Zélotes.",
-    "era": "Ier siècle de n. è., pendant le ministère de Jésus et les débuts de la congrégation",
+    "era": "vers 29-60 de n. è. environ",
     "familyAndEntourage": [
       "Les douze apôtres",
       "Jésus",
@@ -3837,16 +2594,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée.",
     "relationshipWithJehovah": "La fille de Jaïrus est surtout connue par le récit de sa résurrection par Jésus. Le texte ne fournit pas suffisamment de détails pour établir sa foi personnelle.",
     "didYouKnow": "Jésus prit la jeune fille par la main et lui dit de se lever ; elle se leva immédiatement et se mit à marcher.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "La fille de Jaïrus était une jeune fille de 12 ans, fille unique d’un responsable de synagogue. Jésus la ramena à la vie.",
     "era": "Vers 31-32 de n. è., pendant le ministère de Jésus",
     "familyAndEntourage": [
@@ -3879,18 +2626,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Près de Jéricho.",
     "relationshipWithJehovah": "Bartimée cria vers Jésus en l’appelant « Fils de David » et manifesta une grande confiance en lui. Après avoir retrouvé la vue, il se mit à suivre Jésus.",
     "didYouKnow": "Bartimée était assis au bord de la route à Jéricho lorsqu’il entendit que Jésus passait.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Bartimée était un mendiant aveugle assis près de Jéricho. Il cria vers Jésus, lui demanda de retrouver la vue et le suivit après sa guérison.",
-    "era": "Fin du ministère terrestre de Jésus, peu avant sa mort",
+    "era": "vers 33 de n. è.",
     "familyAndEntourage": [
       "Timée, son père",
       "Jésus",
@@ -3925,16 +2662,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Sychar, en Samarie.",
     "relationshipWithJehovah": "La Samaritaine accepta progressivement les explications de Jésus sur le vrai culte et parla de lui aux habitants de sa ville. Son témoignage contribua à amener d’autres Samaritains à écouter Jésus.",
     "didYouKnow": "Jésus lui parla du « don de Dieu » et d’une eau qui deviendrait en celui qui la boit une source d’eau jaillissant pour donner la vie éternelle.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "La Samaritaine que Jésus rencontra près de Sychar était une femme qui puisait de l’eau au puits de Jacob. Après sa conversation avec Jésus, elle parla de lui aux habitants de sa ville.",
     "era": "Vers 30 de n. è., pendant le ministère de Jésus",
     "familyAndEntourage": [
@@ -3972,16 +2699,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Capharnaüm.",
     "relationshipWithJehovah": "Le centurion romain de Capharnaüm manifesta une foi remarquable en Jésus, au point de croire qu’une parole de Jésus suffirait à guérir son serviteur.",
     "didYouKnow": "Jésus déclara n’avoir trouvé chez personne en Israël une foi aussi grande que celle de ce centurion.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Le centurion romain de Capernaüm était un officier qui avait construit une synagogue pour les Juifs et qui demanda à Jésus de guérir son esclave.",
     "era": "Vers 30 de n. è., au début du ministère de Jésus",
     "familyAndEntourage": [
@@ -4018,16 +2735,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Césarée, en Judée.",
     "relationshipWithJehovah": "Félix entendit Paul parler de la justice, de la maîtrise de soi et du jugement à venir. Il prit peur mais repoussa la discussion, et le récit ne dit pas qu’il devint adorateur de Jéhovah.",
     "didYouKnow": "Félix espérait aussi que Paul lui donnerait de l’argent, ce qui montre qu’il entretenait un intérêt personnel dans certaines de ses rencontres avec l’apôtre.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Antonius Félix était gouverneur romain de Judée lorsque Paul fut détenu à Césarée. Il entendit plusieurs fois Paul mais le laissa en prison.",
     "era": "Vers 52-59 de n. è.",
     "familyAndEntourage": [
@@ -4060,16 +2767,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Césarée et Jérusalem.",
     "relationshipWithJehovah": "Festus entendit Paul expliquer sa foi et fut confronté aux accusations portées contre lui. Il ne fut pas présenté comme adorateur de Jéhovah, mais il joua un rôle administratif dans l’affaire.",
     "didYouKnow": "Festus consulta Agrippa II parce qu’il avait besoin d’éléments à envoyer à César concernant l’accusation portée contre Paul.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Porcius Festus succéda à Félix comme gouverneur de Judée. Il présida l’audience de Paul à Césarée et accepta son appel à César.",
     "era": "Vers 58-61 de n. è. environ; gouverneur romain de Judée après Félix",
     "familyAndEntourage": [
@@ -4103,16 +2800,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Césarée et territoire gouverné par Agrippa.",
     "relationshipWithJehovah": "Agrippa II connaissait les coutumes et les controverses juives et entendit Paul exposer sa foi. Paul lui parla directement de Jésus et de la résurrection, sans que le récit affirme qu’Agrippa devint chrétien.",
     "didYouKnow": "Paul demanda à Agrippa s’il croyait aux Prophètes et lui parla de son espérance en la résurrection.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Hérode Agrippa II était roi et membre de la dynastie hérodienne. Il entendit la défense de Paul à Césarée avec Bérénice et Festus.",
     "era": "Vers 58 de n. è. et décennies suivantes",
     "familyAndEntourage": [
@@ -4147,16 +2834,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Césarée.",
     "relationshipWithJehovah": "Bérénice est mentionnée dans le cadre de l’audience où Paul défendit sa foi devant Agrippa et Festus. La Bible ne fournit pas assez d’éléments pour décrire sa relation personnelle avec Jéhovah.",
     "didYouKnow": "Bérénice entra dans la salle d’audience avec Agrippa et une grande pompe lors de l’audition de Paul.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Bérénice était une sœur d’Agrippa II qui l’accompagna lors de sa visite à Césarée où Paul présenta sa défense devant Festus et Agrippa.",
     "era": "Vers 58 de n. è.",
     "familyAndEntourage": [
@@ -4189,22 +2866,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Cenchrées, près de Corinthe.",
     "relationshipWithJehovah": "Phœbé était une ministre de la congrégation de Cenchrées et soutenait de nombreux chrétiens, dont Paul. Paul la recommanda chaleureusement à la congrégation de Rome.",
     "didYouKnow": "Paul demanda aux chrétiens de Rome de l’accueillir d’une manière digne des saints et de l’aider dans toute affaire où elle aurait besoin d’eux.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Phébé",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ph%C3%A9b%C3%A9/"
-      }
-    ],
     "identity": "Phœbé était une chrétienne de Cenchrées que Paul recommande chaleureusement aux chrétiens de Rome comme sœur et servante de la congrégation.",
-    "era": "Ier siècle de n. è., à l’époque de la congrégation chrétienne primitive",
+    "era": "vers 56-58 de n. è. environ",
     "familyAndEntourage": [
       "Paul",
       "Les chrétiens de Cenchrées",
@@ -4237,18 +2900,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Philippes, en Macédoine.",
     "relationshipWithJehovah": "Évodie avait travaillé avec Paul pour la bonne nouvelle et avait une place reconnue dans la congrégation de Philippes. Paul l’encouragea à retrouver l’unité avec Syntyche dans le Seigneur.",
     "didYouKnow": "Paul demande à un chrétien fidèle de venir en aide à Évodie et Syntyche pour qu’elles retrouvent une bonne entente.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Évodie était une chrétienne de la congrégation de Philippes. Paul reconnaît qu’elle avait travaillé pour la bonne nouvelle et l’encourage à retrouver l’unité avec Syntyche.",
-    "era": "Ier siècle de n. è.",
+    "era": "vers 50-60 de n. è. environ",
     "familyAndEntourage": [
       "Syntyche",
       "Paul",
@@ -4280,16 +2933,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Philippes et Rome.",
     "relationshipWithJehovah": "Épaphrodite servit avec Paul et apporta l’aide matérielle des Philippiens. Il tomba gravement malade pendant son service mais continua à se soucier de ses frères.",
     "didYouKnow": "Épaphrodite fut si gravement malade que Paul dit qu’il avait été proche de la mort, mais Dieu eut pitié de lui.",
-    "jwResources": [
-      {
-        "title": "Épaphrodite — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89paphrodite/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Épaphrodite était un chrétien de Philippes envoyé auprès de Paul pour lui apporter l’aide de la congrégation. Il tomba gravement malade mais continua à se soucier des autres.",
     "era": "Vers 59-61 de n. è., pendant le premier emprisonnement de Paul à Rome",
     "familyAndEntourage": [
@@ -4326,18 +2969,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Asie Mineure, Macédoine, Jérusalem et Rome.",
     "relationshipWithJehovah": "Tychique fut un collaborateur fidèle de Paul, chargé de transmettre des informations et des encouragements aux congrégations. Paul le qualifia de frère bien-aimé et de fidèle ministre.",
     "didYouKnow": "Paul envoya Tychique à Éphèse et à Colosses pour informer les chrétiens de sa situation et réconforter leur cœur.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Tychique était un collaborateur fidèle de Paul, originaire de la région d’Asie. Paul lui confia plusieurs missions auprès des congrégations.",
-    "era": "Ier siècle de n. è., pendant les voyages missionnaires et les emprisonnements de Paul",
+    "era": "vers 55-65 de n. è. environ",
     "familyAndEntourage": [
       "Paul",
       "Onésime",
@@ -4373,18 +3006,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Rome et les régions où Paul exerçait son ministère.",
     "relationshipWithJehovah": "Démas collabora avec Paul pendant une période, mais Paul rapporta plus tard qu’il l’avait abandonné parce qu’il aimait le système de choses actuel. La Bible ne donne pas davantage de détails sur la suite.",
     "didYouKnow": "Démas est mentionné avec Luc parmi les collaborateurs de Paul dans Colossiens et Philémon, avant que Paul ne rapporte son abandon.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Démas était un collaborateur de Paul mentionné parmi ses compagnons, mais il abandonna ensuite l’apôtre parce qu’il aimait le système de choses présent.",
-    "era": "Ier siècle de n. è.",
+    "era": "vers 55-65 de n. è. environ",
     "familyAndEntourage": [
       "Paul",
       "Luc",
@@ -4414,18 +3037,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Syrie et Samarie, notamment le Jourdain.",
     "relationshipWithJehovah": "Naaman, chef de l’armée syrienne, finit par reconnaître qu’il n’y avait pas de Dieu sur toute la terre sauf en Israël après avoir été guéri de sa lèpre sur instruction d’Élisha.",
     "didYouKnow": "Naaman se plongea sept fois dans le Jourdain avant que sa chair ne redevienne comme celle d’un petit enfant.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Naaman était chef de l’armée syrienne, atteint de lèpre. Il fut guéri après avoir humblement suivi les instructions données par le prophète Élisée.",
-    "era": "Xe siècle av. n. è., sous les règnes de Yehoram d’Israël et de Ben-Hadad II de Syrie",
+    "era": "vers 940-905 av. n. è. environ",
     "familyAndEntourage": [
       "Le roi de Syrie",
       "Sa femme",
@@ -4462,16 +3075,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et le royaume de Juda.",
     "relationshipWithJehovah": "Ézékias se fia à Jéhovah lors de la menace assyrienne et pria lorsque Jérusalem était menacée. Jéhovah délivra la ville et lui accorda aussi une prolongation de vie.",
     "didYouKnow": "Ézékias reçut quinze années supplémentaires de vie après avoir prié Jéhovah lorsqu’il était gravement malade.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Ézéchias était roi de Juda et un réformateur fidèle qui combattit l’idolâtrie et fit confiance à Jéhovah lors de la menace assyrienne.",
     "era": "745-717 av. n. è. environ, roi de Juda",
     "familyAndEntourage": [
@@ -4511,16 +3114,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et le royaume de Juda.",
     "relationshipWithJehovah": "Josias chercha Jéhovah et entreprit une vaste réforme du culte en supprimant les objets et pratiques liés au faux culte. Il fit aussi lire au peuple le livre de la Loi retrouvé dans le temple.",
     "didYouKnow": "Le livre de la Loi fut retrouvé pendant les travaux de réparation du temple sous le règne de Josias.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Josias était roi de Juda et entreprit une vaste réforme religieuse après avoir entendu le livre de la Loi retrouvé dans le temple.",
     "era": "659-629 av. n. è., roi de Juda",
     "familyAndEntourage": [
@@ -4559,16 +3152,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et le royaume de Juda.",
     "relationshipWithJehovah": "Yehoshaphat chercha Jéhovah et encouragea Juda à observer ses commandements. Il commit néanmoins des erreurs dans certaines alliances politiques, ce qui lui valut des reproches prophétiques.",
     "didYouKnow": "Lorsque Juda fut menacé par une coalition ennemie, Yehoshaphat pria Jéhovah publiquement et le peuple fut encouragé à se confier en lui.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Roi de Juda — Yehoshaphat cherche Jéhovah et organise l’enseignement de la Loi dans le royaume de Juda.",
     "era": "936-911 av. n. è. environ, roi de Juda",
     "familyAndEntourage": [
@@ -4603,20 +3186,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Israël, la mer Méditerranée et Ninive en Assyrie.",
     "relationshipWithJehovah": "Jonas reçut de Jéhovah une mission de prédication à Ninive. Il tenta d’abord de fuir, mais accepta finalement d’accomplir la mission et vit les Ninivites se repentir.",
     "didYouKnow": "Jésus utilisa le « signe de Jonas » pour annoncer sa propre mort et sa résurrection.",
-    "jwResources": [
-      {
-        "title": "L’histoire de Jonas : une leçon de courage et de miséricorde",
-        "url": "https://www.jw.org/fr/bibliotheque/videos/histoire-de-jonas-courage-et-misericorde/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Prophète — Jonas reçoit la mission de prévenir Ninive, fuit d’abord sa mission puis finit par transmettre le message.",
     "era": "Vers 844 av. n. è., sous le règne de Jéroboam II; prophète envoyé à Ninive",
     "familyAndEntourage": [
@@ -4650,16 +3219,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Israël, notamment Guibéa et les régions où il combattit les Philistins.",
     "relationshipWithJehovah": "Saül fut choisi comme premier roi d’Israël et reçut l’esprit de Dieu, mais il désobéit à plusieurs reprises aux instructions de Jéhovah. Son règne montre les conséquences d’une obéissance incomplète.",
     "didYouKnow": "Jéhovah rejeta Saül comme roi après qu’il eut désobéi à l’ordre concernant les Amalécites et conservé le roi Agag ainsi que le meilleur du butin.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Premier roi d’Israël — Saül a commencé humblement comme premier roi d’Israël, mais a ensuite désobéi à Jéhovah et est devenu arrogant.",
     "era": "1117-1077 av. n. è. environ, premier roi humain d’Israël",
     "familyAndEntourage": [
@@ -4692,18 +3251,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "La région de Tsora, dans le territoire de Dan.",
     "relationshipWithJehovah": "Manoah pria Jéhovah lorsqu’il apprit que sa femme aurait un fils destiné à commencer à délivrer Israël des Philistins. Il demanda des instructions sur la manière d’élever l’enfant.",
     "didYouKnow": "Manoah et sa femme virent l’ange de Jéhovah monter dans la flamme de l’offrande qu’ils avaient présentée.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Père de Samson — Manoa reçoit avec sa femme l’annonce de la naissance de Samson et demande comment élever l’enfant.",
-    "era": "Époque des juges, avant l’établissement de la royauté en Israël",
+    "era": "1450-1120 av. n. è. environ (époque des juges)",
     "familyAndEntourage": [
       "Sa femme",
       "Samson"
@@ -4734,16 +3283,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Juda et Jérusalem.",
     "relationshipWithJehovah": "Sophonie annonça les jugements de Jéhovah contre Juda et les nations, tout en appelant les personnes humbles à rechercher Jéhovah et la justice.",
     "didYouKnow": "Sophonie prophétisa pendant le règne de Josias, avant les grandes réformes religieuses de ce roi.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Prophète de Juda — Sophonie annonce un jour de jugement et encourage ceux qui cherchent Jéhovah à pratiquer la justice et la douceur.",
     "era": "Vers 648 av. n. è., au début du règne de Yoshiya, avant les grandes réformes religieuses",
     "familyAndEntourage": [
@@ -4777,18 +3316,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Juda, avant la destruction de Jérusalem.",
     "relationshipWithJehovah": "Habacuc exprima franchement ses questions à Jéhovah face à la violence et à l’injustice. Il finit par affirmer sa confiance en Dieu même si les conditions matérielles devenaient très difficiles.",
     "didYouKnow": "Le livre d’Habacuc se termine par une expression de joie et de confiance en Jéhovah malgré l’absence de récoltes et de bétail.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Prophète de Juda — Habacuc exprime ses questions devant la violence et l’injustice puis affirme sa confiance en Jéhovah.",
-    "era": "Fin du VIIe siècle av. n. è., avant la destruction de Jérusalem par Babylone",
+    "era": "vers 628 av. n. è. environ",
     "familyAndEntourage": [
       "Jéhovah",
       "Juda"
@@ -4820,16 +3349,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Tekoa en Juda puis le royaume d’Israël, notamment Béthel.",
     "relationshipWithJehovah": "Amos reçut de Jéhovah la mission de dénoncer les injustices et le faux culte dans le royaume d’Israël. Il resta fidèle à ce message malgré l’opposition du prêtre Amatsia.",
     "didYouKnow": "Amos n’était pas membre d’une école de prophètes ; il était éleveur et cultivateur de sycomores avant de recevoir sa mission prophétique.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Prophète — Amos, éleveur et cultivateur de sycomores, reçoit la mission de dénoncer les injustices et le faux culte en Israël.",
     "era": "Vers 804-800 av. n. è. environ, sous les règnes d’Ozias de Juda et de Jéroboam II d’Israël",
     "familyAndEntourage": [
@@ -4864,18 +3383,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Juda, particulièrement les régions rurales et Jérusalem.",
     "relationshipWithJehovah": "Michée annonça fidèlement les messages de Jéhovah et dénonça l’injustice, l’oppression et le faux culte. Il rappela aussi que Jéhovah demande à ses serviteurs d’exercer la justice, d’aimer la fidélité et de marcher modestement avec lui.",
     "didYouKnow": "Michée annonça qu’un dirigeant sortirait de Bethléhem Éphrata, prophétie que Matthieu appliqua à Jésus.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Prophète — Michée dénonce les injustices et l’infidélité tout en annonçant des promesses concernant le peuple de Dieu.",
-    "era": "VIIIe siècle av. n. è., sous les règnes de Yotham, Ahaz et Ézékias",
+    "era": "vers 777-717 av. n. è. environ",
     "familyAndEntourage": [
       "Juda",
       "Israël"
@@ -4904,18 +3413,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Juda; le contexte de la prophétie concerne particulièrement Édom et Jérusalem.",
     "relationshipWithJehovah": "Obadia transmit le jugement de Jéhovah contre Édom pour son attitude envers Juda. Son message souligne que Jéhovah voit les actes commis contre son peuple et demande des comptes.",
     "didYouKnow": "Le livre d’Obadia est le plus court des livres prophétiques des Écritures hébraïques, avec un seul chapitre.",
-    "jwResources": [
-      {
-        "title": "Obadia — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Obadia/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Prophète — Obadia annonce le jugement contre Édom et évoque le rétablissement du peuple de Jéhovah.",
-    "era": "Après la conquête de Jérusalem par les Babyloniens, au VIe siècle av. n. è.",
+    "era": "vers 607 av. n. è. environ",
     "familyAndEntourage": [
       "Édom",
       "Jacob"
@@ -4944,18 +3443,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Juda et Jérusalem.",
     "relationshipWithJehovah": "Joël appela le peuple à revenir à Jéhovah de tout son cœur et annonça une restauration après le jugement. Son message met l’accent sur la miséricorde et la compassion de Jéhovah.",
     "didYouKnow": "Pierre cita la prophétie de Joël concernant l’effusion de l’esprit saint le jour de la Pentecôte.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Prophète — Yoël utilise une invasion de sauterelles comme contexte pour appeler le peuple à revenir à Jéhovah.",
-    "era": "Époque préexilique ou période ancienne non déterminée avec certitude",
+    "era": "vers 820 av. n. è. environ ? (date exacte incertaine)",
     "familyAndEntourage": [
       "Juda",
       "Le peuple"
@@ -4984,16 +3473,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Juda et Ninive, en Assyrie.",
     "relationshipWithJehovah": "Nahoum annonça le jugement de Jéhovah contre Ninive et montra en même temps que Jéhovah est un refuge pour ceux qui se confient en lui.",
     "didYouKnow": "La prophétie de Nahoum décrit la chute de Ninive, capitale de l’Assyrie, puissance qui avait opprimé de nombreux peuples.",
-    "jwResources": [
-      {
-        "title": "Nahoum — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Nahoum/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Prophète — Nahum annonce la chute de Ninive et présente Jéhovah comme un Dieu juste qui ne laisse pas le mal impuni.",
     "era": "VIIe siècle av. n. è., avant la destruction de Ninive en 632 av. n. è.",
     "familyAndEntourage": [
@@ -5024,18 +3503,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Juda, notamment le temple de Jérusalem et la région montagneuse où vivait sa famille.",
     "relationshipWithJehovah": "Zekaria, père de Jean le Baptiseur, servait comme prêtre et reçut une annonce angélique concernant la naissance de son fils. Après avoir douté du message, il retrouva la parole et loua Jéhovah.",
     "didYouKnow": "Zekaria resta muet depuis le moment où Gabriel lui annonça la naissance de Jean jusqu’à la circoncision de l’enfant, lorsqu’il écrivit son nom sur une tablette.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Zacharie était un prêtre de la classe d’Abiya, mari d’Élisabeth et père de Jean le Baptiste. L’ange Gabriel lui annonça la naissance de son fils.",
-    "era": "Fin du Ier siècle av. n. è. ou début du Ier siècle de n. è., père de Jean le baptiseur",
+    "era": "70 av. n. è. environ - après 2 av. n. è. environ",
     "familyAndEntourage": [
       "Élisabeth",
       "Jean le Baptiste",
@@ -5067,18 +3536,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "La région montagneuse de Juda.",
     "relationshipWithJehovah": "Élisabeth était décrite comme juste devant Dieu et observait fidèlement ses commandements. Elle reconnut sous l’influence de l’esprit saint le rôle particulier de Marie et de l’enfant qu’elle portait.",
     "didYouKnow": "Élisabeth était une parente de Marie et était déjà âgée lorsqu’elle conçut Jean le Baptiseur.",
-    "jwResources": [
-      {
-        "title": "Élisabeth — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89lisabeth/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Élisabeth était une descendante d’Aaron, épouse du prêtre Zekaria et mère de Jean le Baptiseur. Elle était parente de Marie.",
-    "era": "Fin du Ier siècle av. n. è. ou début du Ier siècle de n. è., mère de Jean le baptiseur",
+    "era": "70 av. n. è. environ - après 2 av. n. è. environ",
     "familyAndEntourage": [
       "Zekaria",
       "Jean le Baptiseur",
@@ -5110,18 +3569,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Bethléem, Égypte et Nazareth.",
     "relationshipWithJehovah": "Joseph était un homme juste qui obéit aux instructions reçues de Jéhovah par l’intermédiaire des anges. Il protégea Jésus en acceptant de prendre Marie comme femme et en emmenant la famille en Égypte.",
     "didYouKnow": "Joseph exerçait le métier de charpentier et apprit ce métier à Jésus, qui fut lui-même appelé « le charpentier ».",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Joseph était le mari de Marie et le père adoptif de Jésus. Il était charpentier et descendait de David.",
-    "era": "Ier siècle av. n. è. et début du Ier siècle de n. è., pendant l’enfance de Jésus",
+    "era": "25 av. n. è. environ - après 11 de n. è. environ",
     "familyAndEntourage": [
       "Marie",
       "Jésus",
@@ -5153,16 +3602,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem.",
     "relationshipWithJehovah": "Caïphe occupait la fonction de grand prêtre au moment du procès de Jésus. La Bible rapporte ses décisions et ses paroles, mais ne le présente pas comme un adorateur fidèle de Jéhovah.",
     "didYouKnow": "Caïphe prophétisa, sans comprendre pleinement la portée de ses paroles, qu’il était avantageux qu’un seul homme meure pour le peuple.",
-    "jwResources": [
-      {
-        "title": "Caïphe — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ca%C3%AFphe/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Joseph Caïphe était le grand prêtre juif qui participa aux démarches contre Jésus et qui présida des interrogatoires liés à ses disciples.",
     "era": "18-36 de n. è. environ, grand prêtre durant le ministère de Jésus",
     "familyAndEntourage": [
@@ -5192,18 +3631,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée et Jérusalem.",
     "relationshipWithJehovah": "Jeanne comptait parmi les femmes qui avaient été guéries par Jésus et qui le soutenaient avec leurs ressources. Elle faisait partie de celles qui annoncèrent aux apôtres que le tombeau était vide.",
     "didYouKnow": "Jeanne était la femme de Chuza, intendant d’Hérode, et faisait partie des femmes qui accompagnèrent Jésus et ses apôtres.",
-    "jwResources": [
-      {
-        "title": "Jeanne — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jeanne/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Jeanne était une femme qui avait été guérie par Jésus et qui le soutenait, avec d’autres femmes, au moyen de ses biens.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
+    "era": "29-33 de n. è. environ",
     "familyAndEntourage": [
       "Chuza, intendant d’Hérode",
       "Marie Madeleine",
@@ -5236,18 +3665,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Entre la Samarie et la Galilée.",
     "relationshipWithJehovah": "Le Samaritain guéri de la lèpre revint vers Jésus, glorifia Dieu et le remercia. Jésus souligna sa foi, alors que les autres guéris n’étaient pas revenus pour rendre gloire à Dieu.",
     "didYouKnow": "Il était le seul des dix lépreux guéris à revenir remercier Jésus, et il était Samaritain.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "L’un des dix lépreux guéris par Jésus était un Samaritain. Il fut le seul des dix à revenir remercier Jésus et à glorifier Dieu.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
+    "era": "29-33 de n. è. environ",
     "familyAndEntourage": [
       "Les neuf autres lépreux",
       "Jésus",
@@ -5279,18 +3698,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée, dans la région de Capharnaüm.",
     "relationshipWithJehovah": "La femme qui souffrait d’une perte de sang depuis douze ans manifesta une grande foi en Jésus. Elle pensait qu’il lui suffirait de toucher son vêtement pour être guérie.",
     "didYouKnow": "Elle dépensait tout ce qu’elle avait pour des médecins sans être guérie avant de s’approcher de Jésus.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "La femme qui avait des pertes de sang souffrait depuis 12 ans. Elle s’approcha discrètement de Jésus avec la conviction que même toucher son vêtement pourrait la guérir.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
+    "era": "29-33 de n. è. environ",
     "familyAndEntourage": [
       "Jésus",
       "La foule",
@@ -5321,18 +3730,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Région des Géraséniens, à l’est de la mer de Galilée.",
     "relationshipWithJehovah": "L’homme possédé de la région des Géraséniens fut libéré par Jésus d’une situation profondément éprouvante. Il voulut ensuite accompagner Jésus, mais Jésus lui demanda de retourner chez lui et de raconter ce que Dieu avait fait pour lui.",
     "didYouKnow": "Après sa guérison, l’homme annonça dans toute la ville ce que Jésus avait fait pour lui.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "L’homme de la région des Géraséniens que Jésus délivra était sous l’influence de nombreux démons. Après sa délivrance, il voulut accompagner Jésus, mais Jésus lui confia une autre mission.",
-    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
+    "era": "29-33 de n. è. environ",
     "familyAndEntourage": [
       "Jésus",
       "Les habitants de la région",
@@ -5363,18 +3762,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Thessalonique, en Macédoine.",
     "relationshipWithJehovah": "Jason accueillit Paul et Silas à Thessalonique et fut ensuite entraîné dans l’opposition suscitée par la prédication. Il fournit une caution aux autorités pour éviter de nouveaux troubles.",
     "didYouKnow": "Une foule hostile accusa Paul et Silas d’agir contre les décrets de César et prétendit qu’ils disaient qu’un autre roi, Jésus, existait.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas chez lui. Une foule hostile l’entraîna ensuite devant les autorités.",
-    "era": "Ier siècle de n. è., pendant la deuxième tournée missionnaire de Paul",
+    "era": "vers 49-52 de n. è. environ",
     "familyAndEntourage": [
       "Paul",
       "Silas",
@@ -5406,18 +3795,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Éphèse et Rome.",
     "relationshipWithJehovah": "Onésiphore rechercha Paul et le réconforta, même pendant la captivité de l’apôtre. Paul pria pour que la miséricorde de Jéhovah soit accordée à sa maisonnée.",
     "didYouKnow": "Paul se souvenait qu’Onésiphore n’avait pas eu honte de ses chaînes et qu’il l’avait recherché avec empressement à Rome.",
-    "jwResources": [
-      {
-        "title": "Onésiphore — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/On%C3%A9siphore/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Onésiphore était un chrétien qui apporta un soutien précieux à Paul, notamment pendant ses difficultés à Rome.",
-    "era": "Ier siècle de n. è., pendant l’activité de Paul et ses emprisonnements",
+    "era": "vers 55-65 de n. è. environ",
     "familyAndEntourage": [
       "Paul",
       "Sa maisonnée",
@@ -5449,18 +3828,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Galilée et Jérusalem.",
     "relationshipWithJehovah": "Marie mère de Jacques comptait parmi les femmes qui suivirent Jésus et le soutinrent. Elle fut aussi présente après sa mort et participa aux événements liés à sa résurrection.",
     "didYouKnow": "Marie mère de Jacques figurait parmi les femmes qui vinrent au tombeau avec des aromates et découvrirent qu’il était ouvert.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Marie, mère de Jacques, était une chrétienne de Jérusalem dont la maison servit de lieu de rassemblement pour les disciples.",
-    "era": "Ier siècle de n. è., pendant le ministère de Jésus et après sa mort",
+    "era": "vers 29-33 de n. è., puis après 33",
     "familyAndEntourage": [
       "Jacques",
       "Pierre",
@@ -5492,18 +3861,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem.",
     "relationshipWithJehovah": "Marie, mère de Jean-Marc, était une chrétienne dont la maison servait de lieu de réunion pour les disciples à Jérusalem. Les croyants s’y réunirent notamment pendant que Pierre était emprisonné.",
     "didYouKnow": "Lorsque Pierre fut libéré miraculeusement, il se rendit à la maison de Marie, où de nombreux disciples étaient réunis et priaient.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Marie, mère de Jean-Marc, était une chrétienne de Jérusalem dont la maison accueillait des disciples. Son fils Jean-Marc devint compagnon de mission.",
-    "era": "Ier siècle de n. è., à l’époque de la congrégation chrétienne primitive",
+    "era": "vers 33-60 de n. è. environ",
     "familyAndEntourage": [
       "Jean-Marc",
       "Barnabas",
@@ -5535,18 +3894,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Colosses, en Asie Mineure.",
     "relationshipWithJehovah": "Apphia était une chrétienne associée à Philémon et à Archippe. Paul lui adressa personnellement sa lettre, ce qui indique qu’elle faisait partie des personnes concernées par la situation d’Onésime.",
     "didYouKnow": "Apphia est saluée avec Philémon et Archippe au début de la lettre à Philémon. Le texte la présente comme une personne directement concernée par la vie de la congrégation et par la situation d’Onésime.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Apphia était une chrétienne associée à Philémon et à l’assemblée qui se réunissait chez lui. Paul lui adresse personnellement ses salutations.",
-    "era": "Ier siècle de n. è., à l’époque de la congrégation chrétienne primitive",
+    "era": "vers 55-61 de n. è. environ",
     "familyAndEntourage": [
       "Philémon",
       "Archippe",
@@ -5572,18 +3921,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Colosses, en Asie Mineure.",
     "relationshipWithJehovah": "Archippe avait reçu un ministère dans le Seigneur et Paul l’encouragea à veiller à bien l’accomplir. Il était associé à Philémon et Apphia et à la congrégation qui se réunissait chez eux.",
     "didYouKnow": "Paul demanda aux Colossiens de dire à Archippe de continuer à veiller à bien accomplir le ministère qu’il avait reçu dans le Seigneur.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Archippe était un chrétien associé à Philémon et Apphia et à l’assemblée qui se réunissait chez eux. Paul l’encourage à accomplir pleinement son ministère.",
-    "era": "Ier siècle de n. è., à l’époque de la congrégation chrétienne primitive",
+    "era": "vers 55-61 de n. è. environ",
     "familyAndEntourage": [
       "Philémon",
       "Apphia",
@@ -5610,18 +3949,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem, Antioche et diverses régions missionnaires.",
     "relationshipWithJehovah": "Jean-Marc progressa dans le service chrétien. Après avoir quitté Paul et Barnabas pendant leur premier voyage missionnaire, il retrouva la confiance de Paul et devint finalement un collaborateur utile.",
     "didYouKnow": "À la fin de sa vie, Paul demanda à Timothée de faire venir Marc, car il lui était utile pour le ministère.",
-    "jwResources": [
-      {
-        "title": "Marc (Jean-Marc) — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Marc/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Jean-Marc était un chrétien de Jérusalem qui accompagna Paul et Barnabas dans une partie de leur première tournée missionnaire. Après une séparation, il retrouva la confiance de Paul.",
-    "era": "Ier siècle de n. è., pendant les premières décennies de la congrégation chrétienne",
+    "era": "vers 40-65 de n. è. environ",
     "familyAndEntourage": [
       "Marie, sa mère",
       "Barnabas, son cousin",
@@ -5653,18 +3982,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Corinthe, Éphèse et Rome.",
     "relationshipWithJehovah": "Priscille servait Jéhovah avec Aquilas en combinant travail, prédication, enseignement et hospitalité. Avec son mari, elle expliqua plus exactement la voie de Dieu à Apollos.",
     "didYouKnow": "Paul appelle Priscille et Aquilas ses collaborateurs en Christ Jésus et dit qu’ils avaient risqué leur vie pour lui.",
-    "jwResources": [
-      {
-        "title": "Prisca (Priscille) — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Prisca/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Priscille, avec son mari Aquila, était une chrétienne qui collabora étroitement avec Paul. Elle contribua à expliquer plus exactement la voie de Dieu à Apollos.",
-    "era": "Ier siècle de n. è., pendant les premières décennies de la congrégation chrétienne",
+    "era": "vers 49-65 de n. è. environ",
     "familyAndEntourage": [
       "Aquila",
       "Paul",
@@ -5697,18 +4016,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Jérusalem et Césarée.",
     "relationshipWithJehovah": "Le récit ne présente pas Claude Lysias comme adorateur de Jéhovah. Cependant, ses décisions administratives protégèrent Paul et permirent à l’apôtre de continuer à rendre témoignage.",
     "didYouKnow": "Claude Lysias apprit que Paul était citoyen romain et prit alors des précautions particulières avant de le faire interroger et transférer.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Claude Lysias était le commandant militaire romain de Jérusalem qui fit protéger Paul lorsqu’une foule voulut le tuer.",
-    "era": "Ier siècle de n. è., durant les dernières années de l’activité de Paul",
+    "era": "vers 58-60 de n. è. environ",
     "familyAndEntourage": [
       "Paul",
       "Les soldats romains",
@@ -5739,18 +4048,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Césarée, Méditerranée, Malte et Rome.",
     "relationshipWithJehovah": "Julius n’est pas présenté comme adorateur de Jéhovah. Il traita néanmoins Paul avec considération pendant le voyage vers Rome et contribua à préserver la vie des prisonniers après le naufrage.",
     "didYouKnow": "Julius permit à Paul de rendre visite à des amis à Sidon avant de poursuivre le voyage vers Rome.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Julius était un centurion de la cohorte d’Auguste chargé de conduire Paul et d’autres prisonniers vers Rome.",
-    "era": "Ier siècle de n. è., lors du voyage de Paul vers Rome",
+    "era": "vers 59-61 de n. è.",
     "familyAndEntourage": [
       "Paul",
       "Luc",
@@ -5782,18 +4081,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Macédoine et Éphèse.",
     "relationshipWithJehovah": "Gaïus le Macédonien était un compagnon de Paul impliqué dans le service chrétien. Il fut exposé au danger lors de l’émeute d’Éphèse.",
     "didYouKnow": "Gaïus et Aristarque furent saisis par la foule pendant l’émeute d’Éphèse, alors que les artisans s’opposaient à la prédication de Paul.",
-    "jwResources": [
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Gaïus le Macédonien était un compagnon de Paul associé à Aristarque lors de l’émeute d’Éphèse.",
-    "era": "Ier siècle de n. è., pendant la troisième tournée missionnaire de Paul",
+    "era": "vers 54-56 de n. è. environ",
     "familyAndEntourage": [
       "Paul",
       "Aristarque",
@@ -5824,18 +4113,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Thessalonique, Éphèse et Rome.",
     "relationshipWithJehovah": "Aristarque resta un compagnon fidèle de Paul et partagea avec lui des situations dangereuses, jusqu’au voyage vers Rome et à une période de captivité.",
     "didYouKnow": "Paul appelle Aristarque son « compagnon de captivité » dans sa lettre aux Colossiens.",
-    "jwResources": [
-      {
-        "title": "Aristarque — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Aristarque/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Aristarque était un Macédonien de Thessalonique et un compagnon de voyage de Paul. Il partagea même une période de captivité avec lui.",
-    "era": "Ier siècle de n. è., pendant les voyages missionnaires et les emprisonnements de Paul",
+    "era": "vers 50-65 de n. è. environ",
     "familyAndEntourage": [
       "Paul",
       "Gaius de Macédoine",
@@ -5868,18 +4147,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Philippes, en Macédoine.",
     "relationshipWithJehovah": "Syntyche avait travaillé avec Paul pour la bonne nouvelle et faisait partie de la congrégation de Philippes. Paul l’encouragea, avec Évodie, à retrouver la même pensée dans le Seigneur.",
     "didYouKnow": "Paul demanda à un collaborateur fidèle d’aider Évodie et Syntyche à résoudre leur désaccord.",
-    "jwResources": [
-      {
-        "title": "Syntyche — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Syntyche/"
-      },
-      {
-        "title": "Bible en ligne — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      }
-    ],
     "identity": "Syntyche était une chrétienne de Philippes qui avait travaillé avec Paul pour la bonne nouvelle. Paul lui adresse le même appel à l’unité qu’à Évodie.",
-    "era": "Ier siècle de n. è., à l’époque de la congrégation chrétienne primitive",
+    "era": "vers 50-60 de n. è. environ",
     "familyAndEntourage": [
       "Évodie",
       "Paul",
