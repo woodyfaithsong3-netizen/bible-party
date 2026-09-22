@@ -76,11 +76,12 @@ const duplicateOptionBlocks = quizBlocks.filter(m => {
 });
 
 const failures = [];
+if (difficultyCounts.easy !== 375 || difficultyCounts.medium !== 500 || difficultyCounts.hard !== 625 || difficultyCounts.expert !== 500) failures.push('dedicated difficulty counts changed: ' + JSON.stringify(difficultyCounts));
 if (duplicateIds.length) failures.push('duplicate ids: ' + duplicateIds.map(([id, n]) => id + ' x' + n).join(', '));
 if (emptyReferences) failures.push('empty references detected');
 if (invalidQuizIndexes.length) failures.push('invalid quiz correctAnswer indexes: ' + invalidQuizIndexes.length);
-if (expertCards < 90) failures.push('expert card count unexpectedly low: ' + expertCards);
-if (characterCoverage < 125) failures.push('character coverage unexpectedly low: ' + characterCoverage);
+if (expertCards !== 500) failures.push('dedicated expert card count unexpectedly changed: ' + expertCards);
+if (characterCoverage !== 125) failures.push('character coverage unexpectedly changed: ' + characterCoverage);
 if (characterCountFailures.length) failures.push('character question count != 16: ' + characterCountFailures.map(([id,n]) => id + ' x' + n).join(', '));
 
 if (quizCount !== 1250) failures.push('dedicated quiz count unexpectedly changed: ' + quizCount);
