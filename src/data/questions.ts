@@ -1727,27 +1727,37 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
   const era = data.era ?? 'une époque biblique';
   const reference = data.keyReading;
 
+  const accountPrompt = accountClues
+    ? 'Quel personnage est associé à cet épisode ? ' + accountClues
+    : 'Quel personnage est décrit par cette fiche ? ' + data.identity;
   characterReviewQuiz.push({
     id: 'character-review-quiz-' + id + '-account',
     type: 'quiz',
     category: 'Personnages',
     difficulty: 'medium',
-    question: 'Qui a vécu cet épisode : ' + accountClues,
+    question: accountPrompt,
     answers: [name, next, next2, next3],
     correctAnswer: 0,
-    explanation: 'Le personnage est ' + name + '.',
+    explanation: accountClues
+      ? accountClues + ' Ce récit concerne ' + name + '.'
+      : data.identity,
     reference,
   });
 
+  const lessonPrompt = lesson
+    ? 'À quel personnage cette leçon est-elle rattachée ? ' + lesson
+    : 'Quel personnage illustre ce parcours biblique ? ' + data.identity;
   characterReviewQuiz.push({
     id: 'character-review-quiz-' + id + '-lesson',
     type: 'quiz',
     category: 'Personnages',
     difficulty: 'hard',
-    question: 'Quel personnage a retenu cette leçon : ' + lesson,
+    question: lessonPrompt,
     answers: [name, next2, next3, next],
     correctAnswer: 0,
-    explanation: 'Cette leçon est associée à ' + name + '.',
+    explanation: lesson
+      ? lesson + ' Cette leçon est rattachée au parcours de ' + name + '.'
+      : data.identity,
     reference,
   });
 
@@ -1778,7 +1788,7 @@ for (let i = 0; i < characterReviewEntries.length; i += 1) {
     type: 'challenge',
     category: 'Personnages',
     difficulty: 'medium',
-    prompt: 'En 10 secondes : qui associez-vous à ' + quality + ' et à ' + location + ' ?',
+    prompt: 'En 10 secondes : quel personnage associez-vous à ' + quality + ' dans ' + location + ' ?',
     seconds: 10,
     acceptedAnswers: [name],
   });
