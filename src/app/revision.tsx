@@ -1,4 +1,4 @@
-import React, { useCallback, useEffect, useMemo, useState } from 'react';
+import React, { useCallback, useEffect, useRef, useState } from 'react';
 import { ImageBackground, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import { buildCharacterReviewDeck, buildReviewDeck, getDueCharacterIds, getErrorCharacterIds, getReviewStats, recordReviewResult, ReviewCard, ReviewMode } from '@/data/characterReview';
@@ -24,6 +24,7 @@ export default function CharacterReviewScreen() {
   const [selected, setSelected] = useState<string | null>(null);
   const [finished, setFinished] = useState(false);
   const [score, setScore] = useState(0);
+  const reviewedCharacterIds = useRef(new Set<string>());
   const [dueCount, setDueCount] = useState(125);
   const [masteredCount, setMasteredCount] = useState(0);
   const [learningCount, setLearningCount] = useState(125);
@@ -48,6 +49,7 @@ export default function CharacterReviewScreen() {
     setSelected(null);
     setFinished(false);
     setScore(0);
+    reviewedCharacterIds.current.clear();
   }, [mode, focusedCharacterId, reviewSource]);
 
   useEffect(() => { load(); }, [load]);
@@ -60,7 +62,10 @@ export default function CharacterReviewScreen() {
     setSelected(answer);
     const ok = answer === current.answer;
     if (ok) setScore((value) => value + 1);
-    await recordReviewResult(current.characterId, ok);
+    if (!reviewedCharacterIds.current.has(current.characterId)) {
+      reviewedCharacterIds.current.add(current.characterId);
+      await recordReviewResult(current.characterId, ok);
+    }
   };
 
   const next = () => {
