@@ -517,7 +517,7 @@ const tfFacts: Array<[string, boolean, string, string]> = [
 
 
 const tfFacts3: Array<[string, boolean, string, string]> = [
-  ['Josué a envoyé deux espions à Jéricho avant la prise de la ville.', true, 'Josué a envoyé deux hommes espionner le pays, notamment Jéricho.', 'Josué 2:1-4'],
+  ['Deux espions ont été envoyés à Jéricho avant la prise de la ville.', true, 'Josué a envoyé deux hommes espionner le pays ; ils sont arrivés à Jéricho et ont été accueillis par Rahab.', 'Josué 2:1-4'],
   ['Gédéon a vaincu Madian avec une armée de 30 000 hommes.', false, 'L’armée a été réduite à 300 hommes.', 'Juges 7:2-7'],
   ['Jonathan était le fils de Saül.', true, 'Jonathan était le fils de Saül et l’ami de David.', '1 Samuel 18:1-4'],
   ['Abigaïl a empêché David de tuer Nabal dans sa colère.', true, 'Elle a parlé avec sagesse et a retenu David.', '1 Samuel 25:23-35'],
@@ -526,7 +526,7 @@ const tfFacts3: Array<[string, boolean, string, string]> = [
   ['Élisée a guéri Naamân après lui avoir donné des instructions précises.', true, 'Naamân a suivi les instructions d’Élisée et a été guéri.', '2 Rois 5:9-14'],
   ['Naamân était roi de Syrie.', false, 'Il était chef de l’armée de Syrie.', '2 Rois 5:1'],
   ['Ézéchias a prié lorsque Sennachérib menaçait Jérusalem.', true, 'Il a présenté la menace à Jéhovah dans la prière.', '2 Rois 19:14-20'],
-  ['Daniel a continué à prier malgré l’interdiction du roi.', true, 'Le récit rapporte cet épisode dans le parcours de Gédéon.', 'Juges 6:36-40'],
+  ['Daniel a continué à prier malgré l’interdiction du roi.', true, 'Daniel a continué à prier Jéhovah malgré l’interdiction du roi.', 'Daniel 6:10-23'],
   ['Shadrak, Méshak et Abed-Négo ont accepté de se prosterner devant la statue.', false, 'Ils ont refusé et ont été jetés dans la fournaise.', 'Daniel 3:12-23'],
   ['Bartimée était aveugle et mendiant près de Jéricho.', true, 'Marc décrit Bartimée comme aveugle et mendiant.', 'Marc 10:46-52'],
   ['Jairus était chef de synagogue.', true, 'Jairus a demandé de l’aide pour sa fille.', 'Marc 5:21-24'],
