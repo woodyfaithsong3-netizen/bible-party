@@ -81,6 +81,7 @@ const CATEGORY_MAP: Record<string, string> = {
   // Personnages
   personnages: 'Personnages',
   'personnages bibliques': 'Personnages',
+  'révision des 125 fiches': 'Personnages',
   femmes: 'Personnages',
   jeunes: 'Personnages',
   courage: 'Personnages',
