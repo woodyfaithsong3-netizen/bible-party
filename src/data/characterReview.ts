@@ -212,6 +212,19 @@ export async function getDueCharacterIds(): Promise<string[]> {
 }
 
 
+
+export async function getErrorCharacterIds(): Promise<string[]> {
+  const mastery = await loadCharacterMastery();
+  return entries
+    .filter(([id]) => (mastery[id]?.wrong ?? 0) > 0)
+    .sort((a, b) => {
+      const wrongDiff = (mastery[b[0]]?.wrong ?? 0) - (mastery[a[0]]?.wrong ?? 0);
+      if (wrongDiff !== 0) return wrongDiff;
+      return (mastery[a[0]]?.nextReviewAt ?? 0) - (mastery[b[0]]?.nextReviewAt ?? 0);
+    })
+    .map(([id]) => id);
+}
+
 export function buildCharacterReviewDeck(characterId: string, mode: ReviewMode = 'mix', count = 10): ReviewCard[] {
   const data = characterLearning[characterId];
   if (!data) return [];
