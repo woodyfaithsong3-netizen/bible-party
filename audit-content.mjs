@@ -2,7 +2,9 @@ import fs from 'node:fs';
 
 const source = fs.readFileSync(new URL('./src/data/questions.ts', import.meta.url), 'utf8');
 
-const ids = [...source.matchAll(/id:\s*['"]([^'"+]+)['"]/g)].map(m => m[1].trim());
+const ids = [...source.matchAll(/id:\s*['"]([^'"+]+)['"]/g)]
+  .map(m => m[1].trim())
+  .filter(id => !id.endsWith('-'));
 const counts = new Map();
 for (const id of ids) counts.set(id, (counts.get(id) ?? 0) + 1);
 
