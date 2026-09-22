@@ -642,7 +642,7 @@ const quoteQuestions2: QuoteQuestion[] = [
 ];
 
 export const challenges: Challenge[] = [
-  ['livres','Cite 5 livres de la Bible en 10 secondes.'],
+  ['livres','Cite 5 livres de la Bible autres que le Pentateuque en 10 secondes.'],
   ['personnages','Cite 5 personnages bibliques en 10 secondes.'],
   ['prophètes','Cite 3 prophètes en 10 secondes.'],
   ['femmes','Cite 4 femmes mentionnées dans la Bible en 10 secondes.'],
@@ -657,7 +657,7 @@ export const challenges: Challenge[] = [
   ['villes','Cite 5 villes mentionnées dans la Bible en 10 secondes.'],
   ['femmes-evangiles','Cite 5 femmes mentionnées dans les Évangiles en 10 secondes.'],
   ['actes','Cite 4 personnages du livre des Actes en 10 secondes.'],
-  ['prophetes-varies','Cite 5 prophètes différents en 10 secondes.'],
+  ['prophetes-varies','Cite 5 prophètes de périodes ou contextes différents en 10 secondes.'],
 ].map(([category, prompt], i) => ({
   id: `challenge-${i + 1}`,
   type: 'challenge',
@@ -666,7 +666,7 @@ export const challenges: Challenge[] = [
   prompt,
   seconds: 10,
   acceptedAnswers: ({
-    livres: ['Genèse', 'Exode', 'Lévitique', 'Nombres', 'Deutéronome'],
+    livres: ['Psaumes', 'Proverbes', 'Isaïe', 'Matthieu', 'Actes'],
     personnages: ['Adam', 'Noé', 'Abraham', 'Moïse', 'David'],
     prophètes: ['Isaïe', 'Jérémie', 'Ézéchiel', 'Daniel', 'Élie'],
     femmes: ['Ève', 'Sara', 'Ruth', 'Esther', 'Marie'],
@@ -681,7 +681,7 @@ export const challenges: Challenge[] = [
     villes: ['Jérusalem', 'Jéricho', 'Bethléem', 'Nazareth', 'Capharnaüm'],
     'femmes-evangiles': ['Marie', 'Marthe', 'Marie de Béthanie', 'Élisabeth', 'Anne'],
     actes: ['Pierre', 'Paul', 'Barnabé', 'Étienne', 'Philippe'],
-    'prophetes-varies': ['Isaïe', 'Jérémie', 'Ézéchiel', 'Daniel', 'Amos'],
+    'prophetes-varies': ['Nathan', 'Élie', 'Isaïe', 'Jérémie', 'Aggée'],
   } as Record<string, string[]>)[category],
 }));
 
@@ -739,7 +739,7 @@ const baseChronologyQuestions: ChronologyQuestion[] = [
 const chronologyQuestions2: ChronologyQuestion[] = [
   { id:'chron-9', type:'chronology', category:'Genèse', difficulty:'easy', events:['Isaac naît','Ésaü et Jacob naissent','Jacob rencontre Rachel','Joseph naît'], correctOrder:[0,1,2,3], explanation:'Isaac naît avant ses fils Ésaü et Jacob ; Jacob rencontre ensuite Rachel, puis Joseph naît plus tard.', reference:'Genèse 21:1-7; 25:19-26; 29:1-30; 30:22-24' },
   { id:'chron-10', type:'chronology', category:'Juges', difficulty:'medium', events:['Éhoud délivre Israël','Déborah juge Israël','Gédéon combat Madian','Samson devient juge'], correctOrder:[0,1,2,3], explanation:'Ces épisodes appartiennent à des périodes successives du temps des juges.', reference:'Juges 3:15-30; 4:4-24; 7:1-25; 13:1-5' },
-  { id:'chron-11', type:'chronology', category:'Évangiles', difficulty:'medium', events:['Jean le Baptiseur commence à prêcher','Jésus est baptisé','Jésus appelle ses premiers disciples','Jésus meurt et ressuscite'], correctOrder:[0,1,2,3], explanation:'Jean commence son ministère avant le baptême de Jésus ; Jésus appelle ensuite ses premiers disciples, puis sa mort et sa résurrection concluent le récit.', reference:'Matthieu 3:1-17; 4:18-22; 27–28' },
+  { id:'chron-11', type:'chronology', category:'Évangiles', difficulty:'medium', events:['Naissance de Jean le Baptiseur','Jean commence à prêcher dans le désert','Jésus est baptisé','Jean témoigne au sujet de Jésus'], correctOrder:[0,1,2,3], explanation:'Jean naît avant le début de son ministère ; il prêche ensuite dans le désert, Jésus est baptisé, puis Jean rend témoignage à son sujet.', reference:'Luc 1:57-80; Matthieu 3:1-17; Jean 1:29-34' },
   { id:'chron-12', type:'chronology', category:'Actes', difficulty:'hard', events:['Matthias est choisi','Étienne est tué','Paul se convertit','Paul arrive à Rome'], correctOrder:[0,1,2,3], explanation:'Matthias est choisi avant le témoignage et la mort d’Étienne ; la conversion de Saul suit, puis son voyage final vers Rome.', reference:'Actes 1:15-26; 7:54-60; 9:1-22; 28:16-31' },
 ];
 
@@ -752,10 +752,10 @@ const chronologyQuestions3: ChronologyQuestion[] = [
 ];
 
 const chronologyQuestions4: ChronologyQuestion[] = [
-  { id:'chron-17', type:'chronology', category:'Genèse', difficulty:'easy', events:['Naissance d’Isaac','Naissance d’Ésaü et Jacob','Joseph vendu par ses frères','Jacob descend en Égypte'], correctOrder:[0,1,2,3], explanation:'Ces événements suivent la progression de l’histoire des patriarches.', reference:'Genèse 21:1-7; 25:19-26; 37:1-36; 46:1-7' },
-  { id:'chron-18', type:'chronology', category:'Juges', difficulty:'medium', events:['Éhoud délivre Israël','Déborah juge Israël','Gédéon combat Madian','Samson commence à agir contre les Philistins'], correctOrder:[0,1,2,3], explanation:'Les épisodes appartiennent à des périodes successives de l’époque des juges.', reference:'Juges 3:15-30; 4:4-24; 7:1-25; 13–15' },
-  { id:'chron-19', type:'chronology', category:'Évangiles', difficulty:'medium', events:['Naissance de Jésus','Baptême de Jésus','Transfiguration','Mort et résurrection de Jésus'], correctOrder:[0,1,2,3], explanation:'La transfiguration intervient pendant le ministère de Jésus, après son baptême et avant sa mort.', reference:'Matthieu 2; 3:13-17; 17:1-9; 27–28' },
-  { id:'chron-20', type:'chronology', category:'Actes', difficulty:'medium', events:['Matthias est choisi','Pentecôte','Étienne témoigne devant le Sanhédrin','Saul devient chrétien'], correctOrder:[0,1,2,3], explanation:'Le choix de Matthias précède la Pentecôte ; le témoignage d’Étienne puis la conversion de Saul viennent ensuite.', reference:'Actes 1:15-26; 2:1-4; 6–7; 9:1-22' },
+  { id:'chron-17', type:'chronology', category:'Genèse', difficulty:'medium', events:['Jacob quitte Canaan pour Paddan-Aram','Jacob travaille pour Laban','Jacob revient en Canaan','Joseph est vendu par ses frères'], correctOrder:[0,1,2,3], explanation:'Jacob part chez Laban, y travaille plusieurs années, revient ensuite en Canaan ; plus tard, Joseph est vendu par ses frères.', reference:'Genèse 28:10-22; 29:15-30; 31:17-21; 37:12-36' },
+  { id:'chron-18', type:'chronology', category:'Juges', difficulty:'medium', events:['Samson naît','Samson devient juge','Samson est capturé par les Philistins','Samson fait tomber le temple des Philistins'], correctOrder:[0,1,2,3], explanation:'Le récit présente d’abord la naissance de Samson, puis son activité comme juge, sa capture et enfin son dernier acte contre les Philistins.', reference:'Juges 13:1-5; 14–15; 16:4-21; 16:22-30' },
+  { id:'chron-19', type:'chronology', category:'Évangiles', difficulty:'medium', events:['Naissance de Jésus','Fuite en Égypte','Retour à Nazareth','Début du ministère de Jésus'], correctOrder:[0,1,2,3], explanation:'Après la naissance de Jésus, Joseph et Marie fuient en Égypte ; ils reviennent ensuite et s’installent à Nazareth, avant le début du ministère de Jésus.', reference:'Matthieu 2:1-23; Luc 2:39-40' },
+  { id:'chron-20', type:'chronology', category:'Actes', difficulty:'hard', events:['Pierre guérit un homme boiteux','Les apôtres sont emprisonnés et libérés','Étienne est nommé parmi les sept','Philippe prêche en Samarie'], correctOrder:[0,1,2,3], explanation:'Le récit des Actes présente la guérison près du temple, puis l’opposition contre les apôtres ; les sept sont ensuite nommés, avant que Philippe ne prêche en Samarie.', reference:'Actes 3:1-10; 5:17-20; 6:1-6; 8:4-8' },
 ];
 
 export const chronologyQuestions: ChronologyQuestion[] = [...baseChronologyQuestions, ...chronologyQuestions2, ...chronologyQuestions3, ...chronologyQuestions4];
