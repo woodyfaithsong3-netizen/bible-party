@@ -1,5 +1,5 @@
 import React, { useMemo, useState } from 'react';
-import { Linking, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
+import { Pressable, ScrollView, Text, TextInput, View } from 'react-native';
 import { router, useFocusEffect } from 'expo-router';
 import { characterProfiles, CharacterProfile } from '@/data/characterProfiles';
 import { characterLearning } from '@/data/characterLearning';
@@ -113,17 +113,12 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
 
       <Section icon="🔎" title="À approfondir">
         <Text style={{ color: colors.muted, lineHeight: 21 }}>
-          Commence par lire les références ci-dessus, puis approfondis ce personnage dans les ressources JW.org. L’objectif est de comprendre le récit, le contexte, les qualités, les erreurs éventuelles et les leçons bibliques plutôt que de retenir seulement quelques faits.
+          Commence par lire les références ci-dessus, puis approfondis ce personnage dans les références bibliques et les ressources d’étude JW.org. L’objectif est de comprendre le récit, le contexte, les qualités, les erreurs éventuelles et les leçons bibliques plutôt que de retenir seulement quelques faits.
         </Text>
         <Pressable onPress={() => router.push({ pathname: '/training', params: { category: 'Personnages' } })} style={{ marginTop: 8 }}>
           <Text style={{ color: colors.accent, fontWeight: '900' }}>🔎 Continuer avec les questions « Personnages » ›</Text>
         </Pressable>
-        <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 8 }}>
-          Sources d’étude : uniquement JW.org. Les ressources ci-dessous servent à vérifier le contexte, les récits bibliques et les enseignements associés à ce personnage.
-        </Text>
-        {learning?.jwResources.map(source => <Pressable key={source.url} onPress={() => void Linking.openURL(source.url)} style={{ marginTop: 7 }}>
-          <Text style={{ color: colors.accent, fontWeight: '900' }}>↗ {source.title}</Text>
-        </Pressable>)}
+
       </Section>
 
       <View style={{ marginTop: 18, padding: 15, borderRadius: 16, backgroundColor: colors.surface, borderWidth: 1, borderColor: colors.accent }}>
