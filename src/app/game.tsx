@@ -5,7 +5,7 @@ import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { colors } from '@/theme/colors';
 import { getSettings, AppSettings } from '@/lib/settings';
 import { normalizeCategory } from '@/data/catalog';
-import { quizQuestions, mysteryQuestions, trueFalseQuestions, challenges, quoteQuestions, chronologyQuestions, intruderQuestions, timesUpQuestions } from '@/data/questions';
+import { getGamePool } from '@/data/gameContent';
 import { Question, Team } from '@/types';
 
 const scenic = require('../../assets/images/backgrounds/home-valley-exact-source.png');
@@ -89,7 +89,7 @@ export default function GameScreen() {
   const ended = useRef(false);
 
   const decks = useMemo<Record<string, Question[]>>(() => {
-    const base: Record<string, Question[]> = { quiz: quizQuestions, mystery: mysteryQuestions, truefalse: trueFalseQuestions, challenge: challenges, quote: quoteQuestions, chronology: chronologyQuestions, intruder: intruderQuestions, timesup: timesUpQuestions, threeclues: mysteryQuestions, forbidden: mysteryQuestions, faceoff: quizQuestions, risk: quizQuestions, finale: quizQuestions };
+    const base: Record<string, Question[]> = Object.fromEntries(modes.map((m) => [m, getGamePool(m as any)]));
     const out: Record<string, Question[]> = {};
     Object.entries(base).forEach(([mode, pool]) => {
       let p = pool;
@@ -103,11 +103,11 @@ export default function GameScreen() {
   const playable = useMemo(() => modes.filter(m => (decks[m] || []).length), [modes.join(','), decks]);
   const mode = playable.length ? (round === target - 1 ? 'finale' : playable[round % playable.length]) : 'quiz';
   const question = useMemo<Question>(() => {
-    const deck = decks[mode] || quizQuestions;
+    const deck = decks[mode] || getGamePool('quiz');
     // Indexer chaque mode selon son propre nombre d'apparitions évite de
     // répéter prématurément une carte quand plusieurs modes sont alternés.
     const modeRound = playable.slice(0, round).filter((m) => m === mode).length;
-    const raw = deck.length ? deck[modeRound % deck.length] : quizQuestions[0];
+    const raw = deck.length ? deck[modeRound % deck.length] : getGamePool('quiz')[0];
     // Mélange les propositions à chaque manche et recalcule l'index de la bonne réponse.
     // Sans cela, la base historique avait une forte majorité de bonnes réponses en A.
     if (raw.type === 'quiz' || raw.type === 'quote') {
