@@ -331,13 +331,13 @@ export const quizQuestions: QuizQuestion[] = [...facts, ...extraFacts, ...extraF
 quizQuestions.push(...jwQuizExpansion.map((f, i) => ({ id: `quiz-jw-${i + 1}`, type: 'quiz' as const, category: f[5], difficulty: 'medium' as Difficulty, question: f[0], answers: f[1], correctAnswer: f[2], explanation: f[3], reference: f[4] })));
 
 const mysteries: Array<[string, string[], string]> = [
-  ['Noé',['J’ai reçu des instructions précises pour construire une grande embarcation.','J’ai vécu avant le Déluge.','Ma famille a été préservée avec moi.'],'Genèse 6:9-22'],
+  ['Noé',['J’ai reçu des instructions précises pour construire une grande embarcation.','J’ai vécu à l’époque où Jéhovah a annoncé un Déluge mondial.','Ma famille a été préservée avec moi.'],'Genèse 6:9-22'],
   ['Abraham',['J’ai quitté mon pays sur ordre de Dieu.','J’ai reçu une promesse concernant ma descendance.','J’ai montré ma foi lors d’une épreuve concernant Isaac.'],'Genèse 12:1-4; 22:1-18'],
   ['Joseph',['Mes frères m’ont vendu.','J’ai interprété les rêves de Pharaon.','J’ai administré les réserves d’Égypte pendant une famine.'],'Genèse 37:28; 41:14-41'],
   ['Moïse',['J’ai été élevé en Égypte.','J’ai conduit Israël hors d’Égypte.','J’ai reçu la Loi au Sinaï.'],'Exode 2:10; 14:21-31; 19:20'],
   ['Josué',['J’ai servi aux côtés de Moïse.','J’ai reçu la responsabilité de diriger Israël après sa mort.','J’ai conduit le peuple en Canaan.'],'Josué 1:1-6'],
   ['Ruth',['Je suis devenue veuve.','J’ai choisi de rester avec Noémi.','Boaz est devenu mon mari.'],'Ruth 1:16-17; 4:13'],
-  ['David',['J’étais le plus jeune des fils de Jessé.','J’ai gardé les moutons.','J’ai affronté Goliath.'],'1 Samuel 16:11-13; 17:34-50'],
+  ['David',['Un prophète est venu chez Jessé pour choisir un futur roi.','Avant d’être roi, je gardais les moutons.','J’ai affronté Goliath avec une fronde.'],'1 Samuel 16:11-13; 17:34-50'],
   ['Salomon',['Je suis devenu roi après David.','J’ai demandé de la sagesse à Dieu.','J’ai construit le temple de Jérusalem.'],'1 Rois 2:10-12; 3:5-12; 6:1'],
   ['Élie',['J’ai annoncé une période de sécheresse.','J’ai affronté les prophètes de Baal.','Le mont Carmel est associé à mon ministère.'],'1 Rois 17:1; 18:19-39'],
   ['Daniel',['J’ai servi à Babylone.','J’ai continué à prier malgré une interdiction royale.','J’ai été jeté dans une fosse aux lions.'],'Daniel 1:1-6; 6:7-23'],
@@ -345,10 +345,10 @@ const mysteries: Array<[string, string[], string]> = [
   ['Jonas',['J’ai essayé de fuir une mission.','J’ai été dans un grand poisson.','J’ai finalement annoncé un message à Ninive.'],'Jonas 1:1-3, 17; 3:1-5'],
   ['Samuel',['Ma mère avait prié pour avoir un enfant.','J’ai entendu un appel de nuit alors que j’étais encore jeune.','J’ai servi comme prophète et juge.'],'1 Samuel 1:20; 3:1-10; 7:15-17'],
   ['Samson',['Ma force exceptionnelle me venait de Jéhovah.','J’ai combattu les Philistins.','J’étais naziréen dès ma naissance, et mes cheveux ne devaient pas être coupés.'],'Juges 13:5; 14:6; 15:14; 16:17-19'],
-  ['Pierre',['J’étais pêcheur.','J’ai marché quelque temps sur l’eau vers Jésus.','J’ai renié Jésus trois fois.'],'Matthieu 4:18-20; 14:28-31; 26:69-75'],
+  ['Pierre',['J’étais pêcheur sur la mer de Galilée.','J’ai demandé à Jésus de me permettre de marcher vers lui sur l’eau.','J’ai renié Jésus trois fois avant le chant du coq.'],'Matthieu 4:18-20; 14:28-31; 26:69-75'],
   ['Matthieu',['J’étais collecteur d’impôts.','J’ai quitté mon bureau pour suivre Jésus.','Mon nom figure parmi les Douze.'],'Matthieu 9:9; 10:2-4'],
   ['Thomas',['Je faisais partie des Douze.','J’ai voulu des preuves de la résurrection de Jésus.','Je suis aussi appelé Didyme.'],'Jean 20:24-29'],
-  ['Paul',['J’ai persécuté les disciples avant de devenir chrétien.','Une apparition de Jésus a bouleversé ma route vers Damas.','J’ai participé à plusieurs voyages missionnaires.'],'Actes 9:1-22; 13:1-4'],
+  ['Paul',['Avant de devenir chrétien, je cherchais à arrêter les disciples de Jésus.','Sur la route de Damas, Jésus s’est manifesté à moi.','J’ai ensuite participé à plusieurs voyages missionnaires.'],'Actes 9:1-22; 13:1-4'],
   ['Lydie',['Je vendais des articles de pourpre.','J’habitais à Philippes.','J’ai accueilli Paul et ses compagnons.'],'Actes 16:14-15, 40'],
   ['Lazare',['Je vivais à Béthanie.','Mes sœurs étaient Marthe et Marie.','Jésus m’a ressuscité.'],'Jean 11:1-44'],
   ['Marie de Béthanie',['Ma sœur s’appelait Marthe.','Mon frère était Lazare.','J’ai choisi d’écouter Jésus alors que Marthe était occupée.'],'Luc 10:38-42; Jean 11:1-2'],
