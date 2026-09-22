@@ -4246,7 +4246,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance"
     ],
     "difficulties": [
-      "Les Écritures ne rapportent pas de faute personnelle précise à son sujet; elles donnent aussi très peu de détails sur sa vie."
+      "Les Écritures ne rapportent pas de faute personnelle précise à son sujet; elles donnent aussi très peu de détails sur sa vie.",
+      "Il devait rester fidèle dans un groupe d’apôtres où plusieurs Jacques pouvaient être confondus, ce qui explique les précisions utilisées pour l’identifier."
     ]
   },
   "simon_zealot": {
@@ -4294,7 +4295,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance"
     ],
     "difficulties": [
-      "Son ancienne association éventuelle avec les Zélotes n’est pas certaine; la Bible ne donne pas assez de détails pour établir son passé politique."
+      "Son ancienne association éventuelle avec les Zélotes n’est pas certaine; la Bible ne donne pas assez de détails pour établir son passé politique.",
+      "Il servait aux côtés de disciples d’origines très différentes, ce qui demandait de préserver l’unité autour du Christ."
     ]
   },
   "jairus_daughter": {
@@ -4341,7 +4343,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Aucun trait de personnalité précis n’est rapporté"
     ],
     "difficulties": [
-      "Elle subit une maladie mortelle à seulement 12 ans; son récit est surtout présenté à travers la foi et l’épreuve de ses parents."
+      "Elle subit une maladie mortelle à seulement 12 ans; son récit est surtout présenté à travers la foi et l’épreuve de ses parents.",
+      "Le récit ne donne aucun détail sur sa personnalité; l’enseignement porte surtout sur la foi de ses parents et sur l’espérance de la résurrection."
     ]
   },
   "blind_bartimaeus": {
@@ -4390,7 +4393,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Reconnaissance"
     ],
     "difficulties": [
-      "Il devait vivre avec la cécité et la mendicité et affronter les tentatives de la foule pour le faire taire."
+      "Il devait vivre avec la cécité et la mendicité et affronter les tentatives de la foule pour le faire taire.",
+      "Il a dû persister malgré les personnes qui lui ordonnaient de se taire avant que Jésus l’appelle."
     ]
   },
   "samaritan_woman": {
@@ -4440,7 +4444,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi"
     ],
     "difficulties": [
-      "Sa vie personnelle avait connu plusieurs mariages et elle vivait alors avec un homme qui n’était pas son mari; Jésus lui en parle sans la rabaisser."
+      "Sa vie personnelle avait connu plusieurs mariages et elle vivait alors avec un homme qui n’était pas son mari; Jésus lui en parle sans la rabaisser.",
+      "Elle devait accepter franchement les aspects personnels de sa vie que Jésus lui révéla et agir ensuite en partageant ce qu’elle avait appris."
     ]
   },
   "roman_centurion": {
@@ -4489,7 +4494,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Compassion"
     ],
     "difficulties": [
-      "Il doit faire face à la maladie grave de son esclave et reconnaît humblement ses propres limites."
+      "Il doit faire face à la maladie grave de son esclave et reconnaît humblement ses propres limites.",
+      "Malgré son autorité militaire, il devait reconnaître humblement l’autorité supérieure de Jésus."
     ]
   },
   "felix": {
@@ -4534,7 +4540,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "qualities": ["Autorité administrative","Capacité à écouter un témoignage direct"],
     "difficulties": [
-      "Il reporte sa décision malgré son trouble et privilégie finalement des considérations personnelles et politiques en laissant Paul en prison."
+      "Il reporte sa décision malgré son trouble et privilégie finalement des considérations personnelles et politiques en laissant Paul en prison.",
+      "Il conserva Paul en détention tout en espérant recevoir de l’argent, ce qui montre le conflit entre ce qu’il entendait et ses intérêts personnels."
     ]
   },
   "festus": {
@@ -4583,7 +4590,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Prudence administrative"
     ],
     "difficulties": [
-      "Il cherche à comprendre une affaire religieuse complexe tout en gérant les demandes politiques des autorités juives."
+      "Il cherche à comprendre une affaire religieuse complexe tout en gérant les demandes politiques des autorités juives.",
+      "Il devait formuler une explication à l’empereur concernant Paul alors qu’il ne trouvait pas de faute justifiant la mort ou les chaînes."
     ]
   },
   "agrippa_ii": {
@@ -4633,7 +4641,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Capacité à écouter une défense"
     ],
     "difficulties": [
-      "Il entend un témoignage chrétien très direct mais le récit biblique ne dit pas qu’il devint chrétien."
+      "Il entend un témoignage chrétien très direct mais le récit biblique ne dit pas qu’il devint chrétien.",
+      "Il devait écouter une affaire religieuse complexe dans un contexte officiel aux côtés de Festus et de Bérénice."
     ]
   },
   "berenice": {
@@ -4682,7 +4691,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Son rôle de membre de la famille royale lui donnait une position publique et une influence dans les événements rapportés en Actes 25–26."
     ],
     "difficulties": [
-      "Le récit biblique donne très peu d’informations sur ses convictions personnelles ou sa réaction au témoignage de Paul."
+      "Le récit biblique donne très peu d’informations sur ses convictions personnelles ou sa réaction au témoignage de Paul.",
+      "Elle assista à une audience officielle où Paul défendit publiquement sa foi devant des autorités civiles."
     ]
   },
   "phoebe": {
@@ -4733,7 +4743,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Service"
     ],
     "difficulties": [
-      "La Bible donne peu de détails sur sa vie personnelle; il faut donc éviter d’attribuer des responsabilités ou circonstances non rapportées."
+      "La Bible donne peu de détails sur sa vie personnelle; il faut donc éviter d’attribuer des responsabilités ou circonstances non rapportées.",
+      "Elle assumait suffisamment de responsabilités pour être recommandée à une congrégation éloignée de Cenchrées."
     ]
   },
   "euodia": {
@@ -4779,7 +4790,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Engagement dans la prédication"
     ],
     "difficulties": [
-      "Elle connaît un désaccord avec une autre chrétienne, ce qui montre que même des serviteurs actifs peuvent devoir rétablir la paix."
+      "Elle connaît un désaccord avec une autre chrétienne, ce qui montre que même des serviteurs actifs peuvent devoir rétablir la paix.",
+      "Elle devait accepter l’aide fraternelle nécessaire pour retrouver une même pensée dans le Seigneur."
     ]
   },
   "epaphroditus": {
@@ -4828,7 +4840,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage"
     ],
     "difficulties": [
-      "Il tombe gravement malade alors qu’il sert Paul et porte aussi le poids de l’inquiétude de la congrégation."
+      "Il tombe gravement malade alors qu’il sert Paul et porte aussi le poids de l’inquiétude de la congrégation.",
+      "Il se dépensa au point de mettre sa vie en danger pour accomplir son service, ce qui inquiéta profondément les Philippiens."
     ]
   },
   "tychicus": {
@@ -4878,7 +4891,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Esprit de service"
     ],
     "difficulties": [
-      "Il accepte des missions de confiance qui nécessitent de voyager et de représenter Paul auprès de plusieurs congrégations."
+      "Il accepte des missions de confiance qui nécessitent de voyager et de représenter Paul auprès de plusieurs congrégations.",
+      "Il devait rester digne de confiance lorsqu’il représentait Paul auprès de chrétiens qui avaient besoin d’encouragement."
     ]
   },
   "demas": {
@@ -4922,7 +4936,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "qualities": ["Esprit de collaboration à une période de sa vie","Il est difficile d’établir d’autres qualités personnelles à partir du récit"],
     "difficulties": [
-      "Son attachement au présent système de choses finit par prendre le dessus sur son engagement auprès de Paul."
+      "Son attachement au présent système de choses finit par prendre le dessus sur son engagement auprès de Paul.",
+      "La Bible ne précise pas exactement ce qui motivait son départ; elle indique seulement son attachement au présent système de choses."
     ]
   },
   "naaman": {
@@ -5030,7 +5045,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Prière"
     ],
     "difficulties": [
-      "Il doit faire face à une menace militaire écrasante et à des paroles destinées à affaiblir la confiance du peuple."
+      "Il doit faire face à une menace militaire écrasante et à des paroles destinées à affaiblir la confiance du peuple.",
+      "Après une grande délivrance, il commit une imprudence en montrant ses trésors aux envoyés de Babylone et dut entendre les conséquences annoncées."
     ]
   },
   "josiah": {
@@ -5085,7 +5101,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle"
     ],
     "difficulties": [
-      "Il hérite d’un pays profondément marqué par l’idolâtrie et doit entreprendre des réformes considérables malgré des années de mauvaises influences."
+      "Il hérite d’un pays profondément marqué par l’idolâtrie et doit entreprendre des réformes considérables malgré des années de mauvaises influences.",
+      "Il mourut prématurément à Meguiddo après s’être engagé dans une confrontation avec Pharaon Néko."
     ]
   },
   "jehoshaphat": {
@@ -5135,7 +5152,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Une grande coalition d’Ammôn, de Moab et de Séïr est venue menacer Juda.",
       "Il a eu peur et a dû reconnaître publiquement que lui et son peuple ne savaient pas quoi faire.",
       "Il a aussi été repris pour ses liens avec le méchant roi Ahab et a subi les conséquences de certaines décisions imprudentes.",
-      "Malgré ces faiblesses, il a continué à rechercher Jéhovah et à encourager le peuple à lui faire confiance. — 2Ch 19:1-3 ; 20:1-12."
+      "Malgré ces faiblesses, il a continué à rechercher Jéhovah et à encourager le peuple à lui faire confiance. — 2Ch 19:1-3 ; 20:1-12.",
+      "Ses alliances avec Ahab et Ahazia l’exposèrent à des situations dangereuses et lui valurent une réprimande de la part de Jéhovah."
     ]
   },
   "jonah": {
@@ -5185,7 +5203,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Humilité à apprendre"
     ],
     "difficulties": [
-      "Son histoire montre que les sentiments personnels peuvent entrer en conflit avec une mission confiée par Dieu."
+      "Son histoire montre que les sentiments personnels peuvent entrer en conflit avec une mission confiée par Dieu.",
+      "Après la repentance des Ninivites, il a dû corriger sa manière de voir la compassion de Jéhovah envers des personnes d’une autre nation."
     ]
   },
   "saul_king": {
@@ -5230,7 +5249,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "qualities": ["Courage dans ses premières campagnes","Capacité de diriger","Il devint progressivement dominé par la désobéissance et la jalousie"],
     "difficulties": [
-      "Son parcours montre l’importance de l’obéissance et de l’humilité."
+      "Son parcours montre l’importance de l’obéissance et de l’humilité.",
+      "Sa jalousie envers David transforma progressivement son règne en une longue lutte personnelle et contribua à sa chute."
     ]
   },
   "manoah_father": {
@@ -5327,7 +5347,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il a prophétisé dans une période marquée par l’idolâtrie et l’infidélité à Jéhovah en Juda.",
       "Son message annonçait un jugement sévère contre Jérusalem et les nations, ce qui demandait du courage pour parler franchement.",
       "Il a dû transmettre un avertissement alors que beaucoup de ses contemporains ne servaient pas fidèlement Jéhovah.",
-      "Il a aussi annoncé un message d’espoir pour les humbles qui rechercheraient Jéhovah. — Tse 1:4-6 ; 2:3 ; 3:9-13."
+      "Il a aussi annoncé un message d’espoir pour les humbles qui rechercheraient Jéhovah. — Tse 1:4-6 ; 2:3 ; 3:9-13.",
+      "Il devait annoncer un jugement contre Juda et les nations tout en invitant les humbles à chercher Jéhovah."
     ]
   },
   "habakkuk": {
@@ -5376,7 +5397,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il a été profondément troublé par la violence, l’injustice et l’oppression qu’il observait en Juda.",
       "Il a posé à Jéhovah des questions franches sur la raison pour laquelle le mal semblait durer.",
       "Il a dû accepter que Jéhovah agisse selon son propre calendrier, même lorsqu’il ne comprenait pas encore comment.",
-      "Il a finalement exprimé sa détermination à continuer de se réjouir en Jéhovah malgré des circonstances difficiles. — Hab 1:2-4, 12-17 ; 2:2-4 ; 3:17-19."
+      "Il a finalement exprimé sa détermination à continuer de se réjouir en Jéhovah malgré des circonstances difficiles. — Hab 1:2-4, 12-17 ; 2:2-4 ; 3:17-19.",
+      "Il devait accepter que Jéhovah agisse selon son propre calendrier et continuer à lui faire confiance malgré ce qu’il ne comprenait pas."
     ]
   },
   "amos": {
@@ -5426,7 +5448,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il a été envoyé comme prophète auprès du royaume d’Israël alors que le culte était profondément corrompu.",
       "Son message dénonçait l’injustice, l’exploitation des pauvres et l’hypocrisie religieuse.",
       "Il a rencontré l’opposition du prêtre Amatsia, qui lui a ordonné de ne plus prophétiser à Béthel.",
-      "Il a continué à transmettre fidèlement le message de Jéhovah malgré cette opposition. — Am 2:6-8 ; 7:10-17."
+      "Il a continué à transmettre fidèlement le message de Jéhovah malgré cette opposition. — Am 2:6-8 ; 7:10-17.",
+      "Le prêtre Amatsia s’opposa directement à son activité prophétique à Béthel, mais Amos continua de transmettre le message reçu de Jéhovah."
     ]
   },
   "micah": {
