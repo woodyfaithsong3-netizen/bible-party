@@ -63,9 +63,10 @@ function shuffle<T>(items: T[]): T[] {
 
 const entries = Object.entries(characterLearning);
 
-export function buildReviewDeck(mode: ReviewMode = 'mix', count = 10, excludedIds: string[] = []): ReviewCard[] {
-  const available = entries.filter(([id]) => !excludedIds.includes(id));
-  const picked = shuffle(available).slice(0, Math.min(count, available.length));
+export function buildReviewDeck(mode: ReviewMode = 'mix', count = 10, preferredIds: string[] = []): ReviewCard[] {
+  const preferred = preferredIds.length ? preferredIds.map((id) => entries.find(([entryId]) => entryId === id)).filter((entry): entry is [string, typeof entries[number][1]] => Boolean(entry)) : [];
+  const fallback = entries.filter(([id]) => !preferredIds.includes(id));
+  const picked = [...shuffle(preferred), ...shuffle(fallback)].slice(0, Math.min(count, entries.length));
 
   return picked.map(([id, data], index) => {
     const name = characterName(id, data.identity);
@@ -191,6 +192,14 @@ export async function recordReviewResult(characterId: string, correct: boolean):
   all[characterId] = updated;
   await AsyncStorage.setItem(STORAGE_KEY, JSON.stringify(all));
   return updated;
+}
+
+export async function getReviewStats(): Promise<{ total: number; due: number; mastered: number; learning: number }> {
+  const mastery = await loadCharacterMastery();
+  const now = Date.now();
+  const due = entries.filter(([id]) => !mastery[id] || mastery[id].nextReviewAt <= now).length;
+  const mastered = entries.filter(([id]) => (mastery[id]?.level ?? 0) >= 4).length;
+  return { total: entries.length, due, mastered, learning: entries.length - mastered };
 }
 
 export async function getDueCharacterIds(): Promise<string[]> {
