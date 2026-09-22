@@ -1722,8 +1722,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "Ruth 4:11",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
+        "title": "Jacob — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacob/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
@@ -1781,8 +1781,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "Hébreux 12:16",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
+        "title": "Jacob — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacob/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
@@ -1833,8 +1833,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
-        "title": "La Bible — Hébreux 5-7",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
+        "title": "Grand prêtre — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Grand-pr%C3%AAtre/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
