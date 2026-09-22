@@ -834,7 +834,7 @@ const timesUpQuestions2: TimesUpQuestion[] = [
 
 
 const timesUpQuestions3: TimesUpQuestion[] = [
-  { id:'timesup-16', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Gédéon', clues:['Toison','Madian','300'], reference:'Juges 6–7' },
+  { id:'timesup-16', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Josué', clues:['Moïse','Jourdain','Jéricho'], reference:'Juges 6–7' },
   { id:'timesup-17', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Bartimée', clues:['Aveugle','Jéricho','Vue'], reference:'Marc 10:46-52' },
   { id:'timesup-18', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Néhémie', clues:['Murailles','Jérusalem','Gouverneur'], reference:'Néhémie 2–6' },
   { id:'timesup-19', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Corneille', clues:['Centurion','Vision','Pierre'], reference:'Actes 10' },
