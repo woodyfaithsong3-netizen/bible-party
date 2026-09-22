@@ -11,8 +11,9 @@ import { CharacterMastery, loadCharacterMastery } from '@/data/characterReview';
 
 function ProfileCard({ item, onPress, learned, mastery }: { item: CharacterProfile; onPress: () => void; learned: boolean; mastery?: CharacterMastery }) {
   const level = mastery?.level ?? 0;
-  const status = !mastery ? 'À revoir' : level >= 4 ? 'Maîtrisé' : 'En cours';
-  const statusColor = !mastery ? colors.muted : level >= 4 ? '#75E2C1' : colors.accent;
+  const due = !mastery || mastery.nextReviewAt <= Date.now();
+  const status = due ? 'À revoir' : level >= 4 ? 'Maîtrisé' : 'En cours';
+  const statusColor = due ? colors.muted : level >= 4 ? '#75E2C1' : colors.accent;
   return <Pressable onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10 }, pressed && { opacity: 0.82 }]}>
     <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1 }}>{item.era.toUpperCase()}</Text>
     <Text style={{ color: colors.text, fontSize: 19, fontWeight: '900', marginTop: 4 }}>{item.name}</Text>
@@ -147,7 +148,7 @@ export default function CharactersScreen() {
   const [onlyUnlearned, setOnlyUnlearned] = useState(false);
   const [masteryFilter, setMasteryFilter] = useState<'Tous' | 'À revoir' | 'En cours' | 'Maîtrisés'>('Tous');
   const [mastery, setMastery] = useState<Record<string, CharacterMastery>>({});
-  const [selected, setSelected> = useState<CharacterProfile | null>(null);
+  const [selected, setSelected] = useState<CharacterProfile | null>(null);
   React.useEffect(() => { void getLearnedCharacters().then(setLearned); void loadCharacterMastery().then(setMastery); }, []);
   const eras = useMemo(() => ['Tous', ...Array.from(new Set(characterProfiles.map(x => x.era)))], []);
   const filtered = useMemo(() => {
@@ -157,7 +158,8 @@ export default function CharactersScreen() {
       const matchesQuery = !q || [x.name, x.era, x.role, x.summary, ...x.qualities].join(' ').toLowerCase().includes(q);
       const matchesStudy = !onlyUnlearned || !learned.includes(x.id);
       const level = mastery[x.id]?.level ?? 0;
-      const status = !mastery[x.id] ? 'À revoir' : level >= 4 ? 'Maîtrisés' : 'En cours';
+      const due = !mastery[x.id] || mastery[x.id].nextReviewAt <= Date.now();
+      const status = due ? 'À revoir' : level >= 4 ? 'Maîtrisés' : 'En cours';
       const matchesMastery = masteryFilter === 'Tous' || status === masteryFilter;
       return matchesEra && matchesQuery && matchesStudy && matchesMastery;
     });
