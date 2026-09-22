@@ -57,9 +57,10 @@ const trueFalseLines = dedicatedSource.split('\n').filter(line => /type:\s*['"]t
 const trueTrueFalseCount = trueFalseLines.filter(line => /answer:\s*true\b/.test(line)).length;
 const falseTrueFalseCount = trueFalseLines.filter(line => /answer:\s*false\b/.test(line)).length;
 const malformedNumericArtifacts = [...dedicatedSource.matchAll(/[A-Za-zÀ-ÿ]\d{3,}/g)].map(m => m[0]);
+const quizLines = dedicatedSource.split('\n').filter(line => /type:\s*['"]quiz['"]/.test(line));
 const answerPositionCounts = [0,1,2,3].map(i => ({
   index: i,
-  count: [...source.matchAll(new RegExp(`type:\\s*['"]quiz['"][\\s\\S]{0,900}?correctAnswer:\\s*${i}(?:\\D|$)`, 'g'))].length,
+  count: quizLines.filter(line => new RegExp(`correctAnswer:\\s*${i}(?:\\D|$)`).test(line)).length,
 }));
 const malformedQuestionStrings = dedicatedSource.split('\n').filter(line => line.includes('question:') && line.includes(', answers:')).filter(line => { 
   const q = line.indexOf('question:');
