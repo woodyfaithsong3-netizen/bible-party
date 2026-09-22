@@ -2932,8 +2932,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 20:7-12",
     "location": "Troas, en Asie Mineure.",
-    "relationshipWithJehovah": "Eutyche assistait à une réunion chrétienne où Paul enseignait. Le récit ne donne pas beaucoup de détails sur sa foi personnelle, mais il fait partie des croyants qui se réunissaient avec la congrégation à Troas.",
-    "didYouKnow": "Eutyche s’endormit pendant que Paul parlait longuement, tomba du troisième étage et fut ensuite rendu à la vie.",
+    "relationshipWithJehovah": "L’événement autour d’Eutyche fut un puissant témoignage de la puissance de Dieu et encouragea les disciples présents.",
+    "didYouKnow": "Eutyche était assis sur une fenêtre au troisième étage lorsque, vaincu par le sommeil, il tomba pendant que Paul parlait.",
     "jwResources": [
       {
         "title": "Eutyche — Étude perspicace",
@@ -2975,8 +2975,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Luc 10:38-42 ; Jean 11:17-27 ; 12:1-8",
     "location": "Béthanie, près de Jérusalem.",
-    "relationshipWithJehovah": "Marthe avait foi en Jésus et reconnut qu’il était le Christ, le Fils de Dieu. Sa foi s’exprima notamment lorsqu’elle parla avec Jésus après la mort de son frère Lazare.",
-    "didYouKnow": "Marthe déclara à Jésus : « Je sais qu’il ressuscitera à la résurrection au dernier jour », avant que Jésus ne lui explique qu’il est la résurrection et la vie.",
+    "relationshipWithJehovah": "Marthe manifesta sa foi en Jésus et en la résurrection, montrant son attachement au Dieu qui avait envoyé le Christ.",
+    "didYouKnow": "Marthe fit une déclaration de foi remarquable avant même que Jésus ne ressuscite Lazare : elle dit croire qu’il était le Christ, le Fils de Dieu.",
     "jwResources": [
       {
         "title": "Marthe — Étude perspicace",
@@ -3026,8 +3026,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Luc 10:38-42 ; Jean 11:1-44 ; 12:1-8",
     "location": "Béthanie, près de Jérusalem.",
-    "relationshipWithJehovah": "Marie de Béthanie manifestait sa foi en Jésus et attachait une grande valeur à son enseignement. Elle lui montra également son attachement en répandant de l’huile parfumée sur lui.",
-    "didYouKnow": "Marie versa sur Jésus une huile parfumée très coûteuse peu avant sa mort ; Jésus défendit son geste et dit qu’elle avait fait une belle action envers lui.",
+    "relationshipWithJehovah": "Marie manifestait son attachement à Jéhovah en accordant une grande valeur à l’enseignement de Jésus et en honorant son Fils.",
+    "didYouKnow": "Jésus déclara que l’action de Marie avec le parfum serait rappelée partout où la bonne nouvelle serait prêchée.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Marie de Béthanie",
@@ -3079,8 +3079,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Matthieu 27:57-61 ; Marc 15:42-47 ; Luc 23:50-56 ; Jean 19:38-42",
     "location": "Jérusalem et Arimathie.",
-    "relationshipWithJehovah": "Joseph d’Arimathée était un homme riche et membre respecté du Sanhédrin qui attendait le Royaume de Dieu. Il prit publiquement position pour Jésus en demandant son corps après sa mort.",
-    "didYouKnow": "Joseph plaça le corps de Jésus dans un tombeau neuf qui lui appartenait et fit rouler une grande pierre à l’entrée.",
+    "relationshipWithJehovah": "Joseph craignait Dieu et choisit de soutenir Jésus alors que beaucoup de dirigeants l’avaient rejeté.",
+    "didYouKnow": "Joseph d’Arimathie était membre du Sanhédrin mais n’avait pas approuvé la décision et l’action des autres membres contre Jésus.",
     "jwResources": [
       {
         "title": "Joseph d’Arimathie — Étude perspicace",
@@ -3130,8 +3130,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Marc 5:21-43 ; Luc 8:40-56",
     "location": "Région de Galilée, près du lieu où Jésus enseignait.",
-    "relationshipWithJehovah": "Jaïrus était un président de synagogue qui vint vers Jésus pour demander de l’aide pour sa fille. Sa démarche montre qu’il avait suffisamment confiance en Jésus pour solliciter son intervention.",
-    "didYouKnow": "Lorsque sa fille mourut avant l’arrivée de Jésus, Jésus entra chez Jaïrus, la prit par la main et la rendit à la vie.",
+    "relationshipWithJehovah": "Jaïrus fit confiance à Jésus, l’instrument par lequel Jéhovah allait accomplir des miracles et enseigner l’espérance de la résurrection.",
+    "didYouKnow": "Quand Jésus ressuscita la fille de Jaïrus, il demanda qu’on lui donne quelque chose à manger, détail qui montre qu’elle était réellement revenue à la vie.",
     "jwResources": [
       {
         "title": "Jaïrus — Étude perspicace",
@@ -3180,8 +3180,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Jean 11:16 ; 14:1-6 ; 20:24-29",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Thomas suivit Jésus comme apôtre et finit par exprimer clairement sa foi en lui comme son Seigneur et son Dieu. Son parcours montre aussi l’importance de recevoir les preuves et les explications avec foi.",
-    "didYouKnow": "Thomas n’était pas présent lorsque Jésus apparut pour la première fois aux disciples après sa résurrection et demanda à voir les marques des clous avant de croire au témoignage des autres.",
+    "relationshipWithJehovah": "Thomas renforça sa foi en Jésus ressuscité et reconnut publiquement sa position exceptionnelle.",
+    "didYouKnow": "Thomas était aussi appelé Didyme, nom grec qui signifie « jumeau ».",
     "jwResources": [
       {
         "title": "Thomas — Étude perspicace",
@@ -3230,8 +3230,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 16:11-15, 40",
     "location": "Philippes, en Macédoine.",
-    "relationshipWithJehovah": "Lydie écouta le message de Paul et Jéhovah ouvrit son cœur pour qu’elle accepte les enseignements. Elle fut baptisée avec sa maisonnée et offrit ensuite l’hospitalité aux missionnaires.",
-    "didYouKnow": "Lydie était marchande de pourpre, originaire de Thyatire, et sa maison devint un lieu où Paul et ses compagnons purent séjourner.",
+    "relationshipWithJehovah": "Jéhovah ouvrit le cœur de Lydie pour qu’elle prête attention à ce que Paul disait, puis elle répondit favorablement au message chrétien.",
+    "didYouKnow": "Lydie vendait de la pourpre, un produit associé à la ville de Thyatire, et elle semble avoir été la première personne à devenir chrétienne à Philippes.",
     "jwResources": [
       {
         "title": "Lydie — Étude perspicace",
@@ -3282,8 +3282,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 9:36-43",
     "location": "Joppé, sur la côte méditerranéenne.",
-    "relationshipWithJehovah": "Tabitha, appelée Dorcas en grec, était connue pour ses nombreuses bonnes actions et son aide aux personnes dans le besoin. Les disciples de Joppé tenaient beaucoup à elle.",
-    "didYouKnow": "Après la mort de Tabitha, Pierre pria puis lui dit de se lever ; elle revint à la vie et cet événement fut connu dans toute la ville de Joppé.",
+    "relationshipWithJehovah": "Tabitha montrait son amour pour Dieu et pour les autres par ses bonnes œuvres et son aide généreuse.",
+    "didYouKnow": "Lorsque Tabitha mourut, les veuves montrèrent à Pierre les vêtements qu’elle avait faits pendant qu’elle était avec elles.",
     "jwResources": [
       {
         "title": "Tabitha — Étude perspicace",
@@ -3332,8 +3332,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 6:1-15 ; 7:1-60",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Étienne était rempli de foi et d’esprit saint et défendit courageusement son témoignage devant le Sanhédrin. Il pria Jéhovah au moment de sa mort et demanda que le péché ne soit pas retenu contre ses opposants.",
-    "didYouKnow": "Étienne eut une vision de Jésus debout à la droite de Dieu juste avant d’être lapidé.",
+    "relationshipWithJehovah": "Étienne était rempli de foi et d’esprit saint et resta fidèle à Jéhovah jusqu’à sa mort.",
+    "didYouKnow": "Étienne est présenté comme le premier disciple de Jésus dont la Bible rapporte la mort en martyr.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Étienne",
@@ -3389,8 +3389,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 9:10-19 ; 22:12-16",
     "location": "Damas.",
-    "relationshipWithJehovah": "Ananias de Damas reçut en vision une instruction de Jéhovah concernant Saul. Malgré ses craintes à propos de cet homme, il obéit, lui imposa les mains et l’aida à retrouver la vue.",
-    "didYouKnow": "Ananias était un disciple qui vivait à Damas et à qui Jésus apparut en vision pour lui demander de rencontrer Saul.",
+    "relationshipWithJehovah": "Ananias obéit rapidement à la direction de Jésus et participa à l’accueil de Saul dans la communauté chrétienne.",
+    "didYouKnow": "Ananias est décrit comme un homme attaché à la Loi et respecté par les Juifs de Damas.",
     "jwResources": [
       {
         "title": "Ananias de Damas — Étude perspicace",
@@ -3439,8 +3439,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 6:1-6 ; 8:4-40 ; 21:8-9",
     "location": "Jérusalem, Samarie, route de Gaza et Césarée.",
-    "relationshipWithJehovah": "Philippe l’évangélisateur servait avec zèle comme proclamateur de la bonne nouvelle et fut guidé par l’esprit saint dans plusieurs missions. Il accepta notamment de rencontrer l’Éthiopien sur la route de Gaza.",
-    "didYouKnow": "Philippe expliqua à l’eunuque éthiopien le passage d’Isaïe qu’il lisait, puis le baptisa après sa demande.",
+    "relationshipWithJehovah": "Philippe se laissa guider par l’esprit de Dieu et resta disponible pour accomplir différents services dans la congrégation.",
+    "didYouKnow": "Philippe avait quatre filles célibataires qui prophétisaient et qui vivaient avec lui à Césarée.",
     "jwResources": [
       {
         "title": "Philippe l’évangélisateur — Étude perspicace",
@@ -3496,8 +3496,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Matthieu 4:18-22 ; 17:1-9 ; Marc 10:35-45 ; Actes 12:1-2",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Jacques fils de Zébédée fut choisi par Jésus comme apôtre et participa à plusieurs moments importants de son ministère. Il accepta aussi la perspective de subir des épreuves pour suivre son Maître.",
-    "didYouKnow": "Jacques et son frère Jean furent surnommés Boanergès, « Fils du Tonnerre », par Jésus.",
+    "relationshipWithJehovah": "Jacques servit Jésus fidèlement et mourut comme témoin de la foi chrétienne.",
+    "didYouKnow": "Jacques fut le premier des Douze dont la Bible rapporte la mort en martyr; Hérode Agrippa Ier le fit tuer par l’épée.",
     "jwResources": [
       {
         "title": "Jacques fils de Zébédée — Étude perspicace",
@@ -3546,8 +3546,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Jean 7:1-10 ; Actes 15:1-29 ; 1 Corinthiens 15:3-8 ; Jacques 1:1-27",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Jacques, frère de Jésus, ne fut pas présenté comme croyant pendant une partie du ministère de Jésus, mais devint ensuite un disciple. Après la résurrection, Jésus lui apparut personnellement.",
-    "didYouKnow": "Jacques joua un rôle important dans la congrégation de Jérusalem et prit part à la discussion rapportée en Actes 15.",
+    "relationshipWithJehovah": "Après avoir acquis la foi en Jésus, Jacques servit activement la congrégation et encouragea les chrétiens à mettre leur foi en pratique.",
+    "didYouKnow": "Paul rapporte que le Christ ressuscité apparut spécialement à Jacques avant de se manifester à tous les apôtres.",
     "jwResources": [
       {
         "title": "Jacques, frère de Jésus — Étude perspicace",
@@ -3600,8 +3600,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Jude 1-25",
     "location": "Le monde chrétien du Ier siècle.",
-    "relationshipWithJehovah": "Jude, frère de Jésus, se présente comme « esclave de Jésus Christ » dans sa lettre. Il encourage les chrétiens à combattre pour la foi et à rester attachés à Dieu.",
-    "didYouKnow": "Dans sa lettre, Jude se présente comme frère de Jacques plutôt que comme frère de Jésus, choix qui met l’accent sur son rôle de serviteur de Christ.",
+    "relationshipWithJehovah": "Jude encouragea les chrétiens à rester dans l’amour de Dieu et à compter sur sa miséricorde par Jésus Christ.",
+    "didYouKnow": "Jude était frère de Jacques et donc frère de Jésus, mais dans sa lettre il se présente comme « esclave de Jésus Christ ».",
     "jwResources": [
       {
         "title": "Jude, frère de Jésus — Étude perspicace",
@@ -3652,8 +3652,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Jean 1:43-51 ; 6:1-7 ; 12:20-22 ; 14:6-14 ; Actes 1:12-14",
     "location": "Bethsaïda et Jérusalem.",
-    "relationshipWithJehovah": "Philippe l’apôtre fut appelé directement par Jésus et manifesta rapidement son désir de partager cette découverte avec Nathanaël. Ses questions montrent aussi qu’il cherchait à comprendre plus précisément Jésus et le Père.",
-    "didYouKnow": "Philippe était originaire de Bethsaïde, la même ville que Pierre et André, et amena Nathanaël à Jésus.",
+    "relationshipWithJehovah": "Philippe apprit à connaître Jéhovah par l’intermédiaire de Jésus et continua à servir comme apôtre après la résurrection.",
+    "didYouKnow": "Philippe était de Bethsaïda, la ville d’André et de Pierre, et c’est lui qui alla dire à Nathanaël : « Nous avons trouvé celui dont Moïse a écrit dans la Loi. »",
     "jwResources": [
       {
         "title": "Philippe l’apôtre — Étude perspicace",
@@ -3697,8 +3697,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Jean 1:45-51 ; 21:1-14 ; Matthieu 10:2-4",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Barthélémy est généralement identifié à Nathanaël, disciple présenté dans l’Évangile de Jean. Il répondit favorablement à l’invitation de Philippe et reconnut rapidement Jésus comme le Fils de Dieu et le Roi d’Israël.",
-    "didYouKnow": "Nathanaël demanda d’abord si quelque chose de bon pouvait sortir de Nazareth, puis reconnut Jésus après leur rencontre.",
+    "relationshipWithJehovah": "Nathanaël reconnut Jésus comme le Fils de Dieu et le Roi d’Israël et resta ensuite parmi ses apôtres.",
+    "didYouKnow": "Le nom Nathanaël apparaît dans l’Évangile de Jean, tandis que les listes des Douze donnent le nom Barthélemy ; c’est pourquoi Barthélemy est généralement identifié à Nathanaël.",
     "jwResources": [
       {
         "title": "Barthélémy — Étude perspicace",
