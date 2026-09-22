@@ -5479,7 +5479,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Prophète — Michée dénonce les injustices et l’infidélité tout en annonçant des promesses concernant le peuple de Dieu.",
-    "era": "Prophètes",
+    "era": "VIIIe siècle av. n. è., sous les règnes de Yotham, Ahaz et Ézékias",
     "familyAndEntourage": [
       "Juda",
       "Israël"
@@ -5494,12 +5494,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Espérance"
     ],
-    "difficulties": [
-      "Il a prophétisé dans une période où l’injustice, la corruption et l’oppression existaient en Juda et en Israël.",
-      "Il a dû dénoncer des chefs et des responsables religieux qui abusaient de leur position.",
-      "Ses annonces de jugement étaient difficiles à transmettre à un peuple qui s’éloignait de Jéhovah.",
-      "Il a aussi proclamé des promesses d’espoir concernant le futur règne de paix et la venue du Messie. — Mi 2:1-2 ; 3:1-12 ; 5:2-5."
-    ]
+    "difficulties": ["Il annonçait le jugement de Samarie et de Jérusalem dans une période marquée par l’injustice et l’idolâtrie.","Il devait proclamer des messages de jugement tout en rappelant les exigences de Jéhovah et l’espérance de restauration."]
   },
   "obadiah": {
     "studyFocus": "Abdias fut un prophète dont le livre annonce le jugement contre Édom. Il dénonça notamment la joie malveillante des Édomites devant le malheur de leurs frères, les descendants de Jacob. Le livre se termine par une annonce de restauration pour le peuple de Jéhovah.",
@@ -5528,7 +5523,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Prophète — Obadia annonce le jugement contre Édom et évoque le rétablissement du peuple de Jéhovah.",
-    "era": "Prophètes",
+    "era": "Après la conquête de Jérusalem par les Babyloniens, au VIe siècle av. n. è.",
     "familyAndEntourage": [
       "Édom",
       "Jacob"
@@ -5543,12 +5538,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Justice",
       "Espérance"
     ],
-    "difficulties": [
-      "Il a prophétisé contre Édom après que celui-ci s’était réjoui des malheurs de Juda.",
-      "Son message annonçait que Jéhovah demanderait des comptes à Édom pour son hostilité envers son peuple.",
-      "Comme tout prophète chargé d’annoncer un jugement, il devait transmettre un message sérieux et peu agréable.",
-      "Il a cependant annoncé que la délivrance serait accordée au peuple de Jéhovah. — Abd 10-17."
-    ]
+    "difficulties": ["Il annonçait le jugement d’Édom après sa conduite hostile envers Juda.","Son message devait rappeler que Jéhovah voit les actes commis contre son peuple et qu’aucune nation ne peut échapper à son jugement."]
   },
   "joel": {
     "studyFocus": "Joël fut un prophète dont le message commence par une invasion de sauterelles et appelle le peuple à revenir sincèrement vers Jéhovah. Il annonce ensuite des bénédictions, l’effusion de l’esprit et le jour de Jéhovah.",
@@ -5577,7 +5567,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Prophète — Yoël utilise une invasion de sauterelles comme contexte pour appeler le peuple à revenir à Jéhovah.",
-    "era": "Prophètes",
+    "era": "Époque préexilique, probablement avant la destruction de Jérusalem; date exacte non établie",
     "familyAndEntourage": [
       "Juda",
       "Le peuple"
@@ -5592,12 +5582,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi",
       "Espérance"
     ],
-    "difficulties": [
-      "Il a vécu une période marquée par une invasion dévastatrice de sauterelles et par les conséquences d’un désastre agricole.",
-      "Il a dû expliquer que cette catastrophe devait pousser le peuple à revenir sincèrement vers Jéhovah.",
-      "Son message appelait prêtres et peuple à se réunir, jeûner et revenir à Dieu de tout leur cœur.",
-      "Il a également annoncé un avenir d’espoir pour ceux qui invoqueraient le nom de Jéhovah. — Jl 1:2-14 ; 2:12-17, 28-32."
-    ]
+    "difficulties": ["Il devait interpréter une calamité dévastatrice comme un appel à revenir à Jéhovah.","Il annonçait un jour de Jéhovah à la fois redoutable pour les désobéissants et porteur d’espérance pour ceux qui invoqueraient son nom."]
   },
   "nahum": {
     "studyFocus": "Nahum annonça le jugement de Jéhovah contre Ninive, capitale de l’Assyrie. Son message montre que la puissance militaire et la cruauté d’un empire ne peuvent empêcher Jéhovah d’exécuter son jugement.",
@@ -5626,7 +5611,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Prophète — Nahum annonce la chute de Ninive et présente Jéhovah comme un Dieu juste qui ne laisse pas le mal impuni.",
-    "era": "Prophètes",
+    "era": "VIIe siècle av. n. è., avant la destruction de Ninive en 632 av. n. è.",
     "familyAndEntourage": [
       "Ninive",
       "Juda"
@@ -5641,12 +5626,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Espérance",
       "Sens de la justice"
     ],
-    "difficulties": [
-      "Il a annoncé le jugement de Jéhovah contre Ninive, capitale de l’Assyrie, une puissance redoutée et violente.",
-      "Son message concernait une nation qui avait opprimé de nombreux peuples, dont Juda.",
-      "Il devait proclamer avec conviction la chute future d’une puissance qui semblait alors très forte.",
-      "Son message rappelait néanmoins que Jéhovah est un refuge pour ceux qui cherchent refuge en lui. — Na 1:7-15 ; 2:1-13."
-    ]
+    "difficulties": ["Il annonçait la chute de Ninive, capitale d’un empire violent et puissant.","Il devait transmettre un message de jugement tout en montrant que Jéhovah est une forteresse pour ceux qui comptent sur lui."]
   },
   "zechariah_priest": {
     "studyFocus": "Zacharie, père de Jean le Baptiseur, était prêtre de la division d’Abia. Alors qu’il servait au temple, l’ange Gabriel lui annonça que sa femme Élisabeth aurait un fils. Zacharie eut du mal à croire cette annonce et devint temporairement muet, puis il loua Jéhovah après la naissance de Jean.",
@@ -5675,7 +5655,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Zacharie était un prêtre de la classe d’Abiya, mari d’Élisabeth et père de Jean le Baptiste. L’ange Gabriel lui annonça la naissance de son fils.",
-    "era": "Ier siècle de n. è.",
+    "era": "Fin du Ier siècle av. n. è. ou début du Ier siècle de n. è., père de Jean le baptiseur",
     "familyAndEntourage": [
       "Élisabeth",
       "Jean le Baptiste",
@@ -5693,9 +5673,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Service sacerdotal",
       "Foi qui se fortifie après correction"
     ],
-    "difficulties": [
-      "Il demande un signe malgré le message de Gabriel et reste muet pendant la grossesse d’Élisabeth."
-    ]
+    "difficulties": ["Lui et Élisabeth étaient avancés en âge et n’avaient pas d’enfant lorsque Gabriel lui annonça la naissance de Jean.","Il eut du mal à croire immédiatement le message de l’ange et fut rendu muet jusqu’à l’accomplissement de la promesse."]
   },
   "elizabeth": {
     "studyFocus": "Élisabeth était l’épouse de Zacharie et une descendante d’Aaron. Elle fut longtemps stérile, puis conçut Jean le Baptiseur. Elle accueillit Marie avec foi et reconnut sous inspiration que l’enfant que Marie portait était le futur Seigneur.",
@@ -5724,7 +5702,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Élisabeth était une descendante d’Aaron, épouse du prêtre Zekaria et mère de Jean le Baptiseur. Elle était parente de Marie.",
-    "era": "Juste avant la naissance de Jésus et de Jean",
+    "era": "Fin du Ier siècle av. n. è. ou début du Ier siècle de n. è., mère de Jean le baptiseur",
     "familyAndEntourage": [
       "Zekaria",
       "Jean le Baptiseur",
@@ -5742,9 +5720,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Humilité",
       "Reconnaissance"
     ],
-    "difficulties": [
-      "Elle a longtemps été stérile et âgée lorsqu’elle a conçu Jean."
-    ]
+    "difficulties": ["Elle et Zekaria étaient très avancés en âge et restaient sans enfant.","Elle accueillit Marie avec foi et exprima sous l’influence de l’esprit saint sa reconnaissance pour ce que Jéhovah accomplissait."]
   },
   "joseph_jesus_father": {
     "studyFocus": "Joseph était le père adoptif de Jésus et un descendant de David. Il était charpentier et époux de Marie. Il suivit les instructions de Jéhovah transmises par des anges, protégeant Jésus enfant en partant notamment en Égypte puis en revenant s’installer à Nazareth.",
@@ -5773,7 +5749,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Joseph était le mari de Marie et le père adoptif de Jésus. Il était charpentier et descendait de David.",
-    "era": "De la naissance de Jésus jusqu’à son adolescence",
+    "era": "Ier siècle av. n. è. et début du Ier siècle de n. è., pendant l’enfance de Jésus",
     "familyAndEntourage": [
       "Marie",
       "Jésus",
@@ -5791,9 +5767,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Responsabilité familiale"
     ],
-    "difficulties": [
-      "Il doit protéger sa famille contre Hérode et prendre des décisions rapides sur la base des instructions reçues en rêve."
-    ]
+    "difficulties": ["Il devait accepter une situation familiale extraordinaire après avoir appris la grossesse de Marie.","Il devait protéger Jésus et Marie en suivant rapidement les instructions reçues en rêve, notamment lors de la fuite en Égypte."]
   },
   "joseph_caiaphas": {
     "studyFocus": "Caïphe était le grand prêtre durant une partie du ministère de Jésus. Il participa aux décisions des chefs religieux contre Jésus et présida l’interrogatoire au cours duquel Jésus fut accusé de blasphème.",
@@ -5822,7 +5796,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Joseph Caïphe était le grand prêtre juif qui participa aux démarches contre Jésus et qui présida des interrogatoires liés à ses disciples.",
-    "era": "Ier siècle de n. è.",
+    "era": "18-36 de n. è. environ, grand prêtre durant le ministère de Jésus",
     "familyAndEntourage": [
       "Anne, son beau-père",
       "Jésus",
@@ -5839,9 +5813,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Autorité institutionnelle",
       "Influence politique et religieuse"
     ],
-    "difficulties": [
-      "Il s’oppose au ministère de Jésus et à la prédication des apôtres, malgré les témoignages qu’il entend."
-    ]
+    "difficulties": ["Il participa aux décisions des chefs religieux concernant Jésus alors que les preuves et les témoignages étaient contestés.","Il devait répondre de son rôle dans une décision qui conduisit à la condamnation de Jésus par les autorités romaines."]
   },
   "joanna": {
     "studyFocus": "Jeanne était une femme qui faisait partie des femmes qui accompagnaient Jésus et les Douze et qui les soutenaient avec leurs biens. Elle avait été guérie par Jésus et resta attachée à son ministère.",
@@ -5870,7 +5842,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Jeanne était une femme qui avait été guérie par Jésus et qui le soutenait, avec d’autres femmes, au moyen de ses biens.",
-    "era": "Ministère terrestre de Jésus",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Chuza, intendant d’Hérode",
       "Marie Madeleine",
@@ -5889,9 +5861,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Fidélité"
     ],
-    "difficulties": [
-      "Elle était liée à la maison d’Hérode par son mari Chuza, tout en soutenant publiquement l’activité de Jésus."
-    ]
+    "difficulties": ["Elle soutenait Jésus et ses apôtres malgré le fait que ce service se déroulait dans un contexte où les femmes avaient souvent des possibilités sociales limitées.","Elle faisait partie des femmes qui restèrent associées au groupe de disciples et furent témoins d’événements liés à la mort et à la résurrection de Jésus."]
   },
   "samaritan_leper": {
     "studyFocus": "L’un des dix lépreux guéris par Jésus était Samaritain. Alors que les neuf autres ne revinrent pas, lui retourna glorifier Dieu et remercier Jésus.",
@@ -5920,7 +5890,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "L’un des dix lépreux guéris par Jésus était un Samaritain. Il fut le seul des dix à revenir remercier Jésus et à glorifier Dieu.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Les neuf autres lépreux",
       "Jésus",
@@ -5938,9 +5908,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi",
       "Humilité"
     ],
-    "difficulties": [
-      "Comme lépreux et Samaritain, il subissait probablement une double mise à l’écart sociale et religieuse; le récit montre cependant qu’il ne laisse pas la guérison devenir une simple faveur oubliée."
-    ]
+    "difficulties": ["Il vivait avec la lèpre, maladie qui entraînait l’isolement social et religieux.","Après avoir été guéri, il devait reconnaître l’importance de revenir remercier Jésus, alors que les neuf autres ne revinrent pas."]
   },
   "woman_issue_blood": {
     "studyFocus": "Une femme souffrant de pertes de sang depuis douze ans s’approcha de Jésus avec une grande foi. Elle toucha discrètement son vêtement et fut immédiatement guérie, puis reconnut publiquement son geste.",
@@ -5969,7 +5937,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "La femme qui avait des pertes de sang souffrait depuis 12 ans. Elle s’approcha discrètement de Jésus avec la conviction que même toucher son vêtement pourrait la guérir.",
-    "era": "Vers 31-32 de n. è., pendant le ministère de Jésus",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Jésus",
       "La foule",
@@ -5986,9 +5954,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Persévérance"
     ],
-    "difficulties": [
-      "Elle endure une maladie longue et coûteuse et doit surmonter la peur de se présenter devant Jésus après avoir été guérie."
-    ]
+    "difficulties": ["Elle souffrait depuis douze ans d’une perte de sang et avait dépensé ses ressources auprès de médecins sans être guérie.","Elle devait surmonter la foule et les limites liées à son état pour toucher avec foi le vêtement de Jésus."]
   },
   "gerasene_man": {
     "studyFocus": "L’homme possédé par des démons dans la région des Géraséniens vivait dans des conditions terribles et était isolé. Jésus le délivra, puis l’homme voulut accompagner Jésus, mais Jésus lui demanda de rentrer chez lui et de raconter ce que Dieu avait fait pour lui.",
@@ -6017,7 +5983,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "L’homme de la région des Géraséniens que Jésus délivra était sous l’influence de nombreux démons. Après sa délivrance, il voulut accompagner Jésus, mais Jésus lui confia une autre mission.",
-    "era": "Vers 32 de n. è., pendant le ministère de Jésus",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Jésus",
       "Les habitants de la région",
@@ -6034,9 +6000,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Reconnaissance",
       "Volonté de témoigner"
     ],
-    "difficulties": [
-      "Il avait vécu dans une situation extrêmement pénible sous l’influence démoniaque et était isolé de la société."
-    ]
+    "difficulties": ["Il était gravement tourmenté et vivait isolé parmi les tombes avant sa délivrance.","Après sa guérison, il devait accepter de rester dans sa région pour raconter ce que Jésus avait fait pour lui, plutôt que de l’accompagner immédiatement."]
   },
   "jason_thessalonica": {
     "studyFocus": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas. Des opposants l’accusèrent ensuite devant les autorités en raison de son soutien aux prédicateurs chrétiens.",
@@ -6065,7 +6029,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas chez lui. Une foule hostile l’entraîna ensuite devant les autorités.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., pendant la deuxième tournée missionnaire de Paul",
     "familyAndEntourage": [
       "Paul",
       "Silas",
@@ -6083,9 +6047,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Soutien aux prédicateurs"
     ],
-    "difficulties": [
-      "Son hospitalité envers Paul et Silas l’expose à une accusation politique et à des ennuis avec les autorités."
-    ]
+    "difficulties": ["Sa maison fut prise pour cible par des opposants qui cherchaient Paul et Silas.","Il dut répondre devant les autorités à des accusations selon lesquelles les chrétiens agissaient contre les décrets de César."]
   },
   "onesiphorus": {
     "studyFocus": "Onésiphore était un chrétien qui avait rendu de nombreux services à Paul. Il rechercha l’apôtre à Rome sans avoir honte de ses chaînes et avait auparavant servi fidèlement à Éphèse.",
@@ -6114,7 +6076,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Onésiphore était un chrétien qui apporta un soutien précieux à Paul, notamment pendant ses difficultés à Rome.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., pendant l’activité de Paul et ses emprisonnements",
     "familyAndEntourage": [
       "Paul",
       "Sa maisonnée",
@@ -6132,9 +6094,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Hospitalité",
       "Empathie"
     ],
-    "difficulties": [
-      "Il soutient Paul alors que l’apôtre est emprisonné, situation dans laquelle s’associer à lui pouvait attirer des difficultés."
-    ]
+    "difficulties": ["Il rechercha Paul avec soin et ne se laissa pas arrêter par les chaînes de l’apôtre.","Il devait manifester fidélité et courage alors que Paul était prisonnier et que certains autres s’étaient éloignés."]
   },
   "mary_mother_james": {
     "studyFocus": "Marie, mère de Jacques, faisait partie des femmes qui suivirent Jésus et le servirent. Elle se trouvait parmi les personnes qui observèrent les événements entourant sa mort et se rendit au tombeau après le sabbat.",
@@ -6163,7 +6123,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Marie, mère de Jacques, était une chrétienne de Jérusalem dont la maison servit de lieu de rassemblement pour les disciples.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., pendant le ministère de Jésus et après sa mort",
     "familyAndEntourage": [
       "Jacques",
       "Pierre",
@@ -6180,9 +6140,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Soutien aux chrétiens",
       "Générosité"
     ],
-    "difficulties": [
-      "Elle met sa maison à disposition à une période de persécution et de danger pour les disciples."
-    ]
+    "difficulties": ["Elle faisait partie des femmes qui soutenaient les disciples et se trouva associée aux événements entourant la mort et la résurrection de Jésus.","Le peu d’informations disponibles exige de distinguer soigneusement son identité de celle des autres Marie mentionnées dans les Évangiles."]
   },
   "mary_mark_mother": {
     "studyFocus": "Marie, mère de Jean-Marc, était une chrétienne de Jérusalem dont la maison servait de lieu de réunion à la congrégation. Lorsque Pierre fut libéré de prison, il se rendit chez elle, où de nombreux disciples priaient.",
@@ -6211,7 +6169,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Marie, mère de Jean-Marc, était une chrétienne de Jérusalem dont la maison accueillait des disciples. Son fils Jean-Marc devint compagnon de mission.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., à l’époque de la congrégation chrétienne primitive",
     "familyAndEntourage": [
       "Jean-Marc",
       "Barnabas",
@@ -6229,9 +6187,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Soutien spirituel",
       "Générosité"
     ],
-    "difficulties": [
-      "Sa maison est un lieu de rassemblement à une époque où les disciples subissent l’opposition d’Hérode."
-    ]
+    "difficulties": ["Sa maison servait de lieu de réunion aux chrétiens de Jérusalem dans une période de persécution.","Elle devait continuer à soutenir la congrégation alors que Pierre était emprisonné et que Hérode cherchait à nuire aux chrétiens."]
   },
   "apphia": {
     "studyFocus": "Apphia était une chrétienne de Colosses à qui Paul adressa personnellement sa lettre avec Philémon et Archippe. Elle faisait partie du cercle de personnes liées à la congrégation qui se réunissait chez Philémon.",
@@ -6260,7 +6216,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Apphia était une chrétienne associée à Philémon et à l’assemblée qui se réunissait chez lui. Paul lui adresse personnellement ses salutations.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., à l’époque de la congrégation chrétienne primitive",
     "familyAndEntourage": [
       "Philémon",
       "Archippe",
@@ -6275,9 +6231,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Engagement chrétien",
       "Soutien au foyer chrétien"
     ],
-    "difficulties": [
-      "La Bible donne très peu de détails personnels; il faut éviter de présenter comme certain un lien familial que le texte ne précise pas."
-    ]
+    "difficulties": ["Elle appartenait à un foyer chrétien dont la situation fut directement concernée par le cas d’Onésime.","Elle devait appliquer les principes chrétiens dans une situation familiale et congrégationnelle délicate."]
   },
   "archippus": {
     "studyFocus": "Archippe était un chrétien de Colosses associé à Philémon et Apphia. Paul lui demanda de veiller à bien accomplir le ministère qu’il avait reçu dans le Seigneur.",
@@ -6306,7 +6260,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Archippe était un chrétien associé à Philémon et Apphia et à l’assemblée qui se réunissait chez eux. Paul l’encourage à accomplir pleinement son ministère.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., à l’époque de la congrégation chrétienne primitive",
     "familyAndEntourage": [
       "Philémon",
       "Apphia",
@@ -6322,9 +6276,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Engagement",
       "Persévérance dans le ministère"
     ],
-    "difficulties": [
-      "Paul l’encourage à prendre pleinement au sérieux le ministère qui lui a été confié."
-    ]
+    "difficulties": ["Paul l’encouragea à veiller à bien accomplir le ministère qu’il avait reçu dans le Seigneur.","Comme tout chrétien chargé d’une responsabilité, il devait rester vigilant et fidèle dans son service."]
   },
   "john_mark": {
     "studyFocus": "Jean-Marc était un compagnon de Paul et Barnabas, et le cousin de Barnabas. Il accompagna les deux hommes au début d’un voyage missionnaire mais les quitta ensuite. Plus tard, il redevint un collaborateur apprécié de Paul.",
@@ -6357,7 +6309,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Jean-Marc était un chrétien de Jérusalem qui accompagna Paul et Barnabas dans une partie de leur première tournée missionnaire. Après une séparation, il retrouva la confiance de Paul.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., pendant les premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
       "Marie, sa mère",
       "Barnabas, son cousin",
@@ -6375,10 +6327,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance",
       "Capacité à progresser"
     ],
-    "difficulties": [
-      "Son départ de la première tournée provoque un désaccord entre Paul et Barnabas.",
-      "Il doit ensuite démontrer par ses actions qu’il peut être à nouveau digne de confiance."
-    ]
+    "difficulties": ["Il quitta Paul et Barnabas pendant leur première tournée missionnaire, ce qui provoqua plus tard un désaccord entre Paul et Barnabas.","Il devait ensuite reconstruire la confiance et démontra par la suite qu’il était utile au service de Paul."]
   },
   "priscilla": {
     "studyFocus": "Priscille était une chrétienne mariée à Aquilas. Avec lui, elle collabora avec Paul, participa à l’enseignement d’Apollos et mit sa maison à disposition des congrégations.",
@@ -6411,7 +6360,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Priscille, avec son mari Aquila, était une chrétienne qui collabora étroitement avec Paul. Elle contribua à expliquer plus exactement la voie de Dieu à Apollos.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., pendant les premières décennies de la congrégation chrétienne",
     "familyAndEntourage": [
       "Aquila",
       "Paul",
@@ -6430,9 +6379,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Capacité à enseigner",
       "Esprit de coopération"
     ],
-    "difficulties": [
-      "Le couple exerce son ministère dans différentes villes et connaît les risques liés à l’activité chrétienne au Ier siècle."
-    ]
+    "difficulties": ["Elle et Aquilas durent quitter Rome à cause d’un décret de Claude contre les Juifs.","Elle participa avec Aquilas à l’enseignement d’Apollos, en l’aidant à comprendre plus exactement la voie de Dieu."]
   },
   "claudius_lycias": {
     "studyFocus": "Claude Lysias commandait la garnison romaine de Jérusalem. Il intervint pour protéger Paul contre la foule, découvrit que Paul était citoyen romain et l’envoya sous escorte à Césarée.",
@@ -6461,7 +6408,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Claude Lysias était le commandant militaire romain de Jérusalem qui fit protéger Paul lorsqu’une foule voulut le tuer.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., durant les dernières années de l’activité de Paul",
     "familyAndEntourage": [
       "Paul",
       "Les soldats romains",
@@ -6478,9 +6425,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Organisation",
       "Prudence"
     ],
-    "difficulties": [
-      "Il doit gérer une foule violente et un complot tout en déterminant la nature des accusations contre Paul."
-    ]
+    "difficulties": ["Il devait maintenir l’ordre à Jérusalem au milieu d’une foule hostile à Paul.","Après avoir découvert que Paul était citoyen romain, il dut le protéger et organiser son transfert sous escorte pour éviter qu’il soit tué."]
   },
   "julius_centurion": {
     "studyFocus": "Julius était un centurion chargé de conduire Paul et d’autres prisonniers à Rome. Il traita Paul avec bonté pendant le voyage et contribua à préserver la vie des prisonniers après le naufrage.",
@@ -6509,7 +6454,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Julius était un centurion de la cohorte d’Auguste chargé de conduire Paul et d’autres prisonniers vers Rome.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., lors du voyage de Paul vers Rome",
     "familyAndEntourage": [
       "Paul",
       "Luc",
@@ -6527,9 +6472,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Prudence",
       "Capacité à écouter"
     ],
-    "difficulties": [
-      "Il doit gérer une traversée extrêmement dangereuse et prendre des décisions concernant les prisonniers lorsque le navire est en péril."
-    ]
+    "difficulties": ["Il devait escorter Paul et d’autres prisonniers pendant une traversée maritime dangereuse.","Il montra une certaine considération pour Paul et finit par empêcher les soldats de tuer les prisonniers après le naufrage."]
   },
   "gaius_macedonian": {
     "studyFocus": "Gaius de Macédoine était un compagnon de Paul qui fut entraîné dans l’émeute provoquée à Éphèse par l’opposition à la prédication. Il faisait partie des compagnons de voyage de Paul.",
@@ -6558,7 +6501,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Gaïus le Macédonien était un compagnon de Paul associé à Aristarque lors de l’émeute d’Éphèse.",
-    "era": "Troisième voyage missionnaire de Paul",
+    "era": "Ier siècle de n. è., pendant la troisième tournée missionnaire de Paul",
     "familyAndEntourage": [
       "Paul",
       "Aristarque",
@@ -6575,9 +6518,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Esprit de collaboration"
     ],
-    "difficulties": [
-      "Il est pris dans une violente émeute provoquée par l’opposition à la prédication chrétienne."
-    ]
+    "difficulties": ["Il fut entraîné avec Aristarque dans l’émeute d’Éphèse provoquée par l’opposition au message chrétien.","Il devait rester fidèle alors qu’une foule en colère s’en prenait aux compagnons de Paul."]
   },
   "aristarchus": {
     "studyFocus": "Aristarque était un Macédonien de Thessalonique et un compagnon de voyage de Paul. Il fut saisi pendant l’émeute d’Éphèse et accompagna ensuite Paul dans des voyages difficiles, notamment vers Rome.",
@@ -6606,7 +6547,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Aristarque était un Macédonien de Thessalonique et un compagnon de voyage de Paul. Il partagea même une période de captivité avec lui.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., pendant les voyages missionnaires et les emprisonnements de Paul",
     "familyAndEntourage": [
       "Paul",
       "Gaius de Macédoine",
@@ -6625,10 +6566,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Endurance",
       "Esprit de coopération"
     ],
-    "difficulties": [
-      "Il subit les conséquences de son association avec Paul, notamment pendant l’émeute d’Éphèse et les voyages difficiles.",
-      "Il partage la captivité de Paul."
-    ]
+    "difficulties": ["Il partagea des périodes difficiles avec Paul, notamment l’émeute d’Éphèse et le voyage vers Rome.","Il accepta de rester aux côtés de Paul malgré les dangers et les conditions éprouvantes."]
   },
   "syntyche": {
     "studyFocus": "Syntyche était une chrétienne de Philippes qui, comme Évodie, avait travaillé avec Paul pour la bonne nouvelle. Paul lui demanda de retrouver avec Évodie la même pensée dans le Seigneur.",
@@ -6657,7 +6595,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Syntyche était une chrétienne de Philippes qui avait travaillé avec Paul pour la bonne nouvelle. Paul lui adresse le même appel à l’unité qu’à Évodie.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., à l’époque de la congrégation chrétienne primitive",
     "familyAndEntourage": [
       "Évodie",
       "Paul",
@@ -6672,8 +6610,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle",
       "Engagement dans le service chrétien"
     ],
-    "difficulties": [
-      "Son désaccord avec Évodie exige une aide fraternelle pour préserver l’unité de la congrégation."
-    ]
+    "difficulties": ["Elle avait travaillé aux côtés de Paul pour la bonne nouvelle tout en connaissant un désaccord avec Évodie.","Elle devait accepter l’exhortation à retrouver une même pensée dans le Seigneur afin de préserver l’unité de la congrégation."]
   }
 };
