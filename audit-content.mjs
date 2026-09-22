@@ -71,6 +71,17 @@ for (const id of new Set(characterIds)) {
     perCharacterDifficultyFailures.push({ id, ...diffCounts });
   }
 }
+const characterTypeDifficulty = new Map();
+for (const block of dedicatedSource.matchAll(/characterId:\s*['"]([^'"]+)['"][\s\S]{0,180}?type:\s*['"]([^'"]+)['"][\s\S]{0,180}?difficulty:\s*['"]([^'"]+)['"]/g)) {
+  const [, characterId, type, difficulty] = block;
+  if (!characterTypeDifficulty.has(characterId)) characterTypeDifficulty.set(characterId, { quiz: 0, truefalse: 0, mystery: 0, easy: 0, medium: 0, hard: 0, expert: 0 });
+  const counts = characterTypeDifficulty.get(characterId);
+  if (counts[type] !== undefined) counts[type]++;
+  if (counts[difficulty] !== undefined) counts[difficulty]++;
+}
+const characterDistributionFailures = [...characterTypeDifficulty.entries()].filter(([, c]) =>
+  c.quiz !== 10 || c.truefalse !== 4 || c.mystery !== 2 || c.easy !== 3 || c.medium !== 4 || c.hard !== 5 || c.expert !== 4
+);
 const difficultyCounts = Object.fromEntries(['easy','medium','hard','expert'].map(d => [d, [...dedicatedSource.matchAll(new RegExp(`difficulty:\\s*['"]${d}['"]`, 'g'))].length]));
 
 
@@ -108,6 +119,7 @@ if (invalidQuizIndexes.length) failures.push('invalid quiz correctAnswer indexes
 if (expertCards !== 500) failures.push('dedicated expert card count unexpectedly changed: ' + expertCards);
 if (characterCoverage !== 125) failures.push('character coverage unexpectedly changed: ' + characterCoverage);
 if (characterCountFailures.length) failures.push('character question count != 16: ' + characterCountFailures.map(([id,n]) => id + ' x' + n).join(', '));
+if (characterDistributionFailures.length) failures.push('per-character type/difficulty distribution changed: ' + characterDistributionFailures.map(([id,c]) => id + ' ' + JSON.stringify(c)).join(', '));
 if (perCharacterTypeFailures.length) failures.push('per-character type distribution != 10 quiz + 4 truefalse + 2 mystery: ' + JSON.stringify(perCharacterTypeFailures.slice(0, 10)));
 if (perCharacterDifficultyFailures.length) failures.push('per-character difficulty distribution != 3 easy + 4 medium + 5 hard + 4 expert: ' + JSON.stringify(perCharacterDifficultyFailures.slice(0, 10)));
 
