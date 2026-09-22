@@ -1801,8 +1801,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Nombres 22:1-41 ; 23:1–24:25 ; 25:1-9 ; 31:8,16 ; 2 Pierre 2:15-16 ; Révélation 2:14",
     "location": "Mésopotamie puis territoire de Moab.",
-    "relationshipWithJehovah": "Balaam reçut des instructions de Jéhovah mais permit à la recherche du gain de l’influencer; son parcours devint un avertissement contre l’avidité.",
-    "didYouKnow": "L’ânesse de Balaam vit l’ange de Jéhovah sur le chemin alors que Balaam ne le voyait pas, et elle parla de façon miraculeuse.",
+    "relationshipWithJehovah": "Balaam reçut des instructions de Jéhovah et fut contraint de bénir Israël au lieu de le maudire. Cependant, la Bible le présente aussi comme un homme qui a laissé l’avidité influencer sa conduite.",
+    "didYouKnow": "L’ânesse de Balaam vit l’ange de Jéhovah sur le chemin et parla de façon miraculeuse avant que Balaam ne comprenne ce qui se passait.",
     "jwResources": [
       {
         "title": "Balaam — Étude perspicace des Écritures",
@@ -1847,8 +1847,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Nombres 22:1-41 ; 23:1-30 ; 24:1-25",
     "location": "Moab, à l’est du Jourdain.",
-    "relationshipWithJehovah": "Balak s’opposa au dessein de Jéhovah concernant Israël et chercha sans succès à faire prononcer une malédiction contre ce peuple.",
-    "didYouKnow": "Balak demanda à Balaam de maudire Israël à plusieurs reprises et l’emmena sur différents points élevés pour tenter d’obtenir ce résultat.",
+    "relationshipWithJehovah": "Balak craignait Israël et chercha à faire prononcer une malédiction contre lui. Ses efforts échouèrent parce que Jéhovah ne permit pas à Balaam de maudire son peuple.",
+    "didYouKnow": "Balak emmena Balaam successivement sur plusieurs hauteurs afin qu’il puisse voir une partie du camp d’Israël et tenter de faire prononcer une malédiction.",
     "jwResources": [
       {
         "title": "Balak — Étude perspicace des Écritures",
@@ -1895,8 +1895,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "1 Samuel 1:9-28 ; 2:12-36 ; 3:1-21 ; 4:10-18",
     "location": "Silo, au sanctuaire d’Israël.",
-    "relationshipWithJehovah": "Éli servait comme prêtre et reconnut la voix prophétique de Jéhovah lorsqu’il encouragea Samuel à répondre : « Parle, car ton serviteur écoute. »",
-    "didYouKnow": "Éli avait 98 ans lorsqu’il mourut, après avoir appris que l’Arche avait été capturée et que ses deux fils étaient morts.",
+    "relationshipWithJehovah": "Éli servait comme prêtre à Silo et enseigna à Samuel comment répondre lorsqu’il entendait l’appel de Jéhovah. Malgré cela, il fut repris parce qu’il n’avait pas suffisamment discipliné ses fils.",
+    "didYouKnow": "Éli reconnut finalement que c’était Jéhovah qui appelait Samuel et lui apprit à répondre : « Parle, car ton serviteur écoute. »",
     "jwResources": [
       {
         "title": "Éli — Étude perspicace des Écritures",
@@ -1946,8 +1946,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "1 Samuel 1:1-28 ; 2:1-11",
     "location": "Rama et Silo.",
-    "relationshipWithJehovah": "Anne pria avec confiance, tint son vœu et continua à louer Jéhovah après avoir reçu la réponse à sa prière.",
-    "didYouKnow": "Anne apportait chaque année à Samuel un petit manteau sans manches qu’elle lui confectionnait lorsqu’elle montait au sanctuaire.",
+    "relationshipWithJehovah": "Anne pria Jéhovah avec insistance au sujet de son désir d’avoir un enfant. Après avoir reçu Samuel, elle respecta son vœu et continua à remercier Jéhovah.",
+    "didYouKnow": "Anne consacra Samuel au service de Jéhovah et lui apportait chaque année un petit manteau sans manches lorsqu’elle venait au sanctuaire.",
     "jwResources": [
       {
         "title": "Anne — Les personnages de la Bible",
@@ -1997,8 +1997,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "1 Samuel 18:20-28 ; 19:11-17 ; 25:44 ; 2 Samuel 3:13-16 ; 6:14-23",
     "location": "Jérusalem et le royaume d’Israël.",
-    "relationshipWithJehovah": "La Bible rapporte des actions de Mikal avec leurs conséquences, mais donne peu d’informations sur sa relation personnelle avec Jéhovah.",
-    "didYouKnow": "Pour aider David à fuir, Mikal plaça un teraphim dans le lit et le couvrit afin de faire croire qu’il était malade.",
+    "relationshipWithJehovah": "La Bible donne peu d’informations sur la foi personnelle de Mikal. Son récit permet surtout d’observer ses relations avec Saül et David et les conséquences de certains de ses choix.",
+    "didYouKnow": "Mikal aida David à échapper aux hommes de Saül en utilisant un teraphim dans son lit pour faire croire qu’il était malade.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2047,8 +2047,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "2 Samuel 3:22-39 ; 10:6-14 ; 18:1-15 ; 20:4-23 ; 1 Rois 2:5-6,28-34",
     "location": "Jérusalem et différents champs de bataille du royaume d’Israël.",
-    "relationshipWithJehovah": "Joab servit le roi choisi par Jéhovah mais commit des meurtres et des actes indépendants de la volonté de David, ce qui contribua à son jugement final.",
-    "didYouKnow": "Joab se réfugia auprès de l’autel de Jéhovah, mais Salomon ordonna qu’il soit exécuté malgré cela en raison des meurtres qu’il avait commis.",
+    "relationshipWithJehovah": "Joab servit le roi David pendant de nombreuses années, mais il commit aussi des meurtres et agit parfois indépendamment des décisions du roi. Sa conduite finit par entraîner sa condamnation.",
+    "didYouKnow": "Joab se réfugia auprès de l’autel de Jéhovah après la mort de David, mais Salomon ordonna son exécution en raison des meurtres qu’il avait commis.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2100,8 +2100,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Matthieu 14:1-12 ; Marc 6:14-29 ; Luc 3:19-20 ; 9:7-9 ; 13:31-33 ; 23:6-12",
     "location": "Galilée et Pérée.",
-    "relationshipWithJehovah": "Hérode entendit le témoignage de Jean et de Jésus mais n’est pas présenté comme un adorateur de Jéhovah.",
-    "didYouKnow": "Hérode Antipas fut surnommé « renard » par Jésus dans Luc 13:32 dans le cadre d’une réponse à une menace transmise par des Pharisiens.",
+    "relationshipWithJehovah": "Hérode Antipas entendit le témoignage de Jean le Baptiseur et manifesta de l’intérêt pour Jésus, mais il n’est pas présenté comme un adorateur fidèle de Jéhovah.",
+    "didYouKnow": "Jésus appela Hérode Antipas « ce renard » lorsqu’il répondit à l’avertissement concernant le désir d’Hérode de le tuer.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2147,8 +2147,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Matthieu 27:11-26 ; Marc 15:1-15 ; Luc 23:1-25 ; Jean 18:28–19:16",
     "location": "Jérusalem et la Judée romaine.",
-    "relationshipWithJehovah": "Pilate fut confronté directement au témoignage de Jésus mais ne prit pas la décision de devenir son disciple; le récit souligne surtout sa responsabilité de gouverneur dans le procès.",
-    "didYouKnow": "Jean 18:38 rapporte que Pilate posa à Jésus la question : « Qu’est-ce que la vérité ? » avant de sortir vers les accusateurs.",
+    "relationshipWithJehovah": "Pilate entendit personnellement le témoignage de Jésus et reconnut à plusieurs reprises qu’il ne trouvait pas de faute méritant la mort. Le récit ne dit cependant pas qu’il devint adorateur de Jéhovah.",
+    "didYouKnow": "Pilate demanda à Jésus : « Qu’est-ce que la vérité ? » puis sortit vers ceux qui l’accusaient.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2193,8 +2193,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Isaïe 6:1-13 ; 7:1-17 ; 9:1-7 ; 11:1-10 ; 40:1-31 ; 53:1-12",
     "location": "Jérusalem et le royaume de Juda.",
-    "relationshipWithJehovah": "Isaïe se porta volontaire pour transmettre le message de Jéhovah et resta prophète pendant plusieurs règnes.",
-    "didYouKnow": "Le livre d’Isaïe contient la prophétie concernant le « serviteur » qui souffrirait pour les autres, appliquée dans les Écritures chrétiennes à Jésus.",
+    "relationshipWithJehovah": "Isaïe accepta volontairement la mission que Jéhovah lui confia et transmit fidèlement ses messages, même lorsqu’ils annonçaient des jugements difficiles.",
+    "didYouKnow": "Lors de sa vision, Isaïe entendit Jéhovah demander : « Qui enverrai-je ? » et répondit : « Me voici ! Envoie-moi ! »",
     "jwResources": [
       {
         "title": "Isaïe — Étude perspicace des Écritures",
@@ -2240,8 +2240,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Jérémie 1:4-19 ; 20:7-13 ; 26:1-24 ; 36:1-32 ; 38:1-13 ; 40:1-6",
     "location": "Jérusalem et le royaume de Juda.",
-    "relationshipWithJehovah": "Jérémie considérait la parole de Jéhovah comme une force intérieure qu’il ne pouvait pas retenir, même lorsque son ministère lui attirait des souffrances.",
-    "didYouKnow": "Jérémie utilisa un rouleau écrit par son secrétaire Baruch pour faire lire ses paroles au peuple après avoir été empêché d’aller lui-même au temple.",
+    "relationshipWithJehovah": "Jérémie exprima ouvertement ses sentiments à Jéhovah tout en continuant à transmettre ses messages. Malgré l’opposition et les périodes de découragement, il resta fidèle à sa mission.",
+    "didYouKnow": "Jérémie fut jeté dans une citerne boueuse et fut sauvé grâce à l’intervention d’Ébed-Mélek, un Éthiopien au service du roi.",
     "jwResources": [
       {
         "title": "Jérémie — Étude perspicace des Écritures",
@@ -2288,8 +2288,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Ézéchiel 1:1-28 ; 2:1–3:11 ; 18:1-32 ; 33:1-20 ; 37:1-28 ; 40:1-4",
     "location": "Tel-Abib, près du fleuve Kebar, en Babylonie.",
-    "relationshipWithJehovah": "Ézéchiel reçut une mission prophétique directe et continua à transmettre les messages de Jéhovah aux exilés.",
-    "didYouKnow": "Ézéchiel était prêtre avant de devenir prophète et reçut sa première grande vision près du fleuve Kebar en Babylonie.",
+    "relationshipWithJehovah": "Ézékiel reçut des visions et des instructions précises de Jéhovah et les transmit fidèlement aux exilés. Son ministère exigea une grande endurance.",
+    "didYouKnow": "Jéhovah demanda à Ézékiel de jouer plusieurs scènes symboliques pour transmettre des messages aux habitants de Jérusalem et aux exilés.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2342,8 +2342,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Esdras 7:1-28 ; 8:21-36 ; 9:1-15 ; 10:1-17",
     "location": "Babylone puis Jérusalem.",
-    "relationshipWithJehovah": "Esdras avait fixé son cœur à étudier la Loi, à la pratiquer et à l’enseigner; il attribua à Jéhovah la réussite de sa mission.",
-    "didYouKnow": "Esdras était à la fois prêtre et copiste expérimenté de la Loi de Moïse.",
+    "relationshipWithJehovah": "Esdras avait préparé son cœur à étudier la Loi de Jéhovah, à la pratiquer et à l’enseigner. Son service associait donc étude personnelle, application et enseignement.",
+    "didYouKnow": "Esdras était prêtre et copiste versé dans la Loi de Moïse, et Artaxerxès lui donna l’autorisation de retourner à Jérusalem.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2397,8 +2397,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Esdras 3:1-13 ; 4:1-24 ; 5:1-17 ; 6:1-22 ; Aggée 1:1-14 ; Zacharie 4:1-14",
     "location": "Jérusalem et Juda après le retour de Babylone.",
-    "relationshipWithJehovah": "Jéhovah encouragea Zorobabel à poursuivre la reconstruction du temple et annonça que le travail serait mené à bien par son esprit.",
-    "didYouKnow": "Zorobabel apparaît dans les généalogies bibliques comme un descendant de David et figure dans la lignée menant au Messie.",
+    "relationshipWithJehovah": "Zorobabel participa à la reconstruction du temple et reçut des encouragements prophétiques de Jéhovah par l’intermédiaire d’Haggaï et de Zekaria.",
+    "didYouKnow": "Zorobabel est présenté comme gouverneur de Juda au moment de la reprise des travaux du temple après l’exil.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2453,8 +2453,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Aggée 1:1-15 ; 2:1-23",
     "location": "Jérusalem, après le retour de l’exil à Babylone.",
-    "relationshipWithJehovah": "Aggée transmit fidèlement les messages de Jéhovah et encouragea le peuple à mettre le vrai culte au premier plan.",
-    "didYouKnow": "Les messages d’Aggée sont datés précisément dans son livre et couvrent une période de quelques mois pendant la deuxième année de Darius.",
+    "relationshipWithJehovah": "Haggaï transmit les encouragements de Jéhovah aux Juifs qui avaient laissé la reconstruction du temple ralentir. Son message les poussa à remettre le culte au premier plan.",
+    "didYouKnow": "Les prophéties d’Haggaï sont datées avec précision dans le livre et couvrent une période de quelques mois en 520 av. n. è.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2507,8 +2507,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Zacharie 1:1-21 ; 3:1-10 ; 4:1-14 ; 8:1-23 ; 9:9-17",
     "location": "Jérusalem et Juda après l’exil.",
-    "relationshipWithJehovah": "Zacharie reçut des visions et des messages de Jéhovah qu’il transmit pour encourager la reconstruction et le rétablissement du vrai culte.",
-    "didYouKnow": "Le livre de Zacharie contient une série de visions symboliques, notamment celle du porte-lampes et des deux oliviers en Zacharie chapitre 4.",
+    "relationshipWithJehovah": "Zekaria reçut des visions et transmit les encouragements de Jéhovah aux Juifs revenus d’exil. Son message les poussa à reprendre courage et à achever le temple.",
+    "didYouKnow": "Zekaria reçut plusieurs visions nocturnes qui utilisaient des images symboliques pour communiquer les desseins de Jéhovah.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2563,8 +2563,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Malachie 1:1-14 ; 2:1-17 ; 3:1-18 ; 4:1-6",
     "location": "Juda et Jérusalem après l’exil.",
-    "relationshipWithJehovah": "Malachie défendit le nom de Jéhovah et invita le peuple à revenir vers lui par une adoration sincère et fidèle.",
-    "didYouKnow": "Jésus et les Évangiles relient la prophétie de Malachie concernant le messager à Jean le Baptiseur.",
+    "relationshipWithJehovah": "Malachie défendit le culte pur et rappela aux prêtres et au peuple qu’ils devaient honorer Jéhovah avec sincérité plutôt que lui offrir un service négligent.",
+    "didYouKnow": "Malachie est le dernier livre des Écritures hébraïques dans l’ordre de la Bible française courante.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2620,8 +2620,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 5:33-42 ; 22:3",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Le récit ne dit pas que Gamaliel devint chrétien. Il montre toutefois qu’il intervint pour éviter une décision précipitée contre les disciples de Jésus.",
-    "didYouKnow": "Actes 22:3 indique que Paul avait été instruit aux pieds de Gamaliel selon la rigueur de la Loi ancestrale.",
+    "relationshipWithJehovah": "Gamaliel était un pharisien et un enseignant de la Loi. Dans Actes 5, il conseilla au Sanhédrin de ne pas agir précipitamment contre les apôtres.",
+    "didYouKnow": "Gamaliel est présenté comme un enseignant de la Loi respecté et Paul indique avoir été formé à ses pieds.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2672,8 +2672,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 18:24-28 ; 19:1-7 ; 1 Corinthiens 1:10-13 ; 3:4-9,21-23 ; Tite 3:13",
     "location": "Alexandrie, Éphèse, puis probablement Corinthe et d’autres régions du monde méditerranéen.",
-    "relationshipWithJehovah": "Apollos accepta d’approfondir sa compréhension de la voie de Dieu et mit ensuite ses capacités au service de la prédication.",
-    "didYouKnow": "Apollos était originaire d’Alexandrie, grand centre intellectuel de l’Égypte antique, et Actes le décrit comme un homme éloquent et puissant dans les Écritures.",
+    "relationshipWithJehovah": "Apollos connaissait déjà les Écritures et parlait avec ferveur au sujet de Jésus. Aquilas et Priscille lui expliquèrent plus exactement la voie de Dieu, et il accepta cette aide.",
+    "didYouKnow": "Apollos était originaire d’Alexandrie et devint ensuite un prédicateur efficace qui réfutait publiquement les opposants en utilisant les Écritures.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures",
@@ -2728,8 +2728,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 15:22-40 ; 16:16-40 ; 17:1-15 ; 1 Thessaloniciens 1:1 ; 2 Thessaloniciens 1:1 ; 1 Pierre 5:12",
     "location": "Jérusalem, Antioche de Syrie, Macédoine et Grèce.",
-    "relationshipWithJehovah": "Silas continua à louer Dieu dans des circonstances pénibles et participa fidèlement à la prédication avec Paul.",
-    "didYouKnow": "Silas est également appelé Silvain dans les lettres chrétiennes, notamment en 1 Pierre 5:12.",
+    "relationshipWithJehovah": "Silas servit comme prophète et collaborateur de Paul. Même après avoir été battu et emprisonné à Philippes, il continua à louer Dieu et à servir.",
+    "didYouKnow": "Silas fut emprisonné avec Paul à Philippes ; vers minuit, ils priaient et chantaient des louanges à Dieu.",
     "jwResources": [
       {
         "title": "Silas — Étude perspicace",
@@ -2780,8 +2780,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philémon 8-21 ; Colossiens 4:7-9",
     "location": "Colosses et Rome.",
-    "relationshipWithJehovah": "Onésime devint chrétien et fut encouragé à servir avec fidélité, tandis que Philémon était invité à appliquer les principes de l’amour chrétien.",
-    "didYouKnow": "Paul dit qu’Onésime, autrefois peu utile à Philémon, était devenu utile à la fois à Philémon et à Paul.",
+    "relationshipWithJehovah": "Onésime devint chrétien après avoir rencontré Paul et fut ensuite présenté à Philémon comme un frère chrétien. Sa transformation montre l’effet de la bonne nouvelle sur sa vie.",
+    "didYouKnow": "Paul renvoya Onésime à Philémon avec une lettre demandant qu’il soit accueilli comme un frère plutôt que simplement comme un esclave.",
     "jwResources": [
       {
         "title": "Onésime — Étude perspicace",
@@ -2830,8 +2830,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philémon 1-25",
     "location": "Colosses, en Asie Mineure.",
-    "relationshipWithJehovah": "Philémon était connu pour son amour envers Jésus et tous les saints, et Paul comptait sur cet amour pour résoudre une situation délicate.",
-    "didYouKnow": "Paul proposa de payer lui-même toute dette qu’Onésime pourrait avoir envers Philémon.",
+    "relationshipWithJehovah": "Philémon était un chrétien dont la foi et l’amour étaient connus de Paul. La lettre qui porte son nom l’encourage à manifester ces qualités envers Onésime.",
+    "didYouKnow": "La congrégation se réunissait dans la maison de Philémon, ce qui montre le rôle important qu’il jouait dans la communauté chrétienne de Colosses.",
     "jwResources": [
       {
         "title": "Philémon — Étude perspicace",
@@ -2882,8 +2882,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Galates 2:1-3 ; 2 Corinthiens 7:6-16 ; Tite 1:4-9 ; 2:1-15 ; 3:12-15",
     "location": "Diverses régions missionnaires, notamment la Crète.",
-    "relationshipWithJehovah": "Tite servait fidèlement avec Paul et devait aider les congrégations à rester attachées à un enseignement sain.",
-    "didYouKnow": "Paul appelle Tite « mon véritable enfant selon la foi que nous partageons ».",
+    "relationshipWithJehovah": "Tite fut un collaborateur fiable de Paul et reçut des responsabilités importantes dans les congrégations. Paul le chargea notamment d’aider à mettre les choses en ordre en Crète.",
+    "didYouKnow": "Tite était un chrétien d’origine grecque qui accompagna Paul et servit de représentant dans plusieurs missions.",
     "jwResources": [
       {
         "title": "Tite — Étude perspicace",
