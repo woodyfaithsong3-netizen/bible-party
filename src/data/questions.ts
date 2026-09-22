@@ -404,15 +404,15 @@ const mysteries3: Array<[string, string[], string]> = [
 ];
 
 const mysteries2: Array<[string, string[], string]> = [
-  ['Isaac',['Je suis le fils promis à Abraham et Sara.','J’ai été presque offert en sacrifice par mon père.','J’ai épousé Rébecca.'],'Genèse 21:1-7; 22:1-18; 24:67'],
-  ['Rachel',['J’ai rencontré Jacob près d’un puits.','Je suis devenue l’une de ses femmes.','J’ai donné naissance à Joseph et Benjamin.'],'Genèse 29:9-12, 28-30; 30:22-24; 35:16-18'],
+  ['Isaac',['Mon père a envoyé un serviteur chercher ma future femme.','J’ai épousé Rébecca après l’avoir rencontrée.','Ésaü et Jacob étaient mes fils.'],'Genèse 24:10-67; 25:19-26'],
+  ['Rachel',['J’ai été la mère de Joseph.','J’ai longtemps attendu d’avoir un enfant.','Je suis morte en donnant naissance à Benjamin.'],'Genèse 30:22-24; 35:16-18'],
   ['Léa',['Je suis devenue la femme de Jacob avant Rachel.','J’ai eu plusieurs fils.','J’ai donné naissance à Juda.'],'Genèse 29:21-35'],
-  ['Caleb',['J’ai été envoyé comme espion en Canaan avec Josué.','J’ai gardé une foi forte alors que beaucoup avaient peur.','J’ai finalement reçu Hébron comme territoire.'],'Nombres 13:1-3, 30; 14:6-9; Josué 14:6-13'],
+  ['Caleb',['J’ai été envoyé explorer Canaan avec Josué.','J’ai encouragé le peuple à ne pas avoir peur des habitants du pays.','Des années plus tard, j’ai demandé Hébron comme héritage.'],'Nombres 13:1-3, 30; 14:6-9; Josué 14:6-13'],
   ['Éhoud',['J’étais gaucher.','J’ai été utilisé pour délivrer Israël de Moab.','J’ai tué le roi Églôn.'],'Juges 3:15-23'],
   ['Jephté',['J’ai été juge en Israël.','J’ai combattu les Ammonites.','J’ai fait un vœu à Jéhovah avant la bataille.'],'Juges 11:1-11, 29-40'],
   ['Jaël',['Une femme appelée Déborah était contemporaine de mon histoire.','Sissera a cherché refuge chez moi.','J’ai utilisé un piquet de tente pour le tuer.'],'Juges 4:17-22; 5:24-27'],
   ['Anne',['Je désirais profondément avoir un enfant.','J’ai prié Jéhovah au tabernacle.','J’ai consacré Samuel au service de Jéhovah.'],'1 Samuel 1:9-28'],
-  ['Ézéchiel',['J’étais prêtre et prophète.','J’ai reçu des visions alors que j’étais parmi les exilés.','Une de mes visions célèbre montre des ossements desséchés.'],'Ézéchiel 1:1-3; 37:1-14'],
+  ['Ézéchiel',['J’étais prêtre et prophète.','J’ai reçu des visions alors que j’étais parmi les exilés.','Une de mes visions célèbres montre des ossements desséchés.'],'Ézéchiel 1:1-3; 37:1-14'],
   ['Esdras',['J’étais prêtre et copiste habile de la Loi.','Je suis allé à Jérusalem après l’exil.','J’ai enseigné la Loi au peuple.'],'Esdras 7:1-10; Néhémie 8:1-8'],
   ['Néhémie',['J’étais échanson du roi de Perse.','J’ai appris que les murailles de Jérusalem étaient en mauvais état.','J’ai dirigé la reconstruction des murailles.'],'Néhémie 1:1-4; 2:1-8; 6:15-16'],
   ['Job',['J’étais connu comme un homme intègre.','J’ai subi de grandes pertes.','J’ai continué à parler de ma confiance en Dieu malgré mes épreuves.'],'Job 1:1-22; 2:9-10; 42:10-17'],
