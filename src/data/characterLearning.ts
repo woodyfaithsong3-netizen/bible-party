@@ -592,10 +592,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Construit le temple.",
       "Développe les relations internationales et le commerce."
     ],
-    "qualities": [
-      "Sagesse recherchée",
-      "Organisation"
-    ],
+    "qualities": ["Sagesse","Organisation","Capacité à administrer"],
     "difficulties": [
       "Il a dû gouverner une nation prospère tout en restant attaché à Jéhovah.",
       "Vers la fin de son règne, l’influence de ses nombreuses femmes l’a amené à tolérer le culte de faux dieux."
@@ -1811,9 +1808,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Jéhovah fait connaître son jugement et Qorah ainsi que les principaux rebelles meurent.",
       "Ses fils ne meurent pas avec lui et continuent d’exister comme famille lévitique."
     ],
-    "qualities": [
-      "Zèle religieux mal orienté"
-    ],
+    "qualities": ["Zèle religieux","Initiative"],
     "difficulties":     [
       "Il a contesté l’autorité de Moïse et d’Aaron et a entraîné d’autres hommes dans une rébellion contre les dispositions de Jéhovah.",
       "Il a dû assumer les conséquences graves de sa rébellion et de son manque de respect pour les dispositions divines."
@@ -1859,10 +1854,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Balaam prononce finalement des bénédictions et des déclarations prophétiques au lieu de malédictions.",
       "Il est ensuite associé au conseil qui conduisit Israël au péché avec le culte de Baal de Péor."
     ],
-    "qualities": [
-      "Connaissance du pouvoir de la parole prophétique",
-      "Capacité à prononcer fidèlement les paroles imposées par Jéhovah dans la scène des bénédictions"
-    ],
+    "qualities": ["Connaissance prophétique","Capacité à transmettre un message prophétique"],
     "difficulties":     [
       "Il a reçu des directives de Jéhovah mais a montré une mauvaise inclination en cherchant à tirer profit de la situation.",
       "Il a été confronté à l’intervention de Jéhovah lorsque son ânesse a réagi à la présence de l’ange."
@@ -2162,10 +2154,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il entend parler des œuvres de Jésus et le considère avec crainte et curiosité.",
       "Pilate lui envoie Jésus; il espère voir un miracle mais Jésus ne lui répond pas."
     ],
-    "qualities": [
-      "Curiosité envers les œuvres de Jésus",
-      "Il éprouve de la tristesse devant l’exécution de Jean, mais cela ne l’empêche pas d’agir contre lui"
-    ],
+    "qualities": ["Curiosité à propos de Jésus","Sensibilité à la pression de son entourage"],
     "difficulties":     [
       "Il a été confronté à la prédication courageuse de Jean le Baptiseur, qui dénonçait son mariage avec Hérodiade.",
       "Il a laissé un serment irréfléchi et la pression de son entourage conduire à l’exécution de Jean."
@@ -2211,9 +2200,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il fait placer une inscription sur le poteau de supplice de Jésus.",
       "Plus tard, il fait massacrer des Galiléens venus offrir des sacrifices."
     ],
-    "qualities": [
-      "Il reconnaît à plusieurs reprises que Jésus n’est pas coupable d’un crime capital"
-    ],
+    "qualities": ["Prudence dans l’examen d’une accusation","Conscience du risque politique de sa décision"],
     "difficulties":     [
       "Il devait administrer la Judée dans un contexte de tensions entre l’autorité romaine et la population juive.",
       "Lors du procès de Jésus, il a dû décider quoi faire face aux accusations et à la pression de la foule et des chefs religieux."
@@ -2995,9 +2982,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Tombe d’une fenêtre pendant le discours de Paul.",
       "Est ensuite rendu à la vie selon le récit des Actes."
     ],
-    "qualities": [
-      "Persévérance dans l’écoute"
-    ],
+    "qualities": ["Attention aux enseignements chrétiens"],
     "difficulties":     [
       "Il s’endormit pendant un long discours de Paul et tomba d’un étage élevé, ce qui mit sa vie en danger.",
       "Après cet accident, il reçut de l’aide et dut poursuivre sa vie chrétienne malgré cet épisode dramatique."
@@ -3719,10 +3704,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Parle à Jésus au sujet de la foule à nourrir.",
       "Présente des Grecs qui souhaitent voir Jésus."
     ],
-    "qualities": [
-      "Zèle",
-      "Esprit d’initiative"
-    ],
+    "qualities": ["Zèle","Esprit d’initiative","Désir de comprendre"],
     "difficulties":     [
       "Il devait progressivement comprendre l’identité de Jésus et son rôle dans le dessein de Dieu.",
       "Il a parfois posé des questions qui montraient les limites de sa compréhension, mais il a continué à suivre Jésus."
@@ -3903,9 +3885,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Elle meurt avant l’arrivée de Jésus.",
       "Jésus la prend par la main et lui rend la vie devant ses parents et trois apôtres."
     ],
-    "qualities": [
-      "Aucun trait de personnalité précis n’est rapporté"
-    ],
+    "qualities": ["Aucun trait de personnalité précis n’est rapporté dans le récit biblique"],
     "difficulties":     [
       "Elle était gravement malade et sa situation fut annoncée comme désespérée avant l’intervention de Jésus.",
       "Après avoir été relevée, elle devait reprendre une vie normale après un événement extraordinaire dont sa famille avait été témoin."
@@ -4086,7 +4066,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il est effrayé par ce message mais remet la discussion à plus tard.",
       "Il espère recevoir de l’argent de Paul et le laisse finalement prisonnier pour gagner la faveur des Juifs."
     ],
-    "qualities": ["Autorité administrative","Capacité à écouter un témoignage direct"],
+    "qualities": ["Capacité à écouter un témoignage","Prudence dans ses décisions administratives"],
     "difficulties":     [
       "Il entendit Paul parler de justice, de maîtrise de soi et du jugement à venir mais repoussa la discussion.",
       "Son désir de recevoir de l’argent de Paul influençait sa conduite et il conserva Paul en détention pour gagner la faveur des Juifs."
@@ -4129,10 +4109,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Après l’appel de Paul à César, il accepte cet appel.",
       "Il demande ensuite à Agrippa de l’aider à formuler un rapport pour l’empereur."
     ],
-    "qualities": [
-      "Souci de procédure",
-      "Prudence administrative"
-    ],
+    "qualities": ["Prudence administrative","Volonté de comprendre l’accusation"],
     "difficulties":     [
       "Il devait administrer une province où les autorités romaines et les chefs religieux avaient des intérêts opposés.",
       "Il chercha à comprendre l’accusation portée contre Paul tout en devant gérer les pressions politiques entourant son procès."
@@ -4176,10 +4153,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Agrippa reconnaît que Paul pourrait presque le persuader de devenir chrétien.",
       "Avec Festus, il conclut que Paul n’a rien fait qui mérite la mort ou les chaînes."
     ],
-    "qualities": [
-      "Connaissance des coutumes juives",
-      "Capacité à écouter une défense"
-    ],
+    "qualities": ["Connaissance des coutumes juives","Capacité à écouter une défense"],
     "difficulties":     [
       "Il entendit Paul exposer sa défense et dut examiner des accusations religieuses qu’il ne maîtrisait pas nécessairement.",
       "Comme membre de la dynastie hérodienne, il évoluait dans un environnement politique et religieux complexe."
@@ -4221,11 +4195,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Elle entre dans la salle d’audience en grand apparat avec le roi, les commandants et les notables.",
       "Elle entend la défense de Paul devant Agrippa et Festus."
     ],
-    "qualities": [
-      "Courageuse pour se présenter devant Paul avec Agrippa II malgré le contexte judiciaire.",
-      "Elle a participé à l’audience où Paul a exposé sa foi, ce qui l’a placée directement face au témoignage chrétien.",
-      "Son rôle de membre de la famille royale lui donnait une position publique et une influence dans les événements rapportés en Actes 25–26."
-    ],
+    "qualities": ["Courage de se présenter en public","Présence dans les audiences officielles"],
     "difficulties":     [
       "Elle appartenait à la famille hérodienne et apparaissait aux côtés d’Agrippa lors de l’audience de Paul.",
       "Elle était présente dans une situation où Paul rendait témoignage devant des autorités politiques importantes."
@@ -4450,7 +4420,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Paul le cite parmi ses collaborateurs dans sa lettre à Philémon.",
       "Plus tard, Paul explique que Démas l’a abandonné parce qu’il aimait le système de choses présent."
     ],
-    "qualities": ["Esprit de collaboration à une période de sa vie","Il est difficile d’établir d’autres qualités personnelles à partir du récit"],
+    "qualities": ["Esprit de collaboration pendant une période de son service","Le récit ne permet pas d’établir d’autres qualités personnelles avec certitude"],
     "difficulties":     [
       "Il accompagna Paul pendant un temps avant d’abandonner son service par amour pour le système de choses présent.",
       "Son exemple montre le danger de laisser les attraits du monde prendre progressivement le dessus sur le service chrétien."
@@ -4728,7 +4698,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Poursuit David malgré la loyauté de celui-ci.",
       "La fiche JW.org oppose clairement son humilité initiale à son évolution."
     ],
-    "qualities": ["Courage dans ses premières campagnes","Capacité de diriger","Il devint progressivement dominé par la désobéissance et la jalousie"],
+    "qualities": ["Courage dans ses premières campagnes","Capacité à diriger","Obéissance insuffisante dans certaines décisions"],
     "difficulties":     [
       "Il fut choisi comme premier roi d’Israël mais dut gérer les attentes du peuple et les menaces militaires.",
       "Il désobéit à des instructions de Jéhovah et permit progressivement à la jalousie et à la peur des hommes d’influencer ses décisions."
@@ -5231,10 +5201,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il participe ensuite à l’opposition contre les apôtres.",
       "Il fait partie de ceux qui cherchent à faire taire la prédication chrétienne."
     ],
-    "qualities": [
-      "Autorité institutionnelle",
-      "Influence politique et religieuse"
-    ],
+    "qualities": ["Autorité religieuse","Influence dans les décisions du Sanhédrin"],
     "difficulties": ["Comme grand prêtre, il devait gérer les tensions religieuses et politiques de son époque sous domination romaine.","Il participa au procès religieux de Jésus dans un contexte où les chefs cherchaient une accusation contre lui."]
   },
   "joanna": {
@@ -5613,10 +5580,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Paul l’inclut parmi les destinataires de sa lettre à Philémon.",
       "Elle appartient au cercle chrétien auquel Paul demande d’accueillir Onésime avec amour."
     ],
-    "qualities": [
-      "Engagement chrétien",
-      "Soutien au foyer chrétien"
-    ],
+    "qualities": ["Engagement chrétien","Soutien au foyer chrétien"],
     "difficulties": ["Elle est associée à Philémon et Archippe dans la lettre de Paul, mais la Bible donne peu de détails personnels sur elle.","Elle devait vivre sa foi chrétienne dans le cadre d’une maison qui accueillait la congrégation."]
   },
   "archippus": {
@@ -5654,10 +5618,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il est appelé compagnon de combat.",
       "Dans Colossiens, Paul demande qu’on lui dise de bien accomplir le ministère reçu dans le Seigneur."
     ],
-    "qualities": [
-      "Engagement",
-      "Persévérance dans le ministère"
-    ],
+    "qualities": ["Engagement","Persévérance dans le ministère"],
     "difficulties": ["Paul lui demandait de veiller à accomplir le ministère qu’il avait reçu dans le Seigneur.","Il devait rester fidèle à sa responsabilité chrétienne dans un contexte où certaines idées pouvaient troubler la congrégation de Colosses."]
   },
   "john_mark": {
