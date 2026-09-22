@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { ImageBackground, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
-import { buildCharacterReviewDeck, buildReviewDeck, getDueCharacterIds, getReviewStats, recordReviewResult, ReviewCard, ReviewMode } from '@/data/characterReview';
+import { buildCharacterReviewDeck, buildReviewDeck, getDueCharacterIds, getErrorCharacterIds, getReviewStats, recordReviewResult, ReviewCard, ReviewMode } from '@/data/characterReview';
 
 const scenic = require('../../assets/images/backgrounds/home-valley-exact-source.png');
 
@@ -17,6 +17,7 @@ const MODE_LABELS: Record<ReviewMode, string> = {
 export default function CharacterReviewScreen() {
   const params = useLocalSearchParams<{ characterId?: string }>();
   const focusedCharacterId = typeof params.characterId === 'string' ? params.characterId : undefined;
+  const errorMode = params.errors === '1';
   const [mode, setMode] = useState<ReviewMode>('mix');
   const [deck, setDeck] = useState<ReviewCard[]>([]);
   const [index, setIndex] = useState(0);
@@ -26,6 +27,7 @@ export default function CharacterReviewScreen() {
   const [dueCount, setDueCount] = useState(125);
   const [masteredCount, setMasteredCount] = useState(0);
   const [learningCount, setLearningCount] = useState(125);
+  const [reviewSource, setReviewSource] = useState<'due' | 'errors'>(errorMode ? 'errors' : 'due');
 
   const load = useCallback(async (nextMode = mode) => {
     const due = await getDueCharacterIds();
@@ -33,13 +35,13 @@ export default function CharacterReviewScreen() {
     const stats = await getReviewStats();
     setMasteredCount(stats.mastered);
     setLearningCount(stats.learning);
-    const ids = due.slice(0, 10);
+    const ids = reviewSource === 'errors' ? (await getErrorCharacterIds()).slice(0, 10) : due.slice(0, 10);
     setDeck(focusedCharacterId ? buildCharacterReviewDeck(focusedCharacterId, nextMode, 10) : buildReviewDeck(nextMode, 10, ids));
     setIndex(0);
     setSelected(null);
     setFinished(false);
     setScore(0);
-  }, [mode, focusedCharacterId]);
+  }, [mode, focusedCharacterId, reviewSource]);
 
   useEffect(() => { load(); }, [load]);
 
@@ -77,6 +79,16 @@ export default function CharacterReviewScreen() {
               <Text style={styles.subtitle}>{focusedCharacterId ? 'Travaille ce personnage jusqu’à mieux le maîtriser.' : 'Apprends, joue, puis revois ce que tu as oublié.'}</Text>
             </View>
 
+            <View style={{ flexDirection: 'row', gap: 8, marginBottom: 8 }}>
+              <Pressable onPress={() => { setReviewSource('due'); setMode('mix'); load('mix'); }} style={[styles.mode, reviewSource === 'due' && styles.modeActive]}>
+                <Text style={[styles.modeText, reviewSource === 'due' && styles.modeTextActive]}>À REVOIR</Text>
+              </Pressable>
+              {!focusedCharacterId && (
+                <Pressable onPress={() => { setReviewSource('errors'); setMode('mix'); load('mix'); }} style={[styles.mode, reviewSource === 'errors' && styles.modeActive]}>
+                  <Text style={[styles.modeText, reviewSource === 'errors' && styles.modeTextActive]}>MES ERREURS</Text>
+                </Pressable>
+              )}
+            </View>
             <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={styles.modes}>
               {(Object.keys(MODE_LABELS) as ReviewMode[]).map((item) => (
                 <Pressable key={item} onPress={() => { setMode(item); load(item); }} style={[styles.mode, mode === item && styles.modeActive]}>
