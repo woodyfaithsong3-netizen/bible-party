@@ -210,3 +210,8 @@ export async function getDueCharacterIds(): Promise<string[]> {
     .sort((a, b) => (mastery[a[0]]?.nextReviewAt ?? 0) - (mastery[b[0]]?.nextReviewAt ?? 0))
     .map(([id]) => id);
 }
+
+
+export function buildCharacterReviewDeck(characterId: string, mode: ReviewMode = 'mix', count = 10): ReviewCard[] {
+  return buildReviewDeck(mode, count, [characterId]).filter((card) => card.characterId === characterId);
+}
