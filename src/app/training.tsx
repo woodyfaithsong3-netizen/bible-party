@@ -5,6 +5,7 @@ import { AppButton } from '@/components/AppButton';
 import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { selectTrainingQuestions, categoryLabels } from '@/data/catalog';
+import { characterProfiles } from '@/data/characterProfiles';
 import { getTrainingStats, recordTrainingAnswer } from '@/lib/storage';
 import { QuizQuestion } from '@/types';
 import { ScenicScreen } from '@/components/ScenicScreen';
@@ -12,6 +13,8 @@ import { ScenicScreen } from '@/components/ScenicScreen';
 const categories = ['Toutes', ...categoryLabels];
 const difficulties = [['all', 'Tous'], ['easy', 'Facile'], ['medium', 'Intermédiaire'], ['hard', 'Difficile'], ['expert', 'Expert']] as const;
 const DECK_SIZE = 10;
+const characterNames = new Map(characterProfiles.map(profile => [profile.id, profile.name]));
+const answerLabel = (answer: string) => characterNames.get(answer) ?? answer;
 
 function shuffleAnswers(question: QuizQuestion): QuizQuestion {
   const indexed = question.answers.map((answer, index) => ({ answer, index }));
@@ -122,7 +125,7 @@ function TrainingScreen() {
       {[[String(score), 'Points'], [finalAccuracy + '%', 'Réussite'], [String(bestStreak), 'Meilleure série']].map(([value, label]) => <View key={label} style={[styles.card, { flex: 1, padding: 14 }]}><Text style={{ color: colors.accent, fontSize: 22, fontWeight: '900' }}>{value}</Text><Text style={{ color: colors.muted, marginTop: 5, fontSize: 12 }}>{label}</Text></View>)}
     </View>
     <Text style={[styles.sectionTitle, { marginTop: 26 }]}>Questions ratées</Text>
-    {missed.length === 0 ? <View style={styles.card}><Text style={{ color: colors.muted }}>Aucune erreur cette fois-ci !</Text></View> : <View style={{ gap: 9 }}>{missed.map(q => <View key={q.id} style={styles.card}><Text style={{ color: colors.text, fontWeight: '700', lineHeight: 21 }}>{q.question}</Text><Text style={{ color: colors.accent, marginTop: 6, fontSize: 12, fontWeight: '700' }}>Réponse : {q.answers[q.correctAnswer]}</Text></View>)}</View>}
+    {missed.length === 0 ? <View style={styles.card}><Text style={{ color: colors.muted }}>Aucune erreur cette fois-ci !</Text></View> : <View style={{ gap: 9 }}>{missed.map(q => <View key={q.id} style={styles.card}><Text style={{ color: colors.text, fontWeight: '700', lineHeight: 21 }}>{q.question}</Text><Text style={{ color: colors.accent, marginTop: 6, fontSize: 12, fontWeight: '700' }}>Réponse : {answerLabel(q.answers[q.correctAnswer])}</Text></View>)}</View>}
     <View style={{ marginTop: 24, gap: 10 }}>
       {missed.length > 0 && <AppButton title="Réviser mes erreurs" onPress={() => router.push('/review')} />}
       <AppButton title="Recommencer" onPress={restart} variant="secondary" />
@@ -137,8 +140,8 @@ function TrainingScreen() {
     <Text style={[styles.sectionTitle, { marginTop: 20 }]}>{current.category} · {current.difficulty}</Text>
     <View style={[styles.card, { marginTop: 12 }]}> 
       <Text style={{ color: colors.text, fontSize: 25, lineHeight: 34, fontWeight: '800' }}>{current.question}</Text>
-      <View style={{ gap: 9, marginTop: 24 }}>{current.answers.map((a, i) => <AppButton key={`${current.id}-${i}`} title={`${String.fromCharCode(65 + i)}  ${a}`} onPress={() => answer(i)} variant={answered === i ? (good ? 'primary' : 'secondary') : 'secondary'} disabled={answered !== null} />)}</View>
-      {answered !== null && <View style={{ marginTop: 18, padding: 14, borderRadius: 16, backgroundColor: colors.bg, borderWidth: 1, borderColor: good ? colors.success : colors.danger }}><Text style={{ color: good ? colors.success : colors.danger, fontWeight: '900' }}>{good ? '✓ Bonne réponse' : '✗ Pas tout à fait'}</Text><Text style={{ color: colors.text, fontWeight: '800', marginTop: 7 }}>Réponse : {current.answers[current.correctAnswer]}</Text><Text style={{ color: colors.muted, marginTop: 7, lineHeight: 20 }}>{current.explanation}</Text><Text style={{ color: colors.accent, marginTop: 7, fontWeight: '700' }}>{current.reference}</Text></View>}
+      <View style={{ gap: 9, marginTop: 24 }}>{current.answers.map((a, i) => <AppButton key={`${current.id}-${i}`} title={`${String.fromCharCode(65 + i)}  ${answerLabel(a)}`} onPress={() => answer(i)} variant={answered === i ? (good ? 'primary' : 'secondary') : 'secondary'} disabled={answered !== null} />)}</View>
+      {answered !== null && <View style={{ marginTop: 18, padding: 14, borderRadius: 16, backgroundColor: colors.bg, borderWidth: 1, borderColor: good ? colors.success : colors.danger }}><Text style={{ color: good ? colors.success : colors.danger, fontWeight: '900' }}>{good ? '✓ Bonne réponse' : '✗ Pas tout à fait'}</Text><Text style={{ color: colors.text, fontWeight: '800', marginTop: 7 }}>Réponse : {answerLabel(current.answers[current.correctAnswer])}</Text><Text style={{ color: colors.muted, marginTop: 7, lineHeight: 20 }}>{current.explanation}</Text><Text style={{ color: colors.accent, marginTop: 7, fontWeight: '700' }}>{current.reference}</Text></View>}
     </View>
     <View style={{ marginTop: 18 }}><AppButton title={answered === null ? 'Choisis une réponse' : index + 1 >= deck.length ? 'Terminer' : 'Question suivante →'} onPress={next} disabled={answered === null} /></View>
     <Text style={{ color: colors.muted, textAlign: 'center', marginTop: 14 }}>Série : ×{streak} · Réussite : {accuracy}%</Text>
