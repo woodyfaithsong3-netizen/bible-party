@@ -1,6 +1,17 @@
 import fs from 'node:fs';
 
-const source = fs.readFileSync(new URL('./src/data/questions.ts', import.meta.url), 'utf8');
+const sourceFiles = [
+  './src/data/questions.ts',
+  './src/data/characterQuestionsL1.ts',
+  './src/data/characterQuestionsL2.ts',
+  './src/data/characterQuestionsL3.ts',
+  './src/data/characterQuestionsL4.ts',
+  './src/data/characterQuestionsL5.ts',
+  './src/data/characterQuestionsL6.ts',
+];
+const source = sourceFiles
+  .map(file => fs.readFileSync(new URL(file, import.meta.url), 'utf8'))
+  .join('\n');
 
 const ids = [...source.matchAll(/id:\s*['"]([^'"+]+)['"]/g)]
   .map(m => m[1].trim())
