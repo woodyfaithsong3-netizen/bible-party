@@ -3747,8 +3747,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Matthieu 10:2-4 ; Marc 3:13-19 ; Luc 6:12-16 ; Actes 1:12-14",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Jacques fils d’Alphée resta attaché au groupe des apôtres et participa au témoignage chrétien après la résurrection.",
-    "didYouKnow": "Dans les listes des Douze, Jacques fils d’Alphée est parfois distingué par l’expression « le Mineur » ou « le petit », selon les traductions, afin de le distinguer de Jacques fils de Zébédée.",
+    "relationshipWithJehovah": "Jacques fils d’Alphée fut choisi comme apôtre par Jésus et resta associé au groupe des Douze. Les Écritures donnent peu de détails sur sa vie personnelle, mais son inclusion parmi les apôtres témoigne de sa place dans le service chrétien.",
+    "didYouKnow": "Jacques fils d’Alphée est distingué dans les Évangiles de Jacques fils de Zébédée, un autre des Douze.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3791,8 +3791,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Luc 6:12-16 ; Matthieu 10:2-4 ; Actes 1:12-14",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Simon abandonna les divisions et engagements de son ancienne vie pour servir avec les autres apôtres dans l’œuvre chrétienne.",
-    "didYouKnow": "Simon est appelé « le Zélote » pour le distinguer de Simon Pierre, autre apôtre.",
+    "relationshipWithJehovah": "Simon le Zélote fut choisi par Jésus comme apôtre. Son appartenance antérieure aux Zélotes montre que Jésus réunit parmi ses disciples des personnes venant d’horizons différents.",
+    "didYouKnow": "Simon est appelé « le Zélote » dans les listes d’apôtres, ce qui le distingue de Simon Pierre.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3836,8 +3836,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Marc 5:21-43 ; Luc 8:40-56 ; Matthieu 9:18-26",
     "location": "Galilée.",
-    "relationshipWithJehovah": "Sa résurrection démontra la puissance que Jéhovah avait donnée à Jésus sur la mort et renforça l’espérance de la résurrection.",
-    "didYouKnow": "Jésus demanda aux parents de la jeune fille de lui donner quelque chose à manger après l’avoir ressuscitée.",
+    "relationshipWithJehovah": "La fille de Jaïrus est surtout connue par le récit de sa résurrection par Jésus. Le texte ne fournit pas suffisamment de détails pour établir sa foi personnelle.",
+    "didYouKnow": "Jésus prit la jeune fille par la main et lui dit de se lever ; elle se leva immédiatement et se mit à marcher.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3878,8 +3878,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Marc 10:46-52 ; Luc 18:35-43",
     "location": "Près de Jéricho.",
-    "relationshipWithJehovah": "Bartimée manifesta une foi remarquable en Jésus et glorifia Dieu après avoir retrouvé la vue.",
-    "didYouKnow": "Quand Jésus l’appela, Bartimée jeta immédiatement son vêtement de dessus, se leva d’un bond et vint vers Jésus.",
+    "relationshipWithJehovah": "Bartimée cria vers Jésus en l’appelant « Fils de David » et manifesta une grande confiance en lui. Après avoir retrouvé la vue, il se mit à suivre Jésus.",
+    "didYouKnow": "Bartimée était assis au bord de la route à Jéricho lorsqu’il entendit que Jésus passait.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3924,8 +3924,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Jean 4:1-42",
     "location": "Sychar, en Samarie.",
-    "relationshipWithJehovah": "Elle fut aidée à comprendre que le vrai culte devait être rendu avec esprit et vérité et reconnut Jésus comme le Messie.",
-    "didYouKnow": "Les habitants de la ville dirent finalement à la femme qu’ils ne croyaient plus seulement à cause de ce qu’elle avait raconté, mais parce qu’ils avaient eux-mêmes entendu Jésus.",
+    "relationshipWithJehovah": "La Samaritaine accepta progressivement les explications de Jésus sur le vrai culte et parla de lui aux habitants de sa ville. Son témoignage contribua à amener d’autres Samaritains à écouter Jésus.",
+    "didYouKnow": "Jésus lui parla du « don de Dieu » et d’une eau qui deviendrait en celui qui la boit une source d’eau jaillissant pour donner la vie éternelle.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -3971,8 +3971,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Matthieu 8:5-13 ; Luc 7:1-10",
     "location": "Capharnaüm.",
-    "relationshipWithJehovah": "Le centurion manifesta une foi exceptionnelle en Jésus, foi que Jésus loua publiquement.",
-    "didYouKnow": "Jésus déclara qu’il n’avait trouvé chez personne en Israël une foi aussi grande que celle de ce centurion.",
+    "relationshipWithJehovah": "Le centurion romain de Capharnaüm manifesta une foi remarquable en Jésus, au point de croire qu’une parole de Jésus suffirait à guérir son serviteur.",
+    "didYouKnow": "Jésus déclara n’avoir trouvé chez personne en Israël une foi aussi grande que celle de ce centurion.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4017,8 +4017,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 23:23-35 ; 24:10-27",
     "location": "Césarée, en Judée.",
-    "relationshipWithJehovah": "Félix entendit un témoignage clair sur la justice et le jugement, mais le récit ne dit pas qu’il devint serviteur de Jéhovah.",
-    "didYouKnow": "Félix faisait souvent venir Paul et s’entretenait avec lui, tout en espérant que Paul lui donnerait de l’argent.",
+    "relationshipWithJehovah": "Félix entendit Paul parler de la justice, de la maîtrise de soi et du jugement à venir. Il prit peur mais repoussa la discussion, et le récit ne dit pas qu’il devint adorateur de Jéhovah.",
+    "didYouKnow": "Félix espérait aussi que Paul lui donnerait de l’argent, ce qui montre qu’il entretenait un intérêt personnel dans certaines de ses rencontres avec l’apôtre.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4059,8 +4059,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 25:1-27 ; 26:1-32",
     "location": "Césarée et Jérusalem.",
-    "relationshipWithJehovah": "Festus n’est pas présenté comme adorateur de Jéhovah, mais il entendit à plusieurs reprises le témoignage de Paul au sujet du Christ.",
-    "didYouKnow": "Festus admit devant Agrippa que Paul n’avait rien fait qui méritait la mort, mais l’appel de Paul à César devait être respecté.",
+    "relationshipWithJehovah": "Festus entendit Paul expliquer sa foi et fut confronté aux accusations portées contre lui. Il ne fut pas présenté comme adorateur de Jéhovah, mais il joua un rôle administratif dans l’affaire.",
+    "didYouKnow": "Festus consulta Agrippa II parce qu’il avait besoin d’éléments à envoyer à César concernant l’accusation portée contre Paul.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4102,8 +4102,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 25:13-27 ; 26:1-32",
     "location": "Césarée et territoire gouverné par Agrippa.",
-    "relationshipWithJehovah": "Agrippa entendit un témoignage détaillé sur Jésus et les prophéties, sans que le récit biblique indique qu’il devint serviteur de Jéhovah.",
-    "didYouKnow": "Agrippa dit à Paul : « En peu de temps tu me persuaderais de devenir chrétien », mais le récit ne précise pas qu’il devint disciple.",
+    "relationshipWithJehovah": "Agrippa II connaissait les coutumes et les controverses juives et entendit Paul exposer sa foi. Paul lui parla directement de Jésus et de la résurrection, sans que le récit affirme qu’Agrippa devint chrétien.",
+    "didYouKnow": "Paul demanda à Agrippa s’il croyait aux Prophètes et lui parla de son espérance en la résurrection.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4146,8 +4146,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 25:13-27 ; 26:1-32",
     "location": "Césarée.",
-    "relationshipWithJehovah": "Bérénice entendit le témoignage chrétien lors de l’audience de Paul, mais la Bible ne précise pas quelle réponse personnelle elle y donna.",
-    "didYouKnow": "Bérénice est explicitement mentionnée avec Agrippa lorsqu’ils entrèrent dans la salle d’audience avec les commandants militaires et les hommes importants de la ville.",
+    "relationshipWithJehovah": "Bérénice est mentionnée dans le cadre de l’audience où Paul défendit sa foi devant Agrippa et Festus. La Bible ne fournit pas assez d’éléments pour décrire sa relation personnelle avec Jéhovah.",
+    "didYouKnow": "Bérénice entra dans la salle d’audience avec Agrippa et une grande pompe lors de l’audition de Paul.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4188,8 +4188,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Romains 16:1-2",
     "location": "Cenchrées, près de Corinthe.",
-    "relationshipWithJehovah": "Phœbé servait fidèlement la congrégation et utilisait ses ressources et ses possibilités pour aider les chrétiens.",
-    "didYouKnow": "Paul demande aux Romains de lui apporter toute l’aide dont elle pourrait avoir besoin, car elle avait été une aide pour beaucoup.",
+    "relationshipWithJehovah": "Phœbé était une ministre de la congrégation de Cenchrées et soutenait de nombreux chrétiens, dont Paul. Paul la recommanda chaleureusement à la congrégation de Rome.",
+    "didYouKnow": "Paul demanda aux chrétiens de Rome de l’accueillir d’une manière digne des saints et de l’aider dans toute affaire où elle aurait besoin d’eux.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4236,8 +4236,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes, en Macédoine.",
-    "relationshipWithJehovah": "Évodie servait Jéhovah dans la congrégation et devait préserver l’unité avec sa sœur chrétienne.",
-    "didYouKnow": "Paul reconnaît qu’elle avait « lutté côte à côte » avec lui pour la bonne nouvelle.",
+    "relationshipWithJehovah": "Évodie avait travaillé avec Paul pour la bonne nouvelle et avait une place reconnue dans la congrégation de Philippes. Paul l’encouragea à retrouver l’unité avec Syntyche dans le Seigneur.",
+    "didYouKnow": "Paul demande à un chrétien fidèle de venir en aide à Évodie et Syntyche pour qu’elles retrouvent une bonne entente.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4279,8 +4279,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 2:25-30 ; 4:18",
     "location": "Philippes et Rome.",
-    "relationshipWithJehovah": "Épaphrodite servait avec dévouement et mettait les intérêts du Christ avant son propre confort.",
-    "didYouKnow": "Paul dit qu’Épaphrodite avait été malade presque au point de mourir, mais que Dieu avait eu pitié de lui.",
+    "relationshipWithJehovah": "Épaphrodite servit avec Paul et apporta l’aide matérielle des Philippiens. Il tomba gravement malade pendant son service mais continua à se soucier de ses frères.",
+    "didYouKnow": "Épaphrodite fut si gravement malade que Paul dit qu’il avait été proche de la mort, mais Dieu eut pitié de lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4325,8 +4325,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 20:4 ; Éphésiens 6:21-22 ; Colossiens 4:7-8 ; 2 Timothée 4:12 ; Tite 3:12",
     "location": "Asie Mineure, Macédoine, Jérusalem et Rome.",
-    "relationshipWithJehovah": "Tychique servit fidèlement aux côtés de Paul et contribua à fortifier les congrégations.",
-    "didYouKnow": "Paul l’envoya aux Éphésiens et aux Colossiens afin qu’il leur fasse connaître sa situation et réconforte leur cœur.",
+    "relationshipWithJehovah": "Tychique fut un collaborateur fidèle de Paul, chargé de transmettre des informations et des encouragements aux congrégations. Paul le qualifia de frère bien-aimé et de fidèle ministre.",
+    "didYouKnow": "Paul envoya Tychique à Éphèse et à Colosses pour informer les chrétiens de sa situation et réconforter leur cœur.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4372,8 +4372,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Colossiens 4:14 ; Philémon 24 ; 2 Timothée 4:9-10",
     "location": "Rome et les régions où Paul exerçait son ministère.",
-    "relationshipWithJehovah": "Démas avait commencé à servir avec les chrétiens, mais il finit par quitter Paul parce qu’il aimait le présent monde.",
-    "didYouKnow": "Démas est cité avec Luc dans les salutations de Paul avant que Paul ne signale plus tard son abandon.",
+    "relationshipWithJehovah": "Démas collabora avec Paul pendant une période, mais Paul rapporta plus tard qu’il l’avait abandonné parce qu’il aimait le système de choses actuel. La Bible ne donne pas davantage de détails sur la suite.",
+    "didYouKnow": "Démas est mentionné avec Luc parmi les collaborateurs de Paul dans Colossiens et Philémon, avant que Paul ne rapporte son abandon.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4413,8 +4413,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "2 Rois 5:1-19",
     "location": "Syrie et Samarie, notamment le Jourdain.",
-    "relationshipWithJehovah": "Jéhovah permit sa guérison par l’intermédiaire d’Élisée. Naaman reconnut ensuite qu’il n’y avait pas de Dieu sur toute la terre sinon en Israël.",
-    "didYouKnow": "Naaman était chef de l’armée du roi de Syrie et pourtant il écouta finalement le conseil d’une jeune servante israélite.",
+    "relationshipWithJehovah": "Naaman, chef de l’armée syrienne, finit par reconnaître qu’il n’y avait pas de Dieu sur toute la terre sauf en Israël après avoir été guéri de sa lèpre sur instruction d’Élisha.",
+    "didYouKnow": "Naaman se plongea sept fois dans le Jourdain avant que sa chair ne redevienne comme celle d’un petit enfant.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4461,8 +4461,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "2 Rois 18:1-37 ; 19:1-37 ; 20:1-21 ; 2 Chroniques 29:1-36 ; 32:1-33",
     "location": "Jérusalem et le royaume de Juda.",
-    "relationshipWithJehovah": "Ézéchias s’attacha à Jéhovah et lui resta fidèle. Dans la crise assyrienne, il pria Jéhovah et rechercha sa direction.",
-    "didYouKnow": "Ézéchias fit fabriquer le tunnel qui conduisait l’eau de la source de Guihôn jusqu’à l’intérieur de Jérusalem, un projet mentionné en 2 Rois 20:20.",
+    "relationshipWithJehovah": "Ézékias se fia à Jéhovah lors de la menace assyrienne et pria lorsque Jérusalem était menacée. Jéhovah délivra la ville et lui accorda aussi une prolongation de vie.",
+    "didYouKnow": "Ézékias reçut quinze années supplémentaires de vie après avoir prié Jéhovah lorsqu’il était gravement malade.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4510,8 +4510,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "2 Rois 22:1-20 ; 23:1-30 ; 2 Chroniques 34:1-33 ; 35:20-27",
     "location": "Jérusalem et le royaume de Juda.",
-    "relationshipWithJehovah": "Josias s’humilia devant Jéhovah et chercha à rétablir son culte. Jéhovah remarqua son attitude humble lors de la lecture de la Loi.",
-    "didYouKnow": "Josias avait huit ans lorsqu’il devint roi et 16 ans lorsqu’il commença à rechercher le Dieu de David, selon 2 Chroniques 34:1-3.",
+    "relationshipWithJehovah": "Josias chercha Jéhovah et entreprit une vaste réforme du culte en supprimant les objets et pratiques liés au faux culte. Il fit aussi lire au peuple le livre de la Loi retrouvé dans le temple.",
+    "didYouKnow": "Le livre de la Loi fut retrouvé pendant les travaux de réparation du temple sous le règne de Josias.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4558,8 +4558,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "2 Chroniques 17:1-19 ; 18:1-34 ; 19:1-11 ; 20:1-30",
     "location": "Jérusalem et le royaume de Juda.",
-    "relationshipWithJehovah": "Yehoshaphat chercha Jéhovah, pria dans les moments de crise et encouragea le peuple à avoir foi en lui.",
-    "didYouKnow": "Avant une bataille décisive, Yehoshaphat plaça des chanteurs devant l’armée pour louer Jéhovah, selon 2 Chroniques 20:21.",
+    "relationshipWithJehovah": "Yehoshaphat chercha Jéhovah et encouragea Juda à observer ses commandements. Il commit néanmoins des erreurs dans certaines alliances politiques, ce qui lui valut des reproches prophétiques.",
+    "didYouKnow": "Lorsque Juda fut menacé par une coalition ennemie, Yehoshaphat pria Jéhovah publiquement et le peuple fut encouragé à se confier en lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4602,8 +4602,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Jonas 1:1-17 ; 2:1-10 ; 3:1-10 ; 4:1-11",
     "location": "Israël, la mer Méditerranée et Ninive en Assyrie.",
-    "relationshipWithJehovah": "Jéhovah corrigea Jonas avec patience et lui enseigna que Sa miséricorde peut s’étendre à des personnes qui se repentent.",
-    "didYouKnow": "Jésus a utilisé « le signe de Jonas » pour annoncer sa propre mort et sa résurrection, selon Matthieu 12:39-41.",
+    "relationshipWithJehovah": "Jonas reçut de Jéhovah une mission de prédication à Ninive. Il tenta d’abord de fuir, mais accepta finalement d’accomplir la mission et vit les Ninivites se repentir.",
+    "didYouKnow": "Jésus utilisa le « signe de Jonas » pour annoncer sa propre mort et sa résurrection.",
     "jwResources": [
       {
         "title": "L’histoire de Jonas : une leçon de courage et de miséricorde",
@@ -4649,8 +4649,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "1 Samuel 9:1-27 ; 10:1-27 ; 13:1-15 ; 15:1-35 ; 18:6-30 ; 31:1-13",
     "location": "Israël, notamment Guibéa et les régions où il combattit les Philistins.",
-    "relationshipWithJehovah": "Saül fut choisi par Jéhovah comme roi, mais sa désobéissance répétée entraîna son rejet comme roi et la perte de son approbation.",
-    "didYouKnow": "Saül était plus grand que tout le peuple, dépassant les autres Israélites d’une tête, selon 1 Samuel 9:2 et 10:23.",
+    "relationshipWithJehovah": "Saül fut choisi comme premier roi d’Israël et reçut l’esprit de Dieu, mais il désobéit à plusieurs reprises aux instructions de Jéhovah. Son règne montre les conséquences d’une obéissance incomplète.",
+    "didYouKnow": "Jéhovah rejeta Saül comme roi après qu’il eut désobéi à l’ordre concernant les Amalécites et conservé le roi Agag ainsi que le meilleur du butin.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4691,8 +4691,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Juges 13:1-25",
     "location": "La région de Tsora, dans le territoire de Dan.",
-    "relationshipWithJehovah": "Manoa pria Jéhovah et rechercha sa direction lorsqu’il apprit la naissance annoncée de Samson.",
-    "didYouKnow": "L’ange qui annonça la naissance de Samson donna à la mère des instructions alimentaires particulières avant même la naissance de l’enfant.",
+    "relationshipWithJehovah": "Manoah pria Jéhovah lorsqu’il apprit que sa femme aurait un fils destiné à commencer à délivrer Israël des Philistins. Il demanda des instructions sur la manière d’élever l’enfant.",
+    "didYouKnow": "Manoah et sa femme virent l’ange de Jéhovah monter dans la flamme de l’offrande qu’ils avaient présentée.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4733,8 +4733,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Sophonie 1:1-18 ; 2:1-15 ; 3:1-20",
     "location": "Juda et Jérusalem.",
-    "relationshipWithJehovah": "Sophonie transmit fidèlement les paroles de Jéhovah et invita les personnes humbles à chercher refuge auprès de lui.",
-    "didYouKnow": "Sophonie était contemporain du règne de Josias, et son livre commence par préciser la période royale durant laquelle il prophétisa.",
+    "relationshipWithJehovah": "Sophonie annonça les jugements de Jéhovah contre Juda et les nations, tout en appelant les personnes humbles à rechercher Jéhovah et la justice.",
+    "didYouKnow": "Sophonie prophétisa pendant le règne de Josias, avant les grandes réformes religieuses de ce roi.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4776,8 +4776,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Habacuc 1:1-17 ; 2:1-20 ; 3:1-19",
     "location": "Juda, avant la destruction de Jérusalem.",
-    "relationshipWithJehovah": "Habacuc transforma ses questions en confiance et termina son livre en affirmant que Jéhovah était sa force.",
-    "didYouKnow": "Habacuc 2:4 contient la déclaration « le juste vivra par sa fidélité », reprise ensuite dans les Écritures grecques chrétiennes.",
+    "relationshipWithJehovah": "Habacuc exprima franchement ses questions à Jéhovah face à la violence et à l’injustice. Il finit par affirmer sa confiance en Dieu même si les conditions matérielles devenaient très difficiles.",
+    "didYouKnow": "Le livre d’Habacuc se termine par une expression de joie et de confiance en Jéhovah malgré l’absence de récoltes et de bétail.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4819,8 +4819,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Amos 1:1 ; 3:7-8 ; 5:10-24 ; 7:10-17 ; 8:4-7 ; 9:11-15",
     "location": "Tekoa en Juda puis le royaume d’Israël, notamment Béthel.",
-    "relationshipWithJehovah": "Amos considérait sa mission prophétique comme un ordre de Jéhovah et transmit fidèlement son message malgré l’opposition.",
-    "didYouKnow": "Amos se décrit comme un éleveur et comme quelqu’un qui travaillait les figuiers-sycomores avant d’être envoyé prophétiser.",
+    "relationshipWithJehovah": "Amos reçut de Jéhovah la mission de dénoncer les injustices et le faux culte dans le royaume d’Israël. Il resta fidèle à ce message malgré l’opposition du prêtre Amatsia.",
+    "didYouKnow": "Amos n’était pas membre d’une école de prophètes ; il était éleveur et cultivateur de sycomores avant de recevoir sa mission prophétique.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
