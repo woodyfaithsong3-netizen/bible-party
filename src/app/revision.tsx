@@ -1,7 +1,7 @@
 import React, { useCallback, useEffect, useMemo, useState } from 'react';
 import { ImageBackground, Pressable, SafeAreaView, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
-import { buildReviewDeck, getDueCharacterIds, recordReviewResult, ReviewCard, ReviewMode } from '@/data/characterReview';
+import { buildReviewDeck, getDueCharacterIds, getReviewStats, recordReviewResult, ReviewCard, ReviewMode } from '@/data/characterReview';
 
 const scenic = require('../../assets/images/backgrounds/home-valley-exact-source.png');
 
@@ -22,12 +22,17 @@ export default function CharacterReviewScreen() {
   const [finished, setFinished] = useState(false);
   const [score, setScore] = useState(0);
   const [dueCount, setDueCount] = useState(125);
+  const [masteredCount, setMasteredCount] = useState(0);
+  const [learningCount, setLearningCount] = useState(125);
 
   const load = useCallback(async (nextMode = mode) => {
     const due = await getDueCharacterIds();
     setDueCount(due.length);
-    const ids = due.length ? due.slice(0, 10) : [];
-    setDeck(buildReviewDeck(nextMode, 10, ids.length ? undefined : []));
+    const stats = await getReviewStats();
+    setMasteredCount(stats.mastered);
+    setLearningCount(stats.learning);
+    const ids = due.slice(0, 10);
+    setDeck(buildReviewDeck(nextMode, 10, ids));
     setIndex(0);
     setSelected(null);
     setFinished(false);
@@ -79,7 +84,7 @@ export default function CharacterReviewScreen() {
             </ScrollView>
 
             <View style={styles.progress}>
-              <Text style={styles.progressText}>À revoir maintenant : {dueCount}</Text>
+              <Text style={styles.progressText}>À revoir : {dueCount}</Text><Text style={styles.progressText}>Maîtrisés : {masteredCount} · En cours : {learningCount}</Text>
               <Text style={styles.progressText}>{Math.min(index + 1, 10)} / {deck.length || 10}</Text>
             </View>
 
