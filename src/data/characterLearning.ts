@@ -4229,7 +4229,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Jacques fils d’Alphée était l’un des douze apôtres choisis par Jésus. La Bible donne peu de renseignements personnels sur lui.",
-    "era": "Ministère de Jésus et premières années de la congrégation",
+    "era": "Ier siècle de n. è., pendant le ministère de Jésus et les premières années de la congrégation",
     "familyAndEntourage": [
       "Les douze apôtres",
       "Jésus",
@@ -4276,7 +4276,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Simon le Zélé était l’un des douze apôtres de Jésus. Son surnom le distinguait de Simon Pierre et pouvait évoquer soit son zèle, soit une ancienne association avec les Zélotes.",
-    "era": "Ministère de Jésus et premières années de la congrégation",
+    "era": "Ier siècle de n. è., pendant le ministère de Jésus et les débuts de la congrégation",
     "familyAndEntourage": [
       "Les douze apôtres",
       "Jésus",
@@ -4532,9 +4532,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il est effrayé par ce message mais remet la discussion à plus tard.",
       "Il espère recevoir de l’argent de Paul et le laisse finalement prisonnier pour gagner la faveur des Juifs."
     ],
-    "qualities": [
-      "Il manifeste d’abord une certaine connaissance de la Voie et laisse Paul s’exprimer"
-    ],
+    "qualities": ["Autorité administrative","Capacité à écouter un témoignage direct"],
     "difficulties": [
       "Il reporte sa décision malgré son trouble et privilégie finalement des considérations personnelles et politiques en laissant Paul en prison."
     ]
@@ -4566,7 +4564,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Porcius Festus succéda à Félix comme gouverneur de Judée. Il présida l’audience de Paul à Césarée et accepta son appel à César.",
-    "era": "Vers 58-60 de n. è.",
+    "era": "Vers 58-61 de n. è. environ; gouverneur romain de Judée après Félix",
     "familyAndEntourage": [
       "Paul",
       "Agrippa II",
@@ -4718,7 +4716,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Phœbé était une chrétienne de Cenchrées que Paul recommande chaleureusement aux chrétiens de Rome comme sœur et servante de la congrégation.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., à l’époque de la congrégation chrétienne primitive",
     "familyAndEntourage": [
       "Paul",
       "Les chrétiens de Cenchrées",
@@ -4811,7 +4809,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Épaphrodite était un chrétien de Philippes envoyé auprès de Paul pour lui apporter l’aide de la congrégation. Il tomba gravement malade mais continua à se soucier des autres.",
-    "era": "Ier siècle de n. è.",
+    "era": "Vers 59-61 de n. è., pendant le premier emprisonnement de Paul à Rome",
     "familyAndEntourage": [
       "La congrégation de Philippes",
       "Paul",
@@ -4860,7 +4858,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Tychique était un collaborateur fidèle de Paul, originaire de la région d’Asie. Paul lui confia plusieurs missions auprès des congrégations.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., pendant les voyages missionnaires et les emprisonnements de Paul",
     "familyAndEntourage": [
       "Paul",
       "Onésime",
@@ -4922,9 +4920,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Paul le cite parmi ses collaborateurs dans sa lettre à Philémon.",
       "Plus tard, Paul explique que Démas l’a abandonné parce qu’il aimait le système de choses présent."
     ],
-    "qualities": [
-      "Il fut pendant un temps un collaborateur de Paul."
-    ],
+    "qualities": ["Esprit de collaboration à une période de sa vie","Il est difficile d’établir d’autres qualités personnelles à partir du récit"],
     "difficulties": [
       "Son attachement au présent système de choses finit par prendre le dessus sur son engagement auprès de Paul."
     ]
@@ -4956,7 +4952,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Naaman était chef de l’armée syrienne, atteint de lèpre. Il fut guéri après avoir humblement suivi les instructions données par le prophète Élisée.",
-    "era": "Xe siècle av. n. è.",
+    "era": "Xe siècle av. n. è., sous les règnes de Yehoram d’Israël et de Ben-Hadad II de Syrie",
     "familyAndEntourage": [
       "Le roi de Syrie",
       "Sa femme",
@@ -5012,7 +5008,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Ézéchias était roi de Juda et un réformateur fidèle qui combattit l’idolâtrie et fit confiance à Jéhovah lors de la menace assyrienne.",
-    "era": "VIIIe siècle av. n. è.",
+    "era": "745-717 av. n. è. environ, roi de Juda",
     "familyAndEntourage": [
       "Ahaz, son père",
       "Manassé, son fils",
@@ -5068,7 +5064,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Josias était roi de Juda et entreprit une vaste réforme religieuse après avoir entendu le livre de la Loi retrouvé dans le temple.",
-    "era": "VIIe siècle av. n. è.",
+    "era": "659-629 av. n. è., roi de Juda",
     "familyAndEntourage": [
       "Amon, son père",
       "Hilqiya le grand prêtre",
@@ -5119,7 +5115,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Roi de Juda — Yehoshaphat cherche Jéhovah et organise l’enseignement de la Loi dans le royaume de Juda.",
-    "era": "Rois de Juda",
+    "era": "936-911 av. n. è. environ, roi de Juda",
     "familyAndEntourage": [
       "Juda",
       "Les Lévites",
@@ -5173,7 +5169,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Prophète — Jonas reçoit la mission de prévenir Ninive, fuit d’abord sa mission puis finit par transmettre le message.",
-    "era": "Prophètes",
+    "era": "Vers 844 av. n. è., sous le règne de Jéroboam II; prophète envoyé à Ninive",
     "familyAndEntourage": [
       "Ninive",
       "Les marins"
@@ -5219,7 +5215,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Premier roi d’Israël — Saül a commencé humblement comme premier roi d’Israël, mais a ensuite désobéi à Jéhovah et est devenu arrogant.",
-    "era": "Rois d’Israël",
+    "era": "1117-1077 av. n. è. environ, premier roi humain d’Israël",
     "familyAndEntourage": [
       "Jonathan",
       "David",
@@ -5232,10 +5228,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Poursuit David malgré la loyauté de celui-ci.",
       "La fiche JW.org oppose clairement son humilité initiale à son évolution."
     ],
-    "qualities": [
-      "Courage initial",
-      "Capacité de chef"
-    ],
+    "qualities": ["Courage dans ses premières campagnes","Capacité de diriger","Il devint progressivement dominé par la désobéissance et la jalousie"],
     "difficulties": [
       "Son parcours montre l’importance de l’obéissance et de l’humilité."
     ]
@@ -5267,7 +5260,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Père de Samson — Manoa reçoit avec sa femme l’annonce de la naissance de Samson et demande comment élever l’enfant.",
-    "era": "Juges",
+    "era": "Époque des juges, avant l’établissement de la royauté en Israël",
     "familyAndEntourage": [
       "Sa femme",
       "Samson"
@@ -5315,7 +5308,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Prophète de Juda — Sophonie annonce un jour de jugement et encourage ceux qui cherchent Jéhovah à pratiquer la justice et la douceur.",
-    "era": "Prophètes",
+    "era": "Vers 648 av. n. è., au début du règne de Yoshiya, avant les grandes réformes religieuses",
     "familyAndEntourage": [
       "Juda",
       "Les humbles du pays"
@@ -5364,7 +5357,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Prophète de Juda — Habacuc exprime ses questions devant la violence et l’injustice puis affirme sa confiance en Jéhovah.",
-    "era": "Prophètes",
+    "era": "Fin du VIIe siècle av. n. è., avant la destruction de Jérusalem par Babylone",
     "familyAndEntourage": [
       "Jéhovah",
       "Juda"
@@ -5413,7 +5406,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Prophète — Amos, éleveur et cultivateur de sycomores, reçoit la mission de dénoncer les injustices et le faux culte en Israël.",
-    "era": "Prophètes",
+    "era": "Vers 804-800 av. n. è. environ, sous les règnes d’Ozias de Juda et de Jéroboam II d’Israël",
     "familyAndEntourage": [
       "Israël",
       "Amatsia"
