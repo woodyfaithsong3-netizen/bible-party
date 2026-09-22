@@ -601,10 +601,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
   "elie": {
     "studyFocus": "Éli était grand prêtre et juge en Israël pendant 40 ans, à l’époque où Samuel était encore enfant. Il accueillit Samuel au tabernacle et l’aida à comprendre que Jéhovah l’appelait. Cependant, il fut réprimandé parce qu’il n’avait pas discipliné avec suffisamment de fermeté ses fils Hophni et Phinéhas.",
     "lessonPoints": [
-      "Éli permit à Samuel de servir près de lui et l’aida à reconnaître l’appel de Jéhovah.",
-      "Il avait une certaine sensibilité spirituelle mais manqua de fermeté envers ses fils.",
-      "Jéhovah le tint responsable de ne pas avoir corrigé leur conduite.",
-      "La fin de sa vie montre l’importance de prendre au sérieux les responsabilités familiales et spirituelles."
+      "Éliya annonça avec courage les jugements de Jéhovah malgré l’opposition d’Achab et de Jézabel.",
+      "Il apprit à compter sur Jéhovah lorsqu’il dépendait de la nourriture fournie au torrent de Kerith puis par une veuve.",
+      "Au mont Carmel, il mit en évidence que Jéhovah est le vrai Dieu.",
+      "Même après des moments de découragement, il continua à accomplir la mission que Jéhovah lui avait confiée."
     ],
     "keyReading": "1 Samuel 2:12-36 ; 3:1-21 ; 4:10-18",
     "location": "Shilo et le territoire d’Israël; il servait au tabernacle à Shilo.",
@@ -1099,8 +1099,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "bibleAccount": [
       "Retourne à Bethléhem après son veuvage.",
       "Encourage Ruth à agir avec sagesse.",
-      "Accueille la naissance d’Obed dans sa famille.",
-      "JW.org souligne son rôle auprès de Ruth et leur amitié fidèle."
+      "Accueille la naissance d’Obed dans sa famille."
     ],
     "qualities": [
       "Attachement familial",
