@@ -114,10 +114,10 @@ export function buildReviewDeck(mode: ReviewMode = 'mix', count = 10, preferredI
         characterId: id,
         characterName: name,
         mode: actualMode,
-        prompt: 'Que retenir de la relation de ce personnage avec Jéhovah ?',
+        prompt: 'Quel personnage correspond à cette description de sa relation avec Jéhovah ? ' + data.relationshipWithJehovah,
         answer: name,
         choices: shuffle([name, ...nextNames]),
-        explanation: data.relationshipWithJehovah,
+        explanation: data.lessonPoints[0] ?? data.studyFocus,
         reference: data.keyReading,
       };
     }
