@@ -49,7 +49,7 @@ const characterCoverage = characterCounts.size;
 const characterCountFailures = [...characterCounts.entries()].filter(([, n]) => n !== 16);
 
 const cardRecords = [...dedicatedSource.matchAll(
-  /type:\s*['"](quiz|truefalse|mystery)['"][\\s\\S]{0,900}?characterId:\s*['"]([^'"]+)['"][\\s\\S]{0,300}?difficulty:\s*['"](easy|medium|hard|expert)['"]/g
+  /type:\s*['"](quiz|truefalse|mystery)['"][\s\S]{0,900}?characterId:\s*['"]([^'"]+)['"][\s\S]{0,300}?difficulty:\s*['"](easy|medium|hard|expert)['"]/g
 )].map(m => ({ type: m[1], characterId: m[2], difficulty: m[3] }));
 
 const perCharacterTypeFailures = [];
