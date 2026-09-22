@@ -1416,7 +1416,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Néhémie pria régulièrement, attribua la réussite à Jéhovah et chercha à restaurer à Jérusalem une vie conforme à la Loi.",
     "didYouKnow": "Les murailles de Jérusalem furent achevées en 52 jours malgré une forte opposition.",
     "identity": "Néhémie était un Juif servant comme échanson du roi de Perse. Il reçut l’autorisation de reconstruire les murailles de Jérusalem et dirigea le chantier malgré une forte opposition.",
-    "era": "Ve siècle av. n. è., après l’exil",
+    "era": "455-443 av. n. è. environ pour son gouvernorat, sous Artaxerxès Ier",
     "familyAndEntourage": [
       "Artaxerxès",
       "Les Juifs de Jérusalem",
@@ -1438,8 +1438,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance"
     ],
     "difficulties": [
-      "Il subit moqueries, menaces et tentatives d’intimidation, tout en devant corriger certains problèmes internes parmi les Juifs."
-    ]
+  "Il doit reconstruire les murailles malgré l’opposition de Sanballat, Tobiya et Guéshem.",
+  "Il doit aussi corriger des abus économiques et des manquements à la Loi parmi les Juifs revenus d’exil."
+]
   },
   "mary_magdalen": {
     "studyFocus": "Marie Madeleine était une disciple de Jésus originaire de Magdala. Jésus avait chassé d’elle sept démons. Elle le suivit, le soutint avec d’autres femmes et fut parmi les premières personnes à le voir après sa résurrection.",
@@ -1472,7 +1473,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Marie Madeleine était une disciple fidèle de Jésus, délivrée de sept démons. Elle l’accompagna jusqu’à sa mort et fut l’une des premières personnes à le voir après sa résurrection.",
-    "era": "Ministère terrestre de Jésus et premiers jours après sa résurrection",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus et après sa résurrection",
     "familyAndEntourage": [
       "Jésus",
       "Les apôtres",
@@ -1494,8 +1495,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle pour témoigner"
     ],
     "difficulties": [
-      "Elle reste attachée à Jésus malgré son exécution et doit faire face à la douleur de sa mort."
-    ]
+  "Elle avait été délivrée de sept démons et devint ensuite une disciple fidèle de Jésus.",
+  "Elle dut faire face au chagrin lié à la mort de Jésus, puis porter un témoignage concernant sa résurrection."
+]
   },
   "zacchaeus": {
     "studyFocus": "Zachée était chef des collecteurs d’impôts à Jéricho et un homme riche. Désireux de voir Jésus, il grimpa à un sycomore. Après la visite de Jésus chez lui, Zachée manifesta publiquement son changement en promettant de réparer les torts et de donner aux pauvres.",
@@ -1546,8 +1548,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Repentance concrète"
     ],
     "difficulties": [
-      "Comme chef des collecteurs d’impôts, il pouvait être méprisé et associé à des pratiques injustes; il reconnaît lui-même avoir extorqué des personnes."
-    ]
+  "Il était méprisé en raison de son métier de collecteur d’impôts et de sa réputation de riche.",
+  "Après sa rencontre avec Jésus, il prit des mesures concrètes pour réparer les torts commis et partager ses biens."
+]
   },
   "barnabas": {
     "studyFocus": "Barnabas, appelé Joseph par les apôtres, était un Lévite originaire de Chypre. Les apôtres lui donnèrent le surnom Barnabas, associé à l’idée de consolation ou d’encouragement. Il soutint Saul de Tarse et participa à l’œuvre missionnaire auprès des non-Juifs.",
@@ -1580,7 +1583,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Collaborateur des apôtres — Barnabé joue un rôle important dans l’accueil et l’encouragement des disciples et dans l’activité missionnaire.",
-    "era": "Actes",
+    "era": "Ier siècle de n. è., depuis les débuts de la congrégation chrétienne jusqu’aux environs de 49 de n. è.",
     "familyAndEntourage": [
       "Paul",
       "Jean Marc",
@@ -1597,11 +1600,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Esprit d’équipe"
     ],
     "difficulties": [
-      "Il a consacré ses ressources à soutenir la congrégation et a beaucoup voyagé pour le ministère.",
-      "Il a travaillé avec Paul malgré les difficultés et l’opposition rencontrées dans le service chrétien.",
-      "Il a connu un désaccord marqué avec Paul au sujet de Jean-Marc, qui a conduit les deux hommes à se séparer pour un temps.",
-      "Il a néanmoins continué à servir avec zèle et à encourager les autres. — Ac 4:36, 37 ; 13:2-5 ; 15:36-40."
-    ]
+  "Il dut gérer avec Paul un désaccord sérieux au sujet de Jean-Marc.",
+  "Il servit dans des territoires où l’opposition et les besoins des nouvelles congrégations exigeaient beaucoup d’adaptation."
+]
   },
   "cornelius": {
     "studyFocus": "Corneille était un officier romain et le premier non-Juif incirconcis à devenir chrétien avec l’approbation manifeste de Jéhovah. Il était connu pour sa crainte de Dieu, ses prières et ses dons aux nécessiteux. Sa conversion montra à Pierre que Dieu ne faisait pas de favoritisme entre Juifs et non-Juifs.",
@@ -1655,8 +1656,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Réceptivité"
     ],
     "difficulties": [
-      "Il devait accepter des changements importants concernant ses relations religieuses avec les Juifs et comprendre que Dieu accueillait désormais aussi les non-Juifs incirconcis."
-    ]
+  "Bien que craignant Dieu, il devait encore entendre la bonne nouvelle concernant Jésus Christ et recevoir le témoignage de Pierre.",
+  "L’événement exigea aussi qu’il accepte que Jéhovah ouvre désormais l’accès au christianisme aux non-Juifs incirconcis."
+]
   },
   "hagar": {
     "studyFocus": "Agar était la servante égyptienne de Sara et la mère d’Ismaël. Après avoir été traitée durement, elle s’enfuit dans le désert. L’ange de Jéhovah lui parla, lui donna une direction et lui annonça une descendance. Plus tard, elle fut renvoyée avec Ismaël mais Jéhovah continua de voir sa situation.",
@@ -1703,8 +1705,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Capacité à reconnaître l’intervention de Dieu"
     ],
     "difficulties": [
-      "Elle subit une situation familiale douloureuse, commet elle-même une erreur en méprisant Sara, puis doit vivre le renvoi avec son fils."
-    ]
+  "Elle subit les mauvais traitements de Sara et s’enfuit une première fois dans le désert.",
+  "Après le renvoi d’Agar et d’Ismaël, elle dut vivre dans une région aride et chercher de quoi faire vivre son fils."
+]
   },
   "leah": {
     "studyFocus": "Léa était la première femme de Jacob, donnée à celui-ci par Laban. Elle eut plusieurs fils et fut la mère de Juda et de Lévi, ancêtres de lignées importantes en Israël. Même si Jacob aimait davantage Rachel, Jéhovah remarqua la situation de Léa.",
@@ -1762,8 +1765,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Reconnaissance envers Jéhovah"
     ],
     "difficulties": [
-      "Elle vit dans un mariage où elle sait que Jacob aime davantage Rachel et connaît une rivalité familiale douloureuse."
-    ]
+  "Elle fut donnée à Jacob par la ruse de Labân alors que Jacob aimait Rachel.",
+  "Elle vécut dans une famille marquée par la rivalité entre elle et Rachel et chercha à obtenir l’affection de son mari."
+]
   },
   "esau": {
     "studyFocus": "Ésaü était le fils aîné d’Isaac et de Rébecca et le frère jumeau de Jacob. Il était un chasseur habile et vendit son droit d’aînesse pour un plat de nourriture. Plus tard, il manifesta une certaine réconciliation avec Jacob, mais son choix initial révéla qu’il accordait peu de valeur aux choses spirituelles.",
@@ -1814,8 +1818,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Capacité à pardonner dans sa rencontre avec Jacob"
     ],
     "difficulties": [
-      "Il méprise son droit d’aînesse et prend des décisions matrimoniales qui causent du chagrin à ses parents. Sa colère contre Jacob le conduit à vouloir le tuer."
-    ]
+  "Il perdit son droit d’aînesse après l’avoir échangé contre un plat de lentilles.",
+  "Il fut profondément attristé lorsque Jacob reçut la bénédiction d’Isaac, puis nourrit d’abord l’intention de tuer son frère."
+]
   },
   "melchizedek": {
     "studyFocus": "Melkisédek était roi de Salem et prêtre du Dieu Très-Haut à l’époque d’Abraham. Il bénit Abraham après la victoire de celui-ci sur les rois ennemis, et Abraham lui donna un dixième du butin. Les Écritures chrétiennes utilisent ensuite Melkisédek comme figure prophétique du rôle sacerdotal de Jésus.",
@@ -1865,8 +1870,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Bénédiction"
     ],
     "difficulties": [
-      "Les Écritures ne donnent presque aucun détail biographique sur lui, notamment aucune généalogie."
-    ]
+  "La Bible ne donne presque aucun renseignement sur son origine familiale ni sur la durée de sa vie.",
+  "Son apparition dans le récit est brève, mais son rôle de roi et prêtre sert de base à l’explication inspirée de la prêtrise de Jésus."
+]
   },
   "jethro": {
     "studyFocus": "Jéthro, aussi appelé Réouel, était le prêtre de Madian et le beau-père de Moïse. Il accueillit Moïse lorsqu’il s’enfuit d’Égypte et lui donna Séphora comme épouse. Plus tard, il rejoignit Israël dans le désert et conseilla à Moïse de déléguer certaines responsabilités judiciaires.",
@@ -1917,8 +1923,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Humilité"
     ],
     "difficulties": [
-      "Il doit intégrer la situation de sa famille après le départ de Moïse et discerner comment aider sans prendre sa place."
-    ]
+  "Il devait exercer ses responsabilités de prêtre de Madian tout en accueillant Moïse et sa famille.",
+  "Il conseilla Moïse sur l’organisation du jugement du peuple, une responsabilité qui demandait de la sagesse et de la retenue."
+]
   },
   "zipporah": {
     "studyFocus": "Séphora était la fille de Jéthro et l’épouse de Moïse. Elle donna naissance à leurs fils Guershom et Éliézer. À un moment critique du voyage, elle intervint rapidement en circoncisant leur fils, après quoi Jéhovah cessa de menacer Moïse de mort.",
@@ -1970,8 +1977,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Respect des exigences divines"
     ],
     "difficulties": [
-      "Elle doit agir rapidement dans une situation familiale grave où la vie de son mari est menacée à cause du non-respect d’une exigence divine concernant leur fils."
-    ]
+  "Elle dut quitter Madian avec Moïse et leurs fils lorsque celui-ci retourna en Égypte.",
+  "Elle intervint dans une situation familiale et spirituelle très grave sur le chemin de l’Égypte."
+]
   },
   "korah": {
     "studyFocus": "Qorah était un Lévite qui se rebella contre l’autorité de Moïse et d’Aaron avec Dathan, Abiram et d’autres hommes. Il contesta notamment la position d’Aaron dans le sacerdoce. Jéhovah intervint de façon spectaculaire contre les rebelles, tandis que les fils de Qorah ne moururent pas avec lui.",
@@ -2023,8 +2031,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle religieux mal orienté"
     ],
     "difficulties": [
-      "Il laisse l’ambition et le mécontentement l’amener à contester une disposition que Jéhovah avait établie."
-    ]
+  "Il contesta publiquement l’autorité confiée à Moïse et Aaron.",
+  "Sa rébellion entraîna de graves conséquences pour lui et ses partisans."
+]
   },
   "balaam": {
     "studyFocus": "Balaam était un homme de Mésopotamie que Balak, roi de Moab, voulut engager pour maudire Israël. Jéhovah lui interdit de maudire son peuple et fit en sorte que Balaam prononce finalement des bénédictions. Malgré cela, Balaam contribua ensuite à faire trébucher Israël par le conseil qui mena aux relations immorales et à l’idolâtrie.",
@@ -2075,8 +2084,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Capacité à prononcer fidèlement les paroles imposées par Jéhovah dans la scène des bénédictions"
     ],
     "difficulties": [
-      "Il aime la récompense promise et permet à ses mauvais désirs de l’entraîner vers une conduite condamnable."
-    ]
+  "Il fut partagé entre les instructions de Jéhovah et les possibilités de récompense offertes par Balaq.",
+  "Après avoir reçu plusieurs avertissements, il choisit néanmoins une voie que les Écritures présentent ensuite comme un exemple d’avidité et de faute."
+]
   },
   "balak": {
     "studyFocus": "Balak était roi de Moab à l’époque où Israël approchait de la Terre promise. Craignant les Israélites, il demanda à Balaam de les maudire. Jéhovah empêcha cette malédiction et les paroles prononcées par Balaam devinrent au contraire des bénédictions.",
@@ -2126,8 +2136,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance dans son objectif"
     ],
     "difficulties": [
-      "Il agit par peur et cherche une solution religieuse pour combattre Israël plutôt que de reconnaître la volonté de Jéhovah."
-    ]
+  "Il craignait Israël après ses victoires et chercha à obtenir une malédiction contre lui.",
+  "Ses tentatives échouèrent parce que Jéhovah ne permit pas que Balaam maudisse son peuple."
+]
   },
   "eli": {
     "studyFocus": "Éli était grand prêtre et juge en Israël. Il servit Jéhovah pendant de nombreuses années, mais ses deux fils, Hophni et Phinéhas, pratiquaient des actions gravement mauvaises. Éli les reprit, mais ne les empêcha pas suffisamment d’abuser de leur fonction, ce qui entraîna un jugement contre sa maison.",
@@ -2180,9 +2191,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Affection pour Samuel"
     ],
     "difficulties": [
-      "Il échoue à exercer une discipline ferme envers ses fils, malgré leurs graves fautes.",
-      "Il doit accepter un jugement de Jéhovah concernant sa maison."
-    ]
+  "Il devait exercer la fonction de grand prêtre alors que ses deux fils, Hophni et Phinéhas, agissaient très mal au sanctuaire.",
+  "Il fut repris parce qu’il n’avait pas suffisamment discipliné ses fils malgré leur conduite grave."
+]
   },
   "hannah": {
     "studyFocus": "Anne était la femme d’Elqana et la mère de Samuel. Profondément attristée de ne pas avoir d’enfant et provoquée par Peninna, elle pria Jéhovah avec intensité et lui promit de consacrer son fils à son service. Après la naissance de Samuel, elle tint sa promesse.",
@@ -2235,8 +2246,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Reconnaissance"
     ],
     "difficulties": [
-      "Elle endure pendant longtemps la stérilité et les provocations de sa rivale sans abandonner sa confiance en Jéhovah."
-    ]
+  "Elle supporta pendant des années la stérilité et les provocations de Peninna.",
+  "Après la naissance de Samuel, elle tint le vœu qu’elle avait fait et le laissa servir à Silo."
+]
   },
   "michal": {
     "studyFocus": "Mikal était la fille de Saül et la première épouse de David. Elle aida David à échapper à son père lorsque Saül cherchait à le tuer. Plus tard, elle méprisa David lorsqu’elle le vit danser avec enthousiasme devant l’arche de Jéhovah.",
@@ -2288,9 +2300,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Attachement à David dans sa jeunesse"
     ],
     "difficulties": [
-      "Sa relation avec David se détériore et elle porte un jugement méprisant sur son expression de joie religieuse.",
-      "Elle est donnée par Saül à un autre homme pendant l’absence de David."
-    ]
+  "Elle aida David à échapper à Saül, mais fut ensuite donnée à un autre homme pendant l’absence de David.",
+  "Plus tard, elle méprisa David lorsqu’elle le vit danser devant l’arche, et le récit rapporte qu’elle resta sans enfant jusqu’à sa mort."
+]
   },
   "joab": {
     "studyFocus": "Joab était le chef de l’armée de David et un homme capable militairement. Il aida David à consolider son royaume, mais il commit aussi des actes de vengeance et de violence que David désapprouvait. À la fin, Salomon le fit exécuter conformément aux instructions de David.",
@@ -2345,9 +2357,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Détermination"
     ],
     "difficulties": [
-      "Il se venge personnellement et prend des décisions contraires aux instructions du roi.",
-      "Son ambition et ses intérêts politiques finissent par le conduire à soutenir Adoniya."
-    ]
+  "Il fut impliqué dans des meurtres, notamment ceux d’Abner et d’Amasa, malgré les instructions du roi David.",
+  "Il resta puissant pendant de nombreuses années mais finit par soutenir Adoniya et fut exécuté sur l’ordre de Salomon."
+]
   },
   "herod_antipas": {
     "studyFocus": "Hérode Antipas était le tétrarque de Galilée et de Pérée pendant le ministère de Jésus. Il fit décapiter Jean le Baptiseur après que Jean eut dénoncé son mariage avec Hérodiade. Jésus comparut aussi devant lui peu avant sa mort.",
@@ -2399,9 +2411,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il éprouve de la tristesse devant l’exécution de Jean, mais cela ne l’empêche pas d’agir contre lui"
     ],
     "difficulties": [
-      "Il laisse la pression d’un serment et de son entourage conduire à l’exécution de Jean et ne manifeste pas de véritable repentance rapportée.",
-      "Il participe ensuite à l’humiliation de Jésus."
-    ]
+  "Il fit emprisonner puis décapiter Jean le Baptiseur après avoir été influencé par Hérodiade et sa fille.",
+  "Il manifesta de la curiosité envers Jésus mais ne changea pas de conduite et participa ensuite à la moquerie de Jésus."
+]
   },
   "pilate": {
     "studyFocus": "Ponce Pilate était le gouverneur romain de Judée qui présida le procès de Jésus. Il reconnut à plusieurs reprises qu’il ne trouvait pas de faute en Jésus, mais finit par le livrer à l’exécution sous la pression des chefs religieux et de la foule.",
@@ -2451,8 +2463,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il reconnaît à plusieurs reprises que Jésus n’est pas coupable d’un crime capital"
     ],
     "difficulties": [
-      "Il sacrifie finalement son jugement de justice à la pression politique et autorise la mise à mort de Jésus."
-    ]
+  "Il subit la pression des chefs religieux et de la foule lors du procès de Jésus.",
+  "Bien qu’il ait reconnu à plusieurs reprises ne pas trouver de motif valable contre Jésus, il finit par le livrer à la mise à mort."
+]
   },
   "isaiah": {
     "studyFocus": "Isaïe fut prophète en Juda pendant plusieurs règnes et transmit des messages de jugement, de correction et d’espérance. Il annonça notamment des détails concernant le Messie et le rétablissement du peuple de Dieu. Son livre contient de nombreux appels à faire confiance à Jéhovah plutôt qu’aux alliances humaines.",
@@ -2505,8 +2518,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Clarté"
     ],
     "difficulties": [
-      "Il doit annoncer des jugements à un peuple souvent peu réceptif et conseiller des rois confrontés à de graves menaces."
-    ]
+  "Il reçut une mission difficile consistant à annoncer un message que beaucoup de ses contemporains n’écouteraient pas.",
+  "Son activité s’étendit sur plusieurs règnes et il dut annoncer aussi bien des jugements que des messages d’espérance."
+]
   },
   "jeremiah": {
     "studyFocus": "Jérémie fut prophète de Jéhovah pendant les dernières décennies du royaume de Juda avant la destruction de Jérusalem par Babylone. Il annonça le jugement, encouragea la soumission à la domination babylonienne annoncée et continua à parler malgré les mauvais traitements.",
@@ -2560,8 +2574,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Fidélité"
     ],
     "difficulties": [
-      "Il souffre profondément à cause de la réaction du peuple et connaît de longues périodes de solitude et d’opposition."
-    ]
+  "Il fut rejeté, menacé, frappé et emprisonné à cause de son message.",
+  "Il connut un profond découragement mais continua à transmettre les paroles de Jéhovah."
+]
   },
   "ezekiel": {
     "studyFocus": "Ézéchiel était un prêtre devenu prophète pendant l’exil à Babylone. Il reçut des visions puissantes et transmit des messages aux exilés, notamment l’assurance que Jéhovah n’avait pas abandonné son dessein. Ses prophéties annonçaient aussi la restauration du vrai culte.",
@@ -2617,8 +2632,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Attention aux instructions divines"
     ],
     "difficulties": [
-      "Il accomplit des actes symboliques difficiles et subit la mort de sa femme comme signe pour les exilés, tout en poursuivant sa mission."
-    ]
+  "Il exerça son ministère parmi les exilés à Babylone dans une période de jugement sur Jérusalem.",
+  "Jéhovah lui demanda parfois des actions symboliques difficiles et lui annonça à l’avance des épreuves personnelles."
+]
   },
   "ezra": {
     "studyFocus": "Esdras était prêtre et copiste habile de la Loi de Moïse. Après l’exil, il monta à Jérusalem avec l’autorisation du roi Artaxerxès pour renforcer le vrai culte et enseigner la Loi. Il combina étude, mise en pratique et enseignement.",
@@ -2675,8 +2691,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Capacité d’enseigner"
     ],
     "difficulties": [
-      "Il doit affronter des problèmes graves dans le peuple, notamment des mariages contraires aux exigences de la Loi."
-    ]
+  "Il dut faire face aux problèmes spirituels du peuple revenu de l’exil, notamment aux mariages avec des femmes de nations voisines.",
+  "Il fut profondément attristé par ces manquements et dut aider le peuple à prendre des mesures conformes à la Loi."
+]
   },
   "zerubbabel": {
     "studyFocus": "Zorobabel était gouverneur de Juda après l’exil à Babylone et un descendant de David. Avec le grand prêtre Josué, il dirigea la reconstruction du temple malgré l’opposition. Aggée et Zacharie l’encouragèrent dans cette tâche.",
@@ -2734,8 +2751,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Coopération"
     ],
     "difficulties": [
-      "Il doit poursuivre les travaux malgré l’opposition et le découragement qui ralentissent la reconstruction."
-    ]
+  "Il dut reprendre la reconstruction du temple malgré une opposition qui avait déjà interrompu les travaux.",
+  "Il dirigea le peuple dans une période où il fallait restaurer à la fois le temple et le vrai culte après l’exil."
+]
   },
   "haggai": {
     "studyFocus": "Aggée était un prophète qui encouragea les Juifs revenus d’exil à reprendre la reconstruction du temple. Son message montrait que les intérêts personnels ne devaient pas passer avant le vrai culte. Ses paroles poussèrent Zorobabel, Josué et le peuple à agir.",
