@@ -11,6 +11,7 @@ import { jwV106CharacterQuiz, jwV106Mystery } from './jw_enrichment_v106_charact
 import { jwV107CharacterQuiz, jwV107Mystery } from './jw_enrichment_v107_characters';
 import { jwV108CharacterQuiz, jwV108Mystery } from './jw_enrichment_v108_characters';
 import { Challenge, ChronologyQuestion, Difficulty, IntruderQuestion, MysteryQuestion, QuizQuestion, QuoteQuestion, TimesUpQuestion, TrueFalseQuestion } from '@/types';
+import { characterLearning } from './characterLearning';
 import { categoryQuizExpansion, categoryTrueFalseExpansion, categoryMysteryExpansion, categoryTimesUpExpansion, categoryQuoteExpansion, categoryChronologyExpansion, categoryIntruderExpansion, categoryChallengeExpansion } from './jwCategories';
 
 /**
@@ -1642,6 +1643,103 @@ chronologyQuestions.push(...v101ExpertChronology);
 intruderQuestions.push(...v101ExpertIntruders);
 timesUpQuestions.push(...v101ExpertTimesUp);
 challenges.push(...v101ExpertChallenges);
+
+
+/**
+ * Révision des 125 fiches personnages.
+ *
+ * Ces cartes sont générées directement à partir de characterLearning afin que
+ * chaque personnage puisse être appris puis révisé dans les modes déjà présents
+ * dans Bible Party. Les explications renvoient aux informations de la fiche,
+ * tandis que les références restent celles indiquées dans keyReading.
+ */
+const characterReviewQuiz: QuizQuestion[] = [];
+const characterReviewTrueFalse: TrueFalseQuestion[] = [];
+const characterReviewMystery: MysteryQuestion[] = [];
+const characterReviewChallenges: Challenge[] = [];
+
+const characterReviewEntries = Object.entries(characterLearning);
+const characterReviewNames = characterReviewEntries.map(([id, data]) => {
+  const identity = data.identity ?? id.replace(/_/g, ' ');
+  const beforeDash = identity.split(/\s+[—–-]\s+/)[0].trim();
+  return beforeDash || id.replace(/_/g, ' ');
+});
+
+for (let i = 0; i < characterReviewEntries.length; i += 1) {
+  const [id, data] = characterReviewEntries[i];
+  const name = characterReviewNames[i];
+  const next = characterReviewNames[(i + 1) % characterReviewNames.length];
+  const next2 = characterReviewNames[(i + 2) % characterReviewNames.length];
+  const next3 = characterReviewNames[(i + 3) % characterReviewNames.length];
+  const accountClues = (data.bibleAccount ?? []).slice(0, 2).join(' ');
+  const lesson = data.lessonPoints?.[0] ?? data.studyFocus;
+  const relation = data.relationshipWithJehovah ?? data.studyFocus;
+  const quality = data.qualities?.[0] ?? 'fidélité';
+  const location = data.location ?? 'le récit biblique';
+  const era = data.era ?? 'une époque biblique';
+  const reference = data.keyReading;
+
+  characterReviewQuiz.push({
+    id: 'character-review-quiz-' + id + '-account',
+    type: 'quiz',
+    category: 'Révision des 125 fiches',
+    difficulty: 'medium',
+    question: 'Quel personnage correspond à ces éléments de sa fiche : ' + accountClues,
+    answers: [name, next, next2, next3],
+    correctAnswer: 0,
+    explanation: 'Cette réponse reprend les éléments du récit biblique indiqués dans la fiche de ' + name + '.',
+    reference,
+  });
+
+  characterReviewQuiz.push({
+    id: 'character-review-quiz-' + id + '-lesson',
+    type: 'quiz',
+    category: 'Révision des 125 fiches',
+    difficulty: 'hard',
+    question: 'Quelle fiche met en avant cette idée : « ' + lesson + ' » ?',
+    answers: [name, next2, next3, next],
+    correctAnswer: 0,
+    explanation: 'Ce point fait partie des leçons à retenir dans la fiche de ' + name + '.',
+    reference,
+  });
+
+  characterReviewTrueFalse.push({
+    id: 'character-review-tf-' + id,
+    type: 'truefalse',
+    category: 'Révision des 125 fiches',
+    difficulty: 'medium',
+    statement: 'Vrai ou faux : la fiche de ' + name + ' souligne que ' + relation,
+    answer: true,
+    explanation: 'C’est bien ce que précise la fiche de ' + name + ' dans sa rubrique « Relation avec Jéhovah ».',
+    reference,
+  });
+
+  characterReviewMystery.push({
+    id: 'character-review-mystery-' + id,
+    type: 'mystery',
+    category: 'Révision des 125 fiches',
+    difficulty: 'hard',
+    answer: name,
+    clues: [quality, location, era],
+    explanation: 'Ces indices correspondent à la fiche de ' + name + '.',
+    reference,
+  });
+
+  characterReviewChallenges.push({
+    id: 'character-review-challenge-' + id,
+    type: 'challenge',
+    category: 'Révision des 125 fiches',
+    difficulty: 'medium',
+    prompt: 'En 10 secondes : nommez le personnage dont la fiche met en avant « ' + quality + ' » et le contexte suivant : ' + location + '.',
+    seconds: 10,
+    acceptedAnswers: [name],
+  });
+}
+
+quizQuestions.push(...characterReviewQuiz);
+trueFalseQuestions.push(...characterReviewTrueFalse);
+mysteryQuestions.push(...characterReviewMystery);
+challenges.push(...characterReviewChallenges);
 
 const normalizeEditorialText = (value: string) => value
   .normalize('NFD')
