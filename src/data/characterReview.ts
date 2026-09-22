@@ -213,5 +213,13 @@ export async function getDueCharacterIds(): Promise<string[]> {
 
 
 export function buildCharacterReviewDeck(characterId: string, mode: ReviewMode = 'mix', count = 10): ReviewCard[] {
-  return buildReviewDeck(mode, count, [characterId]).filter((card) => card.characterId === characterId);
+  const data = characterLearning[characterId];
+  if (!data) return [];
+  const modes: ReviewMode[] = mode === 'mix'
+    ? ['account', 'lesson', 'relationship', 'qualities', 'mystery']
+    : [mode];
+  return Array.from({ length: count }, (_, index) => {
+    const card = buildReviewDeck(modes[index % modes.length], 1, [characterId])[0];
+    return card;
+  }).filter(Boolean);
 }
