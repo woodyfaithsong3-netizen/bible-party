@@ -975,8 +975,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Genèse 21:1-7 ; 22:1-19 ; 24:1-67 ; 26:1-35 ; 27:1-40 ; Hébreux 11:20",
     "location": "Canaan, notamment Beer-Shéba et la région de Guérar.",
-    "relationshipWithJehovah": "Isaac bénéficia directement de l’alliance faite avec Abraham et continua à invoquer Jéhovah.",
-    "didYouKnow": "Isaac avait 40 ans lorsqu’il épousa Rébecca et 60 ans lorsque ses fils Ésaü et Jacob naquirent.",
+    "relationshipWithJehovah": "Isaac bénéficia de l’alliance conclue par Jéhovah avec Abraham et continua à invoquer Jéhovah. Malgré les tensions liées aux puits et aux habitants du pays, il rechercha la paix.",
+    "didYouKnow": "Isaac avait 60 ans lorsque Rébecca donna naissance à Ésaü et Jacob.",
     "jwResources": [
       {
         "title": "Isaac — Étude perspicace des Écritures",
@@ -1043,8 +1043,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "location": "Territoire de Dan et régions contrôlées par les Philistins.",
-    "relationshipWithJehovah": "Jéhovah utilisa Samson pour combattre les Philistins; malgré ses faiblesses, Samson manifesta finalement sa foi en demandant de la force à Dieu.",
-    "didYouKnow": "Samson jugea Israël pendant 20 ans, et son histoire est l’un des récits bibliques les plus développés sur un juge d’Israël.",
+    "relationshipWithJehovah": "Jéhovah donna à Samson une force particulière pour commencer à délivrer Israël des Philistins. Malgré ses faiblesses, Samson manifesta finalement sa foi en demandant à Jéhovah de lui donner la force d’agir.",
+    "didYouKnow": "Samson jugea Israël pendant 20 ans et sa naissance avait été annoncée à ses parents par un ange de Jéhovah.",
     "identity": "Samson était un juge d’Israël doté d’une force exceptionnelle donnée par Jéhovah pour commencer à délivrer Israël des Philistins.",
     "era": "Époque des juges, avant la royauté",
     "familyAndEntourage": [
@@ -1092,16 +1092,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Bethléhem en Juda et Moab.",
     "relationshipWithJehovah": "Noémi parlait du rôle de Jéhovah dans sa situation, même lorsqu’elle était accablée par le chagrin; le récit montre ensuite sa restauration familiale.",
-    "didYouKnow": "À la naissance du fils de Ruth et Boaz, les femmes de Bethléhem dirent que cet enfant était pour Noémi comme un restaurateur de vie.",
+    "didYouKnow": "Noémi retourna à Bethléhem avec Ruth au début de la moisson des orges, puis Boaz devint le rédempteur de la famille.",
     "identity": "Veuve et belle-mère de Ruth — Noémi a connu de lourdes pertes mais a continué à agir avec amour envers Ruth.",
     "era": "Époque des juges, avant le règne de David",
-    "familyAndEntourage": [
-      "Ruth",
-      "Orpa",
-      "Élimélek",
-      "Mahlôn",
-      "Obed"
-    ],
+    "familyAndEntourage": ["Élimélek","Mahlôn","Kilyôn","Ruth","Orpa","Boaz"],
     "bibleAccount": [
       "Retourne à Bethléhem après son veuvage.",
       "Encourage Ruth à agir avec sagesse.",
@@ -1139,8 +1133,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "location": "Bethléem, en Juda.",
-    "relationshipWithJehovah": "Boaz respectait la Loi de Jéhovah et reconnut la confiance de Ruth dans le Dieu d’Israël.",
-    "didYouKnow": "Boaz devint l’arrière-grand-père du roi David par l’intermédiaire d’Obed et de Jessé.",
+    "relationshipWithJehovah": "Boaz respectait les dispositions de la Loi de Jéhovah concernant les pauvres, les étrangers et le mariage léviratique, et il traita Ruth avec bonté et respect.",
+    "didYouKnow": "Boaz était un proche parent d’Élimélek et devint le mari de Ruth ; leur fils Obed fut l’ancêtre du roi David.",
     "identity": "Propriétaire terrien et parent de Noémi — Boaz traite Ruth avec bonté et devient son rédempteur familial.",
     "era": "Époque des juges, avant le règne de David",
     "familyAndEntourage": [
@@ -1187,14 +1181,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Royaume d’Israël, notamment autour de Samarie et du Jourdain.",
     "relationshipWithJehovah": "Élisha servit comme prophète de Jéhovah et dirigea l’attention des autres vers la puissance et les instructions de Dieu.",
-    "didYouKnow": "Après la mort d’Élisha, un homme fut jeté dans sa tombe et revint à la vie lorsqu’il toucha les os du prophète.",
+    "didYouKnow": "Élisha fut le secrétaire ou serviteur d’Élie avant de poursuivre son ministère prophétique après l’enlèvement de son maître.",
     "identity": "Prophète et successeur d’Élie — Élisée poursuit le ministère prophétique d’Élie et intervient dans de nombreux récits concernant Israël.",
     "era": "Xe siècle av. n. è. environ, pendant les règnes de Joram, Jéhu, Jehoahaz et Joas d’Israël",
-    "familyAndEntourage": [
-      "Élie",
-      "Naaman",
-      "Guéhazi"
-    ],
+    "familyAndEntourage": ["Élie","Guéhazi","La femme de Shounem","Naaman","Les fils des prophètes"],
     "bibleAccount": [
       "Accepte de suivre Élie.",
       "Reçoit sa fonction prophétique après le départ d’Élie.",
@@ -1233,7 +1223,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "location": "Suse puis Jérusalem.",
     "relationshipWithJehovah": "Néhémie pria régulièrement, attribua la réussite à Jéhovah et chercha à restaurer à Jérusalem une vie conforme à la Loi.",
-    "didYouKnow": "Les murailles de Jérusalem furent achevées en 52 jours malgré une forte opposition.",
+    "didYouKnow": "Néhémie reconstruisit les murailles de Jérusalem en 52 jours alors que les travaux faisaient face à l’opposition de Sanballat, Tobiya et Guéshem.",
     "identity": "Néhémie était un Juif servant comme échanson du roi de Perse. Il reçut l’autorisation de reconstruire les murailles de Jérusalem et dirigea le chantier malgré une forte opposition.",
     "era": "455-443 av. n. è. environ pour son gouvernorat, sous Artaxerxès Ier",
     "familyAndEntourage": [
@@ -1271,8 +1261,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Luc 8:1-3 ; Matthieu 27:55-61 ; Jean 19:25 ; 20:1-18",
     "location": "Magdala en Galilée puis divers lieux parcourus par Jésus.",
-    "relationshipWithJehovah": "Marie Madeleine devint une disciple fidèle de Jésus et participa à la proclamation du témoignage concernant sa résurrection.",
-    "didYouKnow": "Les Évangiles ne disent pas que Marie Madeleine était une prostituée; cette identification traditionnelle ne vient pas du texte biblique.",
+    "relationshipWithJehovah": "Marie Madeleine devint une disciple fidèle de Jésus et fut parmi les femmes qui le suivaient et le soutenaient. Après sa résurrection, Jésus lui confia le privilège d’annoncer cette nouvelle aux disciples.",
+    "didYouKnow": "Les Évangiles ne disent pas que Marie Madeleine était une prostituée ; cette identification ne repose pas sur le texte biblique.",
     "jwResources": [
       {
         "title": "Magdalène (Marie la) — Étude perspicace des Écritures",
@@ -1324,8 +1314,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Luc 19:1-10",
     "location": "Jéricho.",
-    "relationshipWithJehovah": "Zachée répondit favorablement à Jésus et manifesta une repentance concrète; Jésus présenta cette réaction comme liée au salut.",
-    "didYouKnow": "Zachée était « chef des collecteurs d’impôts », ce qui indique une position supérieure à celle d’un simple collecteur d’impôts.",
+    "relationshipWithJehovah": "Zachée répondit favorablement à Jésus et manifesta une repentance concrète en décidant de réparer les torts qu’il avait commis. Jésus déclara que le salut était venu dans sa maison.",
+    "didYouKnow": "Zachée était chef des collecteurs d’impôts à Jéricho et était de petite taille ; il monta sur un sycomore pour voir Jésus.",
     "jwResources": [
       {
         "title": "Zachée — Les personnages de la Bible",
@@ -1373,8 +1363,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 4:36-37 ; 9:26-28 ; 11:19-30 ; 13:1–14:28 ; 15:36-41",
     "location": "Chypre, Jérusalem, Antioche et diverses régions du monde méditerranéen.",
-    "relationshipWithJehovah": "Barnabas consacra ses ressources et son énergie à soutenir l’œuvre chrétienne et à encourager les croyants.",
-    "didYouKnow": "Barnabas vendit un champ et en apporta le montant aux apôtres, un geste présenté très tôt dans le récit de la congrégation chrétienne.",
+    "relationshipWithJehovah": "Barnabas consacra ses ressources et son énergie à soutenir l’œuvre chrétienne. Son encouragement des nouveaux disciples et son soutien à Paul montrent son attachement à la congrégation.",
+    "didYouKnow": "Son nom Barnabas signifie « Fils de consolation » ou « Fils d’encouragement », et les apôtres lui donnèrent ce surnom.",
     "jwResources": [
       {
         "title": "Barnabas — Étude perspicace des Écritures",
@@ -1417,8 +1407,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 10:1-48 ; 11:1-18",
     "location": "Césarée, en Judée.",
-    "relationshipWithJehovah": "Jéhovah remarqua les prières et les actes de bonté de Corneille et prit des dispositions pour qu’il entende la bonne nouvelle.",
-    "didYouKnow": "Corneille reçut une vision à la neuvième heure, l’heure habituelle de la prière, avant d’envoyer des hommes chercher Pierre.",
+    "relationshipWithJehovah": "Corneille était un homme pieux qui craignait Dieu, priait régulièrement et faisait beaucoup de dons aux Juifs. Jéhovah prit des dispositions pour qu’il entende la bonne nouvelle par l’intermédiaire de Pierre.",
+    "didYouKnow": "Corneille fut le premier Gentil incirconcis à devenir chrétien avec l’approbation de Dieu, et l’esprit saint tomba sur lui et sa maisonnée avant même leur baptême.",
     "jwResources": [
       {
         "title": "Corneille — Les personnages de la Bible",
@@ -1470,7 +1460,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "Genèse 16:1-16 ; 21:8-21",
     "location": "Canaan et le désert situé vers Beer-Shéba.",
     "relationshipWithJehovah": "Agar reconnut que Jéhovah avait vu sa détresse et reçut de lui des promesses concernant son fils Ismaël.",
-    "didYouKnow": "Agar est la première personne mentionnée dans la Bible à avoir donné un nom à Jéhovah, en l’appelant « un Dieu qui voit » dans le contexte de sa rencontre avec l’ange.",
+    "didYouKnow": "Agar est la première personne à qui la Bible attribue un nom donné à Jéhovah : elle l’appela « le Dieu qui voit » après sa rencontre avec l’ange.",
     "jwResources": [
       {
         "title": "Agar — Étude perspicace des Écritures",
@@ -1514,8 +1504,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Genèse 29:16-35 ; 30:1-21 ; 49:29-33",
     "location": "Paddan-Aram puis Canaan.",
-    "relationshipWithJehovah": "Jéhovah vit la situation de Léa et lui accorda une descendance importante, notamment Juda et Lévi.",
-    "didYouKnow": "Léa fut enterrée dans la caverne de Makpéla, le lieu où Abraham, Sara, Isaac et Rébecca furent aussi enterrés.",
+    "relationshipWithJehovah": "Jéhovah vit que Léa était moins aimée et lui donna des fils. Plusieurs de ses fils devinrent les ancêtres de tribus d’Israël, notamment Juda et Lévi.",
+    "didYouKnow": "Léa donna naissance à six des fils de Jacob ainsi qu’à Dina ; ses fils Juda et Lévi eurent ensuite une place importante dans l’histoire d’Israël.",
     "jwResources": [
       {
         "title": "Léa — Étude perspicace des Écritures",
@@ -1570,8 +1560,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Genèse 25:24-34 ; 26:34-35 ; 27:30-45 ; 32:3-23 ; 33:1-16 ; Hébreux 12:16-17",
     "location": "Canaan, puis la région montagneuse de Séïr.",
-    "relationshipWithJehovah": "La Bible utilise Ésaü comme exemple d’un homme qui ne valorisa pas suffisamment les choses sacrées lorsqu’il vendit son droit d’aînesse.",
-    "didYouKnow": "Ésaü reçut le nom d’Édom, qui signifie « rouge », en lien avec l’épisode du plat de potage rouge qu’il demanda à Jacob.",
+    "relationshipWithJehovah": "Le récit d’Ésaü met surtout en évidence ses choix personnels : il méprisa son droit d’aînesse et épousa des femmes qui furent une source d’amertume pour Isaac et Rébecca. Hébreux le présente ensuite comme un avertissement concernant les choses sacrées.",
+    "didYouKnow": "Ésaü fut aussi appelé Édom, nom lié à la couleur rouge du plat pour lequel il vendit son droit d’aînesse.",
     "jwResources": [
       {
         "title": "Ésaü — Étude perspicace des Écritures",
@@ -1620,7 +1610,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "Genèse 14:17-24 ; Psaume 110:1-4 ; Hébreux 5:5-10 ; 7:1-28",
     "location": "Salem, généralement identifiée à l’ancienne Jérusalem.",
     "relationshipWithJehovah": "Melkisédek servait comme prêtre du Dieu Très-Haut et bénit Abraham au nom de Jéhovah.",
-    "didYouKnow": "Melkisédek est présenté dans Hébreux comme n’ayant ni généalogie rapportée ni succession sacerdotale mentionnée dans le récit de la Genèse, ce qui sert à illustrer le caractère particulier du sacerdoce de Jésus.",
+    "didYouKnow": "Melkisédek était roi de Salem et prêtre du Dieu Très-Haut. Il bénit Abraham après sa victoire sur les rois ennemis.",
     "jwResources": [
       {
         "title": "Melkisédec — Étude perspicace des Écritures",
@@ -1637,10 +1627,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "identity": "Melkisédec était roi de Salem et prêtre du Dieu Très-Haut, Jéhovah. Il bénit Abraham après sa victoire sur des rois ennemis.",
     "era": "Avant 1933 av. n. è.",
-    "familyAndEntourage": [
-      "Abraham",
-      "Jéhovah"
-    ],
+    "familyAndEntourage": ["Abraham"],
     "bibleAccount": [
       "Il rencontre Abraham après la bataille contre Kedorlaomer et ses alliés.",
       "Il apporte du pain et du vin.",
@@ -1667,8 +1654,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Exode 2:16-22 ; 18:1-27",
     "location": "Madian puis le désert près du Sinaï.",
-    "relationshipWithJehovah": "Jéthro reconnut la supériorité de Jéhovah après avoir entendu ce qu’il avait fait pour Israël et offrit un sacrifice à Dieu.",
-    "didYouKnow": "Jéthro observa que Moïse passait toute la journée à juger le peuple et lui proposa de choisir des hommes capables pour l’aider.",
+    "relationshipWithJehovah": "Jéthro reconnut la supériorité de Jéhovah après avoir entendu ce qu’il avait fait pour Israël. Il se réjouit avec Moïse et offrit un sacrifice au vrai Dieu.",
+    "didYouKnow": "Jéthro conseilla à Moïse de déléguer une partie du travail judiciaire à des hommes capables afin de ne pas porter seul toute la charge.",
     "jwResources": [
       {
         "title": "Jéthro — Étude perspicace des Écritures",
@@ -1716,8 +1703,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Exode 2:21-22 ; 4:18-26 ; 18:1-6",
     "location": "Madian et sur la route vers l’Égypte.",
-    "relationshipWithJehovah": "Séphora agit rapidement pour respecter l’exigence de la circoncision, ce qui contribua à préserver la vie de Moïse dans l’épisode rapporté en Exode 4.",
-    "didYouKnow": "Séphora appela Moïse « époux de sang » après avoir circoncis leur fils, expression liée à la circoncision.",
+    "relationshipWithJehovah": "Lors d’une situation grave sur le chemin de l’Égypte, Séphora circoncit rapidement son fils conformément à l’exigence divine. Le récit montre l’importance qu’elle accordait à cette obligation.",
+    "didYouKnow": "Séphora était la fille de Jéthro et la femme de Moïse ; elle lui donna deux fils, Guershom et Éliézer.",
     "jwResources": [
       {
         "title": "Séphora — Les personnages de la Bible",
@@ -1766,8 +1753,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Nombres 16:1-50 ; 26:9-11 ; Psaumes 42, 44-49, 84-85, 87-88",
     "location": "Désert, dans le camp d’Israël.",
-    "relationshipWithJehovah": "Qorah se rebella contre des dispositions établies par Jéhovah et fut puni pour sa rébellion.",
-    "didYouKnow": "Nombres 26:11 précise que les fils de Qorah ne moururent pas, et plusieurs Psaumes furent ensuite associés aux descendants de Qorah.",
+    "relationshipWithJehovah": "Qorah contesta l’autorité que Jéhovah avait confiée à Moïse et Aaron. Sa rébellion eut de graves conséquences pour lui et ses partisans.",
+    "didYouKnow": "Les fils de Qorah survécurent à la rébellion ; leurs descendants furent ensuite associés au service musical du temple.",
     "jwResources": [
       {
         "title": "Coré — Les personnages de la Bible",
