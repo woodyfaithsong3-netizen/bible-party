@@ -131,6 +131,21 @@ if (falseTrueFalseCount !== 250) failures.push('false true/false count unexpecte
 if (malformedNumericArtifacts.length) failures.push('numeric artifacts detected: ' + [...new Set(malformedNumericArtifacts)].slice(0, 10).join(', '));
 if (duplicateOptionBlocks.length) failures.push('quiz cards with duplicate options: ' + duplicateOptionBlocks.length);
 if (malformedQuestionStrings.length) failures.push('malformed quiz question strings: ' + malformedQuestionStrings.length);
+
+// Toutes les catégories affichées par le jeu doivent appartenir au catalogue éditorial.
+const allowedCategories = new Set([
+  'Questions bibliques',
+  'Que veulent dire ces versets ?',
+  'La Bible et l’Histoire',
+  'La Bible et la science',
+  'Personnages',
+  'Évangiles',
+  'Rois & prophètes',
+  'Prophéties',
+]);
+const rawCategories = [...dedicatedSource.matchAll(/category:\s*['"]([^'"]+)['"]/g)].map(m => m[1].trim());
+const characterCategoriesOutsidePersonnages = rawCategories.filter(c => c === 'Révision des 125 fiches');
+if (characterCategoriesOutsidePersonnages.length) failures.push('dedicated character questions still use the old revision category: ' + characterCategoriesOutsidePersonnages.length);
 const answerPositionTotal = answerPositionCounts.reduce((sum, item) => sum + item.count, 0);
 if (answerPositionTotal !== 1250 || answerPositionCounts.some(item => item.count < 250)) failures.push('unbalanced correct answer positions: ' + JSON.stringify(answerPositionCounts));
 
