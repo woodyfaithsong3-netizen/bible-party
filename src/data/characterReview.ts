@@ -199,7 +199,11 @@ export async function getReviewStats(): Promise<{ total: number; due: number; ma
   const now = Date.now();
   const due = entries.filter(([id]) => !mastery[id] || mastery[id].nextReviewAt <= now).length;
   const mastered = entries.filter(([id]) => (mastery[id]?.level ?? 0) >= 4).length;
-  return { total: entries.length, due, mastered, learning: entries.length - mastered };
+  const learning = entries.filter(([id]) => {
+    const item = mastery[id];
+    return Boolean(item && item.level > 0 && item.level < 4);
+  }).length;
+  return { total: entries.length, due, mastered, learning };
 }
 
 export async function getDueCharacterIds(): Promise<string[]> {
@@ -216,7 +220,10 @@ export async function getDueCharacterIds(): Promise<string[]> {
 export async function getErrorCharacterIds(): Promise<string[]> {
   const mastery = await loadCharacterMastery();
   return entries
-    .filter(([id]) => (mastery[id]?.wrong ?? 0) > 0)
+    .filter(([id]) => {
+      const item = mastery[id];
+      return Boolean(item && item.wrong > 0 && item.streak === 0);
+    })
     .sort((a, b) => {
       const wrongDiff = (mastery[b[0]]?.wrong ?? 0) - (mastery[a[0]]?.wrong ?? 0);
       if (wrongDiff !== 0) return wrongDiff;
