@@ -47,6 +47,30 @@ const characterCounts = new Map();
 for (const id of characterIds) characterCounts.set(id, (characterCounts.get(id) ?? 0) + 1);
 const characterCoverage = characterCounts.size;
 const characterCountFailures = [...characterCounts.entries()].filter(([, n]) => n !== 16);
+
+const cardRecords = [...dedicatedSource.matchAll(
+  /type:\s*['"](quiz|truefalse|mystery)['"][\\s\\S]{0,900}?characterId:\s*['"]([^'"]+)['"][\\s\\S]{0,300}?difficulty:\s*['"](easy|medium|hard|expert)['"]/g
+)].map(m => ({ type: m[1], characterId: m[2], difficulty: m[3] }));
+
+const perCharacterTypeFailures = [];
+const perCharacterDifficultyFailures = [];
+for (const id of new Set(characterIds)) {
+  const cards = cardRecords.filter(card => card.characterId === id);
+  const typeCounts = Object.fromEntries(['quiz','truefalse','mystery'].map(type => [
+    type,
+    cards.filter(card => card.type === type).length,
+  ]));
+  const diffCounts = Object.fromEntries(['easy','medium','hard','expert'].map(diff => [
+    diff,
+    cards.filter(card => card.difficulty === diff).length,
+  ]));
+  if (typeCounts.quiz !== 10 || typeCounts.truefalse !== 4 || typeCounts.mystery !== 2) {
+    perCharacterTypeFailures.push({ id, ...typeCounts });
+  }
+  if (diffCounts.easy !== 3 || diffCounts.medium !== 4 || diffCounts.hard !== 5 || diffCounts.expert !== 4) {
+    perCharacterDifficultyFailures.push({ id, ...diffCounts });
+  }
+}
 const difficultyCounts = Object.fromEntries(['easy','medium','hard','expert'].map(d => [d, [...dedicatedSource.matchAll(new RegExp(`difficulty:\\s*['"]${d}['"]`, 'g'))].length]));
 
 
@@ -84,6 +108,8 @@ if (invalidQuizIndexes.length) failures.push('invalid quiz correctAnswer indexes
 if (expertCards !== 500) failures.push('dedicated expert card count unexpectedly changed: ' + expertCards);
 if (characterCoverage !== 125) failures.push('character coverage unexpectedly changed: ' + characterCoverage);
 if (characterCountFailures.length) failures.push('character question count != 16: ' + characterCountFailures.map(([id,n]) => id + ' x' + n).join(', '));
+if (perCharacterTypeFailures.length) failures.push('per-character type distribution != 10 quiz + 4 truefalse + 2 mystery: ' + JSON.stringify(perCharacterTypeFailures.slice(0, 10)));
+if (perCharacterDifficultyFailures.length) failures.push('per-character difficulty distribution != 3 easy + 4 medium + 5 hard + 4 expert: ' + JSON.stringify(perCharacterDifficultyFailures.slice(0, 10)));
 
 if (quizCount !== 1250) failures.push('dedicated quiz count unexpectedly changed: ' + quizCount);
 if (trueFalseCount !== 500) failures.push('dedicated true/false count unexpectedly changed: ' + trueFalseCount);
