@@ -1659,11 +1659,54 @@ const characterReviewMystery: MysteryQuestion[] = [];
 const characterReviewChallenges: Challenge[] = [];
 
 const characterReviewEntries = Object.entries(characterLearning);
-const characterReviewNames = characterReviewEntries.map(([id, data]) => {
-  const identity = data.identity ?? id.replace(/_/g, ' ');
-  const beforeDash = identity.split(/\s+[—–-]\s+/)[0].trim();
-  return beforeDash || id.replace(/_/g, ' ');
-});
+
+const characterReviewNameOverrides: Record<string, string> = {
+  adam: 'Adam',
+  sarah: 'Sara',
+  moise: 'Moïse',
+  david: 'David',
+  salomon: 'Salomon',
+  pierre: 'Pierre',
+  paul: 'Paul',
+  jean: 'Jean',
+  naomi: 'Noémi',
+  boaz: 'Boaz',
+  elisha: 'Élisée',
+  mary_magdalen: 'Marie Madeleine',
+  mary_bethany: 'Marie de Béthanie',
+  joseph_arimathea: 'Joseph d’Arimathie',
+  joseph_jesus_father: 'Joseph, père adoptif de Jésus',
+  joseph_caiaphas: 'Joseph Caïphe',
+  james_zebedee: 'Jacques fils de Zébédée',
+  james_brother_jesus: 'Jacques frère de Jésus',
+  james_alphaaeus: 'Jacques fils d’Alphée',
+  jude_brother_jesus: 'Jude frère de Jésus',
+  philip_evangelizer: 'Philippe l’évangélisateur',
+  philip_apostle: 'Philippe l’apôtre',
+  bartholomew: 'Barthélémy',
+  simon_zealot: 'Simon le Zélote',
+  jairus_daughter: 'Fille de Jaïrus',
+  mary_mother_james: 'Marie mère de Jacques',
+  mary_mark_mother: 'Marie mère de Jean-Marc',
+  zechariah_priest: 'Zacharie père de Jean',
+  joel: 'Joël',
+  micah: 'Michée',
+  obadiah: 'Obadia',
+  nahum: 'Nahoum',
+};
+
+const extractCharacterReviewName = (id: string, identity: string): string => {
+  if (characterReviewNameOverrides[id]) return characterReviewNameOverrides[id];
+  const afterDash = identity.split(/\s+[—–-]\s+/)[1];
+  const firstSentence = (afterDash ?? identity).split(/[.!?]/)[0].trim();
+  const withoutDescription = firstSentence.split(/\s+(?:était|était|est|fut|devint|devient|a été|a\s+été)\s+/i)[0].trim();
+  const firstClause = withoutDescription.split(/,\s+/)[0].trim();
+  return firstClause || id.replace(/_/g, ' ');
+};
+
+const characterReviewNames = characterReviewEntries.map(([id, data]) =>
+  extractCharacterReviewName(id, data.identity ?? id.replace(/_/g, '')),
+);
 
 for (let i = 0; i < characterReviewEntries.length; i += 1) {
   const [id, data] = characterReviewEntries[i];
