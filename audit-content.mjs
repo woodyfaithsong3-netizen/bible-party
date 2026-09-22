@@ -19,7 +19,7 @@ const emptyReferences = references.length !== references.filter(Boolean).length;
 
 const quizBlocks = [...source.matchAll(
   /type:\s*['"]quiz['"][\s\S]{0,900}?answers:\s*\[([^\]]+)\],\s*correctAnswer:\s*(\d+)/g
-)];
+)].filter(m => /^\s*['"]/.test(m[1]));
 const invalidQuizIndexes = quizBlocks.filter(m => {
   const answerCount = (m[1].match(/['"]/g) ?? []).length / 2;
   return Number(m[2]) < 0 || Number(m[2]) >= answerCount;
