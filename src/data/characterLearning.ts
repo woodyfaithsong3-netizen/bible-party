@@ -35,14 +35,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Premier homme — Adam apparaît au début du récit biblique comme le premier homme créé et placé dans le jardin d’Éden.",
@@ -57,9 +49,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Reçoit une mission concernant la terre et les animaux.",
       "Désobéit au commandement concernant l’arbre de la connaissance du bon et du mauvais."
     ],
-    "qualities": [
-      "Responsabilité personnelle",
-      "Importance de l’obéissance"
+    "qualities":     [
+      "Responsabilité",
+      "Capacité à exercer sa liberté de choix"
     ],
     "difficulties": [
       "Il a dû exercer sa responsabilité dans un cadre parfait tout en respectant une limite précise fixée par Jéhovah.",
@@ -82,10 +74,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Marche courageusement avec Dieu — Noé",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/noe-a-condamne-le-monde/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Noé — Étude perspicace des Écritures",
@@ -117,9 +105,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance",
       "Courage"
     ],
-    "difficulties": [
-      "Il doit accomplir pendant des années une tâche extraordinaire dans un monde qui ne partage pas sa foi et avertir des personnes peu réceptives."
-    ]
+    "difficulties":     [
+      "Il doit accomplir pendant des années une tâche extraordinaire dans un monde qui ne partage pas sa foi et avertir des personnes peu réceptives.",
+      "Il doit rester fidèle et protéger sa famille alors que la violence et la corruption dominent la société qui l’entoure."
+    ],
   },
   "abraham": {
     "studyFocus": "Abraham fut appelé par Jéhovah à quitter Our et à se rendre dans un pays qu’il lui montrerait. Il devint l’ancêtre d’une grande descendance promise et montra sa foi par de nombreux actes d’obéissance. Sa vie fut marquée par des déplacements, des épreuves et des promesses concernant la descendance et la bénédiction des nations.",
@@ -141,10 +130,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Marche courageusement avec Dieu — Abraham",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/abraham-a-ete-le-premier-a-mener-une-guerre-juste/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Abraham : « Le père de tous ceux qui ont foi »",
@@ -201,14 +186,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Épouse d’Abraham et mère d’Isaac — Sarah a vécu les promesses faites à Abraham et est devenue mère d’Isaac malgré son âge avancé.",
@@ -253,10 +230,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Marche courageusement avec Dieu — Jacob",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/jacob-a-protege-sa-famille/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
         "title": "Événements de la vie de Jacob",
@@ -314,10 +287,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/patriarches-juges/joseph-a-resiste-a-la-tentation/"
       },
       {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
         "title": "Joseph — Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Joseph/"
       }
@@ -370,14 +339,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Prophète et médiateur d’Israël — Moïse conduit Israël hors d’Égypte et reçoit la Loi au mont Sinaï.",
@@ -424,14 +385,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Josué, fils de Noun, servit Moïse avant de lui succéder comme dirigeant d’Israël. Il conduisit le peuple dans la conquête et la répartition de la Terre promise.",
@@ -456,9 +409,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Obéissance",
       "Fidélité"
     ],
-    "difficulties": [
-      "Il doit diriger une nation après Moïse et affronter des ennemis nombreux tout en restant attaché aux instructions de Jéhovah."
-    ]
+    "difficulties":     [
+      "Il doit prendre la direction d’Israël après Moïse et affronter des peuples puissants dans la conquête de Canaan.",
+      "Il doit rester courageux et suivre précisément les instructions de Jéhovah, même lorsque la stratégie demandée paraît inhabituelle."
+    ],
   },
   "ruth": {
     "studyFocus": "Ruth était une Moabite qui choisit de quitter son pays pour rester avec Noémi et adorer Jéhovah. Elle travailla humblement dans les champs de Boaz, qui devint son racheteur et son mari. Leur fils Obed fut l’ancêtre du roi David et Ruth figure dans la généalogie de Jésus.",
@@ -480,14 +434,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Ruth était une Moabite devenue veuve qui choisit de rester avec sa belle-mère Naomi et d’adorer Jéhovah. Elle devint l’épouse de Boaz et une ancêtre de David.",
@@ -510,9 +456,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Travail",
       "Amour désintéressé"
     ],
-    "difficulties": [
-      "Elle est veuve et étrangère en Juda, sans sécurité matérielle assurée, mais elle persévère aux côtés de Naomi."
-    ]
+    "difficulties":     [
+      "Elle devient veuve dans un pays étranger et doit recommencer sa vie avec Naomi en Juda.",
+      "Elle doit trouver de quoi vivre en glanant et attendre de savoir si Boaz pourra agir comme racheteur."
+    ],
   },
   "samuel": {
     "studyFocus": "Samuel servit Jéhovah dès son enfance sous la surveillance du prêtre Éli. Il devint prophète, juge et porte-parole de Dieu. Il participa à l’établissement de Saül comme roi puis, sur ordre de Jéhovah, oignit David comme futur roi.",
@@ -534,14 +481,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Samuel était prophète, juge et serviteur de Jéhovah dès son enfance. Il joua un rôle majeur dans la transition d’Israël vers la royauté.",
@@ -566,9 +505,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Impartialité"
     ],
-    "difficulties": [
-      "Il doit annoncer des jugements difficiles, notamment à Éli et à Saül, et accepter les changements que Jéhovah apporte à la direction de la nation."
-    ]
+    "difficulties":     [
+      "Il grandit dans un contexte où les fils d’Éli donnent un mauvais exemple et où le culte à Silo connaît de graves problèmes.",
+      "Il doit transmettre des messages de Jéhovah, y compris des messages difficiles, puis guider la nation pendant la transition vers la royauté."
+    ],
   },
   "david": {
     "studyFocus": "David fut berger, musicien, guerrier puis roi d’Israël. Il fut choisi par Jéhovah alors qu’il était encore jeune et devint célèbre après avoir vaincu Goliath. Sa vie connut aussi de graves fautes, mais il accepta les reproches et manifesta une profonde repentance.",
@@ -590,14 +530,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Roi d’Israël — David a servi comme roi d’Israël et a connu à la fois de grandes victoires et de graves erreurs.",
@@ -646,14 +578,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Roi et bâtisseur du temple — Salomon demande de la sagesse et construit le temple de Jérusalem, mais sa fin de règne comporte aussi de graves problèmes.",
@@ -695,16 +619,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89li-I/"
       },
       {
-        "title": "Bible en ligne — récit de 1 Samuel",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Élie était un prophète de Jéhovah qui combattit avec courage le culte de Baal dans le royaume d’Israël.",
@@ -752,14 +668,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Esther, aussi appelée Hadassa, était une Juive devenue reine de Perse. Elle risqua sa vie pour intervenir en faveur de son peuple menacé d’extermination.",
@@ -807,14 +715,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Daniel était un jeune Juif emmené à Babylone. Il servit dans plusieurs administrations impériales tout en restant fidèle à Jéhovah.",
@@ -859,14 +759,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "location": "Désert de Judée et région du Jourdain.",
@@ -917,14 +809,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Marie est la mère de Jésus. Elle est une descendante de David et a accepté avec foi la mission extraordinaire qui lui a été confiée.",
@@ -947,9 +831,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Réflexion",
       "Courage"
     ],
-    "difficulties": [
-      "Elle a dû supporter la douleur de voir son fils rejeté et exécuté."
-    ]
+    "difficulties":     [
+      "Elle doit accepter une mission extraordinaire alors qu’elle est une jeune femme et supporter les conséquences sociales possibles de sa grossesse.",
+      "Elle doit ensuite voir son fils rejeté et exécuté tout en restant fidèle et proche de lui."
+    ],
   },
   "pierre": {
     "studyFocus": "Pierre fut l’un des douze apôtres et un proche compagnon de Jésus. Il commettait des erreurs, mais il se repentit et devint un témoin courageux.",
@@ -970,14 +855,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Apôtre — Pierre est l’un des principaux apôtres et joue un rôle important dans les débuts de la congrégation chrétienne.",
@@ -999,9 +876,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Courage",
       "Repentir"
     ],
-    "difficulties": [
-      "Son exemple montre aussi qu’un disciple peut trébucher et se relever."
-    ]
+    "difficulties":     [
+      "Il a parfois parlé ou agi de façon impulsive, notamment lorsqu’il a tenté d’empêcher Jésus de parler de sa mort et lorsqu’il l’a renié.",
+      "Après son reniement, il doit surmonter sa douleur et retrouver progressivement confiance pour assumer de grandes responsabilités dans la congrégation."
+    ],
   },
   "paul": {
     "studyFocus": "Paul, autrefois appelé Saul de Tarse, devint un apôtre des nations après avoir rencontré Jésus ressuscité. Il parcourut de nombreuses régions pour prêcher, aider les congrégations et défendre la bonne nouvelle. Malgré les persécutions, les emprisonnements et les difficultés, il continua sa mission.",
@@ -1023,14 +901,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Apôtre et missionnaire — Paul est passé de persécuteur des disciples à prédicateur zélé du christianisme.",
@@ -1081,14 +951,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Apôtre de Jésus et rédacteur biblique, frère de Jacques fils de Zébédée. Il faisait partie des trois apôtres particulièrement proches de Jésus.",
@@ -1111,9 +973,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance",
       "Courage dans le témoignage"
     ],
-    "difficulties": [
-      "Avec Jacques, il a parfois manifesté une ambition personnelle concernant une place importante dans le Royaume."
-    ]
+    "difficulties":     [
+      "Avec Jacques, il a parfois manifesté une ambition personnelle concernant une place importante dans le Royaume.",
+      "Il doit rester fidèle pendant les dernières décennies de la congrégation primitive, alors que l’opposition et l’apostasie se développent."
+    ],
   },
   "isaac": {
     "studyFocus": "Isaac était le fils d’Abraham et de Sara et le père d’Ésaü et de Jacob. Il fut l’enfant de la promesse et vécut principalement en Canaan. Son mariage avec Rébecca et sa vie de famille contribuèrent à la continuité de la promesse faite à Abraham.",
@@ -1139,10 +1002,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Isaac était le fils promis d’Abraham et de Sara, mari de Rébecca et père d’Ésaü et de Jacob.",
@@ -1188,10 +1047,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Samson/"
       },
       {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
         "title": "Étude perspicace des Écritures",
         "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
       },
@@ -1224,9 +1079,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle contre les ennemis d’Israël",
       "Foi manifestée dans sa dernière prière"
     ],
-    "difficulties": [
-      "Il est attiré par des femmes étrangères et prend des décisions impulsives. Sa relation avec Dalila conduit à sa capture et à sa cécité."
-    ]
+    "difficulties":     [
+      "Ses choix amoureux et son manque de maîtrise de soi l’exposent à la manipulation et contribuent à sa capture par les Philistins.",
+      "Après avoir perdu sa force et sa liberté, il doit supporter l’humiliation, l’aveuglement et le travail forcé avant de retrouver sa confiance en Jéhovah."
+    ],
   },
   "naomi": {
     "studyFocus": "Noémi était la belle-mère de Ruth et la femme d’Élimélek. Après la mort de son mari et de ses deux fils, elle retourna de Moab à Bethléhem avec Ruth. Sa belle-fille resta attachée à elle et participa finalement à la lignée de David.",
@@ -1245,10 +1101,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "location": "Bethléhem en Juda et Moab.",
@@ -1297,10 +1149,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "La Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "location": "Bethléem, en Juda.",
@@ -1348,14 +1196,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — Traduction du monde nouveau",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "location": "Royaume d’Israël, notamment autour de Samarie et du Jourdain.",
