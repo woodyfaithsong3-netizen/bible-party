@@ -4863,8 +4863,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Michée 1:1-16 ; 3:1-12 ; 4:1-5 ; 5:1-5 ; 6:6-8",
     "location": "Juda, particulièrement les régions rurales et Jérusalem.",
-    "relationshipWithJehovah": "Michée transmit courageusement les jugements et les promesses de Jéhovah et rappela ce que Dieu attend de ceux qui veulent lui plaire.",
-    "didYouKnow": "Michée 5:2 identifie Bethléem Éphrata comme le lieu d’où sortirait un futur dirigeant en Israël, prophétie appliquée à Jésus.",
+    "relationshipWithJehovah": "Michée annonça fidèlement les messages de Jéhovah et dénonça l’injustice, l’oppression et le faux culte. Il rappela aussi que Jéhovah demande à ses serviteurs d’exercer la justice, d’aimer la fidélité et de marcher modestement avec lui.",
+    "didYouKnow": "Michée annonça qu’un dirigeant sortirait de Bethléhem Éphrata, prophétie que Matthieu appliqua à Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4903,8 +4903,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Abdias 1-21",
     "location": "Juda; le contexte de la prophétie concerne particulièrement Édom et Jérusalem.",
-    "relationshipWithJehovah": "Abdias transmit un message de jugement de Jéhovah contre Édom et une annonce de rétablissement pour son peuple.",
-    "didYouKnow": "Le livre d’Abdias est le plus court des livres prophétiques des Écritures hébraïques, avec seulement 21 versets.",
+    "relationshipWithJehovah": "Obadia transmit le jugement de Jéhovah contre Édom pour son attitude envers Juda. Son message souligne que Jéhovah voit les actes commis contre son peuple et demande des comptes.",
+    "didYouKnow": "Le livre d’Obadia est le plus court des livres prophétiques des Écritures hébraïques, avec un seul chapitre.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4943,8 +4943,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Joël 1:1-20 ; 2:1-32 ; 3:1-21",
     "location": "Juda et Jérusalem.",
-    "relationshipWithJehovah": "Joël exhorta le peuple à revenir vers Jéhovah et rappela que Dieu est miséricordieux envers ceux qui se repentent sincèrement.",
-    "didYouKnow": "Actes 2:16-21 applique aux événements de la Pentecôte la prophétie de Joël concernant l’effusion de l’esprit saint.",
+    "relationshipWithJehovah": "Joël appela le peuple à revenir à Jéhovah de tout son cœur et annonça une restauration après le jugement. Son message met l’accent sur la miséricorde et la compassion de Jéhovah.",
+    "didYouKnow": "Pierre cita la prophétie de Joël concernant l’effusion de l’esprit saint le jour de la Pentecôte.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -4983,8 +4983,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Nahum 1:1-15 ; 2:1-13 ; 3:1-19",
     "location": "Juda et Ninive, en Assyrie.",
-    "relationshipWithJehovah": "Nahum transmit le jugement de Jéhovah contre Ninive et rappela que Jéhovah est un refuge pour ceux qui se réfugient en lui.",
-    "didYouKnow": "La prophétie de Nahum annonce la chute de Ninive, qui fut finalement détruite par les forces des Mèdes et des Babyloniens.",
+    "relationshipWithJehovah": "Nahoum annonça le jugement de Jéhovah contre Ninive et montra en même temps que Jéhovah est un refuge pour ceux qui se confient en lui.",
+    "didYouKnow": "La prophétie de Nahoum décrit la chute de Ninive, capitale de l’Assyrie, puissance qui avait opprimé de nombreux peuples.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5023,8 +5023,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Luc 1:5-25 ; 57-80",
     "location": "Juda, notamment le temple de Jérusalem et la région montagneuse où vivait sa famille.",
-    "relationshipWithJehovah": "Zacharie était décrit comme juste devant Dieu avec Élisabeth. Après l’accomplissement de la promesse, il loua Jéhovah et prophétisa sous l’action de l’esprit saint.",
-    "didYouKnow": "Zacharie appartenait à la division sacerdotale d’Abia, et son service au temple fut le contexte de l’annonce concernant Jean.",
+    "relationshipWithJehovah": "Zekaria, père de Jean le Baptiseur, servait comme prêtre et reçut une annonce angélique concernant la naissance de son fils. Après avoir douté du message, il retrouva la parole et loua Jéhovah.",
+    "didYouKnow": "Zekaria resta muet depuis le moment où Gabriel lui annonça la naissance de Jean jusqu’à la circoncision de l’enfant, lorsqu’il écrivit son nom sur une tablette.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5066,8 +5066,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Luc 1:5-25 ; 39-45 ; 57-66",
     "location": "La région montagneuse de Juda.",
-    "relationshipWithJehovah": "Élisabeth fut bénie par Jéhovah avec une grossesse tardive et parla sous l’action de l’esprit saint lorsqu’elle accueillit Marie.",
-    "didYouKnow": "Élisabeth était parente de Marie et était déjà enceinte de six mois lorsque Gabriel annonça à Marie sa propre grossesse.",
+    "relationshipWithJehovah": "Élisabeth était décrite comme juste devant Dieu et observait fidèlement ses commandements. Elle reconnut sous l’influence de l’esprit saint le rôle particulier de Marie et de l’enfant qu’elle portait.",
+    "didYouKnow": "Élisabeth était une parente de Marie et était déjà âgée lorsqu’elle conçut Jean le Baptiseur.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5109,8 +5109,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Matthieu 1:18-25 ; 2:13-23 ; Luc 2:1-52 ; Jean 1:45 ; 6:42",
     "location": "Bethléem, Égypte et Nazareth.",
-    "relationshipWithJehovah": "Joseph obéit aux instructions reçues de Jéhovah et assuma fidèlement ses responsabilités envers Marie et Jésus.",
-    "didYouKnow": "Joseph n’est plus mentionné dans les récits du ministère public de Jésus; cela peut indiquer qu’il était décédé auparavant, mais la Bible ne précise pas les circonstances de sa mort.",
+    "relationshipWithJehovah": "Joseph était un homme juste qui obéit aux instructions reçues de Jéhovah par l’intermédiaire des anges. Il protégea Jésus en acceptant de prendre Marie comme femme et en emmenant la famille en Égypte.",
+    "didYouKnow": "Joseph exerçait le métier de charpentier et apprit ce métier à Jésus, qui fut lui-même appelé « le charpentier ».",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5152,8 +5152,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Matthieu 26:57-68 ; Jean 11:45-53 ; 18:12-24",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Bien qu’il occupe la fonction de grand prêtre, Caïphe rejeta Jésus et participa à sa condamnation; sa conduite contraste avec la fidélité demandée à un représentant du culte de Jéhovah.",
-    "didYouKnow": "Caïphe était le grand prêtre cette année-là, et Jean rapporte qu’il avait déclaré qu’il était avantageux qu’un seul homme meure pour le peuple.",
+    "relationshipWithJehovah": "Caïphe occupait la fonction de grand prêtre au moment du procès de Jésus. La Bible rapporte ses décisions et ses paroles, mais ne le présente pas comme un adorateur fidèle de Jéhovah.",
+    "didYouKnow": "Caïphe prophétisa, sans comprendre pleinement la portée de ses paroles, qu’il était avantageux qu’un seul homme meure pour le peuple.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5191,8 +5191,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Luc 8:1-3 ; 23:55-56 ; 24:1-10",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Jeanne manifesta sa reconnaissance envers Dieu en soutenant fidèlement le ministère de Jésus.",
-    "didYouKnow": "Jeanne était la femme de Chuza, intendant d’Hérode, et faisait partie des femmes qui fournissaient leurs biens pour soutenir Jésus et les Douze.",
+    "relationshipWithJehovah": "Jeanne comptait parmi les femmes qui avaient été guéries par Jésus et qui le soutenaient avec leurs ressources. Elle faisait partie de celles qui annoncèrent aux apôtres que le tombeau était vide.",
+    "didYouKnow": "Jeanne était la femme de Chuza, intendant d’Hérode, et faisait partie des femmes qui accompagnèrent Jésus et ses apôtres.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5235,8 +5235,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Luc 17:11-19",
     "location": "Entre la Samarie et la Galilée.",
-    "relationshipWithJehovah": "Sa gratitude pour la guérison l’amena à glorifier Dieu et à revenir remercier Jésus.",
-    "didYouKnow": "Jésus souligna que le seul lépreux revenu pour rendre gloire à Dieu était un Samaritain.",
+    "relationshipWithJehovah": "Le Samaritain guéri de la lèpre revint vers Jésus, glorifia Dieu et le remercia. Jésus souligna sa foi, alors que les autres guéris n’étaient pas revenus pour rendre gloire à Dieu.",
+    "didYouKnow": "Il était le seul des dix lépreux guéris à revenir remercier Jésus, et il était Samaritain.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5278,8 +5278,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Marc 5:25-34 ; Luc 8:43-48 ; Matthieu 9:20-22",
     "location": "Galilée, dans la région de Capharnaüm.",
-    "relationshipWithJehovah": "Sa confiance en Jésus témoignait de sa foi dans le pouvoir de guérison que Jéhovah lui avait accordé.",
-    "didYouKnow": "Jésus sentit qu’une force était sortie de lui lorsqu’elle toucha son vêtement et demanda qui l’avait touché.",
+    "relationshipWithJehovah": "La femme qui souffrait d’une perte de sang depuis douze ans manifesta une grande foi en Jésus. Elle pensait qu’il lui suffirait de toucher son vêtement pour être guérie.",
+    "didYouKnow": "Elle dépensait tout ce qu’elle avait pour des médecins sans être guérie avant de s’approcher de Jésus.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5320,8 +5320,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Marc 5:1-20 ; Luc 8:26-39",
     "location": "Région des Géraséniens, à l’est de la mer de Galilée.",
-    "relationshipWithJehovah": "Après sa délivrance, il témoigna de ce que Dieu avait fait pour lui et devint un proclamateur local du pouvoir de Dieu.",
-    "didYouKnow": "Jésus lui demanda de retourner chez lui et de raconter tout ce que Jéhovah avait fait pour lui ; il proclama alors dans toute la ville ce que Jésus avait fait.",
+    "relationshipWithJehovah": "L’homme possédé de la région des Géraséniens fut libéré par Jésus d’une situation profondément éprouvante. Il voulut ensuite accompagner Jésus, mais Jésus lui demanda de retourner chez lui et de raconter ce que Dieu avait fait pour lui.",
+    "didYouKnow": "Après sa guérison, l’homme annonça dans toute la ville ce que Jésus avait fait pour lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5362,8 +5362,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 17:1-9 ; Romains 16:21",
     "location": "Thessalonique, en Macédoine.",
-    "relationshipWithJehovah": "Jason soutint les prédicateurs chrétiens et accepta les conséquences de son hospitalité.",
-    "didYouKnow": "Les adversaires accusèrent Jason et les autres frères de soutenir un prétendu roi rival de César, Jésus.",
+    "relationshipWithJehovah": "Jason accueillit Paul et Silas à Thessalonique et fut ensuite entraîné dans l’opposition suscitée par la prédication. Il fournit une caution aux autorités pour éviter de nouveaux troubles.",
+    "didYouKnow": "Une foule hostile accusa Paul et Silas d’agir contre les décrets de César et prétendit qu’ils disaient qu’un autre roi, Jésus, existait.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5405,8 +5405,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "2 Timothée 1:15-18 ; 4:19",
     "location": "Éphèse et Rome.",
-    "relationshipWithJehovah": "Onésiphore servit courageusement les chrétiens et Paul demanda que Jéhovah accorde miséricorde à sa maison.",
-    "didYouKnow": "Paul se souvenait particulièrement des nombreux services qu’Onésiphore lui avait rendus à Éphèse.",
+    "relationshipWithJehovah": "Onésiphore rechercha Paul et le réconforta, même pendant la captivité de l’apôtre. Paul pria pour que la miséricorde de Jéhovah soit accordée à sa maisonnée.",
+    "didYouKnow": "Paul se souvenait qu’Onésiphore n’avait pas eu honte de ses chaînes et qu’il l’avait recherché avec empressement à Rome.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5448,8 +5448,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Matthieu 27:55-61 ; 28:1-10 ; Marc 15:40-47 ; 16:1-8",
     "location": "Galilée et Jérusalem.",
-    "relationshipWithJehovah": "Marie servit parmi les disciples de Jésus et participa au témoignage concernant sa mort et sa résurrection.",
-    "didYouKnow": "Marie mère de Jacques faisait partie des femmes qui préparèrent des aromates pour aller au tombeau après le sabbat.",
+    "relationshipWithJehovah": "Marie mère de Jacques comptait parmi les femmes qui suivirent Jésus et le soutinrent. Elle fut aussi présente après sa mort et participa aux événements liés à sa résurrection.",
+    "didYouKnow": "Marie mère de Jacques figurait parmi les femmes qui vinrent au tombeau avec des aromates et découvrirent qu’il était ouvert.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5490,8 +5490,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 12:5-17",
     "location": "Jérusalem.",
-    "relationshipWithJehovah": "Marie soutenait la congrégation en ouvrant sa maison aux disciples qui se réunissaient et priaient.",
-    "didYouKnow": "Lorsque Pierre fut libéré par l’ange, il se rendit directement à la maison de Marie, où plusieurs disciples étaient réunis pour prier.",
+    "relationshipWithJehovah": "Marie, mère de Jean-Marc, était une chrétienne dont la maison servait de lieu de réunion pour les disciples à Jérusalem. Les croyants s’y réunirent notamment pendant que Pierre était emprisonné.",
+    "didYouKnow": "Lorsque Pierre fut libéré miraculeusement, il se rendit à la maison de Marie, où de nombreux disciples étaient réunis et priaient.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5533,8 +5533,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philémon 1-2",
     "location": "Colosses, en Asie Mineure.",
-    "relationshipWithJehovah": "Apphia était une chrétienne associée à la congrégation qui se réunissait chez Philémon.",
-    "didYouKnow": "Paul adresse sa lettre non seulement à Philémon et Apphia, mais aussi à Archippe et à la congrégation qui se réunissait dans leur maison.",
+    "relationshipWithJehovah": "Apphia était une chrétienne associée à Philémon et à Archippe. Paul lui adressa personnellement sa lettre, ce qui indique qu’elle faisait partie des personnes concernées par la situation d’Onésime.",
+    "didYouKnow": "Apphia est saluée avec Philémon et Archippe au début de la lettre à Philémon, qui était probablement liée à leur foyer et à leur congrégation.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5570,8 +5570,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philémon 1-2 ; Colossiens 4:17",
     "location": "Colosses, en Asie Mineure.",
-    "relationshipWithJehovah": "Archippe avait reçu un ministère dans le Seigneur et Paul l’encouragea à le mener pleinement à bien.",
-    "didYouKnow": "Paul demanda aux Colossiens de dire à Archippe : « Continue à veiller à bien accomplir le ministère que tu as reçu dans le Seigneur. »",
+    "relationshipWithJehovah": "Archippe avait reçu un ministère dans le Seigneur et Paul l’encouragea à veiller à bien l’accomplir. Il était associé à Philémon et Apphia et à la congrégation qui se réunissait chez eux.",
+    "didYouKnow": "Paul demanda aux Colossiens de dire à Archippe de continuer à veiller à bien accomplir le ministère qu’il avait reçu dans le Seigneur.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5608,8 +5608,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 12:12,25 ; 13:5,13 ; 15:36-40 ; Colossiens 4:10 ; 2 Timothée 4:11 ; Philémon 24",
     "location": "Jérusalem, Antioche et diverses régions missionnaires.",
-    "relationshipWithJehovah": "Jean-Marc progressa dans le service chrétien et finit par être reconnu comme un collaborateur utile.",
-    "didYouKnow": "Marc est mentionné par Paul comme étant utile au ministère vers la fin de la vie de l’apôtre, malgré leur difficulté antérieure.",
+    "relationshipWithJehovah": "Jean-Marc progressa dans le service chrétien. Après avoir quitté Paul et Barnabas pendant leur premier voyage missionnaire, il retrouva la confiance de Paul et devint finalement un collaborateur utile.",
+    "didYouKnow": "À la fin de sa vie, Paul demanda à Timothée de faire venir Marc, car il lui était utile pour le ministère.",
     "jwResources": [
       {
         "title": "Marche courageusement avec Dieu — Marc",
@@ -5655,8 +5655,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 18:18-28 ; Romains 16:3-5 ; 1 Corinthiens 16:19 ; 2 Timothée 4:19",
     "location": "Corinthe, Éphèse et Rome.",
-    "relationshipWithJehovah": "Priscille servait Jéhovah avec Aquilas en combinant travail, prédication, enseignement et hospitalité.",
-    "didYouKnow": "Paul appelle Priscille et Aquilas ses « collaborateurs en Christ Jésus » et précise qu’ils ont risqué leur vie pour lui.",
+    "relationshipWithJehovah": "Priscille servait Jéhovah avec Aquilas en combinant travail, prédication, enseignement et hospitalité. Avec son mari, elle expliqua plus exactement la voie de Dieu à Apollos.",
+    "didYouKnow": "Paul appelle Priscille et Aquilas ses collaborateurs en Christ Jésus et dit qu’ils avaient risqué leur vie pour lui.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5703,8 +5703,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 21:31-40 ; 22:22-30 ; 23:10-35",
     "location": "Jérusalem et Césarée.",
-    "relationshipWithJehovah": "Le récit ne le présente pas comme adorateur de Jéhovah, mais ses interventions protégèrent Paul et permirent à celui-ci de poursuivre son témoignage.",
-    "didYouKnow": "Claude Lysias mobilisa des soldats, des cavaliers et des lanciers pour escorter Paul hors de Jérusalem jusqu’à Antipatris.",
+    "relationshipWithJehovah": "Le récit ne présente pas Claude Lysias comme adorateur de Jéhovah. Cependant, ses décisions administratives protégèrent Paul et permirent à l’apôtre de continuer à rendre témoignage.",
+    "didYouKnow": "Claude Lysias apprit que Paul était citoyen romain et prit alors des précautions particulières avant de le faire interroger et transférer.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5745,8 +5745,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 27:1-44 ; 28:1-16",
     "location": "Césarée, Méditerranée, Malte et Rome.",
-    "relationshipWithJehovah": "Julius n’est pas présenté comme adorateur de Jéhovah, mais sa conduite contribua à la protection de Paul et des autres prisonniers.",
-    "didYouKnow": "Après le naufrage, Julius empêcha les soldats d’exécuter les prisonniers afin de sauver Paul.",
+    "relationshipWithJehovah": "Julius n’est pas présenté comme adorateur de Jéhovah. Il traita néanmoins Paul avec considération pendant le voyage vers Rome et contribua à préserver la vie des prisonniers après le naufrage.",
+    "didYouKnow": "Julius permit à Paul de rendre visite à des amis à Sidon avant de poursuivre le voyage vers Rome.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5788,8 +5788,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 19:28-31 ; 20:4",
     "location": "Macédoine et Éphèse.",
-    "relationshipWithJehovah": "Gaius soutenait l’activité missionnaire de Paul malgré les risques liés à l’opposition.",
-    "didYouKnow": "Lors de l’émeute d’Éphèse, les compagnons de Paul empêchèrent celui-ci d’entrer dans le théâtre, où la foule s’était rassemblée.",
+    "relationshipWithJehovah": "Gaïus le Macédonien était un compagnon de Paul impliqué dans le service chrétien. Il fut exposé au danger lors de l’émeute d’Éphèse.",
+    "didYouKnow": "Gaïus et Aristarque furent saisis par la foule pendant l’émeute d’Éphèse, alors que les artisans s’opposaient à la prédication de Paul.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5830,8 +5830,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Actes 19:29-31 ; 20:4 ; 27:1-2 ; Colossiens 4:10 ; Philémon 24",
     "location": "Thessalonique, Éphèse et Rome.",
-    "relationshipWithJehovah": "Aristarque resta fidèle au service chrétien et soutint Paul dans des circonstances éprouvantes.",
-    "didYouKnow": "Aristarque accompagna Paul jusqu’à Rome et fut ensuite appelé par Paul son « compagnon de captivité ».",
+    "relationshipWithJehovah": "Aristarque resta un compagnon fidèle de Paul et partagea avec lui des situations dangereuses, jusqu’au voyage vers Rome et à une période de captivité.",
+    "didYouKnow": "Paul appelle Aristarque son « compagnon de captivité » dans sa lettre aux Colossiens.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
@@ -5874,8 +5874,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Philippiens 4:2-3",
     "location": "Philippes, en Macédoine.",
-    "relationshipWithJehovah": "Syntyche était une servante chrétienne active et était encouragée à préserver l’unité de la congrégation.",
-    "didYouKnow": "Paul cite Évodie et Syntyche parmi celles qui avaient « lutté côte à côte » avec lui pour la bonne nouvelle.",
+    "relationshipWithJehovah": "Syntyche avait travaillé avec Paul pour la bonne nouvelle et faisait partie de la congrégation de Philippes. Paul l’encouragea, avec Évodie, à retrouver la même pensée dans le Seigneur.",
+    "didYouKnow": "Paul demanda à un collaborateur fidèle d’aider Évodie et Syntyche à résoudre leur désaccord.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
