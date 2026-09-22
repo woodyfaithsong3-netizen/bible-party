@@ -1107,7 +1107,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Noémi parlait du rôle de Jéhovah dans sa situation, même lorsqu’elle était accablée par le chagrin; le récit montre ensuite sa restauration familiale.",
     "didYouKnow": "À la naissance du fils de Ruth et Boaz, les femmes de Bethléhem dirent que cet enfant était pour Noémi comme un restaurateur de vie.",
     "identity": "Veuve et belle-mère de Ruth — Noémi a connu de lourdes pertes mais a continué à agir avec amour envers Ruth.",
-    "era": "Ruth",
+    "era": "Époque des juges, avant le règne de David",
     "familyAndEntourage": [
       "Ruth",
       "Orpa",
@@ -1155,7 +1155,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Boaz respectait la Loi de Jéhovah et reconnut la confiance de Ruth dans le Dieu d’Israël.",
     "didYouKnow": "Boaz devint l’arrière-grand-père du roi David par l’intermédiaire d’Obed et de Jessé.",
     "identity": "Propriétaire terrien et parent de Noémi — Boaz traite Ruth avec bonté et devient son rédempteur familial.",
-    "era": "Ruth",
+    "era": "Époque des juges, avant le règne de David",
     "familyAndEntourage": [
       "Ruth",
       "Noémi",
@@ -1202,7 +1202,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Élisha servit comme prophète de Jéhovah et dirigea l’attention des autres vers la puissance et les instructions de Dieu.",
     "didYouKnow": "Après la mort d’Élisha, un homme fut jeté dans sa tombe et revint à la vie lorsqu’il toucha les os du prophète.",
     "identity": "Prophète et successeur d’Élie — Élisée poursuit le ministère prophétique d’Élie et intervient dans de nombreux récits concernant Israël.",
-    "era": "1037-997 av. n. è.",
+    "era": "Xe siècle av. n. è. environ, pendant les règnes de Joram, Jéhu, Jehoahaz et Joas d’Israël",
     "familyAndEntourage": [
       "Élie",
       "Naaman",
@@ -4926,10 +4926,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Prophète — Michée dénonce les injustices et l’infidélité tout en annonçant des promesses concernant le peuple de Dieu.",
@@ -4970,10 +4966,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Prophète — Obadia annonce le jugement contre Édom et évoque le rétablissement du peuple de Jéhovah.",
@@ -5014,10 +5006,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Prophète — Yoël utilise une invasion de sauterelles comme contexte pour appeler le peuple à revenir à Jéhovah.",
@@ -5058,10 +5046,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Prophète — Nahum annonce la chute de Ninive et présente Jéhovah comme un Dieu juste qui ne laisse pas le mal impuni.",
@@ -5102,10 +5086,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Zacharie était un prêtre de la classe d’Abiya, mari d’Élisabeth et père de Jean le Baptiste. L’ange Gabriel lui annonça la naissance de son fils.",
@@ -5149,10 +5129,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Élisabeth était une descendante d’Aaron, épouse du prêtre Zekaria et mère de Jean le Baptiseur. Elle était parente de Marie.",
@@ -5196,10 +5172,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Joseph était le mari de Marie et le père adoptif de Jésus. Il était charpentier et descendait de David.",
@@ -5243,10 +5215,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Joseph Caïphe était le grand prêtre juif qui participa aux démarches contre Jésus et qui présida des interrogatoires liés à ses disciples.",
@@ -5289,10 +5257,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Jeanne était une femme qui avait été guérie par Jésus et qui le soutenait, avec d’autres femmes, au moyen de ses biens.",
@@ -5337,10 +5301,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "L’un des dix lépreux guéris par Jésus était un Samaritain. Il fut le seul des dix à revenir remercier Jésus et à glorifier Dieu.",
@@ -5384,10 +5344,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "La femme qui avait des pertes de sang souffrait depuis 12 ans. Elle s’approcha discrètement de Jésus avec la conviction que même toucher son vêtement pourrait la guérir.",
@@ -5430,10 +5386,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "L’homme de la région des Géraséniens que Jésus délivra était sous l’influence de nombreux démons. Après sa délivrance, il voulut accompagner Jésus, mais Jésus lui confia une autre mission.",
@@ -5476,10 +5428,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Jason était un chrétien de Thessalonique qui accueillit Paul et Silas chez lui. Une foule hostile l’entraîna ensuite devant les autorités.",
@@ -5523,10 +5471,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Onésiphore était un chrétien qui apporta un soutien précieux à Paul, notamment pendant ses difficultés à Rome.",
@@ -5570,10 +5514,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Marie, mère de Jacques, était une chrétienne de Jérusalem dont la maison servit de lieu de rassemblement pour les disciples.",
@@ -5616,10 +5556,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Marie, mère de Jean-Marc, était une chrétienne de Jérusalem dont la maison accueillait des disciples. Son fils Jean-Marc devint compagnon de mission.",
@@ -5663,10 +5599,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Apphia était une chrétienne associée à Philémon et à l’assemblée qui se réunissait chez lui. Paul lui adresse personnellement ses salutations.",
@@ -5707,10 +5639,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Archippe était un chrétien associé à Philémon et Apphia et à l’assemblée qui se réunissait chez eux. Paul l’encourage à accomplir pleinement son ministère.",
@@ -5756,10 +5684,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Jean-Marc était un chrétien de Jérusalem qui accompagna Paul et Barnabas dans une partie de leur première tournée missionnaire. Après une séparation, il retrouva la confiance de Paul.",
@@ -5803,10 +5727,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       },
       {
         "title": "Étude perspicace des Écritures — Priscille",
@@ -5855,10 +5775,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Claude Lysias était le commandant militaire romain de Jérusalem qui fit protéger Paul lorsqu’une foule voulut le tuer.",
@@ -5901,10 +5817,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Julius était un centurion de la cohorte d’Auguste chargé de conduire Paul et d’autres prisonniers vers Rome.",
@@ -5948,10 +5860,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Gaïus le Macédonien était un compagnon de Paul associé à Aristarque lors de l’émeute d’Éphèse.",
@@ -5994,10 +5902,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Aristarque était un Macédonien de Thessalonique et un compagnon de voyage de Paul. Il partagea même une période de captivité avec lui.",
@@ -6042,10 +5946,6 @@ export const characterLearning: Record<string, CharacterLearning> = {
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Imitez leur foi — personnages de la Bible",
-        "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
     ],
     "identity": "Syntyche était une chrétienne de Philippes qui avait travaillé avec Paul pour la bonne nouvelle. Paul lui adresse le même appel à l’unité qu’à Évodie.",
