@@ -12,6 +12,7 @@ import { jwV107CharacterQuiz, jwV107Mystery } from './jw_enrichment_v107_charact
 import { jwV108CharacterQuiz, jwV108Mystery } from './jw_enrichment_v108_characters';
 import { Challenge, ChronologyQuestion, Difficulty, IntruderQuestion, MysteryQuestion, QuizQuestion, QuoteQuestion, TimesUpQuestion, TrueFalseQuestion } from '@/types';
 import { characterLearning } from './characterLearning';
+import { characterQuizQuestions, characterTrueFalseQuestions, characterMysteryQuestions } from './characterQuestionsL1';
 import { categoryQuizExpansion, categoryTrueFalseExpansion, categoryMysteryExpansion, categoryTimesUpExpansion, categoryQuoteExpansion, categoryChronologyExpansion, categoryIntruderExpansion, categoryChallengeExpansion } from './jwCategories';
 
 /**
@@ -1822,3 +1823,9 @@ export const allQuestions = [
 ];
 
 export const v2Questions = [...quoteQuestions, ...chronologyQuestions, ...intruderQuestions, ...timesUpQuestions];
+
+
+// Character-specific editorial bank — integrated into the existing global catalogue.
+export const quizQuestions = [...baseQuizQuestions, ...characterQuizQuestions];
+export const trueFalseQuestions = [...baseTrueFalseQuestions, ...characterTrueFalseQuestions];
+export const mysteryQuestions = [...baseMysteryQuestions, ...characterMysteryQuestions];
