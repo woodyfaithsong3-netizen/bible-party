@@ -576,6 +576,46 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Examiner sa question envoyée à Jésus depuis la prison et la réponse reçue."
     ],
     "keyReading": "Matthieu 3:1-17 ; 11:2-15 ; 14:1-12 ; Jean 1:19-37",
+    "location": "Désert de Judée et région du Jourdain.",
+    "relationshipWithJehovah": "Jean dirigeait l’attention vers Jésus et accomplissait la mission que Jéhovah lui avait confiée.",
+    "didYouKnow": "Jésus a dit qu’aucun prophète né de femme n’avait été plus grand que Jean, tout en parlant ensuite de la grandeur de ceux qui seraient dans le Royaume.",
+    "identity": "Précurseur de Jésus — Jean prépare les personnes au ministère de Jésus et appelle à la repentance.",
+    "era": "Vers 2 av. n. è. à 31 de n. è. environ; il prépara le chemin du Messie",
+    "familyAndEntourage": [
+      "Jésus",
+      "Zacharie",
+      "Élisabeth",
+      "Hérode"
+    ],
+    "bibleAccount": [
+      "Prêche et baptise.",
+      "Identifie Jésus comme celui qui vient après lui.",
+      "Reprend publiquement Hérode pour sa conduite."
+    ],
+    "qualities": [
+      "Courage",
+      "Humilité",
+      "Conviction"
+    ],
+    "difficulties": [
+      "Il a vécu dans le désert et a mené une vie très simple, consacrée à sa mission.",
+      "Il a été emprisonné après avoir dénoncé publiquement le mariage d’Hérode Antipas avec Hérodiade.",
+      "Depuis sa prison, il a traversé un moment d’incertitude et a demandé à Jésus s’il était bien celui qui devait venir.",
+      "Il a finalement été exécuté à la suite de la demande d’Hérodiade. — Mt 11:2-6 ; Mc 6:17-29."
+    ]
+  },
+  "marie": {
+    "studyFocus": "Marie était la mère de Jésus. Elle accepta humblement la mission annoncée par l’ange Gabriel, donna naissance à Jésus à Bethléem et conserva dans son cœur plusieurs événements concernant son fils. Elle resta présente lors de sa mort et fut ensuite associée aux disciples après sa résurrection.",
+    "lessonPoints": [
+      "Marie accepta avec humilité une mission qui allait bouleverser sa vie.",
+      "Elle méditait profondément sur les événements concernant Jésus.",
+      "Elle manifesta du courage en restant proche de Jésus jusque lors de son exécution.",
+      "Elle continua à fréquenter les disciples après la mort et la résurrection de Jésus."
+    ],
+    "keyReading": "Luc 1:26-56 ; 2:1-52 ; Jean 2:1-12 ; 19:25-27 ; Actes 1:12-14",
+    "location": "Nazareth, Bethléem, Galilée et Jérusalem.",
+    "relationshipWithJehovah": "Marie se soumit humblement à la volonté de Jéhovah et manifesta une foi profonde dans les promesses concernant son fils.",
+    "didYouKnow": "Marie était présente avec les disciples après l’ascension de Jésus, selon Actes 1:14.",
     "identity": "Marie est la mère de Jésus. Elle est une descendante de David et a accepté avec foi la mission extraordinaire qui lui a été confiée.",
     "era": "20 av. n. è. environ - après 33 de n. è. environ",
     "familyAndEntourage": [
@@ -757,6 +797,186 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "À la fin de sa vie, il fit de nouveau appel à Jéhovah et agit contre les Philistins."
     ],
     "keyReading": "Juges 13:1-25 ; 14:1–16:31 ; Hébreux 11:32",
+    "location": "Territoire de Dan et régions contrôlées par les Philistins.",
+    "relationshipWithJehovah": "Jéhovah donna à Samson une force particulière pour commencer à délivrer Israël des Philistins. Malgré ses faiblesses, Samson manifesta finalement sa foi en demandant à Jéhovah de lui donner la force d’agir.",
+    "didYouKnow": "Samson jugea Israël pendant 20 ans et sa naissance avait été annoncée à ses parents par un ange de Jéhovah.",
+    "identity": "Samson était un juge d’Israël doté d’une force exceptionnelle donnée par Jéhovah pour commencer à délivrer Israël des Philistins.",
+    "era": "1450-1120 av. n. è. environ (époque des juges)",
+    "familyAndEntourage": [
+      "Manoah",
+      "La femme de Manoah",
+      "Dalila",
+      "Les Philistins"
+    ],
+    "bibleAccount": [
+      "Un ange annonce sa naissance à sa mère.",
+      "Il accomplit plusieurs actes contre les Philistins grâce à une force particulière.",
+      "Il épouse une Philistine puis connaît des conflits avec les Philistins.",
+      "Dalila découvre le secret lié à ses cheveux et il est capturé.",
+      "Il prie Jéhovah et reçoit une dernière manifestation de force qui entraîne la chute du temple philistin."
+    ],
+    "qualities": [
+      "Courage",
+      "Force physique",
+      "Zèle contre les ennemis d’Israël",
+      "Foi manifestée dans sa dernière prière"
+    ],
+    "difficulties": [
+      "Ses choix amoureux et son manque de maîtrise de soi l’exposent à la manipulation et contribuent à sa capture par les Philistins.",
+      "Après avoir perdu sa force et sa liberté, il doit supporter l’humiliation, l’aveuglement et le travail forcé avant de retrouver sa confiance en Jéhovah."
+    ],
+  },
+  "naomi": {
+    "studyFocus": "Noémi était la belle-mère de Ruth et la femme d’Élimélek. Après la mort de son mari et de ses deux fils, elle retourna de Moab à Bethléhem avec Ruth. Sa belle-fille resta attachée à elle et participa finalement à la lignée de David.",
+    "lessonPoints": [
+      "Noémi connut des pertes familiales profondes.",
+      "Elle ne cacha pas son chagrin et exprima ouvertement sa douleur.",
+      "Elle accepta finalement la fidélité de Ruth et l’aida à comprendre les usages d’Israël.",
+      "Jéhovah transforma une période de grande détresse en une situation où Noémi retrouva une famille et une place dans la communauté."
+    ],
+    "keyReading": "Ruth 1:1-22 ; 2:1-23 ; 3:1-18 ; 4:13-17",
+    "location": "Bethléhem en Juda et Moab.",
+    "relationshipWithJehovah": "Noémi parlait du rôle de Jéhovah dans sa situation, même lorsqu’elle était accablée par le chagrin; le récit montre ensuite sa restauration familiale.",
+    "didYouKnow": "Noémi retourna à Bethléhem avec Ruth au début de la moisson des orges, puis Boaz devint le rédempteur de la famille.",
+    "identity": "Veuve et belle-mère de Ruth — Noémi a connu de lourdes pertes mais a continué à agir avec amour envers Ruth.",
+    "era": "1450-1120 av. n. è. environ (époque des juges)",
+    "familyAndEntourage": ["Élimélek","Mahlôn","Kilyôn","Ruth","Orpa","Boaz"],
+    "bibleAccount": [
+      "Retourne à Bethléhem après son veuvage.",
+      "Encourage Ruth à agir avec sagesse.",
+      "Accueille la naissance d’Obed dans sa famille."
+    ],
+    "qualities": [
+      "Attachement familial",
+      "Sagesse"
+    ],
+    "difficulties": [
+      "Elle a perdu son mari puis ses deux fils, ce qui l’a profondément attristée.",
+      "Elle a dû quitter Moab pour retourner à Bethléhem dans une situation de veuvage et de grande précarité.",
+      "Sa douleur l’a amenée à demander qu’on l’appelle Mara, « Amère ».",
+      "Elle a ensuite vu Jéhovah transformer progressivement sa situation grâce à Ruth et Boaz. — Ruth 1:3-5, 20, 21 ; 4:14-17."
+    ]
+  },
+  "boaz": {
+    "studyFocus": "Boaz était un propriétaire terrien de Bethléem et un parent d’Élimélek. Il traita Ruth avec bonté, respecta les dispositions de la Loi sur le glanage et accepta finalement d’assumer le rôle de racheteur. Son mariage avec Ruth contribua à la lignée de David.",
+    "lessonPoints": [
+      "Boaz respectait les dispositions de Jéhovah en faveur des pauvres.",
+      "Il protégea Ruth et lui parla avec dignité.",
+      "Il régla honnêtement la question du droit de rachat devant les anciens.",
+      "Il apprécia la fidélité de Ruth envers Noémi et son choix d’adorer Jéhovah."
+    ],
+    "keyReading": "Ruth 2:1-23 ; 3:1-18 ; 4:1-17 ; Matthieu 1:3-6",
+    "location": "Bethléem, en Juda.",
+    "relationshipWithJehovah": "Boaz respectait les dispositions de la Loi de Jéhovah concernant les pauvres, les étrangers et le mariage léviratique, et il traita Ruth avec bonté et respect.",
+    "didYouKnow": "Boaz était un proche parent d’Élimélek et devint le mari de Ruth ; leur fils Obed fut l’ancêtre du roi David.",
+    "identity": "Propriétaire terrien et parent de Noémi — Boaz traite Ruth avec bonté et devient son rédempteur familial.",
+    "era": "vers 1400 av. n. è. environ (époque des juges)",
+    "familyAndEntourage": [
+      "Ruth",
+      "Noémi",
+      "Obed",
+      "David"
+    ],
+    "bibleAccount": [
+      "Protège Ruth dans ses champs.",
+      "Veille à ce qu’elle puisse glaner en sécurité.",
+      "Assume le rôle de rédempteur et épouse Ruth."
+    ],
+    "qualities": [
+      "Générosité",
+      "Respect",
+      "Loyauté"
+    ],
+    "difficulties": [
+      "Il devait agir avec justice dans une situation familiale complexe liée au droit de rachat.",
+      "Il devait respecter la priorité du racheteur plus proche avant d’épouser Ruth.",
+      "Il a dû prendre des décisions qui engageaient l’avenir de Ruth, de Noémi et de la lignée familiale.",
+      "Il a choisi de respecter les dispositions de la Loi plutôt que de suivre simplement ses préférences personnelles. — Ruth 3:10-13 ; 4:1-10."
+    ]
+  },
+  "elisha": {
+    "studyFocus": "Élisha fut le successeur d’Éliya comme prophète de Jéhovah. Son ministère comprit de nombreux miracles et s’étendit sur plusieurs règnes en Israël. Il intervint auprès de particuliers, de rois et de groupes de prophètes.",
+    "lessonPoints": [
+      "Élisha demanda une double portion de l’esprit qui animait Éliya.",
+      "Il accomplit des miracles qui montraient la puissance de Jéhovah.",
+      "Il aida aussi bien des personnes humbles qu’un chef militaire comme Naaman.",
+      "Il resta fidèle à sa mission malgré les difficultés politiques et spirituelles d’Israël."
+    ],
+    "keyReading": "1 Rois 19:15-21 ; 2 Rois 2:1-25 ; 4:1–8:15 ; 9:1-13 ; 13:14-21",
+    "location": "Royaume d’Israël, notamment autour de Samarie et du Jourdain.",
+    "relationshipWithJehovah": "Élisha servit comme prophète de Jéhovah et dirigea l’attention des autres vers la puissance et les instructions de Dieu.",
+    "didYouKnow": "Élisha fut le secrétaire ou serviteur d’Élie avant de poursuivre son ministère prophétique après l’enlèvement de son maître.",
+    "identity": "Prophète et successeur d’Élie — Élisée poursuit le ministère prophétique d’Élie et intervient dans de nombreux récits concernant Israël.",
+    "era": "vers 905-800 av. n. è. environ",
+    "familyAndEntourage": ["Élie","Guéhazi","La femme de Shounem","Naaman","Les fils des prophètes"],
+    "bibleAccount": [
+      "Accepte de suivre Élie.",
+      "Reçoit sa fonction prophétique après le départ d’Élie.",
+      "Aide des personnes confrontées à la pauvreté, à la maladie ou au danger."
+    ],
+    "qualities": [
+      "Foi",
+      "Persévérance",
+      "Compassion"
+    ],
+    "difficulties": [
+      "Il a quitté son activité agricole et sa famille pour accepter la mission prophétique confiée par Jéhovah.",
+      "Il a servi Éliya pendant des années avant d’assumer une responsabilité plus importante.",
+      "Son ministère l’a confronté à l’opposition, à des situations dangereuses et aux besoins de nombreuses personnes.",
+      "Il a dû compter sur l’esprit de Jéhovah pour accomplir sa mission et faire face aux changements de situation. — 1R 19:19-21 ; 2R 2:1-15."
+    ]
+  },
+  "nehemie": {
+    "studyFocus": "Néhémie était échanson du roi Artaxerxès avant de recevoir l’autorisation de reconstruire les murailles de Jérusalem. Il organisa le travail malgré l’opposition, encouragea le peuple et participa ensuite à des réformes destinées à rétablir le respect de la Loi.",
+    "lessonPoints": [
+      "Néhémie pria avant d’agir et prépara soigneusement sa demande au roi.",
+      "Il combina organisation pratique, courage et confiance en Jéhovah.",
+      "Il ne permit pas aux menaces de Sanballat et de ses alliés d’arrêter le chantier.",
+      "Il corrigea aussi des injustices et des pratiques contraires à la Loi après la reconstruction."
+    ],
+    "keyReading": "Néhémie 1:1-11 ; 2:1-20 ; 4:1-23 ; 6:1-19 ; 8:1-18 ; 13:1-31",
+    "location": "Suse puis Jérusalem.",
+    "relationshipWithJehovah": "Néhémie pria régulièrement, attribua la réussite à Jéhovah et chercha à restaurer à Jérusalem une vie conforme à la Loi.",
+    "didYouKnow": "Néhémie reconstruisit les murailles de Jérusalem en 52 jours alors que les travaux faisaient face à l’opposition de Sanballat, Tobiya et Guéshem.",
+    "identity": "Néhémie était un Juif servant comme échanson du roi de Perse. Il reçut l’autorisation de reconstruire les murailles de Jérusalem et dirigea le chantier malgré une forte opposition.",
+    "era": "455-443 av. n. è. environ pour son gouvernorat, sous Artaxerxès Ier",
+    "familyAndEntourage": [
+      "Artaxerxès",
+      "Les Juifs de Jérusalem",
+      "Sanballat",
+      "Tobiya",
+      "Esdras"
+    ],
+    "bibleAccount": [
+      "Il apprend la situation désastreuse de Jérusalem et prie Jéhovah.",
+      "Il demande au roi l’autorisation de reconstruire les murailles.",
+      "Il organise les familles et les travailleurs malgré les menaces.",
+      "La muraille est achevée en 52 jours.",
+      "Il contribue ensuite à rétablir l’ordre spirituel et social du peuple."
+    ],
+    "qualities": [
+      "Prière",
+      "Organisation",
+      "Courage",
+      "Persévérance"
+    ],
+    "difficulties":     [
+      "Il doit reconstruire les murailles malgré l’opposition de Sanballat, Tobiya et Guéshem.",
+      "Il doit aussi corriger des abus économiques et des manquements à la Loi parmi les Juifs revenus d’exil."
+    ]
+  },
+  "mary_magdalen": {
+    "studyFocus": "Marie Madeleine était une disciple de Jésus originaire de Magdala. Jésus avait chassé d’elle sept démons. Elle le suivit, le soutint avec d’autres femmes et fut parmi les premières personnes à le voir après sa résurrection.",
+    "lessonPoints": [
+      "Marie Madeleine manifesta une forte reconnaissance envers Jésus.",
+      "Elle accompagna Jésus et ses apôtres pendant leur ministère.",
+      "Elle resta présente lors de la mort de Jésus alors que beaucoup de disciples étaient dispersés.",
+      "Après la résurrection, elle fut chargée d’annoncer aux disciples qu’elle avait vu le Seigneur."
+    ],
+    "keyReading": "Luc 8:1-3 ; Matthieu 27:55-61 ; Jean 19:25 ; 20:1-18",
+    "location": "Magdala en Galilée puis divers lieux parcourus par Jésus.",
+    "relationshipWithJehovah": "Marie Madeleine devint une disciple fidèle de Jésus et fut parmi les femmes qui le suivaient et le soutenaient. Après sa résurrection, Jésus lui confia le privilège d’annoncer cette nouvelle aux disciples.",
+    "didYouKnow": "Les Évangiles ne disent pas que Marie Madeleine était une prostituée ; cette identification ne repose pas sur le texte biblique.",
     "identity": "Marie Madeleine était une disciple fidèle de Jésus, délivrée de sept démons. Elle l’accompagna jusqu’à sa mort et fut l’une des premières personnes à le voir après sa résurrection.",
     "era": "5 av. n. è. environ - après 33 de n. è.",
     "familyAndEntourage": [
