@@ -14,6 +14,7 @@ import { Challenge, ChronologyQuestion, Difficulty, IntruderQuestion, MysteryQue
 import { characterLearning } from './characterLearning';
 import { characterQuizQuestions, characterTrueFalseQuestions, characterMysteryQuestions } from './characterQuestionsL1';
 import { characterQuizQuestionsL2, characterTrueFalseQuestionsL2, characterMysteryQuestionsL2 } from './characterQuestionsL2';
+import { characterQuizQuestionsL3, characterTrueFalseQuestionsL3, characterMysteryQuestionsL3 } from './characterQuestionsL3';
 import { categoryQuizExpansion, categoryTrueFalseExpansion, categoryMysteryExpansion, categoryTimesUpExpansion, categoryQuoteExpansion, categoryChronologyExpansion, categoryIntruderExpansion, categoryChallengeExpansion } from './jwCategories';
 
 /**
@@ -1786,6 +1787,9 @@ mysteryQuestions.push(...characterReviewMystery);
 quizQuestions.push(...characterQuizQuestionsL2);
 trueFalseQuestions.push(...characterTrueFalseQuestionsL2);
 mysteryQuestions.push(...characterMysteryQuestionsL2);
+quizQuestions.push(...characterQuizQuestionsL3);
+trueFalseQuestions.push(...characterTrueFalseQuestionsL3);
+mysteryQuestions.push(...characterMysteryQuestionsL3);
 challenges.push(...characterReviewChallenges);
 
 // Lot 1 : 20 personnages, intégré au catalogue existant avant le passage de déduplication.
