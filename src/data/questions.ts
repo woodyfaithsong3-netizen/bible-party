@@ -11,7 +11,6 @@ import { jwV106CharacterQuiz, jwV106Mystery } from './jw_enrichment_v106_charact
 import { jwV107CharacterQuiz, jwV107Mystery } from './jw_enrichment_v107_characters';
 import { jwV108CharacterQuiz, jwV108Mystery } from './jw_enrichment_v108_characters';
 import { Challenge, ChronologyQuestion, Difficulty, IntruderQuestion, MysteryQuestion, QuizQuestion, QuoteQuestion, TimesUpQuestion, TrueFalseQuestion } from '@/types';
-import { characterLearning } from './characterLearning';
 import { characterQuizQuestions, characterTrueFalseQuestions, characterMysteryQuestions } from './characterQuestionsL1';
 import { characterQuizQuestionsL2, characterTrueFalseQuestionsL2, characterMysteryQuestionsL2 } from './characterQuestionsL2';
 import { characterQuizQuestionsL3, characterTrueFalseQuestionsL3, characterMysteryQuestionsL3 } from './characterQuestionsL3';
@@ -1658,137 +1657,10 @@ challenges.push(...v101ExpertChallenges);
  * dans Bible Party. Les explications renvoient aux informations de la fiche,
  * tandis que les références restent celles indiquées dans keyReading.
  */
-const characterReviewQuiz: QuizQuestion[] = [];
-const characterReviewTrueFalse: TrueFalseQuestion[] = [];
-const characterReviewMystery: MysteryQuestion[] = [];
-const characterReviewChallenges: Challenge[] = [];
-
-const characterReviewEntries = Object.entries(characterLearning);
-
-const characterReviewNameOverrides: Record<string, string> = {
-  adam: 'Adam',
-  sarah: 'Sara',
-  moise: 'Moïse',
-  david: 'David',
-  salomon: 'Salomon',
-  pierre: 'Pierre',
-  paul: 'Paul',
-  jean: 'Jean',
-  naomi: 'Noémi',
-  boaz: 'Boaz',
-  elisha: 'Élisée',
-  mary_magdalen: 'Marie Madeleine',
-  mary_bethany: 'Marie de Béthanie',
-  joseph_arimathea: 'Joseph d’Arimathie',
-  joseph_jesus_father: 'Joseph, père adoptif de Jésus',
-  joseph_caiaphas: 'Joseph Caïphe',
-  james_zebedee: 'Jacques fils de Zébédée',
-  james_brother_jesus: 'Jacques frère de Jésus',
-  james_alphaaeus: 'Jacques fils d’Alphée',
-  jude_brother_jesus: 'Jude frère de Jésus',
-  philip_evangelizer: 'Philippe l’évangélisateur',
-  philip_apostle: 'Philippe l’apôtre',
-  bartholomew: 'Barthélémy',
-  simon_zealot: 'Simon le Zélote',
-  jairus_daughter: 'Fille de Jaïrus',
-  mary_mother_james: 'Marie mère de Jacques',
-  mary_mark_mother: 'Marie mère de Jean-Marc',
-  zechariah_priest: 'Zacharie père de Jean',
-  joel: 'Joël',
-  micah: 'Michée',
-  obadiah: 'Obadia',
-  nahum: 'Nahoum',
-};
-
-const extractCharacterReviewName = (id: string, identity: string): string => {
-  if (characterReviewNameOverrides[id]) return characterReviewNameOverrides[id];
-  const afterDash = identity.split(/\s+[—–-]\s+/)[1];
-  const firstSentence = (afterDash ?? identity).split(/[.!?]/)[0].trim();
-  const withoutDescription = firstSentence.split(/\s+(?:était|était|est|fut|devint|devient|a été|a\s+été)\s+/i)[0].trim();
-  const firstClause = withoutDescription.split(/,\s+/)[0].trim();
-  return firstClause || id.replace(/_/g, ' ');
-};
-
-const characterReviewNames = characterReviewEntries.map(([id, data]) =>
-  extractCharacterReviewName(id, data.identity ?? id.replace(/_/g, '')),
-);
-
-for (let i = 0; i < characterReviewEntries.length; i += 1) {
-  const [id, data] = characterReviewEntries[i];
-  const name = characterReviewNames[i];
-  // Distracteurs volontairement espacés dans le catalogue : éviter que deux personnages
-  // proches dans les données (famille, époque ou récit) se retrouvent systématiquement ensemble.
-  const next = characterReviewNames[(i + 17) % characterReviewNames.length];
-  const next2 = characterReviewNames[(i + 37) % characterReviewNames.length];
-  const next3 = characterReviewNames[(i + 61) % characterReviewNames.length];
-  const accountClues = (data.bibleAccount ?? []).slice(0, 2).join(' ');
-  const lesson = data.lessonPoints?.[0] ?? data.studyFocus;
-  const quality = data.qualities?.[0] ?? 'fidélité';
-  const location = data.location ?? 'le récit biblique';
-  const era = data.era ?? 'une époque biblique';
-  const reference = data.keyReading;
-
-  const accountPrompt = accountClues
-    ? 'Quel personnage est associé à cet épisode ? ' + accountClues
-    : 'Quel personnage est décrit par cette fiche ? ' + data.identity;
-  characterReviewQuiz.push({
-    id: 'character-review-quiz-' + id + '-account',
-    type: 'quiz',
-    category: 'Personnages',
-    difficulty: 'medium',
-    question: accountPrompt,
-    answers: [name, next, next2, next3],
-    correctAnswer: 0,
-    explanation: accountClues
-      ? accountClues + ' Ce récit concerne ' + name + '.'
-      : data.identity,
-    reference,
-  });
-
-  const lessonPrompt = lesson
-    ? 'À quel personnage cette leçon est-elle rattachée ? ' + lesson
-    : 'Quel personnage illustre ce parcours biblique ? ' + data.identity;
-  characterReviewQuiz.push({
-    id: 'character-review-quiz-' + id + '-lesson',
-    type: 'quiz',
-    category: 'Personnages',
-    difficulty: 'hard',
-    question: lessonPrompt,
-    answers: [name, next2, next3, next],
-    correctAnswer: 0,
-    explanation: lesson
-      ? lesson + ' Cette leçon est rattachée au parcours de ' + name + '.'
-      : data.identity,
-    reference,
-  });
-
-  // Pas de vrai/faux généré ici : une carte dont la réponse est systématiquement « vrai »
-  // transforme le mode en réflexe de clic. Les vraies cartes vrai/faux personnages sont
-  // construites dans les banques L1-L6 et sont donc auditables individuellement.
-  characterReviewMystery.push({
-    id: 'character-review-mystery-' + id,
-    type: 'mystery',
-    category: 'Personnages',
-    difficulty: 'hard',
-    answer: name,
-    clues: [quality, location, era],
-    explanation: 'Les trois indices permettent d’identifier ' + name + '.',
-    reference,
-  });
-
-  characterReviewChallenges.push({
-    id: 'character-review-challenge-' + id,
-    type: 'challenge',
-    category: 'Personnages',
-    difficulty: 'medium',
-    prompt: 'En 10 secondes : quel personnage associez-vous à ' + quality + ' dans ' + location + ' ?',
-    seconds: 10,
-    acceptedAnswers: [name],
-  });
-}
-
-quizQuestions.push(...characterReviewQuiz);
-mysteryQuestions.push(...characterReviewMystery);
+// Les questions personnages officielles sont maintenues dans les banques L1-L6.
+// On n'ajoute plus ici de doublons générés automatiquement à partir des fiches :
+// cela évite une seconde banque parallèle et garantit que chaque carte jouable peut
+// être auditée individuellement (question, distracteurs, difficulté, explication, référence).
 quizQuestions.push(...characterQuizQuestionsL2);
 trueFalseQuestions.push(...characterTrueFalseQuestionsL2);
 mysteryQuestions.push(...characterMysteryQuestionsL2);
@@ -1804,7 +1676,6 @@ mysteryQuestions.push(...characterMysteryQuestionsL5);
 quizQuestions.push(...characterQuizQuestionsL6);
 trueFalseQuestions.push(...characterTrueFalseQuestionsL6);
 mysteryQuestions.push(...characterMysteryQuestionsL6);
-challenges.push(...characterReviewChallenges);
 
 // Lot 1 : 20 personnages, intégré au catalogue existant avant le passage de déduplication.
 quizQuestions.push(...characterQuizQuestions);
