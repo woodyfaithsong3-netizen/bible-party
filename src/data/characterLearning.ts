@@ -4283,8 +4283,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Épaphrodite fut si gravement malade que Paul dit qu’il avait été proche de la mort, mais Dieu eut pitié de lui.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Épaphrodite — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89paphrodite/"
       },
       {
         "title": "Bible en ligne — JW.org",
@@ -4907,8 +4907,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Le livre d’Obadia est le plus court des livres prophétiques des Écritures hébraïques, avec un seul chapitre.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Obadia — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Obadia/"
       },
       {
         "title": "Bible en ligne — JW.org",
@@ -4987,8 +4987,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "La prophétie de Nahoum décrit la chute de Ninive, capitale de l’Assyrie, puissance qui avait opprimé de nombreux peuples.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Nahoum — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Nahoum/"
       },
       {
         "title": "Bible en ligne — JW.org",
@@ -5070,8 +5070,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Élisabeth était une parente de Marie et était déjà âgée lorsqu’elle conçut Jean le Baptiseur.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Élisabeth — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89lisabeth/"
       },
       {
         "title": "Bible en ligne — JW.org",
@@ -5156,8 +5156,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Caïphe prophétisa, sans comprendre pleinement la portée de ses paroles, qu’il était avantageux qu’un seul homme meure pour le peuple.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Caïphe — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ca%C3%AFphe/"
       },
       {
         "title": "Bible en ligne — JW.org",
@@ -5195,8 +5195,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Jeanne était la femme de Chuza, intendant d’Hérode, et faisait partie des femmes qui accompagnèrent Jésus et ses apôtres.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Jeanne — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jeanne/"
       },
       {
         "title": "Bible en ligne — JW.org",
@@ -5409,8 +5409,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Paul se souvenait qu’Onésiphore n’avait pas eu honte de ses chaînes et qu’il l’avait recherché avec empressement à Rome.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Onésiphore — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/On%C3%A9siphore/"
       },
       {
         "title": "Bible en ligne — JW.org",
@@ -5612,12 +5612,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "À la fin de sa vie, Paul demanda à Timothée de faire venir Marc, car il lui était utile pour le ministère.",
     "jwResources": [
       {
-        "title": "Marche courageusement avec Dieu — Marc",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/debuts-du-christianisme/marc-il-me-sera-utile/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Marc (Jean-Marc) — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Marc/"
       },
       {
         "title": "Bible en ligne — JW.org",
@@ -5659,16 +5655,12 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Paul appelle Priscille et Aquilas ses collaborateurs en Christ Jésus et dit qu’ils avaient risqué leur vie pour lui.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Prisca (Priscille) — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Prisca/"
       },
       {
         "title": "Bible en ligne — JW.org",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
-      },
-      {
-        "title": "Étude perspicace des Écritures — Priscille",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Priscille/"
       }
     ],
     "identity": "Priscille, avec son mari Aquila, était une chrétienne qui collabora étroitement avec Paul. Elle contribua à expliquer plus exactement la voie de Dieu à Apollos.",
@@ -5834,8 +5826,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Paul appelle Aristarque son « compagnon de captivité » dans sa lettre aux Colossiens.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Aristarque — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Aristarque/"
       },
       {
         "title": "Bible en ligne — JW.org",
@@ -5878,8 +5870,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "didYouKnow": "Paul demanda à un collaborateur fidèle d’aider Évodie et Syntyche à résoudre leur désaccord.",
     "jwResources": [
       {
-        "title": "Étude perspicace des Écritures — JW.org",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Syntyche — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Syntyche/"
       },
       {
         "title": "Bible en ligne — JW.org",
