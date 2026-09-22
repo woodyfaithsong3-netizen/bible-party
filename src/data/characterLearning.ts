@@ -38,7 +38,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       },
       {
         "title": "Marche courageusement avec Dieu",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
+        "url": "https://www.jw.org/fr/bibliotheque/bible/"
       },
       {
         "title": "Imitez leur foi — personnages de la Bible",
@@ -491,7 +491,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Ruth était une Moabite devenue veuve qui choisit de rester avec sa belle-mère Naomi et d’adorer Jéhovah. Elle devint l’épouse de Boaz et une ancêtre de David.",
-    "era": "Époque des juges, avant le règne de David",
+    "era": "Époque des juges, avant le règne de David; Ruth vécut avant l’établissement de la royauté en Israël.",
     "familyAndEntourage": [
       "Naomi",
       "Boaz",
@@ -545,7 +545,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Samuel était prophète, juge et serviteur de Jéhovah dès son enfance. Il joua un rôle majeur dans la transition d’Israël vers la royauté.",
-    "era": "Vers 12e-11e siècles av. n. è.",
+    "era": "Fin de l’époque des juges et transition vers la royauté, XIe siècle av. n. è. environ",
     "familyAndEntourage": [
       "Elqana, son père",
       "Hanna, sa mère",
@@ -678,7 +678,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ]
   },
   "elie": {
-    "studyFocus": "Éli était grand prêtre et juge en Israël à l’époque où Samuel était encore enfant. Il enseigna à Samuel comment répondre à l’appel de Jéhovah, mais ses propres fils, Hophni et Phinéhas, pratiquaient des actes graves. Éli fut réprimandé parce qu’il ne les avait pas corrigés avec suffisamment de fermeté.",
+    "studyFocus": "Éli était grand prêtre et juge en Israël pendant 40 ans, à l’époque où Samuel était encore enfant. Il accueillit Samuel au tabernacle et l’aida à comprendre que Jéhovah l’appelait. Cependant, il fut réprimandé parce qu’il n’avait pas discipliné avec suffisamment de fermeté ses fils Hophni et Phinéhas.",
     "lessonPoints": [
       "Éli permit à Samuel de servir près de lui et l’aida à reconnaître l’appel de Jéhovah.",
       "Il avait une certaine sensibilité spirituelle mais manqua de fermeté envers ses fils.",
@@ -686,16 +686,16 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "La fin de sa vie montre l’importance de prendre au sérieux les responsabilités familiales et spirituelles."
     ],
     "keyReading": "1 Samuel 2:12-36 ; 3:1-21 ; 4:10-18",
-    "location": "Silo.",
-    "relationshipWithJehovah": "Éli servait dans le sanctuaire mais reçut une condamnation divine parce qu’il n’avait pas correctement maîtrisé la mauvaise conduite de ses fils.",
+    "location": "Shilo et le territoire d’Israël; il servait au tabernacle à Shilo.",
+    "relationshipWithJehovah": "Éli servait comme grand prêtre devant Jéhovah et transmit à Samuel comment répondre à l’appel divin. Mais Jéhovah le condamna parce qu’il honorait ses fils plus que lui en ne les disciplinant pas suffisamment.",
     "didYouKnow": "Éli mourut à l’âge de 98 ans lorsqu’il apprit que l’arche de Dieu avait été capturée et que ses deux fils étaient morts.",
     "jwResources": [
       {
-        "title": "Élie — Étude perspicace des Écritures",
-        "url": "https://www.jw.org/fr/bibliotheque/livres/etude-perspicace-des-ecritures/"
+        "title": "Éli — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89li-I/"
       },
       {
-        "title": "Élie — Marche courageusement avec Dieu",
+        "title": "Bible en ligne — récit de 1 Samuel",
         "url": "https://www.jw.org/fr/bibliotheque/livres/marche-couragement-avec-dieu/"
       },
       {
@@ -708,7 +708,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Élie était un prophète de Jéhovah qui combattit avec courage le culte de Baal dans le royaume d’Israël.",
-    "era": "Entre 940 et 905 av. n. è. environ",
+    "era": "XIIe-XIe siècle av. n. è. environ",
     "familyAndEntourage": [
       "Jéhovah",
       "Achab",
@@ -763,7 +763,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Esther, aussi appelée Hadassa, était une Juive devenue reine de Perse. Elle risqua sa vie pour intervenir en faveur de son peuple menacé d’extermination.",
-    "era": "515-415 av. n. è. environ",
+    "era": "Ve siècle av. n. è., sous le règne d’Assuérus (Xerxès Ier)",
     "familyAndEntourage": [
       "Mardochée, son cousin et tuteur",
       "Assuérus",
@@ -818,7 +818,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Daniel était un jeune Juif emmené à Babylone. Il servit dans plusieurs administrations impériales tout en restant fidèle à Jéhovah.",
-    "era": "635-535 av. n. è. environ",
+    "era": "VIIe-VIe siècles av. n. è.; son activité est attestée de 618 à 536 av. n. è. environ",
     "familyAndEntourage": [
       "Ses trois compagnons: Hanania, Mishaël et Azaria",
       "Nabuchodonosor",
@@ -873,7 +873,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Jean dirigeait l’attention vers Jésus et accomplissait la mission que Jéhovah lui avait confiée.",
     "didYouKnow": "Jésus a dit qu’aucun prophète né de femme n’avait été plus grand que Jean, tout en parlant ensuite de la grandeur de ceux qui seraient dans le Royaume.",
     "identity": "Précurseur de Jésus — Jean prépare les personnes au ministère de Jésus et appelle à la repentance.",
-    "era": "Évangiles",
+    "era": "Vers 2 av. n. è. à 31 de n. è. environ; il prépara le chemin du Messie",
     "familyAndEntourage": [
       "Jésus",
       "Zacharie",
@@ -981,7 +981,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Apôtre — Pierre est l’un des principaux apôtres et joue un rôle important dans les débuts de la congrégation chrétienne.",
-    "era": "Évangiles et Actes",
+    "era": "Vers 29-66 de n. è. environ",
     "familyAndEntourage": [
       "André",
       "Jean",
@@ -1034,7 +1034,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Apôtre et missionnaire — Paul est passé de persécuteur des disciples à prédicateur zélé du christianisme.",
-    "era": "Actes et lettres chrétiennes",
+    "era": "Ier siècle de n. è., de sa conversion vers 34-36 jusqu’à sa captivité à Rome",
     "familyAndEntourage": [
       "Barnabas",
       "Silas",
@@ -1092,7 +1092,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Apôtre de Jésus et rédacteur biblique, frère de Jacques fils de Zébédée. Il faisait partie des trois apôtres particulièrement proches de Jésus.",
-    "era": "Ministère de Jésus et débuts de la congrégation chrétienne au Ier siècle",
+    "era": "Ier siècle de n. è., du ministère de Jésus jusqu’aux dernières décennies de la congrégation primitive",
     "familyAndEntourage": [
       "Zébédée, son père",
       "Salomé, probablement sa mère",
@@ -1362,7 +1362,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "relationshipWithJehovah": "Élisha servit comme prophète de Jéhovah et dirigea l’attention des autres vers la puissance et les instructions de Dieu.",
     "didYouKnow": "Après la mort d’Élisha, un homme fut jeté dans sa tombe et revint à la vie lorsqu’il toucha les os du prophète.",
     "identity": "Prophète et successeur d’Élie — Élisée poursuit le ministère prophétique d’Élie et intervient dans de nombreux récits concernant Israël.",
-    "era": "Rois",
+    "era": "1037-997 av. n. è.",
     "familyAndEntourage": [
       "Élie",
       "Naaman",
