@@ -2671,7 +2671,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Paul le cite comme un collaborateur dans l’activité chrétienne, tout en rappelant que Dieu fait croître."
     ],
     "keyReading": "Actes 18:24-28 ; 19:1-7 ; 1 Corinthiens 1:10-13 ; 3:4-9,21-23 ; Tite 3:13",
-    "location": "Alexandrie, Éphèse, puis probablement Corinthe et d’autres régions du monde méditerranéen.",
+    "location": "Éphèse, Corinthe et d’autres régions du bassin méditerranéen",
     "relationshipWithJehovah": "Apollos connaissait déjà les Écritures et parlait avec ferveur au sujet de Jésus. Aquilas et Priscille lui expliquèrent plus exactement la voie de Dieu, et il accepta cette aide.",
     "didYouKnow": "Apollos était originaire d’Alexandrie et devint ensuite un prédicateur efficace qui réfutait publiquement les opposants en utilisant les Écritures.",
     "jwResources": [
@@ -3696,7 +3696,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Il devint l’un des Douze apôtres."
     ],
     "keyReading": "Jean 1:45-51 ; 21:1-14 ; Matthieu 10:2-4",
-    "location": "Galilée et Jérusalem.",
+    "location": "Probablement Nathanaël, disciple rencontré à proximité de la Galilée",
     "relationshipWithJehovah": "Nathanaël reconnut Jésus comme le Fils de Dieu et le Roi d’Israël et resta ensuite parmi ses apôtres.",
     "didYouKnow": "Le nom Nathanaël apparaît dans l’Évangile de Jean, tandis que les listes des Douze donnent le nom Barthélemy ; c’est pourquoi Barthélemy est généralement identifié à Nathanaël.",
     "jwResources": [
@@ -3713,7 +3713,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Barth%C3%A9lemy/"
       }
     ],
-    "identity": "Barthélemy était l’un des douze apôtres. JW.org considère qu’il s’agit probablement de Nathanaël, le disciple présenté dans l’Évangile de Jean.",
+    "identity": "Barthélemy est l’un des Douze et est généralement identifié à Nathanaël dans les sources de référence. Le texte de Jean appelle ce disciple Nathanaël, tandis que les listes des Douze utilisent le nom Barthélemy.",
     "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Philippe",
@@ -4956,7 +4956,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Prophète — Yoël utilise une invasion de sauterelles comme contexte pour appeler le peuple à revenir à Jéhovah.",
-    "era": "Époque préexilique, probablement avant la destruction de Jérusalem; date exacte non établie",
+    "era": "Époque préexilique ou période ancienne non déterminée avec certitude",
     "familyAndEntourage": [
       "Juda",
       "Le peuple"
@@ -5534,7 +5534,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "Philémon 1-2",
     "location": "Colosses, en Asie Mineure.",
     "relationshipWithJehovah": "Apphia était une chrétienne associée à Philémon et à Archippe. Paul lui adressa personnellement sa lettre, ce qui indique qu’elle faisait partie des personnes concernées par la situation d’Onésime.",
-    "didYouKnow": "Apphia est saluée avec Philémon et Archippe au début de la lettre à Philémon, qui était probablement liée à leur foyer et à leur congrégation.",
+    "didYouKnow": "Apphia est saluée avec Philémon et Archippe au début de la lettre à Philémon. Le texte la présente comme une personne directement concernée par la vie de la congrégation et par la situation d’Onésime.",
     "jwResources": [
       {
         "title": "Étude perspicace des Écritures — JW.org",
