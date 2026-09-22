@@ -166,7 +166,7 @@ export default function CharacterReviewScreen() {
 }
 
 const styles = StyleSheet.create({
-  root:{flex:1,backgroundColor:'#041C24'},background:{flex:1},overlay:{...StyleSheet.absoluteFillObject,backgroundColor:'rgba(0,24,31,.34)'},safe:{flex:1},
+  root:{flex:1,backgroundColor:'#041C24'},background:{flex:1},overlay:{...StyleSheet.absoluteFill,backgroundColor:'rgba(0,24,31,.34)'},safe:{flex:1},
   content:{width:'100%',maxWidth:760,alignSelf:'center',padding:18,paddingBottom:40},header:{marginBottom:16},back:{color:'#FFE58A',fontSize:15,fontWeight:'800',marginBottom:12},kicker:{color:'#FFE58A',fontSize:11,fontWeight:'900',letterSpacing:2},title:{color:'#FFFDF5',fontSize:30,fontWeight:'900',marginTop:6},subtitle:{color:'#DDEEEA',fontSize:14,lineHeight:20,marginTop:5},
   modes:{gap:8,paddingVertical:8},mode:{paddingHorizontal:13,paddingVertical:10,borderRadius:18,borderWidth:1,borderColor:'rgba(145,225,239,.4)',backgroundColor:'rgba(3,52,61,.72)'},modeActive:{backgroundColor:'#F4C62D',borderColor:'#FFEAA0'},modeText:{color:'#E6F4F0',fontSize:10,fontWeight:'900'},modeTextActive:{color:'#153A38'},
   progress:{flexDirection:'row',justifyContent:'space-between',marginTop:8,marginBottom:12},progressText:{color:'#DDEEEA',fontSize:12,fontWeight:'800'},
