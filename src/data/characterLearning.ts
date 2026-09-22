@@ -5440,10 +5440,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
   "mary_mother_james": {
     "studyFocus": "Marie, mère de Jacques, faisait partie des femmes qui suivirent Jésus et le servirent. Elle se trouvait parmi les personnes qui observèrent les événements entourant sa mort et se rendit au tombeau après le sabbat.",
     "lessonPoints": [
-      "Marie faisait partie des femmes qui soutenaient le ministère de Jésus.",
-      "Elle resta attachée aux disciples pendant la période de sa mort.",
-      "Elle se rendit au tombeau pour prendre soin du corps de Jésus.",
-      "Son témoignage fait partie des récits annonçant la résurrection."
+      "Marie servit Jésus pendant son ministère avec d’autres femmes.",
+      "Elle resta présente au moment de sa mort, malgré les circonstances difficiles.",
+      "Elle se rendit au tombeau avec d’autres femmes après la mort de Jésus.",
+      "Son exemple met en évidence la fidélité de disciples qui continuèrent à servir et à témoigner."
     ],
     "keyReading": "Matthieu 27:55-61 ; 28:1-10 ; Marc 15:40-47 ; 16:1-8",
     "location": "Galilée et Jérusalem.",
@@ -5468,9 +5468,10 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Les chrétiens de Jérusalem"
     ],
     "bibleAccount": [
-      "Des chrétiens se réunissent chez Marie après l’arrestation de Pierre.",
-      "Pierre, libéré, se rend à cette maison.",
-      "La servante Rhodé reconnaît sa voix et les disciples présents ont du mal à croire qu’il est devant la porte."
+      "Elle accompagne Jésus et le sert avec d’autres femmes pendant son ministère.",
+      "Elle est présente lors de la mise au poteau de Jésus avec Marie de Magdala et Salomé.",
+      "Elle est associée à Jacques le Petit et à José.",
+      "Elle fait partie des femmes qui viennent au tombeau après la mort de Jésus."
     ],
     "qualities": [
       "Hospitalité",
