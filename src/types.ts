@@ -3,6 +3,7 @@ export type GameType = 'quiz' | 'mystery' | 'truefalse' | 'challenge' | 'quote' 
 
 export type QuizQuestion = {
   id: string;
+  characterId?: string;
   type: 'quiz';
   category: string;
   difficulty: Difficulty;
@@ -15,6 +16,7 @@ export type QuizQuestion = {
 
 export type MysteryQuestion = {
   id: string;
+  characterId?: string;
   type: 'mystery';
   category: string;
   difficulty: Difficulty;
@@ -27,6 +29,7 @@ export type MysteryQuestion = {
 
 export type TrueFalseQuestion = {
   id: string;
+  characterId?: string;
   type: 'truefalse';
   category: string;
   difficulty: Difficulty;
