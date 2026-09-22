@@ -2788,9 +2788,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Haggaï",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Hagga%C3%AF/"
       }
+      {
+        "title": "Haggaï — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Hagga%C3%AF/"
+      }
     ],
     "identity": "Aggée était un prophète qui encouragea les Juifs revenus d’exil à reprendre la reconstruction du temple de Jéhovah.",
-    "era": "VIe siècle av. n. è., vers 520 av. n. è.",
+    "era": "520 av. n. è. environ, sous le gouvernorat de Zorobabel et le règne de Darius Hystaspe",
     "familyAndEntourage": [
       "Zorobabel",
       "Josué le grand prêtre",
@@ -2809,8 +2813,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle pour le culte de Jéhovah"
     ],
     "difficulties": [
-      "Il doit réveiller un peuple découragé et lui faire voir que ses priorités matérielles avaient pris le dessus sur le culte."
-    ]
+  "Il prophétisa pendant une courte période après le retour d’exil et dut encourager un peuple qui avait laissé la reconstruction du temple s’interrompre.",
+  "Son message demandait de réexaminer les priorités spirituelles et de reprendre les travaux malgré les difficultés."
+]
   },
   "zechariah": {
     "studyFocus": "Zacharie était un prophète contemporain d’Aggée qui encouragea les Juifs revenus d’exil à achever le temple. Ses visions contiennent des messages sur la restauration de Jérusalem, le rôle du grand prêtre Josué et l’action de l’esprit de Jéhovah.",
@@ -2845,9 +2850,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Zekaria",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Zekaria/"
       }
+      {
+        "title": "Zekaria — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Zekaria/"
+      }
     ],
     "identity": "Zacharie était un prophète contemporain d’Aggée qui encouragea les Juifs revenus d’exil à achever le temple et leur donna plusieurs visions prophétiques.",
-    "era": "VIe siècle av. n. è., après l’exil",
+    "era": "520-518 av. n. è. environ, après le retour des Juifs de l’exil",
     "familyAndEntourage": [
       "Béréchia, son père",
       "Iddo, son grand-père",
@@ -2868,8 +2877,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Obéissance prophétique"
     ],
     "difficulties": [
-      "Il intervient dans une période de reconstruction où le peuple est encore vulnérable et découragé."
-    ]
+  "Il prophétisa dans une période où la reconstruction du temple rencontrait de l’opposition et du découragement.",
+  "Ses visions contenaient des messages symboliques qui exigeaient foi et attention pour être compris."
+]
   },
   "malachi": {
     "studyFocus": "Malachie fut un prophète qui reprit les prêtres et le peuple pour leur manque de respect envers le culte de Jéhovah. Il dénonça notamment les sacrifices de mauvaise qualité et l’infidélité conjugale, tout en annonçant la venue d’un messager préparant le chemin.",
@@ -2904,9 +2914,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Malachie",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Malachie/"
       }
+      {
+        "title": "Malaki — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Malaki/"
+      }
     ],
     "identity": "Malachie était un prophète qui reprit les prêtres et le peuple de Juda pour leur manque de respect envers le culte de Jéhovah.",
-    "era": "Ve siècle av. n. è., après la reconstruction du temple",
+    "era": "Ve siècle av. n. è. environ, après la reconstruction du temple",
     "familyAndEntourage": [
       "Les prêtres de Juda",
       "Le peuple de Juda",
@@ -2924,8 +2938,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Franchise"
     ],
     "difficulties": [
-      "Il doit corriger une communauté dont le culte s’est installé dans la routine et le manque de respect."
-    ]
+  "Il dut transmettre des reproches à des prêtres et à un peuple dont le culte était devenu formaliste.",
+  "Il annonça aussi des changements futurs alors que les difficultés spirituelles étaient déjà profondes."
+]
   },
   "gamaliel": {
     "studyFocus": "Gamaliel était un Pharisien respecté et un enseignant de la Loi. Il intervint devant le Sanhédrin lorsque les apôtres furent menacés et conseilla de ne pas agir précipitamment contre eux. Son conseil donna du temps aux apôtres, même si le récit ne présente pas Gamaliel comme un disciple chrétien.",
@@ -2960,9 +2975,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Gamaliel",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Gamaliel/"
       }
+      {
+        "title": "Gamaliel — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Gamaliel/"
+      }
     ],
     "identity": "Gamaliel était un pharisien et enseignant de la Loi très respecté qui intervint lorsque les apôtres furent amenés devant le Sanhédrin.",
-    "era": "Ier siècle de n. è.",
+    "era": "Ier siècle de n. è., à l’époque des débuts de la congrégation chrétienne",
     "familyAndEntourage": [
       "Paul, qui fut formé à ses pieds",
       "Les membres du Sanhédrin",
@@ -2979,8 +2998,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Capacité à raisonner avant d’agir"
     ],
     "difficulties": [
-      "Il reste membre du courant pharisien et le récit ne dit pas qu’il soit devenu chrétien."
-    ]
+  "Comme membre du Sanhédrin, il devait se prononcer sur la persécution des disciples de Jésus.",
+  "Sa recommandation de ne pas combattre une œuvre que Dieu pouvait soutenir exigeait une certaine retenue face à une majorité hostile."
+]
   },
   "apollos": {
     "studyFocus": "Apollos était un Juif originaire d’Alexandrie, éloquent et très versé dans les Écritures. Il connaissait le baptême de Jean et enseignait avec zèle, mais Priscille et Aquila lui expliquèrent plus exactement la voie de Dieu. Il devint ensuite un prédicateur efficace qui aidait les croyants.",
@@ -3015,9 +3035,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Apollos",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Apollos/"
       }
+      {
+        "title": "Apollos — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Apollos/"
+      }
     ],
     "identity": "Apollos était un Juif instruit d’Alexandrie, éloquent et fervent, qui enseignait Jésus avec exactitude mais ne connaissait initialement que le baptême de Jean.",
-    "era": "Ier siècle de n. è.",
+    "era": "Vers 52-55 de n. è. et après",
     "familyAndEntourage": [
       "Priscille",
       "Aquila",
@@ -3038,8 +3062,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Capacité à apprendre"
     ],
     "difficulties": [
-      "Sa compréhension initiale était incomplète; il accepte néanmoins d’être mieux instruit et continue ensuite son ministère."
-    ]
+  "Il ne connaissait au départ que le baptême de Jean et avait donc besoin de recevoir une compréhension plus exacte de la voie chrétienne.",
+  "Il dut ensuite servir dans différentes régions au milieu de controverses et de divisions entre chrétiens qui se réclamaient de lui."
+]
   },
   "silas": {
     "studyFocus": "Silas, appelé aussi Silvain dans les lettres chrétiennes, était un chrétien de premier plan à Jérusalem et un compagnon de Paul dans ses voyages missionnaires. Après avoir été emprisonné à Philippes avec Paul, il continua à participer à l’œuvre chrétienne.",
@@ -3070,9 +3095,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Silas",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Silas/"
       }
+      {
+        "title": "Silas — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Silas/"
+      }
     ],
     "identity": "Silas, aussi appelé Silvain dans les lettres chrétiennes, était un membre éminent de la congrégation de Jérusalem, prophète et compagnon de voyage de Paul.",
-    "era": "Premières décennies de la congrégation chrétienne, surtout vers 49-50 de n. è. et après",
+    "era": "Ier siècle de n. è., pendant les voyages missionnaires de Paul",
     "familyAndEntourage": [
       "Paul",
       "Timothée",
@@ -3093,8 +3122,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Esprit de collaboration"
     ],
     "difficulties": [
-      "Il subit des coups de verges et l’emprisonnement à Philippes à cause de sa prédication."
-    ]
+  "Il fut emprisonné à Philippes avec Paul après avoir été battu publiquement.",
+  "Il accompagna Paul dans des régions où la prédication provoqua de fortes oppositions et des émeutes."
+]
   },
   "onesimus": {
     "studyFocus": "Onésime était un esclave appartenant à Philémon qui devint chrétien après avoir rencontré Paul. Paul demanda à Philémon de l’accueillir désormais comme un frère bien-aimé.",
@@ -3125,9 +3155,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Onésime",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/On%C3%A9sime/"
       }
+      {
+        "title": "Onésime — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/On%C3%A9sime/"
+      }
     ],
     "identity": "Onésime était l’esclave de Philémon qui s’enfuit de sa maison de Colosses, rencontra Paul à Rome et devint chrétien. Paul le renvoya ensuite auprès de Philémon comme frère chrétien.",
-    "era": "Vers 60-61 de n. è., pendant la détention de Paul à Rome",
+    "era": "Ier siècle de n. è., pendant l’activité de Paul",
     "familyAndEntourage": [
       "Philémon",
       "Apphia",
@@ -3146,8 +3180,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Disposition à réparer une situation difficile"
     ],
     "difficulties": [
-      "Il avait fui son maître et il est possible qu’il lui ait aussi causé un préjudice matériel; il devait ensuite retourner vers lui."
-    ]
+  "Esclave de Philémon, il avait quitté son maître dans des circonstances qui ne sont pas entièrement précisées par le texte.",
+  "Après être devenu chrétien, il dut retourner auprès de Philémon et affronter la situation créée par son départ."
+]
   },
   "philemon": {
     "studyFocus": "Philémon était un chrétien de Colosses chez qui une congrégation se réunissait. Paul lui écrivit au sujet d’Onésime, son esclave devenu chrétien, et l’encouragea à l’accueillir comme un frère.",
@@ -3178,9 +3213,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Philémon",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Phil%C3%A9mon/"
       }
+      {
+        "title": "Philémon — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Phil%C3%A9mon/"
+      }
     ],
     "identity": "Philémon était un chrétien de Colosses, ami et collaborateur de Paul, chez qui une congrégation se réunissait. Paul lui écrivit au sujet d’Onésime.",
-    "era": "Vers 60-61 de n. è.",
+    "era": "Ier siècle de n. è., pendant l’activité de Paul",
     "familyAndEntourage": [
       "Apphia",
       "Archippe",
@@ -3201,8 +3240,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Générosité"
     ],
     "difficulties": [
-      "Il devait accueillir de nouveau un esclave qui s’était enfui et qui avait peut-être causé un préjudice matériel."
-    ]
+  "Il devait décider comment accueillir Onésime, désormais son frère chrétien.",
+  "Sa situation demandait de mettre les principes chrétiens et l’amour fraternel au-dessus des conventions sociales de son époque."
+]
   },
   "titus": {
     "studyFocus": "Tite était un proche collaborateur de Paul et un chrétien d’origine non juive. Paul lui confia des responsabilités importantes, notamment en Crète, où il devait aider à organiser les congrégations et à nommer des anciens.",
@@ -3233,9 +3273,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Tite",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tite/"
       }
+      {
+        "title": "Tite — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tite/"
+      }
     ],
     "identity": "Tite était un collaborateur et proche associé de Paul, chrétien d’origine grecque, à qui Paul confia des responsabilités importantes dans plusieurs congrégations.",
-    "era": "Premières décennies de la congrégation chrétienne",
+    "era": "Ier siècle de n. è., pendant les voyages missionnaires et après",
     "familyAndEntourage": [
       "Paul",
       "Les congrégations de Crète",
@@ -3254,8 +3298,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle pour le service"
     ],
     "difficulties": [
-      "Il devait faire face à des difficultés doctrinales et morales dans les congrégations de Crète."
-    ]
+  "Paul lui confia des responsabilités importantes dans l’organisation des congrégations en Crète.",
+  "Il devait aider à établir des anciens et à corriger des problèmes doctrinaux et moraux dans un environnement difficile."
+]
   },
   "eutychus": {
     "studyFocus": "Eutyche était un jeune homme qui écoutait Paul parler à Troas. Assis à une fenêtre au troisième étage, il s’endormit, tomba et mourut, puis Paul l’enlaça et rassura les disciples en disant que sa vie était en lui.",
@@ -3286,9 +3331,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Eutyche",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Eutyche/"
       }
+      {
+        "title": "Eutyche — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Eutyche/"
+      }
     ],
     "identity": "Jeune homme de Troas — Eutyche est connu pour l’incident survenu pendant un long discours de Paul à Troas.",
-    "era": "Actes",
+    "era": "Vers 56 de n. è., pendant le troisième voyage missionnaire de Paul",
     "familyAndEntourage": [
       "Paul",
       "Les disciples de Troas"
@@ -3302,11 +3351,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance dans l’écoute"
     ],
     "difficulties": [
-      "Il a été victime d’un grave accident alors qu’il assistait à une réunion chrétienne à Troas.",
-      "Sa fatigue l’a fait s’endormir pendant le long discours de Paul et il est tombé d’une fenêtre du troisième étage.",
-      "Il a été relevé mort après sa chute, ce qui a profondément bouleversé les frères présents.",
-      "Jéhovah a ensuite permis que Paul le ramène à la vie, apportant une grande consolation à la congrégation. — Ac 20:7-12."
-    ]
+  "Il s’endormit pendant un long discours de Paul et tomba d’une fenêtre du troisième étage.",
+  "Sa chute provoqua une situation dramatique pour les croyants réunis, mais Paul le retrouva vivant."
+]
   },
   "martha": {
     "studyFocus": "Marthe accueillait Jésus chez elle à Béthanie. Elle était active et soucieuse de bien recevoir son invité, mais Jésus lui rappela que l’attention aux choses spirituelles était prioritaire.",
@@ -3333,9 +3380,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+      {
+        "title": "Marthe — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Marthe/"
+      }
     ],
     "identity": "Marthe était la sœur de Lazare et de Marie de Béthanie. Elle accueillit Jésus dans sa maison et fut témoin de la résurrection de son frère.",
-    "era": "Ministère terrestre de Jésus, vers 29-33 de n. è.",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Lazare",
       "Marie de Béthanie",
@@ -3355,8 +3406,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Service"
     ],
     "difficulties": [
-      "Son souci des nombreuses tâches la conduit à perdre momentanément de vue la priorité de l’enseignement spirituel."
-    ]
+  "Elle s’inquiétait beaucoup des tâches matérielles alors qu’elle recevait Jésus chez elle.",
+  "Elle dut ensuite affronter la mort de son frère Lazare tout en exprimant sa foi en Jésus."
+]
   },
   "mary_bethany": {
     "studyFocus": "Marie de Béthanie, sœur de Marthe et de Lazare, aimait écouter Jésus et manifestait une foi profonde. Elle versa sur Jésus un parfum précieux peu avant sa mort.",
@@ -3387,9 +3439,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "La Bible en ligne",
         "url": "https://www.jw.org/fr/bibliotheque/bible/"
       }
+      {
+        "title": "Marie — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Marie-III/"
+      }
     ],
     "identity": "Marie de Béthanie était la sœur de Marthe et de Lazare et une amie proche de Jésus. Elle manifesta une grande foi et une profonde reconnaissance envers lui.",
-    "era": "Ministère terrestre de Jésus",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Marthe",
       "Lazare",
@@ -3407,8 +3463,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Reconnaissance"
     ],
     "difficulties": [
-      "Elle connaît le deuil de son frère et doit accepter que Jésus ne l’ait pas empêché de mourir immédiatement."
-    ]
+  "Elle dut faire face à la mort de son frère Lazare et au chagrin qui accompagnait cette épreuve.",
+  "Elle manifesta ensuite sa foi et son amour pour Jésus par des actions qui furent parfois mal comprises par d’autres."
+]
   },
   "joseph_arimathea": {
     "studyFocus": "Joseph d’Arimathie était un homme riche et membre respecté du Sanhédrin qui était devenu disciple de Jésus. Après la mort de Jésus, il eut le courage de demander son corps à Pilate et de le déposer dans un tombeau neuf.",
@@ -3435,9 +3492,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+      {
+        "title": "Joseph d’Arimathée — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Joseph-II/"
+      }
     ],
     "identity": "Joseph d’Arimathie était un homme riche, membre respecté du Sanhédrin et disciple de Jésus qui demanda courageusement le corps de Jésus après sa mort.",
-    "era": "Vers 33 de n. è.",
+    "era": "Ier siècle de n. è., au moment de la mort et de l’ensevelissement de Jésus",
     "familyAndEntourage": [
       "Jésus",
       "Pilate",
@@ -3457,8 +3518,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Discrétion"
     ],
     "difficulties": [
-      "Son statut au Sanhédrin pouvait rendre risqué le fait de se déclarer publiquement disciple au moment de la mort de Jésus."
-    ]
+  "Il était membre du Sanhédrin mais n’avait pas approuvé la décision et l’action des autres contre Jésus.",
+  "Il dut ensuite agir publiquement en faveur de Jésus en demandant son corps pour lui donner une sépulture."
+]
   },
   "jairus": {
     "studyFocus": "Jaïrus était un président de synagogue qui vint supplier Jésus de guérir sa fille gravement malade. Même après avoir appris sa mort, il continua à exercer sa foi et vit Jésus la ressusciter.",
@@ -3485,9 +3547,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+      {
+        "title": "Jaïrus — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ja%C3%AFrus/"
+      }
     ],
     "identity": "Jaïrus était un responsable de synagogue dont la fille de 12 ans tomba gravement malade. Il supplia Jésus de venir la sauver.",
-    "era": "Vers 31-32 de n. è.",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Sa fille unique",
       "Sa femme",
@@ -3506,8 +3572,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance"
     ],
     "difficulties": [
-      "Il subit la peur et le chagrin de voir sa fille mourir avant même l’arrivée de Jésus."
-    ]
+  "Il était chef de synagogue et dut venir publiquement demander l’aide de Jésus malgré la pression possible de ses contemporains.",
+  "Il reçut ensuite la nouvelle de la mort de sa fille avant de voir Jésus la ressusciter."
+]
   },
   "thomas": {
     "studyFocus": "Thomas était l’un des douze apôtres. Après la mort de Jésus, il eut du mal à croire au témoignage des autres disciples concernant la résurrection, mais lorsqu’il vit Jésus ressuscité, il exprima une déclaration de foi.",
@@ -3534,9 +3601,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+      {
+        "title": "Thomas — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Thomas/"
+      }
     ],
     "identity": "Thomas, appelé Didyme, était l’un des douze apôtres. Il est surtout connu pour avoir voulu des preuves de la résurrection de Jésus avant d’y croire pleinement.",
-    "era": "Ministère de Jésus et premières années de la congrégation",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus et après sa résurrection",
     "familyAndEntourage": [
       "Les onze autres apôtres",
       "Jésus",
@@ -3555,8 +3626,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi retrouvée"
     ],
     "difficulties": [
-      "Il a eu du mal à croire au témoignage des autres disciples concernant la résurrection et a demandé des preuves."
-    ]
+  "Il exprima des doutes lorsqu’on lui annonça que Jésus était ressuscité.",
+  "Il dut ensuite réviser son point de vue lorsqu’il vit Jésus ressuscité et reçut des preuves convaincantes."
+]
   },
   "lydia": {
     "studyFocus": "Lydie était une marchande de pourpre de Thyatire installée à Philippes. Elle écouta Paul, accepta le message chrétien, fut baptisée avec sa maison et insista pour accueillir Paul et ses compagnons chez elle.",
@@ -3587,9 +3659,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Lydie",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Lydie/"
       }
+      {
+        "title": "Lydie — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Lydie/"
+      }
     ],
     "identity": "Lydie était une commerçante de Thyatire qui s’installa à Philippes. Elle fut la première personne de Macédoine à accepter la bonne nouvelle, puis elle accueillit Paul et ses compagnons chez elle.",
-    "era": "Vers 50 de n. è., lors du deuxième voyage missionnaire de Paul",
+    "era": "Vers 50 de n. è. et après",
     "familyAndEntourage": [
       "Paul",
       "Silas",
@@ -3610,8 +3686,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Détermination"
     ],
     "difficulties": [
-      "Elle devait faire des choix personnels et religieux dans un environnement où la prédication chrétienne était nouvelle."
-    ]
+  "Elle exerçait un commerce de pourpre et dirigeait apparemment sa maisonnée à Philippes.",
+  "Elle accueillit Paul et ses compagnons chez elle, puis sa maison devint un lieu d’hospitalité pour les chrétiens."
+]
   },
   "tabitha": {
     "studyFocus": "Tabitha, appelée Dorcas en grec, était une disciple de Joppé connue pour ses nombreuses bonnes actions et son aide aux pauvres. Après sa mort, Pierre fut appelé et Jéhovah permit que Tabitha soit ramenée à la vie par l’intermédiaire de l’apôtre.",
@@ -3642,9 +3719,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Tabitha",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tabitha/"
       }
+      {
+        "title": "Tabitha — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Tabitha/"
+      }
     ],
     "identity": "Tabitha, appelée Dorcas en grec, était une disciple de Joppé connue pour ses nombreuses bonnes actions et ses dons aux personnes dans le besoin.",
-    "era": "Premières années de la congrégation chrétienne, avant la visite de Pierre à Joppé",
+    "era": "Ier siècle de n. è., après la Pentecôte 33",
     "familyAndEntourage": [
       "Pierre",
       "Les veuves de Joppé",
@@ -3663,8 +3744,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle pour les bonnes œuvres"
     ],
     "difficulties": [
-      "Sa mort a causé un profond chagrin parmi les disciples qu’elle avait aidés."
-    ]
+  "Elle mourut alors que les disciples de Joppé avaient besoin de ses services et de sa générosité.",
+  "Les veuves et les autres croyants montrèrent combien son décès les avait touchés avant sa résurrection par Pierre."
+]
   },
   "stephen": {
     "studyFocus": "Étienne était l’un des sept hommes choisis pour s’occuper d’un besoin pratique dans la congrégation de Jérusalem. Rempli de foi et d’esprit saint, il rendit un témoignage courageux devant le Sanhédrin et fut tué par lapidation.",
@@ -3699,9 +3781,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Étienne",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89tienne/"
       }
+      {
+        "title": "Étienne — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/%C3%89tienne/"
+      }
     ],
     "identity": "Étienne était un homme plein de foi et d’esprit saint, choisi avec six autres hommes pour s’occuper de la distribution quotidienne de nourriture dans la congrégation de Jérusalem. Il devint ensuite un prédicateur énergique et le premier chrétien dont la Bible rapporte le martyre.",
-    "era": "Vers 33-36 de n. è., peu après la Pentecôte",
+    "era": "Vers 33-34 de n. è., peu après la Pentecôte",
     "familyAndEntourage": [
       "Les apôtres",
       "Philippe et les six autres hommes choisis pour le service",
@@ -3723,8 +3809,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Zèle"
     ],
     "difficulties": [
-      "Il est faussement accusé puis mis à mort par lapidation à cause de son témoignage."
-    ]
+  "Il dut répondre à des accusations hostiles devant le Sanhédrin.",
+  "Après son témoignage, il fut lapidé et devint le premier martyr chrétien."
+]
   },
   "ananias_damascus": {
     "studyFocus": "Ananias de Damas était un disciple que Jésus dirigea vers Saul après la vision de celui-ci. Malgré les inquiétudes qu’il avait au sujet de Saul, Ananias obéit, lui imposa les mains, l’aida à retrouver la vue et le baptisa.",
@@ -3751,9 +3838,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+      {
+        "title": "Ananias — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Ananias/"
+      }
     ],
     "identity": "Ananias de Damas était un disciple fidèle à qui Jésus ressuscité confia la mission de rencontrer Saul de Tarse, alors persécuteur des chrétiens.",
-    "era": "Vers 36 de n. è., peu après la conversion de Saul",
+    "era": "Vers 34-36 de n. è., après la conversion de Saul",
     "familyAndEntourage": [
       "Saul de Tarse",
       "Les disciples de Damas",
@@ -3772,8 +3863,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Esprit missionnaire"
     ],
     "difficulties": [
-      "Il devait aller vers un persécuteur connu des disciples et prendre le risque de lui faire confiance sur l’ordre de Jésus."
-    ]
+  "Il hésita d’abord à aller voir Saul parce qu’il connaissait sa réputation de persécuteur.",
+  "Il obéit néanmoins à Jésus et participa à la guérison, au baptême et à l’accueil du futur apôtre Paul."
+]
   },
   "philip_evangelizer": {
     "studyFocus": "Philippe l’évangélisateur faisait partie des sept hommes choisis à Jérusalem pour s’occuper d’un besoin matériel de la congrégation. Après la dispersion des disciples, il prêcha en Samarie puis fut dirigé vers la route de Gaza, où il enseigna un fonctionnaire éthiopien.",
@@ -3804,9 +3896,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Étude perspicace des Écritures — Philippe",
         "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Philippe/"
       }
+      {
+        "title": "Philippe — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Philippe-I/"
+      }
     ],
     "identity": "Philippe l’évangélisateur était l’un des sept hommes choisis à Jérusalem pour un service de distribution. Il devint ensuite un prédicateur itinérant particulièrement actif.",
-    "era": "Premières années de la congrégation chrétienne",
+    "era": "Ier siècle de n. è., après la persécution suivant la mort d’Étienne",
     "familyAndEntourage": [
       "Étienne",
       "Les six autres hommes choisis à Jérusalem",
@@ -3828,8 +3924,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Hospitalité"
     ],
     "difficulties": [
-      "Il exerce son ministère dans une période de persécution et de dispersion des disciples."
-    ]
+  "Il dut adapter sa prédication aux besoins de personnes très différentes, notamment un Samaritain et un haut fonctionnaire éthiopien.",
+  "Après l’épisode de l’Éthiopien, il continua son activité d’évangélisation dans plusieurs villes."
+]
   },
   "james_zebedee": {
     "studyFocus": "Jacques fils de Zébédée était l’un des douze apôtres et le frère de Jean. Avec Pierre et Jean, il faisait partie du cercle des disciples que Jésus emmena à certains moments importants. Hérode Agrippa Ier le fit tuer par l’épée.",
@@ -3856,9 +3953,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+      {
+        "title": "Jacques — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacques/"
+      }
     ],
     "identity": "Jacques, fils de Zébédée, était l’un des douze apôtres de Jésus et faisait partie du cercle des trois disciples particulièrement proches de lui avec Pierre et Jean.",
-    "era": "Ministère terrestre de Jésus et premières années de la congrégation",
+    "era": "Ier siècle de n. è.; mort en martyr vers 44 de n. è.",
     "familyAndEntourage": [
       "Zébédée, son père",
       "Jean, son frère",
@@ -3877,8 +3978,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Fidélité"
     ],
     "difficulties": [
-      "Il devait corriger une certaine ambition personnelle et accepte finalement de partager les souffrances des disciples; il meurt en martyr."
-    ]
+  "Il fut témoin de moments particuliers de la vie de Jésus avec Pierre et Jean.",
+  "Il fut finalement exécuté sur ordre d’Hérode Agrippa Ier, devenant le premier des Douze à mourir en martyr."
+]
   },
   "james_brother_jesus": {
     "studyFocus": "Jacques, frère de Jésus, ne croyait pas en Jésus au début de son ministère. Après la résurrection, Jésus lui apparut, et Jacques devint ensuite une figure importante de la congrégation de Jérusalem.",
@@ -3905,9 +4007,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+      {
+        "title": "Jacques — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jacques/"
+      }
     ],
     "identity": "Jacques, demi-frère de Jésus, devint une figure majeure de la congrégation de Jérusalem et rédigea la lettre biblique qui porte son nom.",
-    "era": "Ministère de Jésus puis premières décennies de la congrégation chrétienne",
+    "era": "Ier siècle de n. è., particulièrement après la résurrection de Jésus",
     "familyAndEntourage": [
       "Marie, sa mère",
       "Jésus",
@@ -3930,8 +4036,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Sens pastoral"
     ],
     "difficulties": [
-      "Il n’a pas cru en Jésus au début de son ministère; plus tard, il doit aider la congrégation à résoudre des questions sensibles."
-    ]
+  "Pendant le ministère de Jésus, Jacques et ses frères n’exerçaient pas encore la foi en lui.",
+  "Après la résurrection de Jésus, Jacques devint une « colonne » de la congrégation de Jérusalem et dut assumer d’importantes responsabilités."
+]
   },
   "jude_brother_jesus": {
     "studyFocus": "Jude, frère de Jésus, devint un disciple et écrivit une courte lettre aux chrétiens. Il les encouragea à défendre leur foi contre des hommes immoraux qui s’étaient infiltrés dans la congrégation.",
@@ -3958,9 +4065,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+      {
+        "title": "Jude — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Jude/"
+      }
     ],
     "identity": "Jude, demi-frère de Jésus et frère de Jacques, devint chrétien après la résurrection de Jésus et rédigea la lettre biblique de Jude.",
-    "era": "Premières décennies de la congrégation chrétienne; lettre rédigée vers 65 de n. è.",
+    "era": "Ier siècle de n. è., après la résurrection de Jésus",
     "familyAndEntourage": [
       "Marie, sa mère",
       "Jésus",
@@ -3981,8 +4092,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Fidélité"
     ],
     "difficulties": [
-      "Il devait autrefois surmonter son incrédulité envers Jésus et, plus tard, avertir les congrégations contre des hommes corrompus qui s’étaient infiltrés."
-    ]
+  "Jude ne croyait pas en Jésus pendant une partie de son ministère terrestre.",
+  "Après la résurrection, il devint son esclave et écrivit une lettre pour exhorter les chrétiens à défendre la vraie foi."
+]
   },
   "philip_apostle": {
     "studyFocus": "Philippe l’apôtre était originaire de Bethsaïda, comme Pierre et André. Jésus l’appela directement à le suivre. Philippe parla ensuite de Jésus à Nathanaël et fut présent lors de plusieurs moments importants du ministère de Jésus.",
@@ -4009,9 +4121,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+      {
+        "title": "Philippe — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Philippe-II/"
+      }
     ],
     "identity": "Apôtre — Philippe est l’un des Douze. Il amène Nathanaël à Jésus et intervient dans plusieurs épisodes de l’Évangile de Jean.",
-    "era": "Évangiles",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Nathanaël",
       "André",
@@ -4028,11 +4144,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Esprit d’initiative"
     ],
     "difficulties": [
-      "Il a vécu dans une période où Jésus était rejeté par beaucoup de responsables religieux et a dû exercer sa foi au milieu de cette opposition.",
-      "Il devait parfois comprendre progressivement les enseignements de Jésus, comme lorsqu’il lui a demandé de montrer le Père.",
-      "Comme les autres apôtres, il a dû rester fidèle après la mort et la résurrection de Jésus, puis continuer à soutenir la prédication chrétienne.",
-      "Son exemple montre l’importance de progresser dans la foi même lorsqu’on ne comprend pas immédiatement tout ce que Jésus enseigne. — Jean 14:8-11 ; Ac 1:13, 14."
-    ]
+  "Il dut apprendre progressivement à comprendre l’identité et la mission de Jésus malgré ses propres limites de compréhension.",
+  "Il participa à la multiplication des pains et fut ensuite présent lorsque des Grecs cherchèrent à voir Jésus."
+]
   },
   "bartholomew": {
     "studyFocus": "Barthélemy est traditionnellement identifié à Nathanaël, disciple que Philippe amena à Jésus. Jésus loua sa franchise et sa sincérité, et Nathanaël reconnut rapidement Jésus comme le Fils de Dieu et Roi d’Israël.",
@@ -4059,9 +4173,13 @@ export const characterLearning: Record<string, CharacterLearning> = {
         "title": "Imitez leur foi — personnages de la Bible",
         "url": "https://www.jw.org/fr/la-bible-et-vous/la-foi-en-dieu/portraits-hommes-femmes-bible/"
       }
+      {
+        "title": "Barthélemy — Étude perspicace des Écritures",
+        "url": "https://www.jw.org/fr/bibliotheque/livres/%C3%89tude-perspicace-des-%C3%89critures/Barth%C3%A9lemy/"
+      }
     ],
     "identity": "Barthélemy était l’un des douze apôtres. JW.org considère qu’il s’agit probablement de Nathanaël, le disciple présenté dans l’Évangile de Jean.",
-    "era": "Ministère terrestre de Jésus et premières années de la congrégation",
+    "era": "Ier siècle de n. è., pendant le ministère terrestre de Jésus",
     "familyAndEntourage": [
       "Philippe",
       "Nathanaël",
@@ -4080,8 +4198,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Foi"
     ],
     "difficulties": [
-      "L’identification de Barthélemy avec Nathanaël est une conclusion fondée sur la comparaison des Évangiles, et non une affirmation explicite de Jean."
-    ]
+  "Les informations bibliques sur sa vie sont limitées et son identification avec Nathanaël repose sur des indices, pas sur une déclaration explicite.",
+  "Comme apôtre, il dut accompagner Jésus pendant son ministère et rester fidèle malgré les difficultés rencontrées par les disciples."
+]
   },
   "james_alphaaeus": {
     "studyFocus": "Jacques fils d’Alphée était l’un des douze apôtres choisis par Jésus. La Bible donne peu de détails personnels sur lui, mais son nom figure régulièrement dans les listes des apôtres.",
