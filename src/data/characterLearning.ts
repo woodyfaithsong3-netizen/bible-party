@@ -46,7 +46,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Premier homme — Adam apparaît au début du récit biblique comme le premier homme créé et placé dans le jardin d’Éden.",
-    "era": "Genèse",
+    "era": "4026-3096 av. n. è. environ",
     "familyAndEntourage": [
       "Ève",
       "Caïn",
@@ -62,7 +62,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Importance de l’obéissance"
     ],
     "difficulties": [
-      "Les choix personnels peuvent avoir de graves conséquences."
+      "Il a dû exercer sa responsabilité dans un cadre parfait tout en respectant une limite précise fixée par Jéhovah.",
+      "Sa désobéissance a entraîné la perte de sa position parfaite et des conséquences durables pour sa descendance."
     ]
   },
   "noe": {
@@ -211,7 +212,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Épouse d’Abraham et mère d’Isaac — Sarah a vécu les promesses faites à Abraham et est devenue mère d’Isaac malgré son âge avancé.",
-    "era": "Genèse",
+    "era": "2008-1881 av. n. è. environ",
     "familyAndEntourage": [
       "Abraham",
       "Isaac",
@@ -227,10 +228,9 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance"
     ],
     "difficulties": [
-      "A quitté Our puis Harân pour suivre Abraham vers Canaan, avec les incertitudes et les dangers d’une vie nomade.",
-      "Elle a connu une longue période de stérilité et a dû attendre l’accomplissement de la promesse concernant une descendance.",
-      "Son initiative avec Agar a provoqué des tensions familiales et des conséquences douloureuses.",
-      "Elle a dû faire face à des situations dangereuses en Égypte et chez Abimélek tout en continuant à faire confiance à Jéhovah."
+      "Elle a dû vivre pendant de nombreuses années sans voir s’accomplir la promesse concernant une descendance.",
+      "Elle a connu des situations dangereuses en Égypte et chez Abimélek.",
+      "Son initiative concernant Agar a entraîné des tensions familiales et des conséquences douloureuses."
     ]
   },
   "jacob": {
@@ -381,7 +381,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Prophète et médiateur d’Israël — Moïse conduit Israël hors d’Égypte et reçoit la Loi au mont Sinaï.",
-    "era": "Exode à Deutéronome",
+    "era": "1593-1473 av. n. è. environ",
     "familyAndEntourage": [
       "Aaron",
       "Miriam",
@@ -400,7 +400,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance"
     ],
     "difficulties": [
-      "Même un serviteur fidèle doit respecter les instructions reçues."
+      "Il devait diriger une nation nombreuse et gérer ses plaintes, ses rébellions et ses besoins dans le désert.",
+      "Il a lui-même commis une faute grave à Mériba, ce qui l’a empêché d’entrer en Terre promise."
     ]
   },
   "josue": {
@@ -600,7 +601,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Roi d’Israël — David a servi comme roi d’Israël et a connu à la fois de grandes victoires et de graves erreurs.",
-    "era": "Rois",
+    "era": "1107-1037 av. n. è. environ",
     "familyAndEntourage": [
       "Saül",
       "Jonathan",
@@ -621,7 +622,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Repentir"
     ],
     "difficulties": [
-      "Ses fautes montrent aussi les conséquences du péché et la nécessité de la repentance."
+      "Il a vécu de longues années sous la menace de Saül avant de devenir roi.",
+      "Il a commis de graves péchés, notamment dans l’affaire de Bath-Shéba, et en a subi les conséquences familiales."
     ]
   },
   "salomon": {
@@ -655,7 +657,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Roi et bâtisseur du temple — Salomon demande de la sagesse et construit le temple de Jérusalem, mais sa fin de règne comporte aussi de graves problèmes.",
-    "era": "Rois",
+    "era": "1037-997 av. n. è.",
     "familyAndEntourage": [
       "David",
       "Bath-Shéba",
@@ -671,7 +673,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Organisation"
     ],
     "difficulties": [
-      "La richesse et les influences peuvent détourner même quelqu’un qui a reçu beaucoup de sagesse."
+      "Il a dû gouverner une nation prospère tout en restant attaché à Jéhovah.",
+      "Vers la fin de son règne, l’influence de ses nombreuses femmes l’a amené à tolérer le culte de faux dieux."
     ]
   },
   "elie": {
@@ -705,7 +708,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Élie était un prophète de Jéhovah qui combattit avec courage le culte de Baal dans le royaume d’Israël.",
-    "era": "IXe siècle av. n. è.",
+    "era": "Entre 940 et 905 av. n. è. environ",
     "familyAndEntourage": [
       "Jéhovah",
       "Achab",
@@ -726,7 +729,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Persévérance"
     ],
     "difficulties": [
-      "Après le Carmel, il est terrifié par Jézabel et fuit. Jéhovah le fortifie et lui donne une nouvelle mission."
+      "Il a dû affronter l’opposition du roi Achab et de Jézabel ainsi que des prophètes de Baal.",
+      "Après le mont Carmel, il a connu une période de peur et de découragement."
     ]
   },
   "esther": {
@@ -759,7 +763,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Esther, aussi appelée Hadassa, était une Juive devenue reine de Perse. Elle risqua sa vie pour intervenir en faveur de son peuple menacé d’extermination.",
-    "era": "Ve siècle av. n. è.",
+    "era": "515-415 av. n. è. environ",
     "familyAndEntourage": [
       "Mardochée, son cousin et tuteur",
       "Assuérus",
@@ -780,7 +784,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Loyauté"
     ],
     "difficulties": [
-      "Elle doit choisir entre sa sécurité personnelle et la défense de son peuple face à un décret impérial."
+      "Elle a dû agir avec prudence dans un environnement royal où elle ne pouvait pas révéler immédiatement son identité juive.",
+      "Elle a risqué sa vie en se présentant au roi sans y être invitée afin d’intercéder pour son peuple."
     ]
   },
   "daniel": {
@@ -813,7 +818,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       }
     ],
     "identity": "Daniel était un jeune Juif emmené à Babylone. Il servit dans plusieurs administrations impériales tout en restant fidèle à Jéhovah.",
-    "era": "VIe siècle av. n. è.",
+    "era": "635-535 av. n. è. environ",
     "familyAndEntourage": [
       "Ses trois compagnons: Hanania, Mishaël et Azaria",
       "Nabuchodonosor",
@@ -834,7 +839,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Humilité"
     ],
     "difficulties": [
-      "Il vit en exil et subit des pressions religieuses et politiques constantes, dont une menace directe contre sa vie."
+      "Il a vécu en exil à Babylone et a dû rester fidèle à Jéhovah dans un environnement religieux et politique étranger.",
+      "Il a subi des complots et a été jeté dans la fosse aux lions pour avoir continué à prier Jéhovah."
     ]
   },
   "jean-baptiste": {
