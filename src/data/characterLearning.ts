@@ -424,8 +424,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Ruth 1:1-22 ; 2:1-23 ; 3:1-18 ; 4:1-22",
     "location": "Moab puis Bethléhem en Juda.",
-    "relationshipWithJehovah": "Ruth abandonna son ancien cadre religieux pour adopter le peuple de Noémi et son Dieu, Jéhovah.",
-    "didYouKnow": "Le livre de Ruth couvre environ 11 ans et se déroule à l’époque des juges; Ruth est l’une des femmes citées dans la généalogie de Jésus.",
+    "relationshipWithJehovah": "Ruth choisit Jéhovah comme son Dieu et s’attacha au peuple de Naomi. Sa fidélité et sa confiance en Jéhovah furent ensuite bénies.",
+    "didYouKnow": "Ruth choisit de rester avec Naomi et déclara que le peuple de Naomi serait son peuple et que le Dieu de Naomi serait son Dieu.",
     "jwResources": [
       {
         "title": "Ruth — Étude perspicace des Écritures",
@@ -568,7 +568,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "1 Rois 3:5-28 ; 5:1-18 ; 8:1-66 ; 11:1-13 ; Ecclésiaste 12:13-14",
     "location": "Jérusalem et le royaume d’Israël.",
-    "relationshipWithJehovah": "Salomon connut une période de grande faveur lorsqu’il suivait Jéhovah, mais il finit par laisser ses femmes étrangères influencer son cœur et pratiquer le faux culte.",
+    "relationshipWithJehovah": "Salomon demanda à Jéhovah un cœur obéissant pour juger son peuple. Jéhovah lui accorda une sagesse remarquable, mais Salomon finit par laisser ses femmes détourner son cœur vers le faux culte.",
     "didYouKnow": "Salomon fit construire le temple de Jérusalem, dont les travaux durèrent sept ans selon 1 Rois 6:37-38.",
     "jwResources": [
       {
@@ -609,7 +609,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "1 Samuel 2:12-36 ; 3:1-21 ; 4:10-18",
     "location": "Shilo et le territoire d’Israël; il servait au tabernacle à Shilo.",
     "relationshipWithJehovah": "Éli servait comme grand prêtre devant Jéhovah et transmit à Samuel comment répondre à l’appel divin. Mais Jéhovah le condamna parce qu’il honorait ses fils plus que lui en ne les disciplinant pas suffisamment.",
-    "didYouKnow": "Éli mourut à l’âge de 98 ans lorsqu’il apprit que l’arche de Dieu avait été capturée et que ses deux fils étaient morts.",
+    "didYouKnow": "Élisha reçut une double portion de l’esprit qui avait agi sur Élie, conformément à sa demande avant que son maître soit enlevé dans la tempête.",
     "jwResources": [
       {
         "title": "Éli — Étude perspicace des Écritures",
@@ -622,12 +622,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "identity": "Élie était un prophète de Jéhovah qui combattit avec courage le culte de Baal dans le royaume d’Israël.",
     "era": "XIIe-XIe siècle av. n. è. environ",
-    "familyAndEntourage": [
-      "Jéhovah",
-      "Achab",
-      "Jézabel",
-      "Élisée"
-    ],
+    "familyAndEntourage": ["Achab","Jézabel","Élisée","Les prophètes de Baal"],
     "bibleAccount": [
       "Il annonce une sécheresse au temps d’Achab.",
       "Il est nourri près du torrent de Kerith puis par une veuve à Zarephath.",
@@ -655,8 +650,8 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "keyReading": "Esther 2:5-20 ; 3 ; 4:1-17 ; 5–9",
     "location": "Suse, capitale de l’empire perse.",
-    "relationshipWithJehovah": "Le livre ne mentionne pas directement le nom de Jéhovah, mais Esther agit pour préserver son peuple et suit l’appel à agir courageusement.",
-    "didYouKnow": "Le livre d’Esther ne précise pas qui l’a rédigé; Mardochée est souvent considéré comme bien placé pour en avoir consigné les événements.",
+    "relationshipWithJehovah": "Bien que le nom de Jéhovah ne figure pas directement dans le livre, Esther est présentée comme une fidèle servante du vrai Dieu. Elle agit avec foi, maîtrise de soi et courage pour défendre le peuple de Dieu.",
+    "didYouKnow": "Le livre d’Esther ne mentionne pas directement le nom de Dieu, mais JW.org relève des acrostiches du texte hébreu qui semblent faire apparaître le Tétragramme.",
     "jwResources": [
       {
         "title": "Esther — Étude perspicace des Écritures",
@@ -843,7 +838,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "Matthieu 4:18-22 ; 14:22-33 ; 16:13-23 ; 26:31-75 ; Jean 21:15-19 ; Actes 2:14-41 ; 10:1-48",
     "location": "Galilée, Jérusalem, Judée et lieux de prédication.",
     "relationshipWithJehovah": "Pierre apprit à compter sur Jéhovah par l’intermédiaire de Jésus et devint ensuite un prédicateur courageux.",
-    "didYouKnow": "Pierre et André étaient pêcheurs et avaient un lien étroit avec Capharnaüm.",
+    "didYouKnow": "Pierre fut le premier apôtre à témoigner devant un non-Juif incirconcis, Corneille, que Dieu avait accepté comme croyant.",
     "jwResources": [
       {
         "title": "Pierre — Étude perspicace des Écritures",
@@ -856,12 +851,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     ],
     "identity": "Apôtre — Pierre est l’un des principaux apôtres et joue un rôle important dans les débuts de la congrégation chrétienne.",
     "era": "Vers 29-66 de n. è. environ",
-    "familyAndEntourage": [
-      "André",
-      "Jean",
-      "Jésus",
-      "Corneille"
-    ],
+    "familyAndEntourage": ["André","Jésus","Jean","Paul","Corneille"],
     "bibleAccount": [
       "Suit Jésus.",
       "Le renie puis manifeste son repentir.",
@@ -939,7 +929,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "keyReading": "Marc 3:13-19 ; Luc 9:49-56 ; Jean 13:21-30 ; 19:25-27 ; 20:1-10 ; 1 Jean 4:7-21 ; Révélation 1:9-20",
     "location": "Galilée, Jérusalem et Patmos; la fin de son activité est traditionnellement associée à Éphèse.",
     "relationshipWithJehovah": "Jean consacra sa longue vie à transmettre le témoignage sur Jésus et à enseigner l’amour pour Dieu et les frères.",
-    "didYouKnow": "Jean est identifié comme le fils de Zébédée et frère de Jacques; il est l’un des cinq hommes appelés Jean dans la Bible.",
+    "didYouKnow": "Jean était fils de Zébédée et frère de Jacques. Jésus donna aux deux frères le surnom Boanergès, « fils du tonnerre », en raison de leur tempérament.",
     "jwResources": [
       {
         "title": "Jean — Étude perspicace des Écritures",
