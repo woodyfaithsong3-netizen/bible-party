@@ -28,18 +28,28 @@ const invalidQuizIndexes = quizBlocks.filter(m => {
 });
 
 const expertCards = [...source.matchAll(/difficulty:\s*['"]expert['"]/g)].length;
+const characterIds = [...source.matchAll(/characterId:\s*['"]([^'"]+)['"]/g)].map(m => m[1]);
+const characterCounts = new Map();
+for (const id of characterIds) characterCounts.set(id, (characterCounts.get(id) ?? 0) + 1);
+const characterCoverage = characterCounts.size;
+const characterCountFailures = [...characterCounts.entries()].filter(([, n]) => n !== 16);
+const difficultyCounts = Object.fromEntries(['easy','medium','hard','expert'].map(d => [d, [...source.matchAll(new RegExp(`difficulty:\\s*['"]${d}['"]`, 'g'))].length]));
 
 const failures = [];
 if (duplicateIds.length) failures.push('duplicate ids: ' + duplicateIds.map(([id, n]) => id + ' x' + n).join(', '));
 if (emptyReferences) failures.push('empty references detected');
 if (invalidQuizIndexes.length) failures.push('invalid quiz correctAnswer indexes: ' + invalidQuizIndexes.length);
 if (expertCards < 90) failures.push('expert card count unexpectedly low: ' + expertCards);
+if (characterCoverage < 125) failures.push('character coverage unexpectedly low: ' + characterCoverage);
+if (characterCountFailures.length) failures.push('character question count != 16: ' + characterCountFailures.map(([id,n]) => id + ' x' + n).join(', '));
 
 console.log('Bible Party content audit');
 console.log('- ID occurrences:', ids.length);
 console.log('- References:', references.length);
 console.log('- Quiz blocks checked:', quizBlocks.length);
 console.log('- Expert cards:', expertCards);
+console.log('- Character coverage:', characterCoverage);
+console.log('- Difficulty counts:', difficultyCounts);
 
 if (failures.length) {
   console.error('FAIL');
