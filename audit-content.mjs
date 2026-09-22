@@ -83,7 +83,8 @@ if (trueFalseCount !== 500) failures.push('dedicated true/false count unexpected
 if (mysteryCount !== 250) failures.push('dedicated mystery count unexpectedly changed: ' + mysteryCount);
 if (falseTrueFalseCount < 125) failures.push('too few false true/false cards: ' + falseTrueFalseCount);
 if (malformedNumericArtifacts.length) failures.push('numeric artifacts detected: ' + [...new Set(malformedNumericArtifacts)].slice(0, 10).join(', '));
-if (duplicateOptionBlocks.length) failures.push('quiz cards with duplicate options: ' + duplicateOptionBlocks.length);\nif (malformedQuestionStrings.length) failures.push('malformed quiz question strings: ' + malformedQuestionStrings.length);
+if (duplicateOptionBlocks.length) failures.push('quiz cards with duplicate options: ' + duplicateOptionBlocks.length);
+if (malformedQuestionStrings.length) failures.push('malformed quiz question strings: ' + malformedQuestionStrings.length);
 
 
 console.log('Bible Party content audit');
