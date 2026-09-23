@@ -69,7 +69,8 @@ export default function GameScreen() {
   const compact = width < 390 || height < 760;
   const params = useLocalSearchParams<{ modes?: string; teams?: string; duration?: string; categories?: string; difficulty?: string; solo?: string }>();
   const allowedModes = new Set(['quiz', 'mystery', 'truefalse', 'challenge', 'forbidden']);
-  const modes = (params.modes || 'quiz,mystery,truefalse,challenge,forbidden').split(',').filter((m): m is string => allowedModes.has(m));
+  const requestedModes = (params.modes || '').split(',').filter((m): m is string => allowedModes.has(m));
+  const modes = requestedModes.length ? requestedModes : ['quiz', 'mystery', 'truefalse', 'challenge', 'forbidden'];
   const teamNames = (params.teams || 'Équipe A|Équipe B').split('|').filter(Boolean);
   const duration = Math.max(1, Number(params.duration || 45));
   const selectedCategories = (params.categories || '').split(',').filter(Boolean);
@@ -103,13 +104,36 @@ export default function GameScreen() {
   const playable = useMemo(() => modes.filter(m => (decks[m] || []).length), [modes.join(','), decks]);
   const mode = playable.length ? (round === target - 1 ? 'finale' : playable[round % playable.length]) : 'quiz';
   const question = useMemo<Question>(() => {
-    const deck = decks[mode] || getGamePool('quiz');
-    // Indexer chaque mode selon son propre nombre d'apparitions évite de
-    // répéter prématurément une carte quand plusieurs modes sont alternés.
-    const modeRound = playable.slice(0, round).filter((m) => m === mode).length;
-    const raw = deck.length ? deck[modeRound % deck.length] : getGamePool('quiz')[0];
+    const fallback = getGamePool('quiz');
+    const usedIds = new Set<string>();
+    const usedReferences = new Set<string>();
+
+    // Rejoue mentalement les manches précédentes pour construire une sélection
+    // sans répétition prématurée entre les 5 modes, pas seulement à l'intérieur
+    // de chaque petit pool.
+    let raw: Question | undefined;
+    for (let r = 0; r <= round; r += 1) {
+      const currentMode = r === target - 1 ? 'finale' : playable[r % playable.length];
+      const deck = decks[currentMode] || fallback;
+      const occurrence = playable.slice(0, r).filter((m) => m === currentMode).length;
+      if (!deck.length) continue;
+
+      let index = occurrence % deck.length;
+      let candidate = deck[index];
+      for (let attempts = 0; attempts < deck.length; attempts += 1) {
+        const id = String(candidate.id);
+        const reference = String(candidate.reference || '').trim().toLowerCase();
+        if (!usedIds.has(id) && (!reference || !usedReferences.has(reference))) break;
+        index = (index + 1) % deck.length;
+        candidate = deck[index];
+      }
+      usedIds.add(String(candidate.id));
+      if (candidate.reference) usedReferences.add(String(candidate.reference).trim().toLowerCase());
+      if (r === round) raw = candidate;
+    }
+
+    raw = raw || fallback[0];
     // Mélange les propositions à chaque manche et recalcule l'index de la bonne réponse.
-    // Sans cela, la base historique avait une forte majorité de bonnes réponses en A.
     if (raw.type === 'quiz' || raw.type === 'quote') {
       const indexed = raw.answers.map((answer, index) => ({ answer, index }));
       const shuffled = shuffle(indexed);
@@ -120,7 +144,7 @@ export default function GameScreen() {
       } as Question;
     }
     return raw;
-  }, [decks, mode, round, playable]);
+  }, [decks, mode, round, playable, target]);
   const finaleQuestion = mode === 'finale' ? question : question;
 
   const reset = useCallback(() => {
