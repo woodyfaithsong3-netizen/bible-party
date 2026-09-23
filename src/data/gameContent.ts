@@ -1,6 +1,5 @@
 import {
   challenges,
-  chronologyQuestions,
   intruderQuestions,
   mysteryQuestions,
   quizQuestions,
@@ -24,7 +23,6 @@ export const GAME_CONTENT = {
   truefalse: trueFalseQuestions,
   challenge: challenges,
   quote: quoteQuestions,
-  chronology: chronologyQuestions,
   intruder: intruderQuestions,
   timesup: timesUpQuestions,
 } as const;
@@ -50,7 +48,6 @@ export const getGamePool = (mode: GameType): Question[] => {
     case 'truefalse':
     case 'challenge':
     case 'quote':
-    case 'chronology':
     case 'intruder':
     case 'timesup':
       return GAME_CONTENT[mode];
