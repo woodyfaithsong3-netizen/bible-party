@@ -1,8 +1,8 @@
 import { jwV54Quiz, jwV54TrueFalse, jwV54Mystery, jwV54TimesUp } from './jw_enrichment_v54';
-import { jwV53Quiz, jwV53TrueFalse, jwV53Mystery, jwV53TimesUp, jwV53Quotes, jwV53Chronology, jwV53Intruders } from './jw_enrichment_v53';
-import { jwV56Mystery, jwV56Challenges, jwV56Quotes, jwV56Chronology, jwV56Intruders, jwV56TimesUp } from './jw_enrichment_v56';
-import { jwV55Mystery, jwV55Quotes, jwV55Chronology, jwV55Intruders, jwV55Challenges } from './jw_enrichment_v55';
-import { jwV57Challenges, jwV57Quotes, jwV57Chronology, jwV57Intruders, jwV57TimesUp } from './jw_enrichment_v57';
+import { jwV53Quiz, jwV53TrueFalse, jwV53Mystery, jwV53TimesUp, jwV53Quotes, jwV53Intruders } from './jw_enrichment_v53';
+import { jwV56Mystery, jwV56Challenges, jwV56Quotes, jwV56Intruders, jwV56TimesUp } from './jw_enrichment_v56';
+import { jwV55Mystery, jwV55Quotes, jwV55Intruders, jwV55Challenges } from './jw_enrichment_v55';
+import { jwV57Challenges, jwV57Quotes, jwV57Intruders, jwV57TimesUp } from './jw_enrichment_v57';
 import { jwV58Quiz, jwV58Mystery, jwV58TrueFalse } from './jw_enrichment_v58';
 import { jwV61Quote, jwV61Forbidden } from './jw_enrichment_v61';
 import { jwV104Quiz, jwV104TrueFalse, jwV104Mystery } from './jw_enrichment_v104';
@@ -10,14 +10,14 @@ import { jwV105Quiz, jwV105TrueFalse, jwV105Mystery } from './jw_enrichment_v105
 import { jwV106CharacterQuiz, jwV106Mystery } from './jw_enrichment_v106_characters';
 import { jwV107CharacterQuiz, jwV107Mystery } from './jw_enrichment_v107_characters';
 import { jwV108CharacterQuiz, jwV108Mystery } from './jw_enrichment_v108_characters';
-import { Challenge, ChronologyQuestion, Difficulty, IntruderQuestion, MysteryQuestion, QuizQuestion, QuoteQuestion, TimesUpQuestion, TrueFalseQuestion } from '@/types';
+import { Challenge, Difficulty, IntruderQuestion, MysteryQuestion, QuizQuestion, QuoteQuestion, TimesUpQuestion, TrueFalseQuestion } from '@/types';
 import { characterQuizQuestions, characterTrueFalseQuestions, characterMysteryQuestions } from './characterQuestionsL1';
 import { characterQuizQuestionsL2, characterTrueFalseQuestionsL2, characterMysteryQuestionsL2 } from './characterQuestionsL2';
 import { characterQuizQuestionsL3, characterTrueFalseQuestionsL3, characterMysteryQuestionsL3 } from './characterQuestionsL3';
 import { characterQuizQuestionsL4, characterTrueFalseQuestionsL4, characterMysteryQuestionsL4 } from './characterQuestionsL4';
 import { characterQuizQuestionsL5, characterTrueFalseQuestionsL5, characterMysteryQuestionsL5 } from './characterQuestionsL5';
 import { characterQuizQuestionsL6, characterTrueFalseQuestionsL6, characterMysteryQuestionsL6 } from './characterQuestionsL6';
-import { categoryQuizExpansion, categoryTrueFalseExpansion, categoryMysteryExpansion, categoryTimesUpExpansion, categoryQuoteExpansion, categoryChronologyExpansion, categoryIntruderExpansion, categoryChallengeExpansion } from './jwCategories';
+import { categoryQuizExpansion, categoryTrueFalseExpansion, categoryMysteryExpansion, categoryTimesUpExpansion, categoryQuoteExpansion, categoryIntruderExpansion, categoryChallengeExpansion } from './jwCategories';
 
 /**
  * Banque éditoriale V15.
@@ -722,17 +722,6 @@ export const quoteQuestions: QuoteQuestion[] = [...baseQuoteQuestions, ...quoteQ
 
 
 
-const baseChronologyQuestions: ChronologyQuestion[] = [
-  { id:'chron-1', type:'chronology', category:'Grande chronologie', difficulty:'easy', events:['David devient roi','Déluge','Abraham arrive en Canaan','Moïse conduit Israël hors d’Égypte'], correctOrder:[1,2,3,0], explanation:'Le Déluge précède l’époque d’Abraham, puis vient l’Exode, puis le règne de David.', reference:'Genèse 6–12; Exode 12–14; 2 Samuel 5' },
-  { id:'chron-2', type:'chronology', category:'Israël', difficulty:'medium', events:['Salomon devient roi','Saül devient roi','David devient roi','Royaume divisé'], correctOrder:[1,2,0,3], explanation:'Saül précède David, David précède Salomon, puis le royaume est divisé après Salomon.', reference:'1 Samuel 10; 2 Samuel 5; 1 Rois 2; 12' },
-  { id:'chron-3', type:'chronology', category:'Évangiles', difficulty:'medium', events:['Naissance de Jésus','Baptême de Jésus','Choix des douze apôtres','Mort et résurrection de Jésus'], correctOrder:[0,1,2,3], explanation:'La naissance précède le baptême ; le choix des Douze intervient ensuite, puis la mort et la résurrection.', reference:'Matthieu 2; 3:13-17; Luc 6:12-16; 27–28' },
-
-  { id:'chron-4', type:'chronology', category:'Genèse', difficulty:'medium', events:['Jacob rencontre Rachel','Joseph est vendu','Joseph interprète les rêves de Pharaon','Jacob et sa famille s’installent en Égypte'], correctOrder:[0,1,2,3], explanation:'La rencontre de Jacob et Rachel précède l’histoire de Joseph, son élévation en Égypte et l’installation de la famille de Jacob.', reference:'Genèse 29:1-30; 37:12-36; 41:14-46; 46:1-7' },
-  { id:'chron-5', type:'chronology', category:'Israël', difficulty:'medium', events:['Josué conduit Israël','Saül devient roi','David devient roi','Salomon devient roi'], correctOrder:[0,1,2,3], explanation:'Josué conduit Israël avant l’époque de la monarchie ; Saül, David puis Salomon se succèdent ensuite comme rois.', reference:'Josué 1:1-6; 1 Samuel 10:1; 2 Samuel 5:3-5; 1 Rois 2:10-12' },
-  { id:'chron-6', type:'chronology', category:'Évangiles', difficulty:'easy', events:['Jésus change l’eau en vin','Jésus nourrit 5 000 hommes','Jésus est transfiguré','Jésus meurt et ressuscite'], correctOrder:[0,1,2,3], explanation:'Ces événements suivent l’ordre général présenté dans les Évangiles.', reference:'Jean 2:1-11; Matthieu 14:13-21; 17:1-5; 27–28' },
-  { id:'chron-7', type:'chronology', category:'Actes', difficulty:'medium', events:['Paul se convertit','Lydie devient croyante à Philippes','Paul fait naufrage en route vers Rome','Paul arrive à Rome'], correctOrder:[0,1,2,3], explanation:'La conversion de Saul précède ses voyages, son activité à Philippes, puis son voyage de prisonnier vers Rome et son arrivée.', reference:'Actes 9:1-22; 16:11-15; 27:1-44; 28:16-31' },
-  { id:'chron-8', type:'chronology', category:'Rois & prophètes', difficulty:'hard', events:['Élie est nourri par des corbeaux','Élie affronte les prophètes de Baal','Élisée est désigné comme successeur d’Élie','Naamân est guéri'], correctOrder:[0,1,2,3], explanation:'Ces épisodes suivent la progression du ministère d’Élie puis celui d’Élisée.', reference:'1 Rois 17:2-6; 18:19-40; 19:19-21; 2 Rois 5:1-14' },
-];
 
 
 const chronologyQuestions2: ChronologyQuestion[] = [
@@ -867,14 +856,6 @@ const jwQuoteExpansion: QuoteQuestion[] = [
   { id:'quote-jw-8', type:'quote', category:'Actes', difficulty:'hard', quote:'Quel disciple a témoigné avoir vu le ciel ouvert et le Fils de l’homme dans une vision ?', answers:['Étienne','Paul','Philippe','Pierre'], correctAnswer:0, explanation:'Étienne a déclaré cela juste avant sa mort.', reference:'Actes 7:55-56' },
 ];
 
-const jwChronologyExpansion: ChronologyQuestion[] = [
-  { id:'chronology-jw-1', type:'chronology', category:'Bible', difficulty:'easy', events:['Déluge','Appel d’Abraham','Naissance de Moïse','Entrée en Terre promise'], correctOrder:[0,1,2,3], explanation:'Le Déluge précède l’appel d’Abraham, puis viennent Moïse et l’entrée en Terre promise.', reference:'Genèse 12:1-4; Exode 2:1-10; Josué 1:1-6' },
-  { id:'chronology-jw-2', type:'chronology', category:'Bible', difficulty:'medium', events:['Joseph vendu par ses frères','Joseph devient administrateur en Égypte','Départ d’Égypte','Traversée de la mer Rouge'], correctOrder:[0,1,2,3], explanation:'Ces événements suivent la chronologie du récit de la Genèse et de l’Exode.', reference:'Genèse 37:28; 41:39-41; Exode 12:31-42; 14:21-31' },
-  { id:'chronology-jw-3', type:'chronology', category:'Évangiles', difficulty:'medium', events:['Naissance de Jésus','Baptême de Jésus','Choix des douze apôtres','Mort de Jésus'], correctOrder:[0,1,2,3], explanation:'Les Évangiles présentent ces étapes dans cet ordre général.', reference:'Luc 2:1-20; Matthieu 3:13-17; Luc 6:12-16; Luc 23:33-46' },
-  { id:'chronology-jw-4', type:'chronology', category:'Actes', difficulty:'medium', events:['Pentecôte','Conversion de Paul','Premier voyage missionnaire de Paul','Arrivée de Paul à Rome'], correctOrder:[0,1,2,3], explanation:'Ces événements jalonnent le développement de l’activité chrétienne racontée dans les Actes.', reference:'Actes 2; 9; 13–14; 28' },
-  { id:'chronology-jw-5', type:'chronology', category:'Rois & prophètes', difficulty:'hard', events:['Saül devient roi','David devient roi','Salomon devient roi','Division du royaume'], correctOrder:[0,1,2,3], explanation:'Saül précède David, puis Salomon ; la division survient après Salomon.', reference:'1 Samuel 10:1; 2 Samuel 5:3-5; 1 Rois 2:10-12; 12:16-20' },
-  { id:'chronology-jw-6', type:'chronology', category:'Personnages', difficulty:'medium', events:['Ruth rencontre Boaz','Ruth épouse Boaz','Naissance d’Obed','David naît des générations plus tard'], correctOrder:[0,1,2,3], explanation:'Boaz et Ruth ont eu Obed, ancêtre de David.', reference:'Ruth 2:1-12; 4:9-17; 1 Samuel 16:1-13' },
-];
 
 const jwIntruderExpansion: IntruderQuestion[] = [
   { id:'intruder-jw-1', type:'intruder', category:'Évangiles', difficulty:'easy', items:['Matthieu','Marc','Luc','Actes'], intruder:3, explanation:'Actes n’est pas un Évangile ; les trois autres sont des Évangiles.', reference:'Matthieu 1:1; Marc 1:1; Luc 1:1-4; Actes 1:1-2' },
@@ -926,22 +907,18 @@ trueFalseQuestions.push(...jwV53TrueFalse);
 mysteryQuestions.push(...jwV53Mystery);
 timesUpQuestions.push(...jwV53TimesUp);
 quoteQuestions.push(...jwV53Quotes);
-chronologyQuestions.push(...jwV53Chronology);
 intruderQuestions.push(...jwV53Intruders);
 mysteryQuestions.push(...jwV56Mystery);
 challenges.push(...jwV56Challenges);
 quoteQuestions.push(...jwV56Quotes);
-chronologyQuestions.push(...jwV56Chronology);
 intruderQuestions.push(...jwV56Intruders);
 timesUpQuestions.push(...jwV56TimesUp);
 mysteryQuestions.push(...jwV55Mystery);
 quoteQuestions.push(...jwV55Quotes);
-chronologyQuestions.push(...jwV55Chronology);
 intruderQuestions.push(...jwV55Intruders);
 challenges.push(...jwV55Challenges);
 challenges.push(...jwV57Challenges);
 quoteQuestions.push(...jwV57Quotes);
-chronologyQuestions.push(...jwV57Chronology);
 intruderQuestions.push(...jwV57Intruders);
 timesUpQuestions.push(...jwV57TimesUp);
 
@@ -955,7 +932,6 @@ mysteryQuestions.push(...jwV61Forbidden);
 
 trueFalseQuestions.push(...jwTrueFalseExpansion);
 quoteQuestions.push(...jwQuoteExpansion);
-chronologyQuestions.push(...jwChronologyExpansion);
 intruderQuestions.push(...jwIntruderExpansion);
 timesUpQuestions.push(...jwTimesUpExpansion);
 challenges.push(...jwChallengeExpansion);
@@ -1011,12 +987,6 @@ const v39QuoteExpansion: QuoteQuestion[] = [
   { id:'quote-v39-01', type:'quote', category:'Personnages', difficulty:'easy', quote:'Quel jeune homme a répondu qu’il était prêt à écouter la parole de Jéhovah ?', answers:['Samuel','David','Moïse','Josué'], correctAnswer:0, explanation:'Samuel a répondu ainsi lorsqu’il a compris que Jéhovah l’appelait.', reference:'1 Samuel 3:9-10' },
 ];
 
-const v39ChronologyExpansion: ChronologyQuestion[] = [
-  { id:'chronology-v39-01', type:'chronology', category:'Bible', difficulty:'easy', events:['Création d’Adam','Déluge','Appel d’Abraham','Naissance de Joseph'], correctOrder:[0,1,2,3], explanation:'Ces événements se succèdent dans cet ordre dans le récit de la Genèse.', reference:'Genèse 1–12; 30:22-24' },
-  { id:'chronology-v39-02', type:'chronology', category:'Personnages', difficulty:'medium', events:['David devient roi','Salomon devient roi','Division du royaume','Exil à Babylone'], correctOrder:[0,1,2,3], explanation:'La division du royaume intervient après Salomon, puis vient l’exil bien plus tard.', reference:'2 Samuel 5:3-5; 1 Rois 2:10-12; 12:16-20; 2 Rois 25:8-12' },
-  { id:'chronology-v39-03', type:'chronology', category:'Évangiles', difficulty:'easy', events:['Naissance de Jésus','Baptême de Jésus','Choix des apôtres','Mort de Jésus'], correctOrder:[0,1,2,3], explanation:'Ces étapes suivent le déroulement général des Évangiles.', reference:'Luc 2; Matthieu 3; Luc 6; Luc 23' },
-  { id:'chronology-v39-04', type:'chronology', category:'Actes', difficulty:'medium', events:['Pentecôte','Conversion de Paul','Voyage missionnaire de Paul','Emprisonnement à Rome'], correctOrder:[0,1,2,3], explanation:'Les Actes racontent ces étapes successives du développement de l’activité chrétienne.', reference:'Actes 2; 9; 13–14; 28' },
-];
 
 const v39IntruderExpansion: IntruderQuestion[] = [
   { id:'intruder-v39-01', type:'intruder', category:'Personnages', difficulty:'easy', items:['Noé','Abraham','Moïse','Jéricho'], intruder:3, explanation:'Jéricho est un lieu ; les trois autres sont des personnages.', reference:'Genèse 6; 12; Exode 2; Josué 6' },
@@ -1049,7 +1019,6 @@ quizQuestions.push(...v39QuizExpansion);
 trueFalseQuestions.push(...v39TrueFalseExpansion);
 mysteryQuestions.push(...v39MysteryExpansion);
 quoteQuestions.push(...v39QuoteExpansion);
-chronologyQuestions.push(...v39ChronologyExpansion);
 intruderQuestions.push(...v39IntruderExpansion);
 timesUpQuestions.push(...v39TimesUpExpansion);
 challenges.push(...v39ChallengeExpansion);
@@ -1197,7 +1166,6 @@ trueFalseQuestions.push(...categoryTrueFalseExpansion);
 mysteryQuestions.push(...categoryMysteryExpansion);
 timesUpQuestions.push(...categoryTimesUpExpansion);
 quoteQuestions.push(...categoryQuoteExpansion);
-chronologyQuestions.push(...categoryChronologyExpansion);
 intruderQuestions.push(...categoryIntruderExpansion);
 challenges.push(...categoryChallengeExpansion);
 
@@ -1212,7 +1180,6 @@ function dedupeInPlace<T extends { type?: string; id?: string; question?: string
     if (q.type === 'truefalse') return `truefalse|${q.statement?.trim().toLowerCase()}`;
     if (q.type === 'quote') return `quote|${q.quote?.trim().toLowerCase()}`;
     if (q.type === 'challenge') return `challenge|${q.prompt?.trim().toLowerCase()}`;
-    if (q.type === 'chronology') return `chronology|${JSON.stringify((q.events || []).map((v) => v.trim().toLowerCase()))}`;
     if (q.type === 'intruder') return `intruder|${JSON.stringify((q.items || []).map((v) => v.trim().toLowerCase()))}`;
     if (q.type === 'mystery' || q.type === 'timesup') return `${q.type}|${String(q.answer ?? '').trim().toLowerCase()}|${JSON.stringify((q.clues || []).map((v) => v.trim().toLowerCase()))}`;
     return q.id || '';
@@ -1229,7 +1196,6 @@ dedupeInPlace(mysteryQuestions);
 dedupeInPlace(trueFalseQuestions);
 dedupeInPlace(challenges);
 dedupeInPlace(quoteQuestions);
-dedupeInPlace(chronologyQuestions);
 dedupeInPlace(intruderQuestions);
 dedupeInPlace(timesUpQuestions);
 
@@ -1522,12 +1488,6 @@ const v101ExpertQuotes: QuoteQuestion[] = [
   {id:'v101-expert-qte-06',type:'quote',category:'Évangiles',difficulty:'expert',quote:'Quel homme a dit : « Seigneur, je ne suis pas digne que tu entres sous mon toit » ?',answers:['Un officier de l’armée','Jaïrus','Nicodème','Zachée'],correctAnswer:0,explanation:'Un officier de l’armée exprima son humilité lorsqu’il demanda la guérison de son serviteur.',reference:'Matthieu 8:5-10'},
 ];
 
-const v101ExpertChronology: ChronologyQuestion[] = [
-  {id:'v101-expert-ch-01',type:'chronology',category:'Rois & prophètes',difficulty:'expert',events:['Onction de David par Samuel','Combat de David contre Goliath','David devient roi de Juda','David devient roi sur tout Israël'],correctOrder:[0,1,2,3],explanation:'Ces étapes se succèdent dans le récit de la vie de David.',reference:'1 Samuel 16–17; 2 Samuel 2:1-4; 5:1-5'},
-  {id:'v101-expert-ch-02',type:'chronology',category:'Évangiles',difficulty:'expert',events:['Baptême de Jésus','Tentations dans le désert','Appel de premiers disciples','Premier miracle à Cana'],correctOrder:[0,1,2,3],explanation:'Le récit des Évangiles présente ces événements dans cet ordre général.',reference:'Matthieu 3–4; Jean 1:35–2:11'},
-  {id:'v101-expert-ch-03',type:'chronology',category:'Actes',difficulty:'expert',events:['Pentecôte','Lapidation d’Étienne','Conversion de Saul','Première prédication aux non-Juifs avec Corneille'],correctOrder:[0,1,2,3],explanation:'Le récit des Actes présente cette progression dans l’expansion de la congrégation.',reference:'Actes 2; 7–10'},
-  {id:'v101-expert-ch-04',type:'chronology',category:'Rois & prophètes',difficulty:'expert',events:['Élie annonce la sécheresse','Élie est nourri par des corbeaux','Élie séjourne chez la veuve de Sarepta','Confrontation au mont Carmel'],correctOrder:[0,1,2,3],explanation:'Ces épisodes appartiennent à la même période du ministère d’Élie et se suivent dans ce récit.',reference:'1 Rois 17–18'},
-];
 
 const v101ExpertIntruders: IntruderQuestion[] = [
   {id:'v101-expert-in-01',type:'intruder',category:'Personnages',difficulty:'expert',items:['Houlda','Déborah','Miriam','Ébed-Mélek'],intruder:3,explanation:'Houlda, Déborah et Miriam sont des femmes ; Ébed-Mélek est un homme.',reference:'2 Rois 22:14; Juges 4:4; Exode 15:20; Jérémie 38:7'},
@@ -1593,11 +1553,6 @@ const v102ExpertQuotes: QuoteQuestion[] = [
 {id:'v102-qt-05',type:'quote',category:'Que veulent dire ces versets ?',difficulty:'expert',quote:'Quel passage dit : « Le salaire payé par le péché, c’est la mort » ?',answers:['Romains 6:23','1 Pierre 5:7','Actes 1:8','Marc 11:24'],correctAnswer:0,explanation:'Romains 6:23 oppose le salaire du péché au don de Dieu.',reference:'Romains 6:23'},
 {id:'v102-qt-06',type:'quote',category:'Prophéties',difficulty:'expert',quote:'Quel prophète rapporte la vision d’une corbeille de fruits d’été ?',answers:['Amos','Michée','Daniel','Aggée'],correctAnswer:0,explanation:'Amos 8:1-2 rapporte cette vision.',reference:'Amos 8:1-2'}
 ];
-const v102ExpertChronology: ChronologyQuestion[] = [
-{id:'v102-ch-01',type:'chronology',category:'Prophéties',difficulty:'expert',events:['Annonce de la prophétie de Daniel 9','Période des sept semaines','Période des soixante-deux semaines','Arrivée du Messie'],correctOrder:[0,1,2,3],explanation:'La prophétie présente ces éléments dans cette progression.',reference:'Daniel 9:25'},
-{id:'v102-ch-02',type:'chronology',category:'Que veulent dire ces versets ?',difficulty:'expert',events:['Résurrection de Jésus','Promesse de l’esprit saint','Pentecôte','Témoignage à Jérusalem, en Judée et en Samarie'],correctOrder:[0,1,2,3],explanation:'Le récit des Actes développe cette progression après la résurrection.',reference:'Actes 1:3-8; 2:1-4'},
-{id:'v102-ch-03',type:'chronology',category:'La Bible et la science',difficulty:'expert',events:['Création des cieux et de la terre','Jours de création','Repos du septième jour','Fin du récit de création de Genèse 1–2'],correctOrder:[0,1,2,3],explanation:'Les événements sont présentés dans cet ordre dans le récit de la Genèse.',reference:'Genèse 1:1–2:3'}
-];
 const v102ExpertIntruders: IntruderQuestion[] = [
 {id:'v102-in-01',type:'intruder',category:'Prophéties',difficulty:'expert',items:['Daniel','Michée','Amos','Barzillaï'],intruder:3,explanation:'Les trois premiers sont des prophètes ; Barzillaï est associé au récit de David.',reference:'Daniel 9; Michée 5:2; Amos 8:1-2; 2 Samuel 17:27-29'},
 {id:'v102-in-02',type:'intruder',category:'Que veulent dire ces versets ?',difficulty:'expert',items:['Actes 1:8','Romains 6:23','1 Pierre 5:7','Genèse 12:5'],intruder:3,explanation:'Les trois premiers font partie de la série de versets expliqués utilisée pour ce thème ; Genèse 12:5 n’en fait pas partie.',reference:'Actes 1:8; Romains 6:23; 1 Pierre 5:7; Genèse 12:5'},
@@ -1621,7 +1576,6 @@ quizQuestions.push(...v102ExpertQuiz);
 trueFalseQuestions.push(...v102ExpertTF);
 mysteryQuestions.push(...v102ExpertMystery);
 quoteQuestions.push(...v102ExpertQuotes);
-chronologyQuestions.push(...v102ExpertChronology);
 intruderQuestions.push(...v102ExpertIntruders);
 timesUpQuestions.push(...v102ExpertTimesUp);
 challenges.push(...v102ExpertChallenges);
@@ -1643,7 +1597,6 @@ quizQuestions.push(...v101ExpertQuiz);
 trueFalseQuestions.push(...v101ExpertTrueFalse);
 mysteryQuestions.push(...v101ExpertMystery);
 quoteQuestions.push(...v101ExpertQuotes);
-chronologyQuestions.push(...v101ExpertChronology);
 intruderQuestions.push(...v101ExpertIntruders);
 timesUpQuestions.push(...v101ExpertTimesUp);
 challenges.push(...v101ExpertChallenges);
@@ -1697,7 +1650,6 @@ dedupeInPlace(mysteryQuestions);
 dedupeInPlace(trueFalseQuestions);
 dedupeInPlace(challenges);
 dedupeInPlace(quoteQuestions);
-dedupeInPlace(chronologyQuestions);
 dedupeInPlace(intruderQuestions);
 dedupeInPlace(timesUpQuestions);
 
