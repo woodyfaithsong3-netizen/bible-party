@@ -1640,6 +1640,13 @@ function compactQuizQuestionText(value: string): string {
 
 for (const q of quizQuestions) {
   q.question = compactQuizQuestionText(q.question);
+  q.answers = q.answers.map((answer) => {
+    const value = String(answer || '').replace(/\s+/g, ' ').trim();
+    if (value.length <= 45) return value;
+    const cuts = [value.indexOf(','), value.indexOf(';'), value.search(/\\s+mais\\s+/i), value.search(/\\s+parce que\\s+/i), value.search(/\\s+afin de\\s+/i), value.search(/\\s+même si\\s+/i)];
+    const valid = cuts.filter((n) => n >= 20 && n <= 45);
+    return valid.length ? value.slice(0, Math.min(...valid)).trim() : value;
+  });
 }
 
 const normalizeEditorialText = (value: string) => value
