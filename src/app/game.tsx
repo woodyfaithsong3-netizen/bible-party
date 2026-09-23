@@ -131,7 +131,6 @@ export default function GameScreen() {
     }
     return raw;
   }, [decks, mode, round, playable, target]);
-  const finaleQuestion = mode === 'finale' ? question : question;
 
   const reset = useCallback(() => {
     setSelected(null); setTf(null); setClue(0); setShowMaster(false); setRevealed(false); setValidated(false); setCorrect(null); setDelta(0);
