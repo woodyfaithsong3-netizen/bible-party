@@ -3,7 +3,7 @@ import {
 } from '@/data/questions';
 import { Question, GameType, QuizQuestion, Challenge } from '@/types';
 
-/** Les banques historiques restent conservées, mais le joueur ne voit plus que 5 expériences principales. */
+/** Les banques historiques sont transformées en contenu pour les 4 modes officiels. */
 const integratedQuizQuestions: QuizQuestion[] = [
   ...quizQuestions,
   ...quoteQuestions.map((q) => ({ id:q.id, type:'quiz' as const, category:q.category, difficulty:q.difficulty, question:q.quote, answers:q.answers, correctAnswer:q.correctAnswer, explanation:q.explanation, reference:q.reference })),
@@ -20,25 +20,11 @@ export const GAME_CONTENT = {
   mystery: mysteryQuestions,
   truefalse: trueFalseQuestions,
   challenge: integratedChallenges,
-  forbidden: mysteryQuestions.filter((q) => (q.forbiddenWords?.length ?? 0) >= 3),
 } as const;
 
 export type PlayableGameMode = keyof typeof GAME_CONTENT;
 
-export const getGamePool = (mode: GameType): Question[] => {
-  switch (mode) {
-    case 'quiz': return GAME_CONTENT.quiz;
-    case 'mystery': return GAME_CONTENT.mystery;
-    case 'truefalse': return GAME_CONTENT.truefalse;
-    case 'challenge': return GAME_CONTENT.challenge;
-    case 'forbidden': return GAME_CONTENT.forbidden;
-    case 'quote': case 'intruder': case 'faceoff': case 'risk': return GAME_CONTENT.quiz;
-    case 'timesup': return GAME_CONTENT.challenge;
-    case 'threeclues': return GAME_CONTENT.mystery;
-    case 'finale': return GAME_CONTENT.quiz;
-    default: return GAME_CONTENT.quiz;
-  }
-};
+export const getGamePool = (mode: GameType): Question[] => GAME_CONTENT[mode] ?? GAME_CONTENT.quiz;
 
-/** Toutes les cartes distribuables dans les 5 expériences. */
+/** Toutes les cartes distribuables dans les 4 expériences. */
 export const allPlayableQuestions: Question[] = Object.values(GAME_CONTENT).flat();
