@@ -1,5 +1,5 @@
 export type Difficulty = 'easy' | 'medium' | 'hard' | 'expert';
-export type GameType = 'quiz' | 'mystery' | 'truefalse' | 'challenge' | 'quote' | 'chronology' | 'intruder' | 'timesup' | 'threeclues' | 'forbidden' | 'faceoff' | 'risk' | 'finale';
+export type GameType = 'quiz' | 'mystery' | 'truefalse' | 'challenge' | 'quote' | 'intruder' | 'timesup' | 'threeclues' | 'forbidden' | 'faceoff' | 'risk' | 'finale';
 
 export type QuizQuestion = {
   id: string;
@@ -51,17 +51,6 @@ export type QuoteQuestion = {
   reference: string;
 };
 
-export type ChronologyQuestion = {
-  id: string;
-  type: 'chronology';
-  category: string;
-  difficulty: Difficulty;
-  events: string[];
-  correctOrder: number[];
-  explanation: string;
-  reference: string;
-};
-
 export type IntruderQuestion = {
   id: string;
   type: 'intruder';
@@ -93,6 +82,6 @@ export type Challenge = {
   acceptedAnswers?: string[];
 };
 
-export type Question = QuizQuestion | MysteryQuestion | TrueFalseQuestion | Challenge | QuoteQuestion | ChronologyQuestion | IntruderQuestion | TimesUpQuestion;
+export type Question = QuizQuestion | MysteryQuestion | TrueFalseQuestion | Challenge | QuoteQuestion | IntruderQuestion | TimesUpQuestion;
 
 export type Team = { id: string; name: string; score: number };
