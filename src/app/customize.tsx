@@ -8,7 +8,7 @@ import { categoryLabels } from '@/data/catalog';
 
 const modeOptions = [
   ['quiz', 'Quiz'], ['mystery', 'Qui est-ce ?'], ['truefalse', 'Vrai / Faux'], ['challenge', 'Défi 10 s'],
-  ['quote', 'Qui a dit ça ?'], ['chronology', 'Chronologie'], ['intruder', 'Intrus'], ['timesup', "Time's Up"],
+  ['quote', 'Qui a dit ça ?'], ['intruder', 'Intrus'], ['timesup', "Time's Up"],
   ['threeclues', '3 indices'], ['forbidden', 'Mot interdit'], ['faceoff', 'Face-à-face'], ['risk', 'Mise à risque'],
 ] as const;
 const difficultyOptions = [['all', 'Tous'], ['easy', 'Facile'], ['medium', 'Intermédiaire'], ['hard', 'Difficile'], ['expert', 'Expert']] as const;
