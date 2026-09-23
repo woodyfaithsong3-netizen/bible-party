@@ -108,13 +108,13 @@ export default function GameScreen() {
       let candidate = deck[index];
       for (let attempts = 0; attempts < deck.length; attempts += 1) {
         const id = String(candidate.id);
-        const reference = String(candidate.reference || '').trim().toLowerCase();
+        const reference = 'reference' in candidate ? String(candidate.reference || '').trim().toLowerCase() : '';
         if (!usedIds.has(id) && (!reference || !usedReferences.has(reference))) break;
         index = (index + 1) % deck.length;
         candidate = deck[index];
       }
       usedIds.add(String(candidate.id));
-      if (candidate.reference) usedReferences.add(String(candidate.reference).trim().toLowerCase());
+      if ('reference' in candidate && candidate.reference) usedReferences.add(String(candidate.reference).trim().toLowerCase());
       if (r === round) raw = candidate;
     }
 
