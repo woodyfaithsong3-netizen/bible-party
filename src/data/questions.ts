@@ -1615,11 +1615,51 @@ mysteryQuestions.push(...characterMysteryQuestions);
 
 const normalizeEditorialText = (value: string) => value
   .normalize('NFD')
-  .replace(/[\u0300-\u036f]/g, '')
+  .replace(/[\\u0300-\\u036f]/g, '')
   .replace(/[’']/g, "'")
-  .replace(/\s+/g, ' ')
+  .replace(/\\s+/g, ' ')
   .trim()
   .toLowerCase();
+
+/**
+ * Le mode « Mot interdit » doit disposer d'une vraie banque complète.
+ * Certaines cartes historiques de type mystery n'avaient pas de forbiddenWords,
+ * ce qui réduisait le mode à une petite poignée de cartes et provoquait des
+ * répétitions très rapides. On complète uniquement les cartes qui en sont
+ * dépourvues, à partir de leurs propres indices/explications, sans modifier
+ * leur réponse, leur difficulté ni leur contenu pédagogique.
+ */
+const forbiddenStopWords = new Set([
+  'avec','après','alors','ainsi','aussi','avant','avait','avoir','chez','dans','dont','elle',
+  'elles','entre','être','fais','fait','fois','ils','j’ai','jais','je','lui','mais','mes','mon',
+  'nous','par','pour','quand','que','quel','quelle','qui','sans','ses','son','sont','sur','tres',
+  'très','une','des','les','aux','du','de','et','en','est','au','ce','cette','ces','comme','leur',
+  'leurs','plus','puis','sous','vers','était','étais','été','ont','a','un','une','le','la','se','sa',
+  'ses','y','où','ou','il','elle','on','tu','me','te','d','l','m'
+]);
+
+const buildForbiddenWords = (q: MysteryQuestion): string[] => {
+  const answerKey = normalizeEditorialText(q.answer);
+  const source = [...(q.clues || []), q.explanation || '', q.reference || ''].join(' ');
+  const words = source.match(/[A-Za-zÀ-ÖØ-öø-ÿ0-9]+(?:[-’'][A-Za-zÀ-ÖØ-öø-ÿ0-9]+)*/g) || [];
+  const unique: string[] = [];
+  for (const raw of words) {
+    const clean = raw.trim();
+    const key = normalizeEditorialText(clean);
+    if (!key || key === answerKey || key.length < 4 || forbiddenStopWords.has(key)) continue;
+    if (unique.some((v) => normalizeEditorialText(v) === key)) continue;
+    unique.push(clean);
+    if (unique.length >= 5) break;
+  }
+  return unique;
+};
+
+for (const q of mysteryQuestions) {
+  if ((q.forbiddenWords?.length ?? 0) < 3) {
+    const generated = buildForbiddenWords(q);
+    if (generated.length >= 3) q.forbiddenWords = generated;
+  }
+};
 
 // Nettoyage final après tous les ajouts éditoriaux/enrichissements : certains enrichissements
 // sont ajoutés après le premier passage de déduplication. On repasse donc sur chaque mode ici.
