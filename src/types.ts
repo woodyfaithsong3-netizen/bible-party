@@ -39,6 +39,17 @@ export type TrueFalseQuestion = {
   reference: string;
 };
 
+export type ChronologyQuestion = {
+  id: string;
+  type: 'chronology';
+  category: string;
+  difficulty: Difficulty;
+  events: string[];
+  correctOrder: number[];
+  explanation: string;
+  reference: string;
+};
+
 export type QuoteQuestion = {
   id: string;
   type: 'quote';
