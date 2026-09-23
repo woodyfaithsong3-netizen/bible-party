@@ -113,7 +113,7 @@ export default function GameScreen() {
     // de chaque petit pool.
     let raw: Question | undefined;
     for (let r = 0; r <= round; r += 1) {
-      const currentMode = r === target - 1 ? 'finale' : playable[r % playable.length];
+      const currentMode = r === target - 1 ? 'finale' : (playable.length ? playable[r % playable.length] : 'quiz');
       const deck = decks[currentMode] || fallback;
       const occurrence = playable.slice(0, r).filter((m) => m === currentMode).length;
       if (!deck.length) continue;
