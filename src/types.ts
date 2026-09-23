@@ -1,5 +1,5 @@
 export type Difficulty = 'easy' | 'medium' | 'hard' | 'expert';
-export type GameType = 'quiz' | 'mystery' | 'truefalse' | 'challenge' | 'quote' | 'chronology' | 'intruder' | 'timesup' | 'threeclues' | 'forbidden' | 'faceoff' | 'risk';
+export type GameType = 'quiz' | 'mystery' | 'truefalse' | 'challenge' | 'quote' | 'chronology' | 'intruder' | 'timesup' | 'threeclues' | 'forbidden' | 'faceoff' | 'risk' | 'finale';
 
 export type QuizQuestion = {
   id: string;
