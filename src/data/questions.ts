@@ -1640,13 +1640,17 @@ const forbiddenStopWords = new Set([
 
 const buildForbiddenWords = (q: MysteryQuestion): string[] => {
   const answerKey = normalizeEditorialText(q.answer);
+  // Pour une réponse composée (ex. « Daniel 9 »), aucun mot important de la
+  // réponse ne doit devenir un mot interdit : sinon le maître de jeu pourrait
+  // donner directement la réponse sans le vouloir.
+  const answerTokens = new Set(answerKey.split(/[^a-z0-9à-ÿ]+/i).filter((token) => token.length >= 4));
   const source = [...(q.clues || []), q.explanation || '', q.reference || ''].join(' ');
   const words = source.match(/[A-Za-zÀ-ÖØ-öø-ÿ0-9]+(?:[-’'][A-Za-zÀ-ÖØ-öø-ÿ0-9]+)*/g) || [];
   const unique: string[] = [];
   for (const raw of words) {
     const clean = raw.trim();
     const key = normalizeEditorialText(clean);
-    if (!key || key === answerKey || key.length < 4 || forbiddenStopWords.has(key)) continue;
+    if (!key || key === answerKey || answerTokens.has(key) || key.length < 4 || forbiddenStopWords.has(key)) continue;
     if (unique.some((v) => normalizeEditorialText(v) === key)) continue;
     unique.push(clean);
     if (unique.length >= 5) break;
@@ -1655,9 +1659,20 @@ const buildForbiddenWords = (q: MysteryQuestion): string[] => {
 };
 
 for (const q of mysteryQuestions) {
-  if ((q.forbiddenWords?.length ?? 0) < 3) {
-    const generated = buildForbiddenWords(q);
+  const answerKey = normalizeEditorialText(q.answer);
+  const answerTokens = new Set(answerKey.split(/[^a-z0-9à-ÿ]+/i).filter((token) => token.length >= 4));
+  const cleanedExisting = (q.forbiddenWords || []).filter((word, index, list) => {
+    const key = normalizeEditorialText(word);
+    return key && key !== answerKey && !answerTokens.has(key)
+      && list.findIndex((candidate) => normalizeEditorialText(candidate) === key) === index;
+  });
+
+  if (cleanedExisting.length >= 3) {
+    q.forbiddenWords = cleanedExisting;
+  } else {
+    const generated = buildForbiddenWords({ ...q, forbiddenWords: undefined });
     if (generated.length >= 3) q.forbiddenWords = generated;
+    else if (cleanedExisting.length) q.forbiddenWords = cleanedExisting;
   }
 };
 
