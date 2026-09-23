@@ -18,7 +18,9 @@ const modeIcon = require('../../assets/images/ui/card.png');
 
 export default function CustomizeScreen() {
   const params = useLocalSearchParams<{ teams?: string; teamsCount?: string; duration?: string; modes?: string; categories?: string; difficulty?: string }>();
-  const [modes, setModes] = useState<string[]>((params.modes || modeOptions.map(x => x[0]).join(',')).split(',').filter(Boolean));
+  const allowedModeIds = new Set<string>(modeOptions.map(([id]) => id));
+  const requestedModes = (params.modes || '').split(',').filter((id): id is string => allowedModeIds.has(id));
+  const [modes, setModes] = useState<string[]>(requestedModes.length ? requestedModes : modeOptions.map(x => x[0]));
   const [categories, setCategories] = useState<string[]>((params.categories || '').split(',').filter(Boolean));
   const [difficulty, setDifficulty] = useState(params.difficulty || 'all');
   const toggleMode = (id: string) => setModes(current => current.includes(id) ? current.filter(x => x !== id) : [...current, id]);
