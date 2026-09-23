@@ -15,14 +15,14 @@ const integratedChallenges: Challenge[] = [
   ...timesUpQuestions.map((q) => ({ id:q.id, type:'challenge' as const, category:q.category, difficulty:q.difficulty, prompt:'Faites deviner la carte grâce à ces indices : ' + q.clues.join(' · '), seconds:30, acceptedAnswers:[q.answer] })),
 ];
 
-export const GAME_CONTENT = {
+export const GAME_CONTENT: Record<GameType, Question[]> = {
   quiz: integratedQuizQuestions,
   mystery: mysteryQuestions,
   truefalse: trueFalseQuestions,
   challenge: integratedChallenges,
-} as const;
+};
 
-export type PlayableGameMode = keyof typeof GAME_CONTENT;
+export type PlayableGameMode = GameType;
 
 export const getGamePool = (mode: GameType): Question[] => GAME_CONTENT[mode] ?? GAME_CONTENT.quiz;
 
