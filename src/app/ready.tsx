@@ -16,7 +16,7 @@ const params = useLocalSearchParams<{ teams?: string; teamsCount?: string; durat
   const teams = String(params.teams || 'Équipe David|Équipe Paul');
   const teamsCount = Number(params.teamsCount || teams.split('|').length || 2);
   const duration = Number(params.duration || 20);
-  const modes = String(params.modes || 'quiz,mystery,truefalse,challenge,quote,chronology,intruder,timesup,threeclues,forbidden,faceoff,risk');
+  const modes = String(params.modes || 'quiz,mystery,truefalse,challenge,quote,intruder,timesup,threeclues,forbidden,faceoff,risk');
   const categories = String(params.categories || '');
   const difficulty = String(params.difficulty || 'all');
 
