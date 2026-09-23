@@ -730,6 +730,20 @@ export const quoteQuestions: QuoteQuestion[] = [...baseQuoteQuestions, ...quoteQ
 
 
 
+const baseIntruderQuestions: IntruderQuestion[] = [
+  { id:'intruder-1', type:'intruder', category:'Personnages', difficulty:'medium', items:['Abraham','Isaac','Jacob','Jonas'], intruder:3, explanation:'Jonas est l’intrus : les trois autres sont les patriarches Abraham, Isaac et Jacob, liés à la lignée de la promesse.', reference:'Genèse 12:1-9; 21:1-7; 25:19-26; Jonas 1:1-3' },
+  { id:'intruder-2', type:'intruder', category:'Rois', difficulty:'medium', items:['Saül','David','Salomon','Samuel'], intruder:3, explanation:'Samuel était prophète et juge, tandis que les trois autres ont été rois d’Israël.', reference:'1 Samuel 7:15; 10:1; 16:13; 1 Rois 2:10-12' },
+  { id:'intruder-3', type:'intruder', category:'Lieux', difficulty:'easy', items:['Bethléhem','Béthanie','Jéricho','Galilée'], intruder:3, explanation:'La Galilée est une région ; les trois autres sont des villes ou localités précises mentionnées dans les récits bibliques.', reference:'Matthieu 2:1; Jean 11:1; Josué 6:1; Matthieu 4:12-16' },
+  { id:'intruder-4', type:'intruder', category:'Évangiles', difficulty:'medium', items:['Matthieu','Marc','Luc','Lydie'], intruder:3, explanation:'Lydie est une chrétienne du premier siècle, pas un écrivain d’Évangile.', reference:'Matthieu 9:9; Marc 1:1; Luc 1:1-4; Actes 16:14-15' },
+
+  { id:'intruder-5', type:'intruder', category:'Personnages', difficulty:'easy', items:['Jacob','Isaac','Rébecca','Jéricho'], intruder:3, explanation:'Jéricho est une ville ; les trois autres sont des personnages.', reference:'Genèse 24–25; Josué 6:1' },
+  { id:'intruder-6', type:'intruder', category:'Rois & prophètes', difficulty:'medium', items:['Élie','Élisée','Isaïe','Sarepta'], intruder:3, explanation:'Sarepta est une ville ; les trois autres sont des prophètes.', reference:'1 Rois 17:8-16; 19:19-21; Isaïe 1:1' },
+  { id:'intruder-7', type:'intruder', category:'Évangiles', difficulty:'easy', items:['Pierre','André','Matthieu','Cana'], intruder:3, explanation:'Cana est un lieu ; les trois autres sont des disciples.', reference:'Matthieu 4:18-20; 9:9; Jean 2:1' },
+  { id:'intruder-8', type:'intruder', category:'Actes', difficulty:'medium', items:['Paul','Timothée','Lydie','Rome'], intruder:3, explanation:'Rome est une ville ; les trois autres sont des personnes.', reference:'Actes 16:1-15; 27:1-2' },
+  { id:'intruder-9', type:'intruder', category:'Bible', difficulty:'medium', items:['Genèse','Exode','Ruth','Jéricho'], intruder:3, explanation:'Jéricho est un lieu ; les trois autres sont des livres bibliques.', reference:'Genèse 1:1; Exode 1:1; Ruth 1:1; Josué 6:1' },
+];
+
+
 const intruderQuestions2: IntruderQuestion[] = [
   { id:'intruder-10', type:'intruder', category:'Personnages', difficulty:'easy', items:['Isaac','Jacob','Joseph','Cana'], intruder:3, explanation:'Cana est un lieu ; les trois autres sont des personnages de la Genèse.', reference:'Genèse 21:1-7; 28:10-22; 37:1-36; Jean 2:1' },
   { id:'intruder-11', type:'intruder', category:'Juges', difficulty:'medium', items:['Déborah','Gédéon','Éhoud','Jéricho'], intruder:3, explanation:'Jéricho est une ville ; les trois autres ont été des juges en Israël.', reference:'Juges 3:15-30; 4:4-10; 7:1-25; Josué 6:1' },
