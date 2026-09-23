@@ -1650,4 +1650,4 @@ export const allQuestions = [
   ...quoteQuestions, ...intruderQuestions, ...timesUpQuestions,
 ];
 
-export const v2Questions = [...quoteQuestions, ...chronologyQuestions, ...intruderQuestions, ...timesUpQuestions];
+export const v2Questions = [...quoteQuestions, ...intruderQuestions, ...timesUpQuestions];
