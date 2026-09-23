@@ -1633,7 +1633,7 @@ for (let i = timesUpQuestions.length - 1; i >= 0; i -= 1) {
 // Exports globaux placés en fin de fichier pour inclure tous les enrichissements.
 export const allQuestions = [
   ...quizQuestions, ...mysteryQuestions, ...trueFalseQuestions, ...challenges,
-  ...quoteQuestions, ...chronologyQuestions, ...intruderQuestions, ...timesUpQuestions,
+  ...quoteQuestions, ...intruderQuestions, ...timesUpQuestions,
 ];
 
-export const v2Questions = [...quoteQuestions, ...chronologyQuestions, ...intruderQuestions, ...timesUpQuestions];
+export const v2Questions = [...quoteQuestions, ...intruderQuestions, ...timesUpQuestions];
