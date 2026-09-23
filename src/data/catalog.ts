@@ -1,5 +1,5 @@
 import { Question, QuizQuestion } from '@/types';
-import { quizQuestions, mysteryQuestions, trueFalseQuestions, challenges, quoteQuestions, chronologyQuestions, intruderQuestions, timesUpQuestions } from './questions';
+import { quizQuestions, mysteryQuestions, trueFalseQuestions, challenges, quoteQuestions, intruderQuestions, timesUpQuestions } from './questions';
 
 export const allGameQuestions: Question[] = [
   ...quizQuestions,
@@ -7,7 +7,6 @@ export const allGameQuestions: Question[] = [
   ...trueFalseQuestions,
   ...challenges,
   ...quoteQuestions,
-  ...chronologyQuestions,
   ...intruderQuestions,
   ...timesUpQuestions,
 ];
