@@ -724,46 +724,10 @@ export const quoteQuestions: QuoteQuestion[] = [...baseQuoteQuestions, ...quoteQ
 
 
 
-const chronologyQuestions2: ChronologyQuestion[] = [
-  { id:'chron-9', type:'chronology', category:'Genèse', difficulty:'easy', events:['Isaac naît','Ésaü et Jacob naissent','Jacob rencontre Rachel','Joseph naît'], correctOrder:[0,1,2,3], explanation:'Isaac naît avant ses fils Ésaü et Jacob ; Jacob rencontre ensuite Rachel, puis Joseph naît plus tard.', reference:'Genèse 21:1-7; 25:19-26; 29:1-30; 30:22-24' },
-  { id:'chron-10', type:'chronology', category:'Juges', difficulty:'medium', events:['Éhoud délivre Israël','Déborah juge Israël','Gédéon combat Madian','Samson devient juge'], correctOrder:[0,1,2,3], explanation:'Ces épisodes appartiennent à des périodes successives du temps des juges.', reference:'Juges 3:15-30; 4:4-24; 7:1-25; 13:1-5' },
-  { id:'chron-11', type:'chronology', category:'Évangiles', difficulty:'medium', events:['Naissance de Jean le Baptiseur','Jean commence à prêcher dans le désert','Jésus est baptisé','Jean témoigne au sujet de Jésus'], correctOrder:[0,1,2,3], explanation:'Jean naît avant le début de son ministère ; il prêche ensuite dans le désert, Jésus est baptisé, puis Jean rend témoignage à son sujet.', reference:'Luc 1:57-80; Matthieu 3:1-17; Jean 1:29-34' },
-  { id:'chron-12', type:'chronology', category:'Actes', difficulty:'hard', events:['Matthias est choisi','Étienne est tué','Paul se convertit','Paul arrive à Rome'], correctOrder:[0,1,2,3], explanation:'Matthias est choisi avant le témoignage et la mort d’Étienne ; la conversion de Saul suit, puis son voyage final vers Rome.', reference:'Actes 1:15-26; 7:54-60; 9:1-22; 28:16-31' },
-];
-
-
-const chronologyQuestions3: ChronologyQuestion[] = [
-  { id:'chron-13', type:'chronology', category:'Israël', difficulty:'medium', events:['Josué conduit Israël en Canaan','Déborah juge Israël','Gédéon combat Madian','Samson devient juge'], correctOrder:[0,1,2,3], explanation:'La période des juges commence après l’entrée en Canaan et ces épisodes se succèdent.', reference:'Josué 6; Juges 4; 7; 13' },
-  { id:'chron-14', type:'chronology', category:'Évangiles', difficulty:'medium', events:['Jésus est baptisé','Jésus choisit les Douze','Transfiguration','Mort et résurrection de Jésus'], correctOrder:[0,1,2,3], explanation:'Le baptême précède le choix des Douze ; la transfiguration vient plus tard, avant la dernière semaine et la mort puis la résurrection.', reference:'Matthieu 3:13-17; 10:1-4; 17:1-9; 27–28' },
-  { id:'chron-15', type:'chronology', category:'Actes', difficulty:'medium', events:['Matthias est choisi','Pentecôte','Étienne est tué','Paul se convertit'], correctOrder:[0,1,2,3], explanation:'Matthias est choisi avant la Pentecôte ; le témoignage d’Étienne et la conversion de Saul suivent.', reference:'Actes 1:15-26; 2:1-4; 7:54-60; 9:1-22' },
-  { id:'chron-16', type:'chronology', category:'Exil et retour', difficulty:'hard', events:['Cyrus autorise le retour','Reconstruction du temple','Esdras arrive à Jérusalem','Néhémie reconstruit les murailles'], correctOrder:[0,1,2,3], explanation:'Le décret de Cyrus précède les travaux du temple, puis la mission d’Esdras et enfin la reconstruction des murailles sous Néhémie.', reference:'Esdras 1:1-4; 6:14-15; 7:6-10; Néhémie 2:11-18; 6:15' },
-];
-
-const chronologyQuestions4: ChronologyQuestion[] = [
-  { id:'chron-17', type:'chronology', category:'Genèse', difficulty:'medium', events:['Jacob quitte Canaan pour Paddan-Aram','Jacob travaille pour Laban','Jacob revient en Canaan','Joseph est vendu par ses frères'], correctOrder:[0,1,2,3], explanation:'Jacob part chez Laban, y travaille plusieurs années, revient ensuite en Canaan ; plus tard, Joseph est vendu par ses frères.', reference:'Genèse 28:10-22; 29:15-30; 31:17-21; 37:12-36' },
-  { id:'chron-18', type:'chronology', category:'Juges', difficulty:'medium', events:['Samson naît','Samson devient juge','Samson est capturé par les Philistins','Samson fait tomber le temple des Philistins'], correctOrder:[0,1,2,3], explanation:'Le récit présente d’abord la naissance de Samson, puis son activité comme juge, sa capture et enfin son dernier acte contre les Philistins.', reference:'Juges 13:1-5; 14–15; 16:4-21; 16:22-30' },
-  { id:'chron-19', type:'chronology', category:'Évangiles', difficulty:'medium', events:['Naissance de Jésus','Fuite en Égypte','Retour à Nazareth','Début du ministère de Jésus'], correctOrder:[0,1,2,3], explanation:'Après la naissance de Jésus, Joseph et Marie fuient en Égypte ; ils reviennent ensuite et s’installent à Nazareth, avant le début du ministère de Jésus.', reference:'Matthieu 2:1-23; Luc 2:39-40' },
-  { id:'chron-20', type:'chronology', category:'Actes', difficulty:'hard', events:['Pierre guérit un homme boiteux','Les apôtres sont emprisonnés et libérés','Étienne est nommé parmi les sept','Philippe prêche en Samarie'], correctOrder:[0,1,2,3], explanation:'Le récit des Actes présente la guérison près du temple, puis l’opposition contre les apôtres ; les sept sont ensuite nommés, avant que Philippe ne prêche en Samarie.', reference:'Actes 3:1-10; 5:17-20; 6:1-6; 8:4-8' },
-];
-
-export const chronologyQuestions: ChronologyQuestion[] = [...baseChronologyQuestions, ...chronologyQuestions2, ...chronologyQuestions3, ...chronologyQuestions4];
 
 
 
 
-
-const baseIntruderQuestions: IntruderQuestion[] = [
-  { id:'intruder-1', type:'intruder', category:'Personnages', difficulty:'medium', items:['Abraham','Isaac','Jacob','Jonas'], intruder:3, explanation:'Jonas est l’intrus : les trois autres sont les patriarches Abraham, Isaac et Jacob, liés à la lignée de la promesse.', reference:'Genèse 12:1-9; 21:1-7; 25:19-26; Jonas 1:1-3' },
-  { id:'intruder-2', type:'intruder', category:'Rois', difficulty:'medium', items:['Saül','David','Salomon','Samuel'], intruder:3, explanation:'Samuel était prophète et juge, tandis que les trois autres ont été rois d’Israël.', reference:'1 Samuel 7:15; 10:1; 16:13; 1 Rois 2:10-12' },
-  { id:'intruder-3', type:'intruder', category:'Lieux', difficulty:'easy', items:['Bethléhem','Béthanie','Jéricho','Galilée'], intruder:3, explanation:'La Galilée est une région ; les trois autres sont des villes ou localités précises mentionnées dans les récits bibliques.', reference:'Matthieu 2:1; Jean 11:1; Josué 6:1; Matthieu 4:12-16' },
-  { id:'intruder-4', type:'intruder', category:'Évangiles', difficulty:'medium', items:['Matthieu','Marc','Luc','Lydie'], intruder:3, explanation:'Lydie est une chrétienne du premier siècle, pas un écrivain d’Évangile.', reference:'Matthieu 9:9; Marc 1:1; Luc 1:1-4; Actes 16:14-15' },
-
-  { id:'intruder-5', type:'intruder', category:'Personnages', difficulty:'easy', items:['Jacob','Isaac','Rébecca','Jéricho'], intruder:3, explanation:'Jéricho est une ville ; les trois autres sont des personnages.', reference:'Genèse 24–25; Josué 6:1' },
-  { id:'intruder-6', type:'intruder', category:'Rois & prophètes', difficulty:'medium', items:['Élie','Élisée','Isaïe','Sarepta'], intruder:3, explanation:'Sarepta est une ville ; les trois autres sont des prophètes.', reference:'1 Rois 17:8-16; 19:19-21; Isaïe 1:1' },
-  { id:'intruder-7', type:'intruder', category:'Évangiles', difficulty:'easy', items:['Pierre','André','Matthieu','Cana'], intruder:3, explanation:'Cana est un lieu ; les trois autres sont des disciples.', reference:'Matthieu 4:18-20; 9:9; Jean 2:1' },
-  { id:'intruder-8', type:'intruder', category:'Actes', difficulty:'medium', items:['Paul','Timothée','Lydie','Rome'], intruder:3, explanation:'Rome est une ville ; les trois autres sont des personnes.', reference:'Actes 16:1-15; 27:1-2' },
-  { id:'intruder-9', type:'intruder', category:'Bible', difficulty:'medium', items:['Genèse','Exode','Ruth','Jéricho'], intruder:3, explanation:'Jéricho est un lieu ; les trois autres sont des livres bibliques.', reference:'Genèse 1:1; Exode 1:1; Ruth 1:1; Josué 6:1' },
-];
 
 
 const intruderQuestions2: IntruderQuestion[] = [
