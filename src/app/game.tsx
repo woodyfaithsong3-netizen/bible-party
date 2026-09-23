@@ -15,7 +15,6 @@ const modeIcons: Record<string, number> = {
   truefalse: require('../../assets/images/ui/star.png'),
   challenge: require('../../assets/images/ui/bolt.png'),
   quote: require('../../assets/images/ui/question.png'),
-  chronology: require('../../assets/images/ui/difficulty.png'),
   intruder: require('../../assets/images/ui/card.png'),
   timesup: require('../../assets/images/ui/difficulty.png'),
   threeclues: require('../../assets/images/ui/question.png'),
@@ -26,14 +25,14 @@ const modeIcons: Record<string, number> = {
 };
 const modeAccent: Record<string, string> = {
   quiz: '#4FD8F5', mystery: '#4FD8F5', truefalse: '#FFE05A', challenge: '#FFD43B', quote: '#7DE8FF',
-  chronology: '#75E2C1', intruder: '#63D9FF', timesup: '#FFE05A', threeclues: '#7DE8FF', forbidden: '#FFE05A',
+intruder: '#63D9FF', timesup: '#FFE05A', threeclues: '#7DE8FF', forbidden: '#FFE05A',
   faceoff: '#7DE8FF', risk: '#FFD43B', finale: '#FFE05A',
 };
 
 const ROUND_TARGETS: Record<number, number> = { 1: 4, 20: 10, 30: 14, 45: 20, 60: 28 };
 const MODE_LABELS: Record<string, string> = {
   quiz: 'QUIZ', mystery: 'QUI EST-CE ?', truefalse: 'VRAI OU FAUX', challenge: 'DÉFI 10 SECONDES', quote: 'QUI A DIT ÇA ?',
-  chronology: 'CHRONOLOGIE', intruder: 'INTRUS', timesup: "TIME'S UP", threeclues: '3 INDICES', forbidden: 'MOT INTERDIT',
+intruder: 'INTRUS', timesup: "TIME'S UP", threeclues: '3 INDICES', forbidden: 'MOT INTERDIT',
   faceoff: 'FACE-À-FACE', risk: 'MISE À RISQUE', finale: 'FINALE'
 };
 
@@ -80,7 +79,7 @@ export default function GameScreen() {
   const teamsRef = useRef(teams); useEffect(() => { teamsRef.current = teams; }, [teams]);
   const [round, setRound] = useState(0); const [active, setActive] = useState(0);
   const [selected, setSelected] = useState<number | null>(null); const [tf, setTf] = useState<boolean | null>(null);
-  const [clue, setClue] = useState(0); const [chronology, setChronology] = useState<number[]>([]); const [intruder, setIntruder] = useState<number | null>(null);
+  const [clue, setClue] = useState(0); const [intruder, setIntruder] = useState<number | null>(null);
   const [revealed, setRevealed] = useState(false); const [validated, setValidated] = useState(false); const [showMaster, setShowMaster] = useState(false); const [correct, setCorrect] = useState<boolean | null>(null); const [delta, setDelta] = useState(0); const [finaleWinner, setFinaleWinner] = useState<number | null>(null);
   const [timer, setTimer] = useState(10); const [running, setRunning] = useState(false); const [timedStarted, setTimedStarted] = useState(false); const [paused, setPaused] = useState(false); const [confirmQuit, setConfirmQuit] = useState(false);
   const [roundIntro, setRoundIntro] = useState(true);
@@ -95,7 +94,7 @@ export default function GameScreen() {
       let p = pool;
       if (mode === 'threeclues') p = p.filter(q => q.type === 'mystery' && q.clues.length >= 3);
       if (mode === 'forbidden') p = p.filter(q => q.type === 'mystery' && (q.forbiddenWords?.length || 0) >= 3);
-      if (selectedCategories.length) p = p.filter(q => selectedCategories.includes(normalizeCategory(q.category)) || (selectedCategories.includes('Défis') && (q.type === 'challenge' || q.type === 'timesup')) || (selectedCategories.includes('Chronologie') && q.type === 'chronology'));
+      if (selectedCategories.length) p = p.filter(q => selectedCategories.includes(normalizeCategory(q.category)) || (selectedCategories.includes('Défis') && (q.type === 'challenge' || q.type === 'timesup')));
       const d = difficulty === 'all' ? p : p.filter(q => q.difficulty === difficulty);
       out[mode] = shuffle(d);
     }); return out;
@@ -124,7 +123,7 @@ export default function GameScreen() {
   const finaleQuestion = mode === 'finale' ? question : question;
 
   const reset = useCallback(() => {
-    setSelected(null); setTf(null); setClue(0); setShowMaster(false); setChronology([]); setIntruder(null); setRevealed(false); setValidated(false); setCorrect(null); setDelta(0); setFinaleWinner(null);
+    setSelected(null); setTf(null); setClue(0); setShowMaster(false); setIntruder(null); setRevealed(false); setValidated(false); setCorrect(null); setDelta(0); setFinaleWinner(null);
     const seconds = mode === 'timesup' ? 30 : mode === 'challenge' ? (question.type === 'challenge' ? question.seconds : 10) : 0;
     setTimer(seconds); setRunning(false); setTimedStarted(false); roundDeadline.current = null; setRoundIntro(true);
   }, [mode, question]);
@@ -162,11 +161,10 @@ export default function GameScreen() {
     setRevealed(true);
   }
 
-  const chronologyItems = question.type === 'chronology' ? question.events : [];
   const intruderItems = question.type === 'intruder' ? question.items : [];
   const displayChronology = useMemo(() => shuffle(chronologyItems.map((text, i) => ({ text, i }))), [question.id]);
   const displayIntruder = useMemo(() => shuffle(intruderItems.map((text, i) => ({ text, i }))), [question.id]);
-  const chosenReady = mode === 'risk' ? selected !== null && clue >= 100 : mode === 'truefalse' ? tf !== null : mode === 'chronology' ? chronology.length === chronologyItems.length : mode === 'intruder' ? intruder !== null : selected !== null;
+  const chosenReady = mode === 'risk' ? selected !== null && clue >= 100 : mode === 'truefalse' ? tf !== null : mode === 'intruder' ? intruder !== null : selected !== null;
 
   const activeTeam = teams[active];
   const header = <><View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between' }}><Pressable onPress={() => setConfirmQuit(true)} style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: 'rgba(3,35,45,.66)', borderWidth: 1, borderColor: 'rgba(255,255,255,.25)', alignItems: 'center', justifyContent: 'center' }}><Text style={{ color: '#FFF', fontSize: 22 }}>‹</Text></Pressable><View style={{ alignItems: 'center' }}><Text style={{ color: '#FFFDF5', fontWeight: '900', fontSize: 14 }}>MANCHE {round + 1}/{target}</Text><Dots current={round + 1} total={target}/></View><Pressable onPress={pauseToggle} style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: 'rgba(3,35,45,.66)', borderWidth: 1, borderColor: 'rgba(255,229,138,.52)', alignItems: 'center', justifyContent: 'center' }}><Text style={{ color: '#FFE58A', fontWeight: '900' }}>{paused ? '▶' : 'Ⅱ'}</Text></Pressable></View><Text style={{ color: '#FFFDF5', textAlign: 'center', fontSize: 18, fontWeight: '900', marginTop: 7 }}>{MODE_LABELS[mode]}</Text><View style={{ alignSelf: 'center', marginTop: 7, paddingHorizontal: 11, paddingVertical: 5, borderRadius: 14, backgroundColor: 'rgba(242,201,76,.12)', borderWidth: 1, borderColor: 'rgba(242,201,76,.40)' }}><Text style={{ color: '#FFE58A', fontSize: 10, fontWeight: '900' }}>AU TOUR DE {activeTeam?.name?.toUpperCase() || 'L’ÉQUIPE'}</Text></View></>;
@@ -230,9 +228,6 @@ export default function GameScreen() {
       {mode === 'challenge' && question.type === 'challenge' && <><ModeTitle icon="challenge" title="DÉFI 10 SECONDES" subtitle="Tout le groupe valide la réussite."/><View style={{ alignItems:'center', marginVertical: 9 }}><Text style={{ color: timer<=3&&running?'#FF7676':'#FFE58A', fontSize: 74, fontWeight:'900' }}>{timer}</Text><Text style={{ color:'#E5F3EF', fontWeight:'900', letterSpacing:2 }}>SECONDES</Text></View><Glass strong><Text style={{ color:'#FFFDF5', fontSize:22, lineHeight:30, fontWeight:'900', textAlign:'center' }}>{question.prompt}</Text></Glass>{masterPanel(question.type === 'challenge' && question.acceptedAnswers?.length ? <View style={{ marginTop: 10 }}><Text style={{ color: '#FFE58A', fontSize: 10, fontWeight: '900' }}>RÉPONSES / REPÈRES ACCEPTÉS</Text><Text style={{ color: '#E6F2EF', fontSize: 13, lineHeight: 19, marginTop: 5 }}>{question.acceptedAnswers.join(' · ')}</Text></View> : undefined)}{!validated&&<View style={{ flexDirection:'row', gap:8, marginTop:12 }}><Gold title={running ? "Arrêter" : "Lancer"} onPress={running ? stopTimed : startTimed} disabled={paused || timedStarted} style={{flex:1}}/>{!running&&(timer===0||revealed)&&<Gold title="Réussi" onPress={()=>validate(true,200)} style={{flex:1}}/>}</View>}{!validated&&!running&&(timer===0||revealed)&&<Gold title="Échoué" secondary onPress={()=>validate(false,0)} style={{marginTop:8}}/>}</>}
 
       {mode === 'timesup' && question.type === 'timesup' && <><ModeTitle icon="timesup" title="TIME'S UP" subtitle="Fais deviner avant la fin du chrono."/><View style={{ alignItems:'center', marginVertical:6 }}><Text style={{ color:timer<=5&&running?'#FF7676':'#FFE58A', fontSize:72, fontWeight:'900' }}>{timer}s</Text></View>{masterPanel()}<Glass strong><Text style={{color:'#FFE58A',fontSize:10,fontWeight:'900'}}>INDICE {clue+1}/{question.clues.length}</Text><Text style={{color:'#FFFDF5',fontSize:23,lineHeight:31,fontWeight:'900',textAlign:'center',marginTop:8}}>{question.clues[Math.min(clue,question.clues.length-1)]}</Text></Glass><View style={{gap:8,marginTop:10}}>{!validated&&!revealed&&<><Gold title={running?'Arrêter le chrono':'Lancer le chrono'} onPress={running?stopTimed:startTimed} disabled={paused||(!running&&timedStarted)}/>{clue<question.clues.length-1&&<Gold title="Indice suivant" secondary onPress={()=>setClue(c=>c+1)} disabled={paused}/>}</>}{(revealed||(timedStarted&&!running))&&!validated&&<View style={{flexDirection:'row',gap:8}}><Gold title="✓ Trouvé" onPress={()=>validate(true,200)} style={{flex:1}}/><Gold title="✕ Raté" secondary onPress={()=>validate(false,0)} style={{flex:1}}/></View>}</View></>}
-
-      {mode === 'chronology' && question.type === 'chronology' && <><ModeTitle icon="chronology" title="CHRONOLOGIE" subtitle="Remets les événements dans le bon ordre."/><Text style={{color:'#E7F3EF',textAlign:'center',fontSize:12,fontWeight:'700'}}>Touchez les cartes dans l'ordre 1 → {chronologyItems.length}</Text><View style={{gap:8,marginTop:12}}>{displayChronology.map((item,i)=>{const pos=chronology.indexOf(item.i);return <Pressable key={item.i} disabled={validated||revealed||paused} onPress={()=>setChronology(a=>pos>=0?a.filter(x=>x!==item.i):[...a,item.i])} style={{minHeight:48,borderRadius:16,borderWidth:1,borderColor:pos>=0?'#FFE17A':'rgba(138,223,240,.46)',backgroundColor:pos>=0?'rgba(242,201,76,.17)':'rgba(3,39,50,.67)',padding:10,flexDirection:'row',alignItems:'center'}}><View style={{width:27,height:27,borderRadius:9,backgroundColor:'rgba(255,255,255,.08)',alignItems:'center',justifyContent:'center'}}><Text style={{color:'#FFE58A',fontWeight:'900'}}>{pos>=0?pos+1:'·'}</Text></View><Text style={{color:'#FFF',fontWeight:'800',flex:1,marginLeft:9}}>{item.text}</Text></Pressable>})}</View>{!revealed&&!validated&&<View style={{flexDirection:'row',gap:8,marginTop:10}}><Gold title="Vérifier l'ordre" onPress={revealAnswer} disabled={chronology.length !== chronologyItems.length} style={{flex:1}}/>{chronology.length>0&&<Gold title="Effacer le dernier" secondary onPress={()=>setChronology(a=>a.slice(0,-1))} style={{flex:1}}/>}</View>}{revealPanel(question.correctOrder.map((n,i)=>`${i+1}. ${chronologyItems[n]}`).join('  •  '),200)}</>}
-
       {mode === 'intruder' && question.type === 'intruder' && <><ModeTitle icon="intruder" title="INTRUS" subtitle="Quel élément n’a rien à faire ici ?"/><View style={{gap:9,marginTop:8}}>{displayIntruder.map(item=><Pressable key={item.i} disabled={validated||revealed||paused} onPress={()=>setIntruder(item.i)} style={{minHeight:52,borderRadius:17,borderWidth:1,borderColor:intruder===item.i?'#FFE17A':'rgba(138,223,240,.46)',backgroundColor:intruder===item.i?'rgba(242,201,76,.17)':'rgba(3,39,50,.67)',padding:12,flexDirection:'row',alignItems:'center'}}><Text style={{color:'#FFE58A',fontWeight:'900',marginRight:9}}>{String.fromCharCode(65+item.i)}</Text><Text style={{color:'#FFF',fontWeight:'800',flex:1}}>{item.text}</Text></Pressable>)}</View>{masterPanel()}{intruder!==null&&!revealed&&!validated&&<Gold title="Révéler l'intrus" onPress={revealAnswer} style={{marginTop:10}}/>}{revealPanel(`Intrus : ${intruderItems[question.intruder]}`,200)}</>}
 
       {(mode==='faceoff'||mode==='risk'||mode==='finale') && question.type==='quiz' && <><ModeTitle icon={mode==='risk'?'risk':mode==='finale'?'finale':'faceoff'} title={MODE_LABELS[mode]} subtitle={mode==='risk'?'Mise tes points avant de répondre.':'Chaque réponse compte.'}/>{mode==='risk'&&<View style={{flexDirection:'row',gap:8,marginBottom:10}}>{[100,200,300].map(v=><Pressable key={v} onPress={()=>setClue(v)} style={{flex:1,minHeight:44,borderRadius:15,borderWidth:1,borderColor:clue===v?'#FFE17A':'rgba(138,223,240,.46)',backgroundColor:clue===v?'#F2C94C':'rgba(3,39,50,.67)',alignItems:'center',justifyContent:'center'}}><Text style={{color:clue===v?'#153A38':'#FFF',fontWeight:'900'}}>{v}</Text></Pressable>)}</View>}<Text style={{color:'#FFFDF5',fontSize:24,lineHeight:31,fontWeight:'900',textAlign:'center'}}>{question.question}</Text><View style={{gap:8,marginTop:12}}>{question.answers.map((a,i)=><Pressable key={i} disabled={validated||revealed||paused} onPress={()=>setSelected(i)} style={{minHeight:50,borderRadius:16,borderWidth:1,borderColor:selected===i?'#FFE17A':'rgba(138,223,240,.46)',backgroundColor:selected===i?'rgba(242,201,76,.17)':'rgba(3,39,50,.67)',padding:11,flexDirection:'row',alignItems:'center'}}><Text style={{color:'#FFE58A',fontWeight:'900',marginRight:9}}>{String.fromCharCode(65+i)}</Text><Text style={{color:'#FFF',fontWeight:'800',flex:1}}>{a}</Text></Pressable>)}</View>{chosenReady&&!revealed&&!validated&&<Gold title="Révéler la réponse" onPress={revealAnswer} style={{marginTop:10}}/>}{mode==='finale'&&revealed&&!validated&&<Glass strong style={{marginTop:14}}><Text style={{color:'#FFE58A',fontSize:10,fontWeight:'900',letterSpacing:1.2}}>QUI A RÉPONDU EN PREMIER ?</Text><Text style={{color:'#D6E9E5',fontSize:12,lineHeight:18,marginTop:6}}>Le jeu ne détecte pas la rapidité entre les équipes : le maître de jeu désigne ici l'équipe qui a répondu la première.</Text><View style={{gap:8,marginTop:12}}>{teams.map((team,i)=><Gold key={team.id} title={`✓ ${team.name} — +400 points`} onPress={()=>validateFinale(i)}/>)}</View><Gold title="Aucune équipe / pas de point" secondary onPress={()=>validateFinale(null)} style={{marginTop:8}}/></Glass>}{mode==='finale'&&validated&&<Glass style={{marginTop:14,borderColor:finaleWinner!==null?'rgba(93,226,169,.75)':'rgba(255,229,138,.55)'}}><Text style={{color:'#FFE58A',fontWeight:'900'}}>FINALE VALIDÉE</Text><Text style={{color:'#FFFDF5',fontSize:19,fontWeight:'900',marginTop:4}}>{finaleWinner===null?'Aucun point attribué':`${teams[finaleWinner]?.name || 'Équipe'} : +400 points`}</Text></Glass>}{mode!=='finale'&&revealPanel(question.answers[question.correctAnswer],mode==='risk'?Math.max(100,clue||100):200,mode==='risk'?Math.max(100,clue||100):0)}</>}
