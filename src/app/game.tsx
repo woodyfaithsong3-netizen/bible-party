@@ -95,7 +95,7 @@ export default function GameScreen() {
     const usedReferences = new Set<string>();
 
     // Rejoue mentalement les manches précédentes pour construire une sélection
-    // sans répétition prématurée entre les 5 modes, pas seulement à l'intérieur
+    // sans répétition prématurée entre les 4 modes, pas seulement à l'intérieur
     // de chaque petit pool.
     let raw: Question | undefined;
     for (let r = 0; r <= round; r += 1) {
