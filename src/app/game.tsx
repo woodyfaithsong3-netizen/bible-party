@@ -161,9 +161,7 @@ export default function GameScreen() {
     setRevealed(true);
   }
 
-  const intruderItems = question.type === 'intruder' ? question.items : [];
-  const displayChronology = useMemo(() => shuffle(chronologyItems.map((text, i) => ({ text, i }))), [question.id]);
-  const displayIntruder = useMemo(() => shuffle(intruderItems.map((text, i) => ({ text, i }))), [question.id]);
+  const intruderItems = question.type === 'intruder' ? question.items : [];  const displayIntruder = useMemo(() => shuffle(intruderItems.map((text, i) => ({ text, i }))), [question.id]);
   const chosenReady = mode === 'risk' ? selected !== null && clue >= 100 : mode === 'truefalse' ? tf !== null : mode === 'intruder' ? intruder !== null : selected !== null;
 
   const activeTeam = teams[active];
@@ -172,9 +170,7 @@ export default function GameScreen() {
   const masterAnswer = useMemo(() => {
     if (question.type === 'mystery' || question.type === 'timesup') return question.answer;
     if (question.type === 'challenge') return question.acceptedAnswers?.join(' · ') || 'Le maître de jeu juge la réussite à partir de la consigne.';
-    if (question.type === 'intruder') return question.items[question.intruder];
-    if (question.type === 'chronology') return question.correctOrder.map((n, i) => `${i + 1}. ${question.events[n]}`).join('  •  ');
-    if (question.type === 'truefalse') return question.answer ? 'VRAI' : 'FAUX';
+    if (question.type === 'intruder') return question.items[question.intruder];    if (question.type === 'truefalse') return question.answer ? 'VRAI' : 'FAUX';
     if (question.type === 'quiz' || question.type === 'quote') return question.answers[question.correctAnswer];
     return '';
   }, [question]);
