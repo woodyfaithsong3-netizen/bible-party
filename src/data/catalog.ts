@@ -18,66 +18,15 @@ export const allGameQuestions: Question[] = [
  * mode (quiz, qui suis-je, vrai/faux, qui a dit ça, chronologie, intrus, time's up, défi).
  */
 export const categoryLabels = [
-  'Questions bibliques',
-  'Que veulent dire ces versets ?',
-  'La Bible et l’Histoire',
-  'La Bible et la science',
   'Personnages',
-  'Évangiles',
-  'Rois & prophètes',
-  'Prophéties',
+  'Récits bibliques',
+  'Comprendre la Bible',
+  'Mieux connaître Jéhovah',
 ];
 
-/** Toutes les catégories affichées sont de vrais thèmes de contenu. */
 export const setupCategoryFilters = [...categoryLabels];
 
-/**
- * Classification éditoriale : les anciennes catégories restent reconnues afin de ne
- * pas perdre le contenu historique de la base. Les nouvelles catégories correspondent
- * aux grands axes « Que dit la Bible ? » de JW.org, enrichis par les familles de jeu.
- */
 const CATEGORY_MAP: Record<string, string> = {
-  // Questions bibliques
-  bible: 'Questions bibliques',
-  'questions bibliques': 'Questions bibliques',
-  'histoire biblique': 'La Bible et l’Histoire',
-  genèse: 'Questions bibliques',
-  israël: 'Questions bibliques',
-  'grande chronologie': 'Questions bibliques',
-  'exil et retour': 'La Bible et l’Histoire',
-  exil: 'La Bible et l’Histoire',
-  exode: 'Questions bibliques',
-  lieux: 'Questions bibliques',
-  livres: 'Questions bibliques',
-  'livres-hebreux': 'Questions bibliques',
-  villes: 'Questions bibliques',
-  objets: 'Questions bibliques',
-  actes: 'Questions bibliques',
-  prédication: 'Questions bibliques',
-  persévérance: 'Questions bibliques',
-  // Versets
-  versets: 'Que veulent dire ces versets ?',
-  'versets bibliques': 'Que veulent dire ces versets ?',
-  'que veulent dire ces versets ?': 'Que veulent dire ces versets ?',
-  'expressions bibliques': 'Que veulent dire ces versets ?',
-  concepts: 'Que veulent dire ces versets ?',
-  repentance: 'Que veulent dire ces versets ?',
-  // Histoire
-  histoire: 'La Bible et l’Histoire',
-  'la bible et l’histoire': 'La Bible et l’Histoire',
-  manuscrits: 'La Bible et l’Histoire',
-  traductions: 'La Bible et l’Histoire',
-  archéologie: 'La Bible et l’Histoire',
-  archeologie: 'La Bible et l’Histoire',
-  'exactitude historique': 'La Bible et l’Histoire',
-  // Science
-  science: 'La Bible et la science',
-  'la bible et la science': 'La Bible et la science',
-  création: 'La Bible et la science',
-  evolution: 'La Bible et la science',
-  évolution: 'La Bible et la science',
-  'exactitude scientifique': 'La Bible et la science',
-  // Personnages
   personnages: 'Personnages',
   'personnages bibliques': 'Personnages',
   'révision des 125 fiches': 'Personnages',
@@ -90,41 +39,70 @@ const CATEGORY_MAP: Record<string, string> = {
   humilité: 'Personnages',
   fidélité: 'Personnages',
   qualites: 'Personnages',
-  // Évangiles
-  évangiles: 'Évangiles',
-  evangiles: 'Évangiles',
-  disciples: 'Évangiles',
-  miracles: 'Évangiles',
-  'femmes-evangiles': 'Évangiles',
-  // Rois & prophètes
-  'rois et prophètes': 'Rois & prophètes',
-  'rois & prophètes': 'Rois & prophètes',
-  rois: 'Rois & prophètes',
-  'prophètes-ecritures': 'Rois & prophètes',
-  prophètes: 'Rois & prophètes',
-  juges: 'Rois & prophètes',
-  confiance: 'Rois & prophètes',
-  'miracles-anciens': 'Rois & prophètes',
-  // Prophéties
-  prophéties: 'Prophéties',
-  propheties: 'Prophéties',
-  prophétie: 'Prophéties',
-  prophetie: 'Prophéties',
-  'prophéties bibliques': 'Prophéties',
-  défis: 'Questions bibliques',
+
+  'histoire biblique': 'Récits bibliques',
+  histoire: 'Récits bibliques',
+  'la bible et l’histoire': 'Récits bibliques',
+  'grande chronologie': 'Récits bibliques',
+  'exil et retour': 'Récits bibliques',
+  exil: 'Récits bibliques',
+  exode: 'Récits bibliques',
+  évangiles: 'Récits bibliques',
+  evangiles: 'Récits bibliques',
+  disciples: 'Récits bibliques',
+  miracles: 'Récits bibliques',
+  'femmes-evangiles': 'Récits bibliques',
+  'rois et prophètes': 'Récits bibliques',
+  'rois & prophètes': 'Récits bibliques',
+  rois: 'Récits bibliques',
+  'prophètes-ecritures': 'Récits bibliques',
+  prophètes: 'Récits bibliques',
+  juges: 'Récits bibliques',
+  confiance: 'Récits bibliques',
+  'miracles-anciens': 'Récits bibliques',
+
+  versets: 'Comprendre la Bible',
+  'versets bibliques': 'Comprendre la Bible',
+  'que veulent dire ces versets ?': 'Comprendre la Bible',
+  'expressions bibliques': 'Comprendre la Bible',
+  concepts: 'Comprendre la Bible',
+  repentance: 'Comprendre la Bible',
+  prophéties: 'Comprendre la Bible',
+  propheties: 'Comprendre la Bible',
+  prophétie: 'Comprendre la Bible',
+  prophetie: 'Comprendre la Bible',
+  'prophéties bibliques': 'Comprendre la Bible',
+  'la bible et la science': 'Comprendre la Bible',
+  science: 'Comprendre la Bible',
+  création: 'Comprendre la Bible',
+  evolution: 'Comprendre la Bible',
+  évolution: 'Comprendre la Bible',
+  'exactitude scientifique': 'Comprendre la Bible',
+  manuscrits: 'Comprendre la Bible',
+  traductions: 'Comprendre la Bible',
+  archéologie: 'Comprendre la Bible',
+  archeologie: 'Comprendre la Bible',
+  'exactitude historique': 'Comprendre la Bible',
+  genèse: 'Comprendre la Bible',
+  lieux: 'Comprendre la Bible',
+  livres: 'Comprendre la Bible',
+  'livres-hebreux': 'Comprendre la Bible',
+  villes: 'Comprendre la Bible',
+  objets: 'Comprendre la Bible',
+  actes: 'Comprendre la Bible',
+  prédication: 'Comprendre la Bible',
+  persévérance: 'Comprendre la Bible',
+  défis: 'Comprendre la Bible',
+
+  bible: 'Mieux connaître Jéhovah',
+  'questions bibliques': 'Mieux connaître Jéhovah',
 };
 
 export function normalizeCategory(value: unknown) {
-  // Les anciennes questions peuvent avoir une catégorie absente ou non textuelle.
-  // Ne jamais appeler toLowerCase() avant d'avoir vérifié le type.
-  if (typeof value !== 'string') return 'Questions bibliques';
+  if (typeof value !== 'string') return 'Mieux connaître Jéhovah';
   const key = value.trim().toLowerCase();
-  if (!key) return 'Questions bibliques';
-  const mapped = CATEGORY_MAP[key];
-  if (mapped) return mapped;
-  // eslint-disable-next-line no-console
-  console.warn(`[catalog] Catégorie non mappée : "${value}" — vérifier CATEGORY_MAP dans catalog.ts`);
-  return 'Questions bibliques';
+  if (!key) return 'Mieux connaître Jéhovah';
+  return CATEGORY_MAP[key] || 'Mieux connaître Jéhovah';
 }
 
 export function getCategoryQuestionCount(category: string) {
