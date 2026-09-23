@@ -11,7 +11,6 @@ const modeOptions = [
   ['mystery', 'Qui est-ce ?'],
   ['truefalse', 'Vrai / Faux'],
   ['challenge', 'Défi'],
-  ['forbidden', 'Mot interdit'],
 ] as const;
 const difficultyOptions = [['all', 'Tous'], ['easy', 'Facile'], ['medium', 'Intermédiaire'], ['hard', 'Difficile'], ['expert', 'Expert']] as const;
 const modeIcon = require('../../assets/images/ui/card.png');
