@@ -163,7 +163,7 @@ const tfSeeds: Array<[string, boolean, string, string, string]> = [
 export const categoryTrueFalseExpansion: TrueFalseQuestion[] = tfSeeds.map((s, i) => ({ id:`jwcat-tf-${i+1}`, type:'truefalse', statement:s[0], answer:s[1], explanation:s[2], category:s[3], reference:s[4], difficulty:'medium' }));
 
 const mysterySeeds: Array<[string,string[],string,string,string]> = [
- ['La Bible',['Question très large sur Dieu','Prière','Royaume'], 'Questions bibliques','Matthieu 6:9-10','easy'],
+ ['La Bible',['Prière modèle','Prière','Royaume'], 'Questions bibliques','Matthieu 6:9-10','easy'],
  ['Genèse 1:1',['Premier verset','Création','Cieux et terre'], 'Que veulent dire ces versets ?','Genèse 1:1','easy'],
  ['Psaume 119:105',['Lampe','Chemin','Parole'], 'Que veulent dire ces versets ?','Psaume 119:105','easy'],
  ['Cyrus',['Roi perse','Décret','Retour à Jérusalem'], 'La Bible et l’Histoire','Esdras 1:1-4','medium'],
@@ -192,14 +192,14 @@ export const categoryTimesUpExpansion: TimesUpQuestion[] = timesUpSeeds.map((s,i
 
 
 export const categoryQuoteExpansion: QuoteQuestion[] = [
-  {id:'jwcat-quote-1',type:'quote',category:'Questions bibliques',difficulty:'easy',quote:'Quel personnage a enseigné à ses disciples à demander que le Royaume de Dieu vienne ?',answers:['Jésus','Moïse','David','Paul'],correctAnswer:0,explanation:'Jésus a donné ce modèle de prière à ses disciples.',reference:'Matthieu 6:9-10'},
-  {id:'jwcat-quote-2',type:'quote',category:'Que veulent dire ces versets ?',difficulty:'easy',quote:'Quel personnage a comparé la parole de Dieu à une lampe qui guide ses pas ?',answers:['David','Salomon','Jésus','Pierre'],correctAnswer:0,explanation:'Cette expression se trouve dans un psaume attribué à David.',reference:'Psaume 119:105'},
-  {id:'jwcat-quote-3',type:'quote',category:'La Bible et l’Histoire',difficulty:'medium',quote:'Quel prophète a annoncé que Cyrus serait utilisé pour accomplir le projet de Jéhovah ?',answers:['Isaïe','Jérémie','Daniel','Esdras'],correctAnswer:0,explanation:'Isaïe a annoncé le rôle de Cyrus dans la reconstruction.',reference:'Isaïe 44:28'},
-  {id:'jwcat-quote-4',type:'quote',category:'La Bible et la science',difficulty:'medium',quote:'Quel homme a décrit la Terre comme étant suspendue sur rien ?',answers:['Job','Moïse','Salomon','Isaïe'],correctAnswer:0,explanation:'Job emploie cette image en parlant de la création.',reference:'Job 26:7'},
-  {id:'jwcat-quote-5',type:'quote',category:'Personnages',difficulty:'easy',quote:'Quelle femme a promis de rester avec Noémi et de partager son peuple ?',answers:['Ruth','Esther','Déborah','Anne'],correctAnswer:0,explanation:'Ruth exprime ainsi sa fidélité à Noémi.',reference:'Ruth 1:16-17'},
-  {id:'jwcat-quote-6',type:'quote',category:'Évangiles',difficulty:'easy',quote:'Quel homme a présenté Jésus comme l’Agneau de Dieu ?',answers:['Jean le Baptiseur','Pierre','André','Thomas'],correctAnswer:0,explanation:'Jean le Baptiseur désigne Jésus de cette façon.',reference:'Jean 1:29'},
-  {id:'jwcat-quote-7',type:'quote',category:'Rois & prophètes',difficulty:'medium',quote:'Quel prophète a demandé au peuple de cesser d’hésiter entre deux positions au mont Carmel ?',answers:['Élie','Élisée','Samuel','Nathan'],correctAnswer:0,explanation:'Élie interpelle ainsi le peuple sur le mont Carmel.',reference:'1 Rois 18:21'},
-  {id:'jwcat-quote-8',type:'quote',category:'Prophéties',difficulty:'medium',quote:'Quel prophète a annoncé la naissance d’un enfant destiné à exercer une autorité particulière ?',answers:['Isaïe','Michée','Daniel','Jérémie'],correctAnswer:0,explanation:'Isaïe annonce la naissance d’un futur dirigeant.',reference:'Isaïe 9:5-6'},
+  {id:'jwcat-quote-1',type:'quote',category:'Questions bibliques',difficulty:'easy',quote:'Qui a enseigné la prière modèle ?',answers:['Jésus','Moïse','David','Paul'],correctAnswer:0,explanation:'Jésus a donné ce modèle de prière à ses disciples.',reference:'Matthieu 6:9-10'},
+  {id:'jwcat-quote-2',type:'quote',category:'Que veulent dire ces versets ?',difficulty:'easy',quote:'Qui a parlé de la Parole comme d’une lampe ?',answers:['David','Salomon','Jésus','Pierre'],correctAnswer:0,explanation:'Cette expression se trouve dans un psaume attribué à David.',reference:'Psaume 119:105'},
+  {id:'jwcat-quote-3',type:'quote',category:'La Bible et l’Histoire',difficulty:'medium',quote:'Quel prophète a parlé de Cyrus ?',answers:['Isaïe','Jérémie','Daniel','Esdras'],correctAnswer:0,explanation:'Isaïe a annoncé le rôle de Cyrus dans la reconstruction.',reference:'Isaïe 44:28'},
+  {id:'jwcat-quote-4',type:'quote',category:'La Bible et la science',difficulty:'medium',quote:'Qui a parlé de la Terre suspendue sur rien ?',answers:['Job','Moïse','Salomon','Isaïe'],correctAnswer:0,explanation:'Job emploie cette image en parlant de la création.',reference:'Job 26:7'},
+  {id:'jwcat-quote-5',type:'quote',category:'Personnages',difficulty:'easy',quote:'Qui a choisi de rester avec Noémi ?',answers:['Ruth','Esther','Déborah','Anne'],correctAnswer:0,explanation:'Ruth exprime ainsi sa fidélité à Noémi.',reference:'Ruth 1:16-17'},
+  {id:'jwcat-quote-6',type:'quote',category:'Évangiles',difficulty:'easy',quote:'Qui a appelé Jésus « l’Agneau de Dieu » ?',answers:['Jean le Baptiseur','Pierre','André','Thomas'],correctAnswer:0,explanation:'Jean le Baptiseur désigne Jésus de cette façon.',reference:'Jean 1:29'},
+  {id:'jwcat-quote-7',type:'quote',category:'Rois & prophètes',difficulty:'medium',quote:'Qui a parlé au peuple au Carmel ?',answers:['Élie','Élisée','Samuel','Nathan'],correctAnswer:0,explanation:'Élie interpelle ainsi le peuple sur le mont Carmel.',reference:'1 Rois 18:21'},
+  {id:'jwcat-quote-8',type:'quote',category:'Prophéties',difficulty:'medium',quote:'Quel prophète a annoncé un enfant dirigeant ?',answers:['Isaïe','Michée','Daniel','Jérémie'],correctAnswer:0,explanation:'Isaïe annonce la naissance d’un futur dirigeant.',reference:'Isaïe 9:5-6'},
 ];
 
 export const categoryChronologyExpansion: ChronologyQuestion[] = [
@@ -225,12 +225,12 @@ export const categoryIntruderExpansion: IntruderQuestion[] = [
 ];
 
 export const categoryChallengeExpansion: Challenge[] = [
-  {id:'jwcat-challenge-1',type:'challenge',category:'Questions bibliques',difficulty:'easy',prompt:'En 10 secondes, citez trois sujets sur lesquels la Bible donne des conseils pratiques.',seconds:10},
-  {id:'jwcat-challenge-2',type:'challenge',category:'Que veulent dire ces versets ?',difficulty:'easy',prompt:'En 10 secondes, citez deux versets connus et leur thème principal.',seconds:10},
-  {id:'jwcat-challenge-3',type:'challenge',category:'La Bible et l’Histoire',difficulty:'medium',prompt:'En 10 secondes, citez trois lieux ou empires liés à l’histoire biblique.',seconds:10},
-  {id:'jwcat-challenge-4',type:'challenge',category:'La Bible et la science',difficulty:'easy',prompt:'En 10 secondes, citez deux exemples où la Bible parle de la nature.',seconds:10},
-  {id:'jwcat-challenge-5',type:'challenge',category:'Personnages',difficulty:'easy',prompt:'En 10 secondes, citez cinq personnages bibliques.',seconds:10},
-  {id:'jwcat-challenge-6',type:'challenge',category:'Évangiles',difficulty:'easy',prompt:'En 10 secondes, citez quatre disciples de Jésus.',seconds:10},
-  {id:'jwcat-challenge-7',type:'challenge',category:'Rois & prophètes',difficulty:'medium',prompt:'En 10 secondes, citez trois rois ou prophètes d’Israël.',seconds:10},
-  {id:'jwcat-challenge-8',type:'challenge',category:'Prophéties',difficulty:'medium',prompt:'En 10 secondes, citez trois prophètes bibliques.',seconds:10},
+  {id:'jwcat-challenge-1',type:'challenge',category:'Questions bibliques',difficulty:'easy',prompt:'Citez 3 conseils bibliques en 10 secondes.',seconds:10},
+  {id:'jwcat-challenge-2',type:'challenge',category:'Que veulent dire ces versets ?',difficulty:'easy',prompt:'Citez 2 versets connus en 10 secondes.',seconds:10},
+  {id:'jwcat-challenge-3',type:'challenge',category:'La Bible et l’Histoire',difficulty:'medium',prompt:'Citez 3 lieux bibliques en 10 secondes.',seconds:10},
+  {id:'jwcat-challenge-4',type:'challenge',category:'La Bible et la science',difficulty:'easy',prompt:'Citez 2 éléments de la nature mentionnés dans la Bible.',seconds:10},
+  {id:'jwcat-challenge-5',type:'challenge',category:'Personnages',difficulty:'easy',prompt:'Citez 5 personnages bibliques.',seconds:10},
+  {id:'jwcat-challenge-6',type:'challenge',category:'Évangiles',difficulty:'easy',prompt:'Citez 4 disciples de Jésus.',seconds:10},
+  {id:'jwcat-challenge-7',type:'challenge',category:'Rois & prophètes',difficulty:'medium',prompt:'Citez 3 rois ou prophètes.',seconds:10},
+  {id:'jwcat-challenge-8',type:'challenge',category:'Prophéties',difficulty:'medium',prompt:'Citez 3 prophètes bibliques.',seconds:10},
 ];
