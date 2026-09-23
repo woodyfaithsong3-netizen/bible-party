@@ -1613,6 +1613,35 @@ quizQuestions.push(...characterQuizQuestions);
 trueFalseQuestions.push(...characterTrueFalseQuestions);
 mysteryQuestions.push(...characterMysteryQuestions);
 
+function compactQuizQuestionText(value: string): string {
+  const original = String(value || '').replace(/\s+/g, ' ').trim();
+  if (original.length <= 110) return original;
+
+  let clue = original
+    .replace(/^Qui suis-je \?\s*/i, '')
+    .replace(/^Qui est-ce \?\s*/i, '')
+    .replace(/^À quel personnage ce portrait fait-il référence \?\s*/i, '')
+    .replace(/^Quel personnage est décrit par ce récit \?\s*/i, '')
+    .trim();
+
+  const firstSentence = clue.match(/^(.+?[.!?])(?:\s|$)/)?.[1]?.trim();
+  if (firstSentence && firstSentence.length <= 115 &&
+      (/^(ce personnage|cet homme|cette femme|il |elle |premier |prophète |roi |reine |disciple |homme |femme )/i.test(firstSentence))) {
+    return 'Qui est-ce ? ' + firstSentence;
+  }
+
+  if (original.length > 145 && original.startsWith('Quel personnage')) {
+    const cut = original.slice(0, 145).lastIndexOf(',');
+    if (cut >= 85) return original.slice(0, cut) + ' ?';
+  }
+
+  return original;
+}
+
+for (const q of quizQuestions) {
+  q.question = compactQuizQuestionText(q.question);
+}
+
 const normalizeEditorialText = (value: string) => value
   .normalize('NFD')
   .replace(/[\\u0300-\\u036f]/g, '')
