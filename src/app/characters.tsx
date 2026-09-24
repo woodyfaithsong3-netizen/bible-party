@@ -8,6 +8,11 @@ import { styles } from '@/theme/styles';
 import { ScenicScreen } from '@/components/ScenicScreen';
 import { getLearnedCharacters, markCharacterLearned } from '@/lib/storage';
 
+const CHRONOLOGICAL_CHARACTER_IDS = [
+  'adam','noe','melchizedek','abraham','sarah','hagar','isaac','esau','jacob','leah','joseph','moise','jethro','zipporah','korah','josue','balaam','balak','boaz','ruth','naomi','manoah_father','samson','hannah','eli','samuel','saul_king','david','michal','joab','salomon','jehoshaphat','elie','naaman','elisha','jonah','joel','amos','isaiah','hezekiah','micah','zephaniah','josiah','nahum','habakkuk','obadiah','jeremiah','ezekiel','daniel','zerubbabel','haggai','zechariah','esther','ezra','nehemie','malachi',
+  'elizabeth','zechariah_priest','joseph_jesus_father','marie','jean-baptiste','herod_antipas','joseph_caiaphas','pilate','roman_centurion','samaritan_woman','martha','jairus','jairus_daughter','woman_issue_blood','gerasene_man','blind_bartimaeus','mary_bethany','zacchaeus','joseph_arimathea','mary_magdalen','pierre','jean','philip_apostle','bartholomew','james_zebedee','thomas','james_alphaaeus','simon_zealot','mary_mother_james','stephen','philip_evangelizer','paul','ananias_damascus','cornelius','barnabas','gamaliel','james_brother_jesus','jude_brother_jesus','john_mark','silas','titus','jason_thessalonica','lydia','priscilla','apollos','joanna','samaritan_leper','euodia','syntyche','gaius_macedonian','aristarchus','phoebe','claudius_lycias','felix','eutychus','festus','agrippa_ii','berenice','julius_centurion','tychicus','onesimus','philemon','apphia','archippus','onesiphorus','demas','epaphroditus','mary_mark_mother','tabitha',
+] as const;
+
 function ProfileCard({ item, onPress, learned }: { item: CharacterProfile; onPress: () => void; learned: boolean }) {
   return <Pressable onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10 }, pressed && { opacity: 0.82 }]}>
     <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1 }}>{item.era.toUpperCase()}</Text>
@@ -131,15 +136,19 @@ export default function CharactersScreen() {
     void getLearnedCharacters().then(setLearned);
   }, []));
   const eras = useMemo(() => ['Tous', ...Array.from(new Set(characterProfiles.map(x => x.era)))], []);
+  const orderedProfiles = useMemo(() => {
+    const byId = new Map(characterProfiles.map(item => [item.id, item]));
+    return CHRONOLOGICAL_CHARACTER_IDS.map(id => byId.get(id)).filter((item): item is CharacterProfile => Boolean(item));
+  }, []);
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
-    return characterProfiles.filter(x => {
+    return orderedProfiles.filter(x => {
       const matchesEra = selectedEra === 'Tous' || x.era === selectedEra;
       const matchesQuery = !q || [x.name, x.era, x.role, x.summary, ...x.qualities].join(' ').toLowerCase().includes(q);
       const matchesStudy = !onlyUnlearned || !learned.includes(x.id);
       return matchesEra && matchesQuery && matchesStudy;
     });
-  }, [query, selectedEra, onlyUnlearned, learned]);
+  }, [query, selectedEra, onlyUnlearned, learned, orderedProfiles]);
   if (selected) return <ScenicScreen><CharacterDetail item={selected} onBack={() => { setSelected(null); void getLearnedCharacters().then(setLearned); }} /></ScenicScreen>;
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={styles.eyebrow}>APPRENDRE</Text>
