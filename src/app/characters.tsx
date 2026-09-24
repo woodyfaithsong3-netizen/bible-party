@@ -138,7 +138,12 @@ export default function CharactersScreen() {
   const eras = useMemo(() => ['Tous', ...Array.from(new Set(characterProfiles.map(x => x.era)))], []);
   const orderedProfiles = useMemo(() => {
     const byId = new Map(characterProfiles.map(item => [item.id, item]));
-    return CHRONOLOGICAL_CHARACTER_IDS.map(id => byId.get(id)).filter((item): item is CharacterProfile => Boolean(item));
+    const explicit = CHRONOLOGICAL_CHARACTER_IDS
+      .map(id => byId.get(id))
+      .filter((item): item is CharacterProfile => Boolean(item));
+    // L'ordre chronologique est celui défini par la liste dédiée ci-dessus.
+    // Aucun tri alphabétique ne doit pouvoir remplacer cet ordre.
+    return explicit;
   }, []);
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
