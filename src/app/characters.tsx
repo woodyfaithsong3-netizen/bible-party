@@ -9,8 +9,16 @@ import { ScenicScreen } from '@/components/ScenicScreen';
 import { getLearnedCharacters, markCharacterLearned } from '@/lib/storage';
 
 const CHRONOLOGICAL_CHARACTER_IDS = [
-  'adam','noe','melchizedek','abraham','sarah','hagar','isaac','esau','jacob','leah','joseph','moise','jethro','zipporah','korah','josue','balaam','balak','boaz','ruth','naomi','manoah_father','samson','hannah','eli','samuel','saul_king','david','michal','joab','salomon','jehoshaphat','elie','naaman','elisha','jonah','joel','amos','isaiah','hezekiah','micah','zephaniah','josiah','nahum','habakkuk','obadiah','jeremiah','ezekiel','daniel','zerubbabel','haggai','zechariah','esther','ezra','nehemie','malachi',
-  'elizabeth','zechariah_priest','joseph_jesus_father','marie','jean-baptiste','herod_antipas','joseph_caiaphas','pilate','roman_centurion','samaritan_woman','martha','jairus','jairus_daughter','woman_issue_blood','gerasene_man','blind_bartimaeus','mary_bethany','zacchaeus','joseph_arimathea','mary_magdalen','pierre','jean','philip_apostle','bartholomew','james_zebedee','thomas','james_alphaaeus','simon_zealot','mary_mother_james','stephen','philip_evangelizer','paul','ananias_damascus','cornelius','barnabas','gamaliel','james_brother_jesus','jude_brother_jesus','john_mark','silas','titus','jason_thessalonica','lydia','priscilla','apollos','joanna','samaritan_leper','euodia','syntyche','gaius_macedonian','aristarchus','phoebe','claudius_lycias','felix','eutychus','festus','agrippa_ii','berenice','julius_centurion','tychicus','onesimus','philemon','apphia','archippus','onesiphorus','demas','epaphroditus','mary_mark_mother','tabitha',
+  'adam','noe','abraham','melchizedek','sarah','hagar','isaac','esau','jacob','leah','joseph','moise','jethro','zipporah','korah','josue','balaam','balak',
+  'ruth','naomi','manoah_father','samson','boaz','hannah','eli','samuel','saul_king','david','michal','joab','salomon',
+  'elie','jehoshaphat','naaman','elisha','jonah','joel','amos','isaiah','micah','hezekiah','josiah','zephaniah','jeremiah','nahum','habakkuk','daniel','ezekiel','obadiah',
+  'zerubbabel','haggai','zechariah','esther','ezra','nehemie','malachi',
+  'elizabeth','zechariah_priest','joseph_jesus_father','marie','jean-baptiste','herod_antipas','mary_bethany','mary_magdalen','joseph_caiaphas','pilate',
+  'roman_centurion','samaritan_woman','martha','joanna','samaritan_leper','jairus','jairus_daughter','woman_issue_blood','gerasene_man','blind_bartimaeus','zacchaeus','joseph_arimathea',
+  'pierre','jean','philip_apostle','bartholomew','james_zebedee','thomas','james_alphaaeus','simon_zealot',
+  'mary_mother_james','stephen','philip_evangelizer','tabitha','paul','ananias_damascus','cornelius','barnabas','gamaliel','james_brother_jesus','jude_brother_jesus',
+  'mary_mark_mother','john_mark','silas','titus','jason_thessalonica','lydia','priscilla','apollos','euodia','syntyche','aristarchus','gaius_macedonian','phoebe',
+  'claudius_lycias','felix','eutychus','festus','agrippa_ii','berenice','julius_centurion','tychicus','onesimus','philemon','apphia','archippus','onesiphorus','demas','epaphroditus',
 ] as const;
 
 function ProfileCard({ item, onPress, learned }: { item: CharacterProfile; onPress: () => void; learned: boolean }) {
