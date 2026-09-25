@@ -1,4 +1,5 @@
 import React, { useMemo, useState } from 'react';
+import { characterProfiles } from '../../data/characterProfiles';
 import { Pressable, ScrollView, Text, View } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import { ScenicScreen } from '@/components/ScenicScreen';
@@ -97,7 +98,7 @@ export default function AdventureEpisodeScreen() {
               </View>
             ) : null}
             {episode.characterIds?.length ? (
-              <Text style={{ color: colors.muted, fontSize: 11, textAlign: 'center', marginTop: 14 }}>👤 Personnage rencontré : {episode.characterIds.includes('noe') ? 'Noé' : 'Adam'}</Text>
+              <Text style={{ color: colors.muted, fontSize: 11, textAlign: 'center', marginTop: 14 }}>👤 Personnage{episode.characterIds.length > 1 ? 's' : ''} rencontré{episode.characterIds.length > 1 ? 's' : ''} : {episode.characterIds.map(id => characterProfiles.find(character => character.id === id)?.name).filter(Boolean).join(', ')}</Text>
             ) : null}
             <View style={{ marginTop: 14, width: '100%', padding: 14, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
               <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>{isSeasonEnd ? '🏁 FIN DE SAISON' : '🧭 PROCHAINE ÉTAPE'}</Text>
