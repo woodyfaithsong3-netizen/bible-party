@@ -7,10 +7,10 @@ export const SEASON_3 = {
   subtitle: '3e partie du Recueil d’histoires bibliques',
   description: 'Après la sortie d’Égypte, suis Israël dans le désert, son entrée en Terre promise et l’époque des juges jusqu’à Samuel.',
   seasonIntro: {
-    title: 'Après la délivrance',
-    story: 'Israël vient de sortir d’Égypte. Le peuple doit maintenant apprendre à vivre selon les instructions de Jéhovah, traverser le désert et prendre possession du pays promis.',
-    transition: 'Cette saison suit le peuple depuis le désert jusqu’à l’époque des juges, puis jusqu’à Samuel, juste avant l’arrivée du premier roi d’Israël.',
-    thread: 'Jéhovah continue de guider son peuple et de réaliser ses promesses malgré ses erreurs.',
+    title: "Un peuple prend forme",
+    story: "Jéhovah délivre les Israélites d’Égypte et les conduit vers la Terre promise. Dans le désert, il leur donne des lois, les nourrit et les guide. Puis Josué, les juges et Samuel prennent le relais dans une période pleine de défis.",
+    transition: "Découvre comment Israël s’installe dans le pays promis et arrive au moment où il demande un roi.",
+    thread: "Israël apprend à faire confiance à Jéhovah, à lui obéir et à compter sur son aide pour avancer.",
   },
   seasonSummary: {
     title: 'Ce que tu découvres sur Jéhovah',
