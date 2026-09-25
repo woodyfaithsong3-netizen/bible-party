@@ -66,7 +66,7 @@ export const SEASON_1 = {
       icon: '🌳',
       intro: 'Jéhovah prépare un magnifique jardin en Éden. Adam y trouve des arbres, des animaux et tout ce dont il a besoin.',
       context: 'Après la création, Jéhovah installe Adam dans un jardin spécial appelé Éden. Tout ce qui l’entoure montre que la terre doit être un lieu où les humains peuvent vivre heureux et en sécurité.',
-      keyPoint: 'Éden est un jardin magnifique préparé par Dieu pour l’être humain.'
+      keyPoint: 'Éden est un jardin magnifique préparé par Dieu pour l’être humain.',
       quality: { title: 'Généreux', text: 'Jéhovah donne aux humains un magnifique cadre de vie.' },
       questions: [
         { id: 'eden-q1', type: 'quiz', prompt: 'Comment s’appelait le jardin où Adam vivait ?', choices: [{ label: 'Éden', correct: true }, { label: 'Babel', correct: false }, { label: 'Canaan', correct: false }, { label: 'Guilgal', correct: false }] },
@@ -81,7 +81,7 @@ export const SEASON_1 = {
       icon: '👫',
       intro: 'Adam prend soin du jardin et donne un nom aux animaux. Puis Jéhovah crée Ève. Le premier couple humain commence sa vie ensemble.',
       context: 'Dans le jardin, Adam reçoit une responsabilité : prendre soin de ce que Jéhovah lui a confié. Puis Ève est créée comme sa compagne. Le récit montre ainsi comment commence la famille humaine.',
-      keyPoint: 'Adam et Ève sont le premier couple humain.'
+      keyPoint: 'Adam et Ève sont le premier couple humain.',
       quality: { title: 'Attentionné', text: 'Jéhovah donne aux humains une vie organisée et un rôle dans sa création.' },
       questions: [
         { id: 'adam-q1', type: 'quiz', prompt: 'Qui est le premier homme ?', choices: [{ label: 'Adam', correct: true }, { label: 'Abel', correct: false }, { label: 'Noé', correct: false }, { label: 'Caïn', correct: false }] },
@@ -97,7 +97,7 @@ export const SEASON_1 = {
       icon: '🚪',
       intro: 'Adam et Ève désobéissent à Jéhovah en mangeant le fruit interdit. Leur désobéissance entraîne de graves conséquences et ils sont expulsés du jardin.',
       context: 'Le cadre parfait d’Éden ne protège pas Adam et Ève d’un mauvais choix. Le serpent met en doute la parole de Jéhovah, et le couple choisit de désobéir. Leur choix change profondément leur vie et celle de leurs descendants.',
-      keyPoint: 'La désobéissance d’Adam et Ève entraîne leur perte du paradis.'
+      keyPoint: 'La désobéissance d’Adam et Ève entraîne leur perte du paradis.',
       quality: { title: 'Juste', text: 'La désobéissance a des conséquences réelles.' },
       questions: [
         { id: 'expulsion-q1', type: 'quiz', prompt: 'Quel commandement Adam et Ève ont-ils désobéi ?', choices: [{ label: 'Ne pas manger du fruit interdit', correct: true }, { label: 'Ne pas quitter Éden', correct: false }, { label: 'Ne pas parler aux animaux', correct: false }, { label: 'Ne pas avoir d’enfants', correct: false }] },
@@ -113,7 +113,7 @@ export const SEASON_1 = {
       icon: '📜',
       intro: 'Hors d’Éden, la vie devient pénible. Mais au moment même où le mal apparaît, Jéhovah annonce une promesse : Genèse 3:15. Cette promesse deviendra un fil qui traversera toute l’histoire biblique.',
       context: 'Après leur désobéissance, Adam et Ève doivent quitter Éden. La vie devient difficile et la mort entre dans l’expérience humaine. Pourtant, Jéhovah ne laisse pas l’histoire sans espoir : une promesse est annoncée, et ce fil réapparaîtra plus tard dans la Bible.',
-      keyPoint: 'La promesse annoncée en Genèse 3:15 ouvre un fil qui se poursuivra dans l’histoire biblique.'
+      keyPoint: 'La promesse annoncée en Genèse 3:15 ouvre un fil qui se poursuivra dans l’histoire biblique.',
       quality: { title: 'Fidèle à son projet', text: 'Malgré le péché, Jéhovah annonce une suite à son projet pour les humains.' },
       questions: [
         { id: 'promise-q2', type: 'quiz', prompt: 'Que devient la vie humaine après la désobéissance ?', choices: [{ label: 'Elle devient pénible et mène à la mort', correct: true }, { label: 'Elle devient parfaite', correct: false }, { label: 'Elle ne change pas', correct: false }, { label: 'Elle devient éternelle', correct: false }] },
@@ -129,7 +129,7 @@ export const SEASON_1 = {
       icon: '⚔️',
       intro: 'Caïn est cultivateur et Abel est berger. Leurs offrandes ne sont pas accueillies de la même manière. Caïn se laisse dominer par la colère et tue son frère Abel.',
       context: 'La situation se dégrade rapidement après la sortie d’Éden. Même au sein de la première famille, la jalousie et la colère peuvent conduire à la violence. Jéhovah avertit Caïn, mais Caïn refuse de maîtriser sa colère et commet le premier meurtre rapporté dans la Bible.',
-      keyPoint: 'Caïn est averti de maîtriser le péché avant de tuer Abel.'
+      keyPoint: 'Caïn est averti de maîtriser le péché avant de tuer Abel.',
       quality: { title: 'Attentif', text: 'Jéhovah avertit Caïn avant que sa colère ne l’amène à commettre un meurtre.' },
       questions: [
         { id: 'cain-q1', type: 'quiz', prompt: 'Quel métier Caïn exerce-t-il ?', choices: [{ label: 'Cultivateur', correct: true }, { label: 'Berger', correct: false }, { label: 'Pêcheur', correct: false }, { label: 'Forgeron', correct: false }] },
@@ -145,7 +145,7 @@ export const SEASON_1 = {
       icon: '🧍',
       intro: 'La méchanceté augmente autour d’Hénoch, mais il continue de servir Dieu. La Bible dit qu’il marchait avec le vrai Dieu.',
       context: 'Après le meurtre d’Abel, la société continue de se développer, mais la méchanceté devient de plus en plus présente. Hénoch se distingue par son choix de rester proche de Jéhovah. Son exemple montre qu’il est possible de rester fidèle même lorsque l’environnement est mauvais.',
-      keyPoint: 'Hénoch reste fidèle malgré un environnement mauvais.'
+      keyPoint: 'Hénoch reste fidèle malgré un environnement mauvais.',
       quality: { title: 'Il apprécie la fidélité', text: 'Jéhovah remarque ceux qui choisissent de faire le bien même quand leur entourage fait le mal.' },
       questions: [
         { id: 'henoch-q1', type: 'quiz', prompt: 'Avec qui Hénoch marchait-il ?', choices: [{ label: 'Avec le vrai Dieu', correct: true }, { label: 'Avec Caïn', correct: false }, { label: 'Avec Noé', correct: false }, { label: 'Avec Adam', correct: false }] },
@@ -160,14 +160,14 @@ export const SEASON_1 = {
       icon: '🗿',
       intro: 'Des anges rebelles se matérialisent sur terre. Les Nefilim deviennent connus pour leur violence et la terre se remplit de corruption. Au milieu de cette génération, Noé marche avec le vrai Dieu.',
       context: 'Les générations passent et la violence gagne du terrain. Des anges rebelles contribuent à cette dégradation et les Nefilim deviennent associés à une époque particulièrement violente. Jéhovah voit la situation, tandis que Noé continue de marcher avec lui.',
-      keyPoint: 'La violence et la corruption augmentent avant le Déluge.'
+      keyPoint: 'La violence et la corruption augmentent avant le Déluge.',
       quality: { title: 'Juste', text: 'Jéhovah ne considère pas la violence et la corruption comme normales ou acceptables.' },
       questions: [
         { id: 'nephilim-q1', type: 'quiz', prompt: 'Comment s’appellent les géants de cette époque ?', choices: [{ label: 'Les Nefilim', correct: true }, { label: 'Les Philistins', correct: false }, { label: 'Les Amalécites', correct: false }, { label: 'Les Moabites', correct: false }] },
         { id: 'nephilim-q2', type: 'quiz', prompt: 'Que caractérise particulièrement cette époque ?', choices: [{ label: 'La violence', correct: true }, { label: 'La paix', correct: false }, { label: 'La prospérité', correct: false }, { label: 'La construction du temple', correct: false }] },
         { id: 'nephilim-tf', type: 'truefalse', prompt: 'Noé marchait avec le vrai Dieu.', choices: [{ label: 'Vrai', correct: true }, { label: 'Faux', correct: false }] },
       ],
-      characterIds: ['noe'],
+      characterIds: [],
     },
     {
       id: 'noah-ark',
@@ -176,7 +176,7 @@ export const SEASON_1 = {
       icon: '🚢',
       intro: 'Jéhovah annonce le Déluge à Noé et lui demande de construire une arche. Noé, sa famille et les animaux qu’il doit préserver se préparent pendant que les autres ne l’écoutent pas.',
       context: 'La corruption est devenue générale. Jéhovah décide donc de mettre fin à cette situation par le Déluge, mais il donne à Noé un moyen de préserver sa famille. Noé reçoit des instructions précises, construit l’arche et rassemble ce qui doit être sauvé.',
-      keyPoint: 'Noé fait exactement ce que Dieu lui demande malgré l’incrédulité des autres.'
+      keyPoint: 'Noé fait exactement ce que Dieu lui demande malgré l’incrédulité des autres.',
       quality: { title: 'Protecteur', text: 'Jéhovah donne à Noé des instructions pour préserver sa famille et des animaux.' },
       questions: [
         { id: 'noah-q1', type: 'quiz', prompt: 'Pourquoi Noé construit-il une arche ?', choices: [{ label: 'Pour survivre au Déluge', correct: true }, { label: 'Pour voyager', correct: false }, { label: 'Pour devenir roi', correct: false }, { label: 'Pour stocker de l’or', correct: false }] },
@@ -193,7 +193,7 @@ export const SEASON_1 = {
       icon: '🌊',
       intro: 'Noé et sa famille sont dans l’arche. La porte est fermée, puis la pluie commence. Après la décrue, une colombe rapporte une feuille d’olivier et la famille peut finalement sortir.',
       context: 'Le Déluge met fin à cette époque de violence. Après la décrue, Noé et sa famille sortent de l’arche et recommencent leur vie sur une terre débarrassée de cette société corrompue. Jéhovah leur donne alors des instructions et établit une alliance dont l’arc-en-ciel est le signe.',
-      keyPoint: 'Après le Déluge, Jéhovah établit une alliance avec Noé et donne l’arc-en-ciel comme signe.'
+      keyPoint: 'Après le Déluge, Jéhovah établit une alliance avec Noé et donne l’arc-en-ciel comme signe.',
       quality: { title: 'Fidèle', text: 'Jéhovah établit son alliance avec Noé et en donne un signe visible.' },
       questions: [
         { id: 'flood-q1', type: 'quiz', prompt: 'Combien de jours et de nuits la pluie tombe-t-elle ?', choices: [{ label: '40', correct: true }, { label: '7', correct: false }, { label: '12', correct: false }, { label: '70', correct: false }] },
