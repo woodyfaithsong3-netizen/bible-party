@@ -97,30 +97,38 @@ export default function AdventureScreen() {
         </View>
 
         <View style={{ marginTop: 22 }}>
-          <Text style={styles.sectionTitle}>CHOISIR UNE SAISON</Text>
-          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 9, marginTop: 10 }}>
+          <Text style={styles.sectionTitle}>LE VOYAGE BIBLIQUE</Text>
+          <View style={{ marginTop: 10, padding: 16, borderRadius: 22, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+            <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.4 }}>🧵 8 ÉTAPES • 116 HISTOIRES</Text>
+            <Text style={{ color: colors.text, fontSize: 17, fontWeight: '900', lineHeight: 23, marginTop: 7 }}>De la création jusqu’aux promesses pour l’avenir.</Text>
+            <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 6 }}>Chaque étape reprend une période de l’histoire biblique. Choisis ton point de départ, puis avance histoire après histoire.</Text>
+          </View>
+
+          <View style={{ marginTop: 12 }}>
             {SEASONS.map((season, seasonIndex) => {
               const count = season.episodes.filter(ep => completed.includes(ep.id)).length;
+              const first = season.episodes[0]?.number ?? 0;
+              const last = season.episodes[season.episodes.length - 1]?.number ?? 0;
+              const done = season.episodes.length > 0 && count === season.episodes.length;
+              const icon = ['🌍','🌈','🏜️','👑','🏛️','✝️','🔥','🌳'][seasonIndex];
               return (
-                <Pressable
-                  key={season.id}
-                  onPress={() => selectSeason(seasonIndex)}
-                  style={({ pressed }) => [{
-                    width: '23%',
-                    minWidth: 72,
-                    flexGrow: 1,
-                    paddingVertical: 12,
-                    paddingHorizontal: 8,
-                    borderRadius: 16,
-                    borderWidth: 1,
-                    borderColor: colors.border,
-                    backgroundColor: colors.surface2,
-                  }, pressed && { transform: [{ scale: .97 }] }]}
-                >
-                  <Text style={{ color: colors.muted, fontSize: 9, fontWeight: '900', letterSpacing: 1, textAlign: 'center' }}>SAISON</Text>
-                  <Text style={{ color: colors.text, fontSize: 20, fontWeight: '900', textAlign: 'center', marginTop: 2 }}>{season.number}</Text>
-                  <Text style={{ color: colors.muted, fontSize: 9, marginTop: 2, textAlign: 'center' }}>{count}/{season.episodes.length}</Text>
-                </Pressable>
+                <View key={season.id} style={{ flexDirection: 'row', minHeight: 92 }}>
+                  <View style={{ width: 42, alignItems: 'center' }}>
+                    <View style={{ width: 34, height: 34, borderRadius: 17, backgroundColor: done ? colors.success : colors.surface2, borderWidth: 1, borderColor: done ? colors.success : colors.borderStrong, alignItems: 'center', justifyContent: 'center' }}>
+                      <Text style={{ fontSize: 16 }}>{done ? '✓' : icon}</Text>
+                    </View>
+                    {seasonIndex < SEASONS.length - 1 ? <View style={{ width: 2, flex: 1, backgroundColor: colors.border, marginVertical: 4 }} /> : null}
+                  </View>
+                  <Pressable onPress={() => selectSeason(seasonIndex)} style={({ pressed }) => [{ flex: 1, marginLeft: 10, marginBottom: 10, padding: 14, borderRadius: 18, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface2 }, pressed && { transform: [{ scale: .985 }] }]}>
+                    <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                      <Text style={{ color: colors.accent, fontSize: 9, fontWeight: '900', letterSpacing: 1.2 }}>SAISON {season.number} • {first}–{last}</Text>
+                      <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '800' }}>{count}/{season.episodes.length}</Text>
+                    </View>
+                    <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 21, marginTop: 5 }}>{season.title}</Text>
+                    <Text numberOfLines={2} style={{ color: colors.muted, lineHeight: 18, marginTop: 4 }}>{season.description}</Text>
+                    <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', marginTop: 8 }}>{done ? 'Rejouer la saison ›' : count > 0 ? 'Continuer l’aventure ›' : 'Commencer ›'}</Text>
+                  </Pressable>
+                </View>
               );
             })}
           </View>
