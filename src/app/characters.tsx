@@ -6,7 +6,8 @@ import { characterLearning } from '@/data/characterLearning';
 import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { ScenicScreen } from '@/components/ScenicScreen';
-import { getAdventureProgress } from '@/lib/storage';
+import { getAdventureProgress, getCharacterAnnexProgress } from '@/lib/storage';
+import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { SEASON_1 } from '@/data/adventure';
 import { SEASON_2 } from '@/data/adventureSeason2';
 import { SEASON_3 } from '@/data/adventureSeason3';
@@ -185,10 +186,13 @@ export default function CharactersScreen() {
   const [selected, setSelected] = useState<CharacterProfile | null>(null);
   const [unlockedIds, setUnlockedIds] = useState<string[]>([]);
   useFocusEffect(React.useCallback(() => {
-    void getAdventureProgress().then(progress => {
+    void Promise.all([getAdventureProgress(), getCharacterAnnexProgress()]).then(([progress, annexProgress]) => {
       const done = new Set(progress);
       const seasons = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
-      const ids = Array.from(new Set(seasons.flatMap(season => season.episodes.filter(ep => done.has(ep.id)).flatMap(ep => ep.characterIds ?? []))));
+      const ids = Array.from(new Set([
+        ...seasons.flatMap(season => season.episodes.filter(ep => done.has(ep.id)).flatMap(ep => ep.characterIds ?? [])),
+        ...CHARACTER_ANNEXES.filter(annex => annexProgress.includes(annex.id)).map(annex => annex.characterId),
+      ]));
       setUnlockedIds(ids);
       if (params.characterId && ids.includes(params.characterId)) {
         const target = characterProfiles.find(item => item.id === params.characterId);
