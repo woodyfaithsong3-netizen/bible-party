@@ -141,8 +141,27 @@ export default function AdventureEpisodeScreen() {
           <Text style={[styles.title, { marginTop: 6 }]}>{episode.title}</Text>
         </View>
 
-        <View style={[styles.card, { marginTop: 18 }]}>
-          <Text style={{ color: colors.text, lineHeight: 22 }}>{episode.intro}</Text>
+        <View style={{ marginTop: 18, padding: 16, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.blue }}>
+          <Text style={{ color: colors.blue, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🧵 LE FIL DE L’HISTOIRE</Text>
+          <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', lineHeight: 21, marginTop: 7 }}>
+            {previousEpisode ? `Avant cette histoire : ${previousEpisode.title}` : currentSeason?.seasonIntro.title ?? 'Le début de cette période'}
+          </Text>
+          <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 5 }}>
+            {previousEpisode ? previousEpisode.keyPoint : currentSeason?.seasonIntro.story ?? 'Cette histoire ouvre une nouvelle étape de l’aventure.'}
+          </Text>
+          <Text style={{ color: colors.accent, fontWeight: '800', lineHeight: 19, marginTop: 7 }}>
+            {previousEpisode ? 'Ce nouvel épisode poursuit directement cette histoire.' : currentSeason?.seasonIntro.transition ?? ''}
+          </Text>
+        </View>
+
+        <View style={[styles.card, { marginTop: 14 }]}>
+          <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>📖 L’HISTOIRE</Text>
+          <Text style={{ color: colors.text, lineHeight: 22, marginTop: 7 }}>{episode.intro}</Text>
+        </View>
+
+        <View style={{ marginTop: 14, padding: 15, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+          <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🧠 CE QU’IL FAUT RETENIR</Text>
+          <Text style={{ color: colors.text, fontSize: 15, fontWeight: '800', lineHeight: 21, marginTop: 6 }}>{episode.keyPoint}</Text>
         </View>
 
         <View style={{ marginTop: 20, padding: 15, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
