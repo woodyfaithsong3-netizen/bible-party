@@ -14,7 +14,6 @@ import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
 import { getAdventureProgress, markAdventureEpisodeComplete } from '@/lib/storage';
-import { characterProfiles } from '@/data/characterProfiles';
 
 const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 const ADVENTURE_EPISODES = ADVENTURE_SEASONS.flatMap(season => season.episodes);
