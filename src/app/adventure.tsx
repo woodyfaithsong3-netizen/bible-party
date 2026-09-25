@@ -8,9 +8,10 @@ import { SEASON_1 } from '@/data/adventure';
 import { SEASON_2 } from '@/data/adventureSeason2';
 import { SEASON_3 } from '@/data/adventureSeason3';
 import { SEASON_4 } from '@/data/adventureSeason4';
+import { SEASON_5 } from '@/data/adventureSeason5';
 import { getAdventureProgress } from '@/lib/storage';
 
-const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4];
+const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5];
 
 export default function AdventureScreen() {
   const [completed, setCompleted] = useState<string[]>([]);
