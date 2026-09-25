@@ -134,6 +134,13 @@ export default function AdventureScreen() {
           </View>
         </View>
 
+        <Pressable onPress={() => router.push('/adventure/annexes')} style={[styles.card, { marginTop: 14, borderColor: colors.accent }]}>
+          <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.4 }}>📜 DÉCOUVERTES ANNEXES</Text>
+          <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 22, marginTop: 6 }}>Rencontre aussi les personnages qui ne sont pas au cœur des 116 histoires.</Text>
+          <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 5 }}>De petites histoires complémentaires, courtes et chronologiques, pour compléter ta collection.</Text>
+          <Text style={{ color: colors.accent, fontWeight: '900', marginTop: 8 }}>Voir les annexes ›</Text>
+        </Pressable>
+
         <View style={[styles.card, { marginTop: 18 }]}>
           <Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.3 }}>🧭 COMMENT ÇA MARCHE</Text>
           <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 22, marginTop: 7 }}>Découvre l’histoire, joue, puis retiens l’essentiel.</Text>
