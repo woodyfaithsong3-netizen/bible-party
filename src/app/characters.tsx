@@ -11,7 +11,7 @@ import { getLearnedCharacters, markCharacterLearned } from '@/lib/storage';
 const CHRONOLOGICAL_BLOCKS = [
   {
     label: 'Origines & patriarches',
-    ids: ['adam', 'noe', 'abraham', 'sarah', 'hagar', 'melchizedek', 'isaac', 'esau', 'jacob', 'leah', 'joseph'],
+    ids: ['adam', 'noe', 'abraham', 'sarah', 'melchizedek', 'hagar', 'isaac', 'esau', 'jacob', 'leah', 'joseph'],
   },
   {
     label: 'Moïse & l’Exode',
@@ -43,11 +43,11 @@ const CHRONOLOGICAL_BLOCKS = [
   },
   {
     label: 'Débuts du christianisme',
-    ids: ['gamaliel', 'stephen', 'philip_evangelizer', 'mary_mark_mother', 'james_brother_jesus', 'jude_brother_jesus', 'paul', 'ananias_damascus', 'cornelius', 'tabitha', 'barnabas', 'john_mark', 'silas', 'jason_thessalonica', 'priscilla'],
+    ids: ['gamaliel', 'stephen', 'philip_evangelizer', 'mary_mark_mother', 'barnabas', 'james_brother_jesus', 'jude_brother_jesus', 'paul', 'ananias_damascus', 'cornelius', 'tabitha', 'john_mark', 'silas', 'jason_thessalonica', 'priscilla'],
   },
   {
     label: 'Congrégations chrétiennes',
-    ids: ['lydia', 'euodia', 'syntyche', 'aristarchus', 'titus', 'apollos', 'felix', 'gaius_macedonian', 'eutychus', 'phoebe', 'claudius_lycias', 'tychicus', 'onesimus', 'philemon', 'apphia', 'archippus', 'onesiphorus', 'demas', 'festus', 'agrippa_ii', 'berenice', 'julius_centurion', 'epaphroditus'],
+    ids: ['lydia', 'titus', 'euodia', 'syntyche', 'aristarchus', 'apollos', 'gaius_macedonian', 'phoebe', 'felix', 'eutychus', 'claudius_lycias', 'onesimus', 'philemon', 'apphia', 'archippus', 'tychicus', 'onesiphorus', 'demas', 'festus', 'agrippa_ii', 'berenice', 'julius_centurion', 'epaphroditus'],
   },
 ] as const;
 
