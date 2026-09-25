@@ -7,10 +7,10 @@ export const SEASON_7 = {
   subtitle: '7e partie du Recueil d’histoires bibliques',
   description: 'Découvre les débuts du christianisme, la prédication des disciples et le parcours de Paul jusqu’à Rome.',
   seasonIntro: {
-    title: 'La bonne nouvelle se répand',
-    story: 'Jésus est ressuscité et apparaît à ses disciples. Il retourne au ciel, puis l’esprit saint est répandu à la Pentecôte. Les disciples annoncent la bonne nouvelle malgré l’opposition, et Paul devient un prédicateur particulièrement actif.',
-    transition: 'Après la mort et la résurrection de Jésus, l’histoire continue avec ses disciples et l’expansion du christianisme.',
-    thread: 'Découvre comment Jéhovah soutient ses serviteurs et comment la bonne nouvelle atteint progressivement des personnes de nombreuses nations.',
+    title: "La bonne nouvelle se répand",
+    story: "Jésus est vivant ! Après sa résurrection, il apparaît à ses disciples puis retourne au ciel. À la Pentecôte, l’esprit saint leur donne de la force. Malgré les arrestations et l’opposition, la bonne nouvelle se répand, et Paul devient l’un de ses principaux prédicateurs.",
+    transition: "Pars de Jérusalem et suis l’expansion de la bonne nouvelle jusqu’à Paul à Rome.",
+    thread: "La mission confiée par Jésus continue après son départ : la bonne nouvelle franchit les frontières et atteint des personnes de nombreuses nations.",
   },
   seasonSummary: {
     title: 'Ce que tu découvres sur Jéhovah',
