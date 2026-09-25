@@ -18,6 +18,13 @@ import { markAdventureEpisodeComplete } from '@/lib/storage';
 const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 const ADVENTURE_EPISODES = ADVENTURE_SEASONS.flatMap(season => season.episodes);
 
+const FINAL_BONUS_QUESTIONS = [
+  { prompt: 'Que signifie vraiment apprendre à connaître Jéhovah et Jésus ?', choices: ['Mémoriser leurs noms', 'Apprendre à les connaître et agir en accord avec leur volonté', 'Connaître tous les personnages bibliques'], correct: 1 },
+  { prompt: 'Pourquoi pouvons-nous louer Jéhovah ?', choices: ['Pour ses qualités, ses œuvres et sa bonté', 'Seulement pour sa puissance', 'Seulement quand tout va bien'], correct: 0 },
+  { prompt: 'Comment Jéhovah se montre-t-il « bon pour tous » ?', choices: ['Il fait du bien à ses créatures', 'Il aide uniquement les rois', 'Il ne s’occupe que des humains fidèles'], correct: 0 },
+  { prompt: 'Si Jéhovah nous est cher, que sommes-nous poussés à faire ?', choices: ['Parler de lui et louer sa grandeur', 'Garder ce que nous savons pour nous', 'Chercher à être admirés'], correct: 0 },
+];
+
 export default function AdventureEpisodeScreen() {
   const params = useLocalSearchParams<{ id?: string }>();
   const episode = useMemo(() => ADVENTURE_EPISODES.find(item => item.id === params.id), [params.id]);
@@ -31,6 +38,8 @@ export default function AdventureEpisodeScreen() {
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [finished, setFinished] = useState(false);
+  const [bonusIndex, setBonusIndex] = useState(0);
+  const [bonusSelected, setBonusSelected] = useState<number | null>(null);
 
   if (!episode) {
     return <ScenicScreen><View style={styles.content}><Text style={styles.title}>Épisode introuvable</Text><Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { marginTop: 20 }]}><Text style={styles.buttonText}>Retour à Aventure</Text></Pressable></View></ScenicScreen>;
@@ -65,6 +74,66 @@ export default function AdventureEpisodeScreen() {
 
   if (finished) {
     const isAdventureEnd = !nextEpisode;
+    const bonusQuestion = FINAL_BONUS_QUESTIONS[bonusIndex];
+    const bonusAnswered = bonusSelected !== null;
+    const bonusCorrect = bonusQuestion ? bonusAnswered && bonusSelected === bonusQuestion.correct : false;
+    if (isAdventureEnd) {
+      return (
+        <ScenicScreen>
+          <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
+            <Pressable onPress={() => router.replace('/adventure')}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Aventure</Text></Pressable>
+            <View style={[styles.glowCard, { marginTop: 24, alignItems: 'center' }]}>
+              <Text style={{ fontSize: 54 }}>🌟</Text>
+              <Text style={[styles.title, { fontSize: 30, lineHeight: 35, textAlign: 'center', marginTop: 12 }]}>Aventure terminée !</Text>
+              <Text style={{ color: colors.muted, textAlign: 'center', lineHeight: 21, marginTop: 9 }}>Tu as parcouru les 116 histoires de l’Aventure.</Text>
+
+              <View style={{ marginTop: 20, width: '100%', padding: 16, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+                <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🧠 LA LEÇON À RETENIR</Text>
+                <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 23, marginTop: 7 }}>Connaître la Bible, ce n’est pas seulement retenir des faits. C’est apprendre à connaître Jéhovah et Jésus et agir en accord avec leur volonté.</Text>
+                <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 8 }}>Jean 17:3 montre que connaître Jéhovah et Jésus est un processus continu : il s’agit d’approfondir cette connaissance et cette relation.</Text>
+              </View>
+
+              <View style={{ marginTop: 14, width: '100%', padding: 16, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+                <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>❓ QUESTIONS BONUS</Text>
+                  <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900' }}>{bonusIndex + 1}/{FINAL_BONUS_QUESTIONS.length}</Text>
+                </View>
+                <Text style={{ color: colors.text, fontSize: 18, lineHeight: 24, fontWeight: '900', marginTop: 9 }}>{bonusQuestion ? bonusQuestion.prompt : 'Bravo ! Tu as terminé les questions bonus.'}</Text>
+                <View style={{ gap: 9, marginTop: 13, display: bonusQuestion ? 'flex' : 'none' }}>
+                  {(bonusQuestion?.choices ?? []).map((choice, choiceIndex) => {
+                    const picked = bonusSelected === choiceIndex;
+                    const correct = bonusAnswered && choiceIndex === bonusQuestion.correct;
+                    return <Pressable key={choice} disabled={bonusAnswered} onPress={() => setBonusSelected(choiceIndex)} style={{ minHeight: 52, paddingHorizontal: 14, borderRadius: 16, borderWidth: 1, borderColor: correct ? colors.success : picked ? colors.danger : colors.border, backgroundColor: correct ? 'rgba(30,91,62,.72)' : picked ? 'rgba(91,35,32,.72)' : colors.surface2, justifyContent: 'center' }}>
+                      <Text style={{ color: colors.text, fontSize: 14, fontWeight: '800' }}>{choice}</Text>
+                    </Pressable>;
+                  })}
+                </View>
+                {bonusQuestion && bonusAnswered ? <View style={{ marginTop: 12, padding: 12, borderRadius: 15, backgroundColor: bonusCorrect ? 'rgba(30,91,62,.62)' : 'rgba(91,35,32,.62)', borderWidth: 1, borderColor: bonusCorrect ? colors.success : colors.danger }}>
+                  <Text style={{ color: bonusCorrect ? colors.success : colors.danger, fontWeight: '900' }}>{bonusCorrect ? '✓ Bonne réponse' : '✕ Pas tout à fait'}</Text>
+                  {!bonusCorrect && bonusQuestion ? <Text style={{ color: colors.muted, lineHeight: 18, marginTop: 4 }}>La bonne réponse est : {bonusQuestion.choices[bonusQuestion.correct]}</Text> : null}
+                </View> : null}
+                <Pressable disabled={!bonusAnswered || !bonusQuestion} onPress={() => {
+                  if (bonusIndex < FINAL_BONUS_QUESTIONS.length - 1) {
+                    setBonusIndex(value => value + 1);
+                    setBonusSelected(null);
+                  } else {
+                    setBonusIndex(FINAL_BONUS_QUESTIONS.length);
+                  }
+                }} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 15, opacity: bonusAnswered ? 1 : .45 }]}>
+                  <Text style={styles.buttonText}>{bonusIndex < FINAL_BONUS_QUESTIONS.length - 1 ? 'Question suivante ›' : 'Terminer les bonus'}</Text>
+                </Pressable>
+              </View>
+
+              {bonusIndex >= FINAL_BONUS_QUESTIONS.length ? <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+                <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🔁 REFAIRE L’HISTOIRE</Text>
+                <Text style={{ color: colors.text, fontSize: 15, fontWeight: '800', lineHeight: 21, marginTop: 6 }}>Tu peux refaire les épisodes quand tu veux pour revoir les événements, répondre aux questions et renforcer ta mémoire.</Text>
+                <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 14 }]}><Text style={styles.buttonText}>Rejouer l’Aventure ›</Text></Pressable>
+              </View> : null}
+            </View>
+          </ScrollView>
+        </ScenicScreen>
+      );
+    }
     return (
       <ScenicScreen>
         <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
