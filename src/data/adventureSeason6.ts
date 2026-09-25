@@ -7,10 +7,10 @@ export const SEASON_6 = {
   subtitle: '6e partie du Recueil d’histoires bibliques',
   description: 'Suis la vie de Jésus, de sa naissance à son sacrifice, à travers ses enseignements, ses miracles et ses derniers jours.',
   seasonIntro: {
-    title: 'Jésus, le Roi promis',
-    story: 'Jésus naît à Bethléem. Il grandit, est baptisé puis commence à annoncer le Royaume de Dieu. Il enseigne, accomplit des miracles et montre par ses paroles et ses actions ce que signifie aimer Dieu et son prochain.',
-    transition: 'Après avoir découvert les promesses et l’histoire d’Israël, cette saison te fait entrer dans la vie et le ministère de Jésus jusqu’à sa mort.',
-    thread: 'En observant Jésus, découvre ce qu’il révèle sur Jéhovah, son Royaume et la manière d’aimer les autres.',
+    title: "Le Roi arrive",
+    story: "Après des siècles d’attente, Jésus naît comme le futur Roi promis. Il grandit, est baptisé et commence à annoncer le Royaume de Dieu. Il enseigne, guérit, ressuscite des morts et montre par sa vie ce que signifie aimer Jéhovah.",
+    transition: "Suis Jésus depuis son enfance jusqu’à ses derniers jours, sa mort et la promesse qu’il fait au sujet du paradis.",
+    thread: "En suivant les pas de Jésus, découvre le Roi promis, son message et la façon dont il reflète parfaitement son Père.",
   },
   seasonSummary: {
     title: 'Ce que tu découvres sur Jéhovah',
