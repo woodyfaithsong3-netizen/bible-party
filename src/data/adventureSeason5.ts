@@ -34,7 +34,7 @@ export const SEASON_5 = {
         { id: 'r77a', type: 'quiz', prompt: 'Devant quoi les trois Hébreux refusent-ils de se prosterner ?', choices: [{ label: 'Une image', correct: true }, { label: 'Le temple', correct: false }, { label: 'Un roi d’Israël', correct: false }, { label: 'Une arche', correct: false }] },
         { id: 'r77b', type: 'quiz', prompt: 'Que montrent Shadrak, Méshak et Abed-Négo ?', choices: [{ label: 'De la fidélité', correct: true }, { label: 'De la vengeance', correct: false }, { label: 'De la peur', correct: false }, { label: 'De l’indifférence', correct: false }] },
       ],
-      characterIds: ['daniel'],
+      characterIds: [],
     },
     {
       id: 'writing-wall',
@@ -76,7 +76,7 @@ export const SEASON_5 = {
         { id: 'r80a', type: 'quiz', prompt: 'Qui permet aux Israélites de retourner à Jérusalem ?', choices: [{ label: 'Cyrus', correct: true }, { label: 'Neboukadnetsar', correct: false }, { label: 'Darius', correct: false }, { label: 'Artaxerxès', correct: false }] },
         { id: 'r80b', type: 'quiz', prompt: 'Où les Israélites retournent-ils ?', choices: [{ label: 'Jérusalem', correct: true }, { label: 'Babylone', correct: false }, { label: 'Ninive', correct: false }, { label: 'Égypte', correct: false }] },
       ],
-      characterIds: ['zerubbabel','ezra'],
+      characterIds: ['zerubbabel'],
     },
     {
       id: 'count-on-god',
