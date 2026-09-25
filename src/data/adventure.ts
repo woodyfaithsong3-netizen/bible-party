@@ -27,10 +27,10 @@ export const SEASON_1 = {
   subtitle: '1re partie du Recueil d’histoires bibliques',
   description: 'Découvre les premières grandes histoires de la Bible et commence à suivre le fil de la promesse.',
   seasonIntro: {
-    title: 'Au commencement',
-    story: 'Jéhovah crée la terre et prépare un magnifique avenir pour les humains. Mais Adam et Ève désobéissent, le péché entre dans le monde et la méchanceté augmente. Malgré cela, certains humains restent fidèles. Noé en fait partie.',
-    transition: 'Après le Déluge, une nouvelle étape commencera avec Noé, puis avec Abraham. La grande histoire biblique continue.',
-    thread: 'Le péché a changé la situation des humains. Mais le projet de Jéhovah n’est pas abandonné.',
+    title: "Au commencement",
+    story: "Tout commence avec la création. Jéhovah prépare la terre pour les humains, puis Adam et Ève vivent dans un magnifique jardin. Mais leur désobéissance change l’histoire : le péché et la méchanceté se répandent. Pourtant, certains restent fidèles, comme Noé.",
+    transition: "Pars du tout début et découvre comment l’humanité passe du paradis promis au Déluge.",
+    thread: "Un même fil traverse ces premières histoires : malgré le péché et la méchanceté, le projet de Jéhovah pour la terre continue.",
   },
   seasonSummary: {
     title: 'Ce que tu découvres sur Jéhovah',
