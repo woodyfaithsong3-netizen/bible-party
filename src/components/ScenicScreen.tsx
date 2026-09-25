@@ -28,7 +28,7 @@ export function ScenicScreen({ children, showTopCrown = true }: PropsWithChildre
         {showTopCrown && (
           <View style={s.top}>
             <View style={s.topSpacer} />
-            <Image source={crown} style={s.crown} resizeMode="contain" />
+            <Pressable onPress={() => router.push('/bible')} accessibilityRole="button" accessibilityLabel="Ma Bible"><Image source={crown} style={s.crown} resizeMode="contain" /></Pressable>
             <Pressable onPress={() => router.push('/settings')} style={s.gear} accessibilityRole="button" accessibilityLabel="Paramètres">
               <Image source={settings} style={s.gearIcon} resizeMode="contain" />
             </Pressable>
