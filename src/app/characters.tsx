@@ -146,8 +146,7 @@ const CHRONOLOGICAL_BLOCKS = [
   { label: 'Avant Jésus', start: 'elizabeth', end: 'herod_antipas' },
   { label: 'Jésus & son ministère', start: 'roman_centurion', end: 'mary_mother_james' },
   { label: 'Débuts du christianisme', start: 'barnabas', end: 'apollos' },
-  { label: 'Congrégations chrétiennes', start: 'gaius_macedonian', end: 'epaphroditus' },
-  { label: 'Congrégations chrétiennes', start: 'euodia', end: 'syntyche' },
+  { label: 'Congrégations chrétiennes', start: 'gaius_macedonian', end: 'syntyche' },
 ] as const;
 
 const CHRONOLOGICAL_BLOCK_BY_ID = new Map<string, string>();
