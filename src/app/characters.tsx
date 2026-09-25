@@ -73,7 +73,7 @@ function ProfileCard({ item, onPress, unlocked }: { item: CharacterProfile; onPr
     <Text style={{ color: colors.text, fontSize: 19, fontWeight: '900', marginTop: 4 }}>{unlocked ? item.name : '???'}</Text>
     <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginTop: 3 }}>{unlocked ? item.role : 'Personnage verrouillé'}</Text>
     <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 8 }} numberOfLines={3}>{item.summary}</Text>
-    <Text style={{ color: unlocked ? (learned ? colors.accent : colors.muted) : colors.muted, fontWeight: '900', marginTop: 9 }}>{!unlocked ? '🔒 À découvrir dans l’Aventure' : '✓ Personnage découvert'}</Text>
+    <Text style={{ color: unlocked ? colors.accent : colors.muted, fontWeight: '900', marginTop: 9 }}>{!unlocked ? '🔒 À découvrir dans l’Aventure' : '✓ Personnage découvert'}</Text>
   </Pressable>;
 }
 
