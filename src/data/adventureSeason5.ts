@@ -76,7 +76,7 @@ export const SEASON_5 = {
         { id: 'r80a', type: 'quiz', prompt: 'Que permet Cyrus aux Israélites de faire ?', choices: [{ label: 'Retourner à Jérusalem', correct: true }, { label: 'Rester à Babylone', correct: false }, { label: 'Devenir rois', correct: false }, { label: 'Détruire le temple', correct: false }] },
         { id: 'r80b', type: 'quiz', prompt: 'Que rapportent-ils avec eux ?', choices: [{ label: 'Les objets du temple', correct: true }, { label: 'Les armes de Babylone', correct: false }, { label: 'Les idoles du roi', correct: false }, { label: 'Les murailles de Jérusalem', correct: false }] },
       ],
-      characterIds: ['zerubbabel'],
+      characterIds: ['zerubbabel', 'isaiah'],
     },
     {
       id: 'count-on-god',
@@ -90,7 +90,7 @@ export const SEASON_5 = {
         { id: 'r81a', type: 'quiz', prompt: 'Pourquoi le peuple reprend-il la reconstruction du temple ?', choices: [{ label: 'Les prophètes l’encouragent', correct: true }, { label: 'Babylone l’ordonne', correct: false }, { label: 'Le roi David revient', correct: false }, { label: 'Néhémie détruit les murailles', correct: false }] },
         { id: 'r81b', type: 'quiz', prompt: 'Que font les adversaires quand les travaux reprennent ?', choices: [{ label: 'Ils s’opposent aux travaux', correct: true }, { label: 'Ils reconstruisent le temple', correct: false }, { label: 'Ils quittent Jérusalem', correct: false }, { label: 'Ils deviennent prêtres', correct: false }] },
       ],
-      characterIds: ['zerubbabel','haggai','zechariah'],
+      characterIds: ['zerubbabel', 'haggai', 'zechariah', 'ezra'],
     },
     {
       id: 'mordecai-esther',
@@ -118,7 +118,7 @@ export const SEASON_5 = {
         { id: 'r83a', type: 'quiz', prompt: 'Pourquoi Néhémie veut-il reconstruire les murailles ?', choices: [{ label: 'Jérusalem est sans protection', correct: true }, { label: 'Il veut devenir roi', correct: false }, { label: 'Il veut quitter la Perse', correct: false }, { label: 'Il veut construire un nouveau temple', correct: false }] },
         { id: 'r83b', type: 'quiz', prompt: 'Que font les Juifs malgré les menaces ?', choices: [{ label: 'Ils continuent les travaux', correct: true }, { label: 'Ils abandonnent Jérusalem', correct: false }, { label: 'Ils retournent à Babylone', correct: false }, { label: 'Ils arrêtent de prier', correct: false }] },
       ],
-      characterIds: ['nehemie'],
+      characterIds: ['nehemie', 'ezra'],
     },
   ] as AdventureEpisode[],
 } as const;
