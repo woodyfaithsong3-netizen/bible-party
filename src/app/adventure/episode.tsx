@@ -51,6 +51,13 @@ export default function AdventureEpisodeScreen() {
               <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>À RETENIR</Text>
               <Text style={{ color: colors.text, fontSize: 15, fontWeight: '800', lineHeight: 21, marginTop: 6 }}>{episode.keyPoint}</Text>
             </View>
+            {episode.quality ? (
+              <View style={{ marginTop: 12, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.blue }}>
+                <Text style={{ color: colors.blue, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>💡 JÉHOVAH</Text>
+                <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', marginTop: 6 }}>{episode.quality.title}</Text>
+                <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 4 }}>{episode.quality.text}</Text>
+              </View>
+            ) : null}
             {episode.promise === 'discover' ? (
               <View style={{ marginTop: 12, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(59,45,20,.62)', borderWidth: 1, borderColor: colors.accent }}>
                 <Text style={{ color: colors.accent, fontSize: 14, fontWeight: '900' }}>🧵 LA PROMESSE</Text>
@@ -68,8 +75,16 @@ export default function AdventureEpisodeScreen() {
             {episode.characterIds?.length ? (
               <Text style={{ color: colors.muted, fontSize: 11, textAlign: 'center', marginTop: 14 }}>👤 Personnage rencontré : {episode.characterIds.includes('noe') ? 'Noé' : 'Adam'}</Text>
             ) : null}
+            <View style={{ marginTop: 14, width: '100%', padding: 14, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
+              <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>{episode.number === 10 ? '🏆 FIN DE SAISON' : '🧭 PROCHAINE ÉTAPE'}</Text>
+              <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 5 }}>
+                {episode.number === 10
+                  ? 'Tu as parcouru la création, Éden, les premières générations, l’époque d’Hénoch, Noé et le Déluge. La suite de l’histoire commence avec l’alliance et les générations qui mèneront à Abraham.'
+                  : 'Garde cette découverte en tête : elle sera reliée aux épisodes suivants.'}
+              </Text>
+            </View>
             <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 20 }]}>
-              <Text style={styles.buttonText}>Continuer l’aventure ›</Text>
+              <Text style={styles.buttonText}>{episode.number === 10 ? 'Voir la saison ›' : 'Continuer l’aventure ›'}</Text>
             </Pressable>
           </View>
         </ScrollView>
