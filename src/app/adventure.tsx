@@ -1,4 +1,4 @@
-import React, { useCallback, useMemo, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { Pressable, ScrollView, Text, View } from 'react-native';
 import { router, useFocusEffect } from 'expo-router';
 import { ScenicScreen } from '@/components/ScenicScreen';
@@ -21,8 +21,7 @@ export default function AdventureScreen() {
   const [selectedSeason, setSelectedSeason] = useState(0);
   useFocusEffect(useCallback(() => { void getAdventureProgress().then(setCompleted); }, []));
   const seasonComplete = (seasonIndex: number) => seasonIndex === 0 || SEASONS[seasonIndex - 1].episodes.every(ep => completed.includes(ep.id));
-  const unlockedSeasonIndex = useMemo(() => { let index = 0; for (let i = 1; i < SEASONS.length; i += 1) { if (!seasonComplete(i)) break; index = i; } return index; }, [completed]);
-  const activeSeasonIndex = Math.min(selectedSeason, unlockedSeasonIndex);
+  const activeSeasonIndex = selectedSeason;
   const activeSeason = SEASONS[activeSeasonIndex];
   const activeCompletedCount = activeSeason.episodes.filter(ep => completed.includes(ep.id)).length;
 
@@ -37,17 +36,19 @@ export default function AdventureScreen() {
         </View>
 
         <View style={{ marginTop: 22 }}>
-          <Text style={styles.sectionTitle}>SAISONS</Text>
-          <ScrollView horizontal showsHorizontalScrollIndicator={false} contentContainerStyle={{ gap: 9, paddingVertical: 10 }}>
+          <Text style={styles.sectionTitle}>CHOISIR UNE SAISON</Text>
+          <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 9, marginTop: 10 }}>
             {SEASONS.map((season, seasonIndex) => {
-              const locked = !seasonComplete(seasonIndex); const count = season.episodes.filter(ep => completed.includes(ep.id)).length; const selected = seasonIndex === activeSeasonIndex;
-              return <Pressable key={season.id} disabled={locked} onPress={() => setSelectedSeason(seasonIndex)} style={({ pressed }) => [{ minWidth: 82, paddingVertical: 11, paddingHorizontal: 12, borderRadius: 16, borderWidth: 1, borderColor: selected ? colors.accent : colors.border, backgroundColor: selected ? 'rgba(242,201,76,.12)' : colors.surface2, opacity: locked ? .45 : 1 }, pressed && { transform: [{ scale: .97 }] }]}>
-                <Text style={{ color: selected ? colors.accent : colors.muted, fontSize: 10, fontWeight: '900', letterSpacing: 1 }}>SAISON</Text>
-                <Text style={{ color: colors.text, fontSize: 18, fontWeight: '900', marginTop: 2 }}>{season.number}</Text>
-                <Text style={{ color: colors.muted, fontSize: 10, marginTop: 2 }}>{locked ? '🔒' : count + '/' + season.episodes.length}</Text>
+              const locked = !seasonComplete(seasonIndex);
+              const count = season.episodes.filter(ep => completed.includes(ep.id)).length;
+              const selected = seasonIndex === activeSeasonIndex;
+              return <Pressable key={season.id} onPress={() => setSelectedSeason(seasonIndex)} style={({ pressed }) => [{ width: '23%', minWidth: 72, flexGrow: 1, paddingVertical: 12, paddingHorizontal: 8, borderRadius: 16, borderWidth: 1, borderColor: selected ? colors.accent : colors.border, backgroundColor: selected ? 'rgba(242,201,76,.12)' : colors.surface2, opacity: locked ? .65 : 1 }, pressed && { transform: [{ scale: .97 }] }]}>
+                <Text style={{ color: selected ? colors.accent : colors.muted, fontSize: 9, fontWeight: '900', letterSpacing: 1, textAlign: 'center' }}>SAISON</Text>
+                <Text style={{ color: colors.text, fontSize: 20, fontWeight: '900', textAlign: 'center', marginTop: 2 }}>{season.number}</Text>
+                <Text style={{ color: colors.muted, fontSize: 9, marginTop: 2, textAlign: 'center' }}>{locked ? '🔒' : count + '/' + season.episodes.length}</Text>
               </Pressable>;
             })}
-          </ScrollView>
+          </View>
         </View>
         <View style={{ marginTop: 12 }}>
           <View style={styles.glowCard}>
