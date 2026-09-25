@@ -7,10 +7,10 @@ export const SEASON_8 = {
   subtitle: '8e partie du Recueil d’histoires bibliques',
   description: 'Découvre les promesses bibliques concernant la fin de la méchanceté, le nouveau paradis et la vie éternelle.',
   seasonIntro: {
-    title: 'Ce que la Bible annonce pour l’avenir',
-    story: 'La Bible ne raconte pas seulement le passé. Elle annonce aussi ce que Jéhovah fera dans l’avenir : mettre fin à la méchanceté, établir un monde nouveau et offrir la vie éternelle à ceux qui lui sont agréables.',
-    transition: 'Après avoir suivi l’histoire jusqu’à Paul, cette dernière saison ouvre la perspective sur les promesses bibliques pour l’avenir.',
-    thread: 'Le fil de l’histoire arrive à une conclusion tournée vers l’espérance : ce que Jéhovah annonce se réalisera.',
+    title: "Et maintenant, l’avenir",
+    story: "La Bible ne raconte pas seulement ce qui s’est passé. Elle annonce aussi ce qui doit arriver : la fin de la méchanceté, un nouveau paradis sur la terre et la vie éternelle pour ceux qui apprennent à connaître Jéhovah et Jésus et agissent en accord avec leur volonté.",
+    transition: "Voici la dernière étape de l’Aventure : découvrir comment les promesses bibliques conduisent vers l’avenir.",
+    thread: "Le voyage commencé à la création arrive à son horizon : les promesses de Jéhovah donnent une direction à toute l’histoire biblique.",
   },
   seasonSummary: {
     title: 'Ce que tu découvres sur Jéhovah',
