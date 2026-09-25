@@ -35,7 +35,6 @@ export default function BibleScreen() {
   const ctx = { episodes: completed.length, characters: unlockedIds.length, games };
   const unlockedBadges = BADGES.filter(b => b.unlocked(ctx));
   const recentStories = SEASONS.flatMap(s => s.episodes).filter(e => completed.includes(e.id)).slice(-6).reverse();
-  const recentCharacters = unlockedCharacters.filter(c => !learned.includes(c.id)).slice(0, 6);
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Pressable onPress={() => router.back()}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Retour</Text></Pressable>
     <View style={{ marginTop: 20 }}><Text style={styles.eyebrow}>📖 COLLECTION</Text><Text style={[styles.title, { marginTop: 7 }]}>Ma Bible</Text><Text style={styles.subtitle}>Tout ce que ton aventure t’a permis de découvrir, réuni au même endroit.</Text></View>
