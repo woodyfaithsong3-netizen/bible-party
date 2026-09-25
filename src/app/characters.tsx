@@ -136,6 +136,32 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'syntyche',
 ] as const;
 
+const CHRONOLOGICAL_BLOCKS = [
+  { label: 'Origines & patriarches', start: 'adam', end: 'joseph' },
+  { label: 'Moïse & l’Exode', start: 'moise', end: 'josue' },
+  { label: 'Époque des Juges', start: 'naomi', end: 'samuel' },
+  { label: 'Saül, David & Salomon', start: 'saul_king', end: 'salomon' },
+  { label: 'Rois & prophètes', start: 'elie', end: 'obadiah' },
+  { label: 'Exil & retour', start: 'zerubbabel', end: 'malachi' },
+  { label: 'Avant Jésus', start: 'elizabeth', end: 'herod_antipas' },
+  { label: 'Jésus & son ministère', start: 'roman_centurion', end: 'mary_mother_james' },
+  { label: 'Débuts du christianisme', start: 'barnabas', end: 'apollos' },
+  { label: 'Premières congrégations', start: 'gaius_macedonian', end: 'epaphroditus' },
+  { label: 'Autres contemporains', start: 'euodia', end: 'syntyche' },
+] as const;
+
+const CHRONOLOGICAL_BLOCK_BY_ID = new Map<string, string>();
+
+for (const block of CHRONOLOGICAL_BLOCKS) {
+  const start = CHRONOLOGICAL_CHARACTER_IDS.indexOf(block.start);
+  const end = CHRONOLOGICAL_CHARACTER_IDS.indexOf(block.end);
+  if (start >= 0 && end >= start) {
+    for (let i = start; i <= end; i += 1) {
+      CHRONOLOGICAL_BLOCK_BY_ID.set(CHRONOLOGICAL_CHARACTER_IDS[i], block.label);
+    }
+  }
+}
+
 function ProfileCard({ item, onPress, learned }: { item: CharacterProfile; onPress: () => void; learned: boolean }) {
   return <Pressable onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10 }, pressed && { opacity: 0.82 }]}>
     <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1 }}>{item.era.toUpperCase()}</Text>
@@ -258,7 +284,7 @@ export default function CharactersScreen() {
   useFocusEffect(React.useCallback(() => {
     void getLearnedCharacters().then(setLearned);
   }, []));
-  const eras = useMemo(() => ['Tous', ...Array.from(new Set(characterProfiles.map(x => x.era)))], []);
+  const eras = useMemo(() => ['Tous', ...CHRONOLOGICAL_BLOCKS.map(block => block.label)], []);
   const orderedProfiles = useMemo(() => {
     const byId = new Map(characterProfiles.map(item => [item.id, item]));
     return CHRONOLOGICAL_CHARACTER_IDS
@@ -269,16 +295,7 @@ export default function CharactersScreen() {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return orderedProfiles.filter(x => {
-      const matchesEra = selectedEra === 'Tous' || x.era === selectedEra;
-      const matchesQuery = !q || [x.name, x.era, x.role, x.summary, ...x.qualities].join(' ').toLowerCase().includes(q);
-      const matchesStudy = !onlyUnlearned || !learned.includes(x.id);
-      return matchesEra && matchesQuery && matchesStudy;
-    });
-  }, [query, selectedEra, onlyUnlearned, learned, orderedProfiles]);
-  const filtered = useMemo(() => {
-    const q = query.trim().toLowerCase();
-    return orderedProfiles.filter(x => {
-      const matchesEra = selectedEra === 'Tous' || x.era === selectedEra;
+      const matchesEra = selectedEra === 'Tous' || CHRONOLOGICAL_BLOCK_BY_ID.get(x.id) === selectedEra;
       const matchesQuery = !q || [x.name, x.era, x.role, x.summary, ...x.qualities].join(' ').toLowerCase().includes(q);
       const matchesStudy = !onlyUnlearned || !learned.includes(x.id);
       return matchesEra && matchesQuery && matchesStudy;
