@@ -13,7 +13,8 @@ import { SEASON_5 } from '@/data/adventureSeason5';
 import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
-import { markAdventureEpisodeComplete } from '@/lib/storage';
+import { getAdventureProgress, markAdventureEpisodeComplete } from '@/lib/storage';
+import { characterProfiles } from '@/data/characterProfiles';
 
 const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 const ADVENTURE_EPISODES = ADVENTURE_SEASONS.flatMap(season => season.episodes);
@@ -40,6 +41,7 @@ export default function AdventureEpisodeScreen() {
   const [finished, setFinished] = useState(false);
   const [bonusIndex, setBonusIndex] = useState(0);
   const [bonusSelected, setBonusSelected] = useState<number | null>(null);
+  const [newCharacterIds, setNewCharacterIds] = useState<string[]>([]);
 
   if (!episode) {
     return <ScenicScreen><View style={styles.content}><Text style={styles.title}>Épisode introuvable</Text><Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { marginTop: 20 }]}><Text style={styles.buttonText}>Retour à Aventure</Text></Pressable></View></ScenicScreen>;
@@ -68,7 +70,10 @@ export default function AdventureEpisodeScreen() {
       setSelected(null);
       return;
     }
+    const before = new Set(await getAdventureProgress());
+    const newlyDiscovered = (episode.characterIds ?? []).filter(id => !before.has(id));
     await markAdventureEpisodeComplete(episode.id);
+    setNewCharacterIds(newlyDiscovered);
     setFinished(true);
   };
 
@@ -143,7 +148,8 @@ export default function AdventureEpisodeScreen() {
             <Text style={[styles.title, { fontSize: 30, lineHeight: 35, textAlign: 'center', marginTop: 12 }]}>{isAdventureEnd ? 'Aventure terminée !' : 'Épisode terminé'}</Text>
             <Text style={{ color: colors.muted, textAlign: 'center', lineHeight: 21, marginTop: 9 }}>{episode.title}</Text>
 
-            {isAdventureEnd ? <>
+            {newCharacterIds.length > 0 ? <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.blue }}><Text style={{ color: colors.blue, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>✨ NOUVEAU PERSONNAGE DÉBLOQUÉ</Text>{newCharacterIds.map(id => { const character = characterProfiles.find(item => item.id === id); return character ? <Pressable key={id} onPress={() => router.push({ pathname: '/characters', params: { characterId: id } })}><Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 7 }}>👤 {character.name} ›</Text><Text style={{ color: colors.muted, fontSize: 11, marginTop: 2 }}>Découvert dans l’Aventure · voir sa fiche</Text></Pressable> : null; })}</View> : null}
+{isAdventureEnd ? <>
               <View style={{ marginTop: 20, width: '100%', padding: 16, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
                 <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🧠 LA LEÇON À RETENIR</Text>
                 <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 23, marginTop: 7 }}>Connaître la Bible, ce n’est pas seulement retenir des faits. C’est apprendre à connaître Jéhovah et Jésus, comprendre leurs qualités et agir en accord avec leur volonté.</Text>
