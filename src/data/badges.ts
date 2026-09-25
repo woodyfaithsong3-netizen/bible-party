@@ -6,7 +6,7 @@ export type Badge = {
   description: string;
   icon: string;
   secret?: boolean;
-  unlocked: (ctx: { episodes: number; characters: number; trainingAnswered: number; trainingCorrect: number; scores: number }) => boolean;
+  unlocked: (ctx: { episodes: number; characters: number; games: number }) => boolean;
 };
 
 export const BADGES: Badge[] = [
@@ -18,11 +18,11 @@ export const BADGES: Badge[] = [
   { id:'ten-characters', title:'Visages connus', description:'Découvre 10 personnages.', icon:'👥', unlocked: c => c.characters >= 10 },
   { id:'fifty-characters', title:'Belle collection', description:'Découvre 50 personnages.', icon:'📚', unlocked: c => c.characters >= 50 },
   { id:'all-characters', title:'Les 125', description:'Découvre les 125 personnages.', icon:'🏆', unlocked: c => c.characters >= characterProfiles.length },
-  { id:'first-game', title:'Première partie', description:'Termine une partie de Bible Party.', icon:'🎮', unlocked: c => c.scores >= 1 },
-  { id:'ten-games', title:'Habitué de la Party', description:'Termine 10 parties.', icon:'🎉', unlocked: c => c.scores >= 10 },
-  { id:'hundred-answers', title:'Cent réponses', description:'Réponds à 100 questions d’entraînement.', icon:'🧠', unlocked: c => c.trainingAnswered >= 100 },
-  { id:'five-hundred-answers', title:'Mémoire en marche', description:'Réponds à 500 questions d’entraînement.', icon:'⚡', unlocked: c => c.trainingAnswered >= 500 },
-  { id:'thousand-correct', title:'Mille bonnes réponses', description:'Réussis 1 000 questions d’entraînement.', icon:'💎', unlocked: c => c.trainingCorrect >= 1000 },
+  { id:'first-game', title:'Première partie', description:'Termine une partie de Bible Party.', icon:'🎮', unlocked: c => c.games >= 1 },
+  { id:'ten-games', title:'Habitué de la Party', description:'Termine 10 parties.', icon:'🎉', unlocked: c => c.games >= 10 },
+  { id:'twenty-five-games', title:'Toujours partant', description:'Termine 25 parties de Bible Party.', icon:'🔥', unlocked: c => c.games >= 25 },
+  { id:'fifty-games', title:'Grande soirée', description:'Termine 50 parties de Bible Party.', icon:'🎊', unlocked: c => c.games >= 50 },
+  { id:'hundred-games', title:'Cent parties', description:'Termine 100 parties de Bible Party.', icon:'💎', unlocked: c => c.games >= 100 },
   { id:'first-season', title:'Première saison', description:'Termine une saison complète.', icon:'🏅', unlocked: c => c.episodes >= 10 },
   { id:'secret-journey', title:'Le fil continue', description:'Découvre au moins un personnage et termine une histoire.', icon:'🔮', secret: true, unlocked: c => c.characters >= 1 && c.episodes >= 1 },
 ];
@@ -32,9 +32,9 @@ export function getBadgeProgress(badge: Badge, ctx: Parameters<Badge['unlocked']
   const targets: Record<string, number> = {
     'first-story':1,'ten-stories':10,'fifty-stories':50,'all-stories':116,
     'first-character':1,'ten-characters':10,'fifty-characters':50,'all-characters':characterProfiles.length,
-    'first-game':1,'ten-games':10,'hundred-answers':100,'five-hundred-answers':500,'thousand-correct':1000,'first-season':10,'secret-journey':1,
+    'first-game':1,'ten-games':10,'twenty-five-games':25,'fifty-games':50,'hundred-games':100,'first-season':10,'secret-journey':1,
   };
   const target = targets[badge.id] ?? 1;
-  const value = badge.id.includes('character') ? ctx.characters : badge.id.includes('story') || badge.id === 'first-season' ? ctx.episodes : badge.id.includes('game') ? ctx.scores : badge.id === 'thousand-correct' ? ctx.trainingCorrect : ctx.trainingAnswered;
+  const value = badge.id.includes('character') ? ctx.characters : badge.id.includes('story') || badge.id === 'first-season' ? ctx.episodes : badge.id.includes('game') ? ctx.games : 0;
   return Math.min(1, value / target);
 }
