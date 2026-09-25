@@ -104,6 +104,7 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'paul',
   'ananias_damascus',
   'cornelius',
+  'tabitha',
   'john_mark',
   'james_zebedee',
   'barnabas',
@@ -133,7 +134,6 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'berenice',
   'julius_centurion',
   'epaphroditus',
-  'tabitha',
 ] as const;
 
 const CHRONOLOGICAL_BLOCKS = [
