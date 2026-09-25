@@ -85,8 +85,7 @@ export default function HomeVisual() {
               </View>
             </View>
           </View> : <>
-            <View style={[styles.brand, compact && styles.brandCompact, shortPhone && styles.brandShort]}><Image source={logo} resizeMode="contain" style={[styles.logo, compact && styles.logoCompact, shortPhone && styles.logoShort]} /><Text style={[styles.tagline, compact && styles.taglineCompact]}>Ensemble, découvrons{'
-'}la Bible</Text></View>
+            <View style={[styles.brand, compact && styles.brandCompact, shortPhone && styles.brandShort]}><Image source={logo} resizeMode="contain" style={[styles.logo, compact && styles.logoCompact, shortPhone && styles.logoShort]} /><Text style={[styles.tagline, compact && styles.taglineCompact]}>Ensemble, découvrons{\'\\n\'}la Bible</Text></View>
             <View style={[styles.heroArt, compact && styles.heroArtCompact, shortPhone && styles.heroArtShort]}>
               <MysteryCard icon={iconQuestion} style={styles.cardLeft} /><MysteryCard icon={iconStar} style={styles.cardCenter} /><MysteryCard icon={iconBolt} style={styles.cardRight} />
               <View style={styles.bookGlow} /><Image source={iconBible} resizeMode="contain" style={styles.bookImage} />
