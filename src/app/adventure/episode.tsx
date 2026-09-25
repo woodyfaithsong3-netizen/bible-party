@@ -35,13 +35,13 @@ export default function AdventureEpisodeScreen() {
   }
 
   const question = episode.questions[index];
-  const choices = useMemo(() => {
+  const choices = (() => {
     const source = [...question.choices];
     if (source.length <= 1) return source;
     const seed = [...question.id].reduce((sum, char) => sum + char.charCodeAt(0), 0);
     const offset = seed % source.length;
     return source.slice(offset).concat(source.slice(0, offset));
-  }, [question]);
+  })();
   const answered = selected !== null;
   const isCorrect = answered ? choices[selected!]?.correct : false;
 
@@ -152,7 +152,7 @@ export default function AdventureEpisodeScreen() {
         </View>
 
         <View style={{ gap: 9, marginTop: 14 }}>
-          {question.choices.map((choice, choiceIndex) => {
+          {choices.map((choice, choiceIndex) => {
             const picked = selected === choiceIndex;
             const revealCorrect = answered && choice.correct;
             return (
@@ -179,7 +179,7 @@ export default function AdventureEpisodeScreen() {
           <View style={{ marginTop: 13, padding: 14, borderRadius: 17, backgroundColor: isCorrect ? 'rgba(30,91,62,.62)' : 'rgba(91,35,32,.62)', borderWidth: 1, borderColor: isCorrect ? colors.success : colors.danger }}>
             <Text style={{ color: isCorrect ? colors.success : colors.danger, fontWeight: '900' }}>{isCorrect ? '✓ Bonne réponse' : '✕ Pas tout à fait'}</Text>
             <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 4 }}>
-              {isCorrect ? episode.keyPoint : `La bonne réponse est : ${question.choices.find(choice => choice.correct)?.label ?? ''}.`}
+              {isCorrect ? episode.keyPoint : `La bonne réponse est : ${choices.find(choice => choice.correct)?.label ?? ''}.`}
             </Text>
           </View>
         ) : null}
