@@ -14,7 +14,7 @@ import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
 import { BADGES, getBadgeProgress } from '@/data/badges';
-import { getAdventureProgress, getLearnedCharacters, getScores, getTrainingStats } from '@/lib/storage';
+import { getAdventureProgress, getGamesPlayed } from '@/lib/storage';
 
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 function getUnlockedCharacterIds(completed: string[]) {
@@ -24,18 +24,15 @@ function getUnlockedCharacterIds(completed: string[]) {
 
 export default function BibleScreen() {
   const [completed, setCompleted] = useState<string[]>([]);
-  const [learned, setLearned] = useState<string[]>([]);
-  const [scores, setScores] = useState(0);
-  const [trainingAnswered, setTrainingAnswered] = useState(0);
-  const [trainingCorrect, setTrainingCorrect] = useState(0);
+  const [games, setGames] = useState(0);
   const load = useCallback(async () => {
-    const [a, l, s, t] = await Promise.all([getAdventureProgress(), getLearnedCharacters(), getScores(), getTrainingStats()]);
-    setCompleted(a); setLearned(l); setScores(s.length); setTrainingAnswered(t.answered); setTrainingCorrect(t.correct);
+    const [a, g] = await Promise.all([getAdventureProgress(), getGamesPlayed()]);
+    setCompleted(a); setGames(g);
   }, []);
   useFocusEffect(useCallback(() => { void load(); }, [load]));
   const unlockedIds = useMemo(() => getUnlockedCharacterIds(completed), [completed]);
   const unlockedCharacters = useMemo(() => characterProfiles.filter(c => unlockedIds.includes(c.id)), [unlockedIds]);
-  const ctx = { episodes: completed.length, characters: unlockedIds.length, trainingAnswered, trainingCorrect, scores };
+  const ctx = { episodes: completed.length, characters: unlockedIds.length, games };
   const unlockedBadges = BADGES.filter(b => b.unlocked(ctx));
   const recentStories = SEASONS.flatMap(s => s.episodes).filter(e => completed.includes(e.id)).slice(-6).reverse();
   const recentCharacters = unlockedCharacters.filter(c => !learned.includes(c.id)).slice(0, 6);
@@ -45,10 +42,14 @@ export default function BibleScreen() {
     <View style={[styles.glowCard, { marginTop: 18 }]}><Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🗺️ TON AVENTURE</Text><Text style={{ color: colors.text, fontSize: 22, fontWeight: '900', marginTop: 7 }}>{completed.length}/116 histoires découvertes</Text><View style={{ height: 8, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 11 }}><View style={{ width: (Math.round((completed.length / 116) * 100) + '%') as any, height: '100%', backgroundColor: colors.accent }} /></View><View style={{ flexDirection: 'row', gap: 8, marginTop: 13 }}><Stat value={unlockedIds.length + '/'+ characterProfiles.length} label="personnages" /><Stat value={unlockedBadges.length + '/' + BADGES.length} label="badges" /></View></View>
     <SectionTitle title="👤 Personnages découverts" action="Voir les personnages ›" onPress={() => router.push('/characters')} />
     <View style={{ gap: 9 }}>{unlockedCharacters.slice(-6).reverse().map(character => <Pressable key={character.id} onPress={() => router.push({ pathname: '/characters', params: { characterId: character.id } })} style={styles.card}><View style={{ flexDirection: 'row', alignItems: 'center' }}><View style={{ width: 42, height: 42, borderRadius: 21, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.accent, alignItems: 'center', justifyContent: 'center' }}><Text style={{ fontSize: 20 }}>👤</Text></View><View style={{ flex: 1, marginLeft: 12 }}><Text style={{ color: colors.text, fontSize: 16, fontWeight: '900' }}>{character.name}</Text><Text style={{ color: colors.muted, fontSize: 11, marginTop: 2 }}>{character.role}</Text></View><Text style={{ color: colors.accent, fontSize: 20 }}>›</Text></View></Pressable>)}{unlockedCharacters.length === 0 ? <Empty text="Termine une histoire qui présente un personnage pour commencer ta collection." /> : null}</View>
-    {recentCharacters.length ? <View style={{ marginTop: 14, padding: 15, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.blue }}><Text style={{ color: colors.blue, fontSize: 10, fontWeight: '900', letterSpacing: 1.4 }}>✨ À ÉTUDIER</Text><Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', marginTop: 6 }}>Tu as découvert de nouveaux personnages.</Text><Text style={{ color: colors.muted, lineHeight: 19, marginTop: 4 }}>Ouvre leur fiche pour les étudier. Les fiches ne se débloquent pas simplement en les ouvrant : la rencontre vient de l’Aventure.</Text></View> : null}
     <SectionTitle title="🏅 Badges" action="" onPress={() => {}} /><View style={{ gap: 9 }}>{BADGES.map(badge => { const ok = badge.unlocked(ctx); const progress = getBadgeProgress(badge, ctx); return <View key={badge.id} style={[styles.card, !ok && { opacity: .68 }]}><View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: 28, width: 42 }}>{ok ? badge.icon : '🔒'}</Text><View style={{ flex: 1, marginLeft: 10 }}><Text style={{ color: ok ? colors.text : colors.muted, fontSize: 15, fontWeight: '900' }}>{ok ? badge.title : (badge.secret ? '???' : badge.title)}</Text><Text style={{ color: colors.muted, fontSize: 11, lineHeight: 17, marginTop: 3 }}>{ok || !badge.secret ? badge.description : 'Découvre comment obtenir ce badge.'}</Text></View></View>{!ok ? <View style={{ height: 5, backgroundColor: colors.border, borderRadius: 5, overflow: 'hidden', marginTop: 10 }}><View style={{ width: (Math.round(progress * 100) + '%') as any, height: '100%', backgroundColor: colors.accent }} /></View> : null}</View>; })}</View>
     <SectionTitle title="📚 Dernières histoires" action="Continuer l’Aventure ›" onPress={() => router.push('/adventure')} /><View style={{ gap: 9 }}>{recentStories.map(ep => <Pressable key={ep.id} onPress={() => router.push({ pathname: '/adventure/episode', params: { id: ep.id } })} style={styles.card}><Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.2 }}>HISTOIRE {ep.number}</Text><Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', marginTop: 4 }}>{ep.title}</Text></Pressable>)}{!recentStories.length ? <Empty text="Ton parcours apparaîtra ici dès ta première histoire." /> : null}</View>
-    <View style={[styles.card, { marginTop: 16 }]}><Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.3 }}>🧠 TA MÉMOIRE</Text><Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', marginTop: 6 }}>{trainingCorrect}/{trainingAnswered} bonnes réponses en entraînement</Text><Text style={{ color: colors.muted, lineHeight: 19, marginTop: 5 }}>La maîtrise détaillée des histoires pourra ensuite être reliée aux résultats de révision. Pour l’instant, Ma Bible distingue bien ce que tu as découvert de ce que tu as réellement maîtrisé.</Text><Pressable onPress={() => router.push('/revision')} style={[styles.button, styles.buttonPrimary, { marginTop: 13 }]}><Text style={styles.buttonText}>Réviser ›</Text></Pressable></View>
+    <SectionTitle title="🎮 Tes parties" action="" onPress={() => {}} />
+    <View style={[styles.glowCard, { marginTop: 2 }]}>
+      <Text style={{ color: colors.text, fontSize: 28, fontWeight: '900' }}>{games}</Text>
+      <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginTop: 3 }}>parties de Bible Party terminées</Text>
+      <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 8 }}>Chaque partie terminée fait progresser ta collection et peut débloquer de nouveaux badges.</Text>
+    </View>
   </ScrollView></ScenicScreen>;
 }
 function Stat({ value, label }: { value: string; label: string }) { return <View style={{ flex: 1, padding: 12, borderRadius: 15, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}><Text style={{ color: colors.accent, fontSize: 17, fontWeight: '900' }}>{value}</Text><Text style={{ color: colors.muted, fontSize: 10, fontWeight: '800', marginTop: 2 }}>{label}</Text></View>; }
