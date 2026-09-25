@@ -73,6 +73,10 @@ export default function HomeVisual() {
                 <Text style={styles.desktopSub}>Choisissez vos équipes, lancez les défis et laissez le maître de jeu rythmer la soirée.</Text>
               </View>
               <View style={styles.desktopActions}>
+                <Pressable onPress={() => router.push('/adventure')} style={({ pressed }) => [styles.desktopAction, styles.desktopActionPrimary, pressed && styles.pressed]}>
+                  <View style={[styles.desktopActionIcon, styles.desktopActionIconPrimary]}><Text style={styles.adventureEmoji}>🗺️</Text></View>
+                  <View style={styles.desktopActionCopy}><Text style={[styles.desktopActionTitle, styles.desktopActionTitlePrimary]}>AVENTURE</Text><Text style={[styles.desktopActionSubtitle, styles.desktopActionSubtitlePrimary]}>Découvrir la Bible épisode par épisode</Text></View><Text style={[styles.desktopActionArrow, styles.desktopActionArrowPrimary]}>›</Text>
+                </Pressable>
                 <Pressable onPress={() => router.push('/setup')} style={({ pressed }) => [styles.desktopAction, styles.desktopActionPrimary, pressed && styles.pressed]}>
                   <View style={[styles.desktopActionIcon, styles.desktopActionIconPrimary]}><Image source={iconGamepad} style={styles.desktopActionAsset} resizeMode="contain" /></View>
                   <View style={styles.desktopActionCopy}><Text style={[styles.desktopActionTitle, styles.desktopActionTitlePrimary]}>JOUER</Text><Text style={[styles.desktopActionSubtitle, styles.desktopActionSubtitlePrimary]}>Lancer une nouvelle partie</Text></View><Text style={[styles.desktopActionArrow, styles.desktopActionArrowPrimary]}>›</Text>
@@ -101,6 +105,7 @@ export default function HomeVisual() {
               <MysteryCard icon={iconQuestion} style={styles.cardLeft} /><MysteryCard icon={iconStar} style={styles.cardCenter} /><MysteryCard icon={iconBolt} style={styles.cardRight} />
               <View style={styles.bookGlow} /><Image source={iconBible} resizeMode="contain" style={styles.bookImage} />
             </View>
+            <Pressable onPress={() => router.push('/adventure')} style={({ pressed }) => [styles.play, compact && styles.playCompact, shortPhone && styles.playShort, pressed && styles.pressed]}><View style={[styles.playIcon, compact && styles.playIconCompact]}><Text style={styles.adventureEmoji}>🗺️</Text></View><View style={styles.playCopy}><Text style={[styles.playTitle, compact && styles.playTitleCompact]}>AVENTURE</Text><Text style={[styles.playSubtitle, compact && styles.playSubtitleCompact]}>Découvrir la Bible épisode par épisode</Text></View><Text style={styles.arrow}>›</Text></Pressable>
             <Pressable onPress={() => router.push('/setup')} style={({ pressed }) => [styles.play, compact && styles.playCompact, shortPhone && styles.playShort, pressed && styles.pressed]}><View style={[styles.playIcon, compact && styles.playIconCompact]}><Image source={iconGamepad} style={[styles.playAsset, compact && styles.playAssetCompact]} resizeMode="contain" /></View><View style={styles.playCopy}><Text style={[styles.playTitle, compact && styles.playTitleCompact]}>JOUER</Text><Text style={[styles.playSubtitle, compact && styles.playSubtitleCompact]}>Lancer une nouvelle partie</Text></View><Text style={styles.arrow}>›</Text></Pressable>
             <Pressable onPress={() => router.push('/game?modes=quiz,mystery,truefalse,challenge,quote,intruder,timesup,threeclues,forbidden,faceoff,risk&duration=2&teams=Équipe%20A|Équipe%20B')} style={({ pressed }) => [styles.quick, compact && styles.quickCompact, shortPhone && styles.quickShort, pressed && styles.pressed]}><View style={[styles.quickIcon, compact && styles.quickIconCompact]}><Image source={iconBolt} style={[styles.quickAsset, compact && styles.quickAssetCompact]} /></View><View style={styles.quickCopy}><Text style={styles.quickTitle}>Partie express</Text><Text style={styles.quickSubtitle}>2 minutes · plusieurs jeux</Text></View><Text style={styles.quickArrow}>›</Text></Pressable>
             <View style={[styles.tiles, compact && styles.tilesCompact, shortPhone && styles.tilesShort]}><GlassTile icon={iconTraining} title="Entraînement" onPress={() => router.push('/training')} /><GlassTile icon={iconTrophy} title="Scores" onPress={() => router.push('/scores')} /><GlassTile icon={iconBible} title="Personnages" onPress={() => router.push('/characters')} /><GlassTile icon={iconTraining} title="Révision 125" subtitle="Quiz ciblé" onPress={() => router.push('/revision')} /></View>
@@ -151,7 +156,7 @@ const styles = StyleSheet.create({
   desktopActionQuick: { backgroundColor: 'rgba(3,52,61,.86)', borderColor: 'rgba(113,222,240,.82)' },
   desktopActionIcon: { width: 42, height: 42, borderRadius: 15, backgroundColor: 'rgba(3,30,37,.72)', alignItems: 'center', justifyContent: 'center', flexShrink: 0 },
   desktopActionIconPrimary: { backgroundColor: 'rgba(12,61,57,.16)' },
-  desktopActionAsset: { width: 32, height: 32 },
+  desktopActionAsset: { width: 32, height: 32 }, adventureEmoji: { fontSize: 27 },
   desktopActionCopy: { flex: 1, marginLeft: 13, minWidth: 0 },
   desktopActionTitle: { color: '#FFFDF4', fontSize: 16, lineHeight: 20, fontWeight: '900' },
   desktopActionTitlePrimary: { color: '#0B3B37' },
