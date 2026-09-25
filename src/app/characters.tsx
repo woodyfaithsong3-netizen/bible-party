@@ -6,7 +6,15 @@ import { characterLearning } from '@/data/characterLearning';
 import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { ScenicScreen } from '@/components/ScenicScreen';
-import { getLearnedCharacters, markCharacterLearned } from '@/lib/storage';
+import { getAdventureProgress, getLearnedCharacters, markCharacterLearned } from '@/lib/storage';
+import { SEASON_1 } from '@/data/adventure';
+import { SEASON_2 } from '@/data/adventureSeason2';
+import { SEASON_3 } from '@/data/adventureSeason3';
+import { SEASON_4 } from '@/data/adventureSeason4';
+import { SEASON_5 } from '@/data/adventureSeason5';
+import { SEASON_6 } from '@/data/adventureSeason6';
+import { SEASON_7 } from '@/data/adventureSeason7';
+import { SEASON_8 } from '@/data/adventureSeason8';
 
 const CHRONOLOGICAL_BLOCKS = [
   {
@@ -58,14 +66,14 @@ for (const block of CHRONOLOGICAL_BLOCKS) {
   for (const id of block.ids) CHRONOLOGICAL_BLOCK_BY_ID.set(id, block.label);
 }
 
-function ProfileCard({ item, onPress, learned }: { item: CharacterProfile; onPress: () => void; learned: boolean }) {
+function ProfileCard({ item, onPress, learned, unlocked }: { item: CharacterProfile; onPress: () => void; learned: boolean; unlocked: boolean }) {
   const chronologyBlock = CHRONOLOGICAL_BLOCK_BY_ID.get(item.id) ?? 'Chronologie';
-  return <Pressable onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10 }, pressed && { opacity: 0.82 }]}>
+  return <Pressable disabled={!unlocked} onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10, opacity: unlocked ? 1 : .62 }, pressed && unlocked && { opacity: 0.82 }]}>
     <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1 }}>{chronologyBlock.toUpperCase()}</Text>
-    <Text style={{ color: colors.text, fontSize: 19, fontWeight: '900', marginTop: 4 }}>{item.name}</Text>
-    <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginTop: 3 }}>{item.role}</Text>
+    <Text style={{ color: colors.text, fontSize: 19, fontWeight: '900', marginTop: 4 }}>{unlocked ? item.name : '???'}</Text>
+    <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginTop: 3 }}>{unlocked ? item.role : 'Personnage verrouillé'}</Text>
     <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 8 }} numberOfLines={3}>{item.summary}</Text>
-    <Text style={{ color: learned ? colors.accent : colors.muted, fontWeight: '900', marginTop: 9 }}>{learned ? '✓ Fiche étudiée' : 'Fiche à étudier'}</Text>
+    <Text style={{ color: unlocked ? (learned ? colors.accent : colors.muted) : colors.muted, fontWeight: '900', marginTop: 9 }}>{!unlocked ? '🔒 À découvrir dans l’Aventure' : learned ? '✓ Fiche étudiée' : 'Fiche à étudier'}</Text>
   </Pressable>;
 }
 
@@ -178,8 +186,14 @@ export default function CharactersScreen() {
   const [selectedEra, setSelectedEra] = useState('Tous');
   const [onlyUnlearned, setOnlyUnlearned] = useState(false);
   const [selected, setSelected] = useState<CharacterProfile | null>(null);
+  const [unlockedIds, setUnlockedIds] = useState<string[]>([]);
   useFocusEffect(React.useCallback(() => {
     void getLearnedCharacters().then(setLearned);
+    void getAdventureProgress().then(progress => {
+      const done = new Set(progress);
+      const seasons = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
+      setUnlockedIds(Array.from(new Set(seasons.flatMap(season => season.episodes.filter(ep => done.has(ep.id)).flatMap(ep => ep.characterIds ?? [])))));
+    });
   }, []));
   const eras = useMemo(() => ['Tous', ...CHRONOLOGICAL_BLOCKS.map(block => block.label)], []);
   const orderedProfiles = useMemo(() => {
@@ -198,7 +212,7 @@ export default function CharactersScreen() {
       return matchesEra && matchesQuery && matchesStudy;
     });
   }, [query, selectedEra, onlyUnlearned, learned, orderedProfiles]);
-  if (selected) return <ScenicScreen><CharacterDetail item={selected} onBack={() => { setSelected(null); void getLearnedCharacters().then(setLearned); }} /></ScenicScreen>;
+  if (selected && unlockedIds.includes(selected.id)) return <ScenicScreen><CharacterDetail item={selected} onBack={() => { setSelected(null); void getLearnedCharacters().then(setLearned); }} /></ScenicScreen>;
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={styles.eyebrow}>APPRENDRE</Text>
     <Text style={[styles.title, { marginTop: 7 }]}>Personnages bibliques</Text>
@@ -208,10 +222,10 @@ export default function CharactersScreen() {
       {eras.map(era => <Pressable key={era} onPress={() => setSelectedEra(era)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: selectedEra === era ? colors.accent : colors.border, backgroundColor: selectedEra === era ? colors.accent : colors.surface }}><Text style={{ color: selectedEra === era ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{era}</Text></Pressable>)}
     </ScrollView>
     <View style={{ marginBottom: 12 }}>
-      <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800' }}>{filtered.length} fiches affichées · {learned.length}/{characterProfiles.length} étudiées</Text>
+      <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800' }}>{filtered.length} fiches affichées · {unlockedIds.length}/{characterProfiles.length} découvertes · {learned.length} étudiées</Text>
       <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 8 }}><View style={{ width: `${Math.round((learned.length / Math.max(1, characterProfiles.length)) * 100)}%`, height: '100%', backgroundColor: colors.accent }} /></View>
     </View>
     <View style={{ flexDirection: 'row', gap: 8, flexWrap: 'wrap', marginBottom: 12 }}><Pressable onPress={() => setOnlyUnlearned(x => !x)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: onlyUnlearned ? colors.accent : colors.border, backgroundColor: onlyUnlearned ? colors.accent : colors.surface }}><Text style={{ color: onlyUnlearned ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{onlyUnlearned ? '✓ À étudier' : 'À étudier'}</Text></Pressable></View>
-    {filtered.map(item => <ProfileCard key={item.id} item={item} learned={learned.includes(item.id)} onPress={() => setSelected(item)} />)}
+    {filtered.map(item => <ProfileCard key={item.id} item={item} learned={learned.includes(item.id)} unlocked={unlockedIds.includes(item.id)} onPress={() => setSelected(item)} />)}
   </ScrollView></ScenicScreen>;
 }
