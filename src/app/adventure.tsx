@@ -19,19 +19,75 @@ const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEA
 export default function AdventureScreen() {
   const [completed, setCompleted] = useState<string[]>([]);
   const [selectedSeason, setSelectedSeason] = useState(0);
-  useFocusEffect(useCallback(() => { void getAdventureProgress().then(setCompleted); }, []));
-  const activeSeasonIndex = selectedSeason;
-  const activeSeason = SEASONS[activeSeasonIndex];
+  const [showSeasonIntro, setShowSeasonIntro] = useState(false);
+
+  useFocusEffect(useCallback(() => {
+    void getAdventureProgress().then(setCompleted);
+  }, []));
+
+  const activeSeason = SEASONS[selectedSeason];
   const activeCompletedCount = activeSeason.episodes.filter(ep => completed.includes(ep.id)).length;
+  const progress = Math.round((activeCompletedCount / activeSeason.episodes.length) * 100);
+
+  const selectSeason = (seasonIndex: number) => {
+    setSelectedSeason(seasonIndex);
+    setShowSeasonIntro(true);
+  };
+
+  if (showSeasonIntro) {
+    return (
+      <ScenicScreen>
+        <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
+          <Pressable onPress={() => setShowSeasonIntro(false)}>
+            <Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Saisons</Text>
+          </Pressable>
+
+          <View style={{ marginTop: 26, alignItems: 'center' }}>
+            <Text style={{ fontSize: 46 }}>{['🌍','🌈','🏜️','👑','🏛️','✝️','🔥','🌳'][selectedSeason]}</Text>
+            <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 2, marginTop: 14 }}>SAISON {activeSeason.number}</Text>
+            <Text style={[styles.title, { textAlign: 'center', marginTop: 7 }]}>{activeSeason.title}</Text>
+            <Text style={[styles.subtitle, { textAlign: 'center', marginTop: 6 }]}>{activeSeason.subtitle}</Text>
+          </View>
+
+          <View style={[styles.glowCard, { marginTop: 24 }]}>
+            <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.5 }}>🎬 AVANT DE COMMENCER</Text>
+            <Text style={{ color: colors.text, fontSize: 22, fontWeight: '900', lineHeight: 28, marginTop: 8 }}>{activeSeason.seasonIntro.title}</Text>
+            <Text style={{ color: colors.text, lineHeight: 22, marginTop: 12 }}>{activeSeason.seasonIntro.story}</Text>
+            <Text style={{ color: colors.muted, lineHeight: 21, marginTop: 12 }}>{activeSeason.seasonIntro.transition}</Text>
+          </View>
+
+          <View style={{ marginTop: 14, padding: 16, borderRadius: 20, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+            <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🧵 LE FIL DE LA SAISON</Text>
+            <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 7 }}>{activeSeason.seasonIntro.thread}</Text>
+          </View>
+
+          <View style={{ marginTop: 14, padding: 16, borderRadius: 20, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between' }}>
+              <Text style={{ color: colors.text, fontWeight: '900' }}>{activeCompletedCount}/{activeSeason.episodes.length} épisodes</Text>
+              <Text style={{ color: colors.accent, fontWeight: '900' }}>{progress}%</Text>
+            </View>
+            <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 10 }}>
+              <View style={{ width: `${progress}%`, height: '100%', backgroundColor: colors.accent }} />
+            </View>
+          </View>
+
+          <Pressable onPress={() => setShowSeasonIntro(false)} style={[styles.button, styles.buttonPrimary, { marginTop: 22 }]}>
+            <Text style={styles.buttonText}>Commencer les épisodes ›</Text>
+          </Pressable>
+        </ScrollView>
+      </ScenicScreen>
+    );
+  }
 
   return (
     <ScenicScreen>
       <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
         <Pressable onPress={() => router.back()}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Retour</Text></Pressable>
+
         <View style={{ marginTop: 22 }}>
           <Text style={styles.eyebrow}>🗺️ AVENTURE</Text>
-          <Text style={[styles.title, { marginTop: 7 }]}>Ton histoire biblique</Text>
-          <Text style={styles.subtitle}>116 histoires, organisées selon les 8 parties officielles du Recueil d’histoires bibliques.</Text>
+          <Text style={[styles.title, { marginTop: 7 }]}>Les saisons</Text>
+          <Text style={styles.subtitle}>Choisis une saison pour découvrir son histoire.</Text>
         </View>
 
         <View style={{ marginTop: 22 }}>
@@ -39,29 +95,35 @@ export default function AdventureScreen() {
           <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 9, marginTop: 10 }}>
             {SEASONS.map((season, seasonIndex) => {
               const count = season.episodes.filter(ep => completed.includes(ep.id)).length;
-              const selected = seasonIndex === activeSeasonIndex;
-              return <Pressable key={season.id} onPress={() => setSelectedSeason(seasonIndex)} style={({ pressed }) => [{ width: '23%', minWidth: 72, flexGrow: 1, paddingVertical: 12, paddingHorizontal: 8, borderRadius: 16, borderWidth: 1, borderColor: selected ? colors.accent : colors.border, backgroundColor: selected ? 'rgba(242,201,76,.12)' : colors.surface2, opacity: 1 }, pressed && { transform: [{ scale: .97 }] }]}>
-                <Text style={{ color: selected ? colors.accent : colors.muted, fontSize: 9, fontWeight: '900', letterSpacing: 1, textAlign: 'center' }}>SAISON</Text>
-                <Text style={{ color: colors.text, fontSize: 20, fontWeight: '900', textAlign: 'center', marginTop: 2 }}>{season.number}</Text>
-                <Text style={{ color: colors.muted, fontSize: 9, marginTop: 2, textAlign: 'center' }}>{count + '/' + season.episodes.length}</Text>
-              </Pressable>;
+              return (
+                <Pressable
+                  key={season.id}
+                  onPress={() => selectSeason(seasonIndex)}
+                  style={({ pressed }) => [{
+                    width: '23%',
+                    minWidth: 72,
+                    flexGrow: 1,
+                    paddingVertical: 12,
+                    paddingHorizontal: 8,
+                    borderRadius: 16,
+                    borderWidth: 1,
+                    borderColor: colors.border,
+                    backgroundColor: colors.surface2,
+                  }, pressed && { transform: [{ scale: .97 }] }]}
+                >
+                  <Text style={{ color: colors.muted, fontSize: 9, fontWeight: '900', letterSpacing: 1, textAlign: 'center' }}>SAISON</Text>
+                  <Text style={{ color: colors.text, fontSize: 20, fontWeight: '900', textAlign: 'center', marginTop: 2 }}>{season.number}</Text>
+                  <Text style={{ color: colors.muted, fontSize: 9, marginTop: 2, textAlign: 'center' }}>{count}/{season.episodes.length}</Text>
+                </Pressable>
+              );
             })}
           </View>
         </View>
-        <View style={{ marginTop: 12 }}>
-          <View style={styles.glowCard}>
-            <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.5 }}>SAISON {activeSeason.number}</Text>
-            <Text style={{ color: colors.text, fontSize: 24, fontWeight: '900', marginTop: 5 }}>{activeSeason.title}</Text>
-            <Text style={{ color: colors.muted, marginTop: 3 }}>{activeSeason.subtitle}</Text>
-            <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 9 }}>{activeSeason.description}</Text>
-            <View style={{ height: 8, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 15 }}><View style={{ width: `${Math.round((activeCompletedCount / activeSeason.episodes.length) * 100)}%`, height: '100%', backgroundColor: colors.accent }} /></View>
-            <Text style={{ color: colors.muted, fontSize: 11, fontWeight: '800', marginTop: 8 }}>{activeCompletedCount}/{activeSeason.episodes.length} épisodes terminés</Text>
-          </View>
-          <View style={[styles.card, { marginTop: 12 }]}><Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.3 }}>🎬 INTRODUCTION</Text><Text style={{ color: colors.text, fontSize: 21, fontWeight: '900', marginTop: 7 }}>{activeSeason.seasonIntro.title}</Text><Text style={{ color: colors.muted, lineHeight: 20, marginTop: 8 }}>{activeSeason.seasonIntro.story}</Text><Text style={{ color: colors.text, lineHeight: 20, marginTop: 10 }}>{activeSeason.seasonIntro.transition}</Text></View>
-          <View style={{ marginTop: 20 }}><Text style={styles.sectionTitle}>ÉPISODES</Text>
-            {activeSeason.episodes.map((episode, index) => { const done = completed.includes(episode.id); const canPlay = index === 0 || completed.includes(activeSeason.episodes[index - 1].id); return <Pressable key={episode.id} disabled={!canPlay} onPress={() => router.push({ pathname: '/adventure/episode', params: { id: episode.id } })} style={({ pressed }) => [{ marginBottom: 10, padding: 15, borderRadius: 22, borderWidth: 1, borderColor: done ? colors.success : canPlay ? colors.borderStrong : colors.border, backgroundColor: done ? 'rgba(22,70,53,.72)' : canPlay ? colors.surface2 : 'rgba(5,25,30,.55)', flexDirection: 'row', alignItems: 'center', gap: 13, opacity: canPlay ? 1 : .52 }, pressed && { transform: [{ scale: .985 }] }]}><View style={{ width: 48, height: 48, borderRadius: 17, alignItems: 'center', justifyContent: 'center', backgroundColor: done ? 'rgba(143,224,166,.15)' : 'rgba(242,201,76,.12)', borderWidth: 1, borderColor: done ? colors.success : colors.borderStrong }}><Text style={{ fontSize: 22 }}>{done ? '✓' : canPlay ? episode.icon : '🔒'}</Text></View><View style={{ flex: 1 }}><Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1 }}>ÉPISODE {episode.number}</Text><Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 3 }}>{episode.title}</Text><Text style={{ color: colors.muted, fontSize: 11, marginTop: 3 }} numberOfLines={2}>{episode.keyPoint}</Text></View><Text style={{ color: done ? colors.success : colors.accent2, fontSize: 27 }}>›</Text></Pressable>; })}
-          </View>
-          {activeCompletedCount === activeSeason.episodes.length ? <View style={[styles.card, { marginTop: 12, borderColor: colors.accent }]}><Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.3 }}>💡 CE QUE TU DÉCOUVRES SUR JÉHOVAH</Text><Text style={{ color: colors.text, fontSize: 21, fontWeight: '900', marginTop: 7 }}>{activeSeason.seasonSummary.title}</Text>{activeSeason.seasonSummary.qualities.map(q => <View key={q.title} style={{ marginTop: 12 }}><Text style={{ color: colors.text, fontWeight: '900' }}>{q.title}</Text><Text style={{ color: colors.muted, lineHeight: 19, marginTop: 3 }}>{q.text}</Text></View>)}<Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.3, marginTop: 18 }}>🧵 LE FIL ROUGE</Text><Text style={{ color: colors.text, lineHeight: 20, marginTop: 7 }}>{activeSeason.seasonIntro.thread}</Text></View> : null}
+
+        <View style={[styles.card, { marginTop: 18 }]}>
+          <Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.3 }}>🧭 COMMENT ÇA MARCHE</Text>
+          <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 22, marginTop: 7 }}>Découvre l’histoire, joue, puis retiens l’essentiel.</Text>
+          <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 6 }}>Chaque saison commence par une courte introduction. Ensuite, chaque épisode te fait découvrir une histoire avant de passer aux questions.</Text>
         </View>
       </ScrollView>
     </ScenicScreen>
