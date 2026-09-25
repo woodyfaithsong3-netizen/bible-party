@@ -91,11 +91,16 @@ export default function HomeVisual() {
                 <Pressable onPress={() => router.push('/setup')} style={({ pressed }) => [styles.desktopAction, pressed && styles.pressed]}>
                   <View style={styles.desktopActionIcon}><Image source={iconTeam} style={styles.desktopActionAsset} resizeMode="contain" /></View>
                   <View style={styles.desktopActionCopy}><Text style={styles.desktopActionTitle}>Équipes</Text><Text style={styles.desktopActionSubtitle}>Gérer les noms</Text></View><Text style={styles.desktopActionArrow}>›</Text>
-                </Pressable>\n                <Pressable onPress={() => router.push('/bible')} style={({ pressed }) => [styles.desktopAction, pressed && styles.pressed]}>\n                  <View style={styles.desktopActionIcon}><Image source={iconBible} style={styles.desktopActionAsset} resizeMode="contain" /></View>\n                  <View style={styles.desktopActionCopy}><Text style={styles.desktopActionTitle}>Ma Bible</Text><Text style={styles.desktopActionSubtitle}>Ta collection et ta progression</Text></View><Text style={styles.desktopActionArrow}>›</Text>\n                </Pressable>
+                </Pressable>
+                <Pressable onPress={() => router.push('/bible')} style={({ pressed }) => [styles.desktopAction, pressed && styles.pressed]}>
+                  <View style={styles.desktopActionIcon}><Image source={iconBible} style={styles.desktopActionAsset} resizeMode="contain" /></View>
+                  <View style={styles.desktopActionCopy}><Text style={styles.desktopActionTitle}>Ma Bible</Text><Text style={styles.desktopActionSubtitle}>Ta collection et ta progression</Text></View><Text style={styles.desktopActionArrow}>›</Text>
+                </Pressable>
               </View>
             </View>
           </View> : <>
-            <View style={[styles.brand, compact && styles.brandCompact, shortPhone && styles.brandShort]}><Image source={logo} resizeMode="contain" style={[styles.logo, compact && styles.logoCompact, shortPhone && styles.logoShort]} /><Text style={[styles.tagline, compact && styles.taglineCompact]}>Ensemble, découvrons{'\n'}la Bible</Text></View>
+            <View style={[styles.brand, compact && styles.brandCompact, shortPhone && styles.brandShort]}><Image source={logo} resizeMode="contain" style={[styles.logo, compact && styles.logoCompact, shortPhone && styles.logoShort]} /><Text style={[styles.tagline, compact && styles.taglineCompact]}>Ensemble, découvrons{'
+'}la Bible</Text></View>
             <View style={[styles.heroArt, compact && styles.heroArtCompact, shortPhone && styles.heroArtShort]}>
               <MysteryCard icon={iconQuestion} style={styles.cardLeft} /><MysteryCard icon={iconStar} style={styles.cardCenter} /><MysteryCard icon={iconBolt} style={styles.cardRight} />
               <View style={styles.bookGlow} /><Image source={iconBible} resizeMode="contain" style={styles.bookImage} />
