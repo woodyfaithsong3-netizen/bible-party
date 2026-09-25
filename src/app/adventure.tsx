@@ -37,7 +37,7 @@ export default function AdventureScreen() {
   const startSeason = () => {
     const firstEpisode = activeSeason.episodes[0];
     if (!firstEpisode) return;
-    router.push({ pathname: '/adventure/episode', params: { id: firstEpisode.id } });
+    router.replace({ pathname: '/adventure/episode', params: { id: firstEpisode.id } });
   };
 
   if (showSeasonIntro) {
