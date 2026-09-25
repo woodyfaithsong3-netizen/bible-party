@@ -10,6 +10,7 @@ const iconStar = require('../../assets/images/ui/star.png');
 const iconCenterWide = iconStar;
 const iconBible = require('../../assets/images/ui/bible.png');
 const iconGamepad = require('../../assets/images/ui/gamepad.png');
+const iconBolt = require('../../assets/images/ui/bolt.png');
 const iconHome = require('../../assets/images/ui/home.png');
 const iconSettings = require('../../assets/images/ui/settings.png');
 
@@ -96,7 +97,7 @@ export default function HomeVisual() {
           </>}
 
           <View style={[styles.nav, compact && styles.navCompact, shortPhone && styles.navShort, wide && styles.navWide]}>
-            <NavItem icon={iconHome} label="Accueil" active onPress={() => router.replace('/')} /><NavItem icon={iconBible} label="Aventure" onPress={() => router.replace('/adventure')} /><NavItem icon={iconGamepad} label="Jouer" onPress={() => router.replace('/setup')} /><NavItem icon={iconBible} label="Ma Bible" onPress={() => router.replace('/bible')} />
+            <NavItem icon={iconBible} label="Aventure" onPress={() => router.replace('/adventure')} /><NavItem icon={iconGamepad} label="Jouer" onPress={() => router.replace('/setup')} /><NavItem icon={iconBible} label="Ma Bible" onPress={() => router.replace('/bible')} />
           </View>
         </View>
       </ImageBackground>
