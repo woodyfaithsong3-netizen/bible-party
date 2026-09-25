@@ -169,6 +169,19 @@ export default function AdventureEpisodeScreen() {
           <Text style={{ color: colors.text, fontSize: 15, fontWeight: '800', lineHeight: 21, marginTop: 6 }}>{episode.keyPoint}</Text>
         </View>
 
+        <View style={{ marginTop: 14, padding: 15, borderRadius: 18, backgroundColor: 'rgba(59,45,20,.48)', borderWidth: 1, borderColor: colors.accent }}>
+          <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🧭 POUR COMPRENDRE LA SUITE</Text>
+          <Text style={{ color: colors.text, fontSize: 14, fontWeight: '900', lineHeight: 20, marginTop: 6 }}>
+            {nextEpisode ? `L’histoire ne s’arrête pas ici : « ${nextEpisode.title} » vient ensuite.` : 'Cette histoire mène à la conclusion de l’Aventure.'}
+          </Text>
+          {nextEpisode ? (
+            <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 5 }}>{nextEpisode.intro}</Text>
+          ) : null}
+          {currentSeason?.seasonIntro?.thread ? (
+            <Text style={{ color: colors.accent, lineHeight: 19, marginTop: 7 }}>{currentSeason.seasonIntro.thread}</Text>
+          ) : null}
+        </View>
+
         <View style={{ marginTop: 20, padding: 15, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
           <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>{typeLabel}</Text>
           <Text style={{ color: colors.text, fontSize: 20, lineHeight: 25, fontWeight: '900', marginTop: 8 }}>{question.prompt}</Text>
