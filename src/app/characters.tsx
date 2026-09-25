@@ -88,6 +88,7 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'jairus',
   'jairus_daughter',
   'gerasene_man',
+  'blind_bartimaeus',
   'joanna',
   'samaritan_leper',
   'zacchaeus',
