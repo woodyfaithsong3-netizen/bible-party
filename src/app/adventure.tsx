@@ -34,6 +34,12 @@ export default function AdventureScreen() {
     setShowSeasonIntro(true);
   };
 
+  const startSeason = () => {
+    const firstEpisode = activeSeason.episodes[0];
+    if (!firstEpisode) return;
+    router.push({ pathname: '/adventure/episode', params: { id: firstEpisode.id } });
+  };
+
   if (showSeasonIntro) {
     return (
       <ScenicScreen>
@@ -71,7 +77,7 @@ export default function AdventureScreen() {
             </View>
           </View>
 
-          <Pressable onPress={() => setShowSeasonIntro(false)} style={[styles.button, styles.buttonPrimary, { marginTop: 22 }]}>
+          <Pressable onPress={startSeason} style={[styles.button, styles.buttonPrimary, { marginTop: 22 }]}>
             <Text style={styles.buttonText}>Commencer les épisodes ›</Text>
           </Pressable>
         </ScrollView>
