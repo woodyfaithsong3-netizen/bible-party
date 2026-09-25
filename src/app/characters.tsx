@@ -47,7 +47,7 @@ const CHRONOLOGICAL_BLOCKS = [
   },
   {
     label: 'Congrégations chrétiennes',
-    ids: ['jason_thessalonica', 'lydia', 'euodia', 'syntyche', 'aristarchus', 'titus', 'priscilla', 'apollos', 'felix', 'gaius_macedonian', 'eutychus', 'phoebe', 'claudius_lycias', 'tychicus', 'onesimus', 'philemon', 'apphia', 'archippus', 'onesiphorus', 'demas', 'festus', 'agrippa_ii', 'berenice', 'julius_centurion', 'epaphroditus'],
+    ids: ['lydia', 'euodia', 'syntyche', 'aristarchus', 'titus', 'apollos', 'felix', 'gaius_macedonian', 'eutychus', 'phoebe', 'claudius_lycias', 'tychicus', 'onesimus', 'philemon', 'apphia', 'archippus', 'onesiphorus', 'demas', 'festus', 'agrippa_ii', 'berenice', 'julius_centurion', 'epaphroditus'],
   },
 ] as const;
 
