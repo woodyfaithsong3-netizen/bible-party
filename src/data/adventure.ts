@@ -12,6 +12,7 @@ export type AdventureEpisode = {
   title: string;
   icon: string;
   intro: string;
+  context?: string;
   keyPoint: string;
   quality?: { title: string; text: string };
   questions: AdventureQuestion[];
@@ -48,6 +49,7 @@ export const SEASON_1 = {
       title: 'Dieu se met à créer',
       icon: '🌍',
       intro: 'Dieu commence son œuvre de création. La lumière apparaît, puis le ciel, la terre, les végétaux, les astres, les animaux et enfin les humains.',
+      context: 'Le récit commence par la création du ciel et de la terre. Jéhovah prépare progressivement un cadre de vie pour les humains, puis crée l’être humain.',
       keyPoint: 'Jéhovah est le Créateur. Les humains sont créés le sixième jour.',
       quality: { title: 'Créateur', text: 'Jéhovah prépare la terre et crée les humains.' },
       questions: [
