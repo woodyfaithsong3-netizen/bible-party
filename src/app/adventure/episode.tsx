@@ -64,33 +64,67 @@ export default function AdventureEpisodeScreen() {
   };
 
   if (finished) {
+    const isAdventureEnd = !nextEpisode;
     return (
       <ScenicScreen>
         <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
           <Pressable onPress={() => router.replace('/adventure')}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Aventure</Text></Pressable>
           <View style={[styles.glowCard, { marginTop: 24, alignItems: 'center' }]}>
-            <Text style={{ fontSize: 54 }}>🏆</Text>
-            <Text style={[styles.title, { fontSize: 30, lineHeight: 35, textAlign: 'center', marginTop: 12 }]}>Épisode terminé</Text>
+            <Text style={{ fontSize: 54 }}>{isAdventureEnd ? '🌟' : '🏆'}</Text>
+            <Text style={[styles.title, { fontSize: 30, lineHeight: 35, textAlign: 'center', marginTop: 12 }]}>{isAdventureEnd ? 'Aventure terminée !' : 'Épisode terminé'}</Text>
             <Text style={{ color: colors.muted, textAlign: 'center', lineHeight: 21, marginTop: 9 }}>{episode.title}</Text>
-            <View style={{ marginTop: 20, width: '100%', padding: 15, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
-              <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🧠 À RETENIR</Text>
-              <Text style={{ color: colors.text, fontSize: 15, fontWeight: '800', lineHeight: 21, marginTop: 6 }}>{episode.keyPoint}</Text>
-            </View>
-            {episode.quality ? <View style={{ marginTop: 12, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.blue }}>
-              <Text style={{ color: colors.blue, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>💡 JÉHOVAH</Text>
-              <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', marginTop: 6 }}>{episode.quality.title}</Text>
-              <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 4 }}>{episode.quality.text}</Text>
-            </View> : null}
-            {episode.characterIds?.length ? <Text style={{ color: colors.muted, fontSize: 11, textAlign: 'center', marginTop: 14 }}>👤 Personnage{episode.characterIds.length > 1 ? 's' : ''} rencontré{episode.characterIds.length > 1 ? 's' : ''} : {episode.characterIds.map(id => characterProfiles.find(character => character.id === id)?.name).filter(Boolean).join(', ')}</Text> : null}
-            <View style={{ marginTop: 14, width: '100%', padding: 14, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
-              <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>{isSeasonEnd ? '🏁 FIN DE SAISON' : '🧭 PROCHAINE ÉTAPE'}</Text>
-              <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', lineHeight: 21, marginTop: 5 }}>{isSeasonEnd ? `Tu viens de terminer « ${currentSeason?.title ?? '' } »` : nextEpisode ? `La suite : ${nextEpisode.title}` : 'Tu arrives à la fin de l’Aventure.'}</Text>
-              <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 5 }}>{isSeasonEnd ? (nextSeason?.seasonIntro?.transition ?? 'Une nouvelle période de l’histoire biblique commence.') : nextEpisode ? `L’histoire continue avec « ${nextEpisode.title} ». Garde ce que tu viens d’apprendre en tête pour comprendre la suite.` : 'Tu as parcouru toute la progression actuellement disponible.'}</Text>
-            </View>
-            <Pressable onPress={() => nextEpisode ? router.replace({ pathname: '/adventure/episode', params: { id: nextEpisode.id } }) : router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 20 }]}>
-              <Text style={styles.buttonText}>{nextEpisode ? (isSeasonEnd ? `Commencer ${nextSeason?.title ?? 'la suite'} ›` : `Épisode ${nextEpisode.number} ›`) : 'Retour à Aventure ›'}</Text>
-            </Pressable>
-            {isSeasonEnd ? <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, { width: '100%', marginTop: 10 }]}><Text style={styles.buttonText}>Voir les saisons</Text></Pressable> : null}
+
+            {isAdventureEnd ? <>
+              <View style={{ marginTop: 20, width: '100%', padding: 16, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+                <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🧠 LA LEÇON À RETENIR</Text>
+                <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 23, marginTop: 7 }}>Connaître la Bible, ce n’est pas seulement retenir des faits. C’est apprendre à connaître Jéhovah et Jésus, comprendre leurs qualités et agir en accord avec leur volonté.</Text>
+                <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 8 }}>Tu as parcouru l’histoire biblique. Maintenant, continue à apprendre, à mettre en pratique ce que tu découvres et à faire grandir ta relation avec Jéhovah.</Text>
+              </View>
+
+              <View style={{ marginTop: 14, width: '100%', padding: 16, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+                <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>❓ QUESTIONS POUR ALLER PLUS LOIN</Text>
+                {[
+                  ['Que signifie vraiment apprendre à connaître Jéhovah et Jésus ?', 'Les connaître de mieux en mieux et agir en accord avec leur volonté.'],
+                  ['Pourquoi avons-nous de nombreuses raisons de louer Jéhovah ?', 'Pour ses qualités, ses œuvres et sa bonté envers ses créatures.'],
+                  ['Comment Jéhovah se montre-t-il bon pour tous ?', 'Il prend soin de ses créatures et leur fait du bien.'],
+                  ['Si Jéhovah nous est cher, que sommes-nous poussés à faire ?', 'Parler de lui, le louer et faire connaître sa grandeur.'],
+                ].map(([questionText, answerText], qIndex) => (
+                  <View key={questionText} style={{ marginTop: qIndex === 0 ? 10 : 14, paddingTop: qIndex === 0 ? 0 : 12, borderTopWidth: qIndex === 0 ? 0 : 1, borderTopColor: colors.border }}>
+                    <Text style={{ color: colors.text, fontSize: 14, fontWeight: '900', lineHeight: 20 }}>{qIndex + 1}. {questionText}</Text>
+                    <Text style={{ color: colors.muted, fontSize: 13, lineHeight: 19, marginTop: 4 }}>→ {answerText}</Text>
+                  </View>
+                ))}
+              </View>
+
+              <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.blue }}>
+                <Text style={{ color: colors.blue, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🔁 TU PEUX REFAIRE L’AVENTURE</Text>
+                <Text style={{ color: colors.text, fontSize: 15, fontWeight: '800', lineHeight: 21, marginTop: 6 }}>Repars du début, rejoue les épisodes et essaie de retenir encore mieux les moments importants.</Text>
+              </View>
+
+              <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 20 }]}>
+                <Text style={styles.buttonText}>Rejouer l’Aventure ›</Text>
+              </Pressable>
+            </> : <>
+              <View style={{ marginTop: 20, width: '100%', padding: 15, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+                <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🧠 À RETENIR</Text>
+                <Text style={{ color: colors.text, fontSize: 15, fontWeight: '800', lineHeight: 21, marginTop: 6 }}>{episode.keyPoint}</Text>
+              </View>
+              {episode.quality ? <View style={{ marginTop: 12, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.blue }}>
+                <Text style={{ color: colors.blue, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>💡 JÉHOVAH</Text>
+                <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', marginTop: 6 }}>{episode.quality.title}</Text>
+                <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 4 }}>{episode.quality.text}</Text>
+              </View> : null}
+              {episode.characterIds?.length ? <Text style={{ color: colors.muted, fontSize: 11, textAlign: 'center', marginTop: 14 }}>👤 Personnage{episode.characterIds.length > 1 ? 's' : ''} rencontré{episode.characterIds.length > 1 ? 's' : ''} : {episode.characterIds.map(id => characterProfiles.find(character => character.id === id)?.name).filter(Boolean).join(', ')}</Text> : null}
+              <View style={{ marginTop: 14, width: '100%', padding: 14, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
+                <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>{isSeasonEnd ? '🏁 FIN DE SAISON' : '🧭 PROCHAINE ÉTAPE'}</Text>
+                <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', lineHeight: 21, marginTop: 5 }}>{isSeasonEnd ? `Tu viens de terminer « ${currentSeason?.title ?? '' } »` : nextEpisode ? `La suite : ${nextEpisode.title}` : 'Tu arrives à la fin de l’Aventure.'}</Text>
+                <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 5 }}>{isSeasonEnd ? (nextSeason?.seasonIntro?.transition ?? 'Une nouvelle période de l’histoire biblique commence.') : nextEpisode ? `L’histoire continue avec « ${nextEpisode.title} ». Garde ce que tu viens d’apprendre en tête pour comprendre la suite.` : 'Tu as parcouru toute la progression actuellement disponible.'}</Text>
+              </View>
+              <Pressable onPress={() => nextEpisode ? router.replace({ pathname: '/adventure/episode', params: { id: nextEpisode.id } }) : router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 20 }]}>
+                <Text style={styles.buttonText}>{nextEpisode ? (isSeasonEnd ? `Commencer ${nextSeason?.title ?? 'la suite'} ›` : `Épisode ${nextEpisode.number} ›`) : 'Retour à Aventure ›'}</Text>
+              </Pressable>
+              {isSeasonEnd ? <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, { width: '100%', marginTop: 10 }]}><Text style={styles.buttonText}>Voir les saisons</Text></Pressable> : null}
+            </>}
           </View>
         </ScrollView>
       </ScenicScreen>
