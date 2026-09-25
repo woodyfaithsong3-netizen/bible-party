@@ -6,6 +6,15 @@ const CHARACTERS_KEY = 'bible-party-characters-v1';
 const ADVENTURE_KEY = 'bible-party-adventure-v1';
 
 export type LocalScore = { teamName: string; score: number; playedAt: string };
+
+export async function saveScore(score: LocalScore) {
+  const current = await getScores();
+  const next = [score, ...current].sort((a, b) => b.score - a.score).slice(0, 20);
+  await AsyncStorage.setItem(KEY, JSON.stringify(next));
+}
+export async function getScores(): Promise<LocalScore[]> {
+  try { const raw = await AsyncStorage.getItem(KEY); return raw ? JSON.parse(raw) as LocalScore[] : []; } catch { return []; }
+}
 export async function getLearnedCharacters(): Promise<string[]> {
   try { const raw = await AsyncStorage.getItem(CHARACTERS_KEY); return raw ? JSON.parse(raw) as string[] : []; } catch { return []; }
 }
