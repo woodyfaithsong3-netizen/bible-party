@@ -1,4 +1,5 @@
 name: Deploy Bible Party to GitHub Pages
+# Force Pages deployment from the current main branch after app changes.
 
 on:
   push:
