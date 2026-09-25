@@ -29,17 +29,17 @@ export const SEASON_1 = {
     title: 'Au commencement',
     story: 'Jéhovah crée la terre et prépare un magnifique avenir pour les humains. Mais Adam et Ève désobéissent, le péché entre dans le monde et la méchanceté augmente. Malgré cela, certains humains restent fidèles. Noé en fait partie.',
     transition: 'Après le Déluge, une nouvelle étape commencera avec Noé, puis avec Abraham. La grande histoire biblique continue.',
-    seasonSummary: {
-      title: 'Ce que tu découvres sur Jéhovah',
-      qualities: [
-        { title: 'Créateur', text: 'Jéhovah est à l’origine de la création et prépare la terre pour les humains.' },
-        { title: 'Généreux', text: 'Il donne aux humains un magnifique cadre de vie et tout ce dont ils ont besoin.' },
-        { title: 'Juste', text: 'La désobéissance a des conséquences, et Jéhovah agit contre la méchanceté.' },
-        { title: 'Attentif', text: 'Il voit ce qui se passe dans le cœur des humains et avertit avant qu’un mauvais choix ne soit commis.' },
-        { title: 'Fidèle', text: 'Il protège Noé et sa famille et fait avancer son projet malgré la désobéissance humaine.' },
-      ],
-    },
     thread: 'Le péché a changé la situation des humains. Mais le projet de Jéhovah n’est pas abandonné.',
+  },
+  seasonSummary: {
+    title: 'Ce que tu découvres sur Jéhovah',
+    qualities: [
+      { title: 'Créateur', text: 'Jéhovah est à l’origine de la création et prépare la terre pour les humains.' },
+      { title: 'Généreux', text: 'Il donne aux humains un magnifique cadre de vie et tout ce dont ils ont besoin.' },
+      { title: 'Juste', text: 'La désobéissance a des conséquences, et Jéhovah agit contre la méchanceté.' },
+      { title: 'Attentif', text: 'Il voit ce qui se passe dans le cœur des humains et avertit avant qu’un mauvais choix ne soit commis.' },
+      { title: 'Fidèle', text: 'Il protège Noé et sa famille et fait avancer son projet malgré la désobéissance humaine.' },
+    ],
   },
   episodes: [
     {
