@@ -9,7 +9,9 @@ import { SEASON_2 } from '@/data/adventureSeason2';
 import { SEASON_3 } from '@/data/adventureSeason3';
 import { markAdventureEpisodeComplete } from '@/lib/storage';
 
-const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3];
+import { SEASON_4 } from '@/data/adventureSeason4';
+
+const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4];
 const ADVENTURE_EPISODES = ADVENTURE_SEASONS.flatMap(season => season.episodes);
 
 export default function AdventureEpisodeScreen() {
@@ -29,8 +31,15 @@ export default function AdventureEpisodeScreen() {
   }
 
   const question = episode.questions[index];
+  const choices = useMemo(() => {
+    const source = [...question.choices];
+    if (source.length <= 1) return source;
+    const seed = [...question.id].reduce((sum, char) => sum + char.charCodeAt(0), 0);
+    const offset = seed % source.length;
+    return source.slice(offset).concat(source.slice(0, offset));
+  }, [question]);
   const answered = selected !== null;
-  const isCorrect = answered ? question.choices[selected!]?.correct : false;
+  const isCorrect = answered ? choices[selected!]?.correct : false;
 
   const answer = (choiceIndex: number) => {
     if (answered) return;
