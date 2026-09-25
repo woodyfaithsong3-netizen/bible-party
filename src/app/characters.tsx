@@ -146,8 +146,8 @@ const CHRONOLOGICAL_BLOCKS = [
   { label: 'Avant Jésus', start: 'elizabeth', end: 'herod_antipas' },
   { label: 'Jésus & son ministère', start: 'roman_centurion', end: 'mary_mother_james' },
   { label: 'Débuts du christianisme', start: 'barnabas', end: 'apollos' },
-  { label: 'Premières congrégations', start: 'gaius_macedonian', end: 'epaphroditus' },
-  { label: 'Autres contemporains', start: 'euodia', end: 'syntyche' },
+  { label: 'Congrégations chrétiennes', start: 'gaius_macedonian', end: 'epaphroditus' },
+  { label: 'Congrégations chrétiennes', start: 'euodia', end: 'syntyche' },
 ] as const;
 
 const CHRONOLOGICAL_BLOCK_BY_ID = new Map<string, string>();
@@ -163,8 +163,9 @@ for (const block of CHRONOLOGICAL_BLOCKS) {
 }
 
 function ProfileCard({ item, onPress, learned }: { item: CharacterProfile; onPress: () => void; learned: boolean }) {
+  const chronologyBlock = CHRONOLOGICAL_BLOCK_BY_ID.get(item.id) ?? 'Chronologie';
   return <Pressable onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10 }, pressed && { opacity: 0.82 }]}>
-    <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1 }}>{item.era.toUpperCase()}</Text>
+    <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1 }}>{chronologyBlock.toUpperCase()}</Text>
     <Text style={{ color: colors.text, fontSize: 19, fontWeight: '900', marginTop: 4 }}>{item.name}</Text>
     <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginTop: 3 }}>{item.role}</Text>
     <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 8 }} numberOfLines={3}>{item.summary}</Text>
