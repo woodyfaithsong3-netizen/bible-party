@@ -56,7 +56,7 @@ export default function AdventureScreen() {
             <Text style={{ color: colors.text, fontSize: 24, fontWeight: '900', marginTop: 5 }}>{activeSeason.title}</Text>
             <Text style={{ color: colors.muted, marginTop: 3 }}>{activeSeason.subtitle}</Text>
             <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 9 }}>{activeSeason.description}</Text>
-            <View style={{ height: 8, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 15 }}><View style={{ width: Math.round((activeCompletedCount / activeSeason.episodes.length) * 100) + '%', height: '100%', backgroundColor: colors.accent }} /></View>
+            <View style={{ height: 8, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 15 }}><View style={{ width: `${Math.round((activeCompletedCount / activeSeason.episodes.length) * 100)}%`, height: '100%', backgroundColor: colors.accent }} /></View>
             <Text style={{ color: colors.muted, fontSize: 11, fontWeight: '800', marginTop: 8 }}>{activeCompletedCount}/{activeSeason.episodes.length} épisodes terminés</Text>
           </View>
           <View style={[styles.card, { marginTop: 12 }]}><Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.3 }}>🎬 INTRODUCTION</Text><Text style={{ color: colors.text, fontSize: 21, fontWeight: '900', marginTop: 7 }}>{activeSeason.seasonIntro.title}</Text><Text style={{ color: colors.muted, lineHeight: 20, marginTop: 8 }}>{activeSeason.seasonIntro.story}</Text><Text style={{ color: colors.text, lineHeight: 20, marginTop: 10 }}>{activeSeason.seasonIntro.transition}</Text></View>
