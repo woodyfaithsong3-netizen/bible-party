@@ -35,6 +35,28 @@ export default function AdventureScreen() {
           <Text style={{ color: colors.muted, fontSize: 11, fontWeight: '800', marginTop: 8 }}>{completedCount}/{SEASON_1.episodes.length} épisodes terminés</Text>
         </View>
 
+        <View style={[styles.card, { marginTop: 20 }]}>
+          <Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.3 }}>🎬 INTRODUCTION</Text>
+          <Text style={{ color: colors.text, fontSize: 21, fontWeight: '900', marginTop: 7 }}>{SEASON_1.seasonIntro.title}</Text>
+          <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 8 }}>{SEASON_1.seasonIntro.story}</Text>
+          <Text style={{ color: colors.text, lineHeight: 20, marginTop: 10 }}>{SEASON_1.seasonIntro.transition}</Text>
+        </View>
+
+        <View style={[styles.card, { marginTop: 12 }]}>
+          <Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.3 }}>💡 CE QUE TU DÉCOUVRES SUR JÉHOVAH</Text>
+          {SEASON_1.seasonIntro.qualities.map((quality) => (
+            <View key={quality.title} style={{ marginTop: 12 }}>
+              <Text style={{ color: colors.text, fontWeight: '900' }}>{quality.title}</Text>
+              <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 3 }}>{quality.text}</Text>
+            </View>
+          ))}
+        </View>
+
+        <View style={[styles.card, { marginTop: 12, borderColor: colors.accent }]}>
+          <Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.3 }}>🧵 LE FIL ROUGE</Text>
+          <Text style={{ color: colors.text, lineHeight: 20, marginTop: 7 }}>{SEASON_1.seasonIntro.thread}</Text>
+        </View>
+
         <View style={{ marginTop: 22 }}>
           <Text style={styles.sectionTitle}>PROGRESSION</Text>
           {SEASON_1.episodes.map((episode, index) => {
