@@ -49,7 +49,7 @@ export default function AdventureScreen() {
           </Pressable>
 
           <View style={{ marginTop: 26, alignItems: 'center' }}>
-            <Text style={{ fontSize: 46 }}>{['🌍','🌈','🏜️','👑','🏛️','✝️','🔥','🌳'][selectedSeason]}</Text>
+            <Text style={{ fontSize: 46 }}>{['🌍','🌈','🏜️','👑','🏛️','🕊️','🔥','🌳'][selectedSeason]}</Text>
             <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 2, marginTop: 14 }}>SAISON {activeSeason.number}</Text>
             <Text style={[styles.title, { textAlign: 'center', marginTop: 7 }]}>{activeSeason.title}</Text>
             <Text style={[styles.subtitle, { textAlign: 'center', marginTop: 6 }]}>{activeSeason.subtitle}</Text>
@@ -110,7 +110,7 @@ export default function AdventureScreen() {
               const first = season.episodes[0]?.number ?? 0;
               const last = season.episodes[season.episodes.length - 1]?.number ?? 0;
               const done = season.episodes.length > 0 && count === season.episodes.length;
-              const icon = ['🌍','🌈','🏜️','👑','🏛️','✝️','🔥','🌳'][seasonIndex];
+              const icon = ['🌍','🌈','🏜️','👑','🏛️','🕊️','🔥','🌳'][seasonIndex];
               return (
                 <View key={season.id} style={{ flexDirection: 'row', minHeight: 92 }}>
                   <View style={{ width: 42, alignItems: 'center' }}>
