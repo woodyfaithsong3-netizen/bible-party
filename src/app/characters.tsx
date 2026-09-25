@@ -1,6 +1,6 @@
 import React, { useMemo, useState } from 'react';
 import { Pressable, ScrollView, Text, TextInput, View } from 'react-native';
-import { router, useFocusEffect } from 'expo-router';
+import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { characterProfiles, CharacterProfile } from '@/data/characterProfiles';
 import { characterLearning } from '@/data/characterLearning';
 import { colors } from '@/theme/colors';
@@ -185,6 +185,7 @@ export default function CharactersScreen() {
   const [learned, setLearned] = useState<string[]>([]);
   const [selectedEra, setSelectedEra] = useState('Tous');
   const [onlyUnlearned, setOnlyUnlearned] = useState(false);
+  const params = useLocalSearchParams<{ characterId?: string }>();
   const [selected, setSelected] = useState<CharacterProfile | null>(null);
   const [unlockedIds, setUnlockedIds] = useState<string[]>([]);
   useFocusEffect(React.useCallback(() => {
@@ -192,7 +193,12 @@ export default function CharactersScreen() {
     void getAdventureProgress().then(progress => {
       const done = new Set(progress);
       const seasons = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
-      setUnlockedIds(Array.from(new Set(seasons.flatMap(season => season.episodes.filter(ep => done.has(ep.id)).flatMap(ep => ep.characterIds ?? [])))));
+      const ids = Array.from(new Set(seasons.flatMap(season => season.episodes.filter(ep => done.has(ep.id)).flatMap(ep => ep.characterIds ?? []))));
+      setUnlockedIds(ids);
+      if (params.characterId && ids.includes(params.characterId)) {
+        const target = characterProfiles.find(item => item.id === params.characterId);
+        if (target) setSelected(target);
+      }
     });
   }, []));
   const eras = useMemo(() => ['Tous', ...CHRONOLOGICAL_BLOCKS.map(block => block.label)], []);
