@@ -7,13 +7,12 @@ import { styles } from '@/theme/styles';
 import { SEASON_1 } from '@/data/adventure';
 import { SEASON_2 } from '@/data/adventureSeason2';
 import { SEASON_3 } from '@/data/adventureSeason3';
-import { markAdventureEpisodeComplete } from '@/lib/storage';
-
 import { SEASON_4 } from '@/data/adventureSeason4';
 import { SEASON_5 } from '@/data/adventureSeason5';
 import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
+import { markAdventureEpisodeComplete } from '@/lib/storage';
 
 const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 const ADVENTURE_EPISODES = ADVENTURE_SEASONS.flatMap(season => season.episodes);
@@ -24,7 +23,10 @@ export default function AdventureEpisodeScreen() {
   const currentIndex = episode ? ADVENTURE_EPISODES.findIndex(item => item.id === episode.id) : -1;
   const previousEpisode = currentIndex > 0 ? ADVENTURE_EPISODES[currentIndex - 1] : undefined;
   const nextEpisode = currentIndex >= 0 ? ADVENTURE_EPISODES[currentIndex + 1] : undefined;
-  const currentSeason = episode ? ADVENTURE_SEASONS.find(season => season.episodes.some(item => item.id === episode.id)) : undefined;
+  const currentSeasonIndex = episode ? ADVENTURE_SEASONS.findIndex(season => season.episodes.some(item => item.id === episode.id)) : -1;
+  const currentSeason = currentSeasonIndex >= 0 ? ADVENTURE_SEASONS[currentSeasonIndex] : undefined;
+  const nextSeason = currentSeasonIndex >= 0 ? ADVENTURE_SEASONS[currentSeasonIndex + 1] : undefined;
+  const isSeasonEnd = Boolean(currentSeason && nextEpisode && nextSeason && nextEpisode.id === nextSeason.episodes[0]?.id);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [finished, setFinished] = useState(false);
@@ -98,13 +100,16 @@ export default function AdventureEpisodeScreen() {
               <Text style={{ color: colors.muted, fontSize: 11, textAlign: 'center', marginTop: 14 }}>👤 Personnage rencontré : {episode.characterIds.includes('noe') ? 'Noé' : 'Adam'}</Text>
             ) : null}
             <View style={{ marginTop: 14, width: '100%', padding: 14, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
-              <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>{episode.number === 10 || episode.number === 33 ? '🏆 FIN DE SAISON' : '🧭 PROCHAINE ÉTAPE'}</Text>
+              <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>{isSeasonEnd ? '🏁 FIN DE SAISON' : '🧭 PROCHAINE ÉTAPE'}</Text>
+              <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', lineHeight: 21, marginTop: 5 }}>
+                {isSeasonEnd ? `Tu viens de terminer « ${currentSeason?.title ?? '' } »` : nextEpisode ? `La suite : ${nextEpisode.title}` : 'Tu arrives à la fin de l’Aventure.'}
+              </Text>
               <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 5 }}>
-                {episode.number === 10
-                  ? 'Tu as parcouru la création, Éden, les premières générations, l’époque d’Hénoch, Noé et le Déluge. La suite de l’histoire commence avec l’alliance et les générations qui mèneront à Abraham.'
-                  : episode.number === 33
-                    ? 'Tu as parcouru la période qui va du Déluge à la délivrance d’Égypte. La suite commence avec le peuple d’Israël dans le désert.'
-                    : 'Garde cette découverte en tête : elle sera reliée aux épisodes suivants.'}
+                {isSeasonEnd
+                  ? (nextSeason?.seasonIntro?.transition ?? 'Une nouvelle période de l’histoire biblique commence.')
+                  : nextEpisode
+                    ? `L’histoire continue avec « ${nextEpisode.title} ». Garde ce que tu viens d’apprendre en tête pour comprendre la suite.`
+                    : 'Tu as parcouru toute la progression actuellement disponible.'}
               </Text>
             </View>
             <Pressable
@@ -113,11 +118,11 @@ export default function AdventureEpisodeScreen() {
                 : router.replace('/adventure')}
               style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 20 }]}
             >
-              <Text style={styles.buttonText}>{nextEpisode ? `Épisode ${nextEpisode.number} ›` : 'Retour à Aventure ›'}</Text>
+              <Text style={styles.buttonText}>{nextEpisode ? (isSeasonEnd ? `Commencer ${nextSeason?.title ?? 'la suite'} ›` : `Épisode ${nextEpisode.number} ›`) : 'Retour à Aventure ›'}</Text>
             </Pressable>
-            {nextEpisode && (episode.number === 10 || episode.number === 33) ? (
+            {isSeasonEnd ? (
               <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, { width: '100%', marginTop: 10 }]}>
-                <Text style={styles.buttonText}>Voir le bilan de la saison</Text>
+                <Text style={styles.buttonText}>Voir les saisons</Text>
               </Pressable>
             ) : null}
           </View>
@@ -147,10 +152,10 @@ export default function AdventureEpisodeScreen() {
             {previousEpisode ? `Avant cette histoire : ${previousEpisode.title}` : currentSeason?.seasonIntro.title ?? 'Le début de cette période'}
           </Text>
           <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 5 }}>
-            {previousEpisode ? previousEpisode.keyPoint : currentSeason?.seasonIntro.story ?? 'Cette histoire ouvre une nouvelle étape de l’aventure.'}
+            {previousEpisode ? previousEpisode.intro : currentSeason?.seasonIntro.story ?? 'Cette histoire ouvre une nouvelle étape de l’aventure.'}
           </Text>
           <Text style={{ color: colors.accent, fontWeight: '800', lineHeight: 19, marginTop: 7 }}>
-            {previousEpisode ? 'Ce nouvel épisode poursuit directement cette histoire.' : currentSeason?.seasonIntro.transition ?? ''}
+            {previousEpisode ? `Ce qui vient de se passer prépare : ${episode.title}.` : currentSeason?.seasonIntro.transition ?? ''}
           </Text>
         </View>
 
@@ -205,13 +210,6 @@ export default function AdventureEpisodeScreen() {
         <Pressable disabled={!answered} onPress={() => void next()} style={[styles.button, styles.buttonPrimary, { marginTop: 18, opacity: answered ? 1 : .45 }]}>
           <Text style={styles.buttonText}>{index === episode.questions.length - 1 ? 'Terminer l’épisode' : 'Continuer ›'}</Text>
         </Pressable>
-
-        {episode.promise && index === episode.questions.length - 1 ? (
-          <View style={{ marginTop: 15, padding: 14, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: episode.promise === 'alliance' ? colors.blue : colors.accent }}>
-            <Text style={{ color: episode.promise === 'alliance' ? colors.blue : colors.accent, fontWeight: '900' }}>{episode.promise === 'alliance' ? '🌈 ALLIANCE' : '🧵 FIL ROUGE'}</Text>
-            <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 4 }}>{episode.promise === 'alliance' ? 'Une nouvelle étape de l’histoire est sur le point d’être découverte.' : 'Genèse 3:15 restera visible comme fil rouge de l’aventure.'}</Text>
-          </View>
-        ) : null}
       </ScrollView>
     </ScenicScreen>
   );
