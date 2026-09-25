@@ -15,7 +15,6 @@ const iconTrophy = require('../../assets/images/ui/trophy.png');
 const iconGamepad = require('../../assets/images/ui/gamepad.png');
 const iconHome = require('../../assets/images/ui/home.png');
 const iconSettings = require('../../assets/images/ui/settings.png');
-const iconTraining = require('../../assets/images/ui/training-cap.png');
 
 function NavItem({ icon, label, active, onPress }: { icon: number; label: string; active?: boolean; onPress: () => void }) {
   return <Pressable onPress={onPress} style={({ pressed }) => [styles.navItem, active && styles.navItemActive, pressed && styles.pressed]} accessibilityRole="button" accessibilityLabel={label}>
@@ -85,10 +84,6 @@ export default function HomeVisual() {
                   <View style={styles.desktopActionIcon}><Image source={iconBolt} style={styles.desktopActionAsset} resizeMode="contain" /></View>
                   <View style={styles.desktopActionCopy}><Text style={styles.desktopActionTitle}>Partie express</Text><Text style={styles.desktopActionSubtitle}>2 minutes • plusieurs jeux</Text></View><Text style={styles.desktopActionArrow}>›</Text>
                 </Pressable>
-                <Pressable onPress={() => router.push('/training')} style={({ pressed }) => [styles.desktopAction, pressed && styles.pressed]}>
-                  <View style={styles.desktopActionIcon}><Image source={iconTraining} style={styles.desktopActionAsset} resizeMode="contain" /></View>
-                  <View style={styles.desktopActionCopy}><Text style={styles.desktopActionTitle}>Entraînement</Text><Text style={styles.desktopActionSubtitle}>S'échauffer</Text></View><Text style={styles.desktopActionArrow}>›</Text>
-                </Pressable>
                 <Pressable onPress={() => router.push('/scores')} style={({ pressed }) => [styles.desktopAction, pressed && styles.pressed]}>
                   <View style={styles.desktopActionIcon}><Image source={iconTrophy} style={styles.desktopActionAsset} resizeMode="contain" /></View>
                   <View style={styles.desktopActionCopy}><Text style={styles.desktopActionTitle}>Scores</Text><Text style={styles.desktopActionSubtitle}>Vos records</Text></View><Text style={styles.desktopActionArrow}>›</Text>
@@ -108,7 +103,7 @@ export default function HomeVisual() {
             <Pressable onPress={() => router.push('/adventure')} style={({ pressed }) => [styles.play, compact && styles.playCompact, shortPhone && styles.playShort, pressed && styles.pressed]}><View style={[styles.playIcon, compact && styles.playIconCompact]}><Text style={styles.adventureEmoji}>🗺️</Text></View><View style={styles.playCopy}><Text style={[styles.playTitle, compact && styles.playTitleCompact]}>AVENTURE</Text><Text style={[styles.playSubtitle, compact && styles.playSubtitleCompact]}>Découvrir la Bible épisode par épisode</Text></View><Text style={styles.arrow}>›</Text></Pressable>
             <Pressable onPress={() => router.push('/setup')} style={({ pressed }) => [styles.play, compact && styles.playCompact, shortPhone && styles.playShort, pressed && styles.pressed]}><View style={[styles.playIcon, compact && styles.playIconCompact]}><Image source={iconGamepad} style={[styles.playAsset, compact && styles.playAssetCompact]} resizeMode="contain" /></View><View style={styles.playCopy}><Text style={[styles.playTitle, compact && styles.playTitleCompact]}>JOUER</Text><Text style={[styles.playSubtitle, compact && styles.playSubtitleCompact]}>Lancer une nouvelle partie</Text></View><Text style={styles.arrow}>›</Text></Pressable>
             <Pressable onPress={() => router.push('/game?modes=quiz,mystery,truefalse,challenge,quote,intruder,timesup,threeclues,forbidden,faceoff,risk&duration=2&teams=Équipe%20A|Équipe%20B')} style={({ pressed }) => [styles.quick, compact && styles.quickCompact, shortPhone && styles.quickShort, pressed && styles.pressed]}><View style={[styles.quickIcon, compact && styles.quickIconCompact]}><Image source={iconBolt} style={[styles.quickAsset, compact && styles.quickAssetCompact]} /></View><View style={styles.quickCopy}><Text style={styles.quickTitle}>Partie express</Text><Text style={styles.quickSubtitle}>2 minutes · plusieurs jeux</Text></View><Text style={styles.quickArrow}>›</Text></Pressable>
-            <View style={[styles.tiles, compact && styles.tilesCompact, shortPhone && styles.tilesShort]}><GlassTile icon={iconTraining} title="Entraînement" onPress={() => router.push('/training')} /><GlassTile icon={iconTrophy} title="Scores" onPress={() => router.push('/scores')} /><GlassTile icon={iconBible} title="Ma Bible" subtitle="Collection" onPress={() => router.push('/bible')} /><GlassTile icon={iconTraining} title="Révision 125" subtitle="Quiz ciblé" onPress={() => router.push('/revision')} /></View>
+            <View style={[styles.tiles, compact && styles.tilesCompact, shortPhone && styles.tilesShort]}><GlassTile icon={iconBible} title="Ma Bible" subtitle="Collection" onPress={() => router.push('/bible')} /><GlassTile icon={iconTrophy} title="Scores" onPress={() => router.push('/scores')} /><GlassTile icon={iconBible} title="Personnages" subtitle="Collection" onPress={() => router.push('/characters')} /></View>
           </>}
 
           <View style={[styles.nav, compact && styles.navCompact, shortPhone && styles.navShort, wide && styles.navWide]}>
