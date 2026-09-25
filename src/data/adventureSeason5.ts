@@ -7,10 +7,10 @@ export const SEASON_5 = {
   subtitle: '5e partie du Recueil d’histoires bibliques',
   description: 'Découvre comment des Israélites quittent Babylone, reconstruisent le temple puis les murailles de Jérusalem malgré l’opposition.',
   seasonIntro: {
-    title: 'Le retour à Jérusalem',
-    story: 'Jérusalem a été détruite et beaucoup d’Israélites sont en exil à Babylone. Mais la captivité ne marque pas la fin de leur histoire. Jéhovah avait annoncé qu’un reste retournerait à Jérusalem.',
-    transition: 'Dans cette saison, tu vas suivre Daniel et ses compagnons à Babylone, puis le retour des Israélites et la reconstruction de Jérusalem.',
-    thread: 'Même après la destruction de Jérusalem, Jéhovah continue de guider son peuple et de réaliser ce qu’il a annoncé.',
+    title: "Le retour",
+    story: "Jérusalem a été détruite et les Israélites sont en exil à Babylone. Pourtant, Jéhovah n’a pas oublié sa promesse : un reste va retourner à Jérusalem. Daniel, Esther, Esdras et Néhémie vont vivre des événements qui montrent leur courage et leur confiance.",
+    transition: "Pars de Babylone et accompagne les Israélites dans la reconstruction du temple puis des murailles de Jérusalem.",
+    thread: "Après une période de captivité, Jéhovah ouvre la voie au retour et aide son peuple à reconstruire.",
   },
   seasonSummary: {
     title: 'Ce que tu découvres sur Jéhovah',
