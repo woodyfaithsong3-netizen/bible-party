@@ -8,145 +8,6 @@ import { styles } from '@/theme/styles';
 import { ScenicScreen } from '@/components/ScenicScreen';
 import { getLearnedCharacters, markCharacterLearned } from '@/lib/storage';
 
-const CHRONOLOGICAL_CHARACTER_IDS = [
-  // 1. Les origines et les patriarches
-  'adam',
-  'noe',
-  'abraham',
-  'melchizedek',
-  'sarah',
-  'hagar',
-  'isaac',
-  'esau',
-  'jacob',
-  'leah',
-  'joseph',
-  // 2. Moïse et l’Exode
-  'moise',
-  'zipporah',
-  'jethro',
-  'korah',
-  'balaam',
-  'balak',
-  'josue',
-  // 3. L’époque des Juges
-  'naomi',
-  'ruth',
-  'boaz',
-  'manoah_father',
-  'samson',
-  'hannah',
-  'eli',
-  'samuel',
-  // 4. Saül, David et Salomon
-  'saul_king',
-  'david',
-  'michal',
-  'joab',
-  'salomon',
-  // 5. Israël et Juda : rois et prophètes
-  'elie',
-  'jehoshaphat',
-  'elisha',
-  'naaman',
-  'jonah',
-  'joel',
-  'amos',
-  'isaiah',
-  'micah',
-  'hezekiah',
-  'josiah',
-  'zephaniah',
-  'jeremiah',
-  'nahum',
-  'habakkuk',
-  'daniel',
-  // 6. L’exil à Babylone
-  'ezekiel',
-  'obadiah',
-  'zerubbabel',
-  // 7. Le retour d’exil
-  'haggai',
-  'zechariah',
-  'esther',
-  'ezra',
-  'nehemie',
-  'malachi',
-  'elizabeth',
-  // 8. La période avant Jésus
-  'zechariah_priest',
-  'joseph_jesus_father',
-  'marie',
-  'jean-baptiste',
-  'herod_antipas',
-  'roman_centurion',
-  // 9. Jésus et son ministère
-  'samaritan_woman',
-  'pierre',
-  'jean',
-  'philip_apostle',
-  'bartholomew',
-  'james_zebedee',
-  'thomas',
-  'james_alphaaeus',
-  'simon_zealot',
-  'mary_magdalen',
-  'joanna',
-  'woman_issue_blood',
-  'jairus',
-  'jairus_daughter',
-  'gerasene_man',
-  'samaritan_leper',
-  'martha',
-  'mary_bethany',
-  'blind_bartimaeus',
-  'zacchaeus',
-  'joseph_caiaphas',
-  'pilate',
-  'joseph_arimathea',
-  'mary_mother_james',
-  // 10. Les débuts du christianisme
-  'barnabas',
-  'gamaliel',
-  'stephen',
-  'philip_evangelizer',
-  'paul',
-  'ananias_damascus',
-  'tabitha',
-  'cornelius',
-  'mary_mark_mother',
-  'john_mark',
-  'james_brother_jesus',
-  'titus',
-  'silas',
-  'lydia',
-  // 11. Paul et les premières congrégations
-  'jason_thessalonica',
-  'priscilla',
-  'apollos',
-  'gaius_macedonian',
-  'aristarchus',
-  'euodia',
-  'syntyche',
-  'phoebe',
-  'claudius_lycias',
-  'felix',
-  'tychicus',
-  'eutychus',
-  'festus',
-  'agrippa_ii',
-  'berenice',
-  'julius_centurion',
-  'onesimus',
-  'philemon',
-  'apphia',
-  'archippus',
-  'onesiphorus',
-  'demas',
-  'jude_brother_jesus',
-  'epaphroditus',
-] as const;
-
 const CHRONOLOGICAL_GROUPS = [
   { title: 'Les origines et les patriarches', ids: ['adam','noe','abraham','melchizedek','sarah','hagar','isaac','esau','jacob','leah','joseph'] },
   { title: 'Moïse et l’Exode', ids: ['moise','zipporah','jethro','korah','balaam','balak','josue'] },
@@ -160,10 +21,6 @@ const CHRONOLOGICAL_GROUPS = [
   { title: 'Les débuts du christianisme', ids: ['barnabas','gamaliel','stephen','philip_evangelizer','paul','ananias_damascus','tabitha','cornelius','mary_mark_mother','john_mark','james_brother_jesus','titus','silas','lydia','jason_thessalonica','priscilla','apollos'] },
   { title: 'Paul et les premières congrégations', ids: ['gaius_macedonian','aristarchus','euodia','syntyche','phoebe','claudius_lycias','felix','tychicus','eutychus','festus','agrippa_ii','berenice','julius_centurion','onesimus','philemon','apphia','archippus','onesiphorus','demas','jude_brother_jesus','epaphroditus'] },
 ] as const;
-
-const CHARACTER_GROUP_BY_ID = new Map<string, string>(
-  CHRONOLOGICAL_GROUPS.flatMap(group => group.ids.map(id => [id, group.title] as const))
-);
 
 function ProfileCard({ item, onPress, learned }: { item: CharacterProfile; onPress: () => void; learned: boolean }) {
   return <Pressable onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10 }, pressed && { opacity: 0.82 }]}>
@@ -288,15 +145,28 @@ export default function CharactersScreen() {
     void getLearnedCharacters().then(setLearned);
   }, []));
   const eras = useMemo(() => ['Tous', ...Array.from(new Set(characterProfiles.map(x => x.era)))], []);
-  const orderedProfiles = useMemo(() => {
+  const groupedProfiles = useMemo(() => {
     const byId = new Map(characterProfiles.map(item => [item.id, item]));
-    const explicit = CHRONOLOGICAL_CHARACTER_IDS
-      .map(id => byId.get(id))
-      .filter((item): item is CharacterProfile => Boolean(item));
-    // L'ordre chronologique est celui défini par la liste dédiée ci-dessus.
-    // Aucun tri alphabétique ne doit pouvoir remplacer cet ordre.
-    return explicit;
+    return CHRONOLOGICAL_GROUPS.map(group => ({
+      title: group.title,
+      profiles: group.ids
+        .map(id => byId.get(id))
+        .filter((item): item is CharacterProfile => Boolean(item)),
+    }));
   }, []);
+
+  const filteredGroups = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    return groupedProfiles.map(group => ({
+      ...group,
+      profiles: group.profiles.filter(x => {
+        const matchesEra = selectedEra === 'Tous' || x.era === selectedEra;
+        const matchesQuery = !q || [x.name, x.era, x.role, x.summary, ...x.qualities].join(' ').toLowerCase().includes(q);
+        const matchesStudy = !onlyUnlearned || !learned.includes(x.id);
+        return matchesEra && matchesQuery && matchesStudy;
+      }),
+    })).filter(group => group.profiles.length > 0);
+  }, [query, selectedEra, onlyUnlearned, learned, groupedProfiles]);
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return orderedProfiles.filter(x => {
@@ -320,17 +190,9 @@ export default function CharactersScreen() {
       <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 8 }}><View style={{ width: `${Math.round((learned.length / Math.max(1, characterProfiles.length)) * 100)}%`, height: '100%', backgroundColor: colors.accent }} /></View>
     </View>
     <View style={{ flexDirection: 'row', gap: 8, flexWrap: 'wrap', marginBottom: 12 }}><Pressable onPress={() => setOnlyUnlearned(x => !x)} style={{ paddingHorizontal: 12, paddingVertical: 9, borderRadius: 16, borderWidth: 1, borderColor: onlyUnlearned ? colors.accent : colors.border, backgroundColor: onlyUnlearned ? colors.accent : colors.surface }}><Text style={{ color: onlyUnlearned ? colors.bg : colors.text, fontSize: 11, fontWeight: '900' }}>{onlyUnlearned ? '✓ À étudier' : 'À étudier'}</Text></Pressable></View>
-    {filtered.map((item, index) => {
-      const group = CHARACTER_GROUP_BY_ID.get(item.id);
-      const previousGroup = index > 0 ? CHARACTER_GROUP_BY_ID.get(filtered[index - 1].id) : undefined;
-      return <React.Fragment key={item.id}>
-        {group && group !== previousGroup ? (
-          <View style={{ marginTop: index === 0 ? 4 : 20, marginBottom: 8, paddingBottom: 7, borderBottomWidth: 1, borderBottomColor: colors.border }}>
-            <Text style={{ color: colors.accent, fontSize: 15, fontWeight: '900' }}>{group}</Text>
-          </View>
-        ) : null}
-        <ProfileCard key={item.id} item={item} learned={learned.includes(item.id)} onPress={() => setSelected(item)} />
-      </React.Fragment>;
-    })}
+    {filteredGroups.map(group => <View key={group.title} style={{ marginTop: 18 }}>
+      <Text style={{ color: colors.accent, fontSize: 17, fontWeight: '900', marginBottom: 9 }}>{group.title}</Text>
+      {group.profiles.map(item => <ProfileCard key={item.id} item={item} learned={learned.includes(item.id)} onPress={() => setSelected(item)} />)}
+    </View>)}
   </ScrollView></ScenicScreen>;
 }
