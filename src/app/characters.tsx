@@ -9,6 +9,7 @@ import { ScenicScreen } from '@/components/ScenicScreen';
 import { getLearnedCharacters, markCharacterLearned } from '@/lib/storage';
 
 const CHRONOLOGICAL_CHARACTER_IDS = [
+  // 1. Les origines et les patriarches
   'adam',
   'noe',
   'abraham',
@@ -20,13 +21,15 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'jacob',
   'leah',
   'joseph',
+  // 2. Moïse et l’Exode
   'moise',
-  'jethro',
   'zipporah',
+  'jethro',
   'korah',
   'balaam',
   'balak',
   'josue',
+  // 3. L’époque des Juges
   'naomi',
   'ruth',
   'boaz',
@@ -35,13 +38,15 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'hannah',
   'eli',
   'samuel',
+  // 4. Saül, David et Salomon
   'saul_king',
   'david',
   'michal',
   'joab',
   'salomon',
-  'jehoshaphat',
+  // 5. Israël et Juda : rois et prophètes
   'elie',
+  'jehoshaphat',
   'elisha',
   'naaman',
   'jonah',
@@ -56,9 +61,11 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'nahum',
   'habakkuk',
   'daniel',
+  // 6. L’exil à Babylone
   'ezekiel',
   'obadiah',
   'zerubbabel',
+  // 7. Le retour d’exil
   'haggai',
   'zechariah',
   'esther',
@@ -66,12 +73,14 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'nehemie',
   'malachi',
   'elizabeth',
+  // 8. La période avant Jésus
   'zechariah_priest',
   'joseph_jesus_father',
   'marie',
   'jean-baptiste',
   'herod_antipas',
   'roman_centurion',
+  // 9. Jésus et son ministère
   'samaritan_woman',
   'pierre',
   'jean',
@@ -96,6 +105,7 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'pilate',
   'joseph_arimathea',
   'mary_mother_james',
+  // 10. Les débuts du christianisme
   'barnabas',
   'gamaliel',
   'stephen',
@@ -104,25 +114,25 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'ananias_damascus',
   'tabitha',
   'cornelius',
-  'james_brother_jesus',
   'mary_mark_mother',
   'john_mark',
-  'jude_brother_jesus',
+  'james_brother_jesus',
+  'titus',
   'silas',
-  'jason_thessalonica',
   'lydia',
+  // 11. Paul et les premières congrégations
+  'jason_thessalonica',
   'priscilla',
   'apollos',
-  'titus',
-  'euodia',
-  'syntyche',
   'gaius_macedonian',
   'aristarchus',
+  'euodia',
+  'syntyche',
   'phoebe',
-  'eutychus',
-  'tychicus',
   'claudius_lycias',
   'felix',
+  'tychicus',
+  'eutychus',
   'festus',
   'agrippa_ii',
   'berenice',
@@ -133,6 +143,7 @@ const CHRONOLOGICAL_CHARACTER_IDS = [
   'archippus',
   'onesiphorus',
   'demas',
+  'jude_brother_jesus',
   'epaphroditus',
 ] as const;
 
