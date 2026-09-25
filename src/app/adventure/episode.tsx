@@ -5,11 +5,12 @@ import { ScenicScreen } from '@/components/ScenicScreen';
 import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { SEASON_1 } from '@/data/adventure';
+import { SEASON_2 } from '@/data/adventureSeason2';
 import { markAdventureEpisodeComplete } from '@/lib/storage';
 
 export default function AdventureEpisodeScreen() {
   const params = useLocalSearchParams<{ id?: string }>();
-  const episode = useMemo(() => SEASON_1.episodes.find(item => item.id === params.id), [params.id]);
+  const episode = useMemo(() => [SEASON_1, SEASON_2].flatMap(season => season.episodes).find(item => item.id === params.id), [params.id]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [finished, setFinished] = useState(false);
@@ -42,7 +43,7 @@ export default function AdventureEpisodeScreen() {
     return (
       <ScenicScreen>
         <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
-          <Pressable onPress={() => router.replace('/adventure')}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Saison 1</Text></Pressable>
+          <Pressable onPress={() => router.replace('/adventure')}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Aventure</Text></Pressable>
           <View style={[styles.glowCard, { marginTop: 24, alignItems: 'center' }]}>
             <Text style={{ fontSize: 54 }}>🏆</Text>
             <Text style={[styles.title, { fontSize: 30, lineHeight: 35, textAlign: 'center', marginTop: 12 }]}>Épisode terminé</Text>
@@ -76,15 +77,17 @@ export default function AdventureEpisodeScreen() {
               <Text style={{ color: colors.muted, fontSize: 11, textAlign: 'center', marginTop: 14 }}>👤 Personnage rencontré : {episode.characterIds.includes('noe') ? 'Noé' : 'Adam'}</Text>
             ) : null}
             <View style={{ marginTop: 14, width: '100%', padding: 14, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
-              <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>{episode.number === 10 ? '🏆 FIN DE SAISON' : '🧭 PROCHAINE ÉTAPE'}</Text>
+              <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>{episode.number === 10 || episode.number === 33 ? '🏆 FIN DE SAISON' : '🧭 PROCHAINE ÉTAPE'}</Text>
               <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 5 }}>
                 {episode.number === 10
                   ? 'Tu as parcouru la création, Éden, les premières générations, l’époque d’Hénoch, Noé et le Déluge. La suite de l’histoire commence avec l’alliance et les générations qui mèneront à Abraham.'
-                  : 'Garde cette découverte en tête : elle sera reliée aux épisodes suivants.'}
+                  : episode.number === 33
+                    ? 'Tu as parcouru la période qui va du Déluge à la délivrance d’Égypte. La suite commence avec le peuple d’Israël dans le désert.'
+                    : 'Garde cette découverte en tête : elle sera reliée aux épisodes suivants.'}
               </Text>
             </View>
             <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 20 }]}>
-              <Text style={styles.buttonText}>{episode.number === 10 ? 'Voir la saison ›' : 'Continuer l’aventure ›'}</Text>
+              <Text style={styles.buttonText}>{episode.number === 10 || episode.number === 33 ? 'Voir la saison ›' : 'Continuer l’aventure ›'}</Text>
             </Pressable>
           </View>
         </ScrollView>
