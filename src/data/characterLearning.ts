@@ -3979,7 +3979,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
       "Engagement dans le service chrétien"
     ],
     "difficulties": ["Elle avait travaillé avec Paul pour la bonne nouvelle mais connaissait un désaccord avec Euodie.","Elle devait accepter l’aide de la congrégation pour retrouver l’unité et continuer à servir avec les autres chrétiens."]
-  }
+  },
 
   "gaius_macedonian": {
     "studyFocus": "Gaius de Macédoine était un compagnon de Paul qui fut entraîné dans l’émeute provoquée à Éphèse par l’opposition à la prédication. Il faisait partie des compagnons de voyage de Paul.",
