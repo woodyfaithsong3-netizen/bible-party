@@ -21,11 +21,10 @@ const ADVENTURE_EPISODES = ADVENTURE_SEASONS.flatMap(season => season.episodes);
 export default function AdventureEpisodeScreen() {
   const params = useLocalSearchParams<{ id?: string }>();
   const episode = useMemo(() => ADVENTURE_EPISODES.find(item => item.id === params.id), [params.id]);
-  const nextEpisode = useMemo(() => {
-    if (!episode) return undefined;
-    const currentIndex = ADVENTURE_EPISODES.findIndex(item => item.id === episode.id);
-    return currentIndex >= 0 ? ADVENTURE_EPISODES[currentIndex + 1] : undefined;
-  }, [episode]);
+  const currentIndex = episode ? ADVENTURE_EPISODES.findIndex(item => item.id === episode.id) : -1;
+  const previousEpisode = currentIndex > 0 ? ADVENTURE_EPISODES[currentIndex - 1] : undefined;
+  const nextEpisode = currentIndex >= 0 ? ADVENTURE_EPISODES[currentIndex + 1] : undefined;
+  const currentSeason = episode ? ADVENTURE_SEASONS.find(season => season.episodes.some(item => item.id === episode.id)) : undefined;
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [finished, setFinished] = useState(false);
