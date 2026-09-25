@@ -6,10 +6,10 @@ export const SEASON_2 = {
   subtitle: '2e partie du Recueil d’histoires bibliques',
   description: 'Après le Déluge, suis le fil de la promesse à travers Noé, Abraham, Isaac, Jacob et Joseph, jusqu’à la délivrance d’Égypte.',
   seasonIntro: {
-    title: 'Après le Déluge',
-    story: 'Huit personnes ont survécu au Déluge. Les générations passent, puis Abraham entre dans le récit. Jéhovah lui fait une promesse qui va jouer un rôle majeur dans la suite de l’histoire.',
-    transition: 'Cette saison suit le fil qui va de Noé à Abraham, Isaac, Jacob et Joseph, puis jusqu’à Moïse et la sortie d’Égypte.',
-    thread: 'La promesse faite à Abraham va se préciser au fil des générations.',
+    title: "La promesse continue",
+    story: "Après le Déluge, les humains recommencent à peupler la terre. Puis Jéhovah choisit Abraham et lui fait une promesse qui va traverser plusieurs générations. Isaac, Jacob et Joseph deviennent des maillons importants de cette histoire.",
+    transition: "Suis cette famille jusqu’en Égypte, où ses descendants deviennent nombreux avant d’être réduits en esclavage.",
+    thread: "La promesse faite à Abraham avance de génération en génération, même quand les circonstances semblent tout compliquer.",
   },
   seasonSummary: {
     title: 'Ce que tu découvres sur Jéhovah',
