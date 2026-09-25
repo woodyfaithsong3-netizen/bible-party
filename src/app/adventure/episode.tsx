@@ -6,11 +6,20 @@ import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { SEASON_1 } from '@/data/adventure';
 import { SEASON_2 } from '@/data/adventureSeason2';
+import { SEASON_3 } from '@/data/adventureSeason3';
 import { markAdventureEpisodeComplete } from '@/lib/storage';
+
+const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3];
+const ADVENTURE_EPISODES = ADVENTURE_SEASONS.flatMap(season => season.episodes);
 
 export default function AdventureEpisodeScreen() {
   const params = useLocalSearchParams<{ id?: string }>();
-  const episode = useMemo(() => [SEASON_1, SEASON_2].flatMap(season => season.episodes).find(item => item.id === params.id), [params.id]);
+  const episode = useMemo(() => ADVENTURE_EPISODES.find(item => item.id === params.id), [params.id]);
+  const nextEpisode = useMemo(() => {
+    if (!episode) return undefined;
+    const currentIndex = ADVENTURE_EPISODES.findIndex(item => item.id === episode.id);
+    return currentIndex >= 0 ? ADVENTURE_EPISODES[currentIndex + 1] : undefined;
+  }, [episode]);
   const [index, setIndex] = useState(0);
   const [selected, setSelected] = useState<number | null>(null);
   const [finished, setFinished] = useState(false);
@@ -86,9 +95,19 @@ export default function AdventureEpisodeScreen() {
                     : 'Garde cette découverte en tête : elle sera reliée aux épisodes suivants.'}
               </Text>
             </View>
-            <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 20 }]}>
-              <Text style={styles.buttonText}>{episode.number === 10 || episode.number === 33 ? 'Voir la saison ›' : 'Continuer l’aventure ›'}</Text>
+            <Pressable
+              onPress={() => nextEpisode
+                ? router.replace({ pathname: '/adventure/episode', params: { id: nextEpisode.id } })
+                : router.replace('/adventure')}
+              style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 20 }]}
+            >
+              <Text style={styles.buttonText}>{nextEpisode ? `Épisode ${nextEpisode.number} ›` : 'Retour à Aventure ›'}</Text>
             </Pressable>
+            {nextEpisode && (episode.number === 10 || episode.number === 33) ? (
+              <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, { width: '100%', marginTop: 10 }]}>
+                <Text style={styles.buttonText}>Voir le bilan de la saison</Text>
+              </Pressable>
+            ) : null}
           </View>
         </ScrollView>
       </ScenicScreen>
