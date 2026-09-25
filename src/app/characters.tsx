@@ -11,7 +11,7 @@ import { getLearnedCharacters, markCharacterLearned } from '@/lib/storage';
 const CHRONOLOGICAL_BLOCKS = [
   {
     label: 'Origines & patriarches',
-    ids: ['adam', 'noe', 'abraham', 'sarah', 'melchizedek', 'hagar', 'isaac', 'esau', 'jacob', 'leah', 'joseph'],
+    ids: ['adam', 'noe', 'abraham', 'sarah', 'hagar', 'melchizedek', 'isaac', 'esau', 'jacob', 'leah', 'joseph'],
   },
   {
     label: 'Moïse & l’Exode',
@@ -19,7 +19,7 @@ const CHRONOLOGICAL_BLOCKS = [
   },
   {
     label: 'Époque des Juges',
-    ids: ['boaz', 'ruth', 'naomi', 'manoah_father', 'samson', 'hannah', 'eli', 'samuel'],
+    ids: ['ruth', 'naomi', 'manoah_father', 'samson', 'boaz', 'hannah', 'eli', 'samuel'],
   },
   {
     label: 'Saül, David & Salomon',
@@ -27,7 +27,7 @@ const CHRONOLOGICAL_BLOCKS = [
   },
   {
     label: 'Rois & prophètes',
-    ids: ['elie', 'naaman', 'jehoshaphat', 'elisha', 'jonah', 'joel', 'amos', 'isaiah', 'micah', 'hezekiah', 'josiah', 'zephaniah', 'jeremiah', 'nahum', 'habakkuk', 'daniel', 'ezekiel', 'obadiah'],
+    ids: ['elie', 'jehoshaphat', 'naaman', 'elisha', 'jonah', 'joel', 'amos', 'isaiah', 'micah', 'hezekiah', 'josiah', 'zephaniah', 'jeremiah', 'nahum', 'habakkuk', 'daniel', 'ezekiel', 'obadiah'],
   },
   {
     label: 'Exil & retour',
@@ -39,15 +39,15 @@ const CHRONOLOGICAL_BLOCKS = [
   },
   {
     label: 'Jésus & son ministère',
-    ids: ['joseph_caiaphas', 'pilate', 'roman_centurion', 'samaritan_woman', 'joanna', 'samaritan_leper', 'martha', 'pierre', 'jean', 'philip_apostle', 'bartholomew', 'james_alphaaeus', 'simon_zealot', 'james_zebedee', 'woman_issue_blood', 'gerasene_man', 'thomas', 'jairus', 'jairus_daughter', 'blind_bartimaeus', 'zacchaeus', 'joseph_arimathea', 'mary_mother_james'],
+    ids: ['joseph_caiaphas', 'pilate', 'joanna', 'samaritan_leper', 'martha', 'pierre', 'jean', 'philip_apostle', 'bartholomew', 'james_alphaaeus', 'simon_zealot', 'james_zebedee', 'roman_centurion', 'samaritan_woman', 'woman_issue_blood', 'gerasene_man', 'jairus', 'jairus_daughter', 'thomas', 'blind_bartimaeus', 'zacchaeus', 'joseph_arimathea', 'mary_mother_james'],
   },
   {
     label: 'Débuts du christianisme',
-    ids: ['gamaliel', 'stephen', 'philip_evangelizer', 'paul', 'ananias_damascus', 'cornelius', 'tabitha', 'mary_mark_mother', 'james_brother_jesus', 'jude_brother_jesus', 'john_mark', 'barnabas', 'silas', 'jason_thessalonica', 'priscilla'],
+    ids: ['gamaliel', 'stephen', 'philip_evangelizer', 'mary_mark_mother', 'james_brother_jesus', 'jude_brother_jesus', 'paul', 'ananias_damascus', 'cornelius', 'tabitha', 'barnabas', 'john_mark', 'silas', 'jason_thessalonica', 'priscilla'],
   },
   {
     label: 'Congrégations chrétiennes',
-    ids: ['lydia', 'euodia', 'syntyche', 'aristarchus', 'apollos', 'felix', 'gaius_macedonian', 'eutychus', 'tychicus', 'onesimus', 'philemon', 'apphia', 'archippus', 'onesiphorus', 'demas', 'phoebe', 'claudius_lycias', 'festus', 'agrippa_ii', 'berenice', 'julius_centurion', 'epaphroditus', 'titus'],
+    ids: ['jason_thessalonica', 'lydia', 'euodia', 'syntyche', 'aristarchus', 'titus', 'priscilla', 'apollos', 'felix', 'gaius_macedonian', 'eutychus', 'phoebe', 'claudius_lycias', 'tychicus', 'onesimus', 'philemon', 'apphia', 'archippus', 'onesiphorus', 'demas', 'festus', 'agrippa_ii', 'berenice', 'julius_centurion', 'epaphroditus'],
   },
 ] as const;
 
