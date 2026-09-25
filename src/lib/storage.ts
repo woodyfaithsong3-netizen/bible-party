@@ -3,6 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const KEY = 'bible-party-local-scores-v1';
 const GAMES_KEY = 'bible-party-games-v1';
 const ADVENTURE_KEY = 'bible-party-adventure-v1';
+const ANNEX_KEY = 'bible-party-character-annex-v1';
 
 export type LocalScore = { teamName: string; score: number; playedAt: string };
 
@@ -25,6 +26,18 @@ export async function markAdventureEpisodeComplete(id: string): Promise<string[]
   return next;
 }
 
+
+export async function getCharacterAnnexProgress(): Promise<string[]> {
+  try { const raw = await AsyncStorage.getItem(ANNEX_KEY); return raw ? JSON.parse(raw) as string[] : []; } catch { return []; }
+}
+
+export async function markCharacterAnnexComplete(id: string): Promise<string[]> {
+  const current = await getCharacterAnnexProgress();
+  const next = Array.from(new Set([...current, id]));
+  await AsyncStorage.setItem(ANNEX_KEY, JSON.stringify(next));
+  return next;
+}
+
 export async function getGamesPlayed(): Promise<number> {
   try { return Number((await AsyncStorage.getItem(GAMES_KEY)) || 0); } catch { return 0; }
 }
@@ -35,5 +48,5 @@ export async function recordGamePlayed(): Promise<number> {
 }
 
 export async function resetProgress() {
-  await AsyncStorage.multiRemove([KEY, GAMES_KEY, ADVENTURE_KEY]);
+  await AsyncStorage.multiRemove([KEY, GAMES_KEY, ADVENTURE_KEY, ANNEX_KEY]);
 }
