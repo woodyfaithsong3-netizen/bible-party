@@ -10,8 +10,9 @@ import { SEASON_3 } from '@/data/adventureSeason3';
 import { markAdventureEpisodeComplete } from '@/lib/storage';
 
 import { SEASON_4 } from '@/data/adventureSeason4';
+import { SEASON_5 } from '@/data/adventureSeason5';
 
-const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4];
+const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5];
 const ADVENTURE_EPISODES = ADVENTURE_SEASONS.flatMap(season => season.episodes);
 
 export default function AdventureEpisodeScreen() {
