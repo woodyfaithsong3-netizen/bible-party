@@ -55,7 +55,7 @@ export const SEASON_1 = {
       questions: [
         { id: 'creation-q1', type: 'quiz', prompt: 'Qui a tout créé ?', choices: [{ label: 'Jéhovah', correct: true }, { label: 'Adam', correct: false }, { label: 'Noé', correct: false }, { label: 'Moïse', correct: false }] },
         { id: 'creation-q2', type: 'quiz', prompt: 'Quand les humains sont-ils créés ?', choices: [{ label: 'Le premier jour', correct: false }, { label: 'Le troisième jour', correct: false }, { label: 'Le sixième jour', correct: true }, { label: 'Le septième jour', correct: false }] },
-        { id: 'creation-q3', type: 'quiz', prompt: 'Quelle est la première œuvre de Dieu mentionnée dans le récit ?', choices: [{ label: 'La lumière', correct: true }, { label: 'Les animaux', correct: false }, { label: 'Les humains', correct: false }, { label: 'Le jardin d’Éden', correct: false }] },
+        { id: 'creation-q3', type: 'quiz', prompt: 'Qu’est-ce qui apparaît au premier jour de création ?', choices: [{ label: 'La lumière', correct: true }, { label: 'Les animaux', correct: false }, { label: 'Les humains', correct: false }, { label: 'Le jardin d’Éden', correct: false }] },
         { id: 'creation-tf', type: 'truefalse', prompt: 'Jéhovah prépare la terre pour qu’elle puisse accueillir les humains.', choices: [{ label: 'Vrai', correct: true }, { label: 'Faux', correct: false }] },
       ],
     },
