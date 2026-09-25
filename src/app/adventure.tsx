@@ -20,7 +20,6 @@ export default function AdventureScreen() {
   const [completed, setCompleted] = useState<string[]>([]);
   const [selectedSeason, setSelectedSeason] = useState(0);
   useFocusEffect(useCallback(() => { void getAdventureProgress().then(setCompleted); }, []));
-  const seasonComplete = (seasonIndex: number) => seasonIndex === 0 || SEASONS[seasonIndex - 1].episodes.every(ep => completed.includes(ep.id));
   const activeSeasonIndex = selectedSeason;
   const activeSeason = SEASONS[activeSeasonIndex];
   const activeCompletedCount = activeSeason.episodes.filter(ep => completed.includes(ep.id)).length;
@@ -39,13 +38,12 @@ export default function AdventureScreen() {
           <Text style={styles.sectionTitle}>CHOISIR UNE SAISON</Text>
           <View style={{ flexDirection: 'row', flexWrap: 'wrap', gap: 9, marginTop: 10 }}>
             {SEASONS.map((season, seasonIndex) => {
-              const locked = !seasonComplete(seasonIndex);
               const count = season.episodes.filter(ep => completed.includes(ep.id)).length;
               const selected = seasonIndex === activeSeasonIndex;
-              return <Pressable key={season.id} onPress={() => setSelectedSeason(seasonIndex)} style={({ pressed }) => [{ width: '23%', minWidth: 72, flexGrow: 1, paddingVertical: 12, paddingHorizontal: 8, borderRadius: 16, borderWidth: 1, borderColor: selected ? colors.accent : colors.border, backgroundColor: selected ? 'rgba(242,201,76,.12)' : colors.surface2, opacity: locked ? .65 : 1 }, pressed && { transform: [{ scale: .97 }] }]}>
+              return <Pressable key={season.id} onPress={() => setSelectedSeason(seasonIndex)} style={({ pressed }) => [{ width: '23%', minWidth: 72, flexGrow: 1, paddingVertical: 12, paddingHorizontal: 8, borderRadius: 16, borderWidth: 1, borderColor: selected ? colors.accent : colors.border, backgroundColor: selected ? 'rgba(242,201,76,.12)' : colors.surface2, opacity: 1 }, pressed && { transform: [{ scale: .97 }] }]}>
                 <Text style={{ color: selected ? colors.accent : colors.muted, fontSize: 9, fontWeight: '900', letterSpacing: 1, textAlign: 'center' }}>SAISON</Text>
                 <Text style={{ color: colors.text, fontSize: 20, fontWeight: '900', textAlign: 'center', marginTop: 2 }}>{season.number}</Text>
-                <Text style={{ color: colors.muted, fontSize: 9, marginTop: 2, textAlign: 'center' }}>{locked ? '🔒' : count + '/' + season.episodes.length}</Text>
+                <Text style={{ color: colors.muted, fontSize: 9, marginTop: 2, textAlign: 'center' }}>{count + '/' + season.episodes.length}</Text>
               </Pressable>;
             })}
           </View>
