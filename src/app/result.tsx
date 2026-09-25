@@ -2,7 +2,7 @@ import React, { useEffect, useMemo } from 'react';
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import { ScenicScreen } from '@/components/ScenicScreen';
-import { saveScore } from '@/lib/storage';
+import { saveScore, recordGamePlayed } from '@/lib/storage';
 
 const trophyIcon = require('../../assets/images/ui/trophy.png');
 const crownIcon = require('../../assets/images/ui/crown.png');
@@ -18,7 +18,7 @@ export default function ResultScreen() {
     } catch { return []; }
   }, [scores]);
 
-  useEffect(() => { void (async () => { for (const t of parsed) await saveScore({ teamName: t.name, score: t.score, playedAt: new Date().toISOString() }); })(); }, [parsed]);
+  useEffect(() => { if (!parsed.length) return; void (async () => { for (const t of parsed) await saveScore({ teamName: t.name, score: t.score, playedAt: new Date().toISOString() }); await recordGamePlayed(); })(); }, [parsed]);
   const topScore = parsed[0]?.score;
   const winners = parsed.filter(t => t.score === topScore);
   const isTie = winners.length > 1;
@@ -46,7 +46,6 @@ export default function ResultScreen() {
 
       <View style={s.actions}>
         <Action title="Rejouer" subtitle="Même ambiance, nouvelle partie" onPress={() => router.replace('/setup')} />
-        <Action title="Entraînement" subtitle="S'échauffer avant la prochaine partie" secondary onPress={() => router.replace('/training')} />
         <Action title="Retour à l'accueil" secondary onPress={() => router.replace('/')} />
       </View>
     </ScrollView>
