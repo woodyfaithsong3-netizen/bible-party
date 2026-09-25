@@ -7,10 +7,10 @@ export const SEASON_4 = {
   subtitle: '4e partie du Recueil d’histoires bibliques',
   description: 'Découvre l’époque des rois d’Israël et de Juda, les prophètes et les événements qui conduisent à la captivité de Babylone.',
   seasonIntro: {
-    title: 'Les rois et les prophètes',
-    story: 'Israël a maintenant un roi. David puis Salomon marquent une période importante, mais le royaume se divise ensuite. Des rois fidèles et infidèles se succèdent, tandis que des prophètes avertissent le peuple.',
-    transition: 'Cette saison suit Israël et Juda depuis Saül, le premier roi, jusqu’à la destruction de Jérusalem et la captivité à Babylone.',
-    thread: 'À travers les rois, les prophètes et les événements du peuple, découvre comment Jéhovah reste fidèle à ses principes et à ses promesses.',
+    title: "Les rois d’Israël",
+    story: "Israël entre dans l’époque des rois. David connaît de grandes victoires, Salomon construit le temple, puis le royaume se divise. Pendant ce temps, des prophètes avertissent les rois et le peuple lorsque ceux-ci s’éloignent de Jéhovah.",
+    transition: "Suis cette période jusqu’à la chute de Jérusalem et à la captivité de Babylone.",
+    thread: "Les rois changent, les peuples changent, mais Jéhovah reste fidèle et continue d’avertir son peuple.",
   },
   seasonSummary: {
     title: 'Ce que tu découvres sur Jéhovah',
