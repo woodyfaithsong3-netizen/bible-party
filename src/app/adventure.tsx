@@ -6,14 +6,15 @@ import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { SEASON_1 } from '@/data/adventure';
 import { SEASON_2 } from '@/data/adventureSeason2';
+import { SEASON_3 } from '@/data/adventureSeason3';
 import { getAdventureProgress } from '@/lib/storage';
 
-const SEASONS = [SEASON_1, SEASON_2];
+const SEASONS = [SEASON_1, SEASON_2, SEASON_3];
 
 export default function AdventureScreen() {
   const [completed, setCompleted] = useState<string[]>([]);
   useFocusEffect(useCallback(() => { void getAdventureProgress().then(setCompleted); }, []));
-  const season1Complete = SEASON_1.episodes.every(ep => completed.includes(ep.id));
+  const seasonComplete = (seasonIndex: number) => seasonIndex === 0 || SEASONS[seasonIndex - 1].episodes.every(ep => completed.includes(ep.id));
 
   return (
     <ScenicScreen>
@@ -26,7 +27,7 @@ export default function AdventureScreen() {
         </View>
 
         {SEASONS.map((season, seasonIndex) => {
-          const locked = seasonIndex === 1 && !season1Complete;
+          const locked = !seasonComplete(seasonIndex);
           const completedCount = season.episodes.filter(ep => completed.includes(ep.id)).length;
           const complete = completedCount === season.episodes.length;
           return (
