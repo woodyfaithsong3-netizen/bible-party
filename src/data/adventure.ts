@@ -53,10 +53,10 @@ export const SEASON_1 = {
       keyPoint: 'Jéhovah est le Créateur. Les humains sont créés le sixième jour.',
       quality: { title: 'Créateur', text: 'Jéhovah prépare la terre et crée les humains.' },
       questions: [
-        { id: 'creation-q1', type: 'quiz', prompt: 'Qui est le Créateur ?', choices: [{ label: 'Jéhovah', correct: true }, { label: 'Adam', correct: false }, { label: 'Noé', correct: false }, { label: 'Moïse', correct: false }] },
+        { id: 'creation-q1', type: 'quiz', prompt: 'Qui a tout créé ?', choices: [{ label: 'Jéhovah', correct: true }, { label: 'Adam', correct: false }, { label: 'Noé', correct: false }, { label: 'Moïse', correct: false }] },
         { id: 'creation-q2', type: 'quiz', prompt: 'Quand les humains sont-ils créés ?', choices: [{ label: 'Le premier jour', correct: false }, { label: 'Le troisième jour', correct: false }, { label: 'Le sixième jour', correct: true }, { label: 'Le septième jour', correct: false }] },
-        { id: 'creation-order', type: 'order', prompt: 'Quel élément vient en dernier dans cette séquence ?', choices: [{ label: 'Les humains', correct: true }, { label: 'La lumière', correct: false }, { label: 'Les végétaux', correct: false }, { label: 'Les poissons', correct: false }] },
-        { id: 'creation-tf', type: 'truefalse', prompt: 'Dieu se repose de son œuvre créatrice le septième jour.', choices: [{ label: 'Vrai', correct: true }, { label: 'Faux', correct: false }] },
+        { id: 'creation-q3', type: 'quiz', prompt: 'Quelle est la première œuvre de Dieu mentionnée dans le récit ?', choices: [{ label: 'La lumière', correct: true }, { label: 'Les animaux', correct: false }, { label: 'Les humains', correct: false }, { label: 'Le jardin d’Éden', correct: false }] },
+        { id: 'creation-tf', type: 'truefalse', prompt: 'Jéhovah prépare la terre pour qu’elle puisse accueillir les humains.', choices: [{ label: 'Vrai', correct: true }, { label: 'Faux', correct: false }] },
       ],
     },
     {
@@ -70,8 +70,8 @@ export const SEASON_1 = {
       quality: { title: 'Généreux', text: 'Jéhovah donne aux humains un magnifique cadre de vie.' },
       questions: [
         { id: 'eden-q1', type: 'quiz', prompt: 'Comment s’appelait le jardin où Adam vivait ?', choices: [{ label: 'Éden', correct: true }, { label: 'Babel', correct: false }, { label: 'Canaan', correct: false }, { label: 'Guilgal', correct: false }] },
-        { id: 'eden-q2', type: 'quiz', prompt: 'Que trouve-t-on dans le jardin ?', choices: [{ label: 'Des arbres et des animaux', correct: true }, { label: 'Une ville fortifiée', correct: false }, { label: 'Un palais', correct: false }, { label: 'Une arche', correct: false }] },
-        { id: 'eden-tf', type: 'truefalse', prompt: 'Dieu voulait que la terre entière devienne comme un paradis.', choices: [{ label: 'Vrai', correct: true }, { label: 'Faux', correct: false }] },
+        { id: 'eden-q2', type: 'quiz', prompt: 'Pourquoi le jardin d’Éden était-il particulier ?', choices: [{ label: 'C’était un magnifique paradis', correct: true }, { label: 'C’était une ville fortifiée', correct: false }, { label: 'C’était un palais', correct: false }, { label: 'C’était un lieu de guerre', correct: false }] },
+        { id: 'eden-q3', type: 'quiz', prompt: 'Que voulait Dieu pour toute la terre ?', choices: [{ label: 'Qu’elle devienne comme le paradis', correct: true }, { label: 'Qu’elle reste inhabitée', correct: false }, { label: 'Qu’elle soit couverte de villes', correct: false }, { label: 'Qu’elle soit réservée aux animaux', correct: false }] },
       ],
     },
     {
@@ -116,8 +116,8 @@ export const SEASON_1 = {
       keyPoint: 'La promesse annoncée en Genèse 3:15 ouvre un fil qui se poursuivra dans l’histoire biblique.',
       quality: { title: 'Fidèle à son projet', text: 'Malgré le péché, Jéhovah annonce une suite à son projet pour les humains.' },
       questions: [
-        { id: 'promise-q2', type: 'quiz', prompt: 'Que devient la vie humaine après la désobéissance ?', choices: [{ label: 'Elle devient pénible et mène à la mort', correct: true }, { label: 'Elle devient parfaite', correct: false }, { label: 'Elle ne change pas', correct: false }, { label: 'Elle devient éternelle', correct: false }] },
-        { id: 'promise-tf', type: 'truefalse', prompt: 'Genèse 3:15 annonce une descendance promise.', choices: [{ label: 'Vrai', correct: true }, { label: 'Faux', correct: false }] },
+        { id: 'promise-q1', type: 'quiz', prompt: 'Comment devient la vie d’Adam et Ève hors d’Éden ?', choices: [{ label: 'Elle devient pénible', correct: true }, { label: 'Elle devient parfaite', correct: false }, { label: 'Elle ne change pas', correct: false }, { label: 'Elle devient éternelle', correct: false }] },
+        { id: 'promise-q2', type: 'quiz', prompt: 'Pourquoi leurs enfants vieillissent-ils et meurent-ils ?', choices: [{ label: 'À cause du péché hérité', correct: true }, { label: 'À cause du Déluge', correct: false }, { label: 'À cause de la famine', correct: false }, { label: 'À cause de la guerre', correct: false }] },
       ],
       promise: 'discover',
       characterIds: ['adam'],
@@ -149,8 +149,8 @@ export const SEASON_1 = {
       quality: { title: 'Il apprécie la fidélité', text: 'Jéhovah remarque ceux qui choisissent de faire le bien même quand leur entourage fait le mal.' },
       questions: [
         { id: 'henoch-q1', type: 'quiz', prompt: 'Avec qui Hénoch marchait-il ?', choices: [{ label: 'Avec le vrai Dieu', correct: true }, { label: 'Avec Caïn', correct: false }, { label: 'Avec Noé', correct: false }, { label: 'Avec Adam', correct: false }] },
-        { id: 'henoch-q2', type: 'quiz', prompt: 'Combien d’années Hénoch a-t-il vécu ?', choices: [{ label: '365 ans', correct: true }, { label: '120 ans', correct: false }, { label: '500 ans', correct: false }, { label: '969 ans', correct: false }] },
-        { id: 'henoch-tf', type: 'truefalse', prompt: 'Hénoch abandonne son service de Dieu parce que son époque est mauvaise.', choices: [{ label: 'Vrai', correct: false }, { label: 'Faux', correct: true }] },
+        { id: 'henoch-q2', type: 'quiz', prompt: 'Pourquoi Hénoch est-il remarquable ?', choices: [{ label: 'Il fait le bien malgré une époque mauvaise', correct: true }, { label: 'Il devient roi', correct: false }, { label: 'Il construit une arche', correct: false }, { label: 'Il conquiert un pays', correct: false }] },
+        { id: 'henoch-q3', type: 'quiz', prompt: 'Quel exemple Hénoch donne-t-il ?', choices: [{ label: 'Rester fidèle même quand les autres font le mal', correct: true }, { label: 'Éviter toute responsabilité', correct: false }, { label: 'Devenir riche', correct: false }, { label: 'Quitter sa famille', correct: false }] },
       ],
     },
     {
@@ -198,7 +198,7 @@ export const SEASON_1 = {
       questions: [
         { id: 'flood-q1', type: 'quiz', prompt: 'Combien de jours et de nuits la pluie tombe-t-elle ?', choices: [{ label: '40', correct: true }, { label: '7', correct: false }, { label: '12', correct: false }, { label: '70', correct: false }] },
         { id: 'flood-q2', type: 'quiz', prompt: 'Quel oiseau rapporte une feuille d’olivier ?', choices: [{ label: 'La colombe', correct: true }, { label: 'Le corbeau', correct: false }, { label: 'L’aigle', correct: false }, { label: 'Le moineau', correct: false }] },
-        { id: 'flood-q3', type: 'quiz', prompt: 'Qui ferme la porte de l’arche ?', choices: [{ label: 'Jéhovah', correct: true }, { label: 'Noé', correct: false }, { label: 'Sem', correct: false }, { label: 'Un Nefilim', correct: false }] },
+        { id: 'flood-q3', type: 'quiz', prompt: 'Que promet Jéhovah après le Déluge ?', choices: [{ label: 'Ne plus détruire la terre par un déluge', correct: true }, { label: 'Ne plus créer d’humains', correct: false }, { label: 'Ne plus envoyer de pluie', correct: false }, { label: 'Ne plus parler à Noé', correct: false }] },
         { id: 'flood-tf', type: 'truefalse', prompt: 'L’arc-en-ciel devient le signe de l’alliance avec Noé.', choices: [{ label: 'Vrai', correct: true }, { label: 'Faux', correct: false }] },
       ],
       promise: 'alliance',
