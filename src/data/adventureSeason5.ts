@@ -28,7 +28,7 @@ export const SEASON_5 = {
       title: 'Dans la fournaise ardente',
       icon: '🔥',
       intro: 'Neboukadnetsar ordonne à tous de se prosterner devant une immense image. Shadrak, Méshak et Abed-Négo refusent, même lorsqu’on leur donne une dernière chance.',
-      keyPoint: 'Les trois Hébreux restent fidèles à Jéhovah même sous la menace de mort.',
+      keyPoint: 'Les trois Hébreux restent fidèles à Jéhovah même sous la menace de mort.',context: 'Les exilés sont installés à Babylone depuis plusieurs années. Daniel et ses compagnons doivent maintenant rester fidèles dans une société qui exige le culte du roi et de ses dieux.',
       quality: { title: 'Protecteur', text: 'Jéhovah soutient ses serviteurs fidèles dans une situation extrêmement dangereuse.' },
       questions: [
         { id: 'r77a', type: 'quiz', prompt: 'Devant quoi les trois Hébreux refusent-ils de se prosterner ?', choices: [{ label: 'Une image', correct: true }, { label: 'Le temple', correct: false }, { label: 'Un roi d’Israël', correct: false }, { label: 'Une arche', correct: false }] },
@@ -42,7 +42,7 @@ export const SEASON_5 = {
       title: 'L’écriture sur la muraille',
       icon: '✍️',
       intro: 'Pendant un grand festin, le roi Belshatsar utilise les coupes prises dans le temple de Jérusalem. Une main apparaît et écrit sur la muraille.',
-      keyPoint: 'Daniel explique courageusement le message et annonce le jugement qui va tomber sur Babylone.',
+      keyPoint: 'Daniel explique courageusement le message et annonce le jugement qui va tomber sur Babylone.',context: 'Daniel a déjà montré sa fidélité sous plusieurs dirigeants babyloniens. Alors que Belshatsar organise un festin, le roi profane les objets du temple de Jérusalem. L’écriture sur la muraille annonce que la puissance de Babylone touche à sa fin.',
       quality: { title: 'Juste', text: 'Jéhovah voit les actes des dirigeants et peut leur demander des comptes.' },
       questions: [
         { id: 'r78a', type: 'quiz', prompt: 'Qui explique l’écriture sur la muraille ?', choices: [{ label: 'Daniel', correct: true }, { label: 'Néhémie', correct: false }, { label: 'Ezra', correct: false }, { label: 'Zorobabel', correct: false }] },
@@ -56,7 +56,7 @@ export const SEASON_5 = {
       title: 'Dans la fosse aux lions',
       icon: '🦁',
       intro: 'Des hommes jaloux cherchent un moyen de faire condamner Daniel. Une nouvelle loi interdit de prier quelqu’un d’autre que le roi, mais Daniel continue de prier Jéhovah.',
-      keyPoint: 'Daniel continue de servir Jéhovah avec constance malgré l’interdiction.',
+      keyPoint: 'Daniel continue de servir Jéhovah avec constance malgré l’interdiction.',context: 'Babylone est tombée et Daniel sert maintenant sous les Mèdes et les Perses. Sa fidélité est connue, mais ses adversaires cherchent encore un moyen de l’accuser.',
       quality: { title: 'Protecteur', text: 'Jéhovah protège Daniel dans la fosse aux lions.' },
       questions: [
         { id: 'r79a', type: 'quiz', prompt: 'Pourquoi Daniel est-il jeté dans la fosse aux lions ?', choices: [{ label: 'Parce qu’il continue de prier Jéhovah', correct: true }, { label: 'Parce qu’il a quitté Babylone', correct: false }, { label: 'Parce qu’il a refusé de servir le roi', correct: false }, { label: 'Parce qu’il a désobéi à Néhémie', correct: false }] },
@@ -70,7 +70,7 @@ export const SEASON_5 = {
       title: 'Ils quittent Babylone',
       icon: '🧳',
       intro: 'Cyrus permet aux Israélites de retourner à Jérusalem. Beaucoup entreprennent le voyage et emportent les objets précieux qui avaient été pris au temple.',
-      keyPoint: 'Le retour à Jérusalem réalise ce que Jéhovah avait annoncé par l’intermédiaire d’Isaïe.',
+      keyPoint: 'Le retour à Jérusalem réalise ce que Jéhovah avait annoncé par l’intermédiaire d’Isaïe.',context: 'La chute de Babylone ouvre enfin la voie au retour. Cyrus donne aux Juifs l’autorisation de rentrer à Jérusalem, accomplissant ainsi ce que Jéhovah avait annoncé longtemps auparavant.',
       quality: { title: 'Fidèle', text: 'Jéhovah réalise sa promesse de faire revenir son peuple à Jérusalem.' },
       questions: [
         { id: 'r80a', type: 'quiz', prompt: 'Qui permet aux Israélites de retourner à Jérusalem ?', choices: [{ label: 'Cyrus', correct: true }, { label: 'Neboukadnetsar', correct: false }, { label: 'Darius', correct: false }, { label: 'Artaxerxès', correct: false }] },
@@ -84,7 +84,7 @@ export const SEASON_5 = {
       title: 'Ils comptent sur Dieu',
       icon: '🧱',
       intro: 'Les Israélites commencent à reconstruire le temple, mais des adversaires cherchent à arrêter les travaux. Aggée et Zacharie les encouragent à reprendre courage.',
-      keyPoint: 'Le peuple reprend les travaux du temple en comptant sur l’aide de Jéhovah malgré l’opposition.',
+      keyPoint: 'Le peuple reprend les travaux du temple en comptant sur l’aide de Jéhovah malgré l’opposition.',context: 'Les premiers rapatriés sont revenus à Jérusalem et commencent à rétablir le culte. Mais l’opposition ralentit les travaux. Les prophètes Aggée et Zacharie encouragent le peuple à reprendre le chantier du temple.',
       quality: { title: 'Il encourage', text: 'Jéhovah donne à son peuple l’encouragement nécessaire pour reprendre les travaux.' },
       questions: [
         { id: 'r81a', type: 'quiz', prompt: 'Que commencent-ils à reconstruire ?', choices: [{ label: 'Le temple', correct: true }, { label: 'La tour de Babel', correct: false }, { label: 'Le palais de David', correct: false }, { label: 'Une nouvelle ville en Égypte', correct: false }] },
@@ -98,7 +98,7 @@ export const SEASON_5 = {
       title: 'Mardochée et Esther',
       icon: '👑',
       intro: 'Esther devient reine dans l’Empire perse. Avec l’aide de Mardochée, elle agit avec courage lorsque son peuple est menacé.',
-      keyPoint: 'Esther et Mardochée agissent courageusement pour protéger les Juifs.',
+      keyPoint: 'Esther et Mardochée agissent courageusement pour protéger les Juifs.',context: 'Pendant qu’une partie du peuple est revenue à Jérusalem, d’autres Juifs vivent encore dans l’Empire perse. Une menace grave apparaît sous le règne d’Assuérus : Esther et Mardochée vont devoir agir avec courage.',
       quality: { title: 'Protecteur', text: 'Jéhovah veille sur son peuple lorsque celui-ci est menacé.' },
       questions: [
         { id: 'r82a', type: 'quiz', prompt: 'Qui devient reine dans l’Empire perse ?', choices: [{ label: 'Esther', correct: true }, { label: 'Ruth', correct: false }, { label: 'Abigaïl', correct: false }, { label: 'Déborah', correct: false }] },
@@ -112,7 +112,7 @@ export const SEASON_5 = {
       title: 'Les murailles de Jérusalem',
       icon: '🧱',
       intro: 'Néhémie apprend que les murailles de Jérusalem sont toujours en ruines. Il prie Jéhovah, obtient l’autorisation du roi et organise les travaux malgré l’opposition.',
-      keyPoint: 'Néhémie et le peuple reconstruisent les murailles avec courage et organisation.',
+      keyPoint: 'Néhémie et le peuple reconstruisent les murailles avec courage et organisation.',context: 'Le temple a été reconstruit, mais Jérusalem reste vulnérable parce que ses murailles sont en ruines. Néhémie apprend la situation et décide d’agir. La reconstruction devient le dernier grand chantier de cette période de retour.',
       quality: { title: 'Il écoute', text: 'Néhémie recherche la direction de Jéhovah dans la prière avant d’agir.' },
       questions: [
         { id: 'r83a', type: 'quiz', prompt: 'Qui organise la reconstruction des murailles ?', choices: [{ label: 'Néhémie', correct: true }, { label: 'Daniel', correct: false }, { label: 'Esther', correct: false }, { label: 'Cyrus', correct: false }] },
