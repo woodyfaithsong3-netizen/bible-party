@@ -162,6 +162,7 @@ export default function AdventureEpisodeScreen() {
         <View style={[styles.card, { marginTop: 14 }]}>
           <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>📖 L’HISTOIRE</Text>
           <Text style={{ color: colors.text, lineHeight: 22, marginTop: 7 }}>{episode.intro}</Text>
+          {episode.context ? <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 9 }}>{episode.context}</Text> : null}
         </View>
 
         <View style={{ marginTop: 14, padding: 15, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
