@@ -3,6 +3,7 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 const KEY = 'bible-party-local-scores-v1';
 const TRAINING_KEY = 'bible-party-training-v1';
 const CHARACTERS_KEY = 'bible-party-characters-v1';
+const ADVENTURE_KEY = 'bible-party-adventure-v1';
 
 export type LocalScore = { teamName: string; score: number; playedAt: string };
 export type TrainingStats = {
@@ -58,6 +59,17 @@ export async function markCharacterLearned(id: string) {
   await AsyncStorage.setItem(CHARACTERS_KEY, JSON.stringify(next));
   return next;
 }
+export async function getAdventureProgress(): Promise<string[]> {
+  try { const raw = await AsyncStorage.getItem(ADVENTURE_KEY); return raw ? JSON.parse(raw) as string[] : []; } catch { return []; }
+}
+
+export async function markAdventureEpisodeComplete(id: string): Promise<string[]> {
+  const current = await getAdventureProgress();
+  const next = Array.from(new Set([...current, id]));
+  await AsyncStorage.setItem(ADVENTURE_KEY, JSON.stringify(next));
+  return next;
+}
+
 export async function resetProgress() {
-  await AsyncStorage.multiRemove([KEY, TRAINING_KEY, CHARACTERS_KEY]);
+  await AsyncStorage.multiRemove([KEY, TRAINING_KEY, CHARACTERS_KEY, ADVENTURE_KEY]);
 }
