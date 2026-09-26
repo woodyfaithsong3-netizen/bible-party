@@ -5,9 +5,9 @@ import { MysteryQuestion, QuoteQuestion } from '@/types';
 export const jwV61Quote: QuoteQuestion[] = [
   {
     id: 'v61-q-001', type: 'quote', category: 'Que veulent dire ces versets ?', difficulty: 'hard',
-    quote: 'Quel apôtre a expliqué que l’amour véritable ne se limite pas à des paroles, mais se reconnaît à ses qualités et à ses actions ?',
+    quote: 'Quel apôtre a décrit les qualités de l’amour véritable ?',
     answers: ['Paul', 'Pierre', 'Jean', 'Jacques'], correctAnswer: 0,
-    explanation: 'Paul décrit les qualités concrètes de l’amour dans sa lettre aux Corinthiens.',
+    explanation: 'Paul décrit l’amour par ses qualités concrètes dans sa lettre aux Corinthiens.',
     reference: '1 Corinthiens 13:4-7',
   },
 ];
@@ -20,8 +20,8 @@ export const jwV61Forbidden: MysteryQuestion[] = [
     reference: 'Genèse 6:13-22; 7:1-7', forbiddenWords: ['arche', 'Déluge', 'animaux'],
   },
   {
-    id: 'v61-m-002', type: 'mystery', category: 'Que veulent dire ces versets ?', difficulty: 'medium', answer: 'Psaume 119:105',
-    clues: ['Je compare la parole de Dieu à quelque chose qui éclaire le chemin.', 'Je parle de direction pour la conduite.', 'Je me trouve dans un long psaume.'],
+    id: 'v61-m-002', type: 'mystery', category: 'Que veulent dire ces versets ?', difficulty: 'medium', answer: 'Psaume 119',
+    clues: ['Je parle de la parole de Dieu comme d’une lumière pour la conduite.', 'Je donne un conseil pour guider sa conduite.', 'Je me trouve dans un long psaume.'],
     explanation: 'Psaume 119:105 utilise l’image d’une lampe pour illustrer le rôle de la parole de Dieu dans la conduite.',
     reference: 'Psaume 119:105', forbiddenWords: ['lampe', 'parole', 'chemin'],
   },
@@ -32,8 +32,8 @@ export const jwV61Forbidden: MysteryQuestion[] = [
     reference: 'Isaïe 44:28–45:1; Esdras 1:1-4', forbiddenWords: ['Perse', 'décret', 'Jérusalem'],
   },
   {
-    id: 'v61-m-004', type: 'mystery', category: 'La Bible et la science', difficulty: 'medium', answer: 'Job 36:27-28',
-    clues: ['Je décris un processus observé dans la nature.', 'J’évoque la formation de gouttes.', 'Je parle de l’eau qui retombe en pluie.'],
+    id: 'v61-m-004', type: 'mystery', category: 'La Bible et la science', difficulty: 'medium', answer: 'Job',
+    clues: ['Je décris un phénomène observé dans la nature.', 'J’évoque la formation de gouttes.', 'Je parle de la pluie.'],
     explanation: 'Le passage décrit sous une forme poétique la formation des gouttes et la pluie.',
     reference: 'Job 36:27-28', forbiddenWords: ['eau', 'gouttes', 'pluie'],
   },
@@ -56,7 +56,7 @@ export const jwV61Forbidden: MysteryQuestion[] = [
     reference: 'Juges 13:5; 16:15-22', forbiddenWords: ['force', 'cheveux', 'Dalila'],
   },
   {
-    id: 'v61-m-008', type: 'mystery', category: 'Prophéties', difficulty: 'medium', answer: 'Michée 5:2',
+    id: 'v61-m-008', type: 'mystery', category: 'Prophéties', difficulty: 'medium', answer: 'Michée',
     clues: ['Je parle d’un futur dirigeant.', 'Je situe son origine dans une petite ville de Juda.', 'Je mentionne Bethléem.'],
     explanation: 'Michée 5:2 annonce qu’un dirigeant sortirait de Bethléem.',
     reference: 'Michée 5:2; Matthieu 2:5-6', forbiddenWords: ['dirigeant', 'Bethléem', 'Juda'],
