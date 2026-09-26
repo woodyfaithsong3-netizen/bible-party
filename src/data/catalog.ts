@@ -152,10 +152,6 @@ export function normalizeQuestionCategory(q: Question): string {
     return 'Personnages';
   }
 
-  if (['rois', 'prophètes', 'prophètes-ecritures', 'disciples', 'juges', 'jeunes'].includes(source)) {
-    return 'Personnages';
-  }
-
   if (['lieux', 'villes', 'exil', 'exode', 'genèse', 'histoire biblique', 'objets'].includes(source)) {
     return 'Récits & événements';
   }
