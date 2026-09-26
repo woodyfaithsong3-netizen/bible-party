@@ -13,7 +13,7 @@ export type CharacterAnnex = {
 
 const CHRONOLOGY: Record<string, { seasonNumber: number; afterEpisode: number }> = {
   melchizedek:{seasonNumber:2,afterEpisode:13}, hagar:{seasonNumber:2,afterEpisode:13},
-  amos:{seasonNumber:4,afterEpisode:65}, micah:{seasonNumber:4,afterEpisode:72},
+  joel:{seasonNumber:4,afterEpisode:70}, amos:{seasonNumber:4,afterEpisode:65}, micah:{seasonNumber:4,afterEpisode:72},
   zephaniah:{seasonNumber:4,afterEpisode:73}, nahum:{seasonNumber:4,afterEpisode:76},
   habakkuk:{seasonNumber:4,afterEpisode:76}, obadiah:{seasonNumber:4,afterEpisode:76},
   malachi:{seasonNumber:5,afterEpisode:83},
