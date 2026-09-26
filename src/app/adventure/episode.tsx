@@ -41,6 +41,7 @@ export default function AdventureEpisodeScreen() {
   const [bonusIndex, setBonusIndex] = useState(0);
   const [bonusSelected, setBonusSelected] = useState<number | null>(null);
   const [newCharacterIds, setNewCharacterIds] = useState<string[]>([]);
+  const [adventureComplete, setAdventureComplete] = useState(false);
 
   if (!episode) {
     return <ScenicScreen><View style={styles.content}><Text style={styles.title}>Épisode introuvable</Text><Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { marginTop: 20 }]}><Text style={styles.buttonText}>Retour à Aventure</Text></Pressable></View></ScenicScreen>;
@@ -71,8 +72,9 @@ export default function AdventureEpisodeScreen() {
     }
     const before = new Set(await getAdventureProgress());
     const newlyDiscovered = (episode.characterIds ?? []).filter(id => !before.has(id));
-    await markAdventureEpisodeComplete(episode.id);
+    const after = await markAdventureEpisodeComplete(episode.id);
     setNewCharacterIds(newlyDiscovered);
+    setAdventureComplete(ADVENTURE_EPISODES.every(item => after.includes(item.id)));
     setFinished(true);
   };
 
@@ -127,6 +129,13 @@ export default function AdventureEpisodeScreen() {
                   <Text style={styles.buttonText}>{bonusIndex < FINAL_BONUS_QUESTIONS.length - 1 ? 'Question suivante ›' : 'Terminer les bonus'}</Text>
                 </Pressable>
               </View>
+
+              {adventureComplete ? <View style={{ marginTop: 14, width: '100%', padding: 16, borderRadius: 18, backgroundColor: 'rgba(242,201,76,.13)', borderWidth: 1, borderColor: colors.accent, alignItems: 'center' }}>
+                <Text style={{ fontSize: 40 }}>🌟</Text>
+                <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.6, marginTop: 5 }}>BADGE DÉBLOQUÉ</Text>
+                <Text style={{ color: colors.text, fontSize: 20, fontWeight: '900', marginTop: 4 }}>Toute l’histoire</Text>
+                <Text style={{ color: colors.muted, fontSize: 12, textAlign: 'center', marginTop: 4 }}>Tu as terminé les 116 histoires de l’Aventure.</Text>
+              </View> : null}
 
               {bonusIndex >= FINAL_BONUS_QUESTIONS.length ? <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
                 <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🔁 REFAIRE L’HISTOIRE</Text>
