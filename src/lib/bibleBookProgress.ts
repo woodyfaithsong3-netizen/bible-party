@@ -18,11 +18,10 @@ export function getDiscoveredBibleBookIds(completedEpisodeIds: string[], complet
   );
   const allEpisodes = SEASONS.flatMap(s => s.episodes);
   const adventureComplete = allEpisodes.length === 116 && allEpisodes.every(e => completed.has(e.id));
-  const allCharacterAnnexes = CHARACTER_ANNEXES.every(a => completedAnnexIds.includes(a.id));
-
+  
   return BIBLE_BOOKS.filter(book =>
     (book.adventureEpisodes ?? []).some(number => episodeNumbers.has(number)) ||
     (!!book.annexId && completedAnnexIds.includes(book.annexId)) ||
-    (book.status === 'new-annex' && adventureComplete && allCharacterAnnexes && completedFinalBookIds.includes(book.id))
+    false
   ).map(book => book.id);
 }
