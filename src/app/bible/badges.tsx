@@ -20,6 +20,7 @@ import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
 
 const SEASONS = [SEASON_1,SEASON_2,SEASON_3,SEASON_4,SEASON_5,SEASON_6,SEASON_7,SEASON_8];
+const FINAL_CHARACTER_ARCHIVE_IDS = new Set(['sons_korah','asaph','heman','ethan','nicodeme','lazare']);
 
 export default function BibleBadgesScreen() {
   const [ctx, setCtx] = useState({ episodes: 0, characters: 0, games: 0, adventureComplete: false, seasonsCompleted: 0, books: 0 });
@@ -28,11 +29,12 @@ export default function BibleBadgesScreen() {
     const validEpisodes = SEASONS.flatMap(s => s.episodes);
     const ids = new Set(completed);
     const episodes = validEpisodes.filter(e => ids.has(e.id));
+    const adventureComplete = validEpisodes.length === 116 && validEpisodes.every(e => ids.has(e.id));
     const characters = new Set([
       ...episodes.flatMap(e => e.characterIds ?? []),
       ...CHARACTER_ANNEXES.filter(a => annexes.includes(a.id)).map(a => a.characterId),
+      ...(adventureComplete ? Array.from(FINAL_CHARACTER_ARCHIVE_IDS) : []),
     ]).size;
-    const adventureComplete = validEpisodes.length === 116 && validEpisodes.every(e => ids.has(e.id));
     const seasonsCompleted = SEASONS.filter(s => s.episodes.length > 0 && s.episodes.every(e => ids.has(e.id))).length;
     const discovered = getDiscoveredBibleBookIds(completed, annexes, finalBooks);
     let nextBooks = storedBooks;

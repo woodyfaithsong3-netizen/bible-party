@@ -17,6 +17,7 @@ import { SEASON_8 } from '@/data/adventureSeason8';
 import { getAdventureProgress, getCharacterAnnexProgress } from '@/lib/storage';
 
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
+const FINAL_CHARACTER_ARCHIVE_IDS = new Set(['sons_korah','asaph','heman','ethan','nicodeme','lazare']);
 
 export default function BibleCharactersScreen() {
   const [completed, setCompleted] = useState<string[]>([]);
@@ -26,9 +27,11 @@ export default function BibleCharactersScreen() {
   }, []));
   const unlocked = useMemo(() => {
     const done = new Set(completed);
+    const adventureComplete = SEASONS.every(s => s.episodes.length > 0 && s.episodes.every(e => done.has(e.id)));
     return new Set([
       ...SEASONS.flatMap(s => s.episodes.filter(e => done.has(e.id)).flatMap(e => e.characterIds ?? [])),
       ...CHARACTER_ANNEXES.filter(a => annexes.includes(a.id)).map(a => a.characterId),
+      ...(adventureComplete ? Array.from(FINAL_CHARACTER_ARCHIVE_IDS) : []),
     ]);
   }, [completed, annexes]);
   const count = characterProfiles.filter(c => unlocked.has(c.id)).length;
