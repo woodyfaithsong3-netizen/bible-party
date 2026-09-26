@@ -33,12 +33,12 @@ export const BADGES: Badge[] = [
   { id:'four-seasons', category:'aventure', title:'À mi-parcours', description:'Termine 4 saisons.', icon:'🧭', unlocked:c=>(c.seasonsCompleted??0)>=4 },
   { id:'eight-seasons', category:'aventure', title:'Aventure complète', description:'Termine les 8 saisons.', icon:'🌟', unlocked:c=>(c.seasonsCompleted??0)>=8 },
 
-  { id:'first-character', category:'collection', title:'Première rencontre', description:'Découvre ton premier personnage.', icon:'👤', unlocked:c=>c.characters>=1 },
-  { id:'ten-characters', category:'collection', title:'Visages connus', description:'Découvre 10 personnages.', icon:'👥', unlocked:c=>c.characters>=10 },
-  { id:'twenty-five-characters', category:'collection', title:'Belle collection', description:'Découvre 25 personnages.', icon:'📚', unlocked:c=>c.characters>=25 },
-  { id:'fifty-characters', category:'collection', title:'Grande collection', description:'Découvre 50 personnages.', icon:'🗂️', unlocked:c=>c.characters>=50 },
-  { id:'hundred-characters', category:'collection', title:'Cent visages', description:'Découvre 100 personnages.', icon:'🏛️', unlocked:c=>c.characters>=100 },
-  { id:'all-characters', category:'collection', title:'Les 177', description:'Découvre les 177 personnages.', icon:'🏆', unlocked:c=>c.characters>=characterProfiles.length },
+  { id:'first-character', category:'collection', title:'Première rencontre', description:'Lis ta première fiche personnage.', icon:'👤', unlocked:c=>c.characters>=1 },
+  { id:'ten-characters', category:'collection', title:'Visages connus', description:'Lis 10 fiches personnage.', icon:'👥', unlocked:c=>c.characters>=10 },
+  { id:'twenty-five-characters', category:'collection', title:'Belle collection', description:'Lis 25 fiches personnage.', icon:'📚', unlocked:c=>c.characters>=25 },
+  { id:'fifty-characters', category:'collection', title:'Grande collection', description:'Lis 50 fiches personnage.', icon:'🗂️', unlocked:c=>c.characters>=50 },
+  { id:'hundred-characters', category:'collection', title:'Cent visages', description:'Lis 100 fiches personnage.', icon:'🏛️', unlocked:c=>c.characters>=100 },
+  { id:'all-characters', category:'collection', title:'Les 177', description:'Lis les 177 fiches personnage.', icon:'🏆', unlocked:c=>c.characters>=characterProfiles.length },
 
   { id:'first-book', category:'bibliotheque', title:'Premier livre', description:'Découvre ton premier livre de la Bible.', icon:'📖', unlocked:c=>(c.books??0)>=1 },
   { id:'ten-books', category:'bibliotheque', title:'La bibliothèque grandit', description:'Découvre 10 livres.', icon:'📚', unlocked:c=>(c.books??0)>=10 },
@@ -53,9 +53,9 @@ export const BADGES: Badge[] = [
   { id:'hundred-games', category:'party', title:'Cent parties', description:'Termine 100 parties.', icon:'💎', unlocked:c=>c.games>=100 },
   { id:'two-hundred-fifty-games', category:'party', title:'Infatigable', description:'Termine 250 parties.', icon:'⚡', unlocked:c=>c.games>=250 },
 
-  { id:'secret-journey', category:'special', title:'Le fil continue', description:'Découvre au moins un personnage et termine une histoire.', icon:'🔮', secret:true, unlocked:c=>c.characters>=1&&c.episodes>=1 },
-  { id:'secret-library', category:'special', title:'Entre les rayons', description:'Découvre au moins 10 livres et 10 personnages.', icon:'✨', secret:true, unlocked:c=>(c.books??0)>=10&&c.characters>=10 },
-  { id:'secret-complete', category:'special', title:'Collection légendaire', description:'Termine l’Aventure et complète les 66 livres et 177 personnages.', icon:'👑', secret:true, unlocked:c=>c.adventureComplete===true&&(c.books??0)>=BIBLE_BOOKS.length&&c.characters>=characterProfiles.length },
+  { id:'secret-journey', category:'special', title:'Le fil continue', description:'Lis au moins une fiche personnage et termine une histoire.', icon:'🔮', secret:true, unlocked:c=>c.characters>=1&&c.episodes>=1 },
+  { id:'secret-library', category:'special', title:'Entre les rayons', description:'Découvre au moins 10 livres et lis 10 fiches personnage.', icon:'✨', secret:true, unlocked:c=>(c.books??0)>=10&&c.characters>=10 },
+  { id:'secret-complete', category:'special', title:'Collection légendaire', description:'Termine l’Aventure, complète les 66 livres et lis les 177 fiches personnage.', icon:'👑', secret:true, unlocked:c=>c.adventureComplete===true&&(c.books??0)>=BIBLE_BOOKS.length&&c.characters>=characterProfiles.length },
 ];
 
 export function getBadgeProgress(badge: Badge, ctx: Parameters<Badge['unlocked']>[0]) {
