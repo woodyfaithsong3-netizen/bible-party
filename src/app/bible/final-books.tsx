@@ -6,7 +6,7 @@ import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { BIBLE_BOOKS_BY_ID } from '@/data/bibleBooks';
 import { FINAL_BIBLE_BOOK_DISCOVERIES } from '@/data/finalBibleBookDiscoveries';
-import { getAdventureProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, markFinalBibleBookDiscovered } from '@/lib/storage';
+import { getAdventureProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, markFinalBibleBookDiscovered, markBibleBookDiscovered } from '@/lib/storage';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
 import { SEASON_1 } from '@/data/adventure';
 import { SEASON_2 } from '@/data/adventureSeason2';
@@ -49,6 +49,7 @@ export default function FinalBibleBooksScreen() {
     setSelectedAnswer(index);
     if (index === selected.correct) {
       const next = await markFinalBibleBookDiscovered(selected.bookId);
+      await markBibleBookDiscovered(selected.bookId);
       setCompletedBooks(next);
     }
   };
