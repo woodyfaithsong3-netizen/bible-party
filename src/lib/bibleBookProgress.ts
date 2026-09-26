@@ -11,7 +11,7 @@ import { SEASON_8 } from '@/data/adventureSeason8';
 
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 
-export function getDiscoveredBibleBookIds(completedEpisodeIds: string[], completedAnnexIds: string[]) {
+export function getDiscoveredBibleBookIds(completedEpisodeIds: string[], completedAnnexIds: string[], completedFinalBookIds: string[] = []) {
   const completed = new Set(completedEpisodeIds);
   const episodeNumbers = new Set(
     SEASONS.flatMap(s => s.episodes.filter(e => completed.has(e.id)).map(e => e.number))
@@ -23,6 +23,6 @@ export function getDiscoveredBibleBookIds(completedEpisodeIds: string[], complet
   return BIBLE_BOOKS.filter(book =>
     (book.adventureEpisodes ?? []).some(number => episodeNumbers.has(number)) ||
     (!!book.annexId && completedAnnexIds.includes(book.annexId)) ||
-    (book.status === 'new-annex' && adventureComplete && allCharacterAnnexes)
+    (book.status === 'new-annex' && adventureComplete && allCharacterAnnexes && completedFinalBookIds.includes(book.id))
   ).map(book => book.id);
 }
