@@ -91,6 +91,8 @@ const CATEGORY_MAP: Record<string, string> = {
   'livres-hebreux': 'Bible & enseignements',
 
   // 4 — Jéhovah & la foi : qualités, foi, conduite et enseignements spirituels.
+  'jéhovah & la foi': 'Jéhovah & la foi',
+  'jehovah & la foi': 'Jéhovah & la foi',
   foi: 'Jéhovah & la foi',
   courage: 'Jéhovah & la foi',
   confiance: 'Jéhovah & la foi',
