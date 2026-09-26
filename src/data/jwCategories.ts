@@ -164,8 +164,8 @@ export const categoryTrueFalseExpansion: TrueFalseQuestion[] = tfSeeds.map((s, i
 
 const mysterySeeds: Array<[string,string[],string,string,string]> = [
  ['La Bible',['Prière modèle','Prière','Royaume'], 'Questions bibliques','Matthieu 6:9-10','easy'],
- ['Genèse 1:1',['Premier verset','Création','Cieux et terre'], 'Que veulent dire ces versets ?','Genèse 1:1','easy'],
- ['Psaume 119:105',['Lampe','Chemin','Parole'], 'Que veulent dire ces versets ?','Psaume 119:105','easy'],
+ ['Genèse',['Premier livre','Création','Cieux et terre'], 'Que veulent dire ces versets ?','Genèse 1:1','easy'],
+ ['Psaume 119',['Lampe','Chemin','Parole'], 'Que veulent dire ces versets ?','Psaume 119:105','easy'],
  ['Cyrus',['Roi perse','Décret','Retour à Jérusalem'], 'La Bible et l’Histoire','Esdras 1:1-4','medium'],
  ['Néhémie',['Murailles','Jérusalem','Reconstruction'], 'La Bible et l’Histoire','Néhémie 2–6','easy'],
  ['L’arc-en-ciel',['Après le Déluge','Alliance','Signe'], 'La Bible et la science','Genèse 9:12-16','easy'],
@@ -176,11 +176,11 @@ const mysterySeeds: Array<[string,string[],string,string,string]> = [
  ['Jérémie',['Prophète','Nouvelle alliance','Juda'], 'Prophéties','Jérémie 31:31-34','medium'],
  ['Tabitha',['Joppé','Dorcas','Pierre'], 'Personnages','Actes 9:36-42','medium'],
 ];
-export const categoryMysteryExpansion: MysteryQuestion[] = mysterySeeds.map((s,i)=>({id:`jwcat-mystery-${i+1}`,type:'mystery',answer:s[0],clues:s[1],category:s[2],reference:s[3],difficulty:s[4] as Difficulty,explanation:`La réponse est ${s[0]}.`}));
+export const categoryMysteryExpansion: MysteryQuestion[] = mysterySeeds.map((s,i)=>({id:`jwcat-mystery-${i+1}`,type:'mystery',answer:s[0],clues:s[1],category:s[2],reference:s[3],difficulty:s[4] as Difficulty,explanation:`Les indices convergent vers ${s[0]} grâce aux éléments bibliques indiqués.`}));
 
 const timesUpSeeds: Array<[string,string[],string]> = [
  ['Noé',['Arche','Déluge','Alliance'],'Questions bibliques'],
- ['Genèse 1:1',['Commencement','Cieux','Terre'],'Que veulent dire ces versets ?'],
+ ['Genèse',['Commencement','Cieux','Terre'],'Que veulent dire ces versets ?'],
  ['Cyrus',['Perse','Décret','Retour'],'La Bible et l’Histoire'],
  ['Lévitique 13',['Maladie','Isolement','Prêtre'],'La Bible et la science'],
  ['Rahab',['Jéricho','Espions','Cordon rouge'],'Personnages'],
@@ -225,12 +225,12 @@ export const categoryIntruderExpansion: IntruderQuestion[] = [
 ];
 
 export const categoryChallengeExpansion: Challenge[] = [
-  {id:'jwcat-challenge-1',type:'challenge',category:'Questions bibliques',difficulty:'easy',prompt:'Citez 3 conseils bibliques en 10 secondes.',seconds:10},
-  {id:'jwcat-challenge-2',type:'challenge',category:'Que veulent dire ces versets ?',difficulty:'easy',prompt:'Citez 2 versets connus en 10 secondes.',seconds:10},
-  {id:'jwcat-challenge-3',type:'challenge',category:'La Bible et l’Histoire',difficulty:'medium',prompt:'Citez 3 lieux bibliques en 10 secondes.',seconds:10},
-  {id:'jwcat-challenge-4',type:'challenge',category:'La Bible et la science',difficulty:'easy',prompt:'Citez 2 éléments de la nature mentionnés dans la Bible.',seconds:10},
-  {id:'jwcat-challenge-5',type:'challenge',category:'Personnages',difficulty:'easy',prompt:'Citez 5 personnages bibliques.',seconds:10},
-  {id:'jwcat-challenge-6',type:'challenge',category:'Évangiles',difficulty:'easy',prompt:'Citez 4 disciples de Jésus.',seconds:10},
-  {id:'jwcat-challenge-7',type:'challenge',category:'Rois & prophètes',difficulty:'medium',prompt:'Citez 3 rois ou prophètes.',seconds:10},
-  {id:'jwcat-challenge-8',type:'challenge',category:'Prophéties',difficulty:'medium',prompt:'Citez 3 prophètes bibliques.',seconds:10},
+  {id:'jwcat-challenge-1',type:'challenge',category:'Questions bibliques',difficulty:'easy',prompt:'En 10 secondes : nommez un conseil biblique sur les relations avec les autres.',seconds:10},
+  {id:'jwcat-challenge-2',type:'challenge',category:'Que veulent dire ces versets ?',difficulty:'easy',prompt:'En 10 secondes : nommez un livre de la Bible qui contient des conseils pratiques.',seconds:10},
+  {id:'jwcat-challenge-3',type:'challenge',category:'La Bible et l’Histoire',difficulty:'medium',prompt:'En 10 secondes : nommez un lieu où un événement biblique important a eu lieu.',seconds:10},
+  {id:'jwcat-challenge-4',type:'challenge',category:'La Bible et la science',difficulty:'easy',prompt:'En 10 secondes : nommez un élément de la nature mentionné dans la Bible.',seconds:10},
+  {id:'jwcat-challenge-5',type:'challenge',category:'Personnages',difficulty:'easy',prompt:'En 10 secondes : nommez un personnage biblique qui a montré du courage.',seconds:10},
+  {id:'jwcat-challenge-6',type:'challenge',category:'Évangiles',difficulty:'easy',prompt:'En 10 secondes : nommez un des Douze apôtres.',seconds:10},
+  {id:'jwcat-challenge-7',type:'challenge',category:'Rois & prophètes',difficulty:'medium',prompt:'En 10 secondes : nommez un roi ou un prophète d’Israël.',seconds:10},
+  {id:'jwcat-challenge-8',type:'challenge',category:'Prophéties',difficulty:'medium',prompt:'En 10 secondes : nommez un prophète qui a annoncé un événement à venir.',seconds:10},
 ];
