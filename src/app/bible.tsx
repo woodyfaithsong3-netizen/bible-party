@@ -14,7 +14,7 @@ import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
 import { BADGES, getBadgeProgress } from '@/data/badges';
-import { getAdventureProgress, getCharacterAnnexProgress, getBibleBookProgress, getGamesPlayed, markBibleBookDiscovered } from '@/lib/storage';
+import { getAdventureProgress, getCharacterAnnexProgress, getBibleBookProgress, getFinalBibleBookProgress, getGamesPlayed, markBibleBookDiscovered } from '@/lib/storage';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
 
@@ -35,8 +35,8 @@ export default function BibleScreen() {
   const [completedAnnexes, setCompletedAnnexes] = useState<string[]>([]);
   const [bibleBooks, setBibleBooks] = useState(0);
   const load = useCallback(async () => {
-    const [a, g, annexProgress, storedBooks] = await Promise.all([getAdventureProgress(), getGamesPlayed(), getCharacterAnnexProgress(), getBibleBookProgress()]);
-    const discoveredIds = getDiscoveredBibleBookIds(a, annexProgress);
+    const [a, g, annexProgress, storedBooks, finalBooks] = await Promise.all([getAdventureProgress(), getGamesPlayed(), getCharacterAnnexProgress(), getBibleBookProgress(), getFinalBibleBookProgress()]);
+    const discoveredIds = getDiscoveredBibleBookIds(a, annexProgress, finalBooks);
     let nextBooks = storedBooks;
     for (const id of discoveredIds) nextBooks = await markBibleBookDiscovered(id);
     setCompleted(a); setGames(g);
