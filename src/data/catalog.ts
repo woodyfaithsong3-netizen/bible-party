@@ -104,6 +104,47 @@ const CATEGORY_MAP: Record<string, string> = {
   défis: 'Bible & enseignements',
 };
 
+const getQuestionText = (q: Question): string => {
+  const candidate = q as Question & {
+    question?: string;
+    statement?: string;
+    prompt?: string;
+    quote?: string;
+    answer?: string;
+  };
+  return [
+    candidate.question,
+    candidate.statement,
+    candidate.prompt,
+    candidate.quote,
+    candidate.answer,
+  ].filter((value): value is string => typeof value === 'string').join(' ');
+};
+
+const isCharacterFocused = (q: Question): boolean => {
+  const text = getQuestionText(q).trim();
+  return /^(qui|quel homme|quelle femme|quel roi|quelle reine|quel prophète|quelle prophétesse|quel disciple|quel apôtre|quel juge|quelle personne)\\b/i.test(text)
+    || /\\b(qui a|qui était|qui fut|qui a été|quel homme|quelle femme|quel roi|quel prophète|quel disciple|quel apôtre)\\b/i.test(text);
+};
+
+export function normalizeQuestionCategory(q: Question): string {
+  const source = typeof q.category === 'string' ? q.category.trim().toLowerCase() : '';
+  
+  if (['rois & prophètes', 'rois', 'prophètes', 'prophètes-ecritures', 'disciples', 'juges', 'jeunes'].includes(source)) {
+    return 'Personnages';
+  }
+
+  if (['évangiles', 'evangiles', 'actes', 'la bible et l’histoire'].includes(source) && isCharacterFocused(q)) {
+    return 'Personnages';
+  }
+
+  if (['questions bibliques', 'bible'].includes(source) && isCharacterFocused(q)) {
+    return 'Personnages';
+  }
+
+  return normalizeCategory(q.category);
+}
+
 export function normalizeCategory(value: unknown) {
   if (typeof value !== 'string') return 'Bible & enseignements';
   const key = value.trim().toLowerCase();
@@ -127,7 +168,7 @@ export function selectTrainingQuestions(category: string, difficulty: string, mi
   const normalized = category === 'Toutes' ? 'Toutes' : normalizeCategory(category);
   const all = getQuizCatalog();
   const matches = (q: QuizQuestion) =>
-    (normalized === 'Toutes' || q.category === normalized) &&
+    (normalized === 'Toutes' || normalizeQuestionCategory(q) === normalized) &&
     (difficulty === 'all' || q.difficulty === difficulty);
   const base = all.filter(matches);
   const shuffle = <T,>(items: T[]) => [...items].sort(() => Math.random() - 0.5);
