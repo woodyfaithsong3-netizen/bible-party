@@ -12,20 +12,20 @@ const C = {
 } as const;
 
 export const jwV56Mystery: MysteryQuestion[] = [
-  {id:'v56-m-001',type:'mystery',category:C.versets,difficulty:'medium',answer:'Salomon',clues:['Sagesse','Proverbes','Temple'],explanation:'Salomon est associé à la sagesse et à plusieurs écrits bibliques.',reference:'1 Rois 3:5-12; Proverbes 1:1'},
-  {id:'v56-m-002',type:'mystery',category:C.versets,difficulty:'easy',answer:'Pierre',clues:['Pêcheur','Apôtre','Lettre'],explanation:'Pierre est un apôtre et l’auteur traditionnellement associé à deux lettres bibliques.',reference:'Matthieu 4:18-20; 1 Pierre 1:1'},
-  {id:'v56-m-003',type:'mystery',category:C.histoire,difficulty:'medium',answer:'Ézéchias',clues:['Roi de Juda','Assyrie','Tunnel'],explanation:'Ézéchias a régné à Jérusalem et a fait réaliser des travaux liés à l’approvisionnement en eau.',reference:'2 Rois 18:1-7; 20:20'},
-  {id:'v56-m-004',type:'mystery',category:C.histoire,difficulty:'medium',answer:'Esdras',clues:['Prêtre','Loi','Jérusalem'],explanation:'Esdras est présenté comme un prêtre et un spécialiste de la Loi qui est retourné à Jérusalem.',reference:'Esdras 7:6, 10'},
-  {id:'v56-m-005',type:'mystery',category:C.science,difficulty:'medium',answer:'Salomon',clues:['Arbres','Animaux','Sagesse'],explanation:'Le récit associe Salomon à des observations sur les plantes et les animaux.',reference:'1 Rois 4:29-34'},
+  {id:'v56-m-001',type:'mystery',category:C.versets,difficulty:'medium',answer:'Salomon',clues:['roi','sagesse','Jéhovah'],explanation:'Salomon a demandé à Jéhovah de lui donner de la sagesse pour gouverner.',reference:'1 Rois 3:5-12'},
+  {id:'v56-m-002',type:'mystery',category:C.versets,difficulty:'easy',answer:'Pierre',clues:['pêcheur','apôtre','Jésus'],explanation:'Pierre était pêcheur avant de suivre Jésus comme apôtre.',reference:'Matthieu 4:18-20'},
+  {id:'v56-m-003',type:'mystery',category:C.histoire,difficulty:'medium',answer:'Ézéchias',clues:['roi de Juda','Assyrie','eau'],explanation:'Ézéchias a fait réaliser des travaux pour amener l’eau à Jérusalem.',reference:'2 Rois 18:1-7; 20:20'},
+  {id:'v56-m-004',type:'mystery',category:C.histoire,difficulty:'medium',answer:'Esdras',clues:['prêtre','Loi','Jérusalem'],explanation:'Esdras était prêtre et bien versé dans la Loi de Jéhovah.',reference:'Esdras 7:6, 10'},
+  {id:'v56-m-005',type:'mystery',category:C.science,difficulty:'medium',answer:'Salomon',clues:['plantes','animaux','sagesse'],explanation:'Salomon parlait des plantes et des animaux grâce à la sagesse qu’il avait reçue.',reference:'1 Rois 4:29-34'},
 ];
 
 export const jwV56Challenges: Challenge[] = [
-  {id:'v56-d-001',type:'challenge',category:C.versets,difficulty:'easy',prompt:'En 10 secondes, citez trois passages bibliques qui parlent de confiance en Dieu.',seconds:10},
-  {id:'v56-d-002',type:'challenge',category:C.versets,difficulty:'medium',prompt:'En 10 secondes, donnez deux versets et expliquez chacun en quelques mots.',seconds:10},
-  {id:'v56-d-003',type:'challenge',category:C.versets,difficulty:'medium',prompt:'En 10 secondes, citez trois passages qui donnent un conseil pratique.',seconds:10},
-  {id:'v56-d-004',type:'challenge',category:C.histoire,difficulty:'easy',prompt:'En 10 secondes, citez trois lieux importants dans l’histoire biblique.',seconds:10},
-  {id:'v56-d-005',type:'challenge',category:C.histoire,difficulty:'medium',prompt:'En 10 secondes, citez trois puissances ou royaumes mentionnés dans la Bible.',seconds:10},
-  {id:'v56-d-006',type:'challenge',category:C.histoire,difficulty:'medium',prompt:'En 10 secondes, citez trois éléments liés à la transmission d’un texte ancien.',seconds:10},
+  {id:'v56-d-001',type:'challenge',category:C.versets,difficulty:'easy',prompt:'En 10 secondes, citez trois personnages qui ont fait confiance à Jéhovah.',seconds:10},
+  {id:'v56-d-002',type:'challenge',category:C.versets,difficulty:'medium',prompt:'En 10 secondes, citez deux livres bibliques qui donnent des conseils pratiques.',seconds:10},
+  {id:'v56-d-003',type:'challenge',category:C.versets,difficulty:'medium',prompt:'En 10 secondes, citez trois conseils bibliques que vous connaissez.',seconds:10},
+  {id:'v56-d-004',type:'challenge',category:C.histoire,difficulty:'easy',prompt:'En 10 secondes, citez trois villes importantes de la Bible.',seconds:10},
+  {id:'v56-d-005',type:'challenge',category:C.histoire,difficulty:'medium',prompt:'En 10 secondes, citez trois royaumes ou empires mentionnés dans la Bible.',seconds:10},
+  {id:'v56-d-006',type:'challenge',category:C.histoire,difficulty:'medium',prompt:'En 10 secondes, citez trois supports utilisés pour écrire dans l’Antiquité.',seconds:10},
   {id:'v56-d-007',type:'challenge',category:C.science,difficulty:'easy',prompt:'En 10 secondes, citez trois phénomènes naturels mentionnés dans la Bible.',seconds:10},
   {id:'v56-d-008',type:'challenge',category:C.science,difficulty:'medium',prompt:'En 10 secondes, citez trois exemples de conseils d’hygiène ou de propreté bibliques.',seconds:10},
   {id:'v56-d-009',type:'challenge',category:C.science,difficulty:'medium',prompt:'En 10 secondes, citez trois éléments du monde naturel évoqués dans le livre de Job.',seconds:10},
