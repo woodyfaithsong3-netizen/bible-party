@@ -6,14 +6,14 @@ export type Badge = {
   description: string;
   icon: string;
   secret?: boolean;
-  unlocked: (ctx: { episodes: number; characters: number; games: number }) => boolean;
+  unlocked: (ctx: { episodes: number; characters: number; games: number; adventureComplete?: boolean }) => boolean;
 };
 
 export const BADGES: Badge[] = [
   { id:'first-story', title:'Le premier pas', description:'Termine ta première histoire de l’Aventure.', icon:'🌱', unlocked: c => c.episodes >= 1 },
   { id:'ten-stories', title:'En route', description:'Termine 10 histoires.', icon:'🗺️', unlocked: c => c.episodes >= 10 },
   { id:'fifty-stories', title:'Grand voyageur', description:'Termine 50 histoires.', icon:'🏔️', unlocked: c => c.episodes >= 50 },
-  { id:'all-stories', title:'Toute l’histoire', description:'Termine les 116 histoires.', icon:'🌟', unlocked: c => c.episodes >= 116 },
+  { id:'all-stories', title:'Toute l’histoire', description:'Termine les 116 histoires.', icon:'🌟', unlocked: c => c.adventureComplete === true },
   { id:'first-character', title:'Première rencontre', description:'Découvre ton premier personnage dans l’Aventure.', icon:'👤', unlocked: c => c.characters >= 1 },
   { id:'ten-characters', title:'Visages connus', description:'Découvre 10 personnages.', icon:'👥', unlocked: c => c.characters >= 10 },
   { id:'fifty-characters', title:'Belle collection', description:'Découvre 50 personnages.', icon:'📚', unlocked: c => c.characters >= 50 },
@@ -35,6 +35,6 @@ export function getBadgeProgress(badge: Badge, ctx: Parameters<Badge['unlocked']
     'first-game':1,'ten-games':10,'twenty-five-games':25,'fifty-games':50,'hundred-games':100,'first-season':10,'secret-journey':1,
   };
   const target = targets[badge.id] ?? 1;
-  const value = badge.id.includes('character') ? ctx.characters : badge.id.includes('story') || badge.id === 'first-season' ? ctx.episodes : badge.id.includes('game') ? ctx.games : 0;
+  const value = badge.id === 'all-stories' ? ctx.episodes : badge.id.includes('character') ? ctx.characters : badge.id.includes('story') || badge.id === 'first-season' ? ctx.episodes : badge.id.includes('game') ? ctx.games : 0;
   return Math.min(1, value / target);
 }
