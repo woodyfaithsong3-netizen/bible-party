@@ -46,7 +46,8 @@ export default function BibleScreen() {
   const unlockedCharacters = useMemo(() => characterProfiles.filter(c => unlockedIds.includes(c.id)), [unlockedIds]);
   const totalEpisodes = SEASONS.reduce((sum, season) => sum + season.episodes.length, 0);
   const adventureComplete = completedIds.length === totalEpisodes && totalEpisodes === 116;
-  const ctx = { episodes: completedIds.length, characters: unlockedIds.length, games, adventureComplete };
+  const seasonsCompleted = SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(ep => completedIds.includes(ep.id))).length;
+  const ctx = { episodes: completedIds.length, characters: unlockedIds.length, games, adventureComplete, seasonsCompleted };
   const unlockedBadges = BADGES.filter(b => b.unlocked(ctx));
   const recentStories = SEASONS.flatMap(s => s.episodes).filter(e => completedIds.includes(e.id)).slice(-6).reverse();
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
