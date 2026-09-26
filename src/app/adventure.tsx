@@ -13,6 +13,8 @@ import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
 import { getAdventureProgress } from '@/lib/storage';
+import { BIBLE_BOOKS } from '@/data/bibleBooks';
+import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 
@@ -28,6 +30,22 @@ export default function AdventureScreen() {
   const activeSeason = SEASONS[selectedSeason];
   const activeCompletedCount = activeSeason.episodes.filter(ep => completed.includes(ep.id)).length;
   const progress = Math.round((activeCompletedCount / activeSeason.episodes.length) * 100);
+  const seasonEpisodeNumbers = new Set(activeSeason.episodes.map(ep => ep.number));
+  const seasonCharacterIds = [...new Set(activeSeason.episodes.flatMap(ep => ep.characterIds ?? []))];
+  const seasonAnnexes = CHARACTER_ANNEXES.filter(annex =>
+    annex.seasonNumber === activeSeason.number &&
+    seasonEpisodeNumbers.has(annex.afterEpisode),
+  );
+  const seasonBooks = BIBLE_BOOKS.filter(book =>
+    book.adventureEpisodes?.some(episodeNumber => seasonEpisodeNumbers.has(episodeNumber)),
+  );
+  const seasonBadge = selectedSeason === 0
+    ? { title: 'Première saison', icon: '🏅' }
+    : selectedSeason === 3
+      ? { title: 'À mi-parcours', icon: '🧭' }
+      : selectedSeason === 7
+        ? { title: 'Aventure complète', icon: '🌟' }
+        : null;
 
   const isSeasonUnlocked = (seasonIndex: number) => {
     if (seasonIndex === 0) return true;
@@ -83,6 +101,17 @@ export default function AdventureScreen() {
             </View>
             <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 10 }}>
               <View style={{ width: `${progress}%`, height: '100%', backgroundColor: colors.accent }} />
+            </View>
+          </View>
+
+          <View style={{ marginTop: 14, padding: 16, borderRadius: 20, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+            <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.5 }}>🎁 À DÉBLOQUER DANS CETTE SAISON</Text>
+            <Text style={{ color: colors.text, fontSize: 17, fontWeight: '900', lineHeight: 23, marginTop: 7 }}>Chaque épisode enrichit ta collection.</Text>
+            <View style={{ marginTop: 12, gap: 9 }}>
+              <Text style={{ color: colors.text, lineHeight: 20 }}>👤 <Text style={{ fontWeight: '900' }}>{seasonCharacterIds.length}</Text> personnage{seasonCharacterIds.length > 1 ? 's' : ''} à découvrir</Text>
+              <Text style={{ color: colors.text, lineHeight: 20 }}>📖 <Text style={{ fontWeight: '900' }}>{seasonBooks.length}</Text> livre{seasonBooks.length > 1 ? 's' : ''} de la Bible à découvrir</Text>
+              {seasonAnnexes.length > 0 ? <Text style={{ color: colors.text, lineHeight: 20 }}>📜 <Text style={{ fontWeight: '900' }}>{seasonAnnexes.length}</Text> histoire{seasonAnnexes.length > 1 ? 's' : ''} annexe{seasonAnnexes.length > 1 ? 's' : ''} à débloquer au fil des épisodes</Text> : null}
+              {seasonBadge ? <Text style={{ color: colors.text, lineHeight: 20 }}>{seasonBadge.icon} <Text style={{ fontWeight: '900' }}>1 badge</Text> : « {seasonBadge.title} »</Text> : null}
             </View>
           </View>
 
