@@ -21,7 +21,7 @@ import { SEASON_8 } from '@/data/adventureSeason8';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 
 const SEASONS = [SEASON_1,SEASON_2,SEASON_3,SEASON_4,SEASON_5,SEASON_6,SEASON_7,SEASON_8];
-const BOOK_CATEGORIES = ['Histoire et lois','Histoire de la nation d’Israël','Poèmes','Prophéties','Évangiles','Histoire de l’assemblée chrétienne primitive','Lettres','Prophétie'];
+const BOOK_CATEGORIES = ['Histoire et lois','Histoire de la nation d’Israël','Poèmes','Prophéties','Évangiles','Actes des apôtres','Lettres','Révélation'];
 
 function getDiscoverySources(book: (typeof BIBLE_BOOKS)[number], episodes: string[], annexes: string[]) {
   const done = new Set(episodes);
@@ -54,7 +54,7 @@ export default function BibleBooksScreen() {
   }, []);
 
   useFocusEffect(useCallback(() => { void load(); }, [load]));
-  const discovered = useMemo(() => new Set(Object.keys(progress)), [progress]);
+  const discovered = useMemo(() => { const valid = new Set(BIBLE_BOOKS.map(b => b.id)); return new Set(Object.keys(progress).filter(id => valid.has(id))); }, [progress]);
 
   if (params.id) {
     const book = BIBLE_BOOKS_BY_ID[params.id];
