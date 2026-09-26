@@ -32,12 +32,21 @@ export default function AdventureScreen() {
   const activeCompletedCount = activeSeason.episodes.filter(ep => completed.includes(ep.id)).length;
   const progress = Math.round((activeCompletedCount / activeSeason.episodes.length) * 100);
 
+  const isSeasonUnlocked = (seasonIndex: number) => {
+    if (seasonIndex === 0) return true;
+    const previousSeason = SEASONS[seasonIndex - 1];
+    return previousSeason.episodes.length > 0 && previousSeason.episodes.every(ep => completed.includes(ep.id));
+  };
+
   const selectSeason = (seasonIndex: number) => {
+    if (!isSeasonUnlocked(seasonIndex)) return;
     setSelectedSeason(seasonIndex);
     setShowSeasonIntro(true);
   };
 
   const startSeason = () => {
+    if (!isSeasonUnlocked(selectedSeason)) return;
+
     const firstEpisode = activeSeason.episodes[0];
     if (!firstEpisode) return;
     router.replace({ pathname: '/adventure/episode', params: { id: firstEpisode.id } });
@@ -159,14 +168,14 @@ export default function AdventureScreen() {
                     </View>
                     {seasonIndex < SEASONS.length - 1 ? <View style={{ width: 2, flex: 1, backgroundColor: colors.border, marginVertical: 4 }} /> : null}
                   </View>
-                  <Pressable onPress={() => selectSeason(seasonIndex)} style={({ pressed }) => [{ flex: 1, marginLeft: 10, marginBottom: 10, padding: 14, borderRadius: 18, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface2 }, pressed && { transform: [{ scale: .985 }] }]}>
+                  <Pressable disabled={!isSeasonUnlocked(seasonIndex)} onPress={() => selectSeason(seasonIndex)} style={({ pressed }) => [{ flex: 1, marginLeft: 10, marginBottom: 10, padding: 14, borderRadius: 18, borderWidth: 1, borderColor: isSeasonUnlocked(seasonIndex) ? colors.border : colors.borderStrong, backgroundColor: colors.surface2, opacity: isSeasonUnlocked(seasonIndex) ? 1 : .58 }, pressed && isSeasonUnlocked(seasonIndex) && { transform: [{ scale: .985 }] }]}>
                     <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
-                      <Text style={{ color: colors.accent, fontSize: 9, fontWeight: '900', letterSpacing: 1.2 }}>SAISON {season.number} • {first}–{last}</Text>
+                      <Text style={{ color: isSeasonUnlocked(seasonIndex) ? colors.accent : colors.muted, fontSize: 9, fontWeight: '900', letterSpacing: 1.2 }}>{isSeasonUnlocked(seasonIndex) ? `SAISON ${season.number}` : `🔒 SAISON ${season.number}`} • {first}–{last}</Text>
                       <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '800' }}>{count}/{season.episodes.length}</Text>
                     </View>
                     <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 21, marginTop: 5 }}>{season.title}</Text>
                     <Text numberOfLines={2} style={{ color: colors.muted, lineHeight: 18, marginTop: 4 }}>{season.description}</Text>
-                    <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', marginTop: 8 }}>{done ? 'Rejouer la saison ›' : count > 0 ? 'Continuer l’aventure ›' : 'Commencer ›'}</Text>
+                    <Text style={{ color: isSeasonUnlocked(seasonIndex) ? colors.accent : colors.muted, fontSize: 11, fontWeight: '900', marginTop: 8 }}>{!isSeasonUnlocked(seasonIndex) ? `🔒 Termine la saison ${seasonIndex} pour débloquer` : done ? 'Rejouer la saison ›' : count > 0 ? 'Continuer l’aventure ›' : 'Commencer ›'}</Text>
                   </Pressable>
                 </View>
               );
