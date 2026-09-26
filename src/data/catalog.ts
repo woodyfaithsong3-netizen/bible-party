@@ -144,12 +144,20 @@ export function normalizeQuestionCategory(q: Question): string {
     return 'Personnages';
   }
 
-  if (['évangiles', 'evangiles', 'actes', 'la bible et l’histoire'].includes(source) && isCharacterFocused(q)) {
+  if ([
+    'évangiles', 'evangiles', 'actes', 'la bible et l’histoire',
+    'questions bibliques', 'bible', 'foi', 'courage', 'repentance',
+    'prédication', 'persévérance', 'fidélité', 'amour', 'humilité'
+  ].includes(source) && isCharacterFocused(q)) {
     return 'Personnages';
   }
 
-  if (['questions bibliques', 'bible'].includes(source) && isCharacterFocused(q)) {
+  if (['rois', 'prophètes', 'prophètes-ecritures', 'disciples', 'juges', 'jeunes'].includes(source)) {
     return 'Personnages';
+  }
+
+  if (['lieux', 'villes', 'exil', 'exode', 'genèse', 'histoire biblique', 'objets'].includes(source)) {
+    return 'Récits & événements';
   }
 
   return normalizeCategory(q.category);
