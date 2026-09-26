@@ -157,7 +157,7 @@ export function getCategoryQuestionCount(category: string) {
 }
 
 export function getQuizCatalog() {
-  return quizQuestions.map(q => ({ ...q, category: normalizeCategory(q.category) }));
+  return quizQuestions.map(q => ({ ...q, category: normalizeQuestionCategory(q) }));
 }
 
 export function findQuestion(id: string): Question | undefined {
