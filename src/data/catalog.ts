@@ -126,7 +126,7 @@ const getQuestionText = (q: Question): string => {
 const isCharacterFocused = (q: Question): boolean => {
   const text = getQuestionText(q).trim();
   return /^(qui|quel homme|quelle femme|quel roi|quelle reine|quel prophète|quelle prophétesse|quel disciple|quel apôtre|quel juge|quelle personne)\b/i.test(text)
-    || /\b(qui a|qui était|qui fut|qui a été|quel homme|quelle femme|quel roi|quel prophète|quel disciple|quel apôtre|quelle personne|quelles personnes|citez? \d+ personnes|cite \d+ personnes)\b/i.test(text);
+    || /\b(qui a|qui était|qui fut|qui a été|quel homme|quelle femme|quel roi|quel prophète|quel disciple|quel apôtre|quelle personne|quelles personnes|citez? \d+ personnes|cite \d+ personnes|citez? \d+ personnages|cite \d+ personnages)\b/i.test(text);
 };
 
 export function normalizeQuestionCategory(q: Question): string {
