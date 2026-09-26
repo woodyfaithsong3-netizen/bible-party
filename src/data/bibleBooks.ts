@@ -80,7 +80,7 @@ export const BIBLE_BOOKS: BibleBook[] = [
   {id:'colossians',number:51,name:'Colossiens',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Rome',writtenBy:'Jéhovah',completionDate:'v. 60-61 de n. è.',status:'new-annex'},
   {id:'1-thessalonians',number:52,name:'1 Thessaloniciens',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Corinthe',writtenBy:'Jéhovah',completionDate:'v. 50 de n. è.',status:'new-annex'},
   {id:'2-thessalonians',number:53,name:'2 Thessaloniciens',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Corinthe',writtenBy:'Jéhovah',completionDate:'v. 51 de n. è.',status:'new-annex'},
-  {id:'1-timothy',number:54,name:'1 Timothée',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Macédoine',writtenBy:'Jéhovah',completionDate:'v. 61-64 de n. è.',status:'annex',annexId:'annex-titus',note:'À ne pas confondre avec l’annexe Tite : prévoir ensuite une découverte dédiée à 1 Timothée.'},
+  {id:'1-timothy',number:54,name:'1 Timothée',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Macédoine',writtenBy:'Jéhovah',completionDate:'v. 61-64 de n. è.',status:'new-annex',note:'Prévoir une découverte dédiée à 1 Timothée.'},
   {id:'2-timothy',number:55,name:'2 Timothée',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Rome',writtenBy:'Jéhovah',completionDate:'v. 65 de n. è.',status:'new-annex'},
   {id:'titus',number:56,name:'Tite',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Macédoine (?)',writtenBy:'Jéhovah',completionDate:'v. 61-64 de n. è.',status:'annex',annexId:'annex-titus'},
   {id:'philemon',number:57,name:'Philémon',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Rome',writtenBy:'Jéhovah',completionDate:'v. 60-61 de n. è.',status:'annex',annexId:'annex-onesimus'},
@@ -92,7 +92,7 @@ export const BIBLE_BOOKS: BibleBook[] = [
   {id:'2-john',number:63,name:'2 Jean',section:'greek',category:'Lettres',writer:'Apôtre Jean',compositionPlace:'Éphèse, ou à proximité',writtenBy:'Jéhovah',completionDate:'v. 98 de n. è.',status:'new-annex'},
   {id:'3-john',number:64,name:'3 Jean',section:'greek',category:'Lettres',writer:'Apôtre Jean',compositionPlace:'Éphèse, ou à proximité',writtenBy:'Jéhovah',completionDate:'v. 98 de n. è.',status:'new-annex'},
   {id:'jude',number:65,name:'Jude',section:'greek',category:'Lettres',writer:'Jude (frère de Jésus)',compositionPlace:'Israël (?)',writtenBy:'Jéhovah',completionDate:'v. 65 de n. è.',status:'annex',annexId:'annex-jude_brother_jesus'},
-  {id:'revelation',number:66,name:'Révélation',section:'greek',category:'Prophétie',writer:'Apôtre Jean',compositionPlace:'Patmos',writtenBy:'Jéhovah',completionDate:'v. 96 de n. è.',status:'adventure',adventureEpisodes:[113,114,115,116]},
+  {id:'revelation',number:66,name:'Révélation',section:'greek',category:'Prophétie',writer:'Apôtre Jean',compositionPlace:'Patmos',writtenBy:'Jéhovah',completionDate:'v. 96 de n. è.',status:'adventure',adventureEpisodes:[114,115]},
 ];
 
 export const BIBLE_BOOKS_BY_ID = Object.fromEntries(BIBLE_BOOKS.map(book => [book.id, book])) as Record<string, BibleBook>;
