@@ -110,7 +110,7 @@ export default function BibleBooksScreen() {
     <View style={[styles.glowCard,{marginTop:18}]}>
       <Text style={{color:colors.text,fontSize:25,fontWeight:'900'}}>{discovered.size}/66 livres découverts</Text>
       <View style={{height:8,backgroundColor:colors.border,borderRadius:8,overflow:'hidden',marginTop:11}}><View style={{width:(Math.round(discovered.size/66*100)+'%') as any,height:'100%',backgroundColor:colors.accent}}/></View>
-      <Text style={{color:colors.muted,fontSize:12,lineHeight:18,marginTop:8}}>Les livres apparaissent au fil de ton parcours. Les derniers sont dévoilés quand les 116 histoires et les 41 annexes de personnages sont terminées.</Text>
+      <Text style={{color:colors.muted,fontSize:12,lineHeight:18,marginTop:8}}>Les livres apparaissent au fil de ton parcours, au moment chronologique où ils s’insèrent dans l’histoire biblique.</Text>
     </View>
     <ScrollView horizontal showsHorizontalScrollIndicator={false} style={{marginTop:14}} contentContainerStyle={{gap:8}}>
       {['Tous',...BOOK_CATEGORIES].map(c => <Pressable key={c} onPress={() => setCategory(c)} style={{paddingHorizontal:12,paddingVertical:9,borderRadius:16,borderWidth:1,borderColor:category===c?colors.accent:colors.border,backgroundColor:category===c?colors.surface2:colors.surface}}><Text style={{color:category===c?colors.accent:colors.muted,fontSize:11,fontWeight:'900'}}>{c}</Text></Pressable>)}
