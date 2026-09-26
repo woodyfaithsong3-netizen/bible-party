@@ -8,6 +8,8 @@ import { BIBLE_BOOKS, BIBLE_BOOKS_BY_ID } from '@/data/bibleBooks';
 import { BIBLE_BOOK_GUIDES } from '@/data/bibleBookGuides';
 import { getBibleBookProgress, getAdventureProgress, getCharacterAnnexProgress, markBibleBookDiscovered } from '@/lib/storage';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
+import { getFinalBibleBookProgress } from '@/lib/storage';
+import { FINAL_BIBLE_BOOK_DISCOVERIES } from '@/data/finalBibleBookDiscoveries';
 import { SEASON_1 } from '@/data/adventure';
 import { SEASON_2 } from '@/data/adventureSeason2';
 import { SEASON_3 } from '@/data/adventureSeason3';
@@ -39,9 +41,11 @@ export default function BibleBooksScreen() {
   const [category, setCategory] = useState('Tous');
   const [completedEpisodes, setCompletedEpisodes] = useState<string[]>([]);
   const [completedAnnexes, setCompletedAnnexes] = useState<string[]>([]);
+  const [finalBooks, setFinalBooks] = useState<string[]>([]);
 
   const load = useCallback(async () => {
-    const [stored, episodes, annexes] = await Promise.all([getBibleBookProgress(), getAdventureProgress(), getCharacterAnnexProgress()]);
+    const [stored, episodes, annexes, finalProgress] = await Promise.all([getBibleBookProgress(), getAdventureProgress(), getCharacterAnnexProgress(), getFinalBibleBookProgress()]);
+    setFinalBooks(finalProgress);
     setCompletedEpisodes(episodes); setCompletedAnnexes(annexes);
     const discoveredIds = getDiscoveredBibleBookIds(episodes, annexes);
     let next = stored;
@@ -57,7 +61,8 @@ export default function BibleBooksScreen() {
     const guide = book ? BIBLE_BOOK_GUIDES[book.id] : undefined;
     const isDiscovered = !!book && discovered.has(book.id);
     if (!book || !guide) return <ScenicScreen><View style={styles.content}><Pressable onPress={() => router.replace('/bible/books')}><Text style={{color:colors.accent,fontWeight:'900'}}>‹ Livres de la Bible</Text></Pressable><Text style={[styles.title,{marginTop:30}]}>Livre introuvable</Text></View></ScenicScreen>;
-    return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
+    const finalReady = FINAL_BIBLE_BOOK_DISCOVERIES.length > 0 && completedEpisodes.length >= 116 && completedAnnexes.length >= 41;
+  return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
       <Pressable onPress={() => router.replace('/bible/books')}><Text style={{color:colors.accent,fontWeight:'900'}}>‹ Livres de la Bible</Text></Pressable>
       <View style={{alignItems:'center',marginTop:22}}>
         <Text style={{color:colors.accent,fontSize:11,fontWeight:'900',letterSpacing:1.5}}>LIVRE {book.number} SUR 66</Text>
