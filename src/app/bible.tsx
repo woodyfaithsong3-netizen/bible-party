@@ -16,7 +16,6 @@ import { SEASON_8 } from '@/data/adventureSeason8';
 import { BADGES, getBadgeProgress } from '@/data/badges';
 import { getAdventureProgress, getCharacterAnnexProgress, getBibleBookProgress, getGamesPlayed, markBibleBookDiscovered } from '@/lib/storage';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
-import { BIBLE_BOOKS } from '@/data/bibleBooks';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
 
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
@@ -54,7 +53,7 @@ export default function BibleScreen() {
   const totalEpisodes = SEASONS.reduce((sum, season) => sum + season.episodes.length, 0);
   const adventureComplete = completedIds.length === totalEpisodes && totalEpisodes === 116;
   const seasonsCompleted = SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(ep => completedIds.includes(ep.id))).length;
-  const ctx = { episodes: completedIds.length, characters: unlockedIds.length, games, adventureComplete, seasonsCompleted };
+  const ctx = { episodes: completedIds.length, characters: unlockedIds.length, games, adventureComplete, seasonsCompleted, books: bibleBooks };
   const unlockedBadges = BADGES.filter(b => b.unlocked(ctx));
   const recentStories = SEASONS.flatMap(s => s.episodes).filter(e => completedIds.includes(e.id)).slice(-6).reverse();
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
