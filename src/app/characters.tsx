@@ -112,6 +112,7 @@ function CharacterDetail({ item, onBack, onAllCharacters, returnEpisodeId }: { i
     <View style={{ flexDirection: 'row', gap: 18, alignItems: 'center' }}>
       <Pressable onPress={onBack}><Text style={{ color: colors.accent, fontWeight: '900' }}>{returnEpisodeId ? '‹ Retour à l’histoire' : '‹ Retour'}</Text></Pressable>
       {!returnEpisodeId ? <Pressable onPress={onAllCharacters}><Text style={{ color: colors.accent, fontWeight: '900' }}>👤 Tous les personnages</Text></Pressable> : null}
+      {!returnEpisodeId ? <Pressable onPress={() => router.replace('/bible')}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Ma Bible</Text></Pressable> : null}
     </View>
     <Text style={[styles.eyebrow, { marginTop: 22 }]}>{item.era}</Text>
     <Text style={[styles.title, { marginTop: 5 }]}>{item.name}</Text>
