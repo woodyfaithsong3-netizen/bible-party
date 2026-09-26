@@ -90,8 +90,8 @@ export default function AdventureEpisodeScreen() {
             <Pressable onPress={() => router.replace('/adventure')}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Aventure</Text></Pressable>
             <View style={[styles.glowCard, { marginTop: 24, alignItems: 'center' }]}>
               <Text style={{ fontSize: 54 }}>🌟</Text>
-              <Text style={[styles.title, { fontSize: 30, lineHeight: 35, textAlign: 'center', marginTop: 12 }]}>Aventure terminée !</Text>
-              <Text style={{ color: colors.muted, textAlign: 'center', lineHeight: 21, marginTop: 9 }}>Tu as parcouru les 116 histoires de l’Aventure.</Text>
+              <Text style={[styles.title, { fontSize: 30, lineHeight: 35, textAlign: 'center', marginTop: 12 }]}>{adventureComplete ? 'Aventure terminée !' : 'Dernière histoire !'}</Text>
+              <Text style={{ color: colors.muted, textAlign: 'center', lineHeight: 21, marginTop: 9 }}>{adventureComplete ? 'Tu as parcouru les 116 histoires de l’Aventure.' : 'Tu as terminé cette histoire. Il reste encore des histoires à découvrir.'}</Text>
 
               <View style={{ marginTop: 20, width: '100%', padding: 16, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
                 <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🧠 LA LEÇON À RETENIR</Text>
