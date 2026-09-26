@@ -15,7 +15,7 @@ import { SEASON_5 } from '@/data/adventureSeason5';
 import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
-import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, getGamesPlayed, markBibleBookDiscovered } from '@/lib/storage';
+import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, getGamesPlayed, getReadCharacterIds, markBibleBookDiscovered } from '@/lib/storage';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
 
@@ -25,16 +25,12 @@ const FINAL_CHARACTER_ARCHIVE_IDS = new Set(['eve','cain','abel','henoch','lot',
 export default function BibleBadgesScreen() {
   const [ctx, setCtx] = useState({ episodes: 0, characters: 0, games: 0, adventureComplete: false, seasonsCompleted: 0, books: 0 });
   const load = useCallback(async () => {
-    const [completed, games, annexes, storedBooks, finalBooks] = await Promise.all([getAdventureProgress(), getGamesPlayed(), getCharacterAnnexProgress(), getBibleBookProgress(), getFinalBibleBookProgress()]);
+    const [completed, games, annexes, storedBooks, finalBooks, readCharacters] = await Promise.all([getAdventureProgress(), getGamesPlayed(), getCharacterAnnexProgress(), getBibleBookProgress(), getFinalBibleBookProgress(), getReadCharacterIds()]);
     const validEpisodes = SEASONS.flatMap(s => s.episodes);
     const ids = new Set(completed);
     const episodes = validEpisodes.filter(e => ids.has(e.id));
     const adventureComplete = validEpisodes.length === 116 && validEpisodes.every(e => ids.has(e.id));
-    const characters = new Set([
-      ...episodes.flatMap(e => e.characterIds ?? []),
-      ...CHARACTER_ANNEXES.filter(a => annexes.includes(a.id)).map(a => a.characterId),
-      ...(adventureComplete ? Array.from(FINAL_CHARACTER_ARCHIVE_IDS) : []),
-    ]).size;
+    const characters = new Set(readCharacters.filter(id => characterProfiles.some(character => character.id === id))).size;
     const seasonsCompleted = SEASONS.filter(s => s.episodes.length > 0 && s.episodes.every(e => ids.has(e.id))).length;
     const discovered = getDiscoveredBibleBookIds(completed, annexes, finalBooks);
     let nextBooks = storedBooks;
