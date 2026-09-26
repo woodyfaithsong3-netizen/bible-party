@@ -131,7 +131,15 @@ const isCharacterFocused = (q: Question): boolean => {
 
 export function normalizeQuestionCategory(q: Question): string {
   const source = typeof q.category === 'string' ? q.category.trim().toLowerCase() : '';
-  
+  const text = getQuestionText(q).toLowerCase();
+
+  if (source === 'défis') {
+    if (/personnage|prophète|apôtre|disciple|juge|femme|roi|reine|patriarche/.test(text)) return 'Personnages';
+    if (/lieu|ville|événement|histoire|miracle|voyagé|voyage|vie de|racontez/.test(text)) return 'Récits & événements';
+    if (/foi|amour|confiance|courage|prière|jéhovah|dieu|qualité|vertu|conseil/.test(text)) return 'Jéhovah & la foi';
+    return 'Bible & enseignements';
+  }
+
   if (['rois & prophètes', 'rois', 'prophètes', 'prophètes-ecritures', 'disciples', 'juges', 'jeunes'].includes(source)) {
     return 'Personnages';
   }
