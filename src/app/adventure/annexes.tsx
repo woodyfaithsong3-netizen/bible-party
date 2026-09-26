@@ -6,19 +6,38 @@ import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { characterProfiles } from '@/data/characterProfiles';
-import { getCharacterAnnexProgress, markCharacterAnnexComplete } from '@/lib/storage';
+import { getAdventureProgress, getCharacterAnnexProgress, markCharacterAnnexComplete } from '@/lib/storage';
+import { SEASON_1 } from '@/data/adventure';
+import { SEASON_2 } from '@/data/adventureSeason2';
+import { SEASON_3 } from '@/data/adventureSeason3';
+import { SEASON_4 } from '@/data/adventureSeason4';
+import { SEASON_5 } from '@/data/adventureSeason5';
+import { SEASON_6 } from '@/data/adventureSeason6';
+import { SEASON_7 } from '@/data/adventureSeason7';
+import { SEASON_8 } from '@/data/adventureSeason8';
 
 export default function CharacterAnnexesScreen() {
   const params = useLocalSearchParams<{ id?: string }>();
   const [completed, setCompleted] = useState<string[]>([]);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [finished, setFinished] = useState(false);
+  const [adventureCompleted, setAdventureCompleted] = useState<string[]>([]);
   const annex = useMemo(() => CHARACTER_ANNEXES.find(x => x.id === params.id), [params.id]);
   const profile = annex ? characterProfiles.find(x => x.id === annex.characterId) : null;
 
   React.useEffect(() => {
-    void getCharacterAnnexProgress().then(setCompleted);
+    void Promise.all([getCharacterAnnexProgress(), getAdventureProgress()]).then(([annexProgress, adventureProgress]) => {
+      setCompleted(annexProgress);
+      setAdventureCompleted(adventureProgress);
+    });
   }, []);
+
+  const seasons = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
+  const isAvailable = (item: typeof CHARACTER_ANNEXES[number]) => {
+    const season = seasons.find(s => s.number === item.seasonNumber);
+    const required = season?.episodes.find(ep => ep.number === item.afterEpisode);
+    return !required || adventureCompleted.includes(required.id);
+  };
 
   const answer = async (index: number) => {
     if (!annex || finished) return;
@@ -29,6 +48,18 @@ export default function CharacterAnnexesScreen() {
       setFinished(true);
     }
   };
+
+  if (annex && profile && !isAvailable(annex) && !completed.includes(annex.id)) {
+    return <ScenicScreen><View style={styles.content}>
+      <Pressable onPress={() => router.replace('/adventure/annexes')}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Découvertes annexes</Text></Pressable>
+      <View style={[styles.glowCard, { marginTop: 24, alignItems: 'center' }]}>
+        <Text style={{ fontSize: 42 }}>🔒</Text>
+        <Text style={[styles.title, { textAlign: 'center', marginTop: 10 }]}>Découverte encore verrouillée</Text>
+        <Text style={{ color: colors.muted, textAlign: 'center', lineHeight: 21, marginTop: 8 }}>Termine d’abord l’histoire {annex.afterEpisode} de la saison {annex.seasonNumber}. Cette annexe apparaîtra ensuite dans ton parcours.</Text>
+        <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 18 }]}><Text style={styles.buttonText}>Retour à l’Aventure ›</Text></Pressable>
+      </View>
+    </View></ScenicScreen>;
+  }
 
   if (annex && profile) {
     const question = annex.questions[0];
@@ -76,11 +107,12 @@ export default function CharacterAnnexesScreen() {
       {CHARACTER_ANNEXES.map(item => {
         const done = completed.includes(item.id);
         const p = characterProfiles.find(x => x.id === item.characterId);
-        return <Pressable key={item.id} onPress={() => router.push({ pathname: '/adventure/annexes', params: { id: item.id } })} style={[styles.card, { padding: 14, opacity: done ? 1 : .92 }]}>
-          <Text style={{ color: colors.accent, fontSize: 9, fontWeight: '900', letterSpacing: 1.2 }}>{done ? '✓ DÉCOUVERT' : '📜 À DÉCOUVRIR'}</Text>
+        const available = isAvailable(item);
+        return <Pressable key={item.id} disabled={!available} onPress={() => available && router.push({ pathname: '/adventure/annexes', params: { id: item.id } })} style={[styles.card, { padding: 14, opacity: available ? 1 : .52 }]}>
+          <Text style={{ color: colors.accent, fontSize: 9, fontWeight: '900', letterSpacing: 1.2 }}>{done ? '✓ DÉCOUVERT' : available ? '📜 À DÉCOUVRIR' : '🔒 VERROUILLÉ'}</Text>
           <Text style={{ color: colors.text, fontSize: 17, fontWeight: '900', marginTop: 5 }}>{p?.name ?? item.characterId}</Text>
           <Text numberOfLines={2} style={{ color: colors.muted, lineHeight: 19, marginTop: 4 }}>{item.story}</Text>
-          <Text style={{ color: colors.accent, fontWeight: '900', marginTop: 8 }}>{done ? 'Rejouer ›' : 'Découvrir ›'}</Text>
+          <Text style={{ color: colors.accent, fontWeight: '900', marginTop: 8 }}>{!available ? ('Après l’histoire ' + item.afterEpisode + ' ›') : done ? 'Rejouer ›' : 'Découvrir ›'}</Text>
         </Pressable>;
       })}
     </View>
