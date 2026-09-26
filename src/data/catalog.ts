@@ -140,7 +140,14 @@ export function normalizeQuestionCategory(q: Question): string {
     return 'Bible & enseignements';
   }
 
-  if (['rois & prophètes', 'rois', 'prophètes', 'prophètes-ecritures', 'disciples', 'juges', 'jeunes'].includes(source)) {
+  if (['rois & prophètes', 'rois', 'prophètes', 'prophètes-ecritures'].includes(source)) {
+    if (/événement|événements|réforme|réformes|histoire|chronologie|bataille|guerre|exil|voyagé|voyage|raconte|récit/.test(text)) {
+      return 'Récits & événements';
+    }
+    return 'Personnages';
+  }
+
+  if (['disciples', 'juges', 'jeunes'].includes(source)) {
     return 'Personnages';
   }
 
