@@ -72,7 +72,7 @@ export const BIBLE_BOOKS: BibleBook[] = [
   {id:'mark',number:41,name:'Marc',section:'greek',category:'Évangiles',writer:'Marc',compositionPlace:'Rome',writtenBy:'Jéhovah',completionDate:'v. 60-65 de n. è.',status:'adventure',adventureEpisodes:[84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101]},
   {id:'luke',number:42,name:'Luc',section:'greek',category:'Évangiles',writer:'Luc',compositionPlace:'Césarée',writtenBy:'Jéhovah',completionDate:'v. 56-58 de n. è.',status:'adventure',adventureEpisodes:[84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101]},
   {id:'john',number:43,name:'Jean',section:'greek',category:'Évangiles',writer:'Apôtre Jean',compositionPlace:'Éphèse, ou à proximité',writtenBy:'Jéhovah',completionDate:'v. 98 de n. è.',status:'adventure',adventureEpisodes:[84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101]},
-  {id:'acts',number:44,name:'Actes',section:'greek',category:'Histoire de l’assemblée chrétienne primitive',writer:'Luc',compositionPlace:'Rome',writtenBy:'Jéhovah',completionDate:'v. 61 de n. è.',status:'adventure',adventureEpisodes:[102,103,104,105,106,107,108,109,110,111,112,113]},
+  {id:'acts',number:44,name:'Actes',section:'greek',category:'Actes des apôtres',writer:'Luc',compositionPlace:'Rome',writtenBy:'Jéhovah',completionDate:'v. 61 de n. è.',status:'adventure',adventureEpisodes:[102,103,104,105,106,107,108,109,110,111,112,113]},
   {id:'romans',number:45,name:'Romains',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Corinthe',writtenBy:'Jéhovah',completionDate:'v. 56 de n. è.',status:'new-annex'},
   {id:'1-corinthians',number:46,name:'1 Corinthiens',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Éphèse',writtenBy:'Jéhovah',completionDate:'v. 55 de n. è.',status:'new-annex'},
   {id:'2-corinthians',number:47,name:'2 Corinthiens',section:'greek',category:'Lettres',writer:'Paul',compositionPlace:'Macédoine',writtenBy:'Jéhovah',completionDate:'v. 55 de n. è.',status:'new-annex'},
@@ -94,7 +94,7 @@ export const BIBLE_BOOKS: BibleBook[] = [
   {id:'2-john',number:63,name:'2 Jean',section:'greek',category:'Lettres',writer:'Apôtre Jean',compositionPlace:'Éphèse, ou à proximité',writtenBy:'Jéhovah',completionDate:'v. 98 de n. è.',status:'new-annex'},
   {id:'3-john',number:64,name:'3 Jean',section:'greek',category:'Lettres',writer:'Apôtre Jean',compositionPlace:'Éphèse, ou à proximité',writtenBy:'Jéhovah',completionDate:'v. 98 de n. è.',status:'new-annex'},
   {id:'jude',number:65,name:'Jude',section:'greek',category:'Lettres',writer:'Jude (frère de Jésus)',compositionPlace:'Israël (?)',writtenBy:'Jéhovah',completionDate:'v. 65 de n. è.',status:'annex',annexId:'annex-jude_brother_jesus'},
-  {id:'revelation',number:66,name:'Révélation',section:'greek',category:'Prophétie',writer:'Apôtre Jean',compositionPlace:'Patmos',writtenBy:'Jéhovah',completionDate:'v. 96 de n. è.',status:'adventure',adventureEpisodes:[114,115]},
+  {id:'revelation',number:66,name:'Révélation',section:'greek',category:'Révélation',writer:'Apôtre Jean',compositionPlace:'Patmos',writtenBy:'Jéhovah',completionDate:'v. 96 de n. è.',status:'adventure',adventureEpisodes:[114,115]},
 ];
 
 export const BIBLE_BOOKS_BY_ID = Object.fromEntries(BIBLE_BOOKS.map(book => [book.id, book])) as Record<string, BibleBook>;
