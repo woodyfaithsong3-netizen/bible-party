@@ -17,6 +17,11 @@ import { BADGES, getBadgeProgress } from '@/data/badges';
 import { getAdventureProgress, getGamesPlayed } from '@/lib/storage';
 
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
+function getCompletedEpisodeIds(completed: string[]) {
+  const validIds = new Set(SEASONS.flatMap(season => season.episodes.map(ep => ep.id)));
+  return Array.from(new Set(completed.filter(id => validIds.has(id))));
+}
+
 function getUnlockedCharacterIds(completed: string[]) {
   const done = new Set(completed);
   return Array.from(new Set(SEASONS.flatMap(season => season.episodes.filter(ep => done.has(ep.id)).flatMap(ep => ep.characterIds ?? []))));
@@ -30,15 +35,18 @@ export default function BibleScreen() {
     setCompleted(a); setGames(g);
   }, []);
   useFocusEffect(useCallback(() => { void load(); }, [load]));
-  const unlockedIds = useMemo(() => getUnlockedCharacterIds(completed), [completed]);
+  const completedIds = useMemo(() => getCompletedEpisodeIds(completed), [completed]);
+  const unlockedIds = useMemo(() => getUnlockedCharacterIds(completedIds), [completedIds]);
   const unlockedCharacters = useMemo(() => characterProfiles.filter(c => unlockedIds.includes(c.id)), [unlockedIds]);
-  const ctx = { episodes: completed.length, characters: unlockedIds.length, games };
+  const totalEpisodes = SEASONS.reduce((sum, season) => sum + season.episodes.length, 0);
+  const adventureComplete = completedIds.length === totalEpisodes && totalEpisodes === 116;
+  const ctx = { episodes: completedIds.length, characters: unlockedIds.length, games, adventureComplete };
   const unlockedBadges = BADGES.filter(b => b.unlocked(ctx));
-  const recentStories = SEASONS.flatMap(s => s.episodes).filter(e => completed.includes(e.id)).slice(-6).reverse();
+  const recentStories = SEASONS.flatMap(s => s.episodes).filter(e => completedIds.includes(e.id)).slice(-6).reverse();
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Pressable onPress={() => router.back()}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Retour</Text></Pressable>
     <View style={{ marginTop: 20 }}><Text style={styles.eyebrow}>📖 COLLECTION</Text><Text style={[styles.title, { marginTop: 7 }]}>Ma Bible</Text><Text style={styles.subtitle}>Tout ce que ton aventure t’a permis de découvrir, réuni au même endroit.</Text></View>
-    <View style={[styles.glowCard, { marginTop: 18 }]}><Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🗺️ TON AVENTURE</Text><Text style={{ color: colors.text, fontSize: 22, fontWeight: '900', marginTop: 7 }}>{completed.length}/116 histoires découvertes</Text><View style={{ height: 8, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 11 }}><View style={{ width: (Math.round((completed.length / 116) * 100) + '%') as any, height: '100%', backgroundColor: colors.accent }} /></View><View style={{ flexDirection: 'row', gap: 8, marginTop: 13 }}><Stat value={unlockedIds.length + '/'+ characterProfiles.length} label="personnages" /><Stat value={unlockedBadges.length + '/' + BADGES.length} label="badges" /></View></View>
+    <View style={[styles.glowCard, { marginTop: 18 }]}><Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🗺️ TON AVENTURE</Text><Text style={{ color: colors.text, fontSize: 22, fontWeight: '900', marginTop: 7 }}>{completedIds.length}/116 histoires découvertes</Text><View style={{ height: 8, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 11 }}><View style={{ width: (Math.round((completedIds.length / 116) * 100) + '%') as any, height: '100%', backgroundColor: colors.accent }} /></View><View style={{ flexDirection: 'row', gap: 8, marginTop: 13 }}><Stat value={unlockedIds.length + '/'+ characterProfiles.length} label="personnages" /><Stat value={unlockedBadges.length + '/' + BADGES.length} label="badges" /></View></View>
     <SectionTitle title="👤 Personnages découverts" action="Voir les personnages ›" onPress={() => router.push('/characters')} />
     <View style={{ gap: 9 }}>{unlockedCharacters.slice(-6).reverse().map(character => <Pressable key={character.id} onPress={() => router.push({ pathname: '/characters', params: { characterId: character.id } })} style={styles.card}><View style={{ flexDirection: 'row', alignItems: 'center' }}><View style={{ width: 42, height: 42, borderRadius: 21, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.accent, alignItems: 'center', justifyContent: 'center' }}><Text style={{ fontSize: 20 }}>👤</Text></View><View style={{ flex: 1, marginLeft: 12 }}><Text style={{ color: colors.text, fontSize: 16, fontWeight: '900' }}>{character.name}</Text><Text style={{ color: colors.muted, fontSize: 11, marginTop: 2 }}>{character.role}</Text></View><Text style={{ color: colors.accent, fontSize: 20 }}>›</Text></View></Pressable>)}{unlockedCharacters.length === 0 ? <Empty text="Termine une histoire qui présente un personnage pour commencer ta collection." /> : null}</View>
     <SectionTitle title="🏅 Badges" action="" onPress={() => {}} /><View style={{ gap: 9 }}>{BADGES.map(badge => { const ok = badge.unlocked(ctx); const progress = getBadgeProgress(badge, ctx); return <View key={badge.id} style={[styles.card, !ok && { opacity: .68 }]}><View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: 28, width: 42 }}>{ok ? badge.icon : '🔒'}</Text><View style={{ flex: 1, marginLeft: 10 }}><Text style={{ color: ok ? colors.text : colors.muted, fontSize: 15, fontWeight: '900' }}>{ok ? badge.title : (badge.secret ? '???' : badge.title)}</Text><Text style={{ color: colors.muted, fontSize: 11, lineHeight: 17, marginTop: 3 }}>{ok || !badge.secret ? badge.description : 'Découvre comment obtenir ce badge.'}</Text></View></View>{!ok ? <View style={{ height: 5, backgroundColor: colors.border, borderRadius: 5, overflow: 'hidden', marginTop: 10 }}><View style={{ width: (Math.round(progress * 100) + '%') as any, height: '100%', backgroundColor: colors.accent }} /></View> : null}</View>; })}</View>
