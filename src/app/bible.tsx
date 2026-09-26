@@ -89,7 +89,7 @@ export default function BibleScreen() {
           const ok = badge.unlocked(ctx); const progress = getBadgeProgress(badge, ctx);
           return <View key={badge.id} style={[styles.card, { paddingVertical: 11 }, !ok && { opacity: .62 }]}>
             <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-              <View style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: ok ? colors.surface2 : colors.background, alignItems: 'center', justifyContent: 'center' }}><Text style={{ fontSize: 22 }}>{ok ? badge.icon : '🔒'}</Text></View>
+              <View style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: ok ? colors.surface2 : colors.bg, alignItems: 'center', justifyContent: 'center' }}><Text style={{ fontSize: 22 }}>{ok ? badge.icon : '🔒'}</Text></View>
               <View style={{ flex: 1, marginLeft: 10 }}><Text style={{ color: ok ? colors.text : colors.muted, fontSize: 14, fontWeight: '900' }}>{ok ? badge.title : (badge.secret ? '???' : badge.title)}</Text><Text style={{ color: colors.muted, fontSize: 11, lineHeight: 16, marginTop: 2 }}>{ok || !badge.secret ? badge.description : 'Découvre comment obtenir ce badge.'}</Text></View>
             </View>
             {!ok ? <View style={{ height: 4, backgroundColor: colors.border, borderRadius: 5, overflow: 'hidden', marginTop: 9 }}><View style={{ width: (Math.round(progress * 100) + '%') as any, height: '100%', backgroundColor: colors.accent }} /></View> : null}
