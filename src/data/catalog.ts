@@ -126,7 +126,7 @@ const getQuestionText = (q: Question): string => {
 const isCharacterFocused = (q: Question): boolean => {
   const text = getQuestionText(q).trim();
   return /^(qui|quel homme|quelle femme|quel roi|quelle reine|quel prophète|quelle prophétesse|quel disciple|quel apôtre|quel juge|quelle personne)\b/i.test(text)
-    || /\b(qui a|qui était|qui fut|qui a été|quel homme|quelle femme|quel roi|quel prophète|quel disciple|quel apôtre)\b/i.test(text);
+    || /\b(qui a|qui était|qui fut|qui a été|quel homme|quelle femme|quel roi|quel prophète|quel disciple|quel apôtre|quelle personne|quelles personnes|citez? \d+ personnes|cite \d+ personnes)\b/i.test(text);
 };
 
 export function normalizeQuestionCategory(q: Question): string {
@@ -153,7 +153,8 @@ export function normalizeQuestionCategory(q: Question): string {
 
   if ([
     'évangiles', 'evangiles', 'actes', 'la bible et l’histoire', 'histoire biblique', 'genèse', 'exode',
-    'questions bibliques', 'bible', 'foi', 'courage', 'repentance',
+    'questions bibliques', 'que veulent dire ces versets ?', 'prophéties', 'propheties', 'prophétie', 'prophetie',
+    'bible', 'foi', 'courage', 'repentance',
     'prédication', 'persévérance', 'fidélité', 'amour', 'humilité'
   ].includes(source) && isCharacterFocused(q)) {
     return 'Personnages';
