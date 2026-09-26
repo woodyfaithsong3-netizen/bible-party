@@ -5,6 +5,7 @@ import { ScenicScreen } from '@/components/ScenicScreen';
 import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { characterProfiles } from '@/data/characterProfiles';
+import { BIBLE_BOOKS } from '@/data/bibleBooks';
 import { SEASON_1 } from '@/data/adventure';
 import { SEASON_2 } from '@/data/adventureSeason2';
 import { SEASON_3 } from '@/data/adventureSeason3';
@@ -41,7 +42,7 @@ export default function BibleScreen() {
     for (const id of discoveredIds) nextBooks = await markBibleBookDiscovered(id);
     setCompleted(a); setGames(g);
     setCompletedAnnexes(annexProgress);
-    setBibleBooks(Object.keys(nextBooks).length);
+    setBibleBooks(Object.keys(nextBooks).filter(id => BIBLE_BOOKS.some(book => book.id === id)).length);
   }, []);
   useFocusEffect(useCallback(() => { void load(); }, [load]));
   const completedIds = useMemo(() => getCompletedEpisodeIds(completed), [completed]);
