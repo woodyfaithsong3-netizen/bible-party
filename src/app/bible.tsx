@@ -14,7 +14,8 @@ import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
 import { BADGES, getBadgeProgress } from '@/data/badges';
-import { getAdventureProgress, getGamesPlayed } from '@/lib/storage';
+import { getAdventureProgress, getCharacterAnnexProgress, getGamesPlayed } from '@/lib/storage';
+import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 function getCompletedEpisodeIds(completed: string[]) {
@@ -30,13 +31,18 @@ function getUnlockedCharacterIds(completed: string[]) {
 export default function BibleScreen() {
   const [completed, setCompleted] = useState<string[]>([]);
   const [games, setGames] = useState(0);
+  const [completedAnnexes, setCompletedAnnexes] = useState<string[]>([]);
   const load = useCallback(async () => {
-    const [a, g] = await Promise.all([getAdventureProgress(), getGamesPlayed()]);
+    const [a, g, annexProgress] = await Promise.all([getAdventureProgress(), getGamesPlayed(), getCharacterAnnexProgress()]);
     setCompleted(a); setGames(g);
+    setCompletedAnnexes(annexProgress);
   }, []);
   useFocusEffect(useCallback(() => { void load(); }, [load]));
   const completedIds = useMemo(() => getCompletedEpisodeIds(completed), [completed]);
-  const unlockedIds = useMemo(() => getUnlockedCharacterIds(completedIds), [completedIds]);
+  const unlockedIds = useMemo(() => Array.from(new Set([
+    ...getUnlockedCharacterIds(completedIds),
+    ...CHARACTER_ANNEXES.filter(annex => completedAnnexes.includes(annex.id)).map(annex => annex.characterId),
+  ])), [completedIds, completedAnnexes]);
   const unlockedCharacters = useMemo(() => characterProfiles.filter(c => unlockedIds.includes(c.id)), [unlockedIds]);
   const totalEpisodes = SEASONS.reduce((sum, season) => sum + season.episodes.length, 0);
   const adventureComplete = completedIds.length === totalEpisodes && totalEpisodes === 116;
