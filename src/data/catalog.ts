@@ -101,7 +101,7 @@ const CATEGORY_MAP: Record<string, string> = {
   qualites: 'Jéhovah & la foi',
   prédication: 'Jéhovah & la foi',
   persévérance: 'Jéhovah & la foi',
-  défis: 'Jéhovah & la foi',
+  défis: 'Bible & enseignements',
 };
 
 export function normalizeCategory(value: unknown) {
