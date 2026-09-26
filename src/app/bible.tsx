@@ -20,6 +20,7 @@ import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, 
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
 
 const SEASONS = [SEASON_1,SEASON_2,SEASON_3,SEASON_4,SEASON_5,SEASON_6,SEASON_7,SEASON_8];
+const FINAL_CHARACTER_ARCHIVE_IDS = new Set(['eve','cain','abel','henoch','lot','rebecca','rachel','benjamin','dinah','aaron','miriam','caleb','rahab','deborah','barak','jael','gideon','jephthah','jonathan','goliath','abigail','nabal','jezebel','mordecai','haman','nicodeme','lazare','judas_iscariote','matthias','matthew','marc','luc','gad','nathan','sons_korah','asaph','heman','ethan','agur','lemuel','job','pharaoh','jochebed','pharaoh_daughter','jesus','absalom','rehoboam','jeroboam','shadrach','meshach','abednego','nebuchadnezzar']);
 
 export default function BibleScreen() {
   const [completed, setCompleted] = useState<string[]>([]);
@@ -43,9 +44,11 @@ export default function BibleScreen() {
   }, [completed]);
   const characters = useMemo(() => {
     const done = new Set(completedIds);
+    const adventureComplete = SEASONS.every(s => s.episodes.length > 0 && s.episodes.every(e => done.has(e.id)));
     return new Set([
       ...SEASONS.flatMap(s => s.episodes.filter(e => done.has(e.id)).flatMap(e => e.characterIds ?? [])),
       ...CHARACTER_ANNEXES.filter(a => annexes.includes(a.id)).map(a => a.characterId),
+      ...(adventureComplete ? Array.from(FINAL_CHARACTER_ARCHIVE_IDS) : []),
     ]).size;
   }, [completedIds, annexes]);
   const adventureComplete = completedIds.length === 116 && SEASONS.flatMap(s => s.episodes).every(e => completedIds.includes(e.id));

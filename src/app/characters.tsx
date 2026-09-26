@@ -17,42 +17,44 @@ import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
 
+const FINAL_CHARACTER_ARCHIVE_IDS = new Set(['eve','cain','abel','henoch','lot','rebecca','rachel','benjamin','dinah','aaron','miriam','caleb','rahab','deborah','barak','jael','gideon','jephthah','jonathan','goliath','abigail','nabal','jezebel','mordecai','haman','nicodeme','lazare','judas_iscariote','matthias','matthew','marc','luc','gad','nathan','sons_korah','asaph','heman','ethan','agur','lemuel','job','pharaoh','jochebed','pharaoh_daughter','jesus','absalom','rehoboam','jeroboam','shadrach','meshach','abednego','nebuchadnezzar']);
+
 const CHRONOLOGICAL_BLOCKS = [
   {
     label: 'Origines & patriarches',
-    ids: ['adam', 'noe', 'abraham', 'sarah', 'melchizedek', 'hagar', 'isaac', 'esau', 'jacob', 'leah', 'joseph'],
+    ids: ['adam', 'eve', 'cain', 'abel', 'noe', 'henoch', 'abraham', 'sarah', 'melchizedek', 'hagar', 'lot', 'isaac', 'rebecca', 'esau', 'jacob', 'leah', 'rachel', 'joseph', 'benjamin'],
   },
   {
     label: 'Moïse & l’Exode',
-    ids: ['moise', 'jethro', 'zipporah', 'korah', 'josue', 'balaam', 'balak'],
+    ids: ['moise', 'jethro', 'zipporah', 'jochebed', 'pharaoh_daughter', 'pharaoh', 'aaron', 'miriam', 'korah', 'josue', 'caleb', 'rahab', 'balaam', 'balak', 'gad', 'nathan', 'job'],
   },
   {
     label: 'Époque des Juges',
-    ids: ['ruth', 'naomi', 'manoah_father', 'samson', 'boaz', 'hannah', 'eli', 'samuel'],
+    ids: ['ruth', 'naomi', 'manoah_father', 'samson', 'boaz', 'hannah', 'eli', 'samuel', 'dinah', 'deborah', 'barak', 'jael', 'gideon', 'jephthah'],
   },
   {
     label: 'Saül, David & Salomon',
-    ids: ['saul_king', 'david', 'michal', 'joab', 'salomon'],
+    ids: ['saul_king', 'david', 'michal', 'jonathan', 'goliath', 'asaph', 'heman', 'ethan', 'abigail', 'nabal', 'joab', 'absalom', 'salomon', 'sons_korah', 'agur', 'lemuel'],
   },
   {
     label: 'Rois & prophètes',
-    ids: ['elie', 'jehoshaphat', 'naaman', 'elisha', 'jonah', 'joel', 'amos', 'isaiah', 'micah', 'hezekiah', 'josiah', 'zephaniah', 'jeremiah', 'nahum', 'habakkuk', 'daniel', 'ezekiel', 'obadiah'],
+    ids: ['elie', 'jehoshaphat', 'naaman', 'elisha', 'jonah', 'joel', 'amos', 'isaiah', 'micah', 'hezekiah', 'josiah', 'zephaniah', 'jeremiah', 'nahum', 'habakkuk', 'daniel', 'shadrach', 'meshach', 'abednego', 'nebuchadnezzar', 'ezekiel', 'obadiah', 'jezebel', 'rehoboam', 'jeroboam'],
   },
   {
     label: 'Exil & retour',
-    ids: ['zerubbabel', 'haggai', 'zechariah', 'esther', 'ezra', 'nehemie', 'malachi'],
+    ids: ['zerubbabel', 'haggai', 'zechariah', 'esther', 'mordecai', 'haman', 'ezra', 'nehemie', 'malachi'],
   },
   {
     label: 'Avant Jésus',
-    ids: ['elizabeth', 'zechariah_priest', 'joseph_jesus_father', 'marie', 'mary_bethany', 'mary_magdalen', 'herod_antipas', 'jean-baptiste'],
+    ids: ['elizabeth', 'zechariah_priest', 'joseph_jesus_father', 'marie', 'jesus', 'mary_bethany', 'mary_magdalen', 'herod_antipas', 'jean-baptiste'],
   },
   {
     label: 'Jésus & son ministère',
-    ids: ['joseph_caiaphas', 'pilate', 'joanna', 'samaritan_leper', 'martha', 'pierre', 'jean', 'philip_apostle', 'bartholomew', 'james_alphaaeus', 'simon_zealot', 'james_zebedee', 'roman_centurion', 'samaritan_woman', 'woman_issue_blood', 'gerasene_man', 'jairus', 'jairus_daughter', 'thomas', 'blind_bartimaeus', 'zacchaeus', 'joseph_arimathea', 'mary_mother_james'],
+    ids: ['joseph_caiaphas', 'pilate', 'joanna', 'samaritan_leper', 'martha', 'pierre', 'jean', 'philip_apostle', 'bartholomew', 'james_alphaaeus', 'simon_zealot', 'james_zebedee', 'matthew', 'roman_centurion', 'samaritan_woman', 'woman_issue_blood', 'gerasene_man', 'jairus', 'jairus_daughter', 'thomas', 'blind_bartimaeus', 'zacchaeus', 'nicodeme', 'lazare', 'judas_iscariote', 'joseph_arimathea', 'mary_mother_james'],
   },
   {
     label: 'Débuts du christianisme',
-    ids: ['gamaliel', 'stephen', 'philip_evangelizer', 'mary_mark_mother', 'barnabas', 'james_brother_jesus', 'jude_brother_jesus', 'paul', 'ananias_damascus', 'cornelius', 'tabitha', 'john_mark', 'silas', 'jason_thessalonica', 'priscilla'],
+    ids: ['gamaliel', 'stephen', 'philip_evangelizer', 'mary_mark_mother', 'barnabas', 'james_brother_jesus', 'jude_brother_jesus', 'paul', 'ananias_damascus', 'cornelius', 'tabitha', 'john_mark', 'matthias', 'marc', 'luc', 'silas', 'jason_thessalonica', 'priscilla'],
   },
   {
     label: 'Congrégations chrétiennes',
@@ -189,9 +191,11 @@ export default function CharactersScreen() {
     void Promise.all([getAdventureProgress(), getCharacterAnnexProgress()]).then(([progress, annexProgress]) => {
       const done = new Set(progress);
       const seasons = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
+      const adventureComplete = seasons.every(season => season.episodes.length > 0 && season.episodes.every(ep => done.has(ep.id)));
       const ids = Array.from(new Set([
         ...seasons.flatMap(season => season.episodes.filter(ep => done.has(ep.id)).flatMap(ep => ep.characterIds ?? [])),
         ...CHARACTER_ANNEXES.filter(annex => annexProgress.includes(annex.id)).map(annex => annex.characterId),
+        ...(adventureComplete ? Array.from(FINAL_CHARACTER_ARCHIVE_IDS) : []),
       ]));
       setUnlockedIds(ids);
       if (params.characterId && ids.includes(params.characterId)) {
