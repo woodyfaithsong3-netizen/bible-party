@@ -4,6 +4,7 @@ const KEY = 'bible-party-local-scores-v1';
 const GAMES_KEY = 'bible-party-games-v1';
 const ADVENTURE_KEY = 'bible-party-adventure-v1';
 const ANNEX_KEY = 'bible-party-character-annex-v1';
+const BIBLE_BOOKS_KEY = 'bible-party-bible-books-v1';
 
 export type LocalScore = { teamName: string; score: number; playedAt: string };
 
@@ -38,6 +39,21 @@ export async function markCharacterAnnexComplete(id: string): Promise<string[]> 
   return next;
 }
 
+
+export async function getBibleBookProgress(): Promise<Record<string, string>> {
+  try {
+    const raw = await AsyncStorage.getItem(BIBLE_BOOKS_KEY);
+    return raw ? JSON.parse(raw) as Record<string, string> : {};
+  } catch { return {}; }
+}
+
+export async function markBibleBookDiscovered(id: string): Promise<Record<string, string>> {
+  const current = await getBibleBookProgress();
+  if (!current[id]) current[id] = new Date().toISOString();
+  await AsyncStorage.setItem(BIBLE_BOOKS_KEY, JSON.stringify(current));
+  return current;
+}
+
 export async function getGamesPlayed(): Promise<number> {
   try { return Number((await AsyncStorage.getItem(GAMES_KEY)) || 0); } catch { return 0; }
 }
@@ -48,5 +64,5 @@ export async function recordGamePlayed(): Promise<number> {
 }
 
 export async function resetProgress() {
-  await AsyncStorage.multiRemove([KEY, GAMES_KEY, ADVENTURE_KEY, ANNEX_KEY]);
+  await AsyncStorage.multiRemove([KEY, GAMES_KEY, ADVENTURE_KEY, ANNEX_KEY, BIBLE_BOOKS_KEY]);
 }
