@@ -6,7 +6,7 @@ import { characterLearning } from '@/data/characterLearning';
 import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { ScenicScreen } from '@/components/ScenicScreen';
-import { getAdventureProgress, getCharacterAnnexProgress } from '@/lib/storage';
+import { getAdventureProgress, getCharacterAnnexProgress, getReadCharacterIds, markCharacterRead } from '@/lib/storage';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { SEASON_1 } from '@/data/adventure';
 import { SEASON_2 } from '@/data/adventureSeason2';
@@ -89,6 +89,9 @@ function Section({ icon, title, children }: { icon: string; title: string; child
 
 function CharacterDetail({ item, onBack, onAllCharacters, returnEpisodeId }: { item: CharacterProfile; onBack: () => void; onAllCharacters: () => void; returnEpisodeId?: string }) {
   const learning = characterLearning[item.id];
+  const [hasRead, setHasRead] = useState(false);
+  React.useEffect(() => { void getReadCharacterIds().then(ids => setHasRead(ids.includes(item.id))); }, [item.id]);
+  const confirmRead = useCallback(async () => { await markCharacterRead(item.id); setHasRead(true); }, [item.id]);
 
   const familyAndEntourage = item.relations.length
     ? item.relations.join(' · ')
@@ -181,6 +184,9 @@ function CharacterDetail({ item, onBack, onAllCharacters, returnEpisodeId }: { i
           Ce fait est conservé comme point de départ d’une lecture : ouvre la ressource JW.org associée pour vérifier le contexte.
         </Text>
       </View>
+      <Pressable onPress={confirmRead} style={{ marginTop: 16, padding: 15, borderRadius: 16, backgroundColor: hasRead ? colors.surface2 : colors.accent, borderWidth: 1, borderColor: colors.accent }}>
+        <Text style={{ color: hasRead ? colors.accent : colors.bg, fontWeight: '900', textAlign: 'center' }}>{hasRead ? '✓ Fiche lue — personnage comptabilisé' : '✓ J’ai lu cette fiche — comptabiliser le personnage'}</Text>
+      </Pressable>
     </View>
   </ScrollView>;
 }
