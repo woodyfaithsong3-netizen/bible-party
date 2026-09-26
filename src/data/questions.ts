@@ -1516,11 +1516,11 @@ const v102ExpertTF: TrueFalseQuestion[] = [
 {id:'v102-tf-06',type:'truefalse',category:'Prophéties',difficulty:'expert',statement:'La vision de la corbeille de fruits d’été se trouve dans Amos.',answer:true,explanation:'Amos 8:1-2 rapporte cette vision.',reference:'Amos 8:1-2'}
 ];
 const v102ExpertMystery: MysteryQuestion[] = [
-{id:'v102-m-01',type:'mystery',category:'La Bible et la science',difficulty:'expert',answer:'Genèse 1:1',clues:['Commencement','Cieux','Terre'],explanation:'Ce premier verset parle du commencement des cieux et de la terre.',reference:'Genèse 1:1'},
-{id:'v102-m-02',type:'mystery',category:'Prophéties',difficulty:'expert',answer:'Daniel 9',clues:['Soixante-deux semaines','Messie','Jérusalem'],explanation:'La prophétie de Daniel 9 relie ces éléments.',reference:'Daniel 9:25'},
-{id:'v102-m-03',type:'mystery',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Actes 1:8',clues:['Force','Témoins','Région la plus lointaine'],explanation:'Actes 1:8 décrit l’étendue du témoignage des disciples.',reference:'Actes 1:8'},
-{id:'v102-m-04',type:'mystery',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Romains 6:23',clues:['Salaire','Péché','Vie éternelle'],explanation:'Le verset oppose le résultat du péché au don de Dieu.',reference:'Romains 6:23'},
-{id:'v102-m-05',type:'mystery',category:'Prophéties',difficulty:'expert',answer:'Michée 5:2',clues:['Bethléem','Petit parmi les milliers','Dirigeant'],explanation:'Michée 5:2 associe Bethléem à la venue d’un dirigeant.',reference:'Michée 5:2'},
+{id:'v102-m-01',type:'mystery',category:'La Bible et la science',difficulty:'expert',answer:'Genèse',clues:['Commencement','Cieux','Terre'],explanation:'Le début de la Genèse parle du commencement des cieux et de la terre.',reference:'Genèse 1:1'},
+{id:'v102-m-02',type:'mystery',category:'Prophéties',difficulty:'expert',answer:'Daniel',clues:['Soixante-deux semaines','Messie','Jérusalem'],explanation:'Daniel relie ces éléments dans une prophétie concernant le Messie.',reference:'Daniel 9:25'},
+{id:'v102-m-03',type:'mystery',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Actes',clues:['Force','Témoins','Région la plus lointaine'],explanation:'Actes décrit l’étendue du témoignage des disciples.',reference:'Actes 1:8'},
+{id:'v102-m-04',type:'mystery',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Romains',clues:['Salaire','Péché','Vie éternelle'],explanation:'Romains oppose le résultat du péché au don de Dieu.',reference:'Romains 6:23'},
+{id:'v102-m-05',type:'mystery',category:'Prophéties',difficulty:'expert',answer:'Michée',clues:['Bethléem','Petit parmi les milliers','Dirigeant'],explanation:'Michée associe Bethléem à la venue d’un dirigeant.',reference:'Michée 5:2'},
 {id:'v102-m-06',type:'mystery',category:'La Bible et la science',difficulty:'expert',answer:'Deutéronome 23:13',clues:['Camp','Excréments','Hygiène'],explanation:'Le passage prescrit une mesure sanitaire concernant les excréments.',reference:'Deutéronome 23:13'}
 ];
 const v102ExpertQuotes: QuoteQuestion[] = [
@@ -1537,17 +1537,17 @@ const v102ExpertIntruders: IntruderQuestion[] = [
 {id:'v102-in-03',type:'intruder',category:'La Bible et la science',difficulty:'expert',items:['Genèse 1:1','Deutéronome 23:13','Lévitique 13:1-5','Juges 4:4'],intruder:3,explanation:'Les trois premiers sont utilisés pour discuter de thèmes liés à l’exactitude scientifique ou aux mesures sanitaires ; Juges 4:4 concerne Déborah.',reference:'Genèse 1:1; Deutéronome 23:13; Lévitique 13:1-5; Juges 4:4'}
 ];
 const v102ExpertTimesUp: TimesUpQuestion[] = [
-{id:'v102-tu-01',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Daniel 9:25',clues:['Soixante-dix semaines','Jérusalem','Messie'],reference:'Daniel 9:25'},
-{id:'v102-tu-02',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Lévitique 13:1-5',clues:['Peau','Prêtre','Examen'],reference:'Lévitique 13:1-5'},
-{id:'v102-tu-03',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Psaume 119:105',clues:['Lampe','Pied','Chemin'],reference:'Psaume 119:105'},
-{id:'v102-tu-04',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'1 Corinthiens 15:33',clues:['Compagnies','Mauvaises','Habitudes'],reference:'1 Corinthiens 15:33'},
-{id:'v102-tu-05',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Job 38:33',clues:['Lois','Cieux','Terre'],reference:'Job 38:33'},
-{id:'v102-tu-06',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Zacharie 9:9',clues:['Roi','Âne','Jérusalem'],reference:'Zacharie 9:9'}
+{id:'v102-tu-01',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Daniel',clues:['Soixante-dix semaines','Jérusalem','Messie'],reference:'Daniel 9:25'},
+{id:'v102-tu-02',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Lévitique',clues:['Peau','Prêtre','Examen'],reference:'Lévitique 13:1-5'},
+{id:'v102-tu-03',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Psaume 119',clues:['Lampe','Pied','Chemin'],reference:'Psaume 119:105'},
+{id:'v102-tu-04',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'1 Corinthiens',clues:['Compagnies','Mauvaises','Habitudes'],reference:'1 Corinthiens 15:33'},
+{id:'v102-tu-05',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Job',clues:['Lois','Cieux','Terre'],reference:'Job 38:33'},
+{id:'v102-tu-06',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Zacharie',clues:['Roi','Âne','Jérusalem'],reference:'Zacharie 9:9'}
 ];
 const v102ExpertChallenges: Challenge[] = [
 {id:'v102-c-01',type:'challenge',category:'Prophéties',difficulty:'expert',prompt:'En 10 secondes : nommez le prophète qui parle de Bethléem Éphrata.',seconds:10,acceptedAnswers:['Michée']},
-{id:'v102-c-02',type:'challenge',category:'Que veulent dire ces versets ?',difficulty:'expert',prompt:'En 10 secondes : donnez la référence du passage qui dit que Dieu se soucie de nous et que nous pouvons lui remettre nos inquiétudes.',seconds:10,acceptedAnswers:['1 Pierre 5:7','1 Pierre 5:6-7']},
-{id:'v102-c-03',type:'challenge',category:'La Bible et la science',difficulty:'expert',prompt:'En 10 secondes : donnez le premier verset de la Bible.',seconds:10,acceptedAnswers:['Genèse 1:1']}
+{id:'v102-c-02',type:'challenge',category:'Que veulent dire ces versets ?',difficulty:'expert',prompt:'En 10 secondes : nommez le livre biblique qui parle de remettre ses inquiétudes à Dieu.',seconds:10,acceptedAnswers:['1 Pierre']},
+{id:'v102-c-03',type:'challenge',category:'La Bible et la science',difficulty:'expert',prompt:'En 10 secondes : nommez le livre qui commence la Bible.',seconds:10,acceptedAnswers:['Genèse']}
 ];
 
 quizQuestions.push(...v102ExpertQuiz);
