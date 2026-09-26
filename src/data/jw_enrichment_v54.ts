@@ -78,7 +78,7 @@ const quizData: Array<[string,string,string[],number,string,string]> = [
 ['q066','Rois & prophètes',['Quel prophète a reçu la mission de parler aux nations et aux rois avant sa naissance selon son récit d’appel ?','Jérémie','Élie','Jonas','Aggée'],0,'Jérémie raconte que sa mission prophétique lui a été confiée avant sa naissance.','Jérémie 1:4-10'],
 ['q067','Rois & prophètes',['Quel juge a demandé un signe avec une toison ?','Gédéon','Samson','Barak','Jephté'],0,'Gédéon a demandé un signe lié à une toison.','Juges 6:36-40'],
 ['q068','Rois & prophètes',['Quel roi a composé beaucoup de psaumes selon la tradition biblique ?','David','Saül','Achaz','Josaphat'],0,'David est étroitement associé au livre des Psaumes et en a composé beaucoup.','2 Samuel 23:1-2'],
-['q069','Rois & prophètes',['Quel prophète a vu une vision de l’homme au milieu des porte-lampes ?','Zacharie','Amos','Malachie','Jonas'],0,'Jean a reçu cette vision de Jésus au milieu de sept porte-lampes.','Zacharie 4:1-6'],
+['q069','Rois & prophètes',['Quel apôtre a reçu une vision de Jésus au milieu de porte-lampes ?','Jean','Zacharie','Pierre','Paul'],0,'Jean a reçu cette vision de Jésus au milieu de sept porte-lampes.','Révélation 1:9-20'],
 ['q070','Rois & prophètes',['Quel prophète a été envoyé à Ninive ?','Jonas','Nahum','Habacuc','Sophonie'],0,'Jéhovah a envoyé Jonas annoncer un message à Ninive.','Jonas 1:1-2; 3:1-5'],
 
 ['q071','Prophéties',['Quel prophète a annoncé qu’un dirigeant sortirait de Bethléem ?','Michée','Isaïe','Daniel','Jérémie'],0,'Michée a annoncé l’importance de Bethléem dans cette prophétie.','Michée 5:2'],
