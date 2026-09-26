@@ -61,7 +61,7 @@ export default function BibleBooksScreen() {
     const guide = book ? BIBLE_BOOK_GUIDES[book.id] : undefined;
     const isDiscovered = !!book && discovered.has(book.id);
     if (!book || !guide) return <ScenicScreen><View style={styles.content}><Pressable onPress={() => router.replace('/bible/books')}><Text style={{color:colors.accent,fontWeight:'900'}}>‹ Livres de la Bible</Text></Pressable><Text style={[styles.title,{marginTop:30}]}>Livre introuvable</Text></View></ScenicScreen>;
-    const finalReady = FINAL_BIBLE_BOOK_DISCOVERIES.length > 0 && completedEpisodes.length >= 116 && completedAnnexes.length >= 41;
+    const finalReady = FINAL_BIBLE_BOOK_DISCOVERIES.length > 0 && SEASONS.flatMap(s => s.episodes).length === 116 && SEASONS.flatMap(s => s.episodes).every(ep => completedEpisodes.includes(ep.id)) && CHARACTER_ANNEXES.every(annex => completedAnnexes.includes(annex.id));
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
       <Pressable onPress={() => router.replace('/bible/books')}><Text style={{color:colors.accent,fontWeight:'900'}}>‹ Livres de la Bible</Text></Pressable>
       <View style={{alignItems:'center',marginTop:22}}>
