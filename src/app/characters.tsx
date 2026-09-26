@@ -20,39 +20,39 @@ import { SEASON_8 } from '@/data/adventureSeason8';
 const CHRONOLOGICAL_BLOCKS = [
   {
     label: 'Origines & patriarches',
-    ids: ['adam', 'noe', 'abraham', 'sarah', 'melchizedek', 'hagar', 'isaac', 'esau', 'jacob', 'leah', 'joseph'],
+    ids: ['adam', 'eve', 'cain', 'abel', 'noe', 'henoch', 'abraham', 'sarah', 'melchizedek', 'hagar', 'lot', 'isaac', 'rebecca', 'esau', 'jacob', 'leah', 'rachel', 'joseph', 'benjamin'],
   },
   {
     label: 'Moïse & l’Exode',
-    ids: ['moise', 'jethro', 'zipporah', 'korah', 'josue', 'balaam', 'balak'],
+    ids: ['moise', 'jethro', 'zipporah', 'jochebed', 'pharaoh_daughter', 'pharaoh', 'aaron', 'miriam', 'korah', 'josue', 'caleb', 'rahab', 'balaam', 'balak', 'gad', 'nathan', 'job'],
   },
   {
     label: 'Époque des Juges',
-    ids: ['ruth', 'naomi', 'manoah_father', 'samson', 'boaz', 'hannah', 'eli', 'samuel'],
+    ids: ['ruth', 'naomi', 'manoah_father', 'samson', 'boaz', 'hannah', 'eli', 'samuel', 'dinah', 'deborah', 'barak', 'jael', 'gideon', 'jephthah'],
   },
   {
     label: 'Saül, David & Salomon',
-    ids: ['saul_king', 'david', 'michal', 'joab', 'salomon'],
+    ids: ['saul_king', 'david', 'michal', 'jonathan', 'goliath', 'asaph', 'heman', 'ethan', 'abigail', 'nabal', 'joab', 'absalom', 'salomon', 'sons_korah', 'agur', 'lemuel'],
   },
   {
     label: 'Rois & prophètes',
-    ids: ['elie', 'jehoshaphat', 'naaman', 'elisha', 'jonah', 'joel', 'amos', 'isaiah', 'micah', 'hezekiah', 'josiah', 'zephaniah', 'jeremiah', 'nahum', 'habakkuk', 'daniel', 'ezekiel', 'obadiah'],
+    ids: ['elie', 'jehoshaphat', 'naaman', 'elisha', 'jonah', 'joel', 'amos', 'isaiah', 'micah', 'hezekiah', 'josiah', 'zephaniah', 'jeremiah', 'nahum', 'habakkuk', 'daniel', 'shadrach', 'meshach', 'abednego', 'nebuchadnezzar', 'ezekiel', 'obadiah', 'jezebel', 'rehoboam', 'jeroboam'],
   },
   {
     label: 'Exil & retour',
-    ids: ['zerubbabel', 'haggai', 'zechariah', 'esther', 'ezra', 'nehemie', 'malachi'],
+    ids: ['zerubbabel', 'haggai', 'zechariah', 'esther', 'mordecai', 'haman', 'ezra', 'nehemie', 'malachi'],
   },
   {
     label: 'Avant Jésus',
-    ids: ['elizabeth', 'zechariah_priest', 'joseph_jesus_father', 'marie', 'mary_bethany', 'mary_magdalen', 'herod_antipas', 'jean-baptiste'],
+    ids: ['elizabeth', 'zechariah_priest', 'joseph_jesus_father', 'marie', 'jesus', 'mary_bethany', 'mary_magdalen', 'herod_antipas', 'jean-baptiste'],
   },
   {
     label: 'Jésus & son ministère',
-    ids: ['joseph_caiaphas', 'pilate', 'joanna', 'samaritan_leper', 'martha', 'pierre', 'jean', 'philip_apostle', 'bartholomew', 'james_alphaaeus', 'simon_zealot', 'james_zebedee', 'roman_centurion', 'samaritan_woman', 'woman_issue_blood', 'gerasene_man', 'jairus', 'jairus_daughter', 'thomas', 'blind_bartimaeus', 'zacchaeus', 'joseph_arimathea', 'mary_mother_james'],
+    ids: ['joseph_caiaphas', 'pilate', 'joanna', 'samaritan_leper', 'martha', 'pierre', 'jean', 'philip_apostle', 'bartholomew', 'james_alphaaeus', 'simon_zealot', 'james_zebedee', 'matthew', 'roman_centurion', 'samaritan_woman', 'woman_issue_blood', 'gerasene_man', 'jairus', 'jairus_daughter', 'thomas', 'blind_bartimaeus', 'zacchaeus', 'nicodeme', 'lazare', 'judas_iscariote', 'joseph_arimathea', 'mary_mother_james'],
   },
   {
     label: 'Débuts du christianisme',
-    ids: ['gamaliel', 'stephen', 'philip_evangelizer', 'mary_mark_mother', 'barnabas', 'james_brother_jesus', 'jude_brother_jesus', 'paul', 'ananias_damascus', 'cornelius', 'tabitha', 'john_mark', 'silas', 'jason_thessalonica', 'priscilla'],
+    ids: ['gamaliel', 'stephen', 'philip_evangelizer', 'mary_mark_mother', 'barnabas', 'james_brother_jesus', 'jude_brother_jesus', 'paul', 'ananias_damascus', 'cornelius', 'tabitha', 'john_mark', 'matthias', 'marc', 'luc', 'silas', 'jason_thessalonica', 'priscilla'],
   },
   {
     label: 'Congrégations chrétiennes',

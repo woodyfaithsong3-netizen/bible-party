@@ -36,12 +36,12 @@ export default function BibleCharactersScreen() {
     <Pressable onPress={() => router.back()}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Ma Bible</Text></Pressable>
     <Text style={[styles.eyebrow, { marginTop: 20 }]}>👤 COLLECTION</Text>
     <Text style={[styles.title, { marginTop: 7 }]}>Personnages</Text>
-    <Text style={styles.subtitle}>Découvre les 125 personnages au fil de l’Aventure.</Text>
+    <Text style={styles.subtitle}>Découvre les personnages au fil de l’Aventure.</Text>
     <View style={[styles.glowCard, { marginTop: 18 }]}>
       <Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.2 }}>TA COLLECTION</Text>
-      <Text style={{ color: colors.text, fontSize: 28, fontWeight: '900', marginTop: 5 }}>{count}/125</Text>
-      <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 10 }}><View style={{ width: `${Math.round(count / 125 * 100)}%`, height: '100%', backgroundColor: colors.accent }} /></View>
-      <Text style={{ color: colors.muted, fontSize: 11, marginTop: 6 }}>{125 - count} personnages restent à découvrir.</Text>
+      <Text style={{ color: colors.text, fontSize: 28, fontWeight: '900', marginTop: 5 }}>{count}/{characterProfiles.length}</Text>
+      <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 10 }}><View style={{ width: `${Math.round(count / characterProfiles.length * 100)}%`, height: '100%', backgroundColor: colors.accent }} /></View>
+      <Text style={{ color: colors.muted, fontSize: 11, marginTop: 6 }}>{characterProfiles.length - count} personnages restent à découvrir.</Text>
     </View>
     <Text style={[styles.sectionTitle, { marginTop: 24 }]}>Ta collection</Text>
     <View style={{ gap: 9 }}>{characterProfiles.map(character => {
