@@ -14,6 +14,8 @@ export type BibleBook = {
   adventureEpisodes?: number[];
   annexId?: string;
   note?: string;
+  /** ID d’un épisode ou d’une annexe qui sert de porte d’entrée vers ce livre. */
+  discoveryLabel?: string;
 };
 
 /**
