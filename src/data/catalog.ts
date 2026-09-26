@@ -12,97 +12,103 @@ export const allGameQuestions: Question[] = [
 ];
 
 /**
- * Buckets thématiques (« topics »). Ce sont les seules catégories qui peuvent apparaître
- * comme valeur de `category` sur une question, une fois normalisées via normalizeCategory().
- * Elles couvrent TOUTES les valeurs brutes présentes dans questions.ts, quel que soit le
- * mode (quiz, qui suis-je, vrai/faux, qui a dit ça, chronologie, intrus, time's up, défi).
+ * Quatre familles éditoriales du mode Jouer.
+ *
+ * Chaque question possède encore sa catégorie source historique dans les banques,
+ * mais normalizeCategory() la range dans une seule de ces quatre familles.
+ * Ainsi, les milliers de questions existantes peuvent être reclassées sans modifier
+ * inutilement toutes les banques historiques.
  */
 export const categoryLabels = [
   'Personnages',
-  'Récits bibliques',
-  'Comprendre la Bible',
-  'Mieux connaître Jéhovah',
+  'Récits & événements',
+  'Bible & enseignements',
+  'Jéhovah & la foi',
 ];
 
 export const setupCategoryFilters = [...categoryLabels];
 
 const CATEGORY_MAP: Record<string, string> = {
+  // 1 — Personnages : une personne est le sujet principal de la carte.
   personnages: 'Personnages',
   'personnages bibliques': 'Personnages',
   'révision des 125 fiches': 'Personnages',
   femmes: 'Personnages',
   jeunes: 'Personnages',
-  courage: 'Personnages',
-  foi: 'Personnages',
-  sagesse: 'Personnages',
-  amour: 'Personnages',
-  humilité: 'Personnages',
-  fidélité: 'Personnages',
-  qualites: 'Personnages',
+  disciples: 'Personnages',
+  rois: 'Personnages',
+  prophètes: 'Personnages',
+  juges: 'Personnages',
 
-  'histoire biblique': 'Récits bibliques',
-  histoire: 'Récits bibliques',
-  'la bible et l’histoire': 'Récits bibliques',
-  'grande chronologie': 'Récits bibliques',
-  'exil et retour': 'Récits bibliques',
-  exil: 'Récits bibliques',
-  exode: 'Récits bibliques',
-  évangiles: 'Récits bibliques',
-  evangiles: 'Récits bibliques',
-  disciples: 'Récits bibliques',
-  miracles: 'Récits bibliques',
-  'femmes-evangiles': 'Récits bibliques',
-  'rois et prophètes': 'Récits bibliques',
-  'rois & prophètes': 'Récits bibliques',
-  rois: 'Récits bibliques',
-  'prophètes-ecritures': 'Récits bibliques',
-  prophètes: 'Récits bibliques',
-  juges: 'Récits bibliques',
-  confiance: 'Récits bibliques',
-  'miracles-anciens': 'Récits bibliques',
+  // 2 — Récits & événements : histoires, périodes, événements et actions racontées.
+  'histoire biblique': 'Récits & événements',
+  histoire: 'Récits & événements',
+  'la bible et l’histoire': 'Récits & événements',
+  'grande chronologie': 'Récits & événements',
+  'exil et retour': 'Récits & événements',
+  exil: 'Récits & événements',
+  exode: 'Récits & événements',
+  évangiles: 'Récits & événements',
+  evangiles: 'Récits & événements',
+  miracles: 'Récits & événements',
+  'femmes-evangiles': 'Récits & événements',
+  'rois et prophètes': 'Récits & événements',
+  'rois & prophètes': 'Récits & événements',
+  'prophètes-ecritures': 'Récits & événements',
+  genèse: 'Récits & événements',
+  lieux: 'Récits & événements',
+  villes: 'Récits & événements',
+  objets: 'Récits & événements',
+  actes: 'Récits & événements',
+  'miracles-anciens': 'Récits & événements',
 
-  versets: 'Comprendre la Bible',
-  'versets bibliques': 'Comprendre la Bible',
-  'que veulent dire ces versets ?': 'Comprendre la Bible',
-  'expressions bibliques': 'Comprendre la Bible',
-  concepts: 'Comprendre la Bible',
-  repentance: 'Comprendre la Bible',
-  prophéties: 'Comprendre la Bible',
-  propheties: 'Comprendre la Bible',
-  prophétie: 'Comprendre la Bible',
-  prophetie: 'Comprendre la Bible',
-  'prophéties bibliques': 'Comprendre la Bible',
-  'la bible et la science': 'Comprendre la Bible',
-  science: 'Comprendre la Bible',
-  création: 'Comprendre la Bible',
-  evolution: 'Comprendre la Bible',
-  évolution: 'Comprendre la Bible',
-  'exactitude scientifique': 'Comprendre la Bible',
-  manuscrits: 'Comprendre la Bible',
-  traductions: 'Comprendre la Bible',
-  archéologie: 'Comprendre la Bible',
-  archeologie: 'Comprendre la Bible',
-  'exactitude historique': 'Comprendre la Bible',
-  genèse: 'Comprendre la Bible',
-  lieux: 'Comprendre la Bible',
-  livres: 'Comprendre la Bible',
-  'livres-hebreux': 'Comprendre la Bible',
-  villes: 'Comprendre la Bible',
-  objets: 'Comprendre la Bible',
-  actes: 'Comprendre la Bible',
-  prédication: 'Comprendre la Bible',
-  persévérance: 'Comprendre la Bible',
-  défis: 'Comprendre la Bible',
+  // 3 — Bible & enseignements : comprendre le texte, les livres et les notions bibliques.
+  bible: 'Bible & enseignements',
+  'questions bibliques': 'Bible & enseignements',
+  versets: 'Bible & enseignements',
+  'versets bibliques': 'Bible & enseignements',
+  'que veulent dire ces versets ?': 'Bible & enseignements',
+  'expressions bibliques': 'Bible & enseignements',
+  concepts: 'Bible & enseignements',
+  repentance: 'Bible & enseignements',
+  prophéties: 'Bible & enseignements',
+  propheties: 'Bible & enseignements',
+  prophétie: 'Bible & enseignements',
+  prophetie: 'Bible & enseignements',
+  'prophéties bibliques': 'Bible & enseignements',
+  'la bible et la science': 'Bible & enseignements',
+  science: 'Bible & enseignements',
+  création: 'Bible & enseignements',
+  evolution: 'Bible & enseignements',
+  évolution: 'Bible & enseignements',
+  'exactitude scientifique': 'Bible & enseignements',
+  manuscrits: 'Bible & enseignements',
+  traductions: 'Bible & enseignements',
+  archéologie: 'Bible & enseignements',
+  archeologie: 'Bible & enseignements',
+  'exactitude historique': 'Bible & enseignements',
+  livres: 'Bible & enseignements',
+  'livres-hebreux': 'Bible & enseignements',
 
-  bible: 'Mieux connaître Jéhovah',
-  'questions bibliques': 'Mieux connaître Jéhovah',
+  // 4 — Jéhovah & la foi : qualités, foi, conduite et enseignements spirituels.
+  foi: 'Jéhovah & la foi',
+  courage: 'Jéhovah & la foi',
+  confiance: 'Jéhovah & la foi',
+  sagesse: 'Jéhovah & la foi',
+  amour: 'Jéhovah & la foi',
+  humilité: 'Jéhovah & la foi',
+  fidélité: 'Jéhovah & la foi',
+  qualites: 'Jéhovah & la foi',
+  prédication: 'Jéhovah & la foi',
+  persévérance: 'Jéhovah & la foi',
+  défis: 'Jéhovah & la foi',
 };
 
 export function normalizeCategory(value: unknown) {
-  if (typeof value !== 'string') return 'Mieux connaître Jéhovah';
+  if (typeof value !== 'string') return 'Bible & enseignements';
   const key = value.trim().toLowerCase();
-  if (!key) return 'Mieux connaître Jéhovah';
-  return CATEGORY_MAP[key] || 'Mieux connaître Jéhovah';
+  if (!key) return 'Bible & enseignements';
+  return CATEGORY_MAP[key] || 'Bible & enseignements';
 }
 
 export function getCategoryQuestionCount(category: string) {
@@ -124,8 +130,6 @@ export function selectTrainingQuestions(category: string, difficulty: string, mi
     (normalized === 'Toutes' || q.category === normalized) &&
     (difficulty === 'all' || q.difficulty === difficulty);
   const base = all.filter(matches);
-  // Training must respect the selected filters: never silently replace a category
-  // or difficulty with unrelated questions. Missed questions are still prioritized.
   const shuffle = <T,>(items: T[]) => [...items].sort(() => Math.random() - 0.5);
   const preferred = base.filter(q => missedIds.includes(q.id));
   const fresh = base.filter(q => !missedIds.includes(q.id));
