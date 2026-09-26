@@ -38,7 +38,7 @@ export const BADGES: Badge[] = [
   { id:'twenty-five-characters', category:'collection', title:'Belle collection', description:'Découvre 25 personnages.', icon:'📚', unlocked:c=>c.characters>=25 },
   { id:'fifty-characters', category:'collection', title:'Grande collection', description:'Découvre 50 personnages.', icon:'🗂️', unlocked:c=>c.characters>=50 },
   { id:'hundred-characters', category:'collection', title:'Cent visages', description:'Découvre 100 personnages.', icon:'🏛️', unlocked:c=>c.characters>=100 },
-  { id:'all-characters', category:'collection', title:'Les 125', description:'Découvre les 125 personnages.', icon:'🏆', unlocked:c=>c.characters>=characterProfiles.length },
+  { id:'all-characters', category:'collection', title:'Les 177', description:'Découvre les 177 personnages.', icon:'🏆', unlocked:c=>c.characters>=characterProfiles.length },
 
   { id:'first-book', category:'bibliotheque', title:'Premier livre', description:'Découvre ton premier livre de la Bible.', icon:'📖', unlocked:c=>(c.books??0)>=1 },
   { id:'ten-books', category:'bibliotheque', title:'La bibliothèque grandit', description:'Découvre 10 livres.', icon:'📚', unlocked:c=>(c.books??0)>=10 },
