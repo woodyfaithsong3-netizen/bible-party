@@ -167,7 +167,7 @@ export function normalizeCategory(value: unknown) {
 }
 
 export function getCategoryQuestionCount(category: string) {
-  return allGameQuestions.filter(q => normalizeCategory(q.category) === category).length;
+  return allGameQuestions.filter(q => normalizeQuestionCategory(q) === category).length;
 }
 
 export function getQuizCatalog() {
@@ -179,7 +179,7 @@ export function findQuestion(id: string): Question | undefined {
 }
 
 export function selectTrainingQuestions(category: string, difficulty: string, missedIds: string[] = [], count = 10): QuizQuestion[] {
-  const normalized = category === 'Toutes' ? 'Toutes' : normalizeCategory(category);
+  const normalized = category === 'Toutes' ? 'Toutes' : (categoryLabels.includes(category) ? category : normalizeCategory(category));
   const all = getQuizCatalog();
   const matches = (q: QuizQuestion) =>
     (normalized === 'Toutes' || normalizeQuestionCategory(q) === normalized) &&
