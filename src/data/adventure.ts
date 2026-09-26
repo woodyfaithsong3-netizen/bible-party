@@ -88,7 +88,7 @@ export const SEASON_1 = {
         { id: 'adam-q2', type: 'quiz', prompt: 'Qui devient la femme d’Adam ?', choices: [{ label: 'Ève', correct: true }, { label: 'Sarah', correct: false }, { label: 'Ruth', correct: false }, { label: 'Noémi', correct: false }] },
         { id: 'adam-tf', type: 'truefalse', prompt: 'Adam devait prendre soin du jardin.', choices: [{ label: 'Vrai', correct: true }, { label: 'Faux', correct: false }] },
       ],
-      characterIds:['adam','eve'],
+      characterIds: ['adam'],
     },
     {
       id: 'eden-expulsion',
@@ -137,7 +137,6 @@ export const SEASON_1 = {
         { id: 'cain-q3', type: 'quiz', prompt: 'Que fait Caïn à Abel ?', choices: [{ label: 'Il le tue', correct: true }, { label: 'Il le chasse', correct: false }, { label: 'Il le protège', correct: false }, { label: 'Il le quitte', correct: false }] },
         { id: 'cain-tf', type: 'truefalse', prompt: 'Jéhovah avertit Caïn avant qu’il tue Abel.', choices: [{ label: 'Vrai', correct: true }, { label: 'Faux', correct: false }] },
       ],
-      characterIds:['cain','abel']
     },
     {
       id: 'henoch',
@@ -153,7 +152,6 @@ export const SEASON_1 = {
         { id: 'henoch-q2', type: 'quiz', prompt: 'Pourquoi Hénoch est-il remarquable ?', choices: [{ label: 'Il fait le bien malgré une époque mauvaise', correct: true }, { label: 'Il devient roi', correct: false }, { label: 'Il construit une arche', correct: false }, { label: 'Il conquiert un pays', correct: false }] },
         { id: 'henoch-q3', type: 'quiz', prompt: 'Quel exemple Hénoch donne-t-il ?', choices: [{ label: 'Rester fidèle même quand les autres font le mal', correct: true }, { label: 'Éviter toute responsabilité', correct: false }, { label: 'Devenir riche', correct: false }, { label: 'Quitter sa famille', correct: false }] },
       ],
-      characterIds:['henoch']
     },
     {
       id: 'nephilim',

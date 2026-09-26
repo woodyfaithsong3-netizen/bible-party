@@ -191,7 +191,7 @@ export default function CharactersScreen() {
     void Promise.all([getAdventureProgress(), getCharacterAnnexProgress()]).then(([progress, annexProgress]) => {
       const done = new Set(progress);
       const seasons = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
-      const adventureComplete = SEASONS.every(season => season.episodes.length > 0 && season.episodes.every(ep => done.has(ep.id)));
+      const adventureComplete = seasons.every(season => season.episodes.length > 0 && season.episodes.every(ep => done.has(ep.id)));
       const ids = Array.from(new Set([
         ...seasons.flatMap(season => season.episodes.filter(ep => done.has(ep.id)).flatMap(ep => ep.characterIds ?? [])),
         ...CHARACTER_ANNEXES.filter(annex => annexProgress.includes(annex.id)).map(annex => annex.characterId),
