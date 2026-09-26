@@ -6,6 +6,7 @@ import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
 import { BIBLE_BOOKS_BY_ID } from '@/data/bibleBooks';
 import { FINAL_BIBLE_BOOK_DISCOVERIES } from '@/data/finalBibleBookDiscoveries';
+import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { getAdventureProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, markFinalBibleBookDiscovered, markBibleBookDiscovered } from '@/lib/storage';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
 import { SEASON_1 } from '@/data/adventure';
@@ -36,9 +37,11 @@ export default function FinalBibleBooksScreen() {
 
   const ready = useMemo(() => {
     const valid = SEASONS.flatMap(s => s.episodes);
+    const doneEpisodes = new Set(completedEpisodes);
+    const doneAnnexes = new Set(completedAnnexes);
     return valid.length === TOTAL_EPISODES && TOTAL_EPISODES === 116 &&
-      valid.every(ep => completedEpisodes.includes(ep.id)) &&
-      completedAnnexes.length >= 41;
+      valid.every(ep => doneEpisodes.has(ep.id)) &&
+      CHARACTER_ANNEXES.every(annex => doneAnnexes.has(annex.id));
   }, [completedEpisodes, completedAnnexes]);
 
   const remaining = FINAL_BIBLE_BOOK_DISCOVERIES.filter(x => !completedBooks.includes(x.bookId));
