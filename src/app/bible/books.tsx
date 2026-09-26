@@ -8,16 +8,41 @@ import { BIBLE_BOOKS, BIBLE_BOOKS_BY_ID } from '@/data/bibleBooks';
 import { BIBLE_BOOK_GUIDES } from '@/data/bibleBookGuides';
 import { getBibleBookProgress, getAdventureProgress, getCharacterAnnexProgress, markBibleBookDiscovered } from '@/lib/storage';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
+import { SEASON_1 } from '@/data/adventure';
+import { SEASON_2 } from '@/data/adventureSeason2';
+import { SEASON_3 } from '@/data/adventureSeason3';
+import { SEASON_4 } from '@/data/adventureSeason4';
+import { SEASON_5 } from '@/data/adventureSeason5';
+import { SEASON_6 } from '@/data/adventureSeason6';
+import { SEASON_7 } from '@/data/adventureSeason7';
+import { SEASON_8 } from '@/data/adventureSeason8';
+import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 
+const SEASONS = [SEASON_1,SEASON_2,SEASON_3,SEASON_4,SEASON_5,SEASON_6,SEASON_7,SEASON_8];
 const BOOK_CATEGORIES = ['Histoire et lois','Histoire de la nation d’Israël','Poèmes','Prophéties','Évangiles','Histoire de l’assemblée chrétienne primitive','Lettres','Prophétie'];
+
+function getDiscoverySources(book: (typeof BIBLE_BOOKS)[number], episodes: string[], annexes: string[]) {
+  const done = new Set(episodes);
+  const matched = SEASONS.flatMap(season => season.episodes
+    .filter(ep => done.has(ep.id) && (book.adventureEpisodes ?? []).includes(ep.number))
+    .map(ep => ({ type: 'Histoire', label: `Histoire ${ep.number} — ${ep.title}`, id: ep.id })));
+  if (book.annexId && annexes.includes(book.annexId)) {
+    const annex = CHARACTER_ANNEXES.find(item => item.id === book.annexId);
+    if (annex) matched.push({ type: 'Annexe', label: annex.title, id: annex.id });
+  }
+  return matched;
+}
 
 export default function BibleBooksScreen() {
   const params = useLocalSearchParams<{ id?: string }>();
   const [progress, setProgress] = useState<Record<string,string>>({});
   const [category, setCategory] = useState('Tous');
+  const [completedEpisodes, setCompletedEpisodes] = useState<string[]>([]);
+  const [completedAnnexes, setCompletedAnnexes] = useState<string[]>([]);
 
   const load = useCallback(async () => {
     const [stored, episodes, annexes] = await Promise.all([getBibleBookProgress(), getAdventureProgress(), getCharacterAnnexProgress()]);
+    setCompletedEpisodes(episodes); setCompletedAnnexes(annexes);
     const discoveredIds = getDiscoveredBibleBookIds(episodes, annexes);
     let next = stored;
     for (const id of discoveredIds) next = await markBibleBookDiscovered(id);
@@ -45,6 +70,10 @@ export default function BibleBooksScreen() {
           <Text style={{color:colors.accent,fontSize:10,fontWeight:'900',letterSpacing:1.3}}>EN BREF</Text>
           <Text style={{color:colors.text,fontSize:16,lineHeight:24,marginTop:8}}>{guide.summary}</Text>
         </View>
+        {getDiscoverySources(book, completedEpisodes, completedAnnexes).length > 0 ? <View style={[styles.card,{marginTop:12}]}>
+          <Text style={{color:colors.text,fontSize:17,fontWeight:'900'}}>🗺️ Tu l’as découvert grâce à</Text>
+          {getDiscoverySources(book, completedEpisodes, completedAnnexes).slice(0,6).map(source => <Pressable key={source.id} onPress={() => source.type === 'Histoire' ? router.push({pathname:'/adventure/episode',params:{id:source.id}}) : router.push({pathname:'/adventure/annexes',params:{id:source.id}})}><Text style={{color:colors.accent,fontWeight:'900',marginTop:9}}>{source.type} · {source.label} ›</Text></Pressable>)}
+        </View> : null}
         <View style={[styles.card,{marginTop:12}]}>
           <Text style={{color:colors.text,fontSize:16,fontWeight:'900'}}>Qui l’a rédigé ?</Text>
           <Text style={{color:colors.muted,lineHeight:20,marginTop:5}}>{book.writer}</Text>
