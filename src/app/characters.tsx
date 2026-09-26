@@ -87,7 +87,7 @@ function Section({ icon, title, children }: { icon: string; title: string; child
   </View>;
 }
 
-function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () => void }) {
+function CharacterDetail({ item, onBack, returnEpisodeId }: { item: CharacterProfile; onBack: () => void; returnEpisodeId?: string }) {
   const learning = characterLearning[item.id];
 
   const familyAndEntourage = item.relations.length
@@ -109,7 +109,7 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
     ?? 'Aucun fait supplémentaire n’est ajouté ici lorsque les ressources étudiées ne permettent pas d’en vérifier un précisément.';
 
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
-    <Pressable onPress={onBack}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Tous les personnages</Text></Pressable>
+    <Pressable onPress={onBack}><Text style={{ color: colors.accent, fontWeight: '900' }}>{returnEpisodeId ? '‹ Retour à l’histoire' : '‹ Tous les personnages'}</Text></Pressable>
     <Text style={[styles.eyebrow, { marginTop: 22 }]}>{item.era}</Text>
     <Text style={[styles.title, { marginTop: 5 }]}>{item.name}</Text>
     <Text style={[styles.subtitle, { marginTop: 4 }]}>{item.role}</Text>
@@ -184,7 +184,7 @@ function CharacterDetail({ item, onBack }: { item: CharacterProfile; onBack: () 
 export default function CharactersScreen() {
   const [query, setQuery] = useState('');
   const [selectedEra, setSelectedEra] = useState('Tous');
-  const params = useLocalSearchParams<{ characterId?: string }>();
+  const params = useLocalSearchParams<{ characterId?: string; returnEpisodeId?: string }>();
   const [selected, setSelected] = useState<CharacterProfile | null>(null);
   const [unlockedIds, setUnlockedIds] = useState<string[]>([]);
   useFocusEffect(React.useCallback(() => {
@@ -220,7 +220,7 @@ export default function CharactersScreen() {
       return matchesEra && matchesQuery;
     });
   }, [query, selectedEra, orderedProfiles]);
-  if (selected && unlockedIds.includes(selected.id)) return <ScenicScreen><CharacterDetail item={selected} onBack={() => { setSelected(null); }} /></ScenicScreen>;
+  if (selected && unlockedIds.includes(selected.id)) return <ScenicScreen><CharacterDetail item={selected} returnEpisodeId={params.returnEpisodeId} onBack={() => { if (params.returnEpisodeId) router.replace({ pathname: '/adventure/episode', params: { id: params.returnEpisodeId } }); else setSelected(null); }} /></ScenicScreen>;
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={styles.eyebrow}>APPRENDRE</Text>
     <Text style={[styles.title, { marginTop: 7 }]}>Personnages bibliques</Text>
