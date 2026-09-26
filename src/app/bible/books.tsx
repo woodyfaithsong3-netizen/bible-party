@@ -72,6 +72,7 @@ export default function BibleBooksScreen() {
     <Text style={[styles.eyebrow,{marginTop:22}]}>📖 MON PARCOURS BIBLIQUE</Text>
     <Text style={[styles.title,{marginTop:7}]}>Les 66 livres</Text>
     <Text style={styles.subtitle}>Découvre les livres rencontrés pendant ton parcours, puis va les lire en entier sur JW.org.</Text>
+    <View style={[styles.card,{marginTop:12}]}><Text style={{color:colors.text,fontSize:15,fontWeight:'900'}}>Ton objectif</Text><Text style={{color:colors.muted,lineHeight:20,marginTop:5}}>Ne te contente pas de débloquer le nom d’un livre : ouvre sa fiche, découvre son message, puis lis le livre complet sur JW.org.</Text></View>
     <View style={[styles.glowCard,{marginTop:18}]}>
       <Text style={{color:colors.text,fontSize:25,fontWeight:'900'}}>{discovered.size}/66 livres découverts</Text>
       <View style={{height:8,backgroundColor:colors.border,borderRadius:8,overflow:'hidden',marginTop:11}}><View style={{width:(Math.round(discovered.size/66*100)+'%') as any,height:'100%',backgroundColor:colors.accent}}/></View>
@@ -90,6 +91,7 @@ export default function BibleBooksScreen() {
             <Text style={{color:colors.accent,fontSize:20}}>›</Text>
           </View>
           {done&&guide?<Text numberOfLines={2} style={{color:colors.muted,lineHeight:18,marginTop:8}}>{guide.summary}</Text>:null}
+          {done ? <Text style={{color:colors.accent,fontSize:11,fontWeight:'900',marginTop:8}}>📖 Ouvrir la fiche et lire le livre ›</Text> : null}
         </Pressable>;
       })}
     </View>
