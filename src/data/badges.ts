@@ -38,7 +38,7 @@ export const BADGES: Badge[] = [
   { id:'twenty-five-characters', category:'collection', title:'Belle collection', description:'Découvre 25 personnages.', icon:'📚', unlocked:c=>c.characters>=25 },
   { id:'fifty-characters', category:'collection', title:'Grande collection', description:'Découvre 50 personnages.', icon:'🗂️', unlocked:c=>c.characters>=50 },
   { id:'hundred-characters', category:'collection', title:'Cent visages', description:'Découvre 100 personnages.', icon:'🏛️', unlocked:c=>c.characters>=100 },
-  { id:'all-characters', category:'collection', title:`Les ${characterProfiles.length}`, description:`Découvre les ${characterProfiles.length} personnages.`, icon:'🏆', unlocked:c=>c.characters>=characterProfiles.length },
+  { id:'all-characters', category:'collection', title:'Les 125', description:'Découvre les 125 personnages.', icon:'🏆', unlocked:c=>c.characters>=characterProfiles.length },
 
   { id:'first-book', category:'bibliotheque', title:'Premier livre', description:'Découvre ton premier livre de la Bible.', icon:'📖', unlocked:c=>(c.books??0)>=1 },
   { id:'ten-books', category:'bibliotheque', title:'La bibliothèque grandit', description:'Découvre 10 livres.', icon:'📚', unlocked:c=>(c.books??0)>=10 },
@@ -55,7 +55,7 @@ export const BADGES: Badge[] = [
 
   { id:'secret-journey', category:'special', title:'Le fil continue', description:'Découvre au moins un personnage et termine une histoire.', icon:'🔮', secret:true, unlocked:c=>c.characters>=1&&c.episodes>=1 },
   { id:'secret-library', category:'special', title:'Entre les rayons', description:'Découvre au moins 10 livres et 10 personnages.', icon:'✨', secret:true, unlocked:c=>(c.books??0)>=10&&c.characters>=10 },
-  { id:'secret-complete', category:'special', title:'Collection légendaire', description:`Termine l’Aventure et complète les 66 livres et ${characterProfiles.length} personnages.`, icon:'👑', secret:true, unlocked:c=>c.adventureComplete===true&&(c.books??0)>=BIBLE_BOOKS.length&&c.characters>=characterProfiles.length },
+  { id:'secret-complete', category:'special', title:'Collection légendaire', description:'Termine l’Aventure et complète les 66 livres et 125 personnages.', icon:'👑', secret:true, unlocked:c=>c.adventureComplete===true&&(c.books??0)>=BIBLE_BOOKS.length&&c.characters>=characterProfiles.length },
 ];
 
 export function getBadgeProgress(badge: Badge, ctx: Parameters<Badge['unlocked']>[0]) {

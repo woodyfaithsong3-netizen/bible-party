@@ -31,7 +31,6 @@ export const SEASON_5 = {
       keyPoint: 'Les trois Hébreux restent fidèles à Jéhovah même sous la menace de mort.',context: 'Les exilés sont installés à Babylone depuis plusieurs années. Daniel et ses compagnons doivent maintenant rester fidèles dans une société qui exige le culte du roi et de ses dieux.',
       quality: { title: 'Protecteur', text: 'Jéhovah soutient ses serviteurs fidèles dans une situation extrêmement dangereuse.' },
       questions: [
-characterIds:['shadrach','meshach','abednego','nebuchadnezzar']
         { id: 'r77a', type: 'quiz', prompt: 'Que leur ordonne le roi de faire devant l’image ?', choices: [{ label: 'Se prosterner', correct: true }, { label: 'Prier Jéhovah', correct: false }, { label: 'Quitter Babylone', correct: false }, { label: 'Construire un temple', correct: false }] },
         { id: 'r77b', type: 'quiz', prompt: 'Que répondent-ils au roi malgré la menace ?', choices: [{ label: 'Ils refusent d’adorer l’image', correct: true }, { label: 'Ils demandent à fuir', correct: false }, { label: 'Ils acceptent de se prosterner', correct: false }, { label: 'Ils quittent Babylone', correct: false }] },
       ],
@@ -46,7 +45,6 @@ characterIds:['shadrach','meshach','abednego','nebuchadnezzar']
       keyPoint: 'Daniel explique courageusement le message et annonce le jugement qui va tomber sur Babylone.',context: 'Daniel a déjà montré sa fidélité sous plusieurs dirigeants babyloniens. Alors que Belshatsar organise un festin, le roi profane les objets du temple de Jérusalem. L’écriture sur la muraille annonce que la puissance de Babylone touche à sa fin.',
       quality: { title: 'Juste', text: 'Jéhovah voit les actes des dirigeants et peut leur demander des comptes.' },
       questions: [
-characterIds:['nebuchadnezzar']
         { id: 'r78a', type: 'quiz', prompt: 'Pourquoi Belshatsar est-il condamné par le message ?', choices: [{ label: 'Il s’est élevé contre Jéhovah', correct: true }, { label: 'Il a quitté Babylone', correct: false }, { label: 'Il a reconstruit Jérusalem', correct: false }, { label: 'Il a refusé de devenir roi', correct: false }] },
         { id: 'r78b', type: 'quiz', prompt: 'Que se passe-t-il cette même nuit ?', choices: [{ label: 'Belshatsar meurt et Babylone tombe', correct: true }, { label: 'Jérusalem est reconstruite', correct: false }, { label: 'Daniel devient roi', correct: false }, { label: 'Cyrus est emprisonné', correct: false }] },
       ],
@@ -61,7 +59,6 @@ characterIds:['nebuchadnezzar']
       keyPoint: 'Daniel continue de servir Jéhovah avec constance malgré l’interdiction.',context: 'Babylone est tombée et Daniel sert maintenant sous les Mèdes et les Perses. Sa fidélité est connue, mais ses adversaires cherchent encore un moyen de l’accuser.',
       quality: { title: 'Protecteur', text: 'Jéhovah protège Daniel dans la fosse aux lions.' },
       questions: [
-characterIds:['nebuchadnezzar']
         { id: 'r79a', type: 'quiz', prompt: 'Combien de fois Daniel prie-t-il chaque jour ?', choices: [{ label: 'Trois fois', correct: true }, { label: 'Une fois', correct: false }, { label: 'Sept fois', correct: false }, { label: 'Douze fois', correct: false }] },
         { id: 'r79b', type: 'quiz', prompt: 'Que fait le roi après avoir vu que Daniel est vivant ?', choices: [{ label: 'Il est très heureux', correct: true }, { label: 'Il le condamne encore', correct: false }, { label: 'Il quitte Babylone', correct: false }, { label: 'Il détruit la fosse', correct: false }] },
       ],
