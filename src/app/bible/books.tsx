@@ -47,7 +47,7 @@ export default function BibleBooksScreen() {
     const [stored, episodes, annexes, finalProgress] = await Promise.all([getBibleBookProgress(), getAdventureProgress(), getCharacterAnnexProgress(), getFinalBibleBookProgress()]);
     setFinalBooks(finalProgress);
     setCompletedEpisodes(episodes); setCompletedAnnexes(annexes);
-    const discoveredIds = getDiscoveredBibleBookIds(episodes, annexes);
+    const discoveredIds = getDiscoveredBibleBookIds(episodes, annexes, finalProgress);
     let next = stored;
     for (const id of discoveredIds) next = await markBibleBookDiscovered(id);
     setProgress(next);
