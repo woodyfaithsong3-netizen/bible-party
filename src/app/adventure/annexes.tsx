@@ -17,7 +17,7 @@ import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
 
 export default function CharacterAnnexesScreen() {
-  const params = useLocalSearchParams<{ id?: string }>();
+  const params = useLocalSearchParams<{ id?: string; returnEpisodeId?: string }>();
   const [completed, setCompleted] = useState<string[]>([]);
   const [selectedAnswer, setSelectedAnswer] = useState<number | null>(null);
   const [finished, setFinished] = useState(false);
@@ -51,7 +51,7 @@ export default function CharacterAnnexesScreen() {
 
   if (annex && profile && !isAvailable(annex) && !completed.includes(annex.id)) {
     return <ScenicScreen><View style={styles.content}>
-      <Pressable onPress={() => router.replace('/adventure/annexes')}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Découvertes annexes</Text></Pressable>
+      <Pressable onPress={() => params.returnEpisodeId ? router.replace({ pathname: '/adventure/episode', params: { id: params.returnEpisodeId } }) : router.replace('/adventure/annexes')}><Text style={{ color: colors.accent, fontWeight: '900' }}>{params.returnEpisodeId ? '‹ Retour à l’histoire' : '‹ Découvertes annexes'}</Text></Pressable>
       <View style={[styles.glowCard, { marginTop: 24, alignItems: 'center' }]}>
         <Text style={{ fontSize: 42 }}>🔒</Text>
         <Text style={[styles.title, { textAlign: 'center', marginTop: 10 }]}>Découverte encore verrouillée</Text>
@@ -91,7 +91,7 @@ export default function CharacterAnnexesScreen() {
         <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.5, marginTop: 6 }}>NOUVEAU PERSONNAGE DÉBLOQUÉ</Text>
         <Text style={{ color: colors.text, fontSize: 24, fontWeight: '900', marginTop: 6, textAlign: 'center' }}>{profile.name}</Text>
         <Text style={{ color: colors.muted, textAlign: 'center', marginTop: 5 }}>Sa fiche est maintenant disponible dans Ma Bible.</Text>
-        <Pressable onPress={() => router.push({ pathname: '/characters', params: { characterId: profile.id } })} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 18 }]}>
+        <Pressable onPress={() => router.push({ pathname: '/characters', params: { characterId: profile.id, returnEpisodeId: params.returnEpisodeId ?? (() => { const s = seasons.find(x => x.number === annex.seasonNumber); return s?.episodes.find(ep => ep.number === annex.afterEpisode)?.id; })() } })} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 18 }]}>
           <Text style={styles.buttonText}>Voir la fiche ›</Text>
         </Pressable>
       </View>}
