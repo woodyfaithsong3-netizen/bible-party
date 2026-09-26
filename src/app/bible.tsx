@@ -14,7 +14,7 @@ import { SEASON_5 } from '@/data/adventureSeason5';
 import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
-import { BADGES, getBadgeProgress } from '@/data/badges';
+import { BADGES, BADGE_CATEGORIES, getBadgeProgress } from '@/data/badges';
 import { getAdventureProgress, getCharacterAnnexProgress, getBibleBookProgress, getFinalBibleBookProgress, getGamesPlayed, markBibleBookDiscovered } from '@/lib/storage';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
@@ -56,11 +56,18 @@ export default function BibleScreen() {
   const seasonsCompleted = SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(ep => completedIds.includes(ep.id))).length;
   const ctx = { episodes: completedIds.length, characters: unlockedIds.length, games, adventureComplete, seasonsCompleted, books: bibleBooks };
   const unlockedBadges = BADGES.filter(b => b.unlocked(ctx));
+  const badgeGroups = BADGE_CATEGORIES.map(category => ({ ...category, badges: BADGES.filter(b => b.category === category.id) }));
   const recentStories = SEASONS.flatMap(s => s.episodes).filter(e => completedIds.includes(e.id)).slice(-6).reverse();
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Pressable onPress={() => router.back()}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Retour</Text></Pressable>
     <View style={{ marginTop: 20 }}><Text style={styles.eyebrow}>📖 COLLECTION</Text><Text style={[styles.title, { marginTop: 7 }]}>Ma Bible</Text><Text style={styles.subtitle}>Tout ce que ton aventure t’a permis de découvrir, réuni au même endroit.</Text></View>
-    <View style={[styles.glowCard, { marginTop: 18 }]}><Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🗺️ TON AVENTURE</Text><Text style={{ color: colors.text, fontSize: 22, fontWeight: '900', marginTop: 7 }}>{completedIds.length}/116 histoires découvertes</Text><View style={{ height: 8, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 11 }}><View style={{ width: (Math.round((completedIds.length / 116) * 100) + '%') as any, height: '100%', backgroundColor: colors.accent }} /></View><View style={{ flexDirection: 'row', gap: 8, marginTop: 13 }}><Stat value={unlockedIds.length + '/'+ characterProfiles.length} label="personnages" /><Stat value={unlockedBadges.length + '/' + BADGES.length} label="badges" /></View></View>
+    <View style={[styles.glowCard, { marginTop: 18, paddingBottom: 15 }]}>
+      <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>TON PARCOURS</Text>
+      <Text style={{ color: colors.text, fontSize: 22, fontWeight: '900', marginTop: 7 }}>Tu construis ta collection</Text>
+      <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 12 }}><View style={{ width: (Math.round((completedIds.length / 116) * 100) + '%') as any, height: '100%', backgroundColor: colors.accent }} /></View>
+      <Text style={{ color: colors.muted, fontSize: 11, marginTop: 5 }}>{completedIds.length}/116 histoires</Text>
+      <View style={{ flexDirection: 'row', gap: 8, marginTop: 12 }}><Stat value={unlockedIds.length + '/'+ characterProfiles.length} label="personnages" /><Stat value={bibleBooks + '/66'} label="livres" /><Stat value={unlockedBadges.length + '/' + BADGES.length} label="badges" /></View>
+    </View>
     <Pressable onPress={() => router.push('/bible/books')} style={[styles.glowCard, { marginTop: 14 }]}>
       <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.4 }}>📖 MON PARCOURS BIBLIQUE</Text>
       <Text style={{ color: colors.text, fontSize: 21, fontWeight: '900', marginTop: 6 }}>{bibleBooks}/66 livres découverts</Text>
@@ -69,7 +76,27 @@ export default function BibleScreen() {
     </Pressable>
     <SectionTitle title="👤 Personnages découverts" action="Voir les personnages ›" onPress={() => router.push('/characters')} />
     <View style={{ gap: 9 }}>{unlockedCharacters.slice(-6).reverse().map(character => <Pressable key={character.id} onPress={() => router.push({ pathname: '/characters', params: { characterId: character.id } })} style={styles.card}><View style={{ flexDirection: 'row', alignItems: 'center' }}><View style={{ width: 42, height: 42, borderRadius: 21, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.accent, alignItems: 'center', justifyContent: 'center' }}><Text style={{ fontSize: 20 }}>👤</Text></View><View style={{ flex: 1, marginLeft: 12 }}><Text style={{ color: colors.text, fontSize: 16, fontWeight: '900' }}>{character.name}</Text><Text style={{ color: colors.muted, fontSize: 11, marginTop: 2 }}>{character.role}</Text></View><Text style={{ color: colors.accent, fontSize: 20 }}>›</Text></View></Pressable>)}{unlockedCharacters.length === 0 ? <Empty text="Termine une histoire qui présente un personnage pour commencer ta collection." /> : null}</View>
-    <SectionTitle title="🏅 Badges" action="" onPress={() => {}} /><View style={{ gap: 9 }}>{BADGES.map(badge => { const ok = badge.unlocked(ctx); const progress = getBadgeProgress(badge, ctx); return <View key={badge.id} style={[styles.card, !ok && { opacity: .68 }]}><View style={{ flexDirection: 'row', alignItems: 'center' }}><Text style={{ fontSize: 28, width: 42 }}>{ok ? badge.icon : '🔒'}</Text><View style={{ flex: 1, marginLeft: 10 }}><Text style={{ color: ok ? colors.text : colors.muted, fontSize: 15, fontWeight: '900' }}>{ok ? badge.title : (badge.secret ? '???' : badge.title)}</Text><Text style={{ color: colors.muted, fontSize: 11, lineHeight: 17, marginTop: 3 }}>{ok || !badge.secret ? badge.description : 'Découvre comment obtenir ce badge.'}</Text></View></View>{!ok ? <View style={{ height: 5, backgroundColor: colors.border, borderRadius: 5, overflow: 'hidden', marginTop: 10 }}><View style={{ width: (Math.round(progress * 100) + '%') as any, height: '100%', backgroundColor: colors.accent }} /></View> : null}</View>; })}</View>
+    <SectionTitle title="🏅 Tes badges" action="" onPress={() => {}} />
+    <Text style={{ color: colors.muted, fontSize: 12, lineHeight: 18, marginBottom: 2 }}>Des récompenses pour avancer, collectionner et jouer.</Text>
+    <View style={{ gap: 18 }}>{badgeGroups.map(group => {
+      const groupUnlocked = group.badges.filter(b => b.unlocked(ctx)).length;
+      return <View key={group.id}>
+        <View style={{ flexDirection: 'row', alignItems: 'center', marginBottom: 9 }}>
+          <Text style={{ fontSize: 20 }}>{group.icon}</Text>
+          <View style={{ marginLeft: 8, flex: 1 }}><Text style={{ color: colors.text, fontSize: 16, fontWeight: '900' }}>{group.title}</Text><Text style={{ color: colors.muted, fontSize: 10, marginTop: 1 }}>{groupUnlocked}/{group.badges.length} débloqués</Text></View>
+        </View>
+        <View style={{ gap: 8 }}>{group.badges.map(badge => {
+          const ok = badge.unlocked(ctx); const progress = getBadgeProgress(badge, ctx);
+          return <View key={badge.id} style={[styles.card, { paddingVertical: 11 }, !ok && { opacity: .62 }]}>
+            <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+              <View style={{ width: 40, height: 40, borderRadius: 20, backgroundColor: ok ? colors.surface2 : colors.background, alignItems: 'center', justifyContent: 'center' }}><Text style={{ fontSize: 22 }}>{ok ? badge.icon : '🔒'}</Text></View>
+              <View style={{ flex: 1, marginLeft: 10 }}><Text style={{ color: ok ? colors.text : colors.muted, fontSize: 14, fontWeight: '900' }}>{ok ? badge.title : (badge.secret ? '???' : badge.title)}</Text><Text style={{ color: colors.muted, fontSize: 11, lineHeight: 16, marginTop: 2 }}>{ok || !badge.secret ? badge.description : 'Découvre comment obtenir ce badge.'}</Text></View>
+            </View>
+            {!ok ? <View style={{ height: 4, backgroundColor: colors.border, borderRadius: 5, overflow: 'hidden', marginTop: 9 }}><View style={{ width: (Math.round(progress * 100) + '%') as any, height: '100%', backgroundColor: colors.accent }} /></View> : null}
+          </View>;
+        })}</View>
+      </View>;
+    })}</View>
     <SectionTitle title="📚 Dernières histoires" action="Continuer l’Aventure ›" onPress={() => router.push('/adventure')} /><View style={{ gap: 9 }}>{recentStories.map(ep => <Pressable key={ep.id} onPress={() => router.push({ pathname: '/adventure/episode', params: { id: ep.id } })} style={styles.card}><Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.2 }}>HISTOIRE {ep.number}</Text><Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', marginTop: 4 }}>{ep.title}</Text></Pressable>)}{!recentStories.length ? <Empty text="Ton parcours apparaîtra ici dès ta première histoire." /> : null}</View>
     <SectionTitle title="🎮 Tes parties" action="" onPress={() => {}} />
     <View style={[styles.glowCard, { marginTop: 2 }]}>
