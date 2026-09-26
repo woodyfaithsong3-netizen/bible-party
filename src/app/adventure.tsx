@@ -12,20 +12,17 @@ import { SEASON_5 } from '@/data/adventureSeason5';
 import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
-import { getAdventureProgress, getCharacterAnnexProgress } from '@/lib/storage';
-import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
+import { getAdventureProgress } from '@/lib/storage';
 
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 
 export default function AdventureScreen() {
   const [completed, setCompleted] = useState<string[]>([]);
-  const [completedAnnexes, setCompletedAnnexes] = useState<string[]>([]);
   const [selectedSeason, setSelectedSeason] = useState(0);
   const [showSeasonIntro, setShowSeasonIntro] = useState(false);
 
   useFocusEffect(useCallback(() => {
     void getAdventureProgress().then(setCompleted);
-    void getCharacterAnnexProgress().then(setCompletedAnnexes);
   }, []));
 
   const activeSeason = SEASONS[selectedSeason];
@@ -88,43 +85,6 @@ export default function AdventureScreen() {
               <View style={{ width: `${progress}%`, height: '100%', backgroundColor: colors.accent }} />
             </View>
           </View>
-
-          {(() => {
-            const seasonAnnexes = CHARACTER_ANNEXES
-              .filter(item => item.seasonNumber === activeSeason.number)
-              .sort((a, b) => a.afterEpisode - b.afterEpisode);
-            if (!seasonAnnexes.length) return null;
-            return (
-              <View style={{ marginTop: 18 }}>
-                <Text style={styles.sectionTitle}>📜 DÉCOUVERTES DANS CETTE SAISON</Text>
-                <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 6 }}>
-                  Ces petites histoires s’insèrent dans la chronologie de la saison et débloquent des personnages supplémentaires.
-                </Text>
-                <View style={{ marginTop: 10, gap: 9 }}>
-                  {seasonAnnexes.map(item => {
-                    const done = completedAnnexes.includes(item.id);
-                    const episodeAfter = activeSeason.episodes.find(ep => ep.number === item.afterEpisode);
-                    const available = !episodeAfter || completed.includes(episodeAfter.id);
-                    return (
-                      <Pressable
-                        key={item.id}
-                        disabled={!available}
-                        onPress={() => available && router.push({ pathname: '/adventure/annexes', params: { id: item.id } })}
-                        style={[styles.card, { padding: 14, opacity: available ? 1 : .55 }]}
-                      >
-                        <Text style={{ color: colors.accent, fontSize: 9, fontWeight: '900', letterSpacing: 1.1 }}>
-                          {available ? '📜 APRÈS L’HISTOIRE' : '🔒 APRÈS L’HISTOIRE'} {item.afterEpisode}
-                        </Text>
-                        <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 5 }}>{item.title}</Text>
-                        <Text numberOfLines={2} style={{ color: colors.muted, lineHeight: 19, marginTop: 4 }}>{item.story}</Text>
-                        <Text style={{ color: colors.accent, fontWeight: '900', marginTop: 7 }}>{!available ? 'Termine d’abord cette histoire ›' : done ? 'Rejouer ›' : 'Découvrir ›'}</Text>
-                      </Pressable>
-                    );
-                  })}
-                </View>
-              </View>
-            );
-          })()}
 
           <Pressable onPress={startSeason} style={[styles.button, styles.buttonPrimary, { marginTop: 22 }]}>
             <Text style={styles.buttonText}>Commencer les épisodes ›</Text>
