@@ -55,7 +55,7 @@ export const BADGES: Badge[] = [
 
   { id:'secret-journey', category:'special', title:'Le fil continue', description:'Découvre au moins un personnage et termine une histoire.', icon:'🔮', secret:true, unlocked:c=>c.characters>=1&&c.episodes>=1 },
   { id:'secret-library', category:'special', title:'Entre les rayons', description:'Découvre au moins 10 livres et 10 personnages.', icon:'✨', secret:true, unlocked:c=>(c.books??0)>=10&&c.characters>=10 },
-  { id:'secret-complete', category:'special', title:'Collection légendaire', description:'Termine l’Aventure et complète les 66 livres et 125 personnages.', icon:'👑', secret:true, unlocked:c=>c.adventureComplete===true&&(c.books??0)>=BIBLE_BOOKS.length&&c.characters>=characterProfiles.length },
+  { id:'secret-complete', category:'special', title:'Collection légendaire', description:'Termine l’Aventure et complète les 66 livres et 177 personnages.', icon:'👑', secret:true, unlocked:c=>c.adventureComplete===true&&(c.books??0)>=BIBLE_BOOKS.length&&c.characters>=characterProfiles.length },
 ];
 
 export function getBadgeProgress(badge: Badge, ctx: Parameters<Badge['unlocked']>[0]) {
