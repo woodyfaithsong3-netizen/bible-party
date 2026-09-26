@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useState } from 'react';
 import { characterProfiles } from '../../data/characterProfiles';
 import { Pressable, ScrollView, Text, View } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
@@ -42,9 +42,46 @@ export default function AdventureEpisodeScreen() {
   const [bonusSelected, setBonusSelected] = useState<number | null>(null);
   const [newCharacterIds, setNewCharacterIds] = useState<string[]>([]);
   const [adventureComplete, setAdventureComplete] = useState(false);
+  const [accessChecked, setAccessChecked] = useState(false);
+  const [accessAllowed, setAccessAllowed] = useState(false);
+
+  useEffect(() => {
+    let active = true;
+    void getAdventureProgress().then(progress => {
+      if (!active) return;
+      if (!episode || currentSeasonIndex < 0) {
+        setAccessAllowed(false);
+        setAccessChecked(true);
+        return;
+      }
+      const previousSeason = currentSeasonIndex > 0 ? ADVENTURE_SEASONS[currentSeasonIndex - 1] : undefined;
+      const unlocked = !previousSeason || previousSeason.episodes.every(item => progress.includes(item.id));
+      setAccessAllowed(unlocked);
+      setAccessChecked(true);
+    });
+    return () => { active = false; };
+  }, [episode?.id, currentSeasonIndex]);
 
   if (!episode) {
     return <ScenicScreen><View style={styles.content}><Text style={styles.title}>Épisode introuvable</Text><Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { marginTop: 20 }]}><Text style={styles.buttonText}>Retour à Aventure</Text></Pressable></View></ScenicScreen>;
+  }
+
+  if (!accessChecked) {
+    return <ScenicScreen><View style={styles.content}><Text style={styles.title}>Vérification de l’aventure…</Text></View></ScenicScreen>;
+  }
+
+  if (!accessAllowed) {
+    const requiredSeason = currentSeasonIndex;
+    return <ScenicScreen><View style={styles.content}>
+      <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.5 }}>🔒 AVENTURE</Text>
+      <Text style={[styles.title, { marginTop: 8 }]}>Cette saison est verrouillée</Text>
+      <Text style={[styles.subtitle, { marginTop: 8 }]}>Termine d’abord la saison {requiredSeason} pour continuer ton parcours.</Text>
+      <View style={[styles.card, { marginTop: 20 }]}>
+        <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 22 }}>Le voyage se fait dans l’ordre.</Text>
+        <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 6 }}>Chaque saison te prépare à la suivante. Reviens ici après avoir terminé toutes les histoires de la saison précédente.</Text>
+      </View>
+      <Pressable onPress={() => router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { marginTop: 20 }]}><Text style={styles.buttonText}>Retour à Aventure ›</Text></Pressable>
+    </View></ScenicScreen>;
   }
 
   const question = episode.questions[index];
