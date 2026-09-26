@@ -13,6 +13,7 @@ import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
 import { getAdventureProgress } from '@/lib/storage';
+import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 
@@ -77,6 +78,40 @@ export default function AdventureScreen() {
             </View>
           </View>
 
+          {(() => {
+            const seasonAnnexes = CHARACTER_ANNEXES
+              .filter(item => item.seasonNumber === activeSeason.number)
+              .sort((a, b) => a.afterEpisode - b.afterEpisode);
+            if (!seasonAnnexes.length) return null;
+            return (
+              <View style={{ marginTop: 18 }}>
+                <Text style={styles.sectionTitle}>📜 DÉCOUVERTES DANS CETTE SAISON</Text>
+                <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 6 }}>
+                  Ces petites histoires s’insèrent dans la chronologie de la saison et débloquent des personnages supplémentaires.
+                </Text>
+                <View style={{ marginTop: 10, gap: 9 }}>
+                  {seasonAnnexes.map(item => {
+                    const done = false;
+                    return (
+                      <Pressable
+                        key={item.id}
+                        onPress={() => router.push({ pathname: '/adventure/annexes', params: { id: item.id } })}
+                        style={[styles.card, { padding: 14 }]}
+                      >
+                        <Text style={{ color: colors.accent, fontSize: 9, fontWeight: '900', letterSpacing: 1.1 }}>
+                          📜 APRÈS L’HISTOIRE {item.afterEpisode}
+                        </Text>
+                        <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 5 }}>{item.title}</Text>
+                        <Text numberOfLines={2} style={{ color: colors.muted, lineHeight: 19, marginTop: 4 }}>{item.story}</Text>
+                        <Text style={{ color: colors.accent, fontWeight: '900', marginTop: 7 }}>{done ? 'Rejouer ›' : 'Découvrir ›'}</Text>
+                      </Pressable>
+                    );
+                  })}
+                </View>
+              </View>
+            );
+          })()}
+
           <Pressable onPress={startSeason} style={[styles.button, styles.buttonPrimary, { marginTop: 22 }]}>
             <Text style={styles.buttonText}>Commencer les épisodes ›</Text>
           </Pressable>
@@ -133,13 +168,6 @@ export default function AdventureScreen() {
             })}
           </View>
         </View>
-
-        <Pressable onPress={() => router.push('/adventure/annexes')} style={[styles.card, { marginTop: 14, borderColor: colors.accent }]}>
-          <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.4 }}>📜 DÉCOUVERTES ANNEXES</Text>
-          <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 22, marginTop: 6 }}>Rencontre aussi les personnages qui ne sont pas au cœur des 116 histoires.</Text>
-          <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 5 }}>De petites histoires complémentaires, courtes et chronologiques, pour compléter ta collection.</Text>
-          <Text style={{ color: colors.accent, fontWeight: '900', marginTop: 8 }}>Voir les annexes ›</Text>
-        </Pressable>
 
         <View style={[styles.card, { marginTop: 18 }]}>
           <Text style={{ color: colors.accent, fontSize: 12, fontWeight: '900', letterSpacing: 1.3 }}>🧭 COMMENT ÇA MARCHE</Text>
