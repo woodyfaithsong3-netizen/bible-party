@@ -152,7 +152,7 @@ export function normalizeQuestionCategory(q: Question): string {
   }
 
   if ([
-    'évangiles', 'evangiles', 'actes', 'la bible et l’histoire',
+    'évangiles', 'evangiles', 'actes', 'la bible et l’histoire', 'histoire biblique', 'genèse', 'exode',
     'questions bibliques', 'bible', 'foi', 'courage', 'repentance',
     'prédication', 'persévérance', 'fidélité', 'amour', 'humilité'
   ].includes(source) && isCharacterFocused(q)) {
