@@ -36,7 +36,7 @@ export default function BibleCharactersScreen() {
   }, [completed, annexes]);
   const count = characterProfiles.filter(c => unlocked.has(c.id)).length;
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
-    <Pressable onPress={() => router.back()}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Ma Bible</Text></Pressable>
+    <View style={{ flexDirection: 'row', gap: 18, alignItems: 'center' }}><Pressable onPress={() => router.back()}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Ma Bible</Text></Pressable><Pressable onPress={() => router.replace('/characters')}><Text style={{ color: colors.accent, fontWeight: '900' }}>👤 Tous les personnages</Text></Pressable></View>
     <Text style={[styles.eyebrow, { marginTop: 20 }]}>👤 COLLECTION</Text>
     <Text style={[styles.title, { marginTop: 7 }]}>Personnages</Text>
     <Text style={styles.subtitle}>Découvre les personnages au fil de l’Aventure.</Text>
