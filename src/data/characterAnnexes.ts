@@ -7,12 +7,42 @@ export type CharacterAnnex = {
   period: string;
   story: string;
   questions: { prompt: string; choices: string[]; correct: number }[];
+  seasonNumber: number;
+  afterEpisode: number;
 };
 
-const make = (characterId: string, title: string, period: string, story: string, prompt: string, choices: string[], correct = 0): CharacterAnnex => ({
-  id: `annex-${characterId}`, characterId, title, period, story,
-  questions: [{ prompt, choices, correct }],
-});
+const CHRONOLOGY: Record<string, { seasonNumber: number; afterEpisode: number }> = {
+  melchizedek:{seasonNumber:2,afterEpisode:13}, hagar:{seasonNumber:2,afterEpisode:13},
+  amos:{seasonNumber:4,afterEpisode:65}, micah:{seasonNumber:4,afterEpisode:72},
+  zephaniah:{seasonNumber:4,afterEpisode:73}, nahum:{seasonNumber:4,afterEpisode:76},
+  habakkuk:{seasonNumber:4,afterEpisode:76}, obadiah:{seasonNumber:4,afterEpisode:76},
+  malachi:{seasonNumber:5,afterEpisode:83},
+  mary_bethany:{seasonNumber:6,afterEpisode:90}, joanna:{seasonNumber:6,afterEpisode:93},
+  samaritan_leper:{seasonNumber:6,afterEpisode:96}, martha:{seasonNumber:6,afterEpisode:92},
+  woman_issue_blood:{seasonNumber:6,afterEpisode:96}, gerasene_man:{seasonNumber:6,afterEpisode:96},
+  zacchaeus:{seasonNumber:6,afterEpisode:97},
+  james_brother_jesus:{seasonNumber:7,afterEpisode:104}, jude_brother_jesus:{seasonNumber:7,afterEpisode:104},
+  john_mark:{seasonNumber:7,afterEpisode:105}, mary_mark_mother:{seasonNumber:7,afterEpisode:106},
+  tabitha:{seasonNumber:7,afterEpisode:106}, lydia:{seasonNumber:7,afterEpisode:109},
+  jason_thessalonica:{seasonNumber:7,afterEpisode:110}, priscilla:{seasonNumber:7,afterEpisode:110},
+  apollos:{seasonNumber:7,afterEpisode:110}, euodia:{seasonNumber:7,afterEpisode:110},
+  syntyche:{seasonNumber:7,afterEpisode:110}, gaius_macedonian:{seasonNumber:7,afterEpisode:110},
+  phoebe:{seasonNumber:7,afterEpisode:113}, claudius_lycias:{seasonNumber:7,afterEpisode:108},
+  felix:{seasonNumber:7,afterEpisode:113}, festus:{seasonNumber:7,afterEpisode:113},
+  agrippa_ii:{seasonNumber:7,afterEpisode:113}, berenice:{seasonNumber:7,afterEpisode:113},
+  onesimus:{seasonNumber:7,afterEpisode:113}, apphia:{seasonNumber:7,afterEpisode:113},
+  archippus:{seasonNumber:7,afterEpisode:113}, onesiphorus:{seasonNumber:7,afterEpisode:113},
+  demas:{seasonNumber:7,afterEpisode:113}, titus:{seasonNumber:7,afterEpisode:113},
+};
+const make = (characterId: string, title: string, period: string, story: string, prompt: string, choices: string[], correct = 0): CharacterAnnex => {
+  const chronology = CHRONOLOGY[characterId];
+  if (!chronology) throw new Error(`Missing chronology for character annex: ${characterId}`);
+  return {
+    id: `annex-${characterId}`, characterId, title, period, story,
+    questions: [{ prompt, choices, correct }],
+    ...chronology,
+  };
+};
 
 export const CHARACTER_ANNEXES: CharacterAnnex[] = [
   make('melchizedek','Melchisédek rencontre Abraham','Après la victoire d’Abraham','Melchisédek, roi de Salem et prêtre du Dieu Très-Haut, rencontre Abraham après sa victoire. Il lui apporte du pain et du vin, le bénit, puis Abraham lui donne un dixième de tout.','Quel titre Melchisédek portait-il ?',['Roi de Salem et prêtre','Roi d’Égypte','Chef de l’armée d’Israël','Prophète de Babylone']),
