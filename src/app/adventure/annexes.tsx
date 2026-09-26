@@ -78,10 +78,14 @@ export default function CharacterAnnexesScreen() {
         <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.4 }}>❓ QUESTION RAPIDE</Text>
         <Text style={{ color: colors.text, fontSize: 17, fontWeight: '900', lineHeight: 23, marginTop: 8 }}>{question.prompt}</Text>
         <View style={{ marginTop: 12, gap: 8 }}>
-          {question.choices.map((choice, index) => <Pressable key={choice} onPress={() => answer(index)} style={{ padding: 13, borderRadius: 15, borderWidth: 1, borderColor: selectedAnswer === index ? colors.accent : colors.border, backgroundColor: selectedAnswer === index ? colors.surface2 : colors.surface }}>
+          {question.choices.map((choice, index) => <Pressable key={choice} onPress={() => answer(index)} style={{ padding: 13, borderRadius: 15, borderWidth: 1, borderColor: selectedAnswer === index ? (selectedAnswer === question.correct ? colors.accent : colors.danger) : colors.border, backgroundColor: selectedAnswer === index ? colors.surface2 : colors.surface }}>
             <Text style={{ color: colors.text, fontWeight: '800' }}>{choice}</Text>
           </Pressable>)}
         </View>
+        {selectedAnswer !== null && selectedAnswer !== question.correct ? <View style={{ marginTop: 12, padding: 12, borderRadius: 14, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.danger }}>
+          <Text style={{ color: colors.danger, fontWeight: '900' }}>✕ Pas tout à fait. Essaie encore !</Text>
+          <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 4 }}>Relis l’histoire puis choisis une autre réponse.</Text>
+        </View> : null}
       </View> : <View style={[styles.glowCard, { marginTop: 14, alignItems: 'center' }]}>
         <Text style={{ fontSize: 38 }}>✨</Text>
         <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.5, marginTop: 6 }}>NOUVEAU PERSONNAGE DÉBLOQUÉ</Text>
