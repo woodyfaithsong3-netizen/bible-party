@@ -475,7 +475,7 @@ const tfFacts: Array<[string, boolean, string, string]> = [
   ['Ruth est restée avec Noémi après la mort de son mari.', true, 'Ruth a choisi de rester avec Noémi.', 'Ruth 1:14-17'],
   ['Daniel a été jeté dans une fosse aux lions.', true, 'Daniel a été jeté dans la fosse, puis protégé par Dieu.', 'Daniel 6:16-23'],
   ['Pierre était pêcheur avant de suivre Jésus.', true, 'Pierre faisait partie des pêcheurs appelés par Jésus.', 'Matthieu 4:18-20'],
-  ['Matthieu était collecteur d’impôts avant de suivre Jésus.', true, 'Jésus a appelé Matthieu alors qu’il était au bureau des impôts.', 'Matthieu 9:9'],
+  ['Matthieu a quitté son bureau d’impôts pour suivre Jésus.', true, 'Jésus a appelé Matthieu alors qu’il était au bureau des impôts.', 'Matthieu 9:9'],
   ['Jonas a immédiatement accepté d’aller à Ninive.', false, 'Jonas a d’abord tenté de fuir sa mission.', 'Jonas 1:1-3'],
   ['Moïse était le frère d’Aaron.', true, 'Aaron était le frère de Moïse.', 'Exode 4:14-16'],
   ['Saül a été le premier roi d’Israël.', true, 'Saül a été choisi comme premier roi d’Israël.', '1 Samuel 10:1, 24'],
