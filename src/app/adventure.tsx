@@ -27,7 +27,6 @@ export default function AdventureScreen() {
   useEffect(() => {
     const requested = Number(params.season);
     if (!Number.isInteger(requested) || requested < 0 || requested >= SEASONS.length) return;
-    const season = SEASONS[requested];
     if (requested === 0 || SEASONS[requested - 1].episodes.every(ep => completed.includes(ep.id))) {
       setSelectedSeason(requested);
       setShowSeasonIntro(true);
