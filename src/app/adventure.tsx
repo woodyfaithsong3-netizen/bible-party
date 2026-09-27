@@ -1,6 +1,6 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { Pressable, ScrollView, Text, View } from 'react-native';
-import { router, useFocusEffect } from 'expo-router';
+import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { ScenicScreen } from '@/components/ScenicScreen';
 import { colors } from '@/theme/colors';
 import { styles } from '@/theme/styles';
@@ -19,9 +19,20 @@ import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 
 export default function AdventureScreen() {
+  const params = useLocalSearchParams<{ season?: string }>();
   const [completed, setCompleted] = useState<string[]>([]);
   const [selectedSeason, setSelectedSeason] = useState(0);
   const [showSeasonIntro, setShowSeasonIntro] = useState(false);
+
+  useEffect(() => {
+    const requested = Number(params.season);
+    if (!Number.isInteger(requested) || requested < 0 || requested >= SEASONS.length) return;
+    const season = SEASONS[requested];
+    if (requested === 0 || SEASONS[requested - 1].episodes.every(ep => completed.includes(ep.id))) {
+      setSelectedSeason(requested);
+      setShowSeasonIntro(true);
+    }
+  }, [params.season, completed]);
 
   useFocusEffect(useCallback(() => {
     void getAdventureProgress().then(setCompleted);
@@ -61,10 +72,16 @@ export default function AdventureScreen() {
 
   const startSeason = () => {
     if (!isSeasonUnlocked(selectedSeason)) return;
+    const firstIncomplete = activeSeason.episodes.find(ep => !completed.includes(ep.id));
+    const targetEpisode = firstIncomplete ?? activeSeason.episodes[0];
+    if (!targetEpisode) return;
+    router.replace({ pathname: '/adventure/episode', params: { id: targetEpisode.id } });
+  };
 
-    const firstEpisode = activeSeason.episodes[0];
-    if (!firstEpisode) return;
-    router.replace({ pathname: '/adventure/episode', params: { id: firstEpisode.id } });
+  const seasonComplete = activeSeason.episodes.length > 0 && activeSeason.episodes.every(ep => completed.includes(ep.id));
+  const canOpenEpisode = (episodeIndex: number) => {
+    if (seasonComplete) return true;
+    return episodeIndex === 0 || activeSeason.episodes.slice(0, episodeIndex).every(ep => completed.includes(ep.id));
   };
 
   if (showSeasonIntro) {
@@ -116,8 +133,31 @@ export default function AdventureScreen() {
           </View>
 
           <Pressable onPress={startSeason} style={[styles.button, styles.buttonPrimary, { marginTop: 22 }]}>
-            <Text style={styles.buttonText}>Commencer les épisodes ›</Text>
+            <Text style={styles.buttonText}>{seasonComplete ? 'Rejouer un épisode ›' : activeCompletedCount > 0 ? 'Continuer l’aventure ›' : 'Commencer les épisodes ›'}</Text>
           </Pressable>
+
+          <View style={{ marginTop: 18 }}>
+            <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.4 }}>📚 LES ÉPISODES</Text>
+            <Text style={{ color: colors.muted, lineHeight: 19, marginTop: 5 }}>{seasonComplete ? 'La saison est terminée : choisis directement l’épisode que tu veux revoir.' : 'Les épisodes se débloquent dans l’ordre.'}</Text>
+            <View style={{ marginTop: 10, gap: 8 }}>
+              {activeSeason.episodes.map((ep, episodeIndex) => {
+                const done = completed.includes(ep.id);
+                const available = canOpenEpisode(episodeIndex);
+                return <Pressable key={ep.id} disabled={!available} onPress={() => router.replace({ pathname: '/adventure/episode', params: { id: ep.id } })} style={[styles.card, { padding: 12, opacity: available ? 1 : .52, borderColor: done ? colors.success : colors.border }]}>
+                  <View style={{ flexDirection: 'row', alignItems: 'center' }}>
+                    <View style={{ width: 32, height: 32, borderRadius: 16, backgroundColor: done ? colors.success : colors.surface2, alignItems: 'center', justifyContent: 'center' }}>
+                      <Text style={{ color: done ? colors.bg : colors.accent, fontWeight: '900' }}>{done ? '✓' : ep.number}</Text>
+                    </View>
+                    <View style={{ flex: 1, marginLeft: 10 }}>
+                      <Text style={{ color: colors.text, fontSize: 14, fontWeight: '900' }}>{ep.title}</Text>
+                      <Text style={{ color: colors.muted, fontSize: 10, marginTop: 2 }}>{done ? '✓ Épisode terminé · Rejouer' : available ? 'À découvrir ›' : '🔒 À débloquer'}</Text>
+                    </View>
+                    {available ? <Text style={{ color: colors.accent, fontSize: 19 }}>›</Text> : null}
+                  </View>
+                </Pressable>;
+              })}
+            </View>
+          </View>
         </ScrollView>
       </ScenicScreen>
     );
