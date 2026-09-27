@@ -111,14 +111,14 @@ const duplicateOptionBlocks = quizBlocks.filter(m => {
   return options.length >= 2 && new Set(options).size !== options.length;
 });
 
-const personQuestionPattern = /^(qui|à qui|a qui|avec qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel fils|quelle fille|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne|quel collecteur|quel chef|quel commandant|quel compagnon|quel prédicateur|quel pharisien|quel rédempteur)\\b/i;
-const semanticQuizRecords = dedicatedSource.split('\\n')
-  .filter(line => /type:\\s*['"]quiz['"]/.test(line))
+const personQuestionPattern = /^(qui|à qui|a qui|avec qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel fils|quelle fille|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne|quel collecteur|quel chef|quel commandant|quel compagnon|quel prédicateur|quel pharisien|quel rédempteur)\b/i;
+const semanticQuizRecords = dedicatedSource.split('\n')
+  .filter(line => /type:\s*['"]quiz['"]/.test(line))
   .map(line => {
-    const characterId = line.match(/characterId:\\s*['"]([^'"]+)['"]/)?.[1] ?? '';
-    const question = line.match(/question:\\s*'([^']+)'/)?.[1] ?? '';
-    const correctAnswerIndex = Number(line.match(/correctAnswer:\\s*(\\d+)/)?.[1] ?? -1);
-    const answersRaw = line.match(/answers:\\s*\\[([^\\]]+)\\]/)?.[1] ?? '';
+    const characterId = line.match(/characterId:\s*['"]([^'"]+)['"]/)?.[1] ?? '';
+    const question = line.match(/question:\s*'([^']+)'/)?.[1] ?? '';
+    const correctAnswerIndex = Number(line.match(/correctAnswer:\s*(\\d+)/)?.[1] ?? -1);
+    const answersRaw = line.match(/answers:\s*\\[([^\\]]+)\\]/)?.[1] ?? '';
     const answers = [...answersRaw.matchAll(/'([^']*)'/g)].map(match => match[1]);
     return { characterId, question, answer: answers[correctAnswerIndex] ?? '' };
   });
