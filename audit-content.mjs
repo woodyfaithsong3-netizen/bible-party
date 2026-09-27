@@ -112,6 +112,7 @@ const duplicateOptionBlocks = quizBlocks.filter(m => {
 });
 
 const personQuestionPattern = /^(qui|à qui|a qui|avec qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel fils|quelle fille|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne|quel collecteur|quel chef|quel commandant|quel compagnon|quel prédicateur|quel pharisien|quel rédempteur)\b/i;
+const nonPersonQuestionPattern = /^(où|d'où|dans quelle (ville|région|province|contrée|pays|fleuve|mer)|sur quoi|combien|qu'est-ce que|quelles conséquences|quel avertissement|quel événement|quel danger|quel défi|quel objet|quelle qualité|quel problème|quel rôle|quel poste|quel métier|quel âge|quel effet|quel sujet|quelles consignes|quels thèmes|quels signes|quel privilège|quelles difficultés|quel fleuve|quelle ville|quelles mesures|quelles réformes)\b/i;
 const semanticQuizRecords = dedicatedSource.split('\n')
   .filter(line => /type:\s*['"]quiz['"]/.test(line))
   .map(line => {
@@ -132,7 +133,7 @@ for (const card of semanticQuizRecords) {
 const semanticCharacterAnswerMismatches = semanticQuizRecords.filter(card =>
   card.characterId &&
   card.answer &&
-  !personQuestionPattern.test(card.question) &&
+  nonPersonQuestionPattern.test(card.question) &&
   personAnswersByCharacter.get(card.characterId)?.has(card.answer.trim().toLowerCase())
 );
 
