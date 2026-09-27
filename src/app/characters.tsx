@@ -1,5 +1,5 @@
 import React, { useCallback, useMemo, useState } from 'react';
-import { Pressable, ScrollView, Text, TextInput, View } from 'react-native';
+import { PanResponder, Pressable, ScrollView, Text, TextInput, View } from 'react-native';
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { characterProfiles, CharacterProfile } from '@/data/characterProfiles';
 import { characterLearning } from '@/data/characterLearning';
@@ -69,14 +69,14 @@ for (const block of CHRONOLOGICAL_BLOCKS) {
   for (const id of block.ids) CHRONOLOGICAL_BLOCK_BY_ID.set(id, block.label);
 }
 
-function ProfileCard({ item, onPress, unlocked }: { item: CharacterProfile; onPress: () => void; unlocked: boolean }) {
+function ProfileCard({ item, onPress, unlocked, read }: { item: CharacterProfile; onPress: () => void; unlocked: boolean; read: boolean }) {
   const chronologyBlock = CHRONOLOGICAL_BLOCK_BY_ID.get(item.id) ?? 'Chronologie';
-  return <Pressable disabled={!unlocked} onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10, opacity: unlocked ? 1 : .62 }, pressed && unlocked && { opacity: 0.82 }]}>
+  return <Pressable disabled={!unlocked} onPress={onPress} style={({ pressed }) => [styles.card, { marginBottom: 10, opacity: unlocked ? (read ? 1 : .82) : .62, borderColor: read ? colors.accent : colors.border, backgroundColor: read ? colors.surface2 : undefined }, pressed && unlocked && { opacity: 0.82 }]}>
     <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1 }}>{chronologyBlock.toUpperCase()}</Text>
     <Text style={{ color: colors.text, fontSize: 19, fontWeight: '900', marginTop: 4 }}>{unlocked ? item.name : '???'}</Text>
     <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800', marginTop: 3 }}>{unlocked ? item.role : 'Personnage verrouillé'}</Text>
     <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 8 }} numberOfLines={3}>{item.summary}</Text>
-    <Text style={{ color: unlocked ? colors.accent : colors.muted, fontWeight: '900', marginTop: 9 }}>{!unlocked ? '🔒 À découvrir dans l’Aventure' : '✓ Personnage découvert'}</Text>
+    <Text style={{ color: unlocked ? (read ? colors.accent : colors.muted) : colors.muted, fontWeight: '900', marginTop: 9 }}>{!unlocked ? '🔒 À découvrir dans l’Aventure' : read ? '✓ Fiche lue' : '👤 Découvert · fiche à lire'}</Text>
   </Pressable>;
 }
 
@@ -87,11 +87,19 @@ function Section({ icon, title, children }: { icon: string; title: string; child
   </View>;
 }
 
-function CharacterDetail({ item, onBack, onAllCharacters, returnEpisodeId }: { item: CharacterProfile; onBack: () => void; onAllCharacters: () => void; returnEpisodeId?: string }) {
+function CharacterDetail({ item, onBack, onAllCharacters, onMoveCharacter, returnEpisodeId }: { item: CharacterProfile; onBack: () => void; onAllCharacters: () => void; onMoveCharacter: (direction: -1 | 1) => void; returnEpisodeId?: string }) {
   const learning = characterLearning[item.id];
   const [hasRead, setHasRead] = useState(false);
   React.useEffect(() => { void getReadCharacterIds().then(ids => setHasRead(ids.includes(item.id))); }, [item.id]);
-  const confirmRead = useCallback(async () => { await markCharacterRead(item.id); setHasRead(true); }, [item.id]);
+  const confirmRead = useCallback(async () => { await markCharacterRead(item.id); setHasRead(true); }, [item.id]);\n  const swipeResponder = React.useMemo(() => PanResponder.create({
+    onMoveShouldSetPanResponder: (_event, gesture) => Math.abs(gesture.dx) > Math.abs(gesture.dy) && Math.abs(gesture.dx) > 14,
+    onPanResponderRelease: (_event, gesture) => {
+      if (Math.abs(gesture.dx) < 55) return;
+      onMoveCharacter(gesture.dx < 0 ? 1 : -1);
+    },
+  }), [onMoveCharacter]);
+
+
 
   const familyAndEntourage = item.relations.length
     ? item.relations.join(' · ')
@@ -112,7 +120,7 @@ function CharacterDetail({ item, onBack, onAllCharacters, returnEpisodeId }: { i
     ?? 'Aucun fait supplémentaire n’est ajouté ici lorsque les ressources étudiées ne permettent pas d’en vérifier un précisément.';
 
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
-    <View style={{ flexDirection: 'row', gap: 18, alignItems: 'center' }}>
+    <View {...swipeResponder.panHandlers} style={{ marginTop: 2, paddingVertical: 8, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', borderRadius: 14, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}><Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900' }}>‹ GLISSE POUR CHANGER</Text><Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900' }}>PERSONNAGE ›</Text></View>\n    <View style={{ flexDirection: 'row', gap: 18, alignItems: 'center', marginTop: 8 }}>
       <Pressable onPress={onBack}><Text style={{ color: colors.accent, fontWeight: '900' }}>{returnEpisodeId ? '‹ Retour à l’histoire' : '‹ Retour'}</Text></Pressable>
       {!returnEpisodeId ? <Pressable onPress={onAllCharacters}><Text style={{ color: colors.accent, fontWeight: '900' }}>👤 Tous les personnages</Text></Pressable> : null}
       {!returnEpisodeId ? <Pressable onPress={() => router.replace('/bible')}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Ma Bible</Text></Pressable> : null}
@@ -197,8 +205,9 @@ export default function CharactersScreen() {
   const params = useLocalSearchParams<{ characterId?: string; returnEpisodeId?: string }>();
   const [selected, setSelected] = useState<CharacterProfile | null>(null);
   const [unlockedIds, setUnlockedIds] = useState<string[]>([]);
+  const [readIds, setReadIds] = useState<string[]>([]);
   useFocusEffect(React.useCallback(() => {
-    void Promise.all([getAdventureProgress(), getCharacterAnnexProgress()]).then(([progress, annexProgress]) => {
+    void Promise.all([getAdventureProgress(), getCharacterAnnexProgress(), getReadCharacterIds()]).then(([progress, annexProgress, readProgress]) => {
       const done = new Set(progress);
       const seasons = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
       const adventureComplete = seasons.every(season => season.episodes.length > 0 && season.episodes.every(ep => done.has(ep.id)));
@@ -208,6 +217,7 @@ export default function CharactersScreen() {
         ...(adventureComplete ? Array.from(FINAL_CHARACTER_ARCHIVE_IDS) : []),
       ]));
       setUnlockedIds(ids);
+      setReadIds(readProgress);
       if (params.characterId && ids.includes(params.characterId)) {
         const target = characterProfiles.find(item => item.id === params.characterId);
         if (target) setSelected(target);
@@ -230,7 +240,16 @@ export default function CharactersScreen() {
       return matchesEra && matchesQuery;
     });
   }, [query, selectedEra, orderedProfiles]);
-  if (selected && unlockedIds.includes(selected.id)) return <ScenicScreen><CharacterDetail item={selected} returnEpisodeId={params.returnEpisodeId} onBack={() => { if (params.returnEpisodeId) router.replace({ pathname: '/adventure/episode', params: { id: params.returnEpisodeId } }); else router.back(); }} onAllCharacters={() => router.replace('/bible/characters')} /></ScenicScreen>;
+  const moveCharacter = useCallback((direction: -1 | 1) => {
+    if (!selected) return;
+    const available = orderedProfiles.filter(item => unlockedIds.includes(item.id));
+    const current = available.findIndex(item => item.id === selected.id);
+    if (current < 0 || available.length < 2) return;
+    const next = available[(current + direction + available.length) % available.length];
+    setSelected(next);
+  }, [selected, orderedProfiles, unlockedIds]);
+
+  if (selected && unlockedIds.includes(selected.id)) return <ScenicScreen><CharacterDetail item={selected} returnEpisodeId={params.returnEpisodeId} onMoveCharacter={moveCharacter} onBack={() => { if (params.returnEpisodeId) router.replace({ pathname: '/adventure/episode', params: { id: params.returnEpisodeId } }); else router.back(); }} onAllCharacters={() => router.replace('/bible/characters')} /></ScenicScreen>;
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={styles.eyebrow}>APPRENDRE</Text>
     <Text style={[styles.title, { marginTop: 7 }]}>Personnages bibliques</Text>
@@ -243,6 +262,6 @@ export default function CharactersScreen() {
       <Text style={{ color: colors.muted, fontSize: 12, fontWeight: '800' }}>{filtered.length} fiches affichées · {unlockedIds.length}/{characterProfiles.length} découvertes</Text>
       <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 8 }}><View style={{ width: `${Math.round((unlockedIds.length / Math.max(1, characterProfiles.length)) * 100)}%`, height: '100%', backgroundColor: colors.accent }} /></View>
     </View>
-    {filtered.map(item => <ProfileCard key={item.id} item={item} unlocked={unlockedIds.includes(item.id)} onPress={() => setSelected(item)} />)}
+    {filtered.map(item => <ProfileCard key={item.id} item={item} unlocked={unlockedIds.includes(item.id)} read={readIds.includes(item.id)} onPress={() => setSelected(item)} />)}
   </ScrollView></ScenicScreen>;
 }
