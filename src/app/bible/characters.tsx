@@ -14,7 +14,7 @@ import { SEASON_5 } from '@/data/adventureSeason5';
 import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
-import { getAdventureProgress, getCharacterAnnexProgress } from '@/lib/storage';
+import { getAdventureProgress, getCharacterAnnexProgress, getReadCharacterIds } from '@/lib/storage';
 
 const SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 const FINAL_CHARACTER_ARCHIVE_IDS = new Set(['eve','cain','abel','henoch','lot','rebecca','rachel','benjamin','dinah','aaron','miriam','caleb','rahab','deborah','barak','jael','gideon','jephthah','jonathan','goliath','abigail','nabal','jezebel','mordecai','haman','nicodeme','lazare','judas_iscariote','matthias','matthew','marc','luc','gad','nathan','sons_korah','asaph','heman','ethan','agur','lemuel','job','pharaoh','jochebed','pharaoh_daughter','jesus','absalom','rehoboam','jeroboam','shadrach','meshach','abednego','nebuchadnezzar']);
@@ -22,8 +22,9 @@ const FINAL_CHARACTER_ARCHIVE_IDS = new Set(['eve','cain','abel','henoch','lot',
 export default function BibleCharactersScreen() {
   const [completed, setCompleted] = useState<string[]>([]);
   const [annexes, setAnnexes] = useState<string[]>([]);
+  const [readIds, setReadIds] = useState<string[]>([]);
   useFocusEffect(useCallback(() => {
-    void Promise.all([getAdventureProgress(), getCharacterAnnexProgress()]).then(([a, x]) => { setCompleted(a); setAnnexes(x); });
+    void Promise.all([getAdventureProgress(), getCharacterAnnexProgress(), getReadCharacterIds()]).then(([a, x, read]) => { setCompleted(a); setAnnexes(x); setReadIds(read); });
   }, []));
   const unlocked = useMemo(() => {
     const done = new Set(completed);
@@ -49,11 +50,12 @@ export default function BibleCharactersScreen() {
     <Text style={[styles.sectionTitle, { marginTop: 24 }]}>Ta collection</Text>
     <View style={{ gap: 9 }}>{characterProfiles.map(character => {
       const ok = unlocked.has(character.id);
-      return <Pressable key={character.id} disabled={!ok} onPress={() => router.push({ pathname: '/characters', params: { characterId: character.id } })} style={[styles.card, !ok && { opacity: .58 }]}>
+      const read = readIds.includes(character.id);
+      return <Pressable key={character.id} disabled={!ok} onPress={() => router.push({ pathname: '/characters', params: { characterId: character.id } })} style={[styles.card, !ok && { opacity: .58 }, ok && { opacity: read ? 1 : .82, borderColor: read ? colors.accent : colors.border, backgroundColor: read ? colors.surface2 : undefined }]}>
         <View style={{ flexDirection: 'row', alignItems: 'center' }}>
-          <View style={{ width: 44, height: 44, borderRadius: 22, backgroundColor: ok ? colors.surface2 : colors.bg, borderWidth: 1, borderColor: ok ? colors.accent : colors.border, alignItems: 'center', justifyContent: 'center' }}><Text style={{ fontSize: 21 }}>{ok ? '👤' : '🔒'}</Text></View>
-          <View style={{ flex: 1, marginLeft: 12 }}><Text style={{ color: ok ? colors.text : colors.muted, fontSize: 15, fontWeight: '900' }}>{ok ? character.name : '???'}</Text><Text style={{ color: colors.muted, fontSize: 11, marginTop: 2 }}>{ok ? character.role : 'Personnage à découvrir dans l’Aventure'}</Text></View>
-          {ok ? <Text style={{ color: colors.accent, fontSize: 20 }}>›</Text> : null}
+          <View style={{ width: 44, height: 44, borderRadius: 22, backgroundColor: ok ? colors.surface2 : colors.bg, borderWidth: 1, borderColor: read ? colors.accent : ok ? colors.border : colors.border, alignItems: 'center', justifyContent: 'center' }}><Text style={{ fontSize: 21 }}>{ok ? '👤' : '🔒'}</Text></View>
+          <View style={{ flex: 1, marginLeft: 12 }}><Text style={{ color: ok ? colors.text : colors.muted, fontSize: 15, fontWeight: '900' }}>{ok ? character.name : '???'}</Text><Text style={{ color: colors.muted, fontSize: 11, marginTop: 2 }}>{ok ? character.role : 'Personnage à découvrir dans l’Aventure'}</Text><Text style={{ color: ok ? (read ? colors.accent : colors.muted) : colors.muted, fontSize: 10, fontWeight: '900', marginTop: 3 }}>{ok ? (read ? '✓ Fiche lue' : '👤 Découvert · à lire') : '🔒 À découvrir'}</Text></View>
+          {ok ? <Text style={{ color: read ? colors.accent : colors.muted, fontSize: 20 }}>›</Text> : null}
         </View>
       </Pressable>;
     })}</View>
