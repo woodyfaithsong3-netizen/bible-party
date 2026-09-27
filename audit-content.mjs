@@ -137,8 +137,28 @@ const semanticCharacterAnswerMismatches = semanticQuizRecords.filter(card =>
   personAnswersByCharacter.get(card.characterId)?.has(card.answer.trim().toLowerCase())
 );
 
+const malformedWhoAnswers = semanticQuizRecords.filter(card =>
+  /^(qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne)\\b/i.test(card.question) &&
+  /^(à|a)\\s+/i.test(card.answer)
+);
+const malformedDreamAnswers = semanticQuizRecords.filter(card =>
+  /^(quels rêves|quel rêve)\\b/i.test(card.question) &&
+  /^(à|a|pour|vers|dans)\\s+/i.test(card.answer)
+);
+const metaExplanations = dedicatedSource.split('\\n').filter(line =>
+  /type:\s*['"]quiz['"]/.test(line) &&
+  /explanation:\s*['"](Examiner|Observer|Étudier|Etudier|Approfondir|Découvrir|Analyser|Comprendre)\\b/i.test(line)
+);
+const duplicateQuestions = [...new Map(
+  semanticQuizRecords.map(card => [card.question.trim().toLowerCase(), card])
+)].length !== semanticQuizRecords.length;
+
 const failures = [];
 if (semanticCharacterAnswerMismatches.length) failures.push('character answer used for a non-person question: ' + semanticCharacterAnswerMismatches.map(card => card.characterId + ' / ' + card.question + ' -> ' + card.answer).join(' | '));
+if (malformedWhoAnswers.length) failures.push('who/person question has an answer shaped like a non-person response: ' + malformedWhoAnswers.map(card => card.characterId + ' / ' + card.question + ' -> ' + card.answer).join(' | '));
+if (malformedDreamAnswers.length) failures.push('dream question has a non-dream answer shape: ' + malformedDreamAnswers.map(card => card.characterId + ' / ' + card.question + ' -> ' + card.answer).join(' | '));
+if (metaExplanations.length) failures.push('meta/instructional explanations remain in quiz cards: ' + metaExplanations.length);
+if (duplicateQuestions) failures.push('duplicate quiz questions remain in the dedicated character corpus');
 if (difficultyCounts.easy !== 375 || difficultyCounts.medium !== 500 || difficultyCounts.hard !== 625 || difficultyCounts.expert !== 500) failures.push('dedicated difficulty counts changed: ' + JSON.stringify(difficultyCounts));
 if (duplicateIds.length) failures.push('duplicate ids: ' + duplicateIds.map(([id, n]) => id + ' x' + n).join(', '));
 if (emptyReferences) failures.push('empty references detected');
