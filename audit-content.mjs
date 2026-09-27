@@ -111,7 +111,33 @@ const duplicateOptionBlocks = quizBlocks.filter(m => {
   return options.length >= 2 && new Set(options).size !== options.length;
 });
 
+const personQuestionPattern = /^(qui|à qui|a qui|avec qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel fils|quelle fille|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne|quel collecteur|quel chef|quel commandant|quel compagnon|quel prédicateur|quel pharisien|quel rédempteur)\\b/i;
+const semanticQuizRecords = dedicatedSource.split('\\n')
+  .filter(line => /type:\\s*['"]quiz['"]/.test(line))
+  .map(line => {
+    const characterId = line.match(/characterId:\\s*['"]([^'"]+)['"]/)?.[1] ?? '';
+    const question = line.match(/question:\\s*'([^']+)'/)?.[1] ?? '';
+    const correctAnswerIndex = Number(line.match(/correctAnswer:\\s*(\\d+)/)?.[1] ?? -1);
+    const answersRaw = line.match(/answers:\\s*\\[([^\\]]+)\\]/)?.[1] ?? '';
+    const answers = [...answersRaw.matchAll(/'([^']*)'/g)].map(match => match[1]);
+    return { characterId, question, answer: answers[correctAnswerIndex] ?? '' };
+  });
+
+const personAnswersByCharacter = new Map();
+for (const card of semanticQuizRecords) {
+  if (!personQuestionPattern.test(card.question) || !card.answer) continue;
+  if (!personAnswersByCharacter.has(card.characterId)) personAnswersByCharacter.set(card.characterId, new Set());
+  personAnswersByCharacter.get(card.characterId).add(card.answer.trim().toLowerCase());
+}
+const semanticCharacterAnswerMismatches = semanticQuizRecords.filter(card =>
+  card.characterId &&
+  card.answer &&
+  !personQuestionPattern.test(card.question) &&
+  personAnswersByCharacter.get(card.characterId)?.has(card.answer.trim().toLowerCase())
+);
+
 const failures = [];
+if (semanticCharacterAnswerMismatches.length) failures.push('character answer used for a non-person question: ' + semanticCharacterAnswerMismatches.map(card => card.characterId + ' / ' + card.question + ' -> ' + card.answer).join(' | '));
 if (difficultyCounts.easy !== 375 || difficultyCounts.medium !== 500 || difficultyCounts.hard !== 625 || difficultyCounts.expert !== 500) failures.push('dedicated difficulty counts changed: ' + JSON.stringify(difficultyCounts));
 if (duplicateIds.length) failures.push('duplicate ids: ' + duplicateIds.map(([id, n]) => id + ' x' + n).join(', '));
 if (emptyReferences) failures.push('empty references detected');
