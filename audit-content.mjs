@@ -117,8 +117,8 @@ const semanticQuizRecords = dedicatedSource.split('\n')
   .map(line => {
     const characterId = line.match(/characterId:\s*['"]([^'"]+)['"]/)?.[1] ?? '';
     const question = line.match(/question:\s*'([^']+)'/)?.[1] ?? '';
-    const correctAnswerIndex = Number(line.match(/correctAnswer:\s*(\\d+)/)?.[1] ?? -1);
-    const answersRaw = line.match(/answers:\s*\\[([^\\]]+)\\]/)?.[1] ?? '';
+    const correctAnswerIndex = Number(line.match(/correctAnswer:\s*(\d+)/)?.[1] ?? -1);
+    const answersRaw = line.match(/answers:\s*\[([^\]]+)\]/)?.[1] ?? '';
     const answers = [...answersRaw.matchAll(/'([^']*)'/g)].map(match => match[1]);
     return { characterId, question, answer: answers[correctAnswerIndex] ?? '' };
   });
