@@ -91,7 +91,8 @@ function CharacterDetail({ item, onBack, onAllCharacters, onMoveCharacter, retur
   const learning = characterLearning[item.id];
   const [hasRead, setHasRead] = useState(false);
   React.useEffect(() => { void getReadCharacterIds().then(ids => setHasRead(ids.includes(item.id))); }, [item.id]);
-  const confirmRead = useCallback(async () => { await markCharacterRead(item.id); setHasRead(true); }, [item.id]);\n  const swipeResponder = React.useMemo(() => PanResponder.create({
+  const confirmRead = useCallback(async () => { await markCharacterRead(item.id); setHasRead(true); }, [item.id]);
+  const swipeResponder = React.useMemo(() => PanResponder.create({
     onMoveShouldSetPanResponder: (_event, gesture) => Math.abs(gesture.dx) > Math.abs(gesture.dy) && Math.abs(gesture.dx) > 14,
     onPanResponderRelease: (_event, gesture) => {
       if (Math.abs(gesture.dx) < 55) return;
