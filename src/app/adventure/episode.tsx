@@ -254,7 +254,7 @@ export default function AdventureEpisodeScreen() {
               <Pressable onPress={() => nextEpisode ? router.replace({ pathname: '/adventure/episode', params: { id: nextEpisode.id } }) : router.replace('/adventure')} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 20 }]}>
                 <Text style={styles.buttonText}>{nextEpisode ? (isSeasonEnd ? `Commencer ${nextSeason?.title ?? 'la suite'} ›` : `Épisode ${nextEpisode.number} ›`) : 'Retour à Aventure ›'}</Text>
               </Pressable>
-              {isSeasonEnd ? <Pressable onPress={() => router.replace({ pathname: '/adventure', params: { season: String(currentSeasonIndex) } })} style={[styles.button, { width: '100%', marginTop: 10 }]}><Text style={styles.buttonText}>Choisir un épisode ›</Text></Pressable> : null}
+              {isSeasonEnd ? <Pressable onPress={() => router.replace(`/adventure?season=${currentSeasonIndex}`)} style={[styles.button, { width: '100%', marginTop: 10 }]}><Text style={styles.buttonText}>Choisir un épisode ›</Text></Pressable> : null}
             </>}
           </View>
         </ScrollView>
