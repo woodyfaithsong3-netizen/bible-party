@@ -21,9 +21,9 @@ export const allGameQuestions: Question[] = [
  */
 export const categoryLabels = [
   'Personnages',
-  'Récits & événements',
-  'Bible & enseignements',
-  'Jéhovah & la foi',
+  'Récits bibliques',
+  'Comprendre la Bible',
+  'Mieux connaître Jéhovah',
 ];
 
 export const setupCategoryFilters = [...categoryLabels];
@@ -41,69 +41,69 @@ const CATEGORY_MAP: Record<string, string> = {
   juges: 'Personnages',
 
   // 2 — Récits & événements : histoires, périodes, événements et actions racontées.
-  'histoire biblique': 'Récits & événements',
-  histoire: 'Récits & événements',
-  'la bible et l’histoire': 'Récits & événements',
-  'grande chronologie': 'Récits & événements',
-  'exil et retour': 'Récits & événements',
-  exil: 'Récits & événements',
-  exode: 'Récits & événements',
-  évangiles: 'Récits & événements',
-  evangiles: 'Récits & événements',
-  miracles: 'Récits & événements',
-  'femmes-evangiles': 'Récits & événements',
-  'rois et prophètes': 'Récits & événements',
-  'rois & prophètes': 'Récits & événements',
-  'prophètes-ecritures': 'Récits & événements',
-  genèse: 'Récits & événements',
-  lieux: 'Récits & événements',
-  villes: 'Récits & événements',
-  objets: 'Récits & événements',
-  actes: 'Récits & événements',
-  'miracles-anciens': 'Récits & événements',
+  'histoire biblique': 'Récits bibliques',
+  histoire: 'Récits bibliques',
+  'la bible et l’histoire': 'Récits bibliques',
+  'grande chronologie': 'Récits bibliques',
+  'exil et retour': 'Récits bibliques',
+  exil: 'Récits bibliques',
+  exode: 'Récits bibliques',
+  évangiles: 'Récits bibliques',
+  evangiles: 'Récits bibliques',
+  miracles: 'Récits bibliques',
+  'femmes-evangiles': 'Récits bibliques',
+  'rois et prophètes': 'Récits bibliques',
+  'rois & prophètes': 'Récits bibliques',
+  'prophètes-ecritures': 'Récits bibliques',
+  genèse: 'Récits bibliques',
+  lieux: 'Récits bibliques',
+  villes: 'Récits bibliques',
+  objets: 'Récits bibliques',
+  actes: 'Récits bibliques',
+  'miracles-anciens': 'Récits bibliques',
 
   // 3 — Bible & enseignements : comprendre le texte, les livres et les notions bibliques.
-  bible: 'Bible & enseignements',
-  'questions bibliques': 'Bible & enseignements',
-  versets: 'Bible & enseignements',
-  'versets bibliques': 'Bible & enseignements',
-  'que veulent dire ces versets ?': 'Bible & enseignements',
-  'expressions bibliques': 'Bible & enseignements',
-  concepts: 'Bible & enseignements',
-  repentance: 'Bible & enseignements',
-  prophéties: 'Bible & enseignements',
-  propheties: 'Bible & enseignements',
-  prophétie: 'Bible & enseignements',
-  prophetie: 'Bible & enseignements',
-  'prophéties bibliques': 'Bible & enseignements',
-  'la bible et la science': 'Bible & enseignements',
-  science: 'Bible & enseignements',
-  création: 'Bible & enseignements',
-  evolution: 'Bible & enseignements',
-  évolution: 'Bible & enseignements',
-  'exactitude scientifique': 'Bible & enseignements',
-  manuscrits: 'Bible & enseignements',
-  traductions: 'Bible & enseignements',
-  archéologie: 'Bible & enseignements',
-  archeologie: 'Bible & enseignements',
-  'exactitude historique': 'Bible & enseignements',
-  livres: 'Bible & enseignements',
-  'livres-hebreux': 'Bible & enseignements',
+  bible: 'Comprendre la Bible',
+  'questions bibliques': 'Comprendre la Bible',
+  versets: 'Comprendre la Bible',
+  'versets bibliques': 'Comprendre la Bible',
+  'que veulent dire ces versets ?': 'Comprendre la Bible',
+  'expressions bibliques': 'Comprendre la Bible',
+  concepts: 'Comprendre la Bible',
+  repentance: 'Comprendre la Bible',
+  prophéties: 'Comprendre la Bible',
+  propheties: 'Comprendre la Bible',
+  prophétie: 'Comprendre la Bible',
+  prophetie: 'Comprendre la Bible',
+  'prophéties bibliques': 'Comprendre la Bible',
+  'la bible et la science': 'Comprendre la Bible',
+  science: 'Comprendre la Bible',
+  création: 'Comprendre la Bible',
+  evolution: 'Comprendre la Bible',
+  évolution: 'Comprendre la Bible',
+  'exactitude scientifique': 'Comprendre la Bible',
+  manuscrits: 'Comprendre la Bible',
+  traductions: 'Comprendre la Bible',
+  archéologie: 'Comprendre la Bible',
+  archeologie: 'Comprendre la Bible',
+  'exactitude historique': 'Comprendre la Bible',
+  livres: 'Comprendre la Bible',
+  'livres-hebreux': 'Comprendre la Bible',
 
   // 4 — Jéhovah & la foi : qualités, foi, conduite et enseignements spirituels.
-  'jéhovah & la foi': 'Jéhovah & la foi',
-  'jehovah & la foi': 'Jéhovah & la foi',
-  foi: 'Jéhovah & la foi',
-  courage: 'Jéhovah & la foi',
-  confiance: 'Jéhovah & la foi',
-  sagesse: 'Jéhovah & la foi',
-  amour: 'Jéhovah & la foi',
-  humilité: 'Jéhovah & la foi',
-  fidélité: 'Jéhovah & la foi',
-  qualites: 'Jéhovah & la foi',
-  prédication: 'Jéhovah & la foi',
-  persévérance: 'Jéhovah & la foi',
-  défis: 'Bible & enseignements',
+  'jéhovah & la foi': 'Mieux connaître Jéhovah',
+  'jehovah & la foi': 'Mieux connaître Jéhovah',
+  foi: 'Mieux connaître Jéhovah',
+  courage: 'Mieux connaître Jéhovah',
+  confiance: 'Mieux connaître Jéhovah',
+  sagesse: 'Mieux connaître Jéhovah',
+  amour: 'Mieux connaître Jéhovah',
+  humilité: 'Mieux connaître Jéhovah',
+  fidélité: 'Mieux connaître Jéhovah',
+  qualites: 'Mieux connaître Jéhovah',
+  prédication: 'Mieux connaître Jéhovah',
+  persévérance: 'Mieux connaître Jéhovah',
+  défis: 'Comprendre la Bible',
 };
 
 const getQuestionText = (q: Question): string => {
@@ -136,14 +136,14 @@ export function normalizeQuestionCategory(q: Question): string {
 
   if (source === 'défis') {
     if (/personnage|prophète|apôtre|disciple|juge|femme|roi|reine|patriarche/.test(text)) return 'Personnages';
-    if (/lieu|ville|événement|histoire|miracle|voyagé|voyage|vie de|racontez|objet|arche|temple|mer|prison|naufrage/.test(text)) return 'Récits & événements';
-    if (/foi|amour|confiance|courage|prière|jéhovah|dieu|qualité|vertu|conseil/.test(text)) return 'Jéhovah & la foi';
-    return 'Bible & enseignements';
+    if (/lieu|ville|événement|histoire|miracle|voyagé|voyage|vie de|racontez|objet|arche|temple|mer|prison|naufrage/.test(text)) return 'Récits bibliques';
+    if (/foi|amour|confiance|courage|prière|jéhovah|dieu|qualité|vertu|conseil/.test(text)) return 'Mieux connaître Jéhovah';
+    return 'Comprendre la Bible';
   }
 
   if (['rois & prophètes', 'rois', 'prophètes', 'prophètes-ecritures'].includes(source)) {
     if (/événement|événements|réforme|réformes|histoire|chronologie|bataille|guerre|exil|voyagé|voyage|raconte|récit/.test(text)) {
-      return 'Récits & événements';
+      return 'Récits bibliques';
     }
     return 'Personnages';
   }
@@ -162,17 +162,17 @@ export function normalizeQuestionCategory(q: Question): string {
   }
 
   if (['lieux', 'villes', 'exil', 'exode', 'genèse', 'histoire biblique', 'objets'].includes(source)) {
-    return 'Récits & événements';
+    return 'Récits bibliques';
   }
 
   return normalizeCategory(q.category);
 }
 
 export function normalizeCategory(value: unknown) {
-  if (typeof value !== 'string') return 'Bible & enseignements';
+  if (typeof value !== 'string') return 'Comprendre la Bible';
   const key = value.trim().toLowerCase();
-  if (!key) return 'Bible & enseignements';
-  return CATEGORY_MAP[key] || 'Bible & enseignements';
+  if (!key) return 'Comprendre la Bible';
+  return CATEGORY_MAP[key] || 'Comprendre la Bible';
 }
 
 export function getCategoryQuestionCount(category: string) {
