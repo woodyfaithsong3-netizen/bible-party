@@ -1,7 +1,6 @@
-import React, { useCallback, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Image, ImageBackground, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
-import { useFocusEffect } from '@react-navigation/native';
 import { getAdventureProgress } from '@/lib/storage';
 import { SEASON_1 } from '@/data/adventure';
 import { SEASON_2 } from '@/data/adventureSeason2';
@@ -22,12 +21,12 @@ const APK_PAGE = 'https://expo.dev/accounts/woodysong/projects/bible-party/build
 
 export default function LandingScreen() {
   const [lastEpisode, setLastEpisode] = useState<typeof ADVENTURE_EPISODES[number] | null>(null);
-  useFocusEffect(useCallback(() => {
+  useEffect(() => {
     void getAdventureProgress().then(progress => {
       const completed = ADVENTURE_EPISODES.filter(ep => progress.includes(ep.id));
       setLastEpisode(completed.length ? ADVENTURE_EPISODES[Math.min(completed.length, ADVENTURE_EPISODES.length - 1)] : ADVENTURE_EPISODES[0]);
     });
-  }, []));
+  }, []);
   return <View style={styles.root}><ImageBackground source={scenic} resizeMode="cover" style={styles.background}><View style={styles.tone}/><View style={styles.content}>
     <Image source={logo} resizeMode="contain" style={styles.logo}/><Text style={styles.tagline}>Ensemble, découvrons la Bible</Text><Text style={styles.intro}>Découvre la Bible, joue et construis ta collection.</Text>
     {lastEpisode ? <Pressable onPress={()=>router.push({pathname:'/adventure/episode',params:{id:lastEpisode.id}})} style={({pressed})=>[styles.continueCard,pressed&&styles.pressed]}>
