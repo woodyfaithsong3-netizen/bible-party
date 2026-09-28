@@ -10,7 +10,7 @@ export type Badge = {
   icon: string;
   category: BadgeCategory;
   secret?: boolean;
-  unlocked: (ctx: { episodes: number; characters: number; games: number; adventureComplete?: boolean; seasonsCompleted?: number; books?: number }) => boolean;
+  unlocked: (ctx: { episodes: number; characters: number; games: number; adventureComplete?: boolean; seasonsCompleted?: number; books?: number; bonusComplete?: boolean }) => boolean;
 };
 
 export const BADGE_CATEGORIES: { id: BadgeCategory; title: string; icon: string }[] = [
@@ -32,6 +32,7 @@ export const BADGES: Badge[] = [
   { id:'first-season', category:'aventure', title:'Première saison', description:'Termine tous les épisodes d’une saison.', icon:'🏅', unlocked:c=>(c.seasonsCompleted??0)>=1 },
   { id:'four-seasons', category:'aventure', title:'À mi-parcours', description:'Termine 4 saisons.', icon:'🧭', unlocked:c=>(c.seasonsCompleted??0)>=4 },
   { id:'eight-seasons', category:'aventure', title:'Aventure complète', description:'Termine les 8 saisons.', icon:'🌟', unlocked:c=>(c.seasonsCompleted??0)>=8 },
+  { id:'final-bonus', category:'special', title:'Dernier défi', description:'Termine les 4 questions bonus de fin de l’Aventure.', icon:'🎯', unlocked:c=>c.bonusComplete===true },
 
   { id:'first-character', category:'collection', title:'Première rencontre', description:'Lis ta première fiche personnage.', icon:'👤', unlocked:c=>c.characters>=1 },
   { id:'ten-characters', category:'collection', title:'Visages connus', description:'Lis 10 fiches personnage.', icon:'👥', unlocked:c=>c.characters>=10 },
@@ -65,9 +66,9 @@ export function getBadgeProgress(badge: Badge, ctx: Parameters<Badge['unlocked']
     'first-character':1,'ten-characters':10,'twenty-five-characters':25,'fifty-characters':50,'hundred-characters':100,'all-characters':characterProfiles.length,
     'first-book':1,'ten-books':10,'thirty-three-books':33,'fifty-books':50,'all-books':BIBLE_BOOKS.length,
     'first-game':1,'ten-games':10,'twenty-five-games':25,'fifty-games':50,'hundred-games':100,'two-hundred-fifty-games':250,
-    'secret-journey':1,'secret-library':10,'secret-complete':1,
+    'secret-journey':1,'secret-library':10,'secret-complete':1,'final-bonus':1,
   };
   const target=targets[badge.id]??1;
-  const value=badge.id.includes('season')?(ctx.seasonsCompleted??0):badge.id.includes('character')?ctx.characters:badge.id.includes('book')?(ctx.books??0):badge.id.includes('story')?ctx.episodes:badge.id.includes('game')?ctx.games:0;
+  const value=badge.id==='final-bonus'?(ctx.bonusComplete?1:0):badge.id.includes('season')?(ctx.seasonsCompleted??0):badge.id.includes('character')?ctx.characters:badge.id.includes('book')?(ctx.books??0):badge.id.includes('story')?ctx.episodes:badge.id.includes('game')?ctx.games:0;
   return Math.min(1,value/target);
 }
