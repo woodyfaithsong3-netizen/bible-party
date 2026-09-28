@@ -17,7 +17,7 @@ import { BADGES } from '@/data/badges';
 import { characterProfiles } from '@/data/characterProfiles';
 import { FINAL_CHARACTER_ARCHIVE_IDS } from '@/data/finalCharacterArchive';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
-import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, getGamesPlayed, getReadCharacterIds, markBibleBookDiscovered } from '@/lib/storage';
+import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, getFinalBonusComplete, getGamesPlayed, getReadCharacterIds, markBibleBookDiscovered } from '@/lib/storage';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
 
 const SEASONS = [SEASON_1,SEASON_2,SEASON_3,SEASON_4,SEASON_5,SEASON_6,SEASON_7,SEASON_8];
@@ -28,13 +28,14 @@ export default function BibleScreen() {
   const [annexes, setAnnexes] = useState<string[]>([]);
   const [books, setBooks] = useState(0);
   const [games, setGames] = useState(0);
+  const [bonusComplete, setBonusComplete] = useState(false);
 
   const load = useCallback(async () => {
-    const [a,g,x,stored,finalBooks,read] = await Promise.all([getAdventureProgress(),getGamesPlayed(),getCharacterAnnexProgress(),getBibleBookProgress(),getFinalBibleBookProgress(),getReadCharacterIds()]);
+    const [a,g,x,stored,finalBooks,read,bonus] = await Promise.all([getAdventureProgress(),getGamesPlayed(),getCharacterAnnexProgress(),getBibleBookProgress(),getFinalBibleBookProgress(),getReadCharacterIds(),getFinalBonusComplete()]);
     const discovered = getDiscoveredBibleBookIds(a,x,finalBooks);
     let next = stored;
     for (const id of discovered) next = await markBibleBookDiscovered(id);
-    setCompleted(a); setGames(g); setAnnexes(x); setReadCharacters(read);
+    setCompleted(a); setGames(g); setAnnexes(x); setReadCharacters(read); setBonusComplete(bonus);
     setBooks(Object.keys(next).filter(id => BIBLE_BOOKS.some(b => b.id === id)).length);
   }, []);
   useFocusEffect(useCallback(() => { void load(); }, [load]));
@@ -55,7 +56,7 @@ export default function BibleScreen() {
   }, [completed, annexes]);
   const adventureComplete = completedIds.length === 116 && SEASONS.flatMap(s => s.episodes).every(e => completedIds.includes(e.id));
   const readCharacterCount = useMemo(() => new Set(readCharacters.filter(id => characterProfiles.some(character => character.id === id))).size, [readCharacters]);
-  const badgeCount = BADGES.filter(b => b.unlocked({ episodes: completedIds.length, characters: readCharacterCount, games, books, adventureComplete, seasonsCompleted: SEASONS.filter(s => s.episodes.length > 0 && s.episodes.every(e => completedIds.includes(e.id))).length })).length;
+  const badgeCount = BADGES.filter(b => b.unlocked({ episodes: completedIds.length, characters: readCharacterCount, games, books, adventureComplete, seasonsCompleted: SEASONS.filter(s => s.episodes.length > 0 && s.episodes.every(e => completedIds.includes(e.id))).length, bonusComplete })).length;
 
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Pressable onPress={() => router.back()}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Retour</Text></Pressable>
