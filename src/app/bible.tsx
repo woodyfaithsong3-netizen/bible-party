@@ -44,9 +44,15 @@ export default function BibleScreen() {
     return Array.from(new Set(completed.filter(id => valid.has(id))));
   }, [completed]);
   const characters = useMemo(() => {
-    const read = new Set(readCharacters);
-    return new Set(readCharacters.filter(id => characterProfiles.some(character => character.id === id))).size;
-  }, [readCharacters]);
+    const completedSet = new Set(completed);
+    const adventureComplete = SEASONS.every(season => season.episodes.length > 0 && season.episodes.every(ep => completedSet.has(ep.id)));
+    const unlockedIds = new Set([
+      ...SEASONS.flatMap(season => season.episodes.filter(ep => completedSet.has(ep.id)).flatMap(ep => ep.characterIds ?? [])),
+      ...CHARACTER_ANNEXES.filter(annex => annexes.includes(annex.id)).map(annex => annex.characterId),
+      ...(adventureComplete ? Array.from(FINAL_CHARACTER_ARCHIVE_IDS) : []),
+    ]);
+    return new Set([...unlockedIds].filter(id => characterProfiles.some(character => character.id === id))).size;
+  }, [completed, annexes]);
   const adventureComplete = completedIds.length === 116 && SEASONS.flatMap(s => s.episodes).every(e => completedIds.includes(e.id));
   const badgeCount = BADGES.filter(b => b.unlocked({ episodes: completedIds.length, characters, games, books, adventureComplete, seasonsCompleted: SEASONS.filter(s => s.episodes.length > 0 && s.episodes.every(e => completedIds.includes(e.id))).length })).length;
 
