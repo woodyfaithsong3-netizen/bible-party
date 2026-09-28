@@ -38,6 +38,9 @@ export default function AdventureScreen() {
   }, []));
 
   const activeSeason = SEASONS[selectedSeason];
+  const totalEpisodes = SEASONS.reduce((sum, season) => sum + season.episodes.length, 0);
+  const totalCompletedCount = SEASONS.reduce((sum, season) => sum + season.episodes.filter(ep => completed.includes(ep.id)).length, 0);
+  const totalProgress = totalEpisodes > 0 ? Math.round((totalCompletedCount / totalEpisodes) * 100) : 0;
   const activeCompletedCount = activeSeason.episodes.filter(ep => completed.includes(ep.id)).length;
   const progress = Math.round((activeCompletedCount / activeSeason.episodes.length) * 100);
   const seasonEpisodeNumbers = new Set(activeSeason.episodes.map(ep => ep.number));
@@ -174,7 +177,21 @@ export default function AdventureScreen() {
         </View>
 
         <View style={{ marginTop: 22 }}>
-          <Text style={styles.sectionTitle}>LE VOYAGE BIBLIQUE</Text>
+          <Text style={styles.sectionTitle}>TA PROGRESSION</Text>
+          <View style={{ marginTop: 10, padding: 16, borderRadius: 22, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+            <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
+              <View style={{ flex: 1 }}>
+                <Text style={{ color: colors.text, fontSize: 17, fontWeight: '900' }}>L’Aventure biblique</Text>
+                <Text style={{ color: colors.muted, fontSize: 11, marginTop: 3 }}>{totalCompletedCount}/{totalEpisodes} histoires terminées</Text>
+              </View>
+              <Text style={{ color: colors.accent, fontSize: 20, fontWeight: '900' }}>{totalProgress}%</Text>
+            </View>
+            <View style={{ height: 8, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 11 }}>
+              <View style={{ width: totalProgress + '%', height: '100%', backgroundColor: colors.accent }} />
+            </View>
+          </View>
+
+          <Text style={[styles.sectionTitle, { marginTop: 22 }]}>LE VOYAGE BIBLIQUE</Text>
           <View style={{ marginTop: 10, padding: 16, borderRadius: 22, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
             <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.4 }}>🧵 8 ÉTAPES • 116 HISTOIRES</Text>
             <Text style={{ color: colors.text, fontSize: 17, fontWeight: '900', lineHeight: 23, marginTop: 7 }}>De la création jusqu’aux promesses pour l’avenir.</Text>
@@ -202,6 +219,9 @@ export default function AdventureScreen() {
                       <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '800' }}>{count}/{season.episodes.length}</Text>
                     </View>
                     <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 21, marginTop: 5 }}>{season.title}</Text>
+                    <View style={{ height: 5, backgroundColor: colors.border, borderRadius: 6, overflow: 'hidden', marginTop: 8 }}>
+                      <View style={{ width: (season.episodes.length ? Math.round((count / season.episodes.length) * 100) : 0) + '%', height: '100%', backgroundColor: done ? colors.success : colors.accent }} />
+                    </View>
                     <Text numberOfLines={2} style={{ color: colors.muted, lineHeight: 18, marginTop: 4 }}>{season.description}</Text>
                     <Text style={{ color: isSeasonUnlocked(seasonIndex) ? colors.accent : colors.muted, fontSize: 11, fontWeight: '900', marginTop: 8 }}>{!isSeasonUnlocked(seasonIndex) ? `🔒 Termine la saison ${seasonIndex} pour débloquer` : done ? 'Rejouer la saison ›' : count > 0 ? 'Continuer l’aventure ›' : 'Commencer ›'}</Text>
                   </Pressable>
