@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { Pressable, ScrollView, Text, View } from 'react-native';
+import { Pressable, ScrollView, Text, View, type DimensionValue } from 'react-native';
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { ScenicScreen } from '@/components/ScenicScreen';
 import { colors } from '@/theme/colors';
@@ -187,7 +187,7 @@ export default function AdventureScreen() {
               <Text style={{ color: colors.accent, fontSize: 20, fontWeight: '900' }}>{totalProgress}%</Text>
             </View>
             <View style={{ height: 8, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 11 }}>
-              <View style={{ width: totalProgress + '%', height: '100%', backgroundColor: colors.accent }} />
+              <View style={{ width: (totalProgress + '%') as DimensionValue, height: '100%', backgroundColor: colors.accent }} />
             </View>
           </View>
 
@@ -220,7 +220,7 @@ export default function AdventureScreen() {
                     </View>
                     <Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', lineHeight: 21, marginTop: 5 }}>{season.title}</Text>
                     <View style={{ height: 5, backgroundColor: colors.border, borderRadius: 6, overflow: 'hidden', marginTop: 8 }}>
-                      <View style={{ width: (season.episodes.length ? Math.round((count / season.episodes.length) * 100) : 0) + '%', height: '100%', backgroundColor: done ? colors.success : colors.accent }} />
+                      <View style={{ width: ((season.episodes.length ? Math.round((count / season.episodes.length) * 100) : 0) + '%') as DimensionValue, height: '100%', backgroundColor: done ? colors.success : colors.accent }} />
                     </View>
                     <Text numberOfLines={2} style={{ color: colors.muted, lineHeight: 18, marginTop: 4 }}>{season.description}</Text>
                     <Text style={{ color: isSeasonUnlocked(seasonIndex) ? colors.accent : colors.muted, fontSize: 11, fontWeight: '900', marginTop: 8 }}>{!isSeasonUnlocked(seasonIndex) ? `🔒 Termine la saison ${seasonIndex} pour débloquer` : done ? 'Rejouer la saison ›' : count > 0 ? 'Continuer l’aventure ›' : 'Commencer ›'}</Text>
