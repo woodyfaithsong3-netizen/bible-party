@@ -13,8 +13,10 @@ import { SEASON_5 } from '@/data/adventureSeason5';
 import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
-import { getAdventureProgress, markAdventureEpisodeComplete } from '@/lib/storage';
+import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, getGamesPlayed, getReadCharacterIds, markAdventureEpisodeComplete, markBibleBookDiscovered } from '@/lib/storage';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
+import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
+import { BADGES } from '@/data/badges';
 
 const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
 const ADVENTURE_EPISODES = ADVENTURE_SEASONS.flatMap(season => season.episodes);
@@ -43,6 +45,9 @@ export default function AdventureEpisodeScreen() {
   const [bonusIndex, setBonusIndex] = useState(0);
   const [bonusSelected, setBonusSelected] = useState<number | null>(null);
   const [newCharacterIds, setNewCharacterIds] = useState<string[]>([]);
+  const [newBookIds, setNewBookIds] = useState<string[]>([]);
+  const [newBadgeTitles, setNewBadgeTitles] = useState<string[]>([]);
+  const [adventureCount, setAdventureCount] = useState(0);
   const [adventureComplete, setAdventureComplete] = useState(false);
   const [accessChecked, setAccessChecked] = useState(false);
   const [accessAllowed, setAccessAllowed] = useState(false);
@@ -125,11 +130,33 @@ export default function AdventureEpisodeScreen() {
       setSelected(null);
       return;
     }
-    const before = new Set(await getAdventureProgress());
+    const beforeProgress = await getAdventureProgress();
+    const before = new Set(beforeProgress);
     const newlyDiscovered = (episode.characterIds ?? []).filter(id => !before.has(id));
+    const beforeBooks = await getBibleBookProgress();
+    const beforeAnnexes = await getCharacterAnnexProgress();
+    const beforeFinalBooks = await getFinalBibleBookProgress();
+    const beforeBookIds = new Set(getDiscoveredBibleBookIds(beforeProgress, beforeAnnexes, beforeFinalBooks));
+    const beforeReadCharacters = await getReadCharacterIds();
+    const games = await getGamesPlayed();
     const after = await markAdventureEpisodeComplete(episode.id);
+    const afterBookIds = getDiscoveredBibleBookIds(after, beforeAnnexes, beforeFinalBooks);
+    const newlyDiscoveredBooks = afterBookIds.filter(id => !beforeBookIds.has(id));
+    for (const id of newlyDiscoveredBooks) {
+      if (!beforeBooks[id]) await markBibleBookDiscovered(id);
+    }
+    const episodeCount = after.filter(id => ADVENTURE_EPISODES.some(item => item.id === id)).length;
+    const readCharacterCount = new Set(beforeReadCharacters.filter(id => characterProfiles.some(character => character.id === id))).size;
+    const seasonsCompleted = ADVENTURE_SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(item => after.includes(item.id))).length;
+    const adventureIsComplete = ADVENTURE_EPISODES.every(item => after.includes(item.id));
+    const badgeContext = { episodes: episodeCount, characters: readCharacterCount, games, books: afterBookIds.length, adventureComplete: adventureIsComplete, seasonsCompleted };
+    const beforeBadgeContext = { episodes: beforeProgress.filter(id => ADVENTURE_EPISODES.some(item => item.id === id)).length, characters: readCharacterCount, games, books: beforeBookIds.size, adventureComplete: false, seasonsCompleted: ADVENTURE_SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(item => beforeProgress.includes(item.id))).length };
+    const newlyUnlockedBadges = BADGES.filter(badge => badge.unlocked(badgeContext) && !badge.unlocked(beforeBadgeContext)).map(badge => badge.title);
     setNewCharacterIds(newlyDiscovered);
-    setAdventureComplete(ADVENTURE_EPISODES.every(item => after.includes(item.id)));
+    setNewBookIds(newlyDiscoveredBooks);
+    setNewBadgeTitles(newlyUnlockedBadges);
+    setAdventureCount(episodeCount);
+    setAdventureComplete(adventureIsComplete);
     setFinished(true);
   };
 
@@ -212,7 +239,25 @@ export default function AdventureEpisodeScreen() {
             <Text style={{ color: colors.muted, textAlign: 'center', lineHeight: 21, marginTop: 9 }}>{episode.title}</Text>
 
             {newCharacterIds.length > 0 ? <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.blue }}><Text style={{ color: colors.blue, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>✨ NOUVEAU PERSONNAGE DÉBLOQUÉ</Text>{newCharacterIds.map(id => { const character = characterProfiles.find(item => item.id === id); return character ? <Pressable key={id} onPress={() => router.push({ pathname: '/characters', params: { characterId: id, returnEpisodeId: episode.id } })}><Text style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 7 }}>👤 {character.name} ›</Text><Text style={{ color: colors.muted, fontSize: 11, marginTop: 2 }}>Découvert dans l’Aventure · voir sa fiche</Text></Pressable> : null; })}</View> : null}
-{episodeAnnexes.length > 0 ? <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.accent }}>
+<View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
+                <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>📈 PROGRESSION</Text>
+                <Text style={{ color: colors.text, fontSize: 18, fontWeight: '900', marginTop: 6 }}>Histoire {adventureCount}/116 terminée</Text>
+                <View style={{ height: 7, backgroundColor: colors.border, borderRadius: 8, overflow: 'hidden', marginTop: 10 }}>
+                  <View style={{ width: `${Math.round((adventureCount / ADVENTURE_EPISODES.length) * 100)}%`, height: '100%', backgroundColor: colors.accent }} />
+                </View>
+                <Text style={{ color: colors.muted, fontSize: 11, marginTop: 5 }}>{Math.round((adventureCount / ADVENTURE_EPISODES.length) * 100)} % de l’Aventure parcourue</Text>
+              </View>
+              {newBookIds.length > 0 ? <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.accent }}>
+                <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>📖 LIVRE{newBookIds.length > 1 ? 'S' : ''} DÉCOUVERT{newBookIds.length > 1 ? 'S' : ''}</Text>
+                <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', lineHeight: 21, marginTop: 6 }}>{newBookIds.join(' · ')}</Text>
+                <Pressable onPress={() => router.push('/bible/books')}><Text style={{ color: colors.accent, fontWeight: '900', marginTop: 7 }}>Voir ma bibliothèque ›</Text></Pressable>
+              </View> : null}
+              {newBadgeTitles.length > 0 ? <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(242,201,76,.13)', borderWidth: 1, borderColor: colors.accent }}>
+                <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>🏅 BADGE{newBadgeTitles.length > 1 ? 'S' : ''} DÉBLOQUÉ{newBadgeTitles.length > 1 ? 'S' : ''}</Text>
+                {newBadgeTitles.map(title => <Text key={title} style={{ color: colors.text, fontSize: 16, fontWeight: '900', marginTop: 7 }}>🏆 {title}</Text>)}
+                <Pressable onPress={() => router.push('/bible/badges')}><Text style={{ color: colors.accent, fontWeight: '900', marginTop: 7 }}>Voir mes badges ›</Text></Pressable>
+              </View> : null}
+              {episodeAnnexes.length > 0 ? <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.accent }}>
                 <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>📜 DÉCOUVERTE ANNEXE</Text>
                 <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', lineHeight: 21, marginTop: 6 }}>Une histoire complémentaire vient de se débloquer.</Text>
                 {episodeAnnexes.map(item => <Pressable key={item.id} onPress={() => router.push({ pathname: '/adventure/annexes', params: { id: item.id, returnEpisodeId: episode.id } })} style={[styles.card, { marginTop: 10, padding: 12 }]}>
