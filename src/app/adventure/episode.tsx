@@ -16,6 +16,7 @@ import { SEASON_8 } from '@/data/adventureSeason8';
 import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, getGamesPlayed, getReadCharacterIds, markAdventureEpisodeComplete, markBibleBookDiscovered } from '@/lib/storage';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
+import { BIBLE_BOOKS } from '@/data/bibleBooks';
 import { BADGES } from '@/data/badges';
 
 const ADVENTURE_SEASONS = [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8];
@@ -150,7 +151,7 @@ export default function AdventureEpisodeScreen() {
     const seasonsCompleted = ADVENTURE_SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(item => after.includes(item.id))).length;
     const adventureIsComplete = ADVENTURE_EPISODES.every(item => after.includes(item.id));
     const badgeContext = { episodes: episodeCount, characters: readCharacterCount, games, books: afterBookIds.length, adventureComplete: adventureIsComplete, seasonsCompleted };
-    const beforeBadgeContext = { episodes: beforeProgress.filter(id => ADVENTURE_EPISODES.some(item => item.id === id)).length, characters: readCharacterCount, games, books: beforeBookIds.size, adventureComplete: false, seasonsCompleted: ADVENTURE_SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(item => beforeProgress.includes(item.id))).length };
+    const beforeBadgeContext = { episodes: beforeProgress.filter(id => ADVENTURE_EPISODES.some(item => item.id === id)).length, characters: readCharacterCount, games, books: beforeBookIds.size, adventureComplete: ADVENTURE_EPISODES.every(item => beforeProgress.includes(item.id)), seasonsCompleted: ADVENTURE_SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(item => beforeProgress.includes(item.id))).length };
     const newlyUnlockedBadges = BADGES.filter(badge => badge.unlocked(badgeContext) && !badge.unlocked(beforeBadgeContext)).map(badge => badge.title);
     setNewCharacterIds(newlyDiscovered);
     setNewBookIds(newlyDiscoveredBooks);
@@ -249,7 +250,7 @@ export default function AdventureEpisodeScreen() {
               </View>
               {newBookIds.length > 0 ? <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(20,49,55,.72)', borderWidth: 1, borderColor: colors.accent }}>
                 <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>📖 LIVRE{newBookIds.length > 1 ? 'S' : ''} DÉCOUVERT{newBookIds.length > 1 ? 'S' : ''}</Text>
-                <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', lineHeight: 21, marginTop: 6 }}>{newBookIds.join(' · ')}</Text>
+                <Text style={{ color: colors.text, fontSize: 15, fontWeight: '900', lineHeight: 21, marginTop: 6 }}>{newBookIds.map(id => BIBLE_BOOKS.find(book => book.id === id)?.name ?? id).join(' · ')}</Text>
                 <Pressable onPress={() => router.push('/bible/books')}><Text style={{ color: colors.accent, fontWeight: '900', marginTop: 7 }}>Voir ma bibliothèque ›</Text></Pressable>
               </View> : null}
               {newBadgeTitles.length > 0 ? <View style={{ marginTop: 14, width: '100%', padding: 15, borderRadius: 18, backgroundColor: 'rgba(242,201,76,.13)', borderWidth: 1, borderColor: colors.accent }}>
