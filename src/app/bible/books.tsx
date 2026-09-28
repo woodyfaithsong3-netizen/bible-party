@@ -54,7 +54,7 @@ export default function BibleBooksScreen() {
     },
   }), [nextBook, previousBook]);
   const bookNavigation = (position: 'top' | 'bottom') => <View style={{ marginTop: position === 'top' ? 4 : 22, paddingTop: position === 'bottom' ? 14 : 0, borderTopWidth: position === 'bottom' ? 1 : 0, borderTopColor: colors.border }}>
-    <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900', textAlign: 'center', marginBottom: 9 }}>LIVRE {book.number} / 66</Text>
+    <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900', textAlign: 'center', marginBottom: 9 }}>LIVRE {bookIndex + 1} / 66</Text>
     <View style={{ flexDirection: 'row', gap: 8 }}>
       <Pressable disabled={!previousBook} onPress={() => previousBook && router.replace({ pathname: '/bible/books', params: { id: previousBook.id } })} style={{ flex: 1, paddingVertical: 12, borderRadius: 14, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface, opacity: previousBook ? 1 : .4 }}><Text style={{ color: colors.text, fontWeight: '900', textAlign: 'center' }}>‹ Précédent</Text></Pressable>
       <Pressable onPress={() => router.replace('/bible/books')} style={{ flex: 1, paddingVertical: 12, borderRadius: 14, borderWidth: 1, borderColor: colors.accent, backgroundColor: colors.surface2 }}><Text style={{ color: colors.accent, fontWeight: '900', textAlign: 'center' }}>↩ Livres</Text></Pressable>
