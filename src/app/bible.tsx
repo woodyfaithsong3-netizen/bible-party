@@ -54,7 +54,8 @@ export default function BibleScreen() {
     return new Set([...unlockedIds].filter(id => characterProfiles.some(character => character.id === id))).size;
   }, [completed, annexes]);
   const adventureComplete = completedIds.length === 116 && SEASONS.flatMap(s => s.episodes).every(e => completedIds.includes(e.id));
-  const badgeCount = BADGES.filter(b => b.unlocked({ episodes: completedIds.length, characters, games, books, adventureComplete, seasonsCompleted: SEASONS.filter(s => s.episodes.length > 0 && s.episodes.every(e => completedIds.includes(e.id))).length })).length;
+  const readCharacterCount = useMemo(() => new Set(readCharacters.filter(id => characterProfiles.some(character => character.id === id))).size, [readCharacters]);
+  const badgeCount = BADGES.filter(b => b.unlocked({ episodes: completedIds.length, characters: readCharacterCount, games, books, adventureComplete, seasonsCompleted: SEASONS.filter(s => s.episodes.length > 0 && s.episodes.every(e => completedIds.includes(e.id))).length })).length;
 
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Pressable onPress={() => router.back()}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Retour</Text></Pressable>
