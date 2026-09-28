@@ -45,7 +45,7 @@ export const SEASON_5 = {
       keyPoint: 'Daniel explique courageusement le message et annonce le jugement qui va tomber sur Babylone.',context: 'Daniel a déjà montré sa fidélité sous plusieurs dirigeants babyloniens. Alors que Belshatsar organise un festin, le roi profane les objets du temple de Jérusalem. L’écriture sur la muraille annonce que la puissance de Babylone touche à sa fin.',
       quality: { title: 'Juste', text: 'Jéhovah voit les actes des dirigeants et peut leur demander des comptes.' },
       questions: [
-        { id: 'r78a', type: 'quiz', prompt: 'Pourquoi Belshatsar est-il condamné par le message ?', choices: [{ label: 'Il s’est élevé contre Jéhovah', correct: true }, { label: 'Il a quitté Babylone', correct: false }, { label: 'Il a reconstruit Jérusalem', correct: false }, { label: 'Il a refusé de devenir roi', correct: false }] },
+        { id: 'r78a', type: 'quiz', prompt: 'Quel comportement de Belshatsar est condamné par le message ?', choices: [{ label: 'Il s’est élevé contre Jéhovah et a profané les objets sacrés', correct: true }, { label: 'Il a quitté Babylone', correct: false }, { label: 'Il a reconstruit Jérusalem', correct: false }, { label: 'Il a refusé de devenir roi', correct: false }] },
         { id: 'r78b', type: 'quiz', prompt: 'Que se passe-t-il cette même nuit ?', choices: [{ label: 'Belshatsar meurt et Babylone tombe', correct: true }, { label: 'Jérusalem est reconstruite', correct: false }, { label: 'Daniel devient roi', correct: false }, { label: 'Cyrus est emprisonné', correct: false }] },
       ],
       characterIds: ['daniel'],
@@ -115,8 +115,8 @@ export const SEASON_5 = {
       keyPoint: 'Néhémie et le peuple reconstruisent les murailles avec courage et organisation.',context: 'Le temple a été reconstruit, mais Jérusalem reste vulnérable parce que ses murailles sont en ruines. Néhémie apprend la situation et décide d’agir. La reconstruction devient le dernier grand chantier de cette période de retour.',
       quality: { title: 'Il écoute', text: 'Néhémie recherche la direction de Jéhovah dans la prière avant d’agir.' },
       questions: [
-        { id: 'r83a', type: 'quiz', prompt: 'Pourquoi Néhémie veut-il reconstruire les murailles ?', choices: [{ label: 'Jérusalem est sans protection', correct: true }, { label: 'Il veut devenir roi', correct: false }, { label: 'Il veut quitter la Perse', correct: false }, { label: 'Il veut construire un nouveau temple', correct: false }] },
-        { id: 'r83b', type: 'quiz', prompt: 'Que font les Juifs malgré les menaces ?', choices: [{ label: 'Ils continuent les travaux', correct: true }, { label: 'Ils abandonnent Jérusalem', correct: false }, { label: 'Ils retournent à Babylone', correct: false }, { label: 'Ils arrêtent de prier', correct: false }] },
+        { id: 'r83a', type: 'quiz', prompt: 'Pourquoi les murailles de Jérusalem doivent-elles être reconstruites ?', choices: [{ label: 'Jérusalem reste sans protection', correct: true }, { label: 'Il veut devenir roi', correct: false }, { label: 'Il veut quitter la Perse', correct: false }, { label: 'Il veut construire un nouveau temple', correct: false }] },
+        { id: 'r83b', type: 'quiz', prompt: 'Comment le peuple réagit-il aux menaces pendant les travaux ?', choices: [{ label: 'Ils continuent les travaux malgré les menaces', correct: true }, { label: 'Ils abandonnent Jérusalem', correct: false }, { label: 'Ils retournent à Babylone', correct: false }, { label: 'Ils arrêtent de prier', correct: false }] },
       ],
       characterIds: ['nehemie', 'ezra'],
     },
