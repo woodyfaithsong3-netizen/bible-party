@@ -7,6 +7,7 @@ const ANNEX_KEY = 'bible-party-character-annex-v1';
 const BIBLE_BOOKS_KEY = 'bible-party-bible-books-v1';
 const FINAL_BIBLE_BOOKS_KEY = 'bible-party-final-bible-books-v1';
 const READ_CHARACTERS_KEY = 'bible-party-read-characters-v1';
+const FINAL_BONUS_KEY = 'bible-party-final-bonus-v1';
 
 export type LocalScore = { teamName: string; score: number; playedAt: string };
 
@@ -77,6 +78,13 @@ export async function markCharacterRead(id: string): Promise<string[]> {
   return next;
 }
 
+export async function getFinalBonusComplete(): Promise<boolean> {
+  try { return (await AsyncStorage.getItem(FINAL_BONUS_KEY)) === 'true'; } catch { return false; }
+}
+export async function markFinalBonusComplete(): Promise<void> {
+  await AsyncStorage.setItem(FINAL_BONUS_KEY, 'true');
+}
+
 export async function getGamesPlayed(): Promise<number> {
   try { return Number((await AsyncStorage.getItem(GAMES_KEY)) || 0); } catch { return 0; }
 }
@@ -87,5 +95,5 @@ export async function recordGamePlayed(): Promise<number> {
 }
 
 export async function resetProgress() {
-  await AsyncStorage.multiRemove([KEY, GAMES_KEY, ADVENTURE_KEY, ANNEX_KEY, BIBLE_BOOKS_KEY, FINAL_BIBLE_BOOKS_KEY, READ_CHARACTERS_KEY]);
+  await AsyncStorage.multiRemove([KEY, GAMES_KEY, ADVENTURE_KEY, ANNEX_KEY, BIBLE_BOOKS_KEY, FINAL_BIBLE_BOOKS_KEY, READ_CHARACTERS_KEY, FINAL_BONUS_KEY]);
 }
