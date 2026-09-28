@@ -16,6 +16,7 @@ import { SEASON_5 } from '@/data/adventureSeason5';
 import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
+import { FINAL_CHARACTER_ARCHIVE_IDS } from '@/data/finalCharacterArchive';
 
 
 const CHRONOLOGICAL_BLOCKS = [
