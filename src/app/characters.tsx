@@ -207,6 +207,20 @@ function CharacterDetail({ item, onBack, onAllCharacters, onMoveCharacter, retur
       <Pressable onPress={confirmRead} style={{ marginTop: 16, padding: 15, borderRadius: 16, backgroundColor: hasRead ? colors.surface2 : colors.accent, borderWidth: 1, borderColor: colors.accent }}>
         <Text style={{ color: hasRead ? colors.accent : colors.bg, fontWeight: '900', textAlign: 'center' }}>{hasRead ? '✓ Fiche lue — personnage comptabilisé' : '✓ J’ai lu cette fiche — comptabiliser le personnage'}</Text>
       </Pressable>
+      <View style={{ marginTop: 22, paddingTop: 16, borderTopWidth: 1, borderTopColor: colors.border }}>
+        <Text style={{ color: colors.muted, fontSize: 11, fontWeight: '900', textAlign: 'center', marginBottom: 10 }}>PERSONNAGE {position} / {total}</Text>
+        <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8 }}>
+          <Pressable onPress={() => onMoveCharacter(-1)} style={{ flex: 1, paddingVertical: 13, borderRadius: 14, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface }}>
+            <Text style={{ color: colors.text, fontWeight: '900', textAlign: 'center' }}>‹ Précédent</Text>
+          </Pressable>
+          <Pressable onPress={onBack} style={{ flex: 1, paddingVertical: 13, borderRadius: 14, borderWidth: 1, borderColor: colors.accent, backgroundColor: colors.surface2 }}>
+            <Text style={{ color: colors.accent, fontWeight: '900', textAlign: 'center' }}>↩ Retour</Text>
+          </Pressable>
+          <Pressable onPress={() => onMoveCharacter(1)} style={{ flex: 1, paddingVertical: 13, borderRadius: 14, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface }}>
+            <Text style={{ color: colors.text, fontWeight: '900', textAlign: 'center' }}>Suivant ›</Text>
+          </Pressable>
+        </View>
+      </View>
     </View>
   </ScrollView>;
 }
