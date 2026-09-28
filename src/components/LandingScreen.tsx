@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useCallback, useState } from 'react';
 import { Image, ImageBackground, Linking, Pressable, StyleSheet, Text, View } from 'react-native';
 import { router } from 'expo-router';
+import { useFocusEffect } from '@react-navigation/native';
+import { getAdventureProgress } from '@/lib/storage';
+import { ADVENTURE_EPISODES } from '@/data/adventure';
 
 const scenic = require('../../assets/images/backgrounds/home-valley-exact-source.png');
 const logo = require('../../assets/images/ui/logo.png');
@@ -10,8 +13,19 @@ const bible = require('../../assets/images/ui/bible.png');
 const APK_PAGE = 'https://expo.dev/accounts/woodysong/projects/bible-party/builds/a52fa5c2-2b89-4b45-95f6-a45167ab4e58';
 
 export default function LandingScreen() {
+  const [lastEpisode, setLastEpisode] = useState<typeof ADVENTURE_EPISODES[number] | null>(null);
+  useFocusEffect(useCallback(() => {
+    void getAdventureProgress().then(progress => {
+      const completed = ADVENTURE_EPISODES.filter(ep => progress.includes(ep.id));
+      setLastEpisode(completed.length ? ADVENTURE_EPISODES[Math.min(completed.length, ADVENTURE_EPISODES.length - 1)] : ADVENTURE_EPISODES[0]);
+    });
+  }, []));
   return <View style={styles.root}><ImageBackground source={scenic} resizeMode="cover" style={styles.background}><View style={styles.tone}/><View style={styles.content}>
     <Image source={logo} resizeMode="contain" style={styles.logo}/><Text style={styles.tagline}>Ensemble, découvrons la Bible</Text><Text style={styles.intro}>Découvre la Bible, joue et construis ta collection.</Text>
+    {lastEpisode ? <Pressable onPress={()=>router.push({pathname:'/adventure/episode',params:{id:lastEpisode.id}})} style={({pressed})=>[styles.continueCard,pressed&&styles.pressed]}>
+      <View style={styles.continueBadge}><Text style={styles.continueEmoji}>▶</Text></View>
+      <View style={styles.copy}><Text style={styles.continueEyebrow}>CONTINUER L’AVENTURE</Text><Text style={styles.continueTitle}>{lastEpisode.number === 1 ? 'Commencer l’Aventure' : `Histoire ${lastEpisode.number} · ${lastEpisode.title}`}</Text><Text style={styles.continueSub}>{lastEpisode.number === 1 ? 'Découvre la première histoire' : 'Reprendre ton parcours'}</Text></View><Text style={styles.arrowLight}>›</Text>
+    </Pressable> : null}
     <View style={styles.actions}>
       <Pressable onPress={()=>router.push('/adventure')} style={({pressed})=>[styles.action,styles.primary,pressed&&styles.pressed]} accessibilityRole="button" accessibilityLabel="Aventure"><View style={styles.iconBoxPrimary}><Text style={styles.adventureEmoji}>🗺️</Text></View><View style={styles.copy}><Text style={styles.primaryTitle}>AVENTURE</Text><Text style={styles.primarySub}>Découvrir la Bible épisode par épisode</Text></View><Text style={styles.arrowDark}>›</Text></Pressable>
       <Pressable onPress={()=>router.push('/setup')} style={({pressed})=>[styles.action,styles.secondary,pressed&&styles.pressed]} accessibilityRole="button" accessibilityLabel="Jouer"><View style={styles.iconBox}><Image source={gamepad} resizeMode="contain" style={styles.icon}/></View><View style={styles.copy}><Text style={styles.secondaryTitle}>JOUER</Text><Text style={styles.secondarySub}>Lancer une nouvelle partie</Text></View><Text style={styles.arrowLight}>›</Text></Pressable>
@@ -23,7 +37,7 @@ const styles=StyleSheet.create({
  root:{flex:1,backgroundColor:'#041C24'},background:{flex:1},tone:{...StyleSheet.absoluteFill,backgroundColor:'rgba(0,24,31,.22)'},
  content:{flex:1,alignItems:'center',justifyContent:'center',paddingHorizontal:20,paddingTop:24,paddingBottom:28},logo:{width:270,height:155},
  tagline:{color:'#FFECA1',fontSize:17,lineHeight:22,fontWeight:'800',fontStyle:'italic',textAlign:'center',textShadowColor:'#17352B',textShadowRadius:5,marginTop:-2},
- intro:{color:'#F5FBF8',fontSize:15,fontWeight:'700',textAlign:'center',marginTop:26,marginBottom:18},actions:{width:'100%',maxWidth:560,gap:12},
+ intro:{color:'#F5FBF8',fontSize:15,fontWeight:'700',textAlign:'center',marginTop:26,marginBottom:18},actions:{width:'100%',maxWidth:560,gap:12},continueCard:{minHeight:72,borderRadius:22,borderWidth:1,flexDirection:'row',alignItems:'center',paddingHorizontal:13,backgroundColor:'rgba(3,52,61,.94)',borderColor:'rgba(242,201,76,.8)',width:'100%',maxWidth:560,marginBottom:12},continueBadge:{width:44,height:44,borderRadius:16,backgroundColor:'rgba(242,201,76,.16)',alignItems:'center',justifyContent:'center'},continueEmoji:{color:'#FFE58A',fontSize:18,fontWeight:'900'},continueEyebrow:{color:'#FFE58A',fontSize:9,fontWeight:'900',letterSpacing:1.3},continueTitle:{color:'#FFFDF4',fontSize:14,fontWeight:'900',marginTop:3},continueSub:{color:'#DCEEE9',fontSize:10,fontWeight:'700',marginTop:2},
  action:{minHeight:78,borderRadius:24,borderWidth:1,flexDirection:'row',alignItems:'center',paddingHorizontal:13,shadowColor:'#001A20',shadowOpacity:.35,shadowRadius:16},
  primary:{backgroundColor:'rgba(249,199,45,.92)',borderColor:'#FFE993'},secondary:{backgroundColor:'rgba(3,52,61,.88)',borderColor:'rgba(113,222,240,.82)'},
  iconBoxPrimary:{width:50,height:50,borderRadius:18,backgroundColor:'rgba(12,61,57,.16)',alignItems:'center',justifyContent:'center'},iconBox:{width:50,height:50,borderRadius:18,backgroundColor:'rgba(3,30,37,.76)',alignItems:'center',justifyContent:'center'},icon:{width:34,height:34},adventureEmoji:{fontSize:28},
