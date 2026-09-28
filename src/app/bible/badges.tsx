@@ -16,16 +16,16 @@ import { SEASON_5 } from '@/data/adventureSeason5';
 import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
-import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, getGamesPlayed, getReadCharacterIds, markBibleBookDiscovered } from '@/lib/storage';
+import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, getFinalBonusComplete, getGamesPlayed, getReadCharacterIds, markBibleBookDiscovered } from '@/lib/storage';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
 
 const SEASONS = [SEASON_1,SEASON_2,SEASON_3,SEASON_4,SEASON_5,SEASON_6,SEASON_7,SEASON_8];
 
 export default function BibleBadgesScreen() {
-  const [ctx, setCtx] = useState({ episodes: 0, characters: 0, games: 0, adventureComplete: false, seasonsCompleted: 0, books: 0 });
+  const [ctx, setCtx] = useState({ episodes: 0, characters: 0, games: 0, adventureComplete: false, seasonsCompleted: 0, books: 0, bonusComplete: false });
   const load = useCallback(async () => {
-    const [completed, games, annexes, storedBooks, finalBooks, readCharacters] = await Promise.all([getAdventureProgress(), getGamesPlayed(), getCharacterAnnexProgress(), getBibleBookProgress(), getFinalBibleBookProgress(), getReadCharacterIds()]);
+    const [completed, games, annexes, storedBooks, finalBooks, readCharacters, bonusComplete] = await Promise.all([getAdventureProgress(), getGamesPlayed(), getCharacterAnnexProgress(), getBibleBookProgress(), getFinalBibleBookProgress(), getReadCharacterIds(), getFinalBonusComplete()]);
     const validEpisodes = SEASONS.flatMap(s => s.episodes);
     const ids = new Set(completed);
     const episodes = validEpisodes.filter(e => ids.has(e.id));
@@ -35,7 +35,7 @@ export default function BibleBadgesScreen() {
     const discovered = getDiscoveredBibleBookIds(completed, annexes, finalBooks);
     let nextBooks = storedBooks;
     for (const id of discovered) nextBooks = await markBibleBookDiscovered(id);
-    setCtx({ episodes: episodes.length, characters, games, adventureComplete, seasonsCompleted, books: Object.keys(nextBooks).filter(id => BIBLE_BOOKS.some(b => b.id === id)).length });
+    setCtx({ episodes: episodes.length, characters, games, adventureComplete, seasonsCompleted, bonusComplete, books: Object.keys(nextBooks).filter(id => BIBLE_BOOKS.some(b => b.id === id)).length });
   }, []);
   useFocusEffect(useCallback(() => { void load(); }, [load]));
   const unlocked = useMemo(() => BADGES.filter(b => b.unlocked(ctx)).length, [ctx]);
