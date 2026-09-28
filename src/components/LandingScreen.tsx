@@ -21,8 +21,10 @@ const APK_PAGE = 'https://expo.dev/accounts/woodysong/projects/bible-party/build
 
 export default function LandingScreen() {
   const [lastEpisode, setLastEpisode] = useState<typeof ADVENTURE_EPISODES[number] | null>(null);
+  const [completedCount, setCompletedCount] = useState(0);
   useEffect(() => {
     void getAdventureProgress().then(progress => {
+      setCompletedCount(ADVENTURE_EPISODES.filter(ep => progress.includes(ep.id)).length);
       const nextEpisode = ADVENTURE_EPISODES.find(ep => !progress.includes(ep.id));
       setLastEpisode(nextEpisode ?? ADVENTURE_EPISODES[ADVENTURE_EPISODES.length - 1]);
     });
@@ -31,7 +33,7 @@ export default function LandingScreen() {
     <Image source={logo} resizeMode="contain" style={styles.logo}/><Text style={styles.tagline}>Ensemble, découvrons la Bible</Text><Text style={styles.intro}>Découvre la Bible, joue et construis ta collection.</Text>
     {lastEpisode ? <Pressable onPress={()=>router.push({pathname:'/adventure/episode',params:{id:lastEpisode.id}})} style={({pressed})=>[styles.continueCard,pressed&&styles.pressed]}>
       <View style={styles.continueBadge}><Text style={styles.continueEmoji}>▶</Text></View>
-      <View style={styles.copy}><Text style={styles.continueEyebrow}>CONTINUER L’AVENTURE</Text><Text style={styles.continueTitle}>{lastEpisode.number === 1 ? 'Commencer l’Aventure' : `Histoire ${lastEpisode.number} · ${lastEpisode.title}`}</Text><Text style={styles.continueSub}>{lastEpisode.number === 1 ? 'Découvre la première histoire' : 'Reprendre ton parcours'}</Text></View><Text style={styles.arrowLight}>›</Text>
+      <View style={styles.copy}><Text style={styles.continueEyebrow}>CONTINUER L’AVENTURE</Text><Text style={styles.continueTitle}>{lastEpisode.number === 1 ? 'Commencer l’Aventure' : `Histoire ${lastEpisode.number} · ${lastEpisode.title}`}</Text><Text style={styles.continueSub}>{completedCount === ADVENTURE_EPISODES.length ? 'Aventure terminée · Rejouer une histoire' : completedCount === 0 ? 'Découvre la première histoire' : `Progression : ${completedCount}/${ADVENTURE_EPISODES.length} histoires · Reprendre`}</Text></View><Text style={styles.arrowLight}>›</Text>
     </Pressable> : null}
     <View style={styles.actions}>
       <Pressable onPress={()=>router.push('/adventure')} style={({pressed})=>[styles.action,styles.primary,pressed&&styles.pressed]} accessibilityRole="button" accessibilityLabel="Aventure"><View style={styles.iconBoxPrimary}><Text style={styles.adventureEmoji}>🗺️</Text></View><View style={styles.copy}><Text style={styles.primaryTitle}>AVENTURE</Text><Text style={styles.primarySub}>Découvrir la Bible épisode par épisode</Text></View><Text style={styles.arrowDark}>›</Text></Pressable>
