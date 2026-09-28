@@ -120,8 +120,8 @@ function CharacterDetail({ item, onBack, onAllCharacters, onMoveCharacter, retur
   const didYouKnow = learning?.didYouKnow
     ?? 'Aucun fait supplémentaire n’est ajouté ici lorsque les ressources étudiées ne permettent pas d’en vérifier un précisément.';
 
-  return <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
-    <View {...swipeResponder.panHandlers} style={{ marginTop: 2, paddingVertical: 9, paddingHorizontal: 10, borderRadius: 14, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
+  return <ScrollView {...swipeResponder.panHandlers} style={styles.screen} contentContainerStyle={styles.content}>
+    <View style={{ marginTop: 2, paddingVertical: 9, paddingHorizontal: 10, borderRadius: 14, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
       <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900', textAlign: 'center' }}>GLISSE ← → POUR CHANGER DE PERSONNAGE</Text>
     </View>
     <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8, marginTop: 10 }}>
