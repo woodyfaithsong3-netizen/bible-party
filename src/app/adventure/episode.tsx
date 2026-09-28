@@ -1,6 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { characterProfiles } from '../../data/characterProfiles';
-import { Pressable, ScrollView, Text, View } from 'react-native';
+import { PanResponder, Pressable, ScrollView, Text, View } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import { ScenicScreen } from '@/components/ScenicScreen';
 import { colors } from '@/theme/colors';
@@ -46,6 +46,22 @@ export default function AdventureEpisodeScreen() {
   const [adventureComplete, setAdventureComplete] = useState(false);
   const [accessChecked, setAccessChecked] = useState(false);
   const [accessAllowed, setAccessAllowed] = useState(false);
+  const episodeSwipeResponder = useMemo(() => PanResponder.create({
+    onMoveShouldSetPanResponder: (_event, gesture) => Math.abs(gesture.dx) > Math.abs(gesture.dy) && Math.abs(gesture.dx) > 20,
+    onPanResponderRelease: (_event, gesture) => {
+      if (Math.abs(gesture.dx) < 70) return;
+      const target = gesture.dx < 0 ? nextEpisode : previousEpisode;
+      if (target) router.replace({ pathname: '/adventure/episode', params: { id: target.id } });
+    },
+  }), [nextEpisode, previousEpisode]);
+  const episodeNavigation = (position: 'top' | 'bottom') => <View style={{ marginTop: position === 'top' ? 4 : 22, paddingTop: position === 'bottom' ? 14 : 0, borderTopWidth: position === 'bottom' ? 1 : 0, borderTopColor: colors.border }}>
+    <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900', textAlign: 'center', marginBottom: 9 }}>ÉPISODE {episode?.number ?? ''} / {ADVENTURE_EPISODES.length}</Text>
+    <View style={{ flexDirection: 'row', gap: 8 }}>
+      <Pressable disabled={!previousEpisode} onPress={() => previousEpisode && router.replace({ pathname: '/adventure/episode', params: { id: previousEpisode.id } })} style={{ flex: 1, paddingVertical: 12, borderRadius: 14, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface, opacity: previousEpisode ? 1 : .4 }}><Text style={{ color: colors.text, fontWeight: '900', textAlign: 'center' }}>‹ Précédent</Text></Pressable>
+      <Pressable onPress={() => router.replace('/adventure')} style={{ flex: 1, paddingVertical: 12, borderRadius: 14, borderWidth: 1, borderColor: colors.accent, backgroundColor: colors.surface2 }}><Text style={{ color: colors.accent, fontWeight: '900', textAlign: 'center' }}>↩ Aventure</Text></Pressable>
+      <Pressable disabled={!nextEpisode} onPress={() => nextEpisode && router.replace({ pathname: '/adventure/episode', params: { id: nextEpisode.id } })} style={{ flex: 1, paddingVertical: 12, borderRadius: 14, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface, opacity: nextEpisode ? 1 : .4 }}><Text style={{ color: colors.text, fontWeight: '900', textAlign: 'center' }}>Suivant ›</Text></Pressable>
+    </View>
+  </View>;
 
   useEffect(() => {
     let active = true;
@@ -266,7 +282,8 @@ export default function AdventureEpisodeScreen() {
 
   return (
     <ScenicScreen>
-      <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
+      <ScrollView {...episodeSwipeResponder.panHandlers} style={styles.screen} contentContainerStyle={styles.content}>
+        {episodeNavigation('top')}
         <View style={styles.topRow}>
           <Pressable onPress={() => router.back()}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Quitter</Text></Pressable>
           <Text style={{ color: colors.muted, fontSize: 11, fontWeight: '900' }}>{index + 1}/{episode.questions.length}</Text>
@@ -315,6 +332,7 @@ export default function AdventureEpisodeScreen() {
         <Pressable disabled={!answered} onPress={() => void next()} style={[styles.button, styles.buttonPrimary, { marginTop: 18, opacity: answered ? 1 : .45 }]}>
           <Text style={styles.buttonText}>{index === episode.questions.length - 1 ? 'Terminer l’épisode' : 'Continuer ›'}</Text>
         </Pressable>
+        {episodeNavigation('bottom')}
       </ScrollView>
     </ScenicScreen>
   );
