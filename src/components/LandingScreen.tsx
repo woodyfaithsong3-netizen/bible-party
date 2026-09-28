@@ -23,8 +23,8 @@ export default function LandingScreen() {
   const [lastEpisode, setLastEpisode] = useState<typeof ADVENTURE_EPISODES[number] | null>(null);
   useEffect(() => {
     void getAdventureProgress().then(progress => {
-      const completed = ADVENTURE_EPISODES.filter(ep => progress.includes(ep.id));
-      setLastEpisode(completed.length ? ADVENTURE_EPISODES[Math.min(completed.length, ADVENTURE_EPISODES.length - 1)] : ADVENTURE_EPISODES[0]);
+      const nextEpisode = ADVENTURE_EPISODES.find(ep => !progress.includes(ep.id));
+      setLastEpisode(nextEpisode ?? ADVENTURE_EPISODES[ADVENTURE_EPISODES.length - 1]);
     });
   }, []);
   return <View style={styles.root}><ImageBackground source={scenic} resizeMode="cover" style={styles.background}><View style={styles.tone}/><View style={styles.content}>
