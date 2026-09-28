@@ -117,6 +117,10 @@ function CharacterDetail({ item, onBack, onAllCharacters, onMoveCharacter, retur
         ? 'Son récit montre aussi les conséquences de choix qui n’étaient pas en accord avec la volonté de Jéhovah.'
         : 'Le récit biblique permet d’examiner comment ses choix et ses actions s’inscrivent dans le cadre du culte de Jéhovah.');
 
+  const characterEpisodes = useMemo(() => [SEASON_1, SEASON_2, SEASON_3, SEASON_4, SEASON_5, SEASON_6, SEASON_7, SEASON_8]
+    .flatMap(season => season.episodes)
+    .filter(ep => (ep.characterIds ?? []).includes(item.id)), [item.id]);
+
   const didYouKnow = learning?.didYouKnow
     ?? 'Aucun fait supplémentaire n’est ajouté ici lorsque les ressources étudiées ne permettent pas d’en vérifier un précisément.';
 
@@ -187,6 +191,13 @@ function CharacterDetail({ item, onBack, onAllCharacters, onMoveCharacter, retur
       <Section icon="💡" title="Ce que son exemple nous apprend">
         <Text style={{ color: colors.muted, lineHeight: 21 }}>{lessons}</Text>
       </Section>
+
+      {characterEpisodes.length > 0 ? <Section icon="🗺️" title="Dans l’Aventure">
+        <Text style={{ color: colors.muted, lineHeight: 21 }}>Tu peux retrouver ce personnage directement dans les histoires où il apparaît.</Text>
+        {characterEpisodes.map(ep => <Pressable key={ep.id} onPress={() => router.replace({ pathname: '/adventure/episode', params: { id: ep.id } })} style={{ paddingVertical: 8 }}>
+          <Text style={{ color: colors.accent, fontWeight: '900' }}>Histoire {ep.number} · {ep.title} ›</Text>
+        </Pressable>)}
+      </Section> : null}
 
       <Section icon="📍" title="Textes bibliques à lire">
         <Text style={{ color: colors.accent, lineHeight: 21 }}>{item.references}</Text>
