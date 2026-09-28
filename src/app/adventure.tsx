@@ -81,6 +81,7 @@ export default function AdventureScreen() {
   };
 
   const seasonComplete = activeSeason.episodes.length > 0 && activeSeason.episodes.every(ep => completed.includes(ep.id));
+  const nextSeasonIndex = selectedSeason < SEASONS.length - 1 ? selectedSeason + 1 : -1;
   const canOpenEpisode = (episodeIndex: number) => {
     if (seasonComplete) return true;
     return episodeIndex === 0 || activeSeason.episodes.slice(0, episodeIndex).every(ep => completed.includes(ep.id));
@@ -143,6 +144,9 @@ export default function AdventureScreen() {
           <Pressable onPress={startSeason} style={[styles.button, styles.buttonPrimary, { marginTop: 22 }]}>
             <Text style={styles.buttonText}>{seasonComplete ? 'Rejouer un épisode ›' : activeCompletedCount > 0 ? 'Continuer l’aventure ›' : 'Commencer les épisodes ›'}</Text>
           </Pressable>
+          {seasonComplete && nextSeasonIndex >= 0 ? <Pressable onPress={() => { setSelectedSeason(nextSeasonIndex); setShowSeasonIntro(true); }} style={[styles.button, { marginTop: 10, borderColor: colors.accent, backgroundColor: colors.surface2 }]}>
+            <Text style={{ color: colors.accent, fontWeight: '900', textAlign: 'center' }}>Continuer vers la saison {SEASONS[nextSeasonIndex].number} ›</Text>
+          </Pressable> : null}
 
           <View style={{ marginTop: 18 }}>
             <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.4 }}>📚 LES ÉPISODES</Text>
