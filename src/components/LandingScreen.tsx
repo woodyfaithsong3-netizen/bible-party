@@ -3,7 +3,15 @@ import { Image, ImageBackground, Linking, Pressable, StyleSheet, Text, View } fr
 import { router } from 'expo-router';
 import { useFocusEffect } from '@react-navigation/native';
 import { getAdventureProgress } from '@/lib/storage';
-import { ADVENTURE_EPISODES } from '@/data/adventure';
+import { SEASON_1 } from '@/data/adventure';
+import { SEASON_2 } from '@/data/adventureSeason2';
+import { SEASON_3 } from '@/data/adventureSeason3';
+import { SEASON_4 } from '@/data/adventureSeason4';
+import { SEASON_5 } from '@/data/adventureSeason5';
+import { SEASON_6 } from '@/data/adventureSeason6';
+import { SEASON_7 } from '@/data/adventureSeason7';
+import { SEASON_8 } from '@/data/adventureSeason8';
+const ADVENTURE_EPISODES = [SEASON_1,SEASON_2,SEASON_3,SEASON_4,SEASON_5,SEASON_6,SEASON_7,SEASON_8].flatMap(season => season.episodes);
 
 const scenic = require('../../assets/images/backgrounds/home-valley-exact-source.png');
 const logo = require('../../assets/images/ui/logo.png');
