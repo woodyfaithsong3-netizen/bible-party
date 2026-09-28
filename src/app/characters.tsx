@@ -87,7 +87,7 @@ function Section({ icon, title, children }: { icon: string; title: string; child
   </View>;
 }
 
-function CharacterDetail({ item, onBack, onAllCharacters, onMoveCharacter, returnEpisodeId }: { item: CharacterProfile; onBack: () => void; onAllCharacters: () => void; onMoveCharacter: (direction: -1 | 1) => void; returnEpisodeId?: string }) {
+function CharacterDetail({ item, onBack, onAllCharacters, onMoveCharacter, returnEpisodeId, position, total }: { item: CharacterProfile; onBack: () => void; onAllCharacters: () => void; onMoveCharacter: (direction: -1 | 1) => void; returnEpisodeId?: string; position: number; total: number }) {
   const learning = characterLearning[item.id];
   const [hasRead, setHasRead] = useState(false);
   React.useEffect(() => { void getReadCharacterIds().then(ids => setHasRead(ids.includes(item.id))); }, [item.id]);
@@ -121,7 +121,18 @@ function CharacterDetail({ item, onBack, onAllCharacters, onMoveCharacter, retur
     ?? 'Aucun fait supplémentaire n’est ajouté ici lorsque les ressources étudiées ne permettent pas d’en vérifier un précisément.';
 
   return <ScrollView style={styles.screen} contentContainerStyle={styles.content}>
-    <View {...swipeResponder.panHandlers} style={{ marginTop: 2, paddingVertical: 8, flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', borderRadius: 14, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}><Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900' }}>‹ GLISSE POUR CHANGER</Text><Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900' }}>PERSONNAGE ›</Text></View>\n    <View style={{ flexDirection: 'row', gap: 18, alignItems: 'center', marginTop: 8 }}>
+    <View {...swipeResponder.panHandlers} style={{ marginTop: 2, paddingVertical: 9, paddingHorizontal: 10, borderRadius: 14, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.border }}>
+      <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900', textAlign: 'center' }}>GLISSE ← → POUR CHANGER DE PERSONNAGE</Text>
+    </View>
+    <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', gap: 8, marginTop: 10 }}>
+      <Pressable onPress={() => onMoveCharacter(-1)} style={{ flex: 1, paddingVertical: 11, borderRadius: 14, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface }}>
+        <Text style={{ color: colors.text, fontWeight: '900', textAlign: 'center' }}>‹ Précédent</Text>
+      </Pressable>
+      <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900' }}>{position} / {total}</Text>
+      <Pressable onPress={() => onMoveCharacter(1)} style={{ flex: 1, paddingVertical: 11, borderRadius: 14, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface }}>
+        <Text style={{ color: colors.text, fontWeight: '900', textAlign: 'center' }}>Suivant ›</Text>
+      </Pressable>
+    </View>\n    <View style={{ flexDirection: 'row', gap: 18, alignItems: 'center', marginTop: 8 }}>
       <Pressable onPress={onBack}><Text style={{ color: colors.accent, fontWeight: '900' }}>{returnEpisodeId ? '‹ Retour à l’histoire' : '‹ Retour'}</Text></Pressable>
       {!returnEpisodeId ? <Pressable onPress={onAllCharacters}><Text style={{ color: colors.accent, fontWeight: '900' }}>👤 Tous les personnages</Text></Pressable> : null}
       {!returnEpisodeId ? <Pressable onPress={() => router.replace('/bible')}><Text style={{ color: colors.accent, fontWeight: '900' }}>‹ Ma Bible</Text></Pressable> : null}
@@ -241,16 +252,18 @@ export default function CharactersScreen() {
       return matchesEra && matchesQuery;
     });
   }, [query, selectedEra, orderedProfiles]);
+  const availableCharacters = useMemo(() => orderedProfiles.filter(item => unlockedIds.includes(item.id)), [orderedProfiles, unlockedIds]);
+  const selectedPosition = selected ? availableCharacters.findIndex(item => item.id === selected.id) : -1;
   const moveCharacter = useCallback((direction: -1 | 1) => {
     if (!selected) return;
-    const available = orderedProfiles.filter(item => unlockedIds.includes(item.id));
+    const available = availableCharacters;
     const current = available.findIndex(item => item.id === selected.id);
     if (current < 0 || available.length < 2) return;
     const next = available[(current + direction + available.length) % available.length];
     setSelected(next);
-  }, [selected, orderedProfiles, unlockedIds]);
+  }, [selected, availableCharacters]);
 
-  if (selected && unlockedIds.includes(selected.id)) return <ScenicScreen><CharacterDetail item={selected} returnEpisodeId={params.returnEpisodeId} onMoveCharacter={moveCharacter} onBack={() => { if (params.returnEpisodeId) router.replace({ pathname: '/adventure/episode', params: { id: params.returnEpisodeId } }); else router.back(); }} onAllCharacters={() => router.replace('/bible/characters')} /></ScenicScreen>;
+  if (selected && unlockedIds.includes(selected.id)) return <ScenicScreen><CharacterDetail item={selected} position={Math.max(1, selectedPosition + 1)} total={availableCharacters.length} returnEpisodeId={params.returnEpisodeId} onMoveCharacter={moveCharacter} onBack={() => { if (params.returnEpisodeId) router.replace({ pathname: '/adventure/episode', params: { id: params.returnEpisodeId } }); else router.back(); }} onAllCharacters={() => router.replace('/bible/characters')} /></ScenicScreen>;
   return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
     <Text style={styles.eyebrow}>APPRENDRE</Text>
     <Text style={[styles.title, { marginTop: 7 }]}>Personnages bibliques</Text>
