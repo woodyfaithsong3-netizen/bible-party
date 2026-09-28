@@ -133,9 +133,14 @@ export default function AdventureEpisodeScreen() {
     }
     const beforeProgress = await getAdventureProgress();
     const before = new Set(beforeProgress);
-    const newlyDiscovered = (episode.characterIds ?? []).filter(id => !before.has(id));
-    const beforeBooks = await getBibleBookProgress();
     const beforeAnnexes = await getCharacterAnnexProgress();
+    const beforeAdventureComplete = ADVENTURE_EPISODES.every(item => beforeProgress.includes(item.id));
+    const beforeCharacterIds = new Set([
+      ...ADVENTURE_SEASONS.flatMap(season => season.episodes.filter(item => before.has(item.id)).flatMap(item => item.characterIds ?? [])),
+      ...CHARACTER_ANNEXES.filter(item => beforeAnnexes.includes(item.id)).map(item => item.characterId),
+      ...(beforeAdventureComplete ? ['eve','cain','abel','henoch','lot','rebecca','rachel','benjamin','dinah','aaron','miriam','caleb','rahab','deborah','barak','jael','gideon','jephthah','jonathan','goliath','abigail','nabal','jezebel','mordecai','haman','nicodeme','lazare','judas_iscariote','matthias','matthew','marc','luc','gad','nathan','sons_korah','asaph','heman','ethan','agur','lemuel','job','pharaoh','jochebed','pharaoh_daughter','jesus','absalom','rehoboam','jeroboam','shadrach','meshach','abednego','nebuchadnezzar'] : []),
+    ]);
+    const beforeBooks = await getBibleBookProgress();
     const beforeFinalBooks = await getFinalBibleBookProgress();
     const beforeBookIds = new Set(getDiscoveredBibleBookIds(beforeProgress, beforeAnnexes, beforeFinalBooks));
     const beforeReadCharacters = await getReadCharacterIds();
@@ -153,6 +158,13 @@ export default function AdventureEpisodeScreen() {
     const badgeContext = { episodes: episodeCount, characters: readCharacterCount, games, books: afterBookIds.length, adventureComplete: adventureIsComplete, seasonsCompleted };
     const beforeBadgeContext = { episodes: beforeProgress.filter(id => ADVENTURE_EPISODES.some(item => item.id === id)).length, characters: readCharacterCount, games, books: beforeBookIds.size, adventureComplete: ADVENTURE_EPISODES.every(item => beforeProgress.includes(item.id)), seasonsCompleted: ADVENTURE_SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(item => beforeProgress.includes(item.id))).length };
     const newlyUnlockedBadges = BADGES.filter(badge => badge.unlocked(badgeContext) && !badge.unlocked(beforeBadgeContext)).map(badge => badge.title);
+    const afterAdventureComplete = ADVENTURE_EPISODES.every(item => after.includes(item.id));
+    const afterCharacterIds = new Set([
+      ...ADVENTURE_SEASONS.flatMap(season => season.episodes.filter(item => after.includes(item.id)).flatMap(item => item.characterIds ?? [])),
+      ...CHARACTER_ANNEXES.filter(item => beforeAnnexes.includes(item.id)).map(item => item.characterId),
+      ...(afterAdventureComplete ? ['eve','cain','abel','henoch','lot','rebecca','rachel','benjamin','dinah','aaron','miriam','caleb','rahab','deborah','barak','jael','gideon','jephthah','jonathan','goliath','abigail','nabal','jezebel','mordecai','haman','nicodeme','lazare','judas_iscariote','matthias','matthew','marc','luc','gad','nathan','sons_korah','asaph','heman','ethan','agur','lemuel','job','pharaoh','jochebed','pharaoh_daughter','jesus','absalom','rehoboam','jeroboam','shadrach','meshach','abednego','nebuchadnezzar'] : []),
+    ]);
+    const newlyDiscovered = [...afterCharacterIds].filter(id => !beforeCharacterIds.has(id));
     setNewCharacterIds(newlyDiscovered);
     setNewBookIds(newlyDiscoveredBooks);
     setNewBadgeTitles(newlyUnlockedBadges);
