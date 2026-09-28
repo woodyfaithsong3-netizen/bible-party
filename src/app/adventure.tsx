@@ -123,6 +123,12 @@ export default function AdventureScreen() {
             </View>
           </View>
 
+          {seasonComplete ? <View style={{ marginTop: 14, padding: 16, borderRadius: 20, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.success }}>
+            <Text style={{ color: colors.success, fontSize: 11, fontWeight: '900', letterSpacing: 1.5 }}>🏆 SAISON TERMINÉE</Text>
+            <Text style={{ color: colors.text, fontSize: 19, fontWeight: '900', marginTop: 7 }}>Tu as terminé la saison {activeSeason.number}.</Text>
+            <Text style={{ color: colors.muted, lineHeight: 20, marginTop: 6 }}>Tu peux revoir ses épisodes à tout moment et poursuivre vers la prochaine saison.</Text>
+          </View> : null}
+
           <View style={{ marginTop: 14, padding: 16, borderRadius: 20, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
             <Text style={{ color: colors.accent, fontSize: 11, fontWeight: '900', letterSpacing: 1.5 }}>🎁 À DÉBLOQUER DANS CETTE SAISON</Text>
             <Text style={{ color: colors.text, fontSize: 17, fontWeight: '900', lineHeight: 23, marginTop: 7 }}>Chaque épisode enrichit ta collection.</Text>
