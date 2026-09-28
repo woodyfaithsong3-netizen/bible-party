@@ -14,7 +14,7 @@ import { SEASON_5 } from '@/data/adventureSeason5';
 import { SEASON_6 } from '@/data/adventureSeason6';
 import { SEASON_7 } from '@/data/adventureSeason7';
 import { SEASON_8 } from '@/data/adventureSeason8';
-import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, getGamesPlayed, getReadCharacterIds, markAdventureEpisodeComplete, markBibleBookDiscovered } from '@/lib/storage';
+import { getAdventureProgress, getBibleBookProgress, getCharacterAnnexProgress, getFinalBibleBookProgress, getGamesPlayed, getReadCharacterIds, markAdventureEpisodeComplete, markBibleBookDiscovered, markFinalBonusComplete } from '@/lib/storage';
 import { CHARACTER_ANNEXES } from '@/data/characterAnnexes';
 import { getDiscoveredBibleBookIds } from '@/lib/bibleBookProgress';
 import { BIBLE_BOOKS } from '@/data/bibleBooks';
@@ -46,6 +46,7 @@ export default function AdventureEpisodeScreen() {
   const [finished, setFinished] = useState(false);
   const [bonusIndex, setBonusIndex] = useState(0);
   const [bonusSelected, setBonusSelected] = useState<number | null>(null);
+  const [bonusComplete, setBonusComplete] = useState(false);
   const [newCharacterIds, setNewCharacterIds] = useState<string[]>([]);
   const [newBookIds, setNewBookIds] = useState<string[]>([]);
   const [newBadgeTitles, setNewBadgeTitles] = useState<string[]>([]);
@@ -156,8 +157,8 @@ export default function AdventureEpisodeScreen() {
     const readCharacterCount = new Set(beforeReadCharacters.filter(id => characterProfiles.some(character => character.id === id))).size;
     const seasonsCompleted = ADVENTURE_SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(item => after.includes(item.id))).length;
     const adventureIsComplete = ADVENTURE_EPISODES.every(item => after.includes(item.id));
-    const badgeContext = { episodes: episodeCount, characters: readCharacterCount, games, books: afterBookIds.length, adventureComplete: adventureIsComplete, seasonsCompleted };
-    const beforeBadgeContext = { episodes: beforeProgress.filter(id => ADVENTURE_EPISODES.some(item => item.id === id)).length, characters: readCharacterCount, games, books: beforeBookIds.size, adventureComplete: ADVENTURE_EPISODES.every(item => beforeProgress.includes(item.id)), seasonsCompleted: ADVENTURE_SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(item => beforeProgress.includes(item.id))).length };
+    const badgeContext = { episodes: episodeCount, characters: readCharacterCount, games, books: afterBookIds.length, adventureComplete: adventureIsComplete, seasonsCompleted, bonusComplete: false };
+    const beforeBadgeContext = { bonusComplete: false, episodes: beforeProgress.filter(id => ADVENTURE_EPISODES.some(item => item.id === id)).length, characters: readCharacterCount, games, books: beforeBookIds.size, adventureComplete: ADVENTURE_EPISODES.every(item => beforeProgress.includes(item.id)), seasonsCompleted: ADVENTURE_SEASONS.filter(season => season.episodes.length > 0 && season.episodes.every(item => beforeProgress.includes(item.id))).length };
     const newlyUnlockedBadges = BADGES.filter(badge => badge.unlocked(badgeContext) && !badge.unlocked(beforeBadgeContext)).map(badge => badge.title);
     const afterAdventureComplete = ADVENTURE_EPISODES.every(item => after.includes(item.id));
     const afterCharacterIds = new Set([
@@ -198,7 +199,7 @@ export default function AdventureEpisodeScreen() {
               <View style={{ marginTop: 14, width: '100%', padding: 16, borderRadius: 18, backgroundColor: colors.surface2, borderWidth: 1, borderColor: colors.borderStrong }}>
                 <View style={{ flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center' }}>
                   <Text style={{ color: colors.accent, fontSize: 10, fontWeight: '900', letterSpacing: 1.5 }}>❓ QUESTIONS BONUS</Text>
-                  <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900' }}>{bonusIndex + 1}/{FINAL_BONUS_QUESTIONS.length}</Text>
+                  <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900' }}>{Math.min(bonusIndex + 1, FINAL_BONUS_QUESTIONS.length)}/{FINAL_BONUS_QUESTIONS.length}</Text>
                 </View>
                 <Text style={{ color: colors.text, fontSize: 18, lineHeight: 24, fontWeight: '900', marginTop: 9 }}>{bonusQuestion ? bonusQuestion.prompt : 'Bravo ! Tu as terminé les questions bonus.'}</Text>
                 <View style={{ gap: 9, marginTop: 13, display: bonusQuestion ? 'flex' : 'none' }}>
@@ -220,11 +221,19 @@ export default function AdventureEpisodeScreen() {
                     setBonusSelected(null);
                   } else {
                     setBonusIndex(FINAL_BONUS_QUESTIONS.length);
+                    void markFinalBonusComplete().then(() => setBonusComplete(true));
                   }
                 }} style={[styles.button, styles.buttonPrimary, { width: '100%', marginTop: 15, opacity: bonusAnswered ? 1 : .45 }]}>
                   <Text style={styles.buttonText}>{bonusIndex < FINAL_BONUS_QUESTIONS.length - 1 ? 'Question suivante ›' : 'Terminer les bonus'}</Text>
                 </Pressable>
               </View>
+
+              {bonusComplete ? <View style={{ marginTop: 14, width: '100%', padding: 16, borderRadius: 18, backgroundColor: 'rgba(30,91,62,.18)', borderWidth: 1, borderColor: colors.success, alignItems: 'center' }}>
+                <Text style={{ fontSize: 34 }}>🎯</Text>
+                <Text style={{ color: colors.success, fontSize: 10, fontWeight: '900', letterSpacing: 1.6, marginTop: 5 }}>BONUS FINAL TERMINÉ</Text>
+                <Text style={{ color: colors.text, fontSize: 17, fontWeight: '900', marginTop: 4 }}>Dernier défi</Text>
+                <Text style={{ color: colors.muted, fontSize: 12, textAlign: 'center', marginTop: 4 }}>Les 4 questions bonus ont été terminées. Le badge est ajouté à ta collection.</Text>
+              </View> : null}
 
               {adventureComplete ? <View style={{ marginTop: 14, width: '100%', padding: 16, borderRadius: 18, backgroundColor: 'rgba(242,201,76,.13)', borderWidth: 1, borderColor: colors.accent, alignItems: 'center' }}>
                 <Text style={{ fontSize: 40 }}>🌟</Text>
