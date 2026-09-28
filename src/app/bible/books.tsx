@@ -1,5 +1,5 @@
 import React, { useCallback, useMemo, useState } from 'react';
-import { Linking, Pressable, ScrollView, Text, View } from 'react-native';
+import { Linking, PanResponder, Pressable, ScrollView, Text, View } from 'react-native';
 import { router, useFocusEffect, useLocalSearchParams } from 'expo-router';
 import { ScenicScreen } from '@/components/ScenicScreen';
 import { colors } from '@/theme/colors';
@@ -42,6 +42,25 @@ export default function BibleBooksScreen() {
   const [completedEpisodes, setCompletedEpisodes] = useState<string[]>([]);
   const [completedAnnexes, setCompletedAnnexes] = useState<string[]>([]);
   const [finalBooks, setFinalBooks] = useState<string[]>([]);
+  const bookIndex = params.id ? BIBLE_BOOKS.findIndex(book => book.id === params.id) : -1;
+  const previousBook = bookIndex > 0 ? BIBLE_BOOKS[bookIndex - 1] : undefined;
+  const nextBook = bookIndex >= 0 ? BIBLE_BOOKS[bookIndex + 1] : undefined;
+  const bookSwipeResponder = useMemo(() => PanResponder.create({
+    onMoveShouldSetPanResponder: (_event, gesture) => Math.abs(gesture.dx) > Math.abs(gesture.dy) && Math.abs(gesture.dx) > 20,
+    onPanResponderRelease: (_event, gesture) => {
+      if (Math.abs(gesture.dx) < 70) return;
+      const target = gesture.dx < 0 ? nextBook : previousBook;
+      if (target) router.replace({ pathname: '/bible/books', params: { id: target.id } });
+    },
+  }), [nextBook, previousBook]);
+  const bookNavigation = (position: 'top' | 'bottom') => <View style={{ marginTop: position === 'top' ? 4 : 22, paddingTop: position === 'bottom' ? 14 : 0, borderTopWidth: position === 'bottom' ? 1 : 0, borderTopColor: colors.border }}>
+    <Text style={{ color: colors.muted, fontSize: 10, fontWeight: '900', textAlign: 'center', marginBottom: 9 }}>LIVRE {book.number} / 66</Text>
+    <View style={{ flexDirection: 'row', gap: 8 }}>
+      <Pressable disabled={!previousBook} onPress={() => previousBook && router.replace({ pathname: '/bible/books', params: { id: previousBook.id } })} style={{ flex: 1, paddingVertical: 12, borderRadius: 14, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface, opacity: previousBook ? 1 : .4 }}><Text style={{ color: colors.text, fontWeight: '900', textAlign: 'center' }}>‹ Précédent</Text></Pressable>
+      <Pressable onPress={() => router.replace('/bible/books')} style={{ flex: 1, paddingVertical: 12, borderRadius: 14, borderWidth: 1, borderColor: colors.accent, backgroundColor: colors.surface2 }}><Text style={{ color: colors.accent, fontWeight: '900', textAlign: 'center' }}>↩ Livres</Text></Pressable>
+      <Pressable disabled={!nextBook} onPress={() => nextBook && router.replace({ pathname: '/bible/books', params: { id: nextBook.id } })} style={{ flex: 1, paddingVertical: 12, borderRadius: 14, borderWidth: 1, borderColor: colors.border, backgroundColor: colors.surface, opacity: nextBook ? 1 : .4 }}><Text style={{ color: colors.text, fontWeight: '900', textAlign: 'center' }}>Suivant ›</Text></Pressable>
+    </View>
+  </View>;
 
   const load = useCallback(async () => {
     const [stored, episodes, annexes, finalProgress] = await Promise.all([getBibleBookProgress(), getAdventureProgress(), getCharacterAnnexProgress(), getFinalBibleBookProgress()]);
@@ -62,7 +81,8 @@ export default function BibleBooksScreen() {
     const isDiscovered = !!book && discovered.has(book.id);
     if (!book || !guide) return <ScenicScreen><View style={styles.content}><Pressable onPress={() => router.replace('/bible/books')}><Text style={{color:colors.accent,fontWeight:'900'}}>‹ Livres de la Bible</Text></Pressable><Text style={[styles.title,{marginTop:30}]}>Livre introuvable</Text></View></ScenicScreen>;
     const finalReady = FINAL_BIBLE_BOOK_DISCOVERIES.length > 0 && SEASONS.flatMap(s => s.episodes).length === 116 && SEASONS.flatMap(s => s.episodes).every(ep => completedEpisodes.includes(ep.id)) && CHARACTER_ANNEXES.every(annex => completedAnnexes.includes(annex.id));
-  return <ScenicScreen><ScrollView style={styles.screen} contentContainerStyle={styles.content}>
+  return <ScenicScreen><ScrollView {...bookSwipeResponder.panHandlers} style={styles.screen} contentContainerStyle={styles.content}>
+      {bookNavigation('top')}
       <Pressable onPress={() => router.replace('/bible/books')}><Text style={{color:colors.accent,fontWeight:'900'}}>‹ Livres de la Bible</Text></Pressable>
       <View style={{alignItems:'center',marginTop:22}}>
         <Text style={{color:colors.accent,fontSize:11,fontWeight:'900',letterSpacing:1.5}}>LIVRE {book.number} SUR 66</Text>
@@ -96,6 +116,7 @@ export default function BibleBooksScreen() {
           <Text style={{color:colors.muted,lineHeight:20,marginTop:6}}>Bible Party t’en donne un aperçu. La Bible te permet de découvrir toute l’histoire de ce livre.</Text>
           <Pressable onPress={() => Linking.openURL(guide.jwUrl)} style={[styles.button,styles.buttonPrimary,{width:'100%',marginTop:14}]}><Text style={styles.buttonText}>📖 Lire {book.name} sur JW.org →</Text></Pressable>
         </View>
+        {bookNavigation('bottom')}
       </>}
     </ScrollView></ScenicScreen>;
   }
