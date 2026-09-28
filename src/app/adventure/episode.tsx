@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useState } from 'react';
 import { characterProfiles } from '../../data/characterProfiles';
+import { FINAL_CHARACTER_ARCHIVE_IDS } from '@/data/finalCharacterArchive';
 import { PanResponder, Pressable, ScrollView, Text, View } from 'react-native';
 import { router, useLocalSearchParams } from 'expo-router';
 import { ScenicScreen } from '@/components/ScenicScreen';
@@ -138,7 +139,7 @@ export default function AdventureEpisodeScreen() {
     const beforeCharacterIds = new Set([
       ...ADVENTURE_SEASONS.flatMap(season => season.episodes.filter(item => before.has(item.id)).flatMap(item => item.characterIds ?? [])),
       ...CHARACTER_ANNEXES.filter(item => beforeAnnexes.includes(item.id)).map(item => item.characterId),
-      ...(beforeAdventureComplete ? ['eve','cain','abel','henoch','lot','rebecca','rachel','benjamin','dinah','aaron','miriam','caleb','rahab','deborah','barak','jael','gideon','jephthah','jonathan','goliath','abigail','nabal','jezebel','mordecai','haman','nicodeme','lazare','judas_iscariote','matthias','matthew','marc','luc','gad','nathan','sons_korah','asaph','heman','ethan','agur','lemuel','job','pharaoh','jochebed','pharaoh_daughter','jesus','absalom','rehoboam','jeroboam','shadrach','meshach','abednego','nebuchadnezzar'] : []),
+      ...(beforeAdventureComplete ? Array.from(FINAL_CHARACTER_ARCHIVE_IDS) : []),
     ]);
     const beforeBooks = await getBibleBookProgress();
     const beforeFinalBooks = await getFinalBibleBookProgress();
@@ -162,7 +163,7 @@ export default function AdventureEpisodeScreen() {
     const afterCharacterIds = new Set([
       ...ADVENTURE_SEASONS.flatMap(season => season.episodes.filter(item => after.includes(item.id)).flatMap(item => item.characterIds ?? [])),
       ...CHARACTER_ANNEXES.filter(item => beforeAnnexes.includes(item.id)).map(item => item.characterId),
-      ...(afterAdventureComplete ? ['eve','cain','abel','henoch','lot','rebecca','rachel','benjamin','dinah','aaron','miriam','caleb','rahab','deborah','barak','jael','gideon','jephthah','jonathan','goliath','abigail','nabal','jezebel','mordecai','haman','nicodeme','lazare','judas_iscariote','matthias','matthew','marc','luc','gad','nathan','sons_korah','asaph','heman','ethan','agur','lemuel','job','pharaoh','jochebed','pharaoh_daughter','jesus','absalom','rehoboam','jeroboam','shadrach','meshach','abednego','nebuchadnezzar'] : []),
+      ...(afterAdventureComplete ? Array.from(FINAL_CHARACTER_ARCHIVE_IDS) : []),
     ]);
     const newlyDiscovered = [...afterCharacterIds].filter(id => !beforeCharacterIds.has(id));
     setNewCharacterIds(newlyDiscovered);
