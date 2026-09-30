@@ -129,7 +129,7 @@ const tfData: Array<[string,string,string,boolean,string,string]> = [
 ['tf029','La Bible et l’Histoire','L’exil à Babylone a concerné des habitants de Juda.',true,'Une partie importante de Juda a été déportée à Babylone.','2 Rois 24:14-16'],
 ['tf030','La Bible et l’Histoire','Néhémie 8:8 montre-t-il que la Loi était lue et expliquée pour être comprise ?',true,'Le récit indique que les Lévites lisaient le livre de la Loi et en expliquaient le sens au peuple.','Néhémie 8:8'],
 
-['tf031','La Bible et la science','Genèse 1:1 présente-t-il Dieu comme le Créateur des cieux et de la terre ?',true,'Genèse 1:1 attribue à Dieu la création des cieux et de la terre.','Genèse 1:1'],
+['tf031','La Bible et la science','Genèse 1:1 mentionne-t-il les cieux et la terre au commencement ?',true,'Genèse 1:1 mentionne les cieux et la terre au commencement.','Genèse 1:1'],
 ['tf032','La Bible et la science','La Loi mosaïque comportait des règles d’isolement pour certaines maladies.',true,'Lévitique 13 décrit des mesures d’isolement.','Lévitique 13:1-5'],
 ['tf033','La Bible et la science','Job décrit un cycle comprenant l’évaporation et la pluie.',true,'Job 36:27-28 décrit ce processus.','Job 36:27-28'],
 ['tf034','La Bible et la science','Genèse 1:1 présente l’univers comme ayant un commencement.',true,'Le récit commence par « Au commencement ».','Genèse 1:1'],
