@@ -90,16 +90,16 @@ const quizSeeds: QuizSeed[] = [
   ['Quel prophète a été avalé par un grand poisson après avoir fui sa mission ?', ['Jonas','Nahum','Habacuc','Amos'],0,'Jonas a fui puis a été envoyé à Ninive.','Jonas 1:1-17; 3:1-5','Rois & prophètes'],
   ['Quel roi a fait lire le livre de la Loi retrouvé dans le temple ?', ['Josias','Manassé','Roboam','Omri'],0,'Josias a réagi lorsqu’on lui a lu le livre de la Loi.','2 Rois 22:8-13','Rois & prophètes'],
   ['Quel prophète a succédé à Élie ?', ['Élisée','Isaïe','Jérémie','Samuel'],0,'Élisée a poursuivi le service prophétique après Élie.','2 Rois 2:9-15','Rois & prophètes'],
-  ['Quel prophète a annoncé à David qu’un de ses descendants régnerait durablement ?', ['Nathan','Élie','Amos','Malachiee'],0,'Nathan a transmis à David une promesse concernant sa descendance royale.','2 Samuel 7:12-16','Rois & prophètes'],
+  ['Quel prophète a annoncé à David qu’un de ses descendants régnerait durablement ?', ['Nathan','Élie','Amos','Malachie'],0,'Nathan a transmis à David une promesse concernant sa descendance royale.','2 Samuel 7:12-16','Rois & prophètes'],
   ['Quel roi de Juda a demandé de l’aide à Dieu face à Sennachérib ?', ['Ézéchias','Josias','Achaz','Roboam'],0,'Ézéchias a prié lorsque Jérusalem était menacée.','2 Rois 19:14-20','Rois & prophètes'],
   ['Quel prophète a vu une vallée remplie d’ossements dans une vision ?', ['Ézéchiel','Isaïe','Jérémie','Daniel'],0,'Ézéchiel a reçu la vision des ossements desséchés.','Ézéchiel 37:1-14','Rois & prophètes'],
   ['Quel roi a régné sur les dix tribus après la division du royaume ?', ['Jéroboam','Roboam','David','Salomon'],0,'Jéroboam est devenu roi du royaume des dix tribus.','1 Rois 12:20','Rois & prophètes'],
   ['Quel prophète a été envoyé à la veuve de Sarepta pendant une famine ?', ['Élie','Élisée','Jérémie','Michée'],0,'Élie a été envoyé à une veuve de Sarepta.','1 Rois 17:8-16','Rois & prophètes'],
   ['Quel roi a été guéri après avoir prié et reçu un signe concernant son rétablissement ?', ['Ézéchias','David','Saül','Amazias'],0,'Ézéchias a prié et Dieu lui a accordé quinze années supplémentaires.','2 Rois 20:1-11','Rois & prophètes'],
-  ['Quel prophète a annoncé la naissance du Messie à Bethléem ?', ['Michée','Malachiee','Amos','Nahum'],0,'Michée a annoncé que le futur dirigeant sortirait de Bethléem.','Michée 5:2','Rois & prophètes'],
+  ['Quel prophète a annoncé la naissance du Messie à Bethléem ?', ['Michée','Malachie','Amos','Nahum'],0,'Michée a annoncé que le futur dirigeant sortirait de Bethléem.','Michée 5:2','Rois & prophètes'],
   // PROPHÉTIES
   ['Quel prophète a annoncé qu’un dirigeant sortirait de Bethléem ?', ['Michée','Jonas','Amos','Élie'],0,'Michée a annoncé que le futur dirigeant sortirait de Bethléem.','Michée 5:2','Prophéties'],
-  ['Quel prophète a annoncé la destruction de Babylone ?', ['Isaïe','Jonas','Aggée','Malachiee'],0,'Isaïe et Jérémie contiennent des prophéties concernant Babylone.','Isaïe 13:17-22; Jérémie 51:24-26','Prophéties'],
+  ['Quel prophète a annoncé la destruction de Babylone ?', ['Isaïe','Jonas','Aggée','Malachie'],0,'Isaïe et Jérémie contiennent des prophéties concernant Babylone.','Isaïe 13:17-22; Jérémie 51:24-26','Prophéties'],
   ['Quel roi perse est nommé à l’avance dans une prophétie d’Isaïe ?', ['Cyrus','Darius','Assuérus','Artaxerxès'],0,'Isaïe mentionne Cyrus avant son rôle historique dans le retour des exilés.','Isaïe 44:28–45:1','Prophéties'],
   ['Quelle prophétie de Daniel décrit une succession de puissances mondiales ?', ['Daniel 2','Daniel 3','Daniel 6','Daniel 12'],0,'La statue du rêve de Nabuchodonosor représente une succession de royaumes.','Daniel 2:31-45','Prophéties'],
   ['Quel livre contient une prophétie célèbre sur les « sept temps » ?', ['Daniel','Ruth','Marc','Actes'],0,'Daniel chapitre 4 rapporte le rêve de l’arbre et les sept temps.','Daniel 4:10-17','Prophéties'],
@@ -108,7 +108,7 @@ const quizSeeds: QuizSeed[] = [
   ['Quel prophète a annoncé que le descendant de David aurait un règne durable ?', ['Nathan','Élie','Élisée','Aggée'],0,'La promesse faite à David concerne un règne durable de sa descendance.','2 Samuel 7:12-16','Prophéties'],
   ['Dans quelle partie de la Bible trouve-t-on de nombreuses visions prophétiques concernant des royaumes ?', ['Daniel','Ruth','Proverbes','Ecclésiaste'],0,'Daniel contient plusieurs visions de royaumes et de puissances.','Daniel 7–8','Prophéties'],
   ['Quel livre décrit symboliquement une série d’événements futurs au moyen de visions ?', ['Révélation','Ruth','Lévitique','Néhémie'],0,'Révélation est présentée comme une révélation donnée au moyen de signes et de visions.','Révélation 1:1','Prophéties'],
-  ['Quel prophète a annoncé que « la lumière » se lèverait sur une région de Galilée ?', ['Isaïe','Malachiee','Amos','Nahum'],0,'Isaïe annonce une grande lumière pour une région appelée Galilée des nations.','Isaïe 9:1-2; Matthieu 4:13-16','Prophéties'],
+  ['Quel prophète a annoncé que « la lumière » se lèverait sur une région de Galilée ?', ['Isaïe','Malachie','Amos','Nahum'],0,'Isaïe annonce une grande lumière pour une région appelée Galilée des nations.','Isaïe 9:1-2; Matthieu 4:13-16','Prophéties'],
   ['Quel psaume annonce qu’un descendant de David serait roi et prêtre selon un ordre particulier ?', ['Psaume 110','Psaume 1','Psaume 23','Psaume 150'],0,'Psaume 110 parle d’un roi assis à la droite de Dieu et d’un prêtre selon Melchisédek.','Psaume 110:1-4','Prophéties'],
 ];
 
