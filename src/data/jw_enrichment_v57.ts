@@ -336,6 +336,6 @@ export const jwV57TimesUp: TimesUpQuestion[] = [
   {id:'v57-t-041',type:'timesup',category:'Rois & prophètes',difficulty:'hard',answer:'Josias',clues:['roi', 'Loi', 'réforme'],reference:'2 Rois 22–23'},
   {id:'v57-t-042',type:'timesup',category:'Prophéties',difficulty:'easy',answer:'Isaïe',clues:['prophète', 'Emmanuel', 'Messie'],reference:'Isaïe 7:14; 53'},
   {id:'v57-t-043',type:'timesup',category:'Prophéties',difficulty:'medium',answer:'Michée',clues:['prophète', 'Bethléem', 'dirigeant'],reference:'Michée 5:2'},
-  {id:'v57-t-044',type:'timesup',category:'Prophéties',difficulty:'hard',answer:'Daniel',clues:['visions', 'royaumes', 'Fils de l’homme'],reference:'Daniel 2; 7'},
+  {id:'v57-t-044',type:'timesup',category:'Prophéties',difficulty:'hard',answer:'Vision de Daniel 7',clues:['visions', 'royaumes', 'Fils de l’homme'],reference:'Daniel 2; 7'},
   {id:'v57-t-045',type:'timesup',category:'Prophéties',difficulty:'easy',answer:'Jérémie',clues:['nouvelle alliance', 'prophète', 'Juda'],reference:'Jérémie 31:31'},
 ];
