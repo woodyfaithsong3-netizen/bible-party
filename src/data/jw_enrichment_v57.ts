@@ -337,5 +337,5 @@ export const jwV57TimesUp: TimesUpQuestion[] = [
   {id:'v57-t-042',type:'timesup',category:'Prophéties',difficulty:'easy',answer:'Isaïe',clues:['prophète', 'Emmanuel', 'Messie'],reference:'Isaïe 7:14; 53'},
   {id:'v57-t-043',type:'timesup',category:'Prophéties',difficulty:'medium',answer:'Aggée',clues:['prophète', 'temple', 'reconstruction'],reference:'Aggée 1:1-14; 2:1-9'},
   {id:'v57-t-044',type:'timesup',category:'Prophéties',difficulty:'hard',answer:'Vision de Daniel 7',clues:['visions', 'royaumes', 'Fils de l’homme'],reference:'Daniel 2; 7'},
-  {id:'v57-t-045',type:'timesup',category:'Prophéties',difficulty:'easy',answer:'Jérémie',clues:['nouvelle alliance', 'prophète', 'Juda'],reference:'Jérémie 31:31'},
+  {id:'v57-t-045',type:'timesup',category:'Prophéties',difficulty:'easy',answer:'Joël',clues:['prophète', 'esprit', 'sauterelles'],reference:'Joël 2:28-32; 3:1-5'},
 ];
