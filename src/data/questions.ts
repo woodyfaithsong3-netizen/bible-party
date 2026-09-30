@@ -1537,11 +1537,11 @@ const v102ExpertIntruders: IntruderQuestion[] = [
 {id:'v102-in-03',type:'intruder',category:'La Bible et la science',difficulty:'expert',items:['Genèse 1:1','Deutéronome 23:13','Lévitique 13:1-5','Juges 4:4'],intruder:3,explanation:'Les trois premiers sont utilisés pour discuter de thèmes liés à l’exactitude scientifique ou aux mesures sanitaires ; Juges 4:4 concerne Déborah.',reference:'Genèse 1:1; Deutéronome 23:13; Lévitique 13:1-5; Juges 4:4'}
 ];
 const v102ExpertTimesUp: TimesUpQuestion[] = [
-{id:'v102-tu-01',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Daniel',clues:['Soixante-dix semaines','Jérusalem','Messie'],reference:'Daniel 9:25'},
-{id:'v102-tu-02',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Lévitique',clues:['Peau','Prêtre','Examen'],reference:'Lévitique 13:1-5'},
-{id:'v102-tu-03',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Psaume 119',clues:['Lampe','Pied','Chemin'],reference:'Psaume 119:105'},
+{id:'v102-tu-01',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Jérémie',clues:['prophète', 'joug', 'nations'],reference:'Jérémie 27:1-8'},
+{id:'v102-tu-02',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Psaume 1',clues:['heureux', 'arbre', 'méditation'],reference:'Psaume 1:1-3'},
+{id:'v102-tu-03',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'Psaume 19',clues:['cieux', 'soleil', 'loi'],reference:'Psaume 19:1-11'},
 {id:'v102-tu-04',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'expert',answer:'1 Corinthiens',clues:['Compagnies','Mauvaises','Habitudes'],reference:'1 Corinthiens 15:33'},
-{id:'v102-tu-05',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Job',clues:['Lois','Cieux','Terre'],reference:'Job 38:33'},
+{id:'v102-tu-05',type:'timesup',category:'La Bible et la science',difficulty:'expert',answer:'Élihou',clues:['jeune', 'Job', 'discours'],reference:'Job 32:4-6; 33:1-6'},
 {id:'v102-tu-06',type:'timesup',category:'Prophéties',difficulty:'expert',answer:'Zacharie',clues:['Roi','Âne','Jérusalem'],reference:'Zacharie 9:9'}
 ];
 const v102ExpertChallenges: Challenge[] = [
