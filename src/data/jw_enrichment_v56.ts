@@ -22,7 +22,7 @@ export const jwV56Mystery: MysteryQuestion[] = [
 export const jwV56Challenges: Challenge[] = [
   {id:'v56-d-001',type:'challenge',category:C.versets,difficulty:'easy',prompt:'En 10 secondes, citez trois personnages qui ont fait confiance à Jéhovah.',seconds:10},
   {id:'v56-d-002',type:'challenge',category:C.versets,difficulty:'medium',prompt:'En 10 secondes, citez deux livres bibliques qui donnent des conseils pratiques.',seconds:10},
-  {id:'v56-d-003',type:'challenge',category:C.versets,difficulty:'medium',prompt:'En 10 secondes, citez trois conseils bibliques que vous connaissez.',seconds:10},
+  {id:'v56-d-003',type:'challenge',category:C.versets,difficulty:'medium',prompt:'En 10 secondes, citez trois conseils bibliques sur la confiance en Jéhovah, la prière ou les relations avec les autres.',seconds:10},
   {id:'v56-d-004',type:'challenge',category:C.histoire,difficulty:'easy',prompt:'En 10 secondes, citez trois villes importantes de la Bible.',seconds:10},
   {id:'v56-d-005',type:'challenge',category:C.histoire,difficulty:'medium',prompt:'En 10 secondes, citez trois royaumes ou empires mentionnés dans la Bible.',seconds:10},
   {id:'v56-d-006',type:'challenge',category:C.histoire,difficulty:'medium',prompt:'En 10 secondes, citez trois supports utilisés pour écrire dans l’Antiquité.',seconds:10},
