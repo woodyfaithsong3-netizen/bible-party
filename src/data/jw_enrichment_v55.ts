@@ -60,7 +60,7 @@ export const jwV55Intruders: IntruderQuestion[] = [
 
 export const jwV55Challenges: Challenge[] = [
   {id:'v55-d-001',type:'challenge',category:C[0],difficulty:'easy',prompt:'En 10 secondes, citez trois sujets sur lesquels la Bible donne des conseils.',seconds:10},
-  {id:'v55-d-002',type:'challenge',category:C[1],difficulty:'easy',prompt:'En 10 secondes, citez deux passages bibliques que vous connaissez.',seconds:10},
+  {id:'v55-d-002',type:'challenge',category:C[1],difficulty:'easy',prompt:'En 10 secondes, citez deux passages bibliques qui parlent de la prière.',seconds:10},
   {id:'v55-d-003',type:'challenge',category:C[2],difficulty:'medium',prompt:'En 10 secondes, citez trois lieux ou empires de la Bible.',seconds:10},
   {id:'v55-d-004',type:'challenge',category:C[3],difficulty:'easy',prompt:'En 10 secondes, citez deux phénomènes naturels mentionnés dans la Bible.',seconds:10},
   {id:'v55-d-005',type:'challenge',category:C[4],difficulty:'easy',prompt:'En 10 secondes, citez cinq personnages bibliques.',seconds:10},
