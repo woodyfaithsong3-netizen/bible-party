@@ -1533,7 +1533,7 @@ const v102ExpertQuotes: QuoteQuestion[] = [
 ];
 const v102ExpertIntruders: IntruderQuestion[] = [
 {id:'v102-in-01',type:'intruder',category:'Prophéties',difficulty:'expert',items:['Daniel','Michée','Amos','Barzillaï'],intruder:3,explanation:'Les trois premiers sont des prophètes ; Barzillaï est associé au récit de David.',reference:'Daniel 9; Michée 5:2; Amos 8:1-2; 2 Samuel 17:27-29'},
-{id:'v102-in-02',type:'intruder',category:'Que veulent dire ces versets ?',difficulty:'expert',items:['Actes 1:8','Romains 6:23','1 Pierre 5:7','Genèse 12:5'],intruder:3,explanation:'Les trois premiers font partie de la série de versets expliqués utilisée pour ce thème ; Genèse 12:5 n’en fait pas partie.',reference:'Actes 1:8; Romains 6:23; 1 Pierre 5:7; Genèse 12:5'},
+{id:'v102-in-02',type:'intruder',category:'Que veulent dire ces versets ?',difficulty:'expert',items:['Actes 1:8','Romains 6:23','1 Pierre 5:7','Genèse 12:5'],intruder:3,explanation:'Les trois premiers donnent des conseils sur le témoignage, le péché et les inquiétudes ; Genèse 12:5 raconte le départ d’Abram avec sa famille vers Canaan.',reference:'Actes 1:8; Romains 6:23; 1 Pierre 5:7; Genèse 12:5'},
 {id:'v102-in-03',type:'intruder',category:'La Bible et la science',difficulty:'expert',items:['Genèse 1:1','Deutéronome 23:13','Lévitique 13:1-5','Juges 4:4'],intruder:3,explanation:'Les trois premiers sont utilisés pour discuter de thèmes liés à l’exactitude scientifique ou aux mesures sanitaires ; Juges 4:4 concerne Déborah.',reference:'Genèse 1:1; Deutéronome 23:13; Lévitique 13:1-5; Juges 4:4'}
 ];
 const v102ExpertTimesUp: TimesUpQuestion[] = [
