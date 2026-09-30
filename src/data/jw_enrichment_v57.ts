@@ -71,7 +71,7 @@ export const jwV57Challenges: Challenge[] = [
   {id:'v57-d-064',type:'challenge',category:'Évangiles',difficulty:'medium',prompt:'Cite 4 apôtres qui étaient pêcheurs.',seconds:10,acceptedAnswers:['Pierre', 'André', 'Jacques', 'Jean']},
   {id:'v57-d-065',type:'challenge',category:'Évangiles',difficulty:'hard',prompt:'Cite 3 éléments ou actions liés au dernier repas de Jésus.',seconds:10,acceptedAnswers:['pain', 'coupe', 'lavement des pieds']},
   {id:'v57-d-066',type:'challenge',category:'Évangiles',difficulty:'easy',prompt:'Cite 4 thèmes récurrents de l’enseignement de Jésus.',seconds:10,acceptedAnswers:['Royaume', 'prière', 'amour', 'pardon']},
-  {id:'v57-d-067',type:'challenge',category:'Rois & prophètes',difficulty:'medium',prompt:'Cite 5 rois de Juda après la division du royaume.',seconds:10,acceptedAnswers:['Roboam', 'Asa', 'Jéhosaphat', 'Ézéchias', 'Josias']},
+  {id:'v57-d-067',type:'challenge',category:'Rois & prophètes',difficulty:'medium',prompt:'Cite 5 rois de Juda après la division du royaume.',seconds:10,acceptedAnswers:['Roboam', 'Asa', 'Josaphat', 'Ézéchias', 'Josias']},
   {id:'v57-d-068',type:'challenge',category:'Rois & prophètes',difficulty:'hard',prompt:'Cite 4 rois d’Israël.',seconds:10,acceptedAnswers:['Jéroboam', 'Omri', 'Achab', 'Jéhu']},
   {id:'v57-d-069',type:'challenge',category:'Rois & prophètes',difficulty:'easy',prompt:'Cite 5 prophètes.',seconds:10,acceptedAnswers:['Isaïe', 'Jérémie', 'Ézéchiel', 'Daniel', 'Amos']},
   {id:'v57-d-070',type:'challenge',category:'Rois & prophètes',difficulty:'medium',prompt:'Cite 4 prophètes contemporains des rois.',seconds:10,acceptedAnswers:['Isaïe', 'Jérémie', 'Élie', 'Élisée']},
