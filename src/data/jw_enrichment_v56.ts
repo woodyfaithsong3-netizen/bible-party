@@ -78,7 +78,7 @@ export const jwV56TimesUp: TimesUpQuestion[] = [
   {id:'v56-t-002',type:'timesup',category:C.versets,difficulty:'medium',answer:'Proverbes 3:5-6',clues:['confiance','cœur','direction'],reference:'Proverbes 3:5-6'},
   {id:'v56-t-003',type:'timesup',category:C.histoire,difficulty:'medium',answer:'Cyrus',clues:['Perse','Babylone','décret'],reference:'Esdras 1:1-4'},
   {id:'v56-t-004',type:'timesup',category:C.histoire,difficulty:'medium',answer:'Néhémie',clues:['murailles','Jérusalem','gouverneur'],reference:'Néhémie 2–6'},
-  {id:'v56-t-005',type:'timesup',category:C.science,difficulty:'easy',answer:'Cycle de l’eau',clues:['vapeur', 'nuages', 'pluie'],reference:'Job 36:27-28'},
+  {id:'v56-t-005',type:'timesup',category:C.science,difficulty:'easy',answer:'Nuages',clues:['eau', 'ciel', 'pluie'],reference:'Job 36:27-28'},
   {id:'v56-t-006',type:'timesup',category:C.science,difficulty:'medium',answer:'Deutéronome',clues:['Loi', 'Moïse', 'alliance'],reference:'Deutéronome 5:1-3; 6:1-9'},
   {id:'v56-t-007',type:'timesup',category:C.propheties,difficulty:'medium',answer:'Michée',clues:['prophète','Bethléem','dirigeant'],reference:'Michée 5:2'},
   {id:'v56-t-008',type:'timesup',category:C.propheties,difficulty:'medium',answer:'Ézéchiel',clues:['vision', 'exil', 'roue'],reference:'Ézéchiel 1:1-28'},
