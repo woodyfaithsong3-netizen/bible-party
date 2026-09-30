@@ -134,7 +134,7 @@ const tfSeeds: Array<[string, boolean, string, string, string]> = [
   ['Les manuscrits anciens peuvent être comparés pour étudier la transmission du texte biblique.',true,'La comparaison des manuscrits est un outil important pour étudier la transmission.','La Bible et l’Histoire','Isaïe 40:8; Matthieu 5:18'],
   ['Le livre de Ruth raconte le retour des exilés à Babylone.',false,'Ruth se situe bien avant l’exil à Babylone.','La Bible et l’Histoire','Ruth 1–4'],
   ['La Bible contient des récits concernant Babylone, l’Assyrie, la Perse, la Grèce et Rome.',true,'Ces puissances apparaissent dans les récits ou prophéties bibliques.','La Bible et l’Histoire','Daniel 2:31-45; Luc 2:1'],
-  ['La Bible se présente comme un manuel scientifique complet.',false,'Elle n’est pas un manuel de science, même si elle fait des déclarations sur la nature.','La Bible et la science','Job 38–41'],
+  ['Genèse 1:1 mentionne les cieux et la terre au commencement.',true,'Le récit de Genèse 1:1 commence par la création des cieux et de la terre.','La Bible et la science','Genèse 1:1'],
   ['La Loi mosaïque comportait des mesures d’hygiène concernant les maladies contagieuses.',true,'Lévitique décrit notamment l’isolement et l’examen de certaines maladies.','La Bible et la science','Lévitique 13:1-5'],
   ['Deutéronome 23:12-14 donne des instructions sur l’élimination des excréments humains.',true,'Le texte prévoit une zone hors du camp et des mesures pour recouvrir les excréments.','La Bible et la science','Deutéronome 23:12-14'],
   ['Job 36:27-28 décrit l’eau qui se condense et tombe en pluie.',true,'Le passage évoque l’eau qui se transforme et tombe des nuages.','La Bible et la science','Job 36:27-28'],
