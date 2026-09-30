@@ -137,7 +137,7 @@ const tfData: Array<[string,string,string,boolean,string,string]> = [
 ['tf036','La Bible et la science','La Bible parle-t-elle aussi bien de création que de santé et de phénomènes naturels ?',true,'La Bible aborde ces sujets dans différents récits et lois, notamment la création, l’hygiène et le cycle de l’eau.','Genèse 1:1; Lévitique 13:1-5; Job 36:27-28'],
 ['tf037','La Bible et la science','Genèse 1:20-25 présente-t-il Dieu comme le Créateur des différentes sortes d’êtres vivants ?',true,'Le récit attribue à Dieu la création des différentes sortes d’êtres vivants.','Genèse 1:20-25'],
 ['tf038','La Bible et la science','Lévitique 17:11 associe la vie au sang.',true,'Le verset formule directement ce lien.','Lévitique 17:11'],
-['tf039','La Bible et la science','La Bible enseigne que la Terre est plate.',false,'JW.org traite cette idée comme une affirmation à examiner et ne la présente pas comme un enseignement biblique.','Isaïe 40:22'],
+['tf039','La Bible et la science','Isaïe 40:22 compare-t-il la terre à une forme circulaire ?',true,'Isaïe 40:22 emploie une comparaison avec un cercle pour parler de la terre.','Isaïe 40:22'],
 ['tf040','La Bible et la science','La Bible contient-elle des récits et des lois qui parlent de la nature et de la santé ?',true,'Elle parle notamment de la création, de phénomènes naturels et de mesures d’hygiène.','Genèse 1:1; Lévitique 13:1-5; Job 36:27-28'],
 
 ['tf041','Personnages','Noé a construit une arche avant le Déluge.',true,'Genèse rapporte l’ordre donné à Noé.','Genèse 6:14-22'],
