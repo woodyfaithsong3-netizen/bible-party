@@ -776,13 +776,13 @@ export const intruderQuestions: IntruderQuestion[] = [...baseIntruderQuestions, 
 
 
 const baseTimesUpQuestions: TimesUpQuestion[] = [
-  { id:'timesup-1', type:'timesup', category:'Personnages', difficulty:'easy', answer:'David', clues:['Roi','Berger','Goliath'], reference:'1 Samuel 16–17' },
+  { id:'timesup-1', type:'timesup', category:'Personnages', difficulty:'easy', answer:'David', clues:['onction','Jérusalem','psaumes'], reference:'1 Samuel 16:1-13; 2 Samuel 5:1-10' },
   { id:'timesup-2', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Noé', clues:['Arche','animaux','alliance'], reference:'Genèse 6–9' },
   { id:'timesup-3', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Daniel', clues:['Babylone','Prière','Lions'], reference:'Daniel 6' },
   { id:'timesup-4', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Esther', clues:['Reine','Mardochée','Courage'], reference:'Esther 2–7' },
   { id:'timesup-5', type:'timesup', category:'Personnages', difficulty:'hard', answer:'Paul', clues:['Damas','Voyages','Nations'], reference:'Actes 9; 13–28' },
 
-  { id:'timesup-6', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Ruth', clues:['Noémi','Moab','Boaz'], reference:'Ruth 1–4' },
+  { id:'timesup-6', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Ruth', clues:['orge','champ','ailes'], reference:'Ruth 2:2-12' },
   { id:'timesup-7', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Gédéon', clues:['Toison','Madian','300'], reference:'Juges 6–7' },
   { id:'timesup-8', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Zachée', clues:['Jéricho','Sycomore','Impôts'], reference:'Luc 19:1-10' },
   { id:'timesup-9', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Lydie', clues:['Tiatire','rivière','maison'], reference:'Actes 16:13-15' },
@@ -976,8 +976,8 @@ const v39IntruderExpansion: IntruderQuestion[] = [
 const v39TimesUpExpansion: TimesUpQuestion[] = [
   { id:'timesup-v39-01', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Noé', clues:['Arche','Famille','Déluge'], reference:'Genèse 6–9' },
   { id:'timesup-v39-02', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Ébed-Mélek', clues:['Jérémie','Citerne','Éthiopien'], reference:'Jérémie 38:7-13' },
-  { id:'timesup-v39-03', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Matthieu', clues:['Lévi','Impôts','Apôtre'], reference:'Matthieu 9:9' },
-  { id:'timesup-v39-04', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Lydie', clues:['Pourpre','Philippes','Hospitalité'], reference:'Actes 16:14-15' },
+  { id:'timesup-v39-03', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Matthieu', clues:['douze','Évangile','généalogie'], reference:'Matthieu 1:1-17; 10:1-4' },
+  { id:'timesup-v39-04', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Lydie', clues:['adoratrice','baptême','Macédoine'], reference:'Actes 16:13-15' },
   { id:'timesup-v39-05', type:'timesup', category:'Personnages', difficulty:'hard', answer:'Amos', clues:['Prophète','Bergers','Sycomores'], reference:'Amos 1:1; 7:14-15' },
   { id:'timesup-v39-06', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Anne', clues:['Prière','Samuel','Sanctuaire'], reference:'1 Samuel 1' },
   { id:'timesup-v39-07', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Nathan', clues:['Prophète','David','Brebis'], reference:'2 Samuel 12' },
@@ -1112,7 +1112,7 @@ const v50CategoryTimesUpExpansion: TimesUpQuestion[] = [
   { id:'timesup-v50-actes-01', type:'timesup', category:'Actes', difficulty:'easy', answer:'Lydie', clues:['Philippes','Pourpre','Hospitalité'], reference:'Actes 16:11-15' },
   { id:'timesup-v50-actes-02', type:'timesup', category:'Actes', difficulty:'medium', answer:'Corneille', clues:['Centurion','Césarée','Pierre'], reference:'Actes 10:1-48' },
   { id:'timesup-v50-personnages-01', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Rahab', clues:['Jéricho','Espions','Cordon rouge'], reference:'Josué 2:1-21' },
-  { id:'timesup-v50-personnages-02', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Joseph', clues:['Frères','Égypte','Rêves'], reference:'Genèse 37; 41' },
+  { id:'timesup-v50-personnages-02', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Joseph', clues:['intendant','famine','Pharaon'], reference:'Genèse 41:39-57' },
 ];
 
 const v50PersonnageTrueFalseSupplement: TrueFalseQuestion[] = [
