@@ -83,13 +83,13 @@ const quizData: Array<[string,string,string[],number,string,string]> = [
 
 ['q071','Prophéties',['Quel prophète a annoncé qu’un dirigeant sortirait de Bethléem ?','Michée','Isaïe','Daniel','Jérémie'],0,'Michée a annoncé l’importance de Bethléem dans cette prophétie.','Michée 5:2'],
 ['q072','Prophéties',['Quelle prophétie annonçait la destruction de Babylone ?','Isaïe 13','Ruth 1','Psaume 23','Jonas 2'],0,'Isaïe 13 contient une prophétie contre Babylone.','Isaïe 13:17-22'],
-['q073','Prophéties',['Quel livre contient la vision des quatre bêtes symbolisant des puissances mondiales ?','Daniel','Ruth','Néhémie','Malachiee'],0,'Daniel chapitre 7 présente quatre bêtes dans une vision prophétique.','Daniel 7:1-7, 17'],
+['q073','Prophéties',['Quel livre contient la vision des quatre bêtes symbolisant des puissances mondiales ?','Daniel','Ruth','Néhémie','Malachie'],0,'Daniel chapitre 7 présente quatre bêtes dans une vision prophétique.','Daniel 7:1-7, 17'],
 ['q074','Prophéties',['Quel livre contient la prophétie des 70 semaines ?','Daniel','Isaïe','Ézéchiel','Zacharie'],0,'Daniel 9 contient la prophétie des 70 semaines.','Daniel 9:24-27'],
 ['q075','Prophéties',['Quelle prophétie d’Isaïe annonce un enfant appelé « Prince de paix » ?','Isaïe 9','Isaïe 1','Isaïe 40','Isaïe 66'],0,'Isaïe 9 contient une annonce messianique avec plusieurs titres.','Isaïe 9:6'],
 ['q076','Prophéties',['Quel prophète annonce un temps où les nations ne feront plus la guerre ?','Isaïe','Abdias','Jonas','Aggée'],0,'Isaïe décrit une transformation où les nations n’apprennent plus la guerre.','Isaïe 2:4'],
 ['q077','Prophéties',['Quel livre décrit symboliquement une grande statue composée de plusieurs métaux ?','Daniel','Ézéchiel','Révélation','Zacharie'],0,'Daniel 2 rapporte le rêve de la statue et son interprétation.','Daniel 2:31-45'],
 ['q078','Prophéties',['Quel livre biblique décrit un nouveau ciel et une nouvelle terre ?','Révélation','Ruth','Exode','Esdras'],0,'Révélation contient cette promesse dans sa vision finale.','Révélation 21:1-4'],
-['q079','Prophéties',['Quel prophète a annoncé la venue d’un messager préparant le chemin ?','Malachiee','Jonas','Nahum','Habacuc'],0,'Malachiee annonce un messager qui prépare le chemin.','Malachiee 3:1'],
+['q079','Prophéties',['Quel prophète a annoncé la venue d’un messager préparant le chemin ?','Malachie','Jonas','Nahum','Habacuc'],0,'Malachie annonce un messager qui prépare le chemin.','Malachie 3:1'],
 ['q080','Prophéties',['Quel prophète a parlé d’une alliance nouvelle ?','Jérémie','Amos','Michée','Nahum'],0,'Jérémie annonce une nouvelle alliance.','Jérémie 31:31-34'],
 ];
 
@@ -180,7 +180,7 @@ const tfData: Array<[string,string,string,boolean,string,string]> = [
 ['tf075','Prophéties','Isaïe 2:4 annonce que les nations apprendront encore davantage la guerre.',false,'Le texte dit qu’elles n’apprendront plus la guerre.','Isaïe 2:4'],
 ['tf076','Prophéties','Daniel 2 contient la vision d’une grande statue.',true,'La statue représente successivement des puissances mondiales.','Daniel 2:31-45'],
 ['tf077','Prophéties','Révélation 21 parle d’un nouveau ciel et d’une nouvelle terre.',true,'La vision finale contient cette promesse.','Révélation 21:1'],
-['tf078','Prophéties','Malachiee annonce un messager préparant le chemin.',true,'Malachiee 3:1 contient cette annonce.','Malachiee 3:1'],
+['tf078','Prophéties','Malachie annonce un messager préparant le chemin.',true,'Malachie 3:1 contient cette annonce.','Malachie 3:1'],
 ['tf079','Prophéties','Jérémie annonce une nouvelle alliance.',true,'Jérémie 31 contient cette prophétie.','Jérémie 31:31-34'],
 ['tf080','Prophéties','La Bible ne contient aucune prophétie concernant des villes ou des royaumes.',false,'Plusieurs prophéties concernent des royaumes et des villes, notamment Babylone.','Isaïe 13:17-22'],
 ];
