@@ -192,17 +192,17 @@ const mysteryExplanations = [
 ];
 export const categoryMysteryExpansion: MysteryQuestion[] = mysterySeeds.map((s,i)=>({id:`jwcat-mystery-${i+1}`,type:'mystery',answer:s[0],clues:s[1],category:s[2],reference:s[3],difficulty:s[4] as Difficulty,explanation:mysteryExplanations[i]}));
 
-const timesUpSeeds: Array<[string,string[],string]> = [
- ['Noé',['Arche','Déluge','Alliance'],'Questions bibliques'],
- ['Genèse',['Commencement','Cieux','Terre'],'Que veulent dire ces versets ?'],
- ['Cyrus',['Perse','Décret','Retour'],'La Bible et l’Histoire'],
- ['Lévitique 13',['Maladie','Isolement','Prêtre'],'La Bible et la science'],
- ['Rahab',['Jéricho','Espions','Cordon rouge'],'Personnages'],
- ['Jésus',['Cana','Miracles','Disciples'],'Évangiles'],
- ['Élie',['Carmel','Baal','Prophète'],'Rois & prophètes'],
- ['Michée',['Bethléem','Prophétie','Dirigeant'],'Prophéties'],
+const timesUpSeeds: Array<[string,string[],string,string]> = [
+ ['Noé',['Arche','Déluge','Alliance'],'Questions bibliques','Genèse 6–9'],
+ ['Genèse',['Commencement','Cieux','Terre'],'Que veulent dire ces versets ?','Genèse 1:1'],
+ ['Cyrus',['Perse','Décret','Retour'],'La Bible et l’Histoire','Esdras 1:1-4'],
+ ['Lévitique 13',['Maladie','Isolement','Prêtre'],'La Bible et la science','Lévitique 13:1-5'],
+ ['Rahab',['Jéricho','Espions','Cordon rouge'],'Personnages','Josué 2:1-21'],
+ ['Jésus',['Cana','Miracles','Disciples'],'Évangiles','Jean 2:1-11'],
+ ['Élie',['Carmel','Baal','Prophète'],'Rois & prophètes','1 Rois 18:19-39'],
+ ['Michée',['Bethléem','Prophétie','Dirigeant'],'Prophéties','Michée 5:2'],
 ];
-export const categoryTimesUpExpansion: TimesUpQuestion[] = timesUpSeeds.map((s,i)=>({id:`jwcat-timesup-${i+1}`,type:'timesup',answer:s[0],clues:s[1],category:s[2],reference:s[2]==='Évangiles'?'Jean 2:1-11':s[2]==='Prophéties'?'Michée 5:2':s[2]==='Rois & prophètes'?'1 Rois 18:19-39':s[2]==='Personnages'?'Josué 2:1-21':s[2]==='La Bible et la science'?'Lévitique 13:1-5':s[2]==='La Bible et l’Histoire'?'Esdras 1:1-4':s[2]==='Que veulent dire ces versets ?'?'Genèse 1:1':'Genèse 6–9',difficulty:'medium'}));
+export const categoryTimesUpExpansion: TimesUpQuestion[] = timesUpSeeds.map((s,i)=>({id:`jwcat-timesup-${i+1}`,type:'timesup',answer:s[0],clues:s[1],category:s[2],reference:s[3],difficulty:'medium'}));
 
 
 export const categoryQuoteExpansion: QuoteQuestion[] = [
