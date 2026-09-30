@@ -176,7 +176,21 @@ const mysterySeeds: Array<[string,string[],string,string,string]> = [
  ['Jérémie',['Prophète','Nouvelle alliance','Juda'], 'Prophéties','Jérémie 31:31-34','medium'],
  ['Tabitha',['Joppé','Dorcas','Pierre'], 'Personnages','Actes 9:36-42','medium'],
 ];
-export const categoryMysteryExpansion: MysteryQuestion[] = mysterySeeds.map((s,i)=>({id:`jwcat-mystery-${i+1}`,type:'mystery',answer:s[0],clues:s[1],category:s[2],reference:s[3],difficulty:s[4] as Difficulty,explanation:`Les indices convergent vers ${s[0]} grâce aux éléments bibliques indiqués.`}));
+const mysteryExplanations = [
+  'Matthieu 6:9-10 présente la prière modèle et demande notamment la sanctification du nom de Dieu et la venue de son Royaume.',
+  'Genèse 1:1 ouvre le récit biblique en parlant du commencement des cieux et de la terre.',
+  'Psaume 119:105 compare la parole de Dieu à une lampe pour le pied et à une lumière pour le chemin.',
+  'Esdras 1:1-4 rapporte le décret de Cyrus permettant aux exilés de retourner à Jérusalem et de reconstruire le temple.',
+  'Néhémie raconte la reconstruction des murailles de Jérusalem sous la direction de Néhémie après son retour.',
+  'Genèse 9:12-16 présente l’arc-en-ciel comme signe de l’alliance conclue après le Déluge.',
+  'Daniel est associé à l’interprétation de rêves et à la fosse aux lions dans les récits des chapitres 2 et 6.',
+  'Luc 19:1-10 raconte que Zachée, à Jéricho, est monté sur un sycomore pour voir Jésus.',
+  '1 Rois 17–18 raconte le ministère d’Élie, notamment les corbeaux qui le nourrissent et la confrontation au Carmel.',
+  'Michée 5:2 associe Bethléem à la venue d’un futur dirigeant.',
+  'Jérémie 31:31-34 annonce une nouvelle alliance et explique qu’elle serait différente de l’alliance conclue avec les ancêtres d’Israël.',
+  'Actes 9:36-42 présente Tabitha, aussi appelée Dorcas, et raconte que Pierre l’a ramenée à la vie.',
+];
+export const categoryMysteryExpansion: MysteryQuestion[] = mysterySeeds.map((s,i)=>({id:`jwcat-mystery-${i+1}`,type:'mystery',answer:s[0],clues:s[1],category:s[2],reference:s[3],difficulty:s[4] as Difficulty,explanation:mysteryExplanations[i]}));
 
 const timesUpSeeds: Array<[string,string[],string]> = [
  ['Noé',['Arche','Déluge','Alliance'],'Questions bibliques'],
