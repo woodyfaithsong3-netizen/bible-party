@@ -310,7 +310,7 @@ export const jwV57TimesUp: TimesUpQuestion[] = [
   {id:'v57-t-015',type:'timesup',category:'La Bible et l’Histoire',difficulty:'easy',answer:'Hérode Agrippa I',clues:['roi', 'Jacques', 'Pierre'],reference:'Actes 12:1-19'},
   {id:'v57-t-016',type:'timesup',category:'La Bible et l’Histoire',difficulty:'medium',answer:'Babylone',clues:['empire', 'Jérusalem', 'exil'],reference:'2 Rois 25'},
   {id:'v57-t-017',type:'timesup',category:'La Bible et l’Histoire',difficulty:'hard',answer:'Parchemin',clues:['rouleaux', 'écriture', 'Paul'],reference:'2 Timothée 4:13'},
-  {id:'v57-t-018',type:'timesup',category:'La Bible et l’Histoire',difficulty:'easy',answer:'Manteau',clues:['Paul', 'Troas', 'Timothée'],reference:'2 Timothée 4:13',
+  {id:'v57-t-018',type:'timesup',category:'La Bible et l’Histoire',difficulty:'easy',answer:'Manteau',clues:['Paul', 'Troas', 'Timothée'],reference:'2 Timothée 4:13'},
   {id:'v57-t-019',type:'timesup',category:'La Bible et la science',difficulty:'medium',answer:'Cycle de l’eau',clues:['évaporation', 'nuages', 'pluie'],reference:'Job 36:27-28'},},
   {id:'v57-t-020',type:'timesup',category:'La Bible et la science',difficulty:'hard',answer:'Salomon',clues:['sagesse', 'animaux', 'arbres'],reference:'1 Rois 4:29-34'},
   {id:'v57-t-021',type:'timesup',category:'La Bible et la science',difficulty:'easy',answer:'Hygiène',clues:['lavage', 'isolement', 'maladie'],reference:'Lévitique 13–15'},
