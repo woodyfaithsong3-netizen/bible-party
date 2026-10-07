@@ -1,5 +1,5 @@
 import {
-  challenges, intruderQuestions, mysteryQuestions, quizQuestions, quoteQuestions, timesUpQuestions, trueFalseQuestions,
+  intruderQuestions, mysteryQuestions, quizQuestions, quoteQuestions, timesUpQuestions, trueFalseQuestions,
 } from '@/data/questions';
 import { Question, GameType, QuizQuestion } from '@/types';
 import { completeTheVerseQuestions, completeTheSongQuestions } from '@/data/completeTheVerseQuestions';
