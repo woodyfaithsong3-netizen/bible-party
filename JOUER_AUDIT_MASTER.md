@@ -173,3 +173,8 @@ Contrôle ciblé des cartes modifiées : les réponses, explications et référe
 - Les cartes restantes portent sur des faits bibliques vérifiables ; aucune carte subjective de ce type n'a été trouvée lors du scan.
 - Commit : `faf8cc508fb0011b8b944cd42e72b6aa879558e5`.
 - CI et GitHub Pages : **VERT** sur ce commit.
+
+### Nettoyage runtime après suppression des Défis
+- Le chronomètre résiduel de 10 secondes de l'ancien moteur a été supprimé de `src/app/game.tsx` : plus d'état, de deadline, d'intervalle ou de fonctions `startTimed/stopTimed` inutilisés.
+- Les 4 modes conservés restent sans durée chronométrée ; la taille de partie est uniquement 10 / 20 / 30 questions.
+- Commit : `0f44d707b175bc6b52875694cdb78ed32a7f2eb1`.
