@@ -19,7 +19,7 @@ const modeAccent: Record<string, string> = {
   quiz: '#4FD8F5', mystery: '#4FD8F5', truefalse: '#FFE05A', complete: '#4FD8F5',
 };
 
-const ROUND_TARGETS: Record<number, number> = { 1: 4, 20: 10, 30: 14, 45: 20, 60: 28 };
+const ROUND_TARGETS: Record<number, number> = { 10: 10, 20: 20, 30: 30 };
 const MODE_LABELS: Record<string, string> = {
   quiz: 'QUIZ', mystery: 'QUI EST-CE ?', truefalse: 'VRAI OU FAUX', complete: 'COMPLÈTE LES PAROLES'
 };
@@ -27,7 +27,6 @@ const MODE_LABELS: Record<string, string> = {
 const shuffle = <T,>(a: T[]) => {
   const r = [...a]; for (let i = r.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [r[i], r[j]] = [r[j], r[i]]; } return r;
 };
-const clock = (s: number) => `${String(Math.floor(s / 60)).padStart(2, '0')}:${String(s % 60).padStart(2, '0')}`;
 
 function Glass({ children, strong = false, style = {} }: { children: React.ReactNode; strong?: boolean; style?: any }) {
   return <View style={[{ borderRadius: 24, borderWidth: 1, borderColor: strong ? 'rgba(255,229,138,.72)' : 'rgba(164,232,247,.48)', backgroundColor: strong ? 'rgba(13,64,77,.72)' : 'rgba(7,43,55,.64)', padding: 18, shadowColor: '#00131A', shadowOpacity: .32, shadowRadius: 20 }, style]}>{children}</View>;
@@ -60,11 +59,11 @@ export default function GameScreen() {
   const requestedModes = (params.modes || '').split(',').filter((m): m is string => allowedModes.has(m));
   const modes = requestedModes.length ? requestedModes : ['quiz', 'mystery', 'truefalse', 'complete'];
   const teamNames = (params.teams || 'Équipe A|Équipe B').split('|').filter(Boolean);
-  const duration = Math.max(1, Number(params.duration || 45));
+  const questionCount = Math.max(1, Number(params.duration || 20));
   const selectedCategories = (params.categories || '').split(',').filter(Boolean);
   const difficulty = params.difficulty || 'all';
   const solo = params.solo === '1';
-  const target = ROUND_TARGETS[duration] || Math.max(4, Math.round(duration * .45));
+  const target = ROUND_TARGETS[questionCount] || questionCount;
   const [teams, setTeams] = useState<Team[]>(teamNames.map((name, i) => ({ id: String(i), name, score: 0 })));
   const teamsRef = useRef(teams); useEffect(() => { teamsRef.current = teams; }, [teams]);
   const [round, setRound] = useState(0); const [active, setActive] = useState(0);
@@ -73,7 +72,7 @@ export default function GameScreen() {
   const [revealed, setRevealed] = useState(false); const [validated, setValidated] = useState(false); const [showMaster, setShowMaster] = useState(false); const [correct, setCorrect] = useState<boolean | null>(null); const [delta, setDelta] = useState(0);
   const [timer, setTimer] = useState(10); const [running, setRunning] = useState(false); const [timedStarted, setTimedStarted] = useState(false); const [paused, setPaused] = useState(false); const [confirmQuit, setConfirmQuit] = useState(false);
   const [roundIntro, setRoundIntro] = useState(true);
-  const [gameLeft, setGameLeft] = useState(duration * 60); const deadline = useRef(0); const roundDeadline = useRef<number | null>(null);
+  const roundDeadline = useRef<number | null>(null);
   const [settings, setSettings] = useState<AppSettings>({ sounds: true, haptics: true, animations: true, highContrast: false });
   const ended = useRef(false);
 
@@ -167,7 +166,6 @@ export default function GameScreen() {
   }, [mode, question]);
   useEffect(() => { reset(); }, [round, mode, question.id, reset]);
   useEffect(() => { getSettings().then(setSettings); }, []);
-  useEffect(() => { if (paused || roundIntro || ended.current || !deadline.current) return; const id = setInterval(() => { const left = Math.max(0, Math.ceil((deadline.current - Date.now()) / 1000)); setGameLeft(left); if (!left && !ended.current) { ended.current = true; finish(); } }, 250); return () => clearInterval(id); }, [paused, roundIntro]);
   useEffect(() => { if (!running || paused || validated || !roundDeadline.current) return; const id = setInterval(() => { const left = Math.max(0, Math.ceil((roundDeadline.current! - Date.now()) / 1000)); setTimer(left); if (!left) { setRunning(false); roundDeadline.current = null; if (settings.haptics) Vibration.vibrate(55); } }, 100); return () => clearInterval(id); }, [running, paused, validated, settings.haptics]);
 
   function finish() { const score = encodeURIComponent(JSON.stringify(teamsRef.current.map(t => ({ name: t.name, score: t.score })))); router.replace({ pathname: '/result', params: { scores: score } }); }
@@ -177,7 +175,7 @@ export default function GameScreen() {
   }
   function revealAnswer() { if (!paused) { setRevealed(true); setRunning(false); roundDeadline.current = null; } }
   function nextRound() { if (round + 1 >= target) { finish(); return; } setRound(r => r + 1); setActive(a => solo ? a : (a + 1) % Math.max(1, teamsRef.current.length)); }
-  function pauseToggle() { if (paused) { deadline.current = Date.now() + gameLeft * 1000; if (running) roundDeadline.current = Date.now() + timer * 1000; setPaused(false); } else setPaused(true); }
+  function pauseToggle() { setPaused(v => !v); }
   function startTimed() {
     if (validated || paused || timedStarted) return;
     const seconds = 10;
@@ -255,12 +253,11 @@ export default function GameScreen() {
 
     </Glass>
     <ScoreStrip teams={teams} active={active}/>
-    <View style={{flexDirection:'row',alignItems:'center',justifyContent:'space-between',marginTop:9}}><Text style={{color:'#FFF',fontSize:11,fontWeight:'800'}}>Temps total {clock(gameLeft)}</Text>{mode==='challenge'&&<Text style={{color:timer<=5?'#FF7676':'#FFE58A',fontSize:13,fontWeight:'900'}}>{timer}s</Text>}</View>
-    {validated&&<Gold title={round+1>=target?'Voir la victoire':'Manche suivante →'} onPress={nextRound} style={{marginTop:10}}/>}
+      {validated&&<Gold title={round+1>=target?'Voir la victoire':'Manche suivante →'} onPress={nextRound} style={{marginTop:10}}/>}
     {!validated&&mode!=='challenge'&&<Gold title={revealed?'Réponse révélée':'Passer'} secondary onPress={revealed?()=>{}:nextRound} disabled={revealed||paused} style={{marginTop:10}}/>}
   </ScrollView>
-  <Modal visible={roundIntro && !paused && !confirmQuit} transparent animationType="fade"><View style={{ flex:1, backgroundColor:'rgba(0,15,21,.72)', alignItems:'center', justifyContent:'center', padding:20 }}><Glass strong style={{ width:'100%', maxWidth:520, alignItems:'center', padding:24 }}><Text style={{ color:'#FFE58A', fontSize:10, fontWeight:'900', letterSpacing:2 }}>MANCHE {round+1} / {target}</Text><Text style={{ color:'#FFFDF5', fontSize:31, lineHeight:36, fontWeight:'900', textAlign:'center', marginTop:8 }}>{MODE_LABELS[mode]}</Text><View style={{ width:82, height:82, borderRadius:25, marginTop:14, borderWidth:1.5, borderColor:modeAccent[mode] || '#FFE05A', backgroundColor:'rgba(4,42,54,.78)', alignItems:'center', justifyContent:'center' }}><Image source={modeIcons[mode] || modeIcons.quiz} style={{ width:54, height:54 }} resizeMode="contain" /></View><Text style={{ color:'#E1F0EC', fontSize:13, lineHeight:20, textAlign:'center', marginTop:14 }}>À vous, <Text style={{ color:'#FFE58A', fontWeight:'900' }}>{activeTeam?.name || 'l’équipe'}</Text>. Prenez quelques secondes pour expliquer la règle, puis lancez la manche.</Text><Gold title="C’est parti !" onPress={()=>{ if (!deadline.current) deadline.current = Date.now() + duration * 60000; setGameLeft(duration * 60); setRoundIntro(false); }} style={{ marginTop:18, width:'100%' }} /><Text style={{ color:'rgba(225,240,236,.62)', fontSize:10, marginTop:9 }}>Le maître de jeu garde le contrôle de la validation et des points.</Text></Glass></View></Modal>
-  <Modal visible={paused} transparent animationType="fade"><View style={{flex:1,backgroundColor:'rgba(0,0,0,.68)',alignItems:'center',justifyContent:'center',padding:24}}><Glass strong><Text style={{color:'#FFFDF5',fontSize:26,fontWeight:'900'}}>Pause</Text><Text style={{color:'#D8ECE8',marginTop:7}}>Les chronomètres sont arrêtés.</Text><Gold title="Reprendre" onPress={pauseToggle} style={{marginTop:16}}/><Gold title="Quitter" secondary onPress={()=>{setPaused(false);setConfirmQuit(true)}} style={{marginTop:8}}/></Glass></View></Modal>
+  <Modal visible={roundIntro && !paused && !confirmQuit} transparent animationType="fade"><View style={{ flex:1, backgroundColor:'rgba(0,15,21,.72)', alignItems:'center', justifyContent:'center', padding:20 }}><Glass strong style={{ width:'100%', maxWidth:520, alignItems:'center', padding:24 }}><Text style={{ color:'#FFE58A', fontSize:10, fontWeight:'900', letterSpacing:2 }}>MANCHE {round+1} / {target}</Text><Text style={{ color:'#FFFDF5', fontSize:31, lineHeight:36, fontWeight:'900', textAlign:'center', marginTop:8 }}>{MODE_LABELS[mode]}</Text><View style={{ width:82, height:82, borderRadius:25, marginTop:14, borderWidth:1.5, borderColor:modeAccent[mode] || '#FFE05A', backgroundColor:'rgba(4,42,54,.78)', alignItems:'center', justifyContent:'center' }}><Image source={modeIcons[mode] || modeIcons.quiz} style={{ width:54, height:54 }} resizeMode="contain" /></View><Text style={{ color:'#E1F0EC', fontSize:13, lineHeight:20, textAlign:'center', marginTop:14 }}>À vous, <Text style={{ color:'#FFE58A', fontWeight:'900' }}>{activeTeam?.name || 'l’équipe'}</Text>. Prenez quelques secondes pour expliquer la règle, puis lancez la manche.</Text><Gold title="C’est parti !" onPress={()=>setRoundIntro(false)} style={{ marginTop:18, width:'100%' }} /><Text style={{ color:'rgba(225,240,236,.62)', fontSize:10, marginTop:9 }}>Le maître de jeu garde le contrôle de la validation et des points.</Text></Glass></View></Modal>
+  <Modal visible={paused} transparent animationType="fade"><View style={{flex:1,backgroundColor:'rgba(0,0,0,.68)',alignItems:'center',justifyContent:'center',padding:24}}><Glass strong><Text style={{color:'#FFFDF5',fontSize:26,fontWeight:'900'}}>Pause</Text><Text style={{color:'#D8ECE8',marginTop:7}}>La partie est simplement mise en pause.</Text><Gold title="Reprendre" onPress={pauseToggle} style={{marginTop:16}}/><Gold title="Quitter" secondary onPress={()=>{setPaused(false);setConfirmQuit(true)}} style={{marginTop:8}}/></Glass></View></Modal>
   <Modal visible={confirmQuit} transparent animationType="fade"><View style={{flex:1,backgroundColor:'rgba(0,0,0,.68)',alignItems:'center',justifyContent:'center',padding:24}}><Glass strong><Text style={{color:'#FFFDF5',fontSize:26,fontWeight:'900'}}>Quitter la partie ?</Text><Text style={{color:'#D8ECE8',marginTop:7}}>La partie en cours ne sera pas enregistrée comme terminée.</Text><Gold title="Rester" onPress={()=>setConfirmQuit(false)} style={{marginTop:16}}/><Gold title="Quitter" secondary onPress={()=>router.replace('/')} style={{marginTop:8}}/></Glass></View></Modal>
   </View>
   </ImageBackground>;
