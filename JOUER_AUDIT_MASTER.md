@@ -56,6 +56,12 @@ Règle absolue : ne jamais remettre à zéro les validations précédentes. 177 
 - L2 : 13 cartes `char-l2-tf-*-4` — commit `7a725ec81a080ae341ec0b56916f5903abed23cd`
 - L3 : 10 cartes `char-l3-tf-*-4` — commit `c0527e45e39e9a0d1f45d41476964dbcc9e45cff`
 
+### V/F — localisations inversées L1-L3
+44 cartes supplémentaires ont été passées d’une affirmation négative de type « n’est pas associé à » à une formulation directe positive, avec réponse et explication alignées. Elles restent **FIXED** jusqu’à validation sémantique individuelle.
+- L1 : 20 — commit `f0b6f4b0d07742afab8cbbc3b394de9a23707533`
+- L2 : 14 — commit `91ea61fcd839c24bf64e84b67163f5c2dc514632`
+- L3 : 10 — commit `63e841c58eaaaa7a4ed0da292e1f60b86bcf84c8`
+
 ### L5 Vrai/Faux — qualité/personnage
 20 cartes passées de formulation négative inversée à une question directe. Elles sont **FIXED**, pas VALIDATED : la vérité de chaque qualité et la référence restent à revalider individuellement lors de la passe V/F complète.
 
