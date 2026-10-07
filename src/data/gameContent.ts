@@ -85,7 +85,7 @@ const integratedChallenges: Challenge[] = [
 export const GAME_CONTENT: Record<GameType, Question[]> = {
   quiz: integratedQuizQuestions.map(prepareQuiz),
   mystery: mysteryQuestions.map(prepareMystery),
-  truefalse: trueFalseQuestions.map((q) => ({ ...q, statement: compactGameText(q.statement, 100) })),
+  truefalse: trueFalseQuestions.map((q) => ({ ...q, category: canonicalGameCategory(q.category), statement: compactGameText(q.statement, 100) })),
   challenge: integratedChallenges.map(prepareChallenge),
 };
 
