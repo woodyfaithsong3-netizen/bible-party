@@ -1719,6 +1719,29 @@ for (const q of mysteryQuestions) {
   }
 };
 
+
+const tfBalanceFalse: TrueFalseQuestion[] = [
+  { id:'tf-balance-01', type:'truefalse', category:'Personnages', difficulty:'easy', statement:'Abraham était le fils d’Isaac.', answer:false, explanation:'Non. Abraham était le père d’Isaac.', reference:'Genèse 21:1-3' },
+  { id:'tf-balance-02', type:'truefalse', category:'Personnages', difficulty:'easy', statement:'Moïse est entré dans la Terre promise avant sa mort.', answer:false, explanation:'Non. Moïse a vu le pays depuis le mont Nebo mais n’y est pas entré.', reference:'Deutéronome 34:1-5' },
+  { id:'tf-balance-04', type:'truefalse', category:'Personnages', difficulty:'medium', statement:'Samuel était le frère de David.', answer:false, explanation:'Non. Samuel était le prophète qui a oint David comme roi.', reference:'1 Samuel 16:1-13' },
+  { id:'tf-balance-06', type:'truefalse', category:'Personnages', difficulty:'medium', statement:'Élie était le fils du roi Achab.', answer:false, explanation:'Non. Élie était un prophète de Jéhovah qui a servi à l’époque du roi Achab.', reference:'1 Rois 17:1' },
+  { id:'tf-balance-07', type:'truefalse', category:'Personnages', difficulty:'medium', statement:'Daniel a été jeté dans une fournaise avec trois autres Hébreux.', answer:false, explanation:'Non. Daniel a été jeté dans la fosse aux lions. Shadrak, Méshak et Abed-Négo ont été jetés dans la fournaise.', reference:'Daniel 3:12-30; 6:16-23' },
+  { id:'tf-balance-08', type:'truefalse', category:'Personnages', difficulty:'easy', statement:'Jean le Baptiseur était le frère de Pierre.', answer:false, explanation:'Non. Jean le Baptiseur était le fils de Zacharie et d’Élisabeth.', reference:'Luc 1:5-13, 57-63' },
+  { id:'tf-balance-09', type:'truefalse', category:'Récits bibliques', difficulty:'medium', statement:'Jéricho a été prise après que les Israélites eurent marché autour de ses murailles pendant six jours seulement.', answer:false, explanation:'Non. Ils ont marché autour de la ville pendant six jours, puis sept fois le septième jour.', reference:'Josué 6:1-20' },
+  { id:'tf-balance-10', type:'truefalse', category:'Récits bibliques', difficulty:'easy', statement:'Le Déluge a duré sept jours.', answer:false, explanation:'Non. La pluie est tombée pendant 40 jours et 40 nuits, et les eaux sont restées sur la terre bien plus longtemps.', reference:'Genèse 7:4, 12; 8:3-4' },
+  { id:'tf-balance-12', type:'truefalse', category:'Récits bibliques', difficulty:'medium', statement:'Samson a perdu sa force parce qu’il avait mangé du miel.', answer:false, explanation:'Non. Son histoire relie sa force à son statut de naziréen et à l’action de l’esprit de Jéhovah; Dalila a ensuite fait couper ses cheveux.', reference:'Juges 13:5, 25; 16:17-20' },
+  { id:'tf-balance-13', type:'truefalse', category:'Récits bibliques', difficulty:'easy', statement:'Jésus a changé l’eau en vin à Jérusalem.', answer:false, explanation:'Non. Jésus a accompli ce premier signe à Cana, en Galilée.', reference:'Jean 2:1-11' },
+  { id:'tf-balance-17', type:'truefalse', category:'Comprendre la Bible', difficulty:'easy', statement:'Le livre des Actes a été écrit par l’apôtre Pierre.', answer:false, explanation:'Non. Luc est le rédacteur traditionnellement identifié du livre des Actes.', reference:'Luc 1:1-4; Actes 1:1' },
+  { id:'tf-balance-19', type:'truefalse', category:'Comprendre la Bible', difficulty:'medium', statement:'Le livre de Daniel ne contient aucune prophétie.', answer:false, explanation:'Non. Daniel contient notamment des visions prophétiques concernant des royaumes et l’avenir.', reference:'Daniel 2; 7-12' },
+  { id:'tf-balance-21', type:'truefalse', category:'Mieux connaître Jéhovah', difficulty:'medium', statement:'Jéhovah a demandé à Abraham d’offrir Isaac en sacrifice humain.', answer:false, explanation:'Non. Jéhovah a demandé à Abraham de lui offrir Isaac, mais il l’a arrêté avant qu’il ne le tue.', reference:'Genèse 22:1-12' },
+  { id:'tf-balance-24', type:'truefalse', category:'Mieux connaître Jéhovah', difficulty:'medium', statement:'Jéhovah a abandonné les Israélites à Babylone sans leur promettre de retour.', answer:false, explanation:'Non. Jéhovah avait annoncé qu’un reste reviendrait à Jérusalem après l’exil.', reference:'Jérémie 29:10; Esdras 1:1-4' },
+  { id:'tf-balance-25', type:'truefalse', category:'Personnages', difficulty:'medium', statement:'Pierre a été le premier disciple à rencontrer Jésus.', answer:false, explanation:'Non. André a d’abord rencontré Jésus puis a amené son frère Simon Pierre à lui.', reference:'Jean 1:35-42' },
+  { id:'tf-balance-27', type:'truefalse', category:'Personnages', difficulty:'medium', statement:'Paul était membre des douze apôtres pendant le ministère terrestre de Jésus.', answer:false, explanation:'Non. Paul est devenu apôtre après la résurrection de Jésus et a été appelé à être apôtre des nations.', reference:'Actes 9:1-6; Romains 1:1' },
+  { id:'tf-balance-28', type:'truefalse', category:'Récits bibliques', difficulty:'medium', statement:'La Pentecôte mentionnée en Actes 2 a eu lieu avant la mort de Jésus.', answer:false, explanation:'Non. La Pentecôte d’Actes 2 a eu lieu après la mort, la résurrection et l’ascension de Jésus.', reference:'Actes 1:3-9; 2:1-4' },
+  { id:'tf-balance-30', type:'truefalse', category:'Comprendre la Bible', difficulty:'medium', statement:'Le livre de Jonas raconte que Ninive se trouvait en Égypte.', answer:false, explanation:'Non. Ninive était une grande ville assyrienne.', reference:'Jonas 1:1-2; 3:3-6' },
+];
+trueFalseQuestions.push(...tfBalanceFalse);
+
 // Nettoyage final après tous les ajouts éditoriaux/enrichissements : certains enrichissements
 // sont ajoutés après le premier passage de déduplication. On repasse donc sur chaque mode ici.
 dedupeInPlace(quizQuestions);
