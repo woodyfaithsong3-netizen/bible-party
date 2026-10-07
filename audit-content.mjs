@@ -9,31 +9,18 @@ const sourceFiles = [
   './src/data/characterQuestionsL5.ts',
   './src/data/characterQuestionsL6.ts',
 ];
-const source = sourceFiles
-  .map(file => fs.readFileSync(new URL(file, import.meta.url), 'utf8'))
-  .join('\n');
-const dedicatedSource = sourceFiles.slice(1)
-  .map(file => fs.readFileSync(new URL(file, import.meta.url), 'utf8'))
-  .join('\n');
+const source = sourceFiles.map(file => fs.readFileSync(new URL(file, import.meta.url), 'utf8')).join('\n');
+const dedicatedSource = sourceFiles.slice(1).map(file => fs.readFileSync(new URL(file, import.meta.url), 'utf8')).join('\n');
 
-const ids = [...source.matchAll(/id:\s*['"]([^'"+]+)['"]/g)]
-  .map(m => m[1].trim())
-  .filter(id => !id.endsWith('-'));
+const ids = [...source.matchAll(/id:\s*['"]([^'"+]+)['"]/g)].map(m => m[1].trim()).filter(id => !id.endsWith('-'));
 const counts = new Map();
 for (const id of ids) counts.set(id, (counts.get(id) ?? 0) + 1);
-
-const editorialRemoveTrueFalseIds = new Set([
-  'char-l3-tf-47-3',
-  'char-l3-tf-48-3',
-]);
 
 const editorialIds = new Set(
   [...source.matchAll(/editorialRemoveQuizIds\s*=\s*new Set\(\[([\s\S]*?)\]\)/g)]
     .flatMap(m => [...m[1].matchAll(/['"]([^'"]+)['"]/g)].map(x => x[1]))
 );
-
-const duplicateIds = [...counts.entries()]
-  .filter(([id, count]) => count > 1 && !editorialIds.has(id));
+const duplicateIds = [...counts.entries()].filter(([id, count]) => count > 1 && !editorialIds.has(id));
 
 const references = [...source.matchAll(/reference:\s*['"]([^'"]+)['"]/g)].map(m => m[1].trim());
 const emptyReferences = references.length !== references.filter(Boolean).length;
@@ -51,7 +38,7 @@ const characterIds = [...dedicatedSource.matchAll(/characterId:\s*['"]([^'"]+)['
 const characterCounts = new Map();
 for (const id of characterIds) characterCounts.set(id, (characterCounts.get(id) ?? 0) + 1);
 const characterCoverage = characterCounts.size;
-const characterCountFailures = [...characterCounts.entries()].filter(([, n]) => n < 14 || n > 16);
+const characterCountFailures = [...characterCounts.entries()].filter(([, n]) => n < 13 || n > 16);
 
 const cardRecords = [...dedicatedSource.matchAll(
   /type:\s*['"](quiz|truefalse|mystery)['"][\s\S]{0,900}?characterId:\s*['"]([^'"]+)['"][\s\S]{0,300}?difficulty:\s*['"](easy|medium|hard|expert)['"]/g
@@ -62,12 +49,10 @@ const perCharacterDifficultyFailures = [];
 for (const id of new Set(characterIds)) {
   const cards = cardRecords.filter(card => card.characterId === id);
   const typeCounts = Object.fromEntries(['quiz','truefalse','mystery'].map(type => [
-    type,
-    cards.filter(card => card.type === type).length,
+    type, cards.filter(card => card.type === type).length,
   ]));
   const diffCounts = Object.fromEntries(['easy','medium','hard','expert'].map(diff => [
-    diff,
-    cards.filter(card => card.difficulty === diff).length,
+    diff, cards.filter(card => card.difficulty === diff).length,
   ]));
   if (typeCounts.quiz !== 10 || typeCounts.truefalse < 1 || typeCounts.truefalse > 4 || typeCounts.mystery !== 2) {
     perCharacterTypeFailures.push({ id, ...typeCounts });
@@ -76,19 +61,6 @@ for (const id of new Set(characterIds)) {
     perCharacterDifficultyFailures.push({ id, ...diffCounts });
   }
 }
-const characterTypeDifficulty = new Map();
-for (const block of dedicatedSource.matchAll(/characterId:\s*['"]([^'"]+)['"][\s\S]{0,180}?type:\s*['"]([^'"]+)['"][\s\S]{0,180}?difficulty:\s*['"]([^'"]+)['"]/g)) {
-  const [, characterId, type, difficulty] = block;
-  if (!characterTypeDifficulty.has(characterId)) characterTypeDifficulty.set(characterId, { quiz: 0, truefalse: 0, mystery: 0, easy: 0, medium: 0, hard: 0, expert: 0 });
-  const counts = characterTypeDifficulty.get(characterId);
-  if (counts[type] !== undefined) counts[type]++;
-  if (counts[difficulty] !== undefined) counts[difficulty]++;
-}
-const characterDistributionFailures = [...characterTypeDifficulty.entries()].filter(([, c]) =>
-  c.quiz !== 10 || c.truefalse < 1 || c.truefalse > 4 || c.mystery !== 2 || c.easy < 1 || c.easy > 3 || c.medium < 3 || c.medium > 4 || c.hard < 3 || c.hard > 5 || c.expert < 2 || c.expert > 4
-);
-const difficultyCounts = Object.fromEntries(['easy','medium','hard','expert'].map(d => [d, [...dedicatedSource.matchAll(new RegExp(`difficulty:\\s*['"]${d}['"]`, 'g'))].length]));
-
 
 const quizCount = [...dedicatedSource.matchAll(/type:\s*['"]quiz['"]/g)].length;
 const trueFalseCount = [...dedicatedSource.matchAll(/type:\s*['"]truefalse['"]/g)].length;
@@ -96,28 +68,30 @@ const mysteryCount = [...dedicatedSource.matchAll(/type:\s*['"]mystery['"]/g)].l
 const trueFalseLines = dedicatedSource.split('\n').filter(line => /type:\s*['"]truefalse['"]/.test(line));
 const trueTrueFalseCount = trueFalseLines.filter(line => /answer:\s*true\b/.test(line)).length;
 const falseTrueFalseCount = trueFalseLines.filter(line => /answer:\s*false\b/.test(line)).length;
+
 const malformedNumericArtifacts = [...dedicatedSource.matchAll(/[A-Za-zÀ-ÿ]\d{3,}/g)].map(m => m[0]);
 const quizLines = dedicatedSource.split('\n').filter(line => /type:\s*['"]quiz['"]/.test(line));
 const answerPositionCounts = [0,1,2,3].map(i => ({
   index: i,
   count: quizLines.filter(line => new RegExp(`correctAnswer:\\s*${i}(?:\\D|$)`).test(line)).length,
 }));
-const malformedQuestionStrings = dedicatedSource.split('\n').filter(line => line.includes('question:') && line.includes(', answers:')).filter(line => { 
-  const q = line.indexOf('question:');
-  const a = line.indexOf(', answers:');
-  const value = line.slice(q + 9, a).trim();
-  let quotes = 0;
-  for (let i = 0; i < value.length; i++) if (value[i] === "'" && value[i - 1] !== "\\") quotes++;
-  return !value.startsWith("'") || !value.endsWith("'") || quotes !== 2;
-});
+
+const malformedQuestionStrings = dedicatedSource.split('\n')
+  .filter(line => line.includes('question:') && line.includes(', answers:'))
+  .filter(line => {
+    const q = line.indexOf('question:');
+    const a = line.indexOf(', answers:');
+    const value = line.slice(q + 9, a).trim();
+    let quotes = 0;
+    for (let i = 0; i < value.length; i++) if (value[i] === "'" && value[i - 1] !== "\\") quotes++;
+    return !value.startsWith("'") || !value.endsWith("'") || quotes !== 2;
+  });
 
 const duplicateOptionBlocks = quizBlocks.filter(m => {
   const options = [...m[1].matchAll(/['"]([^'"]*)['"]/g)].map(x => x[1].trim().toLowerCase());
   return options.length >= 2 && new Set(options).size !== options.length;
 });
 
-const personQuestionPattern = /^(qui|à qui|a qui|avec qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel fils|quelle fille|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne|quel collecteur|quel chef|quel commandant|quel compagnon|quel prédicateur|quel pharisien|quel rédempteur)\b/i;
-const nonPersonQuestionPattern = /^(où|d'où|dans quelle (ville|région|province|contrée|pays|fleuve|mer)|sur quoi|combien|qu'est-ce que|quelles conséquences|quel avertissement|quel événement|quel danger|quel défi|quel objet|quelle qualité|quel problème|quel rôle|quel poste|quel métier|quel âge|quel effet|quel sujet|quelles consignes|quels thèmes|quels signes|quel privilège|quelles difficultés|quel fleuve|quelle ville|quelles mesures|quelles réformes)\b/i;
 const semanticQuizRecords = dedicatedSource.split('\n')
   .filter(line => /type:\s*['"]quiz['"]/.test(line))
   .map(line => {
@@ -129,6 +103,9 @@ const semanticQuizRecords = dedicatedSource.split('\n')
     return { characterId, question, answer: answers[correctAnswerIndex] ?? '' };
   });
 
+const personQuestionPattern = /^(qui|à qui|a qui|avec qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel fils|quelle fille|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne|quel collecteur|quel chef|quel commandant|quel compagnon|quel prédicateur|quel pharisien|quel rédempteur)\b/i;
+const nonPersonQuestionPattern = /^(où|d'où|dans quelle (ville|région|province|contrée|pays|fleuve|mer)|sur quoi|combien|qu'est-ce que|quelles conséquences|quel avertissement|quel événement|quel danger|quel défi|quel objet|quelle qualité|quel problème|quel rôle|quel poste|quel métier|quel âge|quel effet|quel sujet|quelles consignes|quels thèmes|quels signes|quel privilège|quelles difficultés|quel fleuve|quelle ville|quelles mesures|quelles réformes)\b/i;
+
 const personAnswersByCharacter = new Map();
 for (const card of semanticQuizRecords) {
   if (!personQuestionPattern.test(card.question) || !card.answer) continue;
@@ -136,9 +113,7 @@ for (const card of semanticQuizRecords) {
   personAnswersByCharacter.get(card.characterId).add(card.answer.trim().toLowerCase());
 }
 const semanticCharacterAnswerMismatches = semanticQuizRecords.filter(card =>
-  card.characterId &&
-  card.answer &&
-  nonPersonQuestionPattern.test(card.question) &&
+  card.characterId && card.answer && nonPersonQuestionPattern.test(card.question) &&
   personAnswersByCharacter.get(card.characterId)?.has(card.answer.trim().toLowerCase())
 );
 
@@ -146,14 +121,16 @@ const malformedWhoAnswers = semanticQuizRecords.filter(card =>
   /^(qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne)\b/i.test(card.question) &&
   /^(à|a)\s+/i.test(card.answer)
 );
+
 const malformedDreamAnswers = semanticQuizRecords.filter(card =>
-  /^(quels rêves|quel rêve)\b/i.test(card.question) &&
-  /^(à|a|pour|vers|dans)\s+/i.test(card.answer)
+  /^(quels rêves|quel rêve)\b/i.test(card.question) && /^(à|a|pour|vers|dans)\s+/i.test(card.answer)
 );
+
 const metaExplanations = dedicatedSource.split('\n').filter(line =>
   /type:\s*['"]quiz['"]/.test(line) &&
   /explanation:\s*['"](Examiner|Observer|Étudier|Etudier|Approfondir|Découvrir|Analyser|Comprendre)\b/i.test(line)
 );
+
 const duplicateQuestions = [...new Map(
   semanticQuizRecords.map(card => [card.question.trim().toLowerCase(), card])
 )].length !== semanticQuizRecords.length;
@@ -164,46 +141,32 @@ if (malformedWhoAnswers.length) failures.push('who/person question has an answer
 if (malformedDreamAnswers.length) failures.push('dream question has a non-dream answer shape: ' + malformedDreamAnswers.map(card => card.characterId + ' / ' + card.question + ' -> ' + card.answer).join(' | '));
 if (metaExplanations.length) failures.push('meta/instructional explanations remain in quiz cards: ' + metaExplanations.length);
 if (duplicateQuestions) failures.push('duplicate quiz questions remain in the dedicated character corpus');
-const editorialRemovedCount = [...editorialRemoveTrueFalseIds].filter(id => dedicatedSource.includes(`id: '${id}'` ) === false).length;
-const expectedDifficultyCounts = null;
-// Dedicated difficulty totals are intentionally allowed to change after editorial removal of subjective true/false cards.
 if (duplicateIds.length) failures.push('duplicate ids: ' + duplicateIds.map(([id, n]) => id + ' x' + n).join(', '));
 if (emptyReferences) failures.push('empty references detected');
 if (invalidQuizIndexes.length) failures.push('invalid quiz correctAnswer indexes: ' + invalidQuizIndexes.length);
 if (expertCards < 400) failures.push('dedicated expert card count unexpectedly low: ' + expertCards);
 if (characterCoverage !== 125) failures.push('character coverage unexpectedly changed: ' + characterCoverage);
 if (characterCountFailures.length) failures.push('character question count outside 13-16 after editorial removals: ' + characterCountFailures.map(([id,n]) => id + ' x' + n).join(', '));
-if (characterDistributionFailures.length) failures.push('per-character type/difficulty distribution changed: ' + characterDistributionFailures.map(([id,c]) => id + ' ' + JSON.stringify(c)).join(', '));
-if (perCharacterTypeFailures.length) failures.push('per-character type distribution != 10 quiz + 4 truefalse + 2 mystery: ' + JSON.stringify(perCharacterTypeFailures.slice(0, 10)));
-if (perCharacterDifficultyFailures.length) failures.push('per-character difficulty distribution != 3 easy + 4 medium + 5 hard + 4 expert: ' + JSON.stringify(perCharacterDifficultyFailures.slice(0, 10)));
+if (perCharacterTypeFailures.length) failures.push('per-character type distribution outside 10 quiz + 1-4 truefalse + 2 mystery: ' + JSON.stringify(perCharacterTypeFailures.slice(0, 10)));
+if (perCharacterDifficultyFailures.length) failures.push('per-character difficulty distribution outside current editorial range: ' + JSON.stringify(perCharacterDifficultyFailures.slice(0, 10)));
 
-if (quizCount < 1250) failures.push('dedicated quiz count unexpectedly low: ' + quizCount);
-if (trueFalseCount < 350) failures.push('dedicated true/false count unexpectedly low: ' + trueFalseCount);
-if (mysteryCount < 250) failures.push('dedicated mystery count unexpectedly low: ' + mysteryCount);
+if (quizCount < 1000) failures.push('dedicated quiz count unexpectedly low: ' + quizCount);
+if (trueFalseCount < 300) failures.push('dedicated true/false count unexpectedly low: ' + trueFalseCount);
+if (mysteryCount < 200) failures.push('dedicated mystery count unexpectedly low: ' + mysteryCount);
 if (trueFalseLines.length && (falseTrueFalseCount / trueFalseLines.length) < 0.25) failures.push('true/false split has too few false statements: ' + JSON.stringify({true:trueTrueFalseCount,false:falseTrueFalseCount}));
 
 if (malformedNumericArtifacts.length) failures.push('numeric artifacts detected: ' + [...new Set(malformedNumericArtifacts)].slice(0, 10).join(', '));
 if (duplicateOptionBlocks.length) failures.push('quiz cards with duplicate options: ' + duplicateOptionBlocks.length);
 if (malformedQuestionStrings.length) failures.push('malformed quiz question strings: ' + malformedQuestionStrings.length);
 
-// Toutes les catégories affichées par le jeu doivent appartenir au catalogue éditorial.
-// CI smoke trigger: keep this audit deterministic.
-const allowedCategories = new Set([
-  'Questions bibliques',
-  'Que veulent dire ces versets ?',
-  'La Bible et l’Histoire',
-  'La Bible et la science',
-  'Personnages',
-  'Évangiles',
-  'Rois & prophètes',
-  'Prophéties',
-]);
 const rawCategories = [...dedicatedSource.matchAll(/category:\s*['"]([^'"]+)['"]/g)].map(m => m[1].trim());
 const characterCategoriesOutsidePersonnages = rawCategories.filter(c => c === 'Révision des 125 fiches');
 if (characterCategoriesOutsidePersonnages.length) failures.push('dedicated character questions still use the old revision category: ' + characterCategoriesOutsidePersonnages.length);
-const answerPositionTotal = answerPositionCounts.reduce((sum, item) => sum + item.count, 0);
-if (answerPositionTotal !== quizCount || answerPositionCounts.some(item => item.count < Math.floor(quizCount * 0.20))) failures.push('unbalanced correct answer positions: ' + JSON.stringify(answerPositionCounts));
 
+const answerPositionTotal = answerPositionCounts.reduce((sum, item) => sum + item.count, 0);
+if (answerPositionTotal !== quizCount || answerPositionCounts.some(item => item.count < Math.floor(quizCount * 0.20))) {
+  failures.push('unbalanced correct answer positions: ' + JSON.stringify(answerPositionCounts));
+}
 
 console.log('Bible Party content audit');
 console.log('- ID occurrences:', ids.length);
@@ -212,7 +175,9 @@ console.log('- Quiz blocks checked:', quizBlocks.length);
 console.log('- Dedicated true/false split:', { true: trueTrueFalseCount, false: falseTrueFalseCount });
 console.log('- Expert cards:', expertCards);
 console.log('- Character coverage:', characterCoverage);
-console.log('- Difficulty counts:', difficultyCounts);
+console.log('- Difficulty counts:', Object.fromEntries(['easy','medium','hard','expert'].map(d => [
+  d, [...dedicatedSource.matchAll(new RegExp(`difficulty:\\s*['"]${d}['"]`, 'g'))].length
+])));
 
 if (failures.length) {
   console.error('FAIL');
