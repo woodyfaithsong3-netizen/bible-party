@@ -46,3 +46,29 @@ Format : ID | ETAT | COMMIT | CHECKS | NOTE
 Aucune carte n'est déclarée artificiellement VALIDATED. Les anciens commits verts restent des preuves de contrôles déjà effectués, mais CI verte ne signifie pas validation éditoriale individuelle.
 
 Règle absolue : ne jamais remettre à zéro les validations précédentes. 177 fiches officielles = hors périmètre.
+
+## Journal des corrections — 2026-10-07
+
+### L5 Vrai/Faux — qualité/personnage
+20 cartes passées de formulation négative inversée à une question directe. Elles sont **FIXED**, pas VALIDATED : la vérité de chaque qualité et la référence restent à revalider individuellement lors de la passe V/F complète.
+
+- char-l5-tf-81-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-82-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-83-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-84-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-85-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-86-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-87-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-88-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-89-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-90-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-91-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-92-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-93-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-94-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-95-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-96-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-97-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-98-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-99-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-100-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
