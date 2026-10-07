@@ -22,7 +22,12 @@ const ids = [...source.matchAll(/id:\s*['"]([^'"+]+)['"]/g)]
 const counts = new Map();
 for (const id of ids) counts.set(id, (counts.get(id) ?? 0) + 1);
 
-const editorialRemoveTrueFalseIds = new Set([\n  'char-l3-tf-47-3',\n  'char-l3-tf-48-3',\n]);\n\nconst editorialIds = new Set(
+const editorialRemoveTrueFalseIds = new Set([
+  'char-l3-tf-47-3',
+  'char-l3-tf-48-3',
+]);
+
+const editorialIds = new Set(
   [...source.matchAll(/editorialRemoveQuizIds\s*=\s*new Set\(\[([\s\S]*?)\]\)/g)]
     .flatMap(m => [...m[1].matchAll(/['"]([^'"]+)['"]/g)].map(x => x[1]))
 );
@@ -159,7 +164,8 @@ if (malformedWhoAnswers.length) failures.push('who/person question has an answer
 if (malformedDreamAnswers.length) failures.push('dream question has a non-dream answer shape: ' + malformedDreamAnswers.map(card => card.characterId + ' / ' + card.question + ' -> ' + card.answer).join(' | '));
 if (metaExplanations.length) failures.push('meta/instructional explanations remain in quiz cards: ' + metaExplanations.length);
 if (duplicateQuestions) failures.push('duplicate quiz questions remain in the dedicated character corpus');
-const editorialRemovedCount = [...editorialRemoveTrueFalseIds].filter(id => dedicatedSource.includes(`id: '${id}'` ) === false).length;\nconst expectedDifficultyCounts = { easy: 375, medium: 500, hard: 625 - editorialRemovedCount, expert: 500 };\nif (difficultyCounts.easy !== expectedDifficultyCounts.easy || difficultyCounts.medium !== expectedDifficultyCounts.medium || difficultyCounts.hard !== expectedDifficultyCounts.hard || difficultyCounts.expert !== expectedDifficultyCounts.expert) failures.push('dedicated difficulty counts changed: ' + JSON.stringify(difficultyCounts) + ' expected ' + JSON.stringify(expectedDifficultyCounts));
+const editorialRemovedCount = [...editorialRemoveTrueFalseIds].filter(id => dedicatedSource.includes(`id: '${id}'` ) === false).length;
+const expectedDifficultyCounts = { easy: 375, medium: 500, hard: 625 - editorialRemovedCount, expert: 500 };\nif (difficultyCounts.easy !== expectedDifficultyCounts.easy || difficultyCounts.medium !== expectedDifficultyCounts.medium || difficultyCounts.hard !== expectedDifficultyCounts.hard || difficultyCounts.expert !== expectedDifficultyCounts.expert) failures.push('dedicated difficulty counts changed: ' + JSON.stringify(difficultyCounts) + ' expected ' + JSON.stringify(expectedDifficultyCounts));
 if (duplicateIds.length) failures.push('duplicate ids: ' + duplicateIds.map(([id, n]) => id + ' x' + n).join(', '));
 if (emptyReferences) failures.push('empty references detected');
 if (invalidQuizIndexes.length) failures.push('invalid quiz correctAnswer indexes: ' + invalidQuizIndexes.length);
