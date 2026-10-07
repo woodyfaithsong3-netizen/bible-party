@@ -21,7 +21,7 @@ const modeAccent: Record<string, string> = {
 
 const ROUND_TARGETS: Record<number, number> = { 1: 4, 20: 10, 30: 14, 45: 20, 60: 28 };
 const MODE_LABELS: Record<string, string> = {
-  quiz: 'QUIZ', mystery: 'QUI EST-CE ?', truefalse: 'VRAI OU FAUX', challenge: 'DÉFI 10 SECONDES'
+  quiz: 'QUIZ', mystery: 'QUI EST-CE ?', truefalse: 'VRAI OU FAUX', complete: 'COMPLÈTE LES PAROLES'
 };
 
 const shuffle = <T,>(a: T[]) => {
