@@ -84,7 +84,36 @@ export default function GameScreen() {
       let p = pool;
       if (selectedCategories.length) p = p.filter(q => selectedCategories.includes(normalizeQuestionCategory(q)) || (selectedCategories.includes('Défis') && (q.type === 'challenge' || q.type === 'timesup')));
       const d = difficulty === 'all' ? p : p.filter(q => q.difficulty === difficulty);
-      out[mode] = shuffle(d);
+      if (mode === 'quiz' && d.length > 1) {
+        // Les nouveaux sous-pools éditoriaux doivent réellement apparaître en partie.
+        // On les entremêle au début du paquet au lieu de les laisser noyés dans plusieurs
+        // milliers de cartes : chronologie, chansons, 34 vérités et versets à compléter.
+        const specialBuckets = [
+          d.filter(q => /^chrono-/.test(String(q.id))),
+          d.filter(q => /^song-/.test(String(q.id))),
+          d.filter(q => /^appendice-a-/.test(String(q.id))),
+          d.filter(q => /^complete-/.test(String(q.id))),
+        ].map(shuffle);
+        const used = new Set<string>();
+        const priority: Question[] = [];
+        let roundIndex = 0;
+        let added = true;
+        while (added) {
+          added = false;
+          for (const bucket of specialBuckets) {
+            const item = bucket[roundIndex];
+            if (item && !used.has(String(item.id))) {
+              priority.push(item);
+              used.add(String(item.id));
+              added = true;
+            }
+          }
+          roundIndex += 1;
+        }
+        out[mode] = [...priority, ...shuffle(d.filter(q => !used.has(String(q.id))))];
+      } else {
+        out[mode] = shuffle(d);
+      }
     }); return out;
   }, [selectedCategories.join(','), difficulty]);
   const playable = useMemo(() => modes.filter(m => (decks[m] || []).length), [modes.join(','), decks]);
