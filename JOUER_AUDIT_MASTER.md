@@ -103,3 +103,18 @@ Contrôle automatisé des Quiz des lots personnages L1-L6 : les cartes dont la b
 ### Passe doublons — Quiz
 Contrôle des formulations exactes normalisées sur les fichiers jouables audités : un seul doublon exact a été trouvé et corrigé.
 - `quiz-v50-actes-01` / `v105-q030` : même question sur Matthias ; `v105-q030` reformulée en « Quel apôtre a été ajouté aux Onze après la mort de Judas ? ».
+
+
+### Passe V/F — L2/L3 reprise après scan négatif
+Les formulations artificielles « Il est faux que… » restantes dans les lots L2/L3 ont été transformées en affirmations directes, avec réponses et références réalignées. Les cartes restent à validation éditoriale complète.
+- L2 : `char-l2-tf-35-3`, `36-3`, `37-3`, `38-3`, `40-3`
+- L3 : `char-l3-tf-44-3`, `51-3`, `52-3`, `53-3`, `56-1`, `56-3`, `57-3`, `59-3`, `60-1`, `60-3`
+- Commits : `e285f0d04be573b3e53979cc560a1dc48c114d43`, `dfdc8c886d97bd444a1eb43a16988cc8927a4f3b`, `58523975e870e89fd12ad6883d72dbc6f3119f80`
+- Sources vérifiées : Exode 18, Exode 4:24-26, Nombres 16, Nombres 22-24, 1 Samuel 3, Matthieu 14, Aggée 1, Zacharie 1, Malachie 1, Actes 15, Philémon, Tite 1, Actes 20.
+
+### Passe catégories — pool final
+Le moteur finalise désormais chaque carte avec une catégorie canonique parmi les quatre catégories officielles : **Personnages**, **Récits bibliques**, **Comprendre la Bible**, **Mieux connaître Jéhovah**. Les anciennes étiquettes internes sont conservées dans les banques sources mais ne sortent plus comme catégories de gameplay.
+- Commit : `85277299acf90f5d6a95aad0c24beb65de2dc010`
+
+### Passe contexte — contrôle des formulations « quel récit / événement »
+Les occurrences repérées dans les banques auditées ont été examinées : elles comportent un événement, un personnage ou un contexte identifiable dans la question et les choix. Aucune occurrence du défaut « Quel récit est décrit ? » sans contexte n’a été conservée dans les lots inspectés.
