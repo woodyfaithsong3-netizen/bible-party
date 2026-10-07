@@ -70,9 +70,8 @@ export default function GameScreen() {
   const [selected, setSelected] = useState<number | null>(null); const [tf, setTf] = useState<boolean | null>(null);
   const [clue, setClue] = useState(0);
   const [revealed, setRevealed] = useState(false); const [validated, setValidated] = useState(false); const [showMaster, setShowMaster] = useState(false); const [correct, setCorrect] = useState<boolean | null>(null); const [delta, setDelta] = useState(0);
-  const [timer, setTimer] = useState(10); const [running, setRunning] = useState(false); const [timedStarted, setTimedStarted] = useState(false); const [paused, setPaused] = useState(false); const [confirmQuit, setConfirmQuit] = useState(false);
+  const [paused, setPaused] = useState(false); const [confirmQuit, setConfirmQuit] = useState(false);
   const [roundIntro, setRoundIntro] = useState(true);
-  const roundDeadline = useRef<number | null>(null);
   const [settings, setSettings] = useState<AppSettings>({ sounds: true, haptics: true, animations: true, highContrast: false });
   const ended = useRef(false);
 
@@ -189,37 +188,19 @@ export default function GameScreen() {
 
   const reset = useCallback(() => {
     setSelected(null); setTf(null); setClue(0); setShowMaster(false); setRevealed(false); setValidated(false); setCorrect(null); setDelta(0);
-    const seconds = 0;
-    setTimer(seconds); setRunning(false); setTimedStarted(false); roundDeadline.current = null; setRoundIntro(true);
+    setRoundIntro(true);
   }, [mode, question]);
   useEffect(() => { reset(); }, [round, mode, question.id, reset]);
   useEffect(() => { getSettings().then(setSettings); }, []);
-  useEffect(() => { if (!running || paused || validated || !roundDeadline.current) return; const id = setInterval(() => { const left = Math.max(0, Math.ceil((roundDeadline.current! - Date.now()) / 1000)); setTimer(left); if (!left) { setRunning(false); roundDeadline.current = null; if (settings.haptics) Vibration.vibrate(55); } }, 100); return () => clearInterval(id); }, [running, paused, validated, settings.haptics]);
 
   function finish() { const score = encodeURIComponent(JSON.stringify(teamsRef.current.map(t => ({ name: t.name, score: t.score })))); router.replace({ pathname: '/result', params: { scores: score } }); }
   function buzz(ok: boolean) { if (settings.haptics) Vibration.vibrate(ok ? 30 : 65); }
   function validate(isCorrect: boolean, points: number, penalty = 0) {
-    if (validated) return; const total = isCorrect ? points : -penalty; const nextTeams = teamsRef.current.map((t, i) => i === active ? { ...t, score: Math.max(0, t.score + total) } : t); teamsRef.current = nextTeams; setTeams(nextTeams); setCorrect(isCorrect); setDelta(total); setValidated(true); setRunning(false); roundDeadline.current = null; buzz(isCorrect);
+    if (validated) return; const total = isCorrect ? points : -penalty; const nextTeams = teamsRef.current.map((t, i) => i === active ? { ...t, score: Math.max(0, t.score + total) } : t); teamsRef.current = nextTeams; setTeams(nextTeams); setCorrect(isCorrect); setDelta(total); setValidated(true); buzz(isCorrect);
   }
-  function revealAnswer() { if (!paused) { setRevealed(true); setRunning(false); roundDeadline.current = null; } }
+  function revealAnswer() { if (!paused) setRevealed(true); }
   function nextRound() { if (round + 1 >= target) { finish(); return; } setRound(r => r + 1); setActive(a => solo ? a : (a + 1) % Math.max(1, teamsRef.current.length)); }
   function pauseToggle() { setPaused(v => !v); }
-  function startTimed() {
-    if (validated || paused || timedStarted) return;
-    const seconds = 10;
-    setTimer(seconds);
-    setTimedStarted(true);
-    setRevealed(false);
-    roundDeadline.current = Date.now() + seconds * 1000;
-    setRunning(true);
-  }
-  function stopTimed() {
-    if (validated || paused || !running) return;
-    setRunning(false);
-    roundDeadline.current = null;
-    setRevealed(true);
-  }
-
   const chosenReady = mode === 'truefalse' ? tf !== null : selected !== null;
 
   const activeTeam = teams[active];
