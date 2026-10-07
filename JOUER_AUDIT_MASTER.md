@@ -85,3 +85,16 @@ Règle absolue : ne jamais remettre à zéro les validations précédentes. 177 
 - char-l5-tf-98-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
 - char-l5-tf-99-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
 - char-l5-tf-100-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+
+
+### Passe Quiz — fuites de réponse détectées et corrigées
+Contrôle automatisé des Quiz des lots personnages L1-L6 : les cartes dont la bonne réponse apparaissait directement dans la formulation ou dont les choix étaient mal construits ont été corrigées. Les cartes restent à validation éditoriale individuelle.
+- L4 : `char-l4-q-79-2` — question reformulée pour ne plus contenir le nom de la réponse.
+- L5 : `char-l5-q-83-6`, `char-l5-q-86-4`, `char-l5-q-86-6`, `char-l5-q-86-9`, `char-l5-q-88-1`, `char-l5-q-88-4`, `char-l5-q-89-1` — choix reconstruits pour que la question ne donne pas la réponse et pour correspondre exactement à ce qui est demandé.
+- L6 : `char-l6-q-118-2` — formulation corrigée pour éviter que la réponse soit déjà donnée dans la question.
+- Compléter les paroles : `song-34` — titre retiré de la formulation afin de ne pas révéler « me taire ».
+
+### Passe structurelle Quiz — résultats
+- L1-L6 : aucune incohérence détectée entre `answer` et le début de l’explication Vrai/Faux.
+- Lots Quiz examinés : aucune carte contrôlée avec moins/plus de 4 réponses, index `correctAnswer` hors limites ou réponses identiques détectée.
+- Contrôle de contexte « Quel récit / quel événement » : les occurrences restantes examinées contiennent un contexte permettant d’identifier l’événement ; aucune occurrence du défaut « quel récit ? » sans récit décrit n’a été retrouvée dans L1-L6.
