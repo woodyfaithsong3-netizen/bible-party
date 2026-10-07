@@ -45,7 +45,7 @@ const params = useLocalSearchParams<{ teams?: string; teamsCount?: string; durat
         <View style={styles.readySummary}>
           <View style={styles.readyRow}><Image source={teamIcon} style={styles.readyIconImage} resizeMode="contain"/><View style={{ flex: 1 }}><Text style={styles.readyLabel}>Équipes</Text><Text style={styles.readyValue}>{teams.split('|').join('  ·  ')}</Text></View></View>
           <View style={styles.readyDivider}/>
-          <View style={styles.readyRow}><Image source={difficultyIcon} style={styles.readyIconImage} resizeMode="contain"/><View style={{ flex: 1 }}><Text style={styles.readyLabel}>Durée</Text><Text style={styles.readyValue}>{duration} minutes</Text></View></View>
+          <View style={styles.readyRow}><Image source={difficultyIcon} style={styles.readyIconImage} resizeMode="contain"/><View style={{ flex: 1 }}><Text style={styles.readyLabel}>Taille</Text><Text style={styles.readyValue}>{duration} questions</Text></View></View>
           <View style={styles.readyDivider}/>
           <View style={styles.readyRow}><Image source={starIcon} style={styles.readyIconImage} resizeMode="contain"/><View style={{ flex: 1 }}><Text style={styles.readyLabel}>Modes</Text><Text style={styles.readyValue}>{modes.split(',').length} modes · {difficulty === 'all' ? 'toutes difficultés' : difficulty}</Text></View></View>
           <View style={styles.readyDivider}/>
