@@ -5,6 +5,20 @@ import { Question, GameType, QuizQuestion, Challenge } from '@/types';
 
 /** Les banques historiques sont transformées en contenu pour les 4 modes officiels. */
 
+const canonicalGameCategory = (value: string): string => {
+  const key = String(value || '').trim().toLowerCase();
+  if (['personnages','personnage','jeunes','prophètes','prophète','disciples','rois','rois & prophètes'].includes(key)) {
+    return 'Personnages';
+  }
+  if (['jéhovah & la foi','foi','repentance','persévérance','fidélité','amour','humilité'].includes(key)) {
+    return 'Mieux connaître Jéhovah';
+  }
+  if (['que veulent dire ces versets ?','la bible et la science','prophéties','bible & enseignements','bible'].includes(key)) {
+    return 'Comprendre la Bible';
+  }
+  return 'Récits bibliques';
+};
+
 function compactGameText(value: string, max = 110): string {
   const text = String(value || '').replace(/\s+/g, ' ').trim();
   if (text.length <= max) return text;
@@ -35,6 +49,7 @@ function compactGameText(value: string, max = 110): string {
 function prepareQuiz(q: QuizQuestion): QuizQuestion {
   return {
     ...q,
+    category: canonicalGameCategory(q.category),
     question: compactGameText(q.question),
     answers: q.answers.map((a) => String(a).replace(/\s+/g, ' ').trim()),
   };
@@ -43,6 +58,7 @@ function prepareQuiz(q: QuizQuestion): QuizQuestion {
 function prepareMystery(q: Extract<Question, { type: 'mystery' }>) {
   return {
     ...q,
+    category: canonicalGameCategory(q.category),
     clues: q.clues.map((clue) => compactGameText(clue, 85)),
   };
 }
@@ -50,6 +66,7 @@ function prepareMystery(q: Extract<Question, { type: 'mystery' }>) {
 function prepareChallenge(q: Challenge): Challenge {
   return {
     ...q,
+    category: canonicalGameCategory(q.category),
     prompt: compactGameText(q.prompt, 120),
   };
 }
