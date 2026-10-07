@@ -369,7 +369,7 @@ export const chronologyQuestions: QuizQuestion[] = [
     answers: ['La reconstruction du temple de Jérusalem', 'Le retour des Juifs à Jérusalem', 'La reconstruction des murs de Jérusalem', 'La prise de Babylone'],
     correctAnswer: 0,
     explanation: 'La frise chronologique de JW.org situe la reconstruction du temple de Jérusalem en 515 av. n. è.',
-    reference: 'Frise chronologique de la Bible — JW.org',
+    reference: 'Esdras 6:14-15; Chronologie — JW.org',
   },
   {
     id: 'chrono-34',
@@ -380,7 +380,7 @@ export const chronologyQuestions: QuizQuestion[] = [
     answers: ['515 av. n. è.', '537 av. n. è.', '455 av. n. è.', '1027 av. n. è.'],
     correctAnswer: 0,
     explanation: 'La frise chronologique de JW.org situe la reconstruction du temple de Jérusalem en 515 av. n. è.',
-    reference: 'Frise chronologique de la Bible — JW.org',
+    reference: 'Esdras 6:14-15; Chronologie — JW.org',
   },
   {
     id: 'chrono-35',
