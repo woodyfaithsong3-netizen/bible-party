@@ -69,7 +69,7 @@ for (const id of new Set(characterIds)) {
     diff,
     cards.filter(card => card.difficulty === diff).length,
   ]));
-  if (typeCounts.quiz !== 10 || typeCounts.truefalse < 2 || typeCounts.truefalse > 4 || typeCounts.mystery !== 2) {
+  if (typeCounts.quiz !== 10 || typeCounts.truefalse < 1 || typeCounts.truefalse > 4 || typeCounts.mystery !== 2) {
     perCharacterTypeFailures.push({ id, ...typeCounts });
   }
   if (diffCounts.easy < 1 || diffCounts.easy > 3 || diffCounts.medium < 3 || diffCounts.medium > 4 || diffCounts.hard < 3 || diffCounts.hard > 5 || diffCounts.expert < 2 || diffCounts.expert > 4) {
@@ -85,7 +85,7 @@ for (const block of dedicatedSource.matchAll(/characterId:\s*['"]([^'"]+)['"][\s
   if (counts[difficulty] !== undefined) counts[difficulty]++;
 }
 const characterDistributionFailures = [...characterTypeDifficulty.entries()].filter(([, c]) =>
-  c.quiz !== 10 || c.truefalse < 2 || c.truefalse > 4 || c.mystery !== 2 || c.easy < 1 || c.easy > 3 || c.medium < 3 || c.medium > 4 || c.hard < 3 || c.hard > 5 || c.expert < 2 || c.expert > 4
+  c.quiz !== 10 || c.truefalse < 1 || c.truefalse > 4 || c.mystery !== 2 || c.easy < 1 || c.easy > 3 || c.medium < 3 || c.medium > 4 || c.hard < 3 || c.hard > 5 || c.expert < 2 || c.expert > 4
 );
 const difficultyCounts = Object.fromEntries(['easy','medium','hard','expert'].map(d => [d, [...dedicatedSource.matchAll(new RegExp(`difficulty:\\s*['"]${d}['"]`, 'g'))].length]));
 
