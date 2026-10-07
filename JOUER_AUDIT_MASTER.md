@@ -192,3 +192,7 @@ Contrôle ciblé des cartes modifiées : les réponses, explications et référe
 - La carte actuelle `char-l1-q-09-06` « Qui glana dans les champs de Boaz pour rapporter de la nourriture à Noémi ? » utilise **Noémi / Ruth / Débora / Abigaïl** : les quatre propositions sont féminines et le genre ne donne donc pas la réponse.
 - La carte `char-l1-q-09-05` est également factuelle et ne repose pas sur un indice de genre.
 - Aucun texte exact « Qui travailla comme glaneuse pour subvenir aux besoins de son foyer ? » n'a été retrouvé dans les banques de questions actuelles lors du contrôle GitHub ; ne pas modifier `characterLearning.ts` pour ce point.
+
+### Passe Mystère / anciens Time's Up — réponses trop génériques supprimées
+Le mode **Qui est-ce ?** ne doit pas faire deviner des concepts ou des éléments trop généraux. Quatre anciennes cartes Time's Up qui alimentaient le pool Mystère ont été retirées : `v57-t-017` (Parchemin), `v57-t-018` (Manteau), `v57-t-022` (Sang) et `v57-t-024` (Lumière). Les cartes restantes privilégient des personnages, lieux, livres, passages, événements ou objets bibliques suffisamment identifiables.
+- Commit : `0e9b4a6c40c1c5a1b38dff06aa59f36aa28c6219`
