@@ -118,3 +118,26 @@ Le moteur finalise désormais chaque carte avec une catégorie canonique parmi l
 
 ### Passe contexte — contrôle des formulations « quel récit / événement »
 Les occurrences repérées dans les banques auditées ont été examinées : elles comportent un événement, un personnage ou un contexte identifiable dans la question et les choix. Aucune occurrence du défaut « Quel récit est décrit ? » sans contexte n’a été conservée dans les lots inspectés.
+
+
+### Passe moteur — suppression de la troncature destructive
+Le moteur JOUER ne tronque plus les questions, affirmations V/F, indices Mystère ou prompts Défi au runtime. Les textes sont seulement normalisés sur les espaces ; la concision doit être corrigée dans les cartes elles-mêmes afin de ne jamais perdre un contexte biblique ou une partie logique.
+- Commit : `11b0299bc09fee87dd1456dfbc55de44625d00c6`
+
+### Passe Compléter les paroles
+- 40 cartes structurellement contrôlées : 4 réponses, index valide, réponses distinctes.
+- `complete-27` réalignée sur la formulation actuelle de Psaume 37:5 : « Laisse Jéhovah tracer ton chemin ; compte sur lui, et il… » → **agira en ta faveur**.
+- Commit : `db66a88832621381479b4439fc6c5434f90ea2fd`
+- Vérification : Psaume 37:5 sur JW.org confirme la formulation et la réponse. citeturn9search0
+
+### Passe Cantiques / chansons
+Les 18 cartes de cantiques et 18 cartes de chansons ont été comparées aux pages officielles JW.org correspondant aux titres utilisés par les cartes. Les formulations testées concordent avec les sources officielles ; elles restent à conserver comme cartes à validation éditoriale dans le registre.
+- Exemples vérifiés : Cantique 22, 38, 40, 49, 81, 134, 135, 154 et 26 ; chansons « J’ai confiance en toi », « J’ai foi ! », « Gloire à toi, ô Jéhovah ! », « Je puise toute ma force en toi », « La vraie vie », « Vis pour la vraie vie ! », « Vers qui d’autre aller ? », « Je ne peux pas me taire ! », « Approche-toi de moi » et « Je veux remercier Jéhovah ». citeturn4search8turn4search9turn4search1turn4search2turn4search3turn4search0turn4search11turn4search4turn4search5turn4search6turn5search5turn5search0turn5search1turn5search8turn5search9turn5search7turn5search6turn5search4turn5search3
+
+### Passe Chronologie
+Les 52 cartes sont structurellement présentes. Les dates principales 1473, 1117, 1070, 1037, 1027, 997, 607, 539, 537, 455, 29, 31, 32, 33, 36 et 70 concordent avec la frise chronologique officielle ; les cartes 515 ont reçu une référence plus précise vers Esdras/Chronologie JW.org.
+- Commit : `732ed190bdd9efd382395aa9abafcf75e7ab8897`
+- Source : frise chronologique officielle JW.org. citeturn6search0turn7search1
+
+### Passe qualité runtime
+Un scan des lots personnages a montré que l’ancienne compression runtime aurait tronqué des affirmations importantes ; cette cause a été supprimée avant de poursuivre l’audit éditorial.
