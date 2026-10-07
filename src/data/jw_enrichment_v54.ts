@@ -206,7 +206,7 @@ export const jwV54TimesUp: TimesUpQuestion[] = [
 {id:'v54-tu-001',type:'timesup',category:'Questions bibliques',difficulty:'easy',answer:'Le Royaume de Dieu',clues:['Gouvernement','Jésus','Prière'],reference:'Daniel 2:44; Matthieu 6:9-10'},
 {id:'v54-tu-002',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'easy',answer:'Psaume 23',clues:['Berger','Vallée','Protection'],reference:'Psaume 23:1-4'},
 {id:'v54-tu-003',type:'timesup',category:'La Bible et l’Histoire',difficulty:'medium',answer:'Cyrus',clues:['Perse','Décret','Jérusalem'],reference:'Esdras 1:1-4'},
-{id:'v54-tu-004',type:'timesup',category:'La Bible et la science',difficulty:'medium',answer:'Création',clues:['Commencement','Six jours','Adam et Ève'],reference:'Genèse 1:1–2:4'},
+{id:'v54-tu-004',type:'timesup',category:'Récits bibliques',difficulty:'medium',answer:'Adam et Ève',clues:['Éden','Premier couple','Genèse'],reference:'Genèse 2:7-25; 3:1-24'},
 {id:'v54-tu-005',type:'timesup',category:'Personnages',difficulty:'easy',answer:'David',clues:['Berger','Goliath','Roi'],reference:'1 Samuel 17:45-50; 2 Samuel 5:3-5'},
 {id:'v54-tu-006',type:'timesup',category:'Évangiles',difficulty:'easy',answer:'Jean le Baptiseur',clues:['Désert','Baptême','Préparer le chemin'],reference:'Matthieu 3:1-3'},
 {id:'v54-tu-007',type:'timesup',category:'Rois & prophètes',difficulty:'easy',answer:'Élie',clues:['Carmel','Baal','Prophète'],reference:'1 Rois 18:19-39'},
