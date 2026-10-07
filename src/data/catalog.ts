@@ -1,11 +1,10 @@
 import { Question, QuizQuestion } from '@/types';
-import { quizQuestions, mysteryQuestions, trueFalseQuestions, challenges, quoteQuestions, intruderQuestions, timesUpQuestions } from './questions';
+import { quizQuestions, mysteryQuestions, trueFalseQuestions, quoteQuestions, intruderQuestions, timesUpQuestions } from './questions';
 
 export const allGameQuestions: Question[] = [
   ...quizQuestions,
   ...mysteryQuestions,
   ...trueFalseQuestions,
-  ...challenges,
   ...quoteQuestions,
   ...intruderQuestions,
   ...timesUpQuestions,
