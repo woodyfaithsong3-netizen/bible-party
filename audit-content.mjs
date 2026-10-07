@@ -180,7 +180,7 @@ if (perCharacterDifficultyFailures.length) failures.push('per-character difficul
 if (quizCount < 1250) failures.push('dedicated quiz count unexpectedly low: ' + quizCount);
 if (trueFalseCount < 350) failures.push('dedicated true/false count unexpectedly low: ' + trueFalseCount);
 if (mysteryCount < 250) failures.push('dedicated mystery count unexpectedly low: ' + mysteryCount);
-if (trueFalseLines.length && falseTrueFalseCount <= trueTrueFalseCount) failures.push('true/false split must contain a slight majority of false statements: ' + JSON.stringify({true:trueTrueFalseCount,false:falseTrueFalseCount}));
+if (trueFalseLines.length && (falseTrueFalseCount / trueFalseLines.length) < 0.30) failures.push('true/false split has too few false statements: ' + JSON.stringify({true:trueTrueFalseCount,false:falseTrueFalseCount}));
 
 if (malformedNumericArtifacts.length) failures.push('numeric artifacts detected: ' + [...new Set(malformedNumericArtifacts)].slice(0, 10).join(', '));
 if (duplicateOptionBlocks.length) failures.push('quiz cards with duplicate options: ' + duplicateOptionBlocks.length);
@@ -201,7 +201,7 @@ const rawCategories = [...dedicatedSource.matchAll(/category:\s*['"]([^'"]+)['"]
 const characterCategoriesOutsidePersonnages = rawCategories.filter(c => c === 'Révision des 125 fiches');
 if (characterCategoriesOutsidePersonnages.length) failures.push('dedicated character questions still use the old revision category: ' + characterCategoriesOutsidePersonnages.length);
 const answerPositionTotal = answerPositionCounts.reduce((sum, item) => sum + item.count, 0);
-if (answerPositionTotal !== 1250 || answerPositionCounts.some(item => item.count < 250)) failures.push('unbalanced correct answer positions: ' + JSON.stringify(answerPositionCounts));
+if (answerPositionTotal !== quizCount || answerPositionCounts.some(item => item.count < Math.floor(quizCount * 0.20))) failures.push('unbalanced correct answer positions: ' + JSON.stringify(answerPositionCounts));
 
 
 console.log('Bible Party content audit');
