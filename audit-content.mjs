@@ -143,16 +143,16 @@ const semanticCharacterAnswerMismatches = semanticQuizRecords.filter(card =>
 );
 
 const malformedWhoAnswers = semanticQuizRecords.filter(card =>
-  /^(qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne)\\b/i.test(card.question) &&
-  /^(à|a)\\s+/i.test(card.answer)
+  /^(qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne)\b/i.test(card.question) &&
+  /^(à|a)\s+/i.test(card.answer)
 );
 const malformedDreamAnswers = semanticQuizRecords.filter(card =>
-  /^(quels rêves|quel rêve)\\b/i.test(card.question) &&
-  /^(à|a|pour|vers|dans)\\s+/i.test(card.answer)
+  /^(quels rêves|quel rêve)\b/i.test(card.question) &&
+  /^(à|a|pour|vers|dans)\s+/i.test(card.answer)
 );
-const metaExplanations = dedicatedSource.split('\\n').filter(line =>
+const metaExplanations = dedicatedSource.split('\n').filter(line =>
   /type:\s*['"]quiz['"]/.test(line) &&
-  /explanation:\s*['"](Examiner|Observer|Étudier|Etudier|Approfondir|Découvrir|Analyser|Comprendre)\\b/i.test(line)
+  /explanation:\s*['"](Examiner|Observer|Étudier|Etudier|Approfondir|Découvrir|Analyser|Comprendre)\b/i.test(line)
 );
 const duplicateQuestions = [...new Map(
   semanticQuizRecords.map(card => [card.question.trim().toLowerCase(), card])
