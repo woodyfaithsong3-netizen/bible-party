@@ -19,38 +19,11 @@ const canonicalGameCategory = (value: string): string => {
   return 'Récits bibliques';
 };
 
-function compactGameText(value: string, max = 110): string {
-  const text = String(value || '').replace(/\s+/g, ' ').trim();
-  if (text.length <= max) return text;
-
-  const questionLead = text.match(/^(Qui est-ce \?|Qui suis-je \?|À quel personnage[^?]*\?)/i);
-  if (questionLead) {
-    const rest = text.slice(questionLead[0].length).trim();
-    const sentence = rest.match(/^(.+?[.!?])(?:\s|$)/)?.[1]?.trim();
-    if (sentence && sentence.length <= max - questionLead[0].length - 1) {
-      return questionLead[0] + ' ' + sentence;
-    }
-    const comma = rest.indexOf(',');
-    if (comma >= 35 && comma <= max - questionLead[0].length - 1) {
-      return questionLead[0] + ' ' + rest.slice(0, comma).trim() + '.';
-    }
-  }
-
-  const sentence = text.match(/^(.+?[.!?])(?:\s|$)/)?.[1]?.trim();
-  if (sentence && sentence.length >= 35 && sentence.length <= max) return sentence;
-
-  const separators = [', ', '; ', ' — ', ' : '];
-  const cuts = separators.map((s) => text.indexOf(s, 45)).filter((n) => n > 0 && n <= max);
-  if (cuts.length) return text.slice(0, Math.min(...cuts)).trim() + ' ?';
-
-  return text.slice(0, max - 1).trimEnd() + '…';
-}
-
 function prepareQuiz(q: QuizQuestion): QuizQuestion {
   return {
     ...q,
     category: canonicalGameCategory(q.category),
-    question: compactGameText(q.question),
+    question: String(q.question || '').replace(/\s+/g, ' ').trim(),
     answers: q.answers.map((a) => String(a).replace(/\s+/g, ' ').trim()),
   };
 }
@@ -59,7 +32,7 @@ function prepareMystery(q: Extract<Question, { type: 'mystery' }>) {
   return {
     ...q,
     category: canonicalGameCategory(q.category),
-    clues: q.clues.map((clue) => compactGameText(clue, 85)),
+    clues: q.clues.map((clue) => String(clue || '').replace(/\s+/g, ' ').trim()),
   };
 }
 
@@ -67,7 +40,7 @@ function prepareChallenge(q: Challenge): Challenge {
   return {
     ...q,
     category: canonicalGameCategory(q.category),
-    prompt: compactGameText(q.prompt, 120),
+    prompt: String(q.prompt || '').replace(/\s+/g, ' ').trim(),
   };
 }
 
@@ -85,7 +58,7 @@ const integratedChallenges: Challenge[] = [
 export const GAME_CONTENT: Record<GameType, Question[]> = {
   quiz: integratedQuizQuestions.map(prepareQuiz),
   mystery: mysteryQuestions.map(prepareMystery),
-  truefalse: trueFalseQuestions.map((q) => ({ ...q, category: canonicalGameCategory(q.category), statement: compactGameText(q.statement, 100) })),
+  truefalse: trueFalseQuestions.map((q) => ({ ...q, category: canonicalGameCategory(q.category), statement: String(q.statement || '').replace(/\s+/g, ' ').trim() })),
   challenge: integratedChallenges.map(prepareChallenge),
 };
 
