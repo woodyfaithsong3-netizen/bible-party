@@ -141,3 +141,20 @@ Les 52 cartes sont structurellement présentes. Les dates principales 1473, 1117
 
 ### Passe qualité runtime
 Un scan des lots personnages a montré que l’ancienne compression runtime aurait tronqué des affirmations importantes ; cette cause a été supprimée avant de poursuivre l’audit éditorial.
+
+
+### Revalidation V/F — après correction des patches L2/L3
+Contrôle ciblé des cartes modifiées : les réponses, explications et références ont été relues après les corrections.
+- L2 : les 10 cartes modifiées sont maintenant cohérentes et en réponse vraie.
+- L3 : les 10 cartes modifiées sont maintenant en réponse vraie ; les références erronées introduites par le premier patch ont été corrigées (Zacharie, Malachie, Silas, Tite).
+- Dernier commit L3 : `695a64dccccb1559be001bdb2254e12d3577283f`
+- Dernier commit L2 : `684a9369fd7eb57ebcd483d6315e2107b5db9029`
+
+### Contrôles structurels V/F personnages
+- L1-L6 : **500 V/F** détectés.
+- Toutes les cartes contrôlées ont un booléen `answer`.
+- Les Quiz personnages L1-L6 représentent **1 250 cartes à 4 choix** ; aucune carte contrôlée n’a de nombre de réponses incorrect ou de `correctAnswer` hors limites.
+- Scan de fuite de réponse dans les Quiz L1-L6 : **0 fuite** détectée.
+- Scan Mystère L1-L6 : **0 carte avec moins de 3 indices** et **0 réponse présente dans un indice**.
+- Répartition V/F L1-L6 : **386 Vrai / 114 Faux**. Cette répartition est trop déséquilibrée pour être considérée comme idéale ; elle reste un point d’audit à traiter sans fabriquer de faux faits.
+- Les 500 cartes restent donc **non VALIDATED globalement** tant que leur exactitude sémantique et leurs références n’ont pas été couvertes.
