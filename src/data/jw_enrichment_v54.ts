@@ -198,12 +198,9 @@ export const jwV54Mystery: MysteryQuestion[] = [
 {id:'v54-m-008',type:'mystery',category:'Prophéties',difficulty:'medium',answer:'Jérémie',clues:['Nouvelle alliance','Prophète','Juda'],explanation:'Jérémie a annoncé une nouvelle alliance.',reference:'Jérémie 31:31-34'},
 {id:'v54-m-009',type:'mystery',category:'La Bible et l’Histoire',difficulty:'medium',answer:'Cyrus',clues:['Perse','Décret','Retour'],explanation:'Cyrus a autorisé le retour des Juifs à Jérusalem.',reference:'Esdras 1:1-4'},
 {id:'v54-m-010',type:'mystery',category:'La Bible et l’Histoire',difficulty:'medium',answer:'Babylone',clues:['Empire','Jérusalem','Exil'],explanation:'Babylone a détruit Jérusalem et emmené de nombreux Judéens en exil.',reference:'2 Rois 25:1-12'},
-{id:'v54-m-011',type:'mystery',category:'La Bible et la science',difficulty:'medium',answer:'Le cycle de l’eau',clues:['Job','Vapeur','Pluie'],explanation:'Job décrit la montée de l’eau et sa transformation en pluie.',reference:'Job 36:27-28'},
-{id:'v54-m-012',type:'mystery',category:'La Bible et la science',difficulty:'medium',answer:'L’hygiène',clues:['Loi','Camp','Santé'],explanation:'La Loi comportait des mesures concernant l’isolement et l’élimination des excréments.',reference:'Lévitique 13:1-5; Deutéronome 23:12-14'},
 ];
 
 export const jwV54TimesUp: TimesUpQuestion[] = [
-{id:'v54-tu-001',type:'timesup',category:'Questions bibliques',difficulty:'easy',answer:'Le Royaume de Dieu',clues:['Gouvernement','Jésus','Prière'],reference:'Daniel 2:44; Matthieu 6:9-10'},
 {id:'v54-tu-002',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'easy',answer:'Psaume 23',clues:['Berger','Vallée','Protection'],reference:'Psaume 23:1-4'},
 {id:'v54-tu-003',type:'timesup',category:'La Bible et l’Histoire',difficulty:'medium',answer:'Cyrus',clues:['Perse','Décret','Jérusalem'],reference:'Esdras 1:1-4'},
 {id:'v54-tu-004',type:'timesup',category:'Récits bibliques',difficulty:'medium',answer:'Adam et Ève',clues:['Éden','Premier couple','Genèse'],reference:'Genèse 2:7-25; 3:1-24'},
