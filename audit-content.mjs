@@ -187,6 +187,7 @@ if (duplicateOptionBlocks.length) failures.push('quiz cards with duplicate optio
 if (malformedQuestionStrings.length) failures.push('malformed quiz question strings: ' + malformedQuestionStrings.length);
 
 // Toutes les catégories affichées par le jeu doivent appartenir au catalogue éditorial.
+// CI smoke trigger: keep this audit deterministic.
 const allowedCategories = new Set([
   'Questions bibliques',
   'Que veulent dire ces versets ?',
