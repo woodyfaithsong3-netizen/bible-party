@@ -18,6 +18,7 @@ import { characterQuizQuestionsL4, characterTrueFalseQuestionsL4, characterMyste
 import { characterQuizQuestionsL5, characterTrueFalseQuestionsL5, characterMysteryQuestionsL5 } from './characterQuestionsL5';
 import { characterQuizQuestionsL6, characterTrueFalseQuestionsL6, characterMysteryQuestionsL6 } from './characterQuestionsL6';
 import { categoryQuizExpansion, categoryTrueFalseExpansion, categoryMysteryExpansion, categoryTimesUpExpansion, categoryQuoteExpansion, categoryIntruderExpansion, categoryChallengeExpansion } from './jwCategories';
+import { preachingTruthQuestions } from './preachingTruthQuestions';
 
 /**
  * Banque éditoriale V15.
@@ -1565,6 +1566,7 @@ mysteryQuestions.push(...jwV106Mystery);
 quizQuestions.push(...jwV107CharacterQuiz);
 mysteryQuestions.push(...jwV107Mystery);
 quizQuestions.push(...jwV108CharacterQuiz);
+quizQuestions.push(...preachingTruthQuestions);
 mysteryQuestions.push(...jwV108Mystery);
 trueFalseQuestions.push(...jwV105TrueFalse);
 mysteryQuestions.push(...jwV105Mystery);
