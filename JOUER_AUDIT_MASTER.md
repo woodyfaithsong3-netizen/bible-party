@@ -98,3 +98,8 @@ Contrôle automatisé des Quiz des lots personnages L1-L6 : les cartes dont la b
 - L1-L6 : aucune incohérence détectée entre `answer` et le début de l’explication Vrai/Faux.
 - Lots Quiz examinés : aucune carte contrôlée avec moins/plus de 4 réponses, index `correctAnswer` hors limites ou réponses identiques détectée.
 - Contrôle de contexte « Quel récit / quel événement » : les occurrences restantes examinées contiennent un contexte permettant d’identifier l’événement ; aucune occurrence du défaut « quel récit ? » sans récit décrit n’a été retrouvée dans L1-L6.
+
+
+### Passe doublons — Quiz
+Contrôle des formulations exactes normalisées sur les fichiers jouables audités : un seul doublon exact a été trouvé et corrigé.
+- `quiz-v50-actes-01` / `v105-q030` : même question sur Matthias ; `v105-q030` reformulée en « Quel apôtre a été ajouté aux Onze après la mort de Judas ? ».
