@@ -11,12 +11,10 @@ const sourceFiles = [
 ];
 const source = sourceFiles
   .map(file => fs.readFileSync(new URL(file, import.meta.url), 'utf8'))
-  .join('
-');
+  .join('\n');
 const dedicatedSource = sourceFiles.slice(1)
   .map(file => fs.readFileSync(new URL(file, import.meta.url), 'utf8'))
-  .join('
-');
+  .join('\n');
 
 const ids = [...source.matchAll(/id:\s*['"]([^'"+]+)['"]/g)]
   .map(m => m[1].trim())
@@ -95,19 +93,16 @@ const difficultyCounts = Object.fromEntries(['easy','medium','hard','expert'].ma
 const quizCount = [...dedicatedSource.matchAll(/type:\s*['"]quiz['"]/g)].length;
 const trueFalseCount = [...dedicatedSource.matchAll(/type:\s*['"]truefalse['"]/g)].length;
 const mysteryCount = [...dedicatedSource.matchAll(/type:\s*['"]mystery['"]/g)].length;
-const trueFalseLines = dedicatedSource.split('
-').filter(line => /type:\s*['"]truefalse['"]/.test(line));
+const trueFalseLines = dedicatedSource.split('\n').filter(line => /type:\s*['"]truefalse['"]/.test(line));
 const trueTrueFalseCount = trueFalseLines.filter(line => /answer:\s*true\b/.test(line)).length;
 const falseTrueFalseCount = trueFalseLines.filter(line => /answer:\s*false\b/.test(line)).length;
 const malformedNumericArtifacts = [...dedicatedSource.matchAll(/[A-Za-zÀ-ÿ]\d{3,}/g)].map(m => m[0]);
-const quizLines = dedicatedSource.split('
-').filter(line => /type:\s*['"]quiz['"]/.test(line));
+const quizLines = dedicatedSource.split('\n').filter(line => /type:\s*['"]quiz['"]/.test(line));
 const answerPositionCounts = [0,1,2,3].map(i => ({
   index: i,
   count: quizLines.filter(line => new RegExp(`correctAnswer:\\s*${i}(?:\\D|$)`).test(line)).length,
 }));
-const malformedQuestionStrings = dedicatedSource.split('
-').filter(line => line.includes('question:') && line.includes(', answers:')).filter(line => { 
+const malformedQuestionStrings = dedicatedSource.split('\n').filter(line => line.includes('question:') && line.includes(', answers:')).filter(line => { 
   const q = line.indexOf('question:');
   const a = line.indexOf(', answers:');
   const value = line.slice(q + 9, a).trim();
@@ -123,8 +118,7 @@ const duplicateOptionBlocks = quizBlocks.filter(m => {
 
 const personQuestionPattern = /^(qui|à qui|a qui|avec qui|quel personnage|quelle personne|quel prophète|quelle prophétesse|quel roi|quelle reine|quel homme|quelle femme|quel fils|quelle fille|quel apôtre|quel disciple|quel prêtre|quel juge|quel gouverneur|quel centurion|quel patriarche|quel chrétien|quelle chrétienne|quel collecteur|quel chef|quel commandant|quel compagnon|quel prédicateur|quel pharisien|quel rédempteur)\b/i;
 const nonPersonQuestionPattern = /^(où|d'où|dans quelle (ville|région|province|contrée|pays|fleuve|mer)|sur quoi|combien|qu'est-ce que|quelles conséquences|quel avertissement|quel événement|quel danger|quel défi|quel objet|quelle qualité|quel problème|quel rôle|quel poste|quel métier|quel âge|quel effet|quel sujet|quelles consignes|quels thèmes|quels signes|quel privilège|quelles difficultés|quel fleuve|quelle ville|quelles mesures|quelles réformes)\b/i;
-const semanticQuizRecords = dedicatedSource.split('
-')
+const semanticQuizRecords = dedicatedSource.split('\n')
   .filter(line => /type:\s*['"]quiz['"]/.test(line))
   .map(line => {
     const characterId = line.match(/characterId:\s*['"]([^'"]+)['"]/)?.[1] ?? '';
@@ -156,8 +150,7 @@ const malformedDreamAnswers = semanticQuizRecords.filter(card =>
   /^(quels rêves|quel rêve)\b/i.test(card.question) &&
   /^(à|a|pour|vers|dans)\s+/i.test(card.answer)
 );
-const metaExplanations = dedicatedSource.split('
-').filter(line =>
+const metaExplanations = dedicatedSource.split('\n').filter(line =>
   /type:\s*['"]quiz['"]/.test(line) &&
   /explanation:\s*['"](Examiner|Observer|Étudier|Etudier|Approfondir|Découvrir|Analyser|Comprendre)\b/i.test(line)
 );
