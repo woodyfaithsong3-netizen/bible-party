@@ -8,10 +8,9 @@ import { styles } from '@/theme/styles';
 const difficultyIcon = require('../../assets/images/ui/difficulty.png');
 
 const options = [
-  [20, 'Rapide', 'Une manche intense'],
-  [30, 'Classique', 'Le bon équilibre'],
-  [45, 'Grande soirée', 'Pour prendre son temps'],
-  [60, 'Marathon', 'La grande aventure'],
+  [10, 'Rapide', '10 questions'],
+  [20, 'Classique', '20 questions'],
+  [30, 'Grande partie', '30 questions'],
 ] as const;
 
 export default function DurationScreen() {
@@ -27,17 +26,17 @@ export default function DurationScreen() {
       <ScrollView style={styles.screen} contentContainerStyle={styles.flowContent}>
         <View style={styles.flowHeader}>
           <Pressable onPress={() => router.back()} style={styles.flowBack}><Text style={styles.flowBackText}>‹</Text></Pressable>
-          <View style={{ flex: 1 }}><Text style={styles.eyebrow}>NOUVELLE PARTIE</Text><Text style={styles.flowTitle}>Combien de temps ?</Text></View>
+          <View style={{ flex: 1 }}><Text style={styles.eyebrow}>NOUVELLE PARTIE</Text><Text style={styles.flowTitle}>Combien de questions ?</Text></View>
           <View style={styles.stepBadge}><Text style={styles.stepBadgeText}>02</Text></View>
         </View>
-        <Text style={styles.flowSubtitle}>Plus c’est long, plus c’est épique !</Text>
+        <Text style={styles.flowSubtitle}>Choisissez la taille de votre partie.</Text>
 
-        <Text style={styles.flowSection}>COMBIEN DE TEMPS ?</Text>
+        <Text style={styles.flowSection}>TAILLE DE LA PARTIE</Text>
         <View style={styles.durationChoiceGrid}>
           {options.map(([minutes, title, subtitle]) => (
             <Pressable key={minutes} onPress={() => setDuration(minutes)} style={[styles.durationChoice, duration === minutes && styles.durationChoiceActive]}>
               <Image source={difficultyIcon} style={{width:34,height:34,marginRight:8}} resizeMode="contain" />
-              <View style={{ flex: 1 }}><Text style={[styles.durationChoiceNumber, duration === minutes && { color: colors.bg }]}>{minutes}</Text><Text style={[styles.durationChoiceUnit, duration === minutes && { color: colors.bg }]}>MIN</Text></View>
+              <View style={{ flex: 1 }}><Text style={[styles.durationChoiceNumber, duration === minutes && { color: colors.bg }]}>{minutes}</Text><Text style={[styles.durationChoiceUnit, duration === minutes && { color: colors.bg }]}>QUESTIONS</Text></View>
               <View><Text style={[styles.durationChoiceTitle, duration === minutes && { color: colors.bg }]}>{title}</Text><Text style={[styles.durationChoiceSub, duration === minutes && { color: colors.bg }]}>{subtitle}</Text></View>
             </Pressable>
           ))}
@@ -45,13 +44,13 @@ export default function DurationScreen() {
 
         <View style={styles.autoWideCard}>
           <View style={styles.goldIcon}><Text style={{ color: colors.bg, fontWeight: '900' }}>✦</Text></View>
-          <View style={{ flex: 1 }}><Text style={styles.infoTitle}>Modes automatiques</Text><Text style={styles.infoSubtitle}>Quiz, défis, Qui est-ce ?, Vrai ou faux… tout se mélange.</Text></View>
+          <View style={{ flex: 1 }}><Text style={styles.infoTitle}>Modes automatiques</Text><Text style={styles.infoSubtitle}>Quiz, Vrai ou Faux, Qui est-ce ? et Complète les paroles se mélangent.</Text></View>
           <Text style={styles.autoText}>AUTO</Text>
         </View>
 
         <View style={styles.flowSummaryCard}>
           <Text style={styles.eyebrow}>VOTRE PARTIE</Text>
-          <Text style={styles.summaryBig}>{teamsCount} équipes  ·  {duration} min</Text>
+          <Text style={styles.summaryBig}>{teamsCount} équipes  ·  {duration} questions</Text>
           <Text style={styles.infoSubtitle}>{teams.split('|').join('  ·  ')}</Text>
         </View>
 
