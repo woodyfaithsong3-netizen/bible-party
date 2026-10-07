@@ -112,7 +112,7 @@ function buildTrueFalseDeck(): Question[] {
 export const GAME_CONTENT: Record<GameType, Question[]> = {
   quiz: integratedQuizQuestions.map(prepareQuiz),
   mystery: integratedMysteryQuestions.map(prepareMystery),
-  truefalse: trueFalseQuestions.map((q) => ({ ...q, category: canonicalGameCategory(q.category), statement: String(q.statement || '').replace(/\s+/g, ' ').trim() })),
+  truefalse: buildTrueFalseDeck(),
   complete: completeTheParolesQuestions.map(prepareQuiz),
 };
 
