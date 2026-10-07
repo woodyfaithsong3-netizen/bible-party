@@ -62,6 +62,53 @@ const completeTheParolesQuestions: QuizQuestion[] = [
   ...completeTheSongQuestions,
 ];
 
+const SUBJECTIVE_TRUE_FALSE_PATTERNS = [
+  /quelle qualité/i,
+  /qualité/i,
+  /manifeste(?:-t-il|-t-elle)?/i,
+  /manifeste la qualité/i,
+  /fait preuve de/i,
+  /preuve de (?:courage|foi|fidélité|endurance|patience|persévérance|générosité|humilité|compassion|zèle)/i,
+  /était (?:fidèle|courageux|courageuse|généreux|généreuse|humble|patient|patiente|persévérant|persévérante)/i,
+  /montre(?:-t-il|-t-elle)? .*?(?:courage|fidélité|foi|endurance|patience|générosité|humilité|compassion|zèle)/i,
+  /a montré .*?(?:courage|fidélité|foi|endurance|patience|générosité|humilité|compassion|zèle)/i,
+  /a manifesté .*?(?:courage|fidélité|foi|endurance|patience|générosité|humilité|compassion|zèle)/i,
+];
+
+function isObjectiveTrueFalse(q: Question): boolean {
+  if (q.type !== 'truefalse') return true;
+  return !SUBJECTIVE_TRUE_FALSE_PATTERNS.some((pattern) => pattern.test(String(q.statement || '')));
+}
+
+function prepareTrueFalse(q: Extract<Question, { type: 'truefalse' }>) {
+  return {
+    ...q,
+    category: canonicalGameCategory(q.category),
+    statement: String(q.statement || '').replace(/\s+/g, ' ').trim(),
+  };
+}
+
+function buildTrueFalseDeck(): Question[] {
+  const objective = trueFalseQuestions.filter(isObjectiveTrueFalse).map(prepareTrueFalse);
+  const truths = objective.filter((q) => q.answer);
+  const falses = objective.filter((q) => !q.answer);
+
+  // Les FAUX doivent être réellement présents dans les parties, sans supprimer
+  // définitivement les VRAI : on sélectionne une majorité de FAUX et on mélange
+  // les cartes à chaque nouvelle partie.
+  const maxTruths = Math.min(truths.length, Math.floor(falses.length * 0.8));
+  const selectedTruths = [...truths].sort(() => Math.random() - 0.5).slice(0, maxTruths);
+  const shuffledFalses = [...falses].sort(() => Math.random() - 0.5);
+  const deck: Question[] = [];
+  let ti = 0;
+  let fi = 0;
+  while (fi < shuffledFalses.length || ti < selectedTruths.length) {
+    for (let n = 0; n < 5 && fi < shuffledFalses.length; n += 1) deck.push(shuffledFalses[fi++]);
+    for (let n = 0; n < 4 && ti < selectedTruths.length; n += 1) deck.push(selectedTruths[ti++]);
+  }
+  return deck;
+}
+
 export const GAME_CONTENT: Record<GameType, Question[]> = {
   quiz: integratedQuizQuestions.map(prepareQuiz),
   mystery: integratedMysteryQuestions.map(prepareMystery),
