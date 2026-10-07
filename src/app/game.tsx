@@ -100,10 +100,9 @@ export default function GameScreen() {
       } else if (mode === 'quiz' && d.length > 1) {
         // Les nouveaux sous-pools éditoriaux doivent réellement apparaître en partie.
         // On les entremêle au début du paquet au lieu de les laisser noyés dans plusieurs
-        // milliers de cartes : chronologie, chansons, 34 vérités et versets à compléter.
+        // milliers de cartes : chronologie et 34 vérités.
         const specialBuckets = [
           d.filter(q => /^chrono-/.test(String(q.id))),
-          d.filter(q => /^song-/.test(String(q.id))),
           d.filter(q => /^appendice-a-/.test(String(q.id))),
         ].map(shuffle);
         const used = new Set<string>();
@@ -121,6 +120,21 @@ export default function GameScreen() {
             }
           }
           roundIndex += 1;
+        }
+        out[mode] = [...priority, ...shuffle(d.filter(q => !used.has(String(q.id))))];
+      } else if (mode === 'complete' && d.length > 1) {
+        // Complète les paroles doit montrer les deux familles du mode :
+        // versets bibliques connus + cantiques/chansons. On les alterne dès le
+        // début du paquet afin qu'une partie courte ne puisse pas passer à côté
+        // des chansons.
+        const verses = shuffle(d.filter(q => /^complete-/.test(String(q.id))));
+        const songs = shuffle(d.filter(q => /^song-/.test(String(q.id))));
+        const priority: Question[] = [];
+        const used = new Set<string>();
+        const max = Math.max(verses.length, songs.length);
+        for (let i = 0; i < max; i += 1) {
+          if (verses[i]) { priority.push(verses[i]); used.add(String(verses[i].id)); }
+          if (songs[i]) { priority.push(songs[i]); used.add(String(songs[i].id)); }
         }
         out[mode] = [...priority, ...shuffle(d.filter(q => !used.has(String(q.id))))];
       } else {
