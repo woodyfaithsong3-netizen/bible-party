@@ -178,3 +178,17 @@ Contrôle ciblé des cartes modifiées : les réponses, explications et référe
 - Le chronomètre résiduel de 10 secondes de l'ancien moteur a été supprimé de `src/app/game.tsx` : plus d'état, de deadline, d'intervalle ou de fonctions `startTimed/stopTimed` inutilisés.
 - Les 4 modes conservés restent sans durée chronométrée ; la taille de partie est uniquement 10 / 20 / 30 questions.
 - Commit : `0f44d707b175bc6b52875694cdb78ed32a7f2eb1`.
+
+### Validation runtime — sous-pools réellement jouables
+- Vérifié dans `src/data/gameContent.ts` : les 4 modes officiels alimentent bien `GAME_CONTENT` et `getGamePool`.
+- Vérifié dans `src/data/questions.ts` : `chronologyQuestions`, `preachingTruthQuestions`, `completeTheVerseQuestions` et `completeTheSongQuestions` sont intégrés à la banque Quiz ; ils ne sont donc pas uniquement présents dans des fichiers isolés.
+- Vérifié dans `src/app/game.tsx` : le paquet Quiz place explicitement les cartes `chrono-*` et `appendice-a-*` au début du paquet ; le paquet Complète les paroles alterne les cartes `complete-*` et `song-*`.
+- Vérifié dans `src/app/duration.tsx` : les trois formats de partie sont **10 questions / 20 questions / 30 questions**, sans durée en minutes.
+- Vérifié dans `src/app/game.tsx` : aucun ancien chronomètre de 10/30 secondes ne pilote les parties.
+- Le dernier commit contrôlé `527eaf77d8b090e81484ead05b0aa4f05cf1a9c0` est **VERT** sur CI et GitHub Pages.
+- Ces points sont désormais considérés comme **VALIDATED** et ne doivent pas être ré-audités sauf modification des fichiers concernés.
+
+### Contrôle ciblé Quiz — Ruth
+- La carte actuelle `char-l1-q-09-06` « Qui glana dans les champs de Boaz pour rapporter de la nourriture à Noémi ? » utilise **Noémi / Ruth / Débora / Abigaïl** : les quatre propositions sont féminines et le genre ne donne donc pas la réponse.
+- La carte `char-l1-q-09-05` est également factuelle et ne repose pas sur un indice de genre.
+- Aucun texte exact « Qui travailla comme glaneuse pour subvenir aux besoins de son foyer ? » n'a été retrouvé dans les banques de questions actuelles lors du contrôle GitHub ; ne pas modifier `characterLearning.ts` pour ce point.
