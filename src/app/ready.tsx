@@ -16,9 +16,9 @@ const params = useLocalSearchParams<{ teams?: string; teamsCount?: string; durat
   const teams = String(params.teams || 'Équipe David|Équipe Paul');
   const teamsCount = Number(params.teamsCount || teams.split('|').length || 2);
   const duration = Number(params.duration || 20);
-  const allowedModes = new Set(['quiz', 'mystery', 'truefalse', 'challenge']);
+  const allowedModes = new Set(['quiz', 'mystery', 'truefalse', 'complete']);
   const requestedModes = String(params.modes || '').split(',').filter((mode): mode is string => allowedModes.has(mode));
-  const modes = requestedModes.length ? requestedModes.join(',') : 'quiz,mystery,truefalse,challenge';
+  const modes = requestedModes.length ? requestedModes.join(',') : 'quiz,mystery,truefalse,complete';
   const categories = String(params.categories || '');
   const difficulty = String(params.difficulty || 'all');
 
@@ -38,7 +38,7 @@ const params = useLocalSearchParams<{ teams?: string; teamsCount?: string; durat
         </View>
 
         <View style={styles.readyHero}>
-          <View style={styles.readyCards}><Image source={require('../../assets/images/ui/question.png')} style={{width:42,height:42}} resizeMode="contain"/><Image source={starIcon} style={{width:42,height:42}} resizeMode="contain"/><Image source={require('../../assets/images/ui/bolt.png')} style={{width:42,height:42}} resizeMode="contain"/></View>
+          <View style={styles.readyCards}><Image source={require('../../assets/images/ui/question.png')} style={{width:42,height:42}} resizeMode="contain"/><Image source={starIcon} style={{width:42,height:42}} resizeMode="contain"/><Image source={cardIcon} style={{width:42,height:42}} resizeMode="contain"/></View>
           <View style={styles.readySpark}><Text style={{ color: colors.accent2, fontSize: 34 }}>✦</Text></View>
         </View>
 
