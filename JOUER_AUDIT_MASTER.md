@@ -19,7 +19,7 @@ Une carte VALIDATED ne doit plus être relue intégralement tant qu'elle n'a pas
 - [ ] P2 contrôles structurels
 - [ ] P3 Quiz complet, conversions comprises
 - [ ] P4 Vrai/Faux complet
-- [ ] P5 Défi / Time's Up complet
+- [ ] P5 Défi / Time's Up — sources historiques retirées du gameplay direct ; bonnes cartes redistribuées dans les modes conservés
 - [ ] P6 Mystère complet
 - [ ] P7 Compléter les paroles
 - [ ] P8 Cantiques/chansons vérifiés sur sources officielles
@@ -156,5 +156,20 @@ Contrôle ciblé des cartes modifiées : les réponses, explications et référe
 - Les Quiz personnages L1-L6 représentent **1 250 cartes à 4 choix** ; aucune carte contrôlée n’a de nombre de réponses incorrect ou de `correctAnswer` hors limites.
 - Scan de fuite de réponse dans les Quiz L1-L6 : **0 fuite** détectée.
 - Scan Mystère L1-L6 : **0 carte avec moins de 3 indices** et **0 réponse présente dans un indice**.
-- Répartition V/F L1-L6 : **386 Vrai / 114 Faux**. Cette répartition est trop déséquilibrée pour être considérée comme idéale ; elle reste un point d’audit à traiter sans fabriquer de faux faits.
+- Ancienne répartition 500 cartes : **386 Vrai / 114 Faux**. Cette banque a depuis été éditorialement nettoyée : les V/F subjectifs sur les qualités ont été retirés, et le moteur de jeu impose désormais un mélange avec une légère majorité de FAUX (3 FAUX / 2 VRAI dans le paquet joué).
 - Les 500 cartes restent donc **non VALIDATED globalement** tant que leur exactitude sémantique et leurs références n’ont pas été couvertes.
+
+
+### Refonte JOUER — modes et taille des parties
+- Le gameplay officiel est désormais limité à **4 modes** : **Quiz**, **Vrai ou Faux**, **Qui est-ce ?**, **Complète les paroles**.
+- Les anciens **Défi 10 s / 30 s** ne sont plus exposés comme modes jouables ; leurs contenus historiques restent auditables mais ne sont plus distribués comme mode autonome.
+- **Complète les paroles** contient deux familles : **40 versets bibliques** + **36 cantiques/chansons**.
+- Les parties n'affichent plus une durée en minutes : elles proposent **10 / 20 / 30 questions**.
+- Le moteur force l'apparition des sous-pools **Chronologie** et **34 vérités** dans le début du paquet Quiz, et alterne les familles versets/chansons dans Complète les paroles.
+- Commit de cette refonte : `faf8cc508fb0011b8b944cd42e72b6aa879558e5`.
+
+### Recontrôle V/F — suppression des qualités subjectives
+- Scan ciblé des V/F personnages L1-L6 sur les formulations de type « qualité », « fait preuve de », « manifeste », « courage/fidélité/endurance/etc. » : **0 occurrence restante** dans les cartes `truefalse` des six banques personnages.
+- Les cartes restantes portent sur des faits bibliques vérifiables ; aucune carte subjective de ce type n'a été trouvée lors du scan.
+- Commit : `faf8cc508fb0011b8b944cd42e72b6aa879558e5`.
+- CI et GitHub Pages : **VERT** sur ce commit.
