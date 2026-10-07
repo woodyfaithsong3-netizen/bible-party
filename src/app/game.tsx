@@ -83,7 +83,21 @@ export default function GameScreen() {
       let p = pool;
       if (selectedCategories.length) p = p.filter(q => selectedCategories.includes(normalizeQuestionCategory(q)) || (false));
       const d = difficulty === 'all' ? p : p.filter(q => q.difficulty === difficulty);
-      if (mode === 'quiz' && d.length > 1) {
+      if (mode === 'truefalse' && d.length > 1) {
+        // Les Vrai/Faux doivent offrir un mélange équilibré, avec une légère
+        // majorité de FAUX, au lieu de laisser les nombreuses cartes VRAI
+        // dominer les parties. Le contenu reste inchangé : seul l'ordre du
+        // paquet joué est équilibré.
+        const truths = shuffle(d.filter(q => q.type === 'truefalse' && q.answer));
+        const falses = shuffle(d.filter(q => q.type === 'truefalse' && !q.answer));
+        const balanced: Question[] = [];
+        let ti = 0; let fi = 0;
+        while (ti < truths.length || fi < falses.length) {
+          for (let n = 0; n < 3 && fi < falses.length; n += 1) balanced.push(falses[fi++]);
+          for (let n = 0; n < 2 && ti < truths.length; n += 1) balanced.push(truths[ti++]);
+        }
+        out[mode] = balanced;
+      } else if (mode === 'quiz' && d.length > 1) {
         // Les nouveaux sous-pools éditoriaux doivent réellement apparaître en partie.
         // On les entremêle au début du paquet au lieu de les laisser noyés dans plusieurs
         // milliers de cartes : chronologie, chansons, 34 vérités et versets à compléter.
