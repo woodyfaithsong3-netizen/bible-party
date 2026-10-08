@@ -226,3 +226,17 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - État : VALIDATED
 - Corrections : appendice-a-01 et appendice-a-33.
 - CI + GitHub Pages : verts.
+
+
+## SEM-COMP-001 — VALIDATED
+- Source : `src/data/completeTheVerseQuestions.ts`
+- SHA : `4b816932b661b07bcea440d0ef21e6134e66b924`
+- 76 cartes ; structure, réponses/index, doublons et fuites contrôlés.
+- État : VALIDATED ; CI + GitHub Pages verts.
+
+## SEM-V61-001 — VALIDATED
+- Source : `src/data/jw_enrichment_v61.ts`
+- SHA : `f41d4b7f55357fe5efaab9ebfae3db4c765c47e4`
+- 9 cartes : 1 Citation → Quiz + 8 Mystère → Qui est-ce ?.
+- État : VALIDATED ; indices, fuites, mots interdits, références et explications contrôlés.
+- CI + GitHub Pages verts.
