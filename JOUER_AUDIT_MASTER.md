@@ -271,3 +271,14 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - État : VALIDATED
 - Contrôles : structure, réponses, distracteurs, formulations, contexte, références et cohérence éditoriale contrôlés ; CI et GitHub Pages vertes sur le commit de registre.
 - Exceptions : aucune.
+
+### Bloc SEM-Q-001 — VALIDATED — 2026-10-08
+- Source : `src/data/questions.ts`
+- SHA source validé : `e962ce1ed2f3f6c1fc9aa7b7234273236b2571bd`
+- Périmètre : Quiz source `facts` + `extraFacts` = 79 cartes.
+- Recheck ciblé : 3 cartes corrigées (Makpéla, Jéricho, pièce dans le poisson).
+- Validation : les trois cartes modifiées ont été relues ; formulation, contexte, réponse, explication, référence, structure et distracteurs sont cohérents.
+- Exceptions : aucune.
+- CI : verte sur `813b69dd83dcea5982c80aa4b70103189458ca45`.
+- GitHub Pages : verte sur `813b69dd83dcea5982c80aa4b70103189458ca45`.
+- Règle : ne pas réauditer tant que le SHA source reste inchangé.
