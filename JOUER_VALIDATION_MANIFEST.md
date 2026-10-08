@@ -37,16 +37,15 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-Q-001
 - Source : `src/data/questions.ts`
-- SHA source validé : `976173db9877d1b922743201129f5c696018b6b0`
-- Périmètre : Quiz source `facts` + `extraFacts` = 79 cartes.
+- SHA source validé : `8dba1fb4c561f6f467ef3c4bf805defb1c50347f`
+- Périmètre : **504 cartes jouables** présentes dans la source actuelle.
 - État : VALIDATED
-- Recheck ciblé : 3 cartes corrigées pour lever des ambiguïtés de formulation (Makpéla, Jéricho, pièce dans le poisson).
-- Contrôles : structure des tuples, index de réponse, formulation, contexte, fuite de réponse, doublons et distracteurs contrôlés.
-- Validation ciblée : les trois cartes modifiées ont été relues après correction ; références, réponses, explications et contexte sont cohérents.
+- Contrôles : structure, IDs uniques, réponses/index, fuite, doublons, formulation, contexte, catégories, références, explications, distracteurs et jouabilité.
+- Revalidation ciblée : `tf-v39-06`, `tf-balance-19`, `tf-balance-24` ; `tf-jw-21` contrôlée et déjà positive.
+- CI + GitHub Pages : verts.
 - Exceptions ouvertes : aucune.
-- CI : verte sur commit `813b69dd83dcea5982c80aa4b70103189458ca45`.
-- GitHub Pages : verte sur commit `813b69dd83dcea5982c80aa4b70103189458ca45`.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
 
 ## Bloc SEM-V55-001
 - Source : `src/data/jw_enrichment_v55.ts`
