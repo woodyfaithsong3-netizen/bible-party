@@ -1,8 +1,7 @@
 import {
   intruderQuestions, mysteryQuestions, quizQuestions, quoteQuestions, timesUpQuestions, trueFalseQuestions,
 } from '@/data/questions';
-import { Question, GameType, QuizQuestion } from '@/types';
-import { Challenge } from '@/types';
+import { Challenge, GameType, Question, QuizQuestion } from '@/types';
 
 /** Les banques historiques sont transformées en contenu pour les 4 modes officiels. */
 
@@ -54,19 +53,7 @@ const integratedQuizQuestions: QuizQuestion[] = [
   ...intruderQuestions.map((q) => ({ id:q.id, type:'quiz' as const, category:q.category, difficulty:q.difficulty, question:'Quel élément est l’intrus ?', answers:q.items, correctAnswer:q.intruder, explanation:q.explanation, reference:q.reference })),
 ];
 
-const integratedMysteryQuestions = [
-  ...mysteryQuestions,
-  ...timesUpQuestions.map((q) => ({
-    id: q.id,
-    type: 'mystery' as const,
-    category: q.category,
-    difficulty: q.difficulty,
-    answer: q.answer,
-    clues: q.clues,
-    explanation: 'Les trois indices convergent vers cette réponse biblique.',
-    reference: q.reference,
-  })),
-];
+const integratedMysteryQuestions = [...mysteryQuestions];
 
 const integratedChallenges: Challenge[] = [
   ...challenges,
@@ -75,7 +62,7 @@ const integratedChallenges: Challenge[] = [
     type: 'challenge' as const,
     category: q.category,
     difficulty: q.difficulty,
-    prompt: `Fais deviner ${q.answer} en utilisant ces indices : ${q.clues.join(', ')}.`,
+    prompt: `Fais deviner le personnage avec ces indices : ${q.clues.join(', ')}.`,
     seconds: 10,
     acceptedAnswers: [q.answer],
   })),
