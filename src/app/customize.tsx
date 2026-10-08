@@ -10,7 +10,7 @@ const modeOptions = [
   ['quiz', 'Quiz'],
   ['mystery', 'Qui est-ce ?'],
   ['truefalse', 'Vrai / Faux'],
-  ['complete', 'Complète les paroles'],
+  ['challenge', 'Défi'],
 ] as const;
 const difficultyOptions = [['all', 'Tous'], ['easy', 'Facile'], ['medium', 'Intermédiaire'], ['hard', 'Difficile'], ['expert', 'Expert']] as const;
 const modeIcon = require('../../assets/images/ui/card.png');
