@@ -50,10 +50,13 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-V55-001
 - Source : `src/data/jw_enrichment_v55.ts`
-- SHA source après corrections : `dc8522dfa8cf78e2e7b60a66180d39fe52dec012`
+- SHA source validé : `dc8522dfa8cf78e2e7b60a66180d39fe52dec012`
 - Périmètre réellement jouable : `v55-m-001`–`v55-m-008` (Qui est-ce ?), `v55-q-001`–`v55-q-008` (converties en Quiz), `v55-i-001`–`v55-i-008` (converties en Quiz) = **24 cartes jouables**.
 - Cartes non distribuées par `GAME_CONTENT` : `v55-c-001`–`v55-c-008` et `v55-d-001`–`v55-d-008` (présentes dans le fichier source mais hors pool actuellement jouable).
-- État : CHECKING
+- État : VALIDATED
 - Corrections ciblées : `v55-q-006` (question rendue exacte par rapport à la réponse) ; `v55-i-002` (intrus rendu non ambigu : trois psaumes contre le récit de Genèse 37).
 - Contrôles éditoriaux : 24 cartes jouables relues pour contexte, réponse, références, distracteurs, formulation, fuite de réponse et doublons.
-- Exceptions ouvertes : aucune identifiée à ce stade.
+- Exceptions ouvertes : aucune.
+- CI : verte sur commit `e328001239d1795af2097a7776d7974bef3bc4eb`.
+- GitHub Pages : verte sur commit `e328001239d1795af2097a7776d7974bef3bc4eb`.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
