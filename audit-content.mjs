@@ -168,6 +168,76 @@ if (answerPositionTotal !== quizCount || answerPositionCounts.some(item => item.
   failures.push('unbalanced correct answer positions: ' + JSON.stringify(answerPositionCounts));
 }
 
+
+/**
+ * Routage exhaustif : chaque banque de cartes exportée doit atteindre un
+ * pool réellement jouable. Les cartes historiques peuvent être transformées
+ * (citation/intrus/chronologie/Time's Up -> Quiz ou Mystère), mais leur banque
+ * source doit obligatoirement être référencée par le pipeline de gameplay.
+ */
+const playableSourceFiles = [
+  './src/data/jw_enrichment_v53.ts',
+  './src/data/jw_enrichment_v54.ts',
+  './src/data/jw_enrichment_v55.ts',
+  './src/data/jw_enrichment_v56.ts',
+  './src/data/jw_enrichment_v57.ts',
+  './src/data/jw_enrichment_v58.ts',
+  './src/data/jw_enrichment_v61.ts',
+  './src/data/jw_enrichment_v104.ts',
+  './src/data/jw_enrichment_v105.ts',
+  './src/data/jw_enrichment_v106_characters.ts',
+  './src/data/jw_enrichment_v107_characters.ts',
+  './src/data/jw_enrichment_v108_characters.ts',
+  './src/data/jwCategories.ts',
+  './src/data/chronologyQuestions.ts',
+  './src/data/preachingTruthQuestions.ts',
+  './src/data/completeTheVerseQuestions.ts',
+  './src/data/characterQuestionsL1.ts',
+  './src/data/characterQuestionsL2.ts',
+  './src/data/characterQuestionsL3.ts',
+  './src/data/characterQuestionsL4.ts',
+  './src/data/characterQuestionsL5.ts',
+  './src/data/characterQuestionsL6.ts',
+];
+const routingQuestions = fs.readFileSync(new URL('./src/data/questions.ts', import.meta.url), 'utf8');
+const routingGameContent = fs.readFileSync(new URL('./src/data/gameContent.ts', import.meta.url), 'utf8');
+const routingCode = routingQuestions + '\n' + routingGameContent;
+const exportedCardBanks = [];
+const routedBankNames = new Set();
+for (const file of playableSourceFiles) {
+  const sourceText = fs.readFileSync(new URL(file, import.meta.url), 'utf8');
+  const exportsInFile = [...sourceText.matchAll(/export const\s+([A-Za-z0-9_]+)\s*(?::\s*[^=]+)?=/g)]
+    .map(match => match[1])
+    .filter(name => /(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|character)/i.test(name));
+  for (const name of exportsInFile) {
+    const idsInFile = [...sourceText.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)].map(match => match[1]);
+    if (!idsInFile.length) continue;
+    exportedCardBanks.push({ file, name, cardCount: idsInFile.length });
+    const occurrences = routingCode.match(new RegExp('\\b' + name + '\\b', 'g')) || [];
+    if (occurrences.length >= 2) routedBankNames.add(name);
+  }
+}
+const unroutedCardBanks = exportedCardBanks.filter(bank => !routedBankNames.has(bank.name));
+const sourceIds = [];
+for (const bank of exportedCardBanks) {
+  const sourceText = fs.readFileSync(new URL(bank.file, import.meta.url), 'utf8');
+  for (const match of sourceText.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)) sourceIds.push(match[1]);
+}
+const sourceIdCounts = new Map();
+for (const id of sourceIds) sourceIdCounts.set(id, (sourceIdCounts.get(id) ?? 0) + 1);
+const duplicateSourceIds = [...sourceIdCounts.entries()].filter(([, count]) => count > 1);
+if (unroutedCardBanks.length) {
+  failures.push('unrouted playable source banks: ' + unroutedCardBanks.map(bank => bank.name + ' (' + bank.cardCount + ')').join(', '));
+}
+if (duplicateSourceIds.length) {
+  failures.push('duplicate source card ids across playable banks: ' + duplicateSourceIds.map(([id, count]) => id + ' x' + count).join(', '));
+}
+if (!exportedCardBanks.length) failures.push('global playability audit found no exported card banks');
+
+console.log('- Global playable source banks:', exportedCardBanks.length);
+console.log('- Unrouted source banks:', unroutedCardBanks.length);
+console.log('- Source card IDs audited:', sourceIds.length);
+
 console.log('Bible Party content audit');
 console.log('- ID occurrences:', ids.length);
 console.log('- References:', references.length);
