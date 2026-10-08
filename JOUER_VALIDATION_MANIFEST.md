@@ -76,7 +76,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `71f51497ad83aa8cb06e2cdc42806199433de3b8`
+- SHA source validé : `429938f7e59dee286fdda4722f2489bceb27a06b`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -99,7 +99,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `216c6b79830b95d2bc7bfa853f7b254c8d096e46`
+- SHA source validé : `ed1c66c09c2a40de2632ca509b2c753a05e715bd`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -110,7 +110,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `ddd24c32cab94f496a5930b3055447fafad645e1`
+- SHA source validé : `9ba7d0ef7982f44f16aa37ff909510422a76c182`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -132,7 +132,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`
+- SHA source validé : `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -303,7 +303,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 
 ## Revalidation éditoriale ciblée V/F L1 — 2026-10-09
-- SHA final : `71f51497ad83aa8cb06e2cdc42806199433de3b8`.
+- SHA final : `429938f7e59dee286fdda4722f2489bceb27a06b`.
 - Les 43 cartes Vrai/Faux L1 qui utilisaient une explication générique ont reçu une explication factuelle et des références plus précises.
 - Correction factuelle majeure : `char-l1-tf-13-2` ne présente plus Élie comme servant au tabernacle de Silo ; la formulation situe correctement son ministère dans le royaume d’Israël.
 - Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L1.
@@ -312,7 +312,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 
 ## Revalidation éditoriale ciblée V/F L2 — 2026-10-09
-- SHA final : `216c6b79830b95d2bc7bfa853f7b254c8d096e46`.
+- SHA final : `ed1c66c09c2a40de2632ca509b2c753a05e715bd`.
 - Les 37 cartes Vrai/Faux L2 qui utilisaient une explication générique ont reçu une explication factuelle et des références ajustées aux faits énoncés.
 - Corrections supplémentaires : `char-l2-tf-39-1` reformulée en affirmation directe vraie sur Balak ; `char-l2-tf-33-3` réparée, car sa formulation était matériellement tronquée au milieu du mot « avertissement ».
 - Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L2.
@@ -328,7 +328,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Commits source : `ae09dde3e4998a7832695a36696703bdb24472f3`, `312516e5441d81b9a2d7cf9421765c964f44339e`.
 - Les cartes modifiées ont été relues individuellement ; les autres cartes du bloc conservent leur validation antérieure.
 
-- Dernière mise à jour du SHA L3 après la correction des sept explications restantes : `ddd24c32cab94f496a5930b3055447fafad645e1`.
+- Dernière mise à jour du SHA L3 après la correction des sept explications restantes : `9ba7d0ef7982f44f16aa37ff909510422a76c182`.
 
 
 ## Corrections de formulation complémentaires — 2026-10-09
@@ -336,11 +336,11 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - L2 : `char-l2-tf-27-2` corrigée pour l’accord et la formulation de Marie Madeleine.
 - L3 : `char-l3-tf-42-2` reformulée autour d’un fait localisable et d’une référence directe.
 - L6 Quiz : `char-l6-q-120-8` ne demande plus « dans un contexte associé » ; la question précise désormais qu’il s’agit de l’assemblée saluée chez Priscille et Aquila.
-- SHA finaux actualisés : L1 `71f51497ad83aa8cb06e2cdc42806199433de3b8`, L2 `216c6b79830b95d2bc7bfa853f7b254c8d096e46`, L3 `ddd24c32cab94f496a5930b3055447fafad645e1`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
+- SHA finaux actualisés : L1 `429938f7e59dee286fdda4722f2489bceb27a06b`, L2 `ed1c66c09c2a40de2632ca509b2c753a05e715bd`, L3 `9ba7d0ef7982f44f16aa37ff909510422a76c182`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
 
 
 ## Revalidation ciblée Quiz L5 — Évodie / Épaphrodite — 2026-10-09
-- SHA final `src/data/characterQuestionsL5.ts` : `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`.
+- SHA final `src/data/characterQuestionsL5.ts` : `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`.
 - `char-l5-q-87-1` : corrigée, car plusieurs propositions pouvaient correspondre à « une chrétienne de Philippes » ; la question demande maintenant quelle chrétienne Paul exhorta à être en accord avec Syntyche, avec quatre distracteurs féminins plausibles.
 - `char-l5-q-87-10` : corrigée, car la formulation demandait une activité alors que les réponses étaient des personnes.
 - `char-l5-q-88-1` et `char-l5-q-88-4` : le contexte ne repose plus sur « cet homme » ; Épaphrodite est nommé dans la question.
@@ -351,17 +351,23 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 ## Revalidation de contexte autonome Quiz L5-L6 — 2026-10-09
 - L5 : `char-l5-q-100-7` nomme désormais Amos au lieu de supposer que le joueur sait qui est « ce prophète ».
 - L6 : `char-l6-q-111-1`, `111-2`, `111-6`, `111-8` nomment la femme qui souffrait de pertes de sang ; `char-l6-q-112-2` et `112-10` nomment l’homme délivré dans la région des Géraséniens. Chaque question est maintenant compréhensible isolément.
-- SHA finaux : L5 `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
+- SHA finaux : L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
 - Commit source : `7dcaf657e5fc153e6c92ef7d8a3841d39e9e0189`.
 
 
 ## Revalidation des doublons conceptuels L5 — 2026-10-09
 - `char-l5-q-87-1` demande maintenant quel problème Paul demanda à Évodie et Syntyche de régler, au lieu de demander simplement quelle chrétienne était de Philippes (plusieurs réponses pouvaient convenir).
 - `char-l5-q-88-10` demande désormais comment Paul décrivit Épaphrodite, ce qui supprime le doublon conceptuel avec `char-l5-q-88-8` sur la raison de l’accueillir avec joie.
-- SHA L5 final : `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7` ; commit de cette passe à suivre dans l’historique Git.
+- SHA L5 final : `22cd3ee007b71a3e25d5225399e5db4fdd1820f3` ; commit de cette passe à suivre dans l’historique Git.
 
 
 ## Revalidation éditoriale V/F L4-L5 — cartes de localisation — 2026-10-09
 - L4 : cinq affirmations corrigées pour remplacer les formulations vagues « est lié à » par des faits bibliques précis sur Jacques fils d’Alphée, Simon le Zélote, la fille de Jaïrus, Bartimée et la Samaritaine ; références directes conservées ou ajustées.
 - L5 : dix-huit affirmations corrigées pour remplacer les formulations répétitives « est lié à » et les explications génériques par des faits vérifiables concernant le centurion de Capernaüm, Félix, Festus, Agrippa II, Bérénice, Phœbé, Évodie, Épaphrodite, Naamân, Ézéchias, Josias, Josaphat, Jonas, Saül, Manoa, Sophonie, Habacuc et Amos.
-- SHA finaux : L4 `b9d9c3c1883e2c217cce5417d309da2aebcd6632`, L5 `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`.
+- SHA finaux : L4 `b9d9c3c1883e2c217cce5417d309da2aebcd6632`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`.
+
+
+## Revalidation V/F — reformulation des cartes de localisation L1-L3 et L5 — 2026-10-09
+- 56 affirmations de localisation ont été reformulées en faits bibliques directs, sans la tournure répétitive « est associé à / est lié à » : L1 17 cartes, L2 19, L3 18, L5 2.
+- Les explications et références spécifiques ajoutées dans la passe précédente sont conservées ; les affirmations sont désormais autonomes et plus naturelles pour une partie rapide.
+- SHA finaux : L1 `429938f7e59dee286fdda4722f2489bceb27a06b`, L2 `ed1c66c09c2a40de2632ca509b2c753a05e715bd`, L3 `9ba7d0ef7982f44f16aa37ff909510422a76c182`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`.
