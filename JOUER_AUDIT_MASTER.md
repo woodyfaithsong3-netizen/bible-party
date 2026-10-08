@@ -397,3 +397,67 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Résultats finaux : 395 cartes ; aucune anomalie structurelle résiduelle ; CI et GitHub Pages vertes sur le commit source de clôture.
 - Exceptions ouvertes : aucune.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+## Blocs éditoriaux fermés — 2026-10-08 — V58 + V104-V108
+
+### Bloc SEM-V58-001 — VALIDATED
+- Source : `src/data/jw_enrichment_v58.ts`
+- SHA source validé : `c94576dc570223fb5601e62c4532a9a4bdb162bf`
+- Périmètre : 24 cartes jouables (Quiz, Mystère, Vrai/Faux).
+- État : VALIDATED
+- Contrôles : structure, IDs, réponses/index, fuite de réponse, formulations V/F, contexte, exactitude, références, indices Mystère et jouabilité.
+- Corrections ciblées : `v58-m-005`, `v58-tf-003`, `v58-tf-006`.
+- CI : verte sur le commit source de clôture.
+- GitHub Pages : build et déploiement verts sur le commit source de clôture.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+### Bloc SEM-V104-001 — VALIDATED
+- Source : `src/data/jw_enrichment_v104.ts`
+- SHA source validé : `9b10eb14e06d33470a565e77fc375b7461243aa5`
+- Périmètre : 40 cartes jouables.
+- État : VALIDATED
+- Contrôles : 4 réponses/index, fuite de réponse, doublons, formulations V/F, exactitude biblique, références, contexte et jouabilité.
+- Corrections ciblées : `v104-tf-008` et `v104-tf-012`, reformulées en affirmations directes.
+- CI et GitHub Pages : verts sur le commit source de clôture.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+### Bloc SEM-V105-001 — VALIDATED
+- Source : `src/data/jw_enrichment_v105.ts`
+- SHA source validé : `401397a34f80594232a321227f9c4e6d9b146ef4`
+- Périmètre : 42 cartes jouables.
+- État : VALIDATED
+- Contrôles : structure, réponses/index, fuite, doublons, formulation directe des V/F, exactitude, références, contexte et jouabilité.
+- Corrections ciblées : `v105-tf001`, `v105-tf004`, `v105-tf005`, `v105-tf008` et la référence de `v105-m002`.
+- CI et GitHub Pages : verts sur le commit source de clôture.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+### Bloc SEM-V106-001 — VALIDATED
+- Source : `src/data/jw_enrichment_v106_characters.ts`
+- SHA source validé : `f7a7bb36331075e1f01b9bbcca4cb211c011ae6e`
+- Périmètre : 60 cartes (50 Quiz + 10 Qui est-ce ?).
+- État : VALIDATED
+- Contrôles : structure, 4 choix/index, fuite, doublons, exactitude biblique, références, autonomie, indices Mystère et jouabilité.
+- Exceptions ouvertes : aucune.
+- CI et GitHub Pages : verts sur le commit source de clôture.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+### Bloc SEM-V107-001 — VALIDATED
+- Source : `src/data/jw_enrichment_v107_characters.ts`
+- SHA source validé : `d3fce104c0553b0b0d7851a2bb273e9a93009366`
+- Périmètre : 40 cartes (32 Quiz + 8 Qui est-ce ?).
+- État : VALIDATED
+- Contrôles : structure, réponses/index, fuite, doublons, exactitude biblique, références, contexte, indices Mystère et jouabilité.
+- Exceptions ouvertes : aucune.
+- CI et GitHub Pages : verts sur le commit source de clôture.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+### Bloc SEM-V108-001 — VALIDATED
+- Source : `src/data/jw_enrichment_v108_characters.ts`
+- SHA source validé : `b049cf4bf90aa6b607c4c507350aa1a117eda4aa`
+- Périmètre : 30 cartes (24 Quiz + 6 Qui est-ce ?).
+- État : VALIDATED
+- Contrôles : structure, réponses/index, fuite, doublons, exactitude biblique, références, contexte, indices Mystère et jouabilité.
+- Exceptions ouvertes : aucune.
+- CI et GitHub Pages : verts sur le commit source de clôture.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
