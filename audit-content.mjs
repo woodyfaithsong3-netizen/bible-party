@@ -133,7 +133,7 @@ const metaExplanations = dedicatedSource.split('\n').filter(line =>
 
 const normalizeEditorialText = value => value
   .normalize('NFD')
-  .replace(/[\\u0300-\\u036f]/g, '')
+  .replace(/[\u0300-\u036f]/g, '')
   .toLowerCase()
   .replace(/[’']/g, "'")
   .replace(/[^a-z0-9]+/g, ' ')

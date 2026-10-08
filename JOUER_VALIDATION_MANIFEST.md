@@ -395,7 +395,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 
 ## Garde-fous automatiques anti-doublon et anti-fuite — 2026-10-09
-- `audit-content.mjs` SHA : `139935c6daf70c13940493ffbeb6862732dae8e4`.
+- `audit-content.mjs` SHA : `PLACEHOLDER`.
 - Le contrôle de régression compare désormais les questions Quiz après normalisation des accents, apostrophes et ponctuation, puis signale les groupes de doublons.
 - Il vérifie aussi si la bonne réponse (4 caractères normalisés ou plus) est répétée littéralement dans sa propre question.
 - Contrôle local indépendant sur les 1 250 cartes Quiz personnages L1-L6 : 0 doublon normalisé et 0 fuite littérale détectés avant l’ajout de ces garde-fous.
