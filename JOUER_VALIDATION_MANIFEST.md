@@ -99,7 +99,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `0fe1be81674bbf026dab683ca0b21c829a0eef68`
+- SHA source validé : `819853f33520e6c2289430caa90b1758158d6091`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -145,7 +145,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `b45ce5764d4499fd8d6f9195cf99cb551b9e1ecc`
+- SHA source validé : `5aad89cd370a8119585f0bf05e799f881f881f7c`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses/index, références, contexte, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère, doublons, fuite de réponse et jouabilité.
@@ -292,3 +292,11 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Corrections : suppression des négations qui inversaient le sens d’affirmations marquées VRAI ; références corrigées pour Malachie et Gamaliel, références contextualisées pour Onésime et Philémon.
 - État : ces cinq cartes sont revalidées ; les autres cartes du bloc SEM-L3 conservent leur validation antérieure, sauf changement ultérieur de source.
 - Commit source : `03e77edcab21bebb400b353ac6793bbe13cebb88`.
+
+
+## Revalidation ciblée V/F — L2 et L6 — 2026-10-09
+- `char-l2-tf-39-1` : l’affirmation négative inversée sur Balak a été remplacée par une affirmation directe vraie ; réponse, explication et référence alignées sur Nombres 22:1-6.
+- `char-l6-tf-114-2` : formulation remplacée par le fait positif qu’Onésiphore rechercha Paul à Rome et le réconforta ; référence 2 Timothée 1:16-18.
+- SHA final L2 : `819853f33520e6c2289430caa90b1758158d6091` ; SHA final L6 : `5aad89cd370a8119585f0bf05e799f881f881f7c`.
+- Ces deux cartes ont été relues individuellement ; le reste de chaque bloc conserve son état antérieur, car seules ces cartes ont changé.
+- Commits source : `1faa6d4b87664487c2ee7e4bbbffbd2a8f135962`, `34abeab4bb2bf41718d8cc19205865e817147806`.
