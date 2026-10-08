@@ -363,7 +363,7 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
 ### Bloc SEM-L5-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `26583754e42558d7976bad9e71d40a17af82904e`
+- SHA source validé : `708930a93ef67e2c74f5b8597d09bd8439831468`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -524,6 +524,8 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
 - Contrôle complémentaire de jouabilité : `char-l6-q-120-8` a été reformulée pour préciser clairement le contexte de l’assemblée chez Priscille et Aquila ; la carte demeure dans le même bloc validé, avec revalidation ciblée et SHA actualisé.
 
-- Passe ciblée supplémentaire L5 : quatre Quiz sur Évodie/Épaphrodite corrigés pour supprimer l’ambiguïté de réponse, la fuite d’indice de genre et les formulations sans contexte nommé. SHA L5 courant : `26583754e42558d7976bad9e71d40a17af82904e`.
+- Passe ciblée supplémentaire L5 : quatre Quiz sur Évodie/Épaphrodite corrigés pour supprimer l’ambiguïté de réponse, la fuite d’indice de genre et les formulations sans contexte nommé. SHA L5 courant : `708930a93ef67e2c74f5b8597d09bd8439831468`.
 
 - Passe contexte autonome L5-L6 : 7 questions reformulées pour ne plus dépendre d’un antécédent absent de l’écran de jeu. Les questions nomment maintenant explicitement Amos, la femme qui souffrait de pertes de sang ou l’homme délivré dans la région des Géraséniens. SHA L5/L6 actualisés dans le manifest.
+
+- Déduplication conceptuelle ciblée L5 : `char-l5-q-87-1` rend la réponse unique et `char-l5-q-88-10` n’est plus une répétition de `char-l5-q-88-8`. SHA L5 : `708930a93ef67e2c74f5b8597d09bd8439831468`.

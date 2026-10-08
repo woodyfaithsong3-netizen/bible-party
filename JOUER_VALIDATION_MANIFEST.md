@@ -132,7 +132,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `26583754e42558d7976bad9e71d40a17af82904e`
+- SHA source validé : `708930a93ef67e2c74f5b8597d09bd8439831468`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -340,7 +340,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 
 ## Revalidation ciblée Quiz L5 — Évodie / Épaphrodite — 2026-10-09
-- SHA final `src/data/characterQuestionsL5.ts` : `26583754e42558d7976bad9e71d40a17af82904e`.
+- SHA final `src/data/characterQuestionsL5.ts` : `708930a93ef67e2c74f5b8597d09bd8439831468`.
 - `char-l5-q-87-1` : corrigée, car plusieurs propositions pouvaient correspondre à « une chrétienne de Philippes » ; la question demande maintenant quelle chrétienne Paul exhorta à être en accord avec Syntyche, avec quatre distracteurs féminins plausibles.
 - `char-l5-q-87-10` : corrigée, car la formulation demandait une activité alors que les réponses étaient des personnes.
 - `char-l5-q-88-1` et `char-l5-q-88-4` : le contexte ne repose plus sur « cet homme » ; Épaphrodite est nommé dans la question.
@@ -351,5 +351,11 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 ## Revalidation de contexte autonome Quiz L5-L6 — 2026-10-09
 - L5 : `char-l5-q-100-7` nomme désormais Amos au lieu de supposer que le joueur sait qui est « ce prophète ».
 - L6 : `char-l6-q-111-1`, `111-2`, `111-6`, `111-8` nomment la femme qui souffrait de pertes de sang ; `char-l6-q-112-2` et `112-10` nomment l’homme délivré dans la région des Géraséniens. Chaque question est maintenant compréhensible isolément.
-- SHA finaux : L5 `26583754e42558d7976bad9e71d40a17af82904e`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
+- SHA finaux : L5 `708930a93ef67e2c74f5b8597d09bd8439831468`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
 - Commit source : `7dcaf657e5fc153e6c92ef7d8a3841d39e9e0189`.
+
+
+## Revalidation des doublons conceptuels L5 — 2026-10-09
+- `char-l5-q-87-1` demande maintenant quel problème Paul demanda à Évodie et Syntyche de régler, au lieu de demander simplement quelle chrétienne était de Philippes (plusieurs réponses pouvaient convenir).
+- `char-l5-q-88-10` demande désormais comment Paul décrivit Épaphrodite, ce qui supprime le doublon conceptuel avec `char-l5-q-88-8` sur la raison de l’accueillir avec joie.
+- SHA L5 final : `708930a93ef67e2c74f5b8597d09bd8439831468` ; commit de cette passe à suivre dans l’historique Git.
