@@ -37,7 +37,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-Q-001
 - Source : `src/data/questions.ts`
-- SHA source validé : `e962ce1ed2f3f6c1fc9aa7b7234273236b2571bd`
+- SHA source validé : `976173db9877d1b922743201129f5c696018b6b0`
 - Périmètre : Quiz source `facts` + `extraFacts` = 79 cartes.
 - État : VALIDATED
 - Recheck ciblé : 3 cartes corrigées pour lever des ambiguïtés de formulation (Makpéla, Jéricho, pièce dans le poisson).
