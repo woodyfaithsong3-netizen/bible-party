@@ -73,3 +73,14 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Périmètre : 55 cartes, toutes jouables via les quatre modes officiels après transformations.
 - État : VALIDATED
 - Corrections ciblées : `v56-q-009`, `v56-i-006`.
+
+
+## Bloc SEM-L1-001
+- Source : `src/data/characterQuestionsL1.ts`
+- SHA source validé : `aa62897e063cc51b114d53371068fcdab388e8e6`
+- Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
+- État : VALIDATED
+- Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
+- Corrections ciblées : 10 cartes modifiées puis recontrôlées.
+- Exceptions ouvertes : aucune.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
