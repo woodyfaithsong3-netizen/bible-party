@@ -13,8 +13,8 @@ Ce fichier est le registre opérationnel des blocs éditoriaux validés. Une car
 - Exceptions ouvertes : aucune nouvelle exception confirmée après cette correction.
 - Clôture : contrôle éditorial complet effectué, CI verte et GitHub Pages verte confirmées.
 
-## Bloc suivant à auditer
-Le prochain bloc doit être identifié directement dans les pools jouables de JOUER. Ne pas reprendre SEM-V54-001 tant que son SHA reste `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25`.
+## Note historique — ordre d'audit initial (remplacée)
+Cette instruction est historique : les blocs suivants ont depuis été audités et consignés dans ce manifest. La source de vérité est la liste des blocs VALIDATED et leurs SHA actuels.
 
 ## Règles pour les autres IA
 1. Lire ce manifest et `JOUER_AUDIT_MASTER.md` avant tout audit.
@@ -37,7 +37,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-Q-001
 - Source : `src/data/questions.ts`
-- SHA source validé : `8dba1fb4c561f6f467ef3c4bf805defb1c50347f`
+- SHA source validé : `a8b94a251151f930645994ce86b0fd634b1c722a`
 - Périmètre : **504 cartes jouables** présentes dans la source actuelle.
 - État : VALIDATED
 - Contrôles : structure, IDs uniques, réponses/index, fuite, doublons, formulation, contexte, catégories, références, explications, distracteurs et jouabilité.
@@ -59,7 +59,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-V53-001
 - Source : `src/data/jw_enrichment_v53.ts`
-- SHA source validé : `c64b70b754c6d3c20ec4d396956730dc3c0c54a9`
+- SHA source validé : `dc99d9d3b4f66be7a0b82242275d16ade8baf6f2`
 - Périmètre : 141 cartes, toutes les familles V53 présentes dans le fichier.
 - État : VALIDATED
 - Corrections ciblées : `v53-q-038`, `v53-tf-011`, `v53-tf-015`.
@@ -241,8 +241,8 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - CI + GitHub Pages verts.
 
 
-### Revalidation ciblée — V/F négatifs — 2026-10-08
-- `src/data/questions.ts` — nouveau SHA `cf5e82c8f555b69651d192f62febb1b99eeb937d`.
+### Revalidation ciblée — V/F négatifs — 2026-10-08 (SHA historique, source remplacée depuis)
+- `src/data/questions.ts` — SHA de cette passe historique `cf5e82c8f555b69651d192f62febb1b99eeb937d` ; la source courante est `a8b94a251151f930645994ce86b0fd634b1c722a`, enregistrée dans SEM-Q-001.
 - Cartes corrigées et recontrôlées : `tf-v39-06`, `tf-balance-19`, `tf-balance-24`.
 - Les anciennes formulations négatives ont été remplacées par des affirmations directes vraies ; réponses et explications réalignées.
 - `tf-jw-21` était déjà sous sa forme positive dans le pool réellement jouable ; aucune modification nécessaire.
@@ -253,8 +253,8 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Les autres blocs VALIDATED restent inchangés et ne sont pas réaudités.
 
 
-## Revalidation finale des modifications V/F — 2026-10-08
-- `src/data/questions.ts` — SHA final validé : `cf5e82c8f555b69651d192f62febb1b99eeb937d`.
+## Revalidation finale des modifications V/F — 2026-10-08 (historique; SHA ensuite remplacé)
+- `src/data/questions.ts` — SHA de clôture à l'époque : `cf5e82c8f555b69651d192f62febb1b99eeb937d` ; ne pas le traiter comme le SHA courant, désormais suivi dans SEM-Q-001.
 - Cartes recontrôlées : `tf-v39-06`, `tf-balance-19`, `tf-balance-24`. Formulations directes, réponses, explications et références alignées.
 - `src/data/jw_enrichment_v53.ts` — SHA final validé : `dc99d9d3b4f66be7a0b82242275d16ade8baf6f2`.
 - Cartes recontrôlées : `v53-tf-008`, `v53-tf-018`, `v53-tf-040`. Formulations directes, réponses, explications et références alignées.
@@ -265,7 +265,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 ## Bloc SEM-ROUTING-GLOBAL-001 — VALIDATED — 2026-10-09
 - Sources : `src/data/questions.ts`, `src/data/gameContent.ts`, `src/app/game.tsx`, `audit-content.mjs`.
 - SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`.
-- SHA `audit-content.mjs` : `4db4030e44c6753af63ee5e4d32944fb41e03714`.
+- SHA `audit-content.mjs` : `d9b1591c0a8a085315c5fd57b63c3a3ac0eadbe9`.
 - Contrôle CI du commit `cdc2cb77544050b0c2e12ecef35f75c18ef42457` : 67 banques de cartes sources, 2 840 IDs de cartes audités, 2 840/2 840 cartes routées, 67/67 preuves de routage par banque, 151 banques importées/locales mappées, 0 banque sans route prouvée.
 - Contrôle moteur ajouté et exécuté : 7/7 handlers de rendu/validation présents, 4/4 libellés officiels présents.
 - Les quatre modes restent Quiz, Vrai / Faux, Qui est-ce ? et Compléter les paroles. Aucun mode officiel ajouté ou renommé.
@@ -400,3 +400,12 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Il vérifie aussi si la bonne réponse (4 caractères normalisés ou plus) est répétée littéralement dans sa propre question.
 - Contrôle local indépendant sur les 1 250 cartes Quiz personnages L1-L6 : 0 doublon normalisé et 0 fuite littérale détectés avant l’ajout de ces garde-fous.
 - Le statut de CI du commit de ce changement doit être confirmé dans les exécutions GitHub Actions avant de clore cette passe.
+
+
+## Revalidation ciblée SEM-Q-001 — doublons de questions — 2026-10-09
+- SHA courant de `src/data/questions.ts` : `a8b94a251151f930645994ce86b0fd634b1c722a`.
+- `quiz-v39-14` : reformulée avec le contexte du grand poisson et référence étendue à Jonas 1:17; 2:10; 3:1-5.
+- `v102-q-10` : transformée en question distincte sur l'attitude à adopter selon Jacques 1:6 ; réponses, explication et référence réalignées.
+- Le scan transversal actuel détecte **0 groupe de doublons normalisés** entre les questions extraites des banques jouables, et **0 fuite littérale de la bonne réponse** dans les 1 250 Quiz personnages.
+- SHA courant de `audit-content.mjs` : `d9b1591c0a8a085315c5fd57b63c3a3ac0eadbe9`.
+- CI et GitHub Pages : verts sur le commit de clôture de cette passe `0b2ca9950677a352d8e463c863d8475f1fda52f1`.

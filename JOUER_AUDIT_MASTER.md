@@ -13,25 +13,27 @@ Source de vérité unique pour l'audit exhaustif du contenu jouable. Périmètre
 ## Règle anti-répétition
 Une carte VALIDATED ne doit plus être relue intégralement tant qu'elle n'a pas changé. Si elle change, elle repasse RECHECK.
 
-## Phases
-- [ ] P0 inventaire exhaustif du vrai pool jouable
-- [ ] P1 registre/manifest anti-répétition
-- [ ] P2 contrôles structurels
-- [ ] P3 Quiz complet, conversions comprises
-- [ ] P4 Vrai/Faux complet
-- [ ] P5 Contrôle des anciennes sources Défi / Time's Up — hors modes officiels si non redistribuées
-- [ ] P6 Mystère complet
-- [ ] P7 Compléter les paroles
-- [ ] P8 Cantiques/chansons vérifiés sur sources officielles
-- [ ] P9 Chronologie
-- [ ] P10 contexte manquant
-- [ ] P11 doublons
-- [ ] P12 catégories
-- [ ] P13 qualité de jeu / longueur / fuite de réponse
-- [ ] P14 test du moteur des quatre modes
-- [ ] P15 audit transversal final
-- [ ] P16 CI verte
-- [ ] P17 GitHub Pages verte
+## Phases — état réconcilié au 2026-10-09
+- [x] P0 inventaire exhaustif du pool jouable actuel : 2 840 IDs dans 67 banques sources exportées.
+- [x] P1 registre/manifest anti-répétition, avec SHA courant par bloc.
+- [x] P2 contrôles structurels et IDs.
+- [x] P3 Quiz complet, conversions comprises ; 1 105 blocs Quiz détectés par l'audit automatisé.
+- [x] P4 Vrai/Faux : blocs éditoriaux fermés et contrôles de formulation/réponse.
+- [x] P5 anciennes sources Défi / Time's Up : contenu historique routé et contrôlé dans les modes officiels actuels.
+- [x] P6 Mystère / Qui est-ce ? : indices, mots interdits et réponses contrôlés dans les blocs consignés.
+- [x] P7 Compléter les paroles : 40 versets bibliques vérifiés.
+- [x] P8 Cantiques/chansons : 36 cartes comparées aux sources officielles recensées.
+- [x] P9 Chronologie : 52 cartes contrôlées.
+- [x] P10 contexte manquant : scan des formulations vagues et corrections ciblées.
+- [x] P11 doublons : doublons identifiés corrigés ; scan transversal courant à 0 groupe de questions dupliquées normalisées.
+- [x] P12 catégories canoniques appliquées aux cartes du moteur.
+- [x] P13 qualité de jeu : structure, contexte, références, formulations, fuites et concision contrôlés par blocs.
+- [x] P14 moteur des quatre modes : 7/7 handlers et 4/4 libellés contrôlés.
+- [x] P15 audit transversal : 67 banques, 2 840/2 840 cartes routées, 0 banque non routée, 0 doublon normalisé détecté par le scan transversal.
+- [x] P16 CI verte sur le commit `0b2ca9950677a352d8e463c863d8475f1fda52f1`.
+- [x] P17 GitHub Pages build/déploiement verts sur le même commit.
+
+**Portée du chiffre :** le dépôt courant prouve 2 840 IDs de cartes exportées et routées, pas 5 000 IDs distincts. Les éventuelles estimations historiques plus élevées ne sont pas corroborées par l'inventaire actuel.
 
 ## Contrôle individuel
 Quiz : autonomie, formulation, une seule bonne réponse, correctAnswer, quatre choix, distracteurs, explication, référence, catégorie, doublons, jouabilité.
@@ -42,8 +44,8 @@ Mystère : indices suffisants, réponse unique, explication/référence cohéren
 ## Journal
 Format : ID | ETAT | COMMIT | CHECKS | NOTE
 
-## État initial
-Aucune carte n'est déclarée artificiellement VALIDATED. Les anciens commits verts restent des preuves de contrôles déjà effectués, mais CI verte ne signifie pas validation éditoriale individuelle.
+## État initial (historique; supersédé)
+À la création du registre, aucune carte n'était encore déclarée VALIDATED. Les blocs éditoriaux VALIDATED sont maintenant consignés plus bas et dans `JOUER_VALIDATION_MANIFEST.md` avec leurs SHA.
 
 Règle absolue : ne jamais remettre à zéro les validations précédentes. 177 fiches officielles = hors périmètre.
 
@@ -252,7 +254,7 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
 ### Bloc SEM-Q-001 — VALIDATED — 2026-10-08
 - Source : `src/data/questions.ts`
-- SHA source validé : `8dba1fb4c561f6f467ef3c4bf805defb1c50347f`
+- SHA source validé : `a8b94a251151f930645994ce86b0fd634b1c722a`
 - Périmètre réellement audité : **504 cartes jouables** de la source actuelle.
 - État : VALIDATED.
 - Contrôles : IDs uniques, structure, réponses/index, fuite de réponse, doublons, formulation, contexte, catégories, références, explications, distracteurs et jouabilité.
@@ -275,7 +277,7 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
 ### Bloc SEM-V53-001 — VALIDATED
 - Source : `src/data/jw_enrichment_v53.ts`
-- SHA source validé : `c64b70b754c6d3c20ec4d396956730dc3c0c54a9`
+- SHA source validé : `dc99d9d3b4f66be7a0b82242275d16ade8baf6f2`
 - Périmètre : 141 cartes V53 : Quiz, Vrai/Faux, Mystère, Time's Up, citations, chronologie et intrus.
 - Contrôles : structure, réponses, exactitude biblique, formulation, contexte, fuite de réponse, références, distracteurs, catégories, doublons et jouabilité.
 - Corrections : `v53-q-038`, `v53-tf-011`, `v53-tf-015`.
@@ -549,3 +551,11 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - `audit-content.mjs` normalise désormais accents et ponctuation pour détecter les doublons conceptuellement identiques au niveau du texte, et vérifie que la réponse correcte n'est pas répétée littéralement dans sa question.
 - Scan préalable des 1 250 Quiz personnages sur leurs SHA courants : **0 doublon normalisé**, **0 fuite littérale**. Le contrôle est désormais conservé dans l'audit automatisé afin de prévenir les régressions futures.
 - La clôture de cette passe dépend de la confirmation CI + GitHub Pages sur le commit qui contient le nouveau garde-fou.
+
+
+### Clôture du scan transversal de doublons — 2026-10-09
+- Le premier essai du détecteur a confondu certaines réponses d'anciennes banques avec des questions ; le filtre a été corrigé pour ne comparer que les formulations interrogatives.
+- Deux doublons véritables ont été corrigés dans `src/data/questions.ts` : `quiz-v39-14` et `v102-q-10`.
+- Contrôle final CI : **0 groupe de doublons normalisés entre banques jouables**, **0 fuite littérale de la réponse correcte**, audit global **PASS**.
+- SHA courants : `questions.ts` `a8b94a251151f930645994ce86b0fd634b1c722a`; `audit-content.mjs` `d9b1591c0a8a085315c5fd57b63c3a3ac0eadbe9`.
+- CI + GitHub Pages : verts sur le commit `0b2ca9950677a352d8e463c863d8475f1fda52f1`.
