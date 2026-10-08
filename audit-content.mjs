@@ -285,7 +285,10 @@ if (!exportedCardBanks.length) failures.push('global playability audit found no 
 
 console.log('- Global playable source banks:', exportedCardBanks.length);
 console.log('- Unrouted source banks:', unroutedCardBanks.length);
-console.log('- Source card IDs audited:', sourceIds.length);\nconsole.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);\nconsole.log('- Unrouted imported/local card banks:', unroutedPipelineBanks.length);\n
+console.log('- Source card IDs audited:', sourceIds.length);
+console.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);
+console.log('- Unrouted imported/local card banks:', unroutedPipelineBanks.length);
+
 
 console.log('Bible Party content audit');
 console.log('- ID occurrences:', ids.length);
