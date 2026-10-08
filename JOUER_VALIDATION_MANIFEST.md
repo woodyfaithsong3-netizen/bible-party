@@ -110,7 +110,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `614f691ddb4ba9401de051238b3a5f98f66ce184`
+- SHA source validé : `6db9316faf9e32c62ad86cc86cd95a59a61b1a3d`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -284,3 +284,11 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - État : VALIDATED.
 - CI : verte (confirmée par l'utilisateur).
 - Exceptions : aucune connue.
+
+
+## Revalidation ciblée SEM-L3 — 2026-10-09
+- SHA final de `src/data/characterQuestionsL3.ts` : `6db9316faf9e32c62ad86cc86cd95a59a61b1a3d`.
+- Cinq cartes Vrai/Faux corrigées et relues individuellement : `char-l3-tf-53-1` (Malachie), `char-l3-tf-54-1` (Gamaliel), `char-l3-tf-57-1` (Onésime), `char-l3-tf-58-1` (Philémon), `char-l3-tf-59-1` (Tite).
+- Corrections : suppression des négations qui inversaient le sens d’affirmations marquées VRAI ; références corrigées pour Malachie et Gamaliel, références contextualisées pour Onésime et Philémon.
+- État : ces cinq cartes sont revalidées ; les autres cartes du bloc SEM-L3 conservent leur validation antérieure, sauf changement ultérieur de source.
+- Commit source : `03e77edcab21bebb400b353ac6793bbe13cebb88`.
