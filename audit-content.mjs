@@ -345,12 +345,12 @@ for (const file of playableSourceFiles) {
     const tupleSourceMatch = sourceDecl.exec(sourceText);
     if (!tupleSourceMatch) continue;
     const start = tupleSourceMatch.index;
-    const close = sourceText.indexOf('\\n];', start);
+    const close = sourceText.indexOf('\n];', start);
     if (close < 0) continue;
     const tupleText = sourceText.slice(start, close + 3);
-    const tupleIds = [...tupleText.matchAll(/^\\s*\\[\\s*['"]([^'"]+)['"]\\s*,/gm)].map(item => item[1]);
+    const tupleIds = [...tupleText.matchAll(/^\s*\[\s*['"]([^'"]+)['"]\s*,/gm)].map(item => item[1]);
     if (!tupleIds.length) continue;
-    const prefix = name.match(/^jw(v\\d+)/i)?.[1]?.toLowerCase();
+    const prefix = name.match(/^jw(v\d+)/i)?.[1]?.toLowerCase();
     const ids = tupleIds.map(id => prefix ? prefix + '-' + id : name + '-' + id);
     const duplicateIds = [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))];
     exportedCardBanks.push({ file, name, cardCount: ids.length, ids, generated: true, duplicateIds });
