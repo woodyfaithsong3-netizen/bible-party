@@ -238,28 +238,17 @@ Les validations structurelles/runtimes déjà enregistrées ne sont pas transfor
 - Périmètre : Quiz `v54-q001` à `v54-q080` ; Vrai/Faux `v54-tf001` à `v54-tf080`
 - Taille : 160 cartes
 - État : **VALIDATED**
-- Règle : aucune de ces 160 cartes ne sera déclarée VALIDATED tant que les 10 contrôles éditoriaux ne sont pas terminés.
-- Premières anomalies déjà confirmées :
-  - `v54-q022` : la référence Matthieu 5:18 ne justifie pas l'affirmation sur la comparaison de copies anciennes.
-  - `v54-q026` : référence réalignée vers l’article JW.org sur les chapitres et versets.
-  - `v54-q030` : Néhémie 8:8 ne justifie pas directement l'importance historique des traductions.
-  - `v54-q034` : doublon conceptuel de `v54-q031`, à traiter dans la passe doublons/variété.
-  - `v54-q068` : la référence donnée ne suffit pas à établir « beaucoup de psaumes ».
-  - `v54-tf026` : référence réalignée vers l’article JW.org sur les chapitres et versets.
-  - `v54-tf027` : référence Révélation 14:6 réalignée sur le contenu de l’affirmation.
-- Conséquence : **le bloc reste CHECKING et ne sera pas re-parcouru depuis zéro après correction** ; seules les cartes modifiées passeront RECHECK, puis le bloc sera clôturé par son nouveau SHA.
+- Les anomalies historiques ci-dessous ont été traitées dans le contenu actuel au SHA `fca32bb9d0d4e26e6f64ba9311ae4e401c35e23f6` : `v54-q022` utilise Luc 1:1-4 ; `v54-q026` et `v54-tf026` utilisent l’article JW.org sur les chapitres et versets ; `v54-q030` est maintenant référencée par Matthieu 28:19 ; `v54-q034` porte sur Genèse 1:24-25 et n’est pas un doublon de `v54-q031` (Genèse 1:1) ; `v54-q068` porte sur 2 Samuel 23:1-2 ; `v54-tf027` est alignée sur Révélation 14:6.
+- État réconcilié : **VALIDATED** au SHA courant, conforme au bloc SEM-V54-001 du manifest. Les anciennes notes CHECKING/anomalies ne doivent plus être interprétées comme des exceptions ouvertes.
 
 ### Règle de clôture
 À la clôture d'un bloc, inscrire :
 `BLOC | SHA FINAL | N CARTES | VALIDATED | EXCEPTIONS`.
 Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
-### Bloc SEM-COMP-001 — CHECKING
-- Sources : `src/data/completeTheVerseQuestions.ts`
-- SHA source : `1c8bbaaeaec36f6e3382b41481861bef1e9ac58b`
-- Périmètre : 40 cartes versets + 36 cartes cantiques/chansons = 76 cartes.
-- État : CHECKING.
-- Prochaine étape : contrôle éditorial individuel, puis fermeture par SHA sans réaudit ultérieur si inchangé.
+### Ancienne note SEM-COMP-001 — ARCHIVÉE / REMPLACÉE
+- La note CHECKING sur le SHA `1c8bbaaeaec36f6e3382b41481861bef1e9ac58b` est historique et a été remplacée par la clôture VALIDATED enregistrée plus bas et dans le manifest au SHA final courant `4b816932b661b07bcea440d0ef21e6134e66b924`.
+- Ne pas rouvrir le bloc tant que le SHA final courant ne change pas.
 
 ### Bloc SEM-COMP-001 — VALIDATED
 - Source : `src/data/completeTheVerseQuestions.ts`
