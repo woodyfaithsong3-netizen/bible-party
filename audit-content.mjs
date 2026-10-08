@@ -233,7 +233,24 @@ if (runtimeRoutingFailures.length) {
   failures.push('runtime routing failures: ' + runtimeRoutingFailures.join(', '));
 }
 
-const importedBankNames = [...routingQuestions.matchAll(/import\\s*\\{([^}]+)\\}\\s*from\\s*['"]\\.\\/[^'"]+['"]/g)]\\n  .flatMap(match => match[1].split(',').map(part => part.trim().split(/\\s+as\\s+/i)[0].trim()))\\n  .filter(name => /(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|Expert|Forbidden|Facts|Supplement)/i.test(name));\nconst localBankNames = [...routingQuestions.matchAll(/(?:const|let|var)\\s+([A-Za-z0-9_]+)\\s*(?::[^=]+)?=\\s*\\[/g)]\\n  .map(match => match[1])\\n  .filter(name => /(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|Expert|Forbidden|Facts|Supplement)/i.test(name));\nconst pipelineBankNames = [...new Set([...importedBankNames, ...localBankNames])];\nconst pipelineBankRoutes = pipelineBankNames.map(name => ({\n  name,\n  pushed: new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|quoteQuestions|intruderQuestions|timesUpQuestions|challenges)\\\\.push\\\\([\\\\s\\\\S]{0,500}\\\\.\\\\.\\\\.' + name + '\\\\b').test(routingQuestions),\n  directGameReference: new RegExp('\\\\.\\\\.\\\\.' + name + '\\\\b').test(routingGameContent),\n}));\nconst unroutedPipelineBanks = pipelineBankRoutes.filter(bank => !bank.pushed && !bank.directGameReference);\nif (unroutedPipelineBanks.length) {\n  failures.push('unrouted imported/local card banks: ' + unroutedPipelineBanks.map(bank => bank.name).join(', '));\n}\n\nconst exportedCardBanks = [];
+const importedBankNames = [...routingQuestions.matchAll(/import\s*\{([^}]+)\}\s*from\s*['"]\.\/[^'"]+['"]/g)]
+  .flatMap(match => match[1].split(',').map(part => part.trim().split(/\s+as\s+/i)[0].trim()))
+  .filter(name => /(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|Expert|Forbidden|Facts|Supplement)/i.test(name));
+const localBankNames = [...routingQuestions.matchAll(/(?:const|let|var)\s+([A-Za-z0-9_]+)\s*(?::[^=]+)?=\s*\[/g)]
+  .map(match => match[1])
+  .filter(name => /(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|Expert|Forbidden|Facts|Supplement)/i.test(name));
+const pipelineBankNames = [...new Set([...importedBankNames, ...localBankNames])];
+const pipelineBankRoutes = pipelineBankNames.map(name => ({
+  name,
+  pushed: new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|quoteQuestions|intruderQuestions|timesUpQuestions|challenges)\\.push\\([\\s\\S]{0,500}\\.\\.\\.' + name + '\\b').test(routingQuestions),
+  directGameReference: new RegExp('\\.\\.\\.' + name + '\\b').test(routingGameContent),
+}));
+const unroutedPipelineBanks = pipelineBankRoutes.filter(bank => !bank.pushed && !bank.directGameReference);
+if (unroutedPipelineBanks.length) {
+  failures.push('unrouted imported/local card banks: ' + unroutedPipelineBanks.map(bank => bank.name).join(', '));
+}
+
+const exportedCardBanks = [];
 const routedBankNames = new Set();
 for (const file of playableSourceFiles) {
   const sourceText = fs.readFileSync(new URL(file, import.meta.url), 'utf8');
