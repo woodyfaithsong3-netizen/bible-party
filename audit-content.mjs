@@ -394,7 +394,12 @@ const sourceIds = [];
 for (const bank of exportedCardBanks) sourceIds.push(...(bank.ids ?? []));
 // Include the 504 core cards declared directly in questions.ts; they are routed
 // through the base pools and were previously omitted from the global total.
-const baseQuestionIds = [...routingQuestions.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)].map(match => match[1]);
+const editorialRemovedBaseIds = new Set(
+  [...routingQuestions.matchAll(/editorialRemove\w+Ids\s*=\s*new Set\(\[([\s\S]*?)\]\)/g)]
+    .flatMap(match => [...match[1].matchAll(/['"]([^'"]+)['"]/g)].map(item => item[1]))
+);
+const allBaseQuestionIds = [...routingQuestions.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)].map(match => match[1]);
+const baseQuestionIds = allBaseQuestionIds.filter(id => !editorialRemovedBaseIds.has(id));
 sourceIds.push(...baseQuestionIds);
 const sourceIdCounts = new Map();
 for (const id of sourceIds) sourceIdCounts.set(id, (sourceIdCounts.get(id) ?? 0) + 1);
@@ -465,6 +470,7 @@ if (routedSourceCardTotal !== sourceCardTotal) {
 console.log('- Global playable source banks:', exportedCardBanks.length);
 console.log('- Unrouted source banks:', unroutedCardBanks.length);
 console.log('- Core cards in questions.ts:', baseQuestionIds.length);
+console.log('- Intentionally removed core duplicates excluded:', editorialRemovedBaseIds.size);
 console.log('- Source card IDs audited:', sourceIds.length);
 console.log('- Source cards routed:', routedSourceCardTotal + '/' + sourceCardTotal);
 console.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);
