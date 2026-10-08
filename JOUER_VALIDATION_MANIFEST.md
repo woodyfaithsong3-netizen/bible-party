@@ -76,7 +76,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `aa62897e063cc51b114d53371068fcdab388e8e6`
+- SHA source validé : `e981b5bc2dccffe760eb62f36b0dbb4274a79b57`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -300,3 +300,12 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - SHA final L2 : `819853f33520e6c2289430caa90b1758158d6091` ; SHA final L6 : `5aad89cd370a8119585f0bf05e799f881f881f7c`.
 - Ces deux cartes ont été relues individuellement ; le reste de chaque bloc conserve son état antérieur, car seules ces cartes ont changé.
 - Commits source : `1faa6d4b87664487c2ee7e4bbbffbd2a8f135962`, `34abeab4bb2bf41718d8cc19205865e817147806`.
+
+
+## Revalidation éditoriale ciblée V/F L1 — 2026-10-09
+- SHA final : `e981b5bc2dccffe760eb62f36b0dbb4274a79b57`.
+- Les 43 cartes Vrai/Faux L1 qui utilisaient une explication générique ont reçu une explication factuelle et des références plus précises.
+- Correction factuelle majeure : `char-l1-tf-13-2` ne présente plus Élie comme servant au tabernacle de Silo ; la formulation situe correctement son ministère dans le royaume d’Israël.
+- Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L1.
+- Commit source : `29aab6eeea9d59c4e600b31a43b841163391e67e`.
+- La fermeture éditoriale globale de L1 reste en cours tant que les autres contrôles transversaux des cartes de ce lot ne sont pas terminés.
