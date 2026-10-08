@@ -238,7 +238,7 @@ Les validations structurelles/runtimes déjà enregistrées ne sont pas transfor
 - Périmètre : Quiz `v54-q001` à `v54-q080` ; Vrai/Faux `v54-tf001` à `v54-tf080`
 - Taille : 160 cartes
 - État : **VALIDATED**
-- Les anomalies historiques ci-dessous ont été traitées dans le contenu actuel au SHA `fca32bb9d0d4e26e6f64ba9311ae4e401c35e23f6` : `v54-q022` utilise Luc 1:1-4 ; `v54-q026` et `v54-tf026` utilisent l’article JW.org sur les chapitres et versets ; `v54-q030` est maintenant référencée par Matthieu 28:19 ; `v54-q034` porte sur Genèse 1:24-25 et n’est pas un doublon de `v54-q031` (Genèse 1:1) ; `v54-q068` porte sur 2 Samuel 23:1-2 ; `v54-tf027` est alignée sur Révélation 14:6.
+- Les anomalies historiques ci-dessous ont été traitées dans le contenu actuel au SHA `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25` : `v54-q022` utilise Luc 1:1-4 ; `v54-q026` et `v54-tf026` utilisent l’article JW.org sur les chapitres et versets ; `v54-q030` est maintenant référencée par Matthieu 28:19 ; `v54-q034` porte sur Genèse 1:24-25 et n’est pas un doublon de `v54-q031` (Genèse 1:1) ; `v54-q068` porte sur 2 Samuel 23:1-2 ; `v54-tf027` est alignée sur Révélation 14:6.
 - État réconcilié : **VALIDATED** au SHA courant, conforme au bloc SEM-V54-001 du manifest. Les anciennes notes CHECKING/anomalies ne doivent plus être interprétées comme des exceptions ouvertes.
 
 ### Règle de clôture
