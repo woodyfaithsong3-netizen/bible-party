@@ -354,6 +354,7 @@ for (const file of playableSourceFiles) {
     const ids = tupleIds.map(id => prefix ? prefix + '-' + id : name + '-' + id);
     const duplicateIds = [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))];
     exportedCardBanks.push({ file, name, cardCount: ids.length, ids, generated: true, duplicateIds });
+    if (routingQuestions.includes('...' + name)) routedBankNames.add(name);
   }
 }
 const sourceRouteProof = [];
