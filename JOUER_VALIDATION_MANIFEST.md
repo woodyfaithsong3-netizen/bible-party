@@ -34,3 +34,12 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - GitHub Pages : verte sur commit `ef45d4729e6c2ecc36a30e4e29cbde4ac13b7132`.
 - Exceptions ouvertes : aucune.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+## Bloc SEM-Q-001
+- Source : `src/data/questions.ts`
+- SHA source : `620bc62ef65fcc57f98ec2ee1b1bd9e728f17ae8`
+- Périmètre : Quiz source `facts` + `extraFacts` = 79 cartes (premier segment du pool `quizQuestions`).
+- État : CHECKING
+- Contrôles : structure des tuples, index de réponse, formulation, contexte, fuite de réponse, doublons et distracteurs ; vérification des références selon les passages concernés.
+- Exceptions ouvertes : aucune à ce stade.
+- Règle : ce segment ne sera pas réouvert tant que son SHA source reste inchangé.
