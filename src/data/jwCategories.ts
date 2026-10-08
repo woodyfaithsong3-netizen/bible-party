@@ -157,7 +157,7 @@ const tfSeeds: Array<[string, boolean, string, string, string]> = [
   ['Cyrus est nommé à l’avance dans une prophétie d’Isaïe.',true,'Isaïe mentionne Cyrus dans un contexte prophétique.','Prophéties','Isaïe 44:28–45:1'],
   ['Jérémie a annoncé une nouvelle alliance.',true,'Jérémie 31 contient cette promesse.','Prophéties','Jérémie 31:31-34'],
   ['Joël a parlé d’une effusion de l’esprit.',true,'Joël 2:28-29 annonce cette effusion.','Prophéties','Joël 2:28-29'],
-  ['Révélation ne contient aucune vision symbolique.',false,'Le livre est présenté comme une révélation donnée au moyen de signes et de visions.','Prophéties','Révélation 1:1'],
+  ['Le livre de la Révélation utilise des visions symboliques.',true,'Le livre est présenté comme une révélation donnée au moyen de signes et de visions.','Prophéties','Révélation 1:1'],
 ];
 
 export const categoryTrueFalseExpansion: TrueFalseQuestion[] = tfSeeds.map((s, i) => ({ id:`jwcat-tf-${i+1}`, type:'truefalse', statement:s[0], answer:s[1], explanation:s[2], category:s[3], reference:s[4], difficulty:'medium' }));
