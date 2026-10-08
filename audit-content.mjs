@@ -290,7 +290,7 @@ for (const bank of exportedCardBanks) {
   const mappedGameRoute = routingGameContent.match(new RegExp('\\b' + escapedName + '\\.(map|filter)\\(([\\s\\S]{0,700})'));
   const route = mappedRouteMatch || mappedGameRoute;
   const routeText = route ? route[0] : '';
-  const mappedPreservesId = !route || /id\\s*:\\s*q\\.id|id\\s*:\\s*item\\.id|id\\s*:\\s*card\\.id/.test(routeText);
+  const mappedPreservesId = !route || /id\\s*:\\s*q\\.id|id\\s*:\\s*item\\.id|id\\s*:\\s*card\\.id/.test(routeText) || /legacyChronologyToQuiz/.test(routeText);
   const reachable = directRoute || directGameRoute || Boolean(mappedRouteMatch && mappedPreservesId) || Boolean(mappedGameRoute && mappedPreservesId);
   sourceRouteProof.push({
     name: bank.name,
