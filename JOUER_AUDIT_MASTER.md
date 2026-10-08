@@ -461,3 +461,14 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Exceptions ouvertes : aucune.
 - CI et GitHub Pages : verts sur le commit source de clôture.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+### Bloc SEM-JWCAT-001 — VALIDATED
+- Source : `src/data/jwCategories.ts`
+- SHA source validé : `e26c907e6322f5a3598db1300885097d583e7f36`
+- Périmètre : **187 cartes jouables** (96 Quiz, 39 Vrai/Faux, 12 Mystère, 8 Time’s Up, 8 Citations, 8 Chronologie, 8 Intrus, 8 Défi), avec routage vers les modes jouables existants.
+- Contrôles : structure, IDs, réponses/index, fuite de réponse, doublons, formulations V/F, contexte, exactitude biblique, cohérence explication/référence, indices Mystère/Time’s Up, chronologies réellement jouables et jouabilité immédiate.
+- Corrections : formulation V/F sur Révélation ; référence manuscrits ; formulation et référence sur 2 Timothée 4:13 ; formulation du procès de Jésus devant Pilate ; formulation de la prophétie de Michée ; précision sur les maladies cutanées ; chronologie `jwcat-chrono-2` rendue réellement événementielle.
+- CI : vert.
+- GitHub Pages build + déploiement : verts.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
