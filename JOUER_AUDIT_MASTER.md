@@ -472,3 +472,21 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - CI : vert.
 - GitHub Pages build + déploiement : verts.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+### Bloc SEM-CHRONO-001 — VALIDATED
+- Source : `src/data/chronologyQuestions.ts`
+- SHA source validé : `5b978b2b521014e7b9c2c816c44bfbe04347c1a3`
+- Périmètre : 52 cartes Chronologie → Quiz.
+- Contrôles : 52 IDs uniques, 52 questions uniques, 4 réponses et index valides, ordre chronologique cohérent, absence de fuite de réponse, cohérence explication/référence et jouabilité.
+- État : VALIDATED.
+- CI + GitHub Pages : verts.
+
+### Bloc SEM-PREACH-001 — VALIDATED
+- Source : `src/data/preachingTruthQuestions.ts`
+- SHA source validé : `f97ca0bad2b54fada132acb0b8ab442692688fd0`
+- Périmètre : 34 cartes de vérités bibliques → Quiz.
+- Contrôles : 34 IDs, 4 réponses/index, fuite, cohérence question/réponse/explication/référence, formulation courte et jouabilité.
+- Corrections : `appendice-a-01` recentrée sur Psaume 37:29 ; `appendice-a-33` alignée précisément sur Marc 7:6-8.
+- État : VALIDATED.
+- CI + GitHub Pages : verts.
