@@ -202,10 +202,10 @@ export const jwV54Mystery: MysteryQuestion[] = [
 
 export const jwV54TimesUp: TimesUpQuestion[] = [
 {id:'v54-tu-002',type:'timesup',category:'Jéhovah & la foi',difficulty:'easy',answer:'Jéhovah',clues:['Berger','Vallée','Protection'],reference:'Psaume 23:1-4'},
-{id:'v54-tu-003',type:'timesup',category:'La Bible et l’Histoire',difficulty:'medium',answer:'Cyrus',clues:['Perse','Décret','Jérusalem'],reference:'Esdras 1:1-4'},
+{id:'v54-tu-003',type:'timesup',category:'Récits bibliques',difficulty:'medium',answer:'Zerubbabel',clues:['Retour à Jérusalem','Gouverneur','Reconstruction du temple'],reference:'Esdras 2:2; 3:2-8; Aggée 1:1-14'},
 {id:'v54-tu-004',type:'timesup',category:'Récits bibliques',difficulty:'medium',answer:'Adam et Ève',clues:['Éden','Premier couple','Genèse'],reference:'Genèse 2:7-25; 3:1-24'},
 {id:'v54-tu-005',type:'timesup',category:'Personnages',difficulty:'easy',answer:'David',clues:['Berger','Goliath','Roi'],reference:'1 Samuel 17:45-50; 2 Samuel 5:3-5'},
 {id:'v54-tu-006',type:'timesup',category:'Évangiles',difficulty:'easy',answer:'Jean le Baptiseur',clues:['Désert','Baptême','Préparer le chemin'],reference:'Matthieu 3:1-3'},
-{id:'v54-tu-007',type:'timesup',category:'Rois & prophètes',difficulty:'easy',answer:'Élie',clues:['Carmel','Baal','Prophète'],reference:'1 Rois 18:19-39'},
+{id:'v54-tu-007',type:'timesup',category:'Rois & prophètes',difficulty:'easy',answer:'Élisée',clues:['Successeur d’Élie','Double portion','Guérison de Naamân'],reference:'2 Rois 2:9-15; 5:1-14'},
 {id:'v54-tu-008',type:'timesup',category:'Rois & prophètes',difficulty:'medium',answer:'Daniel',clues:['Babylone','Statue','Royaumes'],reference:'Daniel 2:17-45'},
 ];
