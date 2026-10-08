@@ -33,7 +33,7 @@ export const jwV61Forbidden: MysteryQuestion[] = [
   },
   {
     id: 'v61-m-004', type: 'mystery', category: 'La Bible et la science', difficulty: 'medium', answer: 'Job',
-    clues: ['Je décris un phénomène observé dans la nature.','J’évoque la formation de fines perles d’eau.','Je parle de ce qui tombe des nuages.'],
+    clues: ['Je décris un phénomène observé dans la nature.','J’évoque la formation de fines perles.','Je parle de ce qui tombe des nuages.'],
     explanation: 'Le passage décrit sous une forme poétique la formation des gouttes et la pluie.',
     reference: 'Job 36:27-28', forbiddenWords: ['eau', 'gouttes', 'pluie'],
   },
