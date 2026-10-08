@@ -385,3 +385,15 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - CI : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
 - GitHub Pages : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+### Bloc SEM-L6-001 — VALIDATED — 2026-10-08
+- Source : `src/data/characterQuestionsL6.ts`
+- SHA source validé : `b45ce5764d4499fd8d6f9195cf99cb551b9e1ecc`
+- Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
+- État : VALIDATED
+- Contrôles : structure, IDs, réponses/index, fuite de réponse, doublons, références, formulation, contexte, exactitude biblique, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
+- Corrections ciblées : réalignement de références Joël et amélioration de deux indices Mystère afin qu’ils correspondent exactement au personnage et au texte biblique.
+- Résultats finaux : 395 cartes ; aucune anomalie structurelle résiduelle ; CI et GitHub Pages vertes sur le commit source de clôture.
+- Exceptions ouvertes : aucune.
+- Règle : ne pas réauditer tant que le SHA source reste inchangé.
