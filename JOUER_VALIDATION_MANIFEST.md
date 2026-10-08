@@ -50,11 +50,12 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-V55-001
 - Source : `src/data/jw_enrichment_v55.ts`
-- SHA source : `dc8522dfa8cf78e2b7e60a66180d39fe52dec012`
+- SHA source validé : `cf8242fc5ef8ce02631ae5fb5058dd4f7602c0cd`
 - Périmètre désormais jouable : 40 cartes : `v55-m-001`–`008`, `v55-q-001`–`008`, `v55-i-001`–`008`, `v55-c-001`–`008`, `v55-d-001`–`008`.
-- État : CHECKING
-- 24 cartes étaient déjà VALIDATED ; 16 cartes (8 chronologies + 8 défis) deviennent jouables grâce au routage présent dans `src/data/questions.ts` et doivent être clôturées par une passe éditoriale ciblée.
+- État : VALIDATED
+- Les 16 cartes nouvellement jouables (8 chronologies + 8 défis) ont été contrôlées individuellement et sont validées.
 - Corrections historiques : `v55-q-006`, `v55-i-002`.
+- Références réalignées : `v55-c-001`, `v55-c-003`, `v55-c-007`.
 
 
 ## Bloc SEM-V53-001
