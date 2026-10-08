@@ -543,3 +543,9 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Contrôles heuristiques Vrai/Faux sur les mêmes SHA : **0 explication générique détectée** selon les motifs recherchés et **0 formulation négative inversée détectée** selon le jeu de motifs ciblé.
 - Scan des formulations à antécédent vague (« cet homme », « cette femme », « ce personnage », « cet apôtre », « ce prophète », « ce roi », « ce disciple ») : aucune occurrence détectée dans les questions L1-L6.
 - Ces résultats sont des contrôles automatiques indépendants ; ils ne remplacent pas les relectures bibliques déjà inscrites dans le manifest et ne permettent pas de prétendre qu'un scan lexical vérifie à lui seul chaque fait biblique.
+
+
+### Garde-fous CI renforcés — anti-doublon et anti-fuite Quiz
+- `audit-content.mjs` normalise désormais accents et ponctuation pour détecter les doublons conceptuellement identiques au niveau du texte, et vérifie que la réponse correcte n'est pas répétée littéralement dans sa question.
+- Scan préalable des 1 250 Quiz personnages sur leurs SHA courants : **0 doublon normalisé**, **0 fuite littérale**. Le contrôle est désormais conservé dans l'audit automatisé afin de prévenir les régressions futures.
+- La clôture de cette passe dépend de la confirmation CI + GitHub Pages sur le commit qui contient le nouveau garde-fou.

@@ -131,16 +131,38 @@ const metaExplanations = dedicatedSource.split('\n').filter(line =>
   /explanation:\s*['"](Examiner|Observer|Étudier|Etudier|Approfondir|Découvrir|Analyser|Comprendre)\b/i.test(line)
 );
 
-const duplicateQuestions = [...new Map(
-  semanticQuizRecords.map(card => [card.question.trim().toLowerCase(), card])
-)].length !== semanticQuizRecords.length;
+const normalizeEditorialText = value => value
+  .normalize('NFD')
+  .replace(/[\\u0300-\\u036f]/g, '')
+  .toLowerCase()
+  .replace(/[’']/g, "'")
+  .replace(/[^a-z0-9]+/g, ' ')
+  .trim();
+
+const normalizedQuestionGroups = new Map();
+for (const card of semanticQuizRecords) {
+  const normalized = normalizeEditorialText(card.question);
+  if (!normalizedQuestionGroups.has(normalized)) normalizedQuestionGroups.set(normalized, []);
+  normalizedQuestionGroups.get(normalized).push(card);
+}
+const duplicateQuestionGroups = [...normalizedQuestionGroups.values()].filter(group => group.length > 1);
+const duplicateQuestions = duplicateQuestionGroups.length > 0;
+
+// A correct option repeated verbatim in its own question makes a Quiz card
+// answerable without knowing the Bible. Keep this as a regression guard.
+const answerLeakCards = semanticQuizRecords.filter(card => {
+  const question = normalizeEditorialText(card.question);
+  const answer = normalizeEditorialText(card.answer);
+  return answer.length >= 4 && question.includes(answer);
+});
 
 const failures = [];
 if (semanticCharacterAnswerMismatches.length) failures.push('character answer used for a non-person question: ' + semanticCharacterAnswerMismatches.map(card => card.characterId + ' / ' + card.question + ' -> ' + card.answer).join(' | '));
 if (malformedWhoAnswers.length) failures.push('who/person question has an answer shaped like a non-person response: ' + malformedWhoAnswers.map(card => card.characterId + ' / ' + card.question + ' -> ' + card.answer).join(' | '));
 if (malformedDreamAnswers.length) failures.push('dream question has a non-dream answer shape: ' + malformedDreamAnswers.map(card => card.characterId + ' / ' + card.question + ' -> ' + card.answer).join(' | '));
 if (metaExplanations.length) failures.push('meta/instructional explanations remain in quiz cards: ' + metaExplanations.length);
-if (duplicateQuestions) failures.push('duplicate quiz questions remain in the dedicated character corpus');
+if (duplicateQuestions) failures.push('duplicate quiz questions remain after accent/punctuation normalization: ' + duplicateQuestionGroups.map(group => group.map(card => card.characterId + ' / ' + card.question).join(' <> ')).join(' | '));
+if (answerLeakCards.length) failures.push('correct answer appears literally in its own quiz question: ' + answerLeakCards.map(card => card.characterId + ' / ' + card.question + ' -> ' + card.answer).join(' | '));
 if (duplicateIds.length) failures.push('duplicate ids: ' + duplicateIds.map(([id, n]) => id + ' x' + n).join(', '));
 if (emptyReferences) failures.push('empty references detected');
 if (invalidQuizIndexes.length) failures.push('invalid quiz correctAnswer indexes: ' + invalidQuizIndexes.length);
@@ -379,6 +401,8 @@ console.log('Bible Party content audit');
 console.log('- ID occurrences:', ids.length);
 console.log('- References:', references.length);
 console.log('- Quiz blocks checked:', quizBlocks.length);
+console.log('- Normalized duplicate question groups:', duplicateQuestionGroups.length);
+console.log('- Literal correct-answer leaks in Quiz questions:', answerLeakCards.length);
 console.log('- Dedicated true/false split:', { true: trueTrueFalseCount, false: falseTrueFalseCount });
 console.log('- Expert cards:', expertCards);
 console.log('- Character coverage:', characterCoverage);

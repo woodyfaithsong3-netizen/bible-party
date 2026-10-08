@@ -392,3 +392,11 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Contrôle de contexte Quiz : aucune question contenant « cet homme », « cette femme », « ce personnage », « cet apôtre », « ce prophète », « ce roi » ou « ce disciple » sans contexte autonome n'a été détectée par le scan ciblé.
 - Limite : ces contrôles automatisés complètent les relectures éditoriales déjà enregistrées ; ils ne prouvent pas à eux seuls la justesse biblique de chaque affirmation.
 - État : contrôles transversaux réussis sur les SHA listés ; les blocs éditoriaux conservent leur statut existant.
+
+
+## Garde-fous automatiques anti-doublon et anti-fuite — 2026-10-09
+- `audit-content.mjs` SHA : `139935c6daf70c13940493ffbeb6862732dae8e4`.
+- Le contrôle de régression compare désormais les questions Quiz après normalisation des accents, apostrophes et ponctuation, puis signale les groupes de doublons.
+- Il vérifie aussi si la bonne réponse (4 caractères normalisés ou plus) est répétée littéralement dans sa propre question.
+- Contrôle local indépendant sur les 1 250 cartes Quiz personnages L1-L6 : 0 doublon normalisé et 0 fuite littérale détectés avant l’ajout de ces garde-fous.
+- Le statut de CI du commit de ce changement doit être confirmé dans les exécutions GitHub Actions avant de clore cette passe.
