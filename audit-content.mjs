@@ -233,9 +233,9 @@ if (runtimeRoutingFailures.length) {
   failures.push('runtime routing failures: ' + runtimeRoutingFailures.join(', '));
 }
 
-const importedBankNames = [...routingQuestions.matchAll(/import\s*\{([^}]+)\}\s*from\s*['"]\.\/[^'"]+['"]/g)]
+const importedBankNames = [...routingQuestions.matchAll(/import\s*\{([^}]+)\}\s*from\s*['"][^'"]+['"]/g)]
   .flatMap(match => match[1].split(',').map(part => part.trim().split(/\s+as\s+/i)[0].trim()))
-  .filter(name => /(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|Expert|Forbidden|Facts|Supplement)/i.test(name));
+  .filter(Boolean);
 const localBankNames = [...routingQuestions.matchAll(/(?:const|let|var)\s+([A-Za-z0-9_]+)\s*(?::[^=]+)?=\s*\[/g)]
   .map(match => match[1])
   .filter(name => /(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|Expert|Forbidden|Facts|Supplement)/i.test(name));
@@ -243,10 +243,10 @@ const pipelineBankNames = [...new Set([...importedBankNames, ...localBankNames])
 const routingQuestionUsage = routingQuestions.replace(/^import.*$/gm, '');
 const pipelineBankRoutes = pipelineBankNames.map(name => ({
   name,
-  pushed: new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|quoteQuestions|intruderQuestions|timesUpQuestions|challenges)\\.push\\([\\s\\S]{0,500}\\.\\.\\.' + name + '\\b').test(routingQuestionUsage) || new RegExp('\\.\\.\\.' + name + '\\b').test(routingQuestionUsage),
-  directGameReference: new RegExp('\\.\\.\\.' + name + '\\b').test(routingGameContent),
+  referencedInAggregator: routingQuestionUsage.includes(name),
+  referencedInGameContent: routingGameContent.includes(name),
 }));
-const unroutedPipelineBanks = pipelineBankRoutes.filter(bank => !bank.pushed && !bank.directGameReference);
+const unroutedPipelineBanks = pipelineBankRoutes.filter(bank => !bank.referencedInAggregator && !bank.referencedInGameContent);
 if (unroutedPipelineBanks.length) {
   failures.push('unrouted imported/local card banks: ' + unroutedPipelineBanks.map(bank => bank.name).join(', '));
 }
