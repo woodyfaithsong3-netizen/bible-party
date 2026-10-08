@@ -395,7 +395,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 ## Garde-fous automatiques anti-doublon et anti-fuite — 2026-10-09
-- `audit-content.mjs` SHA : `4db4030e44c6753af63ee5e4d32944fb41e03714`.
+- `audit-content.mjs` SHA : `d9b1591c0a8a085315c5fd57b63c3a3ac0eadbe9`.
 - Le contrôle de régression compare désormais les questions Quiz après normalisation des accents, apostrophes et ponctuation, puis signale les groupes de doublons.
 - Il vérifie aussi si la bonne réponse (4 caractères normalisés ou plus) est répétée littéralement dans sa propre question.
 - Contrôle local indépendant sur les 1 250 cartes Quiz personnages L1-L6 : 0 doublon normalisé et 0 fuite littérale détectés avant l’ajout de ces garde-fous.
