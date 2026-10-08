@@ -309,11 +309,6 @@ if (routedSourceCardTotal !== sourceCardTotal) {
   failures.push('source cards not fully routed: ' + routedSourceCardTotal + '/' + sourceCardTotal);
 }
 
-const sourceIds = [];
-for (const file of new Set(exportedCardBanks.map(bank => bank.file))) {
-  const sourceText = fs.readFileSync(new URL(file, import.meta.url), 'utf8');
-  for (const match of sourceText.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)) sourceIds.push(match[1]);
-}
 const sourceIdCounts = new Map();
 for (const id of sourceIds) sourceIdCounts.set(id, (sourceIdCounts.get(id) ?? 0) + 1);
 const duplicateSourceIds = [...sourceIdCounts.entries()].filter(([, count]) => count > 1);
