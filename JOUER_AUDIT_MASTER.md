@@ -196,3 +196,13 @@ Contrôle ciblé des cartes modifiées : les réponses, explications et référe
 ### Passe Mystère / anciens Time's Up — réponses trop génériques supprimées
 Le mode **Qui est-ce ?** ne doit pas faire deviner des concepts ou des éléments trop généraux. Quatre anciennes cartes Time's Up qui alimentaient le pool Mystère ont été retirées : `v57-t-017` (Parchemin), `v57-t-018` (Manteau), `v57-t-022` (Sang) et `v57-t-024` (Lumière). Les cartes restantes privilégient des personnages, lieux, livres, passages, événements ou objets bibliques suffisamment identifiables.
 - Commit : `0e9b4a6c40c1c5a1b38dff06aa59f36aa28c6219`
+
+
+### Passe Mystère — mots interdits dans les indices
+Scan exhaustif des banques Mystère : les indices ne doivent jamais contenir un mot déclaré dans `forbiddenWords`. **16 chevauchements** ont été corrigés dans les lots V39/V61, notamment Noé, Gédéon, Matthieu, Jonas, Nathan, Lydie, Daniel, Anne, Cyrus, Job, Rahab, Zachée, Samson et Michée.
+- V39 : commits `064568c4a8c4d548b77545b4faf0264c9e8f0c13`, `b8812748f2a08d2606ac3e5b7f10dca2f72b33fa`, `7bc4e00a3cc8598a249093057cd4f4aaa0b04b9e`, `a92ddc18ebe12878d5dc2f9b9cc793bd72bce16e`
+- V61 : commits `945b734b823b20ef9260220d7c7f33415673b200`, `de29f1832e51592842d5cf9951e8ad31cb797b16`, `217de3bd406289cc7058df28c646d704de09b7f0`
+- Contrôle final : **0 chevauchement** détecté entre `clues` et `forbiddenWords` dans les banques Mystère inspectées.
+
+### Passe identité des cartes
+Contrôle transversal de **1 395 IDs** sur les banques JOUER inspectées : **0 doublon d’ID**.
