@@ -352,7 +352,7 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
 ### Bloc SEM-L4-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source validé : `3aff9a2e3e7d12aa70113f7eba45bfe5822cf004`
+- SHA source validé : `b9d9c3c1883e2c217cce5417d309da2aebcd6632`
 - Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux, autonomie liée au personnage, indices Mystère et jouabilité.
@@ -363,7 +363,7 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
 ### Bloc SEM-L5-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `708930a93ef67e2c74f5b8597d09bd8439831468`
+- SHA source validé : `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -524,8 +524,10 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
 - Contrôle complémentaire de jouabilité : `char-l6-q-120-8` a été reformulée pour préciser clairement le contexte de l’assemblée chez Priscille et Aquila ; la carte demeure dans le même bloc validé, avec revalidation ciblée et SHA actualisé.
 
-- Passe ciblée supplémentaire L5 : quatre Quiz sur Évodie/Épaphrodite corrigés pour supprimer l’ambiguïté de réponse, la fuite d’indice de genre et les formulations sans contexte nommé. SHA L5 courant : `708930a93ef67e2c74f5b8597d09bd8439831468`.
+- Passe ciblée supplémentaire L5 : quatre Quiz sur Évodie/Épaphrodite corrigés pour supprimer l’ambiguïté de réponse, la fuite d’indice de genre et les formulations sans contexte nommé. SHA L5 courant : `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`.
 
 - Passe contexte autonome L5-L6 : 7 questions reformulées pour ne plus dépendre d’un antécédent absent de l’écran de jeu. Les questions nomment maintenant explicitement Amos, la femme qui souffrait de pertes de sang ou l’homme délivré dans la région des Géraséniens. SHA L5/L6 actualisés dans le manifest.
 
-- Déduplication conceptuelle ciblée L5 : `char-l5-q-87-1` rend la réponse unique et `char-l5-q-88-10` n’est plus une répétition de `char-l5-q-88-8`. SHA L5 : `708930a93ef67e2c74f5b8597d09bd8439831468`.
+- Déduplication conceptuelle ciblée L5 : `char-l5-q-87-1` rend la réponse unique et `char-l5-q-88-10` n’est plus une répétition de `char-l5-q-88-8`. SHA L5 : `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`.
+
+- Passe V/F de localisation L4-L5 : 23 cartes reformulées et leurs explications/références alignées sur des faits bibliques précis. Les formulations génériques « est lié à » ne sont plus utilisées pour ces 23 cartes. SHA L4/L5 actualisés dans le manifest.

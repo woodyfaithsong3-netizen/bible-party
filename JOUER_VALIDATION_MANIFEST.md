@@ -122,7 +122,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L4-001
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source validé : `3aff9a2e3e7d12aa70113f7eba45bfe5822cf004`
+- SHA source validé : `b9d9c3c1883e2c217cce5417d309da2aebcd6632`
 - Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux, autonomie liée au personnage, indices Mystère et jouabilité.
@@ -132,7 +132,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `708930a93ef67e2c74f5b8597d09bd8439831468`
+- SHA source validé : `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -340,7 +340,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 
 ## Revalidation ciblée Quiz L5 — Évodie / Épaphrodite — 2026-10-09
-- SHA final `src/data/characterQuestionsL5.ts` : `708930a93ef67e2c74f5b8597d09bd8439831468`.
+- SHA final `src/data/characterQuestionsL5.ts` : `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`.
 - `char-l5-q-87-1` : corrigée, car plusieurs propositions pouvaient correspondre à « une chrétienne de Philippes » ; la question demande maintenant quelle chrétienne Paul exhorta à être en accord avec Syntyche, avec quatre distracteurs féminins plausibles.
 - `char-l5-q-87-10` : corrigée, car la formulation demandait une activité alors que les réponses étaient des personnes.
 - `char-l5-q-88-1` et `char-l5-q-88-4` : le contexte ne repose plus sur « cet homme » ; Épaphrodite est nommé dans la question.
@@ -351,11 +351,17 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 ## Revalidation de contexte autonome Quiz L5-L6 — 2026-10-09
 - L5 : `char-l5-q-100-7` nomme désormais Amos au lieu de supposer que le joueur sait qui est « ce prophète ».
 - L6 : `char-l6-q-111-1`, `111-2`, `111-6`, `111-8` nomment la femme qui souffrait de pertes de sang ; `char-l6-q-112-2` et `112-10` nomment l’homme délivré dans la région des Géraséniens. Chaque question est maintenant compréhensible isolément.
-- SHA finaux : L5 `708930a93ef67e2c74f5b8597d09bd8439831468`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
+- SHA finaux : L5 `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
 - Commit source : `7dcaf657e5fc153e6c92ef7d8a3841d39e9e0189`.
 
 
 ## Revalidation des doublons conceptuels L5 — 2026-10-09
 - `char-l5-q-87-1` demande maintenant quel problème Paul demanda à Évodie et Syntyche de régler, au lieu de demander simplement quelle chrétienne était de Philippes (plusieurs réponses pouvaient convenir).
 - `char-l5-q-88-10` demande désormais comment Paul décrivit Épaphrodite, ce qui supprime le doublon conceptuel avec `char-l5-q-88-8` sur la raison de l’accueillir avec joie.
-- SHA L5 final : `708930a93ef67e2c74f5b8597d09bd8439831468` ; commit de cette passe à suivre dans l’historique Git.
+- SHA L5 final : `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7` ; commit de cette passe à suivre dans l’historique Git.
+
+
+## Revalidation éditoriale V/F L4-L5 — cartes de localisation — 2026-10-09
+- L4 : cinq affirmations corrigées pour remplacer les formulations vagues « est lié à » par des faits bibliques précis sur Jacques fils d’Alphée, Simon le Zélote, la fille de Jaïrus, Bartimée et la Samaritaine ; références directes conservées ou ajustées.
+- L5 : dix-huit affirmations corrigées pour remplacer les formulations répétitives « est lié à » et les explications génériques par des faits vérifiables concernant le centurion de Capernaüm, Félix, Festus, Agrippa II, Bérénice, Phœbé, Évodie, Épaphrodite, Naamân, Ézéchias, Josias, Josaphat, Jonas, Saül, Manoa, Sophonie, Habacuc et Amos.
+- SHA finaux : L4 `b9d9c3c1883e2c217cce5417d309da2aebcd6632`, L5 `8ad97f64dcd043ee346e8a56d5d6342e21d1c8e7`.
