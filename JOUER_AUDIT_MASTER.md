@@ -1,6 +1,6 @@
 # JOUER — REGISTRE MAÎTRE DE VALIDATION
 
-Source de vérité unique pour l'audit exhaustif du contenu jouable. Périmètre : JOUER uniquement. Les 177 fiches officielles, AVENTURE et Ma Bible sont hors périmètre.
+Registre opérationnel des statuts individuels. Le document `JOUER_REGISTRE_CENTRAL.md` définit le périmètre, les quatre banques logiques et les règles de comptage ; `JOUER_VALIDATION_MANIFEST.md` conserve les preuves de validation par bloc/SHA. Périmètre : JOUER uniquement. AVENTURE, Ma Bible et les 125 fiches officielles sont hors périmètre.
 
 ## États
 - TODO : jamais validée individuellement
