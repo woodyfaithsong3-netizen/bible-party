@@ -255,18 +255,60 @@ const exportedCardBanks = [];
 const routedBankNames = new Set();
 for (const file of playableSourceFiles) {
   const sourceText = fs.readFileSync(new URL(file, import.meta.url), 'utf8');
-  const exportsInFile = [...sourceText.matchAll(/export const\s+([A-Za-z0-9_]+)\s*(?::\s*[^=]+)?=/g)]
-    .map(match => match[1])
-    .filter(name => /(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|character)/i.test(name));
-  for (const name of exportsInFile) {
-    const idsInFile = [...sourceText.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)].map(match => match[1]);
-    if (!idsInFile.length) continue;
-    exportedCardBanks.push({ file, name, cardCount: idsInFile.length });
+  const exportMatches = [...sourceText.matchAll(/export const\s+([A-Za-z0-9_]+)\s*(?::\s*[^=]+)?=\s*\[/g)];
+  for (let i = 0; i < exportMatches.length; i++) {
+    const name = exportMatches[i][1];
+    if (!/(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|character)/i.test(name)) continue;
+    const start = exportMatches[i].index;
+    const end = i + 1 < exportMatches.length ? exportMatches[i + 1].index : sourceText.length;
+    const segment = sourceText.slice(start, end);
+    const idsInBank = [...segment.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)].map(match => match[1]);
+    if (!idsInBank.length) continue;
+    const duplicateIdsInBank = [...new Set(idsInBank.filter((id, index) => idsInBank.indexOf(id) !== index))];
+    exportedCardBanks.push({
+      file,
+      name,
+      cardCount: idsInBank.length,
+      duplicateIds: duplicateIdsInBank,
+    });
     const occurrences = routingCode.match(new RegExp('\\b' + name + '\\b', 'g')) || [];
     if (occurrences.length >= 2) routedBankNames.add(name);
   }
 }
 const unroutedCardBanks = exportedCardBanks.filter(bank => !routedBankNames.has(bank.name));
+const duplicateIdsWithinBank = exportedCardBanks.filter(bank => bank.duplicateIds.length);
+const sourceIds = [];
+for (const bank of exportedCardBanks) {
+  const sourceText = fs.readFileSync(new URL(bank.file, import.meta.url), 'utf8');
+  const exportMatch = [...sourceText.matchAll(new RegExp('export const\\s+' + bank.name + '\\s*(?::\\s*[^=]+)?=\\s*\\[', 'g'))][0];
+  if (!exportMatch) continue;
+  const nextExport = sourceText.indexOf('export const ', exportMatch.index + exportMatch[0].length);
+  const segment = sourceText.slice(exportMatch.index, nextExport < 0 ? sourceText.length : nextExport);
+  for (const match of segment.matchAll(/\\bid\\s*:\s*['"]([^'"]+)['"]/g)) sourceIds.push(match[1]);
+}
+const sourceIdCounts = new Map();
+for (const id of sourceIds) sourceIdCounts.set(id, (sourceIdCounts.get(id) ?? 0) + 1);
+const duplicateSourceIds = [...sourceIdCounts.entries()].filter(([, count]) => count > 1);
+
+if (unroutedCardBanks.length) {
+  failures.push('unrouted playable source banks: ' + unroutedCardBanks.map(bank => bank.name + ' (' + bank.cardCount + ')').join(', '));
+}
+if (duplicateIdsWithinBank.length) {
+  failures.push('duplicate ids inside source banks: ' + duplicateIdsWithinBank.map(bank => bank.name + ': ' + bank.duplicateIds.join(', ')).join(' | '));
+}
+if (duplicateSourceIds.length) {
+  failures.push('duplicate source card ids across playable banks: ' + duplicateSourceIds.map(([id, count]) => id + ' x' + count).join(', '));
+}
+if (!exportedCardBanks.length) failures.push('global playability audit found no exported card banks');
+
+const sourceCardTotal = exportedCardBanks.reduce((sum, bank) => sum + bank.cardCount, 0);
+const routedSourceCardTotal = exportedCardBanks
+  .filter(bank => routedBankNames.has(bank.name))
+  .reduce((sum, bank) => sum + bank.cardCount, 0);
+if (routedSourceCardTotal !== sourceCardTotal) {
+  failures.push('source cards not fully routed: ' + routedSourceCardTotal + '/' + sourceCardTotal);
+}
+
 const sourceIds = [];
 for (const file of new Set(exportedCardBanks.map(bank => bank.file))) {
   const sourceText = fs.readFileSync(new URL(file, import.meta.url), 'utf8');
@@ -286,6 +328,7 @@ if (!exportedCardBanks.length) failures.push('global playability audit found no 
 console.log('- Global playable source banks:', exportedCardBanks.length);
 console.log('- Unrouted source banks:', unroutedCardBanks.length);
 console.log('- Source card IDs audited:', sourceIds.length);
+console.log('- Source cards routed:', routedSourceCardTotal + '/' + sourceCardTotal);
 console.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);
 console.log('- Unrouted imported/local card banks:', unroutedPipelineBanks.length);
 
