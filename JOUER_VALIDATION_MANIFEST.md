@@ -110,7 +110,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `13cebe05f8eae665ffbfa3b290be00236717ec23`
+- SHA source validé : `a04e076a28ba1798070bc1d4bfad0e7b3bb0622c`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -322,8 +322,10 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Revalidation éditoriale ciblée V/F L3 — 2026-10-09
 - SHA final : `13cebe05f8eae665ffbfa3b290be00236717ec23`.
-- Les 31 cartes Vrai/Faux L3 restantes qui utilisaient une explication générique ont reçu une explication factuelle et des références plus directement pertinentes.
+- Les 38 cartes Vrai/Faux L3 qui utilisaient une explication générique ont reçu une explication factuelle et des références plus directement pertinentes.
 - Des références ont été élargies pour étayer les faits complets (notamment Hérode Antipas, Pilate, Isaïe, Jérémie, Ézékiel et Zorobabel) ; les cartes L3 corrigées dans le lot précédent restent incluses dans ce SHA final.
 - Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L3.
-- Commit source : `ae09dde3e4998a7832695a36696703bdb24472f3`.
+- Commits source : `ae09dde3e4998a7832695a36696703bdb24472f3`, `312516e5441d81b9a2d7cf9421765c964f44339e`.
 - Les cartes modifiées ont été relues individuellement ; les autres cartes du bloc conservent leur validation antérieure.
+
+- Dernière mise à jour du SHA L3 après la correction des sept explications restantes : `a04e076a28ba1798070bc1d4bfad0e7b3bb0622c`.
