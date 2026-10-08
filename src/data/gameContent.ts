@@ -2,7 +2,7 @@ import {
   intruderQuestions, mysteryQuestions, quizQuestions, quoteQuestions, timesUpQuestions, trueFalseQuestions,
 } from '@/data/questions';
 import { Question, GameType, QuizQuestion } from '@/types';
-import { completeTheVerseQuestions, completeTheSongQuestions } from '@/data/completeTheVerseQuestions';
+import { Challenge } from '@/types';
 
 /** Les banques historiques sont transformées en contenu pour les 4 modes officiels. */
 
@@ -68,9 +68,17 @@ const integratedMysteryQuestions = [
   })),
 ];
 
-const completeTheParolesQuestions: QuizQuestion[] = [
-  ...completeTheVerseQuestions,
-  ...completeTheSongQuestions,
+const integratedChallenges: Challenge[] = [
+  ...challenges,
+  ...timesUpQuestions.map((q) => ({
+    id: q.id,
+    type: 'challenge' as const,
+    category: q.category,
+    difficulty: q.difficulty,
+    prompt: `Fais deviner ${q.answer} en utilisant ces indices : ${q.clues.join(', ')}.`,
+    seconds: 10,
+    acceptedAnswers: [q.answer],
+  })),
 ];
 
 const SUBJECTIVE_TRUE_FALSE_PATTERNS = [
@@ -124,7 +132,7 @@ export const GAME_CONTENT: Record<GameType, Question[]> = {
   quiz: integratedQuizQuestions.map(prepareQuiz),
   mystery: integratedMysteryQuestions.map(prepareMystery),
   truefalse: buildTrueFalseDeck(),
-  complete: completeTheParolesQuestions.map(prepareQuiz),
+  challenge: integratedChallenges.map((q) => ({ ...q, category: canonicalGameCategory(q.category), prompt: String(q.prompt || '').replace(/\s+/g, ' ').trim() })),
 };
 
 export type PlayableGameMode = GameType;
