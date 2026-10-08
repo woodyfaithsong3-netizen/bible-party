@@ -37,13 +37,13 @@ export const jwV55Quotes: QuoteQuestion[] = [
 ];
 
 export const jwV55Chronology: ChronologyQuestion[] = [
-  {id:'v55-c-001',type:'chronology',category:C[0],difficulty:'easy',events:['Déluge','Don de la Loi','Royaume d’Israël'],correctOrder:[0,1,2],explanation:'Ces événements appartiennent à des périodes successives.',reference:'Genèse 6–9; Exode 19–20; 1 Samuel 8'},
+  {id:'v55-c-001',type:'chronology',category:C[0],difficulty:'easy',events:['Déluge','Don de la Loi','Royaume d’Israël'],correctOrder:[0,1,2],explanation:'Ces événements appartiennent à des périodes successives.',reference:'Genèse 6–9; Exode 19–20; 1 Rois 12:1-20'},
   {id:'v55-c-002',type:'chronology',category:C[1],difficulty:'easy',events:['Création','Don de la Loi','Psaumes de David'],correctOrder:[0,1,2],explanation:'La création précède la Loi donnée à Israël, puis la période des psaumes de David.',reference:'Genèse 1:1; Exode 20:1-17; Psaume 23'},
-  {id:'v55-c-003',type:'chronology',category:C[2],difficulty:'medium',events:['Jérusalem détruite','Décret de Cyrus','Retour des exilés'],correctOrder:[0,1,2],explanation:'Le décret de Cyrus intervient après la destruction et l’exil.',reference:'2 Rois 25:8-12; Esdras 1:1-4'},
+  {id:'v55-c-003',type:'chronology',category:C[2],difficulty:'medium',events:['Jérusalem détruite','Décret de Cyrus','Retour des exilés'],correctOrder:[0,1,2],explanation:'Le décret de Cyrus intervient après la destruction et l’exil.',reference:'2 Rois 25:8-12; Esdras 1:1-4; 2:1-2'},
   {id:'v55-c-004',type:'chronology',category:C[3],difficulty:'easy',events:['Création','Déluge','Lois d’hygiène en Israël'],correctOrder:[0,1,2],explanation:'Le récit de la création précède le Déluge, puis les lois données à Israël.',reference:'Genèse 1; 6–9; Lévitique 13; Deutéronome 23'},
   {id:'v55-c-005',type:'chronology',category:C[4],difficulty:'easy',events:['Abraham','Moïse','David'],correctOrder:[0,1,2],explanation:'Ces personnages appartiennent à des périodes successives.',reference:'Genèse 12:1-4; Exode 2:1-10; 2 Samuel 5:3-5'},
   {id:'v55-c-006',type:'chronology',category:C[5],difficulty:'easy',events:['Naissance de Jésus','Baptême de Jésus','Mort et résurrection de Jésus'],correctOrder:[0,1,2],explanation:'Les Évangiles présentent ces étapes dans cet ordre général.',reference:'Luc 2; Matthieu 3; Luc 23–24'},
-  {id:'v55-c-007',type:'chronology',category:C[6],difficulty:'medium',events:['Saül devient roi','David devient roi','Salomon devient roi'],correctOrder:[0,1,2],explanation:'Ces trois règnes se succèdent au début de la monarchie.',reference:'1 Samuel 10:1; 2 Samuel 5:3-5; 1 Rois 2:10-12'},
+  {id:'v55-c-007',type:'chronology',category:C[6],difficulty:'medium',events:['Saül devient roi','David devient roi','Salomon devient roi'],correctOrder:[0,1,2],explanation:'Ces trois règnes se succèdent au début de la monarchie.',reference:'1 Samuel 10:24; 2 Samuel 5:3-5; 1 Rois 2:10-12'},
   {id:'v55-c-008',type:'chronology',category:C[7],difficulty:'medium',events:['Promesse faite à David','Prophétie de Michée','Vision de Daniel'],correctOrder:[0,1,2],explanation:'La promesse faite à David précède les prophéties de Michée et les visions de Daniel.',reference:'2 Samuel 7:12-16; Michée 5:2; Daniel 7'},
 ];
 
