@@ -262,3 +262,12 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Périmètre : 40 cartes versets + 36 cartes cantiques/chansons = 76 cartes.
 - État : CHECKING.
 - Prochaine étape : contrôle éditorial individuel, puis fermeture par SHA sans réaudit ultérieur si inchangé.
+
+### Bloc SEM-COMP-001 — VALIDATED
+- Source : `src/data/completeTheVerseQuestions.ts`
+- SHA final : `1c8bbaaeaec36f6e3382b41481861bef1e9ac58b`
+- Périmètre : `complete-01`–`complete-40` + `song-01`–`song-36`
+- Taille : 76 cartes
+- État : VALIDATED
+- Contrôles : structure, réponses, distracteurs, formulations, contexte, références et cohérence éditoriale contrôlés ; CI et GitHub Pages vertes sur le commit de registre.
+- Exceptions : aucune.
