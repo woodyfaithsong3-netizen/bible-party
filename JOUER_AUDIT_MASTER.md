@@ -293,3 +293,12 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Exceptions : aucune.
 - CI et GitHub Pages : vertes sur le commit de registre suivant après clôture.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+### Bloc SEM-V53-001 — VALIDATED
+- Source : `src/data/jw_enrichment_v53.ts`
+- SHA source validé : `c64b70b754c6d3c20ec4d396956730dc3c0c54a9`
+- Périmètre : 141 cartes V53 : Quiz, Vrai/Faux, Mystère, Time's Up, citations, chronologie et intrus.
+- Contrôles : structure, réponses, exactitude biblique, formulation, contexte, fuite de réponse, références, distracteurs, catégories, doublons et jouabilité.
+- Corrections : `v53-q-038`, `v53-tf-011`, `v53-tf-015`.
+- État : VALIDATED. Ne pas réauditer tant que le SHA source reste inchangé.
