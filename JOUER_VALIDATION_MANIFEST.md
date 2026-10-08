@@ -132,7 +132,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `2491e02cad2a8c8f5165d8cfa43a8d78885d5d13`
+- SHA source validé : `ccd034edb0becf332e84ffbfeaedd42df87a5722`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -337,3 +337,12 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - L3 : `char-l3-tf-42-2` reformulée autour d’un fait localisable et d’une référence directe.
 - L6 Quiz : `char-l6-q-120-8` ne demande plus « dans un contexte associé » ; la question précise désormais qu’il s’agit de l’assemblée saluée chez Priscille et Aquila.
 - SHA finaux actualisés : L1 `71f51497ad83aa8cb06e2cdc42806199433de3b8`, L2 `216c6b79830b95d2bc7bfa853f7b254c8d096e46`, L3 `ddd24c32cab94f496a5930b3055447fafad645e1`, L6 `2014a4536b0f36073917a298c979347fb2945781`.
+
+
+## Revalidation ciblée Quiz L5 — Évodie / Épaphrodite — 2026-10-09
+- SHA final `src/data/characterQuestionsL5.ts` : `ccd034edb0becf332e84ffbfeaedd42df87a5722`.
+- `char-l5-q-87-1` : corrigée, car plusieurs propositions pouvaient correspondre à « une chrétienne de Philippes » ; la question demande maintenant quelle chrétienne Paul exhorta à être en accord avec Syntyche, avec quatre distracteurs féminins plausibles.
+- `char-l5-q-87-10` : corrigée, car la formulation demandait une activité alors que les réponses étaient des personnes.
+- `char-l5-q-88-1` et `char-l5-q-88-4` : le contexte ne repose plus sur « cet homme » ; Épaphrodite est nommé dans la question.
+- Références conservées et alignées sur Philippiens 2:25-30 et 4:2-3.
+- Commit source : `8abdf7a286d062a7c6a665f80ca81ba2b6ace58d`.
