@@ -202,6 +202,37 @@ const playableSourceFiles = [
 const routingQuestions = fs.readFileSync(new URL('./src/data/questions.ts', import.meta.url), 'utf8');
 const routingGameContent = fs.readFileSync(new URL('./src/data/gameContent.ts', import.meta.url), 'utf8');
 const routingCode = routingQuestions + '\n' + routingGameContent;
+
+// Contrôle runtime des quatre modes officiels : une banque ne suffit pas d'être
+// importée ; elle doit être injectée dans un pool effectivement consommé par getGamePool.
+// Les cartes Défi/Time's Up restent compatibles via leurs handlers historiques,
+// mais aucune carte Vrai/Faux ne peut être supprimée au moment de construire le deck.
+const runtimeRoutingFailures = [];
+const requiredRoutingFragments = [
+  ['Quiz ← quizQuestions', /\.\.\.quizQuestions\b/],
+  ['Quiz ← quoteQuestions transformées', /\.\.\.quoteQuestions\.map\(/],
+  ['Quiz ← intruderQuestions transformées', /\.\.\.intruderQuestions\.map\(/],
+  ['Quiz ← challenges historiques', /\.\.\.challenges\b/],
+  ['Qui est-ce ? ← mysteryQuestions', /mystery:\s*\[\.\.\.mysteryQuestions\.map\(/],
+  ['Qui est-ce ? ← timesUpQuestions transformées', /\.\.\.timesUpQuestions\.map\(/],
+  ['Vrai/Faux ← toutes les trueFalseQuestions', /const all = trueFalseQuestions\.map\(prepareTrueFalse\)/],
+  ['Compléter ← completeTheVerseQuestions', /\.\.\.completeTheVerseQuestions\b/],
+  ['Compléter ← completeTheSongQuestions', /\.\.\.completeTheSongQuestions\b/],
+  ['getGamePool ← GAME_CONTENT', /getGamePool\s*=.*GAME_CONTENT\[mode\]/],
+];
+for (const [label, pattern] of requiredRoutingFragments) {
+  if (!pattern.test(routingGameContent)) runtimeRoutingFailures.push(label);
+}
+if (/trueFalseQuestions\.filter\(isObjectiveTrueFalse\)/.test(routingGameContent)) {
+  runtimeRoutingFailures.push('Vrai/Faux filtre encore des cartes avant le pool');
+}
+if (/slice\(0,\s*maxTruths\)/.test(routingGameContent)) {
+  runtimeRoutingFailures.push('Vrai/Faux tronque encore le sous-pool des VRAI');
+}
+if (runtimeRoutingFailures.length) {
+  failures.push('runtime routing failures: ' + runtimeRoutingFailures.join(', '));
+}
+
 const exportedCardBanks = [];
 const routedBankNames = new Set();
 for (const file of playableSourceFiles) {
