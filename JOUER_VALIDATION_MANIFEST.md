@@ -381,3 +381,14 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 ## Passe concision complémentaire V/F — 2026-10-09
 - Douze affirmations supplémentaires dépassant 165 caractères ont été raccourcies sans retirer leur fait biblique principal : L1 3, L2 5, L3 4.
 - SHA finaux : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`.
+
+
+## Passe transversale Quiz L1-L6 — 2026-10-09
+- Source : `src/data/characterQuestionsL1.ts` à `characterQuestionsL6.ts`.
+- SHA contrôlés : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`, L4 `b9d9c3c1883e2c217cce5417d309da2aebcd6632`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
+- Périmètre Quiz : 1 250 cartes (200 par fichier L1-L5, 250 en L6).
+- Contrôles indépendants exécutés sur ces SHA : 0 doublon de question après normalisation, 0 occurrence littérale de la bonne réponse dans sa propre question, 0 erreur structurelle détectée sur les 4 choix et l'index de réponse, 0 ID dupliqué dans les six fichiers.
+- Contrôles complémentaires V/F sur les mêmes six SHA : 0 explication générique repérée par le scan de motifs et 0 formulation d'inversion négative correspondant aux motifs recherchés.
+- Contrôle de contexte Quiz : aucune question contenant « cet homme », « cette femme », « ce personnage », « cet apôtre », « ce prophète », « ce roi » ou « ce disciple » sans contexte autonome n'a été détectée par le scan ciblé.
+- Limite : ces contrôles automatisés complètent les relectures éditoriales déjà enregistrées ; ils ne prouvent pas à eux seuls la justesse biblique de chaque affirmation.
+- État : contrôles transversaux réussis sur les SHA listés ; les blocs éditoriaux conservent leur statut existant.

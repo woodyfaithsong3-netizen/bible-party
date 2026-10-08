@@ -536,3 +536,10 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Passe concision : six Vrai/Faux trop longs ont été raccourcis et revalidés ; SHA L1-L3 actualisés dans le manifest.
 
 - Passe concision complémentaire : 12 affirmations V/F longues raccourcies et revalidées ; SHA L1-L3 actualisés dans le manifest.
+
+
+### Passe transversale indépendante — Quiz L1-L6 — 2026-10-09
+- Contrôle ciblé sur les 1 250 cartes Quiz des six banques personnages : **0 doublon exact normalisé**, **0 fuite littérale de la bonne réponse dans la question**, **0 anomalie détectée** sur le nombre de quatre choix ou l'index de la réponse correcte, **0 ID dupliqué** dans les six fichiers.
+- Contrôles heuristiques Vrai/Faux sur les mêmes SHA : **0 explication générique détectée** selon les motifs recherchés et **0 formulation négative inversée détectée** selon le jeu de motifs ciblé.
+- Scan des formulations à antécédent vague (« cet homme », « cette femme », « ce personnage », « cet apôtre », « ce prophète », « ce roi », « ce disciple ») : aucune occurrence détectée dans les questions L1-L6.
+- Ces résultats sont des contrôles automatiques indépendants ; ils ne remplacent pas les relectures bibliques déjà inscrites dans le manifest et ne permettent pas de prétendre qu'un scan lexical vérifie à lui seul chaque fait biblique.
