@@ -22,3 +22,14 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 3. Si le SHA change, ne contrôler que les cartes modifiées puis refermer le bloc avec son nouveau SHA.
 4. Ne jamais déclarer VALIDATED sur la seule base d'un build vert : la validation éditoriale doit aussi être faite.
 5. Ne pas toucher AVENTURE, Ma Bible ni les 125 fiches officielles de personnages dans le cadre de cet audit JOUER.
+
+## Bloc SEM-COMP-001
+- Sources : `src/data/completeTheVerseQuestions.ts`
+- SHA source : `1c8bbaaeaec36f6e3382b41481861bef1e9ac58b`
+- Périmètre : `complete-01`–`complete-40` + `song-01`–`song-36`
+- Taille : 76 cartes
+- État : CHECKING
+- Contrôles déjà effectués : structure 4 réponses/index valide ; vérifications ciblées JW.org sur Psaumes, Matthieu, Actes et plusieurs cantiques/chansons.
+- Points confirmés : les extraits vérifiés des cantiques 22, 38, 40, 49, 81, 134, 135, 154 et des chansons contrôlées concordent avec les pages officielles JW.org. citeturn0search4turn0search1turn0search0turn0search3turn2search0turn2search1turn2search3turn2search2turn3search2turn3search1turn3search0turn3search4turn4search1turn4search2turn4search0turn4search3turn5search0turn5search1
+- Exceptions ouvertes : aucune à ce stade.
+- Règle : ne pas déclarer VALIDATED avant la passe éditoriale complète + CI verte + GitHub Pages verte.
