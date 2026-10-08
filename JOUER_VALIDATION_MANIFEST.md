@@ -110,7 +110,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `6db9316faf9e32c62ad86cc86cd95a59a61b1a3d`
+- SHA source validé : `13cebe05f8eae665ffbfa3b290be00236717ec23`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -317,4 +317,13 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Corrections supplémentaires : `char-l2-tf-39-1` reformulée en affirmation directe vraie sur Balak ; `char-l2-tf-33-3` réparée, car sa formulation était matériellement tronquée au milieu du mot « avertissement ».
 - Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L2.
 - Commit source : `6563a4cba043ed9657318c95efa1168b72d61b5a` ; correction ciblée Balak précédente : `1faa6d4b87664487c2ee7e4bbbffbd2a8f135962`.
+- Les cartes modifiées ont été relues individuellement ; les autres cartes du bloc conservent leur validation antérieure.
+
+
+## Revalidation éditoriale ciblée V/F L3 — 2026-10-09
+- SHA final : `13cebe05f8eae665ffbfa3b290be00236717ec23`.
+- Les 31 cartes Vrai/Faux L3 restantes qui utilisaient une explication générique ont reçu une explication factuelle et des références plus directement pertinentes.
+- Des références ont été élargies pour étayer les faits complets (notamment Hérode Antipas, Pilate, Isaïe, Jérémie, Ézékiel et Zorobabel) ; les cartes L3 corrigées dans le lot précédent restent incluses dans ce SHA final.
+- Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L3.
+- Commit source : `ae09dde3e4998a7832695a36696703bdb24472f3`.
 - Les cartes modifiées ont été relues individuellement ; les autres cartes du bloc conservent leur validation antérieure.
