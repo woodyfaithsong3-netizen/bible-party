@@ -490,3 +490,19 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Corrections : `appendice-a-01` recentrée sur Psaume 37:29 ; `appendice-a-33` alignée précisément sur Marc 7:6-8.
 - État : VALIDATED.
 - CI + GitHub Pages : verts.
+
+
+### Bloc SEM-COMP-001 — VALIDATED (reconfirmé après correction)
+- Source : `src/data/completeTheVerseQuestions.ts`
+- SHA source validé : `4b816932b661b07bcea440d0ef21e6134e66b924`
+- Périmètre : 76 cartes Compléter les paroles.
+- Contrôles : 76 IDs uniques, aucune question dupliquée, structure 4 réponses/index valide, aucune fuite de réponse.
+- Correction : `song-28` contrôlée après correction.
+- CI + GitHub Pages : verts.
+
+### Bloc SEM-V61-001 — VALIDATED
+- Source : `src/data/jw_enrichment_v61.ts`
+- SHA source validé : `f41d4b7f55357fe5efaab9ebfae3db4c765c47e4`
+- Périmètre : 9 cartes (1 Citation → Quiz + 8 Mystère → Qui est-ce ?).
+- Contrôles : IDs uniques, minimum 3 indices, absence de fuite de réponse, mots interdits absents des indices, références et explications présentes.
+- CI + GitHub Pages : verts.
