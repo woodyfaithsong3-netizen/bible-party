@@ -42,17 +42,17 @@ function prepareTrueFalse(q: Extract<Question, { type: 'truefalse' }>) {
   return { ...q, category: canonicalGameCategory(q.category), statement: String(q.statement || '').replace(/\s+/g, ' ').trim() };
 }
 function buildTrueFalseDeck(): Question[] {
-  const objective = trueFalseQuestions.filter(isObjectiveTrueFalse).map(prepareTrueFalse);
-  const truths = objective.filter((q) => q.answer);
-  const falses = objective.filter((q) => !q.answer);
-  const maxTruths = Math.min(truths.length, Math.floor(falses.length * 0.8));
-  const selectedTruths = [...truths].sort(() => Math.random() - 0.5).slice(0, maxTruths);
-  const shuffledFalses = [...falses].sort(() => Math.random() - 0.5);
+  // Toutes les cartes Vrai/Faux éditoriales doivent rester atteignables.
+  // On équilibre uniquement leur ordre, sans supprimer une partie des VRAI
+  // pour obtenir un ratio artificiel.
+  const all = trueFalseQuestions.map(prepareTrueFalse);
+  const truths = [...all.filter((q) => q.answer)].sort(() => Math.random() - 0.5);
+  const falses = [...all.filter((q) => !q.answer)].sort(() => Math.random() - 0.5);
   const deck: Question[] = [];
   let ti = 0; let fi = 0;
-  while (fi < shuffledFalses.length || ti < selectedTruths.length) {
-    for (let n = 0; n < 5 && fi < shuffledFalses.length; n += 1) deck.push(shuffledFalses[fi++]);
-    for (let n = 0; n < 4 && ti < selectedTruths.length; n += 1) deck.push(selectedTruths[ti++]);
+  while (fi < falses.length || ti < truths.length) {
+    for (let n = 0; n < 5 && fi < falses.length; n += 1) deck.push(falses[fi++]);
+    for (let n = 0; n < 4 && ti < truths.length; n += 1) deck.push(truths[ti++]);
   }
   return deck;
 }
