@@ -60,3 +60,13 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - CI : verte sur commit `e328001239d1795af2097a7776d7974bef3bc4eb`.
 - GitHub Pages : verte sur commit `e328001239d1795af2097a7776d7974bef3bc4eb`.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+## Bloc SEM-V53-001
+- Source : `src/data/jw_enrichment_v53.ts`
+- SHA source validé : `c64b70b754c6d3c20ec4d396956730dc3c0c54a9`
+- Périmètre : 141 cartes, toutes les familles V53 présentes dans le fichier.
+- État : VALIDATED
+- Corrections ciblées : `v53-q-038`, `v53-tf-011`, `v53-tf-015`.
+- Contrôles : structure, réponses, références, contexte, formulation, distracteurs, doublons, catégories et jouabilité.
+- Clôture : validation éditoriale complète du lot ; CI et GitHub Pages vertes sur le commit source de clôture.
