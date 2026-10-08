@@ -314,3 +314,14 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Contrôles : jouabilité après transformation, exactitude biblique, réponse, explication/référence, formulation, contexte, catégories, intrus, chronologie et absence d'ambiguïté.
 - Corrections déjà intégrées : `v56-q-009` et `v56-i-006`.
 - État : VALIDATED. Ne pas réauditer tant que le SHA source reste inchangé.
+
+
+### Bloc SEM-L1-001 — VALIDATED — 2026-10-08
+- Source : `src/data/characterQuestionsL1.ts`
+- SHA source validé : `aa62897e063cc51b114d53371068fcdab388e8e6`
+- Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes.
+- État : VALIDATED
+- Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, catégories, autonomie, formulation, exactitude biblique, réponses, explications, références, distracteurs, contexte et jouabilité.
+- Corrections : `char-l1-q-01-03`, `char-l1-q-01-07`, `char-l1-q-05-02`, `char-l1-q-05-05`, `char-l1-q-07-03`, `char-l1-q-11-04`, `char-l1-q-18-05`, `char-l1-q-20-02`, `char-l1-q-20-04`, `char-l1-m-13-2`.
+- Résultats structurels finaux : 0 incohérence de réponses/index, 0 fuite de réponse, 0 doublon exact de question, 0 doublon d’ID, 0 Mystère avec moins de 3 indices, 0 indice contenant la réponse, 0 indice dupliqué.
+- Catégorie source : 284/284 `Personnages`; le moteur canonise ensuite cette catégorie sans modifier la source.
