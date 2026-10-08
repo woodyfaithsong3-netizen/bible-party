@@ -229,3 +229,28 @@ Les banques JOUER inspectées totalisent **1 395 IDs uniques**, sans doublon.
 Le registre anti-répétition officiel est `JOUER_VALIDATION_MANIFEST.md`. Une validation éditoriale complète est figée par SHA du ou des fichiers sources. Tant qu'un SHA n'a pas changé, un bloc VALIDATED ne doit pas être relu intégralement. Une modification repasse uniquement les cartes concernées en RECHECK.
 
 Les validations structurelles/runtimes déjà enregistrées ne sont pas transformées rétroactivement en validations sémantiques. L'objectif est de progresser par blocs fermés jusqu'à couvrir l'intégralité du pool réellement jouable, sans recommencer les mêmes 5000 cartes à chaque passe.
+
+
+## Blocs éditoriaux fermés — nouvelle méthode
+
+### Bloc SEM-V54-001 — en cours, non validé
+- Source : `src/data/jw_enrichment_v54.ts`
+- SHA source : `8b80295de853fb2a25f89351985d3080989a9405`
+- Périmètre : Quiz `v54-q001` à `v54-q080` ; Vrai/Faux `v54-tf001` à `v54-tf080`
+- Taille : 160 cartes
+- État : **CHECKING**
+- Règle : aucune de ces 160 cartes ne sera déclarée VALIDATED tant que les 10 contrôles éditoriaux ne sont pas terminés.
+- Premières anomalies déjà confirmées :
+  - `v54-q022` : la référence Matthieu 5:18 ne justifie pas l'affirmation sur la comparaison de copies anciennes.
+  - `v54-q026` : Luc 4:16-21 ne justifie pas l'histoire du système de chapitres et versets.
+  - `v54-q030` : Néhémie 8:8 ne justifie pas directement l'importance historique des traductions.
+  - `v54-q034` : doublon conceptuel de `v54-q031`, à traiter dans la passe doublons/variété.
+  - `v54-q068` : la référence donnée ne suffit pas à établir « beaucoup de psaumes ».
+  - `v54-tf026` : affirmation historiquement correcte mais référence biblique inadéquate ; à réaligner.
+  - `v54-tf027` : la référence Matthieu 28:19 ne suffit pas à établir le fait historique sur le nombre de langues.
+- Conséquence : **le bloc reste CHECKING et ne sera pas re-parcouru depuis zéro après correction** ; seules les cartes modifiées passeront RECHECK, puis le bloc sera clôturé par son nouveau SHA.
+
+### Règle de clôture
+À la clôture d'un bloc, inscrire :
+`BLOC | SHA FINAL | N CARTES | VALIDATED | EXCEPTIONS`.
+Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
