@@ -19,7 +19,7 @@ Une carte VALIDATED ne doit plus être relue intégralement tant qu'elle n'a pas
 - [ ] P2 contrôles structurels
 - [ ] P3 Quiz complet, conversions comprises
 - [ ] P4 Vrai/Faux complet
-- [ ] P5 Défi / Time's Up — sources historiques retirées du gameplay direct ; bonnes cartes redistribuées dans les modes conservés
+- [ ] P5 Contrôle des anciennes sources Défi / Time's Up — hors modes officiels si non redistribuées
 - [ ] P6 Mystère complet
 - [ ] P7 Compléter les paroles
 - [ ] P8 Cantiques/chansons vérifiés sur sources officielles
@@ -222,3 +222,10 @@ Le gameplay final est maintenant aligné sur les quatre modes demandés : **Quiz
 
 ### Contrôle des IDs après cette passe
 Les banques JOUER inspectées totalisent **1 395 IDs uniques**, sans doublon.
+
+
+## Règle de validation par blocs — 2026-10-08
+
+Le registre anti-répétition officiel est `JOUER_VALIDATION_MANIFEST.md`. Une validation éditoriale complète est figée par SHA du ou des fichiers sources. Tant qu'un SHA n'a pas changé, un bloc VALIDATED ne doit pas être relu intégralement. Une modification repasse uniquement les cartes concernées en RECHECK.
+
+Les validations structurelles/runtimes déjà enregistrées ne sont pas transformées rétroactivement en validations sémantiques. L'objectif est de progresser par blocs fermés jusqu'à couvrir l'intégralité du pool réellement jouable, sans recommencer les mêmes 5000 cartes à chaque passe.
