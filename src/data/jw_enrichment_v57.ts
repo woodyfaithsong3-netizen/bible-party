@@ -52,7 +52,7 @@ export const jwV57Challenges: Challenge[] = [
   {id:'v57-d-045',type:'challenge',category:'Personnages',difficulty:'easy',prompt:'Cite 5 patriarches ou ancêtres célèbres.',seconds:10,acceptedAnswers:['Adam', 'Noé', 'Abraham', 'Isaac', 'Jacob']},
   {id:'v57-d-046',type:'challenge',category:'Personnages',difficulty:'medium',prompt:'Cite 5 femmes fidèles de la Bible.',seconds:10,acceptedAnswers:['Sara', 'Ruth', 'Anne', 'Esther', 'Abigaïl']},
   {id:'v57-d-047',type:'challenge',category:'Personnages',difficulty:'hard',prompt:'Cite 5 personnages connus pour leur courage.',seconds:10,acceptedAnswers:['Josué', 'Déborah', 'David', 'Esther', 'Daniel']},
-  {id:'v57-d-048',type:'challenge',category:'Personnages',difficulty:'easy',prompt:'Cite 4 membres de la famille de Noé présents dans le récit de l’arche.',seconds:10,acceptedAnswers:['Noé', 'femme de Noé', 'Sem', 'Cham']},
+  {id:'v57-d-048',type:'challenge',category:'Personnages',difficulty:'easy',prompt:'Cite les quatre personnes de la famille de Noé qui sont entrées dans l’arche.',seconds:10,acceptedAnswers:['femme de Noé', 'Sem', 'Cham', 'Japhet']},
   {id:'v57-d-049',type:'challenge',category:'Personnages',difficulty:'medium',prompt:'Cite 5 personnages liés à l’Égypte.',seconds:10,acceptedAnswers:['Joseph', 'Moïse', 'Aaron', 'Pharaon', 'Jésus']},
   {id:'v57-d-050',type:'challenge',category:'Personnages',difficulty:'hard',prompt:'Cite 4 personnes qui ont servi comme juges.',seconds:10,acceptedAnswers:['Déborah', 'Gédéon', 'Samson', 'Jephté']},
   {id:'v57-d-051',type:'challenge',category:'Personnages',difficulty:'easy',prompt:'Cite 5 disciples ou apôtres de Jésus.',seconds:10,acceptedAnswers:['Pierre', 'André', 'Jacques', 'Jean', 'Matthieu']},
