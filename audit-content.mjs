@@ -219,8 +219,8 @@ for (const file of playableSourceFiles) {
 }
 const unroutedCardBanks = exportedCardBanks.filter(bank => !routedBankNames.has(bank.name));
 const sourceIds = [];
-for (const bank of exportedCardBanks) {
-  const sourceText = fs.readFileSync(new URL(bank.file, import.meta.url), 'utf8');
+for (const file of new Set(exportedCardBanks.map(bank => bank.file))) {
+  const sourceText = fs.readFileSync(new URL(file, import.meta.url), 'utf8');
   for (const match of sourceText.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)) sourceIds.push(match[1]);
 }
 const sourceIdCounts = new Map();
