@@ -252,3 +252,12 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Contrôles : vérité biblique, réponse, explication, référence et formulation directe.
 - CI + GitHub Pages : verts sur le commit de clôture `b8d94aff3ad448ba688c4ea78ce68dacc4d9a6f9`.
 - Les autres blocs VALIDATED restent inchangés et ne sont pas réaudités.
+
+
+## Revalidation finale des modifications V/F — 2026-10-08
+- `src/data/questions.ts` — SHA final validé : `cf5e82c8f555b69651d192f62febb1b99eeb937d`.
+- Cartes recontrôlées : `tf-v39-06`, `tf-balance-19`, `tf-balance-24`. Formulations directes, réponses, explications et références alignées.
+- `src/data/jw_enrichment_v53.ts` — SHA final validé : `dc99d9d3b4f66be7a0b82242275d16ade8baf6f2`.
+- Cartes recontrôlées : `v53-tf-008`, `v53-tf-018`, `v53-tf-040`. Formulations directes, réponses, explications et références alignées.
+- CI + GitHub Pages : verts sur le commit de clôture V53 `b8d94aff3ad448ba688c4ea78ce68dacc4d9a6f9` et les contrôles de la branche principale sont verts.
+- Ces deux blocs restent VALIDATED tant que leurs SHA restent inchangés.
