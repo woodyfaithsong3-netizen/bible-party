@@ -50,41 +50,41 @@ Règle absolue : ne jamais remettre à zéro les validations précédentes. 177 
 ## Journal des corrections — 2026-10-07
 
 ### L1-L3 Vrai/Faux — formulations inversées corrigées
-43 cartes ont été converties d’une affirmation négative inversée en question directe. Elles restent **FIXED**, pas VALIDATED : la vérité de chaque qualité et la référence doivent être revalidées individuellement.
+Journal historique du 2026-10-07 : 43 identifiants avaient été classés FIXED à cette date. Le contrôle des sources actuelles du 2026-10-09 ne retrouve que deux cartes de ce groupe : `char-l1-tf-13-4` et `char-l2-tf-29-4`. Elles sont des affirmations fausses avec réponse `false` et références cohérentes ; les 41 autres identifiants de l’ancien lot sont absents des fichiers actuels. Ne pas compter ces anciens identifiants absents comme des cartes restant à valider.
 
 - L1 : 20 cartes `char-l1-tf-*-4` — commit `3c90046a924679de3272727335e3301ebaf8c253`
 - L2 : 13 cartes `char-l2-tf-*-4` — commit `7a725ec81a080ae341ec0b56916f5903abed23cd`
 - L3 : 10 cartes `char-l3-tf-*-4` — commit `c0527e45e39e9a0d1f45d41476964dbcc9e45cff`
 
 ### V/F — localisations inversées L1-L3
-44 cartes supplémentaires ont été passées d’une affirmation négative de type « n’est pas associé à » à une formulation directe positive, avec réponse et explication alignées. Elles restent **FIXED** jusqu’à validation sémantique individuelle.
+Journal historique du 2026-10-07 : 44 anciennes cartes de localisation avaient été classées FIXED. Depuis, les cartes de localisation réellement présentes dans les sources L1-L3 et L5 ont été contrôlées et reformulées en faits directs ; les SHA courants et la revalidation sont enregistrés dans le manifest. Le total historique de 44 ne doit pas être utilisé comme un compteur de cartes encore ouvertes.
 - L1 : 20 — commit `f0b6f4b0d07742afab8cbbc3b394de9a23707533`
 - L2 : 14 — commit `91ea61fcd839c24bf64e84b67163f5c2dc514632`
 - L3 : 10 — commit `63e841c58eaaaa7a4ed0da292e1f60b86bcf84c8`
 
 ### L5 Vrai/Faux — qualité/personnage
-20 cartes passées de formulation négative inversée à une question directe. Elles sont **FIXED**, pas VALIDATED : la vérité de chaque qualité et la référence restent à revalider individuellement lors de la passe V/F complète.
+Journal historique du 2026-10-07 : 20 identifiants L5 avaient été classés FIXED. Les identifiants `char-l5-tf-81-3` à `char-l5-tf-100-3` ne sont pas présents dans le fichier L5 actuel ; le lot courant est suivi par le SHA du manifest, et ses cartes présentes ont été contrôlées sans réutiliser cet ancien compteur.
 
-- char-l5-tf-81-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-82-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-83-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-84-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-85-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-86-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-87-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-88-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-89-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-90-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-91-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-92-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-93-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-94-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-95-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-96-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-97-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-98-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-99-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
-- char-l5-tf-100-3 | FIXED | ab993e2 | formulation directe + réponse/explanation alignées
+- char-l5-tf-81-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-82-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-83-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-84-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-85-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-86-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-87-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-88-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-89-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-90-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-91-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-92-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-93-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-94-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-95-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-96-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-97-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-98-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-99-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
+- char-l5-tf-100-3 | HISTORIQUE — ID absent du fichier courant | ab993e2 | ancien identifiant non présent dans le SHA L5 courant
 
 
 ### Passe Quiz — fuites de réponse détectées et corrigées
@@ -206,20 +206,11 @@ Scan exhaustif des banques Mystère : les indices ne doivent jamais contenir un 
 Contrôle transversal de **1 395 IDs** sur les banques JOUER inspectées : **0 doublon d’ID**.
 
 
-### Passe moteur — rétablissement du mode Défi officiel
-Le gameplay final est maintenant aligné sur les quatre modes demandés : **Quiz**, **Vrai / Faux**, **Défi**, **Mystère**.
-- `GameType` : remplacement de `complete` par `challenge`.
-- `GAME_CONTENT.challenge` = **challenges + timesUp convertis en Défi**.
-- `GAME_CONTENT.mystery` = **mysteryQuestions uniquement** ; les Time Up ne sont plus dupliqués dans Mystère.
-- Les prompts Time Up ne révèlent plus leur réponse.
-- L’écran de partie, la sélection et `ready` utilisent désormais `challenge`.
-- La validation Défi se fait explicitement par le maître de jeu : **Défi réussi / Défi raté**.
-- Commit moteur : `bd2ab0d031fadb43ee3579520c81dd210777b0f2`
-- Commit UI/type : `d41ac2c233b211c0e72e24967cd32e6659f71b5c`, `33b5f9ce4805e5241b1e6a18f11320b167179f3e`
-- Contrôle Time Up : **0 indice contenant la réponse** dans les banques inspectées après correction de `timesup-19`.
+### Note historique — modes Défi/Mystère (supersédée par le moteur courant)
+Une ancienne passe avait temporairement décrit **Défi** et **Mystère** comme modes officiels autonomes. Cette note est historique et ne décrit pas le code courant. Les sources actuelles `src/data/gameContent.ts` et `src/app/game.tsx` exposent quatre modes : **Quiz**, **Vrai / Faux**, **Qui est-ce ?**, **Compléter les paroles**. Le bloc `SEM-ROUTING-GLOBAL-001` du manifest est la preuve de référence ; ne pas modifier les modes dans le cadre de l’audit éditorial sans demande explicite.
 
-### Contrôle des IDs après cette passe
-Les banques JOUER inspectées totalisent **1 395 IDs uniques**, sans doublon.
+### Contrôle des IDs — instantané historique
+L’ancien contrôle portait sur **1 395 IDs** d’un sous-ensemble de banques. Le contrôle global plus récent enregistré dans `SEM-ROUTING-GLOBAL-001` porte sur **2 840 cartes dans 67 banques**, toutes routées ; ne pas confondre les deux périmètres.
 
 
 ## Règle de validation par blocs — 2026-10-08
@@ -533,3 +524,11 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Passe V/F de localisation L4-L5 : 23 cartes reformulées et leurs explications/références alignées sur des faits bibliques précis. Les formulations génériques « est lié à » ne sont plus utilisées pour ces 23 cartes. SHA L4/L5 actualisés dans le manifest.
 
 - Passe de formulation V/F : 56 cartes de localisation reformulées en faits directs (L1 17, L2 19, L3 18, L5 2). Les lots restent suivis par SHA dans le manifest ; aucune fiche AVENTURE ou Ma Bible n’a été modifiée.
+
+
+## Réconciliation des anciens identifiants — 2026-10-09
+- Les compteurs FIXED du journal du 7 octobre sont historiques, pas un backlog actuel. Les statuts courants se lisent dans `JOUER_VALIDATION_MANIFEST.md` pour les SHA actuels.
+- Vérification directe : parmi les 43 identifiants L1-L3 suffixés `-4` listés historiquement, seuls `char-l1-tf-13-4` et `char-l2-tf-29-4` existent dans les fichiers actuels ; les deux ont été contrôlés et sont cohérents.
+- Les 20 identifiants L5 `char-l5-tf-81-3` à `char-l5-tf-100-3` sont absents du fichier L5 courant. Ils ne constituent donc pas 20 questions ouvertes dans le pool actuel.
+- Les formulations de localisation actuelles ont été contrôlées directement et réécrites en faits précis ; voir la dernière passe V/F et les SHA des fichiers dans le manifest.
+- Contrôle des questions Quiz L1-L6 : aucune question restante ne dépend d’un antécédent non nommé du type « cet homme », « cette femme », « ce personnage » ou « ce prophète ».
