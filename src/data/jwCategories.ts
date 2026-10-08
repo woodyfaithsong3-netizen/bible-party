@@ -120,7 +120,7 @@ export const categoryQuizExpansion: QuizQuestion[] = quizSeeds.map((s, i) => ({
 
 const tfSeeds: Array<[string, boolean, string, string, string]> = [
   ['La Bible présente Dieu comme une personne et non comme une force impersonnelle.',true,'Les récits bibliques décrivent Dieu comme une personne qui pense, parle, aime et agit.','Questions bibliques','Psaume 103:13; Jean 16:27'],
-  ['La Bible dit que la Terre doit rester pour toujours.',true,'Plusieurs passages présentent la Terre comme durablement habitée.','Questions bibliques','Psaume 37:29; Ecclésiaste 1:4'],
+  ['La Bible enseigne que la Terre demeurera pour toujours.',true,'Plusieurs passages présentent la Terre comme durablement habitée.','Questions bibliques','Psaume 37:29; Ecclésiaste 1:4'],
   ['Selon Jésus, ses vrais disciples seraient reconnaissables à leur amour.',true,'Jésus a donné l’amour entre disciples comme signe distinctif.','Questions bibliques','Jean 13:34-35'],
   ['La prière est présentée comme un moyen de parler à Dieu.',true,'La Bible encourage à s’adresser à Dieu dans la prière.','Questions bibliques','Philippiens 4:6'],
   ['La Bible enseigne que tous les morts sont conscients.',false,'Elle compare la mort à un sommeil dans plusieurs passages et parle d’une résurrection future.','Questions bibliques','Ecclésiaste 9:5; Jean 11:11-14'],
@@ -131,11 +131,11 @@ const tfSeeds: Array<[string, boolean, string, string, string]> = [
   ['1 Corinthiens 13 décrit l’amour comme patient et bon.',true,'Paul donne plusieurs qualités concrètes de l’amour.','Que veulent dire ces versets ?','1 Corinthiens 13:4-7'],
   ['Cyrus est nommé dans une prophétie d’Isaïe.',true,'Isaïe mentionne Cyrus dans le contexte du retour et de la reconstruction.','La Bible et l’Histoire','Isaïe 44:28–45:1'],
   ['Néhémie a participé à la reconstruction des murailles de Jérusalem.',true,'Le livre de Néhémie raconte son rôle dans cette reconstruction.','La Bible et l’Histoire','Néhémie 2:17-18; 6:15'],
-  ['Les manuscrits anciens peuvent être comparés pour étudier la transmission du texte biblique.',true,'La comparaison des manuscrits est un outil important pour étudier la transmission.','La Bible et l’Histoire','Isaïe 40:8; Matthieu 5:18'],
+  ['Les manuscrits anciens peuvent être comparés pour étudier la transmission du texte biblique.',true,'La comparaison des manuscrits est un outil important pour étudier la transmission.','La Bible et l’Histoire','JW.org, « La Bible a survécu aux ravages du temps »'],
   ['Le livre de Ruth raconte le retour des exilés à Babylone.',false,'Ruth se situe bien avant l’exil à Babylone.','La Bible et l’Histoire','Ruth 1–4'],
   ['La Bible contient des récits concernant Babylone, l’Assyrie, la Perse, la Grèce et Rome.',true,'Ces puissances apparaissent dans les récits ou prophéties bibliques.','La Bible et l’Histoire','Daniel 2:31-45; Luc 2:1'],
   ['Genèse 1:1 mentionne les cieux et la terre au commencement.',true,'Le récit de Genèse 1:1 commence par la création des cieux et de la terre.','La Bible et la science','Genèse 1:1'],
-  ['La Loi mosaïque comportait des mesures d’hygiène concernant les maladies contagieuses.',true,'Lévitique décrit notamment l’isolement et l’examen de certaines maladies.','La Bible et la science','Lévitique 13:1-5'],
+  ['La Loi mosaïque prévoyait des mesures concernant certaines maladies cutanées.',true,'Lévitique décrit notamment l’examen des personnes atteintes d’une affection de la peau et leur mise à l’écart dans certaines situations.','La Bible et la science','Lévitique 13:1-5'],
   ['Deutéronome 23:12-14 donne des instructions sur l’élimination des excréments humains.',true,'Le texte prévoit une zone hors du camp et des mesures pour recouvrir les excréments.','La Bible et la science','Deutéronome 23:12-14'],
   ['Job 36:27-28 décrit l’eau qui se condense et tombe en pluie.',true,'Le passage évoque l’eau qui se transforme et tombe des nuages.','La Bible et la science','Job 36:27-28'],
   ['Genèse 1:1 commence par l’idée d’un commencement des cieux et de la terre.',true,'Le récit s’ouvre sur la création des cieux et de la terre.','La Bible et la science','Genèse 1:1'],
