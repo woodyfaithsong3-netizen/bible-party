@@ -396,7 +396,7 @@ for (const file of globalQuestionSourceFiles) {
       continue;
     }
     const tupleQuestion = line.match(/^\s*\[\s*(['"])(.*?)\1\s*,\s*\[/);
-    if (tupleQuestion && !/^(?:q|tf|v\d|char-|complete-|song-|chrono|jwcat|appendice)/i.test(tupleQuestion[2])) {
+    if (tupleQuestion && tupleQuestion[2].trim().endsWith('?') && !/^(?:q|tf|v\d|char-|complete-|song-|chrono|jwcat|appendice)/i.test(tupleQuestion[2])) {
       globalQuestionRecords.push({ id: file + ':' + (lineIndex + 1), file, question: tupleQuestion[2] });
       continue;
     }
