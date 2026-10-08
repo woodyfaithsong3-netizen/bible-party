@@ -76,7 +76,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `e981b5bc2dccffe760eb62f36b0dbb4274a79b57`
+- SHA source validé : `71f51497ad83aa8cb06e2cdc42806199433de3b8`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -99,7 +99,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `da2acc6e82626f5bad9835d7e27b6bffc02d6980`
+- SHA source validé : `216c6b79830b95d2bc7bfa853f7b254c8d096e46`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -110,7 +110,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `a04e076a28ba1798070bc1d4bfad0e7b3bb0622c`
+- SHA source validé : `ddd24c32cab94f496a5930b3055447fafad645e1`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -145,7 +145,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `5aad89cd370a8119585f0bf05e799f881f881f7c`
+- SHA source validé : `2014a4536b0f36073917a298c979347fb2945781`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses/index, références, contexte, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère, doublons, fuite de réponse et jouabilité.
@@ -297,13 +297,13 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 ## Revalidation ciblée V/F — L2 et L6 — 2026-10-09
 - `char-l2-tf-39-1` : l’affirmation négative inversée sur Balak a été remplacée par une affirmation directe vraie ; réponse, explication et référence alignées sur Nombres 22:1-6.
 - `char-l6-tf-114-2` : formulation remplacée par le fait positif qu’Onésiphore rechercha Paul à Rome et le réconforta ; référence 2 Timothée 1:16-18.
-- SHA final L2 : `819853f33520e6c2289430caa90b1758158d6091` ; SHA final L6 : `5aad89cd370a8119585f0bf05e799f881f881f7c`.
+- SHA final L2 : `819853f33520e6c2289430caa90b1758158d6091` ; SHA final L6 : `2014a4536b0f36073917a298c979347fb2945781`.
 - Ces deux cartes ont été relues individuellement ; le reste de chaque bloc conserve son état antérieur, car seules ces cartes ont changé.
 - Commits source : `1faa6d4b87664487c2ee7e4bbbffbd2a8f135962`, `34abeab4bb2bf41718d8cc19205865e817147806`.
 
 
 ## Revalidation éditoriale ciblée V/F L1 — 2026-10-09
-- SHA final : `e981b5bc2dccffe760eb62f36b0dbb4274a79b57`.
+- SHA final : `71f51497ad83aa8cb06e2cdc42806199433de3b8`.
 - Les 43 cartes Vrai/Faux L1 qui utilisaient une explication générique ont reçu une explication factuelle et des références plus précises.
 - Correction factuelle majeure : `char-l1-tf-13-2` ne présente plus Élie comme servant au tabernacle de Silo ; la formulation situe correctement son ministère dans le royaume d’Israël.
 - Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L1.
@@ -312,7 +312,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 
 ## Revalidation éditoriale ciblée V/F L2 — 2026-10-09
-- SHA final : `da2acc6e82626f5bad9835d7e27b6bffc02d6980`.
+- SHA final : `216c6b79830b95d2bc7bfa853f7b254c8d096e46`.
 - Les 37 cartes Vrai/Faux L2 qui utilisaient une explication générique ont reçu une explication factuelle et des références ajustées aux faits énoncés.
 - Corrections supplémentaires : `char-l2-tf-39-1` reformulée en affirmation directe vraie sur Balak ; `char-l2-tf-33-3` réparée, car sa formulation était matériellement tronquée au milieu du mot « avertissement ».
 - Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L2.
@@ -328,4 +328,12 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Commits source : `ae09dde3e4998a7832695a36696703bdb24472f3`, `312516e5441d81b9a2d7cf9421765c964f44339e`.
 - Les cartes modifiées ont été relues individuellement ; les autres cartes du bloc conservent leur validation antérieure.
 
-- Dernière mise à jour du SHA L3 après la correction des sept explications restantes : `a04e076a28ba1798070bc1d4bfad0e7b3bb0622c`.
+- Dernière mise à jour du SHA L3 après la correction des sept explications restantes : `ddd24c32cab94f496a5930b3055447fafad645e1`.
+
+
+## Corrections de formulation complémentaires — 2026-10-09
+- L1 : `char-l1-tf-02-2`, `char-l1-tf-12-2`, `char-l1-tf-16-2` reformulées en affirmations directes et grammaticalement complètes.
+- L2 : `char-l2-tf-27-2` corrigée pour l’accord et la formulation de Marie Madeleine.
+- L3 : `char-l3-tf-42-2` reformulée autour d’un fait localisable et d’une référence directe.
+- L6 Quiz : `char-l6-q-120-8` ne demande plus « dans un contexte associé » ; la question précise désormais qu’il s’agit de l’assemblée saluée chez Priscille et Aquila.
+- SHA finaux actualisés : L1 `71f51497ad83aa8cb06e2cdc42806199433de3b8`, L2 `216c6b79830b95d2bc7bfa853f7b254c8d096e46`, L3 `ddd24c32cab94f496a5930b3055447fafad645e1`, L6 `2014a4536b0f36073917a298c979347fb2945781`.
