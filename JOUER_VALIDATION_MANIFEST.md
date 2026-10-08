@@ -119,3 +119,26 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Résultats finaux : 288 IDs uniques, 200 Quiz sans doublon ni fuite, 48 Vrai/Faux contrôlés, 40 Qui est-ce ? sans problème d’indices.
 - Exceptions ouvertes : aucune.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+## Bloc SEM-L4-001
+- Source : `src/data/characterQuestionsL4.ts`
+- SHA source validé : `3aff9a2e3e7d12aa70113f7eba45bfe5822cf004`
+- Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
+- État : VALIDATED
+- Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux, autonomie liée au personnage, indices Mystère et jouabilité.
+- Corrections ciblées : références Mystère, formulations/références Quiz et Vrai/Faux, et réalignement de `char-l4-q-64-7` / `char-l4-q-67-10` avec leur personnage.
+- Exceptions ouvertes : aucune.
+- Clôture : CI et GitHub Pages vertes sur le commit de clôture courant.
+
+## Bloc SEM-L5-001
+- Source : `src/data/characterQuestionsL5.ts`
+- SHA source validé : `2491e02cad2a8c8f5165d8cfa43a8d78885d5d13`
+- Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
+- État : VALIDATED
+- Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
+- Corrections ciblées : 5 Vrai/Faux réalignés sur leur `characterId`, puis recontrôlés.
+- Exceptions ouvertes : aucune.
+- CI : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
+- GitHub Pages : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
