@@ -50,16 +50,11 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-V55-001
 - Source : `src/data/jw_enrichment_v55.ts`
-- SHA source validé : `dc8522dfa8cf78e2e7b60a66180d39fe52dec012`
-- Périmètre réellement jouable : `v55-m-001`–`v55-m-008` (Qui est-ce ?), `v55-q-001`–`v55-q-008` (converties en Quiz), `v55-i-001`–`v55-i-008` (converties en Quiz) = **24 cartes jouables**.
-- Cartes non distribuées par `GAME_CONTENT` : `v55-c-001`–`v55-c-008` et `v55-d-001`–`v55-d-008` (présentes dans le fichier source mais hors pool actuellement jouable).
-- État : VALIDATED
-- Corrections ciblées : `v55-q-006` (question rendue exacte par rapport à la réponse) ; `v55-i-002` (intrus rendu non ambigu : trois psaumes contre le récit de Genèse 37).
-- Contrôles éditoriaux : 24 cartes jouables relues pour contexte, réponse, références, distracteurs, formulation, fuite de réponse et doublons.
-- Exceptions ouvertes : aucune.
-- CI : verte sur commit `e328001239d1795af2097a7776d7974bef3bc4eb`.
-- GitHub Pages : verte sur commit `e328001239d1795af2097a7776d7974bef3bc4eb`.
-- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+- SHA source : `dc8522dfa8cf78e2b7e60a66180d39fe52dec012`
+- Périmètre désormais jouable : 40 cartes : `v55-m-001`–`008`, `v55-q-001`–`008`, `v55-i-001`–`008`, `v55-c-001`–`008`, `v55-d-001`–`008`.
+- État : CHECKING
+- 24 cartes étaient déjà VALIDATED ; 16 cartes (8 chronologies + 8 défis) deviennent jouables grâce au routage présent dans `src/data/questions.ts` et doivent être clôturées par une passe éditoriale ciblée.
+- Corrections historiques : `v55-q-006`, `v55-i-002`.
 
 
 ## Bloc SEM-V53-001
@@ -70,3 +65,10 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Corrections ciblées : `v53-q-038`, `v53-tf-011`, `v53-tf-015`.
 - Contrôles : structure, réponses, références, contexte, formulation, distracteurs, doublons, catégories et jouabilité.
 - Clôture : validation éditoriale complète du lot ; CI et GitHub Pages vertes sur le commit source de clôture.
+
+## Bloc SEM-V56-001
+- Source : `src/data/jw_enrichment_v56.ts`
+- SHA courant : `abd7b9548326f36a81bdd1ec030e351ea1250c47`
+- Périmètre : 55 cartes, toutes jouables via les quatre modes officiels après transformations.
+- État : CHECKING
+- Corrections ciblées : `v56-q-009`, `v56-i-006`.
