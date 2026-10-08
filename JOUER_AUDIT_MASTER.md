@@ -233,7 +233,7 @@ Les validations structurelles/runtimes déjà enregistrées ne sont pas transfor
 
 ## Blocs éditoriaux fermés — nouvelle méthode
 
-### Bloc SEM-V54-001 — en cours, non validé
+### Bloc SEM-V54-001 — VALIDATED
 - Source : `src/data/jw_enrichment_v54.ts`
 - SHA source initial : `8b80295de853fb2a25f89351985d3080989a9405`
 - SHA courant après corrections : `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25`
