@@ -210,3 +210,19 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Répartition : 96 Quiz, 39 Vrai/Faux, 12 Mystère, 8 Time’s Up, 8 Citations, 8 Chronologie, 8 Intrus, 8 Défi.
 - Corrections : V/F Révélation, références manuscrits, 2 Timothée 4:13, procès de Jésus, Michée, maladies cutanées, chronologie jwcat-chrono-2.
 - CI + GitHub Pages : verts.
+
+
+## SEM-CHRONO-001
+- Source : `src/data/chronologyQuestions.ts`
+- SHA : `5b978b2b521014e7b9c2c816c44bfbe04347c1a3`
+- 52 cartes Chronologie → Quiz.
+- État : VALIDATED
+- CI + GitHub Pages : verts.
+
+## SEM-PREACH-001
+- Source : `src/data/preachingTruthQuestions.ts`
+- SHA : `f97ca0bad2b54fada132acb0b8ab442692688fd0`
+- 34 cartes de vérités bibliques → Quiz.
+- État : VALIDATED
+- Corrections : appendice-a-01 et appendice-a-33.
+- CI + GitHub Pages : verts.
