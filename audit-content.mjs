@@ -377,6 +377,49 @@ if (duplicateSourceIds.length) {
 }
 if (!exportedCardBanks.length) failures.push('global playability audit found no exported card banks');
 
+
+/**
+ * Cross-bank duplicate-question scan. The source formats include object cards
+ * with a question field and legacy tuple cards whose prompt is the first item.
+ * Keep IDs out of the comparison and normalize accents/punctuation.
+ */
+const globalQuestionRecords = [];
+const globalQuestionSourceFiles = [...new Set([...playableSourceFiles, './src/data/questions.ts'])];
+for (const file of globalQuestionSourceFiles) {
+  const lines = fs.readFileSync(new URL(file, import.meta.url), 'utf8').split('\n');
+  for (let lineIndex = 0; lineIndex < lines.length; lineIndex++) {
+    const line = lines[lineIndex];
+    const id = line.match(/\bid\s*:\s*['"]([^'"]+)['"]/)?.[1] ?? file + ':' + (lineIndex + 1);
+    const propertyQuestion = line.match(/\bquestion\s*:\s*(['"])(.*?)\1/);
+    if (propertyQuestion) {
+      globalQuestionRecords.push({ id, file, question: propertyQuestion[2] });
+      continue;
+    }
+    const tupleQuestion = line.match(/^\s*\[\s*(['"])(.*?)\1\s*,\s*\[/);
+    if (tupleQuestion && !/^(?:q|tf|v\d|char-|complete-|song-|chrono|jwcat|appendice)/i.test(tupleQuestion[2])) {
+      globalQuestionRecords.push({ id: file + ':' + (lineIndex + 1), file, question: tupleQuestion[2] });
+      continue;
+    }
+    const nestedTupleQuestion = line.match(/^\s*\[\s*['"][^'"]+['"]\s*,\s*['"][^'"]+['"]\s*,\s*\[\s*(['"])(.*?)\1/);
+    if (nestedTupleQuestion) {
+      globalQuestionRecords.push({ id: file + ':' + (lineIndex + 1), file, question: nestedTupleQuestion[2] });
+    }
+  }
+}
+const globalQuestionGroups = new Map();
+for (const card of globalQuestionRecords) {
+  const normalized = normalizeEditorialText(card.question);
+  if (!normalized) continue;
+  if (!globalQuestionGroups.has(normalized)) globalQuestionGroups.set(normalized, []);
+  globalQuestionGroups.get(normalized).push(card);
+}
+const crossBankDuplicateGroups = [...globalQuestionGroups.values()].filter(group => group.length > 1);
+if (crossBankDuplicateGroups.length) {
+  failures.push('duplicate questions across playable source banks after normalization: ' + crossBankDuplicateGroups
+    .map(group => group.map(card => card.id + ' [' + card.file + '] / ' + card.question).join(' <> '))
+    .join(' | '));
+}
+
 const sourceCardTotal = exportedCardBanks.reduce((sum, bank) => sum + bank.cardCount, 0);
 const routedSourceCardTotal = exportedCardBanks
   .filter(bank => routedBankNames.has(bank.name))
@@ -401,7 +444,8 @@ console.log('Bible Party content audit');
 console.log('- ID occurrences:', ids.length);
 console.log('- References:', references.length);
 console.log('- Quiz blocks checked:', quizBlocks.length);
-console.log('- Normalized duplicate question groups:', duplicateQuestionGroups.length);
+console.log('- Normalized duplicate question groups (character corpus):', duplicateQuestionGroups.length);
+console.log('- Cross-bank normalized duplicate question groups:', crossBankDuplicateGroups.length);
 console.log('- Literal correct-answer leaks in Quiz questions:', answerLeakCards.length);
 console.log('- Dedicated true/false split:', { true: trueTrueFalseCount, false: falseTrueFalseCount });
 console.log('- Expert cards:', expertCards);
