@@ -84,3 +84,15 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Corrections ciblées : 10 cartes modifiées puis recontrôlées.
 - Exceptions ouvertes : aucune.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+### Bloc SEM-V57-001 — VALIDATED — 2026-10-08
+- Source : `src/data/jw_enrichment_v57.ts`
+- SHA source validé : `fca34d25b39330332746c1da485fa8bb0cc6a826`
+- Périmètre : 316 cartes (87 Défis historiques, 55 citations -> Quiz, 70 chronologies -> Quiz, 64 intrus -> Quiz, 40 anciens Time's Up -> Qui est-ce ?).
+- État : VALIDATED
+- Contrôles : structure, IDs, réponses/index, fuite de réponse, doublons, formulation, contexte, exactitude biblique, références, distracteurs, chronologies, intrus, indices et jouabilité après transformation.
+- Corrections ciblées : `v57-q-047`, `v57-q-056`, `v57-c-031`, `v57-c-034`, `v57-c-035`, `v57-c-036`, `v57-d-048`.
+- Résultats structurels : 316 IDs uniques ; aucune anomalie structurelle résiduelle dans le passage final.
+- Exceptions ouvertes : aucune.
+- Règle : ne pas réauditer tant que le SHA source reste inchangé.
