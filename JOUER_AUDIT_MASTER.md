@@ -274,9 +274,9 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
 ### Bloc SEM-Q-001 — VALIDATED — 2026-10-08
 - Source : `src/data/questions.ts`
-- SHA source validé : `e962ce1ed2f3f6c1fc9aa7b7234273236b2571bd`
+- SHA source validé : `976173db9877d1b922743201129f5c696018b6b0`
 - Périmètre : Quiz source `facts` + `extraFacts` = 79 cartes.
-- Recheck ciblé : 3 cartes corrigées (Makpéla, Jéricho, pièce dans le poisson).
+- Recheck ciblé : 3 cartes corrigées (Makpéla, Jéricho, pièce dans le poisson) ; la modification actuelle est uniquement du routage (`categoryChronologyExpansion`), sans modification des 79 tuples de contenu.
 - Validation : les trois cartes modifiées ont été relues ; formulation, contexte, réponse, explication, référence, structure et distracteurs sont cohérents.
 - Exceptions : aucune.
 - CI : verte sur `813b69dd83dcea5982c80aa4b70103189458ca45`.
