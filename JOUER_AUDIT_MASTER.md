@@ -236,19 +236,19 @@ Les validations structurelles/runtimes déjà enregistrées ne sont pas transfor
 ### Bloc SEM-V54-001 — en cours, non validé
 - Source : `src/data/jw_enrichment_v54.ts`
 - SHA source initial : `8b80295de853fb2a25f89351985d3080989a9405`
-- SHA courant après corrections : `11d6988f1392d170add00a3aa4676a51d459a329`
+- SHA courant après corrections : `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25`
 - Périmètre : Quiz `v54-q001` à `v54-q080` ; Vrai/Faux `v54-tf001` à `v54-tf080`
 - Taille : 160 cartes
 - État : **CHECKING** — corrections effectuées, validation éditoriale finale encore en cours
 - Règle : aucune de ces 160 cartes ne sera déclarée VALIDATED tant que les 10 contrôles éditoriaux ne sont pas terminés.
 - Premières anomalies déjà confirmées :
   - `v54-q022` : la référence Matthieu 5:18 ne justifie pas l'affirmation sur la comparaison de copies anciennes.
-  - `v54-q026` : Luc 4:16-21 ne justifie pas l'histoire du système de chapitres et versets.
+  - `v54-q026` : référence réalignée vers l’article JW.org sur les chapitres et versets.
   - `v54-q030` : Néhémie 8:8 ne justifie pas directement l'importance historique des traductions.
   - `v54-q034` : doublon conceptuel de `v54-q031`, à traiter dans la passe doublons/variété.
   - `v54-q068` : la référence donnée ne suffit pas à établir « beaucoup de psaumes ».
-  - `v54-tf026` : affirmation historiquement correcte mais référence biblique inadéquate ; à réaligner.
-  - `v54-tf027` : la référence Matthieu 28:19 ne suffit pas à établir le fait historique sur le nombre de langues.
+  - `v54-tf026` : référence réalignée vers l’article JW.org sur les chapitres et versets.
+  - `v54-tf027` : référence Révélation 14:6 réalignée sur le contenu de l’affirmation.
 - Conséquence : **le bloc reste CHECKING et ne sera pas re-parcouru depuis zéro après correction** ; seules les cartes modifiées passeront RECHECK, puis le bloc sera clôturé par son nouveau SHA.
 
 ### Règle de clôture
