@@ -1,4 +1,4 @@
-import { MysteryQuestion, QuoteQuestion, QuizQuestion } from '@/types';
+import { MysteryQuestion, QuoteQuestion } from '@/types';
 
 // Audit contenu V61 : cartes ciblées pour supprimer les derniers trous de jouabilité
 // et rendre « Mot interdit » disponible dans chacune des 8 rubriques.
@@ -62,11 +62,3 @@ export const jwV61Forbidden: MysteryQuestion[] = [
     reference: 'Michée 5:2; Matthieu 2:5-6', forbiddenWords: ['dirigeant', 'Bethléem', 'Juda'],
   },
 ];
-
-
-// Route jouable : la citation est convertie en Quiz sans changer son ID ni son contenu.
-export const jwV61QuoteAsQuiz: QuizQuestion[] = jwV61Quote.map((q) => ({
-  id: q.id, type: 'quiz', category: q.category, difficulty: q.difficulty,
-  question: q.quote, answers: q.answers, correctAnswer: q.correctAnswer,
-  explanation: q.explanation, reference: q.reference,
-}));
