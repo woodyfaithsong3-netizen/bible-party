@@ -132,7 +132,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `ccd034edb0becf332e84ffbfeaedd42df87a5722`
+- SHA source validé : `26583754e42558d7976bad9e71d40a17af82904e`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -145,7 +145,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `2014a4536b0f36073917a298c979347fb2945781`
+- SHA source validé : `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses/index, références, contexte, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère, doublons, fuite de réponse et jouabilité.
@@ -297,7 +297,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 ## Revalidation ciblée V/F — L2 et L6 — 2026-10-09
 - `char-l2-tf-39-1` : l’affirmation négative inversée sur Balak a été remplacée par une affirmation directe vraie ; réponse, explication et référence alignées sur Nombres 22:1-6.
 - `char-l6-tf-114-2` : formulation remplacée par le fait positif qu’Onésiphore rechercha Paul à Rome et le réconforta ; référence 2 Timothée 1:16-18.
-- SHA final L2 : `819853f33520e6c2289430caa90b1758158d6091` ; SHA final L6 : `2014a4536b0f36073917a298c979347fb2945781`.
+- SHA final L2 : `819853f33520e6c2289430caa90b1758158d6091` ; SHA final L6 : `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
 - Ces deux cartes ont été relues individuellement ; le reste de chaque bloc conserve son état antérieur, car seules ces cartes ont changé.
 - Commits source : `1faa6d4b87664487c2ee7e4bbbffbd2a8f135962`, `34abeab4bb2bf41718d8cc19205865e817147806`.
 
@@ -336,13 +336,20 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - L2 : `char-l2-tf-27-2` corrigée pour l’accord et la formulation de Marie Madeleine.
 - L3 : `char-l3-tf-42-2` reformulée autour d’un fait localisable et d’une référence directe.
 - L6 Quiz : `char-l6-q-120-8` ne demande plus « dans un contexte associé » ; la question précise désormais qu’il s’agit de l’assemblée saluée chez Priscille et Aquila.
-- SHA finaux actualisés : L1 `71f51497ad83aa8cb06e2cdc42806199433de3b8`, L2 `216c6b79830b95d2bc7bfa853f7b254c8d096e46`, L3 `ddd24c32cab94f496a5930b3055447fafad645e1`, L6 `2014a4536b0f36073917a298c979347fb2945781`.
+- SHA finaux actualisés : L1 `71f51497ad83aa8cb06e2cdc42806199433de3b8`, L2 `216c6b79830b95d2bc7bfa853f7b254c8d096e46`, L3 `ddd24c32cab94f496a5930b3055447fafad645e1`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
 
 
 ## Revalidation ciblée Quiz L5 — Évodie / Épaphrodite — 2026-10-09
-- SHA final `src/data/characterQuestionsL5.ts` : `ccd034edb0becf332e84ffbfeaedd42df87a5722`.
+- SHA final `src/data/characterQuestionsL5.ts` : `26583754e42558d7976bad9e71d40a17af82904e`.
 - `char-l5-q-87-1` : corrigée, car plusieurs propositions pouvaient correspondre à « une chrétienne de Philippes » ; la question demande maintenant quelle chrétienne Paul exhorta à être en accord avec Syntyche, avec quatre distracteurs féminins plausibles.
 - `char-l5-q-87-10` : corrigée, car la formulation demandait une activité alors que les réponses étaient des personnes.
 - `char-l5-q-88-1` et `char-l5-q-88-4` : le contexte ne repose plus sur « cet homme » ; Épaphrodite est nommé dans la question.
 - Références conservées et alignées sur Philippiens 2:25-30 et 4:2-3.
 - Commit source : `8abdf7a286d062a7c6a665f80ca81ba2b6ace58d`.
+
+
+## Revalidation de contexte autonome Quiz L5-L6 — 2026-10-09
+- L5 : `char-l5-q-100-7` nomme désormais Amos au lieu de supposer que le joueur sait qui est « ce prophète ».
+- L6 : `char-l6-q-111-1`, `111-2`, `111-6`, `111-8` nomment la femme qui souffrait de pertes de sang ; `char-l6-q-112-2` et `112-10` nomment l’homme délivré dans la région des Géraséniens. Chaque question est maintenant compréhensible isolément.
+- SHA finaux : L5 `26583754e42558d7976bad9e71d40a17af82904e`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
+- Commit source : `7dcaf657e5fc153e6c92ef7d8a3841d39e9e0189`.
