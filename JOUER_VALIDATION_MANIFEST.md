@@ -153,3 +153,50 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Corrections ciblées : références Joël et indices Mystère réalignés.
 - Exceptions ouvertes : aucune.
 - Clôture : CI et GitHub Pages vertes sur le commit source de clôture.
+
+
+## SEM-V58-001
+- Source : `src/data/jw_enrichment_v58.ts`
+- SHA source validé : `c94576dc570223fb5601e62c4532a9a4bdb162bf`
+- Périmètre : 24 cartes jouables.
+- État : VALIDATED
+- Contrôles : structure, réponses/index, fuite, formulation V/F, exactitude, références, indices Mystère, contexte et jouabilité.
+- Corrections : `v58-m-005`, `v58-tf-003`, `v58-tf-006`.
+- CI + GitHub Pages : verts.
+
+## SEM-V104-001
+- Source : `src/data/jw_enrichment_v104.ts`
+- SHA source validé : `9b10eb14e06d33470a565e77fc375b7461243aa5`
+- Périmètre : 40 cartes.
+- État : VALIDATED
+- Corrections : `v104-tf-008`, `v104-tf-012`.
+- CI + GitHub Pages : verts.
+
+## SEM-V105-001
+- Source : `src/data/jw_enrichment_v105.ts`
+- SHA source validé : `401397a34f80594232a321227f9c4e6d9b146ef4`
+- Périmètre : 42 cartes.
+- État : VALIDATED
+- Corrections : `v105-tf001`, `v105-tf004`, `v105-tf005`, `v105-tf008`, `v105-m002`.
+- CI + GitHub Pages : verts.
+
+## SEM-V106-001
+- Source : `src/data/jw_enrichment_v106_characters.ts`
+- SHA source validé : `f7a7bb36331075e1f01b9bbcca4cb211c011ae6e`
+- Périmètre : 60 cartes.
+- État : VALIDATED
+- CI + GitHub Pages : verts.
+
+## SEM-V107-001
+- Source : `src/data/jw_enrichment_v107_characters.ts`
+- SHA source validé : `d3fce104c0553b0b0d7851a2bb273e9a93009366`
+- Périmètre : 40 cartes.
+- État : VALIDATED
+- CI + GitHub Pages : verts.
+
+## SEM-V108-001
+- Source : `src/data/jw_enrichment_v108_characters.ts`
+- SHA source validé : `b049cf4bf90aa6b607c4c507350aa1a117eda4aa`
+- Périmètre : 30 cartes.
+- État : VALIDATED
+- CI + GitHub Pages : verts.
