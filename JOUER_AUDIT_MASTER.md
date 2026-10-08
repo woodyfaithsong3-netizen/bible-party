@@ -150,14 +150,12 @@ Contrôle ciblé des cartes modifiées : les réponses, explications et référe
 - Dernier commit L3 : `695a64dccccb1559be001bdb2254e12d3577283f`
 - Dernier commit L2 : `684a9369fd7eb57ebcd483d6315e2107b5db9029`
 
-### Contrôles structurels V/F personnages
-- L1-L6 : **500 V/F** détectés.
-- Toutes les cartes contrôlées ont un booléen `answer`.
-- Les Quiz personnages L1-L6 représentent **1 250 cartes à 4 choix** ; aucune carte contrôlée n’a de nombre de réponses incorrect ou de `correctAnswer` hors limites.
-- Scan de fuite de réponse dans les Quiz L1-L6 : **0 fuite** détectée.
-- Scan Mystère L1-L6 : **0 carte avec moins de 3 indices** et **0 réponse présente dans un indice**.
-- Ancienne répartition 500 cartes : **386 Vrai / 114 Faux**. Cette banque a depuis été éditorialement nettoyée : les V/F subjectifs sur les qualités ont été retirés, et le moteur de jeu impose désormais un mélange avec une légère majorité de FAUX (3 FAUX / 2 VRAI dans le paquet joué).
-- Les 500 cartes restent donc **non VALIDATED globalement** tant que leur exactitude sémantique et leurs références n’ont pas été couvertes.
+### Contrôles structurels V/F personnages — chiffres réconciliés le 2026-10-09
+- Les six fichiers personnages contiennent actuellement **339 Vrai/Faux** : L1 44, L2 50, L3 48, L4 52, L5 50, L6 95. L’ancien total de 500 ne correspond plus aux fichiers actuels et ne doit plus servir au suivi.
+- Les six fichiers contiennent **1 250 Quiz** (200 chacun en L1-L5 et 250 en L6).
+- Les contrôles structurels enregistrés : champs `answer`, nombre de choix et index `correctAnswer`, fuites de réponse et indices Mystère.
+- Les blocs L1-L6 sont déclarés VALIDATED dans `JOUER_VALIDATION_MANIFEST.md` uniquement pour leurs SHA enregistrés. Les cartes modifiées sont revalidées de manière ciblée et leur SHA est mis à jour ; la dernière revalidation L3 du 2026-10-09 est inscrite au manifest.
+- Les contrôles de routage (2 840/2 840) prouvent l’accès au moteur, pas l’exactitude éditoriale. Le suivi éditorial des autres banques reste fondé sur les blocs VALIDATED et leurs SHA, jamais sur le seul résultat CI.
 
 
 ### Refonte JOUER — modes et taille des parties
@@ -519,3 +517,9 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Contrôles : vérité biblique, réponse, explication, référence et formulation directe.
 - CI + GitHub Pages : verts sur le commit de clôture `b8d94aff3ad448ba688c4ea78ce68dacc4d9a6f9`.
 - Les autres blocs VALIDATED restent inchangés et ne sont pas réaudités.
+
+
+## Réconciliation du registre — 2026-10-09
+- Le total historique de 500 Vrai/Faux pour L1-L6 était obsolète : le comptage direct des six fichiers actuels est de 339.
+- Le manifest prévaut pour l’état éditorial des blocs fermés et leur SHA ; les anciennes phrases de journal qui disent encore « FIXED, à revalider » ne doivent pas annuler silencieusement une validation ultérieure documentée. Une correction ciblée impose la revalidation de la carte modifiée et la mise à jour du SHA du bloc.
+- Cinq cartes L3 comportant une négation qui inversait une affirmation marquée VRAI ont été corrigées et revalidées le 2026-10-09 : `char-l3-tf-53-1`, `char-l3-tf-54-1`, `char-l3-tf-57-1`, `char-l3-tf-58-1`, `char-l3-tf-59-1`. Voir la section de revalidation dans le manifest.
