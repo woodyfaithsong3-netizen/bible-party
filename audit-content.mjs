@@ -284,7 +284,7 @@ for (const bank of exportedCardBanks) {
   if (!exportMatch) continue;
   const nextExport = sourceText.indexOf('export const ', exportMatch.index + exportMatch[0].length);
   const segment = sourceText.slice(exportMatch.index, nextExport < 0 ? sourceText.length : nextExport);
-  for (const match of segment.matchAll(/\\bid\\s*:\s*['"]([^'"]+)['"]/g)) sourceIds.push(match[1]);
+  for (const match of segment.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)) sourceIds.push(match[1]);
 }
 const sourceIdCounts = new Map();
 for (const id of sourceIds) sourceIdCounts.set(id, (sourceIdCounts.get(id) ?? 0) + 1);
