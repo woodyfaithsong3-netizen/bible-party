@@ -4,17 +4,17 @@ Ce fichier est le registre opérationnel des blocs éditoriaux validés. Une car
 
 ## Bloc SEM-V54-001
 - Source : `src/data/jw_enrichment_v54.ts`
-- SHA source courant : `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25`
+- SHA source validé : `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25`
 - Périmètre : Quiz `v54-q001`–`v54-q080` + Vrai/Faux `v54-tf001`–`v54-tf080`
 - Taille : 160 cartes
-- État : CHECKING
+- État : VALIDATED
 - Dernière correction : commit `4e56577cd0896b7bca76ad6607339c6d4288696c`
 - Corrections ciblées : q026 et tf026, références réalignées sur `wp16 n° 2 p. 14-15`.
 - Exceptions ouvertes : aucune nouvelle exception confirmée après cette correction.
-- Règle de clôture : ne passer à VALIDATED qu'après contrôle éditorial complet + CI verte + GitHub Pages verte.
+- Clôture : contrôle éditorial complet effectué, CI verte et GitHub Pages verte confirmées.
 
-## Blocs suivants
-Aucun bloc suivant n'est déclaré VALIDATED tant que son périmètre et son SHA ne sont pas enregistrés ici.
+## Bloc suivant à auditer
+Le prochain bloc doit être identifié directement dans les pools jouables de JOUER. Ne pas reprendre SEM-V54-001 tant que son SHA reste `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25`.
 
 ## Règles pour les autres IA
 1. Lire ce manifest et `JOUER_AUDIT_MASTER.md` avant tout audit.
