@@ -203,7 +203,7 @@ Scan exhaustif des banques Mystère : les indices ne doivent jamais contenir un 
 - Contrôle final : **0 chevauchement** détecté entre `clues` et `forbiddenWords` dans les banques Mystère inspectées.
 
 ### Passe identité des cartes
-Contrôle transversal de **1 395 IDs** sur les banques JOUER inspectées : **0 doublon d’ID**.
+Contrôle transversal historique de **1 395 IDs** sur un sous-ensemble de banques : **0 doublon d’ID** détecté dans ce périmètre. Le périmètre global courant est de 2 840 cartes dans 67 banques, comme indiqué dans SEM-ROUTING-GLOBAL-001.
 
 
 ### Note historique — modes Défi/Mystère (supersédée par le moteur courant)
@@ -510,7 +510,7 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Les **118 explications génériques** repérées initialement dans les banques V/F L1-L3 ont été remplacées par des explications factuelles ; les références ont été ajustées aux affirmations concernées.
 - Corrections factuelles et formulations ciblées consignées dans le manifest : notamment Élie et Silo (L1), Balak et une carte Ésaü matériellement tronquée (L2), ainsi que des références et affirmations inversées concernant Malachie, Gamaliel, Onésime, Philémon et Tite (L3).
 - Contrôle final : 0 explication générique de type « Cette affirmation est conforme aux faits bibliques » ou « La Bible rapporte ces faits » restante dans les Vrai/Faux des fichiers L1-L3.
-- SHA actuels : L1 `429938f7e59dee286fdda4722f2489bceb27a06b`, L2 `ed1c66c09c2a40de2632ca509b2c753a05e715bd`, L3 `9ba7d0ef7982f44f16aa37ff909510422a76c182`.
+- SHA actuels : L1 `f0c42cef0199a39a36a3981a792dc352b851369f`, L2 `586f9996047f8ac547e817c396d4734a13e4ad57`, L3 `e27ecb89005515053220805c1e7fc073090dcbf6`.
 - Le manifest a été actualisé après chaque modification. Les validations antérieures des cartes non modifiées sont conservées ; seules les cartes effectivement changées ont été retravaillées.
 
 - Contrôle complémentaire de jouabilité : `char-l6-q-120-8` a été reformulée pour préciser clairement le contexte de l’assemblée chez Priscille et Aquila ; la carte demeure dans le même bloc validé, avec revalidation ciblée et SHA actualisé.
@@ -532,3 +532,5 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Les 20 identifiants L5 `char-l5-tf-81-3` à `char-l5-tf-100-3` sont absents du fichier L5 courant. Ils ne constituent donc pas 20 questions ouvertes dans le pool actuel.
 - Les formulations de localisation actuelles ont été contrôlées directement et réécrites en faits précis ; voir la dernière passe V/F et les SHA des fichiers dans le manifest.
 - Contrôle des questions Quiz L1-L6 : aucune question restante ne dépend d’un antécédent non nommé du type « cet homme », « cette femme », « ce personnage » ou « ce prophète ».
+
+- Passe concision : six Vrai/Faux trop longs ont été raccourcis et revalidés ; SHA L1-L3 actualisés dans le manifest.
