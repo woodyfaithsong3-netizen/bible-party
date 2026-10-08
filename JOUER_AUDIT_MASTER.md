@@ -284,15 +284,13 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
 
 
-### Bloc SEM-V55-001 — VALIDATED
+### Bloc SEM-V55-001 — RECHECK / CHECKING
 - Source : `src/data/jw_enrichment_v55.ts`
-- SHA source validé : `dc8522dfa8cf78e2e7b60a66180d39fe52dec012`
-- Périmètre réellement jouable : 24 cartes : 8 Qui est-ce ?, 8 citations converties en Quiz, 8 intrus convertis en Quiz.
-- Les 8 Chronologie et 8 Défis du fichier ne sont pas distribués par `GAME_CONTENT` actuellement.
-- Corrections : `v55-q-006` et `v55-i-002`.
-- Exceptions : aucune.
-- CI et GitHub Pages : vertes sur le commit de registre suivant après clôture.
-- Règle : ne pas réauditer tant que le SHA source reste inchangé.
+- SHA source : `dc8522dfa8cf78e2b7e60a66180d39fe52dec012`
+- Périmètre désormais réellement jouable : 40 cartes : 8 Qui est-ce ?, 8 citations -> Quiz, 8 intrus -> Quiz, 8 chronologies -> Quiz, 8 défis -> Quiz.
+- Le routage des chronologies et défis est présent dans `src/data/questions.ts` ; l'ancien manifest les déclarait à tort non distribués.
+- 24 cartes avaient déjà une validation éditoriale complète ; les 16 nouvellement jouables passent en recheck éditorial ciblé.
+- Corrections historiques : `v55-q-006`, `v55-i-002`.
 
 
 ### Bloc SEM-V53-001 — VALIDATED
@@ -302,3 +300,15 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Contrôles : structure, réponses, exactitude biblique, formulation, contexte, fuite de réponse, références, distracteurs, catégories, doublons et jouabilité.
 - Corrections : `v53-q-038`, `v53-tf-011`, `v53-tf-015`.
 - État : VALIDATED. Ne pas réauditer tant que le SHA source reste inchangé.
+
+### Passe routage global — 2026-10-08
+- `8737245dc0061e9f4f100d39e8914a486206f15b` : `categoryChronologyExpansion` est désormais distribué vers le Quiz via l'adaptateur Chronologie -> Quiz.
+- `ce2c63f8a94bbe300069dd4fa45fd8d49c0fd819` puis `f83a72ba1711f118eb1e0c7c898513e042c675dc` : `audit:content` vérifie automatiquement que toutes les banques de cartes exportées du périmètre jouable sont référencées par le pipeline et que les IDs source sont uniques.
+- Cette passe ne touche ni AVENTURE, ni Ma Bible, ni `characterLearning.ts`.
+
+### Bloc SEM-V56-001 — CHECKING
+- Source : `src/data/jw_enrichment_v56.ts`
+- SHA courant : `abd7b9548326f36a81bdd1ec030e351ea1250c47`
+- Périmètre : 55 cartes (5 Mystère, 12 Défi, 11 citations -> Quiz, 10 chronologies -> Quiz, 9 intrus -> Quiz, 8 Time's Up -> Mystère).
+- Corrections : `v56-q-009` (question/réponse/référence réalignées sur Lévitique 17:11) ; `v56-i-006` (intrus rendu non ambigu en remplaçant Néhémie par Paul).
+- État : CHECKING.
