@@ -337,3 +337,14 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Résultats structurels : 316 IDs uniques ; aucune anomalie structurelle résiduelle dans le passage final.
 - Exceptions ouvertes : aucune.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
+- Source : `src/data/characterQuestionsL2.ts`
+- SHA source validé : `0fe1be81674bbf026dab683ca0b21c829a0eef68`
+- Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
+- État : VALIDATED
+- Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
+- Résultats : 290 IDs uniques ; 200 Quiz sans doublon de question ni fuite de réponse ; 50 Vrai/Faux structurellement valides ; 40 Qui est-ce ? avec au moins 3 indices et sans fuite de réponse ; aucun doublon exact avec les questions Quiz de L1.
+- Exceptions ouvertes : aucune.
+- Règle : ne pas réauditer tant que le SHA source reste inchangé.
