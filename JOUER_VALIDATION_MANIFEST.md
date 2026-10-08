@@ -142,3 +142,14 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - CI : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
 - GitHub Pages : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+## Bloc SEM-L6-001
+- Source : `src/data/characterQuestionsL6.ts`
+- SHA source validé : `b45ce5764d4499fd8d6f9195cf99cb551b9e1ecc`
+- Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
+- État : VALIDATED
+- Contrôles : validation éditoriale complète, structure, réponses/index, références, contexte, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère, doublons, fuite de réponse et jouabilité.
+- Corrections ciblées : références Joël et indices Mystère réalignés.
+- Exceptions ouvertes : aucune.
+- Clôture : CI et GitHub Pages vertes sur le commit source de clôture.
