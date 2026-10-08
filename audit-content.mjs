@@ -341,7 +341,9 @@ console.log('- Global playable source banks:', exportedCardBanks.length);
 console.log('- Unrouted source banks:', unroutedCardBanks.length);
 console.log('- Source card IDs audited:', sourceIds.length);
 console.log('- Source cards routed:', routedSourceCardTotal + '/' + sourceCardTotal);
-console.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);\nconsole.log('- Per-card route proofs:', sourceRouteProof.filter(route => route.reachable).length + '/' + sourceRouteProof.length);\nconsole.log('- Source cards with no proven route:', unreachableSourceCards.reduce((sum, route) => sum + route.sourceCards, 0));
+console.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);
+console.log('- Per-card route proofs:', sourceRouteProof.filter(route => route.reachable).length + '/' + sourceRouteProof.length);
+console.log('- Source cards with no proven route:', unreachableSourceCards.reduce((sum, route) => sum + route.sourceCards, 0));
 console.log('- Unrouted imported/local card banks:', unroutedPipelineBanks.length);
 
 
