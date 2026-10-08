@@ -11,11 +11,22 @@ const canonicalGameCategory = (value: string): string => {
   if (['personnages','personnage','jeunes','prophètes','prophète','disciples','rois','rois & prophètes'].includes(key)) {
     return 'Personnages';
   }
-  if (['jéhovah & la foi','foi','repentance','persévérance','fidélité','amour','humilité'].includes(key)) {
+  if ([
+    'jéhovah & la foi','foi','repentance','persévérance','fidélité','amour','humilité',
+    'courage','prédication',
+  ].includes(key)) {
     return 'Mieux connaître Jéhovah';
   }
-  if (['que veulent dire ces versets ?','la bible et la science','prophéties','bible & enseignements','bible'].includes(key)) {
+  if ([
+    'que veulent dire ces versets ?','la bible et la science','prophéties','bible & enseignements',
+    'bible','concepts','questions bibliques',
+  ].includes(key)) {
     return 'Comprendre la Bible';
+  }
+  if ([
+    'personnages','personnage','jeunes','prophètes','prophète','disciples','rois','rois & prophètes',
+  ].includes(key)) {
+    return 'Personnages';
   }
   return 'Récits bibliques';
 };
