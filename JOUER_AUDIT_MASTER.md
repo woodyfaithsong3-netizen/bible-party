@@ -530,5 +530,7 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Les **118 explications génériques** repérées initialement dans les banques V/F L1-L3 ont été remplacées par des explications factuelles ; les références ont été ajustées aux affirmations concernées.
 - Corrections factuelles et formulations ciblées consignées dans le manifest : notamment Élie et Silo (L1), Balak et une carte Ésaü matériellement tronquée (L2), ainsi que des références et affirmations inversées concernant Malachie, Gamaliel, Onésime, Philémon et Tite (L3).
 - Contrôle final : 0 explication générique de type « Cette affirmation est conforme aux faits bibliques » ou « La Bible rapporte ces faits » restante dans les Vrai/Faux des fichiers L1-L3.
-- SHA actuels : L1 `e981b5bc2dccffe760eb62f36b0dbb4274a79b57`, L2 `da2acc6e82626f5bad9835d7e27b6bffc02d6980`, L3 `a04e076a28ba1798070bc1d4bfad0e7b3bb0622c`.
+- SHA actuels : L1 `71f51497ad83aa8cb06e2cdc42806199433de3b8`, L2 `216c6b79830b95d2bc7bfa853f7b254c8d096e46`, L3 `ddd24c32cab94f496a5930b3055447fafad645e1`.
 - Le manifest a été actualisé après chaque modification. Les validations antérieures des cartes non modifiées sont conservées ; seules les cartes effectivement changées ont été retravaillées.
+
+- Contrôle complémentaire de jouabilité : `char-l6-q-120-8` a été reformulée pour préciser clairement le contexte de l’assemblée chez Priscille et Aquila ; la carte demeure dans le même bloc validé, avec revalidation ciblée et SHA actualisé.
