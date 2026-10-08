@@ -262,12 +262,17 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Ces deux blocs restent VALIDATED tant que leurs SHA restent inchangés.
 
 
-## Bloc SEM-ROUTING-GLOBAL-001 — CHECKING — 2026-10-08
-- Source : `src/data/questions.ts` + `audit-content.mjs`
-- Objectif : cartographier toutes les banques locales et importées du pipeline JOUER, y compris les banques construites par spread/map, et vérifier qu’aucune banque de cartes n’est laissée hors des pools réellement jouables.
-- Méthode : contrôle des banques importées, des tableaux locaux de cartes, de leurs injections dans les pools agrégés et des références finales dans `GAME_CONTENT`.
-- État : CHECKING.
-- Aucun bloc éditorial VALIDATED n’est rouvert tant que son SHA source reste inchangé.
+## Bloc SEM-ROUTING-GLOBAL-001 — VALIDATED — 2026-10-09
+- Sources : `src/data/questions.ts`, `src/data/gameContent.ts`, `src/app/game.tsx`, `audit-content.mjs`.
+- SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`.
+- SHA `audit-content.mjs` : `61613d9f618c008372153e3d8de4cbdc4596f583`.
+- Contrôle CI du commit `cdc2cb77544050b0c2e12ecef35f75c18ef42457` : 67 banques de cartes sources, 2 840 IDs de cartes audités, 2 840/2 840 cartes routées, 67/67 preuves de routage par banque, 151 banques importées/locales mappées, 0 banque sans route prouvée.
+- Contrôle moteur ajouté et exécuté : 7/7 handlers de rendu/validation présents, 4/4 libellés officiels présents.
+- Les quatre modes restent Quiz, Vrai / Faux, Qui est-ce ? et Compléter les paroles. Aucun mode officiel ajouté ou renommé.
+- CI : verte ; TypeScript, audit de contenu et export Web réussis.
+- GitHub Pages : build et déploiement verts.
+- Portée : preuve statique des injections/handlers ; elle ne remplace pas la validation éditoriale individuelle de chaque carte.
+- Règle anti-répétition : les blocs éditoriaux VALIDATED ne sont pas rouverts tant que leur SHA source reste inchangé.
 
 ## Bloc SEM-RUNTIME-001 — VALIDATED — 2026-10-08
 - Sources : `src/data/gameContent.ts` + `audit-content.mjs`
