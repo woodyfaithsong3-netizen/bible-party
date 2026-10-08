@@ -362,7 +362,7 @@ const mysteries: Array<[string, string[], string]> = [
   ['Rébecca',['J’ai été choisie comme femme pour Isaac.','J’ai rencontré le serviteur d’Abraham près d’un puits.','J’ai eu des jumeaux, Jacob et Ésaü.'],'Genèse 24:10-20, 58-67; 25:19-26'],
   ['Rahab',['J’habitais à Jéricho.','J’ai caché deux espions israélites.','Ma famille a été épargnée lors de la prise de la ville.'],'Josué 2:1-14; 6:22-25'],
   ['Déborah',['J’étais prophétesse.','Je jugeais Israël sous un palmier.','J’ai encouragé Barak à combattre Sissera.'],'Juges 4:4-10'],
-  ['Gédéon',['J’ai demandé des signes à l’aide d’une toison.','J’ai combattu les Madianites.','Mon armée a été réduite à 300 hommes.'],'Juges 6:36-40; 7:2-7'],
+  ['Gédéon',['J’ai demandé des signes à l’aide d’une toison.','J’ai combattu une armée ennemie dans le territoire de Madian.','Mon armée a été réduite à 300 hommes.'],'Juges 6:36-40; 7:2-7'],
   ['Jonathan',['J’étais le fils de Saül.','J’ai noué une profonde amitié avec David.','J’ai soutenu David malgré la jalousie de mon père.'],'1 Samuel 18:1-4; 20:12-17'],
   ['Abigaïl',['Mon mari s’appelait Nabal.','J’ai rencontré David alors qu’il était en colère contre mon mari.','J’ai parlé avec sagesse pour empêcher une vengeance.'],'1 Samuel 25:2-35'],
   ['Élisée',['J’ai été désigné comme successeur d’Élie.','J’ai aidé une veuve qui avait une dette.','J’ai guéri Naamân de la lèpre.'],'1 Rois 19:19-21; 2 Rois 4:1-7; 5:1-14'],
