@@ -281,6 +281,28 @@ for (const file of playableSourceFiles) {
     if (routedByQuestions || routedByGameContent) routedBankNames.add(name);
   }
 }
+const sourceRouteProof = [];
+for (const bank of exportedCardBanks) {
+  const escapedName = bank.name.replace(/[.*+?^$()|[\\]\\]/g, '\\const unroutedCardBanks = exportedCardBanks.filter(bank => !routedBankNames.has(bank.name));');
+  const directRoute = new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\b').test(routingQuestions);
+  const mappedRouteMatch = routingQuestions.match(new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\.(map|filter)\\(([\\s\\S]{0,700})'));
+  const directGameRoute = new RegExp('\\.\\.\\.' + escapedName + '\\b').test(routingGameContent);
+  const mappedGameRoute = routingGameContent.match(new RegExp('\\b' + escapedName + '\\.(map|filter)\\(([\\s\\S]{0,700})'));
+  const route = mappedRouteMatch || mappedGameRoute;
+  const routeText = route ? route[0] : '';
+  const mappedPreservesId = !route || /id\\s*:\\s*q\\.id|id\\s*:\\s*item\\.id|id\\s*:\\s*card\\.id/.test(routeText);
+  const reachable = directRoute || directGameRoute || Boolean(mappedRouteMatch && mappedPreservesId) || Boolean(mappedGameRoute && mappedPreservesId);
+  sourceRouteProof.push({
+    name: bank.name,
+    sourceCards: bank.cardCount,
+    reachable,
+    routeType: directRoute || directGameRoute ? 'direct' : (route ? 'mapped' : 'none'),
+    preservesId: mappedPreservesId,
+  });
+  if (!reachable) failures.push('source card bank has no proven per-card route: ' + bank.name);
+  if (route && !mappedPreservesId) failures.push('mapped source bank does not explicitly preserve id: ' + bank.name);
+}
+const unreachableSourceCards = sourceRouteProof.filter(route => !route.reachable);
 const unroutedCardBanks = exportedCardBanks.filter(bank => !routedBankNames.has(bank.name));
 const duplicateIdsWithinBank = exportedCardBanks.filter(bank => bank.duplicateIds.length);
 const sourceIds = [];
@@ -319,7 +341,7 @@ console.log('- Global playable source banks:', exportedCardBanks.length);
 console.log('- Unrouted source banks:', unroutedCardBanks.length);
 console.log('- Source card IDs audited:', sourceIds.length);
 console.log('- Source cards routed:', routedSourceCardTotal + '/' + sourceCardTotal);
-console.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);
+console.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);\nconsole.log('- Per-card route proofs:', sourceRouteProof.filter(route => route.reachable).length + '/' + sourceRouteProof.length);\nconsole.log('- Source cards with no proven route:', unreachableSourceCards.reduce((sum, route) => sum + route.sourceCards, 0));
 console.log('- Unrouted imported/local card banks:', unroutedPipelineBanks.length);
 
 
