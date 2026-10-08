@@ -392,6 +392,10 @@ const unroutedCardBanks = exportedCardBanks.filter(bank => !routedBankNames.has(
 const duplicateIdsWithinBank = exportedCardBanks.filter(bank => bank.duplicateIds.length);
 const sourceIds = [];
 for (const bank of exportedCardBanks) sourceIds.push(...(bank.ids ?? []));
+// Include the 504 core cards declared directly in questions.ts; they are routed
+// through the base pools and were previously omitted from the global total.
+const baseQuestionIds = [...routingQuestions.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)].map(match => match[1]);
+sourceIds.push(...baseQuestionIds);
 const sourceIdCounts = new Map();
 for (const id of sourceIds) sourceIdCounts.set(id, (sourceIdCounts.get(id) ?? 0) + 1);
 const duplicateSourceIds = [...sourceIdCounts.entries()].filter(([, count]) => count > 1);
@@ -450,16 +454,17 @@ if (crossBankDuplicateGroups.length) {
     .join(' | '));
 }
 
-const sourceCardTotal = exportedCardBanks.reduce((sum, bank) => sum + bank.cardCount, 0);
+const sourceCardTotal = exportedCardBanks.reduce((sum, bank) => sum + bank.cardCount, 0) + baseQuestionIds.length;
 const routedSourceCardTotal = exportedCardBanks
   .filter(bank => routedBankNames.has(bank.name))
-  .reduce((sum, bank) => sum + bank.cardCount, 0);
+  .reduce((sum, bank) => sum + bank.cardCount, 0) + baseQuestionIds.length;
 if (routedSourceCardTotal !== sourceCardTotal) {
   failures.push('source cards not fully routed: ' + routedSourceCardTotal + '/' + sourceCardTotal);
 }
 
 console.log('- Global playable source banks:', exportedCardBanks.length);
 console.log('- Unrouted source banks:', unroutedCardBanks.length);
+console.log('- Core cards in questions.ts:', baseQuestionIds.length);
 console.log('- Source card IDs audited:', sourceIds.length);
 console.log('- Source cards routed:', routedSourceCardTotal + '/' + sourceCardTotal);
 console.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);
