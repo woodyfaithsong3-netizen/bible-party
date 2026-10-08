@@ -37,9 +37,10 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-Q-001
 - Source : `src/data/questions.ts`
-- SHA source : `620bc62ef65fcc57f98ec2ee1b1bd9e728f17ae8`
-- Périmètre : Quiz source `facts` + `extraFacts` = 79 cartes (premier segment du pool `quizQuestions`).
-- État : CHECKING
-- Contrôles : structure des tuples, index de réponse, formulation, contexte, fuite de réponse, doublons et distracteurs ; vérification des références selon les passages concernés.
-- Exceptions ouvertes : aucune à ce stade.
-- Règle : ce segment ne sera pas réouvert tant que son SHA source reste inchangé.
+- SHA source : `e962ce1ed2f3f6c1fc9aa7b7234273236b2571bd`
+- Périmètre : Quiz source `facts` + `extraFacts` = 79 cartes.
+- État : RECHECK
+- Recheck ciblé : 3 cartes corrigées pour lever des ambiguïtés de formulation (Makpéla, Jéricho, pièce dans le poisson).
+- Contrôles : structure des tuples, index de réponse, formulation, contexte, fuite de réponse, doublons et distracteurs contrôlés.
+- Exceptions ouvertes : aucune.
+- Règle : après validation finale, ne pas réouvrir tant que le SHA source reste inchangé.
