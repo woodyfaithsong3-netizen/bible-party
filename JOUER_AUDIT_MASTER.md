@@ -236,10 +236,10 @@ Les validations structurelles/runtimes déjà enregistrées ne sont pas transfor
 ### Bloc SEM-V54-001 — VALIDATED
 - Source : `src/data/jw_enrichment_v54.ts`
 - SHA source initial : `8b80295de853fb2a25f89351985d3080989a9405`
-- SHA courant après corrections : `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25`
+- SHA courant validé : `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25`
 - Périmètre : Quiz `v54-q001` à `v54-q080` ; Vrai/Faux `v54-tf001` à `v54-tf080`
 - Taille : 160 cartes
-- État : **CHECKING** — corrections effectuées, validation éditoriale finale encore en cours
+- État : **VALIDATED**
 - Règle : aucune de ces 160 cartes ne sera déclarée VALIDATED tant que les 10 contrôles éditoriaux ne sont pas terminés.
 - Premières anomalies déjà confirmées :
   - `v54-q022` : la référence Matthieu 5:18 ne justifie pas l'affirmation sur la comparaison de copies anciennes.
@@ -281,4 +281,15 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Exceptions : aucune.
 - CI : verte sur `813b69dd83dcea5982c80aa4b70103189458ca45`.
 - GitHub Pages : verte sur `813b69dd83dcea5982c80aa4b70103189458ca45`.
+- Règle : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+### Bloc SEM-V55-001 — VALIDATED
+- Source : `src/data/jw_enrichment_v55.ts`
+- SHA source validé : `dc8522dfa8cf78e2e7b60a66180d39fe52dec012`
+- Périmètre réellement jouable : 24 cartes : 8 Qui est-ce ?, 8 citations converties en Quiz, 8 intrus convertis en Quiz.
+- Les 8 Chronologie et 8 Défis du fichier ne sont pas distribués par `GAME_CONTENT` actuellement.
+- Corrections : `v55-q-006` et `v55-i-002`.
+- Exceptions : aucune.
+- CI et GitHub Pages : vertes sur le commit de registre suivant après clôture.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
