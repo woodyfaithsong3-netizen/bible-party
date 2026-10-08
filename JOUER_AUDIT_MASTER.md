@@ -255,3 +255,10 @@ Les validations structurelles/runtimes déjà enregistrées ne sont pas transfor
 À la clôture d'un bloc, inscrire :
 `BLOC | SHA FINAL | N CARTES | VALIDATED | EXCEPTIONS`.
 Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
+
+### Bloc SEM-COMP-001 — CHECKING
+- Sources : `src/data/completeTheVerseQuestions.ts`
+- SHA source : `1c8bbaaeaec36f6e3382b41481861bef1e9ac58b`
+- Périmètre : 40 cartes versets + 36 cartes cantiques/chansons = 76 cartes.
+- État : CHECKING.
+- Prochaine étape : contrôle éditorial individuel, puis fermeture par SHA sans réaudit ultérieur si inchangé.
