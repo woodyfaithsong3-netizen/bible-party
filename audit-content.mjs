@@ -201,7 +201,8 @@ const playableSourceFiles = [
 ];
 const routingQuestions = fs.readFileSync(new URL('./src/data/questions.ts', import.meta.url), 'utf8');
 const routingGameContent = fs.readFileSync(new URL('./src/data/gameContent.ts', import.meta.url), 'utf8');
-const routingCode = routingQuestions + '\n' + routingGameContent;
+const routingGameScreen = fs.readFileSync(new URL('./src/app/game.tsx', import.meta.url), 'utf8');
+const routingCode = routingQuestions + '\n' + routingGameContent + '\n' + routingGameScreen;
 
 // Contrôle runtime des quatre modes officiels : une banque ne suffit pas d'être
 // importée ; elle doit être injectée dans un pool effectivement consommé par getGamePool.
@@ -228,6 +229,31 @@ if (/trueFalseQuestions\.filter\(isObjectiveTrueFalse\)/.test(routingGameContent
 }
 if (/slice\(0,\s*maxTruths\)/.test(routingGameContent)) {
   runtimeRoutingFailures.push('Vrai/Faux tronque encore le sous-pool des VRAI');
+}
+// Contrôle aussi le dernier maillon : le moteur doit avoir un rendu et une
+// validation pour chaque type réellement injecté dans les quatre pools.
+const requiredRuntimeHandlers = [
+  ['écran Quiz pour les cartes à choix', /mode === 'quiz' && question\.type === 'quiz'/],
+  ['écran Quiz pour les défis historiques conservés', /mode === 'quiz' && question\.type === 'challenge'/],
+  ['écran Vrai/Faux', /mode === 'truefalse' && question\.type === 'truefalse'/],
+  ['écran Qui est-ce ?', /mode === 'mystery' && question\.type === 'mystery'/],
+  ['écran Compléter les paroles', /mode === 'complete' && question\.type === 'quiz'/],
+  ['validation de réponse des cartes à choix', /question\.answers\[question\.correctAnswer\]/],
+  ['révélation/validation des cartes Défi historiques', /revealPanel\(masterAnswer, 200\)/],
+];
+const missingRuntimeHandlers = requiredRuntimeHandlers.filter(([, pattern]) => !pattern.test(routingGameScreen));
+if (missingRuntimeHandlers.length) {
+  failures.push('gameplay renderer missing handlers: ' + missingRuntimeHandlers.map(([label]) => label).join(', '));
+}
+const expectedModeLabels = [
+  ['Quiz', /quiz:\s*'QUIZ'/],
+  ['Vrai / Faux', /truefalse:\s*'VRAI \/ FAUX'/],
+  ['Qui est-ce ?', /mystery:\s*'QUI EST-CE \?'/],
+  ['Compléter les paroles', /complete:\s*'COMPLÉTER LES PAROLES'/],
+];
+const missingModeLabels = expectedModeLabels.filter(([, pattern]) => !pattern.test(routingGameScreen));
+if (missingModeLabels.length) {
+  failures.push('official game mode label missing or changed: ' + missingModeLabels.map(([label]) => label).join(', '));
 }
 if (runtimeRoutingFailures.length) {
   failures.push('runtime routing failures: ' + runtimeRoutingFailures.join(', '));
@@ -343,6 +369,8 @@ console.log('- Source card IDs audited:', sourceIds.length);
 console.log('- Source cards routed:', routedSourceCardTotal + '/' + sourceCardTotal);
 console.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);
 console.log('- Per-card route proofs:', sourceRouteProof.filter(route => route.reachable).length + '/' + sourceRouteProof.length);
+console.log('- Official mode render handlers:', requiredRuntimeHandlers.length - missingRuntimeHandlers.length + '/' + requiredRuntimeHandlers.length);
+console.log('- Official mode labels:', expectedModeLabels.length - missingModeLabels.length + '/' + expectedModeLabels.length);
 console.log('- Source cards with no proven route:', unreachableSourceCards.reduce((sum, route) => sum + route.sourceCards, 0));
 console.log('- Unrouted imported/local card banks:', unroutedPipelineBanks.length);
 
