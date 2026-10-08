@@ -206,3 +206,19 @@ Scan exhaustif des banques Mystère : les indices ne doivent jamais contenir un 
 
 ### Passe identité des cartes
 Contrôle transversal de **1 395 IDs** sur les banques JOUER inspectées : **0 doublon d’ID**.
+
+
+### Passe moteur — rétablissement du mode Défi officiel
+Le gameplay final est maintenant aligné sur les quatre modes demandés : **Quiz**, **Vrai / Faux**, **Défi**, **Mystère**.
+- `GameType` : remplacement de `complete` par `challenge`.
+- `GAME_CONTENT.challenge` = **challenges + timesUp convertis en Défi**.
+- `GAME_CONTENT.mystery` = **mysteryQuestions uniquement** ; les Time Up ne sont plus dupliqués dans Mystère.
+- Les prompts Time Up ne révèlent plus leur réponse.
+- L’écran de partie, la sélection et `ready` utilisent désormais `challenge`.
+- La validation Défi se fait explicitement par le maître de jeu : **Défi réussi / Défi raté**.
+- Commit moteur : `bd2ab0d031fadb43ee3579520c81dd210777b0f2`
+- Commit UI/type : `d41ac2c233b211c0e72e24967cd32e6659f71b5c`, `33b5f9ce4805e5241b1e6a18f11320b167179f3e`
+- Contrôle Time Up : **0 indice contenant la réponse** dans les banques inspectées après correction de `timesup-19`.
+
+### Contrôle des IDs après cette passe
+Les banques JOUER inspectées totalisent **1 395 IDs uniques**, sans doublon.
