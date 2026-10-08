@@ -14,7 +14,7 @@ Registre opérationnel des statuts individuels. Le document `JOUER_REGISTRE_CENT
 Une carte VALIDATED ne doit plus être relue intégralement tant qu'elle n'a pas changé. Si elle change, elle repasse RECHECK.
 
 ## Phases — état réconcilié au 2026-10-09
-- [x] P0 inventaire exhaustif du pool jouable actuel : 2 840 IDs dans 67 banques sources exportées.
+- [x] P0 inventaire exhaustif réconcilié : 3 632 IDs uniques jouables, dont 3 155 cartes dans 73 banques supplémentaires et 477 cartes de base conservées dans `questions.ts`.
 - [x] P1 registre/manifest anti-répétition, avec SHA courant par bloc.
 - [x] P2 contrôles structurels et IDs.
 - [x] P3 Quiz complet, conversions comprises ; 1 105 blocs Quiz détectés par l'audit automatisé.
@@ -29,7 +29,7 @@ Une carte VALIDATED ne doit plus être relue intégralement tant qu'elle n'a pas
 - [x] P12 catégories canoniques appliquées aux cartes du moteur.
 - [x] P13 qualité de jeu : structure, contexte, références, formulations, fuites et concision contrôlés par blocs.
 - [x] P14 moteur des quatre modes : 7/7 handlers et 4/4 libellés contrôlés.
-- [x] P15 audit transversal : 67 banques, 2 840/2 840 cartes routées, 0 banque non routée, 0 doublon normalisé détecté par le scan transversal.
+- [x] P15 audit transversal : 73/73 banques supplémentaires reliées, 3 632/3 632 cartes uniques routées, 0 banque non routée, 0 doublon normalisé détecté par le scan transversal.
 - [x] P16 CI verte sur le commit `0b2ca9950677a352d8e463c863d8475f1fda52f1`.
 - [x] P17 GitHub Pages build/déploiement verts sur le même commit.
 
@@ -559,3 +559,11 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Contrôle final CI : **0 groupe de doublons normalisés entre banques jouables**, **0 fuite littérale de la réponse correcte**, audit global **PASS**.
 - SHA courants : `questions.ts` `a8b94a251151f930645994ce86b0fd634b1c722a`; `audit-content.mjs` `d9b1591c0a8a085315c5fd57b63c3a3ac0eadbe9`.
 - CI + GitHub Pages : verts sur le commit `0b2ca9950677a352d8e463c863d8475f1fda52f1`.
+
+
+## Réconciliation du registre — 2026-10-09
+
+- Le comptage précédent manquait les banques générées depuis des tuples (V54 et jwCategories) et les cartes de base définies dans `questions.ts`. Le contrôle corrigé inclut ces familles et filtre les entrées de base retirées intentionnellement.
+- Inventaire courant : **3 632 cartes jouables uniques**, 3 632/3 632 routées, 73/73 banques supplémentaires reliées.
+- Les 17 cartes V54 auparavant sans bloc éditorial dédié ont été relues, corrigées au besoin et validées : `v54-m-001`–`010`, `v54-tu-002`–`008`.
+- SHA V54 courant : `c8657e1a98500a36c7f9a082baa99231e8bf2dd6`. SHA `audit-content.mjs` : `82e3193a777de4c7258d4190b6cea5d1b9a9ad25`.

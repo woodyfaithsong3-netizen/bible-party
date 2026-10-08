@@ -4,8 +4,8 @@
 
 ## 1. Inventaire de référence
 
-- Dernier inventaire global attesté : **2 840 identifiants de cartes dans 67 banques sources**, avec 2 840/2 840 cartes routées et 0 banque non routée.
-- Ce total est un inventaire de cartes source routées, pas une preuve que 2 840 cartes ont toutes reçu une validation éditoriale individuelle.
+- Inventaire réconcilié : **3 632 cartes uniques actuellement jouables** — 3 155 cartes dans 73 banques de contenu supplémentaires et 477 cartes de base conservées dans `questions.ts`. Contrôle automatisé : 3 632/3 632 cartes routées, 73/73 banques supplémentaires reliées, 0 banque non routée.
+- Le total exclut les cartes de base intentionnellement filtrées parce qu’elles dupliquent des cartes conservées dans leurs banques sources. Le routage et la validation éditoriale restent deux contrôles distincts.
 - L’estimation historique « environ 5 000 questions » n’est pas confirmée par l’inventaire courant. Ne pas l’utiliser comme total.
 - Les résultats doivent être recalculés par le contrôle du dépôt avant toute annonce de progression. Un CI vert prouve les contrôles automatisés exécutés, pas à lui seul la qualité éditoriale de chaque carte.
 
@@ -62,6 +62,15 @@ Une carte ne devient pas `VALIDATED` parce que le build est vert. Les blocs du `
 
 ## 6. État de départ pour la réconciliation
 
-- Routage global attesté précédemment : 2 840/2 840 cartes, 67 banques, 0 banque non routée.
+- Routage global courant : 3 632/3 632 cartes uniques, 73 banques supplémentaires + 477 cartes de base, 0 banque non routée.
 - Les blocs éditoriaux déjà inscrits dans le manifeste sont conservés ; aucun n'est réinitialisé.
-- **Le nombre exact de cartes restant à valider n'est pas déclaré ici tant qu'un rapprochement automatique entre IDs courants, périmètres de blocs et SHA actuels ne l'a pas démontré.** C'est le prochain contrôle obligatoire, et non une permission de recommencer les blocs inchangés.
+- Le rapprochement SHA/périmètres a isolé 17 cartes V54 Qui est-ce ? auparavant absentes des blocs éditoriaux documentés. Elles ont maintenant été relues et ajoutées comme bloc distinct ; les autres blocs inchangés sont conservés.
+
+
+## 7. Clôture de la réconciliation — 2026-10-09
+
+- Inventaire : **3 632 cartes uniques jouables**.
+- Routage : **3 632/3 632**, 73/73 banques supplémentaires avec preuve de route, plus 477 cartes de base conservées ; aucune banque non routée.
+- Éditorial : les 17 cartes V54 Qui est-ce ? (`v54-m-001`–`010`, `v54-tu-002`–`008`) sont maintenant suivies dans un bloc distinct et validées.
+- Statut du registre : toutes les cartes actuelles sont rattachées à un bloc VALIDATED ; aucune carte TODO/RECHECK restante dans le périmètre courant.
+- Règle anti-répétition : ne rouvrir que les cartes modifiées ou dont le périmètre/SHA ne correspond plus.

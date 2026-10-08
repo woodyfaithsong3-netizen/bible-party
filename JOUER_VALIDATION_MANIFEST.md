@@ -4,7 +4,7 @@ Ce fichier est le registre opérationnel des blocs éditoriaux validés. Une car
 
 ## Bloc SEM-V54-001
 - Source : `src/data/jw_enrichment_v54.ts`
-- SHA source validé : `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25`
+- SHA source validé : `c8657e1a98500a36c7f9a082baa99231e8bf2dd6`
 - Périmètre : Quiz `v54-q001`–`v54-q080` + Vrai/Faux `v54-tf001`–`v54-tf080`
 - Taille : 160 cartes
 - État : VALIDATED
@@ -12,6 +12,17 @@ Ce fichier est le registre opérationnel des blocs éditoriaux validés. Une car
 - Corrections ciblées : q026 et tf026, références réalignées sur `wp16 n° 2 p. 14-15`.
 - Exceptions ouvertes : aucune nouvelle exception confirmée après cette correction.
 - Clôture : contrôle éditorial complet effectué, CI verte et GitHub Pages verte confirmées.
+
+## Bloc SEM-V54-002 — VALIDATED — 2026-10-09
+- Source : `src/data/jw_enrichment_v54.ts`
+- SHA source validé : `c8657e1a98500a36c7f9a082baa99231e8bf2dd6`
+- Périmètre : `v54-m-001`–`v54-m-010` + `v54-tu-002`–`v54-tu-008`.
+- Taille : 17 cartes converties en Qui est-ce ? par le moteur actuel.
+- État : VALIDATED.
+- Contrôles individuels : réponse adaptée au mode, indices suffisamment distinctifs, explication/référence cohérentes, aucune réponse de type lieu/chapitre dans le pool Qui est-ce ?.
+- Corrections : `v54-m-006` → Darius (roi mède), `v54-m-010` → Nabuchodonosor ; `v54-tu-002` → Jéhovah, `v54-tu-003` → Zerubbabel, `v54-tu-007` → Élisée, `v54-tu-008` → Daniel.
+- Les dix cartes `v54-m-001`–`010` et les sept cartes `v54-tu-002`–`008` ont toutes été contrôlées ; aucune exception ouverte.
+- Règle : ne pas réauditer tant que le SHA source reste inchangé.
 
 ## Note historique — ordre d'audit initial (remplacée)
 Cette instruction est historique : les blocs suivants ont depuis été audités et consignés dans ce manifest. La source de vérité est la liste des blocs VALIDATED et leurs SHA actuels.
@@ -38,7 +49,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 ## Bloc SEM-Q-001
 - Source : `src/data/questions.ts`
 - SHA source validé : `a8b94a251151f930645994ce86b0fd634b1c722a`
-- Périmètre : **504 cartes jouables** présentes dans la source actuelle.
+- Périmètre : 504 IDs déclarés dans la source ; après filtres d’exclusion, 477 cartes de base restent dans les pools. Les copies conservées dans leurs banques spécialisées sont comptées une seule fois dans l’inventaire global.
 - État : VALIDATED
 - Contrôles : structure, IDs uniques, réponses/index, fuite, doublons, formulation, contexte, catégories, références, explications, distracteurs et jouabilité.
 - Revalidation ciblée : `tf-v39-06`, `tf-balance-19`, `tf-balance-24` ; `tf-jw-21` contrôlée et déjà positive.
@@ -262,7 +273,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Ces deux blocs restent VALIDATED tant que leurs SHA restent inchangés.
 
 
-## Bloc SEM-ROUTING-GLOBAL-001 — VALIDATED — 2026-10-09
+## Bloc SEM-ROUTING-GLOBAL-001 — VALIDATED (instantané historique, supersédé)
 - Sources : `src/data/questions.ts`, `src/data/gameContent.ts`, `src/app/game.tsx`, `audit-content.mjs`.
 - SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`.
 - SHA `audit-content.mjs` : `d9b1591c0a8a085315c5fd57b63c3a3ac0eadbe9`.
@@ -409,3 +420,15 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Le scan transversal actuel détecte **0 groupe de doublons normalisés** entre les questions extraites des banques jouables, et **0 fuite littérale de la bonne réponse** dans les 1 250 Quiz personnages.
 - SHA courant de `audit-content.mjs` : `d9b1591c0a8a085315c5fd57b63c3a3ac0eadbe9`.
 - CI et GitHub Pages : verts sur le commit de clôture de cette passe `0b2ca9950677a352d8e463c863d8475f1fda52f1`.
+
+
+## Bloc SEM-ROUTING-GLOBAL-002 — VALIDATED — 2026-10-09
+- Sources : `src/data/questions.ts`, `src/data/gameContent.ts`, `src/app/game.tsx`, `audit-content.mjs`.
+- SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`.
+- SHA `audit-content.mjs` : `82e3193a777de4c7258d4190b6cea5d1b9a9ad25`.
+- Inventaire corrigé : 3 155 cartes dans 73 banques supplémentaires + 477 cartes de base conservées dans `questions.ts` = **3 632 cartes uniques jouables**.
+- Contrôle CI : 3 632/3 632 cartes routées ; 73/73 banques supplémentaires avec preuve de route ; 0 banque non routée ; 0 doublon d’ID résiduel ; 0 groupe de doublons de questions normalisées.
+- Les banques générées depuis des tuples (V54, jwCategories) sont comptées ; les IDs de base retirés intentionnellement pour éviter les doublons ne sont pas recomptés.
+- Les 17 cartes V54 Qui est-ce ? non couvertes par le bloc éditorial initial sont désormais validées dans `SEM-V54-002`.
+- Les quatre modes officiels restent Quiz, Vrai / Faux, Qui est-ce ? et Compléter les paroles.
+- Règle anti-répétition : conserver les validations existantes tant que leur source et leur périmètre restent inchangés.
