@@ -260,3 +260,14 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Cartes recontrôlées : `v53-tf-008`, `v53-tf-018`, `v53-tf-040`. Formulations directes, réponses, explications et références alignées.
 - CI + GitHub Pages : verts sur le commit de clôture V53 `b8d94aff3ad448ba688c4ea78ce68dacc4d9a6f9` et les contrôles de la branche principale sont verts.
 - Ces deux blocs restent VALIDATED tant que leurs SHA restent inchangés.
+
+
+## Bloc SEM-RUNTIME-001 — CHECKING — 2026-10-08
+- Sources : `src/data/gameContent.ts` + `audit-content.mjs`
+- Objectif : prouver que les quatre modes officiels consomment réellement les banques jouables, y compris les transformations Quiz/Citations/Intrus/Chronologie/Time's Up et le sous-pool Vrai/Faux.
+- Correction appliquée : toutes les cartes `trueFalseQuestions` sont désormais conservées dans `GAME_CONTENT.truefalse` ; l'ancien échantillonnage supprimait une partie des VRAI et rendait ces cartes définitivement inatteignables.
+- Contrôle ajouté : `audit-content.mjs` vérifie les injections de chaque banque dans les pools réellement consommés et interdit toute troncature du deck Vrai/Faux.
+- SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`
+- SHA `audit-content.mjs` : `ff95252050cf5e42d3fcd3cac531e0bab9a6294c`
+- État : CHECKING jusqu'à CI verte.
+- Exceptions : aucune connue.
