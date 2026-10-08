@@ -240,9 +240,10 @@ const localBankNames = [...routingQuestions.matchAll(/(?:const|let|var)\s+([A-Za
   .map(match => match[1])
   .filter(name => /(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|Expert|Forbidden|Facts|Supplement)/i.test(name));
 const pipelineBankNames = [...new Set([...importedBankNames, ...localBankNames])];
+const routingQuestionUsage = routingQuestions.replace(/^import.*$/gm, '');
 const pipelineBankRoutes = pipelineBankNames.map(name => ({
   name,
-  pushed: new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|quoteQuestions|intruderQuestions|timesUpQuestions|challenges)\\.push\\([\\s\\S]{0,500}\\.\\.\\.' + name + '\\b').test(routingQuestions),
+  pushed: new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|quoteQuestions|intruderQuestions|timesUpQuestions|challenges)\\.push\\([\\s\\S]{0,500}\\.\\.\\.' + name + '\\b').test(routingQuestionUsage) || new RegExp('\\.\\.\\.' + name + '\\b').test(routingQuestionUsage),
   directGameReference: new RegExp('\\.\\.\\.' + name + '\\b').test(routingGameContent),
 }));
 const unroutedPipelineBanks = pipelineBankRoutes.filter(bank => !bank.pushed && !bank.directGameReference);
