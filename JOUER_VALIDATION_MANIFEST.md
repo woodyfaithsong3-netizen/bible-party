@@ -200,3 +200,13 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Périmètre : 30 cartes.
 - État : VALIDATED
 - CI + GitHub Pages : verts.
+
+
+## SEM-JWCAT-001
+- Source : `src/data/jwCategories.ts`
+- SHA source validé : `e26c907e6322f5a3598db1300885097d583e7f36`
+- Périmètre : 187 cartes jouables.
+- État : VALIDATED
+- Répartition : 96 Quiz, 39 Vrai/Faux, 12 Mystère, 8 Time’s Up, 8 Citations, 8 Chronologie, 8 Intrus, 8 Défi.
+- Corrections : V/F Révélation, références manuscrits, 2 Timothée 4:13, procès de Jésus, Michée, maladies cutanées, chronologie jwcat-chrono-2.
+- CI + GitHub Pages : verts.
