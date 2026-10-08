@@ -262,6 +262,13 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Ces deux blocs restent VALIDATED tant que leurs SHA restent inchangés.
 
 
+## Bloc SEM-ROUTING-GLOBAL-001 — CHECKING — 2026-10-08
+- Source : `src/data/questions.ts` + `audit-content.mjs`
+- Objectif : cartographier toutes les banques locales et importées du pipeline JOUER, y compris les banques construites par spread/map, et vérifier qu’aucune banque de cartes n’est laissée hors des pools réellement jouables.
+- Méthode : contrôle des banques importées, des tableaux locaux de cartes, de leurs injections dans les pools agrégés et des références finales dans `GAME_CONTENT`.
+- État : CHECKING.
+- Aucun bloc éditorial VALIDATED n’est rouvert tant que son SHA source reste inchangé.
+
 ## Bloc SEM-RUNTIME-001 — VALIDATED — 2026-10-08
 - Sources : `src/data/gameContent.ts` + `audit-content.mjs`
 - Objectif : prouver que les quatre modes officiels consomment réellement les banques jouables, y compris les transformations Quiz/Citations/Intrus/Chronologie/Time's Up et le sous-pool Vrai/Faux.
