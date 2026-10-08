@@ -240,3 +240,15 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - 9 cartes : 1 Citation → Quiz + 8 Mystère → Qui est-ce ?.
 - État : VALIDATED ; indices, fuites, mots interdits, références et explications contrôlés.
 - CI + GitHub Pages verts.
+
+
+### Revalidation ciblée — V/F négatifs — 2026-10-08
+- `src/data/questions.ts` — nouveau SHA `cf5e82c8f555b69651d192f62febb1b99eeb937d`.
+- Cartes corrigées et recontrôlées : `tf-v39-06`, `tf-balance-19`, `tf-balance-24`.
+- Les anciennes formulations négatives ont été remplacées par des affirmations directes vraies ; réponses et explications réalignées.
+- `tf-jw-21` était déjà sous sa forme positive dans le pool réellement jouable ; aucune modification nécessaire.
+- `src/data/jw_enrichment_v53.ts` — nouveau SHA `dc99d9d3b4f66be7a0b82242275d16ade8baf6f2`.
+- Cartes corrigées et recontrôlées : `v53-tf-008`, `v53-tf-018`, `v53-tf-040`.
+- Contrôles : vérité biblique, réponse, explication, référence et formulation directe.
+- CI + GitHub Pages : verts sur le commit de clôture `b8d94aff3ad448ba688c4ea78ce68dacc4d9a6f9`.
+- Les autres blocs VALIDATED restent inchangés et ne sont pas réaudités.
