@@ -13,15 +13,15 @@ const modeIcons: Record<string, number> = {
   quiz: require('../../assets/images/ui/card.png'),
   mystery: require('../../assets/images/ui/question.png'),
   truefalse: require('../../assets/images/ui/star.png'),
-  complete: require('../../assets/images/ui/card.png'),
+  challenge: require('../../assets/images/ui/card.png'),
 };
 const modeAccent: Record<string, string> = {
-  quiz: '#4FD8F5', mystery: '#4FD8F5', truefalse: '#FFE05A', complete: '#4FD8F5',
+  quiz: '#4FD8F5', mystery: '#4FD8F5', truefalse: '#FFE05A', challenge: '#4FD8F5',
 };
 
 const ROUND_TARGETS: Record<number, number> = { 10: 10, 20: 20, 30: 30 };
 const MODE_LABELS: Record<string, string> = {
-  quiz: 'QUIZ', mystery: 'QUI EST-CE ?', truefalse: 'VRAI OU FAUX', complete: 'COMPLÈTE LES PAROLES'
+  quiz: 'QUIZ', mystery: 'MYSTÈRE', truefalse: 'VRAI / FAUX', challenge: 'DÉFI'
 };
 
 const shuffle = <T,>(a: T[]) => {
@@ -55,9 +55,9 @@ export default function GameScreen() {
   const insets = useSafeAreaInsets();
   const compact = width < 390 || height < 760;
   const params = useLocalSearchParams<{ modes?: string; teams?: string; duration?: string; categories?: string; difficulty?: string; solo?: string }>();
-  const allowedModes = new Set(['quiz', 'mystery', 'truefalse', 'complete']);
+  const allowedModes = new Set(['quiz', 'mystery', 'truefalse', 'challenge']);
   const requestedModes = (params.modes || '').split(',').filter((m): m is string => allowedModes.has(m));
-  const modes = requestedModes.length ? requestedModes : ['quiz', 'mystery', 'truefalse', 'complete'];
+  const modes = requestedModes.length ? requestedModes : ['quiz', 'mystery', 'truefalse', 'challenge'];
   const teamNames = (params.teams || 'Équipe A|Équipe B').split('|').filter(Boolean);
   const questionCount = Math.max(1, Number(params.duration || 20));
   const selectedCategories = (params.categories || '').split(',').filter(Boolean);
@@ -121,12 +121,12 @@ export default function GameScreen() {
           roundIndex += 1;
         }
         out[mode] = [...priority, ...shuffle(d.filter(q => !used.has(String(q.id))))];
-      } else if (mode === 'complete' && d.length > 1) {
+      } else if (mode === 'challenge' && d.length > 1) {
         // Complète les paroles doit montrer les deux familles du mode :
         // versets bibliques connus + cantiques/chansons. On les alterne dès le
         // début du paquet afin qu'une partie courte ne puisse pas passer à côté
         // des chansons.
-        const verses = shuffle(d.filter(q => /^complete-/.test(String(q.id))));
+        const verses = shuffle(d.filter(q => /^challenge-/.test(String(q.id))));
         const songs = shuffle(d.filter(q => /^song-/.test(String(q.id))));
         const priority: Question[] = [];
         const used = new Set<string>();
@@ -210,6 +210,7 @@ export default function GameScreen() {
     if (question.type === 'mystery') return question.answer;
     if (question.type === 'truefalse') return question.answer ? 'VRAI' : 'FAUX';
     if (question.type === 'quiz') return question.answers[question.correctAnswer];
+    if (question.type === 'challenge') return 'VALIDATION PAR LE MAÎTRE DE JEU';
     return '';
   }, [question]);
 
@@ -252,7 +253,7 @@ export default function GameScreen() {
     <Glass key={mode + ':' + question.id} style={{ marginTop: 8, padding: compact ? 13 : 16 }}>
       {mode === 'quiz' && question.type === 'quiz' && <><Text style={{ color: '#FFE58A', textAlign: 'center', fontSize: 10, fontWeight: '900', letterSpacing: 1.2 }}>{normalizeQuestionCategory(question)}</Text><Text style={{ color: '#FFFDF5', fontSize: 25, lineHeight: 32, fontWeight: '900', textAlign: 'center', marginTop: 9 }}>{question.question}</Text><View style={{ gap: 8, marginTop: 16 }}>{question.answers.map((a, i) => <Pressable key={i} disabled={validated || paused || revealed} onPress={() => setSelected(i)} style={{ minHeight: 55, borderRadius: 17, borderWidth: 1, borderColor: selected === i ? '#FFE17A' : 'rgba(138,223,240,.46)', backgroundColor: selected === i ? 'rgba(242,201,76,.17)' : 'rgba(3,39,50,.67)', flexDirection: 'row', alignItems: 'center', padding: 10 }}><View style={{ width: 31, height: 31, borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255,255,255,.08)' }}><Text style={{ color: '#FFE58A', fontWeight: '900' }}>{String.fromCharCode(65+i)}</Text></View><Text style={{ flex: 1, color: '#FFF', fontSize: 13, fontWeight: '800', marginLeft: 9 }}>{a}</Text><Text style={{ color: '#FFE58A', fontSize: 20 }}>{selected === i ? '✓' : '›'}</Text></Pressable>)}</View>{chosenReady&&!revealed&&!validated&&<Gold title="Révéler la réponse" onPress={revealAnswer} style={{ marginTop: 12 }}/>} {revealPanel(question.answers[question.correctAnswer], 200)}</>}
 
-      {mode === 'complete' && question.type === 'quiz' && <><ModeTitle icon="complete" title="COMPLÈTE LES PAROLES" subtitle="Versets bibliques et paroles de cantiques."/><Text style={{ color: '#FFE58A', textAlign: 'center', fontSize: 10, fontWeight: '900', letterSpacing: 1.2, marginBottom: 6 }}>{normalizeQuestionCategory(question)}</Text><Text style={{ color: '#FFFDF5', fontSize: 24, lineHeight: 31, fontWeight: '900', textAlign: 'center', marginTop: 4 }}>{question.question}</Text><View style={{ gap: 8, marginTop: 16 }}>{question.answers.map((a, i) => <Pressable key={i} disabled={validated || paused || revealed} onPress={() => setSelected(i)} style={{ minHeight: 55, borderRadius: 17, borderWidth: 1, borderColor: selected === i ? '#FFE17A' : 'rgba(138,223,240,.46)', backgroundColor: selected === i ? 'rgba(242,201,76,.17)' : 'rgba(3,39,50,.67)', flexDirection: 'row', alignItems: 'center', padding: 10 }}><View style={{ width: 31, height: 31, borderRadius: 10, alignItems: 'center', justifyContent: 'center', backgroundColor: 'rgba(255,255,255,.08)' }}><Text style={{ color: '#FFE58A', fontWeight: '900' }}>{String.fromCharCode(65+i)}</Text></View><Text style={{ flex: 1, color: '#FFF', fontSize: 13, fontWeight: '800', marginLeft: 9 }}>{a}</Text><Text style={{ color: '#FFE58A', fontSize: 20 }}>{selected === i ? '✓' : '›'}</Text></Pressable>)}</View>{chosenReady&&!revealed&&!validated&&<Gold title="Révéler la réponse" onPress={revealAnswer} style={{ marginTop: 12 }}/>} {revealPanel(question.answers[question.correctAnswer], 200)}</>}
+      {mode === 'challenge' && question.type === 'challenge' && <><ModeTitle icon="challenge" title="DÉFI" subtitle="Réussissez le défi avant la fin du temps."/><Text style={{ color: '#FFE58A', textAlign: 'center', fontSize: 10, fontWeight: '900', letterSpacing: 1.2 }}>{normalizeQuestionCategory(question)}</Text><Glass strong><Text style={{ color: '#FFFDF5', fontSize: 23, lineHeight: 31, fontWeight: '900', textAlign: 'center' }}>{question.prompt}</Text><Text style={{ color: '#FFE58A', fontSize: 14, fontWeight: '900', textAlign: 'center', marginTop: 12 }}>TEMPS : {question.seconds} secondes</Text></Glass><View style={{ flexDirection: 'row', gap: 10, marginTop: 15 }}><Gold title="Défi réussi ✓" onPress={() => validate(true, 200)} disabled={validated || paused}/><Gold title="Défi raté" secondary onPress={() => validate(false, 0)} disabled={validated || paused}/></View>{masterPanel()}</>}
 
       {mode === 'truefalse' && question.type === 'truefalse' && <><ModeTitle icon="truefalse" title="VRAI OU FAUX" subtitle="Répondez en un geste !"/><Glass strong><Text style={{ color: '#FFFDF5', fontSize: 23, lineHeight: 31, fontWeight: '900', textAlign: 'center' }}>{question.statement}</Text></Glass><View style={{ flexDirection: 'row', gap: 10, marginTop: 15 }}><Pressable disabled={validated||paused||revealed} onPress={() => setTf(true)} style={{ flex: 1, minHeight: 82, borderRadius: 20, alignItems: 'center', justifyContent: 'center', backgroundColor: tf === true ? '#F2C94C' : 'rgba(25,145,101,.76)', borderWidth: 1, borderColor: '#B7F3D7' }}><Text style={{ fontSize: 26 }}>✓</Text><Text style={{ color: '#FFF', fontWeight: '900', fontSize: 17 }}>VRAI</Text></Pressable><Pressable disabled={validated||paused||revealed} onPress={() => setTf(false)} style={{ flex: 1, minHeight: 82, borderRadius: 20, alignItems: 'center', justifyContent: 'center', backgroundColor: tf === false ? '#F2C94C' : 'rgba(208,61,76,.76)', borderWidth: 1, borderColor: '#FFD1D5' }}><Text style={{ fontSize: 26 }}>✕</Text><Text style={{ color: '#FFF', fontWeight: '900', fontSize: 17 }}>FAUX</Text></Pressable></View>{chosenReady&&!revealed&&!validated&&<Gold title="Révéler la réponse" onPress={revealAnswer} style={{ marginTop: 12 }}/>} {revealPanel(question.answer ? 'VRAI' : 'FAUX', 200)}</>}
 
