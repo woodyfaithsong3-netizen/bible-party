@@ -364,10 +364,10 @@ export const preachingTruthQuestions: QuizQuestion[] = [
     type: 'quiz',
     category: 'Mieux connaître Jéhovah',
     difficulty: 'easy',
-    question: 'Quel verset montre que Dieu déteste l’hypocrisie religieuse ?',
-    answers: ['Marc 7:6-8', 'Isaïe 29:13', 'Michée 3:11', 'Matthieu 15:7-9'],
+    question: 'Selon Marc 7:6-8, quel reproche Jésus fait-il aux chefs religieux hypocrites ?',
+    answers: ['Ils mettent de côté le commandement de Dieu pour suivre des traditions humaines', 'Ils refusent de lire les Écritures en public', 'Ils interdisent toute prière personnelle', 'Ils refusent de parler aux personnes des nations'],
     correctAnswer: 0,
-    explanation: 'Marc 7:6-8 rapporte que Jésus a dénoncé ceux qui honoraient Dieu des lèvres mais dont le cœur était loin de lui.',
+    explanation: 'Jésus leur reproche d’abandonner le commandement de Dieu pour suivre de près la tradition des hommes.',
     reference: 'Marc 7:6-8',
   },
   {
