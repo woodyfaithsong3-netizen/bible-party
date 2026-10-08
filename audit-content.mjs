@@ -317,6 +317,8 @@ for (const file of playableSourceFiles) {
       file,
       name,
       cardCount: idsInBank.length,
+      ids: idsInBank,
+      generated: false,
       duplicateIds: duplicateIdsInBank,
     });
     const escapedName = name.replace(/[.*+?^$()|[\\]\\]/g, '\\$&');
@@ -327,6 +329,31 @@ for (const file of playableSourceFiles) {
       new RegExp('\\.\\.\\.' + escapedName + '\\b').test(routingGameContent)
       || new RegExp('\\b' + escapedName + '\\.(?:map|filter)\\(').test(routingGameContent);
     if (routedByQuestions || routedByGameContent) routedBankNames.add(name);
+  }
+}
+// Include exported banks generated from tuple-backed data arrays.
+// Their runtime IDs are created in .map(), so an object-only scan misses them.
+for (const file of playableSourceFiles) {
+  const sourceText = fs.readFileSync(new URL(file, import.meta.url), 'utf8');
+  const mappedExports = [...sourceText.matchAll(
+    /export const\s+([A-Za-z0-9_]+)\s*(?::\s*[^=]+)?=\s*([A-Za-z0-9_]+)\.map\(\s*\(\[([^\]]+)\]\)\s*=>/g
+  )];
+  for (const match of mappedExports) {
+    const name = match[1];
+    const tupleSourceName = match[2];
+    const sourceDecl = new RegExp('(?:const|let|var)\\s+' + tupleSourceName + '\\s*(?::[^=]+)?=\\s*\\[');
+    const tupleSourceMatch = sourceDecl.exec(sourceText);
+    if (!tupleSourceMatch) continue;
+    const start = tupleSourceMatch.index;
+    const close = sourceText.indexOf('\\n];', start);
+    if (close < 0) continue;
+    const tupleText = sourceText.slice(start, close + 3);
+    const tupleIds = [...tupleText.matchAll(/^\\s*\\[\\s*['"]([^'"]+)['"]\\s*,/gm)].map(item => item[1]);
+    if (!tupleIds.length) continue;
+    const prefix = name.match(/^jw(v\\d+)/i)?.[1]?.toLowerCase();
+    const ids = tupleIds.map(id => prefix ? prefix + '-' + id : name + '-' + id);
+    const duplicateIds = [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))];
+    exportedCardBanks.push({ file, name, cardCount: ids.length, ids, generated: true, duplicateIds });
   }
 }
 const sourceRouteProof = [];
@@ -354,14 +381,7 @@ const unreachableSourceCards = sourceRouteProof.filter(route => !route.reachable
 const unroutedCardBanks = exportedCardBanks.filter(bank => !routedBankNames.has(bank.name));
 const duplicateIdsWithinBank = exportedCardBanks.filter(bank => bank.duplicateIds.length);
 const sourceIds = [];
-for (const bank of exportedCardBanks) {
-  const sourceText = fs.readFileSync(new URL(bank.file, import.meta.url), 'utf8');
-  const exportMatch = [...sourceText.matchAll(new RegExp('export const\\s+' + bank.name + '\\s*(?::\\s*[^=]+)?=\\s*\\[', 'g'))][0];
-  if (!exportMatch) continue;
-  const nextExport = sourceText.indexOf('export const ', exportMatch.index + exportMatch[0].length);
-  const segment = sourceText.slice(exportMatch.index, nextExport < 0 ? sourceText.length : nextExport);
-  for (const match of segment.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)) sourceIds.push(match[1]);
-}
+for (const bank of exportedCardBanks) sourceIds.push(...(bank.ids ?? []));
 const sourceIdCounts = new Map();
 for (const id of sourceIds) sourceIdCounts.set(id, (sourceIdCounts.get(id) ?? 0) + 1);
 const duplicateSourceIds = [...sourceIdCounts.entries()].filter(([, count]) => count > 1);
