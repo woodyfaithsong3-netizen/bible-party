@@ -193,19 +193,19 @@ export const jwV54Mystery: MysteryQuestion[] = [
 {id:'v54-m-003',type:'mystery',category:'Évangiles',difficulty:'easy',answer:'Pierre',clues:['Apôtre','Pêcheur','Trois reniements'],explanation:'Pierre était pêcheur et a renié Jésus trois fois.',reference:'Matthieu 4:18-20; 26:69-75'},
 {id:'v54-m-004',type:'mystery',category:'Évangiles',difficulty:'medium',answer:'Thomas',clues:['Apôtre','Doute','Résurrection'],explanation:'Thomas a demandé des preuves après avoir appris que Jésus était ressuscité.',reference:'Jean 20:24-29'},
 {id:'v54-m-005',type:'mystery',category:'Rois & prophètes',difficulty:'easy',answer:'Élie',clues:['Carmel','Baal','Feu'],explanation:'Élie a affronté les prophètes de Baal au Carmel.',reference:'1 Rois 18:19-39'},
-{id:'v54-m-006',type:'mystery',category:'Rois & prophètes',difficulty:'medium',answer:'Daniel',clues:['Babylone','Rêves','Lions'],explanation:'Daniel a servi à Babylone et a survécu à la fosse aux lions.',reference:'Daniel 2:17-19; 6:16-23'},
+{id:'v54-m-006',type:'mystery',category:'Rois & prophètes',difficulty:'medium',answer:'Darius',clues:['Roi perse','Fosse aux lions','Daniel'],explanation:'Sous le règne de Darius, Daniel a été jeté dans la fosse aux lions puis protégé par Dieu.',reference:'Daniel 6:1-23'},
 {id:'v54-m-007',type:'mystery',category:'Prophéties',difficulty:'medium',answer:'Michée',clues:['Bethléem','Prophète','Dirigeant'],explanation:'Michée a annoncé un dirigeant associé à Bethléem.',reference:'Michée 5:2'},
 {id:'v54-m-008',type:'mystery',category:'Prophéties',difficulty:'medium',answer:'Jérémie',clues:['Nouvelle alliance','Prophète','Juda'],explanation:'Jérémie a annoncé une nouvelle alliance.',reference:'Jérémie 31:31-34'},
 {id:'v54-m-009',type:'mystery',category:'La Bible et l’Histoire',difficulty:'medium',answer:'Cyrus',clues:['Perse','Décret','Retour'],explanation:'Cyrus a autorisé le retour des Juifs à Jérusalem.',reference:'Esdras 1:1-4'},
-{id:'v54-m-010',type:'mystery',category:'La Bible et l’Histoire',difficulty:'medium',answer:'Babylone',clues:['Empire','Jérusalem','Exil'],explanation:'Babylone a détruit Jérusalem et emmené de nombreux Judéens en exil.',reference:'2 Rois 25:1-12'},
+{id:'v54-m-010',type:'mystery',category:'Rois & prophètes',difficulty:'medium',answer:'Nabuchodonosor',clues:['Roi de Babylone','Rêve d’une statue','Royaumes successifs'],explanation:'Nabuchodonosor a vu en rêve une grande statue qui représentait des royaumes successifs.',reference:'Daniel 2:1-45'},
 ];
 
 export const jwV54TimesUp: TimesUpQuestion[] = [
-{id:'v54-tu-002',type:'timesup',category:'Que veulent dire ces versets ?',difficulty:'easy',answer:'Psaume 23',clues:['Berger','Vallée','Protection'],reference:'Psaume 23:1-4'},
+{id:'v54-tu-002',type:'timesup',category:'Jéhovah & la foi',difficulty:'easy',answer:'Jéhovah',clues:['Berger','Vallée','Protection'],reference:'Psaume 23:1-4'},
 {id:'v54-tu-003',type:'timesup',category:'La Bible et l’Histoire',difficulty:'medium',answer:'Cyrus',clues:['Perse','Décret','Jérusalem'],reference:'Esdras 1:1-4'},
 {id:'v54-tu-004',type:'timesup',category:'Récits bibliques',difficulty:'medium',answer:'Adam et Ève',clues:['Éden','Premier couple','Genèse'],reference:'Genèse 2:7-25; 3:1-24'},
 {id:'v54-tu-005',type:'timesup',category:'Personnages',difficulty:'easy',answer:'David',clues:['Berger','Goliath','Roi'],reference:'1 Samuel 17:45-50; 2 Samuel 5:3-5'},
 {id:'v54-tu-006',type:'timesup',category:'Évangiles',difficulty:'easy',answer:'Jean le Baptiseur',clues:['Désert','Baptême','Préparer le chemin'],reference:'Matthieu 3:1-3'},
 {id:'v54-tu-007',type:'timesup',category:'Rois & prophètes',difficulty:'easy',answer:'Élie',clues:['Carmel','Baal','Prophète'],reference:'1 Rois 18:19-39'},
-{id:'v54-tu-008',type:'timesup',category:'Prophéties',difficulty:'medium',answer:'Daniel 2',clues:['Statue','Métaux','Royaume'],reference:'Daniel 2:31-45'},
+{id:'v54-tu-008',type:'timesup',category:'Rois & prophètes',difficulty:'medium',answer:'Daniel',clues:['Babylone','Statue','Royaumes'],reference:'Daniel 2:17-45'},
 ];
