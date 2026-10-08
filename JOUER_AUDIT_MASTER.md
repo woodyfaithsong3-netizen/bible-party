@@ -525,3 +525,10 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Cinq cartes L3 comportant une négation qui inversait une affirmation marquée VRAI ont été corrigées et revalidées le 2026-10-09 : `char-l3-tf-53-1`, `char-l3-tf-54-1`, `char-l3-tf-57-1`, `char-l3-tf-58-1`, `char-l3-tf-59-1`. Voir la section de revalidation dans le manifest.
 
 - Deux autres cartes ont été corrigées et revalidées le 2026-10-09 : `char-l2-tf-39-1` (Balak) et `char-l6-tf-114-2` (Onésiphore). Les SHA L2/L6 sont mis à jour dans le manifest ; aucun autre contenu de ces fichiers n’a été modifié.
+
+## Passe éditoriale V/F L1-L3 — 2026-10-09
+- Les **118 explications génériques** repérées initialement dans les banques V/F L1-L3 ont été remplacées par des explications factuelles ; les références ont été ajustées aux affirmations concernées.
+- Corrections factuelles et formulations ciblées consignées dans le manifest : notamment Élie et Silo (L1), Balak et une carte Ésaü matériellement tronquée (L2), ainsi que des références et affirmations inversées concernant Malachie, Gamaliel, Onésime, Philémon et Tite (L3).
+- Contrôle final : 0 explication générique de type « Cette affirmation est conforme aux faits bibliques » ou « La Bible rapporte ces faits » restante dans les Vrai/Faux des fichiers L1-L3.
+- SHA actuels : L1 `e981b5bc2dccffe760eb62f36b0dbb4274a79b57`, L2 `da2acc6e82626f5bad9835d7e27b6bffc02d6980`, L3 `a04e076a28ba1798070bc1d4bfad0e7b3bb0622c`.
+- Le manifest a été actualisé après chaque modification. Les validations antérieures des cartes non modifiées sont conservées ; seules les cartes effectivement changées ont été retravaillées.
