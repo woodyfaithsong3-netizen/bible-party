@@ -348,3 +348,15 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Résultats : 290 IDs uniques ; 200 Quiz sans doublon de question ni fuite de réponse ; 50 Vrai/Faux structurellement valides ; 40 Qui est-ce ? avec au moins 3 indices et sans fuite de réponse ; aucun doublon exact avec les questions Quiz de L1.
 - Exceptions ouvertes : aucune.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source validé : `614f691ddb4ba9401de051238b3a5f98f66ce184`
+- Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
+- État : VALIDATED
+- Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
+- Corrections ciblées : `char-l3-tf-45-3`, `char-l3-tf-54-3`, `char-l3-tf-55-1`.
+- Résultats finaux : 288 IDs uniques, 200 Quiz sans doublon ni fuite, 48 Vrai/Faux contrôlés, 40 Qui est-ce ? sans problème d’indices.
+- Exceptions ouvertes : aucune.
+- Règle : ne pas réauditer tant que le SHA source reste inchangé.
