@@ -6,7 +6,7 @@ import { jwV56Mystery, jwV56Challenges, jwV56Quotes, jwV56Intruders, jwV56TimesU
 import { jwV55Mystery, jwV55Quotes, jwV55Intruders, jwV55Challenges, jwV55Chronology } from './jw_enrichment_v55';
 import { jwV57Challenges, jwV57Quotes, jwV57Intruders, jwV57TimesUp, jwV57Chronology } from './jw_enrichment_v57';
 import { jwV58Quiz, jwV58Mystery, jwV58TrueFalse } from './jw_enrichment_v58';
-import { jwV61Quote, jwV61Forbidden } from './jw_enrichment_v61';
+import { jwV61QuoteAsQuiz, jwV61Forbidden } from './jw_enrichment_v61';
 import { jwV104Quiz, jwV104TrueFalse, jwV104Mystery } from './jw_enrichment_v104';
 import { jwV105Quiz, jwV105TrueFalse, jwV105Mystery } from './jw_enrichment_v105';
 import { jwV106CharacterQuiz, jwV106Mystery } from './jw_enrichment_v106_characters';
@@ -903,6 +903,7 @@ const legacyChronologyToQuiz = (q: { id: string; category: string; difficulty: D
 quizQuestions.push(...jwV53Chronology.map(legacyChronologyToQuiz));
 quizQuestions.push(...jwV55Chronology.map(legacyChronologyToQuiz));
 quizQuestions.push(...jwV56Chronology.map(legacyChronologyToQuiz));
+quizQuestions.push(...jwV61QuoteAsQuiz);
 quizQuestions.push(...jwV57Chronology.map(legacyChronologyToQuiz));
 challenges.push(...jwV57Challenges);
 quoteQuestions.push(...jwV57Quotes);
