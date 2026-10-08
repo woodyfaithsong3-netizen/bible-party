@@ -271,8 +271,7 @@ for (const file of playableSourceFiles) {
       cardCount: idsInBank.length,
       duplicateIds: duplicateIdsInBank,
     });
-    const escapedName = name.replace(/[.*+?^$()|[\]\\]/g, '\\    const occurrences = routingCode.match(new RegExp('\\b' + name + '\\b', 'g')) || [];
-    if (occurrences.length >= 2) routedBankNames.add(name);');
+    const escapedName = name.replace(/[.*+?^$()|[\\]\\]/g, '\\$&');
     const routedByQuestions =
       new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\b').test(routingQuestions)
       || new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\.(?:map|filter)\\(').test(routingQuestions);
