@@ -19,7 +19,7 @@ import { characterQuizQuestionsL3, characterTrueFalseQuestionsL3, characterMyste
 import { characterQuizQuestionsL4, characterTrueFalseQuestionsL4, characterMysteryQuestionsL4 } from './characterQuestionsL4';
 import { characterQuizQuestionsL5, characterTrueFalseQuestionsL5, characterMysteryQuestionsL5 } from './characterQuestionsL5';
 import { characterQuizQuestionsL6, characterTrueFalseQuestionsL6, characterMysteryQuestionsL6 } from './characterQuestionsL6';
-import { categoryQuizExpansion, categoryTrueFalseExpansion, categoryMysteryExpansion, categoryTimesUpExpansion, categoryQuoteExpansion, categoryIntruderExpansion, categoryChallengeExpansion } from './jwCategories';
+import { categoryQuizExpansion, categoryTrueFalseExpansion, categoryMysteryExpansion, categoryTimesUpExpansion, categoryQuoteExpansion, categoryChronologyExpansion, categoryIntruderExpansion, categoryChallengeExpansion } from './jwCategories';
 import { preachingTruthQuestions } from './preachingTruthQuestions';
 import { completeTheVerseQuestions, completeTheSongQuestions } from './completeTheVerseQuestions';
 
@@ -919,6 +919,7 @@ mysteryQuestions.push(...jwV61Forbidden);
 
 trueFalseQuestions.push(...jwTrueFalseExpansion);
 quoteQuestions.push(...jwQuoteExpansion);
+quizQuestions.push(...categoryChronologyExpansion.map(legacyChronologyToQuiz));
 intruderQuestions.push(...jwIntruderExpansion);
 timesUpQuestions.push(...jwTimesUpExpansion);
 challenges.push(...jwChallengeExpansion);
