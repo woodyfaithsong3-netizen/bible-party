@@ -33,7 +33,7 @@ export const jwV61Forbidden: MysteryQuestion[] = [
   },
   {
     id: 'v61-m-004', type: 'mystery', category: 'La Bible et la science', difficulty: 'medium', answer: 'Job',
-    clues: ['Je décris un phénomène observé dans la nature.','J’évoque la formation de petites gouttes.','Je parle de ce qui tombe des nuages.'],
+    clues: ['Je décris un phénomène observé dans la nature.','J’évoque la formation de fines perles d’eau.','Je parle de ce qui tombe des nuages.'],
     explanation: 'Le passage décrit sous une forme poétique la formation des gouttes et la pluie.',
     reference: 'Job 36:27-28', forbiddenWords: ['eau', 'gouttes', 'pluie'],
   },
@@ -45,7 +45,7 @@ export const jwV61Forbidden: MysteryQuestion[] = [
   },
   {
     id: 'v61-m-006', type: 'mystery', category: 'Évangiles', difficulty: 'medium', answer: 'Zachée',
-    clues: ['J’étais collecteur de taxes.','Je voulais voir Jésus malgré la foule.','Je suis monté dans un arbre pour mieux le voir.'],
+    clues: ['J’étais collecteur de taxes.','Je voulais voir Jésus malgré la foule.','J’ai grimpé pour mieux l’apercevoir.'],
     explanation: 'Zachée est monté sur un sycomore pour voir Jésus à Jéricho.',
     reference: 'Luc 19:1-10', forbiddenWords: ['impôts', 'arbre', 'Jéricho'],
   },
@@ -57,7 +57,7 @@ export const jwV61Forbidden: MysteryQuestion[] = [
   },
   {
     id: 'v61-m-008', type: 'mystery', category: 'Prophéties', difficulty: 'medium', answer: 'Michée',
-    clues: ['Je parle d’un futur dirigeant.','Je situe son origine dans une petite ville de Juda.','Je mentionne une ville annoncée dans une prophétie.'],
+    clues: ['Je parle d’une personne appelée à exercer l’autorité.','Je situe son origine dans une petite ville.','Je mentionne une ville annoncée dans une prophétie.'],
     explanation: 'Michée 5:2 annonce qu’un dirigeant sortirait de Bethléem.',
     reference: 'Michée 5:2; Matthieu 2:5-6', forbiddenWords: ['dirigeant', 'Bethléem', 'Juda'],
   },
