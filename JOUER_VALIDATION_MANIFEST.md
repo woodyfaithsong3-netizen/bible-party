@@ -99,7 +99,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `819853f33520e6c2289430caa90b1758158d6091`
+- SHA source validé : `da2acc6e82626f5bad9835d7e27b6bffc02d6980`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -308,4 +308,13 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Correction factuelle majeure : `char-l1-tf-13-2` ne présente plus Élie comme servant au tabernacle de Silo ; la formulation situe correctement son ministère dans le royaume d’Israël.
 - Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L1.
 - Commit source : `29aab6eeea9d59c4e600b31a43b841163391e67e`.
-- La fermeture éditoriale globale de L1 reste en cours tant que les autres contrôles transversaux des cartes de ce lot ne sont pas terminés.
+- Le bloc SEM-L1 reste VALIDATED au SHA courant après revalidation ciblée des 43 cartes ; les autres cartes du bloc conservent leur validation antérieure.
+
+
+## Revalidation éditoriale ciblée V/F L2 — 2026-10-09
+- SHA final : `da2acc6e82626f5bad9835d7e27b6bffc02d6980`.
+- Les 37 cartes Vrai/Faux L2 qui utilisaient une explication générique ont reçu une explication factuelle et des références ajustées aux faits énoncés.
+- Corrections supplémentaires : `char-l2-tf-39-1` reformulée en affirmation directe vraie sur Balak ; `char-l2-tf-33-3` réparée, car sa formulation était matériellement tronquée au milieu du mot « avertissement ».
+- Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L2.
+- Commit source : `6563a4cba043ed9657318c95efa1168b72d61b5a` ; correction ciblée Balak précédente : `1faa6d4b87664487c2ee7e4bbbffbd2a8f135962`.
+- Les cartes modifiées ont été relues individuellement ; les autres cartes du bloc conservent leur validation antérieure.
