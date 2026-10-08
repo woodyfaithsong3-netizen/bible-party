@@ -76,7 +76,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `f0c42cef0199a39a36a3981a792dc352b851369f`
+- SHA source validé : `447b1dc2229adbb6051861311dd844a27f821afe`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -99,7 +99,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `586f9996047f8ac547e817c396d4734a13e4ad57`
+- SHA source validé : `090db42512698e17130acb15c40c204cde470898`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -110,7 +110,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `e27ecb89005515053220805c1e7fc073090dcbf6`
+- SHA source validé : `78f3f8711853b0a0096e37c3860078301fc47477`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -303,7 +303,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 
 ## Revalidation éditoriale ciblée V/F L1 — 2026-10-09
-- SHA final : `f0c42cef0199a39a36a3981a792dc352b851369f`.
+- SHA final : `447b1dc2229adbb6051861311dd844a27f821afe`.
 - Les 43 cartes Vrai/Faux L1 qui utilisaient une explication générique ont reçu une explication factuelle et des références plus précises.
 - Correction factuelle majeure : `char-l1-tf-13-2` ne présente plus Élie comme servant au tabernacle de Silo ; la formulation situe correctement son ministère dans le royaume d’Israël.
 - Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L1.
@@ -312,7 +312,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 
 
 ## Revalidation éditoriale ciblée V/F L2 — 2026-10-09
-- SHA final : `586f9996047f8ac547e817c396d4734a13e4ad57`.
+- SHA final : `090db42512698e17130acb15c40c204cde470898`.
 - Les 37 cartes Vrai/Faux L2 qui utilisaient une explication générique ont reçu une explication factuelle et des références ajustées aux faits énoncés.
 - Corrections supplémentaires : `char-l2-tf-39-1` reformulée en affirmation directe vraie sur Balak ; `char-l2-tf-33-3` réparée, car sa formulation était matériellement tronquée au milieu du mot « avertissement ».
 - Contrôle après édition : 0 explication générique restante dans les cartes V/F du fichier L2.
@@ -328,7 +328,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Commits source : `ae09dde3e4998a7832695a36696703bdb24472f3`, `312516e5441d81b9a2d7cf9421765c964f44339e`.
 - Les cartes modifiées ont été relues individuellement ; les autres cartes du bloc conservent leur validation antérieure.
 
-- Dernière mise à jour du SHA L3 après la correction des sept explications restantes : `e27ecb89005515053220805c1e7fc073090dcbf6`.
+- Dernière mise à jour du SHA L3 après la correction des sept explications restantes : `78f3f8711853b0a0096e37c3860078301fc47477`.
 
 
 ## Corrections de formulation complémentaires — 2026-10-09
@@ -336,7 +336,7 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - L2 : `char-l2-tf-27-2` corrigée pour l’accord et la formulation de Marie Madeleine.
 - L3 : `char-l3-tf-42-2` reformulée autour d’un fait localisable et d’une référence directe.
 - L6 Quiz : `char-l6-q-120-8` ne demande plus « dans un contexte associé » ; la question précise désormais qu’il s’agit de l’assemblée saluée chez Priscille et Aquila.
-- SHA finaux actualisés : L1 `f0c42cef0199a39a36a3981a792dc352b851369f`, L2 `586f9996047f8ac547e817c396d4734a13e4ad57`, L3 `e27ecb89005515053220805c1e7fc073090dcbf6`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
+- SHA finaux actualisés : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
 
 
 ## Revalidation ciblée Quiz L5 — Évodie / Épaphrodite — 2026-10-09
@@ -370,9 +370,14 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 ## Revalidation V/F — reformulation des cartes de localisation L1-L3 et L5 — 2026-10-09
 - 56 affirmations de localisation ont été reformulées en faits bibliques directs, sans la tournure répétitive « est associé à / est lié à » : L1 17 cartes, L2 19, L3 18, L5 2.
 - Les explications et références spécifiques ajoutées dans la passe précédente sont conservées ; les affirmations sont désormais autonomes et plus naturelles pour une partie rapide.
-- SHA finaux : L1 `f0c42cef0199a39a36a3981a792dc352b851369f`, L2 `586f9996047f8ac547e817c396d4734a13e4ad57`, L3 `e27ecb89005515053220805c1e7fc073090dcbf6`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`.
+- SHA finaux : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`.
 
 
 ## Passe concision V/F — 2026-10-09
 - Six affirmations longues ont été raccourcies sans retirer les faits nécessaires : `char-l1-tf-12-3`, `char-l2-tf-30-3`, `char-l2-tf-33-3`, `char-l2-tf-35-3`, `char-l2-tf-40-3`, `char-l3-tf-43-1`.
-- SHA finaux : L1 `f0c42cef0199a39a36a3981a792dc352b851369f`, L2 `586f9996047f8ac547e817c396d4734a13e4ad57`, L3 `e27ecb89005515053220805c1e7fc073090dcbf6`.
+- SHA finaux : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`.
+
+
+## Passe concision complémentaire V/F — 2026-10-09
+- Douze affirmations supplémentaires dépassant 165 caractères ont été raccourcies sans retirer leur fait biblique principal : L1 3, L2 5, L3 4.
+- SHA finaux : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`.

@@ -510,7 +510,7 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Les **118 explications génériques** repérées initialement dans les banques V/F L1-L3 ont été remplacées par des explications factuelles ; les références ont été ajustées aux affirmations concernées.
 - Corrections factuelles et formulations ciblées consignées dans le manifest : notamment Élie et Silo (L1), Balak et une carte Ésaü matériellement tronquée (L2), ainsi que des références et affirmations inversées concernant Malachie, Gamaliel, Onésime, Philémon et Tite (L3).
 - Contrôle final : 0 explication générique de type « Cette affirmation est conforme aux faits bibliques » ou « La Bible rapporte ces faits » restante dans les Vrai/Faux des fichiers L1-L3.
-- SHA actuels : L1 `f0c42cef0199a39a36a3981a792dc352b851369f`, L2 `586f9996047f8ac547e817c396d4734a13e4ad57`, L3 `e27ecb89005515053220805c1e7fc073090dcbf6`.
+- SHA actuels : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`.
 - Le manifest a été actualisé après chaque modification. Les validations antérieures des cartes non modifiées sont conservées ; seules les cartes effectivement changées ont été retravaillées.
 
 - Contrôle complémentaire de jouabilité : `char-l6-q-120-8` a été reformulée pour préciser clairement le contexte de l’assemblée chez Priscille et Aquila ; la carte demeure dans le même bloc validé, avec revalidation ciblée et SHA actualisé.
@@ -534,3 +534,5 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Contrôle des questions Quiz L1-L6 : aucune question restante ne dépend d’un antécédent non nommé du type « cet homme », « cette femme », « ce personnage » ou « ce prophète ».
 
 - Passe concision : six Vrai/Faux trop longs ont été raccourcis et revalidés ; SHA L1-L3 actualisés dans le manifest.
+
+- Passe concision complémentaire : 12 affirmations V/F longues raccourcies et revalidées ; SHA L1-L3 actualisés dans le manifest.
