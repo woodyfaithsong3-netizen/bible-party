@@ -235,10 +235,11 @@ Les validations structurelles/runtimes déjà enregistrées ne sont pas transfor
 
 ### Bloc SEM-V54-001 — en cours, non validé
 - Source : `src/data/jw_enrichment_v54.ts`
-- SHA source : `8b80295de853fb2a25f89351985d3080989a9405`
+- SHA source initial : `8b80295de853fb2a25f89351985d3080989a9405`
+- SHA courant après corrections : `11d6988f1392d170add00a3aa4676a51d459a329`
 - Périmètre : Quiz `v54-q001` à `v54-q080` ; Vrai/Faux `v54-tf001` à `v54-tf080`
 - Taille : 160 cartes
-- État : **CHECKING**
+- État : **CHECKING** — corrections effectuées, validation éditoriale finale encore en cours
 - Règle : aucune de ces 160 cartes ne sera déclarée VALIDATED tant que les 10 contrôles éditoriaux ne sont pas terminés.
 - Premières anomalies déjà confirmées :
   - `v54-q022` : la référence Matthieu 5:18 ne justifie pas l'affirmation sur la comparaison de copies anciennes.
