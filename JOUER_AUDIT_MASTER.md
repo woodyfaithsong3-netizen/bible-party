@@ -325,3 +325,15 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Corrections : `char-l1-q-01-03`, `char-l1-q-01-07`, `char-l1-q-05-02`, `char-l1-q-05-05`, `char-l1-q-07-03`, `char-l1-q-11-04`, `char-l1-q-18-05`, `char-l1-q-20-02`, `char-l1-q-20-04`, `char-l1-m-13-2`.
 - Résultats structurels finaux : 0 incohérence de réponses/index, 0 fuite de réponse, 0 doublon exact de question, 0 doublon d’ID, 0 Mystère avec moins de 3 indices, 0 indice contenant la réponse, 0 indice dupliqué.
 - Catégorie source : 284/284 `Personnages`; le moteur canonise ensuite cette catégorie sans modifier la source.
+
+
+### Bloc SEM-V57-001 — VALIDATED — 2026-10-08
+- Source : `src/data/jw_enrichment_v57.ts`
+- SHA source validé : `fca34d25b39330332746c1da485fa8bb0cc6a826`
+- Périmètre : 316 cartes (87 Défis historiques, 55 citations -> Quiz, 70 chronologies -> Quiz, 64 intrus -> Quiz, 40 anciens Time's Up -> Qui est-ce ?).
+- État : VALIDATED
+- Contrôles : structure, IDs, réponses/index, fuite de réponse, doublons, formulation, contexte, exactitude biblique, références, distracteurs, chronologies, intrus, indices et jouabilité après transformation.
+- Corrections ciblées : `v57-q-047`, `v57-q-056`, `v57-c-031`, `v57-c-034`, `v57-c-035`, `v57-c-036`, `v57-d-048`.
+- Résultats structurels : 316 IDs uniques ; aucune anomalie structurelle résiduelle dans le passage final.
+- Exceptions ouvertes : aucune.
+- Règle : ne pas réauditer tant que le SHA source reste inchangé.
