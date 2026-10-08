@@ -274,14 +274,15 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
 ### Bloc SEM-Q-001 — VALIDATED — 2026-10-08
 - Source : `src/data/questions.ts`
-- SHA source validé : `976173db9877d1b922743201129f5c696018b6b0`
-- Périmètre : Quiz source `facts` + `extraFacts` = 79 cartes.
-- Recheck ciblé : 3 cartes corrigées (Makpéla, Jéricho, pièce dans le poisson) ; la modification actuelle est uniquement du routage (`categoryChronologyExpansion`), sans modification des 79 tuples de contenu.
-- Validation : les trois cartes modifiées ont été relues ; formulation, contexte, réponse, explication, référence, structure et distracteurs sont cohérents.
-- Exceptions : aucune.
-- CI : verte sur `813b69dd83dcea5982c80aa4b70103189458ca45`.
-- GitHub Pages : verte sur `813b69dd83dcea5982c80aa4b70103189458ca45`.
-- Règle : ne pas réauditer tant que le SHA source reste inchangé.
+- SHA source validé : `8dba1fb4c561f6f467ef3c4bf805defb1c50347f`
+- Périmètre réellement audité : **504 cartes jouables** de la source actuelle.
+- État : VALIDATED.
+- Contrôles : IDs uniques, structure, réponses/index, fuite de réponse, doublons, formulation, contexte, catégories, références, explications, distracteurs et jouabilité.
+- Revalidation ciblée Vrai/Faux : `tf-v39-06`, `tf-balance-19`, `tf-balance-24` ; `tf-jw-21` contrôlée sans modification.
+- Contrôles globaux : 504 IDs uniques dans la source actuelle ; aucune anomalie structurelle résiduelle relevée dans la passe globale ; les cartes modifiées ont été recontrôlées.
+- CI + GitHub Pages : verts sur les commits de clôture correspondants.
+- Exceptions ouvertes : aucune.
+- Clôture : ne pas réauditer tant que le SHA source reste inchangé.
 
 
 ### Bloc SEM-V55-001 — VALIDATED
