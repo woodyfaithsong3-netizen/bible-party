@@ -284,13 +284,14 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
 
 
-### Bloc SEM-V55-001 — RECHECK / CHECKING
+### Bloc SEM-V55-001 — VALIDATED
 - Source : `src/data/jw_enrichment_v55.ts`
-- SHA source : `dc8522dfa8cf78e2b7e60a66180d39fe52dec012`
+- SHA source validé : `cf8242fc5ef8ce02631ae5fb5058dd4f7602c0cd`
 - Périmètre désormais réellement jouable : 40 cartes : 8 Qui est-ce ?, 8 citations -> Quiz, 8 intrus -> Quiz, 8 chronologies -> Quiz, 8 défis -> Quiz.
 - Le routage des chronologies et défis est présent dans `src/data/questions.ts` ; l'ancien manifest les déclarait à tort non distribués.
-- 24 cartes avaient déjà une validation éditoriale complète ; les 16 nouvellement jouables passent en recheck éditorial ciblé.
+- Les 16 cartes nouvellement jouables (`v55-c-001`–`008` et `v55-d-001`–`008`) ont été contrôlées individuellement : jouabilité, ordre, références, formulation et cohérence.
 - Corrections historiques : `v55-q-006`, `v55-i-002`.
+- Corrections de références pendant cette revalidation : `v55-c-001`, `v55-c-003`, `v55-c-007`.
 
 
 ### Bloc SEM-V53-001 — VALIDATED
