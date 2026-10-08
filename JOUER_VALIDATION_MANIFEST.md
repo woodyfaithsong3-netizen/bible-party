@@ -1,0 +1,24 @@
+# JOUER — MANIFEST DE VALIDATION ANTI-RÉPÉTITION
+
+Ce fichier est le registre opérationnel des blocs éditoriaux validés. Une carte VALIDATED n'est pas relue intégralement tant que le SHA de sa source n'a pas changé. Toute modification repasse uniquement la carte concernée en RECHECK.
+
+## Bloc SEM-V54-001
+- Source : `src/data/jw_enrichment_v54.ts`
+- SHA source courant : `fca32bb9d0d4e26a12e52d5a2b05e5cfd6753c25`
+- Périmètre : Quiz `v54-q001`–`v54-q080` + Vrai/Faux `v54-tf001`–`v54-tf080`
+- Taille : 160 cartes
+- État : CHECKING
+- Dernière correction : commit `4e56577cd0896b7bca76ad6607339c6d4288696c`
+- Corrections ciblées : q026 et tf026, références réalignées sur `wp16 n° 2 p. 14-15`.
+- Exceptions ouvertes : aucune nouvelle exception confirmée après cette correction.
+- Règle de clôture : ne passer à VALIDATED qu'après contrôle éditorial complet + CI verte + GitHub Pages verte.
+
+## Blocs suivants
+Aucun bloc suivant n'est déclaré VALIDATED tant que son périmètre et son SHA ne sont pas enregistrés ici.
+
+## Règles pour les autres IA
+1. Lire ce manifest et `JOUER_AUDIT_MASTER.md` avant tout audit.
+2. Ne jamais recommencer un bloc VALIDATED dont le SHA est inchangé.
+3. Si le SHA change, ne contrôler que les cartes modifiées puis refermer le bloc avec son nouveau SHA.
+4. Ne jamais déclarer VALIDATED sur la seule base d'un build vert : la validation éditoriale doit aussi être faite.
+5. Ne pas toucher AVENTURE, Ma Bible ni les 125 fiches officielles de personnages dans le cadre de cet audit JOUER.
