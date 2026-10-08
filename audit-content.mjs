@@ -332,11 +332,11 @@ for (const file of playableSourceFiles) {
   }
 }
 // Include exported banks generated from tuple-backed data arrays.
-// Their runtime IDs are created in .map(), so an object-only scan misses them.
+// Some tuples carry IDs directly (V54); category seeds use a runtime index (jwCategories).
 for (const file of playableSourceFiles) {
   const sourceText = fs.readFileSync(new URL(file, import.meta.url), 'utf8');
   const mappedExports = [...sourceText.matchAll(
-    /export const\s+([A-Za-z0-9_]+)\s*(?::\s*[^=]+)?=\s*([A-Za-z0-9_]+)\.map\(\s*\(\[([^\]]+)\]\)\s*=>/g
+    /export const\s+([A-Za-z0-9_]+)\s*(?::\s*[^=]+)?=\s*([A-Za-z0-9_]+)\.map\(\s*(?:\(\[([^\]]+)\]\)|\(([A-Za-z0-9_]+)(?:\s*,\s*([A-Za-z0-9_]+))?\))\s*=>/g
   )];
   for (const match of mappedExports) {
     const name = match[1];
@@ -348,10 +348,19 @@ for (const file of playableSourceFiles) {
     const close = sourceText.indexOf('\n];', start);
     if (close < 0) continue;
     const tupleText = sourceText.slice(start, close + 3);
-    const tupleIds = [...tupleText.matchAll(/^\s*\[\s*['"]([^'"]+)['"]\s*,/gm)].map(item => item[1]);
-    if (!tupleIds.length) continue;
-    const prefix = name.match(/^jw(v\d+)/i)?.[1]?.toLowerCase();
-    const ids = tupleIds.map(id => prefix ? prefix + '-' + id : name + '-' + id);
+    const tupleValues = [...tupleText.matchAll(/^\s*\[\s*['"]([^'"]+)['"]\s*,/gm)].map(item => item[1]);
+    if (!tupleValues.length) continue;
+    const versionPrefix = name.match(/^jw(v\d+)/i)?.[1]?.toLowerCase();
+    const generatedPrefixes = {
+      categoryQuizExpansion: 'jwcat-q',
+      categoryTrueFalseExpansion: 'jwcat-tf',
+      categoryMysteryExpansion: 'jwcat-mystery',
+      categoryTimesUpExpansion: 'jwcat-timesup',
+    };
+    const ids = tupleValues.map((value, index) => {
+      if (versionPrefix && /^(?:q|tf)\d+$/i.test(value)) return versionPrefix + '-' + value;
+      return (generatedPrefixes[name] ?? name) + '-' + (index + 1);
+    });
     const duplicateIds = [...new Set(ids.filter((id, index) => ids.indexOf(id) !== index))];
     exportedCardBanks.push({ file, name, cardCount: ids.length, ids, generated: true, duplicateIds });
     if (routingQuestions.includes('...' + name)) routedBankNames.add(name);
