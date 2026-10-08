@@ -307,9 +307,10 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - `ce2c63f8a94bbe300069dd4fa45fd8d49c0fd819` puis `f83a72ba1711f118eb1e0c7c898513e042c675dc` : `audit:content` vérifie automatiquement que toutes les banques de cartes exportées du périmètre jouable sont référencées par le pipeline et que les IDs source sont uniques.
 - Cette passe ne touche ni AVENTURE, ni Ma Bible, ni `characterLearning.ts`.
 
-### Bloc SEM-V56-001 — CHECKING
+### Bloc SEM-V56-001 — VALIDATED
 - Source : `src/data/jw_enrichment_v56.ts`
-- SHA courant : `abd7b9548326f36a81bdd1ec030e351ea1250c47`
-- Périmètre : 55 cartes (5 Mystère, 12 Défi, 11 citations -> Quiz, 10 chronologies -> Quiz, 9 intrus -> Quiz, 8 Time's Up -> Mystère).
-- Corrections : `v56-q-009` (question/réponse/référence réalignées sur Lévitique 17:11) ; `v56-i-006` (intrus rendu non ambigu en remplaçant Néhémie par Paul).
-- État : CHECKING.
+- SHA source validé : `abd7b9548326f36a81bdd1ec030e351ea1250c47`
+- Périmètre : 55 cartes : 5 Mystère, 12 Défi, 11 citations -> Quiz, 10 chronologies -> Quiz, 9 intrus -> Quiz, 8 Time's Up -> Mystère.
+- Contrôles : jouabilité après transformation, exactitude biblique, réponse, explication/référence, formulation, contexte, catégories, intrus, chronologie et absence d'ambiguïté.
+- Corrections déjà intégrées : `v56-q-009` et `v56-i-006`.
+- État : VALIDATED. Ne pas réauditer tant que le SHA source reste inchangé.
