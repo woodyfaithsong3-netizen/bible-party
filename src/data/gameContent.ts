@@ -1,4 +1,4 @@
-import { intruderQuestions, mysteryQuestions, quizQuestions, quoteQuestions, trueFalseQuestions } from '@/data/questions';
+import { challenges, intruderQuestions, mysteryQuestions, quizQuestions, quoteQuestions, timesUpQuestions, trueFalseQuestions } from '@/data/questions';
 import { completeTheVerseQuestions, completeTheSongQuestions } from '@/data/completeTheVerseQuestions';
 import { GameType, Question, QuizQuestion } from '@/types';
 
@@ -18,10 +18,11 @@ function prepareQuiz(q: QuizQuestion): QuizQuestion {
 function prepareMystery(q: Extract<Question, { type: 'mystery' }>) {
   return { ...q, category: canonicalGameCategory(q.category), clues: q.clues.map((clue) => String(clue || '').replace(/\s+/g, ' ').trim()) };
 }
-const integratedQuizQuestions: QuizQuestion[] = [
+const integratedQuizQuestions: Question[] = [
   ...quizQuestions,
   ...quoteQuestions.map((q) => ({ id:q.id, type:'quiz' as const, category:q.category, difficulty:q.difficulty, question:q.quote, answers:q.answers, correctAnswer:q.correctAnswer, explanation:q.explanation, reference:q.reference })),
   ...intruderQuestions.map((q) => ({ id:q.id, type:'quiz' as const, category:q.category, difficulty:q.difficulty, question:'Quel élément est l’intrus ?', answers:q.items, correctAnswer:q.intruder, explanation:q.explanation, reference:q.reference })),
+  ...challenges,
 ];
 const integratedCompleteQuestions: QuizQuestion[] = [...completeTheVerseQuestions, ...completeTheSongQuestions];
 
@@ -56,8 +57,8 @@ function buildTrueFalseDeck(): Question[] {
   return deck;
 }
 export const GAME_CONTENT: Record<GameType, Question[]> = {
-  quiz: integratedQuizQuestions.map(prepareQuiz),
-  mystery: mysteryQuestions.map(prepareMystery),
+  quiz: integratedQuizQuestions.map((q) => q.type === 'quiz' ? prepareQuiz(q) : q),
+  mystery: [...mysteryQuestions.map(prepareMystery), ...timesUpQuestions.map((q) => ({ id:q.id, type:'mystery' as const, category:canonicalGameCategory(q.category), difficulty:q.difficulty, answer:q.answer, clues:q.clues.map((clue) => String(clue || '').replace(/\s+/g, ' ').trim()), explanation:'Carte Time’s Up convertie en Qui est-ce ? pour rester jouable dans les quatre modes officiels.', reference:q.reference }))],
   truefalse: buildTrueFalseDeck(),
   complete: integratedCompleteQuestions.map(prepareQuiz),
 };
