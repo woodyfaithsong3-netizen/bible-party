@@ -523,3 +523,5 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Le total historique de 500 Vrai/Faux pour L1-L6 était obsolète : le comptage direct des six fichiers actuels est de 339.
 - Le manifest prévaut pour l’état éditorial des blocs fermés et leur SHA ; les anciennes phrases de journal qui disent encore « FIXED, à revalider » ne doivent pas annuler silencieusement une validation ultérieure documentée. Une correction ciblée impose la revalidation de la carte modifiée et la mise à jour du SHA du bloc.
 - Cinq cartes L3 comportant une négation qui inversait une affirmation marquée VRAI ont été corrigées et revalidées le 2026-10-09 : `char-l3-tf-53-1`, `char-l3-tf-54-1`, `char-l3-tf-57-1`, `char-l3-tf-58-1`, `char-l3-tf-59-1`. Voir la section de revalidation dans le manifest.
+
+- Deux autres cartes ont été corrigées et revalidées le 2026-10-09 : `char-l2-tf-39-1` (Balak) et `char-l6-tf-114-2` (Onésiphore). Les SHA L2/L6 sont mis à jour dans le manifest ; aucun autre contenu de ces fichiers n’a été modifié.
