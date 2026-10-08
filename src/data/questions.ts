@@ -806,7 +806,7 @@ const timesUpQuestions3: TimesUpQuestion[] = [
   { id:'timesup-16', type:'timesup', category:'Personnages', difficulty:'easy', answer:'Josué', clues:['Moïse','Jourdain','Jéricho'], reference:'Josué 1–6' },
   { id:'timesup-17', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Bartimée', clues:['Aveugle','Jéricho','Vue'], reference:'Marc 10:46-52' },
   { id:'timesup-18', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Néhémie', clues:['Hanani','prière','Artaxerxès'], reference:'Néhémie 1–2' },
-  { id:'timesup-19', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Corneille', clues:['centurion','Corneille','esprit'], reference:'Actes 10:1-48' },
+  { id:'timesup-19', type:'timesup', category:'Personnages', difficulty:'medium', answer:'Corneille', clues:['centurion','Césarée','esprit'], reference:'Actes 10:1-48' },
   { id:'timesup-20', type:'timesup', category:'Personnages', difficulty:'hard', answer:'Nicodème', clues:['naître de nouveau','Maître en Israël','sépulture'], reference:'Jean 3:1-21; 19:39-40' },
 ];
 
