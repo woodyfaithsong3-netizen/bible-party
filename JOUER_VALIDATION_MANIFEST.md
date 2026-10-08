@@ -71,5 +71,5 @@ Le prochain bloc doit être identifié directement dans les pools jouables de JO
 - Source : `src/data/jw_enrichment_v56.ts`
 - SHA courant : `abd7b9548326f36a81bdd1ec030e351ea1250c47`
 - Périmètre : 55 cartes, toutes jouables via les quatre modes officiels après transformations.
-- État : CHECKING
+- État : VALIDATED
 - Corrections ciblées : `v56-q-009`, `v56-i-006`.
