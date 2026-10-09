@@ -156,7 +156,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L4-001
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source validé : `1ccc8d19e9a4173a5356eb275289c124194f87f7`
+- SHA source après revalidation ciblée : `689fde80c2c31daa91be3363abb68044edf8f0c0`
 - Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux, autonomie liée au personnage, indices Mystère et jouabilité.
@@ -481,3 +481,11 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - L3 : 8 affirmations transformées en propositions fausses précises ; répartition actuelle 40 Vrai / 8 Faux.
 - Les explications ont été réécrites pour donner le fait exact et les références ont été conservées ou ajustées vers les passages qui établissent le fait. Cette correction est ciblée ; elle ne signifie pas que toutes les cartes des blocs L1–L3 ont été relues une par une.
 - Les SHA des sources L1–L3 sont actualisés dans leurs blocs respectifs. Une validation CI et une relecture finale des propositions sont encore nécessaires avant fusion.
+
+
+## Rééquilibrage Vrai/Faux ciblé — L4 (09/10/2026)
+- Source : `src/data/characterQuestionsL4.ts`, SHA courant `689fde80c2c31daa91be3363abb68044edf8f0c0`.
+- Cinq propositions auparavant fausses ont été remplacées par des faits positifs précis : Joseph d’Arimathie demandant le corps de Jésus, Jaïrus suppliant Jésus pour sa fille, le doute de Thomas, les bonnes actions de Tabitha et la mission confiée à Ananias.
+- Répartition après modification : 26 Vrai / 26 Faux sur 52 cartes.
+- Les références ont été vérifiées sur les passages associés, notamment Jean 20:24-29 pour Thomas. Cette passe ne constitue pas une relecture éditoriale intégrale des 292 cartes L4.
+- Ne clore qu’après CI verte sur le SHA final et vérification du déploiement si déclenché.
