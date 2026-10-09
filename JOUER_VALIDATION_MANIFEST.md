@@ -151,12 +151,13 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L4-001
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source validé : `7a1dafe2a4a9880afd6a354b5847578bd00dd7e7`
+- SHA source validé : `1ccc8d19e9a4173a5356eb275289c124194f87f7`
 - Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux, autonomie liée au personnage, indices Mystère et jouabilité.
 - Corrections ciblées : références Mystère, formulations/références Quiz et Vrai/Faux, et réalignement de `char-l4-q-64-7` / `char-l4-q-67-10` avec leur personnage.
 - Exceptions ouvertes : aucune.
+- Revalidation ciblée complémentaire : `char-l4-q-65-5` remplace une répétition interprétative par la déclaration de Thomas d’aller en Judée avec Jésus même au prix de mourir (Jean 11:7-16) ; `char-l4-q-66-8` porte sur le baptême de Lydie et de sa maison (Actes 16:14-15) ; `char-l4-q-68-6` et `char-l4-q-68-7` couvrent la prière et la vision d’Étienne avant sa mort (Actes 7:55-59) ; `char-l4-q-73-5` reprend l’encouragement de Jude à lutter pour la foi (Jude 3) ; `char-l4-q-80-7` porte sur le résultat de l’eau vive (Jean 4:13-14).
 - Revalidation ciblée complémentaire : `char-l4-q-79-5` demande ce que la foule disait à Bartimée lorsqu’il criait vers Jésus (Marc 10:47-48) ; `char-l4-q-79-10` porte sur les paroles des gens lorsque Jésus demanda qu’on l’appelle (Marc 10:49). Les deux cartes ne répètent plus l’identification de Bartimée comme celui qui appelait Jésus « Fils de David ».
 - Revalidation ciblée complémentaire : `char-l4-q-61-2` distingue Marie de Marthe lors de l’arrivée de Jésus (Jean 11:19-20) ; `char-l4-q-61-5` reprend la réponse de Jésus à l’agitation de Marthe (Luc 10:40-42) ; `char-l4-q-61-8` précise la « meilleure part » choisie par Marie (Luc 10:41-42) ; `char-l4-q-61-10` porte sur la question que Jésus posa à Marthe au sujet de sa foi (Jean 11:25-26).
 - Revalidation ciblée complémentaire : 8 cartes de `char-l4-q-78-3` à `char-l4-q-78-10` ont été réécrites pour réduire les répétitions sur l’identité de la fille de Jaïrus et ses gestes au moment de la résurrection. Les nouvelles questions couvrent la nourriture demandée, les trois apôtres présents, la réaction de la foule, la consigne de discrétion, le fait qu’elle se leva et marcha, l’annonce de sa mort, l’encouragement adressé à Jaïrus et la déclaration de Jésus sur l’enfant (Marc 5:35-43). L’ancienne carte qui attribuait à la fille la parole « Ne crains pas, exerce seulement la foi » a été corrigée : Jésus s’adressait à Jaïrus (Marc 5:35-36).
