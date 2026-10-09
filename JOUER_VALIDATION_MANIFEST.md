@@ -87,7 +87,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `f7cc8d961351cc35231bcc09c2069b63e81018eb`
+- SHA source après rééquilibrage ciblé : `d464cb3b15180d3ab5fe2f498443ea3e9bb44e51`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -187,7 +187,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source après revalidation ciblée : `707b608445e3eaa032bbf45a03a3724b5be56f34`
+- SHA source après amélioration ciblée des Vrai/Faux : `399f7a709422508db36ff4bec28a3ca4065b3272`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Revalidation ciblée complémentaire : 12 cartes des banques Apphia et Archippe ont été réécrites pour éliminer les questions répétitives sur l’introduction de la lettre à Philémon et sur le ministère d’Archippe. Les nouveaux faits portent sur l’évolution d’Onésime (Philémon 10-11), le compte de la dette (18-19), le logement demandé (22), le cœur à rafraîchir (20), la confiance en l’obéissance de Philémon (21), l’enfant spirituel de Paul (10), le frère bien-aimé (15-16), l’accueil comme Paul lui-même (17), le volontariat (14), l’espoir de revenir (22), le « propre cœur » de Paul (12) et l’emprisonnement de Paul (1, 9-10).
@@ -504,3 +504,15 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Répartition actuelle : 29 Vrai / 21 Faux sur 50 cartes.
 - Les explications donnent le fait correct et les références bibliques ont été conservées ou étendues. Cette passe est ciblée ; elle ne constitue pas une relecture intégrale de L5.
 - CI verte nécessaire avant fusion.
+
+
+## Amélioration ciblée des Vrai/Faux L6 (09/10/2026)
+- Huit cartes ont été réécrites pour remplacer des affirmations absurdes ou peu informatives par des propositions factuelles fausses mais proches du sujet : distinction Abdias/Édom, Joël/sauterelles, Nahoum/Ninive et trajet de Joseph avec Jésus et Marie.
+- Chaque proposition conserve `answer:false`, donne le fait correct dans l’explication et cite les passages pertinents. La répartition L6 reste 49 Vrai / 46 Faux sur 95 cartes.
+- Contrôle ciblé seulement : ne pas considérer ces huit modifications comme une relecture complète de L6 ni de toutes les banques Vrai/Faux.
+
+
+## Rééquilibrage Vrai/Faux ciblé — L1, suite (09/10/2026)
+- Six cartes réécrites : Adam et sa désobéissance, le trajet de Sara après Harân, le retour de Jacob depuis Paddan-Aram, le rôle de Moïse avant la traversée du Jourdain, la capitale de Salomon et la région de prédication de Jean le Baptiseur.
+- Les six propositions sont maintenant fausses, avec explication du fait exact et références bibliques. Répartition L1 : 31 Vrai / 13 Faux sur 44 cartes.
+- Cette passe est ciblée et ne vaut pas validation éditoriale intégrale de L1.
