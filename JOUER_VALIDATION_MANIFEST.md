@@ -114,7 +114,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `39064b62459fd29043d36d961cc4c21b868e5676`
+- SHA source validé : `0b49a79e27f7c11552470abe20dc35586bc503f3`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -517,3 +517,6 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Six cartes réécrites : Adam et sa désobéissance, le trajet de Sara après Harân, le retour de Jacob depuis Paddan-Aram, le rôle de Moïse avant la traversée du Jourdain, la capitale de Salomon et la région de prédication de Jean le Baptiseur.
 - Les six propositions sont maintenant fausses, avec explication du fait exact et références bibliques. Répartition L1 : 31 Vrai / 13 Faux sur 44 cartes.
 - Cette passe est ciblée et ne vaut pas validation éditoriale intégrale de L1.
+
+
+- Revalidation ciblée complémentaire du 09/10/2026 : six Vrai/Faux L2 modifiés puis contrôlés individuellement : `char-l2-tf-30-2` (Corneille/Césarée et Joppé), `char-l2-tf-32-2` (départ de Léa de Paddan-Aram), `char-l2-tf-34-3` (qui donna la dîme à Melkisédek), `char-l2-tf-35-2` (rencontre de Jéthro avec Moïse après l’Exode), `char-l2-tf-37-2` (rébellion de Coré) et `char-l2-tf-39-2` (Balak demanda à Balaam, non à Josué, de maudire Israël). Les six propositions sont fausses, avec explications factuelles et références vérifiées ; elles remplacent des affirmations vraies redondantes ou trop proches d’autres cartes. Ce contrôle ciblé ne constitue pas une relecture intégrale de L2.
