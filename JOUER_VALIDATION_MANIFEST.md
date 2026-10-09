@@ -110,7 +110,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `b60bef60a72ef45645587e0f2ed8b929ec9d83aa`
+- SHA source validé : `1c6beabb1d3b44345cbea00002342b3cf14c7885`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -120,6 +120,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 - Revalidation ciblée après correction : `char-l2-q-21-05` — formulation et référence corrigées sur Genèse 24:62-67 ; les autres cartes inchangées conservent leur validation antérieure.
+- Revalidation ciblée complémentaire : 19 cartes du bloc Isaac/Samson revues pour remplacer les distracteurs manifestement hors sujet par des choix bibliques plausibles ; `char-l2-q-22-07` reformulée pour être naturelle. Les index de bonnes réponses sont conservés et contrôlés par CI.
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
