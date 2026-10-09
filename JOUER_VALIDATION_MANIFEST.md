@@ -110,7 +110,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `4b6780fbe3b98f66c6026aa599625e471cf893d7`
+- SHA source validé : `b228b56b8c8b2d174c90d0139560d7737eb01a83`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -131,6 +131,8 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Revalidation ciblée complémentaire : 14 cartes du lot Agar, Léa, Ésaü, Melkisédek, Jéthro, Qorah, Balak et Éli reprises pour éliminer les répétitions, préciser les questions et aligner réponses/références sur le récit cité.
 
 - Revalidation ciblée complémentaire : 9 cartes de Melkisédek, Jéthro, Séphora et Balaam réécrites pour réduire les répétitions et vérifier les détails narratifs cités, notamment le silex, l’expression « époux de sang », les sacrifices et les bénédictions de Balaam.
+
+- Affinage final du sous-lot : 3 cartes ajustées pour éviter les répétitions restantes et préciser les réponses sur le sacrifice de Jéthro, la prophétie de Balaam et l’ânesse qui parla.
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
