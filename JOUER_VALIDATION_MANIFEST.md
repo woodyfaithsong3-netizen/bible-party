@@ -172,6 +172,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite, formulation V/F, exactitude, références, indices Mystère, contexte et jouabilité.
 - Corrections : `v58-m-005`, `v58-tf-003`, `v58-tf-006`.
+- Recompte : 25 IDs uniques ; `v58-tf-012` inclus et revérifié (affirmation, réponse vraie, explication et référence Joël 2:28-29 cohérentes). L’ancien total de 24 était une erreur de comptage du registre, pas une carte retirée.
 - CI + GitHub Pages : verts.
 
 ## SEM-V104-001

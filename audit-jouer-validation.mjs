@@ -94,7 +94,7 @@ function matchingValidatedCoverage(file, currentSha) {
     if (!count) count = Number(section.match(/^\s*-\s*(\d+)\s*cartes\b/im)?.[1] ?? 0);
     if (count > 0) {
       covered += count;
-      const title = section.match(/^## (.+)$/m)?.[1] ?? 'bloc';
+      const title = section.match(/^#{2,3} (.+)$/m)?.[1] ?? 'bloc';
       evidence.push(title + ' (' + count + ')');
     }
   }

@@ -157,7 +157,7 @@ Contrôle ciblé des cartes modifiées : les réponses, explications et référe
 - Les six fichiers contiennent **1 250 Quiz** (200 chacun en L1-L5 et 250 en L6).
 - Les contrôles structurels enregistrés : champs `answer`, nombre de choix et index `correctAnswer`, fuites de réponse et indices Mystère.
 - Les blocs L1-L6 sont déclarés VALIDATED dans `JOUER_VALIDATION_MANIFEST.md` uniquement pour leurs SHA enregistrés. Les cartes modifiées sont revalidées de manière ciblée et leur SHA est mis à jour ; la dernière revalidation L3 du 2026-10-09 est inscrite au manifest.
-- Les contrôles de routage (2 840/2 840) prouvent l’accès au moteur, pas l’exactitude éditoriale. Le suivi éditorial des autres banques reste fondé sur les blocs VALIDATED et leurs SHA, jamais sur le seul résultat CI.
+- Note de méthode : le routage (3 640/3 640) prouve l’accès au moteur, pas l’exactitude éditoriale. Le suivi éditorial est couvert séparément par les blocs VALIDATED et leurs SHA, contrôlés automatiquement par `npm run audit:jouer:validation`.
 
 
 ### Refonte JOUER — modes et taille des parties
@@ -205,7 +205,7 @@ Scan exhaustif des banques Mystère : les indices ne doivent jamais contenir un 
 - Contrôle final : **0 chevauchement** détecté entre `clues` et `forbiddenWords` dans les banques Mystère inspectées.
 
 ### Passe identité des cartes
-Contrôle transversal historique de **1 395 IDs** sur un sous-ensemble de banques : **0 doublon d’ID** détecté dans ce périmètre. Le périmètre global courant est de 2 840 cartes dans 67 banques, comme indiqué dans SEM-ROUTING-GLOBAL-001.
+Contrôle transversal historique de **1 395 IDs** sur un sous-ensemble de banques : **0 doublon d’ID** détecté dans ce périmètre. Le périmètre courant supersède cette preuve historique : 3 640 cartes dans 74 banques supplémentaires, vérifiées dans `SEM-ROUTING-GLOBAL-002`.
 
 
 ### Note historique — modes Défi/Mystère (supersédée par le moteur courant)

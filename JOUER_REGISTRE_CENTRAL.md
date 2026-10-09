@@ -4,7 +4,7 @@
 
 ## 1. Inventaire de référence
 
-- Inventaire réconcilié : **3 640 cartes uniques actuellement jouables** — 3 163 cartes dans 74 banques de contenu supplémentaires et 477 cartes de base conservées dans `questions.ts`. Contrôle automatisé : 3 640/3 640 cartes routées, 73/74 banques supplémentaires reliées, 0 banque non routée.
+- Inventaire réconcilié : **3 640 cartes uniques actuellement jouables** — 3 163 cartes dans 74 banques de contenu supplémentaires et 477 cartes de base conservées dans `questions.ts`. Contrôle automatisé : 3 640/3 640 cartes routées, 74/74 banques supplémentaires reliées, 0 banque non routée.
 - Le total exclut les cartes de base intentionnellement filtrées parce qu’elles dupliquent des cartes conservées dans leurs banques sources. Le routage et la validation éditoriale restent deux contrôles distincts.
 - L’estimation historique « environ 5 000 questions » n’est pas confirmée par l’inventaire courant. Ne pas l’utiliser comme total.
 - Le premier rapprochement automatique a détecté une banque V61 « Mot interdit » absente du filtre d’inventaire et a corrigé le total de référence à 3 640 cartes. Les résultats doivent être recalculés par le contrôle du dépôt avant toute annonce de progression. Un CI vert prouve les contrôles automatisés exécutés, pas à lui seul la qualité éditoriale de chaque carte.
