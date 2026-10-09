@@ -122,7 +122,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Revalidation ciblée après correction : `char-l2-q-21-05` — formulation et référence corrigées sur Genèse 24:62-67 ; les autres cartes inchangées conservent leur validation antérieure.
 - Revalidation ciblée complémentaire : 19 cartes du bloc Isaac/Samson revues pour remplacer les distracteurs manifestement hors sujet par des choix bibliques plausibles ; `char-l2-q-22-07` reformulée pour être naturelle. Les index de bonnes réponses sont conservés et contrôlés par CI.
 - Revalidation ciblée complémentaire : 7 cartes Noémi corrigées pour supprimer les questions répétitives sur Mara/le retour à Bethléhem et préciser le contexte, les réponses et les explications. Les cartes non modifiées conservent leur validation antérieure.
-- Dernier affinage du lot : distracteurs de `char-l2-q-21-08` rendus plausibles et formulation de `char-l2-q-22-07` corrigée ; index de réponse conservé.
+- Dernier affinage du lot : distracteurs de `char-l2-q-21-08` rendus plausibles et formulation de `char-l2-q-22-07` corrigée ; index de réponse conservé. Vérification CI à refaire sur le SHA courant.
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
