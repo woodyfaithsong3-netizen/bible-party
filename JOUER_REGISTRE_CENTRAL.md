@@ -67,10 +67,38 @@ Une carte ne devient pas `VALIDATED` parce que le build est vert. Les blocs du `
 - Le rapprochement SHA/périmètres a isolé 17 cartes V54 Qui est-ce ? auparavant absentes des blocs éditoriaux documentés. Elles ont maintenant été relues et ajoutées comme bloc distinct ; les autres blocs inchangés sont conservés.
 
 
-## 7. Clôture de la réconciliation — 2026-10-09
+## 7. Réconciliation du comptage — 2026-10-09
 
-- Inventaire : **3 632 cartes uniques jouables**.
-- Routage : **3 632/3 632**, 73/73 banques supplémentaires avec preuve de route, plus 477 cartes de base conservées ; aucune banque non routée.
-- Éditorial : les 17 cartes V54 Qui est-ce ? (`v54-m-001`–`010`, `v54-tu-002`–`008`) sont maintenant suivies dans un bloc distinct et validées.
-- Statut du registre : toutes les cartes actuelles sont rattachées à un bloc VALIDATED ; aucune carte TODO/RECHECK restante dans le périmètre courant.
-- Règle anti-répétition : ne rouvrir que les cartes modifiées ou dont le périmètre/SHA ne correspond plus.
+### Chiffres de référence
+
+| Mesure | Résultat | Preuve / interprétation |
+|---|---:|---|
+| Cartes uniques jouables | **3 632** | Inventaire global `SEM-ROUTING-GLOBAL-002` |
+| Cartes avec route démontrée | **3 632 / 3 632** | Contrôle automatique des sources et transformations |
+| Banques supplémentaires avec preuve de route | **73 / 73** | Contrôle automatique |
+| IDs déclarés dans `questions.ts` | 504 | 27 sont retirés intentionnellement car leurs copies spécialisées sont conservées |
+| Cartes de base conservées dans le total unique | **477** | 504 − 27 exclusions éditoriales |
+| Banques sources sans route démontrée | **0** | Contrôle automatique |
+| Cartes V54 Qui est-ce ? ajoutées à la couverture éditoriale | **17 / 17** | Bloc `SEM-V54-002`, SHA V54 courant |
+| Cartes sans bloc éditorial VALIDATED correspondant au SHA courant | **0 selon le manifest** | Les sources courantes sont rattachées aux blocs du `JOUER_VALIDATION_MANIFEST.md` |
+
+**Pourquoi ne pas additionner les tailles des blocs ?** Plusieurs blocs sont des sous-ensembles d’une même source et certaines cartes existent à la fois dans une source de base et dans une banque spécialisée. Le total officiel est celui des IDs uniques après déduplication : 3 632. Les nombres de titres de blocs ou les sommes de leurs tailles ne représentent pas le total de cartes.
+
+### Quatre banques logiques — sans fusion risquée des fichiers sources
+
+| Banque logique | Pool runtime | Sources transformées incluses |
+|---|---|---|
+| **Quiz** | `GAME_CONTENT.quiz` | Quiz, citations, intrus, défis historiques et chronologie |
+| **Vrai / Faux** | `GAME_CONTENT.truefalse` | Toutes les cartes `trueFalseQuestions`, sans échantillonnage qui en supprime |
+| **Qui est-ce ?** | `GAME_CONTENT.mystery` | Mystères et cartes Time’s Up converties en indices |
+| **Compléter les paroles** | `GAME_CONTENT.complete` | Versets et chansons/cantiques à compléter |
+
+Les sources physiques restent dans leurs modules actuels pour préserver les imports, transformations et IDs. Le jeu ne consomme que ces quatre pools logiques ; ce registre et le manifest centralisent le suivi.
+
+### Règles à chaque passe
+
+1. Recalculer le total d’IDs uniques et le routage avec `npm run audit:content`.
+2. Comparer les SHA courants des sources aux SHA du manifest.
+3. Ne réouvrir que les cartes modifiées ou celles dont le périmètre/SHA ne correspond plus.
+4. Ne jamais déduire le nombre de cartes à partir du nombre de titres de blocs.
+5. Un build vert ne suffit pas à valider une carte : la preuve éditoriale doit rester inscrite dans le manifest.
