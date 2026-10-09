@@ -113,7 +113,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `b228b56b8c8b2d174c90d0139560d7737eb01a83`
+- SHA source validé : `bbbe2d3a0279c1fa6bc18813ef9b0105736807b4`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -467,3 +467,6 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 - Revalidation ciblée complémentaire du 09/10/2026 : `char-l1-q-02-10` reformulée sur la promesse précise de l’alliance après le Déluge ; `char-l1-q-18-04` remplacée par l’épisode de Pierre marchant sur l’eau ; `char-l1-q-18-10` différenciée en question sur le chant du coq ; `char-l1-q-20-09` remplacée par l’arrivée de Jean au tombeau. Réponses, index, explications et références vérifiés ; SHA L1 actualisé. Les cartes non modifiées conservent leur validation antérieure.
+
+
+- Revalidation ciblée complémentaire du 09/10/2026 : `char-l2-q-23-07` remplacée par une question sur le nom « Mara » demandé par Noémi ; `char-l2-q-28-02` remplacée par une question sur la déclaration de Jésus au sujet du salut venu dans la maison de Zachée ; `char-l2-q-33-01` remplacée par la raison donnée par Ésaü pour céder son droit d’aînesse. Vérification des index de réponse, explications et références ; SHA L2 actualisé. Les autres cartes L2 n’ont pas été modifiées dans ce lot.
