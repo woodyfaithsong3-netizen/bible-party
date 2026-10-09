@@ -157,7 +157,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L4-001
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source après revalidation ciblée : `689fde80c2c31daa91be3363abb68044edf8f0c0`
+- SHA source après revalidation ciblée : `a3cbdee02dcc8220ea1cc5f56c66eb1a55e7cc4e`
 - Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux, autonomie liée au personnage, indices Mystère et jouabilité.
@@ -170,6 +170,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Revalidation ciblée complémentaire : 8 cartes de `char-l4-q-76-3` à `char-l4-q-76-10` ont été réécrites pour éviter de répéter que Jacques fils d’Alphée est l’un des Douze ou que sa vie personnelle est peu détaillée. Les nouvelles questions portent sur le nombre des Douze, la prière de Jésus avant leur choix, leurs missions (prêcher, rester avec Jésus, expulser les démons), Jean frère de Jacques fils de Zébédée, le nom « Simon le Cananéen » et le choix de Matthias pour remplacer Judas (Luc 6:12-16 ; Marc 3:14-18 ; Matthieu 10:2-4 ; Actes 1:21-26).
 - Revalidation ciblée complémentaire : `char-l4-q-63-5` remplace la répétition sur l’attente du Royaume par une question distincte sur l’appartenance de Joseph d’Arimathie au Sanhédrin (Luc 23:50-51 ; Marc 15:43).
 - Revalidation ciblée après détection de répétitions : `char-l4-q-62-8` (message de Marthe et Marie au sujet de Lazare, Jean 11:1-3), `char-l4-q-63-7` (Joseph décrit comme bon et juste, Luc 23:50-51), `char-l4-q-63-9` (Nicodème participe à la préparation du corps, Jean 19:38-40) et `char-l4-q-67-5` à `char-l4-q-67-10` (préparation de Tabitha, nom Dorcas, prière de Pierre, retour à la vie, effet à Joppé et raison de l’appel de Pierre ; Actes 9:36-42). Les formulations répétitives ont été remplacées par des faits distincts, avec index et références contrôlés.
+- Revalidation ciblée complémentaire du 09/10/2026 : `char-l4-tf-63-4` remplace une affirmation générique répétée par une affirmation fausse précise sur l’appartenance de Joseph d’Arimathie aux Douze (Matthieu 27:57 ; Marc 15:43 ; Jean 19:38) ; `char-l4-tf-67-4` distingue Tabitha de Lydie au moyen d’un fait biographique précis (Actes 9:36 ; 16:14-15). Réponses, explications et références réalignées. Cette passe ne constitue pas une relecture intégrale de L4.
 - Clôture : CI et GitHub Pages vertes sur le commit de clôture courant.
 
 ## Bloc SEM-L5-001
