@@ -87,7 +87,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `f7cc8d961351cc35231bcc09c2069b63e81018eb`
+- SHA source après rééquilibrage ciblé : `d464cb3b15180d3ab5fe2f498443ea3e9bb44e51`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -510,3 +510,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Huit cartes ont été réécrites pour remplacer des affirmations absurdes ou peu informatives par des propositions factuelles fausses mais proches du sujet : distinction Abdias/Édom, Joël/sauterelles, Nahoum/Ninive et trajet de Joseph avec Jésus et Marie.
 - Chaque proposition conserve `answer:false`, donne le fait correct dans l’explication et cite les passages pertinents. La répartition L6 reste 49 Vrai / 46 Faux sur 95 cartes.
 - Contrôle ciblé seulement : ne pas considérer ces huit modifications comme une relecture complète de L6 ni de toutes les banques Vrai/Faux.
+
+
+## Rééquilibrage Vrai/Faux ciblé — L1, suite (09/10/2026)
+- Six cartes réécrites : Adam et sa désobéissance, le trajet de Sara après Harân, le retour de Jacob depuis Paddan-Aram, le rôle de Moïse avant la traversée du Jourdain, la capitale de Salomon et la région de prédication de Jean le Baptiseur.
+- Les six propositions sont maintenant fausses, avec explication du fait exact et références bibliques. Répartition L1 : 31 Vrai / 13 Faux sur 44 cartes.
+- Cette passe est ciblée et ne vaut pas validation éditoriale intégrale de L1.
