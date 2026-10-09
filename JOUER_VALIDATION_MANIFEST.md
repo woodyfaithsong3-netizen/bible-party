@@ -470,3 +470,11 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 - Revalidation ciblée complémentaire du 09/10/2026 — L5 : correction du décalage entre la question et les choix pour Félix ; différenciation des questions sur Phœbé, Évodie/Syntyche, Josias et Josaphat. L6 : remplacement de la formulation vague « associé à » par le fait précis rapporté en Actes 19:29, et différenciation de deux questions sur la visite de Pierre chez Marie par la prière des disciples réunis. Index, réponses, explications et références revérifiés ; SHA L5/L6 actualisés.
+
+
+## Constat transversal — équilibre des Vrai/Faux des banques personnages
+- Audit de comptage effectué le 2026-10-09 sur les cartes `characterTrueFalseQuestions` des lots L1 à L6.
+- Répartition observée : L1 43 Vrai / 1 Faux ; L2 49 / 1 ; L3 48 / 0 ; L4 21 / 31 ; L5 36 / 14 ; L6 49 / 46.
+- Ce comptage révèle un déséquilibre éditorial majeur dans L1–L3. Il ne constitue pas une validation sémantique carte par carte.
+- Action requise dans un lot séparé : reformuler des affirmations factuellement fausses, corriger leurs explications pour exposer le fait exact, conserver les références bibliques pertinentes et recalculer l’équilibre après modification. Ne pas simplement inverser `answer` sans modifier la proposition.
+- Aucune carte n’est modifiée par cette note ; le lot de rééquilibrage doit rester distinct de la correction L5/L6 de cette PR.
