@@ -174,9 +174,10 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`
+- SHA source validé : `262e4008eb89235a0950f3a9201be770ffbcf59c`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
+- Revalidation ciblée après détection de répétitions : `char-l6-q-110-4` (instruction donnée aux dix lépreux, Luc 17:13-14), `char-l6-q-121-10` (raison du transfert de Paul à Césarée, Actes 23:23-30), `char-l6-q-123-7` (Artémis au cœur de l’émeute, Actes 19:24-28) et `char-l6-q-123-10` (la foule entraîne Gaïus et Aristarque au théâtre, Actes 19:29). Ces cartes remplacent des formulations redondantes par des faits distincts.
 - Contrôles : validation éditoriale complète, structure, réponses/index, références, contexte, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère, doublons, fuite de réponse et jouabilité.
 - Corrections ciblées : références Joël et indices Mystère réalignés.
 - Exceptions ouvertes : aucune.
