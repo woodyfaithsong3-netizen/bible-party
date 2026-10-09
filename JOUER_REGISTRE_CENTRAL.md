@@ -102,3 +102,11 @@ Les sources physiques restent dans leurs modules actuels pour préserver les imp
 3. Ne réouvrir que les cartes modifiées ou celles dont le périmètre/SHA ne correspond plus.
 4. Ne jamais déduire le nombre de cartes à partir du nombre de titres de blocs.
 5. Un build vert ne suffit pas à valider une carte : la preuve éditoriale doit rester inscrite dans le manifest.
+
+## 8. Contrôle reproductible des statuts
+
+- Commande : \`npm run audit:jouer:validation\`.
+- La commande recalcule les SHA Git des sources, compare les blocs \`VALIDATED\` et leurs tailles dans le manifest, puis affiche le total unique, le total couvert et le nombre restant.
+- Elle échoue si une source n'a pas de couverture validée au SHA courant, si des cartes restent sans bloc, ou si le total inventorié diffère du total de référence. Elle est exécutée dans CI avant l'export Web.
+- Les quatre modes sont des pools logiques dans \`src/data/gameContent.ts\`. Les fichiers sources spécialisés restent séparés afin de préserver les transformations et les IDs ; leur statut est désormais vérifiable par cette commande.
+

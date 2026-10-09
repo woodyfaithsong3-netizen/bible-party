@@ -11,7 +11,8 @@
     "typecheck": "tsc --noEmit",
     "audit:content": "node audit-content.mjs",
     "web:export": "expo export --platform web",
-    "build:android:apk": "eas build --platform android --profile preview"
+    "build:android:apk": "eas build --platform android --profile preview",
+    "audit:jouer:validation": "node audit-jouer-validation.mjs"
   },
   "dependencies": {
     "@react-native-async-storage/async-storage": "^2.2.0",
