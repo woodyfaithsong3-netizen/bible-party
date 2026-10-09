@@ -110,7 +110,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `9be36e9e271609301a95485df84b55f7d7f4365d`
+- SHA source validé : `9219794973bbf105be8390d001a34d135007f61f`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -123,6 +123,12 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Revalidation ciblée complémentaire : 19 cartes du bloc Isaac/Samson revues pour remplacer les distracteurs manifestement hors sujet par des choix bibliques plausibles ; `char-l2-q-22-07` reformulée pour être naturelle. Les index de bonnes réponses sont conservés et contrôlés par CI.
 - Revalidation ciblée complémentaire : 7 cartes Noémi corrigées pour supprimer les questions répétitives sur Mara/le retour à Bethléhem et préciser le contexte, les réponses et les explications. Les cartes non modifiées conservent leur validation antérieure.
 - Dernier affinage du lot : distracteurs de `char-l2-q-21-08` rendus plausibles et formulation de `char-l2-q-22-07` corrigée ; index de réponse conservé. Vérification CI à refaire sur le SHA courant.
+
+- Revalidation ciblée du 09/10/2026 : 10 cartes de Noémi, Zachée, Barnabé et Corneille corrigées pour une référence précise, une réponse correcte, ou pour remplacer les répétitions/généralités par des questions distinctes. Les autres cartes du fichier restent inchangées.
+
+- Revalidation ciblée complémentaire : 10 cartes du lot Élisha, Néhémie et Marie Madeleine reprises pour supprimer des répétitions, préciser les événements bibliques et corriger des questions/réponses trop génériques. La couverture inchangée reste conservée.
+
+- Revalidation ciblée complémentaire : 14 cartes du lot Agar, Léa, Ésaü, Melkisédek, Jéthro, Qorah, Balak et Éli reprises pour éliminer les répétitions, préciser les questions et aligner réponses/références sur le récit cité.
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
