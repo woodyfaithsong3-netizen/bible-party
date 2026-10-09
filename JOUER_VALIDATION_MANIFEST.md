@@ -87,7 +87,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `3dbeffbb367be1afea2066cbdc8de428bc03cf6a`
+- SHA source validé : `d688835e73aa50cdb580d3a244ef7a4ebecc7ecd`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -113,7 +113,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `bbbe2d3a0279c1fa6bc18813ef9b0105736807b4`
+- SHA source validé : `39064b62459fd29043d36d961cc4c21b868e5676`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -139,7 +139,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `45ae3f1f3e49fc15afc216a066440281a7b0926c`
+- SHA source validé : `0e03cc9573421d23ce8e0cbfb7aa247cf903043b`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -151,6 +151,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
 
 
+- Rééquilibrage Vrai/Faux ciblé du 09/10/2026 : 6 affirmations L1 corrigées dans L1; 8 affirmations fausses factuellement vérifiables ajoutées dans L3. Vérifier les comptes et les réponses dans la PR avant de déclarer le bloc éditorialement validé.
+- Rééquilibrage Vrai/Faux ciblé du 09/10/2026 : 6 affirmations L0 corrigées dans L1; 8 affirmations fausses factuellement vérifiables ajoutées dans L2. Vérifier les comptes et les réponses dans la PR avant de déclarer le bloc éditorialement validé.
+- Rééquilibrage Vrai/Faux ciblé du 09/10/2026 : 6 affirmations L0 corrigées dans L1; 8 affirmations fausses factuellement vérifiables ajoutées dans L3. Vérifier les comptes et les réponses dans la PR avant de déclarer le bloc éditorialement validé.
 ## Bloc SEM-L4-001
 - Source : `src/data/characterQuestionsL4.ts`
 - SHA source validé : `1ccc8d19e9a4173a5356eb275289c124194f87f7`
