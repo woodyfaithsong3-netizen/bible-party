@@ -177,7 +177,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source après rééquilibrage ciblé : `a45c994b562905d0e84d2e3c2dad16000e3eb2d1`
+- SHA source après revalidation ciblée : `afeae78a51d49adb5102f0fa3d6f6cf87dce8565`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -186,6 +186,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Revalidation ciblée après détection de répétitions : `char-l5-q-82-9` (Félix espérait recevoir de l’argent, Actes 24:26), `char-l5-q-87-6` (Évodie et Syntyche avaient collaboré à la bonne nouvelle, Philippiens 4:2-3), `char-l5-q-90-3` et `char-l5-q-90-10` (collaborateurs de Démas dans Philémon 24 et départ pour Thessalonique, 2 Timothée 4:10), `char-l5-q-91-8` (réaction de Naamân aux instructions, 2 Rois 5:9-12), `char-l5-q-93-4` (succession de Josias par Joachaz, 2 Rois 23:30-31) et `char-l5-q-100-7` (mission confiée à Amos, Amos 7:14-15). Les doublons de formulation ont été remplacés par des questions plus distinctes et les index/références ont été contrôlés.
 - CI : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
 - GitHub Pages : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
+- Revalidation ciblée complémentaire du 09/10/2026 : 14 cartes expert Vrai/Faux ont été réécrites pour supprimer les distracteurs génériques répétés (« l’un des Douze apôtres ») et corriger les rôles/événements : `char-l5-tf-83-4`, `84-4`, `85-4`, `86-4`, `87-4`, `88-4`, `90-4`, `91-4`, `92-4`, `94-4`, `95-4`, `97-4`, `99-4`, `100-4`. Réponses fausses conservées ; explications et références rendues spécifiques. Cette passe est ciblée et ne vaut pas relecture intégrale de L5.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
 
 
