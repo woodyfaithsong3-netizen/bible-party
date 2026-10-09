@@ -87,12 +87,14 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `f92722a6371d445deef6001055e0f2ed061df4f4`
+- SHA source validé : `0f29eb01190f0ca23f67946b0214116c45925e72`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
 - Corrections ciblées : 10 cartes modifiées puis recontrôlées.
 - Exceptions ouvertes : aucune.
+- Revalidation ciblée complémentaire : `char-l1-q-18-08` remplace une répétition sur le rétablissement de Pierre par sa réponse à Jésus lorsqu’il lui demanda s’il l’aimait (Jean 21:15-17).
+- Revalidation ciblée complémentaire : `char-l1-q-18-05` corrige la référence pour l’action de Jésus envers Pierre (Jean 21:15-17) ; `char-l1-q-18-07` remplace une répétition sur le reniement par le nom Céphas/Pierre donné à Simon (Jean 1:42) ; `char-l1-q-18-09` demande ce que Jésus demanda à Pierre à trois reprises après sa résurrection (Jean 21:15-17), plutôt que de répéter qu’il pleura après son reniement.
 - Revalidation ciblée après détection de répétitions : `char-l1-q-09-09` (demande de Ruth à Boaz sur l’aire de battage, Ruth 3:7-9), `char-l1-q-12-07` (richesses et gloire accordées à Salomon, 1 Rois 3:12-13), `char-l1-q-13-07` (réponse de Jéhovah sur le mont Carmel, 1 Rois 18:36-38), `char-l1-q-20-07` (surnom de Jacques et Jean, Marc 3:17) et `char-l1-q-20-08` (mission confiée à Pierre et Jean avant la Pâque, Luc 22:7-13). Les questions répétitives ont été remplacées par des faits distincts et les réponses/index/références contrôlés.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
 
