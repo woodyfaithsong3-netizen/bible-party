@@ -70,7 +70,7 @@ function sourceBankCount(sourceText) {
   }
   return { total, banks };
 }
-const sections = manifest.split(/(?=^## )/m);
+const sections = manifest.split(/(?=^#{2,3} )/m);
 function matchingValidatedCoverage(file, currentSha) {
   let covered = 0;
   const evidence = [];
@@ -84,10 +84,14 @@ function matchingValidatedCoverage(file, currentSha) {
     if (!shaLines.includes(currentSha)) continue;
     let count = Number(section.match(/^\s*-\s*Taille\s*:\s*(\d+)\s*cartes/im)?.[1] ?? 0);
     if (!count) {
-      const perimeter = section.match(/^\s*-\s*Périmètre\s*:\s*(.+)$/im)?.[1] ?? '';
-      const matches = [...perimeter.matchAll(/(\d+)\s*cartes?/gi)];
-      if (matches.length) count = Number(matches[matches.length - 1][1]);
+      const perimeter = section.match(/^\s*-\s*Périmètre(?:\s+[^:]*)?\s*:\s*(.+)$/im)?.[1] ?? '';
+      if (/\bIDs? déclarés\b/i.test(perimeter)) count = Number(perimeter.match(/(\d+)\s*IDs?\s+déclarés/i)?.[1] ?? 0);
+      if (!count) {
+        const matches = [...perimeter.matchAll(/(\d+)\s*cartes?/gi)];
+        if (matches.length) count = Number(matches[matches.length - 1][1]);
+      }
     }
+    if (!count) count = Number(section.match(/^\s*-\s*(\d+)\s*cartes\b/im)?.[1] ?? 0);
     if (count > 0) {
       covered += count;
       const title = section.match(/^## (.+)$/m)?.[1] ?? 'bloc';
@@ -139,7 +143,7 @@ const totalPending = pendingExtraCards + basePending;
 console.log('Bible Party — réconciliation éditoriale JOUER');
 console.log('Banques sources supplémentaires: ' + extraBankCount);
 console.log('Cartes supplémentaires inventoriées: ' + extraSourceCards);
-console.log('Cartes de base: ' + baseIds.length + '; copies retirées intentionnellement: ' + removedIds.size + '; cartes uniques conservées: ' + basePlayable);
+console.log('Cartes de base: ' + baseIds.length + '; IDs d’exclusion déclarés: ' + removedIds.size + '; copies réellement retirées: ' + (baseIds.length - basePlayable) + '; cartes uniques conservées: ' + basePlayable);
 console.log('TOTAL UNIQUE JOUABLE: ' + totalUniquePlayable);
 console.log('VALIDÉES selon les blocs VALIDATED dont le SHA correspond exactement: ' + totalValidated + '/' + totalUniquePlayable);
 console.log('RESTE À VALIDER / COUVERTURE MANQUANTE: ' + totalPending);
