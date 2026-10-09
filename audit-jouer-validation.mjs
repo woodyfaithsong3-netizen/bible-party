@@ -112,6 +112,7 @@ for (const file of playableSourceFiles) {
   const sha = gitBlobSha(content);
   const inventory = sourceBankCount(content);
   const coverage = matchingValidatedCoverage(file, sha);
+  if (coverage.covered > inventory.total) failures.push(file + ': surcouverture du manifest (' + coverage.covered + '/' + inventory.total + ' cartes); vérifier les blocs VALIDATED qui se chevauchent ou leur périmètre');
   const validated = Math.min(inventory.total, coverage.covered);
   const pending = Math.max(0, inventory.total - validated);
   extraSourceCards += inventory.total;
@@ -133,7 +134,8 @@ const removedIds = new Set(
 );
 const basePlayable = baseIds.filter(id => !removedIds.has(id)).length;
 const baseCoverage = matchingValidatedCoverage(questionsFile, questionsSha);
-const baseValidated = baseCoverage.covered >= baseIds.length ? basePlayable : 0;
+if (baseCoverage.covered > baseIds.length) failures.push(questionsFile + ': surcouverture du manifest (' + baseCoverage.covered + '/' + baseIds.length + ' IDs déclarés)');
+const baseValidated = baseCoverage.covered === baseIds.length ? basePlayable : 0;
 const basePending = basePlayable - baseValidated;
 if (basePending > 0) failures.push(questionsFile + ': couverture insuffisante (' + baseCoverage.covered + '/' + baseIds.length + '; ' + basePending + ' cartes uniques jouables à valider)');
 
@@ -145,7 +147,7 @@ console.log('Banques sources supplémentaires: ' + extraBankCount);
 console.log('Cartes supplémentaires inventoriées: ' + extraSourceCards);
 console.log('Cartes de base: ' + baseIds.length + '; IDs d’exclusion déclarés: ' + removedIds.size + '; copies réellement retirées: ' + (baseIds.length - basePlayable) + '; cartes uniques conservées: ' + basePlayable);
 console.log('TOTAL UNIQUE JOUABLE: ' + totalUniquePlayable);
-console.log('VALIDÉES selon les blocs VALIDATED dont le SHA correspond exactement: ' + totalValidated + '/' + totalUniquePlayable);
+console.log('COUVERTES PAR DES BLOCS VALIDATED dont le SHA correspond exactement: ' + totalValidated + '/' + totalUniquePlayable);
 console.log('RESTE À VALIDER / COUVERTURE MANQUANTE: ' + totalPending);
 console.log('');
 console.log('Détail par source:');
@@ -159,4 +161,4 @@ if (failures.length) {
   for (const failure of failures) console.error('- ' + failure);
   process.exit(1);
 }
-console.log('\nPASS — chaque source de contenu a une couverture VALIDATED correspondant au SHA courant et le total est réconcilié.');
+console.log('\nPASS — les SHA, inventaires et tailles de blocs VALIDATED sont réconciliés. Ce contrôle de couverture ne remplace pas la vérification éditoriale individuelle des cartes.');
