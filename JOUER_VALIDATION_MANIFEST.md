@@ -87,7 +87,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source après rééquilibrage ciblé : `d464cb3b15180d3ab5fe2f498443ea3e9bb44e51`
+- SHA source après rééquilibrage ciblé : `c205ad31661567eeb68202ba8ca792d9aa380382`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
