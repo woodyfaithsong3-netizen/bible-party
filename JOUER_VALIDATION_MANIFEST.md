@@ -87,12 +87,13 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `447b1dc2229adbb6051861311dd844a27f821afe`
+- SHA source validé : `f92722a6371d445deef6001055e0f2ed061df4f4`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
 - Corrections ciblées : 10 cartes modifiées puis recontrôlées.
 - Exceptions ouvertes : aucune.
+- Revalidation ciblée après détection de répétitions : `char-l1-q-09-09` (demande de Ruth à Boaz sur l’aire de battage, Ruth 3:7-9), `char-l1-q-12-07` (richesses et gloire accordées à Salomon, 1 Rois 3:12-13), `char-l1-q-13-07` (réponse de Jéhovah sur le mont Carmel, 1 Rois 18:36-38), `char-l1-q-20-07` (surnom de Jacques et Jean, Marc 3:17) et `char-l1-q-20-08` (mission confiée à Pierre et Jean avant la Pâque, Luc 22:7-13). Les questions répétitives ont été remplacées par des faits distincts et les réponses/index/références contrôlés.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
 
 
