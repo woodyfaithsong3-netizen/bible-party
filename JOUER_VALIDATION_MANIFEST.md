@@ -110,7 +110,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `eb8d7e1e30a8be905b54b654d0ca6083dfdcfc9d`
+- SHA source validé : `f7d07e7255f78a93b09773b92caf9aa0ca866d6c`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -125,6 +125,8 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Dernier affinage du lot : distracteurs de `char-l2-q-21-08` rendus plausibles et formulation de `char-l2-q-22-07` corrigée ; index de réponse conservé. Vérification CI à refaire sur le SHA courant.
 
 - Revalidation ciblée du 09/10/2026 : 10 cartes de Noémi, Zachée, Barnabé et Corneille corrigées pour une référence précise, une réponse correcte, ou pour remplacer les répétitions/généralités par des questions distinctes. Les autres cartes du fichier restent inchangées.
+
+- Revalidation ciblée complémentaire : 10 cartes du lot Élisha, Néhémie et Marie Madeleine reprises pour supprimer des répétitions, préciser les événements bibliques et corriger des questions/réponses trop génériques. La couverture inchangée reste conservée.
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
