@@ -87,11 +87,12 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source après rééquilibrage ciblé : `c205ad31661567eeb68202ba8ca792d9aa380382`
+- SHA source validé : `c205ad31661567eeb68202ba8ca792d9aa380382`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
 - Corrections ciblées : 10 cartes modifiées puis recontrôlées.
+- Revalidation ciblée au SHA courant : `char-l1-tf-01-3`, `char-l1-tf-04-2`, `char-l1-tf-05-2`, `char-l1-tf-07-2`, `char-l1-tf-12-2`, `char-l1-tf-16-2` ; affirmations, explications et références contrôlées individuellement. Les cartes inchangées conservent leur validation antérieure.
 - Exceptions ouvertes : aucune.
 - Revalidation ciblée complémentaire : `char-l1-q-18-08` remplace une répétition sur le rétablissement de Pierre par sa réponse à Jésus lorsqu’il lui demanda s’il l’aimait (Jean 21:15-17).
 - Revalidation ciblée complémentaire : `char-l1-q-18-05` corrige la référence pour l’action de Jésus envers Pierre (Jean 21:15-17) ; `char-l1-q-18-07` remplace une répétition sur le reniement par le nom Céphas/Pierre donné à Simon (Jean 1:42) ; `char-l1-q-18-09` demande ce que Jésus demanda à Pierre à trois reprises après sa résurrection (Jean 21:15-17), plutôt que de répéter qu’il pleura après son reniement.
