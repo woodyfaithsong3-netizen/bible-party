@@ -173,7 +173,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source après revalidation ciblée : `dc2ae3bd2a0decae7d5b0e337bb44785871a46b5`
+- SHA source après rééquilibrage ciblé : `a45c994b562905d0e84d2e3c2dad16000e3eb2d1`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -496,3 +496,11 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - L6 : `char-l6-q-116-9` différencie l’épisode chez Marie en demandant ce que faisaient les disciples réunis ; `char-l6-tf-123-2` remplace « associé à » par le fait précis que Gaïus et Aristarque furent entraînés au théâtre pendant l’émeute à Éphèse.
 - Références et index de réponse conservés/contrôlés sur Actes 24:24-25, Romains 16:1-2, Philippiens 4:2-3, 2 Rois 22:8-10, 2 Chroniques 17:7-9, 2 Chroniques 20:14-17 et Actes 12:12-13 / 19:29.
 - Cette revalidation est limitée aux huit cartes listées ; ne pas interpréter le nouveau SHA comme une relecture intégrale de L5/L6.
+
+
+## Rééquilibrage Vrai/Faux ciblé — L5 (09/10/2026)
+- Source : `src/data/characterQuestionsL5.ts`, SHA courant `a45c994b562905d0e84d2e3c2dad16000e3eb2d1`.
+- Sept affirmations réécrites en propositions fausses précises : centurion (serviteur/fille), lieu de détention de Paul sous Félix, audience d’Agrippa II, lieu de l’audience de Bérénice, envoi d’Épaphrodite, fonction de Naamân et royaume gouverné par Josias.
+- Répartition actuelle : 29 Vrai / 21 Faux sur 50 cartes.
+- Les explications donnent le fait correct et les références bibliques ont été conservées ou étendues. Cette passe est ciblée ; elle ne constitue pas une relecture intégrale de L5.
+- CI verte nécessaire avant fusion.
