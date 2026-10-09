@@ -87,7 +87,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `3dbeffbb367be1afea2066cbdc8de428bc03cf6a`
+- SHA source validé : `f7cc8d961351cc35231bcc09c2069b63e81018eb`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -113,7 +113,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `bbbe2d3a0279c1fa6bc18813ef9b0105736807b4`
+- SHA source validé : `39064b62459fd29043d36d961cc4c21b868e5676`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -139,7 +139,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `45ae3f1f3e49fc15afc216a066440281a7b0926c`
+- SHA source validé : `0e03cc9573421d23ce8e0cbfb7aa247cf903043b`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -149,6 +149,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Exceptions ouvertes : aucune.
 - Revalidation ciblée complémentaire : `char-l3-q-42-07` précise le filet de poils de chèvre placé à la tête de la statue (1 Samuel 19:13-16) ; `char-l3-q-57-08` porte sur le souhait de Paul de garder Onésime pour le servir en prison (Philémon 13-14) ; `char-l3-q-57-09` porte sur la demande de Paul à Philémon de rafraîchir son cœur (Philémon 20). Ces cartes remplacent des répétitions résiduelles par des faits distincts.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+
 
 
 ## Bloc SEM-L4-001
@@ -470,3 +473,11 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 - Revalidation ciblée complémentaire du 09/10/2026 : `char-l2-q-23-07` remplacée par une question sur le nom « Mara » demandé par Noémi ; `char-l2-q-28-02` remplacée par une question sur la déclaration de Jésus au sujet du salut venu dans la maison de Zachée ; `char-l2-q-33-01` remplacée par la raison donnée par Ésaü pour céder son droit d’aînesse. Vérification des index de réponse, explications et références ; SHA L2 actualisé. Les autres cartes L2 n’ont pas été modifiées dans ce lot.
+
+
+## Rééquilibrage Vrai/Faux ciblé — L1 à L3 (09/10/2026)
+- L1 : 6 affirmations transformées en propositions fausses précises ; répartition actuelle 37 Vrai / 7 Faux.
+- L2 : 8 affirmations transformées en propositions fausses précises ; répartition actuelle 41 Vrai / 9 Faux.
+- L3 : 8 affirmations transformées en propositions fausses précises ; répartition actuelle 40 Vrai / 8 Faux.
+- Les explications ont été réécrites pour donner le fait exact et les références ont été conservées ou ajustées vers les passages qui établissent le fait. Cette correction est ciblée ; elle ne signifie pas que toutes les cartes des blocs L1–L3 ont été relues une par une.
+- Les SHA des sources L1–L3 sont actualisés dans leurs blocs respectifs. Une validation CI et une relecture finale des propositions sont encore nécessaires avant fusion.
