@@ -160,12 +160,13 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`
+- SHA source validé : `2b1b525d2eefbe848869a14dd9b58c7c1c5d02bd`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
 - Corrections ciblées : 5 Vrai/Faux réalignés sur leur `characterId`, puis recontrôlés.
 - Exceptions ouvertes : aucune.
+- Revalidation ciblée après détection de répétitions : `char-l5-q-82-9` (Félix espérait recevoir de l’argent, Actes 24:26), `char-l5-q-87-6` (Évodie et Syntyche avaient collaboré à la bonne nouvelle, Philippiens 4:2-3), `char-l5-q-90-3` et `char-l5-q-90-10` (collaborateurs de Démas dans Philémon 24 et départ pour Thessalonique, 2 Timothée 4:10), `char-l5-q-91-8` (réaction de Naamân aux instructions, 2 Rois 5:9-12), `char-l5-q-93-4` (succession de Josias par Joachaz, 2 Rois 23:30-31) et `char-l5-q-100-7` (mission confiée à Amos, Amos 7:14-15). Les doublons de formulation ont été remplacés par des questions plus distinctes et les index/références ont été contrôlés.
 - CI : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
 - GitHub Pages : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
