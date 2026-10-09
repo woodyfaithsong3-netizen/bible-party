@@ -160,7 +160,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `2b1b525d2eefbe848869a14dd9b58c7c1c5d02bd`
+- SHA source validé : `4f77d4c4a939e1433eaef12ed2aa1c3703a2e49d`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
