@@ -173,7 +173,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `4f77d4c4a939e1433eaef12ed2aa1c3703a2e49d`
+- SHA source après revalidation ciblée : `dc2ae3bd2a0decae7d5b0e337bb44785871a46b5`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -187,7 +187,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `88a20ff6fc8b7b8761804ecea55fd4318dd60499`
+- SHA source après revalidation ciblée : `707b608445e3eaa032bbf45a03a3724b5be56f34`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Revalidation ciblée complémentaire : 12 cartes des banques Apphia et Archippe ont été réécrites pour éliminer les questions répétitives sur l’introduction de la lettre à Philémon et sur le ministère d’Archippe. Les nouveaux faits portent sur l’évolution d’Onésime (Philémon 10-11), le compte de la dette (18-19), le logement demandé (22), le cœur à rafraîchir (20), la confiance en l’obéissance de Philémon (21), l’enfant spirituel de Paul (10), le frère bien-aimé (15-16), l’accueil comme Paul lui-même (17), le volontariat (14), l’espoir de revenir (22), le « propre cœur » de Paul (12) et l’emprisonnement de Paul (1, 9-10).
@@ -481,3 +481,10 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - L3 : 8 affirmations transformées en propositions fausses précises ; répartition actuelle 40 Vrai / 8 Faux.
 - Les explications ont été réécrites pour donner le fait exact et les références ont été conservées ou ajustées vers les passages qui établissent le fait. Cette correction est ciblée ; elle ne signifie pas que toutes les cartes des blocs L1–L3 ont été relues une par une.
 - Les SHA des sources L1–L3 sont actualisés dans leurs blocs respectifs. Une validation CI et une relecture finale des propositions sont encore nécessaires avant fusion.
+
+
+## Revalidation ciblée SEM-L5/L6 — questions ambiguës ou répétitives (09/10/2026)
+- L5 : `char-l5-q-82-1` précise que Félix est le gouverneur qui convoqua Paul ; `char-l5-q-86-9` demande la congrégation de Phœbé ; `char-l5-q-87-7` distingue le conseil adressé à Évodie et Syntyche ; `char-l5-q-93-9` identifie Hilkija comme celui qui trouva le livre de la Loi ; `char-l5-q-94-1` demande quel livre les enseignants de Josaphat emportaient ; `char-l5-q-94-7` porte sur le message de Jahaziel avant la bataille.
+- L6 : `char-l6-q-116-9` différencie l’épisode chez Marie en demandant ce que faisaient les disciples réunis ; `char-l6-tf-123-2` remplace « associé à » par le fait précis que Gaïus et Aristarque furent entraînés au théâtre pendant l’émeute à Éphèse.
+- Références et index de réponse conservés/contrôlés sur Actes 24:24-25, Romains 16:1-2, Philippiens 4:2-3, 2 Rois 22:8-10, 2 Chroniques 17:7-9, 2 Chroniques 20:14-17 et Actes 12:12-13 / 19:29.
+- Cette revalidation est limitée aux huit cartes listées ; ne pas interpréter le nouveau SHA comme une relecture intégrale de L5/L6.
