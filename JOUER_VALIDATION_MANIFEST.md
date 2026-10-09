@@ -140,7 +140,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `0e03cc9573421d23ce8e0cbfb7aa247cf903043b`
+- SHA source validé après revalidation ciblée : `1b820556b76d9e7035646115847e203229ec8c8f`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -149,6 +149,8 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Résultats finaux : 288 IDs uniques, 200 Quiz sans doublon ni fuite, 48 Vrai/Faux contrôlés, 40 Qui est-ce ? sans problème d’indices.
 - Exceptions ouvertes : aucune.
 - Revalidation ciblée complémentaire : `char-l3-q-42-07` précise le filet de poils de chèvre placé à la tête de la statue (1 Samuel 19:13-16) ; `char-l3-q-57-08` porte sur le souhait de Paul de garder Onésime pour le servir en prison (Philémon 13-14) ; `char-l3-q-57-09` porte sur la demande de Paul à Philémon de rafraîchir son cœur (Philémon 20). Ces cartes remplacent des répétitions résiduelles par des faits distincts.
+- Revalidation ciblée complémentaire du 09/10/2026 : six cartes Vrai/Faux ont été réécrites pour corriger des répétitions et erreurs de rôles : `char-l3-tf-49-2` (Esdras/Néhémie), `char-l3-tf-50-2` (Zorobabel/Néhémie), `char-l3-tf-53-2` (offrandes condamnées par Malachie), `char-l3-tf-54-2` (Gamaliel pharisien), `char-l3-tf-55-2` (Apollos d’Alexandrie) et `char-l3-tf-57-2` (Onésime et Philémon). Réponses, explications et références vérifiées ; 6 propositions fausses précises ajoutées.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
 
 
