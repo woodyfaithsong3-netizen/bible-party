@@ -151,9 +151,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
 
 
-- Rééquilibrage Vrai/Faux ciblé du 09/10/2026 : 6 affirmations L1 corrigées dans L1; 8 affirmations fausses factuellement vérifiables ajoutées dans L3. Vérifier les comptes et les réponses dans la PR avant de déclarer le bloc éditorialement validé.
-- Rééquilibrage Vrai/Faux ciblé du 09/10/2026 : 6 affirmations L0 corrigées dans L1; 8 affirmations fausses factuellement vérifiables ajoutées dans L2. Vérifier les comptes et les réponses dans la PR avant de déclarer le bloc éditorialement validé.
-- Rééquilibrage Vrai/Faux ciblé du 09/10/2026 : 6 affirmations L0 corrigées dans L1; 8 affirmations fausses factuellement vérifiables ajoutées dans L3. Vérifier les comptes et les réponses dans la PR avant de déclarer le bloc éditorialement validé.
+
+
+
 ## Bloc SEM-L4-001
 - Source : `src/data/characterQuestionsL4.ts`
 - SHA source validé : `1ccc8d19e9a4173a5356eb275289c124194f87f7`
@@ -473,3 +473,11 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 - Revalidation ciblée complémentaire du 09/10/2026 : `char-l2-q-23-07` remplacée par une question sur le nom « Mara » demandé par Noémi ; `char-l2-q-28-02` remplacée par une question sur la déclaration de Jésus au sujet du salut venu dans la maison de Zachée ; `char-l2-q-33-01` remplacée par la raison donnée par Ésaü pour céder son droit d’aînesse. Vérification des index de réponse, explications et références ; SHA L2 actualisé. Les autres cartes L2 n’ont pas été modifiées dans ce lot.
+
+
+## Rééquilibrage Vrai/Faux ciblé — L1 à L3 (09/10/2026)
+- L1 : 6 affirmations transformées en propositions fausses précises ; répartition actuelle 37 Vrai / 7 Faux.
+- L2 : 8 affirmations transformées en propositions fausses précises ; répartition actuelle 41 Vrai / 9 Faux.
+- L3 : 8 affirmations transformées en propositions fausses précises ; répartition actuelle 40 Vrai / 8 Faux.
+- Les explications ont été réécrites pour donner le fait exact et les références ont été conservées ou ajustées vers les passages qui établissent le fait. Cette correction est ciblée ; elle ne signifie pas que toutes les cartes des blocs L1–L3 ont été relues une par une.
+- Les SHA des sources L1–L3 sont actualisés dans leurs blocs respectifs. Une validation CI et une relecture finale des propositions sont encore nécessaires avant fusion.
