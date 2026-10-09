@@ -71,6 +71,7 @@ function sourceBankCount(sourceText) {
   return { total, banks };
 }
 const sections = manifest.split(/(?=^#{2,3} )/m);
+// This reconciles manifest block sizes and source SHAs only; it does not inspect each card's editorial evidence.
 function matchingValidatedCoverage(file, currentSha) {
   let covered = 0;
   const evidence = [];
@@ -142,13 +143,13 @@ if (basePending > 0) failures.push(questionsFile + ': couverture insuffisante ('
 const totalUniquePlayable = extraSourceCards + basePlayable;
 const totalValidated = validatedExtraCards + baseValidated;
 const totalPending = pendingExtraCards + basePending;
-console.log('Bible Party — réconciliation éditoriale JOUER');
+console.log('Bible Party — réconciliation de couverture des blocs JOUER');
 console.log('Banques sources supplémentaires: ' + extraBankCount);
 console.log('Cartes supplémentaires inventoriées: ' + extraSourceCards);
 console.log('Cartes de base: ' + baseIds.length + '; IDs d’exclusion déclarés: ' + removedIds.size + '; copies réellement retirées: ' + (baseIds.length - basePlayable) + '; cartes uniques conservées: ' + basePlayable);
 console.log('TOTAL UNIQUE JOUABLE: ' + totalUniquePlayable);
 console.log('COUVERTES PAR DES BLOCS VALIDATED dont le SHA correspond exactement: ' + totalValidated + '/' + totalUniquePlayable);
-console.log('RESTE À VALIDER / COUVERTURE MANQUANTE: ' + totalPending);
+console.log('CARTES SANS COUVERTURE MANIFESTÉE: ' + totalPending);
 console.log('');
 console.log('Détail par source:');
 for (const row of rows) {
