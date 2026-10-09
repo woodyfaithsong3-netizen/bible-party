@@ -170,7 +170,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `4f77d4c4a939e1433eaef12ed2aa1c3703a2e49d`
+- SHA source validé : `2a152d694fc710396d7c4f59e907e96ef388348a`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -184,7 +184,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `88a20ff6fc8b7b8761804ecea55fd4318dd60499`
+- SHA source validé : `707b608445e3eaa032bbf45a03a3724b5be56f34`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Revalidation ciblée complémentaire : 12 cartes des banques Apphia et Archippe ont été réécrites pour éliminer les questions répétitives sur l’introduction de la lettre à Philémon et sur le ministère d’Archippe. Les nouveaux faits portent sur l’évolution d’Onésime (Philémon 10-11), le compte de la dette (18-19), le logement demandé (22), le cœur à rafraîchir (20), la confiance en l’obéissance de Philémon (21), l’enfant spirituel de Paul (10), le frère bien-aimé (15-16), l’accueil comme Paul lui-même (17), le volontariat (14), l’espoir de revenir (22), le « propre cœur » de Paul (12) et l’emprisonnement de Paul (1, 9-10).
@@ -467,3 +467,6 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 - Revalidation ciblée complémentaire du 09/10/2026 : `char-l1-q-02-10` reformulée sur la promesse précise de l’alliance après le Déluge ; `char-l1-q-18-04` remplacée par l’épisode de Pierre marchant sur l’eau ; `char-l1-q-18-10` différenciée en question sur le chant du coq ; `char-l1-q-20-09` remplacée par l’arrivée de Jean au tombeau. Réponses, index, explications et références vérifiés ; SHA L1 actualisé. Les cartes non modifiées conservent leur validation antérieure.
+
+
+- Revalidation ciblée complémentaire du 09/10/2026 — L5 : correction du décalage entre la question et les choix pour Félix ; différenciation des questions sur Phœbé, Évodie/Syntyche, Josias et Josaphat. L6 : remplacement de la formulation vague « associé à » par le fait précis rapporté en Actes 19:29, et différenciation de deux questions sur la visite de Pierre chez Marie par la prière des disciples réunis. Index, réponses, explications et références revérifiés ; SHA L5/L6 actualisés.
