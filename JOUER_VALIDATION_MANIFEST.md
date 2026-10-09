@@ -187,7 +187,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source après revalidation ciblée : `707b608445e3eaa032bbf45a03a3724b5be56f34`
+- SHA source après amélioration ciblée des Vrai/Faux : `399f7a709422508db36ff4bec28a3ca4065b3272`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Revalidation ciblée complémentaire : 12 cartes des banques Apphia et Archippe ont été réécrites pour éliminer les questions répétitives sur l’introduction de la lettre à Philémon et sur le ministère d’Archippe. Les nouveaux faits portent sur l’évolution d’Onésime (Philémon 10-11), le compte de la dette (18-19), le logement demandé (22), le cœur à rafraîchir (20), la confiance en l’obéissance de Philémon (21), l’enfant spirituel de Paul (10), le frère bien-aimé (15-16), l’accueil comme Paul lui-même (17), le volontariat (14), l’espoir de revenir (22), le « propre cœur » de Paul (12) et l’emprisonnement de Paul (1, 9-10).
@@ -504,3 +504,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Répartition actuelle : 29 Vrai / 21 Faux sur 50 cartes.
 - Les explications donnent le fait correct et les références bibliques ont été conservées ou étendues. Cette passe est ciblée ; elle ne constitue pas une relecture intégrale de L5.
 - CI verte nécessaire avant fusion.
+
+
+## Amélioration ciblée des Vrai/Faux L6 (09/10/2026)
+- Huit cartes ont été réécrites pour remplacer des affirmations absurdes ou peu informatives par des propositions factuelles fausses mais proches du sujet : distinction Abdias/Édom, Joël/sauterelles, Nahoum/Ninive et trajet de Joseph avec Jésus et Marie.
+- Chaque proposition conserve `answer:false`, donne le fait correct dans l’explication et cite les passages pertinents. La répartition L6 reste 49 Vrai / 46 Faux sur 95 cartes.
+- Contrôle ciblé seulement : ne pas considérer ces huit modifications comme une relecture complète de L6 ni de toutes les banques Vrai/Faux.
