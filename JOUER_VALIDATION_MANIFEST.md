@@ -149,12 +149,13 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L4-001
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source validé : `b9d9c3c1883e2c217cce5417d309da2aebcd6632`
+- SHA source validé : `3139db3ea41c28b256fda4694b426731a4b2f3c4`
 - Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux, autonomie liée au personnage, indices Mystère et jouabilité.
 - Corrections ciblées : références Mystère, formulations/références Quiz et Vrai/Faux, et réalignement de `char-l4-q-64-7` / `char-l4-q-67-10` avec leur personnage.
 - Exceptions ouvertes : aucune.
+- Revalidation ciblée après détection de répétitions : `char-l4-q-62-8` (message de Marthe et Marie au sujet de Lazare, Jean 11:1-3), `char-l4-q-63-7` (Joseph décrit comme bon et juste, Luc 23:50-51), `char-l4-q-63-9` (Nicodème participe à la préparation du corps, Jean 19:38-40) et `char-l4-q-67-5` à `char-l4-q-67-10` (préparation de Tabitha, nom Dorcas, prière de Pierre, retour à la vie, effet à Joppé et raison de l’appel de Pierre ; Actes 9:36-42). Les formulations répétitives ont été remplacées par des faits distincts, avec index et références contrôlés.
 - Clôture : CI et GitHub Pages vertes sur le commit de clôture courant.
 
 ## Bloc SEM-L5-001
