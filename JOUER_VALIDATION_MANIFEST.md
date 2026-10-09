@@ -87,7 +87,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `0f29eb01190f0ca23f67946b0214116c45925e72`
+- SHA source validé : `3dbeffbb367be1afea2066cbdc8de428bc03cf6a`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -464,3 +464,6 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Les 17 cartes V54 Qui est-ce ? non couvertes par le bloc éditorial initial sont désormais validées dans `SEM-V54-002`. Le filtre d’inventaire a aussi été corrigé pour compter les 8 cartes V61 « Mot interdit » (`v61-m-001`–`v61-m-008`) déjà couvertes par `SEM-V61-001`.
 - Les quatre modes officiels restent Quiz, Vrai / Faux, Qui est-ce ? et Compléter les paroles.
 - Règle anti-répétition : conserver les validations existantes tant que leur source et leur périmètre restent inchangés.
+
+
+- Revalidation ciblée complémentaire du 09/10/2026 : `char-l1-q-02-10` reformulée sur la promesse précise de l’alliance après le Déluge ; `char-l1-q-18-04` remplacée par l’épisode de Pierre marchant sur l’eau ; `char-l1-q-18-10` différenciée en question sur le chant du coq ; `char-l1-q-20-09` remplacée par l’arrivée de Jean au tombeau. Réponses, index, explications et références vérifiés ; SHA L1 actualisé. Les cartes non modifiées conservent leur validation antérieure.
