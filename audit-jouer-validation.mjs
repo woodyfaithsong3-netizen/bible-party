@@ -43,7 +43,7 @@ function sourceBankCount(sourceText) {
   const exportMatches = [...sourceText.matchAll(/export const\s+([A-Za-z0-9_]+)\s*(?::\s*[^=]+)?=\s*\[/g)];
   for (let i = 0; i < exportMatches.length; i++) {
     const name = exportMatches[i][1];
-    if (!/(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|character)/i.test(name)) continue;
+    if (!/(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|Forbidden|character)/i.test(name)) continue;
     const start = exportMatches[i].index;
     const end = i + 1 < exportMatches.length ? exportMatches[i + 1].index : sourceText.length;
     const ids = [...sourceText.slice(start, end).matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)].map(match => match[1]);
@@ -75,7 +75,8 @@ function matchingValidatedCoverage(file, currentSha) {
   let covered = 0;
   const evidence = [];
   for (const section of sections) {
-    const sourceLine = '- Source : ' + tick + file + tick;
+    const manifestFile = file.replace(/^\.\//, '');
+    const sourceLine = '- Source : ' + tick + manifestFile + tick;
     if (!section.split('\n').some(line => line.trim() === sourceLine)) continue;
     const validated = /\bVALIDATED\b/i.test(section) || /^\s*-\s*État\s*:\s*VALIDATED\b/im.test(section);
     if (!validated) continue;
@@ -148,7 +149,7 @@ for (const row of rows) {
   console.log(row.file + ': ' + row.validated + '/' + row.total + ' VALIDATED; ' + row.pending + ' restantes; ' + row.banks + ' banques; SHA ' + row.sha + (row.evidence ? '; blocs: ' + row.evidence : ''));
 }
 console.log(questionsFile + ': ' + baseValidated + '/' + basePlayable + ' VALIDATED uniques; ' + basePending + ' restantes; SHA ' + questionsSha + '; blocs: ' + (baseCoverage.evidence.join('; ') || 'aucun'));
-if (totalUniquePlayable !== 3632) failures.push('le total courant (' + totalUniquePlayable + ') diffère du total de référence documenté (3632); mettre à jour le registre après vérification');
+if (totalUniquePlayable !== 3640) failures.push('le total courant (' + totalUniquePlayable + ') diffère du total de référence documenté (3640); mettre à jour le registre après vérification');
 if (failures.length) {
   console.error('\nÉCHEC DE RÉCONCILIATION:');
   for (const failure of failures) console.error('- ' + failure);

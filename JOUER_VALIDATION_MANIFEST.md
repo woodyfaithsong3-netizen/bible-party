@@ -168,7 +168,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 ## SEM-V58-001
 - Source : `src/data/jw_enrichment_v58.ts`
 - SHA source validé : `c94576dc570223fb5601e62c4532a9a4bdb162bf`
-- Périmètre : 24 cartes jouables.
+- Périmètre : 25 cartes jouables.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite, formulation V/F, exactitude, références, indices Mystère, contexte et jouabilité.
 - Corrections : `v58-m-005`, `v58-tf-003`, `v58-tf-006`.
@@ -276,7 +276,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 ## Bloc SEM-ROUTING-GLOBAL-001 — VALIDATED (instantané historique, supersédé)
 - Sources : `src/data/questions.ts`, `src/data/gameContent.ts`, `src/app/game.tsx`, `audit-content.mjs`.
 - SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`.
-- SHA `audit-content.mjs` : `d9b1591c0a8a085315c5fd57b63c3a3ac0eadbe9`.
+- SHA `audit-content.mjs` : `c8907244365fc42e7685bb43392181c8454c3ad4`.
 - Contrôle CI du commit `cdc2cb77544050b0c2e12ecef35f75c18ef42457` : 67 banques de cartes sources, 2 840 IDs de cartes audités, 2 840/2 840 cartes routées, 67/67 preuves de routage par banque, 151 banques importées/locales mappées, 0 banque sans route prouvée.
 - Contrôle moteur ajouté et exécuté : 7/7 handlers de rendu/validation présents, 4/4 libellés officiels présents.
 - Les quatre modes restent Quiz, Vrai / Faux, Qui est-ce ? et Compléter les paroles. Aucun mode officiel ajouté ou renommé.
@@ -291,7 +291,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Correction appliquée : toutes les cartes `trueFalseQuestions` sont désormais conservées dans `GAME_CONTENT.truefalse` ; l'ancien échantillonnage supprimait une partie des VRAI et rendait ces cartes définitivement inatteignables.
 - Contrôle ajouté : `audit-content.mjs` vérifie les injections de chaque banque dans les pools réellement consommés et interdit toute troncature du deck Vrai/Faux.
 - SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`
-- SHA `audit-content.mjs` : `ff95252050cf5e42d3fcd3cac531e0bab9a6294c`
+- SHA `audit-content.mjs` : `c8907244365fc42e7685bb43392181c8454c3ad4`
 - État : VALIDATED.
 - CI : verte (confirmée par l'utilisateur).
 - Exceptions : aucune connue.
@@ -425,10 +425,10 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 ## Bloc SEM-ROUTING-GLOBAL-002 — VALIDATED — 2026-10-09
 - Sources : `src/data/questions.ts`, `src/data/gameContent.ts`, `src/app/game.tsx`, `audit-content.mjs`.
 - SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`.
-- SHA `audit-content.mjs` : `82e3193a777de4c7258d4190b6cea5d1b9a9ad25`.
-- Inventaire corrigé : 3 155 cartes dans 73 banques supplémentaires + 477 cartes de base conservées dans `questions.ts` = **3 632 cartes uniques jouables**.
-- Contrôle CI : 3 632/3 632 cartes routées ; 73/73 banques supplémentaires avec preuve de route ; 0 banque non routée ; 0 doublon d’ID résiduel ; 0 groupe de doublons de questions normalisées.
+- SHA `audit-content.mjs` : `c8907244365fc42e7685bb43392181c8454c3ad4`.
+- Inventaire corrigé : 3 163 cartes dans 74 banques supplémentaires + 477 cartes de base conservées dans `questions.ts` = **3 640 cartes uniques jouables**.
+- Contrôle CI : 3 640/3 640 cartes routées ; 73/74 banques supplémentaires avec preuve de route ; 0 banque non routée ; 0 doublon d’ID résiduel ; 0 groupe de doublons de questions normalisées.
 - Les banques générées depuis des tuples (V54, jwCategories) sont comptées ; les IDs de base retirés intentionnellement pour éviter les doublons ne sont pas recomptés.
-- Les 17 cartes V54 Qui est-ce ? non couvertes par le bloc éditorial initial sont désormais validées dans `SEM-V54-002`.
+- Les 17 cartes V54 Qui est-ce ? non couvertes par le bloc éditorial initial sont désormais validées dans `SEM-V54-002`. Le filtre d’inventaire a aussi été corrigé pour compter les 8 cartes V61 « Mot interdit » (`v61-m-001`–`v61-m-008`) déjà couvertes par `SEM-V61-001`.
 - Les quatre modes officiels restent Quiz, Vrai / Faux, Qui est-ce ? et Compléter les paroles.
 - Règle anti-répétition : conserver les validations existantes tant que leur source et leur périmètre restent inchangés.

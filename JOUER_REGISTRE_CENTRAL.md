@@ -4,10 +4,10 @@
 
 ## 1. Inventaire de référence
 
-- Inventaire réconcilié : **3 632 cartes uniques actuellement jouables** — 3 155 cartes dans 73 banques de contenu supplémentaires et 477 cartes de base conservées dans `questions.ts`. Contrôle automatisé : 3 632/3 632 cartes routées, 73/73 banques supplémentaires reliées, 0 banque non routée.
+- Inventaire réconcilié : **3 640 cartes uniques actuellement jouables** — 3 163 cartes dans 74 banques de contenu supplémentaires et 477 cartes de base conservées dans `questions.ts`. Contrôle automatisé : 3 640/3 640 cartes routées, 73/74 banques supplémentaires reliées, 0 banque non routée.
 - Le total exclut les cartes de base intentionnellement filtrées parce qu’elles dupliquent des cartes conservées dans leurs banques sources. Le routage et la validation éditoriale restent deux contrôles distincts.
 - L’estimation historique « environ 5 000 questions » n’est pas confirmée par l’inventaire courant. Ne pas l’utiliser comme total.
-- Les résultats doivent être recalculés par le contrôle du dépôt avant toute annonce de progression. Un CI vert prouve les contrôles automatisés exécutés, pas à lui seul la qualité éditoriale de chaque carte.
+- Le premier rapprochement automatique a détecté une banque V61 « Mot interdit » absente du filtre d’inventaire et a corrigé le total de référence à 3 640 cartes. Les résultats doivent être recalculés par le contrôle du dépôt avant toute annonce de progression. Un CI vert prouve les contrôles automatisés exécutés, pas à lui seul la qualité éditoriale de chaque carte.
 
 ## 2. Les quatre banques logiques officielles
 
@@ -62,7 +62,7 @@ Une carte ne devient pas `VALIDATED` parce que le build est vert. Les blocs du `
 
 ## 6. État de départ pour la réconciliation
 
-- Routage global courant : 3 632/3 632 cartes uniques, 73 banques supplémentaires + 477 cartes de base, 0 banque non routée.
+- Routage global courant : 3 640/3 640 cartes uniques, 74 banques supplémentaires + 477 cartes de base, 0 banque non routée.
 - Les blocs éditoriaux déjà inscrits dans le manifeste sont conservés ; aucun n'est réinitialisé.
 - Le rapprochement SHA/périmètres a isolé 17 cartes V54 Qui est-ce ? auparavant absentes des blocs éditoriaux documentés. Elles ont maintenant été relues et ajoutées comme bloc distinct ; les autres blocs inchangés sont conservés.
 
@@ -73,8 +73,8 @@ Une carte ne devient pas `VALIDATED` parce que le build est vert. Les blocs du `
 
 | Mesure | Résultat | Preuve / interprétation |
 |---|---:|---|
-| Cartes uniques jouables | **3 632** | Inventaire global `SEM-ROUTING-GLOBAL-002` |
-| Cartes avec route démontrée | **3 632 / 3 632** | Contrôle automatique des sources et transformations |
+| Cartes uniques jouables | **3 640** | Inventaire global `SEM-ROUTING-GLOBAL-002` |
+| Cartes avec route démontrée | **3 640 / 3 640** | Contrôle automatique des sources et transformations |
 | Banques supplémentaires avec preuve de route | **73 / 73** | Contrôle automatique |
 | IDs déclarés dans `questions.ts` | 504 | 27 sont retirés intentionnellement car leurs copies spécialisées sont conservées |
 | Cartes de base conservées dans le total unique | **477** | 504 − 27 exclusions éditoriales |
@@ -82,7 +82,7 @@ Une carte ne devient pas `VALIDATED` parce que le build est vert. Les blocs du `
 | Cartes V54 Qui est-ce ? ajoutées à la couverture éditoriale | **17 / 17** | Bloc `SEM-V54-002`, SHA V54 courant |
 | Cartes sans bloc éditorial VALIDATED correspondant au SHA courant | **0 selon le manifest** | Les sources courantes sont rattachées aux blocs du `JOUER_VALIDATION_MANIFEST.md` |
 
-**Pourquoi ne pas additionner les tailles des blocs ?** Plusieurs blocs sont des sous-ensembles d’une même source et certaines cartes existent à la fois dans une source de base et dans une banque spécialisée. Le total officiel est celui des IDs uniques après déduplication : 3 632. Les nombres de titres de blocs ou les sommes de leurs tailles ne représentent pas le total de cartes.
+**Pourquoi ne pas additionner les tailles des blocs ?** Plusieurs blocs sont des sous-ensembles d’une même source et certaines cartes existent à la fois dans une source de base et dans une banque spécialisée. Le total officiel est celui des IDs uniques après déduplication : 3 640. Les nombres de titres de blocs ou les sommes de leurs tailles ne représentent pas le total de cartes.
 
 ### Quatre banques logiques — sans fusion risquée des fichiers sources
 
@@ -109,4 +109,5 @@ Les sources physiques restent dans leurs modules actuels pour préserver les imp
 - La commande recalcule les SHA Git des sources, compare les blocs \`VALIDATED\` et leurs tailles dans le manifest, puis affiche le total unique, le total couvert et le nombre restant.
 - Elle échoue si une source n'a pas de couverture validée au SHA courant, si des cartes restent sans bloc, ou si le total inventorié diffère du total de référence. Elle est exécutée dans CI avant l'export Web.
 - Les quatre modes sont des pools logiques dans \`src/data/gameContent.ts\`. Les fichiers sources spécialisés restent séparés afin de préserver les transformations et les IDs ; leur statut est désormais vérifiable par cette commande.
+
 

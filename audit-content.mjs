@@ -306,7 +306,7 @@ for (const file of playableSourceFiles) {
   const exportMatches = [...sourceText.matchAll(/export const\s+([A-Za-z0-9_]+)\s*(?::\s*[^=]+)?=\s*\[/g)];
   for (let i = 0; i < exportMatches.length; i++) {
     const name = exportMatches[i][1];
-    if (!/(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|character)/i.test(name)) continue;
+    if (!/(?:Quiz|TrueFalse|Mystery|TimesUp|Quotes?|Chronology|Intruders?|Challenges?|Questions|Complete|Expansion|Forbidden|character)/i.test(name)) continue;
     const start = exportMatches[i].index;
     const end = i + 1 < exportMatches.length ? exportMatches[i + 1].index : sourceText.length;
     const segment = sourceText.slice(start, end);
@@ -470,7 +470,7 @@ if (routedSourceCardTotal !== sourceCardTotal) {
 console.log('- Global playable source banks:', exportedCardBanks.length);
 console.log('- Unrouted source banks:', unroutedCardBanks.length);
 console.log('- Core cards in questions.ts:', baseQuestionIds.length);
-console.log('- Intentionally removed core duplicates excluded:', editorialRemovedBaseIds.size);
+console.log('- Intentionally removed core duplicates excluded:', allBaseQuestionIds.length - baseQuestionIds.length);
 console.log('- Source card IDs audited:', sourceIds.length);
 console.log('- Source cards routed:', routedSourceCardTotal + '/' + sourceCardTotal);
 console.log('- Imported/local card banks mapped:', pipelineBankRoutes.length);
