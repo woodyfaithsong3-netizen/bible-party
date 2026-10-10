@@ -574,3 +574,11 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Répartitions après correction : L1 22/22, L2 25/25, L3 24/24 (Vrai/Faux).
 - Garde-fou CI ajouté : ratio Faux par banque personnages compris entre 40 % et 60 %.
 - Le manifest reste la source de vérité des SHA ; les cartes non modifiées conservent leur validation antérieure.
+
+
+## Écart gameplay à traiter après le rééquilibrage Vrai/Faux — 2026-10-10
+- Le contrôle du dépôt confirme 3 640 cartes uniques, 3 640/3 640 couvertes par le manifest au SHA courant, et zéro carte sans bloc documenté.
+- Un écart de design reste ouvert : **139 cartes legacy `type:'challenge'`** sont encore injectées dans le pool Quiz avec le rendu « Défi rapide à relever ».
+- Répartition : `questions.ts` 24, V55 8, V56 12, V57 87, `jwCategories.ts` 8.
+- Statut de ces 139 cartes : `MIGRATION_REQUIRED` (pas une absence de couverture éditoriale). Ne pas les compter comme conformes au mode final avant conversion ou retrait individuel.
+- Règle : ne pas supprimer tout le lot ; convertir seulement si une bonne réponse unique et des distracteurs plausibles peuvent être garantis, transférer vers Qui est-ce ? uniquement les cartes réellement centrées sur une personne, sinon archiver après contrôle.

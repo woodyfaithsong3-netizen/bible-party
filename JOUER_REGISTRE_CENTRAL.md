@@ -135,3 +135,20 @@ Les sources physiques restent dans leurs modules actuels pour préserver les imp
 - L6 : **95 cartes, 49 Vrai / 46 Faux**.
 - Un garde-fou automatisé contrôle désormais chaque banque personnages individuellement : la proportion de FAUX doit rester entre 40 % et 60 %. Le contrôle global ne peut plus masquer un lot trop orienté vers Vrai.
 - Les 29 affirmations réécrites et leurs références sont consignées dans `JOUER_VALIDATION_MANIFEST.md`. Les SHA L1-L3 sont mis à jour dans les blocs correspondants ; les cartes inchangées ne sont pas réauditées.
+
+
+## 11. Écart restant entre les quatre modes voulus et le contenu legacy — 10/10/2026
+
+Le comptage de validation éditoriale et le respect du design final sont deux mesures différentes. Le registre couvre bien 3 640/3 640 cartes au SHA courant, mais un contrôle du pipeline révèle encore **139 cartes de type `challenge` injectées dans `GAME_CONTENT.quiz`** : elles affichent une interface « Défi rapide à relever » au milieu du mode Quiz au lieu d’être de vraies questions à quatre choix.
+
+Répartition recensée par source :
+- `questions.ts` : 24 cartes de type challenge ;
+- `jw_enrichment_v55.ts` : 8 ;
+- `jw_enrichment_v56.ts` : 12 ;
+- `jw_enrichment_v57.ts` : 87 ;
+- `jwCategories.ts` : 8.
+- **Total : 139 cartes à migrer ou retirer du pool jouable après examen individuel.**
+
+Ce sont des cartes déjà inventoriées et couvertes par des blocs de source ; elles ne sont pas des cartes oubliées du manifest. En revanche, elles ne sont pas conformes au design final tant qu’elles gardent le rendu `challenge`. Il ne faut pas les supprimer en bloc : convertir en Quiz uniquement les questions qui peuvent avoir une seule réponse correcte et quatre distracteurs crédibles ; convertir vers Qui est-ce ? seulement les cartes portant réellement sur une personne ; archiver hors des pools jouables celles dont le format « citer plusieurs réponses » ne peut pas être transformé sans ambiguïté. Garder les IDs et tracer chaque décision.
+
+**Reste mesuré à ce stade : 0 carte sans couverture documentée ; 139 cartes legacy à trier pour conformité au mode final.** Le second nombre est le vrai prochain lot de travail gameplay.
