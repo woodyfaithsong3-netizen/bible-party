@@ -159,7 +159,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L4-001
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source après revalidation ciblée : `f2a59a16560fda9d2f19716ed893f7a6e64c7337`
+- SHA source après revalidation ciblée : `782e9e2f9547dd5eb3289443b17de0af26b30207`
 - Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux, autonomie liée au personnage, indices Mystère et jouabilité.
@@ -416,7 +416,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 ## Revalidation éditoriale V/F L4-L5 — cartes de localisation — 2026-10-09
 - L4 : cinq affirmations corrigées pour remplacer les formulations vagues « est lié à » par des faits bibliques précis sur Jacques fils d’Alphée, Simon le Zélote, la fille de Jaïrus, Bartimée et la Samaritaine ; références directes conservées ou ajustées.
 - L5 : dix-huit affirmations corrigées pour remplacer les formulations répétitives « est lié à » et les explications génériques par des faits vérifiables concernant le centurion de Capernaüm, Félix, Festus, Agrippa II, Bérénice, Phœbé, Évodie, Épaphrodite, Naamân, Ézéchias, Josias, Josaphat, Jonas, Saül, Manoa, Sophonie, Habacuc et Amos.
-- SHA finaux : L4 `f2a59a16560fda9d2f19716ed893f7a6e64c7337`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`.
+- SHA finaux : L4 `782e9e2f9547dd5eb3289443b17de0af26b30207`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`.
 
 
 ## Revalidation V/F — reformulation des cartes de localisation L1-L3 et L5 — 2026-10-09
@@ -437,7 +437,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Passe transversale Quiz L1-L6 — 2026-10-09
 - Source : `src/data/characterQuestionsL1.ts` à `characterQuestionsL6.ts`.
-- SHA contrôlés : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`, L4 `f2a59a16560fda9d2f19716ed893f7a6e64c7337`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
+- SHA contrôlés : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`, L4 `782e9e2f9547dd5eb3289443b17de0af26b30207`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
 - Périmètre Quiz : 1 250 cartes (200 par fichier L1-L5, 250 en L6).
 - Contrôles indépendants exécutés sur ces SHA : 0 doublon de question après normalisation, 0 occurrence littérale de la bonne réponse dans sa propre question, 0 erreur structurelle détectée sur les 4 choix et l'index de réponse, 0 ID dupliqué dans les six fichiers.
 - Contrôles complémentaires V/F sur les mêmes six SHA : 0 explication générique repérée par le scan de motifs et 0 formulation d'inversion négative correspondant aux motifs recherchés.
@@ -490,7 +490,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 ## Rééquilibrage Vrai/Faux ciblé — L4 (09/10/2026)
-- Source : `src/data/characterQuestionsL4.ts`, SHA courant `f2a59a16560fda9d2f19716ed893f7a6e64c7337`.
+- Source : `src/data/characterQuestionsL4.ts`, SHA courant `782e9e2f9547dd5eb3289443b17de0af26b30207`.
 - Cinq propositions auparavant fausses ont été remplacées par des faits positifs précis : Joseph d’Arimathie demandant le corps de Jésus, Jaïrus suppliant Jésus pour sa fille, le doute de Thomas, les bonnes actions de Tabitha et la mission confiée à Ananias.
 - Répartition après modification : 26 Vrai / 26 Faux sur 52 cartes.
 - Les références ont été vérifiées sur les passages associés, notamment Jean 20:24-29 pour Thomas. Cette passe ne constitue pas une relecture éditoriale intégrale des 292 cartes L4.
@@ -532,13 +532,13 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 ## Revalidation ciblée Vrai/Faux L4 — faits bibliques plus précis (10/10/2026)
-- Source : `src/data/characterQuestionsL4.ts`, SHA du contenu après corrections : `f2a59a16560fda9d2f19716ed893f7a6e64c7337`.
+- Source : `src/data/characterQuestionsL4.ts`, SHA du contenu après corrections : `782e9e2f9547dd5eb3289443b17de0af26b30207`.
 - Six cartes expert corrigées et relues individuellement : `char-l4-tf-74-2` distingue Philippe l’apôtre de Philippe l’évangélisateur (Actes 6:3-6 ; Matthieu 10:2-4) ; `char-l4-tf-64-4` précise que Jaïrus demanda de l’aide pour sa fille, non son fils (Marc 5:22-24, 35-43) ; `char-l4-tf-65-4` indique que Thomas crut après avoir vu Jésus ressuscité (Jean 20:24-29) ; `char-l4-tf-69-4` situe Ananias et Saul à Damas, non à Jérusalem (Actes 9:10-18) ; `char-l4-tf-76-4` distingue Jacques fils d’Alphée de Jacques fils de Zébédée (Matthieu 10:2-4 ; Marc 3:16-18) ; `char-l4-tf-79-4` situe la guérison de Bartimée près de Jéricho, non à Capharnaüm (Marc 10:46-52).
 - Les affirmations sont fausses sans ambiguïté, les explications donnent le fait biblique exact et les références pointent vers les récits correspondants. Contrôle limité à ces six cartes ; aucune validation intégrale de L4 n’est revendiquée.
 
 
 ## Revalidation ciblée Vrai/Faux L4 — faits narratifs précis (10/10/2026)
-- Source : `src/data/characterQuestionsL4.ts`, SHA après corrections : `f2a59a16560fda9d2f19716ed893f7a6e64c7337`.
+- Source : `src/data/characterQuestionsL4.ts`, SHA après corrections : `782e9e2f9547dd5eb3289443b17de0af26b30207`.
 - Huit cartes corrigées et contrôlées individuellement : `char-l4-tf-70-2` (rencontre de l’eunuque sur la route de Gaza, non à Césarée), `char-l4-tf-70-4` (explication des Écritures avant le baptême), `char-l4-tf-71-2` (distinction Jacques fils de Zébédée/Jacques frère de Jésus), `char-l4-tf-71-4` (mort de Jacques fils de Zébédée avant la réunion d’Actes 15), `char-l4-tf-72-2` (incrédulité des frères de Jésus pendant son ministère), `char-l4-tf-72-4` (Jacques frère de Jésus ne faisait pas partie des Douze), `char-l4-tf-73-2` (Jude ne croyait pas en Jésus pendant son ministère) et `char-l4-tf-73-4` (Jude se présente comme esclave de Jésus Christ, pas comme apôtre).
 - Les affirmations restent fausses sans ambiguïté ; explications et références précisent le fait biblique exact. Références contrôlées sur Actes 8:26-40; 12:1-2; 15:1-29, Matthieu 4:21-22; 10:2-4, Jean 7:5, Actes 1:13-14, Galates 1:19, 1 Corinthiens 15:7 et Jude 1.
 - Cette revalidation porte uniquement sur ces huit cartes et ne constitue pas une relecture intégrale de L4. Ne pas déclarer la passe clôturée avant CI verte sur le SHA final.
@@ -546,7 +546,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Historique ciblé des revalidations L4 — 2026-10-10
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source validé : `f2a59a16560fda9d2f19716ed893f7a6e64c7337`
+- SHA source validé : `782e9e2f9547dd5eb3289443b17de0af26b30207`
 - Note : ce bloc est un historique de revalidations ciblées, pas un second bloc de couverture des 292 cartes.
 - Revalidations ciblées récentes : `char-l4-tf-74-2`, `char-l4-tf-64-4`, `char-l4-tf-65-4`, `char-l4-tf-69-4`, `char-l4-tf-76-4`, `char-l4-tf-79-4` (PR #44), puis `char-l4-tf-70-2`, `char-l4-tf-70-4`, `char-l4-tf-71-2`, `char-l4-tf-71-4`, `char-l4-tf-72-2`, `char-l4-tf-72-4`, `char-l4-tf-73-2`, `char-l4-tf-73-4` (PR #45).
 - Les corrections de ces cartes ont été contrôlées individuellement ; les cartes non modifiées conservent la validation éditoriale antérieure du lot.
@@ -554,7 +554,12 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 ### Revalidation ciblée L4 — six cartes Vrai/Faux — 2026-10-10
-- Source après corrections : `src/data/characterQuestionsL4.ts`, SHA `f2a59a16560fda9d2f19716ed893f7a6e64c7337`.
+- Source après corrections : `src/data/characterQuestionsL4.ts`, SHA `782e9e2f9547dd5eb3289443b17de0af26b30207`.
 - Cartes contrôlées individuellement : `char-l4-tf-74-4` (Philippe l’apôtre distingué des sept hommes d’Actes 6), `char-l4-tf-75-4` (Matthias, et non Barthélemy, remplace Judas), `char-l4-tf-77-4` (Simon le Zélote distinct de Simon Pierre), `char-l4-tf-78-2` (distinction avec Lydie, marchande de pourpre), `char-l4-tf-78-4` (âge de douze ans à la résurrection de la fille de Jaïrus), `char-l4-tf-79-2` (Bartimée mendiant aveugle près de Jéricho).
 - Références : Actes 1:21-26; 6:3-6; 16:11-15; Matthieu 10:2-4; Luc 6:13-16; Marc 5:41-42; 10:46-52.
 - Cette note documente six corrections ciblées, et non une nouvelle relecture intégrale des 292 cartes L4. La validation technique reste en attente de CI verte sur le SHA final.
+
+
+### Historique ciblé des revalidations L4 — 2026-10-10
+- Trois explications Vrai/Faux clarifiées dans `src/data/characterQuestionsL4.ts` : `char-l4-tf-75-2` (Barthélemy et la synagogue), `char-l4-tf-76-2` (Jacques fils d’Alphée distinct de Jacques fils de Zébédée) et `char-l4-tf-77-2` (Simon Pierre distinct de Simon le Zélote).
+- Les affirmations restent fausses ; les explications indiquent maintenant directement le fait biblique qui réfute chaque proposition. Revalidation ciblée uniquement, pas de relecture intégrale du bloc L4.
