@@ -75,12 +75,12 @@ Une carte ne devient pas `VALIDATED` parce que le build est vert. Les blocs du `
 |---|---:|---|
 | Cartes uniques jouables | **3 640** | Inventaire global `SEM-ROUTING-GLOBAL-002` |
 | Cartes avec route démontrée | **3 640 / 3 640** | Contrôle automatique des sources et transformations |
-| Banques supplémentaires avec preuve de route | **73 / 73** | Contrôle automatique |
+| Banques supplémentaires avec preuve de route | **74 / 74** | Contrôle automatique du 10/10/2026 |
 | IDs déclarés dans `questions.ts` | 504 | 27 sont retirés intentionnellement car leurs copies spécialisées sont conservées |
-| Cartes de base conservées dans le total unique | **477** | 504 − 27 exclusions éditoriales |
+| Cartes de base conservées dans le total unique | **477** | 504 − 27 exclusions éditoriales effectivement présentes |
 | Banques sources sans route démontrée | **0** | Contrôle automatique |
 | Cartes V54 Qui est-ce ? ajoutées à la couverture éditoriale | **17 / 17** | Bloc `SEM-V54-002`, SHA V54 courant |
-| Cartes sans bloc éditorial VALIDATED correspondant au SHA courant | **0 selon le manifest** | Les sources courantes sont rattachées aux blocs du `JOUER_VALIDATION_MANIFEST.md` |
+| Cartes sans bloc éditorial VALIDATED correspondant au SHA courant | **0** | Contrôle CI du 10/10/2026 : 3 640/3 640 couvertes par des blocs dont le SHA correspond à la source courante. Il s’agit d’une preuve de couverture du registre, pas d’une preuve automatique du contenu biblique. |
 
 **Pourquoi ne pas additionner les tailles des blocs ?** Plusieurs blocs sont des sous-ensembles d’une même source et certaines cartes existent à la fois dans une source de base et dans une banque spécialisée. Le total officiel est celui des IDs uniques après déduplication : 3 640. Les nombres de titres de blocs ou les sommes de leurs tailles ne représentent pas le total de cartes.
 
@@ -111,3 +111,15 @@ Les sources physiques restent dans leurs modules actuels pour préserver les imp
 - Les quatre modes sont des pools logiques dans \`src/data/gameContent.ts\`. Les fichiers sources spécialisés restent séparés afin de préserver les transformations et les IDs ; leur statut est désormais vérifiable par cette commande.
 
 
+
+
+## 9. Réconciliation confirmée — 2026-10-10
+
+- Commit vérifié : `cff412d681475732e983eb67607c02362d9fd266`.
+- CI : succès ; TypeScript, `audit:content`, `audit:jouer:validation` et export Web réussis.
+- GitHub Pages : build et déploiement réussis sur ce commit.
+- Inventaire : **3 640 cartes uniques** = 3 163 dans les 74 banques supplémentaires + 477 cartes de base uniques.
+- Routage : **3 640/3 640**, **74/74 banques**, zéro banque sans route, zéro ID en doublon dans le périmètre, zéro groupe de questions normalisées dupliquées.
+- Couverture du manifest au SHA source exact : **3 640/3 640 ; 0 sans bloc documenté**. Cela signifie que chaque source actuelle est couverte par un bloc déclaré `VALIDATED` au SHA courant ; la validation éditoriale reste fondée sur les preuves des blocs, pas sur le seul build.
+- Nettoyage des exclusions : deux IDs absents de `questions.ts` (`quiz-184`, `quiz-237`) ont été retirés de la liste d’exclusion. Le contrôle de validation signale désormais tout futur ID d’exclusion qui ne correspond à aucune carte réelle.
+- Le jeu garde **quatre banques logiques** dans `src/data/gameContent.ts`. Les fichiers spécialisés restent séparés pour préserver les transformations, les IDs et les preuves historiques.

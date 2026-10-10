@@ -133,6 +133,10 @@ const removedIds = new Set(
   [...questionsText.matchAll(/editorialRemove\w+Ids\s*=\s*new Set\(\[([\s\S]*?)\]\)/g)]
     .flatMap(match => [...match[1].matchAll(/['"]([^'"]+)['"]/g)].map(item => item[1]))
 );
+const staleRemovedIds = [...removedIds].filter(id => !baseIds.includes(id));
+if (staleRemovedIds.length) {
+  failures.push('editorial exclusion IDs absent from questions.ts: ' + staleRemovedIds.join(', '));
+}
 const basePlayable = baseIds.filter(id => !removedIds.has(id)).length;
 const baseCoverage = matchingValidatedCoverage(questionsFile, questionsSha);
 if (baseCoverage.covered > baseIds.length) failures.push(questionsFile + ': surcouverture du manifest (' + baseCoverage.covered + '/' + baseIds.length + ' IDs déclarés)');

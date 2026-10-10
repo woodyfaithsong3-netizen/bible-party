@@ -48,7 +48,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-Q-001
 - Source : `src/data/questions.ts`
-- SHA source validé : `a8b94a251151f930645994ce86b0fd634b1c722a`
+- SHA source validé : `d7c4bf2cd63696d94f52a3930ae1017c77333bf4`
 - Périmètre : 504 IDs déclarés dans la source ; après filtres d’exclusion, 477 cartes de base restent dans les pools. Les copies conservées dans leurs banques spécialisées sont comptées une seule fois dans l’inventaire global.
 - État : VALIDATED
 - Contrôles : structure, IDs uniques, réponses/index, fuite, doublons, formulation, contexte, catégories, références, explications, distracteurs et jouabilité.
@@ -468,7 +468,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`.
 - SHA `audit-content.mjs` : `c8907244365fc42e7685bb43392181c8454c3ad4`.
 - Inventaire corrigé : 3 163 cartes dans 74 banques supplémentaires + 477 cartes de base conservées dans `questions.ts` = **3 640 cartes uniques jouables**.
-- Contrôle CI : 3 640/3 640 cartes routées ; 73/74 banques supplémentaires avec preuve de route ; 0 banque non routée ; 0 doublon d’ID résiduel ; 0 groupe de doublons de questions normalisées.
+- Contrôle CI : 3 640/3 640 cartes routées ; 74/74 banques supplémentaires avec preuve de route ; 0 banque non routée ; 0 doublon d’ID résiduel ; 0 groupe de doublons de questions normalisées.
 - Les banques générées depuis des tuples (V54, jwCategories) sont comptées ; les IDs de base retirés intentionnellement pour éviter les doublons ne sont pas recomptés.
 - Les 17 cartes V54 Qui est-ce ? non couvertes par le bloc éditorial initial sont désormais validées dans `SEM-V54-002`. Le filtre d’inventaire a aussi été corrigé pour compter les 8 cartes V61 « Mot interdit » (`v61-m-001`–`v61-m-008`) déjà couvertes par `SEM-V61-001`.
 - Les quatre modes officiels restent Quiz, Vrai / Faux, Qui est-ce ? et Compléter les paroles.

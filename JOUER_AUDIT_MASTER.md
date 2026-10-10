@@ -33,7 +33,7 @@ Une carte VALIDATED ne doit plus être relue intégralement tant qu'elle n'a pas
 - [x] P16 CI verte sur le commit `0b2ca9950677a352d8e463c863d8475f1fda52f1`.
 - [x] P17 GitHub Pages build/déploiement verts sur le même commit.
 
-**Portée du chiffre :** le dépôt courant prouve 2 840 IDs de cartes exportées et routées, pas 5 000 IDs distincts. Les éventuelles estimations historiques plus élevées ne sont pas corroborées par l'inventaire actuel.
+**Portée du chiffre :** l’inventaire courant prouve 3 640 cartes uniques jouables et routées, pas 5 000 IDs distincts. Les estimations historiques plus élevées ne sont pas corroborées par l’inventaire actuel.
 
 ## Contrôle individuel
 Quiz : autonomie, formulation, une seule bonne réponse, correctAnswer, quatre choix, distracteurs, explication, référence, catégorie, doublons, jouabilité.
