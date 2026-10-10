@@ -535,3 +535,20 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Source : `src/data/characterQuestionsL4.ts`, SHA du contenu après corrections : `5c0fb706c8180812bb68af589df1b35fda0e7877`.
 - Six cartes expert corrigées et relues individuellement : `char-l4-tf-74-2` distingue Philippe l’apôtre de Philippe l’évangélisateur (Actes 6:3-6 ; Matthieu 10:2-4) ; `char-l4-tf-64-4` précise que Jaïrus demanda de l’aide pour sa fille, non son fils (Marc 5:22-24, 35-43) ; `char-l4-tf-65-4` indique que Thomas crut après avoir vu Jésus ressuscité (Jean 20:24-29) ; `char-l4-tf-69-4` situe Ananias et Saul à Damas, non à Jérusalem (Actes 9:10-18) ; `char-l4-tf-76-4` distingue Jacques fils d’Alphée de Jacques fils de Zébédée (Matthieu 10:2-4 ; Marc 3:16-18) ; `char-l4-tf-79-4` situe la guérison de Bartimée près de Jéricho, non à Capharnaüm (Marc 10:46-52).
 - Les affirmations sont fausses sans ambiguïté, les explications donnent le fait biblique exact et les références pointent vers les récits correspondants. Contrôle limité à ces six cartes ; aucune validation intégrale de L4 n’est revendiquée.
+
+
+## Revalidation ciblée Vrai/Faux L4 — faits narratifs précis (10/10/2026)
+- Source : `src/data/characterQuestionsL4.ts`, SHA après corrections : `37f338ee63b5eb232b6a42eb50501b6c90437177`.
+- Huit cartes corrigées et contrôlées individuellement : `char-l4-tf-70-2` (rencontre de l’eunuque sur la route de Gaza, non à Césarée), `char-l4-tf-70-4` (explication des Écritures avant le baptême), `char-l4-tf-71-2` (distinction Jacques fils de Zébédée/Jacques frère de Jésus), `char-l4-tf-71-4` (mort de Jacques fils de Zébédée avant la réunion d’Actes 15), `char-l4-tf-72-2` (incrédulité des frères de Jésus pendant son ministère), `char-l4-tf-72-4` (Jacques frère de Jésus ne faisait pas partie des Douze), `char-l4-tf-73-2` (Jude ne croyait pas en Jésus pendant son ministère) et `char-l4-tf-73-4` (Jude se présente comme esclave de Jésus Christ, pas comme apôtre).
+- Les affirmations restent fausses sans ambiguïté ; explications et références précisent le fait biblique exact. Références contrôlées sur Actes 8:26-40; 12:1-2; 15:1-29, Matthieu 4:21-22; 10:2-4, Jean 7:5, Actes 1:13-14, Galates 1:19, 1 Corinthiens 15:7 et Jude 1.
+- Cette revalidation porte uniquement sur ces huit cartes et ne constitue pas une relecture intégrale de L4. Ne pas déclarer la passe clôturée avant CI verte sur le SHA final.
+
+
+### Bloc SEM-L4-001 — VALIDATED — 2026-10-10
+- Source : `src/data/characterQuestionsL4.ts`
+- SHA source validé : `37f338ee63b5eb232b6a42eb50501b6c90437177`
+- Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
+- État : VALIDATED sur la base de la validation éditoriale antérieure du lot complet, avec revalidation ciblée des cartes modifiées ci-dessous ; ce SHA n'affirme pas une nouvelle relecture intégrale des 292 cartes.
+- Revalidations ciblées récentes : `char-l4-tf-74-2`, `char-l4-tf-64-4`, `char-l4-tf-65-4`, `char-l4-tf-69-4`, `char-l4-tf-76-4`, `char-l4-tf-79-4` (PR #44), puis `char-l4-tf-70-2`, `char-l4-tf-70-4`, `char-l4-tf-71-2`, `char-l4-tf-71-4`, `char-l4-tf-72-2`, `char-l4-tf-72-4`, `char-l4-tf-73-2`, `char-l4-tf-73-4` (PR #45).
+- Les corrections de ces cartes ont été contrôlées individuellement ; les cartes non modifiées conservent la validation éditoriale antérieure du lot.
+- Clôture technique : uniquement après CI verte et concordance exacte du SHA source. Toute nouvelle modification du fichier impose de mettre à jour ce SHA et de recontrôler les cartes modifiées.
