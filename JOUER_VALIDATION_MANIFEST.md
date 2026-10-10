@@ -87,7 +87,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `c205ad31661567eeb68202ba8ca792d9aa380382`
+- SHA source validé : `71e23e19e7b41b85aac2f5a91d4c9f1f5d230cad`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -114,7 +114,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé après revalidation ciblée : `ae07c9bbff63a4fac6ae112d37deee4a773edaf7`
+- SHA source validé après revalidation ciblée : `5add3dd187eb5cf46e8138ed8978dbf20f0a4f7f`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -140,7 +140,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé après revalidation ciblée : `9d315bc2570bb82893ede04617b3717c70d0ba60`
+- SHA source validé après revalidation ciblée : `b8eac64085c611c0fa04697b27ac540ea298c864`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -466,7 +466,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 ## Bloc SEM-ROUTING-GLOBAL-002 — VALIDATED — 2026-10-09
 - Sources : `src/data/questions.ts`, `src/data/gameContent.ts`, `src/app/game.tsx`, `audit-content.mjs`.
 - SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`.
-- SHA `audit-content.mjs` : `c8907244365fc42e7685bb43392181c8454c3ad4`.
+- SHA `audit-content.mjs` : `33528b05d4ee610fb208b490b2b29489e285b65b`.
 - Inventaire corrigé : 3 163 cartes dans 74 banques supplémentaires + 477 cartes de base conservées dans `questions.ts` = **3 640 cartes uniques jouables**.
 - Contrôle CI : 3 640/3 640 cartes routées ; 74/74 banques supplémentaires avec preuve de route ; 0 banque non routée ; 0 doublon d’ID résiduel ; 0 groupe de doublons de questions normalisées.
 - Les banques générées depuis des tuples (V54, jwCategories) sont comptées ; les IDs de base retirés intentionnellement pour éviter les doublons ne sont pas recomptés.
@@ -482,9 +482,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 ## Rééquilibrage Vrai/Faux ciblé — L1 à L3 (09/10/2026)
-- L1 : 6 affirmations transformées en propositions fausses précises ; répartition actuelle 37 Vrai / 7 Faux.
-- L2 : 8 affirmations transformées en propositions fausses précises ; répartition actuelle 41 Vrai / 9 Faux.
-- L3 : 8 affirmations transformées en propositions fausses précises ; répartition actuelle 40 Vrai / 8 Faux.
+- L1 : répartition historique avant la passe du 10/10/2026 ; remplacée par le comptage exact du bloc de rééquilibrage final.
+- L2 : répartition historique avant la passe du 10/10/2026 ; remplacée par le comptage exact du bloc de rééquilibrage final.
+- L3 : répartition historique avant la passe du 10/10/2026 ; remplacée par le comptage exact du bloc de rééquilibrage final.
 - Les explications ont été réécrites pour donner le fait exact et les références ont été conservées ou ajustées vers les passages qui établissent le fait. Cette correction est ciblée ; elle ne signifie pas que toutes les cartes des blocs L1–L3 ont été relues une par une.
 - Les SHA des sources L1–L3 sont actualisés dans leurs blocs respectifs. Une validation CI et une relecture finale des propositions sont encore nécessaires avant fusion.
 
@@ -563,3 +563,14 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 ### Historique ciblé des revalidations L4 — 2026-10-10
 - Trois explications Vrai/Faux clarifiées dans `src/data/characterQuestionsL4.ts` : `char-l4-tf-75-2` (Barthélemy et la synagogue), `char-l4-tf-76-2` (Jacques fils d’Alphée distinct de Jacques fils de Zébédée) et `char-l4-tf-77-2` (Simon Pierre distinct de Simon le Zélote).
 - Les affirmations restent fausses ; les explications indiquent maintenant directement le fait biblique qui réfute chaque proposition. Revalidation ciblée uniquement, pas de relecture intégrale du bloc L4.
+
+
+## Rééquilibrage Vrai/Faux L1-L3 — 2026-10-10
+
+Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses précises, sans changer les IDs. Pour chacune, la proposition, la réponse, l’explication et la référence ont été contrôlées individuellement. Les autres cartes des lots gardent la validation antérieure, les sources n’ayant été modifiées que sur les IDs listés.
+
+- L1 — SHA `71e23e19e7b41b85aac2f5a91d4c9f1f5d230cad` : `char-l1-tf-02-1`, `char-l1-tf-05-1`, `char-l1-tf-08-1`, `char-l1-tf-09-1`, `char-l1-tf-10-1`, `char-l1-tf-12-1`, `char-l1-tf-13-2`, `char-l1-tf-14-1`, `char-l1-tf-17-2`. Répartition finale : **22 Vrai / 22 Faux**.
+- L2 — SHA `5add3dd187eb5cf46e8138ed8978dbf20f0a4f7f` : `char-l2-tf-21-1`, `char-l2-tf-26-1`, `char-l2-tf-31-1`, `char-l2-tf-32-1`, `char-l2-tf-33-1`, `char-l2-tf-33-2`, `char-l2-tf-34-2`, `char-l2-tf-35-1`, `char-l2-tf-36-1`, `char-l2-tf-37-1`. Répartition finale : **25 Vrai / 25 Faux**.
+- L3 — SHA `b8eac64085c611c0fa04697b27ac540ea298c864` : `char-l3-tf-43-1`, `char-l3-tf-44-1`, `char-l3-tf-46-1`, `char-l3-tf-47-1`, `char-l3-tf-48-1`, `char-l3-tf-50-1`, `char-l3-tf-51-2`, `char-l3-tf-58-2`, `char-l3-tf-59-2`, `char-l3-tf-60-1`. Répartition finale : **24 Vrai / 24 Faux**.
+- Garde-fou CI ajouté : chaque banque personnages L1-L6 doit garder une proportion de réponses fausses entre 40 % et 60 %, afin qu’un bon total global ne masque pas un lot déséquilibré.
+- Cette passe ne touche ni AVENTURE, ni Ma Bible, ni `src/data/characterLearning.ts`.

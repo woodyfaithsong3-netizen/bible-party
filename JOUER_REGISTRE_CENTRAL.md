@@ -123,3 +123,15 @@ Les sources physiques restent dans leurs modules actuels pour préserver les imp
 - Couverture du manifest au SHA source exact : **3 640/3 640 ; 0 sans bloc documenté**. Cela signifie que chaque source actuelle est couverte par un bloc déclaré `VALIDATED` au SHA courant ; la validation éditoriale reste fondée sur les preuves des blocs, pas sur le seul build.
 - Nettoyage des exclusions : deux IDs absents de `questions.ts` (`quiz-184`, `quiz-237`) ont été retirés de la liste d’exclusion. Le contrôle de validation signale désormais tout futur ID d’exclusion qui ne correspond à aucune carte réelle.
 - Le jeu garde **quatre banques logiques** dans `src/data/gameContent.ts`. Les fichiers spécialisés restent séparés pour préserver les transformations, les IDs et les preuves historiques.
+
+
+## 10. Qualité Vrai/Faux — rééquilibrage L1-L3 (10/10/2026)
+
+- L1 : **44 cartes, 22 Vrai / 22 Faux**.
+- L2 : **50 cartes, 25 Vrai / 25 Faux**.
+- L3 : **48 cartes, 24 Vrai / 24 Faux**.
+- L4 : **52 cartes, 28 Vrai / 24 Faux**.
+- L5 : **50 cartes, 29 Vrai / 21 Faux**.
+- L6 : **95 cartes, 49 Vrai / 46 Faux**.
+- Un garde-fou automatisé contrôle désormais chaque banque personnages individuellement : la proportion de FAUX doit rester entre 40 % et 60 %. Le contrôle global ne peut plus masquer un lot trop orienté vers Vrai.
+- Les 29 affirmations réécrites et leurs références sont consignées dans `JOUER_VALIDATION_MANIFEST.md`. Les SHA L1-L3 sont mis à jour dans les blocs correspondants ; les cartes inchangées ne sont pas réauditées.

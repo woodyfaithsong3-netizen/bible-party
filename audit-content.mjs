@@ -177,6 +177,23 @@ if (trueFalseCount < 300) failures.push('dedicated true/false count unexpectedly
 if (mysteryCount < 200) failures.push('dedicated mystery count unexpectedly low: ' + mysteryCount);
 if (trueFalseLines.length && (falseTrueFalseCount / trueFalseLines.length) < 0.25) failures.push('true/false split has too few false statements: ' + JSON.stringify({true:trueTrueFalseCount,false:falseTrueFalseCount}));
 
+// Balance is checked per character bank so a global aggregate cannot hide
+// a level where nearly every statement is true.
+const trueFalseFileSplits = sourceFiles.slice(1).map(file => {
+  const lines = fs.readFileSync(new URL(file, import.meta.url), 'utf8').split('\n')
+    .filter(line => /type:\s*['"]truefalse['"]/.test(line));
+  const truthCount = lines.filter(line => /answer:\s*true\b/.test(line)).length;
+  const falseCount = lines.filter(line => /answer:\s*false\b/.test(line)).length;
+  const total = truthCount + falseCount;
+  return { file, truthCount, falseCount, total, falseRatio: total ? falseCount / total : 0 };
+});
+for (const split of trueFalseFileSplits) {
+  if (split.total && (split.falseRatio < 0.40 || split.falseRatio > 0.60)) {
+    failures.push('unbalanced per-bank true/false ratio: ' + split.file + ' ' + JSON.stringify(split));
+  }
+}
+
+
 if (malformedNumericArtifacts.length) failures.push('numeric artifacts detected: ' + [...new Set(malformedNumericArtifacts)].slice(0, 10).join(', '));
 if (duplicateOptionBlocks.length) failures.push('quiz cards with duplicate options: ' + duplicateOptionBlocks.length);
 if (malformedQuestionStrings.length) failures.push('malformed quiz question strings: ' + malformedQuestionStrings.length);
@@ -489,6 +506,7 @@ console.log('- Normalized duplicate question groups (character corpus):', duplic
 console.log('- Cross-bank normalized duplicate question groups:', crossBankDuplicateGroups.length);
 console.log('- Literal correct-answer leaks in Quiz questions:', answerLeakCards.length);
 console.log('- Dedicated true/false split:', { true: trueTrueFalseCount, false: falseTrueFalseCount });
+console.log('- Dedicated true/false split by bank:', trueFalseFileSplits.map(({file,truthCount,falseCount,total}) => ({file,truth:truthCount,false:falseCount,total})));
 console.log('- Expert cards:', expertCards);
 console.log('- Character coverage:', characterCoverage);
 console.log('- Difficulty counts:', Object.fromEntries(['easy','medium','hard','expert'].map(d => [

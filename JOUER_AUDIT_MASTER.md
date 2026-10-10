@@ -567,3 +567,10 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Inventaire courant : **3 640 cartes jouables uniques**, 3 640/3 640 routées, 74/74 banques supplémentaires reliées.
 - Les 17 cartes V54 auparavant sans bloc éditorial dédié ont été relues, corrigées au besoin et validées : `v54-m-001`–`010`, `v54-tu-002`–`008`.
 - SHA V54 courant : `c8657e1a98500a36c7f9a082baa99231e8bf2dd6`. SHA `audit-content.mjs` : `82e3193a777de4c7258d4190b6cea5d1b9a9ad25`.
+
+
+## Rééquilibrage Vrai/Faux L1-L3 — 2026-10-10
+- 29 cartes réécrites et recontrôlées individuellement ; détails, références et SHA courants dans `JOUER_VALIDATION_MANIFEST.md`.
+- Répartitions après correction : L1 22/22, L2 25/25, L3 24/24 (Vrai/Faux).
+- Garde-fou CI ajouté : ratio Faux par banque personnages compris entre 40 % et 60 %.
+- Le manifest reste la source de vérité des SHA ; les cartes non modifiées conservent leur validation antérieure.
