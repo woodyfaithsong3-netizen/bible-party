@@ -159,7 +159,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L4-001
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source après revalidation ciblée : `a3cbdee02dcc8220ea1cc5f56c66eb1a55e7cc4e`
+- SHA source après revalidation ciblée : `5c0fb706c8180812bb68af589df1b35fda0e7877`
 - Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux, autonomie liée au personnage, indices Mystère et jouabilité.
@@ -172,7 +172,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Revalidation ciblée complémentaire : 8 cartes de `char-l4-q-76-3` à `char-l4-q-76-10` ont été réécrites pour éviter de répéter que Jacques fils d’Alphée est l’un des Douze ou que sa vie personnelle est peu détaillée. Les nouvelles questions portent sur le nombre des Douze, la prière de Jésus avant leur choix, leurs missions (prêcher, rester avec Jésus, expulser les démons), Jean frère de Jacques fils de Zébédée, le nom « Simon le Cananéen » et le choix de Matthias pour remplacer Judas (Luc 6:12-16 ; Marc 3:14-18 ; Matthieu 10:2-4 ; Actes 1:21-26).
 - Revalidation ciblée complémentaire : `char-l4-q-63-5` remplace la répétition sur l’attente du Royaume par une question distincte sur l’appartenance de Joseph d’Arimathie au Sanhédrin (Luc 23:50-51 ; Marc 15:43).
 - Revalidation ciblée après détection de répétitions : `char-l4-q-62-8` (message de Marthe et Marie au sujet de Lazare, Jean 11:1-3), `char-l4-q-63-7` (Joseph décrit comme bon et juste, Luc 23:50-51), `char-l4-q-63-9` (Nicodème participe à la préparation du corps, Jean 19:38-40) et `char-l4-q-67-5` à `char-l4-q-67-10` (préparation de Tabitha, nom Dorcas, prière de Pierre, retour à la vie, effet à Joppé et raison de l’appel de Pierre ; Actes 9:36-42). Les formulations répétitives ont été remplacées par des faits distincts, avec index et références contrôlés.
-- Revalidation ciblée complémentaire du 09/10/2026 : `char-l4-tf-63-4` remplace une affirmation générique répétée par une affirmation fausse précise sur l’appartenance de Joseph d’Arimathie aux Douze (Matthieu 27:57 ; Marc 15:43 ; Jean 19:38) ; `char-l4-tf-67-4` distingue Tabitha de Lydie au moyen d’un fait biographique précis (Actes 9:36 ; 16:14-15). Réponses, explications et références réalignées. Cette passe ne constitue pas une relecture intégrale de L4.
+- Revalidation ciblée complémentaire du 10/10/2026 : six cartes Vrai/Faux expertes (`char-l4-tf-74-2`, `char-l4-tf-64-4`, `char-l4-tf-65-4`, `char-l4-tf-69-4`, `char-l4-tf-76-4`, `char-l4-tf-79-4`) ont été corrigées et leurs réponses, explications et références contrôlées. Les faits distinguent Philippe l’apôtre de Philippe l’évangélisateur, précisent que Jaïrus demanda de l’aide pour sa fille, établissent la foi de Thomas après la résurrection, situent Ananias et Saul à Damas, distinguent les deux Jacques et situent Bartimée près de Jéricho. Cette revalidation ne prétend pas à une nouvelle relecture intégrale de L4. Revalidation ciblée du 09/10/2026 : `char-l4-tf-63-4` remplace une affirmation générique répétée par une affirmation fausse précise sur l’appartenance de Joseph d’Arimathie aux Douze (Matthieu 27:57 ; Marc 15:43 ; Jean 19:38) ; `char-l4-tf-67-4` distingue Tabitha de Lydie au moyen d’un fait biographique précis (Actes 9:36 ; 16:14-15). Réponses, explications et références réalignées. Cette passe ne constitue pas une relecture intégrale de L4.
 - Clôture : CI et GitHub Pages vertes sur le commit de clôture courant.
 
 ## Bloc SEM-L5-001
@@ -416,7 +416,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 ## Revalidation éditoriale V/F L4-L5 — cartes de localisation — 2026-10-09
 - L4 : cinq affirmations corrigées pour remplacer les formulations vagues « est lié à » par des faits bibliques précis sur Jacques fils d’Alphée, Simon le Zélote, la fille de Jaïrus, Bartimée et la Samaritaine ; références directes conservées ou ajustées.
 - L5 : dix-huit affirmations corrigées pour remplacer les formulations répétitives « est lié à » et les explications génériques par des faits vérifiables concernant le centurion de Capernaüm, Félix, Festus, Agrippa II, Bérénice, Phœbé, Évodie, Épaphrodite, Naamân, Ézéchias, Josias, Josaphat, Jonas, Saül, Manoa, Sophonie, Habacuc et Amos.
-- SHA finaux : L4 `b9d9c3c1883e2c217cce5417d309da2aebcd6632`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`.
+- SHA finaux : L4 `5c0fb706c8180812bb68af589df1b35fda0e7877`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`.
 
 
 ## Revalidation V/F — reformulation des cartes de localisation L1-L3 et L5 — 2026-10-09
@@ -437,7 +437,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Passe transversale Quiz L1-L6 — 2026-10-09
 - Source : `src/data/characterQuestionsL1.ts` à `characterQuestionsL6.ts`.
-- SHA contrôlés : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`, L4 `b9d9c3c1883e2c217cce5417d309da2aebcd6632`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
+- SHA contrôlés : L1 `447b1dc2229adbb6051861311dd844a27f821afe`, L2 `090db42512698e17130acb15c40c204cde470898`, L3 `78f3f8711853b0a0096e37c3860078301fc47477`, L4 `5c0fb706c8180812bb68af589df1b35fda0e7877`, L5 `22cd3ee007b71a3e25d5225399e5db4fdd1820f3`, L6 `3b1e6d54b00fc5c6a47b586726d1e9d81dc1991c`.
 - Périmètre Quiz : 1 250 cartes (200 par fichier L1-L5, 250 en L6).
 - Contrôles indépendants exécutés sur ces SHA : 0 doublon de question après normalisation, 0 occurrence littérale de la bonne réponse dans sa propre question, 0 erreur structurelle détectée sur les 4 choix et l'index de réponse, 0 ID dupliqué dans les six fichiers.
 - Contrôles complémentaires V/F sur les mêmes six SHA : 0 explication générique repérée par le scan de motifs et 0 formulation d'inversion négative correspondant aux motifs recherchés.
@@ -490,7 +490,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 ## Rééquilibrage Vrai/Faux ciblé — L4 (09/10/2026)
-- Source : `src/data/characterQuestionsL4.ts`, SHA courant `689fde80c2c31daa91be3363abb68044edf8f0c0`.
+- Source : `src/data/characterQuestionsL4.ts`, SHA courant `5c0fb706c8180812bb68af589df1b35fda0e7877`.
 - Cinq propositions auparavant fausses ont été remplacées par des faits positifs précis : Joseph d’Arimathie demandant le corps de Jésus, Jaïrus suppliant Jésus pour sa fille, le doute de Thomas, les bonnes actions de Tabitha et la mission confiée à Ananias.
 - Répartition après modification : 26 Vrai / 26 Faux sur 52 cartes.
 - Les références ont été vérifiées sur les passages associés, notamment Jean 20:24-29 pour Thomas. Cette passe ne constitue pas une relecture éditoriale intégrale des 292 cartes L4.
@@ -529,3 +529,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Revalidation ciblée complémentaire du 10/10/2026 : `char-l2-tf-36-3` simplifiée pour nommer directement l’incident et la circoncision de son fils par Séphora (Exode 4:24-26) ; `char-l3-tf-56-1` resserrée sur le rôle de prophète et le compagnonnage missionnaire de Silas (Actes 15:22, 32, 40 ; 16:19-25) ; `char-l3-tf-60-1` remplacée par le fait direct qu’Eutyche s’endormit pendant le discours de Paul et tomba du troisième étage (Actes 20:7-10). Réponses, explications et références contrôlées individuellement ; aucune relecture intégrale de L2/L3 n’est revendiquée.
 
 - Revalidation ciblée complémentaire du 10/10/2026 : L2 `char-l2-tf-23-3` rend l’affirmation sur Noémi plus directe et vérifiable (Ruth 1:19-21 ; 4:13-17) ; `char-l2-tf-25-1` énonce directement la succession d’Élisée à Élie (2 Rois 2:9-15) ; `char-l2-tf-30-1` isole le fait que Corneille était un centurion de Césarée qui craignait Dieu (Actes 10:1-2) ; `char-l2-tf-35-1` est raccourcie au rôle de Jéthro (Exode 2:16-22 ; 3:1) ; L3 `char-l3-tf-54-3` ne répète plus la carte facile sur Gamaliel et vérifie son argument précis au Sanhédrin (Actes 5:38-40). Réponses, explications et références vérifiées pour ces cinq cartes uniquement ; aucune validation intégrale de L2/L3 n’est revendiquée.
+
+
+## Revalidation ciblée Vrai/Faux L4 — faits bibliques plus précis (10/10/2026)
+- Source : `src/data/characterQuestionsL4.ts`, SHA du contenu après corrections : `5c0fb706c8180812bb68af589df1b35fda0e7877`.
+- Six cartes expert corrigées et relues individuellement : `char-l4-tf-74-2` distingue Philippe l’apôtre de Philippe l’évangélisateur (Actes 6:3-6 ; Matthieu 10:2-4) ; `char-l4-tf-64-4` précise que Jaïrus demanda de l’aide pour sa fille, non son fils (Marc 5:22-24, 35-43) ; `char-l4-tf-65-4` indique que Thomas crut après avoir vu Jésus ressuscité (Jean 20:24-29) ; `char-l4-tf-69-4` situe Ananias et Saul à Damas, non à Jérusalem (Actes 9:10-18) ; `char-l4-tf-76-4` distingue Jacques fils d’Alphée de Jacques fils de Zébédée (Matthieu 10:2-4 ; Marc 3:16-18) ; `char-l4-tf-79-4` situe la guérison de Bartimée près de Jéricho, non à Capharnaüm (Marc 10:46-52).
+- Les affirmations sont fausses sans ambiguïté, les explications donnent le fait biblique exact et les références pointent vers les récits correspondants. Contrôle limité à ces six cartes ; aucune validation intégrale de L4 n’est revendiquée.
