@@ -192,12 +192,13 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source après amélioration ciblée des Vrai/Faux : `399f7a709422508db36ff4bec28a3ca4065b3272`
+- SHA source après revalidation ciblée des Vrai/Faux : `28795f901f8727b847150a6e7ef723a499df4b44`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Revalidation ciblée complémentaire : 12 cartes des banques Apphia et Archippe ont été réécrites pour éliminer les questions répétitives sur l’introduction de la lettre à Philémon et sur le ministère d’Archippe. Les nouveaux faits portent sur l’évolution d’Onésime (Philémon 10-11), le compte de la dette (18-19), le logement demandé (22), le cœur à rafraîchir (20), la confiance en l’obéissance de Philémon (21), l’enfant spirituel de Paul (10), le frère bien-aimé (15-16), l’accueil comme Paul lui-même (17), le volontariat (14), l’espoir de revenir (22), le « propre cœur » de Paul (12) et l’emprisonnement de Paul (1, 9-10).
 - Revalidation ciblée complémentaire : `char-l6-q-109-4` corrige une réponse/index erroné et demande le lien entre Jeanne et Chouza (Luc 8:1-3) ; `char-l6-q-116-8` remplace une répétition sur la filiation de Jean-Marc par la visite de Pierre à la maison de Marie après sa libération (Actes 12:7-12).
 - Revalidation ciblée après détection de répétitions : `char-l6-q-110-4` (instruction donnée aux dix lépreux, Luc 17:13-14), `char-l6-q-121-10` (raison du transfert de Paul à Césarée, Actes 23:23-30), `char-l6-q-123-7` (Artémis au cœur de l’émeute, Actes 19:24-28) et `char-l6-q-123-10` (la foule entraîne Gaïus et Aristarque au théâtre, Actes 19:29). Ces cartes remplacent des formulations redondantes par des faits distincts.
+- Revalidation ciblée complémentaire du 09/10/2026 : 12 cartes Vrai/Faux ont été corrigées pour remplacer des affirmations génériques/absurdes et clarifier les sujets ambigus : `char-l6-tf-105-4` (Zacharie), `108-4` (Caïphe), `109-3` (Jeanne), `110-3` (le Samaritain guéri), `112-3` et `112-4` (l’homme délivré dans la région des Géraséniens), `114-4` (Onésiphore), `117-3` (Apphia), `119-3` (Jean-Marc), `121-4` (Claude Lysias), `122-4` (Julius) et `124-4` (Aristarque). Réponses fausses, explications et références spécifiques vérifiées. Cette passe ne constitue pas une relecture intégrale de L6.
 - Contrôles : validation éditoriale complète, structure, réponses/index, références, contexte, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère, doublons, fuite de réponse et jouabilité.
 - Corrections ciblées : références Joël et indices Mystère réalignés.
 - Exceptions ouvertes : aucune.
