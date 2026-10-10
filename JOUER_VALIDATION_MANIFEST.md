@@ -544,11 +544,10 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Cette revalidation porte uniquement sur ces huit cartes et ne constitue pas une relecture intégrale de L4. Ne pas déclarer la passe clôturée avant CI verte sur le SHA final.
 
 
-### Bloc SEM-L4-001 — VALIDATED — 2026-10-10
+### Historique ciblé des revalidations L4 — 2026-10-10
 - Source : `src/data/characterQuestionsL4.ts`
 - SHA source validé : `f2a59a16560fda9d2f19716ed893f7a6e64c7337`
-- Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
-- État : VALIDATED sur la base de la validation éditoriale antérieure du lot complet, avec revalidation ciblée des cartes modifiées ci-dessous ; ce SHA n'affirme pas une nouvelle relecture intégrale des 292 cartes.
+- Note : ce bloc est un historique de revalidations ciblées, pas un second bloc de couverture des 292 cartes.
 - Revalidations ciblées récentes : `char-l4-tf-74-2`, `char-l4-tf-64-4`, `char-l4-tf-65-4`, `char-l4-tf-69-4`, `char-l4-tf-76-4`, `char-l4-tf-79-4` (PR #44), puis `char-l4-tf-70-2`, `char-l4-tf-70-4`, `char-l4-tf-71-2`, `char-l4-tf-71-4`, `char-l4-tf-72-2`, `char-l4-tf-72-4`, `char-l4-tf-73-2`, `char-l4-tf-73-4` (PR #45).
 - Les corrections de ces cartes ont été contrôlées individuellement ; les cartes non modifiées conservent la validation éditoriale antérieure du lot.
 - Clôture technique : uniquement après CI verte et concordance exacte du SHA source. Toute nouvelle modification du fichier impose de mettre à jour ce SHA et de recontrôler les cartes modifiées.
