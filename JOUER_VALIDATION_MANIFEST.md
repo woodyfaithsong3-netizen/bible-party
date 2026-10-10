@@ -114,7 +114,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L2-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `0b49a79e27f7c11552470abe20dc35586bc503f3`
+- SHA source validé après revalidation ciblée : `4cb6764c8ddb17328b5c36bd7536947c145a0270`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, 4 réponses/index, fuite de réponse, doublons exacts, doublons croisés avec L1, références non vides, formulations, autonomie, contexte, exactitude biblique, distracteurs, indices Mystère et jouabilité.
@@ -140,7 +140,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé après revalidation ciblée : `1b820556b76d9e7035646115847e203229ec8c8f`
+- SHA source validé après revalidation ciblée : `55b2710cdf41ee2855de7e25681c27659c5bde9b`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
@@ -525,3 +525,5 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 
 - Revalidation ciblée complémentaire du 09/10/2026 : six Vrai/Faux L2 modifiés puis contrôlés individuellement : `char-l2-tf-30-2` (Corneille/Césarée et Joppé), `char-l2-tf-32-2` (départ de Léa de Paddan-Aram), `char-l2-tf-34-3` (qui donna la dîme à Melkisédek), `char-l2-tf-35-2` (rencontre de Jéthro avec Moïse après l’Exode), `char-l2-tf-37-2` (rébellion de Coré) et `char-l2-tf-39-2` (Balak demanda à Balaam, non à Josué, de maudire Israël). Les six propositions sont fausses, avec explications factuelles et références vérifiées ; elles remplacent des affirmations vraies redondantes ou trop proches d’autres cartes. Ce contrôle ciblé ne constitue pas une relecture intégrale de L2.
+
+- Revalidation ciblée complémentaire du 10/10/2026 : `char-l2-tf-36-3` simplifiée pour nommer directement l’incident et la circoncision de son fils par Séphora (Exode 4:24-26) ; `char-l3-tf-56-1` resserrée sur le rôle de prophète et le compagnonnage missionnaire de Silas (Actes 15:22, 32, 40 ; 16:19-25) ; `char-l3-tf-60-1` remplacée par le fait direct qu’Eutyche s’endormit pendant le discours de Paul et tomba du troisième étage (Actes 20:7-10). Réponses, explications et références contrôlées individuellement ; aucune relecture intégrale de L2/L3 n’est revendiquée.
