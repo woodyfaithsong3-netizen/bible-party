@@ -192,7 +192,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source après revalidation ciblée des Vrai/Faux : `28795f901f8727b847150a6e7ef723a499df4b44`
+- SHA source après revalidation ciblée des Vrai/Faux : `157c6c1e5f41d80f7467a14538da886883ff9d27`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Revalidation ciblée complémentaire : 12 cartes des banques Apphia et Archippe ont été réécrites pour éliminer les questions répétitives sur l’introduction de la lettre à Philémon et sur le ministère d’Archippe. Les nouveaux faits portent sur l’évolution d’Onésime (Philémon 10-11), le compte de la dette (18-19), le logement demandé (22), le cœur à rafraîchir (20), la confiance en l’obéissance de Philémon (21), l’enfant spirituel de Paul (10), le frère bien-aimé (15-16), l’accueil comme Paul lui-même (17), le volontariat (14), l’espoir de revenir (22), le « propre cœur » de Paul (12) et l’emprisonnement de Paul (1, 9-10).
@@ -580,3 +580,8 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - `char-l4-tf-65-1` : fait précis sur la réaction de Thomas lorsque Jésus décide de retourner en Judée (Jean 11:7-8, 14-16), à la place de l’affirmation générique qu’il était l’un des Douze.
 - `char-l4-tf-79-1` : cri de Bartimée et persévérance malgré la foule (Marc 10:46-52), afin d’éviter la répétition quasi identique avec `char-l4-tf-79-2`.
 - Revalidation ciblée de ces deux cartes uniquement ; aucune nouvelle couverture intégrale L4 n’est déclarée.
+
+
+### Historique ciblé des revalidations L6 — 2026-10-11
+- `char-l6-tf-113-3` : l’affirmation générique « Jason était l’un des Douze apôtres » est remplacée par un fait directement tiré d’Actes 17:5-9 : la foule hostile chercha Paul et Silas dans la maison de Jason et, ne les trouvant pas, entraîna Jason devant les chefs de la ville.
+- Revalidation ciblée de cette carte uniquement ; aucune nouvelle couverture intégrale L6 n’est déclarée.
