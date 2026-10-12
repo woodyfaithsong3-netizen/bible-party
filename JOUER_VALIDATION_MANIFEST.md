@@ -1045,3 +1045,9 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Sources : `src/data/characterQuestionsL5.ts` SHA `29f47ec14dc41798f4f4646b7d37ab6a0653efe2` ; `src/data/characterQuestionsL6.ts` SHA `e07dffdc16dcf6fb5216b0b2f2021867f6858868`.
 - État : RECHECK CI/Pages
 - Dernier lot d’équilibrage : 48 cartes L5 et 16 cartes L6, permutations de propositions uniquement. Aucune réponse biblique n’a été changée.
+
+
+### Rééquilibrage structurel Quiz — 2026-10-12
+- Sources : L2 `f452526f2dcaba859ba822a9ca8238e4ce3cf4e8`, L5 `038ff5f09283d6a61915febf5af707167cb06dac`.
+- État : RECHECK CI/Pages
+- 128 permutations supplémentaires index 2 → index 0 ; aucune bonne réponse, question ou référence biblique modifiée.
