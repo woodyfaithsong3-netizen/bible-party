@@ -140,17 +140,17 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé après revalidation ciblée : `b8eac64085c611c0fa04697b27ac540ea298c864`
+- SHA source validé après revalidation ciblée : `a25823e7933b5e57a3272c854933de8af59747f8`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
-- Corrections ciblées : `char-l3-tf-45-3`, `char-l3-tf-54-3`, `char-l3-tf-55-1`.
+- Corrections ciblées : `char-l3-tf-45-3`, `char-l3-tf-54-3`, `char-l3-tf-55-1`, `char-l3-q-46-04`.
 - Revalidation ciblée après détection de répétitions : `char-l3-q-42-08` (réponse de Mikal à Saül, 1 Samuel 19:17), `char-l3-q-54-05` (raisonnement de Gamaliel sur l’origine humaine d’un mouvement, Actes 5:38-39) et `char-l3-q-60-09` (discours poursuivi jusqu’au lever du jour, Actes 20:11). Ces trois cartes ont été remplacées par des faits distincts et leurs références réalignées.
 - Résultats finaux : 288 IDs uniques, 200 Quiz sans doublon ni fuite, 48 Vrai/Faux contrôlés, 40 Qui est-ce ? sans problème d’indices.
 - Exceptions ouvertes : aucune.
 - Revalidation ciblée complémentaire : `char-l3-q-42-07` précise le filet de poils de chèvre placé à la tête de la statue (1 Samuel 19:13-16) ; `char-l3-q-57-08` porte sur le souhait de Paul de garder Onésime pour le servir en prison (Philémon 13-14) ; `char-l3-q-57-09` porte sur la demande de Paul à Philémon de rafraîchir son cœur (Philémon 20). Ces cartes remplacent des répétitions résiduelles par des faits distincts.
 - Revalidation ciblée complémentaire du 09/10/2026 : six cartes Vrai/Faux ont été réécrites pour corriger des répétitions et erreurs de rôles : `char-l3-tf-49-2` (Esdras/Néhémie), `char-l3-tf-50-2` (Zorobabel/Néhémie), `char-l3-tf-53-2` (offrandes condamnées par Malachie), `char-l3-tf-54-2` (Gamaliel pharisien), `char-l3-tf-55-2` (Apollos d’Alexandrie) et `char-l3-tf-57-2` (Onésime et Philémon). Réponses, explications et références vérifiées ; 6 propositions fausses précises ajoutées.
-- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+- `char-l3-q-46-04` a été relue et reformulée en question factuelle directe ; 287 cartes conservent leur validation antérieure. Cette passe ne constitue pas une relecture intégrale du bloc.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
 
 
