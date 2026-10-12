@@ -738,3 +738,15 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Les indices génériques, répétitifs ou non discriminants ont été remplacés par des faits bibliques concrets et les deux cartes de chaque personnage ont été différenciées.
 - Les autres cartes L3 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
 - Exceptions ouvertes : aucune.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (dix cartes Mystère)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA : `f73ac7d5d662cc7a416d8dd021e54b4f983abd10`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes Mystère relues et corrigées individuellement : `char-l3-m-41-1`, `char-l3-m-41-2`, `char-l3-m-42-1`, `char-l3-m-42-2`, `char-l3-m-43-1`, `char-l3-m-43-2`, `char-l3-m-44-1`, `char-l3-m-44-2`, `char-l3-m-45-1`, `char-l3-m-45-2`.
+- Les indices vagues, qualités génériques et formulations non discriminantes ont été remplacés par des faits bibliques concrets ; les deux cartes de chaque personnage sont différenciées.
+- Réponses, explications et références contrôlées individuellement sur ce périmètre.
+- Les autres cartes L3 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
+- Exceptions ouvertes : aucune.
