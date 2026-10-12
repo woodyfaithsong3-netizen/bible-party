@@ -706,7 +706,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
 
 
-### Revalidation ciblée L3 — 2026-10-12 (dix cartes Mystère)
+### Revalidation ciblée L3 — 2026-10-12 (onze cartes Mystère)
 - Source : `src/data/characterQuestionsL3.ts`
 - SHA : `fd652b20a8a3e591b7465e8e73838477d9af5aae`
 - Taille : 288 cartes
