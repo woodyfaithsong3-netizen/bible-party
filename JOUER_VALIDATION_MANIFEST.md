@@ -1129,3 +1129,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Taille : 395 cartes
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (cinq Quiz Zacharie/Malachie)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `8b9cc84c35801ac68769d91335fc8006430744a4`
+- Taille : 288 cartes
+- État : RECHECK CI/Pages
+- Cartes ciblées : `char-l3-q-52-09`, `char-l3-q-53-03`, `char-l3-q-53-04`, `char-l3-q-53-08`, `char-l3-q-53-10`.
+- Contrôle : suppression de répétitions conceptuelles autour de Zacharie et Malachie ; remplacement par des faits distincts et directement vérifiables dans Zacharie 5:1-4 et Malachie 2:1-8, 2:7, 3:6, 3:16. Réponses, index, explications et références réalignés.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
