@@ -140,7 +140,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé après revalidation ciblée : `0bd9bd47fbfc64c16c2cbd3c76554e9c50523370`
+- SHA source validé après revalidation ciblée : `ee9abe3aa77505370f1111e91d55b83aa2139c24`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - Taille : 288 cartes
 - État : VALIDATED
