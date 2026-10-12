@@ -140,7 +140,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé après revalidation ciblée : `9fafb3fd74115b96131932f75e7361eb7924579d`
+- SHA source validé après revalidation ciblée : `45b2d3cd239042a3fe91fb46d4eb7df4cef95c6b`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
 - Taille : 288 cartes
 - État : VALIDATED
@@ -152,6 +152,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Revalidation ciblée complémentaire : `char-l3-q-42-07` précise le filet de poils de chèvre placé à la tête de la statue (1 Samuel 19:13-16) ; `char-l3-q-57-08` porte sur le souhait de Paul de garder Onésime pour le servir en prison (Philémon 13-14) ; `char-l3-q-57-09` porte sur la demande de Paul à Philémon de rafraîchir son cœur (Philémon 20). Ces cartes remplacent des répétitions résiduelles par des faits distincts.
 - Revalidation ciblée complémentaire du 09/10/2026 : six cartes Vrai/Faux ont été réécrites pour corriger des répétitions et erreurs de rôles : `char-l3-tf-49-2` (Esdras/Néhémie), `char-l3-tf-50-2` (Zorobabel/Néhémie), `char-l3-tf-53-2` (offrandes condamnées par Malachie), `char-l3-tf-54-2` (Gamaliel pharisien), `char-l3-tf-55-2` (Apollos d’Alexandrie) et `char-l3-tf-57-2` (Onésime et Philémon). Réponses, explications et références vérifiées ; 6 propositions fausses précises ajoutées.
 - `char-l3-q-46-04` a été relue et reformulée en question factuelle directe ; 284 cartes conservent leur validation antérieure. Cette passe ne constitue pas une relecture intégrale du bloc.
+- Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-42-01` (Mikal, filiation avec Saül) et `char-l3-q-58-06` (Philémon, accueil d’Onésime) ont été reformulées en questions factuelles directes ; réponses, indices et références conservés et contrôlés. Les autres cartes restent couvertes par les validations antérieures.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
 
 
