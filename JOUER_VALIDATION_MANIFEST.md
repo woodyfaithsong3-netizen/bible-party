@@ -945,7 +945,8 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Source : `src/data/characterQuestionsL3.ts`
 - SHA source : `b4e92ec48d6cdba1abbb053d5027b23416ad8af4`
 - Taille : 288 cartes
-- État : VALIDATED
+- État : SUPERSEDED
+- Remplacé par la revalidation L3 finale du 2026-10-12 ci-dessous.
 - Cartes ciblées : `char-l3-q-43-06`, `char-l3-q-47-04`, `char-l3-q-47-08`, `char-l3-q-57-10`, `char-l3-q-58-06`, `char-l3-q-58-09`, `char-l3-q-58-10`, `char-l3-q-59-10`.
 - Contrôle : chaque `correctAnswer` a été comparé à la position réelle de la bonne proposition. Les index erronés ont été réalignés ; les options ont ensuite été réordonnées sans changer la bonne réponse ni le sens des cartes, afin de conserver l’équilibrage global des positions.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
