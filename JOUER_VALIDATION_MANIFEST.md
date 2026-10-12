@@ -909,3 +909,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes ciblées : `char-l3-q-58-09`, `char-l3-q-58-10`, `char-l3-q-59-06`, `char-l3-q-59-10`
 - Contrôle : suppression de répétitions sur la maison de Philémon et l’organisation de la Crète ; remplacement par des faits distincts de Philémon 1, 22 et Tite 1:5-6, 3:12.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (trois cartes Quiz Eutyche)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `fc726c38fb5b5e1f3c76c9ef3151e43d913e9f7b`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes ciblées : `char-l3-q-60-06`, `char-l3-q-60-08`, `char-l3-q-60-10`
+- Contrôle : réduction des répétitions autour de l’endormissement et de la chute d’Eutyche ; questions désormais distinctes sur son état après la chute, la consolation des frères et la raison du discours prolongé de Paul (Actes 20:7-12).
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
