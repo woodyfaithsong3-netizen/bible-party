@@ -1063,3 +1063,9 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Source : L6 `db5da4ef6e7fd0e8ba861869064b42e059ed2a5c`.
 - État : RECHECK CI/Pages
 - Deux permutations index 1 → index 0 ont été effectuées pour franchir le seuil CI minimal de 20 % sur toutes les positions. Aucun fait biblique ni bonne réponse n’a été changé.
+
+
+### Rééquilibrage structurel Quiz — 2026-10-12
+- Sources : L6 `1ad24775b4bb87bf6579288d0932e616a53353b1`, L2 `e925724168a8640156486d24d88532033f3462dd`.
+- État : RECHECK CI/Pages
+- 47 permutations depuis l’index 1 : 24 vers l’index 0 et 23 vers l’index 2. La réponse bibliquement correcte reste la même ; seule sa position dans les propositions change.
