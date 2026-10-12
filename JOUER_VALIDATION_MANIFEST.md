@@ -646,7 +646,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Exceptions ouvertes : aucune.
 ## Bloc SEM-L5-005 — REVALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA : `08cf2a642b44f12e48222bf636ad0569bc26763d`
+- SHA : `08cf2a642b44f12e48222bf636ad0569bc267d63`
 - Taille : 290 cartes
 - État : VALIDATED
 - Périmètre : 290 cartes L5.
