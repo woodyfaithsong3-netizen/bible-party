@@ -1126,7 +1126,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L4-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source validé : `0446d8020208db669480a29e1456df9b94b68585`
+- SHA source validé : `84d7f55ce7b697a10f7a8a5be069f696072b0edf`
 - Périmètre : 292 cartes
 - Taille : 292 cartes
 - État : VALIDATED
@@ -1134,7 +1134,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L5-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `038ff5f09283d6a61915febf5af707167cb06dac`
+- SHA source validé : `73b2a370d1345cf36f3c115f0980c24687a25014`
 - Périmètre : 290 cartes
 - Taille : 290 cartes
 - État : VALIDATED
@@ -1142,7 +1142,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `88817fc72926a47efce75685eee5434e60c24bbe`
+- SHA source validé : `3670097e2284347111f31035108228189fd2e136`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
@@ -1159,3 +1159,5 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
 
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l6-q-109-4` reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés.
+
+- Revalidation ciblée complémentaire du 12/10/2026 : L4 `char-l4-q-62-4`, L5 `char-l5-q-81-9`, `char-l5-q-85-3`, L6 `char-l6-q-102-6`, `char-l6-q-115-2`, `char-l6-q-119-2`, `char-l6-q-123-8`, `char-l6-q-124-5` reformulées en questions factuelles directes ; réponses, index, explications et références contrôlés.
