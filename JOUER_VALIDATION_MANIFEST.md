@@ -849,3 +849,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Carte recontrôlée : `char-l3-m-43-2`.
 - Correction : indice rendu plus concret et directement relié au récit de 2 Samuel 19:1-8, sans formulation interprétative inutile.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (trois cartes Quiz Apollos — distracteurs)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `5128b9c41e07713d405caa5813184657c8bf3dcd`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes ciblées : `char-l3-q-55-07`, `char-l3-q-55-08`, `char-l3-q-55-09`
+- Contrôle : distracteurs rendus plus plausibles et bibliquement cohérents, sans modifier les bonnes réponses ni les références.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
