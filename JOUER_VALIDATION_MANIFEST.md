@@ -140,11 +140,12 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ### Bloc SEM-L3-001 — VALIDATED — 2026-10-08
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé après revalidation ciblée : `a25823e7933b5e57a3272c854933de8af59747f8`
+- SHA source validé après revalidation ciblée : `4bce6f6a9a71c3cf8e1dd5972f97c77c654df0df`
 - Périmètre : 200 Quiz + 48 Vrai/Faux + 40 Qui est-ce ? = 288 cartes.
+- Taille : 288 cartes
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulations, Vrai/Faux ambigus, indices Mystère et jouabilité.
-- Corrections ciblées : `char-l3-tf-45-3`, `char-l3-tf-54-3`, `char-l3-tf-55-1`, `char-l3-q-46-04`.
+- Corrections ciblées : `char-l3-tf-45-3`, `char-l3-tf-54-3`, `char-l3-tf-55-1`, `char-l3-q-46-04`, `char-l3-q-49-10`, `char-l3-q-58-08`, `char-l3-m-57-2`.
 - Revalidation ciblée après détection de répétitions : `char-l3-q-42-08` (réponse de Mikal à Saül, 1 Samuel 19:17), `char-l3-q-54-05` (raisonnement de Gamaliel sur l’origine humaine d’un mouvement, Actes 5:38-39) et `char-l3-q-60-09` (discours poursuivi jusqu’au lever du jour, Actes 20:11). Ces trois cartes ont été remplacées par des faits distincts et leurs références réalignées.
 - Résultats finaux : 288 IDs uniques, 200 Quiz sans doublon ni fuite, 48 Vrai/Faux contrôlés, 40 Qui est-ce ? sans problème d’indices.
 - Exceptions ouvertes : aucune.
