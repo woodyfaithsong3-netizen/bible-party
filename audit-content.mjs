@@ -388,7 +388,7 @@ if (legacyChallengeIds.size !== 139) failures.push('legacy challenge inventory e
 const sourceRouteProof = [];
 for (const bank of exportedCardBanks) {
   const escapedName = bank.name.replace(/[.*+?^$()|[\]\\]/g, '\\$&');
-'(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\b').test(routingQuestions);
+  const directRoute = new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\b').test(routingQuestions);
   const mappedRouteMatch = routingQuestions.match(new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\.(map|filter)\\(([\\s\\S]{0,700})'));
   const directGameRoute = new RegExp('\\.\\.\\.' + escapedName + '\\b').test(routingGameContent);
   const mappedGameRoute = routingGameContent.match(new RegExp('\\b' + escapedName + '\\.(map|filter)\\(([\\s\\S]{0,700})'));
