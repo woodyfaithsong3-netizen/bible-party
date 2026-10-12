@@ -869,3 +869,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes ciblées : `char-l3-q-44-05`, `char-l3-q-44-09`, `char-l3-q-46-05`
 - Contrôle : formulation rendue plus exacte et directe ; la carte d’Achaz ne prétend plus qu’il demanda le signe, puisque Jéhovah lui proposa de le demander et qu’Achaz refusa ; les cartes d’Hérode sont resserrées sur le récit biblique.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (cinq cartes Quiz Jérémie/Joab)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `20b0a316d1284539e9e3edda3bf3f297624bd6f1`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes ciblées : `char-l3-q-43-06`, `char-l3-q-47-04`, `char-l3-q-47-06`, `char-l3-q-47-08`, `char-l3-q-47-10`
+- Contrôle : suppression de plusieurs questions quasi répétées sur la persévérance de Jérémie ; remplacement par des faits bibliques distincts (Jérémie 20:1-2, 20:9, 26:2, 26:16) et correction de la carte Joab/Ahimaaz selon 2 Samuel 18:19-23.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
