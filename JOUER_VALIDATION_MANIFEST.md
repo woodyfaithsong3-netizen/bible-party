@@ -1142,7 +1142,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `b87d08ece70dd9616fb359072d73969beccd0ef6`
+- SHA source validé : `88817fc72926a47efce75685eee5434e60c24bbe`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
