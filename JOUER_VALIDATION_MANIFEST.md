@@ -662,3 +662,14 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Contrôle ciblé : neuf cartes ont été corrigées et relues individuellement : `char-l5-q-81-10`, `char-l5-q-87-5`, `char-l5-q-90-4`, `char-l5-q-95-3`, `char-l5-tf-83-1`, `char-l5-tf-84-1`, `char-l5-tf-85-1`, `char-l5-tf-86-1`, `char-l5-tf-87-1`.
 - Les 281 autres cartes conservent la validation éditoriale antérieure.
 - Exceptions ouvertes : aucune.
+
+
+## Bloc SEM-L4-NEW-2026-10-12 — REVALIDATED
+- Source : `src/data/characterQuestionsL4.ts`
+- SHA : `e4283b13cc935c2734560097cbdf21faf5ad70b4`
+- Taille : 292 cartes
+- État : VALIDATED
+- Périmètre : 292 cartes L4. Passe éditoriale ciblée sur 7 cartes présentant une formulation abstraite, une explication désalignée, une réponse insuffisamment spécifique ou un indice inutilisable.
+- Cartes relues et corrigées : `char-l4-q-63-7`, `char-l4-q-74-2`, `char-l4-q-74-4`, `char-l4-q-75-1`, `char-l4-q-75-2`, `char-l4-q-77-6`, `char-l4-m-78-1`.
+- 285 cartes L4 conservent leur validation antérieure.
+- Aucun autre fichier AVENTURE ou Ma Bible modifié.
