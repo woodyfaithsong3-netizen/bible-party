@@ -1025,3 +1025,10 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - SHA source : `540bad560ab90de76b1e907b81a05d552d70ccab`
 - État : RECHECK CI/Pages
 - Huit cartes Quiz supplémentaires ont été permutées de l’index 0 vers l’index 3 pour atteindre le minimum CI de 20 % par position. Le contenu biblique et la bonne réponse restent identiques.
+
+
+### Correction structurelle finale (16 cartes) — 2026-10-12
+- Source : `src/data/characterQuestionsL5.ts`
+- SHA source : `90619bdd294ccdda55a2b0e1d099f4a6694bcfd0`
+- État : RECHECK CI/Pages
+- Seize cartes Quiz supplémentaires ont été permutées de l’index 0 vers l’index 2 pour satisfaire le contrôle d’équilibrage. Aucun fait biblique ni bonne réponse n’a été modifié.
