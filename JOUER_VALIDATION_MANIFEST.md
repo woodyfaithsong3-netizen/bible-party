@@ -708,7 +708,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ### Revalidation ciblée L3 — 2026-10-12 (onze cartes Mystère)
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA : `fd652b20a8a3e591b7465e8e73838477d9af5aae`
+- SHA : `e4c88ad90c7e9b620558d65d2a5fffa0499f2785`
 - Taille : 288 cartes
 - État : VALIDATED
 - Cartes Mystère relues et corrigées individuellement : `char-l3-m-46-1`, `char-l3-m-47-1`, `char-l3-m-48-1`, `char-l3-m-49-1`, `char-l3-m-50-1`, `char-l3-m-51-1`, `char-l3-m-51-2`, `char-l3-m-52-1`, `char-l3-m-52-2`, `char-l3-m-53-1`, `char-l3-m-53-2`.
