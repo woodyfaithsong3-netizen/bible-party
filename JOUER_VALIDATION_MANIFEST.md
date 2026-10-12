@@ -704,3 +704,14 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Références principales : Frise chronologique de la Bible — JW.org ; Esdras 6:14-15 pour l'achèvement du temple.
 - Exceptions ouvertes : aucune.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (dix cartes Mystère)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA : `fd652b20a8a3e591b7465e8e73838477d9af5aae`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes Mystère relues et corrigées individuellement : `char-l3-m-46-1`, `char-l3-m-47-1`, `char-l3-m-48-1`, `char-l3-m-49-1`, `char-l3-m-50-1`, `char-l3-m-51-1`, `char-l3-m-51-2`, `char-l3-m-52-1`, `char-l3-m-52-2`, `char-l3-m-53-1`, `char-l3-m-53-2`.
+- Les indices abstraits ou redondants ont été remplacés par des faits bibliques concrets ; les deux cartes Aggée et les deux cartes Zacharie sont désormais nettement différenciées.
+- Les autres cartes L3 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
+- Exceptions ouvertes : aucune.
