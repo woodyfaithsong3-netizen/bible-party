@@ -673,3 +673,14 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes relues et corrigées : `char-l4-q-63-7`, `char-l4-q-74-2`, `char-l4-q-74-4`, `char-l4-q-75-1`, `char-l4-q-75-2`, `char-l4-q-77-6`, `char-l4-m-78-1`.
 - 285 cartes L4 conservent leur validation antérieure.
 - Aucun autre fichier AVENTURE ou Ma Bible modifié.
+
+
+## Bloc SEM-L4-NEW-2026-10-12-B — REVALIDATED
+- Source : `src/data/characterQuestionsL4.ts`
+- SHA : `11fc587061e86486542df810da985b33eb94ba2e`
+- Taille : 292 cartes
+- État : VALIDATED
+- Périmètre : 292 cartes L4. Deuxième passe éditoriale ciblée sur 5 cartes présentant une explication désalignée, une inférence trop forte ou une question moins directe que nécessaire.
+- Cartes relues et corrigées : `char-l4-q-62-2`, `char-l4-q-64-5`, `char-l4-q-65-1`, `char-l4-q-71-8`, `char-l4-q-77-7`.
+- 287 cartes L4 conservent leur validation antérieure.
+- Aucun autre fichier AVENTURE ou Ma Bible modifié.
