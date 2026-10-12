@@ -715,3 +715,15 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Les indices abstraits ou redondants ont été remplacés par des faits bibliques concrets ; les deux cartes Aggée et les deux cartes Zacharie sont désormais nettement différenciées.
 - Les autres cartes L3 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
 - Exceptions ouvertes : aucune.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (huit cartes Mystère)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA : `edd2028422efa2cac15918b7b8551d85d3af15bc`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes Mystère relues et corrigées individuellement : `char-l3-m-50-2`, `char-l3-m-54-1`, `char-l3-m-54-2`, `char-l3-m-55-1`, `char-l3-m-55-2`, `char-l3-m-56-1`, `char-l3-m-56-2`, `char-l3-m-57-1`.
+- Les indices abstraits, génériques ou redondants ont été remplacés par des faits bibliques concrets ; les deux cartes de chaque personnage sont désormais nettement différenciées lorsque cela était nécessaire.
+- Les réponses, explications et références ont été contrôlées individuellement sur le périmètre ciblé.
+- Les autres cartes L3 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
+- Exceptions ouvertes : aucune.
