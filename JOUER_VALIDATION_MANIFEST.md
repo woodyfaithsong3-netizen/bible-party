@@ -954,7 +954,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ### Revalidation ciblée L3 — 2026-10-12 (Zacharie + Eutyche — alignement réponses)
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source : `b4e92ec48d6cdba1abbb053d5027b23416ad8af4`
+- SHA source : `81d1ad963a94550183cce063c84ff504b669ceec`
 - Taille : 288 cartes
 - État : VALIDATED
 - Clôture : les quatre cartes ciblées ont été contrôlées individuellement ; les autres cartes conservent leur validation antérieure. CI et GitHub Pages doivent confirmer cette clôture.
