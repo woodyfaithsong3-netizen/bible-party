@@ -417,7 +417,9 @@ const baseQuestionIds = allBaseQuestionIds.filter(id => !editorialRemovedBaseIds
 sourceIds.push(...baseQuestionIds);
 const sourceIdCounts = new Map();
 for (const id of sourceIds) sourceIdCounts.set(id, (sourceIdCounts.get(id) ?? 0) + 1);
-const duplicateSourceIds = [...sourceIdCounts.entries()].filter(([, count]) => count > 1);\nconst playableLegacyChallengeIds = [...legacyChallengeIds].filter(id => routingGameContent.includes(id));\nif (playableLegacyChallengeIds.length) failures.push('retired legacy challenges still referenced by gameContent: ' + playableLegacyChallengeIds.join(', '));
+const duplicateSourceIds = [...sourceIdCounts.entries()].filter(([, count]) => count > 1);
+const playableLegacyChallengeIds = [...legacyChallengeIds].filter(id => routingGameContent.includes(id));
+if (playableLegacyChallengeIds.length) failures.push('retired legacy challenges still referenced by gameContent: ' + playableLegacyChallengeIds.join(', '));
 
 if (unroutedCardBanks.length) {
   failures.push('unrouted playable source banks: ' + unroutedCardBanks.map(bank => bank.name + ' (' + bank.cardCount + ')').join(', '));
