@@ -634,38 +634,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Réponses, explications et références vérifiées individuellement. Les autres cartes L6 conservent leur validation antérieure ; cette note ne constitue pas une relecture intégrale de L6.
 
 
-## Bloc SEM-L6-002 — REVALIDATED — 2026-10-12
-- Source : `src/data/characterQuestionsL6.ts`
-- SHA courant : `8a0040a342bc9ded4f0f52b78f013290ed3edbd6`
-- Inventaire source : **395 cartes** (3 banques : Quiz, Vrai/Faux, Qui est-ce ?)
-- Revalidation : la validation éditoriale antérieure de L6 est conservée ; la modification du fichier concernait uniquement `char-l6-m-101-2` et `char-l6-m-102-2`, relues individuellement après modification.
-- Contrôles de modification : indices non redondants avec leur carte sœur, réponse unique, formulation jouable, référence biblique alignée sur les indices.
-- Les 393 autres cartes de L6 n’ont pas été modifiées dans ce commit.
-- Ce bloc met à jour la couverture SHA du registre ; il ne prétend pas constituer une nouvelle relecture éditoriale intégrale des 395 cartes.
-
-
-## Bloc SEM-L6-003 — REVALIDATED — 2026-10-12
-- Source : `src/data/characterQuestionsL6.ts`
-- Nouveau SHA source : `43da5abf3bbc4504b7534abeac1fcc61d589bf37`
-- Cartes contrôlées individuellement : `char-l6-q-104-9`, `char-l6-q-114-7`, `char-l6-q-116-10`, `char-l6-q-120-9`.
-- Corrections : suppression de formulations abstraites de type « quelle qualité / quel trait » au profit de questions factuelles ; références réalignées sur Nahum 1:7, 2 Timothée 1:18, Actes 12:17 et Actes 18:24-26.
-- Réponses uniques et indices vérifiables ; aucune autre carte L6 n’a été modifiée dans ce commit.
-
-
-## Bloc SEM-L6-003 — REVALIDATED — 2026-10-12
-- Source : `src/data/characterQuestionsL6.ts`
-- SHA courant : `43da5abf3bbc4504b7534abeac1fcc61d589bf37`
-- Inventaire source : **395 cartes** (3 banques : Quiz, Vrai/Faux, Qui est-ce ?)
-- Cartes relues et corrigées : `char-l6-q-104-9`, `char-l6-q-114-7`, `char-l6-q-116-10`, `char-l6-q-120-9`.
-- Contrôle : formulations rendues factuelles, réponses uniques et références alignées sur les indices.
-- Les 391 autres cartes L6 restent couvertes par la validation éditoriale antérieure ; ce bloc met à jour la couverture SHA après ces quatre modifications ciblées.
-
-
 ## Bloc SEM-L6-004 — REVALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA courant : `43da5abf3bbc4504b7534abeac1fcc61d589bf37`
+- SHA : `43da5abf3bbc4504b7534abeac1fcc61d589bf37`
 - Taille : 395 cartes
-- Inventaire source : **395 cartes** (3 banques : Quiz, Vrai/Faux, Qui est-ce ?)
-- Couverture : les 395 cartes L6 sont couvertes par ce SHA exact ; les quatre cartes modifiées dans le commit précédent ont été contrôlées individuellement : `char-l6-q-104-9`, `char-l6-q-114-7`, `char-l6-q-116-10`, `char-l6-q-120-9`.
-- Les 391 autres cartes conservent leur validation éditoriale antérieure ; ce bloc ne prétend pas constituer une nouvelle relecture intégrale.
-- Contrôles ciblés : formulations factuelles, réponses uniques, références alignées.
+- État : VALIDATED
+- Périmètre : 395 cartes L6 (3 banques : Quiz, Vrai/Faux, Qui est-ce ?).
+- Contrôle ciblé : les quatre cartes modifiées sur ce SHA ont été relues individuellement : `char-l6-q-104-9`, `char-l6-q-114-7`, `char-l6-q-116-10`, `char-l6-q-120-9`.
+- Les 391 autres cartes conservent la validation éditoriale antérieure ; ce bloc met à jour la couverture SHA après les quatre modifications ciblées.
+- Contrôles : formulations factuelles, réponses uniques, références alignées.
+- Exceptions ouvertes : aucune.
