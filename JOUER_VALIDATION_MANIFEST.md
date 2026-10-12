@@ -1101,11 +1101,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L3-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `571d67324c7fa4816cc5d55a78887bfff56e7d87`
+- SHA source validé : `cb112a1f4b79fc113829c9aea37568d9c29eafbe`
 - Périmètre : 288 cartes
 - Taille : 288 cartes
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des cartes L3 déjà contrôlées et des permutations de propositions ; aucune relecture éditoriale intégrale revendiquée.
+- Correction d’audit du 12/10/2026 : `char-l3-q-57-09` reformulée pour supprimer le doublon normalisé avec `char-l3-q-117-9` (L6) ; réponse, index, explication et référence conservés et contrôlés.
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-57-09` reformulée pour une formulation directe et naturelle de la demande de Paul à Philémon ; réponse, index, explication et référence contrôlés.
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-56-09` reformulée en question factuelle sur l’emprisonnement à Philippes ; réponse, index, explication et référence contrôlés.
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-57-06` reformulée en question directe sur le retour d’Onésime auprès de Philémon ; réponse, index, explication et référence contrôlés.
