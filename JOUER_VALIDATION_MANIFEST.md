@@ -1101,12 +1101,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L3-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `def612e8645066b362baee767a6a61efa37147a8`
+- SHA source validé : `a12b82ee5f96a64cb9cd48049d62bfd3c40d7b15`
 - Périmètre : 288 cartes
 - Taille : 288 cartes
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des cartes L3 déjà contrôlées et des permutations de propositions ; aucune relecture éditoriale intégrale revendiquée.
-- Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-58-05` (Philémon, demande de Paul concernant Onésime) a été reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés. Les autres cartes restent couvertes par les validations antérieures.
+- Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-58-05` (Philémon, demande de Paul concernant Onésime) a été reformulée en question factuelle directe ; `char-l3-q-54-04` (Gamaliel) a été reformulée en question factuelle directe sur sa fonction ; réponses, index, explications et références contrôlés. Les autres cartes restent couvertes par les validations antérieures.
 
 ## Bloc SEM-L4-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL4.ts`
