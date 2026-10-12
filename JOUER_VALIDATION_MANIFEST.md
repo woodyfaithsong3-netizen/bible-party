@@ -762,6 +762,17 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Les autres cartes L3 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
 - Exceptions ouvertes : aucune.
 
+### Revalidation ciblée L3 — 2026-10-12 (quatre cartes Vrai/Faux)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA : `16cf1de0c1ddac846a2190df3e033e29492e51a3`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes relues et corrigées individuellement : `char-l3-tf-41-3`, `char-l3-tf-42-2`, `char-l3-tf-60-1`, `char-l3-tf-60-2`.
+- Les formulations composées ou imprécises ont été resserrées sur un fait directement vérifiable : vœu et service de Hanna, fuite de Mikal par la fenêtre, troisième étage de la chute d’Eutyche et présence d’Eutyche à Troas.
+- Réponses, explications et références contrôlées individuellement sur ce périmètre.
+- Les autres cartes L3 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
+- Exceptions ouvertes : aucune.
+
 
 ### Revalidation ciblée L3 — 2026-10-12 (quatre cartes Quiz)
 - Source : `src/data/characterQuestionsL3.ts`
