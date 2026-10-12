@@ -381,8 +381,9 @@ for (const file of playableSourceFiles) {
   }
 }
 // Les challenges historiques sont retires des quatre modes officiels.
+// Les challenges historiques sont retires des quatre modes officiels.
 const legacyChallengeIds = new Set(
-  [...routingCode.matchAll(/id:\s*['"](v54-d-[^'"]+|v55-d-[^'"]+|v56-d-[^'"]+|v57-d-[^'"]+|jwcat-challenge-[^'"]+|challenge-\d+)['"]/g)].map(m => m[1])
+  [...routingCode.matchAll(/(?:id|questionId|cardId):\\s*['"]((?:v54|v55|v56|v57)-d-[^'"]+|jwcat-challenge-[^'"]+|challenge-\\d+)['"]/g)].map(m => m[1])
 );
 if (legacyChallengeIds.size !== 139) failures.push('legacy challenge inventory expected 139, found ' + legacyChallengeIds.size);
 const sourceRouteProof = [];
