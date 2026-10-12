@@ -786,13 +786,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Exceptions ouvertes : aucune.
 
 
-### Revalidation ciblée L3 — 2026-10-12 (trois cartes Quiz Joab)
+
+### Revalidation ciblée L3 — 2026-10-12 (deux cartes Quiz Esdras/Apollos)
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA : `c1064edfe5ca5512bea83f36ae62c882ffa34aa7`
+- SHA : `5f3edb0420f1398f23d74a78c20d093d08af787f`
 - Taille : 288 cartes
 - État : VALIDATED
-- Cartes relues et corrigées individuellement : `char-l3-q-43-03`, `char-l3-q-43-05`, `char-l3-q-43-07`.
-- Les formulations répétitives ont été différenciées : frère d’Asahel, meurtres rappelés par David à Salomon et commandement de Joab dans la bataille contre les Syriens et les Ammonites.
-- Réponses, explications et références contrôlées individuellement sur ce périmètre.
-- Les autres cartes L3 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
+- Cartes relues/corrigées : `char-l3-q-49-08`, `char-l3-q-55-06`
+- Vérifications : formulations directes, réponses plausibles et explications/références cohérentes avec le texte biblique.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
 - Exceptions ouvertes : aucune.
