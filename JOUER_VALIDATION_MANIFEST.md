@@ -1069,3 +1069,14 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Sources : L6 `1ad24775b4bb87bf6579288d0932e616a53353b1`, L2 `e925724168a8640156486d24d88532033f3462dd`.
 - État : RECHECK CI/Pages
 - 47 permutations depuis l’index 1 : 24 vers l’index 0 et 23 vers l’index 2. La réponse bibliquement correcte reste la même ; seule sa position dans les propositions change.
+
+
+### Revalidation structurelle des permutations Quiz — 2026-10-12
+- **L1** — 284 cartes — SHA `3d6694cf8df4bd6e533f6617950bd2f3a2f4cc70` — **VALIDATED**
+- **L2** — 290 cartes — SHA `e925724168a8640156486d24d88532033f3462dd` — **VALIDATED**
+- **L3** — 288 cartes — SHA `830aa331eb41017f3ef43a412fb263b4e5b258f4` — **VALIDATED**
+- **L4** — 292 cartes — SHA `0446d8020208db669480a29e1456df9b94b68585` — **VALIDATED**
+- **L5** — 290 cartes — SHA `038ff5f09283d6a61915febf5af707167cb06dac` — **VALIDATED**
+- **L6** — 395 cartes — SHA `1ad24775b4bb87bf6579288d0932e616a53353b1` — **VALIDATED**
+- **Nature du contrôle :** revalidation structurelle ciblée uniquement. Les modifications concernées sont des permutations de propositions avec déplacement de `correctAnswer` afin d’équilibrer les positions ; le texte de la question, le fait biblique, la bonne réponse, l’explication et la référence restent sémantiquement identiques.
+- **Aucune relecture éditoriale intégrale supplémentaire n’est revendiquée.** Les validations sémantiques antérieures restent la base.
