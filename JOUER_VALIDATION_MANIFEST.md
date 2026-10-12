@@ -677,7 +677,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L4-NEW-2026-10-12-B — REVALIDATED
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA : `3def9027ca27d786ed40689782528eabd74b27f1`
+- SHA : `857c7a88d507fe3667b3f923abc76e6fbf54e995`
 - Taille : 292 cartes
 - État : VALIDATED
 - Périmètre : 292 cartes L4. Deuxième passe éditoriale ciblée sur 5 cartes présentant une explication désalignée, une inférence trop forte ou une question moins directe que nécessaire.
