@@ -650,3 +650,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes contrôlées individuellement : `char-l6-q-104-9`, `char-l6-q-114-7`, `char-l6-q-116-10`, `char-l6-q-120-9`.
 - Corrections : suppression de formulations abstraites de type « quelle qualité / quel trait » au profit de questions factuelles ; références réalignées sur Nahum 1:7, 2 Timothée 1:18, Actes 12:17 et Actes 18:24-26.
 - Réponses uniques et indices vérifiables ; aucune autre carte L6 n’a été modifiée dans ce commit.
+
+
+## Bloc SEM-L6-003 — REVALIDATED — 2026-10-12
+- Source : `src/data/characterQuestionsL6.ts`
+- SHA courant : `43da5abf3bbc4504b7534abeac1fcc61d589bf37`
+- Inventaire source : **395 cartes** (3 banques : Quiz, Vrai/Faux, Qui est-ce ?)
+- Cartes relues et corrigées : `char-l6-q-104-9`, `char-l6-q-114-7`, `char-l6-q-116-10`, `char-l6-q-120-9`.
+- Contrôle : formulations rendues factuelles, réponses uniques et références alignées sur les indices.
+- Les 391 autres cartes L6 restent couvertes par la validation éditoriale antérieure ; ce bloc met à jour la couverture SHA après ces quatre modifications ciblées.
