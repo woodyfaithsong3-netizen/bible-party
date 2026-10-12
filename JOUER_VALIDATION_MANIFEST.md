@@ -806,3 +806,14 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Vérifications : formulations directes, distinction avec les cartes voisines, réponses et explications cohérentes avec les références bibliques.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
 - Exceptions ouvertes : aucune.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (trois cartes Quiz Joab/Pilate/Apollos)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA : `12a4dc30e78b2d246db5d9840776d2ce0821d422`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes relues/corrigées : `char-l3-q-43-04`, `char-l3-q-45-10`, `char-l3-q-55-07`
+- Vérifications : questions directes et distinctes des cartes voisines ; réponses, explications et références cohérentes avec les textes bibliques indiqués.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+- Exceptions ouvertes : aucune.
