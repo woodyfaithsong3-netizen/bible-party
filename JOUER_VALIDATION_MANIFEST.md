@@ -632,3 +632,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - `char-l6-m-101-2` a été différenciée de `char-l6-m-101-1` par des indices sur Moresheth, le jugement de Samarie/Jérusalem et Bethléhem ; référence réalignée sur Michée 1:1, 5; 5:1.
 - `char-l6-m-102-2` a été différenciée de `char-l6-m-102-1` par les indices sur le malheur de Jacob, la réaction d’Édom et les rescapés du mont Sion ; référence réalignée sur Abdias 10-17.
 - Réponses, explications et références vérifiées individuellement. Les autres cartes L6 conservent leur validation antérieure ; cette note ne constitue pas une relecture intégrale de L6.
+
+
+## Bloc SEM-L6-002 — REVALIDATED — 2026-10-12
+- Source : `src/data/characterQuestionsL6.ts`
+- SHA courant : `8a0040a342bc9ded4f0f52b78f013290ed3edbd6`
+- Inventaire source : **395 cartes** (3 banques : Quiz, Vrai/Faux, Qui est-ce ?)
+- Revalidation : la validation éditoriale antérieure de L6 est conservée ; la modification du fichier concernait uniquement `char-l6-m-101-2` et `char-l6-m-102-2`, relues individuellement après modification.
+- Contrôles de modification : indices non redondants avec leur carte sœur, réponse unique, formulation jouable, référence biblique alignée sur les indices.
+- Les 393 autres cartes de L6 n’ont pas été modifiées dans ce commit.
+- Ce bloc met à jour la couverture SHA du registre ; il ne prétend pas constituer une nouvelle relecture éditoriale intégrale des 395 cartes.
