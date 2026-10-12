@@ -1051,3 +1051,9 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Sources : L2 `f452526f2dcaba859ba822a9ca8238e4ce3cf4e8`, L5 `038ff5f09283d6a61915febf5af707167cb06dac`.
 - État : RECHECK CI/Pages
 - 128 permutations supplémentaires index 2 → index 0 ; aucune bonne réponse, question ou référence biblique modifiée.
+
+
+### Rééquilibrage structurel Quiz — 2026-10-12
+- Sources : L1 `3d6694cf8df4bd6e533f6617950bd2f3a2f4cc70`, L6 `c4acabe147bdadfb0036b9668d53ce6dcf59c44f`.
+- État : RECHECK CI/Pages
+- 59 permutations index 0 → index 2 ; aucune bonne réponse, question ou référence biblique modifiée.
