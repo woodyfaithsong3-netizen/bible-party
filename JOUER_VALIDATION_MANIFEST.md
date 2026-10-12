@@ -943,7 +943,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ### Revalidation ciblée L3 — 2026-10-12 (huit cartes Quiz — index correctAnswer)
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source : `b4e92ec48d6cdba1abbb053d5027b23416ad8af4`
+- SHA source : `81d1ad963a94550183cce063c84ff504b669ceec`
 - Taille : 288 cartes
 - État : SUPERSEDED
 - Remplacé par la revalidation L3 finale du 2026-10-12 ci-dessous.
@@ -959,4 +959,5 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - État : VALIDATED
 - Clôture : les quatre cartes ciblées ont été contrôlées individuellement ; les autres cartes conservent leur validation antérieure. CI et GitHub Pages doivent confirmer cette clôture.
 - Cartes ciblées : `char-l3-q-52-02`, `char-l3-q-60-06`, `char-l3-q-60-08`, `char-l3-q-60-10`.
+- Revalidation Vrai/Faux ajoutée : `char-l3-tf-46-2`, `char-l3-tf-56-2`, `char-l3-tf-60-3` ; formulations, réponses, explications et références contrôlées. Le lot L3 revient à un équilibre V/F de 24/24.
 - Contrôle : vérification question/réponse/explication/référence. Les réponses correctes ont été placées en dernière position après contrôle du fait biblique, sans changer le sens des cartes.
