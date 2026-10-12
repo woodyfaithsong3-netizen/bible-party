@@ -1095,7 +1095,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L2-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `53a353871a7dbb7ffb6b511c07dc8f87059afb76`
+- SHA source validé : `9266e3b3e094dd2f958bcdf911e9725cd10a7a75`
 - Périmètre : 290 cartes
 - Taille : 290 cartes
 - État : VALIDATED
@@ -1104,6 +1104,8 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l2-q-30-08` reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés.
 
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l2-q-32-01` reformulée en question factuelle directe sur la parenté de Léa et Rachel ; réponse, index, explication et référence contrôlés.
+
+- Revalidation ciblée complémentaire du 12/10/2026 : `char-l2-q-35-07` reformulée en question directe sur les critères recommandés par Jéthro ; réponse, index, explication et référence contrôlés.
 
 ## Bloc SEM-L3-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL3.ts`
