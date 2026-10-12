@@ -177,7 +177,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source après revalidation ciblée : `f306d05ce5d61ca73a357f6c6f1158fea13c3c4e`
+- SHA source après revalidation ciblée : `86604186155b356c219271c37a8ad880535f82ec`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -612,3 +612,5 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - `char-l6-tf-105-4` : remplace « Zacharie était grand prêtre » par le retour de sa parole lorsque Jean reçut son nom (Luc 1:20, 62-64).
 - `char-l6-tf-108-4` : remplace « Caïphe était gouverneur » par son conseil qu’un seul homme meure pour le peuple (Jean 11:49-53 ; 18:14).
 - Revalidation ciblée de ces six cartes uniquement ; aucune nouvelle couverture intégrale n’est déclarée.
+
+- Ajustement CI du même lot : `char-l5-tf-87-4` et `char-l5-tf-88-4` restent des cartes Faux, avec des affirmations bibliquement réfutables et moins artificielles, afin de conserver l’équilibre Vrai/Faux de la banque L5.
