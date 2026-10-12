@@ -266,7 +266,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## SEM-CHRONO-001
 - Source : `src/data/chronologyQuestions.ts`
-- SHA : `4bce6f6a9a71c3cf8e1dd5972f97c77c654df0df`
+- SHA : `ee9abe3aa77505370f1111e91d55b83aa2139c24`
 - 52 cartes Chronologie → Quiz.
 - État : VALIDATED
 - CI + GitHub Pages : verts.
@@ -687,11 +687,11 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Aucun autre fichier AVENTURE ou Ma Bible modifié.
 
 
-### Revalidation ciblée L3 — 2026-10-12 (trois cartes)
+### Revalidation ciblée L3 — 2026-10-12 (six cartes)
 - Source : `src/data/characterQuestionsL3.ts`
 - SHA : `4bce6f6a9a71c3cf8e1dd5972f97c77c654df0df`
-- `char-l3-q-49-10` rend la question directe sur la mise en pratique de la Loi par Esdras ; `char-l3-q-58-08` demande directement pourquoi Paul remerciait Dieu au sujet de Philémon ; `char-l3-m-57-2` utilise trois indices concrets et non redondants pour Onésime.
-- Réponses, explications et références conservées et contrôlées individuellement. Les 285 autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
+- `char-l3-q-49-10` rend la question directe sur la mise en pratique de la Loi par Esdras ; `char-l3-q-58-08` demande directement pourquoi Paul remerciait Dieu au sujet de Philémon ; `char-l3-m-57-2` utilise trois indices concrets et non redondants pour Onésime ; `char-l3-q-46-04` demande directement la réponse d’Isaïe à l’appel de Jéhovah ; `char-l3-m-42-2` utilise trois indices concrets sur Mikal.
+- Réponses, explications et références conservées et contrôlées individuellement. Les 282 autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
 
 ## Bloc SEM-CHRONO-001 — VALIDATED — 2026-10-12
 - Source : `src/data/chronologyQuestions.ts`
