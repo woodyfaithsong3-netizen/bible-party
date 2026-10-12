@@ -380,10 +380,15 @@ for (const file of playableSourceFiles) {
     if (routingQuestions.includes('...' + name)) routedBankNames.add(name);
   }
 }
-// Les challenges historiques sont retires des quatre modes officiels.\nconst legacyChallengeIds = new Set(\n  [...routingCode.matchAll(/id:\s*['\"](v54-d-[^'\"]+|v55-d-[^'\"]+|v56-d-[^'\"]+|v57-d-[^'\"]+|jwcat-challenge-[^'\"]+|challenge-\\d+)['\"]/g)].map(m => m[1])\n);\nif (legacyChallengeIds.size !== 139) failures.push('legacy challenge inventory expected 139, found ' + legacyChallengeIds.size);\nconst sourceRouteProof = [];
+// Les challenges historiques sont retires des quatre modes officiels.
+const legacyChallengeIds = new Set(
+  [...routingCode.matchAll(/id:\s*['"](v54-d-[^'"]+|v55-d-[^'"]+|v56-d-[^'"]+|v57-d-[^'"]+|jwcat-challenge-[^'"]+|challenge-\d+)['"]/g)].map(m => m[1])
+);
+if (legacyChallengeIds.size !== 139) failures.push('legacy challenge inventory expected 139, found ' + legacyChallengeIds.size);
+const sourceRouteProof = [];
 for (const bank of exportedCardBanks) {
-  const escapedName = bank.name.replace(/[.*+?^$()|[\\]\\]/g, '\\const unroutedCardBanks = exportedCardBanks.filter(bank => !routedBankNames.has(bank.name));');
-  const directRoute = new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\b').test(routingQuestions);
+  const escapedName = bank.name.replace(/[.*+?^$()|[\]\\]/g, '\\$&');
+'(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\b').test(routingQuestions);
   const mappedRouteMatch = routingQuestions.match(new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\.(map|filter)\\(([\\s\\S]{0,700})'));
   const directGameRoute = new RegExp('\\.\\.\\.' + escapedName + '\\b').test(routingGameContent);
   const mappedGameRoute = routingGameContent.match(new RegExp('\\b' + escapedName + '\\.(map|filter)\\(([\\s\\S]{0,700})'));
