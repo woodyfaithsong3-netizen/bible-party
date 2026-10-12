@@ -87,7 +87,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L1-001
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `71e23e19e7b41b85aac2f5a91d4c9f1f5d230cad`
+- SHA source validé : `2a161a84f1e722ba7592f7110ed148b631198f43`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - État : VALIDATED
 - Contrôles : validation éditoriale complète, structure, réponses, références, contexte, distracteurs, doublons, fuite de réponse, indices Mystère et jouabilité.
@@ -177,7 +177,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source après revalidation ciblée : `afeae78a51d49adb5102f0fa3d6f6cf87dce8565`
+- SHA source après revalidation ciblée : `f306d05ce5d61ca73a357f6c6f1158fea13c3c4e`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -192,7 +192,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source après revalidation ciblée des Vrai/Faux : `ea385c44428d10d3e68d28f1bada13a3d7c02db1`
+- SHA source après revalidation ciblée des Vrai/Faux : `29e405fae8ccf3fc1bcdcd39de8febdceb743a7a`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Revalidation ciblée complémentaire : 12 cartes des banques Apphia et Archippe ont été réécrites pour éliminer les questions répétitives sur l’introduction de la lettre à Philémon et sur le ministère d’Archippe. Les nouveaux faits portent sur l’évolution d’Onésime (Philémon 10-11), le compte de la dette (18-19), le logement demandé (22), le cœur à rafraîchir (20), la confiance en l’obéissance de Philémon (21), l’enfant spirituel de Paul (10), le frère bien-aimé (15-16), l’accueil comme Paul lui-même (17), le volontariat (14), l’espoir de revenir (22), le « propre cœur » de Paul (12) et l’emprisonnement de Paul (1, 9-10).
@@ -569,7 +569,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses précises, sans changer les IDs. Pour chacune, la proposition, la réponse, l’explication et la référence ont été contrôlées individuellement. Les autres cartes des lots gardent la validation antérieure, les sources n’ayant été modifiées que sur les IDs listés.
 
-- L1 — SHA `71e23e19e7b41b85aac2f5a91d4c9f1f5d230cad` : `char-l1-tf-02-1`, `char-l1-tf-05-1`, `char-l1-tf-08-1`, `char-l1-tf-09-1`, `char-l1-tf-10-1`, `char-l1-tf-12-1`, `char-l1-tf-13-2`, `char-l1-tf-14-1`, `char-l1-tf-17-2`. Répartition finale : **22 Vrai / 22 Faux**.
+- L1 — SHA `2a161a84f1e722ba7592f7110ed148b631198f43` : `char-l1-tf-02-1`, `char-l1-tf-05-1`, `char-l1-tf-08-1`, `char-l1-tf-09-1`, `char-l1-tf-10-1`, `char-l1-tf-12-1`, `char-l1-tf-13-2`, `char-l1-tf-14-1`, `char-l1-tf-17-2`. Répartition finale : **22 Vrai / 22 Faux**.
 - L2 — SHA `5add3dd187eb5cf46e8138ed8978dbf20f0a4f7f` : `char-l2-tf-21-1`, `char-l2-tf-26-1`, `char-l2-tf-31-1`, `char-l2-tf-32-1`, `char-l2-tf-33-1`, `char-l2-tf-33-2`, `char-l2-tf-34-2`, `char-l2-tf-35-1`, `char-l2-tf-36-1`, `char-l2-tf-37-1`. Répartition finale : **25 Vrai / 25 Faux**.
 - L3 — SHA `b8eac64085c611c0fa04697b27ac540ea298c864` : `char-l3-tf-43-1`, `char-l3-tf-44-1`, `char-l3-tf-46-1`, `char-l3-tf-47-1`, `char-l3-tf-48-1`, `char-l3-tf-50-1`, `char-l3-tf-51-2`, `char-l3-tf-58-2`, `char-l3-tf-59-2`, `char-l3-tf-60-1`. Répartition finale : **24 Vrai / 24 Faux**.
 - Garde-fou CI ajouté : chaque banque personnages L1-L6 doit garder une proportion de réponses fausses entre 40 % et 60 %, afin qu’un bon total global ne masque pas un lot déséquilibré.
@@ -602,3 +602,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - `char-l6-tf-122-3` : remplace « Julius était gouverneur » par son intervention pour empêcher l’exécution des prisonniers et sauver Paul (Actes 27:42-44).
 - `char-l6-tf-124-3` : remplace « Aristarque était gouverneur » par sa présence pendant le voyage maritime vers Rome (Actes 27:1-2).
 - Revalidation ciblée de ces cinq cartes uniquement ; aucune nouvelle couverture intégrale L6 n’est déclarée.
+
+
+### Historique ciblé des revalidations L1/L5/L6 — 2026-10-12
+- `char-l1-tf-13-4` : remplace le distracteur trivial « Élie était roi » par l’annonce précise de la sécheresse à Achab (1 Rois 17:1).
+- `char-l5-tf-83-4` : remplace « Festus était grand prêtre » par sa proposition de juger Paul à Jérusalem (Actes 25:9-12).
+- `char-l5-tf-87-4` : remplace la formulation absolue sur un désaccord par la demande de Paul d’aider Évodie et Syntyche (Philippiens 4:2-3).
+- `char-l5-tf-88-4` : remplace « ne tomba jamais malade » par l’état d’esprit d’Épaphrodite après que les Philippiens apprirent sa maladie (Philippiens 2:25-30).
+- `char-l6-tf-105-4` : remplace « Zacharie était grand prêtre » par le retour de sa parole lorsque Jean reçut son nom (Luc 1:20, 62-64).
+- `char-l6-tf-108-4` : remplace « Caïphe était gouverneur » par son conseil qu’un seul homme meure pour le peuple (Jean 11:49-53 ; 18:14).
+- Revalidation ciblée de ces six cartes uniquement ; aucune nouvelle couverture intégrale n’est déclarée.
