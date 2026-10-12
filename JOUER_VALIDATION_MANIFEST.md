@@ -1080,3 +1080,52 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - **L6** — 395 cartes — SHA `1ad24775b4bb87bf6579288d0932e616a53353b1` — **VALIDATED**
 - **Nature du contrôle :** revalidation structurelle ciblée uniquement. Les modifications concernées sont des permutations de propositions avec déplacement de `correctAnswer` afin d’équilibrer les positions ; le texte de la question, le fait biblique, la bonne réponse, l’explication et la référence restent sémantiquement identiques.
 - **Aucune relecture éditoriale intégrale supplémentaire n’est revendiquée.** Les validations sémantiques antérieures restent la base.
+
+
+## Bloc SEM-L1-002 — VALIDATED — 2026-10-12
+- Source : `src/data/characterQuestionsL1.ts`
+- SHA source validé : `3d6694cf8df4bd6e533f6617950bd2f3a2f4cc70`
+- Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
+- Taille : 284 cartes
+- État : VALIDATED
+- Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
+
+## Bloc SEM-L2-002 — VALIDATED — 2026-10-12
+- Source : `src/data/characterQuestionsL2.ts`
+- SHA source validé : `e925724168a8640156486d24d88532033f3462dd`
+- Périmètre : 290 cartes
+- Taille : 290 cartes
+- État : VALIDATED
+- Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
+
+## Bloc SEM-L3-002 — VALIDATED — 2026-10-12
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source validé : `830aa331eb41017f3ef43a412fb263b4e5b258f4`
+- Périmètre : 288 cartes
+- Taille : 288 cartes
+- État : VALIDATED
+- Contrôle : revalidation structurelle ciblée des cartes L3 déjà contrôlées et des permutations de propositions ; aucune relecture éditoriale intégrale revendiquée.
+
+## Bloc SEM-L4-002 — VALIDATED — 2026-10-12
+- Source : `src/data/characterQuestionsL4.ts`
+- SHA source validé : `0446d8020208db669480a29e1456df9b94b68585`
+- Périmètre : 292 cartes
+- Taille : 292 cartes
+- État : VALIDATED
+- Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
+
+## Bloc SEM-L5-002 — VALIDATED — 2026-10-12
+- Source : `src/data/characterQuestionsL5.ts`
+- SHA source validé : `038ff5f09283d6a61915febf5af707167cb06dac`
+- Périmètre : 290 cartes
+- Taille : 290 cartes
+- État : VALIDATED
+- Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
+
+## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
+- Source : `src/data/characterQuestionsL6.ts`
+- SHA source validé : `1ad24775b4bb87bf6579288d0932e616a53353b1`
+- Périmètre : 395 cartes
+- Taille : 395 cartes
+- État : VALIDATED
+- Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
