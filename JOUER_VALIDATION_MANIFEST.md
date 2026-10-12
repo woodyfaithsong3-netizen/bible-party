@@ -614,3 +614,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Revalidation ciblée de ces six cartes uniquement ; aucune nouvelle couverture intégrale n’est déclarée.
 
 - Ajustement CI du même lot : `char-l5-tf-87-4` et `char-l5-tf-88-4` restent des cartes Faux, avec des affirmations bibliquement réfutables et moins artificielles, afin de conserver l’équilibre Vrai/Faux de la banque L5.
+
+
+## Bloc SEM-LEGACY-CHALLENGES-001 — RETIRED — 2026-10-12
+- Périmètre : 139 cartes legacy de type challenge (challenge-*, V54/V55/V56 et jwcat-challenge-*).
+- Décision : retrait définitif du gameplay final ; elles ne sont plus injectées dans aucun des quatre modes officiels.
+- Motif : ces cartes imposent l'ancien format Défi 10 secondes et ne correspondent plus à l'architecture finale Quiz / Vrai-Faux / Qui est-ce ? / Compléter les paroles.
+- Contrôle : l'audit doit compter exactement 139 cartes legacy et échouer si l'une d'elles réapparaît dans GAME_CONTENT.
+- Important : elles restent dans les sources historiques pour ne pas modifier les blocs éditoriaux VALIDATED ; elles ne font plus partie du total des cartes jouables.
+- État : RETIRED ; 139/139 traitées ; 0 restante à migrer.

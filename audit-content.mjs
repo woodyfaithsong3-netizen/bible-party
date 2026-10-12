@@ -252,7 +252,6 @@ const requiredRoutingFragments = [
   ['Quiz ← quizQuestions', /\.\.\.quizQuestions\b/],
   ['Quiz ← quoteQuestions transformées', /\.\.\.quoteQuestions\.map\(/],
   ['Quiz ← intruderQuestions transformées', /\.\.\.intruderQuestions\.map\(/],
-  ['Quiz ← challenges historiques', /\.\.\.challenges\b/],
   ['Qui est-ce ? ← mysteryQuestions', /mystery:\s*\[\.\.\.mysteryQuestions\.map\(/],
   ['Qui est-ce ? ← timesUpQuestions transformées', /\.\.\.timesUpQuestions\.map\(/],
   ['Vrai/Faux ← toutes les trueFalseQuestions', /const all = trueFalseQuestions\.map\(prepareTrueFalse\)/],
@@ -273,12 +272,10 @@ if (/slice\(0,\s*maxTruths\)/.test(routingGameContent)) {
 // validation pour chaque type réellement injecté dans les quatre pools.
 const requiredRuntimeHandlers = [
   ['écran Quiz pour les cartes à choix', /mode === 'quiz' && question\.type === 'quiz'/],
-  ['écran Quiz pour les défis historiques conservés', /mode === 'quiz' && question\.type === 'challenge'/],
   ['écran Vrai/Faux', /mode === 'truefalse' && question\.type === 'truefalse'/],
   ['écran Qui est-ce ?', /mode === 'mystery' && question\.type === 'mystery'/],
   ['écran Compléter les paroles', /mode === 'complete' && question\.type === 'quiz'/],
   ['validation de réponse des cartes à choix', /question\.answers\[question\.correctAnswer\]/],
-  ['révélation/validation des cartes Défi historiques', /revealPanel\(masterAnswer, 200\)/],
 ];
 const missingRuntimeHandlers = requiredRuntimeHandlers.filter(([, pattern]) => !pattern.test(routingGameScreen));
 if (missingRuntimeHandlers.length) {
@@ -383,7 +380,7 @@ for (const file of playableSourceFiles) {
     if (routingQuestions.includes('...' + name)) routedBankNames.add(name);
   }
 }
-const sourceRouteProof = [];
+// Les challenges historiques sont retires des quatre modes officiels.\nconst legacyChallengeIds = new Set(\n  [...routingCode.matchAll(/id:\s*['\"](v54-d-[^'\"]+|v55-d-[^'\"]+|v56-d-[^'\"]+|v57-d-[^'\"]+|jwcat-challenge-[^'\"]+|challenge-\\d+)['\"]/g)].map(m => m[1])\n);\nif (legacyChallengeIds.size !== 139) failures.push('legacy challenge inventory expected 139, found ' + legacyChallengeIds.size);\nconst sourceRouteProof = [];
 for (const bank of exportedCardBanks) {
   const escapedName = bank.name.replace(/[.*+?^$()|[\\]\\]/g, '\\const unroutedCardBanks = exportedCardBanks.filter(bank => !routedBankNames.has(bank.name));');
   const directRoute = new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\b').test(routingQuestions);
@@ -416,11 +413,11 @@ const editorialRemovedBaseIds = new Set(
     .flatMap(match => [...match[1].matchAll(/['"]([^'"]+)['"]/g)].map(item => item[1]))
 );
 const allBaseQuestionIds = [...routingQuestions.matchAll(/\bid\s*:\s*['"]([^'"]+)['"]/g)].map(match => match[1]);
-const baseQuestionIds = allBaseQuestionIds.filter(id => !editorialRemovedBaseIds.has(id));
+const baseQuestionIds = allBaseQuestionIds.filter(id => !editorialRemovedBaseIds.has(id) && !legacyChallengeIds.has(id));
 sourceIds.push(...baseQuestionIds);
 const sourceIdCounts = new Map();
 for (const id of sourceIds) sourceIdCounts.set(id, (sourceIdCounts.get(id) ?? 0) + 1);
-const duplicateSourceIds = [...sourceIdCounts.entries()].filter(([, count]) => count > 1);
+const duplicateSourceIds = [...sourceIdCounts.entries()].filter(([, count]) => count > 1);\nconst playableLegacyChallengeIds = [...legacyChallengeIds].filter(id => routingGameContent.includes(id));\nif (playableLegacyChallengeIds.length) failures.push('retired legacy challenges still referenced by gameContent: ' + playableLegacyChallengeIds.join(', '));
 
 if (unroutedCardBanks.length) {
   failures.push('unrouted playable source banks: ' + unroutedCardBanks.map(bank => bank.name + ' (' + bank.cardCount + ')').join(', '));

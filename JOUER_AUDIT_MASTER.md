@@ -582,3 +582,13 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 - Répartition : `questions.ts` 24, V55 8, V56 12, V57 87, `jwCategories.ts` 8.
 - Statut de ces 139 cartes : `MIGRATION_REQUIRED` (pas une absence de couverture éditoriale). Ne pas les compter comme conformes au mode final avant conversion ou retrait individuel.
 - Règle : ne pas supprimer tout le lot ; convertir seulement si une bonne réponse unique et des distracteurs plausibles peuvent être garantis, transférer vers Qui est-ce ? uniquement les cartes réellement centrées sur une personne, sinon archiver après contrôle.
+
+
+## État final des 139 cartes legacy Défi — 2026-10-12
+Les 139 cartes type challenge historiques ont été traitées en une seule passe : elles sont désormais RETIRÉES du gameplay final. Elles ne doivent plus être comptées parmi les cartes jouables à valider.
+
+- Elles restent dans les fichiers sources uniquement comme historique afin de préserver les SHA des blocs éditoriaux déjà VALIDATED.
+- gameContent.ts ne les injecte plus dans Quiz.
+- audit-content.mjs vérifie qu'il existe exactement 139 IDs legacy et qu'aucun n'est réintroduit dans GAME_CONTENT.
+- Les quatre modes finaux restent exclusivement : Quiz, Vrai/Faux, Qui est-ce ?, Compléter les paroles.
+- Statut : 139/139 traitées — RETIRED — 0 restante à migrer.
