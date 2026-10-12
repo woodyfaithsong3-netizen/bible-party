@@ -692,3 +692,15 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - SHA : `4bce6f6a9a71c3cf8e1dd5972f97c77c654df0df`
 - `char-l3-q-49-10` rend la question directe sur la mise en pratique de la Loi par Esdras ; `char-l3-q-58-08` demande directement pourquoi Paul remerciait Dieu au sujet de Philémon ; `char-l3-m-57-2` utilise trois indices concrets et non redondants pour Onésime.
 - Réponses, explications et références conservées et contrôlées individuellement. Les 285 autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
+
+## Bloc SEM-CHRONO-001 — VALIDATED — 2026-10-12
+- Source : `src/data/chronologyQuestions.ts`
+- SHA source validé : `5b978b2b521014e7b9c2c816c44bfbe04347c1a3`
+- Périmètre : `chrono-01`–`chrono-52` — chronologie biblique, de la période patriarcale jusqu'à la destruction de Jérusalem en 70 de n. è.
+- Taille : 52 cartes
+- État : VALIDATED
+- Contrôles : structure, 4 réponses/index, absence de fuite de réponse, formulation directe, distinction des événements et des dates, plausibilité des distracteurs, cohérence des explications et références, jouabilité en Quiz.
+- Contrôle éditorial : les 52 cartes ont été contrôlées individuellement ; les dates et événements sont alignés sur la chronologie de JW.org utilisée par le fichier.
+- Références principales : Frise chronologique de la Bible — JW.org ; Esdras 6:14-15 pour l'achèvement du temple.
+- Exceptions ouvertes : aucune.
+- Règle : ne pas réauditer tant que le SHA source reste inchangé.
