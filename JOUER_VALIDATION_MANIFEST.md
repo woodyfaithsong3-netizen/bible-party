@@ -1103,6 +1103,8 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l2-q-30-08` reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés.
 
+- Revalidation ciblée complémentaire du 12/10/2026 : `char-l2-q-32-01` reformulée en question factuelle directe sur la parenté de Léa et Rachel ; réponse, index, explication et référence contrôlés.
+
 ## Bloc SEM-L3-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL3.ts`
 - SHA source validé : `7af3421aaa2667bc84dfb8a2d58d2009737ec7d2`
