@@ -929,3 +929,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Carte ciblée : `char-l3-q-59-06`
 - Contrôle : formulation rendue directe et factuelle ; la question porte désormais sur le critère biblique concernant les enfants d’un ancien, sans formulation abstraite sur une « qualité ».
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (trois cartes Quiz Isaïe/Ézékiel/Esdras)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `737d479676c17abf1229b6f67748238007c1ebc3`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes ciblées : `char-l3-q-46-09`, `char-l3-q-48-01`, `char-l3-q-49-05`
+- Contrôle : questions et explications réalignées sur les faits bibliques précis ; correction des références et suppression d’une explication qui ne répondait pas à la question.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
