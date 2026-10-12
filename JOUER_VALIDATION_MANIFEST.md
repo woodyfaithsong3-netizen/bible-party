@@ -828,3 +828,14 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Vérifications : question différenciée de `char-l3-q-53-09`, réponse unique, explication et référence alignées sur Malachie 1:11.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
 - Exceptions ouvertes : aucune.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (quatre cartes Quiz Esdras/Aggée)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA : `1c50e398ef3e73b3547222677ebd6d08d2b78ba4`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes recontrôlées : `char-l3-q-49-02`, `char-l3-q-49-06`, `char-l3-q-49-07`, `char-l3-q-51-01`.
+- Corrections : suppression de répétitions conceptuelles ; ajout de faits distincts et directement jouables sur la compétence de copiste d’Esdras, son arrivée à Jérusalem, sa lignée sacerdotale et le message d’Aggée.
+- Réponses, explications et références réalignées sur Esdras 7:1-10 et Aggée 1:1-5.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
