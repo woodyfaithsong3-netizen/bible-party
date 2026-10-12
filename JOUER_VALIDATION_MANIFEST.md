@@ -967,7 +967,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ### Revalidation ciblée L3 — 2026-10-12 (5 Quiz répétitifs/réécrits)
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source : `bc06117db527ca2d41f19aba8c09ac17b1acd75d`
+- SHA source : `66d17b243f7b637f3d5ccea3acb526ff7aab3378`
 - Taille : 288 cartes
 - État : VALIDATED
 - Cartes : `char-l3-q-49-08`, `char-l3-q-49-10`, `char-l3-q-50-01`, `char-l3-q-50-07`, `char-l3-q-51-05`.
@@ -979,4 +979,4 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - SHA source : `bc06117db527ca2d41f19aba8c09ac17b1acd75d`
 - Taille : 288 cartes
 - État : VALIDATED
-- Correction : virgule manquante après `char-l3-q-51-05`, sans changement sémantique.
+- Correction technique : virgule manquante après `char-l3-q-51-05` corrigée et typecheck relancé., sans changement sémantique.
