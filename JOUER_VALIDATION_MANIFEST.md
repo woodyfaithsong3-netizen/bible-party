@@ -879,3 +879,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes ciblées : `char-l3-q-43-06`, `char-l3-q-47-04`, `char-l3-q-47-06`, `char-l3-q-47-08`, `char-l3-q-47-10`
 - Contrôle : suppression de plusieurs questions quasi répétées sur la persévérance de Jérémie ; remplacement par des faits bibliques distincts (Jérémie 20:1-2, 20:9, 26:2, 26:16) et correction de la carte Joab/Ahimaaz selon 2 Samuel 18:19-23.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (quatre cartes Quiz Ézékiel/Aggée)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `c95c42a3cbf44d7850965f7dd38123f320780808`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes ciblées : `char-l3-q-48-09`, `char-l3-q-48-10`, `char-l3-q-51-02`, `char-l3-q-51-06`
+- Contrôle : remplacement de questions redondantes par des faits bibliques distincts et directement vérifiables ; références resserrées sur Ézékiel 2:5-7, 4:1-3 et Aggée 1:2-8.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
