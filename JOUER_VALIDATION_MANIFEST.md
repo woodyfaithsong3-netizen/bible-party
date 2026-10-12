@@ -989,3 +989,11 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - État : RECHECK CI/Pages
 - Cartes : `char-l3-q-52-04`, `char-l3-q-52-09`, `char-l3-q-53-04`, `char-l3-q-53-08`.
 - Contrôle : formulations resserrées, faits bibliques distincts, réponses et explications réalignées, références conservées sur le fait demandé.
+
+
+### Revalidation structurelle globale — 2026-10-12 (équilibrage des positions Quiz)
+- État : RECHECK CI/Pages
+- Motif : l'audit global a signalé `correctAnswer` déséquilibrés (412/305/284/249) ; la jouabilité impose au moins 20 % par position.
+- Méthode : déplacement de la bonne réponse de l'index 0 vers l'index 1 par permutation de deux propositions uniquement ; aucun fait, distracteur ou réponse correcte n'a été changé.
+- Cartes déplacées : L1 7, L2 30, L4 128, L5 22 ; L3 et L6 laissés inchangés.
+- SHAs source : L1 `d2069433007555a17657a841a3fbdba6c59fe882`, L2 `990d53905318791a277f9b6526d7dc75c68bd9e9`, L4 `0446d8020208db669480a29e1456df9b94b68585`, L5 `6c235c7fdd0b66f1076e8323f86ada415bdf5e88`.
