@@ -337,7 +337,7 @@ for (const file of playableSourceFiles) {
     });
     const escapedName = name.replace(/[.*+?^$()|[\\]\\]/g, '\\$&');
     const routedByQuestions =
-      new RegExp(  const directRoute = new RegExp(\\(\\s*\\.\\.\\.' + escapedName + '\\b').test(routingQuestions)
+      new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\b').test(routingQuestions)
       || new RegExp('(?:quizQuestions|trueFalseQuestions|mysteryQuestions|timesUpQuestions|quoteQuestions|intruderQuestions|challenges)\\.push\\(\\s*\\.\\.\\.' + escapedName + '\\.(?:map|filter)\\(').test(routingQuestions);
     const routedByGameContent =
       new RegExp('\\.\\.\\.' + escapedName + '\\b').test(routingGameContent)
