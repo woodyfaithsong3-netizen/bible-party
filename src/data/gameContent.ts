@@ -18,7 +18,9 @@ function prepareQuiz(q: QuizQuestion): QuizQuestion {
 function prepareMystery(q: Extract<Question, { type: 'mystery' }>) {
   return { ...q, category: canonicalGameCategory(q.category), clues: q.clues.map((clue) => String(clue || '').replace(/\s+/g, ' ').trim()) };
 }
-// Les 139 cartes historiques de type challenge sont volontairement retirees du gameplay final.\n// Les quatre modes officiels ne doivent plus exposer de Defi 10 s / 30 s.\nconst integratedQuizQuestions: Question[] = [
+// Les 139 cartes historiques de type challenge sont volontairement retirees du gameplay final.
+// Les quatre modes officiels ne doivent plus exposer de Defi 10 s / 30 s.
+const integratedQuizQuestions: Question[] = [
   ...quizQuestions,
   ...quoteQuestions.map((q) => ({ id:q.id, type:'quiz' as const, category:q.category, difficulty:q.difficulty, question:q.quote, answers:q.answers, correctAnswer:q.correctAnswer, explanation:q.explanation, reference:q.reference })),
   ...intruderQuestions.map((q) => ({ id:q.id, type:'quiz' as const, category:q.category, difficulty:q.difficulty, question:'Quel élément est l’intrus ?', answers:q.items, correctAnswer:q.intruder, explanation:q.explanation, reference:q.reference })),
