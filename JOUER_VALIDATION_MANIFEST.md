@@ -761,3 +761,15 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Les questions ont été rendues plus directes et centrées sur le fait biblique demandé, sans modifier les réponses, explications ou références validées.
 - Les autres cartes L3 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
 - Exceptions ouvertes : aucune.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (quatre cartes Quiz)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA : `ce4fccd366f021f8e78e236de12436a729665eb9`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes relues et corrigées individuellement : `char-l3-q-43-01`, `char-l3-q-43-04`, `char-l3-q-45-06`, `char-l3-q-45-10`.
+- Les formulations vagues ou trop générales ont été remplacées par des questions directes ; les distracteurs ont été rendus plus plausibles et centrés sur le fait biblique demandé.
+- Réponses, explications et références contrôlées individuellement sur ce périmètre.
+- Les autres cartes L3 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
+- Exceptions ouvertes : aucune.
