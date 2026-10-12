@@ -1095,7 +1095,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L2-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `9b6e0d706a99118073146b6ce31ed4a06cdd7f8f`
+- SHA source validé : `53a353871a7dbb7ffb6b511c07dc8f87059afb76`
 - Périmètre : 290 cartes
 - Taille : 290 cartes
 - État : VALIDATED
