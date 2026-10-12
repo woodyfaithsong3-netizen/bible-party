@@ -943,9 +943,18 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ### Revalidation ciblée L3 — 2026-10-12 (huit cartes Quiz — index correctAnswer)
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source : `53718aa376a786a13938e990ab0f9f9b73c68945`
+- SHA source : `b4e92ec48d6cdba1abbb053d5027b23416ad8af4`
 - Taille : 288 cartes
 - État : VALIDATED
 - Cartes ciblées : `char-l3-q-43-06`, `char-l3-q-47-04`, `char-l3-q-47-08`, `char-l3-q-57-10`, `char-l3-q-58-06`, `char-l3-q-58-09`, `char-l3-q-58-10`, `char-l3-q-59-10`.
 - Contrôle : chaque `correctAnswer` a été comparé à la position réelle de la bonne proposition. Les index erronés ont été réalignés ; les options ont ensuite été réordonnées sans changer la bonne réponse ni le sens des cartes, afin de conserver l’équilibrage global des positions.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (Zacharie + Eutyche — alignement réponses)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `b4e92ec48d6cdba1abbb053d5027b23416ad8af4`
+- Taille : 288 cartes
+- État : RECHECK en attente CI/Pages
+- Cartes ciblées : `char-l3-q-52-02`, `char-l3-q-60-06`, `char-l3-q-60-08`, `char-l3-q-60-10`.
+- Contrôle : vérification question/réponse/explication/référence. Les réponses correctes ont été placées en dernière position après contrôle du fait biblique, sans changer le sens des cartes.
