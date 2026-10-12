@@ -1101,11 +1101,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L3-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `c32ebc0b2577412db13c16ea6525f158ee5e6426`
+- SHA source validé : `a415a6bb2c8bd62d2d330048a3eda6aa92c24e2c`
 - Périmètre : 288 cartes
 - Taille : 288 cartes
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des cartes L3 déjà contrôlées et des permutations de propositions ; aucune relecture éditoriale intégrale revendiquée.
+- Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-56-09` reformulée en question factuelle sur l’emprisonnement à Philippes ; réponse, index, explication et référence contrôlés.
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-57-06` reformulée en question directe sur le retour d’Onésime auprès de Philémon ; réponse, index, explication et référence contrôlés.
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-57-04` (Onésime) a été reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés.
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-44-07` (Hérode Antipas/Hérodiade) a été reformulée en question factuelle directe avec des propositions cohérentes ; réponse, index, explication et référence contrôlés.
