@@ -939,3 +939,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes ciblées : `char-l3-q-46-09`, `char-l3-q-48-01`, `char-l3-q-49-05`
 - Contrôle : questions et explications réalignées sur les faits bibliques précis ; correction des références et suppression d’une explication qui ne répondait pas à la question.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (huit cartes Quiz — index correctAnswer)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `13c5e1f3a7ec00dedceaa3237383bdcfbd5b2292`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes ciblées : `char-l3-q-43-06`, `char-l3-q-47-04`, `char-l3-q-47-08`, `char-l3-q-57-10`, `char-l3-q-58-06`, `char-l3-q-58-09`, `char-l3-q-58-10`, `char-l3-q-59-10`.
+- Contrôle : chaque `correctAnswer` a été comparé à la position réelle de la bonne proposition ; les index erronés ont été réalignés sans modifier la formulation, les réponses, explications ou références.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
