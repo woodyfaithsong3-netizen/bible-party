@@ -899,3 +899,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes ciblées : `char-l3-q-52-02`, `char-l3-q-52-10`, `char-l3-q-57-10`, `char-l3-q-58-06`
 - Contrôle : suppression de doublons sémantiques ; remplacement par des détails bibliques distincts et directement vérifiables dans Zacharie 1:7-11, 4:8-10 et Philémon 10-17.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (quatre cartes Quiz Philémon/Tite)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `40bfeea03bcde79758ecf61201e321e2ec1bdb78`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes ciblées : `char-l3-q-58-09`, `char-l3-q-58-10`, `char-l3-q-59-06`, `char-l3-q-59-10`
+- Contrôle : suppression de répétitions sur la maison de Philémon et l’organisation de la Crète ; remplacement par des faits distincts de Philémon 1, 22 et Tite 1:5-6, 3:12.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
