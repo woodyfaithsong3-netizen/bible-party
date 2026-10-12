@@ -788,7 +788,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ### Revalidation ciblée L3 — 2026-10-12 (trois cartes Quiz Joab)
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA : `5c09ca5fc9f95dde0565c9b34ec31f137a001aa0`
+- SHA : `c1064edfe5ca5512bea83f36ae62c882ffa34aa7`
 - Taille : 288 cartes
 - État : VALIDATED
 - Cartes relues et corrigées individuellement : `char-l3-q-43-03`, `char-l3-q-43-05`, `char-l3-q-43-07`.
