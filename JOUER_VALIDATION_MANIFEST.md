@@ -653,3 +653,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Contrôle ciblé : cinq cartes factuelles ont été corrigées et relues individuellement : `char-l5-q-81-3`, `char-l5-q-81-5`, `char-l5-q-83-8`, `char-l5-q-84-6`, `char-l5-q-84-7`.
 - Les 285 autres cartes conservent la validation éditoriale antérieure.
 - Exceptions ouvertes : aucune.
+## Bloc SEM-L5-006 — REVALIDATED — 2026-10-12
+- Source : `src/data/characterQuestionsL5.ts`
+- SHA : `fe08c0295d6e2a35b076cd953388be90e627f746`
+- Taille : 290 cartes
+- État : VALIDATED
+- Périmètre : 290 cartes L5.
+- Contrôle ciblé : neuf cartes ont été corrigées et relues individuellement : `char-l5-q-81-10`, `char-l5-q-87-5`, `char-l5-q-90-4`, `char-l5-q-95-3`, `char-l5-tf-83-1`, `char-l5-tf-84-1`, `char-l5-tf-85-1`, `char-l5-tf-86-1`, `char-l5-tf-87-1`.
+- Les 281 autres cartes conservent la validation éditoriale antérieure.
+- Exceptions ouvertes : aucune.
