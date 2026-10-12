@@ -623,3 +623,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Contrôle : l'audit doit compter exactement 139 cartes legacy et échouer si l'une d'elles réapparaît dans GAME_CONTENT.
 - Important : elles restent dans les sources historiques pour ne pas modifier les blocs éditoriaux VALIDATED ; elles ne font plus partie du total des cartes jouables.
 - État : RETIRED ; 139/139 traitées ; 0 restante à migrer.
+
+
+## Revalidation ciblée SEM-MYSTERY-L6-002 — 2026-10-12
+- Source : `src/data/characterQuestionsL6.ts`.
+- Nouveau SHA source : `8a0040a342bc9ded4f0f52b78f013290ed3edbd6`.
+- Cartes contrôlées individuellement : `char-l6-m-101-2` et `char-l6-m-102-2`.
+- `char-l6-m-101-2` a été différenciée de `char-l6-m-101-1` par des indices sur Moresheth, le jugement de Samarie/Jérusalem et Bethléhem ; référence réalignée sur Michée 1:1, 5; 5:1.
+- `char-l6-m-102-2` a été différenciée de `char-l6-m-102-1` par les indices sur le malheur de Jacob, la réaction d’Édom et les rescapés du mont Sion ; référence réalignée sur Abdias 10-17.
+- Réponses, explications et références vérifiées individuellement. Les autres cartes L6 conservent leur validation antérieure ; cette note ne constitue pas une relecture intégrale de L6.
