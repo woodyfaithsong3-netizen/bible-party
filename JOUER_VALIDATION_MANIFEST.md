@@ -1133,7 +1133,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ### Revalidation ciblée L3 — 2026-10-12 (cinq Quiz Zacharie/Malachie)
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source : `8b9cc84c35801ac68769d91335fc8006430744a4`
+- SHA source : `7b83375a7e2b1326e7efd68b0cf3e847688d1b1b`
 - Taille : 288 cartes
 - État : VALIDATED
 - Cartes ciblées : `char-l3-q-52-09`, `char-l3-q-53-03`, `char-l3-q-53-04`, `char-l3-q-53-08`, `char-l3-q-53-10`.
