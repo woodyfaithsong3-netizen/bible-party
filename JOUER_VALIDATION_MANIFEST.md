@@ -972,3 +972,11 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - État : VALIDATED
 - Cartes : `char-l3-q-49-08`, `char-l3-q-49-10`, `char-l3-q-50-01`, `char-l3-q-50-07`, `char-l3-q-51-05`.
 - Contrôle : réduction des répétitions conceptuelles ; questions rendues factuelles et autonomes ; réponses, index, explications et références réalignés.
+
+
+### Correction technique L3 — 2026-10-12
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `bc06117db527ca2d41f19aba8c09ac17b1acd75d`
+- Taille : 288 cartes
+- État : VALIDATED
+- Correction : virgule manquante après `char-l3-q-51-05`, sans changement sémantique.
