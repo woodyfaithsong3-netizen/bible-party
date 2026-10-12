@@ -664,6 +664,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 ## Bloc SEM-L6-004 — REVALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
 - SHA courant : `43da5abf3bbc4504b7534abeac1fcc61d589bf37`
+- Taille : 395 cartes
 - Inventaire source : **395 cartes** (3 banques : Quiz, Vrai/Faux, Qui est-ce ?)
 - Couverture : les 395 cartes L6 sont couvertes par ce SHA exact ; les quatre cartes modifiées dans le commit précédent ont été contrôlées individuellement : `char-l6-q-104-9`, `char-l6-q-114-7`, `char-l6-q-116-10`, `char-l6-q-120-9`.
 - Les 391 autres cartes conservent leur validation éditoriale antérieure ; ce bloc ne prétend pas constituer une nouvelle relecture intégrale.
