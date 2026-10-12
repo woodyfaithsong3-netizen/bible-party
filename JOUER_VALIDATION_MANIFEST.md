@@ -954,11 +954,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ### Revalidation ciblée L3 — 2026-10-12 (Zacharie + Eutyche — alignement réponses)
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source : `309912583ab14a0d0691d558b12e7f5fce386527`
+- SHA source : `0d5a96d73f0999561eed545365254a28681e75e8`
 - Taille : 288 cartes
 - État : VALIDATED
 - Clôture : les quatre cartes ciblées ont été contrôlées individuellement ; les autres cartes conservent leur validation antérieure. CI et GitHub Pages doivent confirmer cette clôture.
 - Cartes ciblées : `char-l3-q-52-02`, `char-l3-q-60-06`, `char-l3-q-60-08`, `char-l3-q-60-10`.
 - Revalidation Vrai/Faux ajoutée : `char-l3-tf-46-2`, `char-l3-tf-56-2`, `char-l3-tf-60-3` ; formulations, réponses, explications et références contrôlées. Le lot L3 revient à un équilibre V/F de 24/24.
 - Revalidation Mystère ajoutée : `char-l3-m-46-2`, `char-l3-m-47-2`, `char-l3-m-48-2`, `char-l3-m-49-2` ; indices rendus autonomes et distinctifs, doublon d’indice supprimé et explications réalignées.
+- Revalidation Quiz ajoutée : `char-l3-q-45-02`, `char-l3-q-47-05`, `char-l3-q-50-02`, `char-l3-q-57-02` ; explications rendues directement justificatives de la réponse.
 - Contrôle : vérification question/réponse/explication/référence. Les réponses correctes ont été placées en dernière position après contrôle du fait biblique, sans changer le sens des cartes.
