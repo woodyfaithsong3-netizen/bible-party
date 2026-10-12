@@ -150,7 +150,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Exceptions ouvertes : aucune.
 - Revalidation ciblée complémentaire : `char-l3-q-42-07` précise le filet de poils de chèvre placé à la tête de la statue (1 Samuel 19:13-16) ; `char-l3-q-57-08` porte sur le souhait de Paul de garder Onésime pour le servir en prison (Philémon 13-14) ; `char-l3-q-57-09` porte sur la demande de Paul à Philémon de rafraîchir son cœur (Philémon 20). Ces cartes remplacent des répétitions résiduelles par des faits distincts.
 - Revalidation ciblée complémentaire du 09/10/2026 : six cartes Vrai/Faux ont été réécrites pour corriger des répétitions et erreurs de rôles : `char-l3-tf-49-2` (Esdras/Néhémie), `char-l3-tf-50-2` (Zorobabel/Néhémie), `char-l3-tf-53-2` (offrandes condamnées par Malachie), `char-l3-tf-54-2` (Gamaliel pharisien), `char-l3-tf-55-2` (Apollos d’Alexandrie) et `char-l3-tf-57-2` (Onésime et Philémon). Réponses, explications et références vérifiées ; 6 propositions fausses précises ajoutées.
-- `char-l3-q-46-04` a été relue et reformulée en question factuelle directe ; 287 cartes conservent leur validation antérieure. Cette passe ne constitue pas une relecture intégrale du bloc.
+- `char-l3-q-46-04` a été relue et reformulée en question factuelle directe ; 284 cartes conservent leur validation antérieure. Cette passe ne constitue pas une relecture intégrale du bloc.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
 
 
@@ -265,7 +265,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## SEM-CHRONO-001
 - Source : `src/data/chronologyQuestions.ts`
-- SHA : `5b978b2b521014e7b9c2c816c44bfbe04347c1a3`
+- SHA : `4bce6f6a9a71c3cf8e1dd5972f97c77c654df0df`
 - 52 cartes Chronologie → Quiz.
 - État : VALIDATED
 - CI + GitHub Pages : verts.
@@ -684,3 +684,10 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes relues et corrigées : `char-l4-q-62-2`, `char-l4-q-64-5`, `char-l4-q-65-1`, `char-l4-q-71-8`, `char-l4-q-77-7`, `char-l4-q-77-9`, `char-l4-m-76-1`.
 - 285 cartes L4 conservent leur validation antérieure.
 - Aucun autre fichier AVENTURE ou Ma Bible modifié.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (trois cartes)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA : `4bce6f6a9a71c3cf8e1dd5972f97c77c654df0df`
+- `char-l3-q-49-10` rend la question directe sur la mise en pratique de la Loi par Esdras ; `char-l3-q-58-08` demande directement pourquoi Paul remerciait Dieu au sujet de Philémon ; `char-l3-m-57-2` utilise trois indices concrets et non redondants pour Onésime.
+- Réponses, explications et références conservées et contrôlées individuellement. Les 285 autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale de L3.
