@@ -919,3 +919,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes ciblées : `char-l3-q-60-06`, `char-l3-q-60-08`, `char-l3-q-60-10`
 - Contrôle : réduction des répétitions autour de l’endormissement et de la chute d’Eutyche ; questions désormais distinctes sur son état après la chute, la consolation des frères et la raison du discours prolongé de Paul (Actes 20:7-12).
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (une carte Quiz Tite)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `0814b6e463cc445dc2c48570228994f27552b0d1`
+- Taille : 288 cartes
+- État : VALIDATED
+- Carte ciblée : `char-l3-q-59-06`
+- Contrôle : formulation rendue directe et factuelle ; la question porte désormais sur le critère biblique concernant les enfants d’un ancien, sans formulation abstraite sur une « qualité ».
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
