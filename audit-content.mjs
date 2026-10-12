@@ -380,12 +380,12 @@ for (const file of playableSourceFiles) {
     if (routingQuestions.includes('...' + name)) routedBankNames.add(name);
   }
 }
-// Les challenges historiques sont retires des quatre modes officiels.
-// Les challenges historiques sont retires des quatre modes officiels.
+// Les anciens Défis ont été retirés des quatre modes officiels.
+// L'audit vérifie qu'aucun identifiant de Défi historique encore présent
+// dans le code n'est rendu jouable. Une source propre peut donc contenir 0.
 const legacyChallengeIds = new Set(
   [...routingCode.matchAll(/(?:id|questionId|cardId):\\s*['"]((?:v54|v55|v56|v57)-d-[^'"]+|jwcat-challenge-[^'"]+|challenge-\\d+)['"]/g)].map(m => m[1])
 );
-if (legacyChallengeIds.size !== 139) failures.push('legacy challenge inventory expected 139, found ' + legacyChallengeIds.size);
 const sourceRouteProof = [];
 for (const bank of exportedCardBanks) {
   const escapedName = bank.name.replace(/[.*+?^$()|[\]\\]/g, '\\$&');
