@@ -963,3 +963,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Revalidation Mystère ajoutée : `char-l3-m-46-2`, `char-l3-m-47-2`, `char-l3-m-48-2`, `char-l3-m-49-2` ; indices rendus autonomes et distinctifs, doublon d’indice supprimé et explications réalignées.
 - Revalidation Quiz ajoutée : `char-l3-q-45-02`, `char-l3-q-47-05`, `char-l3-q-50-02`, `char-l3-q-57-02` ; explications rendues directement justificatives de la réponse.
 - Contrôle : vérification question/réponse/explication/référence. Les réponses correctes ont été placées en dernière position après contrôle du fait biblique, sans changer le sens des cartes.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (5 Quiz répétitifs/réécrits)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `bc06117db527ca2d41f19aba8c09ac17b1acd75d`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes : `char-l3-q-49-08`, `char-l3-q-49-10`, `char-l3-q-50-01`, `char-l3-q-50-07`, `char-l3-q-51-05`.
+- Contrôle : réduction des répétitions conceptuelles ; questions rendues factuelles et autonomes ; réponses, index, explications et références réalignés.
