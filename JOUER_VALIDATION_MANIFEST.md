@@ -859,3 +859,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes ciblées : `char-l3-q-55-07`, `char-l3-q-55-08`, `char-l3-q-55-09`
 - Contrôle : distracteurs rendus plus plausibles et bibliquement cohérents, sans modifier les bonnes réponses ni les références.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (trois cartes Quiz Isaïe/Hérode)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `47d36a0ec9c285aababa633cc43a9667b74c1ff1`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes ciblées : `char-l3-q-44-05`, `char-l3-q-44-09`, `char-l3-q-46-05`
+- Contrôle : formulation rendue plus exacte et directe ; la carte d’Achaz ne prétend plus qu’il demanda le signe, puisque Jéhovah lui proposa de le demander et qu’Achaz refusa ; les cartes d’Hérode sont resserrées sur le récit biblique.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
