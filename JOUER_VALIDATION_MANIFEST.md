@@ -980,3 +980,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Taille : 288 cartes
 - État : VALIDATED
 - Correction technique : virgule manquante après `char-l3-q-51-05` corrigée et typecheck relancé., sans changement sémantique.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (4 Quiz — répétitions Zacharie/Malachie)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `830aa331eb41017f3ef43a412fb263b4e5b258f4`
+- Taille : 288 cartes
+- État : RECHECK CI/Pages
+- Cartes : `char-l3-q-52-04`, `char-l3-q-52-09`, `char-l3-q-53-04`, `char-l3-q-53-08`.
+- Contrôle : formulations resserrées, faits bibliques distincts, réponses et explications réalignées, références conservées sur le fait demandé.
