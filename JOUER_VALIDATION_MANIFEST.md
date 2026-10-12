@@ -1142,7 +1142,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `3670097e2284347111f31035108228189fd2e136`
+- SHA source validé : `d344f4193afc6f8ffee14ef237efea1c871f0a95`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
@@ -1161,3 +1161,5 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l6-q-109-4` reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés.
 
 - Revalidation ciblée complémentaire du 12/10/2026 : L4 `char-l4-q-62-4`, L5 `char-l5-q-81-9`, `char-l5-q-85-3`, L6 `char-l6-q-102-6`, `char-l6-q-115-2`, `char-l6-q-119-2`, `char-l6-q-123-8`, `char-l6-q-124-5` reformulées en questions factuelles directes ; réponses, index, explications et références contrôlés.
+
+- Revalidation ciblée complémentaire du 12/10/2026 : `char-l6-q-122-6` reformulée pour supprimer le doublon avec `char-l6-q-122-3` ; réponse, index, explication et référence contrôlés.
