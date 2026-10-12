@@ -817,3 +817,14 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Vérifications : questions directes et distinctes des cartes voisines ; réponses, explications et références cohérentes avec les textes bibliques indiqués.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
 - Exceptions ouvertes : aucune.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (une carte Quiz Malachie)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA : `fd9f0c72434487f09757e2e9275bee9777ed4ad1`
+- Taille : 288 cartes
+- État : VALIDATED
+- Carte relue/corrigée : `char-l3-q-53-05`
+- Vérifications : question différenciée de `char-l3-q-53-09`, réponse unique, explication et référence alignées sur Malachie 1:11.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+- Exceptions ouvertes : aucune.
