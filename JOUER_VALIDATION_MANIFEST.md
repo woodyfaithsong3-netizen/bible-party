@@ -839,3 +839,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Corrections : suppression de répétitions conceptuelles ; ajout de faits distincts et directement jouables sur la compétence de copiste d’Esdras, son arrivée à Jérusalem, sa lignée sacerdotale et le message d’Aggée.
 - Réponses, explications et références réalignées sur Esdras 7:1-10 et Aggée 1:1-5.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (une carte Mystère Joab)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA : `a16d9fcf6d42af16953b7cf80be4fbb383ca7594`
+- Taille : 288 cartes
+- État : VALIDATED
+- Carte recontrôlée : `char-l3-m-43-2`.
+- Correction : indice rendu plus concret et directement relié au récit de 2 Samuel 19:1-8, sans formulation interprétative inutile.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
