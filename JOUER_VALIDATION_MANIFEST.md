@@ -889,3 +889,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes ciblées : `char-l3-q-48-09`, `char-l3-q-48-10`, `char-l3-q-51-02`, `char-l3-q-51-06`
 - Contrôle : remplacement de questions redondantes par des faits bibliques distincts et directement vérifiables ; références resserrées sur Ézékiel 2:5-7, 4:1-3 et Aggée 1:2-8.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+
+### Revalidation ciblée L3 — 2026-10-12 (quatre cartes Quiz Zacharie/Onésime/Philémon)
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source : `c1583ad0d2097c037a32a841efdc33fa8f7cff85`
+- Taille : 288 cartes
+- État : VALIDATED
+- Cartes ciblées : `char-l3-q-52-02`, `char-l3-q-52-10`, `char-l3-q-57-10`, `char-l3-q-58-06`
+- Contrôle : suppression de doublons sémantiques ; remplacement par des détails bibliques distincts et directement vérifiables dans Zacharie 1:7-11, 4:8-10 et Philémon 10-17.
+- Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
