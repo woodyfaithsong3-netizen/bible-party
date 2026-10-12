@@ -644,3 +644,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Les 391 autres cartes conservent la validation éditoriale antérieure ; ce bloc met à jour la couverture SHA après les quatre modifications ciblées.
 - Contrôles : formulations factuelles, réponses uniques, références alignées.
 - Exceptions ouvertes : aucune.
+## Bloc SEM-L5-005 — REVALIDATED — 2026-10-12
+- Source : `src/data/characterQuestionsL5.ts`
+- SHA : `08cf2a642b44f12e48222bf636ad0569bc26763d`
+- Taille : 290 cartes
+- État : VALIDATED
+- Périmètre : 290 cartes L5.
+- Contrôle ciblé : cinq cartes factuelles ont été corrigées et relues individuellement : `char-l5-q-81-3`, `char-l5-q-81-5`, `char-l5-q-83-8`, `char-l5-q-84-6`, `char-l5-q-84-7`.
+- Les 285 autres cartes conservent la validation éditoriale antérieure.
+- Exceptions ouvertes : aucune.
