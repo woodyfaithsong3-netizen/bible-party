@@ -1085,23 +1085,27 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L1-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `3d6694cf8df4bd6e533f6617950bd2f3a2f4cc70`
+- SHA source validé : `0e7f26095af6a543de032545626ad46db292f528`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - Taille : 284 cartes
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
 
+- Revalidation ciblée complémentaire du 12/10/2026 : `char-l1-q-17-07` reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés.
+
 ## Bloc SEM-L2-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `e925724168a8640156486d24d88532033f3462dd`
+- SHA source validé : `9b6e0d706a99118073146b6ce31ed4a06cdd7f8f`
 - Périmètre : 290 cartes
 - Taille : 290 cartes
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
 
+- Revalidation ciblée complémentaire du 12/10/2026 : `char-l2-q-30-08` reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés.
+
 ## Bloc SEM-L3-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `cb112a1f4b79fc113829c9aea37568d9c29eafbe`
+- SHA source validé : `7af3421aaa2667bc84dfb8a2d58d2009737ec7d2`
 - Périmètre : 288 cartes
 - Taille : 288 cartes
 - État : VALIDATED
@@ -1113,6 +1117,8 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-57-04` (Onésime) a été reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés.
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-44-07` (Hérode Antipas/Hérodiade) a été reformulée en question factuelle directe avec des propositions cohérentes ; réponse, index, explication et référence contrôlés.
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-58-05` (Philémon, demande de Paul concernant Onésime) a été reformulée en question factuelle directe ; `char-l3-q-54-04` (Gamaliel) a été reformulée en question factuelle directe sur sa fonction ; réponses, index, explications et références contrôlés. Les autres cartes restent couvertes par les validations antérieures.
+
+- Revalidation ciblée complémentaire du 12/10/2026 : `char-l3-q-53-09` reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés.
 
 ## Bloc SEM-L4-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL4.ts`
@@ -1132,7 +1138,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `1ad24775b4bb87bf6579288d0932e616a53353b1`
+- SHA source validé : `b87d08ece70dd9616fb359072d73969beccd0ef6`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
@@ -1147,3 +1153,5 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Cartes ciblées : `char-l3-q-52-09`, `char-l3-q-53-03`, `char-l3-q-53-04`, `char-l3-q-53-08`, `char-l3-q-53-10`.
 - Contrôle : suppression de répétitions conceptuelles autour de Zacharie et Malachie ; remplacement par des faits distincts et directement vérifiables dans Zacharie 5:1-4 et Malachie 2:1-8, 2:7, 3:6, 3:16. Réponses, index, explications et références réalignés.
 - Les autres cartes conservent leur validation antérieure ; cette passe ne constitue pas une relecture intégrale du bloc.
+
+- Revalidation ciblée complémentaire du 12/10/2026 : `char-l6-q-109-4` reformulée en question factuelle directe ; réponse, index, explication et référence contrôlés.
