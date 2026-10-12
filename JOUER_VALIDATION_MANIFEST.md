@@ -955,6 +955,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Source : `src/data/characterQuestionsL3.ts`
 - SHA source : `b4e92ec48d6cdba1abbb053d5027b23416ad8af4`
 - Taille : 288 cartes
-- État : RECHECK en attente CI/Pages
+- État : VALIDATED
+- Clôture : les quatre cartes ciblées ont été contrôlées individuellement ; les autres cartes conservent leur validation antérieure. CI et GitHub Pages doivent confirmer cette clôture.
 - Cartes ciblées : `char-l3-q-52-02`, `char-l3-q-60-06`, `char-l3-q-60-08`, `char-l3-q-60-10`.
 - Contrôle : vérification question/réponse/explication/référence. Les réponses correctes ont été placées en dernière position après contrôle du fait biblique, sans changer le sens des cartes.
