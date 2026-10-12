@@ -192,7 +192,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L6-001
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source après revalidation ciblée des Vrai/Faux : `157c6c1e5f41d80f7467a14538da886883ff9d27`
+- SHA source après revalidation ciblée des Vrai/Faux : `ea385c44428d10d3e68d28f1bada13a3d7c02db1`
 - Périmètre : 250 Quiz + 95 Vrai/Faux + 50 Qui est-ce ? = 395 cartes.
 - État : VALIDATED
 - Revalidation ciblée complémentaire : 12 cartes des banques Apphia et Archippe ont été réécrites pour éliminer les questions répétitives sur l’introduction de la lettre à Philémon et sur le ministère d’Archippe. Les nouveaux faits portent sur l’évolution d’Onésime (Philémon 10-11), le compte de la dette (18-19), le logement demandé (22), le cœur à rafraîchir (20), la confiance en l’obéissance de Philémon (21), l’enfant spirituel de Paul (10), le frère bien-aimé (15-16), l’accueil comme Paul lui-même (17), le volontariat (14), l’espoir de revenir (22), le « propre cœur » de Paul (12) et l’emprisonnement de Paul (1, 9-10).
@@ -593,3 +593,12 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - `char-l4-tf-70-1` : formulation resserrée sur les lieux où Actes 8 décrit explicitement la prédication de Philippe, sans présenter son service d’Actes 6 comme une prédication.
 - `char-l4-tf-75-2` : référence corrigée vers Matthieu 10:2-4, qui cite explicitement Barthélemy parmi les Douze.
 - Revalidation ciblée de ces quatre cartes uniquement ; aucune nouvelle couverture intégrale L4 n’est déclarée.
+
+
+### Historique ciblé des revalidations L6 — 2026-10-12
+- `char-l6-tf-106-4` : remplace « Élisabeth était gouverneure de Judée » par le fait précis de ses cinq mois à l’écart (Luc 1:24-25).
+- `char-l6-tf-112-3` : remplace le distracteur « gouverneur romain » par le désir de l’homme guéri d’accompagner Jésus (Marc 5:18-20).
+- `char-l6-tf-113-4` : remplace « Jason était le grand prêtre » par la garantie fournie avant sa libération (Actes 17:8-9).
+- `char-l6-tf-122-3` : remplace « Julius était gouverneur » par son intervention pour empêcher l’exécution des prisonniers et sauver Paul (Actes 27:42-44).
+- `char-l6-tf-124-3` : remplace « Aristarque était gouverneur » par sa présence pendant le voyage maritime vers Rome (Actes 27:1-2).
+- Revalidation ciblée de ces cinq cartes uniquement ; aucune nouvelle couverture intégrale L6 n’est déclarée.
