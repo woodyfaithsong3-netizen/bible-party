@@ -211,7 +211,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Clôture : CI et GitHub Pages vertes sur le commit source de clôture.
 
 
-## SEM-V58-001
+## SEM-V58-001-HISTORIQUE — supersédé par SEM-V58-002
 - Source : `src/data/jw_enrichment_v58.ts`
 - SHA source validé : `c94576dc570223fb5601e62c4532a9a4bdb162bf`
 - Périmètre : 25 cartes jouables.
@@ -1278,3 +1278,13 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - Les 291 cartes non modifiées conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale supplémentaire.
 - CI : audit de contenu vert sur ce SHA ; la réconciliation de couverture est désormais enregistrée par ce bloc.
 - Règle : ne pas réauditer tant que le SHA source reste inchangé.
+
+
+## SEM-V58-002 — VALIDATED — 2026-10-13
+- Source : `src/data/jw_enrichment_v58.ts`
+- SHA source validé : `5e427a2875fa7675b8f55b741a3325a6fccf7ed2`
+- Périmètre : 24 cartes jouables après migration ciblée (5 Quiz, 9 Mystère, 12 Vrai/Faux).
+- Corrections : `v58-m-001`, `v58-m-002`, `v58-m-004` ont désormais un premier indice autonome (« Ce personnage… ») ; `v58-m-005` (Papyrus), qui n’était pas un personnage, a été retirée du mode Mystère et remplacée par `v58-q-005` dans le Quiz.
+- Contrôle ciblé : le mode Qui est-ce ? de V58 ne contient plus de réponse non-personnage ni de premier indice dépendant d’un pronom sans antécédent.
+- Les autres cartes V58 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale supplémentaire.
+- État : VALIDATED.
