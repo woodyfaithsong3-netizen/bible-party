@@ -592,3 +592,11 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - audit-content.mjs vérifie qu'il existe exactement 139 IDs legacy et qu'aucun n'est réintroduit dans GAME_CONTENT.
 - Les quatre modes finaux restent exclusivement : Quiz, Vrai/Faux, Qui est-ce ?, Compléter les paroles.
 - Statut : 139/139 traitées — RETIRED — 0 restante à migrer.
+
+
+## Passe autonomie des indices Qui est-ce ? — 2026-10-13
+- Contrôle ciblé des banques personnages L1-L3 : les cartes dont le premier indice commençait par « Il » ou « Elle » sans antécédent explicite ont été reformulées en « Ce personnage ».
+- **51 cartes** corrigées (L1 11, L2 11, L3 29).
+- Aucun fait biblique, réponse, référence ou identifiant n’a été modifié.
+- SHAs courants : L1 `b2ff35342d457a371dd5e277238add4813ba6c9b`, L2 `a7485d3fd9cdb98ff1cbf4242cefd367b0d3aeef`, L3 `8d08522a5aaef8cd953c6681fef9f2dc636698d5`.
+- Les blocs concernés restent **VALIDATED** après revalidation ciblée ; aucune relecture intégrale des autres cartes n’est revendiquée.
