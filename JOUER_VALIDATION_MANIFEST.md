@@ -61,8 +61,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-V55-001
 - Source : `src/data/jw_enrichment_v55.ts`
-- SHA source validé : `cf8242fc5ef8ce02631ae5fb5058dd4f7602c0cd`
-- Périmètre désormais jouable : 40 cartes : `v55-m-001`–`008`, `v55-q-001`–`008`, `v55-i-001`–`008`, `v55-c-001`–`008`, `v55-d-001`–`008`.
+- SHA source validé : `b3a28ddb2989229a4e22342a7e5b7bc10d8abd67`
+- Périmètre désormais jouable : 40 cartes
+- Revalidation ciblée 2026-10-13 : `q015`, `q017`, `q022`, `q036` reformulées en questions factuelles directes. : `v55-m-001`–`008`, `v55-q-001`–`008`, `v55-i-001`–`008`, `v55-c-001`–`008`, `v55-d-001`–`008`.
 - État : VALIDATED
 - Les 16 cartes nouvellement jouables (8 chronologies + 8 défis) ont été contrôlées individuellement et sont validées.
 - Corrections historiques : `v55-q-006`, `v55-i-002`.
@@ -237,8 +238,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## SEM-V106-001
 - Source : `src/data/jw_enrichment_v106_characters.ts`
-- SHA source validé : `f7a7bb36331075e1f01b9bbcca4cb211c011ae6e`
+- SHA source validé : `940c3e28213a03eba7a9c2e314b6419a2b0d893a`
 - Périmètre : 60 cartes.
+- Revalidation ciblée 2026-10-13 : 10 cartes personnages reformulées pour remplacer les questions génériques sur une « qualité » par des faits bibliques directs.
 - État : VALIDATED
 - CI + GitHub Pages : verts.
 
