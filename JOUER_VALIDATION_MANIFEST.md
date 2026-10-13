@@ -1333,3 +1333,10 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - Les 26 Quiz issus de Time’s Up utilisent désormais leurs propres indices dans l’énoncé afin d’éviter tout doublon de question normalisée entre cartes.
 - Aucun changement aux réponses, références ou options validées du lot précédent.
 - État : VALIDATED sous réserve de CI sur ce SHA.
+
+
+## Revalidation technique ROUTE-TU-QUIZ — type corrigé
+- Source : `src/data/gameContent.ts`
+- SHA : `f117764f161327350c72b952a09a28564a886f5d`
+- Correction : le type des cartes Time’s Up converties est maintenant dérivé directement de `timesUpQuestions`, sans dépendre d’un type non exporté.
+- État : VALIDATED sous réserve de CI.
