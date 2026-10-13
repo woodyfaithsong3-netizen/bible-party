@@ -288,11 +288,11 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - CI + GitHub Pages : verts.
 
 
-## SEM-COMP-001 — VALIDATED
+## SEM-COMP-001-HISTORIQUE — supersédé par COMPLETE-SONGS-VERSE-20261013
 - Source : `src/data/completeTheVerseQuestions.ts`
-- SHA : `4b816932b661b07bcea440d0ef21e6134e66b924`
-- 76 cartes ; structure, réponses/index, doublons et fuites contrôlés.
-- État : VALIDATED ; CI + GitHub Pages verts.
+- SHA historique : `4b816932b661b07bcea440d0ef21e6134e66b924`
+- 76 cartes ; cette preuve documentaire est conservée pour l’historique.
+- Elle n’est plus comptée comme bloc de couverture courant afin d’éviter un double comptage avec `COMPLETE-SONGS-VERSE-20261013`.
 
 ## SEM-V61-001 — VALIDATED
 - Source : `src/data/jw_enrichment_v61.ts`
