@@ -1085,7 +1085,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L1-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `0e7f26095af6a543de032545626ad46db292f528`
+- SHA source validé : `a837d71e754e025b8457da063198f358afa3210f`
 - Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - Taille : 284 cartes
 - État : VALIDATED
@@ -1095,7 +1095,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L2-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `ad05de48d4fc4dfb274bed8e7e12537247b7875a`
+- SHA source validé : `b26f946ef0172997d7471c7183750043f07c4073`
 - Périmètre : 290 cartes
 - Taille : 290 cartes
 - État : VALIDATED
@@ -1109,7 +1109,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L3-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `7af3421aaa2667bc84dfb8a2d58d2009737ec7d2`
+- SHA source validé : `a6676c69a822b0e1b18f066b21a9dfb9b0753073`
 - Périmètre : 288 cartes
 - Taille : 288 cartes
 - État : VALIDATED
@@ -1134,7 +1134,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L5-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `a62fdf7c27207a2d710053612692be215abbc84f`
+- SHA source validé : `044ef79c24b637faedc2b56ff23badfdd758c36a`
 - Périmètre : 290 cartes
 - Taille : 290 cartes
 - État : VALIDATED
@@ -1171,3 +1171,11 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - `char-l5-tf-92-4` et `char-l5-tf-94-4` : remplacent les confusions artificielles de royaumes par des réactions concrètes face aux menaces (2 Rois 19:1-19 ; 2 Chroniques 20:1-4).
 - `char-l6-tf-114-3`, `char-l6-tf-118-3`, `char-l6-tf-118-4`, `char-l6-tf-120-4`, `char-l6-tf-123-4`, `char-l6-tf-124-4` : remplacent les faux rôles « gouverneur/grand prêtre » et formulations absolues par des faits directement réfutables dans les passages cités.
 - Revalidation ciblée de ces dix cartes uniquement ; aucune nouvelle couverture intégrale L2, L5 ou L6 n’est déclarée.
+
+
+### Historique ciblé des revalidations L1/L2/L3/L5 — 2026-10-13 (lot qualité)
+- `char-l1-tf-02-1` et `char-l1-tf-14-1` : formulations raccourcies et recentrées sur la chronologie de Noé et l’initiative risquée d’Esther.
+- `char-l2-tf-34-2` et `char-l2-tf-39-2` : remplacent les permutations de noms/rôles trop mécaniques par des faits narratifs sur Melkisédek et Balak.
+- `char-l3-tf-45-2` et `char-l3-tf-55-2` : remplacent les confusions géographiques simples par les épisodes Pilate/Hérode et Apollos/Achaïe.
+- `char-l5-tf-93-2` : remplace la confusion Israël/Juda par la réaction de Josias au livre de la Loi.
+- Revalidation ciblée de ces sept cartes uniquement ; aucune couverture intégrale supplémentaire n’est déclarée.
