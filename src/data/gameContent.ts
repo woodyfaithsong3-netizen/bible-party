@@ -1,6 +1,7 @@
 import { challenges, intruderQuestions, mysteryQuestions, quizQuestions, quoteQuestions, timesUpQuestions, trueFalseQuestions } from '@/data/questions';
 import { completeTheVerseQuestions, completeTheSongQuestions } from '@/data/completeTheVerseQuestions';
 import { GameType, Question, QuizQuestion } from '@/types';
+import type { TimesUpQuestion } from '@/data/questions';
 
 /** Les quatre modes de jeu officiels : Quiz, Vrai / Faux, Qui est-ce ? et Compléter les paroles. */
 
