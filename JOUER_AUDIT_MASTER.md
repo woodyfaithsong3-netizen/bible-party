@@ -614,3 +614,10 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - Les indices initiaux commençant directement par « Il… » ou « Elle… » ont été rendus autonomes (« Ce personnage… »).
 - L’indice isolé « Jérusalem. » de `char-l4-m-68-2` a été remplacé par une phrase biblique autonome.
 - Contrôle post-correction : aucun premier indice ne commence encore par « Il… » ou « Elle… » et aucun indice initial isolé « Jérusalem. » ne subsiste dans L4/L5.
+
+
+## Revalidation Vrai/Faux — L5 correction factuelle (13/10/2026)
+- Carte corrigée : `char-l5-tf-83-1`.
+- Problème : la carte affirmait correctement que Festus avait succédé à Félix et examiné l’affaire de Paul avant l’appel à César, mais était marquée `answer:false`.
+- Correction : `answer:true` avec explication cohérente et référence Actes 25:1-12 conservée.
+- Contrôle ciblé des Vrai/Faux L4-L6 : aucune autre contradiction factuelle équivalente n’a été identifiée dans la passe chronologique ciblée.
