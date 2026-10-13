@@ -643,3 +643,12 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - Contrôle ciblé : aucune autre carte V58 Mystère ne présente désormais ces deux défauts dans la passe effectuée.
 - Source validée : `src/data/jw_enrichment_v58.ts` — SHA `5e427a2875fa7675b8f55b741a3325a6fccf7ed2`.
 - AVENTURE, Ma Bible et `characterLearning.ts` non modifiés.
+
+
+## Passe qualité Mystère V104-V105 — 2026-10-13
+- Contrôle ciblé des banques `jw_enrichment_v104.ts` et `jw_enrichment_v105.ts`.
+- V104 : `v104-m-003` (Psaume 119) et `v104-m-006` (Nicodème) ont été retirées du Mystère ; le contenu concerné est déjà couvert par des Quiz. `v104-m-004` et `v104-m-007` ont reçu des premiers indices autonomes.
+- V105 : `v105-m002` (Jérusalem) et `v105-m005` (les soixante-dix semaines) ont été retirées du Mystère ; leurs sujets sont déjà couverts par des Quiz. `v105-m003` et `v105-m004` ont reçu des premiers indices autonomes.
+- Résultat : aucune réponse non-personnage détectée dans le Mystère V104/V105 sur cette passe ciblée.
+- SHAs validés : V104 `f9ca0588fcadc942aca217240a796fbdb6bcb851`, V105 `395a1a1cd34142517e9a57a60ae2affbae00fce7`.
+- AVENTURE, Ma Bible et `characterLearning.ts` non modifiés.
