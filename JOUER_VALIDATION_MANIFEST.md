@@ -1126,7 +1126,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L4-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL4.ts`
-- SHA source validé : `84d7f55ce7b697a10f7a8a5be069f696072b0edf`
+- SHA source validé : `4a430f7438a4c9dfbbce9064ae1a90287caa6460`
 - Périmètre : 292 cartes
 - Taille : 292 cartes
 - État : VALIDATED
@@ -1134,7 +1134,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L5-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `044ef79c24b637faedc2b56ff23badfdd758c36a`
+- SHA source validé : `f24c4ed17d9afed766ca0d9ebe4694dd78b687cc`
 - Périmètre : 290 cartes
 - Taille : 290 cartes
 - État : VALIDATED
@@ -1142,7 +1142,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `6a8c3274bcb908815345e4b5e0bd712206e92445`
+- SHA source validé : `ea42ca980547ef6c9d8b8c009159ed69ca07f2ad`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
@@ -1179,3 +1179,10 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - `char-l3-tf-45-2` et `char-l3-tf-55-2` : remplacent les confusions géographiques simples par les épisodes Pilate/Hérode et Apollos/Achaïe.
 - `char-l5-tf-93-2` : remplace la confusion Israël/Juda par la réaction de Josias au livre de la Loi.
 - Revalidation ciblée de ces sept cartes uniquement ; aucune couverture intégrale supplémentaire n’est déclarée.
+
+
+### Historique ciblé des revalidations L4/L5/L6 — 2026-10-13 (famille/rôles)
+- `char-l4-tf-75-2` : supprime le faux rôle arbitraire attribué à Barthélemy et vérifie directement son appartenance aux Douze.
+- `char-l5-tf-86-1` et `char-l5-tf-86-4` : remplacent deux négations faciles sur Phœbé par les instructions concrètes de Romains 16:1-2.
+- `char-l6-tf-106-3`, `char-l6-tf-115-3` et `char-l6-tf-116-3` : suppriment les pièges évidents « mère de Jésus » et les remplacent par des faits propres à Élisabeth et aux deux Marie.
+- Revalidation ciblée de ces six cartes uniquement ; aucune couverture intégrale supplémentaire n’est déclarée.
