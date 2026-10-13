@@ -1191,3 +1191,9 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - `char-l3-tf-45-2` et `char-l3-tf-55-2` : remplacent les confusions géographiques simples par les épisodes Pilate/Hérode et Apollos/Achaïe.
 - `char-l5-tf-93-2` : remplace la confusion Israël/Juda par la réaction de Josias au livre de la Loi.
 - Revalidation ciblée de ces sept cartes uniquement ; aucune couverture intégrale supplémentaire n’est déclarée.
+
+
+## VALIDATED — Autonomie des premiers indices L4/L5 (13/10/2026)
+- Fichiers : `src/data/characterQuestionsL4.ts`, `src/data/characterQuestionsL5.ts`.
+- Contrôle : aucun premier indice de Qui est-ce ? ne commence par « Il… » ou « Elle… » ; aucun indice initial isolé « Jérusalem. » ne subsiste.
+- Les corrections portent uniquement sur la formulation des indices ; les réponses, références et faits bibliques n’ont pas été modifiés.
