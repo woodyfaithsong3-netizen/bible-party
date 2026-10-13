@@ -621,3 +621,11 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - Problème : la carte affirmait correctement que Festus avait succédé à Félix et examiné l’affaire de Paul avant l’appel à César, mais était marquée `answer:false`.
 - Correction : `answer:true` avec explication cohérente et référence Actes 25:1-12 conservée.
 - Contrôle ciblé des Vrai/Faux L4-L6 : aucune autre contradiction factuelle équivalente n’a été identifiée dans la passe chronologique ciblée.
+
+
+## Réconciliation des SHA de validation — 2026-10-13
+- Le contrôle de couverture avait signalé un échec de cohérence : les sources L1-L5 avaient changé après leurs anciennes preuves VALIDATED, alors que le manifest ne contenait pas encore les SHA Git courants.
+- Correction documentaire appliquée dans `JOUER_VALIDATION_MANIFEST.md` : L1 `ac1f3820c864d13344bb24631525f6766f16166e`, L2 `f704b719de10b532f874877173e30a48d6e4125b`, L3 `b3e64c360396bb7975b8fd41bb1c5248a6740a98`, L4 `e6c43c9a71aa627da69be6ecc565f3b81ba695af`, L5 `f954e1fcacd120513323952a4a10e1cd5a5e3d15`.
+- Les périmètres restent respectivement 284 / 290 / 288 / 292 / 290 cartes. Aucune fiche AVENTURE, Ma Bible ou `characterLearning.ts` n'a été modifiée.
+- Les validations antérieures des cartes non modifiées restent conservées ; seules les modifications récentes ont fait l'objet d'une revalidation ciblée.
+- Commit de réconciliation du manifest : `3429fc9cf28c33567ee3ca54e6bddb7466804744`.
