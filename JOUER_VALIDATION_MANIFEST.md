@@ -1095,7 +1095,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L2-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `9266e3b3e094dd2f958bcdf911e9725cd10a7a75`
+- SHA source validé : `ad05de48d4fc4dfb274bed8e7e12537247b7875a`
 - Périmètre : 290 cartes
 - Taille : 290 cartes
 - État : VALIDATED
@@ -1134,7 +1134,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L5-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `73b2a370d1345cf36f3c115f0980c24687a25014`
+- SHA source validé : `a62fdf7c27207a2d710053612692be215abbc84f`
 - Périmètre : 290 cartes
 - Taille : 290 cartes
 - État : VALIDATED
@@ -1142,7 +1142,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `d344f4193afc6f8ffee14ef237efea1c871f0a95`
+- SHA source validé : `6a8c3274bcb908815345e4b5e0bd712206e92445`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
@@ -1163,3 +1163,11 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Revalidation ciblée complémentaire du 12/10/2026 : L4 `char-l4-q-62-4`, L5 `char-l5-q-81-9`, `char-l5-q-85-3`, L6 `char-l6-q-102-6`, `char-l6-q-115-2`, `char-l6-q-119-2`, `char-l6-q-123-8`, `char-l6-q-124-5` reformulées en questions factuelles directes ; réponses, index, explications et références contrôlés.
 
 - Revalidation ciblée complémentaire du 12/10/2026 : `char-l6-q-122-6` reformulée pour supprimer le doublon avec `char-l6-q-122-3` ; réponse, index, explication et référence contrôlés.
+
+
+### Historique ciblé des revalidations L2/L5/L6 — 2026-10-13
+- `char-l2-tf-29-4` : remplace « Barnabé était roi de Chypre » par une confusion plausible entre la position de Paul et celle de Barnabé au sujet de Marc (Actes 15:36-39).
+- `char-l5-tf-84-4` : remplace « Agrippa II était gouverneur » par sa conclusion sur l’appel de Paul à César (Actes 26:31-32).
+- `char-l5-tf-92-4` et `char-l5-tf-94-4` : remplacent les confusions artificielles de royaumes par des réactions concrètes face aux menaces (2 Rois 19:1-19 ; 2 Chroniques 20:1-4).
+- `char-l6-tf-114-3`, `char-l6-tf-118-3`, `char-l6-tf-118-4`, `char-l6-tf-120-4`, `char-l6-tf-123-4`, `char-l6-tf-124-4` : remplacent les faux rôles « gouverneur/grand prêtre » et formulations absolues par des faits directement réfutables dans les passages cités.
+- Revalidation ciblée de ces dix cartes uniquement ; aucune nouvelle couverture intégrale L2, L5 ou L6 n’est déclarée.
