@@ -1092,8 +1092,9 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L1-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL1.ts`
-- SHA source validé : `a837d71e754e025b8457da063198f358afa3210f`
-- Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
+- SHA source validé : `b2ff35342d457a371dd5e277238add4813ba6c9b`
+
+- Revalidation ciblée complémentaire du 13/10/2026 : indices « Qui est-ce ? » rendus autonomes lorsqu’ils commençaient par un pronom sans antécédent explicite ; remplacement par « Ce personnage » sans révéler la réponse. Aucun fait biblique, réponse ou référence n’a été modifié.- Périmètre : 200 Quiz + 44 Vrai/Faux + 40 Qui est-ce ? = 284 cartes
 - Taille : 284 cartes
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
@@ -1102,8 +1103,9 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L2-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `b26f946ef0172997d7471c7183750043f07c4073`
-- Périmètre : 290 cartes
+- SHA source validé : `a7485d3fd9cdb98ff1cbf4242cefd367b0d3aeef`
+
+- Revalidation ciblée complémentaire du 13/10/2026 : indices « Qui est-ce ? » rendus autonomes lorsqu’ils commençaient par un pronom sans antécédent explicite ; remplacement par « Ce personnage » sans révéler la réponse. Aucun fait biblique, réponse ou référence n’a été modifié.- Périmètre : 290 cartes
 - Taille : 290 cartes
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
@@ -1116,8 +1118,9 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L3-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL3.ts`
-- SHA source validé : `a6676c69a822b0e1b18f066b21a9dfb9b0753073`
-- Périmètre : 288 cartes
+- SHA source validé : `8d08522a5aaef8cd953c6681fef9f2dc636698d5`
+
+- Revalidation ciblée complémentaire du 13/10/2026 : indices « Qui est-ce ? » rendus autonomes lorsqu’ils commençaient par un pronom sans antécédent explicite ; remplacement par « Ce personnage » sans révéler la réponse. Aucun fait biblique, réponse ou référence n’a été modifié.- Périmètre : 288 cartes
 - Taille : 288 cartes
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des cartes L3 déjà contrôlées et des permutations de propositions ; aucune relecture éditoriale intégrale revendiquée.
