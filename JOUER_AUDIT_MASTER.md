@@ -607,3 +607,10 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - Reformulation effectuée sans changer la réponse, les faits bibliques ni les références.
 - Cartes : `char-l4-m-68-2` et `char-l4-m-69-2`.
 - Revalidation ciblée effectuée après modification.
+
+
+## Revalidation Qui est-ce — L4/L5 (13/10/2026)
+- L4 et L5 ont été rescannés pour les premiers indices autonomes.
+- Les indices initiaux commençant directement par « Il… » ou « Elle… » ont été rendus autonomes (« Ce personnage… »).
+- L’indice isolé « Jérusalem. » de `char-l4-m-68-2` a été remplacé par une phrase biblique autonome.
+- Contrôle post-correction : aucun premier indice ne commence encore par « Il… » ou « Elle… » et aucun indice initial isolé « Jérusalem. » ne subsiste dans L4/L5.
