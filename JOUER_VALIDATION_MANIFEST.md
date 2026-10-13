@@ -1203,3 +1203,48 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - `char-l5-tf-83-1` revalidée après correction de son booléen.
 - Énoncé : Festus succéda à Félix et examina l’affaire de Paul avant l’appel à César.
 - Réponse validée : Vrai. Référence : Actes 25:1-12.
+
+
+## Réconciliation des SHA courants — 2026-10-13
+
+Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers blocs VALIDATED historiques. Le contrôle de couverture compare strictement le SHA Git du fichier courant ; les anciennes preuves restent conservées, mais ne couvraient plus le SHA courant. Les revalidations ciblées déjà consignées les 12-13/10 sont donc clôturées avec les SHA actuels. Aucun nouveau lot de cartes n'est ajouté et aucun bloc déjà validé n'est ré-audité intégralement.
+
+### Bloc RECON-L1-20261013 — VALIDATED
+- Source : `src/data/characterQuestionsL1.ts`
+- SHA source validé : `ac1f3820c864d13344bb24631525f6766f16166e`
+- Taille : 284 cartes
+- État : VALIDATED
+- Contrôles : revalidation ciblée des modifications récentes (indices Qui est-ce ? autonomes et cartes déjà corrigées), structure, jouabilité et cohérence des éléments modifiés.
+- Les validations antérieures des cartes non modifiées restent conservées.
+
+### Bloc RECON-L2-20261013 — VALIDATED
+- Source : `src/data/characterQuestionsL2.ts`
+- SHA source validé : `f704b719de10b532f874877173e30a48d6e4125b`
+- Taille : 290 cartes
+- État : VALIDATED
+- Contrôles : revalidation ciblée des modifications récentes (indices Qui est-ce ? autonomes et cartes déjà corrigées), structure, jouabilité et cohérence des éléments modifiés.
+- Les validations antérieures des cartes non modifiées restent conservées.
+
+### Bloc RECON-L3-20261013 — VALIDATED
+- Source : `src/data/characterQuestionsL3.ts`
+- SHA source validé : `b3e64c360396bb7975b8fd41bb1c5248a6740a98`
+- Taille : 288 cartes
+- État : VALIDATED
+- Contrôles : revalidation ciblée des modifications récentes (indices Qui est-ce ? autonomes et cartes déjà corrigées), structure, jouabilité et cohérence des éléments modifiés.
+- Les validations antérieures des cartes non modifiées restent conservées.
+
+### Bloc RECON-L4-20261013 — VALIDATED
+- Source : `src/data/characterQuestionsL4.ts`
+- SHA source validé : `e6c43c9a71aa627da69be6ecc565f3b81ba695af`
+- Taille : 292 cartes
+- État : VALIDATED
+- Contrôles : revalidation ciblée des modifications récentes (indices Qui est-ce ? autonomes, indices initiaux insuffisants et cartes déjà corrigées), structure, jouabilité et cohérence des éléments modifiés.
+- Les validations antérieures des cartes non modifiées restent conservées.
+
+### Bloc RECON-L5-20261013 — VALIDATED
+- Source : `src/data/characterQuestionsL5.ts`
+- SHA source validé : `f954e1fcacd120513323952a4a10e1cd5a5e3d15`
+- Taille : 290 cartes
+- État : VALIDATED
+- Contrôles : revalidation ciblée des modifications récentes (indices Qui est-ce ? autonomes, correction Festus et cartes déjà corrigées), structure, jouabilité et cohérence des éléments modifiés.
+- Les validations antérieures des cartes non modifiées restent conservées.
