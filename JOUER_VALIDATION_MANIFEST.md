@@ -48,7 +48,8 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-Q-001
 - Source : `src/data/questions.ts`
-- SHA source validé : `d7c4bf2cd63696d94f52a3930ae1017c77333bf4`
+- SHA source validé : `a417458f9d14f6fca8b97846ef1d055bec2353d9`
+- Revalidation ciblée 2026-10-13 : `v102-q-01` et `v102-q-07` reformulées pour supprimer « Que montre… » tout en conservant les réponses, références et explications.
 - Périmètre : 504 IDs déclarés dans la source ; après filtres d’exclusion, 477 cartes de base restent dans les pools. Les copies conservées dans leurs banques spécialisées sont comptées une seule fois dans l’inventaire global.
 - État : VALIDATED
 - Contrôles : structure, IDs uniques, réponses/index, fuite, doublons, formulation, contexte, catégories, références, explications, distracteurs et jouabilité.
@@ -219,9 +220,10 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## SEM-V104-001
 - Source : `src/data/jw_enrichment_v104.ts`
-- SHA source validé : `9b10eb14e06d33470a565e77fc375b7461243aa5`
+- SHA source validé : `f8d749b8621bd995aad34c3eb76363b71754adf8`
 - Périmètre : 40 cartes.
 - État : VALIDATED
+- Revalidation ciblée 2026-10-13 : `v104-q-006` reformulée en question factuelle directe ; réponse, référence et explication conservées.
 - Corrections : `v104-tf-008`, `v104-tf-012`.
 - CI + GitHub Pages : verts.
 
@@ -257,8 +259,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## SEM-JWCAT-001
 - Source : `src/data/jwCategories.ts`
-- SHA source validé : `e26c907e6322f5a3598db1300885097d583e7f36`
+- SHA source validé : `3a8be5efa45bdc4d9a5a3cc289148c6c99fcda2d`
 - Périmètre : 187 cartes jouables.
+- Revalidation ciblée 2026-10-13 : trois formulations `Que montre…` ont été remplacées par des questions factuelles directes (`jwcat-quiz-14`, `jwcat-quiz-28`, `jwcat-quiz-30`) ; réponses, références et explications conservées.
 - État : VALIDATED
 - Répartition : 96 Quiz, 39 Vrai/Faux, 12 Mystère, 8 Time’s Up, 8 Citations, 8 Chronologie, 8 Intrus, 8 Défi.
 - Corrections : V/F Révélation, références manuscrits, 2 Timothée 4:13, procès de Jésus, Michée, maladies cutanées, chronologie jwcat-chrono-2.
