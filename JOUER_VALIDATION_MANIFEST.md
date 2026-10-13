@@ -15,10 +15,11 @@ Ce fichier est le registre opérationnel des blocs éditoriaux validés. Une car
 
 ## Bloc SEM-V54-002 — VALIDATED — 2026-10-09
 - Source : `src/data/jw_enrichment_v54.ts`
-- SHA source validé : `c8657e1a98500a36c7f9a082baa99231e8bf2dd6`
+- SHA source validé : `b3a28ddb2989229a4e22342a7e5b7bc10d8abd67`
 - Périmètre : `v54-m-001`–`v54-m-010` + `v54-tu-002`–`v54-tu-008`.
 - Taille : 17 cartes converties en Qui est-ce ? par le moteur actuel.
 - État : VALIDATED.
+- Revalidation ciblée 2026-10-13 : quatre formulations du fichier ont été reformulées sans modifier les réponses, références ou explications.
 - Contrôles individuels : réponse adaptée au mode, indices suffisamment distinctifs, explication/référence cohérentes, aucune réponse de type lieu/chapitre dans le pool Qui est-ce ?.
 - Corrections : `v54-m-006` → Darius (roi mède), `v54-m-010` → Nabuchodonosor ; `v54-tu-002` → Jéhovah, `v54-tu-003` → Zerubbabel, `v54-tu-007` → Élisée, `v54-tu-008` → Daniel.
 - Les dix cartes `v54-m-001`–`010` et les sept cartes `v54-tu-002`–`008` ont toutes été contrôlées ; aucune exception ouverte.
