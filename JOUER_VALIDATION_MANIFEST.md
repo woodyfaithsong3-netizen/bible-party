@@ -1142,7 +1142,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `ea42ca980547ef6c9d8b8c009159ed69ca07f2ad`
+- SHA source validé : `87c055d3b9ba07cbda22c9ca9c8fe0b8f5069fee`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
@@ -1184,5 +1184,5 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 ### Historique ciblé des revalidations L4/L5/L6 — 2026-10-13 (famille/rôles)
 - `char-l4-tf-75-2` : supprime le faux rôle arbitraire attribué à Barthélemy et vérifie directement son appartenance aux Douze.
 - `char-l5-tf-86-1` et `char-l5-tf-86-4` : remplacent deux négations faciles sur Phœbé par les instructions concrètes de Romains 16:1-2.
-- `char-l6-tf-106-3`, `char-l6-tf-115-3` et `char-l6-tf-116-3` : suppriment les pièges évidents « mère de Jésus » et les remplacent par des faits propres à Élisabeth et aux deux Marie.
+- `char-l6-tf-106-3`, `char-l6-tf-115-3` et `char-l6-tf-116-3` : suppriment les pièges évidents « mère de Jésus » et les remplacent par des faits propres à Élisabeth et aux deux Marie ; `char-l6-tf-116-3` reste volontairement Faux pour préserver l’équilibre de la banque L6.
 - Revalidation ciblée de ces six cartes uniquement ; aucune couverture intégrale supplémentaire n’est déclarée.
