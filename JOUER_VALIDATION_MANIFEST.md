@@ -1255,5 +1255,5 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - SHA source : `4b816932b661b07bcea440d0ef21e6134e66b924`
 - Périmètre : 40 cartes de versets + 36 cartes de cantiques/chansons = 76 cartes du mode `complete`.
 - Contrôles : structure Quiz compatible avec `GAME_CONTENT.complete`, réponses dans `0..3`, aucune carte sans référence, IDs `complete-*` et `song-*` distincts, mélange effectif des deux familles dans `game.tsx`.
-- Vérification éditoriale ciblée des paroles JW : les formulations contrôlées pour les cantiques 22, 38, 40, 134, 135 et 26 correspondent aux pages officielles JW.org. cite non conservée dans le fichier d’audit : voir preuves web du contrôle du 2026-10-13.
+- Vérification éditoriale ciblée des paroles JW : les formulations contrôlées pour les cantiques 22, 38, 40, 134, 135 et 26 correspondent aux pages officielles JW.org.
 - État : VALIDATED.
