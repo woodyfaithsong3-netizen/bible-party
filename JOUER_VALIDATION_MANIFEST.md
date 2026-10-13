@@ -1197,3 +1197,9 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Fichiers : `src/data/characterQuestionsL4.ts`, `src/data/characterQuestionsL5.ts`.
 - Contrôle : aucun premier indice de Qui est-ce ? ne commence par « Il… » ou « Elle… » ; aucun indice initial isolé « Jérusalem. » ne subsiste.
 - Les corrections portent uniquement sur la formulation des indices ; les réponses, références et faits bibliques n’ont pas été modifiés.
+
+
+## VALIDATED — Vrai/Faux L5 Festus (13/10/2026)
+- `char-l5-tf-83-1` revalidée après correction de son booléen.
+- Énoncé : Festus succéda à Félix et examina l’affaire de Paul avant l’appel à César.
+- Réponse validée : Vrai. Référence : Actes 25:1-12.
