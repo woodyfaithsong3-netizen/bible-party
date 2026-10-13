@@ -632,6 +632,6 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 
 
 ### Revalidation Vrai/Faux L2 — 2026-10-13
-- `src/data/characterQuestionsL2.ts` — SHA `76eefff6c36b6ffc6ee49bfd60dc8d4b31acaf5d`.
+- `src/data/characterQuestionsL2.ts` — SHA `f170162a3c74b85261c77d1f0582d022f35d33aa`.
 - 9 cartes Vrai/Faux reformulées pour supprimer des affirmations fausses artificielles et rendre le jeu plus direct : `char-l2-tf-21-2`, `25-2`, `26-2`, `30-2`, `32-2`, `33-2`, `35-2`, `37-2`, `39-2`.
 - Réponses, explications et références réalignées ; aucune modification AVENTURE / Ma Bible.
