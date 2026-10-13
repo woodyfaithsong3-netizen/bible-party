@@ -4,7 +4,7 @@ Ce fichier est le registre opérationnel des blocs éditoriaux validés. Une car
 
 ## Bloc SEM-V54-001
 - Source : `src/data/jw_enrichment_v54.ts`
-- SHA source validé : `c8657e1a98500a36c7f9a082baa99231e8bf2dd6`
+- SHA source validé : `b3a28ddb2989229a4e22342a7e5b7bc10d8abd67`
 - Périmètre : Quiz `v54-q001`–`v54-q080` + Vrai/Faux `v54-tf001`–`v54-tf080`
 - Taille : 160 cartes
 - État : VALIDATED
@@ -61,7 +61,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-V55-001
 - Source : `src/data/jw_enrichment_v55.ts`
-- SHA source validé : `b3a28ddb2989229a4e22342a7e5b7bc10d8abd67`
+- SHA source validé : `cf8242fc5ef8ce02631ae5fb5058dd4f7602c0cd`
 - Périmètre désormais jouable : 40 cartes
 - Revalidation ciblée 2026-10-13 : `q015`, `q017`, `q022`, `q036` reformulées en questions factuelles directes. : `v55-m-001`–`008`, `v55-q-001`–`008`, `v55-i-001`–`008`, `v55-c-001`–`008`, `v55-d-001`–`008`.
 - État : VALIDATED
@@ -72,8 +72,9 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-V53-001
 - Source : `src/data/jw_enrichment_v53.ts`
-- SHA source validé : `dc99d9d3b4f66be7a0b82242275d16ade8baf6f2`
+- SHA source validé : `098566d0e891867b5254b3694737779fde61e2bf`
 - Périmètre : 141 cartes, toutes les familles V53 présentes dans le fichier.
+- Revalidation ciblée 2026-10-13 : `v53-q-011` reformulée.
 - État : VALIDATED
 - Corrections ciblées : `v53-q-038`, `v53-tf-011`, `v53-tf-015`.
 - Contrôles : structure, réponses, références, contexte, formulation, distracteurs, doublons, catégories et jouabilité.
