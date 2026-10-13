@@ -4,6 +4,9 @@ import { QuizQuestion, TrueFalseQuestion, MysteryQuestion } from '@/types';
 // Formulations originales ; références bibliques ou références aux outils JW.org.
 
 export const jwV105Quiz: QuizQuestion[] = [
+{id:'v105-q005',type:'quiz',category:'La Bible et l’Histoire',difficulty:'hard',question:'Quelle ville David conquit-il pour en faire sa capitale ?',answers:['Jérusalem','Bethléem','Jéricho','Samarie'],correctAnswer:0,explanation:'David conquit Jérusalem et en fit sa capitale.',reference:'2 Samuel 5:6-9'},
+{id:'v105-q006',type:'quiz',category:'Prophéties',difficulty:'expert',question:'Dans quel chapitre de Daniel trouve-t-on la prophétie des soixante-dix semaines ?',answers:['Daniel 9','Daniel 2','Daniel 6','Daniel 12'],correctAnswer:0,explanation:'Daniel 9:24-27 présente la prophétie des soixante-dix semaines.',reference:'Daniel 9:24-27'},
+
 {id:'v105-q001',type:'quiz',category:'Questions bibliques',difficulty:'easy',question:'Que reconnaissent les créatures célestes à propos de Jéhovah ?',answers:['Qu’il est digne de recevoir gloire, honneur et puissance','Qu’il doit devenir roi de Rome','Qu’il dépend des humains pour créer','Qu’il doit être adoré seulement une fois par an'],correctAnswer:0,explanation:'Les créatures célestes reconnaissent que Jéhovah est digne de recevoir gloire, honneur et puissance parce qu’il a créé toutes choses.',reference:'Révélation 4:11'},
 {id:'v105-q002',type:'quiz',category:'Questions bibliques',difficulty:'medium',question:'Quel livre biblique explique que toute Écriture est inspirée de Dieu ?',answers:['Romains','Hébreux','Jacques','2 Timothée'],correctAnswer:3,explanation:'Paul écrit cette affirmation dans sa deuxième lettre à Timothée.',reference:'2 Timothée 3:16'},
 {id:'v105-q003',type:'quiz',category:'Questions bibliques',difficulty:'hard',question:'Que demande Jésus concernant le nom de Dieu dans la prière modèle ?',answers:['Qu’il soit sanctifié','Qu’il soit oublié','Qu’il soit remplacé par celui d’un roi','Qu’il ne soit jamais prononcé'],correctAnswer:0,explanation:'Jésus demande que le nom de Dieu soit sanctifié dans la prière modèle.',reference:'Matthieu 6:9'},
@@ -48,8 +51,7 @@ export const jwV105TrueFalse: TrueFalseQuestion[] = [
 ];
 
 export const jwV105Mystery: MysteryQuestion[] = [
-{id:'v105-m002',type:'mystery',category:'La Bible et l’Histoire',difficulty:'hard',answer:'Jérusalem',clues:['David me conquiert pour en faire sa capitale.','Jésus y enseigne et y meurt.','Je suis appelée la ville du grand Roi.'],explanation:'Jérusalem devient la capitale de David et occupe une place centrale dans les récits bibliques.',reference:'2 Samuel 5:6-9; Psaume 48:2; Matthieu 21:10-11; Matthieu 27:33-50'},
-{id:'v105-m003',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Job',clues:['J’ai connu de grandes épreuves.','Mon récit met en avant l’intégrité.','Je suis au centre d’un livre portant mon nom.'],explanation:'Le livre de Job traite de ses épreuves et de son intégrité.',reference:'Job 1:1-22; 2:1-10'},
-{id:'v105-m004',type:'mystery',category:'Rois & prophètes',difficulty:'hard',answer:'Élie',clues:['J’ai affronté les prophètes de Baal.','Une grande confrontation a eu lieu au Carmel.','J’ai été un prophète en Israël.'],explanation:'Élie a défendu le vrai culte face aux prophètes de Baal.',reference:'1 Rois 18:19-40'},
-{id:'v105-m005',type:'mystery',category:'Prophéties',difficulty:'expert',answer:'Les soixante-dix semaines',clues:['Je me trouve dans Daniel.','Je suis liée à une période prophétique.','Je figure dans Daniel chapitre 9.'],explanation:'Daniel 9:24-27 présente cette prophétie.',reference:'Daniel 9:24-27'}
+{id:'v105-m003',type:'mystery',category:'Personnages',difficulty:'hard',answer:'Job',clues:['Ce personnage a connu de grandes épreuves.','Son récit met en avant l’intégrité.','Il est au centre d’un livre portant son nom.'],explanation:'Le livre de Job traite de ses épreuves et de son intégrité.',reference:'Job 1:1-22; 2:1-10'},
+{id:'v105-m004',type:'mystery',category:'Rois & prophètes',difficulty:'hard',answer:'Élie',clues:['Ce personnage a affronté les prophètes de Baal.','Une grande confrontation a eu lieu au Carmel.','Il a été un prophète en Israël.'],explanation:'Élie a défendu le vrai culte face aux prophètes de Baal.',reference:'1 Rois 18:19-40'},
+
 ];
