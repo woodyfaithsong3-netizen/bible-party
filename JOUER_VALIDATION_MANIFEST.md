@@ -1266,3 +1266,15 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - Correction : premier indice autonome, `« Il est fils d’Alphée. »` → `« Ce personnage est fils d’Alphée. »`.
 - Aucun changement de réponse, référence ou fait biblique.
 - Contrôle ciblé : premier indice autonome et jouabilité immédiate.
+
+
+## Bloc SEM-L4-002 — VALIDATED — 2026-10-13
+- Source : `src/data/characterQuestionsL4.ts`
+- SHA source validé : `3bb02eb16fddf630233c3256ee29c5edec7652ef`
+- Périmètre : 200 Quiz + 52 Vrai/Faux + 40 Qui est-ce ? = 292 cartes.
+- État : VALIDATED.
+- Revalidation ciblée : `char-l4-m-76-2` — Jacques fils d’Alphée ; le premier indice a été rendu autonome (« Ce personnage est fils d’Alphée. ») pour respecter la jouabilité du mode Qui est-ce ?.
+- Contrôle transversal après correction : 250 cartes Qui est-ce ? L1-L6 rescannées ; aucune autre première indication du même type (pronom sans antécédent) ni réponse non-personnage repérée dans ces six banques.
+- Les 291 cartes non modifiées conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale supplémentaire.
+- CI : audit de contenu vert sur ce SHA ; la réconciliation de couverture est désormais enregistrée par ce bloc.
+- Règle : ne pas réauditer tant que le SHA source reste inchangé.
