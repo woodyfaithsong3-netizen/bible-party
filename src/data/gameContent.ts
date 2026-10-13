@@ -1,7 +1,6 @@
 import { challenges, intruderQuestions, mysteryQuestions, quizQuestions, quoteQuestions, timesUpQuestions, trueFalseQuestions } from '@/data/questions';
 import { completeTheVerseQuestions, completeTheSongQuestions } from '@/data/completeTheVerseQuestions';
 import { GameType, Question, QuizQuestion } from '@/types';
-import type { TimesUpQuestion } from '@/data/questions';
 
 /** Les quatre modes de jeu officiels : Quiz, Vrai / Faux, Qui est-ce ? et Compléter les paroles. */
 
@@ -27,6 +26,8 @@ const integratedQuizQuestions: Question[] = [
   ...intruderQuestions.map((q) => ({ id:q.id, type:'quiz' as const, category:q.category, difficulty:q.difficulty, question:'Quel élément est l’intrus ?', answers:q.items, correctAnswer:q.intruder, explanation:q.explanation, reference:q.reference })),
 ];
 const integratedCompleteQuestions: QuizQuestion[] = [...completeTheVerseQuestions, ...completeTheSongQuestions];
+
+type TimesUpCard = (typeof timesUpQuestions)[number];
 
 const TIMES_UP_NON_PERSON_QUIZ_OPTIONS: Record<string, string[]> = {
   'v53-tu-010': ['Psaume 23', 'Psaume 1', 'Psaume 19', 'Psaume 37'],
@@ -57,7 +58,7 @@ const TIMES_UP_NON_PERSON_QUIZ_OPTIONS: Record<string, string[]> = {
   'v102-tu-005': ['Premier jour', 'Deuxième jour', 'Sixième jour', 'Septième jour'],
 };
 
-const prepareTimesUpQuiz = (q: TimesUpQuestion): QuizQuestion | null => {
+const prepareTimesUpQuiz = (q: TimesUpCard): QuizQuestion | null => {
   const answers = TIMES_UP_NON_PERSON_QUIZ_OPTIONS[q.id];
   if (!answers) return null;
   const correctAnswer = answers.indexOf(q.answer);
