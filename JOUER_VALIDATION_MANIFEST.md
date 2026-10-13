@@ -1283,7 +1283,7 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 ## SEM-V58-002 — VALIDATED — 2026-10-13
 - Source : `src/data/jw_enrichment_v58.ts`
 - SHA source validé : `5e427a2875fa7675b8f55b741a3325a6fccf7ed2`
-- Périmètre : 24 cartes jouables après migration ciblée (5 Quiz, 9 Mystère, 12 Vrai/Faux).
+- Périmètre : 25 cartes jouables (5 Quiz, 8 Qui est-ce ?, 12 Vrai/Faux), après migration ciblée de `v58-m-005` (Papyrus) vers le Quiz.
 - Corrections : `v58-m-001`, `v58-m-002`, `v58-m-004` ont désormais un premier indice autonome (« Ce personnage… ») ; `v58-m-005` (Papyrus), qui n’était pas un personnage, a été retirée du mode Mystère et remplacée par `v58-q-005` dans le Quiz.
 - Contrôle ciblé : le mode Qui est-ce ? de V58 ne contient plus de réponse non-personnage ni de premier indice dépendant d’un pronom sans antécédent.
 - Les autres cartes V58 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale supplémentaire.
@@ -1302,6 +1302,8 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 ## SEM-V104-003 — VALIDATED — 2026-10-13
 - Source : `src/data/jw_enrichment_v104.ts`
 - SHA source validé : `f9ca0588fcadc942aca217240a796fbdb6bcb851`
+- Périmètre : 25 Quiz + 12 Vrai/Faux + 2 Qui est-ce ? = 39 cartes.
+- Taille : 39 cartes
 - Correction finale : cartes Mystère non-personnage retirées ; aucun nouveau Quiz doublon conservé.
 - État : VALIDATED.
 
