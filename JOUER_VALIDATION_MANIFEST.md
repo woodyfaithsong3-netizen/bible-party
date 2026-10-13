@@ -1290,18 +1290,24 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - État : VALIDATED.
 
 
-## SEM-V104-002 — VALIDATED — 2026-10-13
+## SEM-V104-002-HISTORIQUE — supersédé par SEM-V104-003
+- Source : `src/data/jw_enrichment_v104.ts`
+- SHA historique : `f9ca0588fcadc942aca217240a796fbdb6bcb851`
+
+## SEM-V105-002-HISTORIQUE — supersédé par SEM-V105-003
+- Source : `src/data/jw_enrichment_v105.ts`
+- SHA historique : `395a1a1cd34142517e9a57a60ae2affbae00fce7`
+
+
+## SEM-V104-003 — VALIDATED — 2026-10-13
 - Source : `src/data/jw_enrichment_v104.ts`
 - SHA source validé : `f9ca0588fcadc942aca217240a796fbdb6bcb851`
-- Périmètre : 38 cartes jouables (24 Quiz, 12 Vrai/Faux, 2 Mystère).
-- Corrections ciblées : les anciennes cartes Mystère `v104-m-003` (Psaume 119) et `v104-m-006` (Nicodème) ont été retirées du mode Mystère ; leurs sujets sont déjà couverts par des cartes Quiz existantes. `v104-m-004` et `v104-m-007` ont reçu des premiers indices autonomes (« Ce personnage… »).
-- Contrôle : aucune réponse non-personnage ne reste dans le Mystère V104 sur la passe ciblée.
+- Correction finale : cartes Mystère non-personnage retirées ; aucun nouveau Quiz doublon conservé.
 - État : VALIDATED.
 
-## SEM-V105-002 — VALIDATED — 2026-10-13
+## SEM-V105-003 — VALIDATED — 2026-10-13
 - Source : `src/data/jw_enrichment_v105.ts`
-- SHA source validé : `395a1a1cd34142517e9a57a60ae2affbae00fce7`
-- Périmètre : 40 cartes jouables (30 Quiz, 8 Vrai/Faux, 2 Mystère).
-- Corrections ciblées : `v105-m002` (Jérusalem) et `v105-m005` (les soixante-dix semaines) ont été retirées du mode Mystère, car ce ne sont pas des personnages et leurs sujets sont déjà couverts par des Quiz existants. `v105-m003` et `v105-m004` ont reçu des premiers indices autonomes.
-- Contrôle : aucune réponse non-personnage ne reste dans le Mystère V105 sur la passe ciblée.
+- SHA source validé : `453d38121ffe9d9d24e075ec131e9cc134f72455`
+- Correction finale : suppression des deux cartes Quiz temporaires `v105-q031` et `v105-q032` qui dupliquaient des IDs déjà présents dans la banque ; le contenu existant `v105-q017` et `v105-q020` reste intact.
+- Mystère limité aux personnages `Job` et `Élie` sur cette passe.
 - État : VALIDATED.
