@@ -635,3 +635,11 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - `src/data/characterQuestionsL2.ts` — SHA `f170162a3c74b85261c77d1f0582d022f35d33aa`.
 - 9 cartes Vrai/Faux reformulées pour supprimer des affirmations fausses artificielles et rendre le jeu plus direct : `char-l2-tf-21-2`, `25-2`, `26-2`, `30-2`, `32-2`, `33-2`, `35-2`, `37-2`, `39-2`.
 - Réponses, explications et références réalignées ; aucune modification AVENTURE / Ma Bible.
+
+
+## Passe qualité Mystère V58 — 2026-10-13
+- `jw_enrichment_v58.ts` contrôlé après détection de trois premiers indices commençant par « Il… » sans antécédent (`v58-m-001`, `v58-m-002`, `v58-m-004`). Ils ont été rendus autonomes par « Ce personnage… ».
+- `v58-m-005` avait pour réponse « Papyrus », donc ne respectait pas le périmètre final du mode Qui est-ce ? centré sur les personnages. La carte a été retirée du Mystère et remplacée par une question Quiz équivalente `v58-q-005`.
+- Contrôle ciblé : aucune autre carte V58 Mystère ne présente désormais ces deux défauts dans la passe effectuée.
+- Source validée : `src/data/jw_enrichment_v58.ts` — SHA `5e427a2875fa7675b8f55b741a3325a6fccf7ed2`.
+- AVENTURE, Ma Bible et `characterLearning.ts` non modifiés.
