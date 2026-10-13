@@ -221,7 +221,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Recompte : 25 IDs uniques ; `v58-tf-012` inclus et revérifié (affirmation, réponse vraie, explication et référence Joël 2:28-29 cohérentes). L’ancien total de 24 était une erreur de comptage du registre, pas une carte retirée.
 - CI + GitHub Pages : verts.
 
-## SEM-V104-001
+## SEM-V104-001-HISTORIQUE — supersédé par SEM-V104-002
 - Source : `src/data/jw_enrichment_v104.ts`
 - SHA source validé : `4af72a2b73d9de486bf9f76cacd72dffcb1b5556`
 - Périmètre : 40 cartes.
@@ -230,7 +230,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Corrections : `v104-tf-008`, `v104-tf-012`.
 - CI + GitHub Pages : verts.
 
-## SEM-V105-001
+## SEM-V105-001-HISTORIQUE — supersédé par SEM-V105-002
 - Source : `src/data/jw_enrichment_v105.ts`
 - SHA source validé : `401397a34f80594232a321227f9c4e6d9b146ef4`
 - Périmètre : 42 cartes.
@@ -1287,4 +1287,21 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - Corrections : `v58-m-001`, `v58-m-002`, `v58-m-004` ont désormais un premier indice autonome (« Ce personnage… ») ; `v58-m-005` (Papyrus), qui n’était pas un personnage, a été retirée du mode Mystère et remplacée par `v58-q-005` dans le Quiz.
 - Contrôle ciblé : le mode Qui est-ce ? de V58 ne contient plus de réponse non-personnage ni de premier indice dépendant d’un pronom sans antécédent.
 - Les autres cartes V58 conservent leur validation éditoriale antérieure ; cette passe ne constitue pas une relecture intégrale supplémentaire.
+- État : VALIDATED.
+
+
+## SEM-V104-002 — VALIDATED — 2026-10-13
+- Source : `src/data/jw_enrichment_v104.ts`
+- SHA source validé : `f9ca0588fcadc942aca217240a796fbdb6bcb851`
+- Périmètre : 38 cartes jouables (24 Quiz, 12 Vrai/Faux, 2 Mystère).
+- Corrections ciblées : les anciennes cartes Mystère `v104-m-003` (Psaume 119) et `v104-m-006` (Nicodème) ont été retirées du mode Mystère ; leurs sujets sont déjà couverts par des cartes Quiz existantes. `v104-m-004` et `v104-m-007` ont reçu des premiers indices autonomes (« Ce personnage… »).
+- Contrôle : aucune réponse non-personnage ne reste dans le Mystère V104 sur la passe ciblée.
+- État : VALIDATED.
+
+## SEM-V105-002 — VALIDATED — 2026-10-13
+- Source : `src/data/jw_enrichment_v105.ts`
+- SHA source validé : `395a1a1cd34142517e9a57a60ae2affbae00fce7`
+- Périmètre : 40 cartes jouables (30 Quiz, 8 Vrai/Faux, 2 Mystère).
+- Corrections ciblées : `v105-m002` (Jérusalem) et `v105-m005` (les soixante-dix semaines) ont été retirées du mode Mystère, car ce ne sont pas des personnages et leurs sujets sont déjà couverts par des Quiz existants. `v105-m003` et `v105-m004` ont reçu des premiers indices autonomes.
+- Contrôle : aucune réponse non-personnage ne reste dans le Mystère V105 sur la passe ciblée.
 - État : VALIDATED.
