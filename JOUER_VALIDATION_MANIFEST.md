@@ -223,7 +223,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## SEM-V104-001
 - Source : `src/data/jw_enrichment_v104.ts`
-- SHA source validé : `f8d749b8621bd995aad34c3eb76363b71754adf8`
+- SHA source validé : `4af72a2b73d9de486bf9f76cacd72dffcb1b5556`
 - Périmètre : 40 cartes.
 - État : VALIDATED
 - Revalidation ciblée 2026-10-13 : `v104-q-006` reformulée en question factuelle directe ; réponse, référence et explication conservées.
@@ -1147,9 +1147,11 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
 
+- Revalidation ciblée complémentaire du 13/10/2026 : `char-l6-q-111-10` reformulée en question factuelle directe sur l’action de la femme qui souffrait de pertes de sang ; réponse, index, explication et référence contrôlés.
+
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `6a8c3274bcb908815345e4b5e0bd712206e92445`
+- SHA source validé : `78f7d4b61c32b29623c458c10481f9fbc798c59c`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
