@@ -66,7 +66,7 @@ const prepareTimesUpQuiz = (q: TimesUpQuestion): QuizQuestion | null => {
     type: 'quiz',
     category: canonicalGameCategory(q.category),
     difficulty: q.difficulty,
-    question: 'Quel élément biblique correspond à ces indices ?',
+    question: `Quel élément biblique correspond aux indices « ${q.clues.join(' · ')} » ?`,
     answers,
     correctAnswer,
     explanation: 'Carte Time’s Up convertie en Quiz pour éviter de présenter un lieu, un livre, un verset ou un objet comme un personnage dans Qui est-ce ?.',
