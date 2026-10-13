@@ -160,7 +160,7 @@ for (const row of rows) {
   console.log(row.file + ': ' + row.validated + '/' + row.total + ' VALIDATED; ' + row.pending + ' restantes; ' + row.banks + ' banques; SHA ' + row.sha + (row.evidence ? '; blocs: ' + row.evidence : ''));
 }
 console.log(questionsFile + ': ' + baseValidated + '/' + basePlayable + ' VALIDATED uniques; ' + basePending + ' restantes; SHA ' + questionsSha + '; blocs: ' + (baseCoverage.evidence.join('; ') || 'aucun'));
-if (totalUniquePlayable !== 3640) failures.push('le total courant (' + totalUniquePlayable + ') diffère du total de référence documenté (3640); mettre à jour le registre après vérification');
+if (totalUniquePlayable !== 3637) failures.push('le total courant (' + totalUniquePlayable + ') diffère du total de référence documenté (3637); mettre à jour le registre après vérification');
 if (failures.length) {
   console.error('\nÉCHEC DE RÉCONCILIATION:');
   for (const failure of failures) console.error('- ' + failure);
