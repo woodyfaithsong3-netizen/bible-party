@@ -4,8 +4,6 @@ import { QuizQuestion, TrueFalseQuestion, MysteryQuestion } from '@/types';
 // Formulations originales ; références bibliques ou références aux outils JW.org.
 
 export const jwV105Quiz: QuizQuestion[] = [
-{id:'v105-q031',type:'quiz',category:'La Bible et l’Histoire',difficulty:'hard',question:'Quelle ville David conquit-il pour en faire sa capitale ?',answers:['Jérusalem','Bethléem','Jéricho','Samarie'],correctAnswer:0,explanation:'David conquit Jérusalem et en fit sa capitale.',reference:'2 Samuel 5:6-9'},
-{id:'v105-q032',type:'quiz',category:'Prophéties',difficulty:'expert',question:'Dans quel chapitre de Daniel trouve-t-on la prophétie des soixante-dix semaines ?',answers:['Daniel 9','Daniel 2','Daniel 6','Daniel 12'],correctAnswer:0,explanation:'Daniel 9:24-27 présente la prophétie des soixante-dix semaines.',reference:'Daniel 9:24-27'},
 
 {id:'v105-q001',type:'quiz',category:'Questions bibliques',difficulty:'easy',question:'Que reconnaissent les créatures célestes à propos de Jéhovah ?',answers:['Qu’il est digne de recevoir gloire, honneur et puissance','Qu’il doit devenir roi de Rome','Qu’il dépend des humains pour créer','Qu’il doit être adoré seulement une fois par an'],correctAnswer:0,explanation:'Les créatures célestes reconnaissent que Jéhovah est digne de recevoir gloire, honneur et puissance parce qu’il a créé toutes choses.',reference:'Révélation 4:11'},
 {id:'v105-q002',type:'quiz',category:'Questions bibliques',difficulty:'medium',question:'Quel livre biblique explique que toute Écriture est inspirée de Dieu ?',answers:['Romains','Hébreux','Jacques','2 Timothée'],correctAnswer:3,explanation:'Paul écrit cette affirmation dans sa deuxième lettre à Timothée.',reference:'2 Timothée 3:16'},
