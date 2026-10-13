@@ -1308,6 +1308,6 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 ## SEM-V105-003 — VALIDATED — 2026-10-13
 - Source : `src/data/jw_enrichment_v105.ts`
 - SHA source validé : `453d38121ffe9d9d24e075ec131e9cc134f72455`
-- Correction finale : suppression des deux cartes Quiz temporaires `v105-q031` et `v105-q032` qui dupliquaient des IDs déjà présents dans la banque ; le contenu existant `v105-q017` et `v105-q020` reste intact.
+- Correction finale : suppression des deux cartes Quiz temporaires `v105-q031` et `v105-q032` ajoutées en doublon d’IDs déjà présents plus bas dans la même banque ; les cartes originales `v105-q031` et `v105-q032` sont conservées.
 - Mystère limité aux personnages `Job` et `Élie` sur cette passe.
 - État : VALIDATED.
