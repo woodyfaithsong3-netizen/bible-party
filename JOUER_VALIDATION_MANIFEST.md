@@ -1315,3 +1315,13 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - Taille : 40 cartes
 - Mystère limité aux personnages `Job` et `Élie` sur cette passe.
 - État : VALIDATED.
+
+
+## Bloc ROUTE-TU-QUIZ-20261013 — VALIDATED
+- Source : `src/data/gameContent.ts`
+- SHA source validé : `8e19174064ccc46f4b14581f58165c139e640d0a`
+- Périmètre : 26 cartes Time’s Up historiques dont la réponse n’est pas un personnage ou Jéhovah.
+- Correction : ces 26 cartes ne sont plus routées vers Qui est-ce ? ; elles sont converties en Quiz avec 4 réponses bibliquement plausibles, en conservant leur référence et leur difficulté.
+- Cartes concernées : `v53-tu-010`, `v56-t-001`, `v56-t-002`, `v56-t-005`, `v56-t-006`, `v57-t-005` à `v57-t-012`, `v57-t-016`, `v57-t-021`, `v57-t-023`, `v57-t-044`, `v90-tu-007` à `v90-tu-011`, `v102-tu-002` à `v102-tu-005`.
+- Contrôle : aucune de ces réponses (lieu, livre/verset, objet, phénomène ou concept) ne peut désormais apparaître comme réponse d’une carte Qui est-ce ? via la transformation Time’s Up.
+- État : VALIDATED sous réserve de CI sur ce SHA.
