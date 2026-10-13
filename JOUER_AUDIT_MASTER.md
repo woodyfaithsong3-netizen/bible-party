@@ -629,3 +629,9 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - Les périmètres restent respectivement 284 / 290 / 288 / 292 / 290 cartes. Aucune fiche AVENTURE, Ma Bible ou `characterLearning.ts` n'a été modifiée.
 - Les validations antérieures des cartes non modifiées restent conservées ; seules les modifications récentes ont fait l'objet d'une revalidation ciblée.
 - Commit de réconciliation du manifest : `3429fc9cf28c33567ee3ca54e6bddb7466804744`.
+
+
+### Revalidation Vrai/Faux L2 — 2026-10-13
+- `src/data/characterQuestionsL2.ts` — SHA `76eefff6c36b6ffc6ee49bfd60dc8d4b31acaf5d`.
+- 9 cartes Vrai/Faux reformulées pour supprimer des affirmations fausses artificielles et rendre le jeu plus direct : `char-l2-tf-21-2`, `25-2`, `26-2`, `30-2`, `32-2`, `33-2`, `35-2`, `37-2`, `39-2`.
+- Réponses, explications et références réalignées ; aucune modification AVENTURE / Ma Bible.
