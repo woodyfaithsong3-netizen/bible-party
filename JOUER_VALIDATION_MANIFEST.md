@@ -1257,3 +1257,12 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - Contrôles : structure Quiz compatible avec `GAME_CONTENT.complete`, réponses dans `0..3`, aucune carte sans référence, IDs `complete-*` et `song-*` distincts, mélange effectif des deux familles dans `game.tsx`.
 - Vérification éditoriale ciblée des paroles JW : les formulations contrôlées pour les cantiques 22, 38, 40, 134, 135 et 26 correspondent aux pages officielles JW.org.
 - État : VALIDATED.
+
+
+### Revalidation ciblée Qui est-ce — L4 Jacques fils d’Alphée (13/10/2026)
+- Source : `src/data/characterQuestionsL4.ts`
+- SHA source revalidé : `3bb02eb16fddf630233c3256ee29c5edec7652ef`
+- Carte : `char-l4-m-76-2`
+- Correction : premier indice autonome, `« Il est fils d’Alphée. »` → `« Ce personnage est fils d’Alphée. »`.
+- Aucun changement de réponse, référence ou fait biblique.
+- Contrôle ciblé : premier indice autonome et jouabilité immédiate.
