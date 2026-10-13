@@ -1325,3 +1325,11 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - Cartes concernées : `v53-tu-010`, `v56-t-001`, `v56-t-002`, `v56-t-005`, `v56-t-006`, `v57-t-005` à `v57-t-012`, `v57-t-016`, `v57-t-021`, `v57-t-023`, `v57-t-044`, `v90-tu-007` à `v90-tu-011`, `v102-tu-002` à `v102-tu-005`.
 - Contrôle : aucune de ces réponses (lieu, livre/verset, objet, phénomène ou concept) ne peut désormais apparaître comme réponse d’une carte Qui est-ce ? via la transformation Time’s Up.
 - État : VALIDATED sous réserve de CI sur ce SHA.
+
+
+## Revalidation ROUTE-TU-QUIZ — formulation distincte
+- Source : `src/data/gameContent.ts`
+- SHA source validé : `3d3da3d477905fbed44d2936a79d079968fc09be`
+- Les 26 Quiz issus de Time’s Up utilisent désormais leurs propres indices dans l’énoncé afin d’éviter tout doublon de question normalisée entre cartes.
+- Aucun changement aux réponses, références ou options validées du lot précédent.
+- État : VALIDATED sous réserve de CI sur ce SHA.
