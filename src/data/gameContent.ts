@@ -27,6 +27,53 @@ const integratedQuizQuestions: Question[] = [
 ];
 const integratedCompleteQuestions: QuizQuestion[] = [...completeTheVerseQuestions, ...completeTheSongQuestions];
 
+const TIMES_UP_NON_PERSON_QUIZ_OPTIONS: Record<string, string[]> = {
+  'v53-tu-010': ['Psaume 23', 'Psaume 1', 'Psaume 19', 'Psaume 37'],
+  'v56-t-001': ['Psaume 23', 'Psaume 1', 'Psaume 19', 'Psaume 37'],
+  'v56-t-002': ['Proverbes 3:5-6', 'Psaume 37:5', 'Isaïe 41:10', 'Philippiens 4:6-7'],
+  'v56-t-005': ['Nuages', 'Pluie', 'Vent', 'Foudre'],
+  'v56-t-006': ['Deutéronome', 'Lévitique', 'Nombres', 'Exode'],
+  'v57-t-005': ['Jérusalem', 'Jéricho', 'Ninive', 'Bethléem'],
+  'v57-t-006': ['Matthieu 6:33', 'Matthieu 5:3', 'Matthieu 7:7', 'Matthieu 24:14'],
+  'v57-t-007': ['Psaume 119', 'Psaume 23', 'Psaume 27', 'Psaume 37'],
+  'v57-t-008': ['Philippiens 4:13', 'Philippiens 4:6-7', 'Romains 8:28', '2 Corinthiens 12:9'],
+  'v57-t-009': ['Josué 1:9', 'Isaïe 41:10', 'Psaume 27:14', 'Deutéronome 31:6'],
+  'v57-t-010': ['Matthieu 6:33', 'Matthieu 5:3', 'Matthieu 7:7', 'Matthieu 24:14'],
+  'v57-t-011': ['Philippiens 4:6-7', 'Philippiens 4:13', '1 Pierre 5:7', 'Psaume 55:22'],
+  'v57-t-012': ['Révélation 21:4', 'Isaïe 65:17', 'Psaume 37:29', 'Révélation 7:17'],
+  'v57-t-016': ['Babylone', 'Ninive', 'Jérusalem', 'Samarie'],
+  'v57-t-021': ['Lévitique 13–15', 'Deutéronome 23:12-14', 'Lévitique 17:10-14', 'Nombres 5:1-4'],
+  'v57-t-023': ['Genèse 1:1', 'Jean 1:1', 'Psaume 90:2', 'Révélation 4:11'],
+  'v57-t-044': ['Vision de Daniel 7', 'Vision de Daniel 2', 'Vision de Daniel 8', 'Vision d’Ézéchiel 1'],
+  'v90-tu-007': ['Jéricho', 'Jérusalem', 'Bethléem', 'Ninive'],
+  'v90-tu-008': ['Bethléem', 'Jérusalem', 'Nazareth', 'Jéricho'],
+  'v90-tu-009': ['Césarée', 'Joppé', 'Jérusalem', 'Antioche'],
+  'v90-tu-010': ['Arche de l’Alliance', 'Tabernacle', 'Autel', 'Table des pains'],
+  'v90-tu-011': ['Manne', 'Pains sans levain', 'Cailles', 'Eau du rocher'],
+  'v102-tu-002': ['Psaume 1', 'Psaume 23', 'Psaume 19', 'Psaume 37'],
+  'v102-tu-003': ['Psaume 19', 'Psaume 1', 'Psaume 22', 'Psaume 119'],
+  'v102-tu-004': ['1 Corinthiens', 'Romains', 'Galates', 'Éphésiens'],
+  'v102-tu-005': ['Premier jour', 'Deuxième jour', 'Sixième jour', 'Septième jour'],
+};
+
+const prepareTimesUpQuiz = (q: TimesUpQuestion): QuizQuestion | null => {
+  const answers = TIMES_UP_NON_PERSON_QUIZ_OPTIONS[q.id];
+  if (!answers) return null;
+  const correctAnswer = answers.indexOf(q.answer);
+  if (correctAnswer < 0) return null;
+  return {
+    id: q.id,
+    type: 'quiz',
+    category: canonicalGameCategory(q.category),
+    difficulty: q.difficulty,
+    question: 'Quel élément biblique correspond à ces indices ?',
+    answers,
+    correctAnswer,
+    explanation: 'Carte Time’s Up convertie en Quiz pour éviter de présenter un lieu, un livre, un verset ou un objet comme un personnage dans Qui est-ce ?.',
+    reference: q.reference,
+  };
+};
+
 const SUBJECTIVE_TRUE_FALSE_PATTERNS = [
   /quelle qualité/i, /qualité/i, /manifeste(?:-t-il|-t-elle)?/i, /manifeste la qualité/i, /fait preuve de/i,
   /preuve de (?:courage|foi|fidélité|endurance|patience|persévérance|générosité|humilité|compassion|zèle)/i,
@@ -58,8 +105,8 @@ function buildTrueFalseDeck(): Question[] {
   return deck;
 }
 export const GAME_CONTENT: Record<GameType, Question[]> = {
-  quiz: integratedQuizQuestions.map((q) => q.type === 'quiz' ? prepareQuiz(q) : q),
-  mystery: [...mysteryQuestions.map(prepareMystery), ...timesUpQuestions.map((q) => ({ id:q.id, type:'mystery' as const, category:canonicalGameCategory(q.category), difficulty:q.difficulty, answer:q.answer, clues:q.clues.map((clue) => String(clue || '').replace(/\s+/g, ' ').trim()), explanation:'Carte Time’s Up convertie en Qui est-ce ? pour rester jouable dans les quatre modes officiels.', reference:q.reference }))],
+  quiz: [...integratedQuizQuestions.map((q) => q.type === 'quiz' ? prepareQuiz(q) : q), ...timesUpQuestions.map(prepareTimesUpQuiz).filter((q): q is QuizQuestion => q !== null)],
+  mystery: [...mysteryQuestions.map(prepareMystery), ...timesUpQuestions.filter((q) => !TIMES_UP_NON_PERSON_QUIZ_OPTIONS[q.id]).map((q) => ({ id:q.id, type:'mystery' as const, category:canonicalGameCategory(q.category), difficulty:q.difficulty, answer:q.answer, clues:q.clues.map((clue) => String(clue || '').replace(/\s+/g, ' ').trim()), explanation:'Carte Time’s Up convertie en Qui est-ce ? pour rester jouable dans les quatre modes officiels.', reference:q.reference }))],
   truefalse: buildTrueFalseDeck(),
   complete: integratedCompleteQuestions.map(prepareQuiz),
 };
