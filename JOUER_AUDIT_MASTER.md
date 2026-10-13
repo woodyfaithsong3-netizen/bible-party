@@ -652,3 +652,10 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - Résultat : aucune réponse non-personnage détectée dans le Mystère V104/V105 sur cette passe ciblée.
 - SHAs validés : V104 `f9ca0588fcadc942aca217240a796fbdb6bcb851`, V105 `395a1a1cd34142517e9a57a60ae2affbae00fce7`.
 - AVENTURE, Ma Bible et `characterLearning.ts` non modifiés.
+
+
+## Revalidation ciblée — routage Time’s Up vers les 4 modes (13/10/2026)
+- `src/data/gameContent.ts` a été corrigé pour ne plus transformer automatiquement toutes les cartes Time’s Up en Qui est-ce ?.
+- 26 cartes historiques dont la réponse est un lieu, un livre/verset, un objet, un phénomène ou un concept sont maintenant converties en Quiz avec quatre choix ; les cartes personnelles/Jéhovah restent en Qui est-ce ?.
+- Les zones AVENTURE, Ma Bible et les fiches personnages officielles ne sont pas touchées.
+- Commit de routage : `33561e1b7077bf5a56cf0978dde67583fed67824`.
