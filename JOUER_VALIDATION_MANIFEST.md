@@ -1219,10 +1219,11 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 
 ### Bloc RECON-L2-20261013 — VALIDATED
 - Source : `src/data/characterQuestionsL2.ts`
-- SHA source validé : `f704b719de10b532f874877173e30a48d6e4125b`
+- SHA source validé : `76eefff6c36b6ffc6ee49bfd60dc8d4b31acaf5d`
 - Taille : 290 cartes
 - État : VALIDATED
 - Contrôles : revalidation ciblée des modifications récentes (indices Qui est-ce ? autonomes et cartes déjà corrigées), structure, jouabilité et cohérence des éléments modifiés.
+- Revalidation ciblée 2026-10-13 : 9 Vrai/Faux reformulés en affirmations directes (`char-l2-tf-21-2`, `25-2`, `26-2`, `30-2`, `32-2`, `33-2`, `35-2`, `37-2`, `39-2`) ; réponses passées à `true`, explications et références alignées.
 - Les validations antérieures des cartes non modifiées restent conservées.
 
 ### Bloc RECON-L3-20261013 — VALIDATED
