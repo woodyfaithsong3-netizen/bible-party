@@ -600,3 +600,10 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - Aucun fait biblique, réponse, référence ou identifiant n’a été modifié.
 - SHAs courants : L1 `b2ff35342d457a371dd5e277238add4813ba6c9b`, L2 `a7485d3fd9cdb98ff1cbf4242cefd367b0d3aeef`, L3 `8d08522a5aaef8cd953c6681fef9f2dc636698d5`.
 - Les blocs concernés restent **VALIDATED** après revalidation ciblée ; aucune relecture intégrale des autres cartes n’est revendiquée.
+
+
+## Passe qualité Qui est-ce ? L4 — 2026-10-13
+- Deux cartes expertes avaient un premier indice réduit à un simple lieu (« Jérusalem. », « Damas. »), insuffisant comme indice autonome.
+- Reformulation effectuée sans changer la réponse, les faits bibliques ni les références.
+- Cartes : `char-l4-m-68-2` et `char-l4-m-69-2`.
+- Revalidation ciblée effectuée après modification.
