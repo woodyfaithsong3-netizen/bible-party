@@ -30,6 +30,8 @@ const integratedCompleteQuestions: QuizQuestion[] = [...completeTheVerseQuestion
 type TimesUpCard = (typeof timesUpQuestions)[number];
 
 const TIMES_UP_NON_PERSON_QUIZ_OPTIONS: Record<string, string[]> = {
+  'jwcat-timesup-2': ['Genèse', 'Exode', 'Psaumes', 'Isaïe'],
+  'jwcat-timesup-4': ['Lévitique 13', 'Lévitique 11', 'Nombres 19', 'Deutéronome 23'],
   'v53-tu-010': ['Psaume 23', 'Psaume 1', 'Psaume 19', 'Psaume 37'],
   'v56-t-001': ['Psaume 23', 'Psaume 1', 'Psaume 19', 'Psaume 37'],
   'v56-t-002': ['Proverbes 3:5-6', 'Psaume 37:5', 'Isaïe 41:10', 'Philippiens 4:6-7'],
