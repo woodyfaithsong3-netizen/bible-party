@@ -52,10 +52,10 @@ const TIMES_UP_NON_PERSON_QUIZ_OPTIONS: Record<string, string[]> = {
   'v90-tu-009': ['Césarée', 'Joppé', 'Jérusalem', 'Antioche'],
   'v90-tu-010': ['Arche de l’Alliance', 'Tabernacle', 'Autel', 'Table des pains'],
   'v90-tu-011': ['Manne', 'Pains sans levain', 'Cailles', 'Eau du rocher'],
-  'v102-tu-002': ['Psaume 1', 'Psaume 23', 'Psaume 19', 'Psaume 37'],
-  'v102-tu-003': ['Psaume 19', 'Psaume 1', 'Psaume 22', 'Psaume 119'],
-  'v102-tu-004': ['1 Corinthiens', 'Romains', 'Galates', 'Éphésiens'],
-  'v102-tu-005': ['Premier jour', 'Deuxième jour', 'Sixième jour', 'Septième jour'],
+  'v102-tu-02': ['Psaume 1', 'Psaume 23', 'Psaume 19', 'Psaume 37'],
+  'v102-tu-03': ['Psaume 19', 'Psaume 1', 'Psaume 22', 'Psaume 119'],
+  'v102-tu-04': ['1 Corinthiens', 'Romains', 'Galates', 'Éphésiens'],
+  'v102-tu-05': ['Premier jour', 'Deuxième jour', 'Sixième jour', 'Septième jour'],
 };
 
 const prepareTimesUpQuiz = (q: TimesUpCard): QuizQuestion | null => {
