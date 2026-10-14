@@ -1,4 +1,4 @@
-import { challenges, intruderQuestions, mysteryQuestions, quizQuestions, quoteQuestions, timesUpQuestions, trueFalseQuestions } from '@/data/questions';
+import { intruderQuestions, mysteryQuestions, quizQuestions, quoteQuestions, timesUpQuestions, trueFalseQuestions } from '@/data/questions';
 import { completeTheVerseQuestions, completeTheSongQuestions } from '@/data/completeTheVerseQuestions';
 import { GameType, Question, QuizQuestion } from '@/types';
 
