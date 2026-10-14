@@ -71,7 +71,7 @@ const prepareTimesUpQuiz = (q: TimesUpCard): QuizQuestion | null => {
     question: `Quel élément biblique correspond aux indices « ${q.clues.join(' · ')} » ?`,
     answers,
     correctAnswer,
-    explanation: 'Carte Time’s Up convertie en Quiz pour éviter de présenter un lieu, un livre, un verset ou un objet comme un personnage dans Qui est-ce ?.',
+    explanation: `Les indices renvoient à ${q.answer}. La référence biblique permet de vérifier la réponse.`,
     reference: q.reference,
   };
 };
@@ -108,7 +108,7 @@ function buildTrueFalseDeck(): Question[] {
 }
 export const GAME_CONTENT: Record<GameType, Question[]> = {
   quiz: [...integratedQuizQuestions.map((q) => q.type === 'quiz' ? prepareQuiz(q) : q), ...timesUpQuestions.map(prepareTimesUpQuiz).filter((q): q is QuizQuestion => q !== null)],
-  mystery: [...mysteryQuestions.map(prepareMystery), ...timesUpQuestions.filter((q) => !TIMES_UP_NON_PERSON_QUIZ_OPTIONS[q.id]).map((q) => ({ id:q.id, type:'mystery' as const, category:canonicalGameCategory(q.category), difficulty:q.difficulty, answer:q.answer, clues:q.clues.map((clue) => String(clue || '').replace(/\s+/g, ' ').trim()), explanation:'Carte Time’s Up convertie en Qui est-ce ? pour rester jouable dans les quatre modes officiels.', reference:q.reference }))],
+  mystery: [...mysteryQuestions.map(prepareMystery), ...timesUpQuestions.filter((q) => !TIMES_UP_NON_PERSON_QUIZ_OPTIONS[q.id]).map((q) => ({ id:q.id, type:'mystery' as const, category:canonicalGameCategory(q.category), difficulty:q.difficulty, answer:q.answer, clues:q.clues.map((clue) => String(clue || '').replace(/\s+/g, ' ').trim()), explanation:`Les indices renvoient à ${q.answer}. La référence biblique permet de vérifier la réponse.`, reference:q.reference }))],
   truefalse: buildTrueFalseDeck(),
   complete: integratedCompleteQuestions.map(prepareQuiz),
 };
