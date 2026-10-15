@@ -245,15 +245,17 @@ const routingCode = routingQuestions + '\n' + routingGameContent + '\n' + routin
 
 // Contrôle runtime des quatre modes officiels : une banque ne suffit pas d'être
 // importée ; elle doit être injectée dans un pool effectivement consommé par getGamePool.
-// Les cartes Défi/Time's Up restent compatibles via leurs handlers historiques,
-// mais aucune carte Vrai/Faux ne peut être supprimée au moment de construire le deck.
+// Les cartes Défi sont retirées du gameplay final. Les anciennes Time's Up sont
+// transformées vers Quiz ou Qui est-ce ? ; aucune carte Vrai/Faux ne peut être
+// supprimée au moment de construire le deck.
 const runtimeRoutingFailures = [];
 const requiredRoutingFragments = [
   ['Quiz ← quizQuestions', /\.\.\.quizQuestions\b/],
   ['Quiz ← quoteQuestions transformées', /\.\.\.quoteQuestions\.map\(/],
   ['Quiz ← intruderQuestions transformées', /\.\.\.intruderQuestions\.map\(/],
   ['Qui est-ce ? ← mysteryQuestions', /mystery:\s*\[\.\.\.mysteryQuestions\.map\(/],
-  ['Qui est-ce ? ← timesUpQuestions transformées', /\.\.\.timesUpQuestions\.map\(/],
+  ['Quiz / Qui est-ce ? ← timesUpQuestions transformées', /timesUpQuestions\.map\(prepareTimesUpQuiz\)/],
+  ['Qui est-ce ? ← Time’s Up personnes restantes', /timesUpQuestions\.filter\(\(q\) => !TIMES_UP_NON_PERSON_QUIZ_OPTIONS\[q\.id\]\)\.map\(/],
   ['Vrai/Faux ← toutes les trueFalseQuestions', /const all = trueFalseQuestions\.map\(prepareTrueFalse\)/],
   ['Compléter ← completeTheVerseQuestions', /\.\.\.completeTheVerseQuestions\b/],
   ['Compléter ← completeTheSongQuestions', /\.\.\.completeTheSongQuestions\b/],
