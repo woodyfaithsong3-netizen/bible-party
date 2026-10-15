@@ -4,10 +4,10 @@
 
 ## 1. Inventaire de référence
 
-- Inventaire réconcilié : **3 640 cartes uniques actuellement jouables** — 3 163 cartes dans 74 banques de contenu supplémentaires et 477 cartes de base conservées dans `questions.ts`. Contrôle automatisé : 3 640/3 640 cartes routées, 74/74 banques supplémentaires reliées, 0 banque non routée.
+- Inventaire réconcilié : **3 637 cartes uniques actuellement jouables** — total courant réconcilié par `audit:jouer:validation`. Le routage automatisé contrôle que les banques sources atteignent les quatre pools réellement consommés.
 - Le total exclut les cartes de base intentionnellement filtrées parce qu’elles dupliquent des cartes conservées dans leurs banques sources. Le routage et la validation éditoriale restent deux contrôles distincts.
 - L’estimation historique « environ 5 000 questions » n’est pas confirmée par l’inventaire courant. Ne pas l’utiliser comme total.
-- Le premier rapprochement automatique a détecté une banque V61 « Mot interdit » absente du filtre d’inventaire et a corrigé le total de référence à 3 640 cartes. Les résultats doivent être recalculés par le contrôle du dépôt avant toute annonce de progression. Un CI vert prouve les contrôles automatisés exécutés, pas à lui seul la qualité éditoriale de chaque carte.
+- Le total historique de 3 640 cartes a ensuite été réconcilié à **3 637** après les retraits/migrations éditoriales documentés dans le manifeste. Les résultats doivent être recalculés par le contrôle du dépôt avant toute annonce de progression. Un CI vert prouve les contrôles automatisés exécutés, pas à lui seul la qualité éditoriale de chaque carte.
 
 ## 2. Les quatre banques logiques officielles
 
@@ -15,9 +15,9 @@ Les quatre pools logiques sont déjà centralisés dans `src/data/gameContent.ts
 
 | Banque logique | Pool moteur | Contenu qui y est distribué |
 |---|---|---|
-| Quiz | `GAME_CONTENT.quiz` | Questions Quiz, citations converties en Quiz, intrus convertis en Quiz et cartes historiques intégrées au pool Quiz |
+| Quiz | `GAME_CONTENT.quiz` | Questions Quiz, citations et intrus convertis en Quiz, plus anciennes cartes Time’s Up dont la réponse n’est pas un personnage/Jéhovah |
 | Vrai / Faux | `GAME_CONTENT.truefalse` | Toutes les affirmations de `trueFalseQuestions`, ordonnées sans supprimer les cartes |
-| Qui est-ce ? | `GAME_CONTENT.mystery` | Cartes Mystère et anciennes cartes Time’s Up transformées en indices |
+| Qui est-ce ? | `GAME_CONTENT.mystery` | Cartes Mystère et anciennes cartes Time’s Up dont la réponse est un personnage ou Jéhovah |
 | Compléter les paroles | `GAME_CONTENT.complete` | Versets à compléter et chansons/cantiques à compléter |
 
 **Règle :** une carte source conserve son ID et sa provenance, même si elle est transformée pour le mode cible. Le routage et la validation éditoriale sont deux statuts distincts.
@@ -62,7 +62,7 @@ Une carte ne devient pas `VALIDATED` parce que le build est vert. Les blocs du `
 
 ## 6. État de départ pour la réconciliation
 
-- Routage global courant : 3 640/3 640 cartes uniques, 74 banques supplémentaires + 477 cartes de base, 0 banque non routée.
+- Routage global courant : **3 637 cartes uniques** selon le registre automatisé courant ; les banques sources sont contrôlées jusqu’aux quatre pools runtime.
 - Les blocs éditoriaux déjà inscrits dans le manifeste sont conservés ; aucun n'est réinitialisé.
 - Le rapprochement SHA/périmètres a isolé 17 cartes V54 Qui est-ce ? auparavant absentes des blocs éditoriaux documentés. Elles ont maintenant été relues et ajoutées comme bloc distinct ; les autres blocs inchangés sont conservés.
 
