@@ -23,7 +23,7 @@ function prepareMystery(q: Extract<Question, { type: 'mystery' }>) {
 const integratedQuizQuestions: Question[] = [
   ...quizQuestions,
   ...quoteQuestions.map((q) => ({ id:q.id, type:'quiz' as const, category:q.category, difficulty:q.difficulty, question:q.quote, answers:q.answers, correctAnswer:q.correctAnswer, explanation:q.explanation, reference:q.reference })),
-  ...intruderQuestions.map((q) => ({ id:q.id, type:'quiz' as const, category:q.category, difficulty:q.difficulty, question:'Quel élément est l’intrus ?', answers:q.items, correctAnswer:q.intruder, explanation:q.explanation, reference:q.reference })),
+  ...intruderQuestions.map((q) => ({ id:q.id, type:'quiz' as const, category:q.category, difficulty:q.difficulty, question:`Quel élément est l’intrus parmi : ${q.items.join(' · ')} ?`, answers:q.items, correctAnswer:q.intruder, explanation:q.explanation, reference:q.reference })),
 ];
 const integratedCompleteQuestions: QuizQuestion[] = [...completeTheVerseQuestions, ...completeTheSongQuestions];
 
