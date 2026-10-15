@@ -659,3 +659,13 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - 26 cartes historiques dont la réponse est un lieu, un livre/verset, un objet, un phénomène ou un concept sont maintenant converties en Quiz avec quatre choix ; les cartes personnelles/Jéhovah restent en Qui est-ce ?.
 - Les zones AVENTURE, Ma Bible et les fiches personnages officielles ne sont pas touchées.
 - Commit de routage : `33561e1b7077bf5a56cf0978dde67583fed67824`.
+
+
+## Revalidation finale du pipeline JOUER — 2026-10-15
+- Les quatre pools runtime officiels restent : Quiz, Vrai/Faux, Qui est-ce ? et Compléter les paroles.
+- Les citations historiques sont transformées en Quiz en conservant leurs réponses, bonne réponse, explication et référence.
+- Les cartes Intrus historiques sont transformées en Quiz avec un énoncé autonome contenant les quatre éléments ; commit source `5e718d705ff144af5fbc551e21552344c2bb1464`, CI et Pages verts.
+- Les anciennes Time’s Up sont séparées : réponses non-personnes vers Quiz ; personnages/Jéhovah vers Qui est-ce ?. Les erreurs d’IDs V102 et les deux réponses non-personnes de jwCategories ont été corrigées et validées.
+- `getGamePool` consomme directement `GAME_CONTENT[mode]` et les quatre types disposent de leur rendu dans l’écran de jeu.
+- Le contrôle automatique de routage a été renforcé par le commit `9b45c73d2adfc9c33ce093de9266aa9d452e2610`, CI et Pages verts.
+- AVENTURE, Ma Bible et `characterLearning.ts` n’ont pas été modifiés dans cette passe.
