@@ -1340,3 +1340,13 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - SHA : `f117764f161327350c72b952a09a28564a886f5d`
 - Correction : le type des cartes Time’s Up converties est maintenant dérivé directement de `timesUpQuestions`, sans dépendre d’un type non exporté.
 - État : VALIDATED sous réserve de CI.
+
+
+## Revalidation ROUTE-TU-QUIZ — inventaire exhaustif 2026-10-15 — VALIDATED
+- Source runtime : `src/data/gameContent.ts`
+- SHA source validé : `1a25fc4f3904271eefed58b56700cab73def9896`
+- Contrôle : inventaire exhaustif des banques Time’s Up injectées dans `timesUpQuestions` et de leur destination finale Quiz / Qui est-ce ?.
+- Corrections depuis le bloc initial : les IDs V102 réels sont `v102-tu-02` à `v102-tu-05` (et non `v102-tu-002` à `v102-tu-005`) ; `jwcat-timesup-2` (Genèse) et `jwcat-timesup-4` (Lévitique 13) sont également des réponses non-personnes.
+- Résultat : ces 6 cartes supplémentaires sont routées vers Quiz. Les cartes Time’s Up restantes dans Qui est-ce ? ont une réponse-personnage ou Jéhovah dans les banques contrôlées.
+- CI et Pages : verts sur les corrections V102 (`9ddc500289c2bc7d52d6339f6a2a492bc8b5222c`) et jwCategories (`b4b4fab8e2b08561479deb7564a8f5343ccfceda`).
+- État : VALIDATED.
