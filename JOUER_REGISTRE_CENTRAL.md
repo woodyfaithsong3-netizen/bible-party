@@ -118,9 +118,9 @@ Les sources physiques restent dans leurs modules actuels pour préserver les imp
 - Commit vérifié : `cff412d681475732e983eb67607c02362d9fd266`.
 - CI : succès ; TypeScript, `audit:content`, `audit:jouer:validation` et export Web réussis.
 - GitHub Pages : build et déploiement réussis sur ce commit.
-- Inventaire : **3 640 cartes uniques** = 3 163 dans les 74 banques supplémentaires + 477 cartes de base uniques.
-- Routage : **3 640/3 640**, **74/74 banques**, zéro banque sans route, zéro ID en doublon dans le périmètre, zéro groupe de questions normalisées dupliquées.
-- Couverture du manifest au SHA source exact : **3 640/3 640 ; 0 sans bloc documenté**. Cela signifie que chaque source actuelle est couverte par un bloc déclaré `VALIDATED` au SHA courant ; la validation éditoriale reste fondée sur les preuves des blocs, pas sur le seul build.
+- Inventaire : **3 637 cartes uniques** selon l’inventaire courant réconcilié ; l’ancien total 3 640 reste historique.
+- Routage : **3 637/3 637**, **74/74 banques**, zéro banque sans route, zéro ID en doublon dans le périmètre, zéro groupe de questions normalisées dupliquées.
+- Couverture du manifest au SHA source exact : **3 637/3 637 ; 0 sans bloc documenté**. Cela signifie que chaque source actuelle est couverte par un bloc déclaré `VALIDATED` au SHA courant ; la validation éditoriale reste fondée sur les preuves des blocs, pas sur le seul build.
 - Nettoyage des exclusions : deux IDs absents de `questions.ts` (`quiz-184`, `quiz-237`) ont été retirés de la liste d’exclusion. Le contrôle de validation signale désormais tout futur ID d’exclusion qui ne correspond à aucune carte réelle.
 - Le jeu garde **quatre banques logiques** dans `src/data/gameContent.ts`. Les fichiers spécialisés restent séparés pour préserver les transformations, les IDs et les preuves historiques.
 
@@ -139,7 +139,7 @@ Les sources physiques restent dans leurs modules actuels pour préserver les imp
 
 ## 11. Écart restant entre les quatre modes voulus et le contenu legacy — 10/10/2026
 
-Le comptage de validation éditoriale et le respect du design final sont deux mesures différentes. Le registre couvre bien 3 640/3 640 cartes au SHA courant, mais un contrôle du pipeline révèle encore **139 cartes de type `challenge` injectées dans `GAME_CONTENT.quiz`** : elles affichent une interface « Défi rapide à relever » au milieu du mode Quiz au lieu d’être de vraies questions à quatre choix.
+Le comptage de validation éditoriale et le respect du design final sont deux mesures différentes. Le registre couvre bien 3 637/3 637 cartes au SHA courant, mais un contrôle du pipeline révèle encore **139 cartes de type `challenge` injectées dans `GAME_CONTENT.quiz`** : elles affichent une interface « Défi rapide à relever » au milieu du mode Quiz au lieu d’être de vraies questions à quatre choix.
 
 Répartition recensée par source :
 - `questions.ts` : 24 cartes de type challenge ;
