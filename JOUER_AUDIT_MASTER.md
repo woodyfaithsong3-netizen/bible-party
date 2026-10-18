@@ -14,7 +14,7 @@ Registre opérationnel des statuts individuels. Le document `JOUER_REGISTRE_CENT
 Une carte VALIDATED ne doit plus être relue intégralement tant qu'elle n'a pas changé. Si elle change, elle repasse RECHECK.
 
 ## Phases — état réconcilié au 2026-10-09
-- [x] P0 inventaire exhaustif réconcilié : 3 640 IDs uniques jouables, dont 3 163 cartes dans 74 banques supplémentaires et 477 cartes de base conservées dans `questions.ts`.
+- [x] P0 inventaire exhaustif : total historique 3 640, puis **3 637 IDs uniques jouables** après les retraits/migrations éditoriales documentés et la réconciliation courante.
 - [x] P1 registre/manifest anti-répétition, avec SHA courant par bloc.
 - [x] P2 contrôles structurels et IDs.
 - [x] P3 Quiz complet, conversions comprises ; 1 105 blocs Quiz détectés par l'audit automatisé.
@@ -29,7 +29,7 @@ Une carte VALIDATED ne doit plus être relue intégralement tant qu'elle n'a pas
 - [x] P12 catégories canoniques appliquées aux cartes du moteur.
 - [x] P13 qualité de jeu : structure, contexte, références, formulations, fuites et concision contrôlés par blocs.
 - [x] P14 moteur des quatre modes : 7/7 handlers et 4/4 libellés contrôlés.
-- [x] P15 audit transversal : 74/74 banques supplémentaires reliées, 3 640/3 640 cartes uniques routées, 0 banque non routée, 0 doublon normalisé détecté par le scan transversal.
+- [x] P15 audit transversal : banques sources reliées aux quatre pools, **3 637/3 637 cartes uniques routées** selon le registre courant, 0 banque non routée et contrôles de doublons actifs.
 - [x] P16 CI verte sur le commit `0b2ca9950677a352d8e463c863d8475f1fda52f1`.
 - [x] P17 GitHub Pages build/déploiement verts sur le même commit.
 
