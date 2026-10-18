@@ -1317,7 +1317,7 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - État : VALIDATED.
 
 
-## Bloc ROUTE-TU-QUIZ-20261013 — VALIDATED
+## Bloc ROUTE-TU-QUIZ-20261013 — HISTORICAL — supersédé par la revalidation exhaustive du 2026-10-15
 - Source : `src/data/gameContent.ts`
 - SHA source validé : `8e19174064ccc46f4b14581f58165c139e640d0a`
 - Périmètre : 26 cartes Time’s Up historiques dont la réponse n’est pas un personnage ou Jéhovah.
@@ -1327,7 +1327,7 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - État : VALIDATED sous réserve de CI sur ce SHA.
 
 
-## Revalidation ROUTE-TU-QUIZ — formulation distincte
+## Revalidation ROUTE-TU-QUIZ — formulation distincte — HISTORICAL
 - Source : `src/data/gameContent.ts`
 - SHA source validé : `3d3da3d477905fbed44d2936a79d079968fc09be`
 - Les 26 Quiz issus de Time’s Up utilisent désormais leurs propres indices dans l’énoncé afin d’éviter tout doublon de question normalisée entre cartes.
@@ -1335,7 +1335,7 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - État : VALIDATED sous réserve de CI sur ce SHA.
 
 
-## Revalidation technique ROUTE-TU-QUIZ — type corrigé
+## Revalidation technique ROUTE-TU-QUIZ — type corrigé — HISTORICAL
 - Source : `src/data/gameContent.ts`
 - SHA : `f117764f161327350c72b952a09a28564a886f5d`
 - Correction : le type des cartes Time’s Up converties est maintenant dérivé directement de `timesUpQuestions`, sans dépendre d’un type non exporté.
