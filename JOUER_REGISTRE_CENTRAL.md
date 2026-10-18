@@ -73,24 +73,24 @@ Une carte ne devient pas `VALIDATED` parce que le build est vert. Les blocs du `
 
 | Mesure | Résultat | Preuve / interprétation |
 |---|---:|---|
-| Cartes uniques jouables | **3 640** | Inventaire global `SEM-ROUTING-GLOBAL-002` |
-| Cartes avec route démontrée | **3 640 / 3 640** | Contrôle automatique des sources et transformations |
+| Cartes uniques jouables | **3 637** | Inventaire courant réconcilié par `audit:jouer:validation` |
+| Cartes avec route démontrée | **3 637 / 3 637** | Contrôle automatique des sources et transformations |
 | Banques supplémentaires avec preuve de route | **74 / 74** | Contrôle automatique du 10/10/2026 |
 | IDs déclarés dans `questions.ts` | 504 | 27 sont retirés intentionnellement car leurs copies spécialisées sont conservées |
 | Cartes de base conservées dans le total unique | **477** | 504 − 27 exclusions éditoriales effectivement présentes |
 | Banques sources sans route démontrée | **0** | Contrôle automatique |
 | Cartes V54 Qui est-ce ? ajoutées à la couverture éditoriale | **17 / 17** | Bloc `SEM-V54-002`, SHA V54 courant |
-| Cartes sans bloc éditorial VALIDATED correspondant au SHA courant | **0** | Contrôle CI du 10/10/2026 : 3 640/3 640 couvertes par des blocs dont le SHA correspond à la source courante. Il s’agit d’une preuve de couverture du registre, pas d’une preuve automatique du contenu biblique. |
+| Cartes sans bloc éditorial VALIDATED correspondant au SHA courant | **0** | Le registre automatisé courant exige la couverture des **3 637 / 3 637** cartes par des blocs dont le SHA correspond à la source courante. Il s’agit d’une preuve de couverture du registre, pas d’une preuve automatique du contenu biblique. |
 
-**Pourquoi ne pas additionner les tailles des blocs ?** Plusieurs blocs sont des sous-ensembles d’une même source et certaines cartes existent à la fois dans une source de base et dans une banque spécialisée. Le total officiel est celui des IDs uniques après déduplication : 3 640. Les nombres de titres de blocs ou les sommes de leurs tailles ne représentent pas le total de cartes.
+**Pourquoi ne pas additionner les tailles des blocs ?** Plusieurs blocs sont des sous-ensembles d’une même source et certaines cartes existent à la fois dans une source de base et dans une banque spécialisée. Le total courant de référence est **3 637** après les retraits/migrations éditoriales documentés. Les nombres de titres de blocs ou les sommes de leurs tailles ne représentent pas le total de cartes.
 
 ### Quatre banques logiques — sans fusion risquée des fichiers sources
 
 | Banque logique | Pool runtime | Sources transformées incluses |
 |---|---|---|
-| **Quiz** | `GAME_CONTENT.quiz` | Quiz, citations, intrus, défis historiques et chronologie |
+| **Quiz** | `GAME_CONTENT.quiz` | Quiz, citations et intrus transformés, chronologie, plus Time’s Up non-personnes converties |
 | **Vrai / Faux** | `GAME_CONTENT.truefalse` | Toutes les cartes `trueFalseQuestions`, sans échantillonnage qui en supprime |
-| **Qui est-ce ?** | `GAME_CONTENT.mystery` | Mystères et cartes Time’s Up converties en indices |
+| **Qui est-ce ?** | `GAME_CONTENT.mystery` | Mystères et Time’s Up dont la réponse est un personnage ou Jéhovah |
 | **Compléter les paroles** | `GAME_CONTENT.complete` | Versets et chansons/cantiques à compléter |
 
 Les sources physiques restent dans leurs modules actuels pour préserver les imports, transformations et IDs. Le jeu ne consomme que ces quatre pools logiques ; ce registre et le manifest centralisent le suivi.
