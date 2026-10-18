@@ -472,12 +472,12 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - CI et GitHub Pages : verts sur le commit de clôture de cette passe `0b2ca9950677a352d8e463c863d8475f1fda52f1`.
 
 
-## Bloc SEM-ROUTING-GLOBAL-002 — VALIDATED — 2026-10-09
+## Bloc SEM-ROUTING-GLOBAL-002 — HISTORICAL — 2026-10-09
 - Sources : `src/data/questions.ts`, `src/data/gameContent.ts`, `src/app/game.tsx`, `audit-content.mjs`.
 - SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`.
 - SHA `audit-content.mjs` : `33528b05d4ee610fb208b490b2b29489e285b65b`.
-- Inventaire corrigé : 3 163 cartes dans 74 banques supplémentaires + 477 cartes de base conservées dans `questions.ts` = **3 640 cartes uniques jouables**.
-- Contrôle CI : 3 640/3 640 cartes routées ; 74/74 banques supplémentaires avec preuve de route ; 0 banque non routée ; 0 doublon d’ID résiduel ; 0 groupe de doublons de questions normalisées.
+- Inventaire historique à cette date : 3 163 cartes dans 74 banques supplémentaires + 477 cartes de base = **3 640 cartes**. Ce total a depuis été réconcilié à **3 637** après retraits/migrations documentés.
+- Contrôle CI historique : 3 640/3 640 cartes routées à cette date. Le registre courant utilise **3 637/3 637** ; cette ancienne preuve est conservée uniquement comme historique.
 - Les banques générées depuis des tuples (V54, jwCategories) sont comptées ; les IDs de base retirés intentionnellement pour éviter les doublons ne sont pas recomptés.
 - Les 17 cartes V54 Qui est-ce ? non couvertes par le bloc éditorial initial sont désormais validées dans `SEM-V54-002`. Le filtre d’inventaire a aussi été corrigé pour compter les 8 cartes V61 « Mot interdit » (`v61-m-001`–`v61-m-008`) déjà couvertes par `SEM-V61-001`.
 - Les quatre modes officiels restent Quiz, Vrai / Faux, Qui est-ce ? et Compléter les paroles.
