@@ -323,7 +323,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Ces deux blocs restent VALIDATED tant que leurs SHA restent inchangés.
 
 
-## Bloc SEM-ROUTING-GLOBAL-001 — VALIDATED (instantané historique, supersédé)
+## Bloc SEM-ROUTING-GLOBAL-001 — HISTORICAL (instantané supersédé)
 - Sources : `src/data/questions.ts`, `src/data/gameContent.ts`, `src/app/game.tsx`, `audit-content.mjs`.
 - SHA `gameContent.ts` : `d0ff98fa27de12e6f64ba9311ae4e401c35e23f6`.
 - SHA `audit-content.mjs` : `c8907244365fc42e7685bb43392181c8454c3ad4`.
@@ -335,7 +335,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - Portée : preuve statique des injections/handlers ; elle ne remplace pas la validation éditoriale individuelle de chaque carte.
 - Règle anti-répétition : les blocs éditoriaux VALIDATED ne sont pas rouverts tant que leur SHA source reste inchangé.
 
-## Bloc SEM-RUNTIME-001 — VALIDATED — 2026-10-08
+## Bloc SEM-RUNTIME-001 — HISTORICAL — 2026-10-08 (supersédé par les revalidations runtime récentes)
 - Sources : `src/data/gameContent.ts` + `audit-content.mjs`
 - Objectif : prouver que les quatre modes officiels consomment réellement les banques jouables, y compris les transformations Quiz/Citations/Intrus/Chronologie/Time's Up et le sous-pool Vrai/Faux.
 - Correction appliquée : toutes les cartes `trueFalseQuestions` sont désormais conservées dans `GAME_CONTENT.truefalse` ; l'ancien échantillonnage supprimait une partie des VRAI et rendait ces cartes définitivement inatteignables.
@@ -1350,3 +1350,16 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - Résultat : ces 6 cartes supplémentaires sont routées vers Quiz. Les cartes Time’s Up restantes dans Qui est-ce ? ont une réponse-personnage ou Jéhovah dans les banques contrôlées.
 - CI et Pages : verts sur les corrections V102 (`9ddc500289c2bc7d52d6339f6a2a492bc8b5222c`) et jwCategories (`b4b4fab8e2b08561479deb7564a8f5343ccfceda`).
 - État : VALIDATED.
+
+
+## SEM-RUNTIME-FINAL-20261019 — VALIDATED
+- Source runtime : `src/data/gameContent.ts`
+- SHA source courant validé : `9ba9eb99dd77692f52f76efc65aa9825281d805c`.
+- Périmètre : transformation et distribution runtime des contenus vers les quatre modes officiels Quiz, Vrai/Faux, Qui est-ce ? et Compléter les paroles.
+- Quiz : questions natives + citations transformées + intrus transformés avec énoncé autonome + Time’s Up non-personnes transformées.
+- Qui est-ce ? : cartes Mystère + Time’s Up restantes, limitées aux réponses personnage/Jéhovah selon l’inventaire exhaustif documenté.
+- Vrai/Faux : toutes les cartes `trueFalseQuestions` sont conservées dans le deck runtime.
+- Compléter les paroles : versets et chansons/cantiques sont intégrés au pool `complete`.
+- `getGamePool` consomme directement `GAME_CONTENT[mode]` ; aucune banque logique Défi n’est exposée comme mode officiel.
+- Les corrections runtime jusqu’au commit source `5e718d705ff144af5fbc551e21552344c2bb1464` ont été confirmées par CI et Pages verts ; les commits documentaires suivants n’ont pas modifié cette source.
+- État : VALIDATED. Ne pas rouvrir intégralement tant que ce SHA reste inchangé.
