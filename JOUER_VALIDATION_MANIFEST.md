@@ -1324,7 +1324,7 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - Correction : ces 26 cartes ne sont plus routées vers Qui est-ce ? ; elles sont converties en Quiz avec 4 réponses bibliquement plausibles, en conservant leur référence et leur difficulté.
 - Cartes concernées : `v53-tu-010`, `v56-t-001`, `v56-t-002`, `v56-t-005`, `v56-t-006`, `v57-t-005` à `v57-t-012`, `v57-t-016`, `v57-t-021`, `v57-t-023`, `v57-t-044`, `v90-tu-007` à `v90-tu-011`, `v102-tu-002` à `v102-tu-005`.
 - Contrôle : aucune de ces réponses (lieu, livre/verset, objet, phénomène ou concept) ne peut désormais apparaître comme réponse d’une carte Qui est-ce ? via la transformation Time’s Up.
-- État : VALIDATED sous réserve de CI sur ce SHA.
+- État historique : supersédé ; voir `Revalidation ROUTE-TU-QUIZ — inventaire exhaustif 2026-10-15` et `SEM-RUNTIME-FINAL-20261019`.
 
 
 ## Revalidation ROUTE-TU-QUIZ — formulation distincte — HISTORICAL
@@ -1339,7 +1339,7 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 - Source : `src/data/gameContent.ts`
 - SHA : `f117764f161327350c72b952a09a28564a886f5d`
 - Correction : le type des cartes Time’s Up converties est maintenant dérivé directement de `timesUpQuestions`, sans dépendre d’un type non exporté.
-- État : VALIDATED sous réserve de CI.
+- État historique : supersédé ; voir `SEM-RUNTIME-FINAL-20261019`.
 
 
 ## Revalidation ROUTE-TU-QUIZ — inventaire exhaustif 2026-10-15 — VALIDATED
