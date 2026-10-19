@@ -111,6 +111,16 @@ export default function BibleBooksScreen() {
           <Text style={{color:colors.text,fontSize:16,fontWeight:'900',marginTop:13}}>Chapitres</Text>
           <Text style={{color:colors.muted,lineHeight:20,marginTop:5}}>{guide.chapterCount}</Text>
         </View>
+        {guide.readerGuide ? <View style={[styles.card,{marginTop:12}]}>
+          <Text style={{color:colors.accent,fontSize:10,fontWeight:'900',letterSpacing:1.3}}>GUIDE DU LECTEUR · JW.ORG</Text>
+          <Text style={{color:colors.text,fontSize:17,fontWeight:'900',marginTop:8}}>Pourquoi lire ce livre ?</Text>
+          <Text style={{color:colors.muted,lineHeight:20,marginTop:5}}>{guide.readerGuide.whyRead}</Text>
+          <Text style={{color:colors.text,fontSize:16,fontWeight:'900',marginTop:13}}>Lien avec le thème de la Bible</Text>
+          <Text style={{color:colors.muted,lineHeight:20,marginTop:5}}>{guide.readerGuide.bibleTheme}</Text>
+          <Text style={{color:colors.text,fontSize:16,fontWeight:'900',marginTop:13}}>À savoir avant de lire</Text>
+          <Text style={{color:colors.muted,lineHeight:20,marginTop:5}}>{guide.readerGuide.context}</Text>
+          <Pressable onPress={() => Linking.openURL(guide.readerGuide!.url)} style={[styles.button,styles.buttonPrimary,{width:'100%',marginTop:14}]}><Text style={styles.buttonText}>Ouvrir le Guide du lecteur sur JW.org →</Text></Pressable>
+        </View> : null}
         <View style={[styles.card,{marginTop:12}]}>
           <Text style={{color:colors.text,fontSize:17,fontWeight:'900'}}>📖 Va plus loin</Text>
           <Text style={{color:colors.muted,lineHeight:20,marginTop:6}}>Bible Party t’en donne un aperçu. La Bible te permet de découvrir toute l’histoire de ce livre.</Text>
