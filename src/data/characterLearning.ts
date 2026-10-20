@@ -1352,7 +1352,7 @@ export const characterLearning: Record<string, CharacterLearning> = {
     "location": "Juda et Jérusalem.",
     "relationshipWithJehovah": "Joël appela le peuple à revenir à Jéhovah de tout son cœur et annonça une restauration après le jugement. Son message met l’accent sur la miséricorde et la compassion de Jéhovah.",
     "didYouKnow": "Pierre cita la prophétie de Joël concernant l’effusion de l’esprit saint le jour de la Pentecôte.",
-    "identity": "Prophète — Yoël utilise une invasion de sauterelles comme contexte pour appeler le peuple à revenir à Jéhovah.",
+    "identity": "Prophète — Joël utilise une invasion de sauterelles comme contexte pour appeler le peuple à revenir à Jéhovah.",
     "era": "vers 820 av. n. è. environ ? (date exacte incertaine)",
     "familyAndEntourage": [
       "Juda",
