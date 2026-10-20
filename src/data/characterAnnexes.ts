@@ -13,7 +13,7 @@ export type CharacterAnnex = {
 
 const CHRONOLOGY: Record<string, { seasonNumber: number; afterEpisode: number }> = {
   melchizedek:{seasonNumber:2,afterEpisode:13}, hagar:{seasonNumber:2,afterEpisode:13},
-  joel:{seasonNumber:4,afterEpisode:70}, amos:{seasonNumber:4,afterEpisode:65}, micah:{seasonNumber:4,afterEpisode:72},
+  joel:{seasonNumber:4,afterEpisode:70}, hosea:{seasonNumber:4,afterEpisode:68}, amos:{seasonNumber:4,afterEpisode:65}, micah:{seasonNumber:4,afterEpisode:72},
   zephaniah:{seasonNumber:4,afterEpisode:73}, nahum:{seasonNumber:4,afterEpisode:76},
   habakkuk:{seasonNumber:4,afterEpisode:76}, obadiah:{seasonNumber:4,afterEpisode:76},
   malachi:{seasonNumber:5,afterEpisode:83},
@@ -47,6 +47,7 @@ const make = (characterId: string, title: string, period: string, story: string,
 export const CHARACTER_ANNEXES: CharacterAnnex[] = [
   make('melchizedek','Melchisédek rencontre Abraham','Après la victoire d’Abraham','Melchisédek, roi de Salem et prêtre du Dieu Très-Haut, rencontre Abraham après sa victoire. Il lui apporte du pain et du vin, le bénit, puis Abraham lui donne un dixième de tout.','Quel titre Melchisédek portait-il ?',['Roi de Salem et prêtre','Roi d’Égypte','Chef de l’armée d’Israël','Prophète de Babylone']),
   make('hagar','Agar dans le désert','Époque d’Abraham','Agar, la servante égyptienne de Sara, donne naissance à Ismaël. Plus tard, elle se retrouve dans le désert avec son fils. Jéhovah voit sa situation et lui donne des indications concernant l’avenir d’Ismaël.','Qui est le fils d’Agar ?',['Ismaël','Isaac','Jacob','Ésaü']),
+  make('hosea','Osée appelle Israël à revenir vers Jéhovah','Période du royaume divisé','Osée, fils de Bééri, prophétise principalement au royaume des dix tribus d’Israël. Son mariage avec Gomèr et les noms donnés à ses enfants servent à illustrer l’infidélité du peuple. Malgré cela, son message montre que Jéhovah souhaite que son peuple revienne vers lui et promet de le guérir s’il se repent sincèrement.','Quel appel revient dans le message d’Osée ?',['Revenir vers Jéhovah','Conquérir Babylone','Reconstruire le temple','Quitter Israël pour Rome']),
   make('joel','Yoël, un prophète','Période des prophètes','Yoël transmet un message prophétique. Son livre appelle le peuple à revenir à Jéhovah et annonce aussi l’action de l’esprit de Dieu.','Qui était Yoël ?',['Un prophète','Un roi','Un juge','Un apôtre']),
   make('amos','Amos, un prophète courageux','Période des rois','Amos était un berger et cultivateur de sycomores avant de recevoir la mission de prophétiser contre l’injustice et l’infidélité d’Israël.','Quel métier Amos exerçait-il notamment ?',['Berger','Roi','Prêtre','Soldat']),
   make('micah','Michée annonce une promesse','Période des rois','Michée est un prophète qui dénonce l’injustice et annonce notamment qu’un dirigeant sortirait de Bethléem.','Michée était-il…',['Un prophète','Un roi','Un juge','Un apôtre']),
