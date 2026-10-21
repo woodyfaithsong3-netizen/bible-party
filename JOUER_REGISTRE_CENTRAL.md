@@ -137,18 +137,23 @@ Les sources physiques restent dans leurs modules actuels pour préserver les imp
 - Les 29 affirmations réécrites et leurs références sont consignées dans `JOUER_VALIDATION_MANIFEST.md`. Les SHA L1-L3 sont mis à jour dans les blocs correspondants ; les cartes inchangées ne sont pas réauditées.
 
 
-## 11. Écart restant entre les quatre modes voulus et le contenu legacy — 10/10/2026
+## 11. Clôture des 139 cartes legacy `challenge` — vérification 21/10/2026
 
-Le comptage de validation éditoriale et le respect du design final sont deux mesures différentes. Le registre couvre bien 3 637/3 637 cartes au SHA courant, mais un contrôle du pipeline révèle encore **139 cartes de type `challenge` injectées dans `GAME_CONTENT.quiz`** : elles affichent une interface « Défi rapide à relever » au milieu du mode Quiz au lieu d’être de vraies questions à quatre choix.
-
-Répartition recensée par source :
-- `questions.ts` : 24 cartes de type challenge ;
+Le lot historique de **139 cartes de type `challenge`** existe toujours dans les fichiers sources pour préserver l'historique et les IDs :
+- `questions.ts` : 24 ;
 - `jw_enrichment_v55.ts` : 8 ;
 - `jw_enrichment_v56.ts` : 12 ;
 - `jw_enrichment_v57.ts` : 87 ;
-- `jwCategories.ts` : 8.
-- **Total : 139 cartes à migrer ou retirer du pool jouable après examen individuel.**
+- `jwCategories.ts` : 8 ;
+- **total vérifié : 139/139**.
 
-Ce sont des cartes déjà inventoriées et couvertes par des blocs de source ; elles ne sont pas des cartes oubliées du manifest. En revanche, elles ne sont pas conformes au design final tant qu’elles gardent le rendu `challenge`. Il ne faut pas les supprimer en bloc : convertir en Quiz uniquement les questions qui peuvent avoir une seule réponse correcte et quatre distracteurs crédibles ; convertir vers Qui est-ce ? seulement les cartes portant réellement sur une personne ; archiver hors des pools jouables celles dont le format « citer plusieurs réponses » ne peut pas être transformé sans ambiguïté. Garder les IDs et tracer chaque décision.
+Vérification du runtime courant :
+- `src/data/gameContent.ts` — SHA `9ba9eb99dd77692f52f76efc65aa9825281d805c` ;
+- les 139 IDs ont été comparés au fichier de routage courant : **0/139 n'est référencé dans `gameContent.ts`** ;
+- `integratedQuizQuestions` n'intègre plus la banque `challenges` ;
+- les quatre pools officiels restent Quiz, Vrai/Faux, Qui est-ce ? et Compléter les paroles ;
+- `audit-content.mjs` contient un garde-fou qui échoue si un ID legacy `challenge` réapparaît dans `gameContent.ts`.
 
-**Reste mesuré à ce stade : 0 carte sans couverture documentée ; 139 cartes legacy à trier pour conformité au mode final.** Le second nombre est le vrai prochain lot de travail gameplay.
+Conclusion : **ce lot est terminé et retiré du gameplay final**. Les 139 cartes ne sont ni oubliées ni encore à migrer dans le runtime. Elles restent archivées dans leurs sources historiques et ne doivent pas être comptées comme travail restant tant qu'elles ne sont pas réintroduites volontairement.
+
+**Reste mesuré pour ce point : 0/139 carte legacy challenge à traiter dans le gameplay.**
