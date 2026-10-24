@@ -1154,12 +1154,13 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `6f3a21dbd81c57ddc432b80f95c36f4f366a3d17`
+- SHA source validé : `fa1cf53ee649a71f2fda2696096d4540c2a0f09a`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
 - Contrôle : revalidation structurelle ciblée des permutations de propositions et des index `correctAnswer`. Aucun fait biblique, texte de question, bonne réponse, explication ou référence n’a été modifié.
 - Revalidation ciblée complémentaire du 23/10/2026 : `char-l6-tf-115-3` clarifiée pour nommer explicitement Marie, mère de Jacques et de José ; réponse `false`, explication et référence Marc 15:40-41 contrôlées. Les autres cartes du bloc ne sont pas réauditées.
+- Revalidation ciblée complémentaire du 24/10/2026 : `char-l6-tf-115-4` clarifiée pour nommer explicitement Marie, mère de Jacques et de José ; réponse `false`, explication et référence Actes 12:12 contrôlées. Les autres cartes du bloc ne sont pas réauditées.
 
 
 ### Revalidation ciblée L3 — 2026-10-12 (cinq Quiz Zacharie/Malachie)
