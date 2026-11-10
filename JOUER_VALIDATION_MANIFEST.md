@@ -281,10 +281,10 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## SEM-PREACH-001
 - Source : `src/data/preachingTruthQuestions.ts`
-- SHA : `94f048bc8350f59c1f941033dd0d52a2413fef24`
+- SHA : `adc34971947b23e3439fdee525a4a3682d9e31d6`
 - 34 cartes de vérités bibliques → Quiz.
 - État : VALIDATED
-- Corrections : 33 cartes reformulées et distracteurs remplacés ; répartition du sous-pool sur tout le paquet Quiz.
+- Corrections : 33 cartes reformulées ; les 34 cartes ont reçu des distracteurs bibliques de contexte, plus plausibles sans être des réponses à l’indice précis. Le sous-pool chrono/appendice est placé en tête du paquet Quiz.
 - CI + GitHub Pages : verts.
 
 
