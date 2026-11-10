@@ -465,10 +465,10 @@ Une nouvelle passe doit commencer au bloc suivant, jamais au début du pool.
 
 ### Bloc SEM-PREACH-001 — VALIDATED
 - Source : `src/data/preachingTruthQuestions.ts`
-- SHA source validé : `adc34971947b23e3439fdee525a4a3682d9e31d6`
+- SHA source validé : `bb1a7dd815f7f3c0cfe20e5cb0f61d7b0bd76ac5`
 - Périmètre : 34 cartes de vérités bibliques → Quiz.
 - Contrôles : 34 IDs, 4 réponses/index, fuite, cohérence question/réponse/explication/référence, formulation courte et jouabilité.
-- Corrections : 33 cartes reformulées avec des indices textuels distinctifs ; les 34 cartes ont ensuite reçu des distracteurs bibliques proches du contexte (même livre/section quand possible), mais ne répondant pas à l’indice précis. `appendice-a-33` garde une question précise avec des choix issus du contexte de Marc 7. Le sous-pool `chrono-*` et `appendice-a-*` est placé en tête du paquet Quiz, comme demandé après retour d’usage.
+- Corrections : 33 cartes reformulées avec des indices textuels distinctifs ; les 34 cartes ont reçu des distracteurs de contexte vérifiés individuellement pour éviter les références qui répondent aussi à l’indice. Revalidation ciblée : formulations alignées sur la TMN actuelle ; options trop proches retirées pour les cartes 13, 19 et 30 ; carte 33 remise au format quatre références. Contrôle de structure et de jouabilité conservé. Le sous-pool `chrono-*` et `appendice-a-*` reste placé en tête du paquet Quiz.
 - État : VALIDATED.
 - CI + GitHub Pages : verts.
 
