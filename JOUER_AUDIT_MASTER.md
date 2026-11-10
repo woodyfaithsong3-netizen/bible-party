@@ -683,3 +683,12 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - Cartes corrigées : `char-l6-q-115-2`, `char-l6-q-115-9`, `char-l6-q-115-10`, `char-l6-q-116-5`, `char-l6-q-116-7`, `char-l6-q-116-8`, `char-l6-q-116-9`.
 - Contrôles : questions autonomes et grammaticalement correctes ; réponse et index alignés ; aucune attribution erronée à Rhodé de l’ouverture du portail (Actes 12:14-16) ; distinctions entre l’annonce de Rhodé, la réaction des disciples et leur étonnement lorsqu’ils voient Pierre ; références appuyées sur Matthieu 27:55-56 et Actes 12:12-17.
 - État : revalidation ciblée des sept cartes uniquement ; les autres cartes du bloc conservent leur validation antérieure.
+
+
+## Revalidation ciblée L6 — six index de réponses — 2026-11-10
+- Source : `src/data/characterQuestionsL6.ts` — SHA `06f2420b0807efde507275a4e5878aaf4441ad2c`.
+- Cartes corrigées : `char-l6-q-101-9`, `char-l6-q-102-9`, `char-l6-q-104-5`, `char-l6-q-104-8`, `char-l6-q-122-6`, `char-l6-q-123-8`.
+- Défaut : l'index `correctAnswer` ne désignait pas l'option confirmée par le texte biblique et l'explication.
+- Correction : les six index ont été alignés sur la première proposition (index 0) ; aucun texte de question, distracteur, explication ou référence n'a été changé.
+- Vérifications JW.org : Michée 6:8 ; Genèse 36:1 et Abdias 10-12 ; Nahum 1:3, 12-15 ; Actes 27:3 ; Actes 19:29.
+- Portée : six cartes seulement ; pas de relecture intégrale du bloc L6.
