@@ -671,8 +671,15 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - AVENTURE, Ma Bible et `characterLearning.ts` n’ont pas été modifiés dans cette passe.
 
 ## Revalidation ciblée L6 — carte `char-l6-q-115-2` — 2026-11-10
-- Source : `src/data/characterQuestionsL6.ts` — SHA `155f097f1c0946287500051b737122e47614692b`.
+- Source : `src/data/characterQuestionsL6.ts` — SHA `a906d1eec006d814d3e619a8ab635a6283758a48`.
 - Défaut corrigé : la question demandait de qui Marie, mère de Jacques et de José, était la mère ; la réponse était indexée sur « De Pierre » alors que l’explication et Matthieu 27:56 désignent Jacques.
 - Correction : `correctAnswer: 0`, correspondant à « De Jacques ».
 - Contrôle JW.org : Matthieu 27:56 identifie Marie comme mère de Jacques et de José ; Marc 15:40 précise « Jacques le Petit et José ». Les autres cartes du bloc ne sont pas réauditées.
 - État : revalidation ciblée ; le reste du bloc conserve sa validation antérieure.
+
+
+## Revalidation ciblée L6 — groupe Marie mère de Jacques / Marie mère de Jean-Marc — 2026-11-10
+- Source : `src/data/characterQuestionsL6.ts` — SHA `a906d1eec006d814d3e619a8ab635a6283758a48`.
+- Cartes corrigées : `char-l6-q-115-2`, `char-l6-q-115-9`, `char-l6-q-115-10`, `char-l6-q-116-5`, `char-l6-q-116-7`, `char-l6-q-116-8`, `char-l6-q-116-9`.
+- Contrôles : questions autonomes et grammaticalement correctes ; réponse et index alignés ; aucune attribution erronée à Rhodé de l’ouverture du portail (Actes 12:14-16) ; distinctions entre l’annonce de Rhodé, la réaction des disciples et leur étonnement lorsqu’ils voient Pierre ; références appuyées sur Matthieu 27:55-56 et Actes 12:12-17.
+- État : revalidation ciblée des sept cartes uniquement ; les autres cartes du bloc conservent leur validation antérieure.
