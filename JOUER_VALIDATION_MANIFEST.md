@@ -183,7 +183,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## Bloc SEM-L5-001
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source après revalidation ciblée : `86604186155b356c219271c37a8ad880535f82ec`
+- SHA source après revalidation ciblée : `a46ae5c8352b97a22df67e1bb3a2e93d7da8e944`
 - Périmètre : 200 Quiz + 50 Vrai/Faux + 40 Qui est-ce ? = 290 cartes.
 - État : VALIDATED
 - Contrôles : structure, réponses/index, fuite de réponse, doublons, références, formulation, autonomie liée au personnage, Vrai/Faux, indices Mystère et jouabilité.
@@ -193,6 +193,7 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 - CI : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
 - GitHub Pages : verte sur `2a21beae348791025ce2583f1da0666fb0544cab`.
 - Revalidation ciblée complémentaire du 09/10/2026 : 14 cartes expert Vrai/Faux ont été réécrites pour supprimer les distracteurs génériques répétés (« l’un des Douze apôtres ») et corriger les rôles/événements : `char-l5-tf-83-4`, `84-4`, `85-4`, `86-4`, `87-4`, `88-4`, `90-4`, `91-4`, `92-4`, `94-4`, `95-4`, `97-4`, `99-4`, `100-4`. Réponses fausses conservées ; explications et références rendues spécifiques. Cette passe est ciblée et ne vaut pas relecture intégrale de L5.
+- Revalidation ciblée complémentaire du 10/11/2026 : `char-l5-q-81-9` (le centurion a fait construire la synagogue, Luc 7:5) et `char-l5-q-100-8` (Amos venait de Téqoa et prophétisa principalement en Israël, Amos 1:1 ; 7:14-15) avaient un `correctAnswer` qui pointait vers un distracteur. Les index ont été corrigés respectivement de `1` à `0` et de `3` à `1`. Questions, propositions, explications et références inchangées. Vérification JW.org ; revalidation limitée à ces deux cartes.
 - Clôture : ne pas réauditer tant que le SHA source reste inchangé.
 
 
