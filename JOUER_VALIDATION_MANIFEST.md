@@ -281,10 +281,10 @@ Cette instruction est historique : les blocs suivants ont depuis été audités 
 
 ## SEM-PREACH-001
 - Source : `src/data/preachingTruthQuestions.ts`
-- SHA : `bb1a7dd815f7f3c0cfe20e5cb0f61d7b0bd76ac5`
+- SHA : `52aa0f5267962acf1643bce8543887b56013fb3c`
 - 34 cartes de vérités bibliques → Quiz.
 - État : VALIDATED
-- Corrections : 33 cartes reformulées ; les 34 cartes ont reçu des distracteurs bibliques de contexte contrôlés individuellement. Les références qui pouvaient être confondues avec la bonne réponse ont été remplacées (cartes 13, 19 et 30), la carte 33 utilise désormais quatre références, et la carte 06 reprend la formulation de la TMN actuelle. Vérification des références principales sur JW.org.
+- Corrections : 33 cartes reformulées ; les 34 cartes ont reçu des distracteurs bibliques de contexte contrôlés individuellement. Les références qui pouvaient être confondues avec la bonne réponse ont été remplacées (cartes 13, 19 et 30), la carte 33 utilise désormais quatre références, et la carte 06 reprend la formulation de la TMN actuelle. Vérification des références principales sur JW.org et contrôle automatisé des 34 cartes, quatre choix distincts, index et références.
 - CI + GitHub Pages : verts.
 
 
