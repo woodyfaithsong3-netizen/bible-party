@@ -1249,11 +1249,11 @@ Les cinq fichiers personnages L1-L5 ont été modifiés après leurs derniers bl
 
 ### Bloc RECON-L5-20261013 — VALIDATED
 - Source : `src/data/characterQuestionsL5.ts`
-- SHA source validé : `f954e1fcacd120513323952a4a10e1cd5a5e3d15`
+- SHA source validé : `a46ae5c8352b97a22df67e1bb3a2e93d7da8e944`
 - Taille : 290 cartes
 - État : VALIDATED
 - Contrôles : revalidation ciblée des modifications récentes (indices Qui est-ce ? autonomes, correction Festus et cartes déjà corrigées), structure, jouabilité et cohérence des éléments modifiés.
-- Les validations antérieures des cartes non modifiées restent conservées.
+- Revalidation ciblée du 10/11/2026 : `char-l5-q-81-9` (Luc 7:5) et `char-l5-q-100-8` (Amos 1:1 ; 7:14-15) corrigées : les index `correctAnswer` passent respectivement de 1 à 0 et de 3 à 1. Les explications et références concordent avec les options correctes. Seules ces deux cartes ont été revalidées ; les validations antérieures des cartes non modifiées restent conservées.
 
 
 ### Bloc COMPLETE-SONGS-VERSE-20261013 — VALIDATED
