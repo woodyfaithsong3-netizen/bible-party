@@ -364,10 +364,10 @@ export const preachingTruthQuestions: QuizQuestion[] = [
     type: 'quiz',
     category: 'Mieux connaître Jéhovah',
     difficulty: 'easy',
-    question: 'Selon Marc 7:6-8, quel reproche Jésus fait-il aux chefs religieux hypocrites ?',
+    question: 'Dans quel passage Jésus reproche-t-il aux chefs religieux de mettre de côté le commandement de Dieu pour suivre des traditions humaines ?',
     answers: ["Ils mettent de côté le commandement de Dieu pour suivre des traditions humaines", "Marc 7:1-5", "Marc 7:14-23", "Marc 8:11, 12"],
     correctAnswer: 0,
-    explanation: 'Jésus leur reproche de mettre de côté le commandement de Dieu pour suivre des traditions humaines.',
+    explanation: 'En Marc 7:6-8, Jésus leur reproche de mettre de côté le commandement de Dieu pour suivre des traditions humaines.',
     reference: 'Marc 7:6-8',
   },
   {
