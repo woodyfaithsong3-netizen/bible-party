@@ -97,30 +97,20 @@ export default function GameScreen() {
         }
         out[mode] = balanced;
       } else if (mode === 'quiz' && d.length > 1) {
-        // Les nouveaux sous-pools éditoriaux doivent réellement apparaître en partie.
-        // On les entremêle au début du paquet au lieu de les laisser noyés dans plusieurs
-        // milliers de cartes : chronologie et 34 vérités.
-        const specialBuckets = [
-          d.filter(q => /^chrono-/.test(String(q.id))),
-          d.filter(q => /^appendice-a-/.test(String(q.id))),
-        ].map(shuffle);
-        const used = new Set<string>();
-        const priority: Question[] = [];
-        let roundIndex = 0;
-        let added = true;
-        while (added) {
-          added = false;
-          for (const bucket of specialBuckets) {
-            const item = bucket[roundIndex];
-            if (item && !used.has(String(item.id))) {
-              priority.push(item);
-              used.add(String(item.id));
-              added = true;
-            }
-          }
-          roundIndex += 1;
+        // Les sous-pools éditoriaux restent accessibles, mais ne doivent pas
+        // monopoliser le début des parties. On les répartit dans tout le paquet
+        // pour éviter une succession de questions de références bibliques.
+        const special = shuffle(d.filter(q => /^(chrono-|appendice-a-)/.test(String(q.id))));
+        const regular = shuffle(d.filter(q => !/^(chrono-|appendice-a-)/.test(String(q.id))));
+        const distributed: Question[] = [];
+        let regularIndex = 0;
+        for (let i = 0; i < special.length; i += 1) {
+          const target = Math.floor(((i + 1) * regular.length) / (special.length + 1));
+          while (regularIndex < target) distributed.push(regular[regularIndex++]);
+          distributed.push(special[i]);
         }
-        out[mode] = [...priority, ...shuffle(d.filter(q => !used.has(String(q.id))))];
+        distributed.push(...regular.slice(regularIndex));
+        out[mode] = distributed;
       } else if (mode === 'complete' && d.length > 1) {
         // Compléter les paroles montre les deux familles du mode :
         // versets bibliques connus + cantiques/chansons. On les alterne dès le
