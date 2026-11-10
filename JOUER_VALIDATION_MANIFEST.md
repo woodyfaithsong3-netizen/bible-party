@@ -1154,7 +1154,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `155f097f1c0946287500051b737122e47614692b`
+- SHA source validé : `a906d1eec006d814d3e619a8ab635a6283758a48`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
@@ -1162,6 +1162,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Revalidation ciblée complémentaire du 23/10/2026 : `char-l6-tf-115-3` clarifiée pour nommer explicitement Marie, mère de Jacques et de José ; réponse `false`, explication et référence Marc 15:40-41 contrôlées. Les autres cartes du bloc ne sont pas réauditées.
 - Revalidation ciblée complémentaire du 24/10/2026 : `char-l6-tf-115-4` clarifiée pour nommer explicitement Marie, mère de Jacques et de José ; réponse `false`, explication et référence Actes 12:12 contrôlées. Les autres cartes du bloc ne sont pas réauditées.
 - Revalidation ciblée complémentaire du 10/11/2026 : `char-l6-q-115-2` corrigée ; `correctAnswer` passe de `1` à `0`, car la première proposition (« De Jacques ») est celle qui correspond à Matthieu 27:56. L’explication et la référence sont cohérentes ; les trois autres cartes du bloc ne sont pas réauditées.
+- Revalidation ciblée complémentaire du 10/11/2026 : sept cartes du groupe Marie mère de Jacques / Marie mère de Jean-Marc ont été améliorées (`char-l6-q-115-2`, `115-9`, `115-10`, `116-5`, `116-7`, `116-8`, `116-9`). Corrections : question indépendante et index de réponse, formulation grammaticale, remplacement d’une question interprétative par une question factuelle, correction de l’affirmation erronée selon laquelle Rhodé aurait ouvert le portail, et suppression de répétitions. Réponses, explications et références vérifiées sur Matthieu 27:55-56 et Actes 12:12-17. Revalidation limitée à ces sept cartes.
 
 
 ### Revalidation ciblée L3 — 2026-10-12 (cinq Quiz Zacharie/Malachie)
