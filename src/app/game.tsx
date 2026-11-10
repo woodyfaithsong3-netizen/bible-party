@@ -97,20 +97,12 @@ export default function GameScreen() {
         }
         out[mode] = balanced;
       } else if (mode === 'quiz' && d.length > 1) {
-        // Les sous-pools éditoriaux restent accessibles, mais ne doivent pas
-        // monopoliser le début des parties. On les répartit dans tout le paquet
-        // pour éviter une succession de questions de références bibliques.
+        // Le bloc des questions de références bibliques doit être visible dès
+        // le début d'une partie : on le place en tête du paquet, puis on mélange
+        // séparément ses cartes et les autres questions pour varier les tirages.
         const special = shuffle(d.filter(q => /^(chrono-|appendice-a-)/.test(String(q.id))));
         const regular = shuffle(d.filter(q => !/^(chrono-|appendice-a-)/.test(String(q.id))));
-        const distributed: Question[] = [];
-        let regularIndex = 0;
-        for (let i = 0; i < special.length; i += 1) {
-          const target = Math.floor(((i + 1) * regular.length) / (special.length + 1));
-          while (regularIndex < target) distributed.push(regular[regularIndex++]);
-          distributed.push(special[i]);
-        }
-        distributed.push(...regular.slice(regularIndex));
-        out[mode] = distributed;
+        out[mode] = [...special, ...regular];
       } else if (mode === 'complete' && d.length > 1) {
         // Compléter les paroles montre les deux familles du mode :
         // versets bibliques connus + cantiques/chansons. On les alterne dès le
