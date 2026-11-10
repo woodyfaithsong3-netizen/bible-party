@@ -692,3 +692,12 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - Correction : les six index ont été alignés sur la première proposition (index 0) ; aucun texte de question, distracteur, explication ou référence n'a été changé.
 - Vérifications JW.org : Michée 6:8 ; Genèse 36:1 et Abdias 10-12 ; Nahum 1:3, 12-15 ; Actes 27:3 ; Actes 19:29.
 - Portée : six cartes seulement ; pas de relecture intégrale du bloc L6.
+
+
+## Revalidation ciblée L5 — deux index de réponses — 2026-11-10
+- Source : `src/data/characterQuestionsL5.ts` — SHA `a46ae5c8352b97a22df67e1bb3a2e93d7da8e944`.
+- Cartes corrigées : `char-l5-q-81-9` et `char-l5-q-100-8`.
+- Défaut : l'index `correctAnswer` ne désignait pas l'option confirmée par le texte biblique et l'explication.
+- Correction : `char-l5-q-81-9` passe à l'index 0 (« Il avait fait construire la synagogue ») ; `char-l5-q-100-8` passe à l'index 1 (« De Téqoa ; dans le royaume d’Israël »).
+- Vérifications JW.org : Luc 7:5 ; Amos 1:1 et 7:14-15.
+- Portée : deux cartes seulement ; pas de relecture intégrale du bloc L5.
