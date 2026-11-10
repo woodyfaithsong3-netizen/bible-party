@@ -1154,7 +1154,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 
 ## Bloc SEM-L6-002 — VALIDATED — 2026-10-12
 - Source : `src/data/characterQuestionsL6.ts`
-- SHA source validé : `a906d1eec006d814d3e619a8ab635a6283758a48`
+- SHA source validé : `06f2420b0807efde507275a4e5878aaf4441ad2c`
 - Périmètre : 395 cartes
 - Taille : 395 cartes
 - État : VALIDATED
@@ -1163,6 +1163,7 @@ Cette passe transforme 29 affirmations auparavant vraies en affirmations fausses
 - Revalidation ciblée complémentaire du 24/10/2026 : `char-l6-tf-115-4` clarifiée pour nommer explicitement Marie, mère de Jacques et de José ; réponse `false`, explication et référence Actes 12:12 contrôlées. Les autres cartes du bloc ne sont pas réauditées.
 - Revalidation ciblée complémentaire du 10/11/2026 : `char-l6-q-115-2` corrigée ; `correctAnswer` passe de `1` à `0`, car la première proposition (« De Jacques ») est celle qui correspond à Matthieu 27:56. L’explication et la référence sont cohérentes ; les trois autres cartes du bloc ne sont pas réauditées.
 - Revalidation ciblée complémentaire du 10/11/2026 : sept cartes du groupe Marie mère de Jacques / Marie mère de Jean-Marc ont été améliorées (`char-l6-q-115-2`, `115-9`, `115-10`, `116-5`, `116-7`, `116-8`, `116-9`). Corrections : question indépendante et index de réponse, formulation grammaticale, remplacement d’une question interprétative par une question factuelle, correction de l’affirmation erronée selon laquelle Rhodé aurait ouvert le portail, et suppression de répétitions. Réponses, explications et références vérifiées sur Matthieu 27:55-56 et Actes 12:12-17. Revalidation limitée à ces sept cartes.
+- Revalidation ciblée complémentaire du 10/11/2026 : six index de réponse erronés ont été réalignés sur l'option correcte dans `char-l6-q-101-9` (Michée 6:8), `char-l6-q-102-9` (Ésaü et Jacob), `char-l6-q-104-5` et `104-8` (Nahum 1:3 et 1:12-15), `char-l6-q-122-6` (Actes 27:3) et `char-l6-q-123-8` (Actes 19:29). Les questions, explications et références sont cohérentes ; seule la valeur `correctAnswer` a été modifiée. Vérification biblique sur JW.org. Revalidation limitée à ces six cartes.
 
 
 ### Revalidation ciblée L3 — 2026-10-12 (cinq Quiz Zacharie/Malachie)
