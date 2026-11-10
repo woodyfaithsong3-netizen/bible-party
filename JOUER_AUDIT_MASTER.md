@@ -669,3 +669,10 @@ Les 139 cartes type challenge historiques ont été traitées en une seule passe
 - `getGamePool` consomme directement `GAME_CONTENT[mode]` et les quatre types disposent de leur rendu dans l’écran de jeu.
 - Le contrôle automatique de routage a été renforcé par le commit `9b45c73d2adfc9c33ce093de9266aa9d452e2610`, CI et Pages verts.
 - AVENTURE, Ma Bible et `characterLearning.ts` n’ont pas été modifiés dans cette passe.
+
+## Revalidation ciblée L6 — carte `char-l6-q-115-2` — 2026-11-10
+- Source : `src/data/characterQuestionsL6.ts` — SHA `155f097f1c0946287500051b737122e47614692b`.
+- Défaut corrigé : la question demandait de qui Marie, mère de Jacques et de José, était la mère ; la réponse était indexée sur « De Pierre » alors que l’explication et Matthieu 27:56 désignent Jacques.
+- Correction : `correctAnswer: 0`, correspondant à « De Jacques ».
+- Contrôle JW.org : Matthieu 27:56 identifie Marie comme mère de Jacques et de José ; Marc 15:40 précise « Jacques le Petit et José ». Les autres cartes du bloc ne sont pas réauditées.
+- État : revalidation ciblée ; le reste du bloc conserve sa validation antérieure.
